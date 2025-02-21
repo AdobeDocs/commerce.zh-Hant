@@ -1,11 +1,11 @@
 ---
-source-git-commit: 0d0c3c1cb2d0af48352afbe2028966331f0bb8ae
+source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
 workflow-type: tm+mt
-source-wordcount: '483'
-ht-degree: 5%
+source-wordcount: '403'
+ht-degree: 6%
 
 ---
-# Contribute文章
+# Adobe Commerce使用者檔案
 
 我們歡迎社群以及檔案團隊外部的Adobe員工出力貢獻。
 
@@ -13,45 +13,41 @@ ht-degree: 5%
 
 本專案已採用 [Adobe 開放原始碼管理辦法](code-of-conduct.md)或 [.NET Foundation 管理辦法](https://dotnetfoundation.org/code-of-conduct)。如需詳細資訊，請參閱[貢獻](contributing.md)一文。
 
-## 如何協助撰寫Adobe內容
+## 關於您對Adobe內容的貢獻
 
-**如果您不是Adobe員工**，您可以提交外部社群貢獻。 社群貢獻內容會匯入至我們的內部系統，並在公開存放庫中編輯及合併。 然後，公開存放庫會與最新變更同步，並合併到私人存放庫中。
+請參閱[Adobe檔案投稿人指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
 
-**如果您是Adobe員工**，可以直接貢獻給私人[AdobeGitHub存放庫](https://git.corp.adobe.com/AdobeDocs/)。 如需詳細資訊，請參閱適用於Adobe員工的Adobe Experience League Authoring Guide 。
-
-## 外部貢獻者
+貢獻方式取決於您的身分和您要貢獻的變更型別：
 
 ### 微幅變更
 
-如果您要貢獻微幅更新：
+若您出於好意想貢獻微幅更新內容，請前往文章，按一下文章中的「**編輯**」連結，隨即會轉至該文章的GitHub來源， 然後，只需使用GitHub UI進行更新即可。 如需詳細資訊，請參閱一般[Adobe檔案投稿人指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
 
-1. 導覽至您要編輯的主題。
-1. 在「此內容是否有幫助？」中。 瀏覽器視窗底部出現的橫幅按一下&#x200B;**詳細的意見選項**。
-1. 在GitHub UI中，按一下&#x200B;**建議編輯**&#x200B;並提交包含變更的提取請求(PR)。
+您在本存放庫為檔案和程式碼範例提交的小幅更正或釐清均包含在Adobe使用條款中。
 
-   如需詳細資訊，請參閱一般[Adobe檔案投稿人指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
+### 來自社群成員的重大變更或新文章
 
-Adobe使用條款涵蓋您在本存放庫為檔案和程式碼範例提交的小幅更正或釐清。
+如果您是Adobe社群的一分子，且想建立新文章或提交重大變更，請使用Git存放庫中的「問題」索引標籤，提交問題以便與檔案團隊開始對話。 一旦您同意了計畫，就需要與員工合作，透過結合公共和私有存放庫的工作來幫助引入新內容。
 
-### 社群中的重大變更或新主題
+<!--
+If you submit a pull request with significant changes to documentation and code examples, you'll see a message in the pull request asking you to submit an online contribution license agreement (CLA). We need you to complete the online form before we can review your pull request.
+-->
 
-如果您是Adobe社群的一員，並想要建立新主題或提交重大變更，請使用適用的Git存放庫中的&#x200B;**問題**&#x200B;索引標籤，提交問題以開始與檔案團隊對話。 議定計畫後，您將與Adobe編寫器合作，以發佈修訂版本。
+### 來自Adobe員工的重大變更
 
-**注意：**&#x200B;如果您提交包含檔案與程式碼範例重大變更的提取請求，您會在提取請求中看到一則訊息，要求您提交線上貢獻授權合約(CLA)。 我們需要您先完成線上表單，才能檢閱您的提取請求。
+若您是Adobe Experience Cloud解決方案產品團隊的技術撰寫人員、專案經理或開發人員，且您的工作正是貢獻或撰寫技術文章，請使用`https://git.corp.adobe.com/AdobeDocs`的私人存放庫。
 
-### 工具
+<!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
+
+## 工具與設定
 
 社群投稿人可以使用GitHub UI進行基本編輯或建立存放庫復本，以做出重大貢獻。
 
 如需詳細資訊，請參閱[Adobe檔案貢獻者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
 
-## 內部參與者
+## 如何使用Markdown將主題格式化
 
-若您是Adobe Experience Cloud解決方案產品團隊的技術撰寫人員、專案經理或開發人員，且您的工作正是貢獻或撰寫技術文章，請使用[私人存放庫](https://git.corp.adobe.com/AdobeDocs)。
-
-## 格式化您的主題
-
-此存放庫中的所有文章皆使用GitHub風格的Markdown。 如果您不熟悉Markdown，請參閱：
+此存放庫中的所有文章皆使用GitHub Flavored Markdown。 如果您不熟悉Markdown，請參閱：
 
 * [Markdown基本介紹](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
 * [可列印的Markdown速查表](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)

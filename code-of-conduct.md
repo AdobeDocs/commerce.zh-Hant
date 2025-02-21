@@ -1,7 +1,7 @@
 ---
-source-git-commit: 0d0c3c1cb2d0af48352afbe2028966331f0bb8ae
+source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
@@ -9,8 +9,7 @@ ht-degree: 0%
 
 ## 我們的承諾
 
-為了營造開放且溫馨的環境，我們
-貢獻者和維護者承諾參與我們的專案和
+為了營造開放且熱情的環境，貢獻者和維護者承諾參與我們的專案並
 我們社群提供所有人無騷擾的體驗，無論年齡、身體如何
 大小、殘疾、種族、性別認同和性別表現、經驗程度、
 國籍、個人外貌、種族、宗教或性認同和
@@ -29,8 +28,7 @@ ht-degree: 0%
 
 不可接受的參與者行為包括：
 
-* 使用充滿性暗示的言語或影像，以及令人不舒服的性關注或
-預付款
+* 使用帶有性意涵的語言或影像以及令人反感的性吸引或勾引
 * 具挑釁、侮辱/貶損意味的評論，以及人身或政治攻擊
 * 公開或私下騷擾
 * 發佈他人的私人資訊，例如實體或電子資訊
@@ -63,9 +61,9 @@ ht-degree: 0%
 
 濫用、騷擾或其他不可接受的行為可能是
 透過Grp-opensourceoffice@adobe.com聯絡專案團隊以回報。 全部
-我們將檢視及調查申訴，並會做出回應，
+我們會審查及調查申訴，並做出回應
 被認定為必要且適合當時情況。 專案團隊為
-有義務對事件檢舉人的相關資料保密。
+有責任保全事件檢舉人的機密資訊。
 具體執行政策的詳細資訊可能另行公佈。
 
 未妥善遵守或執行本行為準則的專案維護人員
@@ -74,5 +72,5 @@ ht-degree: 0%
 
 ## 歸因
 
-本行為準則改編自[貢獻者公約](https://contributor-covenant.org) 1.4版。
-可在[https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)取得
+本行為準則改編自[貢獻者公約](https://www.contributor-covenant.org/) 1.4版。
+可在[https://www.contributor-covenant.org/it/version/1/4/code-of-conduct/](https://www.contributor-covenant.org/it/version/1/4/code-of-conduct/)取得。
