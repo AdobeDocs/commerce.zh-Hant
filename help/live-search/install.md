@@ -2,9 +2,9 @@
 title: 開始使用 [!DNL Live Search]
 description: 從Adobe Commerce瞭解 [!DNL Live Search] 的系統需求和安裝步驟。
 role: Admin, Developer
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+source-git-commit: 039f04814c4e0b0c31f160446c67b2689f687818
 workflow-type: tm+mt
-source-wordcount: '3100'
+source-wordcount: '3122'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Adobe Commerce [!DNL Live Search]與[[!DNL Catalog Service]](../catalog-service/
 >
 >在網站搜尋方面，Adobe Commerce會提供您選項。 在實作之前，請務必閱讀[界限和限制](boundaries-limits.md)，以確保[!DNL Live Search]符合您的業務需求。
 
-## 客群
+## 對象
 
 本文適用於負責安裝和設定Adobe Commerce執行個體的開發人員或團隊中的系統整合商。
 
@@ -54,6 +54,10 @@ Adobe Commerce [!DNL Live Search]與[[!DNL Catalog Service]](../catalog-service/
 >[!NOTE]
 >
 >截至[!DNL Live Search] 3.0.2，[!DNL Catalog Service]擴充功能已與[!DNL Live Search]安裝整合。
+
+>[!IMPORTANT]
+>
+>自[!DNL Live Search] 4.0.0起，已棄用搜尋配接器。 日後，搜尋配接卡只會更新以解決安全性問題。
 
 1. 確認[cron工作](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)和[索引子](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management)正在執行。
 
