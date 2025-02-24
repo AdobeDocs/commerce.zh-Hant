@@ -4,9 +4,9 @@ description: 瞭解如何為您的 [!DNL Adobe Commerce] 和 [!DNL Magento Open 
 role: User
 level: Intermediate
 feature: Payments, Checkout
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+source-git-commit: 95d86654ad185b2c37a59777a29f6de1b0091ad7
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -26,10 +26,6 @@ ht-degree: 0%
 * 在管理員內獨立
 
 ## 功能
-
->[!NOTE]
->
->此處提及的某些功能可能尚未開放在GA （一般可用性）版本中使用。
 
 [!DNL Payment Services]是您線上結帳的一站式商店（從結算與退款到收取款項）。 它提供強大的工具，讓您獲得所需的洞察力和控制力，為您的買家創造最佳體驗。
 
