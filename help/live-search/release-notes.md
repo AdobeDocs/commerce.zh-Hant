@@ -2,9 +2,10 @@
 title: '[!DNL Live Search]發行說明'
 description: Adobe Commerce中 [!DNL Live Search] 的最新發行資訊。
 feature: Services, Search, Release Notes
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 099cf79c-968c-4381-b66d-7f6141ad2db3
+source-git-commit: 81bde302463a70e41318b494565694929703dff9
 workflow-type: tm+mt
-source-wordcount: '2129'
+source-wordcount: '2170'
 ht-degree: 0%
 
 ---
@@ -22,6 +23,10 @@ ht-degree: 0%
 ## 託管服務更新
 
 這些附註會說明在版本設定發行之外發佈的更新，或託管服務的改進。
+
+_2025年2月20日_
+
+![新](../assets/new.svg) Commerce支援多字同義字。 [深入瞭解](synonyms-type.md#multi-word-synonym-behavior)。 只有在2月20日發行日期之後才支援多字同義字。 任何現有的多字同義字都需要完整重新索引才能運作，您可以透過[建立支援票證](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)來要求這樣做。
 
 _2025年1月31日_
 

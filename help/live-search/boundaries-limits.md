@@ -2,9 +2,10 @@
 title: 邊界和限制
 description: 瞭解 [!DNL Live Search] 的界限和限制，以確保其符合您的業務需求。
 role: Admin, Developer
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 28b8d98f-0784-4c4d-b382-81c01838e0de
+source-git-commit: 81bde302463a70e41318b494565694929703dff9
 workflow-type: tm+mt
-source-wordcount: '953'
+source-wordcount: '920'
 ht-degree: 0%
 
 ---
@@ -64,7 +65,6 @@ ht-degree: 0%
 ## 同義字
 
 - 每個存放區檢視最多可管理200個[同義字](synonyms.md)。[!DNL Live Search]
-- 多字同義字可能無法總是如預期般運作。 請務必先在中繼環境中測試這些同義字，之後再用於生產環境，因為它們可能會對關聯性造成負面影響。
 
 ## 類別銷售
 

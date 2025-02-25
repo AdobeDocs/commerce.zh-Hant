@@ -1,7 +1,8 @@
 ---
 title: 新增同義字
 description: 新增 [!DNL Live Search] 同義字以改善搜尋要求的回應。
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 2dc535ea-35a3-45a8-8171-901005223cc9
+source-git-commit: 81bde302463a70e41318b494565694929703dff9
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%
@@ -30,7 +31,6 @@ ht-degree: 0%
 1. 接受預設的&#x200B;**雙向**&#x200B;選項。
 
    ![新增雙向同義字](assets/synonym-add-two-way.png)
-
 
 1. 輸入要比對的&#x200B;**關鍵字**&#x200B;詞語或片語。
 1. 輸入您想要新增為關鍵字同義字的&#x200B;**擴增**字詞。 請使用逗號分隔多個詞語。
