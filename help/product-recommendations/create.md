@@ -1,9 +1,10 @@
 ---
 title: 建立新建議
 description: 瞭解如何建立產品推薦單位。
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 1d5f83c4-1613-4236-9d98-d455f45a47da
+source-git-commit: f67010c80c3dedcf3c431cb7dc6e4e7b0cdbde09
 workflow-type: tm+mt
-source-wordcount: '1497'
+source-wordcount: '1511'
 ht-degree: 0%
 
 ---
@@ -81,6 +82,10 @@ _建議單位_
    * **儲存為草稿**&#x200B;以便稍後編輯建議單位。 您無法修改處於草稿狀態的建議單位的頁面型別或建議型別。
 
    * **啟動**&#x200B;以啟用店面上的推薦單位。
+
+>[!IMPORTANT]
+>
+>有些瀏覽器可能會封鎖導致「產品建議」無法如預期運作的重要指令碼。
 
 ## 整備程度指標
 
