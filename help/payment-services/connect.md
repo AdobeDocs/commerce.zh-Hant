@@ -2,7 +2,8 @@
 title: 連線您的執行個體
 description: 使用API金鑰和私密金鑰連線您的Commerce執行個體，並在設定中指定資料空間。
 feature: Payments, Checkout, Configuration, Saas
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: f2b3be02-e9dd-4bca-b9e4-c80a56bf8691
+source-git-commit: 16bd0e7ed1e8982e1571e2593115824a2004b7dc
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 0%
@@ -12,6 +13,8 @@ ht-degree: 0%
 # 連線您的執行個體
 
 [!DNL Payment Services]由Commerce Services提供技術支援，並部署為SaaS （軟體即服務）。 您使用API金鑰和私密金鑰來連線Commerce執行個體，並使用[Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce/user-guides/saas.html)指定設定中的資料空間。 **您只設定此連線一次。**
+
+>[!VIDEO](https://video.tv.adobe.com/v/3447835)
 
 >[!INFO]
 >
