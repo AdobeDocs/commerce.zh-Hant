@@ -2,9 +2,10 @@
 title: 檢閱記錄檔並進行疑難排解
 description: 瞭解如何使用資料匯出和saas-export記錄檔來疑難排解 [!DNL data export] 錯誤。
 feature: Services
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: d022756f-6e75-4c2a-9601-31958698dc43
+source-git-commit: 22c74c12ddfccdb4e6c4e02c3a15557e1020d5ef
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1056'
 ht-degree: 0%
 
 ---
@@ -36,8 +37,8 @@ ht-degree: 0%
    "feed": "<feed name>",
    "operation": "<executed operation>",
    "status": "<status of operation>",
-   "elapsed": "<time elaspsed from script run>",
-   "pid": "<proccess id who executed `operation`>",
+   "elapsed": "<time elapsed from script run>",
+   "pid": "<process id that executed `operation`>",
    "caller": "<who called this `operation`>"
 } [] []
 ```
@@ -50,10 +51,10 @@ ht-degree: 0%
 
 | 作業 | 說明 | 呼叫者範例 |
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| 完全同步 | 完整同步會收集指定摘要的所有資料並將這些資料傳送至SaaS。 | `bin/magento saas:resync --feed=products` |
-| 部分重新索引 | 部分同步僅會針對指定摘要中更新的實體收集資料，並將其傳送至SaaS。 只有在更新的實體存在時，此記錄才會出現。 | `bin/magento cron:run --group=index` |
-| 重試失敗的專案 | 如果先前的同步作業因Commerce應用程式或伺服器錯誤而失敗，則重新傳送指定摘要的專案至SaaS。 只有存在失敗的專案時，才會出現此記錄。 | `bin/magento cron:run --group=saas_data_exporter` (任何「*_data_exporter」cron群組) |
-| 完整同步（舊版） | 在舊版匯出模式中，指定摘要的完整同步。 | `bin/magento saas:resync --feed=categories` |
+| 完全同步 | 收集特定摘要的所有資料並傳送至SaaS。 | `bin/magento saas:resync --feed=products` |
+| 部分重新索引 | 收集特定摘要中更新的實體資料並將資料傳送至SaaS。 只有在更新的實體存在時，此記錄才會出現。 | `bin/magento cron:run --group=index` |
+| 重試失敗的專案 | 如果先前的同步作業因Commerce應用程式或伺服器錯誤而失敗，請重新傳送指定摘要的專案至SaaS。 只有存在失敗的專案時，才會出現此記錄。 | `bin/magento cron:run --group=saas_data_exporter` (任何「*_data_exporter」cron群組) |
+| 完整同步（舊版） | 在舊版匯出模式中，收集指定摘要的所有資料並傳送至SaaS。 | `bin/magento saas:resync --feed=categories` |
 | 部分重新索引（舊版） | 在舊版匯出模式中，針對指定摘要將更新的實體傳送至SaaS。 只有在更新的實體存在時，此記錄才會出現。 | `bin/magento cron:run --group=index` |
 | 部分同步（舊版） | 在舊版匯出模式中，針對指定摘要將更新的實體傳送至SaaS。 只有在更新的實體存在時，此記錄才會出現。 | `bin/magento cron:run --group=saas_data_exporter` (任何「*_data_exporter」cron群組) |
 
@@ -123,12 +124,12 @@ Price feed full resync:
 
 ## 疑難排解
 
-如果Commerce Services中的資料遺失或不正確，請檢查記錄檔，以檢視從Adobe Commerce執行個體同步至Commerce Service平台期間是否發生問題。 如有需要，請使用擴充記錄功能，在記錄檔中新增其他資訊以進行疑難排解。
+如果Commerce Services中的資料遺失或不正確，請檢查記錄檔中是否有在從Adobe Commerce同步至Commerce Services平台期間發生錯誤的相關訊息。 如有需要，請使用擴充記錄功能，在記錄檔中新增其他資訊以進行疑難排解。
 
-- commerce-data-export-errors.log — 如果在收集階段發生錯誤
-- saas-export-errors.log — 如果在傳輸階段發生錯誤
+- 資料匯出錯誤記錄(`commerce-data-export-errors.log`)會擷取收集階段發生的錯誤。
+- SaaS匯出錯誤記錄(`saas-export-errors.log`)會擷取傳輸階段發生的錯誤。
 
-如果您看到與設定或協力廠商擴充功能無關的錯誤，請儘可能提交[支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket)並提供更多資訊。
+如果您看到與設定或協力廠商擴充功能無關的錯誤，請儘可能提交[支援票證](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)並提供更多資訊。
 
 ### 解決目錄同步問題 {#resolvesync}
 
@@ -143,22 +144,15 @@ Price feed full resync:
 
 #### 同步處理未執行
 
-如果同步未依排程執行，或未同步任何專案，請參閱此[知識庫](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html)文章。
+如果同步未依排程執行，或未同步任何專案，請參閱此[知識庫](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce)文章。
 
 #### 同步失敗
 
-如果目錄同步處理的狀態為&#x200B;**失敗**，請提交[支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)。
+如果目錄同步處理的狀態為&#x200B;**失敗**，請提交[支援票證](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)。
 
 ## 延伸記錄
 
-如需其他記錄資訊，您可以使用環境變數，透過其他資料擴充記錄檔以進行追蹤和疑難排解。
-
-`var/log/`目錄中有兩個記錄檔：
-
-- commerce-data-export-errors.log — 如果在收集階段發生錯誤
-- saas-export-errors.log — 如果在傳輸階段發生錯誤
-
-您可以使用環境變數，透過其他資料擴充記錄檔以進行追蹤和疑難排解。
+使用環境變數來擴充記錄檔，並包含其他資料用於追蹤和疑難排解。 執行資料匯出CLI命令時，將環境變數新增至命令列，如下列範例所示。
 
 ### 檢查摘要裝載
 
