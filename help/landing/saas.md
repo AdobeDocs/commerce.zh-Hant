@@ -3,9 +3,10 @@ title: Commerce服務聯結器
 description: 瞭解如何使用生產和沙箱API金鑰將您的Adobe Commerce或Magento Open Source執行個體整合到服務。
 feature: Services, Saas
 role: Admin, User
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 1aa6ba8b-be39-496e-b83d-a4a7db9f5dd8
+source-git-commit: 5e2c32b66407585317e22649184337e2aace9bad
 workflow-type: tm+mt
-source-wordcount: '1372'
+source-wordcount: '1403'
 ht-degree: 0%
 
 ---
@@ -96,6 +97,8 @@ ht-degree: 0%
 - [提交支援要求](https://experienceleague.adobe.com/home?support-tab=home#support)以要求額外的測試資料空間，並指明額外資料空間的商業理由。 此請求有待核准。
 
 使用Adobe付款服務的Magento Open Source客戶可能也會要求額外的資料空間。 請在提交[支援要求](https://experienceleague.adobe.com/home?support-tab=home#support)以要求測試資料空間之前，先連絡付款團隊以取得其他資料空間的預先核准。
+
+擁有多個雲端專案或內部部署（即時/生產）安裝的客戶，也可透過[提交支援要求](https://experienceleague.adobe.com/home?support-tab=home#support)，要求每個專案或執行個體的額外生產及測試資料空間。
 
 ### 選取或建立SaaS專案 {#createsaasenv}
 
