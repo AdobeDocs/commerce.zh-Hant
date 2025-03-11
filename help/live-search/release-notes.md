@@ -3,9 +3,9 @@ title: '[!DNL Live Search]發行說明'
 description: Adobe Commerce中 [!DNL Live Search] 的最新發行資訊。
 feature: Services, Search, Release Notes
 exl-id: 099cf79c-968c-4381-b66d-7f6141ad2db3
-source-git-commit: 81bde302463a70e41318b494565694929703dff9
+source-git-commit: eb016fa8e53cfb9d035d73979495171feccb764f
 workflow-type: tm+mt
-source-wordcount: '2170'
+source-wordcount: '2186'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 _2025年2月20日_
 
-![新](../assets/new.svg) Commerce支援多字同義字。 [深入瞭解](synonyms-type.md#multi-word-synonym-behavior)。 只有在2月20日發行日期之後才支援多字同義字。 任何現有的多字同義字都需要完整重新索引才能運作，您可以透過[建立支援票證](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)來要求這樣做。
+![新](../assets/new.svg) Commerce支援多字同義字。 [深入瞭解](synonyms-type.md#multi-word-synonym-behavior)。 2月20日正式發行後，才能支援多字同義字。 任何現有的多字同義字都需要完整重新索引才能運作，您可以透過[建立支援票證](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)來要求這樣做。
 
 _2025年1月31日_
 
@@ -73,6 +73,15 @@ _2024年5月31日_
 _2023年10月27日_
 
 ![新](../assets/new.svg) [!DNL Live Search] PLP Widget現在支援色票。
+
+## [!DNL Live Search] 4.3.0
+
+_2025年3月11日_
+
+[!BADGE 支援]{type=Informative tooltip="支援"}
+
+![修正](../assets/fix.svg) [!DNL Live Search]現在支援執行Adobe Commerce 2.4.8-beta2的PHP 8.4安裝。
+![修正](../assets/fix.svg)修正搜尋配接器與`psr/http-message:2.0`不相容的問題。
 
 ## [!DNL Live Search] 4.2.3
 
@@ -173,11 +182,9 @@ _2023年11月13日_
 
 升級之後，在將變更推送至生產環境之前，請先在QA或測試環境中測試已更新的設定。
 
-## 舊版
-
 +++3.1.1和舊版
 
-## [!DNL Live Search] 3.1.1
+### [!DNL Live Search] 3.1.1
 
 _2023年9月15日_
 
@@ -194,7 +201,7 @@ _2023年9月15日_
 ![新](../assets/new.svg)類別預覽只會顯示選取的類別。
 ![新的](../assets/new.svg) AEM CIF [Pover Widget](https://github.com/adobe/aem-cif-guides-venia/pull/319)和[PLP Widget](https://github.com/adobe/aem-cif-guides-venia/pull/320)元件可讓AEM網站充分利用[!DNL Live Search]。
 
-### 更新
+#### 更新
 
 ![修正](../assets/fix.svg)產品與價格摘要的資料表大小已大幅縮減。 資料表`catalog_data_exporter_products`和`catalog_data_exporter_product_prices`應該會大幅縮減大小。
 ![修正](../assets/fix.svg)「規則」索引標籤已重新命名為「搜尋規則」
@@ -206,23 +213,23 @@ _2023年9月15日_
 ![修正](../assets/fix.svg)「排名型別」已重新命名為「智慧型排名」
 ![修正](../assets/fix.svg)微幅錯誤修正
 
-## [!DNL Live Search] 3.1.0
+### [!DNL Live Search] 3.1.0
 
 _2023年9月1日_
 
 [!BADGE 支援]{type="資訊性" tooltip="支援"}
 
-### 更新
+#### 更新
 
-![修正](../assets/fix.svg)產品清單Widget已更新為使用[目錄服務API](https://developer.adobe.com/commerce/services/graphql/catalog-service/product-search/)。
+![修正](../assets/fix.svg)產品清單Widget已更新為使用[目錄服務API](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/)。
 
-## [!DNL Live Search] 3.0.2
+### [!DNL Live Search] 3.0.2
 
 _2023年8月7日_
 
 [!BADGE 支援]{type="資訊性" tooltip="支援"}
 
-### 新功能
+#### 新功能
 
 ![新](../assets/new.svg)下列值已新增至`storeDetails`物件：
 
@@ -232,7 +239,7 @@ _2023年8月7日_
 - 「網格上每頁產品預設值」
 - 存放區語言
 
-### 更新
+#### 更新
 
 已將![Fix](../assets/fix.svg)目錄服務模組新增至中繼封裝，以支援進階資料擷取。
 ![修正](../assets/fix.svg)使用產品清單頁面Widget時，**我的帳戶**&#x200B;頁面導覽不再消失。
@@ -241,17 +248,17 @@ _2023年8月7日_
 
 建議先升級並測試，再推送至生產環境。 確認測試環境結果後，請考慮在非尖峰時段升級生產環境。
 
-### 限制
+#### 限制
 
 使用即時搜尋產品清單頁面Widget會導致Google Tag Manager失敗。 如果需要Google Tag Manager，請使用預設的「搜尋轉接器」。
 
-## [!DNL Live Search] 3.0.1
+### [!DNL Live Search] 3.0.1
 
 _2023年3月14日_
 
 [!BADGE 支援]{type="資訊性" tooltip="支援"}
 
-### 新功能
+#### 新功能
 
 規則預覽中的![新](../assets/new.svg)產品專案卡
 ![新增](../assets/new.svg) [產品清單頁面Widget](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-storefront/plp-styling)
@@ -265,7 +272,7 @@ _2023年3月14日_
 ![新](../assets/new.svg) [規則的智慧型排名](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/rules/rules-add)
 ![新](../assets/new.svg) [!DNL Live Search]現在支援Commerce中的完整[Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction)功能(先前稱為多Source詳細目錄，或MSI)。 若要啟用完整支援，您必須[將](install.md#update)相依性模組`commerce-data-export`更新為102.2.0+版。
 
-### 更新
+#### 更新
 
 ![修正](../assets/fix.svg)設定規則現在會自動以唯一方式排序職位
 ![修正](../assets/fix.svg)刪除現有事件現在會更新預覽
@@ -273,7 +280,7 @@ _2023年3月14日_
 ![修正](../assets/fix.svg)移除多面向「選取型別」選取器
 ![修正](../assets/fix.svg)已新增未儲存規則的新「編輯」狀態
 
-### 修正
+#### 修正
 
 ![修正](../assets/fix.svg)儲存期間發生未完成的事件時修復伺服器錯誤
 ![修正](../assets/fix.svg)修正當有多個事件時，正確刪除特定事件的問題
@@ -281,8 +288,6 @@ _2023年3月14日_
 ![修正](../assets/fix.svg)已修正來自詳細資料的第二個「編輯」點選，[!DNL Live Search]個頁面需要重新載入
 ![修正](../assets/fix.svg)同義字：修正使用者按一下退出輸入時，無法將焦點傳回欄位的問題
 ![修正](../assets/fix.svg)其他微幅錯誤修正與效能更新
-
-
 ![錯誤](../assets/bug.svg) — 僅在「即時搜尋」Widget中支援「為您推薦」的排名。 預設的Luma和PWA搜尋功能不支援此功能。
 ![錯誤](../assets/bug.svg) — 自訂價格屬性Facet無法在Luma中正確轉譯，但API已正確篩選它們。
 
@@ -290,7 +295,7 @@ _2023年3月14日_
 
 建議先升級並測試，再推送至生產環境。 確認測試環境結果後，請考慮在非尖峰時段升級生產環境。
 
-## [!DNL Live Search] 2.0.5
+### [!DNL Live Search] 2.0.5
 
 [!BADGE 支援]{type="資訊性" tooltip="支援"}
 
@@ -355,7 +360,7 @@ _2023年3月14日_
 ![新](../assets/new.svg) [!DNL Live Search] [店面事件SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/)提供對一般資料層的存取權，其中包含事件發佈和訂閱服務以及量度。
 ![修正](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md)具有控制可見性的`.search-autocomplete`容器的新`active`類別。
 ![修正](../assets/fix.svg)在店面中，[搜尋詞](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms)頁尾連結已移除，且已針對[!DNL Live Search]個安裝停用其快取。
-![錯誤](../assets/bug.svg)搜尋配接器的修補程式會處理重複的產品。
+搜尋配接器的![錯誤](../assets/bug.svg)修補程式會處理重複的產品。
 ![錯誤](../assets/bug.svg) [!DNL Live Search]支援[單一來源](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/sources/sources-manage) （實體）清查位置，其中包含多個（虛擬） [庫存](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage)。 目前不支援多個清查來源。
 
 ### [!DNL Live Search] 1.2.0
