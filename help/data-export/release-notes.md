@@ -4,9 +4,9 @@ description: 適用於Adobe Commerce的 [!DNL Data Export Extension] 的最新�
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 7e19d42f4e064cfc4efd7c275546725795b60310
+source-git-commit: e30210e6aac469929e4767e3747bd819bc10b9f4
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '987'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,11 @@ ht-degree: 0%
 >SaaS資料匯出擴充功能是隨「即時搜尋」、「產品建議」和「目錄服務」自動安裝的模組集合。 您可以使用Composer檢查系統上安裝的版本。 在某些情況下，您可能會想要升級系統上的資料匯出擴充功能，以取得修正或新功能，而不更新Commerce服務版本。
 
 ## 目前的主要版本
+
+## 103.3.21版
+
+![修正](../assets/new.svg)已新增功能，以根據指定的產品SKU清單來部分同步`product`、`productOverrides`和`productAttributes`摘要。 將`--by-ids`選項新增至`bin/magento saas:resync --feed=<FEED_NAME>` CLI命令，以使用新功能。 <!--MDEE-606-->
+![修正](../assets/fix.svg)解決已棄用的功能，減少與PHP 8.4之間的潛在相容性問題。<!--MDEE-1002-->
 
 ## 103.3.20版
 
