@@ -2,13 +2,13 @@
 title: '[!DNL Payment Services]發行說明'
 description: 檢閱發行說明，瞭解所有 [!DNL Payment Services] 發行版本的相關資訊。
 feature: Payments, Release Notes
-source-git-commit: 313d69a7f791153fd56a1492f9012776cea1f3df
+exl-id: 1d24ae27-4a57-4482-a36b-22bbcaaa1b6f
+source-git-commit: 0ad77dca302d467ad5f037f0cd567e18bd148af0
 workflow-type: tm+mt
-source-wordcount: '3392'
+source-wordcount: '3644'
 ht-degree: 0%
 
 ---
-
 
 # 發行說明
 
@@ -89,6 +89,33 @@ _2021年6月28日_
 ![新增](../assets/new.svg)<!-- Issue PAY-2761 -->您現在可以使用[資料行]設定控制項來顯示或隱藏資料行，以自訂[訂單付款狀態報表](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/order-payment-status.html#show-and-hide-columns)與[付款報表](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/payouts.html#show-and-hide-columns)中顯示的資料。
 
 +++
+
+## v2.11.0
+
+_2025年3月13日_
+
+[!BADGE 支援]{type=Informative tooltip="支援"}
+
+
+![新增](../assets/new.svg)<!-- PAY-5938 -->現在，[!DNL Payment Services]可讓商家管理付款設定，以最大化其業務的彈性。 此版本改善為商家支援的地區和品牌附加[多個PayPal帳戶](https://experienceleague.adobe.com/en/docs/commerce/payment-services/configure/settings#use-multiple-paypal-accounts)的能力。 我們的銷售團隊可提供入門連結，以設定您的網站和商店檢視範圍。
+
+![新](../assets/new.svg)<!-- PAY-5968 -->現在，[!DNL Payment Services]會以&#x200B;**PayPal商家識別碼**&#x200B;和&#x200B;**PayPal商家狀態**&#x200B;值更新管理員設定。 這些值可讓商家更清楚瞭解其PayPal帳戶狀態。
+
+![已修正問題](../assets/fix.svg)<!-- PAY-5816 -->已解決v2.9.0版中導致所有訂購位置發生錯誤的問題，藉此還原[!DNL Payment Services]中的正常訂購功能。
+
+![已修正問題](../assets/fix.svg)<!-- PAY-5825 -->已修正Apple Pay迷你購物車對登入的客戶使用的預估總計URL不正確的問題。 現在，[!DNL Payment Services]可確保計算的總計準確。
+
+![已修正問題](../assets/fix.svg)<!-- PAY-5826 -->解決將報價狀態變更為`inactive`時造成HTTP 500錯誤的問題，進而改善訂單管理的可靠性。
+
+![已修正問題](../assets/fix.svg)<!-- PAY-5849 -->修正`LineItemProvider`擲回小數點數量低於1的例外狀況的問題。 現在，[!DNL Payment Services]為分數數量提供更好的支援。
+
+![已修正問題](../assets/fix.svg)<!-- PAY-5868 -->已修正結帳時的禮品卡金額錯誤。 [!DNL Payment Services]現在可確保結帳程式中的值準確。
+
+![已修正問題](../assets/fix.svg)<!-- PAY-5911 -->已解決使用非[!DNL Payment Services]個線上付款方式下訂單建立出貨時的錯誤，提升整體可靠性。
+
+![已修正問題](../assets/fix.svg)<!-- PAY-5954 --> [!DNL Payment Services]現在解決在錢包中選取其他信用卡時Apple Pay無法下訂單的問題，提供更順暢的結帳體驗。
+
+![已修正問題](../assets/fix.svg)<!-- PAY-5971 --> 當Apple Pay失敗時，[!DNL Payment Services]不再將客戶重新導向至訂單檢閱頁面，以防止不必要的結帳中斷。
 
 ## v2.10.3
 
