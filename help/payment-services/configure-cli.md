@@ -4,9 +4,10 @@ description: 安裝之後，您可以使用命令列介面(CLI)設定 [!DNL Paym
 role: Admin, Developer
 level: Intermediate
 feature: Payments, Checkout, Configuration, Integration
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: bb59bd49-6ecd-4ef1-a6b9-e1e93db04bf6
+source-git-commit: 24622b8a20b8cd95e13a68df6e0929206ffbb06b
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---
@@ -88,6 +89,32 @@ bin/magento cron:run --group payment_services_data_export
 ```
 
 若要進一步瞭解重新索引和索引子，請參閱開發人員檔案中的[管理索引子](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers)主題。
+
+## 透過CLI設定範圍
+
+[!DNL Payment Services]允許商家使用[多個PayPal帳戶](settings.md#use-multiple-paypal-accounts)。 現在，您可以透過CLI變更這些帳戶的範圍。
+
+若要將範圍設定為`website`層級，請執行：
+
+```bash
+bin/magento config:set payment/payment_services/mba_scoping_level website
+```
+
+若要將範圍設定為`store`層級，請使用：
+
+```bash
+bin/magento config:set payment/payment_services/mba_scoping_level store
+```
+
+>[!TIP]
+>
+> 如果您想要將範圍變更為商店層級，請聯絡您的[!DNL Payment Services]銷售代表。
+
+變更範圍後，排清快取以顯示變更：
+
+```bash
+bin/magento cache:clean:payment_services_merchant_scopes
+```
 
 ## 設定L2/L3處理
 
