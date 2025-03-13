@@ -2,9 +2,10 @@
 title: 同步資料與SaaS資料匯出
 description: 瞭解 [!DNL SaaS Data Export] 如何在Adobe Commerce執行個體和連線的SaaS服務之間收集及同步資料。
 role: Admin, Developer
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 2ca7c92a-fb52-4055-ae16-11e99b38d161
+source-git-commit: 55c433f36b122813e8fc9136a7efbb869246b7f5
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '825'
 ht-degree: 0%
 
 ---
@@ -79,7 +80,7 @@ SaaS資料匯出支援三種同步型別：完全同步、部分同步和重試�
 
 - 管理員使用者可以檢視及追蹤同步處理進度，並從[資料管理儀表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard)取得資料的相關資訊。
 
-- 具有Commerce應用程式伺服器存取權的開發人員、系統整合經銷商或管理員，可以使用Adobe Commerce命令列工具(CLI)管理同步流程和資料摘要。 請參閱[資料匯出命令參考](data-export-cli-commands.md)。
+- 具有Commerce應用程式伺服器存取權的開發人員、系統整合經銷商或管理員，可以使用Adobe Commerce命令列工具(CLI)管理同步流程和資料摘要。 請參閱[使用Commerce CLI管理同步作業](data-export-cli-commands.md)。
 
 ### 驗證Commerce應用程式設定
 

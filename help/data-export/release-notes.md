@@ -4,9 +4,9 @@ description: 適用於Adobe Commerce的 [!DNL Data Export Extension] 的最新�
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: e30210e6aac469929e4767e3747bd819bc10b9f4
+source-git-commit: 14231826dba842edb908005ea43b1893a324c68f
 workflow-type: tm+mt
-source-wordcount: '987'
+source-wordcount: '988'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,12 @@ ht-degree: 0%
 
 ## 103.3.21版
 
-![修正](../assets/new.svg)已新增功能，以根據指定的產品SKU清單來部分同步`product`、`productOverrides`和`productAttributes`摘要。 將`--by-ids`選項新增至`bin/magento saas:resync --feed=<FEED_NAME>` CLI命令，以使用新功能。 <!--MDEE-606-->
+![修正](../assets/new.svg)已新增功能，以根據指定的產品SKU清單來部分同步`products`、`productOverrides`和`productAttributes`摘要。 將`--by-ids`選項新增至resync CLI命令以使用新功能： <!--MDEE-606-->
+
+```shell
+bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>
+```
+
 ![修正](../assets/fix.svg)解決已棄用的功能，減少與PHP 8.4之間的潛在相容性問題。<!--MDEE-1002-->
 
 ## 103.3.20版
