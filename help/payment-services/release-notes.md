@@ -3,9 +3,9 @@ title: '[!DNL Payment Services]發行說明'
 description: 檢閱發行說明，瞭解所有 [!DNL Payment Services] 發行版本的相關資訊。
 feature: Payments, Release Notes
 exl-id: 1d24ae27-4a57-4482-a36b-22bbcaaa1b6f
-source-git-commit: 0ad77dca302d467ad5f037f0cd567e18bd148af0
+source-git-commit: 0098e5bab2ea72f9abd7c846d49d5ee4d523ad73
 workflow-type: tm+mt
-source-wordcount: '3644'
+source-wordcount: '3681'
 ht-degree: 0%
 
 ---
@@ -89,6 +89,14 @@ _2021年6月28日_
 ![新增](../assets/new.svg)<!-- Issue PAY-2761 -->您現在可以使用[資料行]設定控制項來顯示或隱藏資料行，以自訂[訂單付款狀態報表](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/order-payment-status.html#show-and-hide-columns)與[付款報表](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/payouts.html#show-and-hide-columns)中顯示的資料。
 
 +++
+
+## v2.11.1
+
+_2025年3月14日_
+
+[!BADGE 支援]{type=Informative tooltip="支援"}
+
+![已修正問題](../assets/fix.svg)<!-- PAY-5849 -->已修正簽出期間影響[條列專案](line-items.md)的問題。 現在，[!DNL Payment Services]已改善&#x200B;**條列專案**&#x200B;的結帳程式可靠性。 如果您遇到類似問題，請連絡您的[!DNL Payment Services]銷售代表以尋求協助。
 
 ## v2.11.0
 
