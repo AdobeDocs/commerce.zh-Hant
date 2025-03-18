@@ -3,13 +3,13 @@ title: Adobe Commerce as a Cloud Service概觀
 description: 瞭解Adobe Commerce as a Cloud Service的主要功能和優點。
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Architect, Developer, User
-source-git-commit: 0a112b1dab0113eb910e2ecdcca21e7e2814e761
+exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
+source-git-commit: 27d08ed9c01923f2144b071ed7418a399b3126eb
 workflow-type: tm+mt
-source-wordcount: '1569'
+source-wordcount: '1593'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Commerce as a Cloud Service概觀
 
@@ -83,10 +83,13 @@ Adobe提供下列開發人員工具，用於建立整合與自訂：
 
 ## Commerce Foundation
 
-Commerce Foundation提供安全的自動化託管平台和自助服務功能，可在雲端原生環境中管理您的Commerce應用程式。 主要功能包括：
+Commerce Foundation提供安全的自動化託管平台和自助服務功能，可在雲端原生環境中管理您的Commerce應用程式。
+
+主要功能包括：
 
 - 簡化入門
 - 順暢的升級
+- 協力廠商整合
 
 ### 簡化入門
 
@@ -103,6 +106,10 @@ Commerce Foundation提供安全的自動化託管平台和自助服務功能，�
 >[!NOTE]
 >
 >Adobe可保證所有更新的回溯相容性。 這表示套用更新時，不會破壞符合[API優先擴充性](https://developer.adobe.com/commerce/extensibility/)模型的現有功能或自訂。
+
+### 協力廠商整合
+
+開發人員可以使用完整的[GraphQL和REST API](https://developer.adobe.com/commerce/services/cloud/guides/)，將Commerce Foundation與協力廠商系統整合，並延伸Commerce功能。
 
 ## Experience Cloud整合
 
