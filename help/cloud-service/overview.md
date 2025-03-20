@@ -1,39 +1,41 @@
 ---
-title: Adobe Commerce as a Cloud Service概觀
-description: 瞭解Adobe Commerce as a Cloud Service的主要功能和優點。
+title: '[!DNL Adobe Commerce as a Cloud Service]總覽'
+description: 瞭解 [!DNL Adobe Commerce as a Cloud Service]的主要功能和優點。
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Architect, Developer, User
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-source-git-commit: 27d08ed9c01923f2144b071ed7418a399b3126eb
+source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
 workflow-type: tm+mt
-source-wordcount: '1593'
+source-wordcount: '1497'
 ht-degree: 0%
 
 ---
 
-# Adobe Commerce as a Cloud Service概觀
+# [!DNL Adobe Commerce as a Cloud Service]總覽
 
-Adobe Commerce as a Cloud Service可讓企業提供並快速擴展數位營運並加速創新，進而提供彈性、擴充性和效率。 Adobe的雲端原生基礎結構會自動調整資源，以符合流量、訂單和目錄管理的高峰需求。
+{{accs-early-access}}
 
-下圖重點說明Adobe Commerce as a Cloud Service背後的產品：
+[!DNL Adobe Commerce as a Cloud Service]可讓企業提供並快速擴充數位作業，加速創新，進而提供彈性、擴充性和效率。 Adobe的雲端原生基礎結構會自動調整資源，以符合流量、訂單和目錄管理的高峰需求。
 
-![Adobe Commerce as a Cloud Service產品棧疊](./assets/product-stack.svg){align="center" zoomable="yes"}
+下圖會強調支援[!DNL Adobe Commerce as a Cloud Service]的產品：
+
+![[!DNL Adobe Commerce as a Cloud Service]產品棧疊](./assets/product-stack.svg){align="center" zoomable="yes"}
 
 >[!BEGINSHADEBOX]
 
-![資訊](assets/Smock_InfoOutline_18_N.svg)如果您想要參與Adobe Commerce as a Cloud Service搶先存取計畫，請完成[此表單](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4WOxhjY2doZPikS2hIbfmL5URFZXTE5TUk9PMUw0OFdOWTBNNlI3UTlNMS4u&amp;route=shorturl)。
+![資訊](assets/Smock_InfoOutline_18_N.svg)如果您要參與[!DNL Adobe Commerce as a Cloud Service]搶先存取計畫，請完成[此表單](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4WOxhjY2doZPikS2hIbfmL5URFZXTE5TUk9PMUw0OFdOWTBNNlI3UTlNMS4u&amp;route=shorturl)。
 
 >[!ENDSHADEBOX]
 
 ## 架構
 
-請參閱下列影片，瞭解Adobe Commerce as a Cloud Service架構的簡介。 說明此架構的圖表會顯示在影片下方。
+請參閱下列影片，瞭解[!DNL Adobe Commerce as a Cloud Service]架構的簡介。 說明此架構的圖表會顯示在影片下方。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3443232?learn=on)
 
-此圖表說明Adobe Commerce as a Cloud Service與所有Adobe Experience Cloud解決方案之間的資料流程。
+此圖表說明[!DNL Adobe Commerce as a Cloud Service]與所有Adobe Experience Cloud解決方案之間的資料流程。
 
-![Adobe Commerce as a Cloud Service架構圖](./assets/data-flow.svg){zoomable="yes"}
+![[!DNL Adobe Commerce as a Cloud Service]架構圖表](./assets/data-flow.svg){zoomable="yes"}
 
 ## Commerce店面
 
@@ -43,7 +45,7 @@ Commerce Storefront採用完全無周邊的分離式架構，可透過GraphQL AP
 
 >[!NOTE]
 >
->Adobe Commerce as a Cloud Service不支援Luma店面。 如果您要從雲端或內部部署上的Adobe Commerce進行移轉，請參閱[現有店面](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/#existing-storefronts)以取得移轉指南。
+>[!DNL Adobe Commerce as a Cloud Service]不支援Luma店面。 如果您要從雲端或內部部署上的Adobe Commerce進行移轉，請參閱[現有店面](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/#existing-storefronts)以取得移轉指南。
 
 ## 銷售服務與付款服務
 
@@ -101,7 +103,7 @@ Commerce Foundation提供安全的自動化託管平台和自助服務功能，�
 
 存取最新功能和增強功能，無需手動升級。 持續提供新功能和更新後，您不再需要手動修補，確保您能夠以低廉的總體擁有成本隨時存取最新功能。
 
-雲端上Adobe Commerce的典型升級程式包含建立備份、複製執行個體、執行相容性工具以及修正程式碼衝突。 Adobe Commerce as a Cloud Service不再需要該專案。 新功能和安全性更新發行後，Adobe會傳送應用程式內通知給您。 您有30天的時間評估沙箱執行個體中的新功能，之後更新會自動套用至您的生產環境。
+雲端上Adobe Commerce的典型升級程式包含建立備份、複製執行個體、執行相容性工具以及修正程式碼衝突。 [!DNL Adobe Commerce as a Cloud Service]不再需要該專案。 新功能和安全性更新發行後，Adobe會傳送應用程式內通知給您。 您有30天的時間評估沙箱執行個體中的新功能，之後更新會自動套用至您的生產環境。
 
 >[!NOTE]
 >
@@ -113,13 +115,13 @@ Commerce Foundation提供安全的自動化託管平台和自助服務功能，�
 
 ## Experience Cloud整合
 
-Adobe Commerce as a Cloud Service與所有Experience Cloud解決方案整合，以大規模提供[個人化商務體驗](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu)。
+[!DNL Adobe Commerce as a Cloud Service]與所有Experience Cloud解決方案整合，以大規模提供[個人化的商務體驗](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu)。
 
 [Data Connection](../data-connection/overview.md)可解鎖有關購物者購買行為的深入分析，以便您可以使用其他Adobe Digital Experience產品跨所有管道建立個人化購物體驗。
 
 ## 優點
 
-以下章節提供有關Adobe Commerce as a Cloud Service為商業和IT主管所提供優勢的資訊。
+下列章節提供有關[!DNL Adobe Commerce as a Cloud Service]為業務和IT主管提供的權益資訊。
 
 ### 業務領導者
 
@@ -137,7 +139,7 @@ Adobe Commerce as a Cloud Service與所有Experience Cloud解決方案整合，�
 
 ## 新功能解決方案
 
-[管理員UI](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/guide-overview)是存取功能的主要介面，可管理後端商店作業、庫存、定價、促銷和客戶互動。 不過，Adobe Commerce as a Cloud Service提供獨特的解決方案，取代Adobe Commerce雲端和內部部署專案中提供的部分知名功能。 下表說明Adobe Commerce as a Cloud Service中可用的功能和取代解決方案：
+[管理員UI](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/guide-overview)是存取功能的主要介面，可管理後端商店作業、庫存、定價、促銷和客戶互動。 但是，[!DNL Adobe Commerce as a Cloud Service]提供獨特的解決方案，取代了Adobe Commerce雲端和內部部署專案中某些著名的功能。 下表說明[!DNL Adobe Commerce as a Cloud Service]中可用的功能和取代解決方案：
 
 | 功能 | 解決方案 | 可用性 | 詳細資料 |
 |---------|----------|--------------|--------|

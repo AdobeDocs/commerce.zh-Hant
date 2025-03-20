@@ -1,18 +1,20 @@
 ---
 title: 使用案例
-description: 瞭解如何使用Adobe Commerce as a Cloud Service完成實務使用案例和支援的業務案例。
+description: 瞭解如何使用 [!DNL Adobe Commerce as a Cloud Service]完成實際使用案例和支援的商業案例。
 role: User, Leader
-source-git-commit: 19c49b2b9d630898353addd778e062d3208505c1
+exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
+source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
 workflow-type: tm+mt
-source-wordcount: '1322'
+source-wordcount: '1310'
 ht-degree: 0%
 
 ---
 
-
 # 使用案例
 
-下列使用案例展示Adobe Commerce as a Cloud Service支援的核心功能和業務案例，讓您加速開發並推出具高度影響力的體驗。
+{{accs-early-access}}
+
+下列使用案例示範[!DNL Adobe Commerce as a Cloud Service]支援的核心功能和業務案例，可讓您加速開發並啟動高影響力的體驗。
 
 如果您遇到任何問題，請檢視[疑難排解](#troubleshooting)區段以取得指引。
 

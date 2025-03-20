@@ -1,18 +1,20 @@
 ---
 title: 共擔責任
-description: 瞭解您的Adobe Commerce as a Cloud Service專案中涉及的每一方的安全性責任。
+description: 瞭解您 [!DNL Adobe Commerce as a Cloud Service] 專案中各參與者的安全性責任。
 role: Admin, Architect, Leader
-source-git-commit: 19c49b2b9d630898353addd778e062d3208505c1
+exl-id: 424fe5cd-5d54-425d-97ce-024476d18dde
+source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '323'
 ht-degree: 0%
 
 ---
 
-
 # 共擔責任安全性與營運模式
 
-Adobe Commerce as a Cloud Service是隨選服務，仰賴共同責任的安全性和營運模式。 這些責任由Adobe和客戶共用。 各方對保護及營運Adobe Commerce應用程式均有不同的責任。
+{{accs-early-access}}
+
+[!DNL Adobe Commerce as a Cloud Service]是隨選服務，需仰賴共擔責任安全性與運作模型。 這些責任由Adobe和客戶共用。 各方對保護及營運Adobe Commerce應用程式均有不同的責任。
 
 >[!BEGINSHADEBOX]
 
@@ -33,8 +35,8 @@ Adobe Commerce as a Cloud Service是隨選服務，仰賴共同責任的安全�
 | 定義後端CDN WAF規則 | RA | |
 | 部署後端平台WAF規則 | RA | |
 | 部署後端CDN WAF規則 | RA | |
-| 修正Adobe Commerce as a Cloud Service中的核心錯誤 | RA | I |
-| 發行Adobe Commerce as a Cloud Service基礎結構修補程式 | RA | |
+| 修正[!DNL Adobe Commerce as a Cloud Service]中的核心錯誤 | RA | I |
+| 正在釋放[!DNL Adobe Commerce as a Cloud Service]個基礎結構修補程式 | RA | |
 | 擴充（基礎架構） | RA | |
 | 縮放（核心應用程式） | RA | |
 | 整合外部應用程式 | | RA |
