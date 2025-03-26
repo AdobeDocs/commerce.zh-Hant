@@ -3,9 +3,9 @@ title: 同步資料與SaaS資料匯出
 description: 瞭解 [!DNL SaaS Data Export] 如何在Adobe Commerce執行個體和連線的SaaS服務之間收集及同步資料。
 role: Admin, Developer
 exl-id: 2ca7c92a-fb52-4055-ae16-11e99b38d161
-source-git-commit: 55c433f36b122813e8fc9136a7efbb869246b7f5
+source-git-commit: 291babe5dbdabb7d626ae744335b94e44ba6a6f5
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '881'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,10 @@ SaaS資料匯出流程的主要元件包括：
 - SaaS資料匯出模組會從Adobe Commerce收集摘要資料、組合摘要專案、監聽更新，並保留摘要狀態。
 - SaaS匯出模組，可匯出資料、設定路由，以及將摘要發佈至連線的服務。
 - Adobe Commerce服務會管理資料擷取程式，以驗證傳入的摘要並保留連線服務的更新。
+
+>[備註！]
+>
+>為了確保順暢的排程並避免網站作業中斷，Adobe建議在開始任何資料摘要同步處理之前，先預估資料量和同步處理時間。 在計畫初始同步或大規模目錄更新（例如大量價格變更）時，此預估很重要。 如需詳細資訊，請參閱[估算資料同步處理的資料量和傳輸時間](estimate-data-volume-sync-time.md)
 
 ## 同步模式
 
