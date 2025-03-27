@@ -1,9 +1,10 @@
 ---
 title: '[!DNL Product Recommendations] Workspace'
 description: 瞭解如何設定、管理和監控產品推薦效能。
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: eaf1f0b2-9d9d-4069-8269-06f30166f788
+source-git-commit: 3d92f4afc3aef990f2e86e306f4c6c47324aed97
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '874'
 ht-degree: 0%
 
 ---
@@ -18,6 +19,19 @@ ht-degree: 0%
 
 ![Recommendations工作區](assets/workspace.png)
 _建議Workspace_
+
+## 資料彙集
+
+為確保工作區上的每個功能區域都包含正確的資料，您需要根據所選的店面實作來設定資料收集：
+
+1. Luma — 現成提供資料收集功能。
+1. Headless — 視店面實作而定，必須手動設定資料收集。
+
+如果您使用的是Headless店面，請參閱以下檔案以取得有關您需要新增的所需事件的詳細資訊：
+
+- [產品建議控制面板的必要事件](events.md)。
+- [需要新增為先決條件的Storefront事件收集器](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/)。
+- 事件結構的[範例](https://github.com/adobe/commerce-events/tree/main/examples)。
 
 ## 設定範圍
 

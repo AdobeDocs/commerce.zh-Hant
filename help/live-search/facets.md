@@ -1,9 +1,10 @@
 ---
 title: Facet
 description: '[!DNL Live Search]個Facet使用屬性值的多個維度做為搜尋條件。'
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: d036265e-1868-461d-ab4c-7f469b1c6f5b
+source-git-commit: 3d92f4afc3aef990f2e86e306f4c6c47324aed97
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '594'
 ht-degree: 0%
 
 ---
@@ -15,6 +16,8 @@ ht-degree: 0%
 [!DNL Live Search]使用`productSearch`查詢，該查詢會傳回Faceting和特定於[!DNL Live Search]的其他資料。 如需程式碼範例，請參閱開發人員檔案中的[`productSearch`查詢](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/)。
 
 ![篩選的搜尋結果](assets/storefront-search-results-run.png)
+
+在一個Facet中，購物者可以選取多個選項，例如「樣式」下的「基本」和「緊貼」，而搜尋結果會更新以僅顯示這些樣式。 同樣地，如果購物者選取Facet間的選項，例如「樣式」下的「基本」和「氣候」下的「室內」，搜尋結果會更新以顯示所選樣式和所選氣候。
 
 任何已定義的Facet都可以用作URL引數，而且會根據引數值篩選結果： `http://yourstore.com?brand=acme&color=red`。
 

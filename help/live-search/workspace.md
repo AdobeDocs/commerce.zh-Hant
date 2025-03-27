@@ -1,7 +1,8 @@
 ---
 title: 設定即時搜尋
 description: ' [!DNL Live Search] 工作區是用來設定、管理和監視搜尋效能。'
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 07c32b26-3fa4-4fae-afba-8a10866857c3
+source-git-commit: 3d92f4afc3aef990f2e86e306f4c6c47324aed97
 workflow-type: tm+mt
 source-wordcount: '1012'
 ht-degree: 0%
@@ -14,7 +15,7 @@ ht-degree: 0%
 
 ![Workspace](assets/workspace.png)
 
-## 資料收集
+## 資料彙集
 
 為確保工作區上的每個功能區域都包含正確的資料，您需要根據所選的店面實作來設定資料收集：
 
@@ -29,7 +30,7 @@ ht-degree: 0%
 
 ### 醫療保健客戶
 
-如果您是醫療保健客戶，且已安裝[Data Services HIPAA擴充功能](../data-connection/hipaa-readiness.md#installation) （屬於[Data Connection](../data-connection/overview.md)擴充功能的一部分），則不會再擷取[!DNL Live Search]使用的店面事件資料。 這是因為店面事件資料是在使用者端產生。 若要繼續擷取和傳送店面事件資料，請重新啟用[!DNL Live Search]的事件收集。 請參閱[一般組態](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general.html#data-services)以瞭解更多資訊。
+如果您是醫療保健客戶，且已安裝[Data Services HIPAA擴充功能](../data-connection/hipaa-readiness.md#installation) （屬於[Data Connection](../data-connection/overview.md)擴充功能的一部分），則不會再擷取[!DNL Live Search]使用的店面事件資料。 這是因為店面事件資料是在使用者端產生。 若要繼續擷取和傳送店面事件資料，請重新啟用[!DNL Live Search]的事件收集。 請參閱[一般組態](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services)以瞭解更多資訊。
 
 ## 設定範圍
 
