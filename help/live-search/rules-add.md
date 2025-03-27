@@ -1,9 +1,10 @@
 ---
 title: 新增規則
 description: 瞭解如何建立搜尋銷售規則。
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 7175ccf7-d838-43b0-a176-957e7db040e0
+source-git-commit: 449b281e46d16de56f4c3d2e01e7165c59ee78a2
 workflow-type: tm+mt
-source-wordcount: '1604'
+source-wordcount: '1650'
 ht-degree: 0%
 
 ---
@@ -151,6 +152,10 @@ ht-degree: 0%
    規則已新增至&#x200B;*規則*&#x200B;工作區中的清單。
 
 1. 雖然使用中的規則會立即生效，但您可能需要等候最多15分鐘，才能重新整理店面中的快取查詢結果。
+
+>[!NOTE]
+>
+>選取預設排序順序「排序依據：最相關」時，規則和手動排名產品會套用至搜尋結果。 如果購物者將排序順序變更為類似依名稱或價格排序，規則和手動排名將不再有效。
 
 ## 欄位說明
 

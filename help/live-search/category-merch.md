@@ -2,9 +2,10 @@
 title: 類別銷售
 description: 使用 [!DNL Live Search] 類別銷售，以獲得更快的購物體驗。
 gourl: ls_catalog_merchandising
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: b2645096-aafc-4d68-8adc-ab5410a9dfb6
+source-git-commit: e5e5443e0bdb12e4774856336157067b4ff6eb7c
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1101'
 ht-degree: 0%
 
 ---
@@ -140,3 +141,7 @@ ht-degree: 0%
 1. 在「手動排名」底下，按一下&#x200B;**選取事件**&#x200B;功能表，然後選擇符合相關條件時要發生的事件。
 1. 輸入您要影響的產品名稱。 建議您在輸入產品時一併輸入。
 1. 對於多個事件，選擇符合條件時要觸發的任何其他事件。
+
+>[!NOTE]
+>
+>在店面開啟特定類別且存在該類別的規則時，就會套用規則。 若為「類別銷售」規則，預設的排序順序為「排序依據：位置」。 如果購物者變更排序順序，則所有隱藏、釘選和隱藏的產品將不再排序。
