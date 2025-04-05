@@ -3,7 +3,7 @@ title: 開始使用 [!DNL Adobe Commerce as a Cloud Service]
 description: 瞭解如何開始使用 [!DNL Adobe Commerce as a Cloud Service]。
 role: Admin, Developer, User
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
-source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
+source-git-commit: a1b825a819b25d9374eef169c633d54fb94ee26c
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 0%
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce as a Cloud Service]執行個體使用信用型系統。 您可以建立多個執行個體，但每個執行個體都需要相對數量的學分。 您最初的退款金額取決於您的訂閱。
 
-1. 登入您的[Adobe Experience Cloud](https://experience-stage.adobe.com/)帳戶。
+1. 登入您的[Adobe Experience Cloud](https://experience.adobe.com/)帳戶。
 
 1. 在[!UICONTROL Quick access]底下，按一下&#x200B;[!UICONTROL **Commerce**]&#x200B;以開啟[!UICONTROL Commerce Cloud Manager]。
 
