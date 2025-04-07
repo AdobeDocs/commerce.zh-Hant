@@ -3,9 +3,9 @@ title: '[!DNL Live Search]發行說明'
 description: Adobe Commerce中 [!DNL Live Search] 的最新發行資訊。
 feature: Services, Search, Release Notes
 exl-id: 099cf79c-968c-4381-b66d-7f6141ad2db3
-source-git-commit: eb016fa8e53cfb9d035d73979495171feccb764f
+source-git-commit: 7dd7ebfae07351f32e781c61b3019b75b421287f
 workflow-type: tm+mt
-source-wordcount: '2186'
+source-wordcount: '2229'
 ht-degree: 0%
 
 ---
@@ -24,17 +24,21 @@ ht-degree: 0%
 
 這些附註會說明在版本設定發行之外發佈的更新，或託管服務的改進。
 
+_2025年4月3日_
+
+![修正](../assets/fix.svg)已更新SaaS Data Export擴充功能，針對B2B商家移除「產品必須指派至根類別」[限制](boundaries-limits.md#b2b-and-category-permissions)。 請參閱[管理資料匯出擴充功能](../data-export/manage-extension.md)，瞭解如何將SaaS Data Export擴充功能更新至103.4.0+版。
+
 _2025年2月20日_
 
 ![新](../assets/new.svg) Commerce支援多字同義字。 [深入瞭解](synonyms-type.md#multi-word-synonym-behavior)。 2月20日正式發行後，才能支援多字同義字。 任何現有的多字同義字都需要完整重新索引才能運作，您可以透過[建立支援票證](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)來要求這樣做。
 
 _2025年1月31日_
 
-![新](../assets/new.svg)測試環境中未查詢的目錄資料有新的資料保留原則。 [深入瞭解](overview.md#catalog-data-retention-policy)。
+![新](../assets/new.svg)測試環境中未查詢的目錄資料有新的資料保留原則。 [了解更多](overview.md#catalog-data-retention-policy)。
 
 _2024年9月19日_
 
-![新](../assets/new.svg)已發行支援三種新搜尋功能的測試版：分層、開頭為和包含。 [深入瞭解](install.md#install-the-live-search-beta)。
+![新](../assets/new.svg)已發行支援三種新搜尋功能的測試版：分層、開頭為和包含。 [了解更多](install.md#install-the-live-search-beta)。
 
 _2024年9月4日_
 
@@ -356,7 +360,7 @@ _2023年3月14日_
 
 [!BADGE 支援]{type="資訊性" tooltip="支援"}
 
-![新](../assets/new.svg) [效能](performance.md)報告儀表板提供購物者使用之搜尋字詞的深入分析。
+![新](../assets/new.svg) [效能](performance.md)報告儀表板可提供insight以供購物者使用搜尋字詞。
 ![新](../assets/new.svg) [!DNL Live Search] [店面事件SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/)提供對一般資料層的存取權，其中包含事件發佈和訂閱服務以及量度。
 ![修正](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md)具有控制可見性的`.search-autocomplete`容器的新`active`類別。
 ![修正](../assets/fix.svg)在店面中，[搜尋詞](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms)頁尾連結已移除，且已針對[!DNL Live Search]個安裝停用其快取。
