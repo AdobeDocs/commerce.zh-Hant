@@ -3,9 +3,9 @@ title: 開始使用 [!DNL Adobe Commerce as a Cloud Service]
 description: 瞭解如何開始使用 [!DNL Adobe Commerce as a Cloud Service]。
 role: Admin, Developer, User
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
-source-git-commit: a1b825a819b25d9374eef169c633d54fb94ee26c
+source-git-commit: 9b90e6f79a394ec0941c9e48aee3859f0bcdedd5
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,10 @@ ht-degree: 0%
 >[!ENDTABS]
 
 ## 建立執行個體
+
+>[!NOTE]
+>
+>在您建立執行個體之前，您組織的產品管理員或系統管理員必須將您新增為[!DNL Adobe Commerce as a Cloud Service]產品的使用者。 如需詳細資訊，請參閱[新增使用者和管理員](./user-management.md#add-users-and-admins)。
 
 [!DNL Adobe Commerce as a Cloud Service]執行個體使用信用型系統。 您可以建立多個執行個體，但每個執行個體都需要相對數量的學分。 您最初的退款金額取決於您的訂閱。
 
