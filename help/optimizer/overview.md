@@ -3,9 +3,10 @@ title: '[!DNL Adobe Commerce Optimizer]'
 description: 瞭解如何使用 [!DNL Adobe Commerce Optimizer] 透過可擴充的目錄提供快速、高效能的店面，讓您透過增加流量和推動更高的參與度和轉換率，最佳化現有的電子商務後端。
 hide: true
 recommendations: noCatalog
-source-git-commit: 6dd95d5c01bbe217decf3ee48a8ab2cee6167f47
+exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
+source-git-commit: 67a9d89a6f50818cdef0108c66e6c8dcb76bb29c
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: '777'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-如果您想要參與[!DNL Adobe Commerce Optimizer]搶先存取計畫，請傳送電子郵件要求給[commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com)。
+如果您有興趣進一步瞭解[!DNL Adobe Commerce Optimizer]搶先存取方案，請完成[搶先存取申請表](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4WOxhjY2doZPikS2hIbfmL5UMlhTMTYzVDhPQVFNTUFYUjJHNlRKTE5TWS4u)。
 
 >[!ENDSHADEBOX]
 
