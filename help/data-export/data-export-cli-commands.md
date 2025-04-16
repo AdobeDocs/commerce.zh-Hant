@@ -2,9 +2,9 @@
 title: 使用Commerce CLI同步摘要
 description: 瞭解如何使用命令列介面命令來管理Adobe Commerce SaaS服務 [!DNL data export extension] 的摘要和程式。
 exl-id: 1ebee09e-e647-4205-b90c-d0f9d2cac963
-source-git-commit: 086a571b69e8ad76a912c339895409b0037642b9
+source-git-commit: 6f578dfaf3d3e77d7b541714de613025b8c789a4
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
@@ -66,30 +66,33 @@ bin/magento saas:resync --help
 
 ## `--by-ids`
 
-依其ID部分重新同步特定實體。 支援`products`、`productAttributes`和`productOverrides`摘要。
+依其ID部分重新同步特定實體。 支援`products`、`productAttributes`、`productOverrides`、`inventoryStockStatus`、`prices`、`variants`和`categoryPermissions`摘要。
 
-依預設，實體是由產品SKU指定的。 使用`--id-type=ProductID`以改用產品ID。
+依預設，實體是以逗號分隔的清單依產品SKU指定。 若要改用產品ID，請新增`--id-type=ProductID`選項。
 
 **範例：**
 
 ```shell
-bin/magento saas:resync --feed='<FEED_NAME>' --by-ids='<SKU-1>,<SKU-2>,<SKU-3>'
+bin/magento saas:resync --feed products --by-ids='ADB102,ADB111,ADB112'
 
-bin/magento saas:resync --feed='<FEED_NAME>' --by-ids='<ID-1>,<ID-2>,<ID-3>' --id-type='productId'
+bin/magento saas:resync --feed= products --by-ids='1,2,3' --id-type='productId'
 ```
+
 
 ## `--cleanup-feed`
 
-在重新索引並將資料傳送到SaaS之前，先清理摘要索引器表格。 僅支援`products`、`productOverrides`和`prices`摘要。
+在重新索引和將資料傳送到SaaS之前，先清理摘要索引器表格中的摘要索引子。 僅支援`products`、`productAttributes`、`productOverrides`、`inventoryStockStatus`、`prices`、`variants`和`categoryPermissions`。
+
+如果與`--dry-run`選項搭配使用，該作業會針對所有專案執行試執行重新同步作業。
 
 >[!IMPORTANT]
 >
->僅在環境清理後使用。 可能會導致Commerce Services出現資料同步問題。
+>僅在環境清理後使用，或搭配`--dry-run`選項使用。 如果用於其他情況，清理操作會導致資料遺失和資料同步問題，其中必須刪除的Adobe Commerce專案將不會從SaaS資料空間刪除。
 
 **範例：**
 
 ```shell
-bin/magento saas:resync --feed='<FEED_NAME>' --cleanup-feed
+bin/magento saas:resync --feed products --cleanup-feed
 ```
 
 ## `--continue-resync`
@@ -99,19 +102,39 @@ bin/magento saas:resync --feed='<FEED_NAME>' --cleanup-feed
 **範例：**
 
 ```shell
-bin/magento saas:resync --feed='<FEED_NAME>' --continue-resync
+bin/magento saas:resync --feed productAttributes --continue-resync
 ```
 
 ## `--dry-run`
 
-執行摘要重新索引程式，而不提交至SaaS或儲存至摘要表格。 使用驗證資料。
+執行摘要重新索引程式，而不將摘要提交至SaaS且不儲存至摘要表格。 此選項對於識別資料集的任何問題很有用。
 
 新增`EXPORTER_EXTENDED_LOG=1`環境變數以將裝載儲存至`var/log/saas-export.log`。
 
 **範例：**
 
 ```shell
-EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed='<FEED_NAME>' --dry-run
+EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed products --dry-run
+```
+
+### 測試特定摘要專案
+
+將`--by-ids`選項與擴充的記錄集合一起新增，以測試特定的摘要專案，在`var/log/saas-export.log`檔案中檢視產生的裝載。
+
+**範例：**
+
+```shell
+EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed products --dry-run --by-ids='1,2,3'
+```
+
+### 測試所有摘要專案
+
+依預設，在`resync --dry-run`作業期間提交的摘要僅包含新專案，或先前無法匯出的專案。 若要在要處理的摘要中包含所有專案，請使用`--cleanup-feed`選項。
+
+**範例**
+
+```shell
+bin/magento saas:resync --feed products --dry-run --cleanup-feed
 ```
 
 ## `--feed`
@@ -135,7 +158,7 @@ EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed='<FEED_NAME>' --dry-run
 **範例：**
 
 ```shell
-bin/magento saas:resync --feed='<FEED_NAME>'
+bin/magento saas:resync --feed products
 ```
 
 ## `--no-reindex`
@@ -150,8 +173,18 @@ bin/magento saas:resync --feed='<FEED_NAME>'
 **範例：**
 
 ```shell
-bin/magento saas:resync --feed='<FEED_NAME>' --no-reindex
+bin/magento saas:resync --feed productAttributes --no-reindex
 ```
+
+## `--id-type=ProductId`
+
+依照預設，當您使用包含`--by-ids`選項的`saas:resync feed`命令時所指定的實體是由產品SKU所指定。 使用`--id-type=ProductId`選項，依產品ID指定實體。
+
+```shell
+bin/magento saas:resync --feed products --by-ids='1,2,3' --id-type='productId'
+```
+
+**範例：**
 
 ## 疑難排解
 
