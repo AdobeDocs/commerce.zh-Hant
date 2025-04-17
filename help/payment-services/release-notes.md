@@ -3,9 +3,9 @@ title: '[!DNL Payment Services]發行說明'
 description: 檢閱發行說明，瞭解所有 [!DNL Payment Services] 發行版本的相關資訊。
 feature: Payments, Release Notes
 exl-id: 1d24ae27-4a57-4482-a36b-22bbcaaa1b6f
-source-git-commit: 0098e5bab2ea72f9abd7c846d49d5ee4d523ad73
+source-git-commit: 359143c4f48ff911d6dbe9105f364615525fab8c
 workflow-type: tm+mt
-source-wordcount: '3681'
+source-wordcount: '3971'
 ht-degree: 0%
 
 ---
@@ -90,11 +90,15 @@ _2021年6月28日_
 
 +++
 
+>[!NOTE]
+>
+> 經常發行以視需要提供新功能和修正。 發行排程未修正。
+
 ## v2.11.1
 
 _2025年3月14日_
 
-[!BADGE 支援]{type=Informative tooltip="支援"}
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
 ![已修正問題](../assets/fix.svg)<!-- PAY-5849 -->已修正簽出期間影響[條列專案](line-items.md)的問題。 現在，[!DNL Payment Services]已改善&#x200B;**條列專案**&#x200B;的結帳程式可靠性。 如果您遇到類似問題，請連絡您的[!DNL Payment Services]銷售代表以尋求協助。
 
@@ -102,7 +106,7 @@ _2025年3月14日_
 
 _2025年3月13日_
 
-[!BADGE 支援]{type=Informative tooltip="支援"}
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
 
 ![新增](../assets/new.svg)<!-- PAY-5938 -->現在，[!DNL Payment Services]可讓商家管理付款設定，以最大化其業務的彈性。 此版本改善為商家支援的地區和品牌附加[多個PayPal帳戶](https://experienceleague.adobe.com/en/docs/commerce/payment-services/configure/settings#use-multiple-paypal-accounts)的能力。 我們的銷售團隊可提供入門連結，以設定您的網站和商店檢視範圍。
@@ -129,7 +133,7 @@ _2025年3月13日_
 
 _2025年2月24日_
 
-[!BADGE 支援]{type=Informative tooltip="支援"}
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
 ![已修正問題](../assets/fix.svg)<!-- PAY-xxxx -->已改善整體穩定性和效能。
 
@@ -139,7 +143,7 @@ _2025年2月24日_
 
 _2025年2月21日_
 
-[!BADGE 支援]{type=Informative tooltip="支援"}
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
 ![已知問題](../assets/bug.svg)<!-- PAY-xxxx -->包含可能影響穩定性和效能的重大錯誤。 Adobe建議升級至v2.10.3，而不要使用此版本(v2.10.2)。
 
@@ -147,7 +151,7 @@ _2025年2月21日_
 
 _2025年2月5日_
 
-[!BADGE 支援]{type=Informative tooltip="支援"}
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
 ![新](../assets/new.svg)<!-- PAY-5813 -->已新增對Adobe Commerce 2.4.8和PHP 8.4的支援。
 
@@ -155,7 +159,7 @@ _2025年2月5日_
 
 _2024年12月13日_
 
-[!BADGE 支援]{type=Informative tooltip="支援"}
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
 ![新增](../assets/new.svg)<!-- PAY-5873 --> [!DNL Payment Services]現在支援適用於Adobe Commerce ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/)的[Edge Delivery Services店面中的[[!DNL Payment Services] 放置元件](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/payment-services/)。
 
@@ -175,7 +179,7 @@ _2024年12月13日_
 
 _2024年11月7日_
 
-[!BADGE 支援]{type=Informative tooltip="支援"}
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
 ![新增](../assets/new.svg)<!-- PAY-5629 --> [!DNL Payment Services]現在支援Apple Pay **的**&#x200B;升級SDK URL，改善使用Apple Pay的商家整合。 此功能與macOS 14和更新版本相容，執行舊版macOS的裝置將不會顯示此功能。
 
@@ -193,7 +197,7 @@ _2024年11月7日_
 
 _2024年9月13日_
 
-[!BADGE 支援]{type=Informative tooltip="支援"}
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
 ![修正](../assets/fix.svg)<!-- PAY-5644 -->修正在[!DNL Payment Services]中使用多個範圍時，SDK引數快取的問題。 現在會針對每個範圍分別快取SDK設定，而非使用單一索引鍵。 這樣可確保每個範圍的快取獨立失效，進而在管理多個範圍時提高可靠性。
 
@@ -201,7 +205,7 @@ _2024年9月13日_
 
 _2024年9月13日_
 
-[!BADGE 支援]{type=Informative tooltip="支援"}
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
 ![新增](../assets/new.svg)<!-- PAY-5499 --> 在Adobe Commerce中輸入[追蹤號碼](track-shipment.md)時，[!DNL Payment Services]現在支援傳送追蹤號碼資訊至PayPal。
 
@@ -215,7 +219,7 @@ _2024年9月13日_
 
 _2024年8月2日_
 
-[!BADGE 支援]{type=Informative tooltip="支援"}
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
 ![新增](../assets/new.svg)<!-- PAY-4844 --> [!DNL Payment Services]現在支援訂單層級](https://experienceleague.adobe.com/en/docs/commerce/payment-services/payments-checkout/manage/line-items)的[條列專案資料。 此功能可讓商家檢視訂單中專案的詳細資訊，例如產品詳細資料、數量及價格（包括銷售稅、折扣及其他相關資訊）。
 
@@ -235,7 +239,7 @@ _2024年8月2日_
 
 _2024年6月4日_
 
-[!BADGE 支援]{type=Informative tooltip="支援"}
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
 ![新的](../assets/new.svg)<!-- PAY-4877 -->現在，[!DNL Payment Services]支援[L2/L3定價功能](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/levels-card-payment-transactions.html)。 此功能僅適用於已啟用IC++定價的[!DNL Payment Services]客戶。 如果您想要使用L2/L3處理[!DNL Payment Services]的資料，請連絡您的[!DNL Payment Services]帳戶管理員。
 
@@ -245,7 +249,7 @@ _2024年6月4日_
 
 _2024年4月23日_
 
-[!BADGE 支援]{type=Informative tooltip="支援"}
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
 ![修正](../assets/fix.svg)<!-- Issue PAY-5396 -->[!DNL Payment Services]現在支援Adobe Commerce 2.4.7或更新版本中`--db-prefix`引數](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/advanced#install-from-the-command-line)的[Adobe Commerce准則。
 
@@ -253,7 +257,7 @@ _2024年4月23日_
 
 _2024年4月16日_
 
-[!BADGE 支援]{type=Informative tooltip="支援"}
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
 ![修正](../assets/fix.svg)<!-- Issue PAY-5106 -->修正在PayPal與Adobe Commerce之間結帳時，不正確填入訂單金額總計的問題。 現在，商家可以在下訂單時確保訂單金額總計正確無誤。
 
@@ -261,7 +265,7 @@ _2024年4月16日_
 
 _2024年4月11日_
 
-[!BADGE 支援]{type=Informative tooltip="支援"}
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
 ![新](../assets/new.svg)<!-- Issue xxx -->已新增對Adobe Commerce 2.4.7的支援。
 
@@ -269,7 +273,7 @@ _2024年4月11日_
 
 _2024年4月4日_
 
-[!BADGE 支援]{type=Informative tooltip="支援"}
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
 ![修正](../assets/fix.svg)<!-- PAY-5322 -->已修正較新Adobe Commerce發行版本的PCI相容性問題。 現在，[!DNL Payment Services]已改編為Adobe Commerce中的付款選項結帳要求。
 
@@ -279,7 +283,7 @@ _2024年4月4日_
 
 _2024年3月20日_
 
-[!BADGE 支援]{type=Informative tooltip="支援"}
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
 ![新的](../assets/new.svg)<!-- PAY-4868 -->商戶可透過管理員成功[設定Google Pay的整個購買體驗](https://experienceleague.adobe.com/docs/commerce/payment-services/payments-checkout/payments-options.html)，類似於[!DNL Payment Services]中的其他付款按鈕。
 
@@ -293,7 +297,7 @@ _2024年3月20日_
 
 _2024年3月1日_
 
-[!BADGE 支援]{type=Informative tooltip="支援"}
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
 ![新](../assets/new.svg)<!-- PAY-5244 -->修正非同步簽出相容性。
 
@@ -303,7 +307,7 @@ _2024年3月1日_
 
 _2024年2月14日_
 
-[!BADGE 支援]{type=Informative tooltip="支援"}
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
 ![新](../assets/new.svg)<!-- PAY-5048 -->已新增對PHP 8.3的支援
 
@@ -313,7 +317,7 @@ _2024年2月14日_
 
 _2024年1月26日_
 
-[!BADGE 支援]{type=Informative tooltip="支援"}
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
 ![修正](../assets/fix.svg)<!-- PAY-5183 -->已修正REST/GraphQL效能問題。 現在，透過API擷取時，信用卡按鈕會呈現。
 
@@ -321,7 +325,7 @@ _2024年1月26日_
 
 _2023年12月7日_
 
-[!BADGE 支援]{type=Informative tooltip="支援"}
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
 ![新增](../assets/new.svg)<!-- PAY-5047 -->現在可從下列位置取得信用/扣帳卡品牌或付款方式型別：
 
@@ -333,7 +337,7 @@ _2023年12月7日_
 
 _2023年12月1日_
 
-[!BADGE 支援]{type=Informative tooltip="支援"}
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
 ![新增](../assets/new.svg)<!-- PAY-4381 --> [付款服務現在支援GraphQL整合](https://developer.adobe.com/commerce/webapi/graphql/payment-services/)。 透過GraphQL對PayPal付款按鈕、託管欄位和Apple Pay的支援，[!DNL Payment Services]現在可支援Headless Commerce設定。
 
@@ -341,7 +345,7 @@ _2023年12月1日_
 
 _2023年9月27日_
 
-[!BADGE 支援]{type=Informative tooltip="支援"}
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
 ![修正問題](../assets/fix.svg)<!-- Issue PAY-4870 -->修正傳送具有最新版本的擴充功能版本時，Storefront中新標題屬性填入錯誤的問題。 之前，隨著Commerce服務聯結器的`1.3.0`發行，您無法從[!DNL Payment Services]擴充功能擴充`User-Agent header`。
 
@@ -349,7 +353,7 @@ _2023年9月27日_
 
 _2023年8月30日_
 
-[!BADGE 支援]{type=Informative tooltip="支援"}
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
 ![New](../assets/new.svg)<!-- PAY-4638 -->已新增與Signifyd](https://experienceleague.adobe.com/docs/commerce/payment-services/security-compliance/fraud-protection.html)的[整合，此整合提供自動化的詐騙防護服務。
 
@@ -365,7 +369,7 @@ _2023年8月30日_
 
 _2023年6月9日_
 
-[!BADGE 支援]{type=Informative tooltip="支援"}
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
 ![新](../assets/new.svg)<!-- Issue xxx -->已新增對Adobe Commerce 2.4.7-beta1的支援。
 
@@ -381,7 +385,7 @@ _2023年6月9日_
 
 _2023年3月10日_
 
-[!BADGE 支援]{type=Informative tooltip="支援"}
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
 ![新](../assets/new.svg)<!-- Issue PAY-4152 -->已新增對PHP 8.2和Adobe Commerce 2.4.6的支援。與PHP 7.x不相容。
 
@@ -389,7 +393,7 @@ _2023年3月10日_
 
 _2023年3月10日_
 
-[!BADGE 支援]{type=Informative tooltip="支援"}
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
 ![修正](../assets/fix.svg)<!-- Issue PAY-4226 -->修正新[!DNL Payment Services]商家無法在Admin中使用簽出功能的問題。[!DNL Payment Services]先前曾使用Commerce客戶ID，新客戶不存在此ID。
 
@@ -401,7 +405,7 @@ _2023年3月10日_
 
 _2023年2月17日_
 
-[!BADGE 支援]{type=Informative tooltip="支援"}
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.0或更新版本
 
 ![新](../assets/new.svg)<!-- Issue PAY-3540 -->已針對在歐盟(EU)及英國](security.md#3ds)進行交易的商戶新增[PCI 3DS法規遵循功能。 此額外的安全性層級要求購買者必須向其信用卡簽發者進行驗證，有助於防止線上詐騙，並且是歐盟(EU)法規要求的一部分。
 
@@ -411,7 +415,7 @@ _2023年2月17日_
 
 _2023年1月29日_
 
-[!BADGE 支援]{type=Informative tooltip="支援"}
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.0或更新版本
 
 ![已修正問題](../assets/fix.svg)<!-- Issue PAY-4110 -->修正買家無法使用產品頁面、迷你購物車及購物車上的付款按鈕下單的問題。 買家現在可以成功完成訂單。
 
@@ -419,7 +423,7 @@ _2023年1月29日_
 
 _2023年1月25日_
 
-[!BADGE 支援]{type=Informative tooltip="支援"}
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.0或更新版本
 
 ![已修正問題](../assets/fix.svg)<!-- Issue PAY-4102 -->已發佈回溯不相容已知問題的修正。 此發行版本會將服務ID延伸版本鎖定至最新穩定版本，這會重新啟用新的[!DNL Payment Services]安裝以設定Commerce Services。
 
@@ -427,7 +431,7 @@ _2023年1月25日_
 
 _2022年12月22日_
 
-[!BADGE 支援]{type=Informative tooltip="支援"}
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.0或更新版本
 
 ![已修正問題](../assets/fix.svg)<!-- Issue PAY-3992 -->已改善拒絕付款方式時[!DNL Payment Services]中的開立商業發票。
 
@@ -437,7 +441,7 @@ _2022年12月22日_
 
 _2022年11月23日_
 
-[!BADGE 支援]{type=Informative tooltip="支援"}
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.0或更新版本
 
 ![新](../assets/new.svg)<!-- Issue PAY-3923 -->[!DNL Payment Services]現在包含使用者代理程式標題中的版本號碼，以便要求可以追蹤、篩選或淘汰未使用的端點。
 
@@ -447,7 +451,7 @@ _2022年11月23日_
 
 _2022年11月18日_
 
-[!BADGE 支援]{type=Informative tooltip="支援"}
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.0或更新版本
 
 ![新](../assets/new.svg)<!-- Issue PAY-3880 -->購物者現在可以在結帳時[儲存其信用卡資訊](https://experienceleague.adobe.com/docs/commerce/payment-services/payments-checkout/vaulting.html)，以便稍後為相同商家帳戶內的相同或其他商店購買。
 
@@ -457,7 +461,7 @@ _2022年11月18日_
 
 _2022年10月14日_
 
-[!BADGE 支援]{type=Informative tooltip="支援"}
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.0或更新版本
 
 ![修正](../assets/fix.svg)<!-- Issue PAY-3766 -->當客戶的付款方式遭到拒絕時，可見的錯誤訊息更具描述性。 它建議客戶重新輸入付款資訊，然後再試一次、嘗試其他付款方式，或就拒絕的交易聯絡其銀行。
 
@@ -465,7 +469,7 @@ _2022年10月14日_
 
 _2022年9月30日_
 
-[!BADGE 支援]{type=Informative tooltip="支援"}
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.0或更新版本
 
 ![新](../assets/new.svg)<!-- Issue PAY-784 -->[!DNL Payment Services]現在包含設定商家帳戶以[使用多個PayPal企業帳戶](https://experienceleague.adobe.com/docs/commerce/payment-services/configure/settings.html#use-multiple-paypal-accounts)的功能。 這可讓商家使用不同的貨幣在多個國家經營您的商店，或是將Adobe Commerce用於您的一部分業務。
 
@@ -479,7 +483,7 @@ _2022年9月30日_
 
 _2022年9月6日_
 
-[!BADGE 支援]{type=Informative tooltip="支援"}
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.0或更新版本
 
 ![已修正問題](../assets/fix.svg)<!-- Issue PAY-3663 -->現在，當商戶的商店擷取授權為非全域貨幣的訂單時，擷取處理作業會完成，且不會顯示任何錯誤。
 
@@ -487,7 +491,7 @@ _2022年9月6日_
 
 _2022年8月9日_
 
-[!BADGE 支援]{type=Informative tooltip="支援"}
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.0或更新版本
 
 ![新的](../assets/new.svg)<!-- Issue PAY-XX -->一般可用性版本 — [!DNL Payment Services]現在[由 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 版本2.4.0到2.4.5](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)支援。
 
@@ -497,7 +501,7 @@ _2022年8月9日_
 
 _2022年6月29日_
 
-[!BADGE 支援]{type=Informative tooltip="支援"}
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.0或更新版本
 
 ![已知問題](../assets/bug.svg)<!-- Issue PAY-x --> Apple Pay與行動裝置和桌上型電腦上的Safari瀏覽器v15.5不相容。 使用Safari 15.5版時，您無法透過Apple Pay完成結帳。
 
@@ -515,7 +519,7 @@ _2022年6月29日_
 
 _2022年3月31日_
 
-[!BADGE 支援]{type=Informative tooltip="支援"}
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.0或更新版本
 
 ![新的](../assets/new.svg)<!-- Issue PAY-2127 -->一般可用性版本 — [!DNL Payment Services]現在[由 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 版本2.4.0到2.4.4](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)支援。
 
@@ -543,7 +547,7 @@ _2022年3月31日_
 
 _2021年11月29日_
 
-[!BADGE 支援]{type=Informative tooltip="支援"}
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.0或更新版本
 
 ![新的](../assets/new.svg)<!-- Issue PAY-2127 -->一般可用性版本 — [[!DNL Payment Services]](https://commercemarketplace.adobe.com/magento-payment-services.html)現在由[!DNL Adobe Commerce]和[!DNL Magento Open Source]版本2.4.0到2.4.3-p1支援。
 
