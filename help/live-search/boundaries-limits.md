@@ -3,9 +3,9 @@ title: 邊界和限制
 description: 瞭解 [!DNL Live Search] 的界限和限制，以確保其符合您的業務需求。
 role: Admin, Developer
 exl-id: 28b8d98f-0784-4c4d-b382-81c01838e0de
-source-git-commit: 7dd7ebfae07351f32e781c61b3019b75b421287f
+source-git-commit: eaea7d847be04956299a80ba3bccd90be527c482
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 - [層級定價](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier)在[!DNL Live Search]欄位和產品清單頁面Widget中不受支援。
 - 產品價格不含增值稅(VAT)。
 - 不支援內容搜尋(CMS頁面和區塊)。
-- 可分頁的產品上限為10,000件。 雖然此限制可以增加，但會影響效能。 若類別或搜尋結果中有大量產品，請務必提供有意義的產品篩選方式，讓購物者不必使用深層分頁。
+- 可分頁的結果數量上限為10,000。 為了確保購物者在類別或搜尋結果包含大量產品時不必使用深層分頁，請提供有意義的方式來篩選產品。
 - 每個屬性有1MB的硬性限制，包括說明和自訂屬性。
 - 搜尋配接卡不支援使用自訂來源模型建立並當作Facet使用的產品屬性。 若要支援此功能，您必須使用[產品清單頁面Widget](plp-styling.md)。
 - 不支援自訂產品型別。
