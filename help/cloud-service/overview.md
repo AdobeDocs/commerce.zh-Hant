@@ -4,9 +4,9 @@ description: 瞭解 [!DNL Adobe Commerce as a Cloud Service]的主要功能和�
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Architect, Developer, User
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-source-git-commit: 25a0d658776ea95fcae07f6390abeeb559642613
+source-git-commit: 4cd5847eee52ff43e2fae27080a5971ceb939875
 workflow-type: tm+mt
-source-wordcount: '1496'
+source-wordcount: '1475'
 ht-degree: 0%
 
 ---
@@ -148,6 +148,5 @@ Commerce Foundation提供安全的自動化託管平台和自助服務功能，�
 | [內容暫存](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging) | [目錄服務](../catalog-service/overview.md) | 藍圖 | 繫結至Adobe Experience Platform的目錄管理工具，可管理大型目錄。 |
 | [頁面產生器](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/guide-overview) | [Commerce店面](https://www.aem.live/) | 可用 | 基本的CMS可讓使用者使用檔案式撰寫輕鬆建立和管理檔案和網站內容。 此外，通用編輯器也允許跨多個平台進行更進階的內容管理和自訂。 |
 | [付款](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/payments) | [Adobe Commerce的付款服務](../payment-services/overview.md) | 可用 | 整合的支付服務，可促進安全且有效率的交易。 |
-| [共用的目錄](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared) | [價格索引服務](../price-index/price-indexing.md) | 藍圖 | 分析定價資料，並根據各種因素建議產品的最佳定價策略。 |
 | [URL重寫](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite) | [Commerce店面](https://www.aem.live/) | 可用 | 基本的CMS可讓使用者使用檔案式撰寫輕鬆建立和管理檔案和網站內容。 此外，通用編輯器也允許跨多個平台進行更進階的內容管理和自訂。 |
 | [Visual Merchandiser](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/merchandising/visual-merch/visual-merchandiser) | [目錄服務](../catalog-service/overview.md) | 藍圖 | 繫結至Adobe Experience Platform的目錄管理工具，可管理大型目錄。 |
