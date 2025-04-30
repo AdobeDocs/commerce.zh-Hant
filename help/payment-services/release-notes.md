@@ -3,9 +3,9 @@ title: '[!DNL Payment Services]發行說明'
 description: 檢閱發行說明，瞭解所有 [!DNL Payment Services] 發行版本的相關資訊。
 feature: Payments, Release Notes
 exl-id: 1d24ae27-4a57-4482-a36b-22bbcaaa1b6f
-source-git-commit: 359143c4f48ff911d6dbe9105f364615525fab8c
+source-git-commit: eb2e99dc3a0dbe1e27524c554886a57a4c8a1c30
 workflow-type: tm+mt
-source-wordcount: '3971'
+source-wordcount: '3986'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,10 @@ ht-degree: 0%
 這些發行說明說明說明所發生的功能變更和修正，這些變更和修正是在託管服務的定期功能發行之外發行的。
 
 +++託管服務更新
+
+_2025年4月25日_
+
+![新問題](../assets/new.svg)<!-- Issue PAY-6051 -->現在，[!DNL Payment Services]儀表板會顯示目前的擴充功能版本和儀表板版本。
 
 _2024年8月30日_
 
