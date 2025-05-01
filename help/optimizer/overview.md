@@ -4,14 +4,18 @@ description: 瞭解如何使用 [!DNL Adobe Commerce Optimizer] 透過可擴充�
 hide: true
 recommendations: noCatalog
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: 67a9d89a6f50818cdef0108c66e6c8dcb76bb29c
+source-git-commit: 425c801a852de566120504563e256b0351df588e
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '806'
 ht-degree: 0%
 
 ---
 
 # 什麼是[!DNL Adobe Commerce Optimizer]？
+
+>[!NOTE]
+>
+>本檔案說明提早存取開發中的產品，並未反映所有可供一般使用的功能。
 
 [!DNL Adobe Commerce Optimizer]透過高效能店面來強化您的電子商務體驗，提升自然流量、客戶參與度和收入。
 
@@ -39,7 +43,7 @@ ht-degree: 0%
 
 - 想要維持現有後端商業系統並只轉換店面體驗的商家。
 - 由協力廠商系統管理購物車和結帳生命週期的企業。
-- 目前未使用Adobe Commerce的AEM客戶，正在尋找管理其產品目錄的簡單方法。
+- AEM客戶，需要透過協力廠商商務引擎以簡單的方式管理其產品目錄。
 
 ## 快速導覽
 
@@ -49,7 +53,7 @@ ht-degree: 0%
 >
 >此影像是[!DNL Adobe Commerce Optimizer]可能外觀的範例，可能會有所變更。
 
-![[!DNL Adobe Commerce Optimizer] UI](assets/user-interface.png)
+![[!DNL Adobe Commerce Optimizer] UI](./assets/user-interface.png)
 
 >[!BEGINTABS]
 
@@ -84,9 +88,9 @@ ht-degree: 0%
 
 主要功能包括：
 
-- **協力廠商目錄擷取** — 從任何協力廠商來源（PIM、ERP等）擷取目錄資料。 您的目錄資料會直接內嵌到銷售服務層中，這是一個SaaS元件，稱為「銷售服務」，由管道和原則（管道和原則）提供支援。
-- **由管道和原則支援的銷售服務** — 此解決方案是[!DNL Adobe Commerce Optimizer]的基礎。 由管道和原則支援的銷售服務是一種高度可擴充、彈性的目錄資料模型，可開啟多品牌、多業務單位和多語言使用案例。 這些銷售服務提供建構元素，商家可以利用建構元素來大規模建立和管理目錄。 在[!DNL Adobe Commerce Optimizer]內，您可以建立最能定義您業務目標的管道和原則來管理您的目錄。 此外，銷售商可提供個人化體驗，使用產品探索&#x200B;、產品推薦&#x200B;和智慧型銷售來促進流量和參與。 深入瞭解[由管道和原則支援的銷售服務](https://experienceleague.adobe.com/en/docs/commerce/merchandising-services/overview)。
-- **成功量度** — 提供商務方案效能的即時深入分析。 您可以檢視特定KPI的結果之前和之後，並評估變更的影響和最佳化以獲得更好的結果。
+- **協力廠商目錄擷取** — 從任何協力廠商來源(您現有的Commerce目錄、PIM、ERP等)擷取目錄資料。 您的目錄資料會直接內嵌到銷售服務層中，這是一個SaaS元件，稱為「銷售服務」，由管道和原則（管道和原則）提供支援。
+- **由管道和原則支援的銷售服務** — 此解決方案是[!DNL Adobe Commerce Optimizer]的基礎。 由管道和原則支援的銷售服務是一種高度可擴充、彈性的目錄資料模型，可開啟多品牌、多業務單位和多語言使用案例。 這些銷售服務提供建構元素，商家可以利用建構元素來大規模建立和管理目錄。 在[!DNL Adobe Commerce Optimizer]內，您可以建立最能定義您業務目標的管道和原則來管理您的目錄。 此外，銷售商可提供個人化體驗，使用產品探索&#x200B;、產品推薦&#x200B;和智慧型銷售來促進流量和參與。 深入瞭解[由管道和原則支援的銷售服務](./merchandising/overview.md)。
+- **之前和之後的量度(PDF)** — 提供您商業方案效能的即時深入分析。 您可以檢視特定KPI的結果之前和之後，並評估變更的影響和最佳化以獲得更好的結果。 結果會在PDF中傳遞。
 - **由Edge Delivery提供支援的Commerce店面** — 透過Edge傳送，您可以使用具有整合式商務功能的預先建立店面元件來快速啟動您的網站 — 包括產品清單頁面、產品詳細資料頁面、購物車和結帳。
 - **第三方購物車和結帳** — 使用API網狀和App Builder來整合第三方購物車和結帳系統。
 
@@ -94,4 +98,4 @@ ht-degree: 0%
 
 下圖說明[!DNL Adobe Commerce Optimizer]的基本架構，從目錄資料擷取到銷售服務、您的店面之間的關係，以及與協力廠商購物車和結帳程式的整合。
 
-![[!DNL Adobe Commerce Optimizer]架構](assets/architecture.png)
+![[!DNL Adobe Commerce Optimizer]架構](./assets/architecture.png)
