@@ -2,9 +2,9 @@
 title: 使用Commerce CLI同步摘要
 description: 瞭解如何使用命令列介面命令來管理Adobe Commerce SaaS服務 [!DNL data export extension] 的摘要和程式。
 exl-id: 1ebee09e-e647-4205-b90c-d0f9d2cac963
-source-git-commit: 6f578dfaf3d3e77d7b541714de613025b8c789a4
+source-git-commit: 8233b2e184c8af293ffc41cb22e085388cf18049
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '507'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 Adobe不建議定期使用`saas:resync`命令。 使用指令的典型情況如下：
 
 - 初始同步
-- 變更[SaaS資料空間ID](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/config/services/saas)後，將資料同步處理至新資料空間
+- 變更[SaaS資料空間ID](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas)後，將資料同步處理至新的資料空間
 - 疑難排解
 
 監視`var/log/saas-export.log`檔案中的同步作業。
@@ -68,7 +68,7 @@ bin/magento saas:resync --help
 
 依其ID部分重新同步特定實體。 支援`products`、`productAttributes`、`productOverrides`、`inventoryStockStatus`、`prices`、`variants`和`categoryPermissions`摘要。
 
-依預設，實體是以逗號分隔的清單依產品SKU指定。 若要改用產品ID，請新增`--id-type=ProductID`選項。
+依預設，當您使用`--by-ids`選項時，您會使用產品SKU值來指定值。 若要改用產品ID，請新增`--id-type=ProductID`選項。
 
 **範例：**
 
@@ -81,13 +81,13 @@ bin/magento saas:resync --feed= products --by-ids='1,2,3' --id-type='productId'
 
 ## `--cleanup-feed`
 
-在重新索引和將資料傳送到SaaS之前，先清理摘要索引器表格中的摘要索引子。 僅支援`products`、`productAttributes`、`productOverrides`、`inventoryStockStatus`、`prices`、`variants`和`categoryPermissions`。
+在重新索引並將資料傳送到SaaS之前，請清理摘要索引器表格。 僅支援`products`、`productAttributes`、`productOverrides`、`inventoryStockStatus`、`prices`、`variants`和`categoryPermissions`。
 
 如果與`--dry-run`選項搭配使用，該作業會針對所有專案執行試執行重新同步作業。
 
 >[!IMPORTANT]
 >
->僅在環境清理後使用，或搭配`--dry-run`選項使用。 如果用於其他情況，清理操作會導致資料遺失和資料同步問題，其中必須刪除的Adobe Commerce專案將不會從SaaS資料空間刪除。
+>僅在環境清理後使用，或搭配`--dry-run`選項使用。 如果用於其他情況，清理操作可能會導致資料遺失和資料同步問題。
 
 **範例：**
 
@@ -124,7 +124,7 @@ EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed products --dry-run
 **範例：**
 
 ```shell
-EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed products --dry-run --by-ids='1,2,3'
+EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed products --dry-run --by-ids='ADB102,ADB111,ADB112'
 ```
 
 ### 測試所有摘要專案
