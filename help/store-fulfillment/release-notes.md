@@ -18,19 +18,19 @@ ht-degree: 0%
 ![已修正問題](../assets/fix.svg)修正和改良
 ![已知問題](../assets/bug.svg)已知問題
 
-請參閱[即將發行的版本](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html)，瞭解發行排程和支援。
+請參閱[即將發行的版本](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html?lang=zh-Hant)，瞭解發行排程和支援。
 
-請參閱[產品可用性](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)，瞭解哪些Adobe Commerce版本支援此擴充功能。
+請參閱[產品可用性](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html?lang=zh-Hant)，瞭解哪些Adobe Commerce版本支援此擴充功能。
 
 ## v1.5.0
 
 *2023年8月3日*
 
-[!BADGE 支援]{type=Informative tooltip="支援"}[Adobe Commerce 2.4.4至2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)，包括2.4.6-p1、2.4.5-p3和2.4.4-p4安全性修補程式版本
+[!BADGE 支援]{type=Informative tooltip="支援"}[Adobe Commerce 2.4.4至2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html?lang=zh-Hant)，包括2.4.6-p1、2.4.5-p3和2.4.4-p4安全性修補程式版本
 
 此版本包含下列更新：
 
-![新](../assets/fix.svg)更新擴充功能以支援[Adobe Commerce安全性修補程式發行版本](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/overview.html) 2.4.6-p1、2.4.5-p3和2.4.4-p4。
+![新](../assets/fix.svg)更新擴充功能以支援[Adobe Commerce安全性修補程式發行版本](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/overview.html?lang=zh-Hant) 2.4.6-p1、2.4.5-p3和2.4.4-p4。
 
 ![新](../assets/new.svg)<!-- WMTP-918 -->已新增對銷售電子郵件的[非同步傳送](sales-emails.md)組態選項的支援。 升級至1.5.0版的商家可選擇立即傳送電子郵件（預設）或以非同步方式傳送。
 
@@ -68,7 +68,7 @@ ht-degree: 0%
 
 [!BADGE 支援]{type=Informative tooltip="支援"}
 
-![新](../assets/fix.svg) [!DNL Store Fulfillment]現在[與 [!DNL Adobe Commerce] 2.4.4至2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)相容。
+![新](../assets/fix.svg) [!DNL Store Fulfillment]現在[與 [!DNL Adobe Commerce] 2.4.4至2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html?lang=zh-Hant)相容。
 
 
 ## v1.3.0
@@ -89,7 +89,7 @@ ht-degree: 0%
 
 此版本包含下列更新：
 
-![新](../assets/fix.svg) [!DNL Store Fulfillment]現在[與 [!DNL Adobe Commerce] 2.4.4至2.4.5](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)相容。
+![新](../assets/fix.svg) [!DNL Store Fulfillment]現在[與 [!DNL Adobe Commerce] 2.4.4至2.4.5](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html?lang=zh-Hant)相容。
 
 
 ## v1.1.0

@@ -25,4 +25,4 @@ ht-degree: 5%
    - [延伸與自訂SaaS資料匯出摘要](extensibility-and-customizations.md)
    - [動態新增產品屬性](add-attribute-dynamically.md)
 - [發行說明](release-notes.md)
-- [返回Commerce服務首頁](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [返回Commerce服務首頁](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=zh-Hant)

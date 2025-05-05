@@ -63,7 +63,7 @@ bin/magento saas:resync --feed=products --thread-count=2 --batch-size=200
 
 若要使用多執行緒處理所有資料匯出作業，系統整合經銷商或開發人員可以在Commerce應用程式設定中修改每個摘要的執行緒數目和批次大小。
 
-可將自訂值加入組態檔`app/etc/config.php`的[系統區段](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system)，以套用這些變更。
+可將自訂值加入組態檔`app/etc/config.php`的[系統區段](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system)，以套用這些變更。
 
 **範例：設定產品與價格的多執行緒**
 

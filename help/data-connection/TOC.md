@@ -35,4 +35,4 @@ ht-degree: 3%
 - 使用案例{#use-cases}
    - [使用Adobe Journey Optimizer傳送捨棄的購物車電子郵件](using-ajo.md)
    - [使用Commerce事件資料在Real-Time CDP中建立對象](create-audience.md)
-- [返回Commerce服務首頁](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [返回Commerce服務首頁](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=zh-Hant)

@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # 多個網站和範圍設定
 
-您可以為幾個元素設定[範圍](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)，以容納多個網站、商店和商店檢視：
+您可以為幾個元素設定[範圍](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)，以容納多個網站、商店和商店檢視：
 
-- [管理每個範圍的庫存](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage)
+- [管理每個範圍的庫存](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/inventory/stocks/stocks-manage)
 
 - 管理每個領域的[!DNL Delivery Methods]
 

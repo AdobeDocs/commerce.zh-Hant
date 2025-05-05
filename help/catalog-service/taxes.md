@@ -20,8 +20,8 @@ ht-degree: 0%
 
 您必須設定稅捐，才能在「產品明細」頁面上顯示。
 
-1. [設定稅率](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules.html)。
-1. 啟用要在目錄[&#128279;](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/display-settings.html#step-1%3A-configure-catalog-prices-display-settings)中顯示的稅捐，並將其設定為`Including and Excluding Tax`或`Including Tax`。
+1. [設定稅率](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules.html?lang=zh-Hant)。
+1. 啟用要在目錄[&#128279;](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/display-settings.html?lang=zh-Hant#step-1%3A-configure-catalog-prices-display-settings)中顯示的稅捐，並將其設定為`Including and Excluding Tax`或`Including Tax`。
 
 檢查產品詳細資料頁面，確認目錄服務正常運作。
 

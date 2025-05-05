@@ -26,9 +26,9 @@ ht-degree: 0%
 
 - [Store Fulfillment發行說明](release-notes.md)
 
-- *Adobe Commerce發行資訊*&#x200B;中的[Adobe Commerce發行說明](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html)。
+- *Adobe Commerce發行資訊*&#x200B;中的[Adobe Commerce發行說明](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html?lang=zh-Hant)。
 
-- *Adobe Commerce安裝指南*&#x200B;中的[Adobe Commerce系統需求](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)。
+- *Adobe Commerce安裝指南*&#x200B;中的[Adobe Commerce系統需求](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=zh-Hant)。
 
 
 ## 商店協助應用程式需求

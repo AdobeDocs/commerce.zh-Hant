@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # 背景處理程式設定
 
-「商店履行」整合使用背景流程和訊息佇列，以獲得最佳效能和規模。 使用會自動啟動[訊息佇列執行者](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework)的[部署變數](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#cron_consumers_runner)，為您的Adobe Commerce存放區建置環境。
+「商店履行」整合使用背景流程和訊息佇列，以獲得最佳效能和規模。 使用會自動啟動[訊息佇列執行者](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework)的[部署變數](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#cron_consumers_runner)，為您的Adobe Commerce存放區建置環境。
 
-背景處理程式是使用標準Adobe Commerce [排程工作](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cron)功能來管理。 這些程式負責將訂單和商家商店設定資料與商店履行Web服務同步。
+背景處理程式是使用標準Adobe Commerce [排程工作](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/tools/cron)功能來管理。 這些程式負責將訂單和商家商店設定資料與商店履行Web服務同步。
 
 ## 管理「商店履行」的排程工作
 

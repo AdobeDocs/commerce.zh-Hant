@@ -35,7 +35,7 @@ _建議Workspace_
 
 ## 設定範圍
 
-一開始所有建議設定的[範圍](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)設定為`Default Store View`。 如果您的Commerce安裝包含多個商店檢視，請將&#x200B;**範圍**&#x200B;設定為套用您建議的[商店檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)。
+一開始所有建議設定的[範圍](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hant)設定為`Default Store View`。 如果您的Commerce安裝包含多個商店檢視，請將&#x200B;**範圍**&#x200B;設定為套用您建議的[商店檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hant#scope-settings)。
 
 ## 設定量度日期範圍
 

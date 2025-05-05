@@ -74,4 +74,4 @@ Match運運算元`All`和`Any`決定用來聯結規則中多個條件的邏輯�
 ## 類別銷售與類別產品指派
 
 [!DNL Live Search]可讓您依類別篩選。 如需詳細資訊，請參閱[類別銷售](category-merch.md)。
-不過，在Adobe Commerce中，您可以建立具有[類別產品指派](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html)的虛擬類別。 此類別是在執行階段建立的，不存在於類別資料庫中。 因此，[!DNL Live Search]無法讀取或使用此類別型別。
+不過，在Adobe Commerce中，您可以建立具有[類別產品指派](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html?lang=zh-Hant)的虛擬類別。 此類別是在執行階段建立的，不存在於類別資料庫中。 因此，[!DNL Live Search]無法讀取或使用此類別型別。

@@ -10,11 +10,11 @@ ht-degree: 0%
 
 # [!DNL Storefront Popover]
 
-當[!DNL Live Search]已[安裝](install.md)時，當購物者在[搜尋](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search)方塊中鍵入時，店面中會出現[!DNL popover]。 輸入每個字元後，[!DNL popover]會以建議的產品和排名最前的搜尋結果的縮圖影像更新。
+當[!DNL Live Search]已[安裝](install.md)時，當購物者在[搜尋](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html?lang=zh-Hant#quick-search)方塊中鍵入時，店面中會出現[!DNL popover]。 輸入每個字元後，[!DNL popover]會以建議的產品和排名最前的搜尋結果的縮圖影像更新。
 
 [!DNL Live Search]傳回兩個或更多字元之查詢的結果。 若為部分相符，則每個字的字元數上限為20。 「鍵入時搜尋」查詢中的字元數無法設定。
 
-依預設，[!DNL Live Search]支援[搜尋字詞重新導向](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html)。
+依預設，[!DNL Live Search]支援[搜尋字詞重新導向](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html?lang=zh-Hant)。
 
 ![[!DNL Live Search popover]](assets/storefront-search-as-you-type.png)
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ## [!DNL Popover]頁大小
 
-[!DNL popover]的頁面大小決定可以傳回多少行的自動完成產品。 在Live Search安裝期間，`page_size`值變更為[目錄搜尋](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/catalog.html) - `Autocomplete Limit`設定的目前值。
+[!DNL popover]的頁面大小決定可以傳回多少行的自動完成產品。 在Live Search安裝期間，`page_size`值變更為[目錄搜尋](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/catalog.html?lang=zh-Hant) - `Autocomplete Limit`設定的目前值。
 
 依預設，「目錄搜尋 — 自動完成限制」值會設定為八行（或數列）。 若要變更[!DNL popover]的頁面大小，請執行下列動作：
 
@@ -120,7 +120,7 @@ ht-degree: 0%
 
 ## 正在停用[!DNL popover]
 
-若要停用[!DNL popover]並還原標準[快速搜尋](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search)功能，請輸入下列命令：
+若要停用[!DNL popover]並還原標準[快速搜尋](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html?lang=zh-Hant#quick-search)功能，請輸入下列命令：
 
 ```bash
 bin/magento module:disable Magento_LiveSearchStorefrontPopover

@@ -10,7 +10,7 @@ ht-degree: 0%
 
 # 處理Cookie限制
 
-Adobe Commerce和Magento Open Source都會在資料儲存在瀏覽器Cookie中之前要求您同意。 如需詳細資訊，請參閱[Cookie限制模式](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html)。
+Adobe Commerce和Magento Open Source都會在資料儲存在瀏覽器Cookie中之前要求您同意。 如需詳細資訊，請參閱[Cookie限制模式](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=zh-Hant)。
 
 當您將`magento/product-recommendations`模組部署到生產環境時，它會開始收集店面上的購物者互動事件。 因為這些事件的資料可儲存在瀏覽器Cookie或本機儲存空間中，此功能會在購物者給予Cookie同意前不收集事件，以支援Cookie限制模式。
 

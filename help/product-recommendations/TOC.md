@@ -37,4 +37,4 @@ ht-degree: 13%
    - [驗證](verify.md)
    - [自訂](customize.md)
    - [處理Cookie限制](setting-cookie.md)
-- [返回Commerce服務首頁](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [返回Commerce服務首頁](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=zh-Hant)

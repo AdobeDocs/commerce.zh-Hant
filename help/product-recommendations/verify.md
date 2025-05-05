@@ -10,7 +10,7 @@ ht-degree: 0%
 
 # 驗證事件集合
 
-在您[安裝並設定](install-configure.md) `magento/product-recommendations`模組後，您可以驗證行為資料是否已傳送至Adobe Commerce。 您可以使用Chrome中提供的開發人員工具，或安裝Snowplow Chrome擴充功能。 若您需要其他說明，請參閱支援知識庫中的[疑難排解 [!DNL Product Recommendations] 模組](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html)。
+在您[安裝並設定](install-configure.md) `magento/product-recommendations`模組後，您可以驗證行為資料是否已傳送至Adobe Commerce。 您可以使用Chrome中提供的開發人員工具，或安裝Snowplow Chrome擴充功能。 若您需要其他說明，請參閱支援知識庫中的[疑難排解 [!DNL Product Recommendations] 模組](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html?lang=zh-Hant)。
 
 ## 使用Chrome中的開發人員工具進行驗證
 
@@ -50,7 +50,7 @@ _確認事件正在引發_
 
 1. 向下捲動，直到您看到&#x200B;**內容資料&#x200B;_n_**&#x200B;為止。 尋找&#x200B;**結構描述**&#x200B;中的店面執行個體。
 
-1. 確認[SaaS資料空間識別碼](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html)已正確設定。
+1. 確認[SaaS資料空間識別碼](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html?lang=zh-Hant)已正確設定。
 
 ![雪鏟濾鏡](assets/snowplow-filter.png)
 _雪鏟濾鏡_
@@ -61,8 +61,8 @@ _雪鏟濾鏡_
 
 ## 驗證事件是否正確引發
 
-若要驗證用於量度的事件是否正確引發，請在Snowplow Analytics Debugger中尋找`impression-render`、`view`和`rec-click`事件。 檢視[完整事件清單](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/events.html)。
+若要驗證用於量度的事件是否正確引發，請在Snowplow Analytics Debugger中尋找`impression-render`、`view`和`rec-click`事件。 檢視[完整事件清單](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/events.html?lang=zh-Hant)。
 
 >[!NOTE]
 >
-> 如果啟用[Cookie限制模式](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html)，Adobe Commerce會在購物者同意前不會收集行為資料。 如果「Cookie限制模式」已停用，系統會依預設收集行為資料。
+> 如果啟用[Cookie限制模式](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=zh-Hant)，Adobe Commerce會在購物者同意前不會收集行為資料。 如果「Cookie限制模式」已停用，系統會依預設收集行為資料。

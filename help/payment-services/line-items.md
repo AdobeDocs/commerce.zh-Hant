@@ -126,7 +126,7 @@ ht-degree: 0%
 
 ## 管理條列專案
 
-Adobe Commerce [會根據各資料列](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}的總金額來計算稅捐，如果訂購了相同料號的多重數量，或目錄中顯示含稅價格，則可能會導致舍入問題。 在這種情況下，總數量可能會分成兩行，但數量會等於訂購的料號總計。
+Adobe Commerce [會根據各資料列](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}的總金額來計算稅捐，如果訂購了相同料號的多重數量，或目錄中顯示含稅價格，則可能會導致舍入問題。 在這種情況下，總數量可能會分成兩行，但數量會等於訂購的料號總計。
 
 > 商戶儀表板檢視中具有舍入問題的明細行專案範例
 

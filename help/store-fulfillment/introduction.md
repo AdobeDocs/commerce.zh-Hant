@@ -34,7 +34,7 @@ Store Fulfillment解決方案支援並強化原生Adobe Commerce功能。
 
 * 支援大多數產品型別 — 簡單、可設定、分組、套件和虛擬
 
-* 與[[!DNL Adobe Commerce] Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/basics/sources-stocks)整合
+* 與[[!DNL Adobe Commerce] Inventory management](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/inventory/basics/sources-stocks)整合
 
 * 整合銷售點(POS)商家存貨管理系統，例如ERP、OMS及WMS
 
@@ -76,6 +76,6 @@ iOS和Android裝置的Store Assist App會與[!DNL Walmart Commerce Technologies]
 
 >[!TIP]
 >
-> 如需Store Fulfillment解決方案的快速示範，請參閱&#x200B;_Adobe Commerce影片和教學課程_&#x200B;中提供的[Store Fulfillment概述](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/orders/store-fulfillment.html)。
+> 如需Store Fulfillment解決方案的快速示範，請參閱&#x200B;_Adobe Commerce影片和教學課程_&#x200B;中提供的[Store Fulfillment概述](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/orders/store-fulfillment.html?lang=zh-Hant)。
 
 

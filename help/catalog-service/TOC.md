@@ -25,5 +25,5 @@ ht-degree: 10%
    - [productSearch查詢](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/)
    - [refectProduct查詢](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/)
 - [發行說明](release-notes.md)
-- [返回Commerce服務首頁](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [返回Commerce服務首頁](https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/home)
 

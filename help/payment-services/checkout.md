@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ![簽出](assets/user-checkout-error.png "時發生錯誤"){width="600" zoomable="yes"}
 
-針對特定[訂單](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=en)，管理員中也會顯示有關已取消訂單的註解。
+針對特定[訂單](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=zh-Hant)，管理員中也會顯示有關已取消訂單的註解。
 
 ![已取消訂單的訂單註解](assets/admin-checkout-error.png "已取消訂單的訂單註解"){width="600" zoomable="yes"}
 

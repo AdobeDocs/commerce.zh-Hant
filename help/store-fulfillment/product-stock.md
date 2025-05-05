@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 產品庫存管理
 
-身為商家，您可以使用Adobe Commerce [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction)股票和來源選項。 此外，您也可以使用「商店履行」解決方案，控制其他與商戶商店作業相關的庫存可用性選項。
+身為商家，您可以使用Adobe Commerce [Inventory management](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/inventory/introduction)股票和來源選項。 此外，您也可以使用「商店履行」解決方案，控制其他與商戶商店作業相關的庫存可用性選項。
 
 - 來自商家商店的住家交貨選項
 

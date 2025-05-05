@@ -22,7 +22,7 @@ ht-degree: 1%
 
 ## 設定範圍
 
-如果您的Adobe Commerce安裝包含多個存放區檢視，請將&#x200B;**範圍**&#x200B;設定為套用您規則的[存放區檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)。
+如果您的Adobe Commerce安裝包含多個存放區檢視，請將&#x200B;**範圍**&#x200B;設定為套用您規則的[存放區檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hant#scope-settings)。
 
 ## 顯示/隱藏欄
 

@@ -59,4 +59,4 @@ ht-degree: 0%
 | 產品詳細資料 | 主要內容底部（預設） | 檢視次數最多<br>購買次數最多<br>加入購物車次數最多<br>檢視此專案、檢視專案<br>檢視此專案、購買專案<br>購買此專案、購買專案<br>類似專案<br>趨勢<br>視覺相似度 |
 | 購物車 | 主要內容底部（預設） | 檢視次數最多<br>購買次數最多<br>加入購物車次數最多<br>檢視此專案，檢視的專案<br>檢視此專案，購買此專案<br>購買此專案，購買其他<br>類似專案<br>趨勢分析 |
 | 確認 | 主要內容底部（預設） | 檢視次數最多<br>購買次數最多<br>加入購物車次數最多<br>檢視此專案，檢視的專案<br>檢視此專案，購買此專案<br>購買此專案，購買其他<br>類似專案<br>趨勢分析 |
-| 頁面產生器 | [拖放](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)以定位內容型別 | 檢視次數最多<br>購買次數最多<br>加入購物車次數最多<br>為您推薦<br>趨勢分析 |
+| 頁面產生器 | [拖放](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html?lang=zh-Hant)以定位內容型別 | 檢視次數最多<br>購買次數最多<br>加入購物車次數最多<br>為您推薦<br>趨勢分析 |

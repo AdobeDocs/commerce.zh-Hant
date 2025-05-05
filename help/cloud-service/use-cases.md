@@ -199,7 +199,7 @@ Adobe Commerce的情境式實驗功能可讓您在店面建立和管理實驗，
 
 #### 將影像新增至Commerce AEM Assets
 
-1. 從AEM as a Cloud Service的[導覽面板](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel)，選取&#x200B;**Assets** > **檔案** > **Commerce**，然後按一下您在上一節建立的資產。
+1. 從AEM as a Cloud Service的[導覽面板](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel)，選取&#x200B;**Assets** > **檔案** > **Commerce**，然後按一下您在上一節建立的資產。
 
    ![商務資料夾](./assets/commerce-folder.png){width="600" zoomable="yes"}
 
@@ -249,7 +249,7 @@ Adobe Commerce的「產生變體」功能運用Generative AI來自動產生高�
 
 ### 產生文字
 
-1. 使用[通用編輯器](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)開啟您的店面網站。
+1. 使用[通用編輯器](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)開啟您的店面網站。
 
 1. 選取您要編輯的文字區塊。
 
@@ -263,7 +263,7 @@ Adobe Commerce的「產生變體」功能運用Generative AI來自動產生高�
 
 ### 產生內容和影像
 
-1. 開啟[產生變數](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+1. 開啟[產生變數](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 1. 選取&#x200B;[!UICONTROL **Hero Banner**]&#x200B;範本。
 

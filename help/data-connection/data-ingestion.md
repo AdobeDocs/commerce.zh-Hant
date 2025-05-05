@@ -14,7 +14,7 @@ ht-degree: 0%
 
 [Data Connection擴充功能](overview.md)會將您的Commerce資料連線到Experience Platform。 打算用於Experience Platform的資料會分組為兩種行為型別：屬於&#x200B;**體驗事件**&#x200B;類別的時間序列資料，以及屬於&#x200B;**個人設定檔**&#x200B;類別的記錄資料。
 
-深入瞭解Experience Platform中的[資料行為](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#data-behaviors)和[類別](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#class)。
+深入瞭解Experience Platform中的[資料行為](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=zh-Hant#data-behaviors)和[類別](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=zh-Hant#class)。
 
 ## 時間序列資料
 
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 ## 記錄資料
 
-記錄資料提供有關主旨屬性的資訊。 主旨可以是組織或個人。 例如，您網站上的購物者會建立帳戶，並產生記錄資料。 此資料是使用類別設定為&#x200B;**個別設定檔**&#x200B;的結構描述擷取到Experience Platform中。 您可以將該記錄資料傳送至Adobe的設定檔管理和細分服務： [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html)。
+記錄資料提供有關主旨屬性的資訊。 主旨可以是組織或個人。 例如，您網站上的購物者會建立帳戶，並產生記錄資料。 此資料是使用類別設定為&#x200B;**個別設定檔**&#x200B;的結構描述擷取到Experience Platform中。 您可以將該記錄資料傳送至Adobe的設定檔管理和細分服務： [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html?lang=zh-Hant)。
 
 ### 已擷取的設定檔記錄資料
 

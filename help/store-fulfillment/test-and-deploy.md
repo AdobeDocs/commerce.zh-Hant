@@ -644,4 +644,4 @@ Adobe Commerce產品型別的測試案例會驗證客戶是否看到不同產品
 
 >[!TIP]
 >
->如需雲端基礎結構專案中Adobe Commerce的部署准則、檢查清單和最佳實務，請參閱Adobe Commerce開發人員檔案中的[部署您的存放區](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production)。
+>如需雲端基礎結構專案中Adobe Commerce的部署准則、檢查清單和最佳實務，請參閱Adobe Commerce開發人員檔案中的[部署您的存放區](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production)。

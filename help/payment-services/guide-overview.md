@@ -37,7 +37,7 @@ ht-degree: 0%
 
 | 指南 | 說明 |
 |------ | ----------- |
-| [[!DNL Adobe Commerce] 2.4使用手冊](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) | [!DNL Adobe Commerce]和[!DNL Magento Open Source]以商家為中心的檔案 |
+| [[!DNL Adobe Commerce] 2.4使用手冊](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=zh-Hant) | [!DNL Adobe Commerce]和[!DNL Magento Open Source]以商家為中心的檔案 |
 | [[!DNL Adobe Commerce] 2.4開發人員指南](https://developer.adobe.com/commerce/docs) | 用於建置和自訂[!DNL Adobe Commerce]或[!DNL Magento Open Source]的以開發人員為中心的檔案 |
 
 ## 支援
@@ -48,5 +48,5 @@ ht-degree: 0%
 
 檢視[可用性](overview.md#availability)以檢查哪個[!DNL Payment Services]選項適合您。
 
-* [說明中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html) — 在知識庫中搜尋[!DNL Payment Services]相關的疑難排解文章。
-* [支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)—Commerce客戶可以提交票證，以取得其他協助。
+* [說明中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html?lang=zh-Hant) — 在知識庫中搜尋[!DNL Payment Services]相關的疑難排解文章。
+* [支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=zh-Hant#submit-ticket)—Commerce客戶可以提交票證，以取得其他協助。

@@ -24,7 +24,7 @@ ht-degree: 0%
 
 | 欄位 | 說明 |
 |---|---|
-| `channel` | 包含資料來源的相關資訊。 `_id`和`_type`都包含[名稱空間值](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/namespaces)。 |
+| `channel` | 包含資料來源的相關資訊。 `_id`和`_type`都包含[名稱空間值](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/schema/namespaces)。 |
 | `channel._id` | 管道的唯一識別碼，例如`"https://ns.adobe.com/xdm/channels/web"`。 |
 | `channel._type` | 識別管道資料的來源，例如`"https://ns.adobe.com/xdm/channel-types/web"`。 |
 | `person` | 包含有關客戶的資訊。 |
@@ -59,6 +59,6 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->每個設定檔記錄也包含[`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap)欄位，其中包含系統產生的Commerce客戶ID作為設定檔的主要識別碼，以及用作次要識別碼的電子郵件ID。
+>每個設定檔記錄也包含[`identityMap`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/field-groups/profile/identitymap)欄位，其中包含系統產生的Commerce客戶ID作為設定檔的主要識別碼，以及用作次要識別碼的電子郵件ID。
 
 瞭解如何[建立設定檔記錄特定的結構描述](profile-data.md)，以便從您的設定檔記錄擷取資料。

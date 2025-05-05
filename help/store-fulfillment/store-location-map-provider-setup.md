@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # 存放區位置和對應設定
 
-設定[距離提供者](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/distance-priority-algorithm)來搜尋零售商店位置，以啟用「商店履行」的商店位置和對應功能。
+設定[距離提供者](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/inventory/configuration/distance-priority-algorithm)來搜尋零售商店位置，以啟用「商店履行」的商店位置和對應功能。
 
 **需求**
 
-在設定程式期間，您會提供Google Maps平台的Google API金鑰。 如果您沒有這類地圖，請[從Google地圖平台](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/distance-priority-algorithm#configure-google-maps)產生一個。
+在設定程式期間，您會提供Google Maps平台的Google API金鑰。 如果您沒有這類地圖，請[從Google地圖平台](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/inventory/configuration/distance-priority-algorithm#configure-google-maps)產生一個。
 
 設定距離提供者：
 

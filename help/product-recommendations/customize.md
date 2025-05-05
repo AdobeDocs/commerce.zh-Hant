@@ -112,7 +112,7 @@ ht-degree: 0%
 
 ![新增徽章](assets/unit-custom.png)
 
-若要確定當您在頁面上轉譯建議單位時，可以使用自訂產品屬性，請在Admin的[產品屬性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html)頁面中，將`Used in Product Listing`屬性設定為`Yes`。
+若要確定當您在頁面上轉譯建議單位時，可以使用自訂產品屬性，請在Admin的[產品屬性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=zh-Hant)頁面中，將`Used in Product Listing`屬性設定為`Yes`。
 
 設定此屬性時，JSON裝載會包含`attributes`物件，其中包含屬性程式碼和值的陣列。 然後，您可以根據這些屬性值套用自訂店面樣式，例如新增特殊視覺處理或徽章，如之前所述。
 

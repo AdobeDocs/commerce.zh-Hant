@@ -22,27 +22,27 @@ ht-degree: 0%
 
 這些設定變更可協助您完成下列三件事：
 
-1. [將存貨移轉到來源](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/quantities/inventory-transfer)，以將存貨從預設存貨/來源移轉到新存貨/來源。
+1. [將存貨移轉到來源](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/inventory/quantities/inventory-transfer)，以將存貨從預設存貨/來源移轉到新存貨/來源。
 
-1. [大量指派來源](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/quantities/bulk-assignment)以新增您所有產品的新來源。
+1. [大量指派來源](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/inventory/quantities/bulk-assignment)以新增您所有產品的新來源。
 
-1. [完成產品屬性的大量更新](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update)以將`Allow Store Pickup`和`Allow Home Delivery`屬性新增到現有產品。 安裝方案時，屬性具有最佳的&#x200B;*預設*&#x200B;值。 不過，在您完成大量更新內容程式之前，這些屬性不會套用至現有產品。
+1. [完成產品屬性的大量更新](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update)以將`Allow Store Pickup`和`Allow Home Delivery`屬性新增到現有產品。 安裝方案時，屬性具有最佳的&#x200B;*預設*&#x200B;值。 不過，在您完成大量更新內容程式之前，這些屬性不會套用至現有產品。
 
-存貨是從選取的來源（零售商店地點或電子商務倉儲）中扣除。 用作電子商務倉儲的來源必須指派給與商店取貨地點相同的存貨，並在零售地點之前排定優先順序。 如需詳細資訊，請參閱[排定股票來源的優先順序](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-prioritize-sources)。
+存貨是從選取的來源（零售商店地點或電子商務倉儲）中扣除。 用作電子商務倉儲的來源必須指派給與商店取貨地點相同的存貨，並在零售地點之前排定優先順序。 如需詳細資訊，請參閱[排定股票來源的優先順序](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/inventory/stocks/stocks-prioritize-sources)。
 
 如需管理存貨、庫存和來源的詳細資訊，請參閱Adobe Commerce使用者檔案：
 
-- [管理詳細目錄](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction)
+- [管理詳細目錄](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/inventory/introduction)
 
-- [管理存貨數量](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/quantities/quantities-manage)
+- [管理存貨數量](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/inventory/quantities/quantities-manage)
 
-- [管理庫存](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage)
+- [管理庫存](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/inventory/stocks/stocks-manage)
 
-- [管理來源](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/sources/sources-manage)
+- [管理來源](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/inventory/sources/sources-manage)
 
-- [優先順序化Stock的來源](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-prioritize-sources)
+- [優先順序化Stock的來源](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/inventory/stocks/stocks-prioritize-sources)
 
-- 產品屬性的[大量更新](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update)
+- 產品屬性的[大量更新](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update)
 
 
 >[!IMPORTANT]

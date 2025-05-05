@@ -150,7 +150,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->若為Adobe Commerce內部部署安裝，請要求系統管理員設定`var/log/walmart-bopis.log`檔案的記錄輪換，以最小化大小。 如需Adobe Commerce內部部署安裝的資訊，請參閱&#x200B;_Adobe Commerce安裝指南_&#x200B;中的[記錄檔輪換](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html#server-settings)。 如需雲端基礎結構專案上的Adobe Commerce，請參閱[檢視及管理記錄檔](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html)。
+>若為Adobe Commerce內部部署安裝，請要求系統管理員設定`var/log/walmart-bopis.log`檔案的記錄輪換，以最小化大小。 如需Adobe Commerce內部部署安裝的資訊，請參閱&#x200B;_Adobe Commerce安裝指南_&#x200B;中的[記錄檔輪換](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=zh-Hant#server-settings)。 如需雲端基礎結構專案上的Adobe Commerce，請參閱[檢視及管理記錄檔](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=zh-Hant)。
 
 <table>
 <thead>
@@ -355,7 +355,7 @@ Store Fulfillment可藉由擴充原生Adobe Commerce [!DNL In-Store Delivery]功
 
 >[!NOTE]
 >
->如需設定店內傳遞選項的詳細資訊，請參閱&#x200B;_Adobe Commerce使用手冊_&#x200B;中的[店內傳遞](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/delivery/basic-methods/shipping-in-store-delivery)。
+>如需設定店內傳遞選項的詳細資訊，請參閱&#x200B;_Adobe Commerce使用手冊_&#x200B;中的[店內傳遞](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/delivery/basic-methods/shipping-in-store-delivery)。
 
 
 ### 傳遞方法設定

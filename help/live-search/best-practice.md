@@ -100,7 +100,7 @@ ht-degree: 0%
 
 請一律測試搜尋重新導向，以確保它們正常運作並導向最相關的頁面。 持續監控其效能，並視需要進行調整。
 
-瞭解如何[管理搜尋重新導向](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms)。
+瞭解如何[管理搜尋重新導向](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/catalog/search/search-terms)。
 
 ## 改善搜尋結果關聯性
 
@@ -154,7 +154,7 @@ ht-degree: 0%
 深入瞭解搜尋所需的產品屬性：
 
 - [將屬性設定為可搜尋](workspace.md#set-attributes-as-searchable)
-- [指派權重給屬性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [指派權重給屬性](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## 監視搜尋結果
 

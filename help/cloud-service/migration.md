@@ -68,7 +68,7 @@ ht-degree: 0%
 
    * [雲端服務架構上的Adobe Commerce](./overview.md) — 檢閱平台架構，以及它與您目前的Adobe Commerce執行個體有何不同。
    * [Adobe Commerce擴充性架構](https://developer.adobe.com/commerce/extensibility/) — 識別您要如何轉換目前的自訂專案。
-   * [由Edge Delivery提供支援的Commerce店面](https://experienceleague.adobe.com/developer/commerce/storefront/) — 檢閱建議的店面解決方案。
+   * [由Edge Delivery提供支援的Commerce店面](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant) — 檢閱建議的店面解決方案。
 
 1. 稽核您的自訂相容性：
 
@@ -90,7 +90,7 @@ ht-degree: 0%
 
 1. 設定下列其中一個GraphQL型店面：
 
-   * [建立Commerce店面](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/)
+   * [建立Commerce店面](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=zh-Hant)
    * [使用PWA Studio建立自訂GraphQL型店面](https://developer.adobe.com/commerce/pwa-studio/)
 
 1. 將資料從先前的Commerce執行個體移轉至ACCS：

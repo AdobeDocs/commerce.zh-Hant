@@ -14,7 +14,7 @@ ht-degree: 0%
 
 SaaS定價索引可藉由將資源密集的作業（例如索引和價格計算）從Commerce應用程式解除安裝到Adobe的雲端基礎架構，以最佳化網站效能。 此方式可讓商家快速擴充資源，以加快價格指數化時間，並更快速地提供店面價格更新和連線Commerce服務。
 
-下圖顯示當Commerce使用Commerce應用程式中包含的[價格索引](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers)程式時，指向SaaS服務的索引資料流程：
+下圖顯示當Commerce使用Commerce應用程式中包含的[價格索引](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cli/manage-indexers)程式時，指向SaaS服務的索引資料流程：
 
 ![預設資料流程](assets/old_way.png)
 

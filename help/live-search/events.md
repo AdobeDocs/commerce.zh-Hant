@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # [!DNL Live Search]個事件
 
-[!DNL Live Search]會使用事件來增強搜尋演演算法，例如「檢視次數最多」和「已檢視這個專案，已檢視那個專案」。 雖然[Commerce範例Luma佈景主題](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/design/themes/themes#the-default-theme)已可立即使用事件，但Headless和其他自訂實作必須根據自己的需求實作事件。
+[!DNL Live Search]會使用事件來增強搜尋演演算法，例如「檢視次數最多」和「已檢視這個專案，已檢視那個專案」。 雖然[Commerce範例Luma佈景主題](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/content-design/design/themes/themes#the-default-theme)已可立即使用事件，但Headless和其他自訂實作必須根據自己的需求實作事件。
 
 此表格說明[!DNL Live Search] [排名策略](rules-add.md#intelligent-ranking)所使用的事件。
 
@@ -68,4 +68,4 @@ mse.publish.searchRequestSent("search-bar");
 
 >[!NOTE]
 >
->如果啟用[Cookie限制模式](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html)，Adobe Commerce不會收集行為資料，直到購物者同意使用Cookie為止。 如果「Cookie限制模式」已停用，Adobe Commerce會依預設收集行為資料。
+>如果啟用[Cookie限制模式](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=zh-Hant)，Adobe Commerce不會收集行為資料，直到購物者同意使用Cookie為止。 如果「Cookie限制模式」已停用，Adobe Commerce會依預設收集行為資料。

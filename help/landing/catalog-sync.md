@@ -14,9 +14,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> 「目錄同步」控制面板現在是「資料管理」控制面板。 此改版後的儀表板現在支援[[!DNL Product Recommendations]](../product-recommendations/guide-overview.md) v6.0.0+、[[!DNL Live Search]](../live-search/overview.md) v4.1.0+和[[!DNL Catalog Service]](../catalog-service/overview.md) v1.17+。 客戶可以更新至其中一項服務的最新版本，以取得資料管理控制面板。 請在[資料管理儀表板](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html)檔案中閱讀更多相關資訊。 目前這個主題仍適用於尚未升級且仍擁有目錄同步控制面板的使用者。
+> 「目錄同步」控制面板現在是「資料管理」控制面板。 此改版後的儀表板現在支援[[!DNL Product Recommendations]](../product-recommendations/guide-overview.md) v6.0.0+、[[!DNL Live Search]](../live-search/overview.md) v4.1.0+和[[!DNL Catalog Service]](../catalog-service/overview.md) v1.17+。 客戶可以更新至其中一項服務的最新版本，以取得資料管理控制面板。 請在[資料管理儀表板](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html?lang=zh-Hant)檔案中閱讀更多相關資訊。 目前這個主題仍適用於尚未升級且仍擁有目錄同步控制面板的使用者。
 
-Adobe Commerce使用索引器將目錄資料編譯到表格中。 此程式會由[事件](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing)自動觸發，例如產品價格或存貨層次的變更。
+Adobe Commerce使用索引器將目錄資料編譯到表格中。 此程式會由[事件](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html?lang=zh-Hant#events-that-trigger-full-reindexing)自動觸發，例如產品價格或存貨層次的變更。
 
 目錄同步服務會持續將產品資料從[!DNL Adobe Commerce]執行個體移動到[!DNL Commerce Services]平台，以保持資料在最新狀態。 例如，[[!DNL Product Recommendations]](/help/product-recommendations/overview.md)需要目前的目錄資訊，才能正確傳回具有正確名稱、定價和可用性的建議。 使用&#x200B;_目錄同步_&#x200B;儀表板來觀察和管理同步處理或命令列介面以觸發目錄同步並重新索引產品資料以供[!DNL Commerce Services]使用。 請參閱&#x200B;_SaaS資料匯出_&#x200B;指南中的[命令列介面參考](../data-export/data-export-cli-commands.md)。
 

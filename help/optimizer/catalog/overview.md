@@ -24,7 +24,7 @@ ht-degree: 0%
 - 透過設計產品目錄來反映您的業務（包括產品、客戶、定價和分銷），解除鎖定目錄整合併提供適當的內容。
 - 快速擷取和更新目錄資料，並快速將更新傳送至店面，滿足您的促銷活動和行銷活動需求。
 - 透過Edge Delivery Services支援的立即可用、超快的UI元件，完成完美的Lighthouse分數，提供順暢的產品瀏覽與建議。
-- 採用Adobe擴充性架構([App Builder](https://experienceleague.adobe.com/en/playlists/commerce-get-started-app-builder-development))的現代可撰寫架構，以使用Adobe的[API Mesh](https://experienceleague.adobe.com/en/playlists/commerce-get-started-app-builder-and-api-mesh)匯入產品資料並強化Headless商務店面。
+- 採用Adobe擴充性架構([App Builder](https://experienceleague.adobe.com/zh-hant/playlists/commerce-get-started-app-builder-development))的現代可撰寫架構，以使用Adobe的[API Mesh](https://experienceleague.adobe.com/zh-hant/playlists/commerce-get-started-app-builder-and-api-mesh)匯入產品資料並強化Headless商務店面。
 
 >[!INFO]
 >
