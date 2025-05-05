@@ -75,7 +75,7 @@ _建議Workspace_
 
 - 若要變更建議行為資料的來源位置，請選擇不同的SaaS資料空間。
 
-- 若要設定新的SaaS資料空間，請按一下[編輯設定]。**** 若要深入瞭解，請參閱[設定](settings.md)。
+- 若要設定新的SaaS資料空間，請按一下[編輯設定]。**&#x200B;** 若要深入瞭解，請參閱[設定](settings.md)。
 
 ![Recommendations設定](assets/settings.png)
 _Recommendations設定_
@@ -87,7 +87,7 @@ _Recommendations設定_
    ![Recommendations工作區](assets/recommendation-detail.png)
    _首頁轉換率詳細資料_
 
-1. 若要變更建議狀態，請按一下[啟用] ****&#x200B;或[停用] ****。
+1. 若要變更建議狀態，請按一下[啟用] **&#x200B;**&#x200B;或[停用] **&#x200B;**。
 
 ## 編輯建議
 

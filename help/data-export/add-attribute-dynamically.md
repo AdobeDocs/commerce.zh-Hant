@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->擴充產品屬性的最佳方式是[將它們新增至Adobe Commerce](extensibility-and-customizations.md#add-product-attributes-to-adobe-commerce)，您可以在其中從Commerce管理員設定和管理這些屬性。 只有在您僅需要Commerce店面服務才能動態新增這些值，且不想在Adobe Commerce中註冊這些值時，才可動態新增。 您也可以選擇搭配目錄服務](../catalog-service/mesh.md)使用[API Mesh來管理自訂屬性，以擴充目錄服務GraphQL結構描述。
+>擴充產品屬性的最佳方式是[將它們新增至Adobe Commerce](extensibility-and-customizations.md#add-product-attributes-to-adobe-commerce)，您可以在其中從Commerce管理員設定和管理這些屬性。 只有在您僅需要Commerce店面服務才能動態新增這些值，且不想在Adobe Commerce中註冊這些值時，才可動態新增。 您也可以選擇搭配目錄服務[&#128279;](../catalog-service/mesh.md)使用API Mesh來管理自訂屬性，以擴充目錄服務GraphQL結構描述。
 
 ## 新增產品屬性
 

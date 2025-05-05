@@ -40,12 +40,12 @@ Signifyd/[!DNL Payment Services]整合提供信用卡、借記卡、保管卡、
 
 這些設定選項與支付服務和Signifyd整合不相容：
 
-* 當[!DNL Payment Services]設定為`Authorize`付款動作&#x200B;_且_ Signifyd處於`PostAuth`模式，且&#x200B;_[!UICONTROL Decline Guarantees]_選項設定為&#x200B;**建立銷退折讓單**時。
+* 當[!DNL Payment Services]設定為`Authorize`付款動作&#x200B;_且_ Signifyd處於`PostAuth`模式，且&#x200B;_[!UICONTROL Decline Guarantees]_&#x200B;選項設定為&#x200B;**建立銷退折讓單**&#x200B;時。
 
   原因： [!DNL Payment Services]建立授權交易，表示然後嘗試退款。
 
 
-* [!DNL Payment Services]已使用`Authorize and Capture`付款動作&#x200B;_設定，且_ Signifyd處於`PostAuth`模式，且&#x200B;_[!UICONTROL Decline Guarantees]_選項設定為&#x200B;**取消訂單**。
+* [!DNL Payment Services]已使用`Authorize and Capture`付款動作&#x200B;_設定，且_ Signifyd處於`PostAuth`模式，且&#x200B;_[!UICONTROL Decline Guarantees]_&#x200B;選項設定為&#x200B;**取消訂單**。
 
   原因： [!DNL Payment Services]建立擷取交易，表示之後嘗試作廢。
 

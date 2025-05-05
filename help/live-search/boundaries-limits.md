@@ -98,7 +98,7 @@ ht-degree: 0%
 
 - [[!DNL Live Search] 目錄未同步](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync)
 - [[!DNL Live Search] 儀表板和搜尋結果排名不正確](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-dashboard-ranking-incorrect)
-- 無論Admin](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-displays-out-of-stock-products)中的庫存狀態設定為何，[[!DNL Live Search] 都會顯示無庫存的產品
+- 無論Admin[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-displays-out-of-stock-products)中的庫存狀態設定為何，[!DNL Live Search] 都會顯示無庫存的產品
 - [[!DNL Live Search] Facet未依字母順序排序](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-facets-not-sorted)
 
 如果您需要其他協助，請連絡[支援](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。

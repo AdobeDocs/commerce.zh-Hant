@@ -236,7 +236,7 @@ ht-degree: 0%
 <li>等候訂單同步處理。</li>
 <li>檢查是否已建立發票（如果授權並擷取）以及是否收到發票電子郵件。</li>
 <li>前往Postman並執行「準備好取貨」請求，將所有產品設定為「已取貨」。</li>
-<li>開啟您的信箱，找到[準備好取件]電子郵件。 然後，按一下**[!UICONTROL Confirm Arrival]**。</li>
+<li>開啟您的信箱，找到[準備好取件]電子郵件。 然後，按一下&#x200B;**[!UICONTROL Confirm Arrival]**。</li>
 <li>簽入。</li>
 <li>前往Postman並使用設定為已拒絕的所有產品執行Dispensed請求。</li>
 </ol>

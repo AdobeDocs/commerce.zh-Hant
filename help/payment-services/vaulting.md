@@ -73,7 +73,7 @@ Commerce會儲存Token，協助客戶取得已儲存的信用卡資訊，完成�
 若要在「管理員」中，使用客戶的保管式信用卡來建立訂單：
 
 1. [建立訂單並新增產品](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html)。
-1. 在&#x200B;_[!UICONTROL Payment & Shipping Information]_中，選取&#x200B;**[!UICONTROL Stored Cards]**作為付款方式。
+1. 在&#x200B;_[!UICONTROL Payment & Shipping Information]_&#x200B;中，選取&#x200B;**[!UICONTROL Stored Cards]**&#x200B;作為付款方式。
 1. 選取所需的存放信用卡付款方式。
 1. 完成訂單的其他必要步驟後，[送出](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=en#step-3%3A-submit-the-order)。
 

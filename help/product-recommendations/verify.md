@@ -38,7 +38,7 @@ _確認事件正在引發_
 
 ## 使用Snowplow Chrome擴充功能進行驗證
 
-安裝Chrome](https://chrome.google.com/webstore/detail/snowplow-analytics-debugg/jbnlcgeengmijcghameodeaenefieedm)的[Snowplow Analytics Debugger擴充功能。 此擴充功能會顯示正在收集並傳送至Adobe Commerce的事件。
+安裝Chrome[&#128279;](https://chrome.google.com/webstore/detail/snowplow-analytics-debugg/jbnlcgeengmijcghameodeaenefieedm)的Snowplow Analytics Debugger擴充功能。 此擴充功能會顯示正在收集並傳送至Adobe Commerce的事件。
 
 1. 請務必停用瀏覽器上的任何廣告封鎖程式，並接受網站上的Cookie。
 
@@ -48,7 +48,7 @@ _確認事件正在引發_
 
 1. 在&#x200B;**Event**&#x200B;欄下，選取&#x200B;**結構化事件**。
 
-1. 向下捲動，直到您看到&#x200B;**內容資料&#x200B;_n_**為止。 尋找&#x200B;**結構描述**中的店面執行個體。
+1. 向下捲動，直到您看到&#x200B;**內容資料&#x200B;_n_**&#x200B;為止。 尋找&#x200B;**結構描述**&#x200B;中的店面執行個體。
 
 1. 確認[SaaS資料空間識別碼](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html)已正確設定。
 

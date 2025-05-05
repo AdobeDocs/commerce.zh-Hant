@@ -42,7 +42,7 @@ ht-degree: 0%
 
 如果您的API金鑰遺失，新的API金鑰組必須[產生](https://experienceleague.adobe.com/docs/commerce/payment-services/get-started/connect.html#generate-an-api-key-and-private-key)且[已套用](https://experienceleague.adobe.com/docs/commerce/payment-services/get-started/connect.html#configure-saas-project)至Admin中的Commerce Services Connector設定。 如果設定了錯誤的金鑰或設定中沒有金鑰，則付款服務中會顯示帳戶驗證錯誤對話方塊，通知您帳戶未驗證。
 
-檢視使用API](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas#availableservices)的可用Commerce服務清單[。
+檢視使用API[&#128279;](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas#availableservices)的可用Commerce服務清單。
 
 若要瞭解如何為沙箱或生產環境產生API金鑰，請參閱[認證](https://experienceleague.adobe.com/docs/commerce/user-guides/saas.html#apikey)。
 
@@ -65,7 +65,7 @@ ht-degree: 0%
 
    如果您尚未為帳戶設定Commerce Services，便會顯示此選項。
 
-   您將被導向到「管理員」**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**>**[!UICONTROL Commerce Services Connector]**中的設定區域，以設定您的Commerce服務聯結器。
+   您將被導向到「管理員」**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**>**[!UICONTROL Commerce Services Connector]**&#x200B;中的設定區域，以設定您的Commerce服務聯結器。
 
 1. 若要設定您的Commerce服務，請依照[SaaS設定](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html#saasenv)中所述的步驟進行。
 

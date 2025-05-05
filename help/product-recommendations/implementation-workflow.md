@@ -28,7 +28,7 @@ ht-degree: 0%
 
    部署[!DNL Product Recommendations]需要兩個主要[資料來源](type.md)：目錄和行為。 由於生產是擷取和分析購物者動作的唯一環境，因此請儘早在生產上開始收集資料。 [瞭解](events.md) Adobe Sensei如何訓練產生更高品質建議的機器學習模型。 額外好處是，當您開始收集生產環境的行為資料時，可以在非生產環境中作業時，根據此生產資料[擷取建議](verify.md)。 接著，您可以測試和實驗不同的建議，這些建議是根據實際生產中收集的購物者資料計算而得。
 
-   若要將資料收集部署至生產環境，您必須[藉由提供[API金鑰](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html)來](install-configure.md)安裝並設定[!DNL Product Recommendations]模組。
+   若要將資料收集部署至生產環境，您必須[&#128279;](install-configure.md)藉由提供[API金鑰](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html)來安裝並設定[!DNL Product Recommendations]模組。
 
    >[!TIP]
    >
@@ -52,7 +52,7 @@ ht-degree: 0%
    >
    > 確認您的非生產環境目錄與生產環境目錄大致相同。 使用類似的目錄可確保建議單位中傳回的產品與生產時的產品非常類似。
 
-   請參閱從生產環境擷取[1}行為資料，以瞭解如何完成此步驟。](staging-environment.md)
+   請參閱從生產環境擷取[1&rbrace;行為資料，以瞭解如何完成此步驟。](staging-environment.md)
 
 1. **建立建議並部署至您的生產店面**
 

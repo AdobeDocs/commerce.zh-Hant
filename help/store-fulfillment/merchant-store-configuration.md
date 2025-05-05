@@ -142,9 +142,9 @@ ht-degree: 0%
 | **[!UICONTROL Is Parking Spot a Mandatory Field?]**</br>`Extension Attribute: parking_spot_mandatory` | 指定在購物體驗期間是否需要客戶的停車位識別。</br></br>如果啟用，將會提示客戶在到達時指定其停車位。 如果停用，客戶可以略過此輸入。 | 全域 | 否 |
 | **[!UICONTROL Parking Spots List]**</br> `Internal Attribute: inventory_source_parking_spot_dynamic_rows` | 此商舖位置提供路邊取車的停車位。 使用提供的介面為每個點命名。</br></br>您不需要為每一個停車位命名，只需要為路邊指定的停車位命名。 例如，您可能有可用的停車位A-G列，但只有列A的前8個點被指定用於路邊取車。 在此案例中，您可能會定義8個位置；例如：A1、A2、A3等。 | 全域 | 否 |
 | **[!UICONTROL Allow "Other" Parking Spot Field]**</br>`Extension Attribute: custom_parking_spot_enabled` | 啟用時，此設定可讓客戶在簽到期間描述他們的停車位。 | 全域 | 否 |
-| **[!UICONTROL Use Car Color]**</br>`Extension Attribute: use_car_color` | 指定是否支援在簽到期間從客戶收集車輛顏色。 </br></br> [!UICONTROL Car Color]的可用選擇已在簽入體驗](check-in-experience-setup.md)的管理員[系統設定中設定。 | 全域 | 否 |
+| **[!UICONTROL Use Car Color]**</br>`Extension Attribute: use_car_color` | 指定是否支援在簽到期間從客戶收集車輛顏色。 </br></br> [!UICONTROL Car Color]的可用選擇已在簽入體驗[&#128279;](check-in-experience-setup.md)的管理員系統設定中設定。 | 全域 | 否 |
 | **[!UICONTROL Is Car Color a Mandatory Field?]**</br>`Extension Attribute: car_color_mandatory` | 指定客戶在簽到期間是否需要車輛顏色識別。</br></br>如果啟用，將會提示客戶在抵達時指定其車輛的顏色。 如果停用，客戶可以略過此輸入。 | 全域 | 否 |
-| **[!UICONTROL Use Car Make]** </br>`Extension Attribute: use_car_make` | 指定是否支援在簽到期間從客戶收集車輛。</br></br> [!UICONTROL Car Make]的可用選擇已在簽入體驗](check-in-experience-setup.md)的管理員[系統設定中設定。 | 全域 | 否 |
+| **[!UICONTROL Use Car Make]** </br>`Extension Attribute: use_car_make` | 指定是否支援在簽到期間從客戶收集車輛。</br></br> [!UICONTROL Car Make]的可用選擇已在簽入體驗[&#128279;](check-in-experience-setup.md)的管理員系統設定中設定。 | 全域 | 否 |
 | **[!UICONTROL Is Car Make a Mandatory Field?]**</br>`Extension Attribute: car_make_mandatory` | 指定客戶在簽到期間是否需要車輛製造識別。</br></br>如果啟用，將會提示客戶在抵達時指定其車輛的廠牌。 如果停用，客戶可以略過此輸入。 | 全域 | 否 |
 | **[!UICONTROL Use Additional Information]**</br> `Extension Attribute: use_additional_information` | 指定是否支援在簽到期間從客戶收集其他資訊。 | 全域 | 否 |
 | **[!UICONTROL Is Additional Information a Mandatory Field?]**</br>`Extension Attribute: additional_information_mandatory` | 指定客戶在簽到期間是否需要其他資訊。 </br></br>如果啟用，會在客戶抵達時提示輸入其他資訊。 如果停用，客戶可以略過此輸入。 | 全域 | 否 |

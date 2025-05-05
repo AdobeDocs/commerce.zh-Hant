@@ -48,7 +48,7 @@ ht-degree: 0%
 * 法國(FR)
 * 英國（英國）
 
-付款服務在上線期間為其他[可用國家/地區提供[快速結帳功能](../payment-services/payments-options.md) （付款選項的子集）](../payment-services/production.md#complete-merchant-onboarding)。
+付款服務在上線期間為其他[&#128279;](../payment-services/production.md#complete-merchant-onboarding)可用國家/地區提供[快速結帳功能](../payment-services/payments-options.md) （付款選項的子集）。
 
 如需發行版本和特定版本的詳細資訊，請參閱[生命週期原則](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html)和[[!DNL Payment Services] 發行說明](release-notes.md)頁面。
 

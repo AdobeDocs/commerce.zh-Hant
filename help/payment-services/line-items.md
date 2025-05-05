@@ -122,7 +122,7 @@ ht-degree: 0%
 
 +++
 
-如需這些欄位及其限制的詳細資訊，請參閱明細專案](https://developer.paypal.com/docs/api/orders/v2/#definition-line_item){target=_blank}的[PayPal開發人員檔案。
+如需這些欄位及其限制的詳細資訊，請參閱明細專案[&#128279;](https://developer.paypal.com/docs/api/orders/v2/#definition-line_item){target=_blank}的PayPal開發人員檔案。
 
 ## 管理條列專案
 

@@ -90,7 +90,7 @@ _Cold Start_&#x200B;問題是指模型訓練及生效所需的時間。 對於�
 
 >[!NOTE]
 >
->已針對Luma店面最佳化產品推薦量度。 如果您的店面是透過PWA Studio實作，請參閱[PWA檔案](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/)。 如果您使用自訂前端技術，例如React或Vue JS，請瞭解如何在Headless](headless.md)環境中整合[產品推薦。
+>已針對Luma店面最佳化產品推薦量度。 如果您的店面是透過PWA Studio實作，請參閱[PWA檔案](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/)。 如果您使用自訂前端技術，例如React或Vue JS，請瞭解如何在Headless[&#128279;](headless.md)環境中整合產品推薦。
 
 #### 必要的儀表板事件
 

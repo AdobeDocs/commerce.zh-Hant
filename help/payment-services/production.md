@@ -28,8 +28,8 @@ ht-degree: 0%
 
    您被導向到[首頁]檢視中的設定區域，並展開相關選項(**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_)，您可以在此啟用[!DNL Payment Services]選項做為您的[付款方式](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"}。
 
-1. 在&#x200B;_[!UICONTROL General Configuration]_中，將&#x200B;**[!UICONTROL Enable]**設為`Yes`。
-1. 將&#x200B;_[!UICONTROL Credit Card Fields]_和_[!UICONTROL PayPal payment buttons]_&#x200B;的&#x200B;**[!UICONTROL Payment Action]**&#x200B;設定為下列其中一項：
+1. 在&#x200B;_[!UICONTROL General Configuration]_&#x200B;中，將&#x200B;**[!UICONTROL Enable]**&#x200B;設為`Yes`。
+1. 將&#x200B;_[!UICONTROL Credit Card Fields]_&#x200B;和_[!UICONTROL PayPal payment buttons]_&#x200B;的&#x200B;**[!UICONTROL Payment Action]**&#x200B;設定為下列其中一項：
 
    | 設定 | 說明 |
    |---|---|
@@ -104,7 +104,7 @@ ht-degree: 0%
 
 1. 在管理員側邊欄上，前往&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**
 
-   _[!UICONTROL Live onboarding]_按鈕不再可見，您會看到「[!UICONTROL Live payments pending]」文字方塊。
+   _[!UICONTROL Live onboarding]_&#x200B;按鈕不再可見，您會看到「[!UICONTROL Live payments pending]」文字方塊。
 
    在該文字方塊中，系統可能會要求您確認使用PayPal的電子郵件地址，以便完成上線。
 
@@ -154,7 +154,7 @@ _生產商家識別碼_&#x200B;已自動產生，並填入[組態](configure-adm
 
 1. 在&#x200B;_管理員_&#x200B;側邊欄上，移至&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**。
 1. 在首頁上，按一下頁面右上角的&#x200B;**[!UICONTROL Settings]**。 如需詳細資訊，請參閱[首頁](payments-home.md)。
-1. 在&#x200B;_[!UICONTROL General Configuration]_區段中，將&#x200B;**[!UICONTROL Payment mode]**設為`Production`。
+1. 在&#x200B;_[!UICONTROL General Configuration]_&#x200B;區段中，將&#x200B;**[!UICONTROL Payment mode]**&#x200B;設為`Production`。
 1. 按一下&#x200B;**[!UICONTROL Save]**。
 1. [清除您的快取](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management){target="_blank"}。
 

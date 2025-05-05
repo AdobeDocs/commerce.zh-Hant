@@ -48,7 +48,7 @@ PCI 3-D Secure (3DS)可讓購買者線上上購買信用卡時，與其信用卡
 
 >[!MORELIKETHIS]
 >
-> * 如需詳細資訊，請參閱設定](settings.md#3ds)中的[3DS。
+> * 如需詳細資訊，請參閱設定[&#128279;](settings.md#3ds)中的3DS。
 > * 請參閱PayPal開發人員檔案中的[測試卡](https://developer.paypal.com/docs/checkout/advanced/customize/3d-secure/test/)，以取得有關3DS測試之特定信用卡的詳細資訊。
 
 ### 卡片存放
