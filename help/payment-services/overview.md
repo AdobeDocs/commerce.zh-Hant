@@ -54,7 +54,7 @@ ht-degree: 0%
 
 ### 哪個[!DNL Payment Services]選項適合您？
 
->[!VIDEO](https://video.tv.adobe.com/v/3447811)
+>[!VIDEO](https://video.tv.adobe.com/v/3447929?captions=chi_hant)
 
 如需設定[!DNL Payment Services]擴充功能的詳細資訊，請參閱[連線](connect.md)。
 

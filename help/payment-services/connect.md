@@ -14,7 +14,7 @@ ht-degree: 0%
 
 [!DNL Payment Services]由Commerce Services提供技術支援，並部署為SaaS （軟體即服務）。 您使用API金鑰和私密金鑰來連線Commerce執行個體，並使用[Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce/user-guides/saas.html)指定設定中的資料空間。 **您只設定此連線一次。**
 
->[!VIDEO](https://video.tv.adobe.com/v/3447835)
+>[!VIDEO](https://video.tv.adobe.com/v/3448028?captions=chi_hant)
 
 >[!INFO]
 >

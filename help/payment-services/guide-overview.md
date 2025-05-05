@@ -44,7 +44,7 @@ ht-degree: 0%
 
 如果您需要資訊或有本指南未涵蓋的問題，請連絡您的[!DNL Payment Services]銷售代表，或使用[!DNL Payment Services]首頁中的可用資源：
 
->[!VIDEO](https://video.tv.adobe.com/v/3447836)
+>[!VIDEO](https://video.tv.adobe.com/v/3448238?captions=chi_hant)
 
 檢視[可用性](overview.md#availability)以檢查哪個[!DNL Payment Services]選項適合您。
 

@@ -202,7 +202,7 @@ Adobe Commerce最多會收集五年的[歷史訂單資料和狀態](events-backo
 
 觀看此影片以進一步瞭解歷史訂單，然後完成下列步驟以實施歷史訂單收集。
 
->[!VIDEO](https://video.tv.adobe.com/v/3424672)
+>[!VIDEO](https://video.tv.adobe.com/v/3450238?captions=chi_hant)
 
 #### 設定Order Sync服務
 
