@@ -6,16 +6,16 @@ recommendations: noDisplay, noCatalog
 hide: true
 hidefromtoc: true
 exl-id: 5ba1fa65-391f-4af7-8c40-d8314ec9d3e5
-source-git-commit: 79d1b862c5cc307daf93f93c03f1993dbd45aa09
+source-git-commit: 7b59d3a3c7d3cdc875e3329c7949eccc3a6c9fdc
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '509'
 ht-degree: 0%
 
 ---
 
 # Adobe Commerce產品解決方案
 
-Adobe提供數種解決方案來滿足電子商務業務的需求。 有關[Experience League](https://experienceleague.adobe.com/zh-hant/docs/commerce)和[Adobe Developer](https://developer.adobe.com/commerce/docs/)網站的Adobe Commerce檔案為客戶提供自助服務資源，以支援所有解決方案。 但是，如果沒有指引，導覽如此大量的內容可能具有挑戰性。
+Adobe提供數種解決方案來滿足電子商務業務的需求。 有關[Experience League](https://experienceleague.adobe.com/en/docs/commerce)和[Adobe Developer](https://developer.adobe.com/commerce/docs/)網站的Adobe Commerce檔案為客戶提供自助服務資源，以支援所有解決方案。 但是，如果沒有指引，導覽如此大量的內容可能具有挑戰性。
 
 ## 徽章
 
@@ -41,7 +41,11 @@ Adobe提供數種解決方案來滿足電子商務業務的需求。 有關[Expe
 
 #### 僅[!BADGE 個PaaS]{type=Informative tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce 。"}
 
-此徽章只會識別與Cloud[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/overview)和內部部署專案上的Adobe Commerce相關的檔案。 雲端上的Adobe Commerce專案在預先布建的環境中於雲端原生、完全受管理的平台即服務(PaaS)解決方案上託管，該解決方案具有Adobe Commerce的所有核心功能。 內部部署專案在客戶管理的基礎架構上託管。
+此徽章只會識別與Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)和內部部署專案上的[Adobe Commerce相關的檔案。 雲端上的Adobe Commerce專案在預先布建的環境中於雲端原生、完全受管理的平台即服務(PaaS)解決方案上託管，該解決方案具有Adobe Commerce的所有核心功能。 內部部署專案在客戶管理的基礎架構上託管。
+
+>[!NOTE]
+>
+>除非另有說明，否則這也包括根據Magento Open Source程式碼庫自行託管的專案。
 
 ### 規則
 
