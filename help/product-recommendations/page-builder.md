@@ -3,7 +3,7 @@ title: '[!DNL Page Builder]整合'
 description: 瞭解如何在Page Builder中使用 [!DNL Product Recommendations] 單位。
 feature: Services, Recommendations, Page Builder
 exl-id: 001e8e1d-3590-4b44-b5f8-dd8b9b61f370
-badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce 。"
+badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce 。"
 source-git-commit: be1c739f3821a5f1e846b3026088e3a3ff45a60f
 workflow-type: tm+mt
 source-wordcount: '272'
