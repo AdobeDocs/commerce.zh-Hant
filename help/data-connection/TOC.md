@@ -5,7 +5,7 @@ breadcrumb-title: Adobe Commerce的[!DNL Data Connection]延伸模組
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
-badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce 。"
+badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce 。"
 source-git-commit: 98a7ea9ff7d741bd7333b44618e7287da9d66353
 workflow-type: tm+mt
 source-wordcount: '146'
@@ -37,4 +37,4 @@ ht-degree: 2%
 - 使用案例 {#use-cases}
    - [使用Adobe Journey Optimizer傳送捨棄的購物車電子郵件](using-ajo.md)
    - [使用Commerce事件資料在Real-Time CDP中建立對象](create-audience.md)
-- [返回Commerce服務首頁](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [返回Commerce服務首頁](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=zh-Hant)
