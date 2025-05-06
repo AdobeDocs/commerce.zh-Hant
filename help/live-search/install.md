@@ -455,7 +455,7 @@ Adobe Systems建議直接調用 SaaS API，特別是目錄服務終端節點。
 
 如果小組件檢測到「商務管理員語言」設置與支持的語言匹配，則預設為該語言。 否則，介面工具集預設為 英文。 在“管理”中，通過導航到 _[!UICONTROL Stores]_>> [!UICONTROL Settings]_[!UICONTROL Configuration]_ > _[!UICONTROL General]_> [!UICONTROL Country Options]來配置語言設置。
 
-管理員還可以設置搜尋索引](settings.md#language)的語言[，以幫助確保獲得更好的搜尋結果。
+管理員還可以設置搜尋索引[&#128279;](settings.md#language)的語言，以幫助確保獲得更好的搜尋結果。
 
 ### Widget代碼存放庫
 
