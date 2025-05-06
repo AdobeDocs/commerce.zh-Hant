@@ -3,13 +3,13 @@ title: '[!DNL Catalog Service]'
 description: 適用於Adobe Commerce的[!DNL Catalog Service]提供一種比原生Adobe Commerce GraphQL查詢更快擷取產品顯示頁面和產品清單頁面內容的方法。
 role: Admin, Developer
 recommendations: noCatalog
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 525e3ff0-efa6-48c7-9111-d0b00f42957a
+source-git-commit: be1c739f3821a5f1e846b3026088e3a3ff45a60f
 workflow-type: tm+mt
-source-wordcount: '1078'
+source-wordcount: '1095'
 ht-degree: 0%
 
 ---
-
 
 # 適用於Adobe Commerce的[!DNL Catalog Service]
 
@@ -43,7 +43,7 @@ Adobe Commerce擁有兩個GraphQL系統。 核心GraphQL系統提供廣泛的查
 
 GraphQL系統的核心和服務不會直接互相通訊。 您從不同的URL存取每個系統，而呼叫需要不同的標題資訊。 這兩個GraphQL系統旨在搭配使用。 [!DNL Catalog Service] GraphQL系統可增強核心系統，讓產品店面體驗更快速。
 
-您可以選擇實作Adobe Developer App Builder[&#128279;](https://developer.adobe.com/graphql-mesh-gateway/)的API Mesh，以使用Adobe Developer將兩個Adobe Commerce GraphQL系統與私人和協力廠商API及其他軟體介面整合。 您可以設定網格，以確保路由到每個端點的呼叫在標題中包含正確的授權資訊。
+您可以選擇實作Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/)的[API Mesh，以使用Adobe Developer將兩個Adobe Commerce GraphQL系統與私人和協力廠商API及其他軟體介面整合。 您可以設定網格，以確保路由到每個端點的呼叫在標題中包含正確的授權資訊。
 
 ## 架構詳細資料
 
@@ -84,5 +84,7 @@ GraphQL系統的核心和服務不會直接互相通訊。 您從不同的URL存
 > 擁有[!DNL Catalog Service]的Commerce客戶可透過[SaaS價格索引器](../price-index/price-indexing.md)，利用其網站上更快速的價格變更更新和同步處理時間。
 
 ## 實施
+
+僅[!BADGE 個PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce 。"}
 
 安裝程式需要[Commerce Services Connector](../landing/saas.md)的設定。 完成此操作後，系統整合員下一步將更新店面程式碼以合併[!DNL Catalog Service]查詢。 所有[!DNL Catalog Service]查詢都會路由至GraphQL閘道。 URL會在上線流程中提供。
