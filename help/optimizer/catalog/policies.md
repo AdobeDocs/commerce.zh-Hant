@@ -3,9 +3,10 @@ title: 原則
 description: 瞭解如何使用原則來篩選管道中的資料，以確保將資料傳送至正確的目的地。
 hide: true
 recommendations: noCatalog
-source-git-commit: 425c801a852de566120504563e256b0351df588e
+exl-id: 05bbad1a-d612-41a4-9575-543f507089c3
+source-git-commit: a731d978aa180633431b0dd9dde5439c286461a2
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '910'
 ht-degree: 0%
 
 ---
@@ -32,12 +33,12 @@ ht-degree: 0%
 |---|---|---|
 | **屬性** | 用於篩選的產品屬性。 | `part_category` |
 | **運運算元** | 套用至屬性的條件。 | `IN`，`EQUALS`，`CONTAINS` |
-| **值來源** | 指定值是`STATIC`或`TRIGGER`。 | `STATIC` |
+| **值來源** | 指定值是`STATIC`或`TRIGGER`。 | `STATIC` [進一步瞭解](#value-source-types) |
 | **值** | 符合條件的特定值。 | `brakes, suspension` |
 
 ### 範例
 
-具有屬性`part_category`、運運算元`IN`和值`brakes, suspension`的篩選器可確保原則中只包含分類為剎車和暫停的產品。
+具有屬性`part_category`、運運算元`IN`和值`brakes, suspension`的篩選器可確保原則只會篩選並顯示具有屬性`part_category`且值為`brake`或`suspension`的產品。
 
 ### 值來源型別
 

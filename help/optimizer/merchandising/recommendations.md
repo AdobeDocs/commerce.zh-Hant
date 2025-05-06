@@ -2,9 +2,10 @@
 title: Recommendations
 description: Recommendations是強大的行銷工具，可用來增加轉換次數、增加收入及刺激購物者參與。
 recommendations: noCatalog
-source-git-commit: d716dd9d75beb642bfad30271b6ecd3490ee7328
+exl-id: 04228203-37a3-4535-ad61-d5e586e57d63
+source-git-commit: 149b87fc822e5d07eed36f3d6a38c80e7b493214
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '262'
 ht-degree: 0%
 
 ---
@@ -31,3 +32,11 @@ Recommendations會使用人工智慧和機器學習演演算法，對彙總的�
 - [編輯](../../product-recommendations/edit.md)現有的建議。
 
 您可以使用recommendations店面元件，在店面上顯示這些產品推薦。
+
+## 限制
+
+以下列出提早存取的建議限制。
+
+- [!DNL Adobe Commerce Optimizer]支援&#x200B;_最近檢視的_&#x200B;建議型別。
+- 不支援類別或屬性包含或排除專案。
+- 您無法在[!DNL Adobe Commerce Optimizer]中預覽建議。

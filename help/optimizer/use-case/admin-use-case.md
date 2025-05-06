@@ -4,9 +4,10 @@ description: 瞭解如何使用 [!DNL Adobe Commerce Optimizer] 使用管道和�
 hide: true
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: d716dd9d75beb642bfad30271b6ecd3490ee7328
+exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
+source-git-commit: 149b87fc822e5d07eed36f3d6a38c80e7b493214
 workflow-type: tm+mt
-source-wordcount: '1656'
+source-wordcount: '1672'
 ht-degree: 0%
 
 ---
@@ -35,8 +36,8 @@ ht-degree: 0%
 
 本文結束時，您將瞭解：
 
-- 瞭解其獨特的高效能和可擴展目錄數據模型的 [!DNL Adobe Commerce Optimizer] 基礎知識。
-- 了解目錄數據模型如何與 Adobe Systems 構建的平台無關的店面元件無縫銜接。
+- 瞭解[!DNL Adobe Commerce Optimizer]的基礎知識，其獨特的效能和可擴充的目錄資料模型。
+- 瞭解目錄資料模型如何與Adobe建立的平台無關店面元件緊密結合。
 - 瞭解如何使用Adobe Commerce Optimizer管道和原則來建立自訂目錄檢視和資料存取篩選器，並將資料傳送到Edge Delivery支援的Adobe Commerce店面。
 
 ## 商業案例 — Carvelo Automobile
@@ -78,7 +79,7 @@ Carvelo想要透過不同的經銷商（Akbridge、Kingsbluff和Celport），在
 最後，Carvelo有兩個主要目標：
 
 1. 維護「全球」網站，該網站具有涵蓋所有三個品牌的所有SKU。
-1. 為經銷商提供路徑，根據各經銷商的獨特SKU可見度和每份SKU價格，設定自己的店面。
+1. 為經銷商提供路徑，根據各經銷商的獨特SKU可見度和每份SKU價格，設定自己的店面。 同時使用單一基本型錄，可消除型錄重複。
 
 >[!ENDSHADEBOX]
 
@@ -140,11 +141,11 @@ Carvelo的商務經理需要為隸屬於&#x200B;*East Coast Inc*&#x200B;公司�
 
 ### 建立原則
 
-讓我們創建一個名為 Celport 零件類別&#x200B;*的新*&#x200B;原則，以篩選 Celport 轉銷商銷售的 SKU，其中包括制動器和懸架零件。
+讓我們建立名為&#x200B;*Celport零件類別*&#x200B;的新原則，以篩選Celport經銷商銷售的SKU，包括剎車和暫停零件。
 
-1. 在左側導覽中，展開該 **[!UICONTROL Catalog]** 部分並按下 **[!UICONTROL Policies]**。
+1. 在左側導覽列中，展開&#x200B;**[!UICONTROL Catalog]**&#x200B;區段並按一下&#x200B;**[!UICONTROL Policies]**。
 
-1. 按兩下 **[!UICONTROL Add Policy]**。
+1. 按一下&#x200B;**[!UICONTROL Add Policy]**。
 
    將顯示新頁面以新增原則詳細資訊。
 
@@ -269,12 +270,14 @@ Carvelo的商務經理需要為隸屬於&#x200B;*East Coast Inc*&#x200B;公司�
    - `ac-environment-id`： `"Fwus6kdpvYCmeEdcCX7PZg"`
    - `ac-price-book-id`： `"west_coast_inc"`
 
-   +++
++++
 
 1. 將`ac-channel-id`值取代為您先前複製的Celport管道ID。
-1. 如有需要，請以您[!DNL Adobe Commerce Optimizer]執行個體的租使用者識別碼取代`ac-environment-id`值。 您可以在搶先體驗計畫的入門電子郵件中找到ID，或連絡您的Adobe客戶代表以取得。
+1. 將`ac-environment-id`值取代為您[!DNL Adobe Commerce Optimizer]執行個體的租使用者識別碼。 您可以在搶先體驗計畫的入門電子郵件中找到ID，或連絡您的Adobe客戶代表以取得。
 
-   確定`commerce-endpoint`值與您[!DNL Adobe Commerce Optimizer]執行個體的GraphQL端點相符。
+   >[!IMPORTANT]
+   >
+   >確定`commerce-endpoint`值與您[!DNL Adobe Commerce Optimizer]執行個體的GraphQL端點相符。 此資訊會顯示在您的歡迎電子郵件中。
 
 1. 將`ac-price-book-id`值取代為`"east_coast_inc"`。
 1. 儲存檔案。
@@ -291,9 +294,9 @@ Carvelo的商務經理需要為隸屬於&#x200B;*East Coast Inc*&#x200B;公司�
 
    瀏覽器會在`http://localhost:3000`開啟本機開發預覽。
 
-   如果命令失敗或瀏覽器未打開，請查看 [店面設置主題中的本地開發](../storefront.md) 說明。
+   如果命令失敗或瀏覽器未開啟，請檢閱Storefront設定主題中本機開發的[指示](../storefront.md)。
 
-   1. 在 瀏覽器 中，搜尋 ， `brakes`然後按 **Enter** 鍵。
+   1. 在瀏覽器中搜尋`brakes`，然後按&#x200B;**Enter**。
 
       店面會更新，以顯示顯示剎車零件的產品清單頁面。
 
@@ -321,11 +324,11 @@ Carvelo的商務經理需要為隸屬於&#x200B;*East Coast Inc*&#x200B;公司�
 
       請注意可用的不同零件型別，並注意指定給Kingsbluff頻道的價格。
 
-      通過更改店面配置文件中的標頭值並流覽更新的店面，您可以看到更新目錄視圖和数据篩選器以自定義店面體驗是多麼容易。
+      透過變更店面設定檔案中的標題值並探索更新的店面，您可以看到更新目錄檢視和資料篩選器以自訂店面體驗是多麼容易。
 
-## 就是這樣！
+## 完成了！
 
-在此教學課程中，您了解了如何使用 [!DNL Adobe Commerce Optimizer] 單個基本目錄説明您組織目錄以匹配零售作。 您還學習了如何設置由邊緣交付服務提供支援的店面。
+在本教學課程中，您已瞭解[!DNL Adobe Commerce Optimizer]如何使用單一基底目錄來協助您組織目錄，以符合您的零售業務。 您也學習了如何設定由Edge Delivery Services提供支援的店面。
 
 ## 從這裡前往何處
 

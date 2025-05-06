@@ -2,9 +2,10 @@
 title: 產品探索
 description: Product Discovery提供快速、相關且直覺式的搜尋體驗。
 recommendations: noCatalog
-source-git-commit: d716dd9d75beb642bfad30271b6ecd3490ee7328
+exl-id: b9429ccb-947b-462c-8b34-63fb53d015f6
+source-git-commit: 149b87fc822e5d07eed36f3d6a38c80e7b493214
 workflow-type: tm+mt
-source-wordcount: '190'
+source-wordcount: '202'
 ht-degree: 0%
 
 ---
@@ -37,3 +38,7 @@ ht-degree: 0%
 - [同義字](../../live-search/synonyms.md)
 - [搜尋銷售](../../live-search/rules.md)
 - [設定](../../live-search/settings.md)
+
+## 限制
+
+對於產品探索，不支援屬性式銷售和價格設定。

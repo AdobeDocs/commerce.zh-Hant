@@ -2,9 +2,10 @@
 title: 邊界和限制
 description: 瞭解 [!DNL Adobe Commerce Optimizer] 的界限和限制，以確保其符合您的業務需求。
 role: Admin, Developer
-source-git-commit: 45a43fe2ada206515c512a04aa6e9072e08844cc
+exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
+source-git-commit: 149b87fc822e5d07eed36f3d6a38c80e7b493214
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '270'
 ht-degree: 0%
 
 ---
@@ -28,10 +29,7 @@ ht-degree: 0%
 
 ## 價格
 
-- 價格簿的數量上限為30,000。 價格簿的基本層級數目不得超過100，且應遵循其中的（價格簿數目） x （管道數目）必須小於或等於100的規則。
-- 保證的價格摘要擷取速率為每分鐘5000筆記錄。
-- 單一價格記錄的折扣不能超過10個。
-- 每日價格更新的基礎數量為5,000,000。
+- 價格簿的數量上限為1,000。
 
 ## 搜尋和店面
 
@@ -53,6 +51,6 @@ ht-degree: 0%
 - 對於產品探索，不支援基於屬性的銷售和價格設定。
 - 對於建議：
 
-   - ACO支援EA的&#x200B;_最近檢視的_&#x200B;建議型別
+   - [!DNL Adobe Commerce Optimizer]支援&#x200B;_最近檢視的_&#x200B;建議型別以便提早存取。
    - 不支援類別或屬性包含或排除專案。
    - 您無法在[!DNL Adobe Commerce Optimizer]中預覽建議。
