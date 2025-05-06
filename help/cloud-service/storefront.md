@@ -3,9 +3,9 @@ title: 設定您的店面
 description: 瞭解如何執行支架工具來設定您的 [!DNL Adobe Commerce as a Cloud Service] 店面。
 role: Developer
 exl-id: 02928dc4-1777-483e-b0ee-b04fc813864d
-source-git-commit: 7f7a674b856090bd02752a9e2ad29475b2b56fcf
+source-git-commit: 022e3474b8f2839d2501c46def21733a8d4ad9cc
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 下列步驟示範如何使用`aio commerce init`命令快速設定由Edge Delivery支援的Adobe Commerce店面。 此程式會設定下列專案：
 
-* [由Edge Delivery Services提供支援的Commerce店面](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=zh-Hant) — 由Adobe的Edge Delivery Services提供支援的效能、可擴充且安全的店面。
+* [由Edge Delivery Services提供支援的Commerce店面](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) — 由Adobe的Edge Delivery Services提供支援的效能、可擴充且安全的店面。
 * [適用於Adobe Developer App Builder的API Mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/) — 這個API平台可讓開發人員將多個資料來源合併為單一GraphQL端點。 API Mesh透過單一閘道，使用Adobe API協調協力廠商API。 對單一GraphQL端點的一個查詢可以傳回來自多個來源的結果。
 * [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/) — 具有存取API、事件、執行階段函式和外掛程式的開發人員工具集合，您可以使用這些工具來建置Adobe應用程式的專案。
 * [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/) — 用於部署自訂程式碼的無伺服器引擎，可回應事件並執行雲端中的函式。
@@ -89,7 +89,7 @@ ht-degree: 0%
 
 ## 執行`aio commerce init`命令
 
-執行以下命令，將為您的Commerce店面建立支架。 此支架是您建立和瞭解店面的絕佳起點。 如需使用店面的詳細資訊，請參閱[Adobe Commerce店面檔案](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant)。
+執行以下命令，將為您的Commerce店面建立支架。 此支架是您建立和瞭解店面的絕佳起點。 如需使用店面的詳細資訊，請參閱[Adobe Commerce店面檔案](https://experienceleague.adobe.com/developer/commerce/storefront/)。
 
 
 1. 執行`init`命令：
@@ -108,6 +108,7 @@ ht-degree: 0%
       * 如果選取此選項，系統會提示您於瀏覽器視窗中安裝AEM程式碼同步機器人。 您必須指定您建立的存放庫並授權機器人。 返回CLI並輸入`y`以確認AEM程式碼同步機器人安裝。
    * **挑選可用的Adobe Commerce租使用者** — 在選取的組織中選取現有的Commerce租使用者。
       * 如果選取此選項，則必須選取要在其中建立網格的專案和工作區。
+   * **提供您自己的Adobe Commerce租使用者API URL** — 如果您是搶先存取計畫參與者，請選取此選項。 輸入Adobe入門電子郵件中提供的API URL。
 
    >[!NOTE]
    >
@@ -121,4 +122,4 @@ ht-degree: 0%
    * 預覽您的店面： `https://main--<repo name>--<username or org>.aem.page/`
    * 本機執行： `aio commerce:dev`
 
-若要自訂您的店面，請參閱[Adobe Commerce店面檔案](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant)。
+若要自訂您的店面，請參閱[Adobe Commerce店面檔案](https://experienceleague.adobe.com/developer/commerce/storefront/)。
