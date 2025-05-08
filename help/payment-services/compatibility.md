@@ -26,7 +26,7 @@ ht-degree: 0%
 
    >[!TIP]
    >
-   > 如需詳細資訊，請參閱我們的[Adobe Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector)教學課程影片。
+   > 如需詳細資訊，請參閱我們的[Adobe Commerce Services Connector](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector)教學課程影片。
 
 1. 如果您已經連線執行個體，請瀏覽至[上線](onboard.md)頁面以瞭解後續步驟。
 
@@ -96,13 +96,13 @@ ht-degree: 0%
 
 >[!ENDTABS]
 
-如需發行版本和特定版本的詳細資訊，請參閱[生命週期原則](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html)和[[!DNL Payment Services] 發行說明](release-notes.md)頁面。
+如需發行版本和特定版本的詳細資訊，請參閱[生命週期原則](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html?lang=zh-Hant)和[[!DNL Payment Services] 發行說明](release-notes.md)頁面。
 
 若要取得完整指示並開始入門流程，請參閱[開始使用 [!DNL Payment Services]](onboard.md)。
 
 ### 接受的信用卡與貨幣
 
-[!DNL Payment Services]接受其可用國家[的貨幣](#availability)。 如需設定貨幣匯率的詳細資訊，請參閱[貨幣組態](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html)。
+[!DNL Payment Services]接受其可用國家[的貨幣](#availability)。 如需設定貨幣匯率的詳細資訊，請參閱[貨幣組態](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html?lang=zh-Hant)。
 
 如需PayPal產品與服務可用貨幣與付款方式的詳細資訊，請參閱下列頁面：
 

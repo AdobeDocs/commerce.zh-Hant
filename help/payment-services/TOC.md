@@ -51,4 +51,4 @@ ht-degree: 3%
 - 安全性與合規性 {#security-compliance}
    - [安全性](security.md)
    - [有效保護詐騙](fraud-protection.md)
-- [返回Commerce服務首頁](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
+- [返回Commerce服務首頁](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html?lang=zh-Hant)

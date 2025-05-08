@@ -27,7 +27,7 @@ ht-degree: 0%
 
    如果您尚未將[!DNL Payment Services]設定為您一或多個網站的付款方式，便會顯示此選項。
 
-   您被導向到[首頁]檢視中的設定區域，相關選項已展開(**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_)，您可以在此啟用[!DNL Payment Services]選項做為您的[付款方式](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"}。
+   您被導向到[首頁]檢視中的設定區域，相關選項已展開(**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_)，您可以在此啟用[!DNL Payment Services]選項做為您的[付款方式](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"}。
 
 1. 在&#x200B;_[!UICONTROL General Configuration]_&#x200B;中，將&#x200B;**[!UICONTROL Enable]**&#x200B;設為`Yes`。
 1. 將&#x200B;_[!UICONTROL Credit Card Fields]_&#x200B;和_[!UICONTROL PayPal payment buttons]_&#x200B;的&#x200B;**[!UICONTROL Payment Action]**&#x200B;設定為下列其中一項：
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 1. 按一下&#x200B;**[!UICONTROL Save]**。
 1. 按一下&#x200B;**[!UICONTROL Go to Payment Services]**&#x200B;以導向回[!DNL Payment Services]首頁。
-1. [清除您的快取](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html)。
+1. [清除您的快取](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html?lang=zh-Hant)。
 
    應在每次設定變更後進行清除。
 
@@ -157,7 +157,7 @@ _生產商家識別碼_&#x200B;已自動產生，並填入[組態](configure-adm
 1. 在首頁上，按一下頁面右上角的&#x200B;**[!UICONTROL Settings]**。 如需詳細資訊，請參閱[首頁](payments-home.md)。
 1. 在&#x200B;_[!UICONTROL General Configuration]_&#x200B;區段中，將&#x200B;**[!UICONTROL Payment mode]**&#x200B;設為`Production`。
 1. 按一下&#x200B;**[!UICONTROL Save]**。
-1. [清除您的快取](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management){target="_blank"}。
+1. [清除您的快取](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/tools/cache-management){target="_blank"}。
 
    >[!IMPORTANT]
    >

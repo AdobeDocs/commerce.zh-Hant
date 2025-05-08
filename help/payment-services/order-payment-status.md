@@ -106,7 +106,7 @@ ht-degree: 0%
 
 為確保此程式可如預期運作，商家必須設定新的cron工作。 一旦工作設定為自動執行，商家就不需要進行其他干預。
 
-請參閱[設定cron工作](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html)。 設定之後，新工作每30分鐘執行一次，以擷取處於`Payment Review`狀態的訂單的更新。
+請參閱[設定cron工作](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=zh-Hant)。 設定之後，新工作每30分鐘執行一次，以擷取處於`Payment Review`狀態的訂單的更新。
 
 商戶可以透過「訂單付款狀態」報表檢視來檢查更新的付款狀態。
 
@@ -114,11 +114,11 @@ ht-degree: 0%
 
 [!DNL Payment Services]使用訂單資料，並將其與其他來源（包括PayPal）的彙總付款資料結合，以提供有意義且非常有用的報表。
 
-訂單資料會匯出並保留在付款服務中。 當您[變更或新增訂單狀態](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-status#custom-order-status)或[編輯商店檢視](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-views#edit-a-store-view)、[商店](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/store-details#store-information)或網站名稱時，該資料會與付款資料結合，而訂單付款狀態報表會填入結合資訊。
+訂單資料會匯出並保留在付款服務中。 當您[變更或新增訂單狀態](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/order-management/orders/order-status#custom-order-status)或[編輯商店檢視](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/site-store/store-views#edit-a-store-view)、[商店](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/setup/store-details#store-information)或網站名稱時，該資料會與付款資料結合，而訂單付款狀態報表會填入結合資訊。
 
 此程式包含兩個步驟：
 
-1. 索引已變更資料`ON SAVE` （每次變更訂單資訊或存放區資訊時）或`BY SCHEDULE` （依預先設定的cron排程），視它在管理員的[索引管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management)中的設定方式而定。
+1. 索引已變更資料`ON SAVE` （每次變更訂單資訊或存放區資訊時）或`BY SCHEDULE` （依預先設定的cron排程），視它在管理員的[索引管理](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/tools/index-management)中的設定方式而定。
 
    依預設，資料索引會發生`ON SAVE`，這表示每當順序、訂單狀態、商店檢視、商店或網站發生變更時，索引程式就會立即發生。
 
@@ -134,7 +134,7 @@ ht-degree: 0%
 
 即使預設會在`ON SAVE`模式下重新索引，仍建議您在`BY SCHEDULE`模式下索引。 `BY SCHEDULE`索引會以1分鐘的cron排程執行，且任何變更的資料會在任何資料變更後的2分鐘內顯示在您的「訂單狀態」報表中。 這個排程的重新索引可幫助您減少商店上的任何負擔，尤其是如果您有大量傳入的訂單，因為這會按照排程進行（而不是每次下訂單時）。
 
-您可以在管理員[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode)中變更索引模式 — `ON SAVE`或`BY SCHEDULE`—。
+您可以在管理員[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/tools/index-management#change-the-index-mode)中變更索引模式 — `ON SAVE`或`BY SCHEDULE`—。
 
 若要瞭解如何設定資料匯出，請參閱[命令列組態](configure-cli.md#configure-data-export)。
 
@@ -245,10 +245,10 @@ ht-degree: 0%
 
 | 欄 | 說明 |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | Commerce訂單ID<br> <br>若要檢視相關的[訂單資訊](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"}，請按一下ID。 |
+| [!UICONTROL Order ID] | Commerce訂單ID<br> <br>若要檢視相關的[訂單資訊](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"}，請按一下ID。 |
 | [!UICONTROL Order Date] | 訂購日期時間戳記 |
 | [!UICONTROL Authorized Date] | 付款授權的日期時間戳記 |
-| [!UICONTROL Order Status] | 目前的Commerce [訂單狀態](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-status){target="_blank"} |
+| [!UICONTROL Order Status] | 目前的Commerce [訂單狀態](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/order-management/orders/order-status){target="_blank"} |
 | [!UICONTROL Invoiced] | 訂單的商業發票狀態 — *[!UICONTROL No]*、*[!UICONTROL Partial]*&#x200B;或&#x200B;*[!UICONTROL Yes]* |
 | [!UICONTROL Shipped] | 訂單的運送狀態 — *[!UICONTROL No]*、*[!UICONTROL Partial]*&#x200B;或&#x200B;*[!UICONTROL Yes]* |
 | [!UICONTROL Order Amt] | 訂單的總金額 |
