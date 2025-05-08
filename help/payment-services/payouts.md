@@ -69,7 +69,7 @@ ht-degree: 0%
 
 「付款服務」的「付款」檢視表中提供「付款」報表檢視表。 其中包含有關您商店付款的所有可用資訊。
 
-在&#x200B;_Admin_&#x200B;側邊欄上，前往&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**檢視詳細的表格式支付報告檢視。
+在&#x200B;_Admin_&#x200B;側邊欄上，前往&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**&#x200B;檢視詳細的表格式支付報告檢視。
 
 管理員中的![付款交易](assets/payouts-report-new.png){width="800" zoomable="yes"}
 
@@ -89,7 +89,7 @@ ht-degree: 0%
 
 ![資料來源選擇](assets/datasource.png){width="300" zoomable="yes"}
 
-如果&#x200B;_[!UICONTROL Live]_是選取的資料來源，您可以看到生產模式中存放區的報表資訊。 如果_[!UICONTROL Sandbox]_&#x200B;是選取的資料來源，您會看到以沙箱模式儲存的報告資訊。
+如果&#x200B;_[!UICONTROL Live]_&#x200B;是選取的資料來源，您可以看到生產模式中存放區的報表資訊。 如果&#x200B;_[!UICONTROL Sandbox]_&#x200B;是選取的資料來源，您會看到以沙箱模式儲存的報告資訊。
 
 資料來源選取專案的工作方式如下：
 
@@ -110,14 +110,14 @@ ht-degree: 0%
 
 搜尋中傳回或顯示在預設30天交易中的列數，會與「交易日期」行事曆選取器篩選器一起顯示在「付款」檢視網格上方。
 
-向左及向右捲動，檢視每日報表中每個支付交易](#column-descriptions)的[資訊，包括交易日期、參考ID、商業發票號碼及付款方式詳細資料。
+向左及向右捲動，檢視每日報表中每個支付交易[&#128279;](#column-descriptions)的資訊，包括交易日期、參考ID、商業發票號碼及付款方式詳細資料。
 
 #### 自訂交易時間範圍
 
 在「付款報表」檢視中，您可以輸入特定日期或從日期選擇器選取日期範圍，以自訂您要檢視之付款交易的時間範圍：
 
 1. 在&#x200B;_管理員_&#x200B;側邊欄上，前往&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**。
-1. 按一下&#x200B;_[!UICONTROL Transaction dates]_行事曆選擇器篩選器。
+1. 按一下&#x200B;_[!UICONTROL Transaction dates]_&#x200B;行事曆選擇器篩選器。
 1. 選擇適用的日期範圍。
 1. 檢視網格中指定日期的付款狀態。
 

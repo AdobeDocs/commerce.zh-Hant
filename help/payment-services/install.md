@@ -26,7 +26,7 @@ ht-degree: 0%
 
 您必須先從[Commerce Marketplace](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/commerce-marketplace.html)下載擴充功能，才能進行安裝。
 
-1. 導覽至Commerce Marketplace](https://commercemarketplace.adobe.com/magento-payment-services.html)中的[付款服務擴充功能。
+1. 導覽至Commerce Marketplace[&#128279;](https://commercemarketplace.adobe.com/magento-payment-services.html)中的付款服務擴充功能。
 1. 若要選擇版本和版本，請將&#x200B;**[!UICONTROL Edition]**&#x200B;和&#x200B;**[!UICONTROL Your store version]**&#x200B;切換為您偏好的選擇。
 1. 按一下&#x200B;**[!UICONTROL Add to Cart]**。
 1. 完成簽出，然後按一下&#x200B;**[!UICONTROL Place Order]**。

@@ -23,5 +23,5 @@ ht-degree: 0%
 1. 在&#x200B;_管理員_&#x200B;側邊欄中，展開&#x200B;**[!UICONTROL Sales]**&#x200B;並選擇&#x200B;**[!UICONTROL Orders]**。
 1. 按一下&#x200B;**[!UICONTROL Create New Order]**。
 1. 完成訂單所需的區段（詳細資訊請參閱[建立訂單](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order){target="_blank"}）。
-1. 在&#x200B;_[!UICONTROL Payment Method]_區段中，您應該能夠使用您的[!DNL Payment Services]作為付款方式。
+1. 在&#x200B;_[!UICONTROL Payment Method]_&#x200B;區段中，您應該能夠使用您的[!DNL Payment Services]作為付款方式。
 1. 按一下&#x200B;**[!UICONTROL Submit Order]**。

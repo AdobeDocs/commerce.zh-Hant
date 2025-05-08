@@ -115,7 +115,7 @@ ht-degree: 0%
 
    如果您在[!DNL Commerce]設定中沒有看到&#x200B;**[!UICONTROL Commerce Services Connector]**&#x200B;區段，請為所需的[[!DNL Commerce] 服務](#availableservices)安裝[!DNL Commerce]模組。 此外，請確定已安裝`magento/module-services-id`套件。
 
-1. 在&#x200B;_[!UICONTROL Sandbox API Keys]_和_[!UICONTROL Production API Keys]_&#x200B;區段中，貼上您的金鑰值。
+1. 在&#x200B;_[!UICONTROL Sandbox API Keys]_&#x200B;和_[!UICONTROL Production API Keys]_&#x200B;區段中，貼上您的金鑰值。
 
    - 私密金鑰必須在金鑰開頭包含`----BEGIN PRIVATE KEY---`，並在金鑰結尾包含`----END PRIVATE KEY----`。
    - 如果您沒有實際金鑰的副本，請向帳戶擁有者索取，然後將值插入設定中。
