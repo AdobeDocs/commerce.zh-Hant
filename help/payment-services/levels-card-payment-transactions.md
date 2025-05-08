@@ -2,41 +2,44 @@
 title: 第2級和第3級處理
 description: ' [!DNL Payment Services] 筆交易中的卡片付款處理層級。'
 role: Admin
-feature: Payments
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+feature: Payments, Paas, Saas
+exl-id: db8993fe-dd6f-48b5-9e7b-69a0f2e08552
+source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
 
 # 第2級和第3級處理
 
-透過[!DNL Payment Services]有三個可用的卡片處理層級：
+[!DNL Payment Services]提供進階卡片處理功能，協助商戶最佳化付款交易並降低交換費用。 可用的卡片處理有三個層級，每個層級都有不同的交易資料需求。
 
-* 層級1是最常見的，需要較少的資訊，因此通常比使用層級2或層級3資料處理的交易產生較高的交換費用，這些資料通常與公司和購買信用卡有關。
+## 每個處理層級的資料需求
 
-* 使用層級2和層級3，接受大量購買卡或公司卡交易的[!DNL Payment Services]客戶在交換加上(IC++)定價時，可能會因為允許[!DNL Payment Services]傳送更多交易相關資訊而收到較低的處理率。 如果交易符合資格，則根據卡片網路需求，商家可能會收到特定交易的較低處理率。
-
->[!NOTE]
->
->層級2與層級3訂價僅適用於Visa與MasterCard交易。 American Express只提供第2層定價。 Discover不提供第2級或第3級定價。 如需詳細資訊，請參閱PayPal開發人員檔案中的[付款處理](https://developer.paypal.com/docs/checkout/advanced/processing/){target=_blank}。
-
-檢視[什麼是IC++?PayPal開發人員檔案中的](https://www.paypal.com/us/brc/article/what-is-interchange-plus-plus){target=_blank}以取得詳細資訊。
-
-第2級與第3級處理資料可讓商家降低其IC++定價，前提是他們提供購買的其他細節，以降低處理器風險，並提供有利的方面：
-
-* 提供這項處理資料，大型客戶的費用將會降低。
-
-* 客戶不太可能遇到詐騙情況，因為訂單具有更多資訊。
-
-不過，卡片網路（如Visa和Mastercard）最終會決定交易是否符合第2級或第3級處理的資格：
-
-* 第2層資料包含其他資訊，例如訂單的稅捐金額、客戶代碼或採購單編號。
-
-* 第3層資料更瞭解有關銷售的詳細資訊，這有助於取得相較於第2層更低的交換率。 第3層資料包含採購料號摘要、採購單位數量、訂購料號的單位及其他特定明細等資訊。
+![交易報告](assets/level-processing-details.png){width="500" zoomable="yes"}
 
 [!DNL Payment Services]會收集這項資料，並提供付款交易的詳細報表。
+
+## 依卡片網路區分的可用處理層級
+
+![卡片詳細資料](assets/cards-details-level-processing.png){width="500" zoomable="yes"}
+
+如需詳細資訊，請參閱PayPal開發人員檔案中的[付款處理](https://developer.paypal.com/docs/checkout/advanced/processing/){target=_blank}。
+
+### 第1級
+
+層級1是最常見的，需要較少的資訊，因此通常比使用層級2或層級3資料處理的交易產生較高的交換費用，這些資料通常與公司和購買信用卡有關。
+
+### 第2級與第3級
+
+如果Interchange Plus (IC++)上的[!DNL Payment Services]商戶向卡網路提供額外的交易詳細資料，並符合特定的資格條件，則可能符合第2/第3級處理的資格。 這些層級對於處理大量購買或公司卡流量的商戶特別有利，因為它們可以大幅節省成本。 提供詳細的層級2或層級3資料可以：
+
+* 降低處理費用並最佳化整體成本
+* 防止詐騙，降低處理器風險
+* 增強交易安全性
+
+檢視[什麼是IC++?PayPal開發人員檔案中的](https://www.paypal.com/us/brc/article/what-is-interchange-plus-plus){target=_blank}以取得詳細資訊。
 
 ## [!DNL Payment Services]中的第2級與第3級卡片付款交易
 

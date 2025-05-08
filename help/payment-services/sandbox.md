@@ -1,8 +1,9 @@
 ---
 title: 設定測試沙箱
 description: 使用PayPal沙箱帳戶在測試模式中使用 [!DNL Payment Services] 。
-feature: Payments, Checkout, Configuration, Install
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
+feature: Payments, Checkout, Configuration, Install, Paas, Saas
+source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 0%
@@ -28,7 +29,7 @@ PayPal沙箱帳戶可讓您在測試模式中使用[!DNL Payment Services]。 Pa
       如果您在沙箱PayPal上線流程中建立PayPal沙箱帳戶，您必須[重設您的上線沙箱](#reset-your-sandbox-account)，否則您無法驗證電子郵件。
 
    1. 選取&#x200B;**[!UICONTROL Business]**&#x200B;作為帳戶型別並按一下&#x200B;**[!UICONTROL Create]**。
-   1. 在&#x200B;_[!UICONTROL Sandbox Accounts]_&#x200B;區段中，針對您建立的沙箱帳戶，按一下&#x200B;_[!UICONTROL Manage accounts]_&#x200B;欄中的三個點。
+   1. 在&#x200B;_[!UICONTROL Sandbox Accounts]_區段中，針對您建立的沙箱帳戶，按一下_[!UICONTROL Manage accounts]_&#x200B;欄中的三個點。
    1. 按一下&#x200B;**[!UICONTROL View/edit account]**。
 
       ![PayPal — 檢視/編輯沙箱帳戶](assets/onboarding-viewedit-sandbox.png){width="300" zoomable="yes"}

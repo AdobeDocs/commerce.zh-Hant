@@ -1,8 +1,9 @@
 ---
 title: 正在追蹤您在 [!DNL Payment Services]中的出貨
 description: 自訂Paypal商家儀表板中顯示的 [!DNL Payment Services] 出貨與追蹤資訊。
-feature: Payments
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+feature: Payments, Paas, Saas
+exl-id: 17aede1f-56ae-441a-b723-3193e865e469
+source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 [!DNL Payment Services]可讓商家在其PayPal商家儀表板中檢視運送的追蹤資訊。
 
-請參閱[出貨](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/order-management/shipments){target=_blank}主題，以取得有關Adobe Commerce出貨格線的詳細資訊。
+請參閱[出貨](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/shipments){target=_blank}主題，以取得有關Adobe Commerce出貨格線的詳細資訊。
 
 ## 追蹤您運送的運作方式
 

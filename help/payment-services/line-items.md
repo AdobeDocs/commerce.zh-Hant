@@ -1,9 +1,10 @@
 ---
 title: ' [!DNL Payment Services]的行專案'
 description: 瞭解 [!DNL Payment Services] 的行專案，以及如何檢視商家儀表板中的行專案。
-feature: Payments
+feature: Payments, Paas, Saas
 role: User
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: f690ff94-f83d-4525-9d52-1dea25a71060
+source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
 source-wordcount: '546'
 ht-degree: 0%
@@ -122,11 +123,11 @@ ht-degree: 0%
 
 +++
 
-如需這些欄位及其限制的詳細資訊，請參閱明細專案[&#128279;](https://developer.paypal.com/docs/api/orders/v2/#definition-line_item){target=_blank}的PayPal開發人員檔案。
+如需這些欄位及其限制的詳細資訊，請參閱明細專案](https://developer.paypal.com/docs/api/orders/v2/#definition-line_item){target=_blank}的[PayPal開發人員檔案。
 
 ## 管理條列專案
 
-Adobe Commerce [會根據各資料列](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}的總金額來計算稅捐，如果訂購了相同料號的多重數量，或目錄中顯示含稅價格，則可能會導致舍入問題。 在這種情況下，總數量可能會分成兩行，但數量會等於訂購的料號總計。
+Adobe Commerce [會根據各資料列](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}的總金額來計算稅捐，如果訂購了相同料號的多重數量，或目錄中顯示含稅價格，則可能會導致舍入問題。 在這種情況下，總數量可能會分成兩行，但數量會等於訂購的料號總計。
 
 > 商戶儀表板檢視中具有舍入問題的明細行專案範例
 

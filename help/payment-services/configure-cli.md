@@ -3,11 +3,12 @@ title: 命令列組態
 description: 安裝之後，您可以使用命令列介面(CLI)設定 [!DNL Payment Services] 。
 role: Admin, Developer
 level: Intermediate
-feature: Payments, Checkout, Configuration, Integration
-exl-id: bb59bd49-6ecd-4ef1-a6b9-e1e93db04bf6
-source-git-commit: 24622b8a20b8cd95e13a68df6e0929206ffbb06b
+exl-id: 265ab1be-fe52-41f3-85cb-addbc2ddfb17
+feature: Payments, Checkout, Configuration, Integration, Paas
+badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce 。"
+source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '621'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ ht-degree: 0%
 
 ### 在[!DNL Magento Open Source]上設定cron
 
-若要在[!DNL Magento Open Source]上使用`BY SCHEDULE`索引模式，您必須設定cron。 請參閱[設定並執行cron](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)。
+若要在[!DNL Magento Open Source]上使用`BY SCHEDULE`索引模式，您必須設定cron。 請參閱[設定並執行cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)。
 
 ### 設定索引子
 
@@ -48,13 +49,13 @@ bin/magento indexer:set-mode schedule sales_order_data_exporter sales_order_stat
 >
 >如果您未在指令中指定任何索引子，則所有索引子都會更新為相同的值。 如果要變更特定的索引子，必須在指令中列出它。
 
-若要深入瞭解如何手動變更索引器的模式，請參閱開發人員檔案中的[設定索引器](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers){target="_blank"}。 若要瞭解如何在Admin中進行變更，請參閱核心使用手冊中的[索引管理](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/tools/index-management#change-the-index-mode){target="_blank"}。
+若要深入瞭解如何手動變更索引器的模式，請參閱開發人員檔案中的[設定索引器](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers){target="_blank"}。 若要瞭解如何在Admin中進行變更，請參閱核心使用手冊中的[索引管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode){target="_blank"}。
 
 ### 手動重新索引資料
 
-您可以手動重新索引資料，而不是等待資料自動發生。 如需詳細資訊，請參閱[管理索引子](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cli/manage-indexers){target="_blank"}中的[重新索引](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cli/manage-indexers#reindex){target="_blank"}。
+您可以手動重新索引資料，而不是等待資料自動發生。 如需詳細資訊，請參閱[管理索引子](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers){target="_blank"}中的[重新索引](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#reindex){target="_blank"}。
 
-設定`BY SCHEDULE`模式時，系統會追蹤變更的實體，而cron作業會根據設定的排程更新這些實體的索引。 請參閱[設定並執行cron](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)中的命令列[從命令列執行cron](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs#config-cli-cron-group-run)，瞭解如何使用cron工作手動觸發索引。
+設定`BY SCHEDULE`模式時，系統會追蹤變更的實體，而cron作業會根據設定的排程更新這些實體的索引。 請參閱[設定並執行cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)中的命令列[從命令列執行cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs#config-cli-cron-group-run)，瞭解如何使用cron工作手動觸發索引。
 
 ### 將重新索引的資料傳送至付款服務
 
@@ -88,7 +89,7 @@ bin/magento saas:resync --feed [feedName]
 bin/magento cron:run --group payment_services_data_export
 ```
 
-若要進一步瞭解重新索引和索引子，請參閱開發人員檔案中的[管理索引子](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cli/manage-indexers)主題。
+若要進一步瞭解重新索引和索引子，請參閱開發人員檔案中的[管理索引子](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers)主題。
 
 ## 透過CLI設定範圍
 

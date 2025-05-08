@@ -3,8 +3,9 @@ title: 可用資料
 description: 使用Financial Reporting資料來協調報表與非Commerce系統。
 role: User
 level: Intermediate
-feature: Payments, Checkout, Data Import/Export
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: dbf41ce9-01f9-45d0-b651-e4c499e83822
+feature: Payments, Checkout, Data Import/Export, Paas, Saas
+source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 0%
@@ -25,7 +26,7 @@ ID可輕易地從付款的商家活動詳細資料和PayPal webhook中存取。
 
 `invoice_id`與`custom_id`會顯示在付款的商家活動詳細資訊的底部附近：
 
-商戶活動詳細資料![&#128279;](assets/merchant-activity-ids.png){width="600" zoomable="yes"}中的`custom_id`
+商戶活動詳細資料](assets/merchant-activity-ids.png){width="600" zoomable="yes"}中的![`custom_id`
 
 PayPal的webhook詳細資料中的`custom_id`和`invoice_id`：
 

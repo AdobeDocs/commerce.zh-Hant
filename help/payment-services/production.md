@@ -1,10 +1,11 @@
 ---
 title: '為生產啟用 [!DNL Payment Services] '
 description: 啟用 [!DNL Payment Services] 以進行生產，以完成入門流程。
-feature: Payments, Checkout, Configuration, Install
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
+feature: Payments, Checkout, Configuration, Install, Paas, Saas
+source-git-commit: 0f2e9c3a7d990a46bafc5f3b8a083436d42643b5
 workflow-type: tm+mt
-source-wordcount: '1019'
+source-wordcount: '1045'
 ht-degree: 0%
 
 ---
@@ -13,8 +14,8 @@ ht-degree: 0%
 
 您可以在下列步驟之後，依照此主題中的步驟，將服務投入生產並完成[上線程式](onboard.md)：
 
-* [安裝](install.md)付款服務延伸
-* [設定並連線](connect.md)您的執行個體
+* 僅[!BADGE PaaS]{type=Informative tooltip="僅適用於雲端專案上的Adobe Commerce (Adobe管理的PaaS基礎結構)。"} [安裝](install.md)付款服務延伸
+* 僅[!BADGE PaaS]{type=Informative tooltip="僅適用於雲端專案上的Adobe Commerce (Adobe管理的PaaS基礎結構)。"} [設定並連線](connect.md)您的執行個體
 * [設定](sandbox.md)並[測試](test-validate.md)您的沙箱
 
 ## 將[!DNL Payment Services]設為付款方式
@@ -26,10 +27,10 @@ ht-degree: 0%
 
    如果您尚未將[!DNL Payment Services]設定為您一或多個網站的付款方式，便會顯示此選項。
 
-   您被導向到[首頁]檢視中的設定區域，並展開相關選項(**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_)，您可以在此啟用[!DNL Payment Services]選項做為您的[付款方式](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"}。
+   您被導向到[首頁]檢視中的設定區域，相關選項已展開(**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_)，您可以在此啟用[!DNL Payment Services]選項做為您的[付款方式](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"}。
 
-1. 在&#x200B;_[!UICONTROL General Configuration]_&#x200B;中，將&#x200B;**[!UICONTROL Enable]**&#x200B;設為`Yes`。
-1. 將&#x200B;_[!UICONTROL Credit Card Fields]_&#x200B;和_[!UICONTROL PayPal payment buttons]_&#x200B;的&#x200B;**[!UICONTROL Payment Action]**&#x200B;設定為下列其中一項：
+1. 在&#x200B;_[!UICONTROL General Configuration]_中，將&#x200B;**[!UICONTROL Enable]**設為`Yes`。
+1. 將&#x200B;_[!UICONTROL Credit Card Fields]_和_[!UICONTROL PayPal payment buttons]_&#x200B;的&#x200B;**[!UICONTROL Payment Action]**&#x200B;設定為下列其中一項：
 
    | 設定 | 說明 |
    |---|---|
@@ -42,7 +43,7 @@ ht-degree: 0%
 
 1. 按一下&#x200B;**[!UICONTROL Save]**。
 1. 按一下&#x200B;**[!UICONTROL Go to Payment Services]**&#x200B;以導向回[!DNL Payment Services]首頁。
-1. [清除您的快取](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html?lang=zh-Hant)。
+1. [清除您的快取](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html)。
 
    應在每次設定變更後進行清除。
 
@@ -61,7 +62,7 @@ ht-degree: 0%
 
 1. 在&#x200B;_選取您所在的國家_&#x200B;強制回應視窗中，選取您正在作業的國家/地區。
 
-   付款服務目前針對[五個國家/地區](../payment-services/overview.md#availability)的所有付款選項提供完整支援。 Payment Services為國家/地區清單中代表的所有其他國家/地區提供快速結帳功能（付款選項的子集）。
+   付款服務目前針對[五個國家/地區](../payment-services/introduction.md#availability)的所有付款選項提供完整支援。 Payment Services為國家/地區清單中代表的所有其他國家/地區提供快速結帳功能（付款選項的子集）。
 
    您從清單中選擇的國家將決定您可用的付款選項，以及上線流程 — [進階](#advanced-onboarding) （完全支援）或[標準](#standard-onboarding) （快速結帳）。
 
@@ -71,7 +72,7 @@ ht-degree: 0%
 
 ### 進階上線
 
-此入門流程適用於[完全支援國家/地區](../payment-services/overview.md#availability)的商家。
+此入門流程適用於[完全支援國家/地區](../payment-services/introduction.md#availability)的商家。
 
 選取國家/地區後：
 
@@ -88,7 +89,7 @@ ht-degree: 0%
 
 ### 標准入門
 
-此Standard上線流程適用於[僅支援Express Checkout](../payment-services/overview.md#availability)的可用國家/地區的商家。
+此Standard上線流程適用於[僅支援Express Checkout](../payment-services/introduction.md#availability)的可用國家/地區的商家。
 
 選取國家/地區後：
 
@@ -104,7 +105,7 @@ ht-degree: 0%
 
 1. 在管理員側邊欄上，前往&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**
 
-   _[!UICONTROL Live onboarding]_&#x200B;按鈕不再可見，您會看到「[!UICONTROL Live payments pending]」文字方塊。
+   _[!UICONTROL Live onboarding]_按鈕不再可見，您會看到「[!UICONTROL Live payments pending]」文字方塊。
 
    在該文字方塊中，系統可能會要求您確認使用PayPal的電子郵件地址，以便完成上線。
 
@@ -154,9 +155,9 @@ _生產商家識別碼_&#x200B;已自動產生，並填入[組態](configure-adm
 
 1. 在&#x200B;_管理員_&#x200B;側邊欄上，移至&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**。
 1. 在首頁上，按一下頁面右上角的&#x200B;**[!UICONTROL Settings]**。 如需詳細資訊，請參閱[首頁](payments-home.md)。
-1. 在&#x200B;_[!UICONTROL General Configuration]_&#x200B;區段中，將&#x200B;**[!UICONTROL Payment mode]**&#x200B;設為`Production`。
+1. 在&#x200B;_[!UICONTROL General Configuration]_區段中，將&#x200B;**[!UICONTROL Payment mode]**設為`Production`。
 1. 按一下&#x200B;**[!UICONTROL Save]**。
-1. [清除您的快取](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/tools/cache-management){target="_blank"}。
+1. [清除您的快取](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management){target="_blank"}。
 
    >[!IMPORTANT]
    >

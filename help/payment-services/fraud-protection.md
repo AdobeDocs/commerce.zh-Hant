@@ -3,8 +3,9 @@ title: 顯著的防欺詐功能
 description: 啟用 [!DNL Payment Services] 的自動詐騙保護(Signifyd)。
 role: Admin, User
 level: Intermediate
-feature: Payments, Checkout, Configuration, Security
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+feature: Payments, Checkout, Configuration, Security, Paas, Saas
+exl-id: 440296bb-a6ff-408b-8195-3027916e4f84
+source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%
@@ -40,12 +41,12 @@ Signifyd/[!DNL Payment Services]整合提供信用卡、借記卡、保管卡、
 
 這些設定選項與支付服務和Signifyd整合不相容：
 
-* 當[!DNL Payment Services]設定為`Authorize`付款動作&#x200B;_且_ Signifyd處於`PostAuth`模式，且&#x200B;_[!UICONTROL Decline Guarantees]_&#x200B;選項設定為&#x200B;**建立銷退折讓單**&#x200B;時。
+* 當[!DNL Payment Services]設定為`Authorize`付款動作&#x200B;_且_ Signifyd處於`PostAuth`模式，且&#x200B;_[!UICONTROL Decline Guarantees]_選項設定為&#x200B;**建立銷退折讓單**時。
 
   原因： [!DNL Payment Services]建立授權交易，表示然後嘗試退款。
 
 
-* [!DNL Payment Services]已使用`Authorize and Capture`付款動作&#x200B;_設定，且_ Signifyd處於`PostAuth`模式，且&#x200B;_[!UICONTROL Decline Guarantees]_&#x200B;選項設定為&#x200B;**取消訂單**。
+* [!DNL Payment Services]已使用`Authorize and Capture`付款動作&#x200B;_設定，且_ Signifyd處於`PostAuth`模式，且&#x200B;_[!UICONTROL Decline Guarantees]_選項設定為&#x200B;**取消訂單**。
 
   原因： [!DNL Payment Services]建立擷取交易，表示之後嘗試作廢。
 
