@@ -1,9 +1,10 @@
 ---
 title: Headless
 description: 瞭解如何將 [!DNL Product Recommendations] 整合到Headless店面。
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: c40dac31-f87e-402a-ba50-e8aa4c1d66aa
+source-git-commit: 45bf78cb4ed975e0803e5ab2701d444fed16d2bb
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -14,7 +15,7 @@ ht-degree: 0%
 
 自訂和Headless整合經銷商應參考這些Luma和PWA指示，作為建議的實作。 有許多方式可將產品建議實作到Headless解決方案中，本檔案未涵蓋所有案例。 整合經銷商必須為其實作提供事件、設計和測試服務。
 
-[!DNL Product Recommendations]需要[行為和目錄資料](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/development-overview.html?lang=zh-Hant)才能運作。 Headless實作中的目錄資料同步程式維持不變，但行為資料收集需要變更。
+[!DNL Product Recommendations]需要[行為和目錄資料](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/development-overview.html)才能運作。 Headless實作中的目錄資料同步程式維持不變，但行為資料收集需要變更。
 
 >[!NOTE]
 >
@@ -30,7 +31,7 @@ ht-degree: 0%
 
 1. [安裝](install-configure.md) [!DNL Product Recommendations]模組。
 
-1. 安裝並使用[Adobe Commerce店面活動SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/)以引發[行為活動](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/events.html?lang=zh-Hant)。
+1. 安裝並使用[Adobe Commerce店面活動SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/)以引發[行為活動](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/events.html)。
 
    傳回[!DNL Product Recommendations]個結果所需的最小事件數：
 
@@ -54,3 +55,5 @@ ht-degree: 0%
 1. 收集行為資料後，您可以在Admin中[建立](create.md) [!DNL Product Recommendations]。
 
 1. 使用[Recommendations SDK](https://developer.adobe.com/commerce/services/product-recommendations/)擷取店面上的推薦單位。 SDK會傳回必要的產品資料以轉譯頁面上的推薦單位。
+
+1. 瞭解如何使用[`recommendations` GraphQL查詢](https://developer.adobe.com/commerce/services/graphql/recommendations/recommendations/)，傳回指定SKU的產品建議區塊相關資訊等。
