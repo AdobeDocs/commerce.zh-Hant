@@ -37,11 +37,11 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418797?learn=on)
 
-如需有關使用和設定Live Search的更深入影片，請參閱[在 [!DNL Live Search]](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration)上的完整示範主題。
+如需有關使用和設定Live Search的更深入影片，請參閱[在 [!DNL Live Search]](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration)上的完整示範主題。
 
 ### 依輸入內容搜尋
 
-當購物者在[搜尋](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search)方塊中輸入查詢時，[!DNL Live Search]在[彈出視窗](storefront-popover.md)中以建議的產品和排名最前的搜尋結果縮圖影像回應。 當購物者按一下建議或精選的產品時，會顯示[產品詳細資料](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront)頁面。 彈出視窗頁尾中的&#x200B;_檢視全部_&#x200B;連結會顯示搜尋結果頁面。
+當購物者在[搜尋](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/catalog/search/search)方塊中輸入查詢時，[!DNL Live Search]在[彈出視窗](storefront-popover.md)中以建議的產品和排名最前的搜尋結果縮圖影像回應。 當購物者按一下建議或精選的產品時，會顯示[產品詳細資料](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/storefront/storefront)頁面。 彈出視窗頁尾中的&#x200B;_檢視全部_&#x200B;連結會顯示搜尋結果頁面。
 
 針對兩個或更多字元的查詢，[!DNL Live Search]傳回「鍵入時搜尋」結果。 若為部分相符，則每個字的字元數上限為20。 查詢中的字元數無法設定。 彈出視窗包含`name`、`sku`和`category_ids`欄位。
 
@@ -81,7 +81,7 @@ ht-degree: 0%
 
 ### 搜尋詞支援
 
-[!DNL Live Search]支援Commerce [搜尋字詞重新導向](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms)。 例如，使用者可以搜尋「運費」之類的辭彙，並直接進入運費頁面。
+[!DNL Live Search]支援Commerce [搜尋字詞重新導向](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/catalog/search/search-terms)。 例如，使用者可以搜尋「運費」之類的辭彙，並直接進入運費頁面。
 
 ## Live Search元件
 
@@ -101,4 +101,4 @@ ht-degree: 0%
 
 如果您連續90天未提交測試環境中目錄資料的搜尋查詢，則目錄資料會設定為休眠模式，且任何搜尋查詢都不會傳回任何資料。 此原則不會影響生產環境中的目錄資料。
 
-若要在您的測試環境中重新啟用目錄資料，請[提交標題為「重新啟用[!DNL Live Search]」的支援請求](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)，並包含環境ID。 您測試環境中的目錄資料應在數小時內還原。
+若要在您的測試環境中重新啟用目錄資料，請[提交標題為「重新啟用[!DNL Live Search]」的支援請求](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)，並包含環境ID。 您測試環境中的目錄資料應在數小時內還原。
