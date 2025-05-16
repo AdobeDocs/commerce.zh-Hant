@@ -2,9 +2,10 @@
 title: 移轉至 [!DNL Adobe Commerce as a Cloud Service]
 description: 瞭解如何移轉至 [!DNL Adobe Commerce as a Cloud Service]。
 exl-id: 9065c92a-f6b2-4464-8ec0-5c549bf78104
-source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+source-git-commit: 34057c1e55ff117ea7aab4407f31548ce826691b
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '1001'
 ht-degree: 0%
 
 ---
@@ -68,7 +69,7 @@ ht-degree: 0%
 
    * [雲端服務架構上的Adobe Commerce](./overview.md) — 檢閱平台架構，以及它與您目前的Adobe Commerce執行個體有何不同。
    * [Adobe Commerce擴充性架構](https://developer.adobe.com/commerce/extensibility/) — 識別您要如何轉換目前的自訂專案。
-   * [由Edge Delivery提供支援的Commerce店面](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant) — 檢閱建議的店面解決方案。
+   * [由Edge Delivery提供支援的Commerce店面](https://experienceleague.adobe.com/developer/commerce/storefront/) — 檢閱建議的店面解決方案。
 
 1. 稽核您的自訂相容性：
 
@@ -90,7 +91,7 @@ ht-degree: 0%
 
 1. 設定下列其中一個GraphQL型店面：
 
-   * [建立Commerce店面](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=zh-Hant)
+   * [建立Commerce店面](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/)
    * [使用PWA Studio建立自訂GraphQL型店面](https://developer.adobe.com/commerce/pwa-studio/)
 
 1. 將資料從先前的Commerce執行個體移轉至ACCS：

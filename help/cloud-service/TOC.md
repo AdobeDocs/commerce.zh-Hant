@@ -5,11 +5,10 @@ breadcrumb-title: Cloud Service指南
 hide: true
 feature: Services, Saas
 recommendations: noDisplay, noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
-source-git-commit: 140bf38ffc42289772c8347db591edfbd6504ea7
+source-git-commit: 34057c1e55ff117ea7aab4407f31548ce826691b
 workflow-type: tm+mt
-source-wordcount: '44'
-ht-degree: 13%
+source-wordcount: '26'
+ht-degree: 23%
 
 ---
 
@@ -17,6 +16,7 @@ ht-degree: 13%
 # [!DNL Adobe Commerce as a Cloud Service] {#cloud-service}
 
 - [概觀](overview.md)
+- [功能比較](feature-comparison.md)
 - [快速入門](getting-started.md)
 - [使用者管理](user-management.md)
 - [店面](storefront.md)
