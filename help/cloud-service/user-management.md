@@ -2,7 +2,7 @@
 title: 使用者管理
 description: 瞭解如何在 [!DNL Adobe Commerce as a Cloud Service]中管理使用者。
 exl-id: 9bc80fe6-6dfd-4bb3-8dc5-d5efd8a8d90c
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 source-git-commit: 34057c1e55ff117ea7aab4407f31548ce826691b
 workflow-type: tm+mt
 source-wordcount: '684'
@@ -20,9 +20,9 @@ ht-degree: 0%
 
 >[!TIP]
 >
->若要同時新增多個使用者，您可以執行[大量CSV上傳](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html){target="_blank"}。
+>若要同時新增多個使用者，您可以執行[大量CSV上傳](https://helpx.adobe.com/tw/enterprise/using/bulk-upload-users.html){target="_blank"}。
 > 
-> 您也可以建立[使用者群組](https://helpx.adobe.com/enterprise/using/user-groups.html){target="_blank"}，將多位使用者新增至角色。 然後您可以將&#x200B;[!UICONTROL **Adobe Commerce as a Cloud Service — 後端**]&#x200B;產品新增到使用者群組。
+> 您也可以建立[使用者群組](https://helpx.adobe.com/tw/enterprise/using/user-groups.html){target="_blank"}，將多位使用者新增至角色。 然後您可以將&#x200B;[!UICONTROL **Adobe Commerce as a Cloud Service — 後端**]&#x200B;產品新增到使用者群組。
 
 ## 瞭解角色
 
@@ -30,11 +30,11 @@ ht-degree: 0%
 
 * **使用者** — 使用者擁有Commerce管理員的管理員存取權，但無法在Admin Console中管理產品層級的存取權。 使用者也可以使用積分在[!DNL Commerce Cloud Manager]中[建立執行個體](./getting-started.md#create-an-instance)。
 
-* [**開發人員**](https://helpx.adobe.com/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"}開發人員擁有使用者許可權，並新增至Commerce執行個體作為開發人員使用者。 這表示他們可以使用[Admin UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/){target="_blank"}、[設定事件](https://developer.adobe.com/commerce/extensibility/events/){target="_blank"}和[建立Webhook](https://developer.adobe.com/commerce/extensibility/webhooks/){target="_blank"}。
+* [**開發人員**](https://helpx.adobe.com/tw/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"}開發人員擁有使用者許可權，並新增至Commerce執行個體作為開發人員使用者。 這表示他們可以使用[Admin UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/){target="_blank"}、[設定事件](https://developer.adobe.com/commerce/extensibility/events/){target="_blank"}和[建立Webhook](https://developer.adobe.com/commerce/extensibility/webhooks/){target="_blank"}。
 
 * 管理員 — 管理員分為三種型別：
-   * [系統管理員](https://helpx.adobe.com/enterprise/using/admin-roles.html){target="_blank"} — 系統管理員可以透過Admin Console存取組織中的所有產品和產品設定檔。
-   * [產品管理員](#add-a-product-admin) — 產品管理員可以在[!DNL Adobe Admin Console]中[管理產品的使用者、角色和許可權](#add-users-and-admins)，並在Commerce管理員中[管理使用者](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"}。
+   * [系統管理員](https://helpx.adobe.com/tw/enterprise/using/admin-roles.html){target="_blank"} — 系統管理員可以透過Admin Console存取組織中的所有產品和產品設定檔。
+   * [產品管理員](#add-a-product-admin) — 產品管理員可以在[!DNL Adobe Admin Console]中[管理產品的使用者、角色和許可權](#add-users-and-admins)，並在Commerce管理員中[管理使用者](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"}。
    * [產品設定檔管理員](#add-users-developers-and-product-profile-admins) — 產品設定檔管理員無法存取Adobe Commerce管理員，但可以在[!DNL Adobe Admin Console]中管理產品的使用者。
 
 如需授與Adobe Commerce中每個角色的許可權的詳細資訊，請參閱[使用者許可權](#user-permissions)。
