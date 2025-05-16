@@ -3,9 +3,10 @@ title: 類別銷售
 description: 使用 [!DNL Live Search] 類別銷售，以獲得更快的購物體驗。
 gourl: ls_catalog_merchandising
 exl-id: b2645096-aafc-4d68-8adc-ab5410a9dfb6
-source-git-commit: e5e5443e0bdb12e4774856336157067b4ff6eb7c
+badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce 。"
+source-git-commit: 59aa4ae67a1a8a853b72d78cd65a6cc44a6bc662
 workflow-type: tm+mt
-source-wordcount: '1101'
+source-wordcount: '1118'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 0%
 
 這段影片將介紹類別銷售。
 
->[!VIDEO](https://video.tv.adobe.com/v/3448862?captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3424617)
 
 此功能可在管理員的下列位置存取： **行銷** > SEO和搜尋> **[!DNL Live Search]** > **類別銷售**。
 
@@ -67,7 +68,7 @@ ht-degree: 0%
 
 ![已覆寫子類別清單](assets/category_overwite_subs.png){width="700"}
 
-如果按一下[檢視全部]&#x200B;**&#x200B;**，會開啟對話方塊，其中包含提議的變更詳細資料。
+如果按一下[檢視全部]****，會開啟對話方塊，其中包含提議的變更詳細資料。
 
 ![排名變更詳細資料](assets/category_overwrite.png)
 
@@ -105,8 +106,8 @@ ht-degree: 0%
 
 若要修改現有規則，請執行下列動作：
 
-1. 按一下[動作]資料欄中的&#x200B;**...**，然後選擇[編輯]&#x200B;**&#x200B;**。
-1. 在[編輯類別]規則檢視中，進行任何必要的變更，然後按一下[儲存並發佈]。**&#x200B;**
+1. 按一下[動作]資料欄中的&#x200B;**...**，然後選擇[編輯]****。
+1. 在[編輯類別]規則檢視中，進行任何必要的變更，然後按一下[儲存並發佈]。****
 
 當[!DNL Live Search]處理變更時，變更會反映在存放區上。
 
