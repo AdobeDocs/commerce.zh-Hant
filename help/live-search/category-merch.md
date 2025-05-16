@@ -17,7 +17,7 @@ ht-degree: 0%
 
 這段影片將介紹類別銷售。
 
->[!VIDEO](https://video.tv.adobe.com/v/3424617)
+>[!VIDEO](https://video.tv.adobe.com/v/3448862?captions=chi_hant)
 
 此功能可在管理員的下列位置存取： **行銷** > SEO和搜尋> **[!DNL Live Search]** > **類別銷售**。
 
