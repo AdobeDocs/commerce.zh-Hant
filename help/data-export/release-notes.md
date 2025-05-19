@@ -4,9 +4,9 @@ description: 適用於Adobe Commerce的 [!DNL Data Export Extension] 的最新�
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 5e5b3340f45b5db7a6a01ed1b89c42f6399f66b9
+source-git-commit: 1b3af0084d622d544cad5f144d3cd7bd8191814c
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1186'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,14 @@ ht-degree: 0%
 >SaaS資料匯出擴充功能是隨「即時搜尋」、「產品建議」和「目錄服務」自動安裝的模組集合。 您可以使用Composer檢查系統上安裝的版本。 在某些情況下，您可能會想要升級系統上的資料匯出擴充功能，以取得修正或新功能，而不更新Commerce服務版本。
 
 ## 目前的主要版本
+
+## 103.4.4版
+
+![New](../assets/new.svg)新增將`cleanup-feed`引數新增到`saas:resync` CLI命令時顯示的警告訊息。 `--cleanup-feed`選項應謹慎使用，且僅能在特定情況下使用，例如在環境清理後或與`--dry-run`選項搭配使用。 在其他情況下使用此外掛程式可能會導致資料遺失和同步問題。 <!--MDEE-1047-->
+![Fix](../assets/fix.svg)已新增伺服器回應中的`x-request-id`，以改善追蹤能力。 <!--MDEE-1041-->
+![修正](../assets/fix.svg)修正未儲存整個摘要批次的同步化狀態的問題，此問題會導致不必要的重新同步。 <!--MDEE-1049-->
+![修正](../assets/fix.svg)修正當一個摘要包含錯誤時，同步處理期間會略過摘要批次中的所有摘要的問題。 <!--MDEE-976-->
+![修正](../assets/fix.svg)已新增類別許可權索引器中維度的支援。<!--MDEE-654-->
 
 ## 103.4.3版本
 
