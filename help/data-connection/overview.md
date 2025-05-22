@@ -86,7 +86,7 @@ Adobe Experience Platform提供了一套技術，可在與Commerce商店中的�
 
 1. [安裝](install.md) [!DNL Data Connection]延伸模組。
 1. [登入](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html)您的Adobe帳戶，並[檢視以確認](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255)您的組織識別碼。 組織ID是與已布建Experience Cloud公司相關聯的ID。 此ID是24個字元的英數字串，後面接著（而且必須包含） `@AdobeOrg`。
-1. 確定您擁有Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/collection/permissions.html)中資料收集的[許可權。
+1. 確定您擁有Experience Platform[&#128279;](https://experienceleague.adobe.com/docs/experience-platform/collection/permissions.html)中資料收集的許可權。
 1. 檢閱您可以收集及傳送的[資料型別](data-ingestion.md)。
 1. 使用Commerce特定的欄位群組建立或更新您的[時間序列事件結構描述](update-xdm.md)或[設定檔記錄資料結構描述](profile-data.md)。
 1. [根據您建立或更新的結構描述建立資料集](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset)。 此資料集包含傳送至Experience Platform Edge的Commerce資料。
