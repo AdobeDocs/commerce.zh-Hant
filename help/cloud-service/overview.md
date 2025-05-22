@@ -4,10 +4,10 @@ description: 瞭解 [!DNL Adobe Commerce as a Cloud Service]的主要功能和�
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Architect, Developer, User
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
-source-git-commit: 0e3820eab0fded58a1a99d8a805b2774968380fd
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+source-git-commit: 8fd5e1570b74651b8576d72d57eb8f7f67bbd450
 workflow-type: tm+mt
-source-wordcount: '1452'
+source-wordcount: '1164'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 請參閱下列影片，瞭解[!DNL Adobe Commerce as a Cloud Service]架構的簡介。 說明此架構的圖表會顯示在影片下方。
 
->[!VIDEO](https://video.tv.adobe.com/v/3443278?learn=on&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3443232?learn=on)
 
 此圖表說明[!DNL Adobe Commerce as a Cloud Service]與所有Adobe Experience Cloud解決方案之間的資料流程。
 
@@ -40,13 +40,13 @@ ht-degree: 0%
 
 ## Commerce店面
 
-使用Adobe的[Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront?lang=zh-Hant) (由Edge Delivery Services提供技術支援)，透過Storefront Builder的簡單檔案式撰寫或視覺化編輯，在幾分鐘內建立豐富的體驗。
+使用Adobe的[Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront) (由Edge Delivery Services提供技術支援)，透過Storefront Builder的簡單檔案式撰寫或視覺化編輯，在幾分鐘內建立豐富的體驗。
 
 Commerce Storefront採用完全無周邊的分離式架構，可透過GraphQL API層提供所有銷售服務和資料。 此架構讓團隊可獨立於Commerce Foundation開發他們的前端，提供使用新興技術建立和測試新接觸點的靈活性。
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service]不支援Luma店面。 如果您要從雲端或內部部署上的Adobe Commerce進行移轉，請參閱[現有店面](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/?lang=zh-Hant#existing-storefronts)以取得移轉指南。
+>[!DNL Adobe Commerce as a Cloud Service]不支援Luma店面。 如果您要從雲端或內部部署上的Adobe Commerce進行移轉，請參閱[現有店面](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/#existing-storefronts)以取得移轉指南。
 
 ## 銷售服務與付款服務
 
@@ -61,7 +61,7 @@ Adobe提供豐富的智慧型可撰寫銷售服務，協助您支援關鍵業務
 
 使用與Adobe Experience Manager整合的健全數位資產管理(DAM)系統，以管理多媒體內容，藉此簡化資產管理。 或者，原生mini-DAM提供基本資產管理工具，用於儲存和管理數位資產。
 
-請參閱[資產管理](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration)以瞭解更多資訊。
+請參閱[資產管理](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration)以瞭解更多資訊。
 
 ## 開發人員平台
 
@@ -116,7 +116,7 @@ Commerce Foundation提供安全的自動化託管平台和自助服務功能，�
 
 <!-- ## Experience Cloud integration
 
-[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
+[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
 
 [Data Connection](../data-connection/overview.md) unlocks insights about your shoppers' buying behavior so that you can create personalized shopping experiences across all channels with other Adobe Digital Experience products. -->
 
@@ -137,17 +137,3 @@ Commerce Foundation提供安全的自動化託管平台和自助服務功能，�
 - **低廉的擁有成本**：永遠最新的服務不再升級。 使用自動套用的最新安全性修補程式，確保安全無虞並符合規範。 自動擴充，以因應最繁重的工作負荷。
 - **高效能店面**：使用簡單的檔案式撰寫或視覺化編輯器，在幾分鐘內建立豐富的體驗。 使用AI支援的銷售服務來改善轉換。 店面內建的原生實驗。
 - **更快速的創新**：將資源從繁瑣的維護中釋出，專注於建立提供商業價值的新功能。 使用全方位的擴充能力和以標準為基礎的技術(JavaScript、HTML、CSS和低程式碼工具)，建置差異化的體驗。 按一下以安裝協力廠商應用程式，將新功能新增至您的Commerce平台。
-
-## 新功能解決方案
-
-[管理員UI](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/guide-overview)是存取功能的主要介面，可管理後端商店作業、庫存、定價、促銷和客戶互動。 但是，[!DNL Adobe Commerce as a Cloud Service]提供獨特的解決方案，取代了Adobe Commerce雲端和內部部署專案中某些著名的功能。 下表說明[!DNL Adobe Commerce as a Cloud Service]中可用的功能和取代解決方案：
-
-| 功能 | 解決方案 | 可用性 | 詳細資料 |
-|---------|----------|--------------|--------|
-| [數位資產管理](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/content-design/wysiwyg/gallery/media-gallery-asset-management) | [產品視覺效果](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration)或迷你DAM | 可用 | 健全的數位資產管理(DAM)系統與Adobe Experience Manager整合，用於管理多媒體內容。 或者，mini-DAM提供儲存和管理數位資產的基本資產管理工具。 |
-| [內容管理系統(CMS)](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/content-design/guide-overview) | [Commerce店面](https://www.aem.live/) | 可用 | 基本的CMS可讓使用者使用檔案式撰寫輕鬆建立和管理檔案和網站內容。 此外，通用編輯器也允許跨多個平台進行更進階的內容管理和自訂。 |
-| [內容暫存](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/content-design/staging/content-staging) | [目錄服務](../catalog-service/overview.md) | 藍圖 | 繫結至Adobe Experience Platform的目錄管理工具，可管理大型目錄。 |
-| [頁面產生器](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/page-builder/guide-overview) | [Commerce店面](https://www.aem.live/) | 可用 | 基本的CMS可讓使用者使用檔案式撰寫輕鬆建立和管理檔案和網站內容。 此外，通用編輯器也允許跨多個平台進行更進階的內容管理和自訂。 |
-| [付款](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/payments/payments) | [Adobe Commerce的付款服務](../payment-services/guide-overview.md) | 可用 | 整合的支付服務，可促進安全且有效率的交易。 |
-| [URL重寫](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite) | [Commerce店面](https://www.aem.live/) | 可用 | 基本的CMS可讓使用者使用檔案式撰寫輕鬆建立和管理檔案和網站內容。 此外，通用編輯器也允許跨多個平台進行更進階的內容管理和自訂。 |
-| [Visual Merchandiser](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/marketing/merchandising/visual-merch/visual-merchandiser) | [目錄服務](../catalog-service/overview.md) | 藍圖 | 繫結至Adobe Experience Platform的目錄管理工具，可管理大型目錄。 |
