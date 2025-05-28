@@ -22,6 +22,6 @@ ht-degree: 12%
    - [目錄服務和API網格](mesh.md)
    - [使用案例：顯示課稅價格](taxes.md)
 - [發行說明](release-notes.md)
-- [返回Commerce服務首頁](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [返回Commerce服務首頁](https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/home)
 
 
