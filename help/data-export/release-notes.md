@@ -4,9 +4,9 @@ description: 適用於Adobe Commerce的 [!DNL Data Export Extension] 的最新�
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 1b3af0084d622d544cad5f144d3cd7bd8191814c
+source-git-commit: c9a87df4aa64081b51fd52d84d97fe3949045e31
 workflow-type: tm+mt
-source-wordcount: '1186'
+source-wordcount: '1243'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,11 @@ ht-degree: 0%
 >SaaS資料匯出擴充功能是隨「即時搜尋」、「產品建議」和「目錄服務」自動安裝的模組集合。 您可以使用Composer檢查系統上安裝的版本。 在某些情況下，您可能會想要升級系統上的資料匯出擴充功能，以取得修正或新功能，而不更新Commerce服務版本。
 
 ## 目前的主要版本
+
+## 103.4.5版
+
+![新](../assets/new.svg) SaaS資料匯出現在支援Adobe Commerce `giftcard`產品型別。 在資料摘要中，禮品卡產品會匯出為產品屬性型別為`ac_giftcard`的簡單產品。 <!--MDEE-1042-->
+![修正](../assets/fix.svg)已改善資料匯出錯誤報告。 記錄檔現在包含更詳細的錯誤訊息，包括原始技術細節，以便更輕鬆偵錯和追蹤錯誤。<!--MDEE-1064-->
 
 ## 103.4.4版
 
