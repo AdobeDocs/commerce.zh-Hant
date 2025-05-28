@@ -5,10 +5,10 @@ title: Adobe Commerce 服務
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: bdca30390e28b639a49eee269a64e56389d10709
+source-git-commit: a6cb62e63a057cdad092bcc283c86c6aa003d438
 workflow-type: tm+mt
-source-wordcount: '64'
-ht-degree: 37%
+source-wordcount: '62'
+ht-degree: 38%
 
 ---
 
@@ -19,17 +19,16 @@ ht-degree: 37%
    - [發行說明](/help/landing/release-notes-all.md)
 - [產品解決方案](product-solutions.md)
 - Commerce服務 {#commerce-services}
-   - Commerce服務 {#commerce-services}
-   - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce/live-search/overview.html?lang=zh-Hant)
-   - [[!DNL Product Recommendations]](https://experienceleague.adobe.com/docs/commerce/product-recommendations/guide-overview.html?lang=zh-Hant)
-   - [[!DNL Catalog Service]](https://experienceleague.adobe.com/docs/commerce/catalog-service/guide-overview.html?lang=zh-Hant)
-   - [[!DNL Payment Services]](https://experienceleague.adobe.com/docs/commerce/payment-services/guide-overview.html?lang=zh-Hant)
+   - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce/live-search/overview.html)
+   - [[!DNL Product Recommendations]](https://experienceleague.adobe.com/docs/commerce/product-recommendations/guide-overview.html)
+   - [[!DNL Catalog Service]](https://experienceleague.adobe.com/docs/commerce/catalog-service/guide-overview.html)
+   - [[!DNL Payment Services]](https://experienceleague.adobe.com/docs/commerce/payment-services/guide-overview.html)
 - Integration services {#integration-services}
-   - [[!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce/data-connection/overview.html?lang=zh-Hant)
+   - [[!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce/data-connection/overview.html)
    - [服務聯結器](/help/landing/saas.md)
 - 資料工具 {#data-services}
-   - [SaaS資料匯出](https://experienceleague.adobe.com/docs/commerce/saas-data-export/overview.html?lang=zh-Hant)
-   - [SaaS價格索引](https://experienceleague.adobe.com/docs/commerce/price-indexer/price-indexing.html?lang=zh-Hant)
+   - [SaaS資料匯出](https://experienceleague.adobe.com/docs/commerce/saas-data-export/overview.html)
+   - [SaaS價格索引](https://experienceleague.adobe.com/docs/commerce/price-indexer/price-indexing.html)
    - [目錄同步](/help/landing/catalog-sync.md)
 
 
