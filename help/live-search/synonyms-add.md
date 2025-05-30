@@ -33,7 +33,7 @@ ht-degree: 0%
    ![新增雙向同義字](assets/synonym-add-two-way.png)
 
 1. 輸入要比對的&#x200B;**關鍵字**&#x200B;詞語或片語。
-1. 輸入您想要新增為關鍵字同義字的&#x200B;**擴增**字詞。 請使用逗號分隔多個詞語。
+1. 輸入您想要新增為關鍵字同義字的&#x200B;**擴增**&#x200B;字詞。 請使用逗號分隔多個詞語。
 在此範例中，要比對的關鍵字是「pants」，而擴充辭彙集是「trousers， slacks」。
 
    ![雙向同義字範例](assets/synonym-add-two-way-example.png)
