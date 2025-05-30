@@ -17,4 +17,4 @@ ht-degree: 9%
 - 目錄配接器 {#catalog-adapter}
    - [概觀](catalog-adapter.md)
    - [發行說明](release-notes.md)
-- [返回Commerce服務首頁](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [返回Commerce服務首頁](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=zh-Hant)
