@@ -31,7 +31,7 @@ ht-degree: 0%
         <p>瞭解整合服務的最新改善，這些改善可讓我們的Commerce服務連結其他服務和Adobe擴充功能及產品。</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/data-connection/release-notes.html?lang=zh-Hant">[!DNL Data Connection]</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/saas.html">[!DNL Services Connector]</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/saas.html?lang=zh-Hant">[!DNL Services Connector]</a></li>
           </ul>
       </td>
       <td><strong>資料服務</strong>
