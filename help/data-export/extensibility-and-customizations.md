@@ -2,9 +2,10 @@
 title: 擴充及自訂SaaS資料匯出摘要資料
 description: 瞭解如何擴充及自訂 [!DNL SaaS Data Export] 摘要資料。
 role: Admin, Developer
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 694bd281-12c5-415c-a251-b4251e2edea7
+source-git-commit: ac6c690f87e3df2ac4997d80453028829be8e657
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---
@@ -50,7 +51,7 @@ ht-degree: 0%
 
 ### 將屬性新增至Adobe Commerce
 
-您可以從「Commerce管理員」新增產品屬性，或以程式設計方式使用自訂PHP模組來定義屬性及更新Adobe Commerce。 這是新增產品屬性最簡單的方法，因為您可以新增屬性和所有必要的中繼資料。 在下次排定的同步處理期間，新屬性及其中繼資料屬性會自動匯出至SaaS服務。
+您可以從「Commerce管理員」新增產品屬性，或以程式設計方式使用自訂PHP模組來定義屬性及更新Adobe Commerce。 從「Commerce管理員」新增屬性是最簡單的方法，因為您可以一次新增屬性和所有必要的中繼資料。 在下次排定的同步處理期間，新屬性及其中繼資料屬性會自動匯出至SaaS服務。
 
 #### 從管理員建立產品屬性
 
@@ -58,19 +59,19 @@ ht-degree: 0%
 
 1. 視需要新增屬性至屬性集。
 
-請參閱&#x200B;*Adobe Commerce管理指南*&#x200B;中的[建立產品屬性](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create)。
+請參閱&#x200B;*Adobe Commerce管理指南*&#x200B;中的[建立產品屬性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create)。
 
 #### 以程式設計方式建立產品屬性
 
 建立實作`DataPatchInterface`的資料修補程式，以程式設計方式新增產品屬性，並在建構函式中具現化`EavSetup Factory`類別的復本，以設定屬性選項。
 
-當您定義屬性選項時，除了`type`、`label`和`input`以外的所有屬性引數都是選用的。 定義下列其他選項以及與預設設定不同的任何其他選項。
+當您定義屬性選項時，除了`type`、`label`和`input`以外的所有屬性引數都是選用的。 定義下列其他引數以及與預設設定不同的其他任何引數。
 
-- 透過設定`user_defined` = `1`，確保屬性在資料同步處理期間匯出至storefront services
-- 若要確保在產品清單資料庫查詢中可存取屬性，請設定`used_in_product_listing` = `1`。
+- **`user_defined`=`1`** — 在資料同步處理期間，將屬性匯出至storefront services
+- **`used_in_product_listing`=`1`** — 讓屬性可在產品清單資料庫查詢中存取
 
 如需有關建立資料修補程式的資訊，請參閱&#x200B;*PHP Developer Guide*&#x200B;中的[開發資料與結構描述修補程式](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches/)。
 
 ### 動態新增產品屬性
 
-如需有關動態建立產品屬性而不引入新Eav屬性的詳細資訊，請參閱[動態新增屬性](add-attribute-dynamically.md)。
+如需有關動態建立產品屬性而不引入新EAV屬性的詳細資訊，請參閱[動態新增屬性](add-attribute-dynamically.md)。

@@ -3,39 +3,45 @@ title: '[!DNL Catalog Service and API Mesh]'
 description: 適用於Adobe Commerce的[!DNL API Mesh]提供透過通用GraphQL端點整合多個資料來源的方法。
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 903f4f96-6dba-4c45-8106-76d9845544ec
+source-git-commit: ca0b2b2a158b9a376724b30c80a6bf9a60e3d1ba
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
 
 # [!DNL Catalog Service and API Mesh]
 
-適用於Adobe Developer App Builder[&#128279;](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/)的API Mesh可讓開發人員使用Adobe I/O Runtime將私人或協力廠商API和其他介面與Adobe產品整合。
+適用於Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/)的[API Mesh可讓開發人員使用Adobe I/O Runtime將私人或協力廠商API和其他介面與Adobe產品整合。
 
 ![目錄架構圖](assets/catalog-service-architecture-mesh.png)
 
-搭配目錄服務使用API網狀架構的第一步，是將API網狀架構連線到您的執行個體。 請參閱[建立Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/)中的詳細說明。
+若要搭配目錄服務使用API Mesh，您必須將API Mesh連線至您的執行個體，然後新增API Mesh來源[CommerceCatalogServiceGraph](https://github.com/adobe/api-mesh-sources/blob/main/connectors/)，提供連線至目錄服務的組態。
 
-若要完成安裝，請安裝[Adobe Developer CLI套件](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/)。
+## 連線並設定API Mesh。
 
-在Adobe I/O Runtime上設定Mesh後，請執行以下命令，將`CommerceCatalogServiceGraph`來源新增至您的Mesh。
+1. 依照&#x200B;_API Mesh開發人員指南_&#x200B;中的[建立Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/)的指示，將API Mesh連線至您的Adobe Commerce執行個體。
 
-```bash
-aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
-```
+   如果您是第一次使用API Mesh，請先完成[開始程式](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/)，再建立網格。
 
-其中`variables.json`是儲存Adobe I/O Runtime常用值的個別檔案。
-例如，API金鑰可儲存在檔案中：
+1. 使用下列格式建立包含您專案的目錄服務API金鑰的JSON檔案，例如`variables.json`。
 
-```json
-{
-    "CATALOG_SERVICE_API_KEY":"your_api_key"
-}
-```
+   ```json
+   {
+       "CATALOG_SERVICE_API_KEY":"your_api_key"
+   }
+   ```
 
-執行此命令後，目錄服務應透過API Mesh執行。 您可以執行`aio api-mesh:get`命令來檢視更新網格的組態。
+1. 使用[Adobe I/O可擴充CLI](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/#install-the-aio-cli)將`CommerceCatalogServiceGraph`來源新增至您的網格。
+
+   ```bash
+   aio api-mesh source install "CommerceCatalogServiceGraph" -f variables.json
+   ```
+
+   `-f variables.json`選項提供更新組態所需的目錄服務API金鑰值。
+
+執行此命令後，目錄服務應透過API Mesh執行。 使用`aio api-mesh get`命令檢視更新網格的組態。
 
 ## API Mesh範例
 
