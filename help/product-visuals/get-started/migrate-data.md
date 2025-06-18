@@ -52,7 +52,7 @@ Adobe Commerce和Adobe Experience Manager (AEM)皆提供內建功能，可簡化
 
 匯出媒體檔案後，請建立CSV檔案，以使用自動化所需的中繼資料對應這些資產。 CSV應包含&#x200B;**產品**、**位置**&#x200B;和&#x200B;**角色對應**&#x200B;的欄位，以確保與[AEM Assets中繼資料設定檔](configure-aem.md#configure-a-metadata-profile)一致。
 
-對於您計畫移轉的每個媒體檔案，請為Commerce資產](configure-aem.md)的[AEM Assets中繼資料設定檔中包含的中繼資料欄位提供值，如下表所述。
+對於您計畫移轉的每個媒體檔案，請為Commerce資產[&#128279;](configure-aem.md)的AEM Assets中繼資料設定檔中包含的中繼資料欄位提供值，如下表所述。
 
 | 中繼資料 | 說明 | 值 |
 |-------|-------------|--------|
@@ -106,5 +106,5 @@ assetPath,commerce:positions{{Number: multi}},commerce:isCommerce{{String}},comm
 >[!MORELIKETHIS]
 >
 > [大量匯入工具影片示範](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/add-assets#asset-bulk-ingestor)
-> > [秘訣、最佳實務和限制](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/add-assets#tips-limitations)
-> > [使用API上傳或內嵌資產](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#asset-upload)
+> &#x200B;> [秘訣、最佳實務和限制](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/add-assets#tips-limitations)
+> &#x200B;> [使用API上傳或內嵌資產](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#asset-upload)
