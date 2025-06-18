@@ -56,7 +56,7 @@ Adobe Commerce和Product Visuals整合可透過自動化資產管理工作流程
 
 觀看此影片，瞭解Adobe Commerce和AEM Assets如何共同簡化內容工作流程：
 
->[!VIDEO](https://video.tv.adobe.com/v/3447837)
+>[!VIDEO](https://video.tv.adobe.com/v/3447900?captions=chi_hant)
 
 ## 後續步驟
 
