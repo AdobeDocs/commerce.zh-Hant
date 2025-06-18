@@ -30,7 +30,7 @@ Adobe Commerce和Product Visuals整合可透過自動化資產管理工作流程
 
 若要運用這項整合，企業必須符合下列需求：
 
-* Adobe Commerce、Adobe Experience Manager Assets和[AEM Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media)的有效授權。
+* Adobe Commerce、Adobe Experience Manager Assets和[AEM Dynamic Media](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media)的有效授權。
 
 * Adobe Commerce 2.4.5+
 
@@ -40,7 +40,7 @@ Adobe Commerce和Product Visuals整合可透過自動化資產管理工作流程
 
 * Adobe Experience Manager已布建[Adobe Experience Manager Assets as a Cloud Service](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/overview)
 
-* 設定整合的Adobe Commerce使用者必須擁有布建AEM Assets專案的[IMS組織](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255)的存取權。
+* 設定整合的Adobe Commerce使用者必須擁有布建AEM Assets專案的[IMS組織](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255)的存取權。
 
 >[!BEGINSHADEBOX]
 
@@ -70,4 +70,4 @@ Adobe Commerce和Product Visuals整合可透過自動化資產管理工作流程
 
 ## 支援
 
-如果您需要本指南未涵蓋的資訊或問題，請聯絡您的AEM Assets整合銷售代表，或建立[支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)以取得其他協助。
+如果您需要本指南未涵蓋的資訊或問題，請聯絡您的AEM Assets整合銷售代表，或建立[支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=zh-Hant#submit-ticket)以取得其他協助。

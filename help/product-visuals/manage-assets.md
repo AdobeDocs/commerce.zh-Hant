@@ -145,7 +145,7 @@ Adobe Commerce可讓商家將影像與產品類別建立關聯，協助建立吸
 
 1. 按一下&#x200B;**[!UICONTROL Save]**&#x200B;並繼續。
 
-   如需建立類別的詳細資訊，請參閱&#x200B;**Commerce Catalog Management Guide**&#x200B;中的[完成類別內容](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content)。
+   如需建立類別的詳細資訊，請參閱&#x200B;**Commerce Catalog Management Guide**&#x200B;中的[完成類別內容](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content)。
 
 ## 更新資產
 
@@ -153,6 +153,6 @@ Adobe Commerce可讓商家將影像與產品類別建立關聯，協助建立吸
 
 如需詳細資訊，請參閱下列AEM Assets檔案。
 
-* [正在重新處理數位資產](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
+* [正在重新處理數位資產](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
 
-* [核准資產](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)
+* [核准資產](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)
