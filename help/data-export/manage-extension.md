@@ -2,7 +2,8 @@
 title: '[!DNL Manage the Data Export extension]'
 description: 瞭解如何升級 [!DNL Data Export] 擴充功能，以及移除或停用不需要的資料匯出服務。
 role: Admin, Developer
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 94702995-d272-47b9-9560-198eee3250a6
+source-git-commit: ff5c717dbdd638e114bccc3f6dec26f4be269194
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 0%
@@ -20,7 +21,7 @@ Adobe Commerce服務擴充功能的中繼包含特定模組，例如
 
 如果您不需要其中一個已安裝的商務資料匯出模組，請使用`magento:module:disable` CLI命令加以停用。
 
-例如，有一個[類別API](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/)在內部使用類別許可權摘要資料。 如果您未使用此API，可以停用類別許可權摘要的資料匯出。
+例如，有一個[類別API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/)在內部使用類別許可權摘要資料。 如果您未使用此API，可以停用類別許可權摘要的資料匯出。
 
 ```shell script
 bin/magento module:disable Magento_CategoryPermissionDataExporter Magento_SaaSCategoryPermissions
@@ -38,4 +39,4 @@ bin/magento module:disable Magento_CategoryPermissionDataExporter Magento_SaaSCa
    composer require magento/module-saas-price:103.3.1 --with-all-dependencies
    ```
 
-如果已在雲端基礎結構上部署Commerce執行個體，請從您的雲端專案目錄更新擴充功能。 請參閱&#x200B;_雲端基礎結構上的Adobe Commerce指南_&#x200B;中的[升級擴充功能](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension)。
+如果已在雲端基礎結構上部署Commerce執行個體，請從您的雲端專案目錄更新擴充功能。 請參閱&#x200B;_雲端基礎結構上的Adobe Commerce指南_&#x200B;中的[升級擴充功能](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension)。

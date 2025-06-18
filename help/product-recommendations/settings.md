@@ -2,7 +2,7 @@
 title: 設定
 description: 瞭解如何變更 [!DNL Product Recommendations] 資料的來源，以及如何啟用視覺化建議。
 exl-id: fe37624d-c53e-40cd-b182-10f62cba74c0
-source-git-commit: c11e3fbc871600f413867e0c5c0b75ad705cf115
+source-git-commit: fe5f864262478d1f9e205f2cd275452594cf4675
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->透過REST使用產品建議時，`alternateEnvironmentId`引數可用來指定其他資料空間。 透過[GraphQL](https://developer.adobe.com/commerce/services/graphql/recommendations/recommendations/)使用產品建議時，此引數無法使用。
+>透過REST使用產品建議時，`alternateEnvironmentId`引數可用來指定其他資料空間。 透過[GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/)使用產品建議時，此引數無法使用。
 
 ## 選擇建議來源
 
@@ -56,7 +56,7 @@ ht-degree: 0%
 
 ### 設定新的SaaS資料空間
 
-1. 在[Recommendations來源]區段中，按一下[編輯組態]。**&#x200B;**
+1. 在[Recommendations來源]區段中，按一下[編輯組態]。****
 
 1. 依照指示設定新的[[!DNL Commerce] 服務](/help/landing/saas.md)。
 

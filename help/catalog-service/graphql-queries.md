@@ -3,7 +3,8 @@ title: '[!DNL Retrieve catalog data with GraphQL]'
 description: 使用GraphQL查詢來擷取目錄資料，以支援Commerce體驗。
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
-source-git-commit: 935f34a8b4317686e67e33b50df3301d746fbd25
+exl-id: 49bbdb3b-bbe9-4777-8ea7-3bd25ae53889
+source-git-commit: ff5c717dbdd638e114bccc3f6dec26f4be269194
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 0%
@@ -18,12 +19,10 @@ ht-degree: 0%
 
 | 查詢 | 說明 | 使用情況 |
 |-------|-------------|-------|
-| `categories` | 傳回類別資料。 如果指定了子樹狀結構輸入物件，查詢會傳回有關子類別的詳細資訊。 | 對於呈現店面導覽和類別頁面很有用。 [檢視範例。](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/) |
-| `products` | 傳回指定為輸入之SKU的詳細資訊。 | 主要用於呈現產品詳細資料和產品比較頁面上的內容。 [檢視範例。](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/) |
-| `productSearch` | 傳回符合搜尋條件的產品清單。 | 用於根據搜尋輸入呈現搜尋結果和產品清單頁面。 [檢視範例。](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/) |
-| `refineProduct` | 縮小針對複雜產品執行的產品查詢結果，以傳回有關產品變體的特定資訊。 | 當購物者選取產品選項時，對於呈現更新的產品詳細資料頁面非常有用。 [檢視範例。](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/) |
-| `variants` | 傳回產品所有變體的詳細資訊。 | 對於在產品詳細資料或清單頁面上顯示變體影像而不提交多個API請求很有用。 [檢視範例。](https://developer.adobe.com/commerce/services/graphql/catalog-service/product-variants/) |
+| `categories` | 傳回類別資料。 如果指定了子樹狀結構輸入物件，查詢會傳回有關子類別的詳細資訊。 | 對於呈現店面導覽和類別頁面很有用。 [檢視範例。](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) |
+| `products` | 傳回指定為輸入之SKU的詳細資訊。 | 主要用於呈現產品詳細資料和產品比較頁面上的內容。 [檢視範例。](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) |
+| `productSearch` | 傳回符合搜尋條件的產品清單。 | 用於根據搜尋輸入呈現搜尋結果和產品清單頁面。 [檢視範例。](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) |
+| `refineProduct` | 縮小針對複雜產品執行的產品查詢結果，以傳回有關產品變體的特定資訊。 | 當購物者選取產品選項時，對於呈現更新的產品詳細資料頁面非常有用。 [檢視範例。](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product/) |
+| `variants` | 傳回產品所有變體的詳細資訊。 | 對於在產品詳細資料或清單頁面上顯示變體影像而不提交多個API請求很有用。 [檢視範例。](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-variants/) |
 
-
-請參閱[目錄服務API指南](https://developer.adobe.com/commerce/services/graphql/catalog-service/)，以取得有關使用這些查詢的詳細資訊
-
+請參閱[目錄服務API指南](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/)，以取得有關使用這些查詢的詳細資訊

@@ -3,7 +3,7 @@ title: 擴充及自訂SaaS資料匯出摘要資料
 description: 瞭解如何擴充及自訂 [!DNL SaaS Data Export] 摘要資料。
 role: Admin, Developer
 exl-id: 694bd281-12c5-415c-a251-b4251e2edea7
-source-git-commit: ac6c690f87e3df2ac4997d80453028829be8e657
+source-git-commit: ff5c717dbdd638e114bccc3f6dec26f4be269194
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 [!DNL Commerce Data Export]擴充功能可讓您將資料從[!DNL Commerce]應用程式匯出至Commerce服務，例如即時搜尋、目錄服務和產品建議。 如有需要，您可以擴充及自訂摘要資料，以包含其他屬性資料或修改收集的資料。
 
-新增屬性資料後，可從GraphQL結構描述中的[屬性欄位](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/#productviewattribute-type)存取店面服務。
+新增屬性資料後，可從GraphQL結構描述中的[屬性欄位](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#productviewattribute-type)存取店面服務。
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 ## 將產品屬性新增至Adobe Commerce
 
-開發人員可以使用下列其中一種方法，新增可從[產品屬性欄位](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/#output-fields)存取的產品屬性：
+開發人員可以使用下列其中一種方法，新增可從[產品屬性欄位](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#output-fields)存取的產品屬性：
 
 - 將屬性新增至Adobe Commerce，以包含在匯出至Commerce店面服務的`products`摘要資料中。
 - 在摘要同步程式期間，使用外掛程式動態新增屬性。
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 1. 視需要新增屬性至屬性集。
 
-請參閱&#x200B;*Adobe Commerce管理指南*&#x200B;中的[建立產品屬性](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create)。
+請參閱&#x200B;*Adobe Commerce管理指南*&#x200B;中的[建立產品屬性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create)。
 
 #### 以程式設計方式建立產品屬性
 

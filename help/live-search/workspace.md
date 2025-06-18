@@ -2,7 +2,7 @@
 title: 設定即時搜尋
 description: ' [!DNL Live Search] 工作區是用來設定、管理和監視搜尋效能。'
 exl-id: 07c32b26-3fa4-4fae-afba-8a10866857c3
-source-git-commit: 3d92f4afc3aef990f2e86e306f4c6c47324aed97
+source-git-commit: 54fbf7f65ee5e464a4b61a9df95fef7536f1cedb
 workflow-type: tm+mt
 source-wordcount: '1012'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ![Workspace](assets/workspace.png)
 
-## 資料彙集
+## 資料收集
 
 為確保工作區上的每個功能區域都包含正確的資料，您需要根據所選的店面實作來設定資料收集：
 
@@ -30,27 +30,27 @@ ht-degree: 0%
 
 ### 醫療保健客戶
 
-如果您是醫療保健客戶，且已安裝[Data Services HIPAA擴充功能](../data-connection/hipaa-readiness.md#installation) （屬於[Data Connection](../data-connection/overview.md)擴充功能的一部分），則不會再擷取[!DNL Live Search]使用的店面事件資料。 這是因為店面事件資料是在使用者端產生。 若要繼續擷取和傳送店面事件資料，請重新啟用[!DNL Live Search]的事件收集。 請參閱[一般組態](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/config/general/general#data-services)以瞭解更多資訊。
+如果您是醫療保健客戶，且已安裝[Data Services HIPAA擴充功能](../data-connection/hipaa-readiness.md#installation) （屬於[Data Connection](../data-connection/overview.md)擴充功能的一部分），則不會再擷取[!DNL Live Search]使用的店面事件資料。 這是因為店面事件資料是在使用者端產生。 若要繼續擷取和傳送店面事件資料，請重新啟用[!DNL Live Search]的事件收集。 請參閱[一般組態](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services)以瞭解更多資訊。
 
 ## 設定範圍
 
-所有[!DNL Live Search]設定的[領域](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hant#scope-settings)最初設定為`Default Store View`。 如果您的[!DNL Commerce]安裝包含多個存放區檢視，請將&#x200B;**範圍**&#x200B;設定為您的Facet設定套用的[存放區檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hant)。
+所有[!DNL Live Search]設定的[領域](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)最初設定為`Default Store View`。 如果您的[!DNL Commerce]安裝包含多個存放區檢視，請將&#x200B;**範圍**&#x200B;設定為您的Facet設定套用的[存放區檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)。
 
 ## 功能表選項
 
 | 選項 | 說明 |
 |--- |--- |
-| [效能](performance.md) | 控制面板提供產品搜尋效能的深入分析。 |
+| [效能](performance.md) | 控制面板提供insight產品搜尋效能資訊。 |
 | [多面向](facets.md) | 使用屬性值的多個維度來調整搜尋條件的高效能篩選。 |
 | [同義字](synonyms.md) | 擴大搜尋範圍，納入購物者可能會用來尋找與目錄中不同產品的字詞。 |
 | [搜尋銷售](rules.md) | 使用可觸發已排程動作的邏輯規則來塑造搜尋體驗。 提升、隱藏、釘選或隱藏產品，以校正搜尋結果，支援您的業務目標。 |
 | [類別銷售](category-merch.md) | 在類別層級套用規則和智慧型銷售。 |
-| [GraphQL](graphql.md) | 開發人員若已登入您商店的管理員，可使用實際目錄資料撰寫和測試查詢。 若要深入瞭解，請前往[!DNL Live Search]開發人員檔案中的[GraphQL概觀](https://developer.adobe.com/commerce/services/graphql/live-search/)。 |
+| [GraphQL](graphql.md) | 開發人員若已登入您商店的管理員，可使用實際目錄資料撰寫和測試查詢。 若要深入瞭解，請前往[!DNL Live Search]開發人員檔案中的[GraphQL概觀](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/)。 |
 | [設定](settings.md) | 決定如何在店面中依價格範圍分組價格方面值，並設定索引語言。 |
 
 ## 將屬性設定為可搜尋
 
-若要產生高針對性的結果，請檢閱[可搜尋](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=zh-Hant) (`searchable=true`)產品屬性集。 為確保關聯性，請讓屬性只有在包含具有清晰精簡含義的內容時才可供搜尋。 避免使用包含較不精確、長度較長的文字的屬性，例如`description`，雖然預設會啟用搜尋，但可能會降低搜尋結果的精確度。 例如，如果有人搜尋「短褲」，而且有描述包含「短袖」字樣的襯衫，則這些襯衫會包含在搜尋結果中。
+若要產生高針對性的結果，請檢閱[可搜尋](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) (`searchable=true`)產品屬性集。 為確保關聯性，請讓屬性只有在包含具有清晰精簡含義的內容時才可供搜尋。 避免使用包含較不精確、長度較長的文字的屬性，例如`description`，雖然預設會啟用搜尋，但可能會降低搜尋結果的精確度。 例如，如果有人搜尋「短褲」，而且有描述包含「短袖」字樣的襯衫，則這些襯衫會包含在搜尋結果中。
 
 若要允許搜尋屬性，請完成下列步驟：
 
@@ -60,7 +60,7 @@ ht-degree: 0%
 
    ![Workspace](assets/attribute-searchable.png)
 
-[!DNL Live Search]也會遵從產品屬性的[權重](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html?lang=zh-Hant#weighted-search)，如在Adobe Commerce中所設定。 權重較高的屬性會顯示在搜尋結果中較高的位置。
+[!DNL Live Search]也會遵從產品屬性的[權重](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search)，如在Adobe Commerce中所設定。 權重較高的屬性會顯示在搜尋結果中較高的位置。
 
 下列屬性一律可供搜尋：
 
@@ -105,4 +105,4 @@ ht-degree: 0%
 
 ### 搜尋詞
 
-在Adobe Commerce處理路由的實作上，[!DNL Live Search]支援[搜尋字詞重新導向](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html?lang=zh-Hant)，例如Luma和其他以php為基礎的主題。
+在Adobe Commerce處理路由的實作上，[!DNL Live Search]支援[搜尋字詞重新導向](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html)，例如Luma和其他以php為基礎的主題。
