@@ -26,7 +26,7 @@ ht-degree: 0%
 
 _2025年4月29日_
 
-![修正](../assets/fix.svg)修正&#x200B;[**效能**](./performance.md)&#x200B;索引標籤上的&#x200B;**匯出至CSV**報告未包含日期範圍中指定之所有資料的問題。
+![修正](../assets/fix.svg)修正&#x200B;[**效能**](./performance.md)&#x200B;索引標籤上的&#x200B;**匯出至CSV**&#x200B;報告未包含日期範圍中指定之所有資料的問題。
 ![修正](../assets/fix.svg)修正使用搜尋查詢篩選時，無法儲存[銷售規則](./rules.md)的問題。
 ![修正](../assets/fix.svg)修正[釘選產品](./facets-manage.md#pinunpin-facet)未列在結果頁面頂端的問題。
 
@@ -52,7 +52,7 @@ _2024年9月19日_
 
 _2024年9月4日_
 
-![修正](../assets/fix.svg)將Facet](boundaries-limits.md#facets)內可傳回[的最大值區數增加到100。
+![修正](../assets/fix.svg)將Facet[&#128279;](boundaries-limits.md#facets)內可傳回的最大值區數增加到100。
 
 _2024年8月7日_
 
@@ -412,4 +412,4 @@ _2023年3月14日_
 
 - [Adobe Commerce開發人員檔案](https://developer.adobe.com/commerce/docs)
 - [Adobe Commerce使用手冊](https://experienceleague.adobe.com/en/docs/commerce)
-- Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html)上的[[!DNL Live Search] 
+- Marketplace[&#128279;](https://commercemarketplace.adobe.com/magento-live-search.html)上的[!DNL Live Search] 

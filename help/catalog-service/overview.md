@@ -43,7 +43,7 @@ Adobe Commerce擁有兩個GraphQL系統。 核心GraphQL系統提供廣泛的查
 
 GraphQL系統的核心和服務不會直接互相通訊。 您從不同的URL存取每個系統，而呼叫需要不同的標題資訊。 這兩個GraphQL系統旨在搭配使用。 [!DNL Catalog Service] GraphQL系統可增強核心系統，讓產品店面體驗更快速。
 
-您可以選擇實作Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/)的[API Mesh，以使用Adobe Developer將兩個Adobe Commerce GraphQL系統與私人和協力廠商API及其他軟體介面整合。 您可以設定網格，以確保路由到每個端點的呼叫在標題中包含正確的授權資訊。
+您可以選擇實作Adobe Developer App Builder[&#128279;](https://developer.adobe.com/graphql-mesh-gateway/)的API Mesh，以使用Adobe Developer將兩個Adobe Commerce GraphQL系統與私人和協力廠商API及其他軟體介面整合。 您可以設定網格，以確保路由到每個端點的呼叫在標題中包含正確的授權資訊。
 
 ## 架構詳細資料
 
