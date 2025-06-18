@@ -3,9 +3,9 @@ title: 付款選項
 description: 設定付款選項，以自訂商店客戶可用的方式。
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration, Paas, Saas
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: 0d00ce6e5291b3753cb7e2ee9e8af262b2c8894f
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1209'
 ht-degree: 0%
 
 ---
@@ -52,6 +52,10 @@ ht-degree: 0%
 迷你藝術中的![Apple付款按鈕](assets/applepay-button.png){width="500" zoomable="yes"}
 
 啟用後，[!DNL Apple Pay]按鈕會從產品頁面、迷你購物車、購物車和結帳檢視中顯示。 您可以在存放區設定或擴充功能的Home中設定[!DNL Apple Pay]。
+
+>[!NOTE]
+>
+>  Apple Pay網域驗證憑證已納入支付服務程式碼中。 確認路徑`/.well-known/apple-developer-merchantid-domain-association`傳回200回應代碼。 如需&#x200B;**Apple Pay網域驗證**&#x200B;憑證的詳細資訊，請參閱有關與Apple Pay整合的[PayPal開發人員檔案](https://developer.paypal.com/docs/checkout/apm/apple-pay/#download-and-host-sandbox-domain-association-file)。
 
 如需詳細資訊，請參閱[設定](settings.md#apple-pay)。
 
@@ -121,16 +125,16 @@ ht-degree: 0%
 
 若要&#x200B;**僅以&#x200B;_擷取付款_ PayPal付款按鈕（_不是_ PayPal信用卡付款選項）**：
 
-1. 確定您的存放區在生產模式[&#128279;](settings.md#enable-payment-services)中為。
+1. 確定您的存放區在生產模式](settings.md#enable-payment-services)中為[。
 1. [在[設定]中設定所需的PayPal付款按鈕](settings.md#payment-buttons)。
-1. 開啟&#x200B;_[!UICONTROL Payment buttons]_&#x200B;區段中的_&#x200B;關閉&#x200B;_&#x200B;**[[!UICONTROL Show PayPal Credit and Debit card button]](settings.md#payment-buttons)**&#x200B;選項。
+1. 開啟&#x200B;_[!UICONTROL Payment buttons]_區段中的_&#x200B;關閉&#x200B;_**[[!UICONTROL Show PayPal Credit and Debit card button]](settings.md#payment-buttons)**選項。
 
 要&#x200B;**擷取您現有信用卡提供者的付款&#x200B;_和_ PayPal付款按鈕**：
 
-1. 確定您的存放區在生產模式[&#128279;](settings.md#enable-payment-services)中為。
+1. 確定您的存放區在生產模式](settings.md#enable-payment-services)中為[。
 1. [設定所需的PayPal付款按鈕](settings.md#payment-buttons)。
-1. 開啟&#x200B;_[!UICONTROL Payment buttons]_&#x200B;區段中的_&#x200B;關閉&#x200B;_&#x200B;**[[!UICONTROL PayPal Show Credit and Debit card button]](settings.md#payment-buttons)**&#x200B;選項。
-1. 開啟&#x200B;_[!UICONTROL Credit card fields]_&#x200B;區段中的_&#x200B;關閉&#x200B;_&#x200B;**[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)**&#x200B;選項，並使用您的[現有信用卡提供者帳戶](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html?lang=zh-Hant#payments)。
+1. 開啟&#x200B;_[!UICONTROL Payment buttons]_區段中的_&#x200B;關閉&#x200B;_**[[!UICONTROL PayPal Show Credit and Debit card button]](settings.md#payment-buttons)**選項。
+1. 開啟&#x200B;_[!UICONTROL Credit card fields]_區段中的_&#x200B;關閉&#x200B;_**[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)**選項，並使用您的[現有信用卡提供者帳戶](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments)。
 
 ## 簽出選項
 
