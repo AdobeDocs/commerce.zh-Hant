@@ -59,7 +59,7 @@ ht-degree: 0%
 
 1. 視需要新增屬性至屬性集。
 
-請參閱&#x200B;*Adobe Commerce管理指南*&#x200B;中的[建立產品屬性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create)。
+請參閱&#x200B;*Adobe Commerce管理指南*&#x200B;中的[建立產品屬性](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create)。
 
 #### 以程式設計方式建立產品屬性
 

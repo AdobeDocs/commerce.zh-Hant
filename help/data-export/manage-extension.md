@@ -39,4 +39,4 @@ bin/magento module:disable Magento_CategoryPermissionDataExporter Magento_SaaSCa
    composer require magento/module-saas-price:103.3.1 --with-all-dependencies
    ```
 
-如果已在雲端基礎結構上部署Commerce執行個體，請從您的雲端專案目錄更新擴充功能。 請參閱&#x200B;_雲端基礎結構上的Adobe Commerce指南_&#x200B;中的[升級擴充功能](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension)。
+如果已在雲端基礎結構上部署Commerce執行個體，請從您的雲端專案目錄更新擴充功能。 請參閱&#x200B;_雲端基礎結構上的Adobe Commerce指南_&#x200B;中的[升級擴充功能](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension)。
