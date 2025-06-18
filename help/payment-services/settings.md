@@ -16,7 +16,7 @@ ht-degree: 0%
 
 您可以使用[!DNL Payment Services]首頁中有用的設定，根據您的需求自訂[!DNL Payment Services]。
 
-若要為[!DNL Adobe Commerce]和[!DNL Magento Open Source]設定[!DNL Payment Services]，請按一下&#x200B;**[!UICONTROL Settings]**。 這些組態選項僅適用於在&#x200B;[_一般_&#x200B;組態選項](#configure-general-settings)的&#x200B;_[!UICONTROL Payment mode]_欄位中設定的環境。
+若要為[!DNL Adobe Commerce]和[!DNL Magento Open Source]設定[!DNL Payment Services]，請按一下&#x200B;**[!UICONTROL Settings]**。 這些組態選項僅適用於在&#x200B;[_一般_&#x200B;組態選項](#configure-general-settings)的&#x200B;_[!UICONTROL Payment mode]_&#x200B;欄位中設定的環境。
 
 如需多存放區或舊版組態，請參閱[在管理員中設定](configure-admin.md)。
 
@@ -34,9 +34,9 @@ ht-degree: 0%
 
    ![React設定檢視](assets/react-settings-view.png){width="500" zoomable="yes"}
 
-   _[!UICONTROL General]_區段包含用來啟用[!DNL Payment Services]作為付款方式的設定。
+   _[!UICONTROL General]_&#x200B;區段包含用來啟用[!DNL Payment Services]作為付款方式的設定。
 
-1. 若要啟用[!DNL Payment Services]作為商店的付款方式，請在&#x200B;_[!UICONTROL General]_區段中，將&#x200B;**[!UICONTROL Enable Payment Services as payment method]**切換為`Yes`。
+1. 若要啟用[!DNL Payment Services]作為商店的付款方式，請在&#x200B;_[!UICONTROL General]_&#x200B;區段中，將&#x200B;**[!UICONTROL Enable Payment Services as payment method]**&#x200B;切換為`Yes`。
 
 1. 如果您仍在測試商店的[!DNL Payment Services]，請將&#x200B;**付款模式**&#x200B;設定為`Sandbox`。 如果您已準備好啟用即時付款，請將其設為`Production`。
 
@@ -95,7 +95,7 @@ ht-degree: 0%
 
 ### 信用卡欄位
 
-_[!UICONTROL Credit Card Fields]_設定為信用卡或扣帳卡付款方式提供簡單且安全的結帳選項。
+_[!UICONTROL Credit Card Fields]_&#x200B;設定為信用卡或扣帳卡付款方式提供簡單且安全的結帳選項。
 
 如需詳細資訊，請參閱[付款選項](payments-options.md#credit-card-fields)。
 
@@ -107,7 +107,7 @@ _[!UICONTROL Credit Card Fields]_設定為信用卡或扣帳卡付款方式提�
 1. 若要啟用[3DS Secure驗證](security.md#3ds) （預設為`Off`）將&#x200B;**[!UICONTROL 3DS Secure authentication]**&#x200B;選取器切換為`Always`或`When required`。
 1. 若要啟用或停用結帳頁面上的信用卡欄位，請切換&#x200B;**[!UICONTROL Show on checkout page]**&#x200B;選取器。
 1. 若要啟用或停用[卡片存放](#card-vaulting)，請切換&#x200B;**[!UICONTROL Vault enabled]**&#x200B;選取器。
-1. 若要啟用或停用Admin](#card-vaulting)中的[保管式付款方法（供商戶使用保管式付款方法來完成Admin中客戶的訂單），請切換&#x200B;**[!UICONTROL Show vaulted methods in Admin]**&#x200B;選取器。
+1. 若要啟用或停用Admin[&#128279;](#card-vaulting)中的保管式付款方法（供商戶使用保管式付款方法來完成Admin中客戶的訂單），請切換&#x200B;**[!UICONTROL Show vaulted methods in Admin]**&#x200B;選取器。
 1. 若要啟用或停用偵錯模式，請切換&#x200B;**[!UICONTROL Debug Mode]**&#x200B;選取器。
 1. 按一下&#x200B;**[!UICONTROL Save]**。
 
@@ -125,7 +125,7 @@ _[!UICONTROL Credit Card Fields]_設定為信用卡或扣帳卡付款方式提�
 | [!UICONTROL 3DS Secure authentication] | 網站 | 啟用或停用[3DS安全驗證](security.md#3ds)。 選項： [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Show on checkout page] | 網站 | 啟用或停用要在結帳頁面上顯示的信用卡欄位。 選項： [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Vault enabled] | 存放區檢視 | 啟用或停用[信用卡存放區](vaulting.md)。 選項： [!UICONTROL Off] / [!UICONTROL On] |
-| [!UICONTROL Show vaulted payment methods in Admin] | 存放區檢視 | 啟用或停用商家使用存放的付款方式](vaulting.md)，為管理員[中的客戶完成訂單的功能。 選項： [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show vaulted payment methods in Admin] | 存放區檢視 | 啟用或停用商家使用存放的付款方式[&#128279;](vaulting.md)，為管理員中的客戶完成訂單的功能。 選項： [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Debug Mode] | 網站 | 啟用或停用偵錯模式。 選項： [!UICONTROL Off] / [!UICONTROL On] |
 
 ### Apple Pay
@@ -140,7 +140,7 @@ _[!UICONTROL Credit Card Fields]_設定為信用卡或扣帳卡付款方式提�
 
 1. 在&#x200B;_管理員_&#x200B;側邊欄上，移至&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**。
 1. 在&#x200B;**[!UICONTROL Scope]**&#x200B;下拉式功能表中選取您要啟用付款方式的商店檢視。
-1. 在&#x200B;**[!UICONTROL Apple Pay]**&#x200B;區段中，編輯&#x200B;_[!UICONTROL Checkout title]_欄位中的值，以變更結帳時顯示的付款方式名稱。
+1. 在&#x200B;**[!UICONTROL Apple Pay]**&#x200B;區段中，編輯&#x200B;_[!UICONTROL Checkout title]_&#x200B;欄位中的值，以變更結帳時顯示的付款方式名稱。
 1. 若要[設定付款動作](production.md#set-payment-services-as-payment-method)，請將&#x200B;**[!UICONTROL Payment action]**&#x200B;切換為`Authorize`或`Authorize and Capture`。
 1. 若要在結帳頁面上啟用或停用Apple Pay，請切換&#x200B;**[!UICONTROL Show Apple Pay on checkout page]**&#x200B;選取器。
 1. 若要在產品詳細資料頁面上啟用或停用Apple Pay，請切換&#x200B;**[!UICONTROL Show Apple Pay on product detail page]**&#x200B;選取器。
@@ -207,8 +207,8 @@ _[!UICONTROL Credit Card Fields]_設定為信用卡或扣帳卡付款方式提�
 | [!UICONTROL Title] | 存放區檢視 | 在結帳期間，在「付款方式」檢視中，新增要顯示為此付款選項標題的文字。 選項：文字欄位 |
 | [!UICONTROL Payment Action] | 網站 | 指定的付款方式的[付款動作](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"}。 選項： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Sort order] | 存放區檢視 | 結帳頁面上指定付款方式的排序順序。 `Numeric Only`值 |
-| [!UICONTROL Show PayPal buttons on checkout page] | 存放區檢視 | 啟用或停用結帳頁面上的[!DNL PayPal payment buttons]。 選項： [!UICONTROL  Yes] / [!UICONTROL No] |
-| [!UICONTROL Show PayPal buttons on product detail page] | 存放區檢視 | 啟用或停用產品詳細資料頁面上的[!DNL PayPal payment buttons]。 選項： [!UICONTROL  Yes] / [!UICONTROL No] |
+| [!UICONTROL Show PayPal buttons on checkout page] | 存放區檢視 | 啟用或停用結帳頁面上的[!DNL PayPal payment buttons]。 選項： [!UICONTROL &#x200B; Yes] / [!UICONTROL No] |
+| [!UICONTROL Show PayPal buttons on product detail page] | 存放區檢視 | 啟用或停用產品詳細資料頁面上的[!DNL PayPal payment buttons]。 選項： [!UICONTROL &#x200B; Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons in mini-cart preview] | 存放區檢視 | 啟用或停用迷你購物車預覽中的[!DNL PayPal payment buttons]。 選項： [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Show PayPal buttons on cart page] | 存放區檢視 | 啟用或停用購物車頁面上的[!DNL PayPal payment buttons]。 選項： [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Show PayPal Pay Later button] | 存放區檢視 | 啟用或停用付款按鈕顯示的稍後付款選項外觀。 選項： [!UICONTROL Off] / [!UICONTROL On] |
@@ -220,7 +220,7 @@ _[!UICONTROL Credit Card Fields]_設定為信用卡或扣帳卡付款方式提�
 
 ### 按鈕樣式
 
-您也可以設定付款按鈕的&#x200B;_[!UICONTROL Button style]_選項：
+您也可以設定付款按鈕的&#x200B;_[!UICONTROL Button style]_&#x200B;選項：
 
 1. 若要變更&#x200B;**[!UICONTROL Layout]**，請選取`Vertical`或`Horizontal`。
 
@@ -244,7 +244,7 @@ _[!UICONTROL Credit Card Fields]_設定為信用卡或扣帳卡付款方式提�
 
 1. [排清快取](#flush-the-cache)。
 
-您可以在Admin](configure-admin.md#configure-paypal-smart-buttons)的舊版設定中或在[!DNL Payment Services Home]這裡設定付款按鈕樣式[。 請參閱[PayPal的按鈕樣式指南](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/)，以取得有關設定PayPal付款按鈕樣式的詳細資訊。
+您可以在Admin[&#128279;](configure-admin.md#configure-paypal-smart-buttons)的舊版設定中或在[!DNL Payment Services Home]這裡設定付款按鈕樣式。 請參閱[PayPal的按鈕樣式指南](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/)，以取得有關設定PayPal付款按鈕樣式的詳細資訊。
 
 #### 設定選項
 
@@ -298,7 +298,7 @@ _[!UICONTROL Credit Card Fields]_設定為信用卡或扣帳卡付款方式提�
 
 啟用或停用[信用卡欄位設定](#credit-card-fields)中的3DS。
 
-如需詳細資訊，請參閱安全性](security.md#3ds)中的[3DS。
+如需詳細資訊，請參閱安全性[&#128279;](security.md#3ds)中的3DS。
 
 ## 使用多個PayPal帳戶
 
