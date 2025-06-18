@@ -4,10 +4,10 @@ user-guide-description: 為 Adobe Commerce 和 Magento Open Source 提供延伸�
 role: Admin, Leader, User
 feature: Integration, Personalization, Services, Saas
 recommendations: noDisplay
-source-git-commit: 2b948cd07020b1f53616fe201dcc5781ca2f9bcc
+source-git-commit: 468994935eb35fda7880351e4e313b6fd54dc0a0
 workflow-type: tm+mt
-source-wordcount: '53'
-ht-degree: 37%
+source-wordcount: '55'
+ht-degree: 36%
 
 ---
 
@@ -18,20 +18,16 @@ ht-degree: 37%
    - [發行說明](/help/landing/release-notes-all.md)
 - [產品解決方案](product-solutions.md)
 - Commerce服務 {#commerce-services}
-   - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce/live-search/overview.html?lang=zh-Hant)
-   - [[!DNL Product Recommendations]](https://experienceleague.adobe.com/docs/commerce/product-recommendations/guide-overview.html?lang=zh-Hant)
-   - [[!DNL Catalog Service]](https://experienceleague.adobe.com/docs/commerce/catalog-service/guide-overview.html?lang=zh-Hant)
-   - [[!DNL Payment Services]](https://experienceleague.adobe.com/docs/commerce/payment-services/guide-overview.html?lang=zh-Hant)
+   - [[!DNL Commerce as a Cloud Service]](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview)
+   - [[!DNL Commerce Optimizer]](https://experienceleague.adobe.com/en/docs/commerce/optimizer/overview)
+   - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce/live-search/overview.html)
+   - [[!DNL Product Recommendations]](https://experienceleague.adobe.com/docs/commerce/product-recommendations/guide-overview.html)
+   - [[!DNL Catalog Service]](https://experienceleague.adobe.com/docs/commerce/catalog-service/guide-overview.html)
+   - [[!DNL Payment Services]](https://experienceleague.adobe.com/docs/commerce/payment-services/guide-overview.html)
 - Integration services {#integration-services}
-   - [[!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce/data-connection/overview.html?lang=zh-Hant)
+   - [[!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce/data-connection/overview.html)
    - [服務聯結器](/help/landing/saas.md)
 - 資料工具 {#data-services}
-   - [SaaS資料匯出](https://experienceleague.adobe.com/docs/commerce/saas-data-export/overview.html?lang=zh-Hant)
-   - [SaaS價格索引](https://experienceleague.adobe.com/docs/commerce/price-indexer/price-indexing.html?lang=zh-Hant)
+   - [SaaS資料匯出](https://experienceleague.adobe.com/docs/commerce/saas-data-export/overview.html)
+   - [SaaS價格索引](https://experienceleague.adobe.com/docs/commerce/price-indexer/price-indexing.html)
    - [目錄同步](/help/landing/catalog-sync.md)
-
-
-
-
-
-

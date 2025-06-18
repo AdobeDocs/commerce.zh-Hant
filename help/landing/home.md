@@ -5,9 +5,9 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce merchants support key components of their business.
 recommendations: noCatalog
 exl-id: 507af1fa-9f3e-41bc-9aaf-cd89839aae0b
-source-git-commit: 2b948cd07020b1f53616fe201dcc5781ca2f9bcc
+source-git-commit: 526d15950fe77ac8c384d1fd670394695a824260
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
@@ -25,11 +25,55 @@ Adobe提供Commerce服務、整合服務和資料工具的集合，協助商戶�
 <table style="table-layout:fixed">
 <tr style="border: 0;">
    <td valign="top">
-      <a href="../live-search//overview.md">
+      <a href="../cloud-service/overview.md">
+      <img alt="雲端" src="../assets/icons/shopping-cart.svg" width="40">
+      </a>
+      <div>
+         <a href="../cloud-service/overview.md">
+         <strong>Commerce as a Cloud Service</strong>
+         </a>
+      </div>
+      <p>
+         <em>使用雲端基礎結構，自動調整流量與訂單需求，以加快營運規模與創新速度。</em>
+      </p>
+   </td>
+   <td valign="top">
+      <a href="../optimizer/overview.md">
+      <img alt="最佳化" src="../assets/icons/gauge4.svg" width="40">
+      </a>
+      <div>
+         <a href="../optimizer/overview.md">
+         <strong>Commerce Optimizer</strong>
+         </a>
+      </div>
+      <p>
+         <em>提供極快的店面並提高轉換率，同時使用您現有的商務平台。</em>
+      </p>
+   </td>
+   <td valign="top">
+      <a href="../product-visuals/overview.md">
+      <img alt="視覺" src="../assets/icons/images.svg" width="40">
+      </a>
+      <div>
+         <a href="../product-visuals/overview.md">
+         <strong>產品視覺效果</strong>
+         </a>
+      </div>
+      <p>
+         <em>使用與Adobe Experience Manager整合的系統簡化數位資產管理，以管理多媒體內容。</em>
+      </p>
+   </td>
+   <td valign="top">
+      <!-- Empty cell to maintain table structure -->
+   </td>
+</tr>
+<tr style="border: 0;">
+   <td valign="top">
+      <a href="../live-search/overview.md">
       <img alt="搜尋" src="../assets/icons/Magnify.svg" width="40">
       </a>
       <div>
-         <a href="../live-search//overview.md">
+         <a href="../live-search/overview.md">
          <strong>[!DNL Live Search]</strong>
          </a>
       </div>
@@ -89,7 +133,7 @@ Adobe提供Commerce服務、整合服務和資料工具的集合，協助商戶�
       </a>
       <div>
          <a href="../data-connection/overview.md">
-         <strong>[!DNL Data Connection]</strong>
+         <strong>[!DNL Data Connection]</strong> [！BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce。"}
          </a>
       </div>
       <p>
@@ -102,7 +146,7 @@ Adobe提供Commerce服務、整合服務和資料工具的集合，協助商戶�
       </a>
       <div>
           <a href="../landing/saas.md">
-         <strong>Commerce服務聯結器</strong> [!BADGE PaaS only]{type=Informational url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce。"}
+         <strong>Commerce服務聯結器</strong> [！BADGE PaaS only]{type=Informational url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce。"}
          </a>
       </div>
       <p>
@@ -143,11 +187,11 @@ Adobe提供Commerce服務、整合服務和資料工具的集合，協助商戶�
       </p>
    </td>
    <td valign="top">
-      <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
       <img alt="監視資料同步" src="../assets/icons/Monitoring.svg" width="40">
       </a>
       <div>
-          <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
          <strong>資料管理儀表板</strong>
          </a>
       </div>
