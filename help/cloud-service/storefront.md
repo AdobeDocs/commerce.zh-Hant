@@ -3,10 +3,10 @@ title: 設定您的店面
 description: 瞭解如何執行支架工具來設定您的 [!DNL Adobe Commerce as a Cloud Service] 店面。
 role: Developer
 exl-id: 02928dc4-1777-483e-b0ee-b04fc813864d
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
-source-git-commit: 72e1dca161c0e3b2898cd48eb3d17b5c50db7066
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+source-git-commit: c9869e45ed9eb8f04cf3e1bfb3542a42bbf97c0f
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '662'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 下列步驟示範如何使用`aio commerce init`命令快速設定由Edge Delivery支援的Adobe Commerce店面。 此程式會設定下列專案：
 
-* [由Edge Delivery Services提供支援的Commerce店面](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=zh-Hant) — 由Adobe的Edge Delivery Services提供支援的效能、可擴充且安全的店面。
+* [由Edge Delivery Services提供支援的Commerce店面](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) — 由Adobe的Edge Delivery Services提供支援的效能、可擴充且安全的店面。
 * [適用於Adobe Developer App Builder的API Mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/) — 這個API平台可讓開發人員將多個資料來源合併為單一GraphQL端點。 API Mesh透過單一閘道，使用Adobe API協調協力廠商API。 對單一GraphQL端點的一個查詢可以傳回來自多個來源的結果。
 * [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/) — 具有存取API、事件、執行階段函式和外掛程式的開發人員工具集合，您可以使用這些工具來建置Adobe應用程式的專案。
 * [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/) — 用於部署自訂程式碼的無伺服器引擎，可回應事件並執行雲端中的函式。
@@ -72,6 +72,8 @@ ht-degree: 0%
    aio login
    ```
 
+   如果`aio login`命令未啟動瀏覽器視窗，請參閱[疑難排解](#troubleshooting)區段。
+
 1. 選取IMS組織、專案和工作區。 使用方向鍵並按&#x200B;**Enter**&#x200B;進行選擇。 如需`aio`命令的詳細資訊，請參閱[Adobe I/O CLI檔案](https://github.com/adobe/aio-cli-plugin-console?tab=readme-ov-file#commands)。
 
    ```bash
@@ -90,7 +92,7 @@ ht-degree: 0%
 
 ## 執行`aio commerce init`命令
 
-執行以下命令，將為您的Commerce店面建立支架。 此支架是您建立和瞭解店面的絕佳起點。 如需使用店面的詳細資訊，請參閱[Adobe Commerce店面檔案](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant)。
+執行以下命令，將為您的Commerce店面建立支架。 此支架是您建立和瞭解店面的絕佳起點。 如需使用店面的詳細資訊，請參閱[Adobe Commerce店面檔案](https://experienceleague.adobe.com/developer/commerce/storefront/)。
 
 
 1. 執行`init`命令：
@@ -123,4 +125,30 @@ ht-degree: 0%
    * 預覽您的店面： `https://main--<repo name>--<username or org>.aem.page/`
    * 本機執行： `aio commerce:dev`
 
-若要自訂您的店面，請參閱[Adobe Commerce店面檔案](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant)。
+若要自訂您的店面，請參閱[Adobe Commerce店面檔案](https://experienceleague.adobe.com/developer/commerce/storefront/)。
+
+## 疑難排解
+
+如果您遇到`aio login`命令的問題，Adobe建議完全登出CLI和瀏覽器，然後重新登入。
+
+1. 若要登出CLI，請執行：
+
+   ```bash
+   aio logout
+   ```
+
+1. 在您的瀏覽器中，導覽至[Adobe Developer Console](https://developer.adobe.com/console)，按一下右上角的設定檔圖示，然後選取&#x200B;**登出**。
+
+1. 返回CLI並再次執行`aio login`命令，這會啟動瀏覽器視窗以登入。 然後，您可以繼續選取您的組織、專案和工作區。
+
+   ```bash
+   aio console org select
+   ```
+
+   ```bash
+   aio console workspace select
+   ```
+
+   ```bash
+   aio console project select
+   ```
