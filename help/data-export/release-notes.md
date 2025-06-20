@@ -4,9 +4,9 @@ description: 適用於Adobe Commerce的 [!DNL Data Export Extension] 的最新�
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: c9a87df4aa64081b51fd52d84d97fe3949045e31
+source-git-commit: 597cdd929f7abed24a68f1347a214b46664b1c75
 workflow-type: tm+mt
-source-wordcount: '1243'
+source-wordcount: '1273'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,11 @@ ht-degree: 0%
 >SaaS資料匯出擴充功能是隨「即時搜尋」、「產品建議」和「目錄服務」自動安裝的模組集合。 您可以使用Composer檢查系統上安裝的版本。 在某些情況下，您可能會想要升級系統上的資料匯出擴充功能，以取得修正或新功能，而不更新Commerce服務版本。
 
 ## 目前的主要版本
+
+## 103.4.6版
+
+![修正](../assets/fix.svg)使用`ac_downloadable`屬性匯出Adobe Commerce可下載的產品資料以用於Adobe Commerce Optimizer。 <!--MDEE-1043-->
+![修正](../assets/fix.svg) Adobe Commerce 2.4.4版的嚴重安裝錯誤修正。<!--MDEE-1074-->
 
 ## 103.4.5版
 
