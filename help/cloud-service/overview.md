@@ -4,10 +4,10 @@ description: 瞭解 [!DNL Adobe Commerce as a Cloud Service]的主要功能和�
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Architect, Developer, User, Leader
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
-source-git-commit: da142209a5d0f565550ff6193ac029b0dded973f
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+source-git-commit: f49a86b8793e2d91413acfbc0b922cb94db67362
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1168'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 請參閱下列影片，瞭解[!DNL Adobe Commerce as a Cloud Service]架構的簡介。 說明此架構的圖表會顯示在影片下方。
 
->[!VIDEO](https://video.tv.adobe.com/v/3443278?learn=on&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3443232?learn=on)
 
 此圖表說明[!DNL Adobe Commerce as a Cloud Service]與所有Adobe Experience Cloud解決方案之間的資料流程。
 
@@ -40,13 +40,13 @@ ht-degree: 0%
 
 ## Commerce店面
 
-使用Adobe的[Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront?lang=zh-Hant) (由Edge Delivery Services提供技術支援)，透過Storefront Builder的簡單檔案式撰寫或視覺化編輯，在幾分鐘內建立豐富的體驗。
+使用Adobe的[Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront) (由Edge Delivery Services提供技術支援)，透過Storefront Builder的簡單檔案式撰寫或視覺化編輯，在幾分鐘內建立豐富的體驗。
 
 Commerce Storefront採用完全無周邊的分離式架構，可透過GraphQL API層提供所有銷售服務和資料。 此架構讓團隊可獨立於Commerce Foundation開發他們的前端，提供使用新興技術建立和測試新接觸點的靈活性。
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service]不支援Luma店面。 如果您要從雲端或內部部署上的Adobe Commerce進行移轉，請參閱[現有店面](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/?lang=zh-Hant#existing-storefronts)以取得移轉指南。
+>[!DNL Adobe Commerce as a Cloud Service]不支援Luma店面。 如果您要從雲端或內部部署上的Adobe Commerce進行移轉，請參閱[現有店面](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/#existing-storefronts)以取得移轉指南。
 
 ## 銷售服務與付款服務
 
@@ -54,7 +54,7 @@ Adobe提供豐富的智慧型可撰寫銷售服務，協助您支援關鍵業務
 
 - [即時搜尋](../live-search/overview.md) — 使用此AI支援的搜尋工具，為購物者提供更聰明、更快速且相關的結果。
 - [產品推薦](../product-recommendations/overview.md) — 根據購物者行為、熱門趨勢、產品相似性等新增AI輔助推薦。
-- [由管道和原則支援的銷售服務](../optimizer/catalog/overview.md) — 透過彈性的資料模型管理大型且複雜的產品目錄，以提供符合業務結構和上市策略的高效能、彈性的商業目錄。 搭配[Commerce Optimizer](../optimizer/overview.md)使用以最佳化目錄效能並改善轉換率。
+- [由目錄檢視和原則支援的銷售服務](../optimizer/setup/catalog-view.md) — 透過彈性的資料模型管理大型且複雜的產品目錄，以提供符合業務結構和上市策略的高效能、彈性的商業目錄。 搭配[Commerce Optimizer](../optimizer/overview.md)使用以最佳化目錄效能並改善轉換率。
 - [付款服務](../payment-services/guide-overview.md) — 提供多種付款方式，包括免息分期付款，以及付款處理、訂單和發票的單一檢視，以提升客戶滿意度。
 
 ## 產品視覺效果
@@ -116,7 +116,7 @@ Commerce Foundation提供安全的自動化託管平台和自助服務功能，�
 
 <!-- ## Experience Cloud integration
 
-[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
+[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
 
 [Data Connection](../data-connection/overview.md) unlocks insights about your shoppers' buying behavior so that you can create personalized shopping experiences across all channels with other Adobe Digital Experience products. -->
 

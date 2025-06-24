@@ -1,75 +1,123 @@
 ---
-title: 開始使用 [!DNL Adobe Commerce Optimizer]
+title: 開始使用
 description: 瞭解如何開始使用 [!DNL Adobe Commerce Optimizer]。
-hide: true
+role: Admin, Developer
 recommendations: noCatalog
-exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: 9c3f5d1d5e7fd57d2306502d654a854bc5c66c71
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+source-git-commit: f49a86b8793e2d91413acfbc0b922cb94db67362
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '753'
 ht-degree: 0%
 
 ---
 
 # 開始使用
 
->[!NOTE]
->
->本檔案說明提早存取開發中的產品，並未反映所有可供一般使用的功能。
+本文會逐步引導您瞭解[!DNL Adobe Commerce Optimizer]的最新資訊。 雖然本指南的重點是銷售人員和管理員角色，它確實包括開發人員將執行的簡短高層級任務。 如需開發人員特定內容的詳細資訊，請參閱[開發人員檔案](https://developer-stage.adobe.com/commerce/services/composable-catalog/)。
 
-本指南會逐步引導您建立及使用[!DNL Adobe Commerce Optimizer]執行個體。
+## 您的角色為何？
 
-<!--Click the tabs below to see high-level workflow overviews for the following user types:
+成功設定[!DNL Adobe Commerce Optimizer]通常涉及下列團隊成員：
 
-- Administrators
-- Merchants
-- Developers
+- 管理員
+- 開發人員
+- 銷售商
 
->[!BEGINTABS]
+每個專案團隊成員都有各自的一組角色和職責，如下表所述：
 
->[!TAB Administrator and merchant workflow]
+| 角色 | 任務 |
+|---|---|
+| 管理員 | 使用Admin Console來建立管理員、使用者群組、使用者和開發人員&#x200B;。 |
+|  | 在Commerce Cloud管理員中建立新的[!DNL Adobe Commerce Optimizer]執行個體&#x200B;。 |
+|  | 設定您的原則和目錄檢視。 |
+| 開發人員 | 使用Developer Console建立專案、授予開發人員API存取權，以及安裝必要的應用程式和自訂。 |
+|  | 使用API Mesh和App Builder連線至您的後台系統（購物車、結帳）&#x200B;。 |
+|  | 使用Merchandising Services資料擷取API，從您現有的商務解決方案擷取目錄資料&#x200B;。 |
+|  | 設定您的店面 |
+| 銷售商 | 設定產品探索&#x200B;。 |
+|  | 設定產品推薦。 |
 
-This diagram provides a high-level overview of how administrators and merchants access and manage [!DNL Adobe Commerce Optimizer] instances. See the [Adobe Admin Console Guide](https://helpx.adobe.com/tw/enterprise/admin-guide.html) for more information about administrator workflows.
+每個角色都是成功上線和啟動[!DNL Adobe Commerce Optimizer]環境的必要部分。 下圖顯示貴組織中每個角色的高階開始至完成工作流程：
 
-NEED DIAGRAM
+![高階工作流程](./assets/high-level-workflow.png){zoomable="yes"}
 
->[!TAB Developer workflow]
+### 管理員
 
-This diagram provides a high-level overview of how developers create integrations for [!DNL Adobe Commerce Optimizer] using App Builder. See the [API documentation](https://developer.adobe.com/commerce/webapi/rest/) for more information.
+管理員負責設定執行個體，管理組織的使用者、群組和權益。
 
-NEED DIAGRAM
+- **[存取Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html)** — 管理整個組織的Adobe權益。 請參閱[使用者管理](./user-management.md)，瞭解您或您組織的產品管理員或系統管理員如何新增使用者至[!DNL Adobe Commerce Optimizer]產品。
 
->[!ENDTABS]
--->
+- **建立執行個體** - [!DNL Adobe Commerce Optimizer]執行個體使用信用型系統。 您可以建立多個沙箱和生產執行個體，每個執行個體都需要一個對應的評分。 您最初的退款金額取決於您的訂閱。 [了解更多](#create-an-instance)。
 
-## 布建
+- **存取執行個體** — 建立執行個體後，您可以從[!UICONTROL Commerce Cloud Manager]存取它。 [了解更多](#access-an-instance)。
 
-在[!DNL Adobe Commerce Optimizer]執行個體準備就緒後，[!DNL Adobe Commerce Optimizer]布建團隊會提供您下列端點：
+- **設定目錄檢視和原則** — 瞭解如何[定義您的目錄檢視和原則](./setup/catalog-view.md)。 目錄不僅包含您的產品資料，也可協助您定義業務結構。
 
-| 專案 | 範例URL | 用途 |
-|---|---|---|
-| [!DNL Adobe Commerce Optimizer] UI | `https://experience.adobe.com/#/@commerceprojectbeacon/commerce-optimizer-studio?tenant=<tenantId>` | 存取Commerce Optimizer UI以跨下列專案管理您的目錄： <br>1。 銷售規則（產品探索、產品推薦）。<br>2。 目錄管理（頻道和原則建立）。<br>3。 資料深入分析（檢視您的目錄資料擷取狀態）。 |
-| 店面API | `https://na1-sandbox.api.commerce.adobe.com/<tenantId>/graphql` | 存取設定Edge Delivery Services支援的Commerce店面所需的API。 |
-| 目錄資料擷取API | `https://na1-sandbox.api.commerce.adobe.com/<tenantId>/v1/catalog/<entity>` | 存取內嵌目錄資料所需的API。 |
+### 開發人員
 
->[!NOTE]
->
->請參閱[開發人員檔案](https://developer-stage.adobe.com/commerce/services/composable-catalog/)，深入瞭解店面設定和目錄擷取所需的API。
+開發人員建立專案和認證、安裝擴充功能、擷取目錄資料，以及執行一般平台架構工作。 如需開發人員特定內容的詳細資訊，請參閱[開發人員檔案](https://developer-stage.adobe.com/commerce/services/composable-catalog/)。
 
-身為搶先體驗參與者，您將收到一封包含安全連結的電子郵件，連同您的IMS權杖，可讓您登入[!DNL Adobe Commerce Optimizer]或進行API呼叫。
+- **存取Developer Console** — 存取[Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started)以建立[!DNL Adobe Commerce Optimizer]的專案、產生存取權杖並安裝必要的應用程式和自訂。
 
-## 設定店面
+- **擷取目錄資料** — 請參閱[資料擷取API](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/using-the-api/)檔案，瞭解如何將目錄資料匯入[!DNL Adobe Commerce Optimizer]。
 
-現在您已擁有[!DNL Adobe Commerce Optimizer]執行個體，您已準備好繼續[設定](./storefront.md)您的Commerce店面(由Edge Delivery Services提供技術支援)。
+  內嵌的目錄資料會顯示在[資料同步](./setup/data-sync.md)頁面中。
 
-## 可供早期存取參與者使用的目錄資料
+- **設定店面** — 在設定店面之前，您必須先建立執行個體，這項工作通常由您組織的[管理員](#administrator)執行。 建立執行個體後，您就可以繼續[設定](./storefront.md)由Edge Delivery Services支援的Commerce店面。
 
-作為早期存取參與者，[!DNL Adobe Commerce Optimizer]執行個體包含以[Carvelo使用案例](./use-case/admin-use-case.md)為基礎的模擬目錄資料。 模擬資料以及一些預先設定的管道和原則，可協助您熟悉[!DNL Adobe Commerce Optimizer] UI。
+### 銷售商
 
-<!--Ingest catalog data
+該銷售人員會使用購物者資料和分析，針對店面的產品放置、定價和促銷活動進行策略決策，同時透過產品探索和建議最佳化購物體驗。
 
-By default, [!DNL Adobe Commerce Optimizer] instances do not include any product data.
+- **設定產品探索和建議** — 瞭解如何透過產品探索和建議[為您的購物者](./merchandising/overview.md)建立個人化體驗。
 
-See the [Ingestion API](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/using-the-api/) documentation to learn how you can import your catalog data into [!DNL Adobe Commerce Optimizer].
+## 建立執行個體
 
-The catalog data that you ingest is visible in the [data insights](./insights-overview.md) page. Additionally, you can use the [Catalog](./catalog-overview.md) page to define the channels and policies.-->
+1. 登入您的[Adobe Experience Cloud](https://experience.adobe.com/)帳戶。
+
+1. 在[!UICONTROL Quick access]底下，按一下&#x200B;[!UICONTROL **Commerce**]&#x200B;以開啟[!UICONTROL Commerce Cloud Manager]。
+
+   [!UICONTROL Commerce Cloud Manager]會顯示您的Adobe IMS組織中可用的[!DNL Adobe Commerce]執行個體清單，包括為[!DNL Adobe Commerce Optimizer]和[!DNL Adobe Commerce as a Cloud Service]布建的執行個體。
+
+1. 按一下畫面右上角的&#x200B;[!UICONTROL **新增執行個體**]。
+
+   ![建立執行個體](./assets/create-aco-instance.png){width="100%" align="center" zoomable="yes"}
+
+1. 選取&#x200B;[!UICONTROL **Commerce Optimizer**]。
+
+1. 輸入您執行個體的&#x200B;**名稱**&#x200B;和&#x200B;**描述**。
+
+1. 選取您要託管執行個體的區域。
+
+   >[!NOTE]
+   >
+   >建立例證之後，便無法變更區域。
+
+1. 為您的執行個體選擇下列&#x200B;[!UICONTROL **環境型別**]&#x200B;之一：
+
+   - [!UICONTROL **沙箱**] — 適用於設計和測試用途。 您應該使用沙箱環境來開始您的[!DNL Adobe Commerce Optimizer]歷程。
+   - [!UICONTROL **生產**] — 用於線上商店和客戶對面的網站。
+
+   >[!NOTE]
+   >
+   >沙箱例專案前僅限北美區域使用。
+
+1. 按一下&#x200B;[!UICONTROL **新增執行個體**]。
+
+   新執行個體現在可在Cloud Manager中使用。
+
+1. 若要檢視執行個體詳細資訊(包括GraphQL和目錄服務端點、存取Adobe Commerce Optimizer應用程式的URL，以及執行個體ID （租使用者ID）)，請按一下執行個體名稱旁的資訊圖示。
+
+   ![建立執行個體](./assets/aco-instance-details.png){width="100%" align="center" zoomable="yes"}
+
+## 存取例項
+
+1. 登入您的[Adobe Experience Cloud](https://experience.adobe.com/)帳戶。
+
+1. 在[!UICONTROL Quick access]底下，按一下&#x200B;[!UICONTROL **Commerce**]&#x200B;以開啟[!UICONTROL Commerce Cloud Manager]。
+
+   [!UICONTROL Commerce Cloud Manager]會顯示您的Adobe IMS組織中可用的執行個體清單。
+
+1. 若要開啟與執行個體相關聯的[!UICONTROL Commerce Optimizer]應用程式，請按一下執行個體名稱。
+
+
