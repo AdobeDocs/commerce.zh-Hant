@@ -4,10 +4,10 @@ user-guide-description: 本指南提供使用 [!DNL Adobe Commerce as a Cloud Se
 hide: true
 feature: Services, Saas
 recommendations: noDisplay, noCatalog
-source-git-commit: c820fa2995486027a1c048da21dc9db6f9cbb85c
+source-git-commit: 3f3d87585378d334d90c9dc1bdcb67a9cd00eff6
 workflow-type: tm+mt
-source-wordcount: '33'
-ht-degree: 12%
+source-wordcount: '38'
+ht-degree: 13%
 
 ---
 
@@ -22,5 +22,7 @@ ht-degree: 12%
 - [資產管理](assets-management.md)
 - [使用案例](use-cases.md)
 - [共擔責任](shared-responsibility.md)
-- [移轉](migration.md)
-- [返回Commerce服務首頁](https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/home)
+- 移轉 {#migration}
+   - [概觀](migration/overview.md)
+   - [大量資料移轉工具](migration/bulk-data.md)
+- [返回Commerce服務首頁](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
