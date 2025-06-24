@@ -3,8 +3,8 @@ title: 開始使用 [!DNL Adobe Commerce as a Cloud Service]
 description: 瞭解如何開始使用 [!DNL Adobe Commerce as a Cloud Service]。
 role: Admin, Developer, User
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
-source-git-commit: 9c3f5d1d5e7fd57d2306502d654a854bc5c66c71
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+source-git-commit: c608d9e82a892e40d362065c229b8d451ed3dbfb
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 0%
@@ -12,8 +12,6 @@ ht-degree: 0%
 ---
 
 # 快速入門
-
-{{accs-early-access}}
 
 [!DNL Adobe Commerce as a Cloud Service]提供大部分的立即可用設定。 完成幾個基本設定程式後，您的存放區將立即啟動並執行。 本指南會逐步引導您建立和使用執行個體。
 
@@ -27,7 +25,7 @@ ht-degree: 0%
 
 >[!TAB 管理員與商家工作流程]
 
-此圖表提供管理員和商家如何存取及管理[!DNL Adobe Commerce as a Cloud Service]執行個體的概觀。 如需有關管理員工作流程的詳細資訊，請參閱[Adobe Admin Console指南](https://helpx.adobe.com/tw/enterprise/admin-guide.html)。
+此圖表提供管理員和商家如何存取及管理[!DNL Adobe Commerce as a Cloud Service]執行個體的概觀。 如需有關管理員工作流程的詳細資訊，請參閱[Adobe Admin Console指南](https://helpx.adobe.com/enterprise/admin-guide.html)。
 
 ![[!DNL Adobe Commerce as a Cloud Service]商家流程圖](./assets/merchant-flow.svg){zoomable="yes"}
 
@@ -104,7 +102,7 @@ ht-degree: 0%
 
 有兩種方式可將您的目錄匯入[!DNL Adobe Commerce as a Cloud Service]：
 
-* [**Commerce管理員**](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/import/data-import) — 使用者易記的介面，可讓您按幾下滑鼠即可匯入目錄資料。
+* [**Commerce管理員**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import) — 使用者易記的介面，可讓您按幾下滑鼠即可匯入目錄資料。
 * [**匯入JSON API**](https://developer.adobe.com/commerce/webapi/rest/modules/import/#import-json-api) - REST API可讓您以程式設計方式匯入目錄資料。
 
 <!-- TODO
