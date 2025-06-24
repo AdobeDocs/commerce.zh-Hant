@@ -61,7 +61,7 @@ ht-degree: 0%
 
 1. 輸入必要的聯絡詳細資料和送貨資訊。 您可以針對此訂單使用虛構的資訊。
 
-1. 若要結帳，請選取&#x200B;[!UICONTROL **支票/匯票**]。 若要使用信用卡，請使用Paypal](https://developer.paypal.com/tools/sandbox/card-testing/#link-teststaticcardnumbers)提供的[測試卡之一。 您可以將其用於任何未來的到期日和任何CVC。
+1. 若要結帳，請選取&#x200B;[!UICONTROL **支票/匯票**]。 若要使用信用卡，請使用Paypal[&#128279;](https://developer.paypal.com/tools/sandbox/card-testing/#link-teststaticcardnumbers)提供的測試卡之一。 您可以將其用於任何未來的到期日和任何CVC。
 
    ![輸入詳細資料](./assets/enter-details.png){width="600" zoomable="yes"}
 
@@ -188,7 +188,7 @@ Adobe Commerce的情境式實驗功能可讓您在店面建立和管理實驗，
 
 1. 按一下&#x200B;[!UICONTROL **儲存**]&#x200B;以指定影像型別。
 
-1. 再按一下[儲存]儲存變更。[!UICONTROL ****]
+1. 再按一下[儲存]儲存變更。[!UICONTROL **&#x200B;**]
 
 1. 在&#x200B;[!UICONTROL **儲存資產**]&#x200B;對話方塊中，選取Commerce [!UICONTROL **目的地資料夾**]。
 
@@ -268,7 +268,7 @@ Adobe Commerce的「產生變體」功能運用Generative AI來自動產生高�
 
 1. 在&#x200B;[!UICONTROL **說明使用者互動**]&#x200B;文字方塊中，輸入：「Adobe員工和合作夥伴購買Adobe品牌用具的體驗！」
 
-1. 在網域知識&#x200B;**]的[!UICONTROL ** URL中，輸入&#x200B;**www.adobestore.com**。
+1. 在網域知識&#x200B;**的** URL中，輸入&#x200B;**www.adobestore.com**。
 
 1. 按一下&#x200B;[!UICONTROL **產生**]。
 
@@ -280,7 +280,7 @@ Adobe Commerce的「產生變體」功能運用Generative AI來自動產生高�
 
 1. 針對&#x200B;[!UICONTROL **樣式**]&#x200B;參考影像，選取現有的Adobe商店橫幅。
 
-1. 選取您要使用的產生影像，然後按一下[儲存]。[!UICONTROL ****]
+1. 選取您要使用的產生影像，然後按一下[儲存]。[!UICONTROL **&#x200B;**]
 
 1. 對其他參照影像重複此程式以產生更多變化。
 
