@@ -1,7 +1,7 @@
 ---
 title: 建立和管理規則
 description: 瞭解如何建立和管理銷售規則。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 source-git-commit: 746c016f149fb49b9c483968a8a5f40196b163ed
 workflow-type: tm+mt
 source-wordcount: '1758'

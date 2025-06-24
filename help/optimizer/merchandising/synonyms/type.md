@@ -1,7 +1,7 @@
 ---
 title: 同義字型別
 description: 瞭解 [!DNL Adobe Commerce Optimizer]中不同型別的同義字。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 source-git-commit: 3131cc27a25d1bf958071b973f1d4bf1a68be152
 workflow-type: tm+mt
 source-wordcount: '354'
@@ -35,4 +35,4 @@ ht-degree: 0%
 
 建立同義字後，搜尋行為會變更，以尋找確切的片語&#x200B;**廚房表**。 這樣可能會減少結果的數量，因為系統只會顯示含有精確片語的產品。
 
-如果您想要像之前一樣分別搜尋字詞，您可以[建立支援票證](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。 如果有足夠的需求，[!DNL Adobe Commerce Optimizer]將會考慮在未來版本中將此功能新增至產品。
+如果您想要像之前一樣分別搜尋字詞，您可以[建立支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。 如果有足夠的需求，[!DNL Adobe Commerce Optimizer]將會考慮在未來版本中將此功能新增至產品。

@@ -3,7 +3,7 @@ title: 開始使用
 description: 瞭解如何開始使用 [!DNL Adobe Commerce Optimizer]。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 source-git-commit: f49a86b8793e2d91413acfbc0b922cb94db67362
 workflow-type: tm+mt
 source-wordcount: '753'
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 管理員負責設定執行個體，管理組織的使用者、群組和權益。
 
-- **[存取Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html)** — 管理整個組織的Adobe權益。 請參閱[使用者管理](./user-management.md)，瞭解您或您組織的產品管理員或系統管理員如何新增使用者至[!DNL Adobe Commerce Optimizer]產品。
+- **[存取Adobe Admin Console](https://helpx.adobe.com/tw/enterprise/admin-guide.html)** — 管理整個組織的Adobe權益。 請參閱[使用者管理](./user-management.md)，瞭解您或您組織的產品管理員或系統管理員如何新增使用者至[!DNL Adobe Commerce Optimizer]產品。
 
 - **建立執行個體** - [!DNL Adobe Commerce Optimizer]執行個體使用信用型系統。 您可以建立多個沙箱和生產執行個體，每個執行個體都需要一個對應的評分。 您最初的退款金額取決於您的訂閱。 [了解更多](#create-an-instance)。
 

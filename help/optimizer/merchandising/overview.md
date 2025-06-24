@@ -2,7 +2,7 @@
 title: 銷售概述
 description: 瞭解 [!DNL Adobe Commerce Optimizer]中的銷售功能。
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 source-git-commit: 356b10704c9e7c7329d3e9c0e10baa15d5142ec0
 workflow-type: tm+mt
 source-wordcount: '189'

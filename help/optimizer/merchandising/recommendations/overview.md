@@ -2,7 +2,7 @@
 title: Recommendations簡介
 description: Recommendations是強大的行銷工具，可用來增加轉換次數、增加收入及刺激購物者參與。
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 source-git-commit: 09b6b1dea5916c5671c0eb58a551295b5be35fc0
 workflow-type: tm+mt
 source-wordcount: '194'

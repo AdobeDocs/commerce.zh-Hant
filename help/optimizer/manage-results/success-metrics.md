@@ -1,7 +1,7 @@
 ---
 title: 成功量度報表
 description: 「成功量度」報表頁面可提供insight來瞭解 [!DNL Adobe Commerce Optimizer] 存放區的主要效能量度。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 source-git-commit: b462980c12342ae2fe6d24272c56c6a9d9b21989
 workflow-type: tm+mt
 source-wordcount: '418'
