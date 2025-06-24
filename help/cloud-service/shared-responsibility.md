@@ -3,7 +3,7 @@ title: 共擔責任
 description: 瞭解您 [!DNL Adobe Commerce as a Cloud Service] 專案中各參與者的安全性責任。
 role: Admin, Architect, Leader
 exl-id: 424fe5cd-5d54-425d-97ce-024476d18dde
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 source-git-commit: a06d64566fda76c0527aabfa9e8fdf27e7c149ca
 workflow-type: tm+mt
 source-wordcount: '343'

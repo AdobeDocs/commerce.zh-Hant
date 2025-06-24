@@ -24,4 +24,4 @@ ht-degree: 13%
 - 移轉 {#migration}
    - [概觀](migration/overview.md)
    - [大量資料移轉工具](migration/bulk-data.md)
-- [返回Commerce服務首頁](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [返回Commerce服務首頁](https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/home)
