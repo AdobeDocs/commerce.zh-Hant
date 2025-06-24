@@ -38,13 +38,13 @@ ht-degree: 0%
 
 1. 按一下&#x200B;[!UICONTROL **新增管理員**]。
 
-1. 輸入您要新增為管理員的使用者使用者名稱或電子郵件地址，然後按一下[儲存]。[!UICONTROL ****]
+1. 輸入您要新增為管理員的使用者使用者名稱或電子郵件地址，然後按一下[儲存]。[!UICONTROL **&#x200B;**]
 
 ## 新增使用者、開發人員和產品設定檔管理員
 
 >[!BEGINSHADEBOX 「必要條件」]
 >
-使用者管理需要下列布建：
+>使用者管理需要下列布建：
 
 - 為[!DNL Adobe Commerce Optimizer]布建的IMS組織
 - 具有系統或產品管理員角色的相同IMS組織中的Adobe Experience Cloud帳戶
@@ -69,7 +69,7 @@ ht-degree: 0%
 
    ![索引標籤選取](../cloud-service/assets/tab-select.png){width=600 zoomable="yes"}
 
-1. 輸入您要新增為管理員的使用者使用者名稱或電子郵件地址，然後按一下[儲存]。[!UICONTROL ****]
+1. 輸入您要新增為管理員的使用者使用者名稱或電子郵件地址，然後按一下[儲存]。[!UICONTROL **&#x200B;**]
 
 ## 大量使用者管理
 
