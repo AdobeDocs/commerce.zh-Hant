@@ -24,7 +24,7 @@ ht-degree: 0%
 
 請觀看下列影片以瞭解[!DNL Adobe Commerce Optimizer]的高階概觀：
 
->[!VIDEO](https://video.tv.adobe.com/v/3450226)
+>[!VIDEO](https://video.tv.adobe.com/v/3450474?captions=chi_hant)
 
 ## 誰從[!DNL Adobe Commerce Optimizer]中受益最大？
 
