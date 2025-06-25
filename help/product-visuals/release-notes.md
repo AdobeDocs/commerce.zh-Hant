@@ -20,7 +20,7 @@ ht-degree: 0%
 
 如需在功能發行版本之外發行的功能變更和修正，請檢閱&#x200B;_託管服務更新_&#x200B;區段。
 
-深入瞭解即將發行的版本、產品支援，以及哪些Adobe Commerce版本支援AEM Assets整合擴充功能，請參閱Adobe Commerce [發行排程](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule)和[產品可用性](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)主題。
+深入瞭解即將發行的版本、產品支援，以及哪些Adobe Commerce版本支援AEM Assets整合擴充功能，請參閱Adobe Commerce [發行排程](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/planning/schedule)和[產品可用性](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/product-availability)主題。
 
 ## 託管服務更新
 
@@ -48,7 +48,7 @@ _2025年4月23日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.5版和更新版本。
 
-![新問題](../assets/new.svg)<!-- Issue ACAP-955 -->現在，可以使用[自訂網域URL](https://experienceleague.adobe.com/en/docs/commerce/product-visuals/get-started/setup-synchronization#optional-configure-the-custom-domain-url)，而不是AEM傳遞URL。 如果商家在其AEM儀表板中設定&#x200B;**自訂網域名稱**，則需要在Commerce中新增此&#x200B;**自訂網域URL**。
+![新問題](../assets/new.svg)<!-- Issue ACAP-955 -->現在，可以使用[自訂網域URL](https://experienceleague.adobe.com/zh-hant/docs/commerce/product-visuals/get-started/setup-synchronization#optional-configure-the-custom-domain-url)，而不是AEM傳遞URL。 如果商家在其AEM儀表板中設定&#x200B;**自訂網域名稱**，則需要在Commerce中新增此&#x200B;**自訂網域URL**。
 
 ![已修正問題](../assets/fix.svg)<!-- Issue ACAP-987 -->已改善AEM Assets同步程式的整體記錄。
 
@@ -58,7 +58,7 @@ _2025年3月12日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.5版和更新版本。
 
-![新問題](../assets/new.svg)<!-- Issue ACAP-xx -->現在，Assets選擇器需要[Assets選擇器IMS使用者端ID](https://experienceleague.adobe.com/en/docs/commerce/product-visuals/get-started/setup-synchronization)，才能將AEM Assets影像與產品類別和頁面產生器產生的內容對應。
+![新問題](../assets/new.svg)<!-- Issue ACAP-xx -->現在，Assets選擇器需要[Assets選擇器IMS使用者端ID](https://experienceleague.adobe.com/zh-hant/docs/commerce/product-visuals/get-started/setup-synchronization)，才能將AEM Assets影像與產品類別和頁面產生器產生的內容對應。
 
 ## v1.0.20
 
