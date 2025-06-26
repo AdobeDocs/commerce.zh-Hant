@@ -2,7 +2,8 @@
 title: 動態新增產品屬性
 description: 瞭解如何在資料同步程式進行期間，以動態方式將自訂產品屬性新增至資料匯出摘要。
 role: Admin, Developer
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: d5ed7497-4be1-440a-a567-81b64fdc54fc
+source-git-commit: bf45670a0bc5fb02dd229a9e3d7af7f2676c5a1f
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 0%
@@ -15,7 +16,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->擴充產品屬性的最佳方式是[將它們新增至Adobe Commerce](extensibility-and-customizations.md#add-product-attributes-to-adobe-commerce)，您可以在其中從Commerce管理員設定和管理這些屬性。 只有在您僅需要Commerce店面服務才能動態新增這些值，且不想在Adobe Commerce中註冊這些值時，才可動態新增。 您也可以選擇搭配目錄服務[&#128279;](../catalog-service/mesh.md)使用API Mesh來管理自訂屬性，以擴充目錄服務GraphQL結構描述。
+>擴充產品屬性的最佳方式是[將它們新增至Adobe Commerce](extensibility-and-customizations.md#add-product-attributes-to-adobe-commerce)，您可以在其中從Commerce管理員設定和管理這些屬性。 只有在您僅需要Commerce店面服務才能動態新增這些值，且不想在Adobe Commerce中註冊這些值時，才可動態新增。 您也可以選擇搭配目錄服務](../catalog-service/mesh.md)使用[API Mesh來管理自訂屬性，以擴充目錄服務GraphQL結構描述。
 
 ## 新增產品屬性
 
@@ -48,28 +49,39 @@ ht-degree: 0%
           * @return array
           * @throws \Zend_Db_Statement_Exception
           */
-         public function afterGet(Attributes $subject, array $result, $arguments): array
-         {
-              $productIds = \array_column($arguments, 'productId');
+          public function afterGet(Attributes $subject, array $result, $arguments): array
+          {
+              $additionalAttributes = [];
+              $attributeCode = 'customer_attribute';
+              foreach ($result as $product) {
+                  if (!isset($product['productId']) || !isset($product['storeViewCode'])) {
+                      continue;
+                  }
+                  // HINT: if needed, do filtration by "storeViewCode" and or "productId"
    
-              foreach ($productIds as $productId) {
-                    $result[] = [
-                         'productId' => $productId,
-                         // "storeViewCode" must be specified for products where the customer attribute value should be set
-                         'storeViewCode' => 'default',
-                         'attributes' => [
-                              // specify the customer attribute code
-                              'attributeCode' => 'customer_attribute',
-                              // provide single or multiple values for the attribute
-                              'value' => [
-                                    rand(41,43)
-                              ]
-                         ]
-                    ];
+                  $productId = $product['productId'];
+                  $storeViewCode = $product['storeViewCode'];
+   
+                  $newKey = \implode('-', [$product['storeViewCode'], $product['productId'], $attributeCode]);
+                  if (isset($additionalAttributes[$newKey])) {
+                      continue;
+                  }
+                  $additionalAttributes[$newKey] = [
+                      'productId' => $productId,
+                      'storeViewCode' => $storeViewCode,
+                      'attributes' => [
+                          'attributeCode' => $attributeCode,
+                          // provide single or multiple values for the attribute
+                          'value' => [
+                              rand(1, 42)
+                          ]
+                      ]
+                  ];
+   
               }
    
-              return $result;
-         }
+              return array_merge($result, $additionalAttributes);
+          }
     }
    ```
 
@@ -116,6 +128,7 @@ ht-degree: 0%
          {
               $result[] = [
                 'id' => '123',
+                // provide storeCode, websiteCode and storeViewCode applicable for your AC instance
                 'storeCode' => 'default',
                 'websiteCode' => 'base',
                 'storeViewCode' => 'default',
