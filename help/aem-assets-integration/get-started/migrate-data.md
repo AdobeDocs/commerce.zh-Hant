@@ -106,5 +106,5 @@ assetPath,commerce:positions{{Number: multi}},commerce:isCommerce{{String}},comm
 >[!MORELIKETHIS]
 >
 > [大量匯入工具影片示範](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/add-assets#asset-bulk-ingestor)
-> > [秘訣、最佳實務和限制](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/add-assets#tips-limitations)
-> > [使用API上傳或內嵌資產](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#asset-upload)
+> &#x200B;> [秘訣、最佳實務和限制](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/add-assets#tips-limitations)
+> &#x200B;> [使用API上傳或內嵌資產](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#asset-upload)
