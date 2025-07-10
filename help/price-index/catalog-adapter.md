@@ -3,9 +3,10 @@ title: 目錄配接器擴充功能
 description: 使用目錄配接器從Commerce Services呈現價格
 seo-title: Catalog Adapter Extension
 seo-description: Using Catalog Adapter to render prices from Commerce Services
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: e42101fa-9c30-482c-a649-44dc35376abb
+source-git-commit: 74f6cb64724194651c4eeb538c0c69142b01ac5d
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
@@ -29,7 +30,7 @@ ht-degree: 0%
 ## 需求
 
 - Adobe Commerce 2.4.4+
-- 已安裝下列Commerce服務之一：
+- 您的Adobe Commerce環境必須啟用並設定下列Commerce服務之一：
 
    - [即時搜尋](../live-search/install.md)
    - [產品推薦](../product-recommendations/install-configure.md)
@@ -55,7 +56,7 @@ Catalog Adapter擴充功能是Composer中繼套件，可安裝下列模組：
 
    >[!NOTE]
    >
-   >如需有關在本機管理Commerce專案環境的資訊，請參閱《雲端基礎結構使用手冊》中&#x200B;_Adobe Commerce的[使用CLI管理分支](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/develop/cli-branches)_。
+   >如需有關在本機管理Commerce專案環境的資訊，請參閱《雲端基礎結構使用手冊》中[Adobe Commerce的](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches)使用CLI管理分支&#x200B;__。
 
 1. 檢視環境分支，以使用Adobe Commerce Cloud CLI進行更新。
 
@@ -85,7 +86,7 @@ Catalog Adapter擴充功能是Composer中繼套件，可安裝下列模組：
    git push origin <branch-name>
    ```
 
-   將更新推播到雲端環境會啟動[Commerce雲端部署程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/develop/deploy/process)以套用變更。 從[部署記錄](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log)檢查部署狀態。
+   將更新推播到雲端環境會啟動[Commerce雲端部署程式](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process)以套用變更。 從[部署記錄](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log)檢查部署狀態。
 
 >[!TAB 內部部署]
 
@@ -165,5 +166,4 @@ composer require magento/module-price-indexer-disabler
 - 具有已安裝所需服務（即時搜尋、產品推薦、目錄服務）的Headless Commerce執行個體的商家
 - 不依賴預設的Adobe Commerce產品價格索引器
 
-1. 從[!DNL Catalog Adapter]封裝安裝`magento/module-price-indexer-disabler`模組。
-
+1. 從`magento/module-price-indexer-disabler`封裝安裝[!DNL Catalog Adapter]模組。
