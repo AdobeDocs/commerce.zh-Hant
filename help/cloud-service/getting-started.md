@@ -3,10 +3,10 @@ title: 開始使用 [!DNL Adobe Commerce as a Cloud Service]
 description: 瞭解如何開始使用 [!DNL Adobe Commerce as a Cloud Service]。
 role: Admin, Developer, User
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
-source-git-commit: c608d9e82a892e40d362065c229b8d451ed3dbfb
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+source-git-commit: 81dd617b0a6460b8dcb01c0a21b696663b0ae493
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '531'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 >[!TAB 管理員與商家工作流程]
 
-此圖表提供管理員和商家如何存取及管理[!DNL Adobe Commerce as a Cloud Service]執行個體的概觀。 如需有關管理員工作流程的詳細資訊，請參閱[Adobe Admin Console指南](https://helpx.adobe.com/tw/enterprise/admin-guide.html)。
+此圖表提供管理員和商家如何存取及管理[!DNL Adobe Commerce as a Cloud Service]執行個體的概觀。 如需有關管理員工作流程的詳細資訊，請參閱[Adobe Admin Console指南](https://helpx.adobe.com/enterprise/admin-guide.html)。
 
 ![[!DNL Adobe Commerce as a Cloud Service]商家流程圖](./assets/merchant-flow.svg){zoomable="yes"}
 
@@ -72,11 +72,8 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >沙箱例專案前僅限北美區域使用。
-
-1. _（選擇性）_&#x200B;如果您想要包含範例產品資料以進行測試和學習，請從&#x200B;[!UICONTROL **測試資料**]&#x200B;下拉式清單中選取&#x200B;[!UICONTROL **Adobe存放區**]。
-
-   您可以略過此選項，但若略過，您的店面將不會有任何產品。 您必須[匯入您的目錄](#import-your-catalog)才能檢視完整的店面體驗。
+   >* 沙箱例專案前僅限北美區域使用。
+   >* 安裝範例資料的選專案前無法使用。
 
 1. 按一下&#x200B;[!UICONTROL **新增執行個體**]。
 
@@ -102,7 +99,7 @@ ht-degree: 0%
 
 有兩種方式可將您的目錄匯入[!DNL Adobe Commerce as a Cloud Service]：
 
-* [**Commerce管理員**](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/import/data-import) — 使用者易記的介面，可讓您按幾下滑鼠即可匯入目錄資料。
+* [**Commerce管理員**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import) — 使用者易記的介面，可讓您按幾下滑鼠即可匯入目錄資料。
 * [**匯入JSON API**](https://developer.adobe.com/commerce/webapi/rest/modules/import/#import-json-api) - REST API可讓您以程式設計方式匯入目錄資料。
 
 <!-- TODO
