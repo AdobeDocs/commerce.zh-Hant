@@ -90,7 +90,7 @@ _Cold Start_&#x200B;問題是指模型訓練及生效所需的時間。 對於�
 
 雖然產品推薦量度已針對Luma店面進行最佳化，但它們也適用於其他店面實施：
 
-- [Edge Delivery店面](https://experienceleague.adobe.com/developer/commerce/storefront/setup/analytics/instrumentation/)
+- [Edge Delivery店面](https://experienceleague.adobe.com/developer/commerce/storefront/setup/analytics/instrumentation/?lang=zh-Hant)
 - [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/)
 - [自訂前端(React、Vue JS)](headless.md)
 
@@ -140,4 +140,4 @@ _Cold Start_&#x200B;問題是指模型訓練及生效所需的時間。 對於�
 
 >[!NOTE]
 >
->如果啟用[Cookie限制模式](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html)，Adobe Commerce不會收集行為資料，直到購物者同意使用Cookie為止。 如果「Cookie限制模式」已停用，Adobe Commerce會依預設收集行為資料。
+>如果啟用[Cookie限制模式](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=zh-Hant)，Adobe Commerce不會收集行為資料，直到購物者同意使用Cookie為止。 如果「Cookie限制模式」已停用，Adobe Commerce會依預設收集行為資料。
