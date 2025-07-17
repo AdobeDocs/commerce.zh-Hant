@@ -3,9 +3,9 @@ title: 收集資料
 description: 瞭解事件如何收集 [!DNL Product Recommendations]的資料。
 feature: Services, Recommendations, Eventing
 exl-id: 0d5317e3-c049-4fcd-a8e4-228668d89386
-source-git-commit: 94d2a9911ab10d164d75779d1f310e5bdf2aea74
+source-git-commit: fe96b2922583c0fcb0fcadbdacead6267806f44b
 workflow-type: tm+mt
-source-wordcount: '1360'
+source-wordcount: '1343'
 ht-degree: 0%
 
 ---
@@ -88,9 +88,11 @@ _Cold Start_&#x200B;問題是指模型訓練及生效所需的時間。 對於�
 | `rec-click` | 購物者按一下建議單位中的產品。 |
 | `view` | 當建議單位變成至少50%可檢視（例如向下捲動頁面）時傳送。 例如，如果建議單位有兩行，當購物者看到一行加上第二行一個畫素時，便會傳送`view`事件。 如果購物者上下捲動頁面數次，則傳送`view`事件的次數會與購物者再次在頁面上看到整個建議單位相同。 |
 
->[!NOTE]
->
->已針對Luma店面最佳化產品推薦量度。 如果您的店面是透過PWA Studio實作，請參閱[PWA檔案](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/)。 如果您使用自訂前端技術，例如React或Vue JS，請瞭解如何在Headless[&#128279;](headless.md)環境中整合產品推薦。
+雖然產品推薦量度已針對Luma店面進行最佳化，但它們也適用於其他店面實施：
+
+- [Edge Delivery店面](https://experienceleague.adobe.com/developer/commerce/storefront/setup/analytics/instrumentation/)
+- [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/)
+- [自訂前端(React、Vue JS)](headless.md)
 
 #### 必要的儀表板事件
 
@@ -138,4 +140,4 @@ _Cold Start_&#x200B;問題是指模型訓練及生效所需的時間。 對於�
 
 >[!NOTE]
 >
->如果啟用[Cookie限制模式](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=zh-Hant)，Adobe Commerce不會收集行為資料，直到購物者同意使用Cookie為止。 如果「Cookie限制模式」已停用，Adobe Commerce會依預設收集行為資料。
+>如果啟用[Cookie限制模式](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html)，Adobe Commerce不會收集行為資料，直到購物者同意使用Cookie為止。 如果「Cookie限制模式」已停用，Adobe Commerce會依預設收集行為資料。
