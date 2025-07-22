@@ -1,15 +1,15 @@
 ---
 title: 大量資料移轉工具
 description: 瞭解如何使用大量資料移轉工具，將資料從雲端例項上的現有Adobe Commerce移轉至 [!DNL Adobe Commerce as a Cloud Service]。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 role: Architect
-source-git-commit: bc8011189a46ccab986b22020881c808da6ee2cd
+exl-id: 81522de9-df54-4651-b8ed-58956376af86
+source-git-commit: 8bf8eb58aa9c1ae965f4bbf5a2987fb22f004769
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '691'
 ht-degree: 0%
 
 ---
-
 
 # 大量資料移轉工具
 
@@ -39,8 +39,8 @@ ht-degree: 0%
 
 大量資料移轉工具的可用性如下：
 
-- **2025年7月中旬** — 若要存取大量資料移轉工具，請提交支援票證。
-- **2025年8月中旬** — 大量資料移轉工具將可公開使用，並可從此頁面存取。
+- **2025年第3季** — 若要存取大量資料移轉工具，請提交支援票證。
+- **2025年第3季** — 大量資料移轉工具將可公開使用，並可從此頁面存取。
 
 ## 建立目標環境
 
@@ -63,7 +63,7 @@ ht-degree: 0%
       - IMS URL — 基礎URL。 例如，`https://ims-na1.adobelogin.com/`。
       - IMS組織ID
 
-   針對IMS範圍和其他值，請在[Adobe Developer Console](https://developer.adobe.com/console/)中專案內的&#x200B;**認證**&#x200B;區段中選取您的OAuth型別。 在擷取工具隨附的`.example.env`檔案中提供詳細資訊。
+   針對IMS範圍和其他值，請在&#x200B;**Adobe Developer Console**&#x200B;中專案內的[認證](https://developer.adobe.com/console/)區段中選取您的OAuth型別。 在擷取工具隨附的`.example.env`檔案中提供詳細資訊。
 
 ### 擷取資料
 
