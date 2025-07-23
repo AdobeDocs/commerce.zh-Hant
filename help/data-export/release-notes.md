@@ -4,9 +4,9 @@ description: 適用於Adobe Commerce的 [!DNL Data Export Extension] 的最新�
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 597cdd929f7abed24a68f1347a214b46664b1c75
+source-git-commit: 6876a5fbde2b3292cd788a50d104083cf51109ed
 workflow-type: tm+mt
-source-wordcount: '1273'
+source-wordcount: '1286'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,10 @@ ht-degree: 0%
 >SaaS資料匯出擴充功能是隨「即時搜尋」、「產品建議」和「目錄服務」自動安裝的模組集合。 您可以使用Composer檢查系統上安裝的版本。 在某些情況下，您可能會想要升級系統上的資料匯出擴充功能，以取得修正或新功能，而不更新Commerce服務版本。
 
 ## 目前的主要版本
+
+## 103.4.7版
+
+![修正](../assets/fix.svg)已移除儲存產品類別許可權的過時資料表。<!--MDEE-1065-->
 
 ## 103.4.6版
 
@@ -52,7 +56,7 @@ ht-degree: 0%
 
 ## 103.4.2版
 
-![修正](../assets/fix.svg)已新增在使用包含`EXPORTER_EXTENDED_LOG=1`環境變數的`saas:resync --dry-run`命令執行測試重新同步時，在`saas-export.log`中收集實體裝載的功能。<!--MDEE-1023-->
+![修正](../assets/fix.svg)已新增在使用包含`saas-export.log`環境變數的`saas:resync --dry-run`命令執行測試重新同步時，在`EXPORTER_EXTENDED_LOG=1`中收集實體裝載的功能。<!--MDEE-1023-->
 
 ## 103.4.1版
 
@@ -74,7 +78,7 @@ bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>
 
 ## 103.3.20版
 
-![修正](../assets/fix.svg)透過改善與Catalog Data Export cron作業失敗相關的錯誤訊息，修正`cron.log`中無法追蹤的`BulkException`錯誤。<!--MDEE-966-->
+![修正](../assets/fix.svg)透過改善與Catalog Data Export cron作業失敗相關的錯誤訊息，修正`BulkException`中無法追蹤的`cron.log`錯誤。<!--MDEE-966-->
 ![修正](../assets/fix.svg)已改善產品重新同步化程式在擁有大量存放區檢視的執行個體上的效能。<!--MDEE-974-->
 
 ## 103.3.19版
@@ -125,7 +129,7 @@ bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>
 
 ## 103.3.9版
 
-![修正](../assets/fix.svg)刪除實體時，會針對網站(`scopesWebsite`)和客戶群組(`scopesCustomerGroup`)的範圍設定服務摘要傳播`deleted`旗標。<!--MDEE-839-->
+![修正](../assets/fix.svg)刪除實體時，會針對網站(`deleted`)和客戶群組(`scopesWebsite`)的範圍設定服務摘要傳播`scopesCustomerGroup`旗標。<!--MDEE-839-->
 
 ## 103.3.8版本
 
@@ -152,7 +156,7 @@ bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>
 
 ## 103.3.4版
 
-![修正](../assets/fix.svg)新增支援資料傳輸稽核記錄，方法是在每次從Commerce執行個體傳輸資料至Commerce服務<!--MDEE-785-->時，新增傳送`data_sent_outside`事件的機制
+![修正](../assets/fix.svg)新增支援資料傳輸稽核記錄，方法是在每次從Commerce執行個體傳輸資料至Commerce服務`data_sent_outside`時，新增傳送<!--MDEE-785-->事件的機制
 
 ## 103.3.3版本
 
