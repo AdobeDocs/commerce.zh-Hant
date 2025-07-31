@@ -3,11 +3,11 @@ title: 目錄檢視
 description: 瞭解什麼是目錄檢視，以及如何建立檢視，以依業務結構、原則和定價組織您的產品目錄。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
-source-git-commit: f67a5327b742338655b0f7ffa4076a174219f711
+source-git-commit: 2e47c770d204c9c7f959893704dd0ebcc6ac792a
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '763'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 - [已建立原則](policies.md)以定義產品篩選器
 
-- [設定價格手冊](pricebooks.md)以進行定價
+- [擷取的價格手冊](pricebooks.md)用於定價
 
 1. 從左側功能表，移至&#x200B;_商店設定_，然後按一下&#x200B;**[!UICONTROL Catalog views]**。
 
@@ -49,14 +49,16 @@ ht-degree: 0%
 1. 設定目錄檢視詳細資料：
 
    - **名稱** — 輸入目錄檢視的名稱，例如`Celport`&#x200B;。
-   - **目錄來源** — 新增目錄來源（地區設定），例如`en-US`。 按&#x200B;**Enter**。
+   - **目錄來源** — 選取目錄來源（地區設定），例如`en-US`。
    - **原則** — 使用下拉式功能表選取相關原則。 例如，「品牌」、「型號」。&#x200B;URL確定您已[建立原則](policies.md)。
 
 1. 選取要連結至型錄檢視表的價格簿。
 
-1. 按一下&#x200B;**[!UICONTROL Add]**&#x200B;以建立具有連結價格簿和原則的目錄檢視。
+   - **使用所有可用的價格簿** — 此選項會從所有可用的價格簿提取價格資料。
+   - **僅允許選取的價格簿** — 此選項會顯示&#x200B;**新增允許的價格簿**&#x200B;對話方塊，您可以在其中選取要用於目錄檢視的特定價格簿。
+   - **停用訂價** — 目前無法使用此選項。
 
-   如果&#x200B;**[!UICONTROL Add]**&#x200B;按鈕未啟用，請將游標置於[目錄來源]欄位中，然後按&#x200B;**Enter**，確定已正確新增目錄來源&#x200B;。
+1. 按一下&#x200B;**[!UICONTROL Add]**&#x200B;以建立包含連結價格手冊和原則的目錄檢視。
 
 目錄檢視頁面會更新以顯示新的目錄檢視&#x200B;。
 
@@ -71,7 +73,7 @@ ht-degree: 0%
 ### 運作方式
 
 **1. 資料擷取**
-來自PIM、ERP和其他系統的目錄資料會擷取至「銷售服務」架構。 每個SKU都包含對應至目錄檢視、原則及區域設定的區域設定資訊與產品屬性。 如需資料擷取的詳細資訊，請參閱[開發人員檔案](https://developer-stage.adobe.com/commerce/services/composable-catalog)。
+來自PIM、ERP和其他系統的目錄資料會擷取至「銷售服務」架構。 每個SKU都包含對應至目錄檢視、原則及區域設定的區域設定資訊與產品屬性。 如需資料擷取的詳細資訊，請參閱[開發人員檔案](https://developer.adobe.com/commerce/services/optimizer/)。
 
 **2。 統一基底目錄**
 內嵌的資料會在目錄服務資料管道中建立統一的基本目錄。 此單一來源可消除業務單位間的資料重複。
@@ -80,7 +82,7 @@ ht-degree: 0%
 多個目錄檢視代表不同的業務單位（例如，「Texas Retail」、「Texas Retail Secondural」）。 您可以跨目錄檢視共用地區、原則和價格簿，以取得彈性。
 
 **4。 多頻道傳遞**
-經篩選的目錄資料會傳遞至各種目的地，包括Edge Delivery Services店面、市集、廣告平台和自訂微型店面。 如需目錄資料傳遞的詳細資訊，請參閱[開發人員檔案](https://developer-stage.adobe.com/commerce/services/composable-catalog)。
+經篩選的目錄資料會傳遞至各種目的地，包括Edge Delivery Services店面、市集、廣告平台和自訂微型店面。 如需目錄資料傳遞的詳細資訊，請參閱[開發人員檔案](https://developer.adobe.com/commerce/services/optimizer/)。
 
 ### 主要元件
 
@@ -126,4 +128,4 @@ ht-degree: 0%
 
 >[!INFO]
 >
->如需目錄資料擷取與傳遞的詳細資訊，請參閱[開發人員檔案](https://developer-stage.adobe.com/commerce/services/composable-catalog)。
+>如需目錄資料擷取與傳遞的詳細資訊，請參閱[開發人員檔案](https://developer.adobe.com/commerce/services/optimizer/)。

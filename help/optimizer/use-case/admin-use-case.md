@@ -3,10 +3,11 @@ title: 店面和目錄管理員端對端使用案例
 description: 瞭解如何使用 [!DNL Adobe Commerce Optimizer] 使用目錄檢視和原則來管理您的目錄，以及如何根據您的目錄組態設定您的店面。
 role: Admin, Developer
 feature: Personalization, Integration
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
-source-git-commit: 474426ef1f99eed8d2c1b5d736332aaa666872fa
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
+source-git-commit: 5c745a8b6b3c289cb52ad7756ec521b0df96c053
 workflow-type: tm+mt
-source-wordcount: '2211'
+source-wordcount: '2158'
 ht-degree: 0%
 
 ---
@@ -32,7 +33,7 @@ ht-degree: 0%
 - **使用者許可權**
    - 管理員存取Adobe Admin Console
    - 如需帳戶設定，請參閱[使用者管理](../user-management.md)
-   - 如果您沒有存取權，請連絡您的Adobe客戶代表或完成[搶先存取方案表單](https://experienceleague.adobe.com/go/aco-early-access-program)
+   - 如果您沒有存取權，請聯絡您的Adobe客戶代表。
 
 - **範例資料**
    - Carvelo汽車目錄資料已載入您的執行個體
@@ -46,7 +47,7 @@ ht-degree: 0%
 
 ## 讓我們開始吧
 
-在此使用案例中，您將使用下列專案：
+在此使用案例中，您正在使用下列專案：
 
 1. [!DNL Adobe Commerce Optimizer] UI — 設定目錄檢視和原則，以管理Carvelo使用案例的複雜目錄作業設定。
 
@@ -54,7 +55,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> 檢閱Adobe Commerce店面檔案中的[探索樣板](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/?lang=zh-Hant)主題，瞭解店面設定檔案。
+> 檢閱Adobe Commerce店面檔案中的[探索樣板](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/)主題，瞭解店面設定檔案。
 
 ### 關‌鍵要點
 
@@ -156,7 +157,7 @@ Carvelo的商務經理需要為隸屬於&#x200B;*East Coast Inc*&#x200B;公司�
 1. 為Celport建立名為&#x200B;*Celport零件類別*&#x200B;的新原則，以只銷售剎車與懸架零件。
 1. 為Celport店面建立新的目錄檢視。
 
-   此目錄檢視使用您新建立的原則&#x200B;*Celport零件類別*&#x200B;和現有的&#x200B;*East Coast Inc品牌*，以確保Celport在與East Coast Inc的合約中只能銷售Bolt和Cruz品牌。Celport目錄檢視將使用`east_coast_inc`價格簿支援符合品牌授權合約的產品定價排程。
+   此目錄檢視使用您新建立的原則&#x200B;*Celport零件類別*&#x200B;和現有的&#x200B;*East Coast Inc品牌*，以確保Celport在與East Coast Inc的合約中只能銷售Bolt和Cruz品牌。Celport目錄檢視使用`east_coast_inc`價格簿支援符合品牌授權合約的產品定價排程。
 1. 更新Commerce Storefront設定，以使用您建立的Celport目錄檢視中的資料。
 
 在本節結束時，Celport將啟動並準備銷售Carvelo的產品。
@@ -228,17 +229,13 @@ Carvelo的商務經理需要為隸屬於&#x200B;*East Coast Inc*&#x200B;公司�
 1. 填寫目錄檢視詳細資料：
 
    - **名稱** = *Celport*
-   - **目錄來源** = *en-US* （按下Enter）
+   - **目錄來源** = *en-US*
    - **原則** （使用下拉式清單） = *East Coast Inc品牌*；*Celport零件類別*；*品牌*；*模型*                          
 1. 按一下&#x200B;**[!UICONTROL Add]**&#x200B;以建立目錄檢視。
 
    目錄檢視頁面會更新以顯示新的目錄檢視。
 
    ![已更新的目錄檢視清單](../assets/updated-catalog-view-list.png)
-
-   >[!NOTE]
-   >
-   >如果&#x200B;**[!UICONTROL Add]**&#x200B;按鈕不是藍色的，請將游標置於&#x200B;**[!UICONTROL Catalog sources]**&#x200B;區段並按&#x200B;**Enter**，確定已選取目錄來源。
 
 1. 取得Celport目錄檢視識別碼。
 
@@ -371,7 +368,7 @@ Carvelo的商務經理需要為隸屬於&#x200B;*East Coast Inc*&#x200B;公司�
 
    ![Brakes產品清單頁面](../assets/brakes-listing-page.png)
 
-   按一下剎車零件影像，即可檢視含有價格資訊的產品詳細資訊，並記下產品價格資訊。
+   按一下剎車零件影像，即可檢視產品詳細資訊與價格資訊，並記下產品價格資訊。
 
 1. 搜尋`tires`，這是您[!DNL Adobe Commerce Optimizer]執行個體上使用案例資料中可用的另一個零件類別。
 
@@ -415,10 +412,6 @@ Carvelo的商務經理需要為隸屬於&#x200B;*East Coast Inc*&#x200B;公司�
 
 - **解決方案：**&#x200B;請確認所有關聯原則皆已啟用且已正確設定
 
-**問題：**&#x200B;新增按鈕不是藍色
-
-- **解決方案：**&#x200B;將游標放在欄位中，然後按Enter鍵，確定已選取目錄來源
-
 ### 店面設定問題
 
 **問題：**&#x200B;店面未載入
@@ -451,7 +444,5 @@ Carvelo的商務經理需要為隸屬於&#x200B;*East Coast Inc*&#x200B;公司�
 - 探索[銷售功能](../merchandising/overview.md)以個人化購物體驗
 - 瞭解[進階原則設定](../setup/policies.md)
 - 為其他經銷商設定[額外的目錄檢視](../setup/catalog-view.md)
-- 檢閱[API檔案](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/)，瞭解程式化目錄管理
-- 瞭解如何為您的Edge Delivery Services店面設定下拉式元件，以針對產品探索、建議和其他店面功能建立自訂店面體驗。 請參閱[店面檔案](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=zh-Hant)
-
-
+- 檢閱[API檔案](https://developer.adobe.com/commerce/services/optimizer/)，瞭解程式化目錄管理
+- 瞭解如何為您的Edge Delivery Services店面設定下拉式元件，以針對產品探索、建議和其他店面功能建立自訂店面體驗。 請參閱[店面檔案](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)

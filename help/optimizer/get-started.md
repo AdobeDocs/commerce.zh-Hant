@@ -3,11 +3,11 @@ title: 開始使用
 description: 瞭解如何開始使用 [!DNL Adobe Commerce Optimizer]。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: 036e04a02edadf4b8a48fc38e784d9dde734ba45
+source-git-commit: f1861e890ec661d441b6f2c9b0c0cd54b4c20ece
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '888'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 開始之前，請確定您已：
 
-- 具有[!DNL Adobe Commerce Optimizer]權益的&#x200B;**Adobe Experience Cloud帳戶**
+- 具有&#x200B;**權益的** Adobe Experience Cloud帳戶[!DNL Adobe Commerce Optimizer]
 - **組織管理員存取權**&#x200B;以建立執行個體和管理使用者
 - **GitHub帳戶** （用於載入範例資料和店面開發）
 - **基本瞭解**&#x200B;電子商務概念
@@ -109,7 +109,11 @@ ht-degree: 0%
 
 1. 存取您的執行個體：
 
-   按一下執行個體名稱以開啟[!DNL Adobe Commerce Optimizer]應用程式。
+   按一下執行個體名稱以開啟[!DNL Adobe Commerce Optimizer]應用程式。 在應用程式中，您可以使用頁面頂端的下拉式清單，在不同的[!DNL Adobe Commerce Optimizer]執行個體之間切換：
+
+   ![執行個體切換器](./assets/context-switcher.png){zoomable="yes"}
+
+   顯示的所有執行個體都屬於相同組織。 您可以在執行個體之間切換以檢視每個執行個體的資料和設定，例如在沙箱和生產環境之間。
 
 1. 取得執行個體詳細資訊：
    - 按一下執行個體名稱旁的資訊圖示。
@@ -186,5 +190,5 @@ Adobe提供GitHub存放庫和範例資料與工具，協助您學習及測試[!D
 ### 取得協助
 
 - **開發人員資源**： [開發人員檔案](https://developer-stage.adobe.com/commerce/services/composable-catalog/)
-- **店面資源**： [Commerce店面檔案](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant)
-- **支援**： [Adobe Commerce支援資源](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/overview)
+- **店面資源**： [Commerce店面檔案](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **支援**： [Adobe Commerce支援資源](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
