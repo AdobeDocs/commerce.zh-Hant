@@ -226,7 +226,7 @@ ht-degree: 0%
 
    如需詳細資訊，請參閱[Sidekick資料庫檔案](https://www.aem.live/docs/sidekick-library)。
 
-+++
+   +++
 
 1. 以您GitHub存放庫的值更新`url`機碼值。
 
@@ -266,7 +266,7 @@ ht-degree: 0%
    }
    ```
 
-+++
+   +++
 
 1. 儲存檔案。
 
