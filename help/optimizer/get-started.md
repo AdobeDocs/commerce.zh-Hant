@@ -3,11 +3,11 @@ title: 開始使用
 description: 瞭解如何開始使用 [!DNL Adobe Commerce Optimizer]。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: f1861e890ec661d441b6f2c9b0c0cd54b4c20ece
+source-git-commit: f920cfe7cd433e85f343fefe1062a1972e5e5e5f
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '852'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,6 @@ ht-degree: 0%
 建立執行個體後：
 
 1. 從Commerce Cloud Manager [管理您的執行個體](#manage-an-instance)。
-1. 使用[目錄檢視指南](./setup/catalog-view.md)設定目錄檢視與原則。
 1. 使用[使用者管理指南](./user-management.md)設定使用者存取權。
 
 ### 步驟3. 新增範例資料（可選）
@@ -146,15 +145,12 @@ Adobe提供GitHub存放庫和範例資料與工具，協助您學習及測試[!D
 
 1. 存取GitHub存放庫：
    - 造訪[範例目錄資料擷取存放庫](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion)
-   - 請遵循存放庫的README檔案中的設定指示。
 
-2. 執行內嵌：
-   - 使用提供的指令碼將範例資料載入您的Adobe Commerce Optimizer中繼環境。
-   - 驗證資料是否顯示在您的[資料同步](./setup/data-sync.md)頁面中。
+1. 請遵循存放庫的README檔案中的設定指示。
 
-3. 清除（選擇性）：
-
-   使用範例資料載入器原始程式碼中包含的`reset.js`指令碼移除範例資料。
+   - 設定並執行資料擷取
+   - 使用範例資料設定目錄原則和檢視
+   - 清除範例資料（選擇性）
 
 ## 後續步驟
 
@@ -190,5 +186,5 @@ Adobe提供GitHub存放庫和範例資料與工具，協助您學習及測試[!D
 ### 取得協助
 
 - **開發人員資源**： [開發人員檔案](https://developer-stage.adobe.com/commerce/services/composable-catalog/)
-- **店面資源**： [Commerce店面檔案](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant)
-- **支援**： [Adobe Commerce支援資源](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/overview)
+- **店面資源**： [Commerce店面檔案](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **支援**： [Adobe Commerce支援資源](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
