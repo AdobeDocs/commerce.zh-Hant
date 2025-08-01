@@ -84,7 +84,7 @@ ht-degree: 0%
 >[!WARNING]
 >
 > 請在生產&#x200B;**安裝中只使用您的**&#x200B;生產SaaS資料空間[!DNL Commerce]，以避免資料衝突。 否則，您可能會使用測試資料汙染生產網站資料，進而導致部署延遲。 例如，中繼資料（例如中繼URL）可能會錯誤地覆寫您的生產產品資料。
-> > 如果發生這種狀況，[請提交支援要求](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)以要求清除資料。
+> &#x200B;> 如果發生這種狀況，[請提交支援要求](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)以要求清除資料。
 
 如果您在管理面板中找不到LiveSearch設定欄位，請確認您已輸入正確的SaaS API金鑰。  請確保您在設定生產資料空間時已新增生產SaaS金鑰，並且在設定中繼資料空間時已新增中繼金鑰。 如果您設定的索引鍵不正確，Adobe Commerce環境中將無法使用SaaS服務（例如LiveSearch）。
 
@@ -116,7 +116,7 @@ ht-degree: 0%
 
    如果您在&#x200B;**[!UICONTROL Commerce Services Connector]**&#x200B;設定中沒有看到[!DNL Commerce]區段，請為所需的[!DNL Commerce]服務[[!DNL Commerce] 安裝](#availableservices)模組。 此外，請確定已安裝`magento/module-services-id`套件。
 
-1. 在&#x200B;_[!UICONTROL Sandbox API Keys]_和_[!UICONTROL Production API Keys]_&#x200B;區段中，貼上您的金鑰值。
+1. 在&#x200B;_[!UICONTROL Sandbox API Keys]_&#x200B;和_[!UICONTROL Production API Keys]_&#x200B;區段中，貼上您的金鑰值。
 
    - 私密金鑰必須在金鑰開頭包含`----BEGIN PRIVATE KEY---`，並在金鑰結尾包含`----END PRIVATE KEY----`。
    - 如果您沒有實際金鑰的副本，請向帳戶擁有者索取，然後將值插入設定中。
