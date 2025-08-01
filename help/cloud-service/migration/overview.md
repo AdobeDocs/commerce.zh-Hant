@@ -29,7 +29,7 @@ ht-degree: 0%
 **架構影響**
 
 * **無版本平台**：持續更新表示核心不再有重大版本升級。
-* **微服務與API-1}：對API的延伸性與整合依賴性更深。**
+* **微服務與API-1&rbrace;：對API的延伸性與整合依賴性更深。**
 * **依預設Headless （選用）**：對分離式店面的強大支援(例如，由Edge Delivery Services支援的Commerce店面)。
 * **Edge Delivery Services**：對前端效能和部署的影響。
 
