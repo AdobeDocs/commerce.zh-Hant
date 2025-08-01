@@ -3,10 +3,10 @@ title: 開始使用 [!DNL Live Search]
 description: 從Adobe Commerce瞭解 [!DNL Live Search] 的系統需求和安裝步驟。
 role: Admin, Developer
 exl-id: 45b985f1-9afb-4a07-93e8-f2fe231c5400
-badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce 。"
-source-git-commit: d07f36a71247a96bc2dd950867c2862205238d88
+badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce 。"
+source-git-commit: b1cf82f09c934dd585c350f82cbf258d8c1d002c
 workflow-type: tm+mt
-source-wordcount: '3139'
+source-wordcount: '3147'
 ht-degree: 0%
 
 ---
@@ -17,10 +17,6 @@ Adobe Commerce [!DNL Live Search]與[[!DNL Catalog Service]](../catalog-service/
 
 本文提供使用[!DNL Live Search]實作[!DNL Catalog Service]的逐步指示。
 
->[!IMPORTANT]
->
->在網站搜尋方面，Adobe Commerce會提供您選項。 在實作之前，請務必閱讀[界限和限制](boundaries-limits.md)，以確保[!DNL Live Search]符合您的業務需求。
-
 ## 對象
 
 本文適用於負責安裝和設定Adobe Commerce執行個體的開發人員或團隊中的系統整合商。
@@ -28,8 +24,19 @@ Adobe Commerce [!DNL Live Search]與[[!DNL Catalog Service]](../catalog-service/
 ## 需求
 
 - [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+
-- PHP 8.1、8.2或8.3版
+- PHP 8.1、8.2或8.3
 - [!DNL Composer]
+- 執行cron工作和索引子
+
+>[!IMPORTANT]
+>
+>在實作[!DNL Live Search]之前，請參閱[界限和限制](boundaries-limits.md)區段以確保[!DNL Live Search]符合您的業務需求。
+
+## 重要更新
+
+- 截至[!DNL Live Search] 3.0.2，[!DNL Catalog Service]擴充功能已隨安裝一併提供。
+
+- 鑑於Elasticsearch 7於2023年8月宣佈終止支援，Adobe建議所有Adobe Commerce客戶移轉至OpenSearch 2.x搜尋引擎。 如需在產品升級期間移轉搜尋引擎的相關資訊，請參閱[升級指南](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration)中的&#x200B;_移轉至OpenSearch_。
 
 ## 支援平台
 
@@ -53,49 +60,41 @@ Adobe Commerce [!DNL Live Search]與[[!DNL Catalog Service]](../catalog-service/
 
 已從[!DNL Live Search]Adobe Marketplace[透過](https://commercemarketplace.adobe.com/magento-live-search.html)Composer[將](https://getcomposer.org/)安裝為擴充功能。 安裝並設定[!DNL Live Search]後，Adobe [!DNL Commerce]會開始與SaaS服務共用搜尋和目錄資料。 此時，*管理員*&#x200B;使用者可以設定、自訂及管理搜尋Facet、同義字及銷售規則。
 
->[!NOTE]
->
->截至[!DNL Live Search] 3.0.2，[!DNL Catalog Service]擴充功能已與[!DNL Live Search]安裝整合。
+>[!BEGINTABS]
 
->[!IMPORTANT]
->
->自[!DNL Live Search] 4.0.0起，已棄用搜尋配接器。 日後，搜尋配接卡只會更新以解決安全性問題。
+>[!TAB 新Commerce執行個體]
 
-1. 確認[cron工作](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)和[索引子](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/tools/index-management)正在執行。
+如果您在新的Commerce執行個體上安裝[!DNL Live Search]，請依照這些指示操作。
 
-   >[!IMPORTANT]
-   >
-   >鑑於Elasticsearch 7於2023年8月宣佈終止支援，建議所有Adobe Commerce客戶移轉至OpenSearch 2.x搜尋引擎。 如需在產品升級期間移轉搜尋引擎的相關資訊，請參閱[升級指南](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration)中的&#x200B;_移轉至OpenSearch_。
+1. 確認[cron工作](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)和[索引子](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management)正在執行。
 
-1. 從`live-search`Adobe Marketplace[下載](https://commercemarketplace.adobe.com/magento-live-search.html)套件。
-
-1. 從命令列執行以下命令：
+1. 使用Composer將「即時搜尋」模組新增至您的專案：
 
    ```bash
-   composer require magento/live-search
+   composer require magento/live-search --no-update
    ```
 
-   如果您正在將[!DNL Live Search]擴充功能新增至&#x200B;**新的** Adobe Commerce安裝，請執行以下命令以暫時停用[!DNL OpenSearch]和相關模組，並安裝[!DNL Live Search]。 然後，繼續步驟4。
+1. 更新相依性並安裝擴充功能：
 
    ```bash
-      bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch7 Magento_OpenSearch Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl
+   composer update magento/live-search --with-dependencies
    ```
 
-   如果您正在將[!DNL Live Search]擴充功能新增至&#x200B;**現有** Adobe Commerce安裝，請執行以下動作以停用提供店面搜尋結果的[!DNL Live Search]模組。 然後，繼續步驟4：
+1. 暫時停用[!DNL OpenSearch]和相關模組，並安裝[!DNL Live Search]。
 
    ```bash
-      bin/magento module:disable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover Magento_LiveSearchProductListing 
+   bin/magento module:disable Magento_ Magento_Elasticsearch8 Magento_Elasticsearch7 Magento_OpenSearch Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl
    ```
 
    [!DNL Elasticsearch]會繼續從店面管理搜尋要求，而[!DNL Live Search]服務會在背景同步目錄資料和索引產品。
 
-1. 執行下列動作：
+1. 安裝更新。
 
    ```bash
    bin/magento setup:upgrade
    ```
 
-1. 確認下列[索引子](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/tools/index-management)已設定為「依排程更新」：
+1. 確認下列[索引子](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management)已設定為「依排程更新」：
 
    - 產品摘要
    - 產品變體摘要
@@ -106,22 +105,74 @@ Adobe Commerce [!DNL Live Search]與[[!DNL Catalog Service]](../catalog-service/
    - 類別摘要
    - 類別許可權摘要
 
-1. 如果您正在新的Commerce執行個體上安裝[!DNL Live Search]，則您已完成，可以跳至[2。 設定API金鑰](#2-configure-api-keys)區段。 如果您要將即時搜尋安裝至現有的Commerce執行個體，請繼續進行下一個步驟。
+驗證索引器後，下一步是[設定API金鑰](#2-configure-api-keys)。
 
-1. 執行以下命令以啟用[!DNL Live Search]延伸、停用[!DNL OpenSearch]並執行`setup`。
+>[!TAB 現有的Commerce執行個體]
+
+如果您要在現有的Commerce執行個體上安裝[!DNL Live Search]，請依照這些指示操作。
+
+1. 確認[cron工作](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)和[索引子](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management)正在執行。
+
+1. 使用Composer將「即時搜尋」模組新增至您的專案：
 
    ```bash
-   bin/magento module:enable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover  Magento_LiveSearchProductListing 
+   composer require magento/live-search --no-update
    ```
 
+1. 更新相依性並安裝擴充功能：
+
    ```bash
-   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch 
-   Magento_ElasticsearchCatalogPermissionsGraphQl
+   composer update magento/live-search --with-dependencies
    ```
+
+1. 停用提供店面搜尋結果的[!DNL Live Search]模組。
+
+   ```bash
+   bin/magento module:disable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover Magento_LiveSearchProductListing
+   ```
+
+   [!DNL Elasticsearch]會繼續從店面管理搜尋要求，而[!DNL Live Search]服務會在背景同步目錄資料和索引產品。
+
+1. 安裝更新。
 
    ```bash
    bin/magento setup:upgrade
    ```
+
+1. 確認下列[索引子](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management)已設定為「依排程更新」：
+
+   - 產品摘要
+   - 產品變體摘要
+   - 目錄屬性摘要
+   - 產品價格摘要
+   - 範圍網站資料摘要
+   - 範圍客戶群組資料摘要
+   - 類別摘要
+   - 類別許可權摘要
+
+1. 啟用[!DNL Live Search]擴充功能，並停用[!DNL OpenSearch] (Magento Elasticsearch和OpenSearch模組)。
+
+   ```bash
+   bin/magento module:enable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover  Magento_LiveSearchProductListing
+   ```
+
+   ```
+   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_Elasticsearch8 Magento_OpenSearch Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl
+   ```
+
+   >[!NOTE]
+   >
+   >disable命令包含支援OpenSearch的Commerce模組清單。 如果您的Commerce執行個體未安裝模組，您將會看到`module does not exist`錯誤。
+
+1. 安裝更新。
+
+   ```bash
+   bin/magento setup:upgrade
+   ```
+
+驗證索引器後，下一步是[設定API金鑰](#2-configure-api-keys)。
+
+>[!ENDTABS]
 
 ### 安裝[!DNL Live Search]測試版
 
@@ -133,7 +184,7 @@ Adobe Commerce [!DNL Live Search]與[[!DNL Catalog Service]](../catalog-service/
 
 - **分層搜尋** — 在另一個搜尋內容中搜尋 — 使用此功能，您最多可以執行兩個層級的搜尋來搜尋您的搜尋查詢。 例如：
 
-   - **第1層搜尋** — 搜尋&quot;product_attribute_1&quot;上的&quot;motor&quot;。
+   - **第1層搜尋** — 搜尋&quot;product_attribute_1&quot;上的&quot;motor&quot;
    - **第2層搜尋** — 搜尋「product_attribute_2」上的「零件編號123」。 此範例會在結果中搜尋「馬達」的「零件編號123」。
 
   分層搜尋可用於`startsWith`搜尋索引和`contains`搜尋索引，如下所述：
@@ -141,17 +192,19 @@ Adobe Commerce [!DNL Live Search]與[[!DNL Catalog Service]](../catalog-service/
 - **startsWith搜尋索引** — 使用`startsWith`索引搜尋。 這項新功能可讓：
 
    - 搜尋屬性值以特定字串開頭的產品。
-   - 設定「結尾為」搜尋，讓購物者可以搜尋屬性值結尾為特定字串的產品。 若要啟用「結尾為」搜尋，產品屬性需要反向擷取，且API呼叫也應該為反向字串。
+   - 設定「結尾為」搜尋，讓購物者可以搜尋屬性值結尾為特定字串的產品。 若要啟用「結尾為」搜尋，需要反向擷取產品屬性，且API呼叫也應是反向字串。
 
 - **包含搜尋索引** — 使用包含索引來搜尋屬性。 這項新功能可讓：
 
    - 在較大的字串中搜尋查詢。 例如，如果購物者搜尋字串「HAPE-123」中的產品編號「PE-123」。
 
-      - 注意：此搜尋型別與執行自動完成搜尋的現有[片語搜尋](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#phrase)不同。 例如，如果您的產品屬性值是&quot;outdoor pants&quot;，則短語搜尋會傳回&quot;out pan&quot;的回應，但不會傳回&quot;oor ants&quot;的回應。 但是，「包含搜尋」會傳回「或螞蟻」的回應。
+     >[!NOTE]
+     >
+     >此搜尋型別與執行自動完成搜尋的現有[片語搜尋](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#phrase)不同。 例如，如果您的產品屬性值是&quot;outdoor pants&quot;，則短語搜尋會傳回&quot;out pan&quot;的回應，但不會傳回&quot;oor ants&quot;的回應。 但是，「包含搜尋」會傳回「或螞蟻」的回應。
 
 這些新條件會增強搜尋查詢篩選機制，以縮小搜尋結果。 這些新條件不會影響主要搜尋查詢。
 
-您可以在搜尋結果頁面上實作這些新條件。 例如，您可以在頁面上新增區段，讓購物者可以進一步縮小搜尋結果。 您可以允許購物者選取特定產品屬性，例如「製造商」、「零件編號」和「說明」。 從該位置，他們使用`contains`或`startsWith`條件在這些屬性中搜尋。 如需可搜尋的[屬性](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/product-attributes/attributes-input-types)清單，請參閱管理員指南。
+您可以在搜尋結果頁面上實作這些新條件。 例如，您可以在頁面上新增區段，讓購物者可以進一步縮小搜尋結果。 您可以允許購物者選取特定產品屬性，例如「製造商」、「零件編號」和「說明」。 從該位置，他們使用`contains`或`startsWith`條件在這些屬性中搜尋。 如需可搜尋的[屬性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types)清單，請參閱管理員指南。
 
 1. 若要安裝測試版，請在專案中新增下列相依性：
 
@@ -159,11 +212,11 @@ Adobe Commerce [!DNL Live Search]與[[!DNL Catalog Service]](../catalog-service/
    composer require magento/module-live-search-search-types:"^1.0.0-beta1"
    ```
 
-1. 認可並將變更推送至您的`composer.json`和`composer.lock`檔案至雲端專案。 [了解更多](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension)。
+1. 認可並將變更推送至您的`composer.json`和`composer.lock`檔案至雲端專案。 [了解更多](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension)。
 
    此Beta版在Admin中新增&#x200B;**[!UICONTROL Search types]**、**[!UICONTROL Autocomplete]**&#x200B;和&#x200B;**[!UICONTROL Contains]**&#x200B;的&#x200B;**[!UICONTROL Starts with]**&#x200B;核取方塊。 它也會更新[`productSearch`](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering-using-search-capability) GraphQL API，以包含這些新搜尋功能。
 
-1. 在Admin中，[將產品屬性](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties)設定為可搜尋，並指定該屬性的搜尋功能，例如&#x200B;**包含** （預設）或&#x200B;**開頭為**。 您最多可以為&#x200B;**Contains**&#x200B;指定6個要啟用的屬性，並為&#x200B;**Starts with**&#x200B;指定6個要啟用的屬性。 若為測試版，請注意，管理員不會強制執行此限制，但會在API搜尋中強制執行。
+1. 在Admin中，[將產品屬性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties)設定為可搜尋，並指定該屬性的搜尋功能，例如&#x200B;**包含** （預設）或&#x200B;**開頭為**。 您最多可以為&#x200B;**Contains**&#x200B;指定6個要啟用的屬性，並為&#x200B;**Starts with**&#x200B;指定6個要啟用的屬性。 若為測試版，請注意，管理員不會強制執行此限制，但會在API搜尋中強制執行。
 
    ![指定搜尋功能](./assets/search-filters-admin.png)
 
@@ -175,7 +228,7 @@ Adobe Commerce [!DNL Live Search]與[[!DNL Catalog Service]](../catalog-service/
 |--- |--- |
 | `Autocomplete` | 預設為啟用，無法修改。 透過`Autocomplete`，您可以在`contains`搜尋篩選器[中使用](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering)。 此處，`contains`中的搜尋查詢會傳回自動完成型別搜尋回應。 Adobe建議您使用此型別的搜尋來搜尋說明欄位，這些欄位通常超過50個字元。 |
 | `Contains` | 啟用真正的「字串中包含的文字」搜尋，而非自動完成搜尋。 在`contains`搜尋篩選器[中使用](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering-using-search-capability)。 如需詳細資訊，請參閱[限制](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#limitations)。 |
-| `Starts with` | 可讓您查詢以特定值開頭的字串。 在`startsWith`搜尋篩選器[中使用](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering-using-search-capability)。 |
+| `Starts with` | 以特定值開頭的查詢字串。 在`startsWith`搜尋篩選器[中使用](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering-using-search-capability)。 |
 
 ## 2.設定API金鑰
 
@@ -205,11 +258,11 @@ bin/magento saas:resync --feed categoryPermissions
 
 >[!WARNING]
 >
-> 當資料已編制索引並同步時，店面中無法使用搜尋和類別瀏覽操作。 根據目錄的大小，從`cron`執行開始，程式至少可能需要一小時才能將您的資料同步到SaaS服務。
+>同步期間無法使用搜尋和類別瀏覽操作。 視目錄大小而定，此程式可能需要1小時以上的時間。
 
 ### 監視同步處理進度
 
-您可以使用[資料管理控制面板](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-dashboard)檢視已同步處理和共用的資料。 此儀表板提供您店面產品資料可用性的寶貴見解，確保可及時向購物者顯示。
+使用[資料管理儀表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard)監視同步處理進度。 此儀表板提供您店面產品資料可用性的寶貴見解，確保可及時向客戶顯示。
 
 ![資料管理儀表板](assets/data-management-dashboard.png)
 
@@ -232,12 +285,12 @@ bin/magento saas:resync --feed categoryPermissions
   >
   >如果您收到`table does not exist`錯誤，請尋找`catalog_data_exporter_products`和`catalog_data_exporter_product_attributes`表格中的專案。 這些資料表名稱用於4.2.1之前的[!DNL Live Search]版本。
 
-- 搭配預設查詢使用[GraphQL遊樂場](https://experienceleague.adobe.com/zh-hant/docs/commerce/live-search/live-search-admin/graphql) (如需詳細資訊，請參閱[GraphQL參考資料](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/))以驗證下列專案：
+- 搭配預設查詢使用[GraphQL遊樂場](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/graphql) (如需詳細資訊，請參閱[GraphQL參考資料](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/))以驗證下列專案：
 
    - 傳回的產品計數接近您對商店檢視的預期。
    - 會傳回多面向。
 
-如需其他說明，請參閱支援知識庫中的[[!DNL Live Search] 目錄未同步](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync)。
+如需其他說明，請參閱支援知識庫中的[[!DNL Live Search] 目錄未同步](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync)。
 
 ## 5.設定資料
 
@@ -245,7 +298,7 @@ bin/magento saas:resync --feed categoryPermissions
 
 ### 啟用產品清單Widget
 
-安裝[!DNL Live Search] 4.0.0+時，預設會啟用產品清單Widget。 Widget啟用時，搜尋結果頁面和類別瀏覽產品清單頁面會使用不同的UI元件。 此UI元件會直接呼叫[目錄服務API](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/)，如此可加快回應時間。
+安裝[!DNL Live Search] 4.0.0+時，預設會啟用產品清單Widget。 Widget啟用時，搜尋結果和類別瀏覽產品清單頁面會使用不同的UI元件。 此UI元件會直接呼叫[目錄服務API](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/)，如此可加快回應時間。
 
 如果您的[!DNL Live Search]版本早於4.0.0+，則必須手動啟用產品清單Widget。
 
@@ -257,7 +310,7 @@ bin/magento saas:resync --feed categoryPermissions
 
 當您變更此設定時，會出現訊息`Page cache is invalidated`。 您需要清除Magento快取以儲存變更。
 
-1. 執行下列其中一項作業來存取[快取管理](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/tools/cache-management)頁面：
+1. 執行下列其中一項作業來存取[快取管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management)頁面：
 
    - 按一下工作區上方訊息中的&#x200B;**[!UICONTROL Cache Management]**&#x200B;連結。
    - 在&#x200B;_管理員_&#x200B;側邊欄上，移至&#x200B;**[!UICONTROL System]** > _[!UICONTROL Tools]_>**[!UICONTROL Cache Management]**。
@@ -268,7 +321,7 @@ bin/magento saas:resync --feed categoryPermissions
 
 ### 指派類別
 
-在[!DNL Live Search]中傳回的產品必須指派給[類別](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/categories/categories)。 例如，在Luma中，產品分為「男性」、「女性」和「齒輪」等類別。 也會為「Top」、「Bottoms」和「Watch」設定子類別。 這些類別指派可改善篩選時的精細度。
+在[!DNL Live Search]中傳回的產品必須指派給[類別](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories)。 例如，在Luma中，產品分為「男性」、「女性」和「齒輪」等類別。 也會為「Top」、「Bottoms」和「Watch」設定子類別。 這些類別指派可改善篩選時的精細度。
 
 ## 6.測試連線
 
@@ -286,10 +339,10 @@ bin/magento saas:resync --feed categoryPermissions
 
 ## 7.確認事件正在擷取資料
 
-確保部署到您網站的店面事件可正常運作。 這對Headless實作尤其重要。
+確保部署到您網站的店面事件可正常運作。 此檢查對Headless實施尤其重要。
 
 - 檢閱[所需的](events.md)事件[!DNL Live Search]。
-- 確定[即時搜尋儀表板](performance.md)顯示的是來自非生產環境的資料。
+- 確定[[!DNL Live Search] 儀表板](performance.md)顯示的是來自非生產環境的資料。
 - [驗證事件集合](../product-recommendations/verify.md)。 此頁面位於[!DNL Product Recommendations]指南中，驗證步驟也適用於[!DNL Live Search]。
 
 ## 8.為您的店面量身打造
@@ -306,7 +359,7 @@ bin/magento saas:resync --feed categoryPermissions
 
 ## 正在更新[!DNL Live Search]
 
-在更新Live Search之前，請從命令列執行下列操作以檢查已安裝的Live Search版本：
+更新[!DNL Live Search]之前，請檢查使用撰寫器安裝的[!DNL Live Search]版本。
 
 ```bash
 composer show magento/module-live-search | grep version
@@ -352,7 +405,7 @@ composer update magento/live-search --with-dependencies
 
 ## 正在解除安裝[!DNL Live Search]
 
-若要解除安裝[!DNL Live Search]，請參閱[解除安裝模組](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/tutorials/uninstall-modules)。
+若要解除安裝[!DNL Live Search]，請參閱[解除安裝模組](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules)。
 
 ## [!DNL Live Search]個套件
 
@@ -361,7 +414,7 @@ composer update magento/live-search --with-dependencies
 | 封裝 | 說明 |
 |--- |--- |
 | `module-live-search` | 允許商戶設定其面向、同義字、查詢規則等的搜尋設定，並提供唯讀GraphQL遊樂場的存取權，以測試來自&#x200B;*Admin*&#x200B;的查詢。 |
-| `module-live-search-adapter` | 將搜尋要求從店面路由到[!DNL Live Search]服務，並在店面中呈現結果。 <br /> — 類別瀏覽 — 將要求從店面[上層導覽](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/catalog/navigation/navigation-top)路由到搜尋服務。<br /> — 全域搜尋 — 將要求從店面右上角的[快速搜尋](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/catalog/search/search)方塊路由到[!DNL Live Search]服務。 |
+| `module-live-search-adapter` | 將搜尋要求從店面路由到[!DNL Live Search]服務，並在店面中呈現結果。 <br /> — 類別瀏覽 — 將要求從店面[上層導覽](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/navigation/navigation-top)路由到搜尋服務。<br /> — 全域搜尋 — 將要求從[快速搜尋](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search)欄位路由到[!DNL Live Search]服務。 快速搜尋欄位位於店面頁面的右上角。 |
 | `module-live-search-storefront-popover` | 「依輸入方式搜尋」彈出視窗會取代標準快速搜尋，並傳回熱門搜尋結果的資料和縮圖。 |
 
 ## [!DNL Live Search]相依性
@@ -405,9 +458,9 @@ Adobe建議直接呼叫SaaS API，尤其是目錄服務端點。
 如果您有自訂Headless實作，請檢視[!DNL Live Search]參考實作：
 
 - [PLP WIDGET](https://github.com/adobe/storefront-product-listing-page)
-- [即時搜尋欄位](https://github.com/adobe/storefront-search-as-you-type)
+- [[!DNL Live Search] 欄位](https://github.com/adobe/storefront-search-as-you-type)
 
-若您未使用搜尋配接器、Luma Widget或AEM CIF Widget等標準元件，預設無法自動收集使用者互動資料。 Adobe Sensei會使用這項收集到的資料進行智慧型銷售與效能追蹤。 若要解決此問題，您需要開發自訂解決方案，以透過Headless方式實施此資料收集。
+如果您未使用標準元件(例如搜尋轉接器、Luma Widget或AEM CIF Widget)，預設將無法自動收集使用者互動資料。 Adobe Sensei會使用這項收集到的資料進行智慧型銷售與效能追蹤。 若要解決此問題，您需要開發自訂解決方案，以透過Headless方式實施此資料收集。
 
 [!DNL Live Search]的最新版本已使用[!DNL Catalog Service]。
 
@@ -459,7 +512,7 @@ Adobe建議直接呼叫SaaS API，尤其是目錄服務端點。
 
 ### Widget程式碼存放庫
 
-產品清單頁面Widget和「即時搜尋」欄位Widget的程式碼可從GitHub下載。
+產品清單頁面Widget和[!DNL Live Search]欄位Widget的程式碼可從GitHub下載。
 
 有權存取程式碼的開發人員可完全自訂其運作和外觀方式。 他們在自己的伺服器上代管程式碼，但仍使用[!DNL Live Search]服務。
 
@@ -468,21 +521,21 @@ Adobe建議直接呼叫SaaS API，尤其是目錄服務端點。
 
 ### Data Export擴充功能
 
-啟用「即時搜尋」後，「資料匯出」擴充功能會將Commerce資料在Commerce應用程式和「即時搜尋」之間同步。 此程式可確保店面上有最新的Commerce資料。 在Admin中，您可以使用「資料管理」控制面板檢查同步狀態。 您可以使用Commerce CLI和記錄檔來管理和疑難排解資料匯出程式。 如需詳細資訊，請參閱[資料匯出指南](../data-export/overview.md)。
+啟用[!DNL Live Search]後，資料匯出擴充功能會在Commerce應用程式和[!DNL Live Search]之間同步Commerce資料。 此程式可確保店面上有最新的Commerce資料。 在Admin中，您可以使用「資料管理」控制面板檢查同步狀態。 您可以使用Commerce CLI和記錄檔來管理和疑難排解資料匯出程式。 如需詳細資訊，請參閱[資料匯出指南](../data-export/overview.md)。
 
 ### Inventory management
 
-[!DNL Live Search]在Commerce中支援[Inventory management](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/inventory/introduction)功能(先前稱為多Source詳細目錄，或MSI)。 若要啟用完整支援，您必須[將](install.md#updating-live-search)相依性模組`commerce-data-export`更新為102.2.0+版。
+[!DNL Live Search]在Commerce中支援[Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction)功能(先前稱為多Source詳細目錄，或MSI)。 若要啟用完整支援，您必須[將](install.md#updating-live-search)相依性模組`commerce-data-export`更新為102.2.0+版。
 
 [!DNL Live Search]傳回布林值，指出產品是否可在Inventory management中使用，但不包含有關哪個來源有庫存的資訊。
 
 ### 價格索引器
 
-Live Search客戶可以使用[SaaS價格索引器](../price-index/price-indexing.md)，提供更快的價格變更更新和同步處理時間。
+[!DNL Live Search]客戶可以使用[SaaS價格索引器](../price-index/price-indexing.md)，提供更快的價格變更更新和同步處理時間。
 
 ### 價格支援
 
-即時搜尋Widget支援大多數（但不是所有）Adobe Commerce支援的價格型別。
+[!DNL Live Search] Widget支援大部分（但不是所有）Adobe Commerce支援的價格型別。
 
 目前支援基本價格。 不支援的進階價格為：
 
@@ -509,7 +562,7 @@ composer require magento/module-data-services-graphql
 
 ### B2B支援
 
-[!DNL Live Search]支援[B2B功能](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/b2b/guide-overview)及其他[限制](boundaries-limits.md#b2b-and-category-permissions)。
+[!DNL Live Search]支援[B2B功能](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/guide-overview)及其他[限制](boundaries-limits.md#b2b-and-category-permissions)。
 
 ### PWA支援
 
@@ -541,4 +594,4 @@ composer require magento/module-data-services-graphql
 
 ### Cookie
 
-[!DNL Live Search]會收集使用者互動資料，作為其基本功能的一部分，而Cookie是用來儲存此資料。 收集任何使用者資訊時，使用者必須同意儲存Cookie。 [!DNL Live Search]和[!DNL Product Recommendations]共用資料流，因此使用相同的Cookie機制。 在[控制代碼Cookie限制](https://experienceleague.adobe.com/zh-hant/docs/commerce/product-recommendations/developer/setting-cookie)中閱讀更多相關資訊。
+[!DNL Live Search]會收集使用者互動資料，作為其基本功能的一部分，而Cookie是用來儲存此資料。 收集任何使用者資訊時，使用者必須同意儲存Cookie。 [!DNL Live Search]和[!DNL Product Recommendations]共用資料流，因此使用相同的Cookie機制。 在[控制代碼Cookie限制](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/developer/setting-cookie)中閱讀更多相關資訊。

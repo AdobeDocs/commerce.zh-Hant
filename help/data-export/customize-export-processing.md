@@ -3,16 +3,16 @@ title: 改善SaaS資料匯出效能
 description: 瞭解如何使用多執行緒資料匯出模式，改善Commerce服務的SaaS資料匯出效能。
 role: Admin, Developer
 exl-id: 7151118c-5e30-44d0-b515-5801a73e44ec
-source-git-commit: b8b7af1119163589b7d83654b13edae656fea339
+source-git-commit: 9b28da0bf861a266e9d679ba59470f46d9a89c1c
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '639'
 ht-degree: 0%
 
 ---
 
 # 改善SaaS資料匯出效能
 
-**多執行緒資料匯出模式**&#x200B;將摘要資料分割成批次，然後並行處理，加速匯出程式。
+**多執行緒資料匯出模式**&#x200B;會將摘要資料分割成批次並同時處理，加速匯出程式。
 
 開發人員或系統整合經銷商可以使用多執行緒資料匯出模式，而不是預設的單執行緒模式，來改善效能。 在單執行緒模式中，摘要提交程式不會平行化。 此外，由於設定了預設限制，所有使用者端都限製為僅使用一個執行緒。 在大多數情況下，不需要自訂設定。
 
@@ -64,7 +64,7 @@ bin/magento saas:resync --feed=products --thread-count=2 --batch-size=200
 
 若要使用多執行緒處理所有資料匯出作業，系統整合經銷商或開發人員可以在Commerce應用程式設定中修改每個摘要的執行緒數目和批次大小。
 
-可將自訂值加入組態檔[的](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system)系統區段`app/etc/config.php`，以套用這些變更。
+可將自訂值加入組態檔[的](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system)系統區段`app/etc/config.php`，以套用這些變更。
 
 **範例：設定產品與價格的多執行緒**
 
