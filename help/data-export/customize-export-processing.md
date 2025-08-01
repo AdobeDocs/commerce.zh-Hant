@@ -2,9 +2,10 @@
 title: 改善SaaS資料匯出效能
 description: 瞭解如何使用多執行緒資料匯出模式，改善Commerce服務的SaaS資料匯出效能。
 role: Admin, Developer
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 7151118c-5e30-44d0-b515-5801a73e44ec
+source-git-commit: b8b7af1119163589b7d83654b13edae656fea339
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -22,7 +23,7 @@ Adobe建議使用資料擷取的預設設定，這通常符合Commerce商家的�
 
 在決定是否自訂資料匯出設定時，請考慮下列關鍵因素：
 
-- **初始同步處理** — 評估產品數量，並根據預設組態估算資料量及傳輸時間[&#128279;](estimate-data-volume-sync-time.md)。 請自問：您上線Commerce服務後，可以等待此初始資料同步嗎？
+- **初始同步處理** — 評估產品數量，並根據預設組態估算資料量及傳輸時間[。 ](estimate-data-volume-sync-time.md)請自問：您上線Commerce服務後，可以等待此初始資料同步嗎？
 
 - **新增商店檢視或網站** — 如果您計畫在上線後新增具有相同產品數的商店檢視或網站，請估計資料量和傳輸時間。 判斷使用預設設定是否可接受同步化時間，或是是否需要多執行緒處理。
 
@@ -34,7 +35,7 @@ Adobe建議使用資料擷取的預設設定，這通常符合Commerce商家的�
 
 >[!NOTE]
 >
->Adobe建議在使用多執行緒處理時務必謹慎。 此功能是尚在改善的早期存取功能。 如果您設定多執行緒以提升效能，可以觸發內含的Adobe Commerce Services護欄，以防止在資料擷取期間誤用系統。 這些護欄也會限制使用者觸發可能使系統過載的同步化變更。 觸發護欄時，請求會遭到封鎖，系統傳回429錯誤。 如果您遇到這些錯誤，請調整您的設定，並提交支援票證以尋求協助。
+>Adobe建議在使用多執行緒處理時務必謹慎。 如果您設定多執行緒以提升效能，可以觸發內含的Adobe Commerce Services護欄，以防止在資料擷取期間誤用系統。 這些護欄也會限制使用者觸發可能使系統過載的同步化變更。 觸發護欄時，請求會遭到封鎖，系統傳回429錯誤。 如果您遇到這些錯誤，請調整您的設定，並提交支援票證以尋求協助。
 
 ## 設定多執行緒
 
@@ -63,7 +64,7 @@ bin/magento saas:resync --feed=products --thread-count=2 --batch-size=200
 
 若要使用多執行緒處理所有資料匯出作業，系統整合經銷商或開發人員可以在Commerce應用程式設定中修改每個摘要的執行緒數目和批次大小。
 
-可將自訂值加入組態檔`app/etc/config.php`的[系統區段](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system)，以套用這些變更。
+可將自訂值加入組態檔[的](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system)系統區段`app/etc/config.php`，以套用這些變更。
 
 **範例：設定產品與價格的多執行緒**
 

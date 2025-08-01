@@ -1,10 +1,11 @@
 ---
 title: 建立和管理Facet
 description: 瞭解如何在 [!DNL Adobe Commerce Optimizer]中新增和管理Facet。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
-source-git-commit: 3020386cd051b4453ed6b90d2c694a5bb31dfb24
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+exl-id: d6b7ff1f-a9b8-4fb8-8bd3-b3596695045c
+source-git-commit: ad8fb7d1d7e1ad124647ba84377079dcfbd46a3c
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
@@ -25,9 +26,9 @@ ht-degree: 0%
 
    Facet已新增至&#x200B;*動態Facet*&#x200B;清單底部，且&#x200B;*發佈變更*&#x200B;按鈕可供使用。
 
-1. 如果找不到您要新增的Facet，請確定[product屬性](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#operation/createProductMetadata)設定如下：
+1. 如果找不到您要新增的Facet，請使用[中繼資料API](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata)設定`searchable`引數：
 
-   - `searchable` = `Yes`
+   `"searchable": true`
 
    下次目錄與[!DNL Adobe Commerce Optimizer]同步時，Facet便可在店面中使用。 如果兩小時後無法使用Facet，請參閱[資料同步](../../setup/data-sync.md)。
 

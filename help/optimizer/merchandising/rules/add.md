@@ -1,10 +1,11 @@
 ---
 title: 建立和管理規則
 description: 瞭解如何建立和管理銷售規則。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
-source-git-commit: 746c016f149fb49b9c483968a8a5f40196b163ed
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
+source-git-commit: ad8fb7d1d7e1ad124647ba84377079dcfbd46a3c
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1767'
 ht-degree: 0%
 
 ---
@@ -53,7 +54,7 @@ ht-degree: 0%
 
 #### 多個條件
 
-1. 若要建置包含多個條件的規則，請按一下[新增條件]。**&#x200B;**
+1. 若要建置包含多個條件的規則，請按一下[新增條件]。****
 一個規則最多可以有十個條件。 結合兩個條件的邏輯運運算元是以目前的*Match*&#x200B;設定為基礎。 依預設，*符合*&#x200B;為`All`，邏輯運運算元為`AND`。
 
 1. 選取第二個條件並輸入必要的查詢文字。
@@ -67,7 +68,7 @@ ht-degree: 0%
 
    在此範例中，不是搜尋「yoga pants」，而是有兩個不同的查詢可搜尋「yoga」或「pants」。 此規則較少具體，且在店面觸發的頻率遠高於其他規則。
 
-1. 若要新增其他條件，請按一下[新增條件] **&#x200B;**&#x200B;並重複此程式。
+1. 若要新增其他條件，請按一下[新增條件] ****&#x200B;並重複此程式。
 
 ### 智慧型排名
 
@@ -88,7 +89,9 @@ ht-degree: 0%
 #### 警告
 
 - 查詢中的撇號和引號可能會導致某些語言中的排名和相關性出現一些小問題。
-- 若要確保智慧型排名正常運作，請確定用於搜尋或篩選(Facet)的任何[產品屬性](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#tag/Metadata)的&#x200B;**搜尋權數**&#x200B;為`5`或更少。
+- 若要確保智慧型排名正常運作，請確定用於搜尋或篩選(Facet)之任何屬性的&#x200B;**搜尋權數**&#x200B;為`5`或更少。
+
+如需設定搜尋權重的詳細資訊，請參閱[中繼資料API](https://developer.adobe.com/commerce/services/reference/rest/)。
 
 ### 手動排名
 

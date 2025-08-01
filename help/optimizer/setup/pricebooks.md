@@ -3,11 +3,11 @@ title: 價格手冊
 description: 瞭解如何在 [!DNL Adobe Commerce Optimizer]中管理價格簿。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 exl-id: a1849830-3d0e-4df9-ab73-380659c3f9dc
-source-git-commit: 513ed97442bfffe74d64f4eb0484cfa8f25b5ecc
+source-git-commit: 502d8d21ff052f4ecb212176459b38ce51f85dfc
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '307'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 基準價格簿會定義其本身及其所有子價格簿的幣別。 子價格簿會繼承此幣別，且無法覆寫它。
 
-請參閱[開發人員檔案](https://developer.adobe.com/commerce/services/reference/rest/)，瞭解如何使用價格簿API來建立、更新及刪除價格簿[!DNL Adobe Commerce Optimizer]。
+請參閱[開發人員檔案](https://developer.adobe.com/commerce/services/reference/rest/)，瞭解如何使用價格簿API建立、更新及刪除[!DNL Adobe Commerce Optimizer]的價格簿。
 
 ## 重要概念
 

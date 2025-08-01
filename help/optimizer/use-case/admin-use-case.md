@@ -3,9 +3,9 @@ title: 店面和目錄管理員端對端使用案例
 description: 瞭解如何使用 [!DNL Adobe Commerce Optimizer] 使用目錄檢視和原則來管理您的目錄，以及如何根據您的目錄組態設定您的店面。
 role: Admin, Developer
 feature: Personalization, Integration
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
-source-git-commit: 5c745a8b6b3c289cb52ad7756ec521b0df96c053
+source-git-commit: 1ab7ee5673f261b43db25caf0ad340a0fd9e3341
 workflow-type: tm+mt
 source-wordcount: '2158'
 ht-degree: 0%
@@ -55,7 +55,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> 檢閱Adobe Commerce店面檔案中的[探索樣板](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/?lang=zh-Hant)主題，瞭解店面設定檔案。
+> 檢閱Adobe Commerce店面檔案中的[探索樣板](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/)主題，瞭解店面設定檔案。
 
 ### 關‌鍵要點
 
@@ -271,7 +271,7 @@ Carvelo的商務經理需要為隸屬於&#x200B;*East Coast Inc*&#x200B;公司�
       "commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/Fwus6kdpvYCmeEdcCX7PZg/graphql",
       "headers": {
          "cs": {
-            "ac-catalog-view-id": "9ced53d7-35a6-40c5-830e-8288c00985ad",
+            "ac-view-id": "9ced53d7-35a6-40c5-830e-8288c00985ad",
             "ac-price-book-id": "west_coast_inc",
             "ac-source-locale": "en-US"
            }
@@ -295,7 +295,7 @@ Carvelo的商務經理需要為隸屬於&#x200B;*East Coast Inc*&#x200B;公司�
    請注意，目錄檢視標題包含下列值：
 
    - `commerce-endpoint`： `"https://na1-sandbox.api.commerce.adobe.com/Fwus6kdpvYCmeEdcCX7PZg/graphql"`
-   - `ac-catalog-view-id`：`"9ced53d7-35a6-40c5-830e-8288c00985ad"`
+   - `ac-view-id`：`"9ced53d7-35a6-40c5-830e-8288c00985ad"`
    - `ac-price-book-id`： `"west_coast_inc"`
    - `ac-source-locale`： `"en-US"`
 
@@ -307,7 +307,7 @@ Carvelo的商務經理需要為隸屬於&#x200B;*East Coast Inc*&#x200B;公司�
    https://experience.adobe.com/#/@commerceprojectbeacon/in:XDevkG9W6UbwgQmPn995r3/commerce-optimizer-studio/catalog
    ```
 
-1. 將`ac-catalog-view-id`值取代為您先前複製的Celport目錄檢視識別碼。
+1. 將`ac-view-id`值取代為您先前複製的Celport目錄檢視識別碼。
 
 1. 將`ac-price-book-id`值取代為`"east_coast_inc"`。
 
@@ -321,7 +321,7 @@ Carvelo的商務經理需要為隸屬於&#x200B;*East Coast Inc*&#x200B;公司�
         "commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/{{ACO-tenant-id}}/graphql",
         "headers": {
             "cs": {
-                "ac-catalog-view-id": "{{celport-catalog-view-id}}",
+                "ac-view-id": "{{celport-catalog-view-id}}",
                 "ac-price-book-id": "east_coast_inc",
                 "ac-source-locale": "en-US"
               }
@@ -378,7 +378,7 @@ Carvelo的商務經理需要為隸屬於&#x200B;*East Coast Inc*&#x200B;公司�
 
 1. 嘗試更新您的店面組態檔(`config.json`)。
 
-   1. 變更`ac-catalog-view-id`和`ac-price-book`值。
+   1. 變更`ac-view-id`和`ac-price-book`值。
 
    例如，您可以將目錄檢視識別碼變更為Kingsbluff目錄檢視，並將價格簿識別碼變更為`east_coast_inc`。 您可以檢閱&#x200B;*Kingsbluff零件類別*&#x200B;原則來檢視Kingsbluff可用的零件類別。
 
@@ -445,4 +445,4 @@ Carvelo的商務經理需要為隸屬於&#x200B;*East Coast Inc*&#x200B;公司�
 - 瞭解[進階原則設定](../setup/policies.md)
 - 為其他經銷商設定[額外的目錄檢視](../setup/catalog-view.md)
 - 檢閱[API檔案](https://developer.adobe.com/commerce/services/optimizer/)，瞭解程式化目錄管理
-- 瞭解如何為您的Edge Delivery Services店面設定下拉式元件，以針對產品探索、建議和其他店面功能建立自訂店面體驗。 請參閱[店面檔案](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=zh-Hant)
+- 瞭解如何為您的Edge Delivery Services店面設定下拉式元件，以針對產品探索、建議和其他店面功能建立自訂店面體驗。 請參閱[店面檔案](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)

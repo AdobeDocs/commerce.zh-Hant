@@ -1,8 +1,9 @@
 ---
 title: 搜尋效能
 description: 「搜尋效能」頁面可讓insight掌握購物者使用的搜尋辭彙。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
-source-git-commit: f49a86b8793e2d91413acfbc0b922cb94db67362
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+exl-id: 75b43c6f-d876-4379-ad70-5c2a2f29a5ac
+source-git-commit: b8b7af1119163589b7d83654b13edae656fea339
 workflow-type: tm+mt
 source-wordcount: '1737'
 ht-degree: 0%
@@ -51,7 +52,7 @@ ht-degree: 0%
 有幾個關鍵因素可決定搜尋結果的相關性和成效：
 
 - 結構良好的產品資料可確保搜尋演演算法能夠有效地將產品與查詢比對。 低品質的產品資料會導致搜尋結果的相關性降低。 若要直接影響銷售策略的成功：
-   - 將正確的[屬性設定為可搜尋](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#tag/Metadata)及其對應的權重。
+   - 將正確的[屬性設定為可搜尋](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata)及其對應的權重。
    - 請確定這些屬性中的資料具有相關性。
 - 精心設計的搜尋體驗能建立客戶信任，並灌輸他們找到所需內容的信心。
 - 搜尋規則至關重要，因為它們可以根據熱門程度、新到訪次數、促銷條件或任何其他銷售策略，提升特定產品的可見度，以滿足您的業務需求。
@@ -97,7 +98,7 @@ ht-degree: 0%
 
 ## 改善搜尋結果關聯性
 
-若要改善搜尋結果關聯性，請實作有效的[搜尋規則](../merchandising/rules/overview.md)，並使用產品中繼資料來確保精確且詳細的[屬性可搜尋](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#tag/Metadata)。
+若要改善搜尋結果關聯性，請實作有效的[搜尋規則](../merchandising/rules/overview.md)，並使用產品中繼資料來確保精確且詳細的[屬性可搜尋](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata)。
 
 ### 影像
 
@@ -109,7 +110,7 @@ ht-degree: 0%
 
 ### 利用產品中繼資料
 
-確定正確且詳細的產品[屬性已設定為可搜尋](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#tag/Metadata)。 請注意，SKU、名稱和類別屬性預設為可搜尋，且無法從搜尋中排除。 為達到最佳效果，請勿在SKU中使用空格。
+確定正確且詳細的產品[屬性已設定為可搜尋](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata)。 請注意，SKU、名稱和類別屬性預設為可搜尋，且無法從搜尋中排除。 為達到最佳效果，請勿在SKU中使用空格。
 
 若要增加搜尋關聯性，請為每個可搜尋的屬性指定加權。 權重較高的屬性在搜尋結果中應會顯示得較高。 依關聯性排序會受到多個條件影響，例如搜尋權重。 這表示有時候搜尋權重較低的屬性仍可以比搜尋權重較高的屬性有更多的關聯性。 其他條件可包含任何指定屬性中的相符專案數、找到的搜尋字詞位置，以及搜尋字詞前後的整體文字結構。
 
@@ -117,8 +118,8 @@ ht-degree: 0%
 
 深入瞭解搜尋所需的產品屬性：
 
-- [將屬性設定為可搜尋](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#tag/Metadata)
-- [指派權重給屬性](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#operation/createProductMetadata)
+- [將屬性設定為可搜尋](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata)
+- [指派權重給屬性](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata)
 
 ## 欄位說明
 
