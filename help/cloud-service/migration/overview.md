@@ -2,11 +2,11 @@
 title: 移轉至 [!DNL Adobe Commerce as a Cloud Service]
 description: 瞭解如何移轉至 [!DNL Adobe Commerce as a Cloud Service]。
 exl-id: 9065c92a-f6b2-4464-8ec0-5c549bf78104
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 role: Architect
-source-git-commit: 506873780783e26841943a4b43dbc955c73f6f62
+source-git-commit: 2ecf5e0960b2e63cc95016e8ee5509b3c475de13
 workflow-type: tm+mt
-source-wordcount: '3030'
+source-wordcount: '3031'
 ht-degree: 0%
 
 ---
@@ -23,20 +23,20 @@ ht-degree: 0%
 
 **主要差異**
 
-* 僅[!BADGE PaaS]{type=Informative url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce 。"} **PaaS （目前）**：商家在Adobe的託管環境中管理應用程式程式碼、升級、修補、基礎架構設定。 [服務(MySQL、Elasticsearch等)的共用職責模型](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/security-and-compliance/shared-responsibility)。
-* [!BADGE 僅限SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"} **SaaS （新增 — [!DNL Adobe Commerce as a Cloud Service]）**： Adobe可完全管理核心應用程式、基礎架構和更新。 商家專注於透過擴充點(API、App Builder、UI SDK)進行自訂。 核心應用程式程式碼已鎖定。
+* 僅[!BADGE PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce 。"} **PaaS （目前）**：商家在Adobe的託管環境中管理應用程式程式碼、升級、修補、基礎架構設定。 [服務(MySQL、Elasticsearch等)的共用職責模型](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility)。
+* [!BADGE 僅限SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"} **SaaS （新增 — [!DNL Adobe Commerce as a Cloud Service]）**： Adobe可完全管理核心應用程式、基礎架構和更新。 商家專注於透過擴充點(API、App Builder、UI SDK)進行自訂。 核心應用程式程式碼已鎖定。
 
 **架構影響**
 
 * **無版本平台**：持續更新表示核心不再有重大版本升級。
-* **微服務與API-1&rbrace;：對API的延伸性與整合依賴性更深。**
+* **微服務與API-1}：對API的延伸性與整合依賴性更深。**
 * **依預設Headless （選用）**：對分離式店面的強大支援(例如，由Edge Delivery Services支援的Commerce店面)。
 * **Edge Delivery Services**：對前端效能和部署的影響。
 
 **新工具與概念**
 * 適用於Adobe Developer App Builder的[Adobe Developer App Builder](https://developer.adobe.com/app-builder/)和[API Mesh](https://developer.adobe.com/graphql-mesh-gateway)
 * [Commerce Optimizer](../../optimizer/overview.md)
-* [Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant)
+* [Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/)
 * 使用[Commerce Cloud Manager](../getting-started.md#create-an-instance)進行自助布建
 
 ## 移轉路徑
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 ![增量移轉](../assets/incremental.png){width="600" zoomable="yes"}
 
-* **Commerce Optimizer** — 此方法可讓您使用Commerce Optimizer作為轉換階段，以您自己的步調將複雜的自訂專案和資料移至[!DNL Adobe Commerce as a Cloud Service]，進行反複移轉。 Commerce Optimizer可讓您存取由目錄管道和原則支援的銷售服務、由Edge Delivery支援的Commerce店面，以及由AEM Assets支援的產品視覺效果。
+* **Commerce Optimizer** — 此方法可讓您使用Commerce Optimizer作為轉換階段，以您自己的步調將複雜的自訂專案和資料移至[!DNL Adobe Commerce as a Cloud Service]，進行反複移轉。 Commerce Optimizer可讓您存取由目錄檢視和原則支援的銷售服務、由Edge Delivery支援的Commerce店面，以及由AEM Assets支援的產品視覺效果。
 
 ![反複移轉](../assets/optimizer.png){width="600" zoomable="yes"}
 
@@ -166,7 +166,7 @@ ht-degree: 0%
 
 * **目錄資料同步**：請確定您的Adobe Commerce PaaS執行個體繼續將產品和目錄資料同步至您現有的Adobe Commerce目錄SaaS服務。 這通常會仰賴PaaS執行個體中已建立的聯結器或模組。 目錄SaaS服務仍然是搜尋和銷售功能的權威來源，其資料源自您的PaaS後端。
 * **最佳化的API Mesh**：雖然Headless店面(在Edge Delivery Services上)和其他服務可以直接使用目錄SaaS服務的資料，Adobe強烈建議使用API Mesh (在App Builder內)。 API Mesh可以將目錄SaaS服務的API與PaaS後端的其他必要API （例如，交易式資料庫中的即時詳細目錄檢查或未完全複製到目錄SaaS服務的自訂產品屬性）整合到單一高效能GraphQL端點中。 這也允許集中式快取、驗證和回應轉換。
-* **整合即時搜尋和產品建議**：設定即時搜尋和產品建議SaaS服務，以直接從您現有的Adobe Commerce目錄SaaS服務[擷取目錄資料](https://experienceleague.adobe.com/zh-hant/docs/commerce/live-search/install#configure-the-data)，而您的PaaS後端會填入這些資料。
+* **整合即時搜尋和產品建議**：設定即時搜尋和產品建議SaaS服務，以直接從您現有的Adobe Commerce目錄SaaS服務[擷取目錄資料](https://experienceleague.adobe.com/en/docs/commerce/live-search/install#configure-the-data)，而您的PaaS後端會填入這些資料。
 
 **優點**：這可善用現有且運作中的Catalog SaaS服務，及其與PaaS後端的整合管道，讓您更快速地前往Headless店面和進階SaaS銷售功能。 但是，它仍保留主要目錄資料來源在PaaS後端上的相依性，不提供新的「可組合目錄資料模型」中固有的多來源彙總功能。 此選項是邁向更完整可撰寫架構的有效基礎。
 
@@ -183,7 +183,7 @@ ht-degree: 0%
       * **事件導向** (透過App Builder)：利用您PaaS執行個體的Adobe I/O Events，觸發公開可用或自訂的Adobe App Builder應用程式。 這些應用程式會透過其API轉換及推送資料變更（建立、更新和刪除）至CCDM。
       * **批次擷取**：對於大型初始載入或定期大量更新，請使用安全檔案傳輸（例如CSV或JSON）至臨時區域，由Adobe Experience Platform (AEP)擷取服務處理至CCDM。
       * **直接API整合** (使用App Builder協調流程)：對於更複雜的情境，App Builder可以充當協調層，對您的PaaS後端進行直接API呼叫、轉換資料，並將其推送至CCDM。
-* **目錄檢視和原則定義**：設定目錄檢視（邏輯群組，用於唯一目錄簡報，例如商店檢視、區域和B2B/B2C區段），並在CCDM中定義原則（用於產品簡報、篩選和銷售的規則集）。 如此可讓您動態控制每個管道的產品分類和顯示邏輯。
+* **目錄檢視和原則定義**：設定目錄檢視（邏輯群組，用於唯一目錄簡報，例如商店檢視、區域和B2B/B2C區段），並在CCDM中定義原則（用於產品簡報、篩選和銷售的規則集）。 如此可讓您動態控制每個目錄檢視的產品分類與顯示邏輯。
 * **整合即時搜尋和產品建議**：一旦目錄資料出現在CCDM中，請整合Adobe的SaaS式即時搜尋和產品建議服務。 這些利用了Adobe Sensei AI和機器學習模型，提供絕佳的搜尋相關性和個人化建議，並直接使用CCDM的資料。
 
 **優點**：透過將目錄管理和探索抽象化至CCDM及相關的SaaS服務，您可以提升效能、取得AI驅動的銷售功能、大幅減輕舊式後端讀取作業的負載，並啟用漏斗頂端體驗的強大「剝離」。
