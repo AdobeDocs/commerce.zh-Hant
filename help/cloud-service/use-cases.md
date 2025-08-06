@@ -3,10 +3,10 @@ title: 使用案例
 description: 瞭解如何使用 [!DNL Adobe Commerce as a Cloud Service]完成實際使用案例和支援的商業案例。
 role: User, Leader
 exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
-source-git-commit: a06d64566fda76c0527aabfa9e8fdf27e7c149ca
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+source-git-commit: 47eb8ee55bb093767f76aa23df8bb347ee280aae
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1325'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 1. 輸入必要的聯絡詳細資料和送貨資訊。 您可以針對此訂單使用虛構的資訊。
 
-1. 若要結帳，請選取&#x200B;[!UICONTROL **支票/匯票**]。 若要使用信用卡，請使用Paypal[&#128279;](https://developer.paypal.com/tools/sandbox/card-testing/#link-teststaticcardnumbers)提供的測試卡之一。 您可以將其用於任何未來的到期日和任何CVC。
+1. 若要結帳，請選取&#x200B;[!UICONTROL **支票/匯票**]。 若要使用信用卡，請使用Paypal[提供的](https://developer.paypal.com/tools/sandbox/card-testing/#link-teststaticcardnumbers)測試卡之一。 您可以將其用於任何未來的到期日和任何CVC。
 
    ![輸入詳細資料](./assets/enter-details.png){width="600" zoomable="yes"}
 
@@ -101,7 +101,7 @@ ht-degree: 0%
 
 1. 重新整理店面頁面，並確認您的變更已上線。
 
-## 內容實驗
+## 內容相關實驗
 
 Adobe Commerce的情境式實驗功能可讓您在店面建立和管理實驗，以測試不同的內容和設定。
 
@@ -113,7 +113,7 @@ Adobe Commerce的情境式實驗功能可讓您在店面建立和管理實驗，
 
 1. 按一下&#x200B;[!UICONTROL **新增**]&#x200B;按鈕並選取&#x200B;[!UICONTROL **資料夾**]，在主資料夾下建立&#x200B;[!UICONTROL **實驗**]&#x200B;資料夾。
 
-1. 在&#x200B;[!UICONTROL **實驗**]&#x200B;資料夾中建立名為&#x200B;**1234**&#x200B;的資料夾。
+1. 在&#x200B;**實驗**&#x200B;資料夾中建立名為&#x200B;[!UICONTROL **1234**]&#x200B;的資料夾。
 
 1. 將索引頁面的兩個復本貼到&#x200B;**1234**&#x200B;資料夾中。
 
@@ -156,7 +156,7 @@ Adobe Commerce的情境式實驗功能可讓您在店面建立和管理實驗，
 
 1. 開啟您在先決條件中建立的[店面](./storefront.md)，並導覽至您要變更的專案。 記下專案SKU或產品代碼。
 
-1. 在[Adobe Experience Cloud](https://experience.adobe.com/#/home)中選取[!UICONTROL AEM Assets]，以將其開啟。
+1. 在[!UICONTROL AEM Assets]Adobe Experience Cloud[中選取](https://experience.adobe.com/#/home)，以將其開啟。
 
    ![aem assets](./assets/select-aem-assets.png){width="600" zoomable="yes"}
 
@@ -188,7 +188,7 @@ Adobe Commerce的情境式實驗功能可讓您在店面建立和管理實驗，
 
 1. 按一下&#x200B;[!UICONTROL **儲存**]&#x200B;以指定影像型別。
 
-1. 再按一下[儲存]儲存變更。[!UICONTROL **&#x200B;**]
+1. 再按一下[儲存]儲存變更。[!UICONTROL ****]
 
 1. 在&#x200B;[!UICONTROL **儲存資產**]&#x200B;對話方塊中，選取Commerce [!UICONTROL **目的地資料夾**]。
 
@@ -198,7 +198,7 @@ Adobe Commerce的情境式實驗功能可讓您在店面建立和管理實驗，
 
 #### 將影像新增至Commerce AEM Assets
 
-1. 從AEM as a Cloud Service的[導覽面板](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel)，選取&#x200B;**Assets** > **檔案** > **Commerce**，然後按一下您在上一節建立的資產。
+1. 從AEM as a Cloud Service的[導覽面板](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel)，選取&#x200B;**Assets** > **檔案** > **Commerce**，然後按一下您在上一節建立的資產。
 
    ![商務資料夾](./assets/commerce-folder.png){width="600" zoomable="yes"}
 
@@ -248,7 +248,7 @@ Adobe Commerce的「產生變體」功能運用Generative AI來自動產生高�
 
 ### 產生文字
 
-1. 使用[通用編輯器](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)開啟您的店面網站。
+1. 使用[通用編輯器](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)開啟您的店面網站。
 
 1. 選取您要編輯的文字區塊。
 
@@ -262,13 +262,13 @@ Adobe Commerce的「產生變體」功能運用Generative AI來自動產生高�
 
 ### 產生內容和影像
 
-1. 開啟[產生變數](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+1. 開啟[產生變數](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 1. 選取&#x200B;[!UICONTROL **Hero Banner**]&#x200B;範本。
 
 1. 在&#x200B;[!UICONTROL **說明使用者互動**]&#x200B;文字方塊中，輸入：「Adobe員工和合作夥伴購買Adobe品牌用具的體驗！」
 
-1. 在網域知識&#x200B;**的** URL中，輸入&#x200B;**www.adobestore.com**。
+1. 在網域知識&#x200B;[!UICONTROL **的**] URL中，輸入&#x200B;**www.adobestore.com**。
 
 1. 按一下&#x200B;[!UICONTROL **產生**]。
 
@@ -280,7 +280,7 @@ Adobe Commerce的「產生變體」功能運用Generative AI來自動產生高�
 
 1. 針對&#x200B;[!UICONTROL **樣式**]&#x200B;參考影像，選取現有的Adobe商店橫幅。
 
-1. 選取您要使用的產生影像，然後按一下[儲存]。[!UICONTROL **&#x200B;**]
+1. 選取您要使用的產生影像，然後按一下[儲存]。[!UICONTROL ****]
 
 1. 對其他參照影像重複此程式以產生更多變化。
 
