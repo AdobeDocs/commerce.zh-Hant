@@ -4,9 +4,9 @@ description: 適用於Adobe Commerce的 [!DNL Data Export Extension] 的最新�
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 6876a5fbde2b3292cd788a50d104083cf51109ed
+source-git-commit: d859da62f54cf9a86a57d34d5f74aae972dc99be
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1353'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,12 @@ ht-degree: 0%
 >SaaS資料匯出擴充功能是隨「即時搜尋」、「產品建議」和「目錄服務」自動安裝的模組集合。 您可以使用Composer檢查系統上安裝的版本。 在某些情況下，您可能會想要升級系統上的資料匯出擴充功能，以取得修正或新功能，而不更新Commerce服務版本。
 
 ## 目前的主要版本
+
+## 103.4.8版本
+
+![新](../assets/new.svg)已新增層級價格資訊至價格摘要。 <!--MDEE-1070-->
+![修正](../assets/fix.svg) Data Exporter擴充功能現在可正確匯出網站範圍的套件組合選擇價格，確保店面定價可根據「目錄價格範圍」設定反映準確的值。<!--MDEE-1115-->
+![修正](../assets/fix.svg)之前，使用具有臨界值設定的Inventory management (多來源Inventory management)時，產品同步的`lowStock=true`狀態不正確。 此問題已修正，以確保低庫存報告的準確性。<!--MDEE-1113-->
 
 ## 103.4.7版
 
