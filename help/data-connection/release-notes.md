@@ -3,9 +3,9 @@ title: 發行說明
 description: Adobe Commerce中 [!DNL Data Connection] 擴充功能的最新發行資訊。
 feature: Personalization, Integration, Release Notes
 exl-id: f3b92632-947d-40cd-89b7-24ed0680be51
-source-git-commit: e92f6c2b748683fbe1a358680b03eefb27fe0093
+source-git-commit: 43020e33ce57861cf586ace12a0832b24c23872d
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1266'
 ht-degree: 1%
 
 ---
@@ -24,15 +24,19 @@ ht-degree: 1%
 
 有關[!DNL Data Connection]擴充功能所使用的擴充功能的功能變更和修正，請參閱&#x200B;**支援的服務更新**。
 
-請參閱[即將發行的版本](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/planning/schedule)，瞭解發行排程和支援。
+請參閱[即將發行的版本](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule)，瞭解發行排程和支援。
 
-請參閱開發人員檔案以[瞭解哪些Commerce版本支援此模組](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/product-availability)。
+請參閱開發人員檔案以[瞭解哪些Commerce版本支援此模組](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)。
 
 ## 支援的服務更新
 
 以下發行說明說明說明與[!DNL Data Connection]擴充功能所使用的擴充功能相關的功能變更和修正。
 
 +++支援的服務更新
+
+_2025年8月7日_
+
+![新](../assets/new.svg) — 透過3.3.0版本，您現在可以新增[自訂屬性至設定檔](custom-identities.md)。
 
 _2024年8月2日_
 
@@ -56,7 +60,7 @@ _2023年10月10日_
 ![修正](../assets/fix.svg) — 修正重新整理快取後，貨幣設定變更未反映在事件中的問題。
 ![修正](../assets/fix.svg) — 修正啟用非同步下單時，未顯示訂單確認訊息的錯誤。
 ![New](../assets/new.svg) — 已新增資料至「類別」檢視頁面上簡單產品的[addToRequisitionList](events.md#addtorequisitionlist)事件。
-![修正](../assets/fix.svg) — 修正從訂購確認頁面新增產品時，[addToRequisitionList](events.md#addtorequisitionlist)事件中`selectedOptions`資料的問題。
+![修正](../assets/fix.svg) — 修正從訂購確認頁面新增產品時，`selectedOptions`addToRequisitionList[事件中](events.md#addtorequisitionlist)資料的問題。
 ![新](../assets/new.svg) — 當產品從類別檢視頁面新增至請購單清單時，已將產品資料新增至[addToRequisitionList](events.md#addtorequisitionlist)事件。
 從產品檢視頁面將可設定的產品新增至請購單清單時，已新增![New](../assets/new.svg) — 已新增[addToRequisitionList](events.md#addtorequisitionlist)事件。
 ![新](../assets/new.svg) — 當產品數量增加和/或從請購單清單中減少時，新增[addToRequisitionList](events.md#addtorequisitionlist)和[removeFromRequisitionList](events.md#removefromrequisitionlist)事件。
@@ -82,7 +86,7 @@ _2022年10月12日_
 
 _2025年3月21日_
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"} Adobe Commerce 2.4.4或更新版本
 
 ![新](../assets/new.svg)已新增PHP 8.4支援。
 
@@ -90,7 +94,7 @@ _2025年3月21日_
 
 _2025年1月17日_
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"} Adobe Commerce 2.4.4或更新版本
 
 ![新](../assets/new.svg) — 已將[HIPAA就緒的延伸](hipaa-readiness.md)新增至[!DNL Data Connection]，讓商家可以與Experience Platform共用[!DNL Commerce]個後台事件資料並維持HIPAA合規性。
 ![修正](../assets/fix.svg) — 修正[!DNL Data Connection]擴充功能覆寫`eventForwarding`資料並為所有客戶設定`HIPAA`標幟的問題。 現在，擴充功能只會為HIPAA客戶設定標幟。
@@ -99,7 +103,7 @@ _2025年1月17日_
 
 _2024年10月7日_
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"} Adobe Commerce 2.4.4或更新版本
 
 ![新增](../assets/new.svg) — 已新增建立[自訂訂單屬性](custom-attributes.md)到後台資料的功能。
 ![新](../assets/new.svg) — 已新增新的[自訂訂單屬性](connect-data.md#data-customization)表格，協助您檢視[!DNL Commerce]中設定並傳送至Experience Platform的任何自訂屬性。
@@ -109,7 +113,7 @@ _2024年10月7日_
 
 _2024年8月27日_
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"} Adobe Commerce 2.4.4或更新版本
 
 ![新](../assets/new.svg) — 如果您正在參與Beta版，請確定您的`composer.json`檔案在根層級有下列專案： ` "minimum-stability": "beta"`。 此外，新增`composer require "magento/customers-connector: ^1.2.0"`以將客戶設定檔從您的Commerce執行個體傳送至SaaS。
 ![新](../assets/new.svg) — 此版本包含3.1.1、3.1.2、3.1.3和3.1.4中發行的修補程式。
@@ -118,7 +122,7 @@ _2024年8月27日_
 
 _2024年8月9日_
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"} Adobe Commerce 2.4.4或更新版本
 
 ![修正](../assets/fix.svg) — 已更新`experience-platform-connector`中繼包以移除其他未使用的資料匯出工具和索引子。
 
@@ -126,7 +130,7 @@ _2024年8月9日_
 
 _2024年7月22日_
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"} Adobe Commerce 2.4.4或更新版本
 
 ![修正](../assets/fix.svg) — 已更新`experience-platform-connector`中繼包以移除未使用的資料匯出工具和索引子。
 
@@ -134,7 +138,7 @@ _2024年7月22日_
 
 _2024年6月5日_
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"} Adobe Commerce 2.4.4或更新版本
 
 ![修正](../assets/fix.svg) — 修正起始[歷史同步](connect-data.md#specify-order-history-date-range)時使用錯誤日期格式的問題。
 ![修正](../assets/fix.svg) — 修正Adobe Commerce 2.4.7未傳送[startCheckout](events.md#startcheckout)事件的問題。
@@ -143,7 +147,7 @@ _2024年6月5日_
 
 _2024年4月4日_
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"} Adobe Commerce 2.4.4或更新版本
 
 ![新](../assets/new.svg) — 已新增所有[!DNL Data Connection]擴充功能對PHP 8.3的支援。
 ![新](../assets/new.svg) — 新增如何[整合](mobile-sdk-epc.md) Adobe Experience Platform Mobile SDK與Commerce的文章。
@@ -152,7 +156,7 @@ _2024年4月4日_
 
 _2024年3月4日_
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"} Adobe Commerce 2.4.4或更新版本
 
 ![新](../assets/new.svg) — 如果您正在參與Beta版，請確定您的`composer.json`檔案在根層級有下列專案： ` "minimum-stability": "beta"`。 此外，新增`composer require "magento/customers-connector: ^1.2.0"`以將客戶設定檔從您的Commerce執行個體傳送至SaaS。
 ![新](../assets/new.svg) — 已新增[新增自訂屬性](custom-attributes.md)的功能。
@@ -162,7 +166,7 @@ _2024年3月4日_
 
 _2023年11月16日_
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"} Adobe Commerce 2.4.4或更新版本
 
 ![新](../assets/new.svg) - Experience Platform聯結器已重新命名為[!DNL Data Connection]。
 ![修正](../assets/fix.svg) — 新增在Adobe IMS無法產生存取權杖時記錄錯誤回應的功能。
@@ -172,7 +176,7 @@ _2023年11月16日_
 
 _2023年10月10日_
 
-[!BADGE 相容性]{type=Informative tooltip="相容性"}
+[!BADGE 相容性]{type=Informative tooltip="相容性"} Adobe Commerce 2.4.4或更新版本
 
 此為主要版本發行版本。 [編輯](install.md#update-the-data-connection)您專案的根composer.json檔案。
 
@@ -184,7 +188,7 @@ _2023年10月10日_
 
 _2023年6月27日_
 
-[!BADGE 支援]{type=Informative tooltip="支援"}
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.3或更新版本
 
 ![新增](../assets/new.svg) — 已新增[關閉傳送店面活動](connect-data.md#data-collection)至Experience Platform的功能。
 ![修正](../assets/fix.svg) — 已更新內容安全性原則設定。
@@ -195,7 +199,7 @@ _2023年6月27日_
 
 _2023年6月13日_
 
-[!BADGE 支援]{type=Informative tooltip="支援"}
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.3或更新版本
 
 ![新](../assets/new.svg) - (Beta)已新增[傳送歷史訂單](connect-data.md#beta-send-historical-order-data)資料和狀態至Experience Platform的功能。
 
@@ -203,7 +207,7 @@ _2023年6月13日_
 
 _2023年3月30日_
 
-[!BADGE 支援]{type=Informative tooltip="支援"}
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.3或更新版本
 
 ![新](../assets/new.svg) — 已搭配`commerce-data-export`和`saas-export`相依性與`experience-platform-connector`副檔名。 之前，您必須分別安裝這些相依性。 這些相依性加上商家設定，可啟用伺服器端處理[後台事件](events-backoffice.md)。
 ![新增](../assets/new.svg) — 已新增名為[`orderShipmentCompleted`](events-backoffice.md#ordershipmentcompleted)的後台事件。
@@ -212,7 +216,7 @@ _2023年3月30日_
 
 _2023年2月28日_
 
-[!BADGE 支援]{type=Informative tooltip="支援"}
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.3或更新版本
 
 ![新](../assets/new.svg) — 已新增所有[!DNL Data Connection]擴充功能對PHP 8.2的支援。
 
@@ -220,7 +224,7 @@ _2023年2月28日_
 
 _2023年1月17日_
 
-[!BADGE 支援]{type=Informative tooltip="支援"}
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.3或更新版本
 
 ![新](../assets/new.svg) — 已更新[[!DNL Data Connection] 擴充功能管理員](connect-data.md)，以便您可以指定自己的AEP Web SDK (alloy)。
 ![Fix](../assets/fix.svg)設定推送至邊緣之任何資料的主要身分時，已變更為使用`identityMap`而非`personID`。
@@ -229,7 +233,7 @@ _2023年1月17日_
 
 _2022年11月10日_
 
-[!BADGE 支援]{type=Informative tooltip="支援"}
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.3或更新版本
 
 ![修正](../assets/fix.svg) — 現在Adobe Experience Platform內容僅在Storefront事件收集器和店面事件SDK成功載入後才會設定。
 
@@ -237,7 +241,7 @@ _2022年11月10日_
 
 _2022年10月12日_
 
-[!BADGE 支援]{type=Informative tooltip="支援"}
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.3或更新版本
 
 ![新](../assets/new.svg) — 新增在[連線](connect-data.md)您的AEP執行個體至Experience Platform時，指定您自己的Adobe Commerce Web SDK的功能。
 ![修正](../assets/fix.svg) — 更新資料流範圍需求，因此資料流ID的範圍必須設定為網站而非儲存檢閱。
@@ -246,6 +250,6 @@ _2022年10月12日_
 
 _2022年8月9日_
 
-[!BADGE 支援]{type=Informative tooltip="支援"}
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.3或更新版本
 
 ![新](../assets/new.svg) — 一般可用性版本。

@@ -1,18 +1,23 @@
 ---
-title: 新增自訂訂單屬性
+title: 新增自訂屬性至訂單
 description: 瞭解如何將自訂訂單屬性新增至您的後台資料，並將這些屬性傳送至Experience Platform。
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: dcd0b9e7-8d36-4bde-b226-ac19e83f00e4
+source-git-commit: 5b1387e18e059c938aca600cc31951a3f5289e7e
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '602'
 ht-degree: 2%
 
 ---
 
-# 新增自訂訂單屬性
+# 新增自訂屬性至訂單
 
 在本文中，您將瞭解如何新增自訂屬性至後台事件。 透過自訂屬性，您可以擷取豐富的資料深入解析來增強分析，並進一步為購物者建立個人化體驗。
+
+>[!NOTE]
+>
+>瞭解如何[新增自訂身分](custom-identities.md)至設定檔。
 
 自訂屬性支援兩個層級：
 
@@ -35,7 +40,7 @@ ht-degree: 2%
 
 ## 步驟1：建立目錄結構
 
-1. 導覽至[!DNL Commerce]安裝中的`app/code`目錄，並建立模組目錄。 例如： `Magento/AepCustomAttributes`。 此目錄包含自訂屬性所需的檔案。
+1. 導覽至`app/code`安裝中的[!DNL Commerce]目錄，並建立模組目錄。 例如： `Magento/AepCustomAttributes`。 此目錄包含自訂屬性所需的檔案。
 1. 在模組目錄中，建立名為`etc`的子目錄。 `etc`目錄包含`module.xml`、`query.xml`、`di.xml`和`et_schema.xml`檔案。
 
 ## 步驟2：定義相依性和設定版本
@@ -344,7 +349,7 @@ ComponentRegistrar::register(
 
 為了確保您的[!DNL Commerce]結構描述可以在Experience Platform中擷取新的自訂訂單屬性，您需要擴充結構描述以包含這些自訂欄位。
 
-若要瞭解如何擴充現有的XDM結構描述以包含這些自訂欄位，請參閱Experience Platform檔案中的[在UI中建立和編輯結構描述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups)一文。 租使用者ID欄位是動態產生的；但是，欄位結構應類似於Experience Platform檔案中提供的範例。
+若要瞭解如何擴充現有的XDM結構描述以包含這些自訂欄位，請參閱Experience Platform檔案中的[在UI中建立和編輯結構描述](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups)一文。 租使用者ID欄位是動態產生的；但是，欄位結構應類似於Experience Platform檔案中提供的範例。
 
 >[!IMPORTANT]
 >
@@ -364,7 +369,7 @@ ComponentRegistrar::register(
 
 ### 疑難排解
 
-如果您在&#x200B;**[!UICONTROL Data Customization]**&#x200B;標籤上看到訊息`No custom order attributes found.`，請確認下列事項：
+如果您在`No custom order attributes found.`標籤上看到訊息&#x200B;**[!UICONTROL Data Customization]**，請確認下列事項：
 
 1. 您已完成啟用[Data Connector擴充功能](overview.md#prerequisites)的必要條件。
 1. 您已設定[自訂訂單屬性](#add-custom-order-attributes)。
