@@ -349,7 +349,7 @@ ComponentRegistrar::register(
 
 為了確保您的[!DNL Commerce]結構描述可以在Experience Platform中擷取新的自訂訂單屬性，您需要擴充結構描述以包含這些自訂欄位。
 
-若要瞭解如何擴充現有的XDM結構描述以包含這些自訂欄位，請參閱Experience Platform檔案中的[在UI中建立和編輯結構描述](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups)一文。 租使用者ID欄位是動態產生的；但是，欄位結構應類似於Experience Platform檔案中提供的範例。
+若要瞭解如何擴充現有的XDM結構描述以包含這些自訂欄位，請參閱Experience Platform檔案中的[在UI中建立和編輯結構描述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups)一文。 租使用者ID欄位是動態產生的；但是，欄位結構應類似於Experience Platform檔案中提供的範例。
 
 >[!IMPORTANT]
 >

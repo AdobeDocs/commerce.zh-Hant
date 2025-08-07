@@ -37,7 +37,7 @@ ht-degree: 0%
 ## 步驟1：設定Experience Platform綱要
 
 1. 登入Adobe Experience Platform並選取您的Commerce結構描述。
-1. [在根層級新增自訂身分識別欄位](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas?lang=en#custom-fields-for-standard-groups)：
+1. [在根層級新增自訂身分識別欄位](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/ui/resources/schemas?lang=en#custom-fields-for-standard-groups)：
    - `hashedPID` （字串） — 主要身分雜湊
    - `hashedSID` （字串） — 次要身分雜湊
    - `primaryID` （字串） — 主要身分欄位名稱

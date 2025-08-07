@@ -15,13 +15,13 @@ ht-degree: 0%
 
 以下列出您在安裝[!DNL Data Connection]擴充功能時可用的Commerce行為事件。 這些事件收集的資料會傳送至Adobe Experience Platform。 您也可以建立[自訂事件](custom-events.md)，以立即收集未提供的其他資料。
 
-除了下列事件收集的資料之外，您也會取得Adobe Experience Platform Web SDK提供的[其他資料](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html)。
+除了下列事件收集的資料之外，您也會取得Adobe Experience Platform Web SDK提供的[其他資料](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html?lang=zh-Hant)。
 
 行為事件會在購物者瀏覽您的網站時，從他們那裡收集匿名的行為資料。 您可以使用這些事件收集到的資料，建立以特定購物者集為目標的促銷活動和行銷活動。
 
 >[!NOTE]
 >
->所有行為事件都包含[`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html)欄位，其中包括購物者的電子郵件地址（可用時）和ECID。
+>所有行為事件都包含[`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html?lang=zh-Hant)欄位，其中包括購物者的電子郵件地址（可用時）和ECID。
 
 ## 店面活動
 
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 | 欄位 | 說明 |
 |---|---|
-| `channel` | 包含資料來源的相關資訊。 `_id`和`_type`都包含[名稱空間值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html)。 |
+| `channel` | 包含資料來源的相關資訊。 `_id`和`_type`都包含[名稱空間值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=zh-Hant)。 |
 | `channel._id` | 管道的唯一識別碼，例如`"https://ns.adobe.com/xdm/channels/web"`。 |
 | `channel._type` | 識別管道資料的來源，例如`"https://ns.adobe.com/xdm/channel-types/web"`。 |
 | `commerce.productListAdds` | 表示是否已將產品新增至購物車。 值`1`表示已新增產品。 |
@@ -73,7 +73,7 @@ ht-degree: 0%
 
 | 欄位 | 說明 |
 |---|---|
-| `channel` | 包含資料來源的相關資訊。 `_id`和`_type`都包含[名稱空間值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html)。 |
+| `channel` | 包含資料來源的相關資訊。 `_id`和`_type`都包含[名稱空間值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=zh-Hant)。 |
 | `channel._id` | 管道的唯一識別碼，例如`"https://ns.adobe.com/xdm/channels/web"`。 |
 | `channel._type` | 識別管道資料的來源，例如`"https://ns.adobe.com/xdm/channel-types/web"`。 |
 | `commerce.productListOpens` | 指出是否已建立購物車。 值`1`表示已建立購物車。 |
@@ -107,7 +107,7 @@ ht-degree: 0%
 
 | 欄位 | 說明 |
 |---|---|
-| `channel` | 包含資料來源的相關資訊。 `_id`和`_type`都包含[名稱空間值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html)。 |
+| `channel` | 包含資料來源的相關資訊。 `_id`和`_type`都包含[名稱空間值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=zh-Hant)。 |
 | `channel._id` | 管道的唯一識別碼，例如`"https://ns.adobe.com/xdm/channels/web"`。 |
 | `channel._type` | 識別管道資料的來源，例如`"https://ns.adobe.com/xdm/channel-types/web"`。 |
 | `commerce.productListRemovals` | 表示產品是否已從購物車移除。 值`1`表示產品已從購物車中移除。 |
@@ -141,7 +141,7 @@ ht-degree: 0%
 
 | 欄位 | 說明 |
 |---|---|
-| `channel` | 包含資料來源的相關資訊。 `_id`和`_type`都包含[名稱空間值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html)。 |
+| `channel` | 包含資料來源的相關資訊。 `_id`和`_type`都包含[名稱空間值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=zh-Hant)。 |
 | `channel._id` | 管道的唯一識別碼，例如`"https://ns.adobe.com/xdm/channels/web"`。 |
 | `channel._type` | 識別管道資料的來源，例如`"https://ns.adobe.com/xdm/channel-types/web"`。 |
 | `commerce.productListViews` | 表示是否已檢視產品清單。 |
@@ -177,7 +177,7 @@ ht-degree: 0%
 
 | 欄位 | 說明 |
 |---|---|
-| `channel` | 包含資料來源的相關資訊。 `_id`和`_type`都包含[名稱空間值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html)。 |
+| `channel` | 包含資料來源的相關資訊。 `_id`和`_type`都包含[名稱空間值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=zh-Hant)。 |
 | `channel._id` | 管道的唯一識別碼，例如`"https://ns.adobe.com/xdm/channels/web"`。 |
 | `channel._type` | 識別管道資料的來源，例如`"https://ns.adobe.com/xdm/channel-types/web"`。 |
 | `web.webPageDetails.pageViews` | 指出是否已載入頁面。 `value`的`1`表示頁面已載入。 |
@@ -202,7 +202,7 @@ ht-degree: 0%
 
 | 欄位 | 說明 |
 |---|---|
-| `channel` | 包含資料來源的相關資訊。 `_id`和`_type`都包含[名稱空間值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html)。 |
+| `channel` | 包含資料來源的相關資訊。 `_id`和`_type`都包含[名稱空間值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=zh-Hant)。 |
 | `channel._id` | 管道的唯一識別碼，例如`"https://ns.adobe.com/xdm/channels/web"`。 |
 | `channel._type` | 識別管道資料的來源，例如`"https://ns.adobe.com/xdm/channel-types/web"`。 |
 | `commerce.productViews` | 表示是否已檢視產品。 |
@@ -235,7 +235,7 @@ ht-degree: 0%
 
 | 欄位 | 說明 |
 |---|---|
-| `channel` | 包含資料來源的相關資訊。 `_id`和`_type`都包含[名稱空間值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html)。 |
+| `channel` | 包含資料來源的相關資訊。 `_id`和`_type`都包含[名稱空間值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=zh-Hant)。 |
 | `channel._id` | 管道的唯一識別碼，例如`"https://ns.adobe.com/xdm/channels/web"`。 |
 | `channel._type` | 識別管道資料的來源，例如`"https://ns.adobe.com/xdm/channel-types/web"`。 |
 | `commerce.checkouts` | 表示在結帳過程中是否發生動作。 |
@@ -269,7 +269,7 @@ ht-degree: 0%
 
 | 欄位 | 說明 |
 |---|---|
-| `channel` | 包含資料來源的相關資訊。 `_id`和`_type`都包含[名稱空間值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html)。 |
+| `channel` | 包含資料來源的相關資訊。 `_id`和`_type`都包含[名稱空間值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=zh-Hant)。 |
 | `channel._id` | 管道的唯一識別碼，例如`"https://ns.adobe.com/xdm/channels/web"`。 |
 | `channel._type` | 識別管道資料的來源，例如`"https://ns.adobe.com/xdm/channel-types/web"`。 |
 | `commerce.purchases` | 表示是否已接受訂單。 |
@@ -329,7 +329,7 @@ ht-degree: 0%
 
 | 欄位 | 說明 |
 |---|---|
-| `channel` | 包含資料來源的相關資訊。 `_id`和`_type`都包含[名稱空間值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html)。 |
+| `channel` | 包含資料來源的相關資訊。 `_id`和`_type`都包含[名稱空間值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=zh-Hant)。 |
 | `channel._id` | 管道的唯一識別碼，例如`"https://ns.adobe.com/xdm/channels/web"`。 |
 | `channel._type` | 識別管道資料的來源，例如`"https://ns.adobe.com/xdm/channel-types/web"`。 |
 | `person` | 個別執行者、聯絡人或擁有者。 |
@@ -362,7 +362,7 @@ ht-degree: 0%
 
 | 欄位 | 說明 |
 |---|---|
-| `channel` | 包含資料來源的相關資訊。 `_id`和`_type`都包含[名稱空間值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html)。 |
+| `channel` | 包含資料來源的相關資訊。 `_id`和`_type`都包含[名稱空間值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=zh-Hant)。 |
 | `channel._id` | 管道的唯一識別碼，例如`"https://ns.adobe.com/xdm/channels/web"`。 |
 | `channel._type` | 識別管道資料的來源，例如`"https://ns.adobe.com/xdm/channel-types/web"`。 |
 | `userAccount` | 表示任何熟客方案細節、偏好設定、登入流程和其他帳戶偏好設定。 |
@@ -389,7 +389,7 @@ ht-degree: 0%
 
 | 欄位 | 說明 |
 |---|---|
-| `channel` | 包含資料來源的相關資訊。 `_id`和`_type`都包含[名稱空間值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html)。 |
+| `channel` | 包含資料來源的相關資訊。 `_id`和`_type`都包含[名稱空間值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=zh-Hant)。 |
 | `channel._id` | 管道的唯一識別碼，例如`"https://ns.adobe.com/xdm/channels/web"`。 |
 | `channel._type` | 識別管道資料的來源，例如`"https://ns.adobe.com/xdm/channel-types/web"`。 |
 | `person` | 個別執行者、聯絡人或擁有者。 |
@@ -422,7 +422,7 @@ ht-degree: 0%
 
 | 欄位 | 說明 |
 |---|---|
-| `channel` | 包含資料來源的相關資訊。 `_id`和`_type`都包含[名稱空間值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html)。 |
+| `channel` | 包含資料來源的相關資訊。 `_id`和`_type`都包含[名稱空間值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=zh-Hant)。 |
 | `channel._id` | 管道的唯一識別碼，例如`"https://ns.adobe.com/xdm/channels/web"`。 |
 | `channel._type` | 識別管道資料的來源，例如`"https://ns.adobe.com/xdm/channel-types/web"`。 |
 | `person` | 個別執行者、聯絡人或擁有者。 |
@@ -461,7 +461,7 @@ ht-degree: 0%
 
 | 欄位 | 說明 |
 |---|---|
-| `channel` | 包含資料來源的相關資訊。 `_id`和`_type`都包含[名稱空間值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html)。 |
+| `channel` | 包含資料來源的相關資訊。 `_id`和`_type`都包含[名稱空間值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=zh-Hant)。 |
 | `channel._id` | 管道的唯一識別碼，例如`"https://ns.adobe.com/xdm/channels/web"`。 |
 | `channel._type` | 識別管道資料的來源，例如`"https://ns.adobe.com/xdm/channel-types/web"`。 |
 | `searchRequest` | 表示是否已傳送搜尋要求。 |
@@ -498,7 +498,7 @@ ht-degree: 0%
 
 | 欄位 | 說明 |
 |---|---|
-| `channel` | 包含資料來源的相關資訊。 `_id`和`_type`都包含[名稱空間值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html)。 |
+| `channel` | 包含資料來源的相關資訊。 `_id`和`_type`都包含[名稱空間值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=zh-Hant)。 |
 | `channel._id` | 管道的唯一識別碼，例如`"https://ns.adobe.com/xdm/channels/web"`。 |
 | `channel._type` | 識別管道資料的來源，例如`"https://ns.adobe.com/xdm/channel-types/web"`。 |
 | `searchResponse` | 表示是否已收到搜尋回應。 |
@@ -520,7 +520,7 @@ ht-degree: 0%
 
 Adobe Commerce的![B2B](../assets/b2b.svg)針對B2B商家，您必須[安裝](install.md#install-the-b2b-extension) `experience-platform-connector-b2b`擴充功能才能存取這些事件。
 
-B2B事件包含[請購單清單](https://experienceleague.adobe.com/docs/commerce-admin/b2b/requisition-lists/requisition-lists.html)資訊，例如，請購單清單是否已建立、新增或刪除。 透過追蹤請購單清單的特定事件，您可以檢視客戶經常購買哪些產品，並根據該資料建立行銷活動。
+B2B事件包含[請購單清單](https://experienceleague.adobe.com/docs/commerce-admin/b2b/requisition-lists/requisition-lists.html?lang=zh-Hant)資訊，例如，請購單清單是否已建立、新增或刪除。 透過追蹤請購單清單的特定事件，您可以檢視客戶經常購買哪些產品，並根據該資料建立行銷活動。
 
 ### createRequisitionList
 
@@ -534,7 +534,7 @@ B2B事件包含[請購單清單](https://experienceleague.adobe.com/docs/commerc
 
 | 欄位 | 說明 |
 |---|---|
-| `channel` | 包含資料來源的相關資訊。 `_id`和`_type`都包含[名稱空間值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html)。 |
+| `channel` | 包含資料來源的相關資訊。 `_id`和`_type`都包含[名稱空間值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=zh-Hant)。 |
 | `channel._id` | 管道的唯一識別碼，例如`"https://ns.adobe.com/xdm/channels/web"`。 |
 | `channel._type` | 識別管道資料的來源，例如`"https://ns.adobe.com/xdm/channel-types/web"`。 |
 | `commerce.requisitionListOpens` | 指示初始化新的請購單清單。 |
@@ -560,7 +560,7 @@ B2B事件包含[請購單清單](https://experienceleague.adobe.com/docs/commerc
 
 | 欄位 | 說明 |
 |---|---|
-| `channel` | 包含資料來源的相關資訊。 `_id`和`_type`都包含[名稱空間值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html)。 |
+| `channel` | 包含資料來源的相關資訊。 `_id`和`_type`都包含[名稱空間值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=zh-Hant)。 |
 | `channel._id` | 管道的唯一識別碼，例如`"https://ns.adobe.com/xdm/channels/web"`。 |
 | `channel._type` | 識別管道資料的來源，例如`"https://ns.adobe.com/xdm/channel-types/web"`。 |
 | `commerce.requisitionListAdds` | 指示新增一或多個產品至請購單清單。 |
@@ -596,7 +596,7 @@ B2B事件包含[請購單清單](https://experienceleague.adobe.com/docs/commerc
 
 | 欄位 | 說明 |
 |---|---|
-| `channel` | 包含資料來源的相關資訊。 `_id`和`_type`都包含[名稱空間值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html)。 |
+| `channel` | 包含資料來源的相關資訊。 `_id`和`_type`都包含[名稱空間值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=zh-Hant)。 |
 | `channel._id` | 管道的唯一識別碼，例如`"https://ns.adobe.com/xdm/channels/web"`。 |
 | `channel._type` | 識別管道資料的來源，例如`"https://ns.adobe.com/xdm/channel-types/web"`。 |
 | `commerce.requsitionListRemovals` | 表示從請購單清單移除一或多個產品。 |
@@ -632,7 +632,7 @@ B2B事件包含[請購單清單](https://experienceleague.adobe.com/docs/commerc
 
 | 欄位 | 說明 |
 |---|---|
-| `channel` | 包含資料來源的相關資訊。 `_id`和`_type`都包含[名稱空間值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html)。 |
+| `channel` | 包含資料來源的相關資訊。 `_id`和`_type`都包含[名稱空間值](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html?lang=zh-Hant)。 |
 | `channel._id` | 管道的唯一識別碼，例如`"https://ns.adobe.com/xdm/channels/web"`。 |
 | `channel._type` | 識別管道資料的來源，例如`"https://ns.adobe.com/xdm/channel-types/web"`。 |
 | `commerce.requisitionListDeletes` | 指出已刪除請購單清單。 |
