@@ -3,11 +3,11 @@ title: 開始使用
 description: 瞭解如何開始使用 [!DNL Adobe Commerce Optimizer]。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: b0ce0a399e89baaeabe87c53d069df866378f8c8
+source-git-commit: ee11900f0ddf77a8cb7df7d5ae378924bdf1f2d7
 workflow-type: tm+mt
-source-wordcount: '867'
+source-wordcount: '977'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 - 具有&#x200B;**權益的** Adobe Experience Cloud帳戶[!DNL Adobe Commerce Optimizer]
 - **組織管理員存取權**&#x200B;以建立執行個體和管理使用者
-- **GitHub帳戶** （用於載入範例資料和店面開發）
+- **GitHub帳戶**，用於載入範例資料和店面開發
 - **基本瞭解**&#x200B;電子商務概念
 
 ## 快速入門手冊
@@ -76,6 +76,7 @@ ht-degree: 0%
 |---|---|---|
 | **管理使用者** | 新增使用者、開發人員和管理員 | [使用者管理](./user-management.md) |
 | **建立執行個體** | 設定沙箱和生產環境 | [建立執行個體](#create-an-instance) |
+| **管理執行個體** | 檢查狀態、更新執行個體名稱和說明，並取得應用程式和API存取的金鑰URL | [管理執行個體](#manage-instances) |
 | **設定存取權** | 設定目錄檢視和原則 | [目錄檢視](./setup/catalog-view.md) |
 
 ### 開發人員工作
@@ -100,36 +101,61 @@ ht-degree: 0%
 
 ## 管理執行個體
 
+從Commerce Cloud Manager管理執行個體。
+
+>[!NOTE]
+>
+>並非所有Adobe Commerce Optimizer使用者都能存取Cloud Manager。 存取權取決於指派給使用者帳戶的角色和許可權。
+
 1. 登入[Adobe Experience Cloud](https://experience.adobe.com/)。
 
 1. 開啟Commerce Cloud Manager：
+
    - 在&#x200B;**快速存取**&#x200B;底下，按一下&#x200B;**Commerce**。
    - 檢視您可用的執行個體。
 
-1. 存取您的執行個體：
+### 搜尋和篩選執行個體
 
-   按一下執行個體名稱以開啟[!DNL Adobe Commerce Optimizer]應用程式。 在應用程式中，您可以使用頁面頂端的下拉式清單，在不同的[!DNL Adobe Commerce Optimizer]執行個體之間切換：
+登入後，控制面板會顯示組織中可用的所有Commerce產品例項。
+「產品」欄會指出為哪個Commerce應用程式布建了執行個體。
+
+使用「篩選」和「搜尋」選項來快速尋找特定執行個體。 您可以依建立的資料、區域、建立者、產品型別、環境和狀態來搜尋。
+
+### 存取[!DNL Adobe Commerce Optimizer]應用程式
+
+應用程式開啟後，您就可以輕鬆地在沙箱和生產等環境之間切換，以便檢視每個環境的資料和設定，而無需返回Commerce Cloud Manager。
+
+1. 在Commerce Cloud管理員中，按一下執行個體名稱以開啟[!DNL Adobe Commerce Optimizer]應用程式。
+
+1. 在不離開應用程式的情況下在[!DNL Adobe Commerce Optimizer]個執行個體之間切換。
+
+   執行處理下拉式清單列出組織中可用的所有Optimizer執行處理。 選取要檢視的執行個體。
 
    ![執行個體切換器](./assets/context-switcher.png){zoomable="yes"}
 
-   顯示的所有執行個體都屬於相同組織。 您可以在執行個體之間切換以檢視每個執行個體的資料和設定，例如在沙箱和生產環境之間。
+### 取得執行個體詳細資訊**
 
-1. 取得執行個體詳細資訊：
-   - 按一下執行個體名稱旁的資訊圖示。
-   - 記下GraphQL端點、資料擷取的目錄服務端點以及執行個體ID （也稱為`tenant ID`）。
+按一下執行處理名稱旁的資訊圖示，即可檢視執行處理的詳細資訊。
 
-   ![執行個體詳細資料](./assets/aco-instance-details.png){width="60%" zoomable="yes"}
+![執行個體詳細資料](./assets/aco-instance-details.png){width="60%" zoomable="yes"}
 
-   端點與例項ID （租使用者ID）詳細資訊是整合前端應用程式和後端系統所必需。 此處也提供存取[!DNL Adobe Commerce Optimizer]應用程式的URL。
+請注意下列重要資訊：
 
-   並非所有Adobe Commerce Optimizer使用者都能存取Cloud Manager和執行個體詳細資訊。 存取權取決於指派給使用者帳戶的角色和許可權。 如果您沒有存取權，請聯絡您的組織管理員以取得執行個體詳細資訊。
+- **GraphQL端點**，以使用銷售API擷取Commerce目錄資料
+- 使用REST API進行資料擷取的&#x200B;**目錄服務端點**
+- **Commerce Optimizer URL**&#x200B;以存取[!DNL Adobe Commerce Optimizer]應用程式
+- **執行個體識別碼**&#x200B;識別執行個體的唯一租使用者識別碼
 
-1. 編輯執行處理名稱和描述：
-   - 按一下執行個體名稱旁的&#x200B;**編輯**&#x200B;圖示。
-   - 視需要更新名稱和說明。
-   - 按一下&#x200B;**儲存**。
+需要端點和執行個體ID詳細資訊，才能設定API存取權並與前端應用程式和後端系統整合。
+如果您無法存取執行個體詳細資訊，請聯絡您的組織管理員以取得值。
 
-   您也可以使用搜尋和篩選選項來快速尋找特定執行個體。
+### 編輯執行個體名稱和說明
+
+視需要更新執行個體名稱和說明。
+
+1. 按一下執行個體名稱旁的&#x200B;**編輯**&#x200B;圖示。
+1. 視需要更新&#x200B;**執行個體名稱**&#x200B;和&#x200B;**描述**。
+1. 按一下&#x200B;**儲存**。
 
 ## 新增範例資料
 
@@ -186,5 +212,5 @@ Adobe提供GitHub存放庫和範例資料與工具，協助您學習及測試[!D
 ### 取得協助
 
 - **開發人員資源**： [開發人員檔案](https://developer.adobe.com/commerce/services/optimizer/)
-- **店面資源**： [Commerce店面檔案](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant)
-- **支援**： [Adobe Commerce支援資源](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/overview)
+- **店面資源**： [Commerce店面檔案](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **支援**： [Adobe Commerce支援資源](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
