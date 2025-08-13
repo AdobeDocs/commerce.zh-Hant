@@ -3,11 +3,11 @@ title: 目錄檢視
 description: 瞭解什麼是目錄檢視，以及如何建立檢視，以依業務結構、原則和定價組織您的產品目錄。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
-source-git-commit: 2e47c770d204c9c7f959893704dd0ebcc6ac792a
+source-git-commit: ff53f84b4ab7cfb219aae0e29cc35b23d0f6601b
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '951'
 ht-degree: 0%
 
 ---
@@ -63,6 +63,43 @@ ht-degree: 0%
 目錄檢視頁面會更新以顯示新的目錄檢視&#x200B;。
 
 完成這些步驟後，目錄檢視現在會設定為根據您選取的來源和原則顯示產品和定價。
+
+## 管理目錄檢視
+
+按照這些指示更新或檢視現有目錄檢視的屬性。
+
+### 編輯目錄檢視
+
+1. 在&#x200B;*目錄檢視*&#x200B;工作區上，在您要編輯的格線中找到目錄檢視，然後按一下&#x200B;**...**&#x200B;以開啟動作功能表。
+1. 按一下&#x200B;**編輯**&#x200B;以存取目錄檢視編輯器。
+1. 視需要更新名稱、型錄來源、政策及價格簿資訊。
+1. 儲存變更。
+
+### 刪除目錄檢視
+
+1. 在&#x200B;*目錄檢視*&#x200B;工作區中，在您要編輯的格線中找到目錄檢視，然後按一下&#x200B;**...**&#x200B;以開啟動作功能表。
+1. 按一下&#x200B;**刪除**。
+
+   當確認對話方塊出現時，按一下&#x200B;**[!UICONTROL Delete]**。
+
+### 檢視詳細資料
+
+此選項提供在&#x200B;*目錄檢視*&#x200B;表格中時快速檢視所有目錄檢視引數的方法。
+
+在&#x200B;*目錄檢視*&#x200B;工作區上，在您要編輯的格線中找到目錄檢視，然後按一下![資訊圖示](../assets/info-icon.png)。
+
+![目錄檢視詳細資料](../assets/catalog-view-details.png)
+
+您可以在此處檢視目錄檢視設定詳細資料，例如：
+
+- 檢視ID
+- 名稱
+- 目錄來源
+- 原則
+- 建立日期
+- 資料已修改
+
+當您設定店面或使用資料擷取API時，需要用到其中的一些組態設定。
 
 ## 架構概述
 
