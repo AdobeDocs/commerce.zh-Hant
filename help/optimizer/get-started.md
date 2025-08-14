@@ -3,11 +3,11 @@ title: 開始使用
 description: 瞭解如何開始使用 [!DNL Adobe Commerce Optimizer]。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: 87fbd979b0660af1bf3a8786eb1e1f5f79cea043
+source-git-commit: 5cb7dc4d2bd1b9bd43d4a858e4814ca803a49027
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '995'
 ht-degree: 0%
 
 ---
@@ -119,11 +119,13 @@ ht-degree: 0%
 登入後，控制面板會顯示組織中可用的所有Commerce產品例項。
 「產品」欄會指出為哪個Commerce應用程式布建了執行個體。
 
-使用「篩選」和「搜尋」選項來快速尋找特定執行個體。 您可以依建立的資料、區域、建立者、產品型別、環境和狀態來搜尋。
+![執行個體搜尋和篩選器](./assets/search-filter-instances.png){zoomable="yes"}
+
+使用篩選和搜尋工具，依建立日期、區域、建立者、產品型別、環境或狀態快速尋找特定例項。
 
 ### 存取[!DNL Adobe Commerce Optimizer]應用程式
 
-應用程式開啟後，您就可以輕鬆地在沙箱和生產等環境之間切換，以便檢視每個環境的資料和設定，而無需返回Commerce Cloud Manager。
+應用程式開啟後，可在沙箱和生產環境等環境之間輕鬆切換，以便檢視每個環境的資料和設定，而無需返回Commerce Cloud Manager。
 
 1. 在Commerce Cloud管理員中，按一下執行個體名稱以開啟[!DNL Adobe Commerce Optimizer]應用程式。
 
@@ -146,8 +148,11 @@ ht-degree: 0%
 - **Commerce Optimizer URL**&#x200B;以存取[!DNL Adobe Commerce Optimizer]應用程式
 - **執行個體識別碼**&#x200B;識別執行個體的唯一租使用者識別碼
 
-需要端點和執行個體ID詳細資訊，才能設定API存取權並與前端應用程式和後端系統整合。
-如果您無法存取執行個體詳細資訊，請聯絡您的組織管理員以取得值。
+如果您是開發人員，您需要這些詳細資料來設定您的開發環境並連線到[!DNL Adobe Commerce Optimizer] API。
+
+>[!NOTE]
+>
+>若要存取執行個體詳細資訊，您必須在Adobe IMS組織中擁有必要許可權。 如果您看不到執行個體詳細資訊或無法存取應用程式，請聯絡您的組織管理員。
 
 ### 編輯執行個體名稱和說明
 
@@ -212,6 +217,6 @@ Adobe提供GitHub存放庫和範例資料與工具，協助您學習及測試[!D
 ### 取得協助
 
 - **開發人員資源**： [開發人員檔案](https://developer.adobe.com/commerce/services/optimizer/)
-- **店面資源**： [Commerce店面檔案](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant)
-- **教學課程**： [Commerce Optimizer教學課程](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
-- **支援**： [Adobe Commerce支援資源](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/overview)
+- **店面資源**： [Commerce店面檔案](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **教學課程**： [Commerce Optimizer教學課程](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
+- **支援**： [Adobe Commerce支援資源](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)

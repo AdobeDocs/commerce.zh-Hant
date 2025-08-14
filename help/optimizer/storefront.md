@@ -2,29 +2,30 @@
 title: 設定您的店面
 description: 瞭解如何設定您的 [!DNL Adobe Commerce Optimizer] 店面。
 role: Developer
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
-source-git-commit: 7ff78711972cbd73fc75f7523d8ac734081dbe10
+source-git-commit: 475706df971e75091ee72e89d64088fa56aec4dd
 workflow-type: tm+mt
-source-wordcount: '1828'
+source-wordcount: '1858'
 ht-degree: 0%
 
 ---
 
 # 設定您的店面
 
->[!NOTE]
+本教學課程提供設定及使用[Adobe Commerce Storefront (由Edge Delivery Services提供技術支援)](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/)的詳細指示，以建立效能、可擴充且安全的Commerce Storefront （由您[!DNL Adobe Commerce Optimizer]執行個體的資料提供技術支援）。
+
+
+>[!TIP]
 >
->本檔案說明提早存取開發中的產品，並未反映所有可供一般使用的功能。
-
-本教學課程示範如何設定及使用[Adobe Commerce Storefront (由Edge Delivery Services提供技術支援)](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=zh-Hant)，以建立效能、可擴充且安全的Commerce Storefront （由您[!DNL Adobe Commerce Optimizer]執行個體的資料提供技術支援）。
-
+>使用網站建立者工具來設定您的店面程式碼存放庫和檔案製作環境，快速追蹤店面設定流程
+>>自動。 接著，您可以使用這些指示瞭解店面的建立方式，並深入瞭解可用的元件。
 
 ## 先決條件
 
 * 確保您有可建立存放庫並設定為本機開發的GitHub帳戶(github.com)。
 
-* 檢閱Adobe Edge Delivery Services店面檔案中的[概觀](https://experienceleague.adobe.com/developer/commerce/storefront/get-started?lang=zh-Hant)，瞭解在Adobe Commerce Edge Delivery Services上開發Commerce店面的概念和工作流程。
+* 檢閱Adobe Edge Delivery Services店面檔案中的[概觀](https://experienceleague.adobe.com/developer/commerce/storefront/get-started)，瞭解在Adobe Commerce Edge Delivery Services上開發Commerce店面的概念和工作流程。
 * 設定您的開發環境
 
 
@@ -60,7 +61,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->適用於Adobe Commerce [!DNL Adobe Commerce Optimizer]的[App Builder和適用於Adobe Developer App Builder](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)的[API Mesh可提供擴充和自訂](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/adobe-developer-app-builder/api-mesh/getting-started-api-mesh)解決方案的其他資源。 如需存取和使用資訊，請聯絡您的Adobe客戶代表。
+>適用於Adobe Commerce [!DNL Adobe Commerce Optimizer]的[App Builder和適用於Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)的[API Mesh可提供擴充和自訂](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/api-mesh/getting-started-api-mesh)解決方案的其他資源。 如需存取和使用資訊，請聯絡您的Adobe客戶代表。
 
 #### 安裝Sidekick
 
@@ -68,7 +69,7 @@ ht-degree: 0%
 
 ## 建立您的店面
 
-您為[!DNL Adobe Commerce Optimizer]專案建立的店面使用Edge Delivery Services店面樣板上的自訂版Adobe Commerce。 樣板是一組檔案和資料夾，提供店面開發的起點。 此設定程式不同於Edge Delivery Services店面[上](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=zh-Hant)Adobe Commerce的標準設定程式。
+您為[!DNL Adobe Commerce Optimizer]專案建立的店面使用Edge Delivery Services店面樣板上的自訂版Adobe Commerce。 樣板是一組檔案和資料夾，提供店面開發的起點。 此設定程式不同於Edge Delivery Services店面[上](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/)Adobe Commerce的標準設定程式。
 
 >[!NOTE]
 >
@@ -107,7 +108,6 @@ ht-degree: 0%
 1. 使用下列詳細資料完成設定表單：
 
    * **存放庫範本**—`hlxsites/aem-boilerplate-commerce` （預設）。
-   * **包含所有分支** — 選取包含所有分支的選項。
    * **所有者** — 您的組織或帳戶（必要）。
    * **存放庫名稱** — 您的新存放庫的唯一名稱（必填）。
    * **描述** — 存放庫的簡短描述（選擇性）。
@@ -145,12 +145,6 @@ ht-degree: 0%
 
 1. 在終端機或IDE中開啟存放庫。
 
-1. 檢視`aco`分支
-
-   ```bash
-   git checkout aco
-   ```
-
 1. 將`default-fstab.yaml`檔案複製到`fstab.yaml`以建立您的設定檔。
 
    ```bash
@@ -159,7 +153,7 @@ ht-degree: 0%
 
 1. 更新店面設定檔案中的掛接點，以指向您的內容URL。
 
-   1. 開啟[fstab.yaml](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=zh-Hant#vocabulary)設定檔。
+   1. 開啟[fstab.yaml](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/#vocabulary)設定檔。
 
       ```yaml
       mountpoints:
@@ -192,47 +186,39 @@ ht-degree: 0%
 >
 >請確定您已在瀏覽器中安裝[Sidekick擴充功能](https://www.aem.live/docs/sidekick#installation)。
 
-1. 開啟`tools/sidekick/config.json`檔案。
+1. 建立新目錄`tools/sidekick`。
+
+   ```shell
+   mkdir tools/sidekick
+   ```
+
+1. 將根目錄中的`demo-sidekick.json`檔案複製到`tools/sidekick`目錄，並將其重新命名為`config.json`。
+
+   ```shell
+   cp demo-sidekick.json tools/sidekick/config.json
+   ```
+
+1. 自訂網站的Sidekick設定。
+
+   從`tools/sidekick/`目錄，編輯`config.json`檔案。
 
    +++Sidekick設定檔
 
    ```json
    {
-     "project": "Boilerplate",
-     "plugins": [
-       {
-         "id": "cif",
-         "title": "Commerce",
-         "environments": [
-           "edit"
-         ],
-         "url": "https://main--{SITE}--{ORG}.aem.live/tools/picker/dist/index.html",
-         "isPalette": true,
-         "paletteRect": "top: 54px; left: 5px; bottom: 5px; width: 300px; height: calc(100% - 59px); border-radius: var(--hlx-sk-button-border-radius); overflow: hidden; resize: horizontal;"
-       },
-       {
-         "id": "personalisation",
-         "title": "Personalisation",
-         "environments": [
-           "edit"
-         ],
-         "url": "https://main--{SITE}--{ORG}.aem.live/tools/segments/dist/index.html",
-         "isPalette": true,
-         "paletteRect": "top: 54px; left: 5px; bottom: 5px; width: 300px; height: calc(100% - 59px); border-radius: var(--hlx-sk-button-border-radius); overflow: hidden; resize: horizontal;"
-       }
-     ]
+     "project": "My Project",
+     "editUrlLabel": "Document Authoring",
+     "editUrlPattern": "https://da.live/edit#/{{org}}/{{site}}{{pathname}}"
    }
    ```
 
-   如需詳細資訊，請參閱[Sidekick資料庫檔案](https://www.aem.live/docs/sidekick-library)。
-
-   +++
-
 1. 以您GitHub存放庫的值更新`url`機碼值。
 
-   * 將`{ORG}`字串取代為您的存放庫的組織或使用者名稱。
+   * 將`{{ORG}}`字串取代為您的存放庫的組織或使用者名稱。
 
-   * 以存放庫名稱取代`{SITE}`字串
+   * 以存放庫名稱取代`{{SITE}}`字串。
+
+   * `pathname`變數已由系統填入。
 
    +++更新組態檔的範例
 
@@ -240,29 +226,9 @@ ht-degree: 0%
 
    ```json
    {
-     "project": "Boilerplate",
-     "plugins": [
-       {
-         "id": "cif",
-         "title": "Commerce",
-         "environments": [
-           "edit"
-         ],
-         "url": "https://main--aco-storefront--early-adopter.aem.live/tools/picker/dist/index.html",
-         "isPalette": true,
-         "paletteRect": "top: 54px; left: 5px; bottom: 5px; width: 300px; height: calc(100% - 59px); border-radius: var(--hlx-sk-button-border-radius); overflow: hidden; resize: horizontal;"
-       },
-       {
-         "id": "personalisation",
-         "title": "Personalisation",
-         "environments": [
-           "edit"
-         ],
-         "url": "https://main--aco-storefront--early-adopter.aem.live/tools/segments/dist/index.html",
-         "isPalette": true,
-         "paletteRect": "top: 54px; left: 5px; bottom: 5px; width: 300px; height: calc(100% - 59px); border-radius: var(--hlx-sk-button-border-radius); overflow: hidden; resize: horizontal;"
-       }
-     ]
+     "project": "My Project",
+     "editUrlLabel": "Document Authoring",
+     "editUrlPattern": "https://da.live/edit#/aco-storefront/early-adopter{{pathname}}"
    }
    ```
 
@@ -284,8 +250,8 @@ ht-degree: 0%
 
    ```bash
    git status
-   On branch aco
-   Your branch is up to date with 'origin/aco'.
+   On branch main
+   Your branch is up to date with 'origin/main'.
    
    Changes to be committed:
     (use "git restore --staged <file>..." to unstage)
@@ -293,16 +259,16 @@ ht-degree: 0%
         modified:   tools/sidekick/config.json
    ```
 
-1. 認可對`aco`分支的變更。
+1. 提交變更。
 
    ```bash
    git commit -m "Update storefront boilerplate for Adobe Commerce Optimizer"
    ```
 
-1. 以`main`分支上的變更覆寫`aco`分支上的樣版。
+1. 套用您的變更。
 
    ```bash
-   git push origin aco:main -f
+   git push
    ```
 
 ### 步驟5：新增AEM程式碼同步應用程式
@@ -327,7 +293,7 @@ ht-degree: 0%
 
 使用網站建立工具，在託管於`https://da.live`的檔案製作環境中建立及初始化店面內容。 此工具會將範例內容匯入檔案製作環境，並完成範例內容中所有檔案的內容預覽和發佈程式。 範例內容包含頁面配置、橫幅、標籤和其他要填入店面的元素。
 
-1. 開啟[網站建立者工具](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator)。
+1. 開啟[網站建立者工具](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator)
 
 1. 設定存放庫：
 
@@ -474,4 +440,4 @@ ht-degree: 0%
 
 >[!MORELIKETHIS]
 >
-> 請參閱[Adobe Commerce Storefront檔案](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant)，深入瞭解如何更新網站內容以及整合Commerce前端元件和後端資料。
+> 請參閱[Adobe Commerce Storefront檔案](https://experienceleague.adobe.com/developer/commerce/storefront/)，深入瞭解如何更新網站內容以及整合Commerce前端元件和後端資料。
