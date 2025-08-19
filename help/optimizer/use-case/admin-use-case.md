@@ -3,11 +3,11 @@ title: 店面和目錄管理員端對端使用案例
 description: 瞭解如何使用 [!DNL Adobe Commerce Optimizer] 使用目錄檢視和原則來管理您的目錄，以及如何根據您的目錄組態設定您的店面。
 role: Admin, Developer
 feature: Personalization, Integration
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
-source-git-commit: 1ab7ee5673f261b43db25caf0ad340a0fd9e3341
+source-git-commit: e5844cad1d666a81042db64e51e124e6444d19ac
 workflow-type: tm+mt
-source-wordcount: '2158'
+source-wordcount: '2179'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> 檢閱Adobe Commerce店面檔案中的[探索樣板](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/?lang=zh-Hant)主題，瞭解店面設定檔案。
+> 檢閱Adobe Commerce店面檔案中的[探索樣板](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/)主題，瞭解店面設定檔案。
 
 ### 關‌鍵要點
 
@@ -185,11 +185,12 @@ Carvelo的商務經理需要為隸屬於&#x200B;*East Coast Inc*&#x200B;公司�
    - **屬性** = *part_category*
    - **運運算元** = **IN**
    - **值Source** = **靜態**
-   - **值** = *剎車*，*暫停*
+   - **值** = *剎車*
+   - **值** = *暫停*
 
    >[!IMPORTANT]
    >
-   >請確定您指定的屬性名稱完全符合目錄中的SKU屬性名稱。
+   >每個屬性值必須單獨輸入。 輸入值後，按&#x200B;**Enter**&#x200B;以將其新增至篩選設定。 然後，輸入下一個值。 所有值都必須完全符合目錄中的SKU屬性名稱。
 
    若要深入瞭解STATIC和TRIGGER值來源之間的差異，請參閱[值來源型別](../setup/policies.md#value-source-types)。
 
@@ -230,7 +231,8 @@ Carvelo的商務經理需要為隸屬於&#x200B;*East Coast Inc*&#x200B;公司�
 
    - **名稱** = *Celport*
    - **目錄來源** = *en-US*
-   - **原則** （使用下拉式清單） = *East Coast Inc品牌*；*Celport零件類別*；*品牌*；*模型*                          
+   - **原則** （使用下拉式清單） = *East Coast Inc品牌*；*Celport零件類別*；*品牌*；*模型*
+                         
 1. 按一下&#x200B;**[!UICONTROL Add]**&#x200B;以建立目錄檢視。
 
    目錄檢視頁面會更新以顯示新的目錄檢視。
@@ -445,4 +447,4 @@ Carvelo的商務經理需要為隸屬於&#x200B;*East Coast Inc*&#x200B;公司�
 - 瞭解[進階原則設定](../setup/policies.md)
 - 為其他經銷商設定[額外的目錄檢視](../setup/catalog-view.md)
 - 檢閱[API檔案](https://developer.adobe.com/commerce/services/optimizer/)，瞭解程式化目錄管理
-- 瞭解如何為您的Edge Delivery Services店面設定下拉式元件，以針對產品探索、建議和其他店面功能建立自訂店面體驗。 請參閱[店面檔案](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=zh-Hant)
+- 瞭解如何為您的Edge Delivery Services店面設定下拉式元件，以針對產品探索、建議和其他店面功能建立自訂店面體驗。 請參閱[店面檔案](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)
