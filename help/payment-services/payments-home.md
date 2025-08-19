@@ -5,7 +5,7 @@ role: Admin, User
 level: Intermediate
 exl-id: d7a4c87f-33cb-446a-b442-3cdf05b518a2
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 3%
@@ -14,7 +14,7 @@ ht-degree: 3%
 
 # [!DNL Payment Services]首頁簡介
 
-[!DNL Adobe Commerce]和[!DNL Magento Open Source]的[!DNL Payment Services]提供主檢視，其中包含開始設定和使用擴充功能所需的所有必要資訊。
+[!DNL Payment Services]和[!DNL Adobe Commerce]的[!DNL Magento Open Source]提供主檢視，其中包含開始設定和使用擴充功能所需的所有必要資訊。
 
 1. 在&#x200B;_管理員_&#x200B;側邊欄上，移至&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**：
 
@@ -46,4 +46,4 @@ ht-degree: 3%
 
 ## 設定
 
-在[首頁]檢視中，按一下&#x200B;**[!UICONTROL Settings]**。 如需詳細資訊，請參閱[設定](settings.md)。
+在[首頁]檢視中，按一下&#x200B;**[!UICONTROL Settings]**。 如需詳細資訊，請參閱[[!DNL Payment Services] 組態](configure-admin.md)。

@@ -4,9 +4,9 @@ description: ' [!DNL Payment Services] 筆交易中的卡片付款處理層級�
 role: Admin
 feature: Payments, Paas, Saas
 exl-id: db8993fe-dd6f-48b5-9e7b-69a0f2e08552
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '341'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 # 第2級和第3級處理
 
 [!DNL Payment Services]提供進階卡片處理功能，協助商戶最佳化付款交易並降低交換費用。 可用的卡片處理有三個層級，每個層級都有不同的交易資料需求。
+
+>[!CAUTION]
+>
+> [Fastlane](payments-options.md#fastlane-button)訂單不包含第2/第3層資料、明細專案和金額細目。
 
 ## 每個處理層級的資料需求
 

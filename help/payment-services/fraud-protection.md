@@ -5,20 +5,24 @@ role: Admin, User
 level: Intermediate
 feature: Payments, Checkout, Configuration, Security, Paas, Saas
 exl-id: 440296bb-a6ff-408b-8195-3027916e4f84
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
 
 # 有效保護詐騙
 
-您可以使用[Signifyd延伸模組](https://commercemarketplace.adobe.com/signifyd-module-connect.html)為[!DNL Payment Services]啟用自動詐騙保護。
+您可以使用[!DNL Payment Services]Signifyd延伸模組[為](https://commercemarketplace.adobe.com/signifyd-module-connect.html)啟用自動詐騙保護。
 
 Adobe Commerce支援Signifyd 5.4.0和更新版本。 [!DNL Payment Services]支援驗證前和驗證後簽署流程。
 
 Signifyd/[!DNL Payment Services]整合提供信用卡、借記卡、保管卡、透過Admin結帳，以及PayPal和Apple Pay付款方式的涵蓋範圍。 雖然部分交易的細節並未在支付服務和Signifyd之間分享，但Signifyd為所有支付方式提供全面的風險保障，確保最大限度的保護。
+
+>[!CAUTION]
+>
+> [Fastlane](payments-options.md#fastlane-button)與Signifyd不相容。
 
 請參閱[簽署檔案](https://community.signifyd.com/support/s/article/magento-2-extension-install-guide?language=en_US#downloadandinstallingmagento2extension)，瞭解如何安裝和設定擴充功能。
 
@@ -32,8 +36,8 @@ Signifyd/[!DNL Payment Services]整合提供信用卡、借記卡、保管卡、
 1. 依預設，Signifyd是[已加入允許清單](https://github.com/signifyd/magento2/blob/main/docs/RESTRICT-PAYMENTS.md)，以確保Signifyd不會觸發其目前不支援的其他付款選項。 若要禁止特定付款方式，您必須進行變更。
 1. 向Signifyd確認PayPal不會拒絕可能由Signifyd核准的訂單，方法是透過Paypal中的商家詐騙保護設定。
 1. 啟用Signifyd延伸以與[!DNL Payment Services]相容：
-   * 在&#x200B;_即時_&#x200B;模式下使用[!DNL Payment Services]時，Signifyd必須處於生產模式。
-   * 在&#x200B;_沙箱_&#x200B;模式中使用[!DNL Payment Services]時，Signifyd必須處於測試模式。
+   * 在[!DNL Payment Services]即時&#x200B;_模式下使用_&#x200B;時，Signifyd必須處於生產模式。
+   * 在[!DNL Payment Services]沙箱&#x200B;_模式中使用_&#x200B;時，Signifyd必須處於測試模式。
 
 ## 設定
 
@@ -41,12 +45,12 @@ Signifyd/[!DNL Payment Services]整合提供信用卡、借記卡、保管卡、
 
 這些設定選項與支付服務和Signifyd整合不相容：
 
-* 當[!DNL Payment Services]設定為`Authorize`付款動作&#x200B;_且_ Signifyd處於`PostAuth`模式，且&#x200B;_[!UICONTROL Decline Guarantees]_&#x200B;選項設定為&#x200B;**建立銷退折讓單**&#x200B;時。
+* 當[!DNL Payment Services]設定為`Authorize`付款動作&#x200B;_且_ Signifyd處於`PostAuth`模式，且&#x200B;_[!UICONTROL Decline Guarantees]_選項設定為&#x200B;**建立銷退折讓單**時。
 
   原因： [!DNL Payment Services]建立授權交易，表示然後嘗試退款。
 
 
-* [!DNL Payment Services]已使用`Authorize and Capture`付款動作&#x200B;_設定，且_ Signifyd處於`PostAuth`模式，且&#x200B;_[!UICONTROL Decline Guarantees]_&#x200B;選項設定為&#x200B;**取消訂單**。
+* [!DNL Payment Services]已使用`Authorize and Capture`付款動作&#x200B;_設定，且_ Signifyd處於`PostAuth`模式，且&#x200B;_[!UICONTROL Decline Guarantees]_選項設定為&#x200B;**取消訂單**。
 
   原因： [!DNL Payment Services]建立擷取交易，表示之後嘗試作廢。
 

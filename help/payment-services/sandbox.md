@@ -3,7 +3,7 @@ title: 設定測試沙箱
 description: 使用PayPal沙箱帳戶在測試模式中使用 [!DNL Payment Services] 。
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install, Paas, Saas
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 0%
@@ -29,7 +29,7 @@ PayPal沙箱帳戶可讓您在測試模式中使用[!DNL Payment Services]。 Pa
       如果您在沙箱PayPal上線流程中建立PayPal沙箱帳戶，您必須[重設您的上線沙箱](#reset-your-sandbox-account)，否則您無法驗證電子郵件。
 
    1. 選取&#x200B;**[!UICONTROL Business]**&#x200B;作為帳戶型別並按一下&#x200B;**[!UICONTROL Create]**。
-   1. 在&#x200B;_[!UICONTROL Sandbox Accounts]_&#x200B;區段中，針對您建立的沙箱帳戶，按一下&#x200B;_[!UICONTROL Manage accounts]_&#x200B;欄中的三個點。
+   1. 在&#x200B;_[!UICONTROL Sandbox Accounts]_區段中，針對您建立的沙箱帳戶，按一下_[!UICONTROL Manage accounts]_&#x200B;欄中的三個點。
    1. 按一下&#x200B;**[!UICONTROL View/edit account]**。
 
       ![PayPal — 檢視/編輯沙箱帳戶](assets/onboarding-viewedit-sandbox.png){width="300" zoomable="yes"}
@@ -41,7 +41,7 @@ PayPal沙箱帳戶可讓您在測試模式中使用[!DNL Payment Services]。 Pa
 
    如果您尚未完成[!DNL Payment Services]的沙箱上線，則會顯示此選項。
 
-   沙箱商家識別碼會自動產生，並填入[設定](settings.md)。 請勿變更或變更此ID。
+   沙箱商家識別碼會自動產生，並填入[設定](configure-admin.md)。 請勿變更或變更此ID。
 
    您會看到PayPal視窗，讓您連線PayPal帳戶以開始接受付款。
 
@@ -59,7 +59,7 @@ PayPal沙箱帳戶可讓您在測試模式中使用[!DNL Payment Services]。 Pa
 
 >[!IMPORTANT]
 >
->如果您撤銷[!DNL Adobe Commerce]與[!DNL Magento Open Source]對[!DNL Payment Services]的同意，以處理您的付款（在您的PayPal帳戶設定中），則[!DNL Payment Services]無法處理您商店中的訂單。 在您的「付款服務」首頁上，會出現有關撤銷同意的警報。 若要關閉警示，請按一下&#x200B;**[!UICONTROL Do not show again]**。
+>如果您撤銷[!DNL Payment Services]與[!DNL Adobe Commerce]對[!DNL Magento Open Source]的同意，以處理您的付款（在您的PayPal帳戶設定中），則[!DNL Payment Services]無法處理您商店中的訂單。 在您的「付款服務」首頁上，會出現有關撤銷同意的警報。 若要關閉警示，請按一下&#x200B;**[!UICONTROL Do not show again]**。
 
 ### 重設您的沙箱帳戶
 
