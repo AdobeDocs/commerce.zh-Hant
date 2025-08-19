@@ -149,14 +149,14 @@ ht-degree: 0%
 
 1. 確定您的存放區在生產模式[中為](configure-admin.md#enable-payment-services)。
 1. [在[設定]中設定所需的PayPal付款按鈕](configure-admin.md#payment-buttons)。
-1. 開啟&#x200B;_區段中的_&#x200B;關閉&#x200B;**[[!UICONTROL Show PayPal Credit and Debit card button]](configure-admin.md#payment-buttons)** _[!UICONTROL Payment buttons]_選項。
+1. 開啟&#x200B;_區段中的_&#x200B;關閉&#x200B;**[[!UICONTROL Show PayPal Credit and Debit card button]](configure-admin.md#payment-buttons)** _[!UICONTROL Payment buttons]_&#x200B;選項。
 
 要&#x200B;**擷取您現有信用卡提供者的付款&#x200B;_和_ PayPal付款按鈕**：
 
 1. 確定您的存放區在生產模式[中為](configure-admin.md#enable-payment-services)。
 1. [設定所需的PayPal付款按鈕](configure-admin.md#payment-buttons)。
-1. 開啟&#x200B;_區段中的_&#x200B;關閉&#x200B;**[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#payment-buttons)** _[!UICONTROL Payment buttons]_選項。
-1. 開啟&#x200B;_區段中的_&#x200B;關閉&#x200B;**[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** _[!UICONTROL Credit card fields]_選項，並使用您的[現有信用卡提供者帳戶](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments)。
+1. 開啟&#x200B;_區段中的_&#x200B;關閉&#x200B;**[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#payment-buttons)** _[!UICONTROL Payment buttons]_&#x200B;選項。
+1. 開啟&#x200B;_區段中的_&#x200B;關閉&#x200B;**[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** _[!UICONTROL Credit card fields]_&#x200B;選項，並使用您的[現有信用卡提供者帳戶](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments)。
 
 ## 簽出選項
 
