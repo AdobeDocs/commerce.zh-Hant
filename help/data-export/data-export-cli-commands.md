@@ -2,21 +2,21 @@
 title: 使用Commerce CLI同步摘要
 description: 瞭解如何使用命令列介面命令來管理Adobe Commerce SaaS服務 [!DNL data export extension] 的摘要和程式。
 exl-id: 1ebee09e-e647-4205-b90c-d0f9d2cac963
-source-git-commit: 8233b2e184c8af293ffc41cb22e085388cf18049
+source-git-commit: 0f1d55f81cb030d218f0aa8dfa2af4dfd8f640c1
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '527'
 ht-degree: 0%
 
 ---
 
 # 使用Commerce CLI同步摘要
 
-`magento/saas-export`封裝中的`saas:resync`命令可讓您管理Adobe Commerce SaaS服務的資料同步處理。
+`saas:resync`封裝中的`magento/saas-export`命令可讓您管理Adobe Commerce SaaS服務的資料同步處理。
 
 Adobe不建議定期使用`saas:resync`命令。 使用指令的典型情況如下：
 
 - 初始同步
-- 變更[SaaS資料空間ID](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/config/services/saas)後，將資料同步處理至新的資料空間
+- 變更[SaaS資料空間ID](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas)後，將資料同步處理至新的資料空間
 - 疑難排解
 
 監視`var/log/saas-export.log`檔案中的同步作業。
@@ -145,7 +145,6 @@ bin/magento saas:resync --feed products --dry-run --cleanup-feed
 
 - `categories`
 - `categoryPermissions`
-- `inventoryStockStatus`
 - `orders`
 - `prices`
 - `products`
@@ -154,6 +153,10 @@ bin/magento saas:resync --feed products --dry-run --cleanup-feed
 - `scopesWebsite`
 - `scopesCustomerGroup`
 - `variants`
+
+>[!NOTE]
+>
+>根據您的Adobe Commerce環境中安裝的模組，環境中可用的摘要可能會不同。
 
 **範例：**
 
@@ -178,7 +181,7 @@ bin/magento saas:resync --feed productAttributes --no-reindex
 
 ## `--id-type=ProductId`
 
-依照預設，當您使用包含`--by-ids`選項的`saas:resync feed`命令時所指定的實體是由產品SKU所指定。 使用`--id-type=ProductId`選項，依產品ID指定實體。
+依照預設，當您使用包含`saas:resync feed`選項的`--by-ids`命令時所指定的實體是由產品SKU所指定。 使用`--id-type=ProductId`選項，依產品ID指定實體。
 
 ```shell
 bin/magento saas:resync --feed products --by-ids='1,2,3' --id-type='productId'
