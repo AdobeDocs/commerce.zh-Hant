@@ -1,10 +1,10 @@
 ---
 title: 大量資料移轉工具
 description: 瞭解如何使用大量資料移轉工具，將資料從雲端例項上的現有Adobe Commerce移轉至 [!DNL Adobe Commerce as a Cloud Service]。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 role: Architect
 exl-id: 81522de9-df54-4651-b8ed-58956376af86
-source-git-commit: 8bf8eb58aa9c1ae965f4bbf5a2987fb22f004769
+source-git-commit: 131d3bdb7e6ef2622236ddf08f306639396d6ffa
 workflow-type: tm+mt
 source-wordcount: '691'
 ht-degree: 0%
@@ -39,8 +39,8 @@ ht-degree: 0%
 
 大量資料移轉工具的可用性如下：
 
-- **2025年第3季** — 若要存取大量資料移轉工具，請提交支援票證。
-- **2025年第3季** — 大量資料移轉工具將可公開使用，並可從此頁面存取。
+- **2025年第4季** — 若要存取大量資料移轉工具，請提交支援票證。
+- **2025年第4季** — 大量資料移轉工具將可公開使用，並可從此頁面存取。
 
 ## 建立目標環境
 
