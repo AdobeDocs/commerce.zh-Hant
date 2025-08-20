@@ -1,7 +1,7 @@
 ---
 title: 大量資料移轉工具
 description: 瞭解如何使用大量資料移轉工具，將資料從雲端例項上的現有Adobe Commerce移轉至 [!DNL Adobe Commerce as a Cloud Service]。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 role: Architect
 exl-id: 81522de9-df54-4651-b8ed-58956376af86
 source-git-commit: 131d3bdb7e6ef2622236ddf08f306639396d6ffa
