@@ -2,7 +2,7 @@
 title: 入門
 description: 瞭解 [!DNL Product Recommendations]中的需求與支援平台。
 exl-id: 7b8a1117-b6d5-4e5d-bb97-09f76a024cbd
-badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce 。"
+badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce 。"
 source-git-commit: 7d5e3faeef2fb16779d1558027a0b76ff3fe3a38
 workflow-type: tm+mt
 source-wordcount: '294'
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 ### B2B支援 {#b2bsupport}
 
-B2B店面通常需要複雜的邏輯，這些邏輯會指定每個購物者或客戶群組的產品可見度和價格。 [!DNL Product Recommendations]現在[支援](release-notes.md)此功能，接受[類別許可權](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html)、[共用目錄](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html)和[客戶群組特定定價](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html)。 例如，如果您隱藏零售客戶區段中的某些類別，則該區段中的購物者不會看到這些類別中產品的建議。 此外，當您為特定客戶群組和公司定義共用目錄時，這些購物者只會看到他們可存取之產品的建議。 所有建議產品都會根據每位購物者的客戶群組，反映正確的客戶群組特定價格。
+B2B店面通常需要複雜的邏輯，這些邏輯會指定每個購物者或客戶群組的產品可見度和價格。 [!DNL Product Recommendations]現在[支援](release-notes.md)此功能，接受[類別許可權](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html?lang=zh-Hant)、[共用目錄](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html?lang=zh-Hant)和[客戶群組特定定價](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=zh-Hant)。 例如，如果您隱藏零售客戶區段中的某些類別，則該區段中的購物者不會看到這些類別中產品的建議。 此外，當您為特定客戶群組和公司定義共用目錄時，這些購物者只會看到他們可存取之產品的建議。 所有建議產品都會根據每位購物者的客戶群組，反映正確的客戶群組特定價格。
 
 >[!NOTE]
 >
