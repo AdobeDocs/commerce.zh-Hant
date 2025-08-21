@@ -2,9 +2,9 @@
 title: 設定
 description: 瞭解如何變更 [!DNL Product Recommendations] 資料的來源，以及如何啟用視覺化建議。
 exl-id: fe37624d-c53e-40cd-b182-10f62cba74c0
-source-git-commit: fe5f864262478d1f9e205f2cd275452594cf4675
+source-git-commit: 7d5e3faeef2fb16779d1558027a0b76ff3fe3a38
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '450'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 若要變更產品建議資料的來源，請選擇包含您要使用之行為資料的SaaS資料空間。 開始之前，請確定：
 
-- 店面資料收集必須[針對您的生產環境設定並啟用](install-configure.md)，且[已驗證](verify.md)行為資料正在傳送至Adobe Commerce。
+- 店面資料收集必須[針對您的生產環境設定並啟用](install-configure.md)，且[已驗證](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/)行為資料正在傳送至Adobe Commerce。
 - 您的非生產環境目錄應該與生產目錄基本上相同。 使用類似的目錄可確保產品推薦單位的回報與生產單位非常類似。
 
 1. 登入您的非生產Adobe Commerce環境的管理員。
@@ -56,7 +56,7 @@ ht-degree: 0%
 
 ### 設定新的SaaS資料空間
 
-1. 在[Recommendations來源]區段中，按一下[編輯組態]。**&#x200B;**
+1. 在[Recommendations來源]區段中，按一下[編輯組態]。****
 
 1. 依照指示設定新的[[!DNL Commerce] 服務](/help/landing/saas.md)。
 
