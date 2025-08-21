@@ -24,11 +24,11 @@ _建議單位_
 
 1. 在&#x200B;_管理員_&#x200B;側邊欄上，前往&#x200B;**行銷** > _促銷活動_ > **產品建議**&#x200B;以顯示&#x200B;_產品建議_&#x200B;工作區。
 
-1. 指定要顯示建議的[存放區檢視](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views)。
+1. 指定要顯示建議的[存放區檢視](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/setup/websites-stores-views)。
 
    >[!NOTE]
    >
-   > 頁面產生器建議單位必須在預設商店檢視中建立，然後才可以在任何地方使用。 若要進一步瞭解如何使用頁面產生器建立產品建議，請參閱[新增內容 — 產品建議](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)。
+   > 頁面產生器建議單位必須在預設商店檢視中建立，然後才可以在任何地方使用。 若要進一步瞭解如何使用頁面產生器建立產品建議，請參閱[新增內容 — 產品建議](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/page-builder/add-content/recommendations)。
 
 1. 按一下&#x200B;**建立建議**。
 
@@ -38,14 +38,14 @@ _建議單位_
 
    >[!NOTE]
    >
-   > 當您的商店設定為在將產品加入購物車後立即[顯示購物車頁面時，「購物車」頁面上不支援產品建議](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration)。
+   > 當您的商店設定為在將產品加入購物車後立即[顯示購物車頁面時，「購物車」頁面上不支援產品建議](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration)。
 
    * 首頁
    * 類別
    * 產品詳細資料
    * 購物車
    * 確認
-   * [頁面產生器](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)
+   * [頁面產生器](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/page-builder/add-content/recommendations)
 
    您最多可以為每種頁面型別建立5個使用中的建議單位，並為頁面產生器建立25個使用中的建議單位。 當達到限制時，頁面型別會變灰。
 
