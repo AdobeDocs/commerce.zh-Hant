@@ -3,7 +3,8 @@ title: 將Adobe Experience Platform Mobile SDK與Commerce整合
 description: 瞭解如何搭配無周邊或自訂Adobe Experience Platform店面使用Commerce行動SDK。
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 02d07abb-8d7f-4f0a-9f96-f42654cd79d3
+source-git-commit: a3e19940e2a3d8a240bb17703cfdd9903df311aa
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 0%
@@ -18,7 +19,7 @@ ht-degree: 0%
 
 將[Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/home/)與Commerce行動應用程式整合後，商戶可將Commerce [事件資料](events.md)傳送至Experience Platform Edge。
 
-當Commerce事件資料位於邊緣時，其他Adobe Experience Cloud應用程式即可存取這些資料。 例如，您可以使用資料在Real-Time CDP中建立對象，然後[使用這些對象](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html?lang=zh-Hant)個人化您的Commerce行動應用程式。
+當Commerce事件資料位於邊緣時，其他Adobe Experience Cloud應用程式即可存取這些資料。 例如，您可以使用資料在Real-Time CDP中建立對象，然後[使用這些對象](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html)個人化您的Commerce行動應用程式。
 
 ## 設定
 
@@ -26,7 +27,7 @@ ht-degree: 0%
 
 ### Experience Platform
 
-1. 檢閱行動應用程式教學課程[&#128279;](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=zh-Hant)中的Adobe Experience Cloud，瞭解行動應用程式功能。
+1. 檢閱行動應用程式教學課程[中的](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html)Adobe Experience Cloud，瞭解行動應用程式功能。
 
 1. [在Experience Platform中安裝和設定](https://developer.adobe.com/client-sdks/documentation/getting-started/) SDK。
 
@@ -38,7 +39,7 @@ ht-degree: 0%
 
 完成Experience Platform的SDK設定後，請將SDK設定新增至Commerce。
 
-1. 若要透過SDK將Commerce事件資料傳送至Experience Platform，您必須在應用程式程式碼中提供XDM結構描述。 此結構描述必須符合Experience Platform中為SDK設定的結構描述[&#128279;](https://developer.adobe.com/client-sdks/home/getting-started/set-up-schemas-and-datasets/)。
+1. 若要透過SDK將Commerce事件資料傳送至Experience Platform，您必須在應用程式程式碼中提供XDM結構描述。 此結構描述必須符合Experience Platform中為SDK設定的結構描述[](https://developer.adobe.com/client-sdks/home/getting-started/set-up-schemas-and-datasets/)。
 
    下列範例說明如何使用電子郵件欄位來追蹤`web.webpagedetails.pageViews`事件及設定`identityMap`。
 
@@ -162,4 +163,4 @@ ht-degree: 0%
 
 ## 後續步驟
 
-若要瞭解如何從您的行動Real-Time CDP應用程式擷取Commerce對象，以告知購物車價格規則、動態區塊和相關產品規則，請參閱[Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html?lang=zh-Hant#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk)。
+若要瞭解如何從您的行動Real-Time CDP應用程式擷取Commerce對象，以告知購物車價格規則、動態區塊和相關產品規則，請參閱[Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk)。

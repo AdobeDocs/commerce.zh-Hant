@@ -3,9 +3,9 @@ title: 發行說明
 description: Adobe Commerce中 [!DNL Data Connection] 擴充功能的最新發行資訊。
 feature: Personalization, Integration, Release Notes
 exl-id: f3b92632-947d-40cd-89b7-24ed0680be51
-source-git-commit: 43020e33ce57861cf586ace12a0832b24c23872d
+source-git-commit: 90fcaa2cdd7c869ceddaeea7525cac00a41d94c5
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1257'
 ht-degree: 1%
 
 ---
@@ -24,9 +24,9 @@ ht-degree: 1%
 
 有關[!DNL Data Connection]擴充功能所使用的擴充功能的功能變更和修正，請參閱&#x200B;**支援的服務更新**。
 
-請參閱[即將發行的版本](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/planning/schedule)，瞭解發行排程和支援。
+請參閱[即將發行的版本](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule)，瞭解發行排程和支援。
 
-請參閱開發人員檔案以[瞭解哪些Commerce版本支援此模組](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/product-availability)。
+請參閱開發人員檔案以[瞭解哪些Commerce版本支援此模組](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)。
 
 ## 支援的服務更新
 
@@ -46,12 +46,12 @@ _2024年8月2日_
 
 _2024年1月24日_
 
-![新](../assets/new.svg) — 已更新`data-services-b2b`延伸模組，針對B2B商家包含名為[deleteRequisitionList](events.md#deleterequisitionlist)的新請購單事件。
+![新](../assets/new.svg) — 已更新`data-services-b2b`擴充功能，針對B2B商家加入名為`deleteRequisitionList`的新請購單事件。
 
 _2023年11月16日_
 
 ![修正](../assets/fix.svg) — 修正您下具有多個送貨地址的訂單時，錯誤訊息顯示不正確的問題。
-![修正](../assets/fix.svg) — 修正[productPageView](events.md#productpageview)事件中，`productListItems.priceTotal`事件欄位在切換商店檢視上的貨幣後未轉換價格的問題。
+![修正](../assets/fix.svg) — 修正`productPageView`事件中，在商店檢視上切換貨幣後，`productListItems.priceTotal`事件欄位未轉換價格的問題。
 ![修正](../assets/fix.svg) — 修正當商家切換商店檢視時，`productListItems`事件欄位中貨幣代碼未更新的問題。
 
 _2023年10月10日_
@@ -59,11 +59,11 @@ _2023年10月10日_
 ![新增](../assets/new.svg) — 已新增訂單狀態事件：[已開立商業發票](events-backoffice.md#orderinvoiced)、[已起始訂單專案退貨](events-backoffice.md#orderitemsreturninitiated)，以及[已完成訂單專案退貨](events-backoffice.md#orderitemreturncompleted)。
 ![修正](../assets/fix.svg) — 修正重新整理快取後，貨幣設定變更未反映在事件中的問題。
 ![修正](../assets/fix.svg) — 修正啟用非同步下單時，未顯示訂單確認訊息的錯誤。
-![New](../assets/new.svg) — 已新增資料至「類別」檢視頁面上簡單產品的[addToRequisitionList](events.md#addtorequisitionlist)事件。
-![修正](../assets/fix.svg) — 修正從訂購確認頁面新增產品時，`selectedOptions`addToRequisitionList[事件中](events.md#addtorequisitionlist)資料的問題。
-![新](../assets/new.svg) — 當產品從類別檢視頁面新增至請購單清單時，已將產品資料新增至[addToRequisitionList](events.md#addtorequisitionlist)事件。
-從產品檢視頁面將可設定的產品新增至請購單清單時，已新增![New](../assets/new.svg) — 已新增[addToRequisitionList](events.md#addtorequisitionlist)事件。
-![新](../assets/new.svg) — 當產品數量增加和/或從請購單清單中減少時，新增[addToRequisitionList](events.md#addtorequisitionlist)和[removeFromRequisitionList](events.md#removefromrequisitionlist)事件。
+![新](../assets/new.svg) — 已將資料新增至[類別檢視]頁面上簡單產品的`addToRequisitionList`事件。
+![修正](../assets/fix.svg) — 修正從訂購確認頁面新增產品時，`selectedOptions`事件中`addToRequisitionList`資料的問題。
+![新增](../assets/new.svg) — 當產品從類別檢視頁面新增至請購單清單時，已將產品資料新增至`addToRequisitionList`事件。
+![New](../assets/new.svg) — 當可設定的產品從「產品檢視」頁面新增至請購單清單時，已新增`addToRequisitionList`事件。
+![新](../assets/new.svg) — 當產品數量增加和/或從請購單清單中減少時，新增`addToRequisitionList`和`removeFromRequisitionList`個事件。
 
 _2023年6月10日_
 
@@ -141,7 +141,7 @@ _2024年6月5日_
 [!BADGE 相容性]{type=Informative tooltip="相容性"} Adobe Commerce 2.4.4或更新版本
 
 ![修正](../assets/fix.svg) — 修正起始[歷史同步](connect-data.md#specify-order-history-date-range)時使用錯誤日期格式的問題。
-![修正](../assets/fix.svg) — 修正Adobe Commerce 2.4.7未傳送[startCheckout](events.md#startcheckout)事件的問題。
+![修正](../assets/fix.svg) — 修正Adobe Commerce 2.4.7未傳送`startCheckout`事件的問題。
 
 ## 3.1.1
 

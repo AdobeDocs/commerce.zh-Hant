@@ -2,9 +2,10 @@
 title: '[!DNL Live Search]最佳實務'
 description: 瞭解在您的商店中實作 [!DNL Live Search] 的最佳實務。
 role: Admin, Developer
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: f7700339-fb13-42fe-a249-17cd4ba36e1b
+source-git-commit: 1548b7e11249febc2cd8682581616619f80c052f
 workflow-type: tm+mt
-source-wordcount: '2426'
+source-wordcount: '2429'
 ht-degree: 0%
 
 ---
@@ -22,7 +23,7 @@ ht-degree: 0%
 - 搜尋規則至關重要，因為它們可以根據熱門程度、新到訪次數、促銷條件或任何其他銷售策略，提升特定產品的可見度，以滿足您的業務需求。
 - 多面嚮導覽可讓購物者調整搜尋範圍，並快速取得相關結果。
 
-若要管理[!DNL Live Search]，請在Adobe [!DNL Commerce]管理員中前往&#x200B;**行銷** > *SEO和搜尋* > **[!DNL Live Search]**。 
+若要管理[!DNL Live Search]，請在Adobe **管理員中前往**&#x200B;行銷&#x200B;*>* SEO和搜尋&#x200B;**[!DNL Live Search]** > [!DNL Commerce]。 
 
 ## 最佳化您的搜尋功能
 
@@ -100,7 +101,7 @@ ht-degree: 0%
 
 請一律測試搜尋重新導向，以確保它們正常運作並導向最相關的頁面。 持續監控其效能，並視需要進行調整。
 
-瞭解如何[管理搜尋重新導向](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/catalog/search/search-terms)。
+瞭解如何[管理搜尋重新導向](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms)。
 
 ## 改善搜尋結果關聯性
 
@@ -128,7 +129,7 @@ ht-degree: 0%
 - 稍微優先處理利潤率較高的產品，而不會影響關聯性。
 - 標示在銷售中或屬於特別促銷的產品。
 - 使用促銷期間的日期範圍，在促銷期間或銷售期間自動設定搜尋規則。
-- 根據使用[智慧型排名](rules-add.md#intelligent-ranking)的個別購物者行為量身打造搜尋結果，例如「為您推薦」、「檢視次數最多」等。 若要量身打造購物者行為，您必須確定事件已正確實作。 對於Luma商家，事件是現成可用的。 針對Headless或自訂實作，您必須根據您的特定需求[實作事件](events.md)。
+- 根據使用[智慧型排名](rules-add.md#intelligent-ranking)的個別購物者行為量身打造搜尋結果，例如「為您推薦」、「檢視次數最多」等。 若要量身打造購物者行為，您必須確定事件已正確實作。 對於Luma商家，事件是現成可用的。 針對Headless或自訂實作，您必須根據您的特定需求[實作事件](https://developer.adobe.com/commerce/services/shared-services/storefront-events/)。
 
 進一步瞭解搜尋規則：
 
@@ -139,7 +140,7 @@ ht-degree: 0%
    - [建立](rules-add.md)
    - [編輯、檢視、刪除](rules-manage.md)
 - 資料收集
-   - [[!DNL Live Search]個事件](events.md)
+   - [[!DNL Live Search] 個事件](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search)
    - [Adobe Commerce事件收集器](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/)
    - [GitHub Commerce事件](https://github.com/adobe/commerce-events/tree/main/examples) 
 
@@ -154,7 +155,7 @@ ht-degree: 0%
 深入瞭解搜尋所需的產品屬性：
 
 - [將屬性設定為可搜尋](workspace.md#set-attributes-as-searchable)
-- [指派權重給屬性](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [指派權重給屬性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## 監視搜尋結果
 
@@ -195,4 +196,4 @@ ht-degree: 0%
 - 分析熱門搜尋字詞和產品資料以識別重要關鍵字。 使用這些關鍵字最佳化您的產品可搜尋屬性，以改善搜尋關聯性。
 - 定期分析您的結果資料，以瞭解不斷變化的趨勢、購物者偏好設定和行為、識別熱門搜尋字詞以及偵測問題。 使用此回饋迴路，持續精簡及改善您的搜尋規則和產品方案
 
-若要在[!DNL Live Search]報表中取得正確的資料，您必須確定事件已正確實作。 對於Luma商家，事件是現成可用的。 針對Headless或自訂實作，您必須根據您的特定需求[實作事件](events.md)。
+若要在[!DNL Live Search]報表中取得正確的資料，您必須確定事件已正確實作。 對於Luma商家，事件是現成可用的。 針對Headless或自訂實作，您必須根據您的特定需求[實作事件](https://developer.adobe.com/commerce/services/shared-services/storefront-events/)。

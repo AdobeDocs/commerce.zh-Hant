@@ -3,16 +3,18 @@ title: 收集資料
 description: 瞭解事件如何收集 [!DNL Product Recommendations]的資料。
 feature: Services, Recommendations, Eventing
 exl-id: 0d5317e3-c049-4fcd-a8e4-228668d89386
-source-git-commit: fe96b2922583c0fcb0fcadbdacead6267806f44b
+source-git-commit: 1548b7e11249febc2cd8682581616619f80c052f
 workflow-type: tm+mt
-source-wordcount: '1343'
+source-wordcount: '980'
 ht-degree: 0%
 
 ---
 
 # 收集資料
 
-當您安裝及設定SaaS型Adobe Commerce功能（例如[[!DNL Product Recommendations]](install-configure.md)或[[!DNL Live Search]](../live-search/install.md)）時，模組會將行為資料收集部署至您的店面。 此機制會從購物者收集匿名化的行為資料，並支援[!DNL Product Recommendations]。 例如，`view`事件是用來計算`Viewed this, viewed that`建議型別，`place-order`事件是用來計算`Bought this, bought that`建議型別。
+當您安裝和設定[[!DNL Product Recommendations]](install-configure.md)時，模組會將行為資料收集部署到您的店面。 此機制會從購物者收集匿名化的行為資料，並支援[!DNL Product Recommendations]。 例如，`view`事件是用來計算`Viewed this, viewed that`建議型別，`place-order`事件是用來計算`Bought this, bought that`建議型別。
+
+請參閱[開發人員檔案](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations)，深入瞭解[!DNL Product Recommendations]事件所收集的行為資料。
 
 >[!NOTE]
 >
@@ -77,61 +79,6 @@ _Cold Start_&#x200B;問題是指模型訓練及生效所需的時間。 對於�
 - `Conversion (view to purchase)`
 - `Conversion (view to cart)`
 
-### 活動
-
-[Adobe Commerce店面事件收集器](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start)會列出所有部署到店面的事件。 該清單中有[!DNL Product Recommendations]專屬的事件子集。 當購物者與店面的推薦單位互動時，這些事件會收集資料，並支援量度以分析您的推薦執行狀況。
-
-| 事件 | 說明 |
-| --- | --- |
-| `impression-render` | 在頁面上轉譯建議單位時傳送。 如果頁面有兩個建議單位（已購買、已檢視），則會傳送兩個`impression-render`事件。 此事件用於追蹤曝光次數的量度。 |
-| `rec-add-to-cart-click` | 購物者按一下建議單位中專案的&#x200B;**加入購物車**&#x200B;按鈕。 |
-| `rec-click` | 購物者按一下建議單位中的產品。 |
-| `view` | 當建議單位變成至少50%可檢視（例如向下捲動頁面）時傳送。 例如，如果建議單位有兩行，當購物者看到一行加上第二行一個畫素時，便會傳送`view`事件。 如果購物者上下捲動頁面數次，則傳送`view`事件的次數會與購物者再次在頁面上看到整個建議單位相同。 |
-
-雖然產品推薦量度已針對Luma店面進行最佳化，但它們也適用於其他店面實施：
-
-- [Edge Delivery店面](https://experienceleague.adobe.com/developer/commerce/storefront/setup/analytics/instrumentation/?lang=zh-Hant)
-- [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/)
-- [自訂前端(React、Vue JS)](headless.md)
-
-#### 必要的儀表板事件
-
-需要下列事件才能填入[[!DNL Product Recommendations] 儀表板](workspace.md)
-
-| 儀表板欄 | 活動 | 加入欄位 |
-| ---------------- | --------- | ----------- |
-| 曝光數 | `page-view`，`recs-request-sent`，`recs-response-received`，`recs-unit-render` | `unitId` |
-| 檢視 | `page-view`，`recs-request-sent`，`recs-response-received`，`recs-unit-render`，`recs-unit-view` | `unitId` |
-| 點按次數 | `page-view`，`recs-request-sent`，`recs-response-received`，`recs-item-click`，`recs-add-to-cart-click` | `unitId` |
-| 收入 | `page-view`，`recs-request-sent`，`recs-response-received`，`recs-item-click`，`recs-add-to-cart-click`，`place-order` | `unitId`，`sku`，`parentSku` |
-| LT收入 | `page-view`，`recs-request-sent`，`recs-response-received`，`recs-item-click`，`recs-add-to-cart-click`，`place-order` | `unitId`，`sku`，`parentSku` |
-| CTR | `page-view`，`recs-request-sent`，`recs-response-received`，`recs-unit-render`，`recs-item-click`，`recs-add-to-cart-click` | `unitId`，`sku`，`parentSku` |
-| vCTR | `page-view`，`recs-request-sent`，`recs-response-received`，`recs-unit-render`，`recs-unit-view`，`recs-item-click`，`recs-add-to-cart-click` | `unitId`，`sku`，`parentSku` |
-
-以下事件並非產品建議所特有，但Adobe Sensei必須具備，才能正確解譯購物者資料：
-
-- `view`
-- `add-to-cart`
-- `place-order`
-
-#### 建議型別
-
-此表格說明每種建議型別所使用的事件。
-
-| 建議型別 | 活動 | 頁面 |
-| --- | --- | --- |
-| 檢視次數最多 | `page-view`<br>`product-view` | 產品詳細資料頁面 |
-| 購買最多 | `page-view`<br>`place-order` | 購物車/結帳 |
-| 加入購物車次數最多 | `page-view`<br>`add-to-cart` | 產品詳細資料頁面<br>產品清單頁面<br>購物車<br>願望清單 |
-| 已檢視這個專案，已檢視那個專案 | `page-view`<br>`product-view` | 產品詳細資料頁面 |
-| 已檢視此專案，但購買了其他專案 | 產品推薦 | `page-view`<br>`product-view` | 產品詳細資料頁面<br>購物車/結帳 |
-| 已購買此專案，已購買該專案 | 產品推薦 | `page-view`<br>`product-view` | 產品詳細資料頁面 |
-| 趨勢 | `page-view`<br>`product-view` | 產品詳細資料頁面 |
-| 轉換：檢視以購買 | 產品推薦 | `page-view`<br>`product-view` | 產品詳細資料頁面 |
-| 轉換：檢視以購買 | 產品推薦 | `page-view`<br>`place-order` | 購物車/結帳 |
-| 轉換：檢視到購物車 | 產品推薦 | `page-view`<br>`product-view` | 產品詳細資料頁面 |
-| 轉換：檢視到購物車 | 產品推薦 | `page-view`<br>`add-to-cart` | 產品詳細資料頁面<br>產品清單頁面<br>購物車<br>願望清單 |
-
 #### 警告
 
 - 廣告封鎖程式和隱私權設定可能會防止擷取事件，且可能導致參與和收入[量度](workspace.md#column-descriptions)少報。 此外，由於購物者離開頁面或網路問題，部分事件可能不會傳送。
@@ -140,4 +87,4 @@ _Cold Start_&#x200B;問題是指模型訓練及生效所需的時間。 對於�
 
 >[!NOTE]
 >
->如果啟用[Cookie限制模式](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=zh-Hant)，Adobe Commerce不會收集行為資料，直到購物者同意使用Cookie為止。 如果「Cookie限制模式」已停用，Adobe Commerce會依預設收集行為資料。
+>如果啟用[Cookie限制模式](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html)，Adobe Commerce不會收集行為資料，直到購物者同意使用Cookie為止。 如果「Cookie限制模式」已停用，Adobe Commerce會依預設收集行為資料。

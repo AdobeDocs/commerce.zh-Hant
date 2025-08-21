@@ -1,9 +1,10 @@
 ---
 title: 建議型別
 description: 瞭解您可以部署至網站上不同頁面的建議。
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: bbb290b0-b50b-43d9-bf71-1813298d5f39
+source-git-commit: 1548b7e11249febc2cd8682581616619f80c052f
 workflow-type: tm+mt
-source-wordcount: '1713'
+source-wordcount: '1719'
 ht-degree: 0%
 
 ---
@@ -29,7 +30,7 @@ Adobe Commerce提供了一大組建議，您可以將這些建議部署至網站
 
 >[!NOTE]
 >
->如需本文所述事件的詳細資訊，請參閱[事件](events.md)。
+>如需本文所述事件的詳細資訊，請參閱開發人員檔案中的[storefront事件](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations)。
 
 ## 個人化 {#personalized}
 
@@ -109,7 +110,7 @@ Adobe Sensei使用AI處理和分析目錄中的影像，並建立用於判斷視
 
 >[!NOTE]
 >
-> 當您[安裝](install-configure.md)視覺相似度&#x200B;_推薦型別作為選用模組時，即可使用_&#x200B;視覺相似度推薦型別。
+> 當您&#x200B;_安裝_&#x200B;視覺相似度[推薦型別作為選用模組時，即可使用](install-configure.md)視覺相似度推薦型別。
 
 1. 在&#x200B;_管理員_&#x200B;側邊欄上，前往&#x200B;**行銷** > _促銷活動_ > **產品建議**&#x200B;以顯示&#x200B;_產品建議_&#x200B;儀表板。
 
@@ -119,7 +120,7 @@ Adobe Sensei使用AI處理和分析目錄中的影像，並建立用於判斷視
 
 1. 完成時，按一下&#x200B;**儲存變更**。
 
-   當頁面型別為&#x200B;**產品詳細資料**&#x200B;時，[建立新建議](create.md)頁面現在會將&#x200B;**視覺相似度**&#x200B;顯示為可選建議型別。
+   當頁面型別為[產品詳細資料](create.md)時，**建立新建議**&#x200B;頁面現在會將&#x200B;**視覺相似度**&#x200B;顯示為可選建議型別。
 
 啟用視覺化建議後，Adobe Sensei會啟動影像處理。 所需時間取決於目錄的大小。
 
