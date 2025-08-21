@@ -39,7 +39,7 @@ ht-degree: 0%
 
 完成Experience Platform的SDK設定後，請將SDK設定新增至Commerce。
 
-1. 若要透過SDK將Commerce事件資料傳送至Experience Platform，您必須在應用程式程式碼中提供XDM結構描述。 此結構描述必須符合Experience Platform中為SDK設定的結構描述[](https://developer.adobe.com/client-sdks/home/getting-started/set-up-schemas-and-datasets/)。
+1. 若要透過SDK將Commerce事件資料傳送至Experience Platform，您必須在應用程式程式碼中提供XDM結構描述。 此結構描述必須符合Experience Platform中為SDK設定的結構描述[&#128279;](https://developer.adobe.com/client-sdks/home/getting-started/set-up-schemas-and-datasets/)。
 
    下列範例說明如何使用電子郵件欄位來追蹤`web.webpagedetails.pageViews`事件及設定`identityMap`。
 
