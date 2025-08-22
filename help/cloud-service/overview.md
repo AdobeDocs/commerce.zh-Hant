@@ -4,10 +4,10 @@ description: 瞭解 [!DNL Adobe Commerce as a Cloud Service]的主要功能和�
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Architect, Developer, User, Leader
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
-source-git-commit: 8fc46b0b93ac5102477f33bf2a8ae70a7acaf85d
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+source-git-commit: 31d1f1fe784247d6db8a26f8a9e6ae0291e416b5
 workflow-type: tm+mt
-source-wordcount: '1405'
+source-wordcount: '1406'
 ht-degree: 0%
 
 ---
@@ -21,46 +21,34 @@ ht-degree: 0%
 
 <table style="table-layout:auto">
   <tr>
-    <td>
-      <span style="display: inline-block; width: 20px; height: 20px; background: white; border: 1px solid #d32f2f; border-radius: 50%; margin-right: 8px; vertical-align: middle;">
-        <span style="color: #d32f2f; font-size: 14px; line-height: 18px; display: block; text-align: center;">✓</span>
-      </span>
-      <strong>Commerce店面</strong>
+    <td align="left">
+      <img src="../assets/icon-checkmark-circle-outline.svg" alt="核取記號" align="center"> <strong>Commerce店面</strong>
     </td>
-    <td>
+    <td align="left">
       顧客導向的介面，購物者可在此瀏覽及購買產品
     </td>
   </tr>
   <tr>
-    <td>
-      <span style="display: inline-block; width: 20px; height: 20px; background: white; border: 1px solid #d32f2f; border-radius: 50%; margin-right: 8px; vertical-align: middle;">
-        <span style="color: #d32f2f; font-size: 14px; line-height: 18px; display: block; text-align: center;">✓</span>
-      </span>
-      <strong>銷售服務</strong>
+    <td align="left">
+      <img src="../assets/icon-checkmark-circle-outline.svg" alt="核取記號" align="center"> <strong>銷售服務</strong>
     </td>
-    <td>
+    <td align="left">
       管理產品目錄、定價和存貨的後端服務
     </td>
   </tr>
   <tr>
-    <td>
-      <span style="display: inline-block; width: 20px; height: 20px; background: white; border: 1px solid #d32f2f; border-radius: 50%; margin-right: 8px; vertical-align: middle;">
-        <span style="color: #d32f2f; font-size: 14px; line-height: 18px; display: block; text-align: center;">✓</span>
-      </span>
-      <strong>產品視覺效果</strong>
+    <td align="left">
+      <img src="../assets/icon-checkmark-circle-outline.svg" alt="核取記號" align="center"> <strong>產品視覺效果</strong>
     </td>
-    <td>
+    <td align="left">
       產品影像和媒體的數位資產管理
     </td>
   </tr>
   <tr>
-    <td>
-      <span style="display: inline-block; width: 20px; height: 20px; background: white; border: 1px solid #d32f2f; border-radius: 50%; margin-right: 8px; vertical-align: middle;">
-        <span style="color: #d32f2f; font-size: 14px; line-height: 18px; display: block; text-align: center;">✓</span>
-      </span>
-      <strong>開發人員平台</strong>
+    <td align="left">
+      <img src="../assets/icon-checkmark-circle-outline.svg" alt="核取記號" align="center"> <strong>開發人員平台</strong>
     </td>
-    <td>
+    <td align="left">
       建置自訂功能的核心開發工具和API
     </td>
   </tr>
@@ -70,7 +58,7 @@ ht-degree: 0%
 
 請參閱下列影片，瞭解[!DNL Adobe Commerce as a Cloud Service]架構的簡介。 說明此架構的圖表會顯示在影片下方。
 
->[!VIDEO](https://video.tv.adobe.com/v/3443278?learn=on&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3443232?learn=on)
 
 此圖表說明[!DNL Adobe Commerce as a Cloud Service]與所有Adobe Experience Cloud解決方案之間的資料流程。
 
@@ -78,13 +66,13 @@ ht-degree: 0%
 
 ## Commerce店面
 
-使用Adobe的[Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront?lang=zh-Hant) (由Edge Delivery Services提供技術支援)，透過Storefront Builder的簡單檔案式撰寫或視覺化編輯，在幾分鐘內建立豐富的體驗。
+使用Adobe的[Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront) (由Edge Delivery Services提供技術支援)，透過Storefront Builder的簡單檔案式撰寫或視覺化編輯，在幾分鐘內建立豐富的體驗。
 
 Commerce Storefront採用完全無周邊的分離式架構，可透過GraphQL API層提供所有銷售服務和資料。 此架構讓團隊可獨立於Commerce Foundation開發他們的前端，提供使用新興技術建立和測試新接觸點的靈活性。
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service]不支援Luma店面。 如果您要從雲端或內部部署上的Adobe Commerce進行移轉，請參閱[現有店面](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/?lang=zh-Hant#existing-storefronts)以取得移轉指南。
+>[!DNL Adobe Commerce as a Cloud Service]不支援Luma店面。 如果您要從雲端或內部部署上的Adobe Commerce進行移轉，請參閱[現有店面](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/#existing-storefronts)以取得移轉指南。
 
 ## 銷售服務與付款服務
 
@@ -109,11 +97,11 @@ Adobe提供豐富的智慧型可撰寫銷售服務，協助您支援關鍵業務
 
 以下比較可協助您針對內容供應鏈需求選取最佳選項：
 
-<table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
-  <tr style="border: none;">
-    <td style="width: 45%; vertical-align: top; border: 2px solid #e0e0e0; padding: 20px; background: #fafafa;">
-      <p style="color: #d32f2f; border-bottom: 2px solid #d32f2f; padding-bottom: 10px; margin-top: 0;">由AEM Assets支援的產品視覺效果</h3>
-      <ul style="margin: 0; padding-left: 20px;">
+<table>
+  <tr>
+    <td align="left">
+      <strong>由AEM Assets支援的產品視覺效果</strong>
+      <ul>
         <li>整合式自動化產品影像和視訊數位資產管理器(DAM)</li>
         <li>調整大小、裁切和轉換影像</li>
         <li>高速影像和視訊傳送</li>
@@ -123,12 +111,13 @@ Adobe提供豐富的智慧型可撰寫銷售服務，協助您支援關鍵業務
         <li>整合式資產選擇器</li>
       </ul>
     </td>
-    <td style="width: 10%; text-align: center; vertical-align: middle; font-size: 98px; color: #d32f2f; font-weight: bold;">
-      『
+    <td align="center">
+      <br><br><br><br><br><br><br><br><br><br><br>
+      <img src="../assets/icon-double-chevron-right.svg" alt="V形" width="100">
     </td>
-    <td style="width: 45%; vertical-align: top; border: 2px solid #e0e0e0; padding: 20px; background: #fafafa;">
-      <p style="color: #d32f2f; border-bottom: 2px solid #d32f2f; padding-bottom: 10px; margin-top: 0;">AEM Assets</h3>
-      <ul style="margin: 0; padding-left: 20px;">
+    <td align="left">
+      <strong>AEM Assets</strong>
+      <ul>
         <li>產品視覺效果的所有功能</li>
         <li>Full Marketing Digital Asset Manager (DAM)</li>
         <li>無限制的使用者（依使用者付費）</li>
@@ -139,19 +128,16 @@ Adobe提供豐富的智慧型可撰寫銷售服務，協助您支援關鍵業務
           <li>3D模型支援和沈浸式內容</li>
           <li>PDF支援</li>
           <li>AI支援的智慧型裁切</li>
-         <li>動態影像範本</li>
-        <li>智慧標籤</li>
-        <li>追蹤及分析資產績效</li>
+          <li>動態影像範本</li>
+          <li>智慧標籤</li>
+          <li>追蹤及分析資產績效</li>
         </ul>
       </ul>
     </td>
   </tr>
-</table>
-
-<table style="width: 100%; margin: 20px 0;">
-  <tr>
-    <td style="background: #f5f5f5; padding: 15px; text-align: center; font-weight: bold;">
-      Adobe品牌整合可讓您在不同方案之間輕鬆遷移。
+    <tr>
+    <td align="center" colspan="3">
+      <strong>Adobe品牌整合可讓您在不同方案之間輕鬆進行移轉。</strong>
     </td>
   </tr>
 </table>
@@ -211,7 +197,7 @@ Commerce Foundation提供安全的自動化託管平台和自助服務功能，�
 
 <!-- ## Experience Cloud integration
 
-[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
+[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
 
 [Data Connection](../data-connection/overview.md) unlocks insights about your shoppers' buying behavior so that you can create personalized shopping experiences across all channels with other Adobe Digital Experience products. -->
 
