@@ -2,10 +2,11 @@
 title: 銷售概述
 description: 瞭解 [!DNL Adobe Commerce Optimizer]中的銷售功能。
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
-source-git-commit: 356b10704c9e7c7329d3e9c0e10baa15d5142ec0
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+exl-id: cc0f280c-3934-47ca-b5dc-d83023d8e2be
+source-git-commit: 17d1872321e664ca58a702b0948fd5e6d2f33202
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
@@ -16,13 +17,17 @@ ht-degree: 0%
 
 ## 產品探索
 
-產品探索可增強您的網站搜尋功能，確保購物者獲得順暢而有效的體驗，進而將轉換率最大化。 它可讓銷售人員確保購物者在適當的時間獲得適當的產品。
+產品探索為商家提供了強大的工具，用於策劃和最佳化購物體驗，確保客戶在正確的時間快速找到正確的產品。 只要微調搜尋行為，您就可以直接影響產品可見度、相關性和轉換。
 
-透過產品探索，您可以設定Facet、規則和同義字以：
+透過產品探索，您可以：
 
-- 建立有意義的搜尋體驗，協助購物者和買家儘可能輕鬆地找到他們想要的。
-- 利用AI支援的動態多面向和重新排名搜尋結果，以回應工作階段中的購物者行為。
+* **設定[面向](./facets/overview.md)、[銷售規則](./rules/overview.md)和[同義字](./synonyms/overview.md)**，以引導購物者以最小的摩擦找到最相關的產品。
+* **建立直覺式、以目標為導向的搜尋體驗**，以反映您的銷售策略和季節性優先順序。
+* **使用AI驅動的動態多面向和結果重新排名**，根據購物者行為即時調整搜尋結果 — 提升參與度和銷售量。
+* **確保促銷和高優先順序的專案有效呈現**，讓搜尋結果符合業務目標。
 
 ## Recommendations
 
-Recommendations會使用人工智慧和機器學習演演算法，對彙總的訪客資料執行深入分析。 此資料與目錄結合後，會產生極為引人入勝、相關且個人化的體驗。 Recommendations會以具有標籤的單位形式出現在商店中，例如「檢視過此產品的客戶也檢視過」。 您可以直接從[!DNL Adobe Commerce Optimizer]建立、管理和部署建議。
+Recommendations會使用人工智慧和機器學習來分析整個店面的彙總訪客行為和產品互動。 透過將此行為資料與您的產品目錄結合，[!DNL Adobe Commerce Optimizer]可提供高度個人化的相關產品建議，以增強購物者參與度並提高轉換。
+
+Recommendations會以標示單位的形式顯示在店面上，例如「檢視過此產品的客戶也檢視過此產品」。 這些單位可在整個購物歷程中策略性地放置。 身為銷售商，您可以輕鬆地直接在[!DNL Adobe Commerce Optimizer]中建立、管理和部署這些建議單位，以支援促銷目標、交叉銷售策略和個人化體驗。
