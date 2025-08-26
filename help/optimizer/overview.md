@@ -2,11 +2,11 @@
 title: 什麼是Adobe Commerce Optimizer？
 description: 瞭解 [!DNL Adobe Commerce Optimizer] 及其主要功能。
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: 877f3c377715f204904eefe3b93d796084721aa7
+source-git-commit: 69c752322b01985a2eb55de69d4736d75f6bd60a
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '899'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 請觀看下列影片以瞭解[!DNL Adobe Commerce Optimizer]的高階概觀：
 
->[!VIDEO](https://video.tv.adobe.com/v/3450474?captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3450226)
 
 ## 誰從[!DNL Adobe Commerce Optimizer]中受益最大？
 
@@ -79,7 +79,7 @@ ht-degree: 0%
 
 主要功能包括：
 
-- **協力廠商目錄擷取** — 從任何協力廠商來源(您現有的Commerce目錄、PIM、ERP等)擷取目錄資料。 您的目錄資料會直接內嵌到銷售服務層中，這是一個SaaS元件，稱為銷售服務，由目錄檢視和原則（目錄檢視和原則）提供支援。
+- **協力廠商目錄擷取** — 從任何協力廠商來源(您現有的Commerce目錄、PIM、ERP等)擷取目錄資料。 您的目錄資料會直接內嵌到銷售服務層中，這是一個SaaS元件，稱為「銷售服務」，由目錄檢視和原則提供支援。
 - **目錄檢視和原則支援的銷售服務** — 此解決方案是[!DNL Adobe Commerce Optimizer]的基礎。 由目錄檢視和原則支援的銷售服務是一種高度可擴充、彈性的目錄資料模型，可解鎖多品牌、多業務單位和多語言使用案例。 這些銷售服務提供建構元素，商家可以利用建構元素來大規模建立和管理目錄。 在[!DNL Adobe Commerce Optimizer]中，您可以建立最能定義您業務目標的目錄檢視和原則，以管理您的目錄。 此外，銷售商可提供個人化體驗，使用產品探索、建議&#x200B;和智慧型銷售來促進流量和參與。
 - **之前和之後的量度** — 提供商務方案效能的即時深入分析。 您可以檢視特定KPI的結果之前和之後，並評估變更的影響和最佳化以獲得更好的結果。 您可以在PDF中匯出結果。
 - **由Edge Delivery提供支援的Commerce店面** — 透過Edge傳送，您可以使用具有整合式商務功能的預先建立店面元件來快速啟動您的網站 — 包括產品清單頁面、產品詳細資料頁面、購物車和結帳。
