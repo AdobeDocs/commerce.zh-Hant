@@ -3,11 +3,11 @@ title: 開始使用
 description: 瞭解如何開始使用 [!DNL Adobe Commerce Optimizer]。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: 7a77cc79be9b6f835668b394909ea2325b642b03
+source-git-commit: 15a708db9a9a31798877ea3a400d5a9f6f930bda
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: '1002'
 ht-degree: 0%
 
 ---
@@ -38,24 +38,24 @@ ht-degree: 0%
    ![建立執行個體](./assets/create-aco-instance.png){width="60%" zoomable="yes"}
 
 1. 設定執行個體設定：
-   - **名稱**：描述性名稱（例如「My Company Sandbox」）
+   - **執行個體名稱**：描述性名稱（例如「My Company Sandbox」）
    - **描述**：用途的簡短描述
-   - **地區**：選取您偏好的地區
    - **環境型別**：從測試的&#x200B;**沙箱**&#x200B;環境開始
+   - **地區**：選取您偏好的地區
 
 1. 按一下&#x200B;**新增執行個體**。
 
-   Cloud Manager會更新以包含您的新執行個體。 如需存取和管理它的詳細資訊，請參閱[管理執行個體](#manage-an-instance)。
+   Cloud Manager會更新以包含您的新執行個體。 如需存取和管理它的詳細資訊，請參閱[管理執行個體](#manage-instances)。
 
 >[!NOTE]
 >
->沙箱例項僅限北美區域使用。 建立後即無法變更區域。
+>您只能在北美地區建立沙箱環境。 建立例項後，便無法變更區域。
 
 ### 步驟2. 設定您的環境
 
 建立執行個體後：
 
-1. 從Commerce Cloud Manager [管理您的執行個體](#manage-an-instance)。
+1. 從Commerce Cloud Manager [管理您的執行個體](#manage-instances)。
 1. 使用[使用者管理指南](./user-management.md)設定使用者存取權。
 
 ### 步驟3. 新增範例資料（可選）
@@ -217,6 +217,6 @@ Adobe提供GitHub存放庫和範例資料與工具，協助您學習及測試[!D
 ### 取得協助
 
 - **開發人員資源**： [開發人員檔案](https://developer.adobe.com/commerce/services/optimizer/)
-- **店面資源**： [Commerce店面檔案](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant)
-- **教學課程**： [Commerce Optimizer教學課程](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
-- **支援**： [Adobe Commerce支援資源](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/overview)
+- **店面資源**： [Commerce店面檔案](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **教學課程**： [Commerce Optimizer教學課程](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
+- **支援**： [Adobe Commerce支援資源](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
