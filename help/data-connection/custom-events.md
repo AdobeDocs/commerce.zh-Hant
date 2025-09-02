@@ -3,10 +3,11 @@ title: 建立自訂事件
 description: 瞭解如何建立自訂事件，將您的Adobe Commerce資料連線至其他Adobe DX產品。
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: db782c0a-8f13-4076-9b17-4c5bf98e9d01
+source-git-commit: 81fbcde11da6f5d086c2b94daeffeec60a9fdbcc
 workflow-type: tm+mt
-source-wordcount: '260'
-ht-degree: 0%
+source-wordcount: '271'
+ht-degree: 1%
 
 ---
 
@@ -20,8 +21,8 @@ ht-degree: 0%
 
 對於任何`custom`事件，收集器：
 
-- 將具有`ECID`的`identityMap`新增為主要身分
-- 在`identityMap`中包含`email`以作為次要身分&#x200B;_如果_ `personalEmail.address`已設定在事件中
+- 將具有`identityMap`的`ECID`新增為主要身分
+- 在`email`中包含`identityMap`以作為次要身分&#x200B;_如果_ `personalEmail.address`已設定在事件中
 - 在轉送至Edge之前，先包裝`xdm`物件內的完整事件
 
 範例：
@@ -76,11 +77,7 @@ mse.publish.custom({
 
 對於具有`customContext`的任何事件，收集器會覆寫在相關內容中設定的聯結欄位（欄位在`customContext`中）。 覆寫的使用案例是當開發人員想要重複使用和擴充由頁面其他部分在已支援的事件中設定的內容時。
 
->[!NOTE]
->
->覆寫自訂事件時，應針對該事件型別關閉轉送至Experience Platform的事件，以避免重複計算。
-
-範例：
+### 範例
 
 透過Adobe Commerce Events SDK發佈的具覆寫功能的產品檢視：
 
@@ -131,6 +128,30 @@ mse.publish.productPageView({
   }
 }
 ```
+
+Luma商店：
+
+在Luma型存放區中，發佈事件會以原生方式實施。 因此，您可以延伸`customContext`來設定自訂資料。
+
+例如：
+
+```javascript
+mse.context.setCustom({
+  productListItems: [
+    {
+      productCategories: [
+        {
+          categoryID: "cat_15",
+          categoryName: "summer pants",
+          categoryPath: "pants/mens/summer",
+        },
+      ],
+    },
+  ],
+});
+```
+
+請參閱[自訂事件覆寫](https://github.com/adobe/commerce-events/blob/main/examples/events/custom-event-override.md)，深入瞭解如何處理自訂資料。
 
 >[!NOTE]
 >
