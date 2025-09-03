@@ -117,7 +117,7 @@ Adobe提供Commerce服務、整合服務和資料工具的集合，協助商戶�
       </a>
       <div>
          <a href="../data-connection/overview.md">
-         <strong>[!DNL Data Connection]</strong> [！BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce。"}
+         <strong>[!DNL Data Connection]</strong> [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce。"}
          </a>
       </div>
       <p>
@@ -130,7 +130,7 @@ Adobe提供Commerce服務、整合服務和資料工具的集合，協助商戶�
       </a>
       <div>
           <a href="../landing/saas.md">
-         <strong>Commerce服務聯結器</strong> [！BADGE PaaS only]{type=Informational url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce。"}
+         <strong>Commerce服務聯結器</strong> [!BADGE PaaS only]{type=Informational url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce。"}
          </a>
       </div>
       <p>
