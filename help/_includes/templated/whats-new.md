@@ -23,7 +23,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>您現在可以使用<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/storefront">網站建立者工具</a>來設定店面，而不需要使用CLI。</p>
+      <td><p>您現在可以使用<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/storefront">網站建立者工具</a>來設定店面，而不需要使用CLI。</p>
 </td>
       <td>
         重大更新
@@ -45,7 +45,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>新增如何將<a href="https://experienceleague.adobe.com/en/docs/commerce/data-connection/customize-data/custom-identities">自訂屬性新增至設定檔</a>的主題。</p>
+      <td><p>新增如何將<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/data-connection/customize-data/custom-identities">自訂屬性新增至設定檔</a>的主題。</p>
 </td>
       <td>
         新主題
