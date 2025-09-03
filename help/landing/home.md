@@ -5,7 +5,7 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce merchants support key components of their business.
 recommendations: noCatalog
 exl-id: 507af1fa-9f3e-41bc-9aaf-cd89839aae0b
-source-git-commit: 757c1f430346ef82cba0f708cdd17580d8e6dba9
+source-git-commit: c7c9c19936ed1db8e262daaf391bd2d168b91741
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 0%
@@ -117,7 +117,7 @@ Adobe提供Commerce服務、整合服務和資料工具的集合，協助商戶�
       </a>
       <div>
          <a href="../data-connection/overview.md">
-         <strong>[!DNL Data Connection]</strong> [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce。"}
+         <strong>[!DNL Data Connection]</strong> [！BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce。"}
          </a>
       </div>
       <p>
@@ -130,7 +130,7 @@ Adobe提供Commerce服務、整合服務和資料工具的集合，協助商戶�
       </a>
       <div>
           <a href="../landing/saas.md">
-         <strong>Commerce服務聯結器</strong> [!BADGE PaaS only]{type=Informational url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce。"}
+         <strong>Commerce服務聯結器</strong> [！BADGE PaaS only]{type=Informational url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce。"}
          </a>
       </div>
       <p>
@@ -184,11 +184,11 @@ Adobe提供Commerce服務、整合服務和資料工具的集合，協助商戶�
       </p>
    </td>
    <td valign="top">
-      <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
       <img alt="監視資料同步" src="../assets/icons/Monitoring.svg" width="40">
       </a>
       <div>
-          <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
          <strong>資料管理儀表板</strong>
          </a>
       </div>
@@ -203,3 +203,5 @@ Adobe提供Commerce服務、整合服務和資料工具的集合，協助商戶�
 >Commerce商戶可使用具有有效授權的產品建議v6.0.0、即時搜尋v4.1.0或目錄服務v1.17，不需額外付費，即可使用資料管理儀表板。 使用舊版服務的商家可以使用[目錄同步](../landing/catalog-sync.md)來管理和追蹤資料同步。
 
 {{$include /help/_includes/templated/whats-new.md}}
+
+<!-- Last updated from includes: 2025-08-29 15:18:45 -->
