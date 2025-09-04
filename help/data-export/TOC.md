@@ -3,10 +3,10 @@ user-guide-title: SaaS服務的[!DNL Data Export]指南
 user-guide-description: 本指南提供使用Adobe Commerce SaaS服務 [!DNL Data Export] 擴充功能的詳細指示。
 role: Admin
 feature: Services
-source-git-commit: d5f1589ececaa4f9ba64b0feb76acfb314720cb7
+source-git-commit: 6abfeca68ab67fb11493f78440e09408479e1535
 workflow-type: tm+mt
-source-wordcount: '74'
-ht-degree: 5%
+source-wordcount: '82'
+ht-degree: 4%
 
 ---
 
@@ -23,5 +23,6 @@ ht-degree: 5%
 - 擴充性 {#extensibility}
    - [延伸與自訂SaaS資料匯出摘要](extensibility-and-customizations.md)
    - [動態新增產品屬性](add-attribute-dynamically.md)
+   - [新增稅捐類別、屬性集及存貨中繼資料](add-tax-attribute-set-inventory-attributes.md)
 - [發行說明](release-notes.md)
-- [返回Commerce服務首頁](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=zh-Hant)
+- [返回Commerce服務首頁](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)

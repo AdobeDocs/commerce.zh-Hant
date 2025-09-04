@@ -3,7 +3,7 @@ title: 動態新增產品屬性
 description: 瞭解如何在資料同步程式進行期間，以動態方式將自訂產品屬性新增至資料匯出摘要。
 role: Admin, Developer
 exl-id: d5ed7497-4be1-440a-a567-81b64fdc54fc
-source-git-commit: bf45670a0bc5fb02dd229a9e3d7af7f2676c5a1f
+source-git-commit: 37d5699315e34f1504602090fae5201ee51cf470
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->擴充產品屬性的最佳方式是[將它們新增至Adobe Commerce](extensibility-and-customizations.md#add-product-attributes-to-adobe-commerce)，您可以在其中從Commerce管理員設定和管理這些屬性。 只有在您僅需要Commerce店面服務才能動態新增這些值，且不想在Adobe Commerce中註冊這些值時，才可動態新增。 您也可以選擇搭配目錄服務[&#128279;](../catalog-service/mesh.md)使用API Mesh來管理自訂屬性，以擴充目錄服務GraphQL結構描述。
+>擴充產品屬性的最佳方式是[將它們新增至Adobe Commerce](extensibility-and-customizations.md#add-product-attributes-to-adobe-commerce)，您可以在其中從Commerce管理員設定和管理這些屬性。 只有在您僅需要Commerce店面服務才能動態新增這些值，且不想在Adobe Commerce中註冊這些值時，才可動態新增。 您也可以選擇搭配目錄服務[使用](../catalog-service/mesh.md)API Mesh來管理自訂屬性，以擴充目錄服務GraphQL結構描述。
 
 ## 新增產品屬性
 
@@ -105,7 +105,7 @@ ht-degree: 0%
 
 1. 建立下列提供者`\Magento\CatalogDataExporter\Model\Provider\ProductMetadata`的外掛程式。
 
-   檢查`vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`中的`ProductAttributeMetadata`以取得必要欄位。
+   檢查`ProductAttributeMetadata`中的`vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`以取得必要欄位。
 
    ```php
     <?php
@@ -176,3 +176,4 @@ ht-degree: 0%
    ```
    bin/magento saas:resync --feed=productattributes
    ```
+
