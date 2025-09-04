@@ -25,4 +25,4 @@ ht-degree: 4%
    - [動態新增產品屬性](add-attribute-dynamically.md)
    - [新增稅捐類別、屬性集及存貨中繼資料](add-tax-attribute-set-inventory-attributes.md)
 - [發行說明](release-notes.md)
-- [返回Commerce服務首頁](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [返回Commerce服務首頁](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=zh-Hant)
