@@ -3,9 +3,9 @@ title: 邊界和限制
 description: 瞭解 [!DNL Live Search] 的界限和限制，以確保其符合您的業務需求。
 role: Admin, Developer
 exl-id: 28b8d98f-0784-4c4d-b382-81c01838e0de
-source-git-commit: 90441950a71e4b25462a89f0cb7352fd8086ed6e
+source-git-commit: 046a18ff5007a1cf2cbac172cc8a069702bfbc79
 workflow-type: tm+mt
-source-wordcount: '1075'
+source-wordcount: '1087'
 ht-degree: 0%
 
 ---
@@ -16,13 +16,14 @@ ht-degree: 0%
 
 ## 一般
 
-- 安裝[時，](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/catalog/search/search)進階搜尋[!DNL Live Search]模組已停用，且店面頁尾中的進階搜尋連結已移除。
-- [層級定價](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/products/pricing/product-price-tier)在[!DNL Live Search]欄位和產品清單頁面Widget中不受支援。
+- 安裝[時，](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search)進階搜尋[!DNL Live Search]模組已停用，且店面頁尾中的進階搜尋連結已移除。
+- [層級定價](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier)在[!DNL Live Search]欄位和產品清單頁面Widget中不受支援。
 - 產品價格包含增值稅(VAT)，但[!DNL Live Search]無法將VAT顯示為個別值。
 - 不支援內容搜尋(CMS頁面和區塊)。
 - 可分頁的結果數量上限為10,000。 為了確保購物者在類別或搜尋結果包含大量產品時不必使用深層分頁，請提供有意義的方式來篩選產品。
 - 每個屬性有1MB的硬性限制，包括說明和自訂屬性。
 - 搜尋配接卡不支援使用自訂來源模型建立並當作Facet使用的產品屬性。 若要支援此功能，您必須使用[產品清單頁面Widget](plp-styling.md)。
+- 自Live Search 4.0.0起，已棄用搜尋配接器。
 - 不支援自訂產品型別。
 - 不支援以`"is_user_defined": false`程式化建立的自訂屬性。
 - 您可以使用「開頭為」或「包含」條件篩選結果，但有一些限制，如[開發人員檔案](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#limitations)中所述。
@@ -42,7 +43,7 @@ ht-degree: 0%
 ## Facet
 
 - 從已定義的可篩選屬性集中，您最多可以設定100個屬性為Facet。
-- 在一個Facet中，最多可傳回100個值區。 如果您需要傳回100個以上的貯體，請[建立支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)，讓Adobe能夠分析效能影響，並判斷為您的環境提高此限制是否可行。
+- 在一個Facet中，最多可傳回100個值區。 如果您需要傳回100個以上的貯體，請[建立支援票證](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)，讓Adobe能夠分析效能影響，並判斷為您的環境提高此限制是否可行。
 - 動態Facet可能會在大型索引和高序數的索引中造成效能問題。 如果您已建立動態Facet，且發現任何效能降低或頁面未載入時發生逾時錯誤，請嘗試將您的Facet變更為Pined ，以判斷這是否會解決您的效能問題。
 - Stock狀態(`quantity_and_stock_status`)不支援為Facet。 您可以使用`inStock: 'true'`來篩選無庫存的產品。 當`LiveSearchAdapter`管理員中的「顯示無庫存產品」設為「True」時，[!DNL Commerce]模組可立即支援此功能。
 - 日期型別屬性不支援為Facet。
@@ -78,12 +79,12 @@ ht-degree: 0%
 ## B2B和類別許可權
 
 - 產品若未新增至預設共用目錄，則不會顯示。
-- 若要使用[類別許可權](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/categories/category-permissions)限制客戶群組：
+- 若要使用[類別許可權](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions)限制客戶群組：
    - 必須將產品指派給根類別。 (**注意：**&#x200B;您可以將SaaS Data Export擴充功能更新至103.4.0+版，以移除此限制。 請參閱[管理資料匯出擴充功能](../data-export/manage-extension.md)。
    - 必須向「未登入」客戶群組提供「允許」瀏覽許可權。
-   - 若要將產品限制在「未登入」客戶群組，請移至每個類別，並為每個[客戶群組](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage)設定許可權。
+   - 若要將產品限制在「未登入」客戶群組，請移至每個類別，並為每個[客戶群組](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage)設定許可權。
 - 目前不支援在PWA Studio上透過PLP Widget提供B2B的現成支援。 不過，您可以[使用API](install.md#pwa-support)來實作此功能。
-- [!DNL Live Search]中的類別Facet可能會顯示無法顯示給特定[客戶群組](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage)的類別。
+- [!DNL Live Search]中的類別Facet可能會顯示無法顯示給特定[客戶群組](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage)的類別。
 - [!DNL Live Search]最多可支援1,000個客戶群組。
 
 ## [!DNL Storefront popover]
@@ -98,9 +99,9 @@ ht-degree: 0%
 
 如需疑難排解[!DNL Live Search]中某些常見問題的協助，請參閱下列知識庫文章：
 
-- [[!DNL Live Search] 目錄未同步](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync)
-- [[!DNL Live Search] 儀表板和搜尋結果排名不正確](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-dashboard-ranking-incorrect)
+- [[!DNL Live Search] 目錄未同步](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync)
+- [[!DNL Live Search] 儀表板和搜尋結果排名不正確](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-dashboard-ranking-incorrect)
 - 無論Admin[[!DNL Live Search] 中的庫存狀態設定為何，](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-displays-out-of-stock-products)都會顯示無庫存的產品
-- [[!DNL Live Search] Facet未依字母順序排序](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-facets-not-sorted)
+- [[!DNL Live Search] Facet未依字母順序排序](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-facets-not-sorted)
 
-如果您需要其他協助，請連絡[支援](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。
+如果您需要其他協助，請連絡[支援](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。
