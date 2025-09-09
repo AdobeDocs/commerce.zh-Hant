@@ -1,8 +1,9 @@
 ---
 title: 設定
 description: 設定 [!DNL Adobe Commerce Optimizer]的設定。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
-source-git-commit: 3020386cd051b4453ed6b90d2c694a5bb31dfb24
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+exl-id: 6ac223de-8e03-4842-8b67-92ce321d323d
+source-git-commit: 652681cc9aef416040ccd470d04bf2540fe97262
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 0%
@@ -22,7 +23,7 @@ ht-degree: 0%
 您可以指定價格範圍群組的數量，以及價格值在群組之間的分配方式。 每個價格範圍會依序與上一個群組重疊。 例如，間隔為20的五個群組會建立下列價格範圍：0-20、20-40、40-60、60-80和>80。 如果目錄中沒有足夠產品可填滿所有已定義的範圍，則會相應地調整可用群組的顯示。 例如：0-20、60-80、>80。
 
 1. 在&#x200B;**設定**&#x200B;工作區中，選取&#x200B;**[!UICONTROL Search]**，然後在&#x200B;**價格面向**&#x200B;下執行下列動作：
-   - 輸入可用的&#x200B;**選擇數目**&#x200B;或價格群組。 最多可定義50個價格群組。
+   - 輸入可用的&#x200B;**選擇數目**&#x200B;或價格群組。 最多可定義100個價格群組。
    - 輸入每個群組的&#x200B;**間隔值**&#x200B;或價格範圍。 最大值為40,000,000。
 1. 按一下&#x200B;**儲存**。
 
@@ -32,7 +33,7 @@ ht-degree: 0%
 
 | 欄位 | 說明 |
 |--- |--- |
-| 選擇數量 | 指定可在店面中作為搜尋篩選器使用的價格範圍群組數目。 預設值：8，最大值：50 |
+| 選擇數量 | 指定可在店面中作為搜尋篩選器使用的價格範圍群組數目。 預設值：8，最大值：100 |
 | 間隔值 | 指定每個群組的價格範圍間隔。 例如，間隔值為20的五個選取專案會建立0-20、20-40、40-60、60-80和>80的五個群組。 預設值：5，最大值：40,000,000 |
 
 ## 語言
