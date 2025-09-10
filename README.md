@@ -1,7 +1,7 @@
 ---
-source-git-commit: 39977196f322cac571ecdb0219f006970aff3575
+source-git-commit: e761e54e7bd7997f3f40b1dfc1293012931111b0
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '466'
 ht-degree: 5%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 5%
 
 ## 關於您對Adobe內容的貢獻
 
-請參閱[Adobe檔案投稿人指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hant)。
+請參閱[Adobe檔案投稿人指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
 
 貢獻方式取決於您的身分和您要貢獻的變更型別：
 
 ### 微幅變更
 
-如果您要提出微幅更新，請瀏覽文章，然後按一下文章底部的意見區域，按一下&#x200B;**詳細的意見選項**，然後按一下&#x200B;**建議編輯**，即可前往GitHub的Markdown來源檔案。 使用GitHub UI進行更新。 如需詳細資訊，請參閱一般[Adobe檔案投稿人指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hant)。
+如果您要提出微幅更新，請瀏覽文章，然後按一下文章底部的意見區域，按一下&#x200B;**詳細的意見選項**，然後按一下&#x200B;**建議編輯**，即可前往GitHub的Markdown來源檔案。 使用GitHub UI進行更新。 如需詳細資訊，請參閱一般[Adobe檔案投稿人指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
 
 您在本存放庫為檔案和程式碼範例提交的小幅更正或釐清均包含在Adobe使用條款中。
 
@@ -37,7 +37,7 @@ ht-degree: 5%
 
 社群投稿人可以使用GitHub UI進行基本編輯或建立存放庫復本，以做出重大貢獻。
 
-如需詳細資訊，請參閱[Adobe檔案貢獻者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hant)。
+如需詳細資訊，請參閱[Adobe檔案貢獻者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
 
 ## 如何使用Markdown將主題格式化
 
@@ -73,3 +73,12 @@ ht-degree: 5%
 - 不需要手動最佳化
 
 如需詳細的設定指示、疑難排解和組態，請參閱[`.githooks/README.md`](.githooks/README.md)。
+
+## 可用的Rake任務
+
+此存放庫使用`adobe-comdox-exl-rake-tasks` gem提供的Rake工作。 若要檢視所有可用的工作，請執行：
+
+```bash
+cd _jekyll
+bundle exec rake --tasks
+```
