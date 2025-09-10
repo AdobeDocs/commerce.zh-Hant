@@ -3,10 +3,9 @@ title: 安裝與設定
 description: 瞭解如何安裝、更新及解除安裝 [!DNL Product Recommendations]。
 role: Admin, Developer
 exl-id: 2e7f6454-d4cb-44bc-982f-354a179e8e59
-badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce 。"
-source-git-commit: 7d5e3faeef2fb16779d1558027a0b76ff3fe3a38
+source-git-commit: 3821893c3df01e2e36ab0142616e52c1c92b4d51
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '567'
 ht-degree: 0%
 
 ---
@@ -42,7 +41,7 @@ Page Builder的[!DNL Product Recommendations]為選用模組，需另行安裝�
 composer require magento/module-page-builder-product-recommendations
 ```
 
-透過在頁面產生器中啟用[!DNL Product Recommendations]，您可以將現有的作用中[建議單位](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/page-builder/add-content/recommendations)新增到頁面產生器中建立的任何內容，例如頁面、區塊和動態區塊。
+透過在頁面產生器中啟用[!DNL Product Recommendations]，您可以將現有的作用中[建議單位](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)新增到頁面產生器中建立的任何內容，例如頁面、區塊和動態區塊。
 
 如需進一步說明，請參閱[搭配頁面產生器內容 [!DNL Product Recommendations] 使用](page-builder.md)。
 
@@ -60,13 +59,13 @@ composer require magento/module-visual-product-recommendations
 
    設定此連線會啟用Commerce執行個體、目錄服務和其他支援服務之間的資料同步和通訊。 資料同步處理由[SaaS Data Export擴充功能](../data-export/overview.md)處理。
 
-1. 若要確保目錄匯出可以正確執行，請確認[cron](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)工作和[索引子](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cli/manage-indexers)正在執行，且`Product Feed`索引子設定為`Update by Schedule`。
+1. 若要確保目錄匯出可以正確執行，請確認[cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)工作和[索引子](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers)正在執行，且`Product Feed`索引子設定為`Update by Schedule`。
 
 當您成功將Commerce應用程式連結至Commerce Services並指定[SaaS資料空間](../landing/saas.md#saas-configuration)後，目錄同步作業就會開始。 然後，您可以[驗證](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/)行為資料正在傳送至您的店面。
 
 ## 監控資料同步並疑難排解
 
-透過Commerce Admin，您可以使用[資料管理控制面板](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-dashboard)來監視同步化程式。 使用[Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting)和記錄檔來管理和疑難排解程式。
+透過Commerce Admin，您可以使用[資料管理控制面板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard)來監視同步化程式。 使用[Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting)和記錄檔來管理和疑難排解程式。
 
 然後，您可以[驗證](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/)行為資料正在傳送至您的店面。
 
@@ -120,4 +119,4 @@ composer update --with-dependencies magento/product-recommendations magento/modu
 
 ## 解除安裝[!DNL Product Recommendations] {#uninstall}
 
-如有必要，您可以[解除安裝](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/tutorials/uninstall-modules)產品建議模組。
+如有必要，您可以[解除安裝](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules)產品建議模組。
