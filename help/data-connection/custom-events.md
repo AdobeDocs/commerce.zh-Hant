@@ -4,10 +4,10 @@ description: 瞭解如何建立自訂事件，將您的Adobe Commerce資料連�
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: db782c0a-8f13-4076-9b17-4c5bf98e9d01
-source-git-commit: 81fbcde11da6f5d086c2b94daeffeec60a9fdbcc
+source-git-commit: 25d796da49406216f26d12e3b1be01902dfe9302
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 1%
+source-wordcount: '314'
+ht-degree: 0%
 
 ---
 
@@ -73,16 +73,26 @@ mse.publish.custom({
 
 ## 處理事件覆寫（自訂屬性）
 
-僅Experience Platform支援標準事件的屬性覆寫。 自訂資料不會轉送到Commerce儀表板和量度追蹤器。
+對於使用`customContext`設定的任何事件，收集器會覆寫或延伸`custom context`中欄位之事件裝載中的欄位。 覆寫的使用案例是當開發人員想要重複使用和擴充由頁面其他部分在已支援的事件中設定的內容時。
 
-對於具有`customContext`的任何事件，收集器會覆寫在相關內容中設定的聯結欄位（欄位在`customContext`中）。 覆寫的使用案例是當開發人員想要重複使用和擴充由頁面其他部分在已支援的事件中設定的內容時。
+事件覆寫僅適用於轉送至Experience Platform時。 它們不會套用至Adobe Commerce和Sensei分析事件。 Adobe Commerce事件收集器[README](https://github.com/adobe/commerce-events/blob/e34bcfc0deca8d5ac1f9310fc1ee4c1becf4ffbb/packages/storefront-events-collector/README.md)提供其他資訊。
 
-### 範例
+>[!NOTE]
+>
+>使用Experience Platform事件裝載中的自訂屬性增加`productListItems`時，請使用SKU比對產品。 此要求不適用於`product-page-view`個事件。
 
-透過Adobe Commerce Events SDK發佈的具覆寫功能的產品檢視：
+### 使用情況
 
 ```javascript
-mse.publish.productPageView({
+const mse = window.magentoStorefrontEvents;
+
+mse.publish.productPageView(customCtx);
+```
+
+### 範例1 — 新增`productCategories`
+
+```javascript
+magentoStorefrontEvents.publish.productPageView({
     productListItems: [
         {
             productCategories: [
@@ -97,45 +107,11 @@ mse.publish.productPageView({
 });
 ```
 
-在Experience Platform Edge中：
+### 範例2 — 在發佈事件前新增自訂內容
 
 ```javascript
-{
-  xdm: {
-    eventType: 'commerce.productViews',
-    identityMap: {
-      ECID: [
-        {
-          id: 'ecid1234',
-          primary: true,
-        }
-      ]
-    },
-    commerce: {
-      productViews: {
-        value : 1,
-      }
-    },
-    productListItems: [{
-        SKU: "1234",
-        name: "leora summer pants",
-        productCategories: [{
-            categoryID: "cat_15",
-            categoryName: "summer pants",
-            categoryPath: "pants/mens/summer",
-        }],
-    }],
-  }
-}
-```
+const mse = window.magentoStorefrontEvents;
 
-Luma商店：
-
-在Luma型存放區中，發佈事件會以原生方式實施。 因此，您可以延伸`customContext`來設定自訂資料。
-
-例如：
-
-```javascript
 mse.context.setCustom({
   productListItems: [
     {
@@ -149,9 +125,56 @@ mse.context.setCustom({
     },
   ],
 });
+
+mse.publish.productPageView();
 ```
 
-請參閱[自訂事件覆寫](https://github.com/adobe/commerce-events/blob/main/examples/events/custom-event-override.md)，深入瞭解如何處理自訂資料。
+### 範例3 — 在發佈程式中設定的自訂內容會覆寫先前在Adobe Client Data Layer中設定的自訂內容。
+
+在此範例中，`pageView`事件在&#x200B;**欄位中會有**&#x200B;自訂頁面名稱2`web.webPageDetails.name`。
+
+```javascript
+const mse = window.magentoStorefrontEvents;
+
+mse.context.setCustom({
+  web: {
+    webPageDetails: {
+      name: 'Custom Page Name 1'
+    },
+  },
+});
+
+mse.publish.pageView({
+  web: {
+    webPageDetails: {
+      name: 'Custom Page Name 2'
+    },
+  },
+});
+```
+
+### 範例4 — 使用具有多個產品的事件將自訂內容新增至`productListItems`
+
+```javascript
+const mse = window.magentoStorefrontEvents;
+
+mse.context.setCustom({
+  productListItems: [
+    {
+      SKU: "24-WB01", //Match SKU to override correct product in event payload
+      productCategory: "Hand Bag", //Custom attribute added to event payload
+      name: "Strive Handbag (CustomName)" //Override existing attribute with custom value in event payload
+    },
+    {
+      SKU: "24-MB04",
+      productCategory: "Backpack Bag",
+      name: "Strive Backpack (CustomName)"
+    },
+  ],
+});
+
+mse.publish.shoppingCartView();
+```
 
 >[!NOTE]
 >
