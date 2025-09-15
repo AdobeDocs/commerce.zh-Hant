@@ -4,9 +4,9 @@ description: 瞭解如何建立自訂事件，將您的Adobe Commerce資料連�
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: db782c0a-8f13-4076-9b17-4c5bf98e9d01
-source-git-commit: 25d796da49406216f26d12e3b1be01902dfe9302
+source-git-commit: 4e8cf0ad3f8f94d4f59bc8d78a44f4b3e86cbc3e
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
@@ -89,7 +89,9 @@ const mse = window.magentoStorefrontEvents;
 mse.publish.productPageView(customCtx);
 ```
 
-### 範例1 — 新增`productCategories`
+### 範例1
+
+此範例會在發佈事件時新增自訂內容。
 
 ```javascript
 magentoStorefrontEvents.publish.productPageView({
@@ -107,7 +109,9 @@ magentoStorefrontEvents.publish.productPageView({
 });
 ```
 
-### 範例2 — 在發佈事件前新增自訂內容
+### 範例2
+
+此範例會在發佈事件之前新增自訂內容。
 
 ```javascript
 const mse = window.magentoStorefrontEvents;
@@ -129,7 +133,9 @@ mse.context.setCustom({
 mse.publish.productPageView();
 ```
 
-### 範例3 — 在發佈程式中設定的自訂內容會覆寫先前在Adobe Client Data Layer中設定的自訂內容。
+### 範例3
+
+此範例會在發佈程式中設定自訂內容，並覆寫先前在Adobe使用者端資料層中設定的自訂內容。
 
 在此範例中，`pageView`事件在&#x200B;**欄位中會有**&#x200B;自訂頁面名稱2`web.webPageDetails.name`。
 
@@ -153,7 +159,9 @@ mse.publish.pageView({
 });
 ```
 
-### 範例4 — 使用具有多個產品的事件將自訂內容新增至`productListItems`
+### 範例4
+
+此範例將自訂內容新增至具有多個產品的`productListItems`事件。
 
 ```javascript
 const mse = window.magentoStorefrontEvents;
@@ -174,6 +182,22 @@ mse.context.setCustom({
 });
 
 mse.publish.shoppingCartView();
+```
+
+Luma商店：
+
+Luma型存放區以原生方式實作發佈事件，因此您可以延伸`customContext`來設定自訂資料。
+
+例如：
+
+```javascript
+mse.context.setCustom({
+  web: {
+    webPageDetails: {
+      name: 'Custom Page Name'
+    },
+  },
+});
 ```
 
 >[!NOTE]
