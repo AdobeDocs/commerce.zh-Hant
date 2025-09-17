@@ -3,9 +3,9 @@ title: 發行說明
 description: Adobe Commerce中 [!DNL Data Connection] 擴充功能的最新發行資訊。
 feature: Personalization, Integration, Release Notes
 exl-id: f3b92632-947d-40cd-89b7-24ed0680be51
-source-git-commit: 90fcaa2cdd7c869ceddaeea7525cac00a41d94c5
+source-git-commit: 9c10aecb303dd09a85bdafa93d791d30611ec8b2
 workflow-type: tm+mt
-source-wordcount: '1257'
+source-wordcount: '1290'
 ht-degree: 1%
 
 ---
@@ -24,9 +24,9 @@ ht-degree: 1%
 
 有關[!DNL Data Connection]擴充功能所使用的擴充功能的功能變更和修正，請參閱&#x200B;**支援的服務更新**。
 
-請參閱[即將發行的版本](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/planning/schedule)，瞭解發行排程和支援。
+請參閱[即將發行的版本](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule)，瞭解發行排程和支援。
 
-請參閱開發人員檔案以[瞭解哪些Commerce版本支援此模組](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/product-availability)。
+請參閱開發人員檔案以[瞭解哪些Commerce版本支援此模組](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)。
 
 ## 支援的服務更新
 
@@ -81,6 +81,14 @@ _2022年10月12日_
 ![新](../assets/new.svg) — 已新增對[AEM店面](overview.md#aem-support)的支援。
 
 +++
+
+## 3.4.0
+
+_2025年9月16日_
+
+[!BADGE 相容性]{type=Informative tooltip="相容性"} Adobe Commerce 2.4.4或更新版本
+
+![新](../assets/new.svg) [!DNL Data Connection]現在完全遵守Cookie限制模式，方法是在啟用限制時，防止在Cookie/本機儲存體中收集及儲存資料。
 
 ## 3.3.0
 
