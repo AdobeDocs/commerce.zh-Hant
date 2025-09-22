@@ -2,16 +2,16 @@
 title: Facet
 description: '[!DNL Live Search]個Facet使用屬性值的多個維度做為搜尋條件。'
 exl-id: d036265e-1868-461d-ab4c-7f469b1c6f5b
-source-git-commit: 58252ffc7417f30b835ec1baf21a709191afd033
+source-git-commit: 31223f4196187e4960c5bec0e90aa55cc4e0ac9a
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '603'
 ht-degree: 0%
 
 ---
 
 # Facet
 
-多面向是一種高效能篩選方法，使用多個屬性值的維度作為搜尋條件。 多面搜尋類似，但比標準[分層導覽](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html?lang=zh-Hant)要「聰明」得多。 可用的篩選器清單是由搜尋結果中傳回之產品的[可篩選屬性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html?lang=zh-Hant#filterable-attributes)所決定。
+多面向是一種高效能篩選方法，使用多個屬性值的維度作為搜尋條件。 多面搜尋類似，但比標準[分層導覽](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html)要「聰明」得多。 可用的篩選器清單是由搜尋結果中傳回之產品的[可篩選屬性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes)所決定。
 
 [!DNL Live Search]使用`productSearch`查詢，該查詢會傳回Faceting和特定於[!DNL Live Search]的其他資料。 如需程式碼範例，請參閱開發人員檔案中的[`productSearch`查詢](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/)。
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 多面向需求
 
-多面的類別和產品屬性需求類似於用於分層導覽的可篩選屬性。 屬性的每個店面屬性都必須將「用於搜尋結果的分層導覽」值設定為「是」。
+多面的類別和產品屬性需求類似於用於分層導覽的可篩選屬性。 屬性的每個店面屬性都必須將「用於搜尋結果的分層導覽」值設定為「是」。 您可以從Admin的[!DNL Stores] > [!DNL Attribute]功能表檢閱及更新屬性設定。
 
 >[!NOTE]
 >
@@ -37,8 +37,8 @@ ht-degree: 0%
 
 | 設定 | 說明 |
 |--- |--- |
-| [類別顯示設定](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html?lang=zh-Hant) | 錨點 — `Yes` |
-| [屬性屬性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=zh-Hant) | [目錄輸入型別](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html?lang=zh-Hant) - `Yes/No`、`Dropdown`、`Multiple Select`、`Price`、`Visual swatch` （僅限Widget）、`Text swatch` （僅限Widget） |
+| [類別顯示設定](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html) | 錨點 — `Yes` |
+| [屬性屬性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) | [目錄輸入型別](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) - `Yes/No`、`Dropdown`、`Multiple Select`、`Price`、`Visual swatch` （僅限Widget）、`Text swatch` （僅限Widget） |
 | 屬性店面屬性 | 用於搜尋結果階層式導覽 — `Yes` |
 
 ## Facet彙總
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 ## 預設屬性值
 
-下列產品屬性具有[店面屬性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=zh-Hant)，已由[!DNL Live Search]使用並預設啟用。
+下列產品屬性具有[店面屬性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html)，已由[!DNL Live Search]使用並預設啟用。
 
 | 屬性 | 店面屬性 | 屬性 |
 |---|---|---|
