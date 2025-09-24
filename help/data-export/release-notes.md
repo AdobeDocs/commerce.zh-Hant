@@ -39,7 +39,7 @@ ht-degree: 0%
 
 ## 103.4.11版
 
-僅![新](../assets/new.svg) [!BADGE PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce 。"}
+僅![新](../assets/new.svg) [!BADGE PaaS]{type=Informative url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce 。"}
 新增對其他產品屬性的支援，以在產品摘要中包含Commerce產品設定的稅種、屬性集和存貨資料。 如果客戶想要在產品匯出摘要中包含這些屬性，必須將「額外產品屬性」模組新增至其Adobe Commerce專案。 請參閱[新增稅捐類別、屬性集及存貨屬性](add-tax-attribute-set-inventory-attributes.md)。<!--MDEE-1135-->
 ![修正](../assets/fix.svg)解決在完整產品索引期間發生錯誤時，所刪除產品更新的同步處理不正確的問題。 現在，即使索引過程中發生錯誤，所有產品刪除仍會正確同步。<!--MDEE-1144-->
 
