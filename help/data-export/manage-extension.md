@@ -39,4 +39,4 @@ bin/magento module:disable Magento_CategoryPermissionDataExporter Magento_SaaSCa
    composer require magento/module-data-exporter:103.0.4 --with-all-dependencies
    ```
 
-如果已在雲端基礎結構上部署Commerce執行個體，請從您的雲端專案目錄更新擴充功能。 請參閱[雲端基礎結構上的Adobe Commerce指南](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension)中的&#x200B;_升級擴充功能_。
+如果已在雲端基礎結構上部署Commerce執行個體，請從您的雲端專案目錄更新擴充功能。 請參閱[雲端基礎結構上的Adobe Commerce指南](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension)中的&#x200B;_升級擴充功能_。
