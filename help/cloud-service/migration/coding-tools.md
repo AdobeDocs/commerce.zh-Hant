@@ -1,18 +1,18 @@
 ---
-title: 擴充功能的編碼工具
+title: 擴充功能的AI編碼工具
 description: 瞭解如何使用AI工具來建立Commerce App Builder擴充功能。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 role: Architect
 hide: true
 hidefromtoc: true
-source-git-commit: 6d2debaeefd65d273c1e0e92f9a7b03740b11520
+source-git-commit: e032571ba0dd8a2f71813f9e3114afa3f7d617bf
 workflow-type: tm+mt
-source-wordcount: '1422'
+source-wordcount: '1424'
 ht-degree: 0%
 
 ---
 
-# 擴充功能的編碼工具
+# 擴充功能的AI編碼工具
 
 移轉至[!DNL Adobe Commerce as a Cloud Service]時，您可以使用AI編碼工具將現有的[!DNL Adobe Commerce] PHP擴充功能轉換為[!DNL Adobe Developer App Builder]擴充功能。 它也可以用來建立新的[!DNL App Builder]擴充功能。
 
@@ -164,7 +164,7 @@ Adobe建議您在使用AI編碼工具時，遵循下列最佳實務：
 
 * [整合入門套件](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Adobe Commerce入門套件範本](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Adobe I/O Events入門範本](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Adobe I/O Events入門範本](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [App Builder範例應用程式](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### 為何應使用這些資源
