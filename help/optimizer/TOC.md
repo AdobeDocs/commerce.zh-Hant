@@ -4,10 +4,10 @@ user-guide-description: ' [!DNL Adobe Commerce Optimizer]的檔案和資源。'
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: a1872e89625c0c2f78e25ebe9a91cc5bca1f44f6
+source-git-commit: b524c75b59984ddfa63ce133a917b9891dd6719f
 workflow-type: tm+mt
-source-wordcount: '91'
-ht-degree: 12%
+source-wordcount: '104'
+ht-degree: 10%
 
 ---
 
@@ -58,4 +58,7 @@ ht-degree: 12%
 - [設定](settings.md)
 - 使用案例 {#use-case}
    - [店面和目錄管理員端對端使用案例](./use-case/admin-use-case.md)
-- [開發人員指南](https://developer.adobe.com/commerce/services/optimizer/)
+- 開發人員資源 {#developer}
+   - [Salesforce Commerce聯結器](./developer/salesforce-connector.md)
+   - [資料擷取REST API參考](https://developer.adobe.com/commerce/services/reference/rest/)
+   - [銷售GraphQL API參考](https://developer.adobe.com/commerce/services/reference/graphql/)

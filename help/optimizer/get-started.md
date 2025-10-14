@@ -3,11 +3,11 @@ title: 開始使用
 description: 瞭解如何開始使用 [!DNL Adobe Commerce Optimizer]。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: 15a708db9a9a31798877ea3a400d5a9f6f930bda
+source-git-commit: c27b2a8c7dffdcc5d5195cf809d5b475f3e01059
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1047'
 ht-degree: 0%
 
 ---
@@ -29,13 +29,13 @@ ht-degree: 0%
 
 請依照下列基本步驟執行[!DNL Adobe Commerce Optimizer]環境：
 
-### 步驟1. 建立執行個體
+### 步驟1. 建立例項
 
 1. 登入[Adobe Experience Cloud](https://experience.adobe.com/)。
 1. 導覽至&#x200B;**Commerce** > **Commerce Cloud管理員**。
 1. 按一下&#x200B;**新增執行個體** > **Commerce Optimizer**。
 
-   ![建立執行個體](./assets/create-aco-instance.png){width="60%" zoomable="yes"}
+   ![用於建立Commerce Optimizer環境的Adobe Commerce Cloud Manager新增執行個體畫面](./assets/create-aco-instance.png){width="60%" zoomable="yes"}
 
 1. 設定執行個體設定：
    - **執行個體名稱**：描述性名稱（例如「My Company Sandbox」）
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->您只能在北美地區建立沙箱環境。 建立例項後，便無法變更區域。
+>您只能在北美地區建立沙箱環境。 一旦建立例證，您就無法變更區域。
 
 ### 步驟2. 設定您的環境
 
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce Optimizer]設定和管理依賴三個關鍵角色。 每個角色都有特定的任務和責任：
 
-![高階工作流程](./assets/high-level-workflow.png){zoomable="yes"}
+![Adobe Commerce Optimizer設定的角色型工作流程，顯示管理員、開發人員和使用者工作](./assets/high-level-workflow.png){zoomable="yes"}
 
 ### 管理員任務
 
@@ -119,7 +119,7 @@ ht-degree: 0%
 登入後，控制面板會顯示組織中可用的所有Commerce產品例項。
 「產品」欄會指出為哪個Commerce應用程式布建了執行個體。
 
-![執行個體搜尋和篩選器](./assets/search-filter-instances.png){zoomable="yes"}
+![顯示Adobe Commerce Cloud產品執行個體的搜尋和篩選選項的控制面板](./assets/search-filter-instances.png){zoomable="yes"}
 
 使用篩選和搜尋工具，依建立日期、區域、建立者、產品型別、環境或狀態快速尋找特定例項。
 
@@ -133,20 +133,20 @@ ht-degree: 0%
 
    執行處理下拉式清單列出組織中可用的所有Optimizer執行處理。 選取要檢視的執行個體。
 
-   ![執行個體切換器](./assets/context-switcher.png){zoomable="yes"}
+   用於選取Adobe Commerce Optimizer環境的![執行個體切換器下拉式清單](./assets/context-switcher.png){zoomable="yes"}
 
 ### 取得執行個體詳細資訊
 
 按一下執行處理名稱旁的資訊圖示，即可檢視執行處理的詳細資訊。
 
-![執行個體詳細資料](./assets/aco-instance-details.png){width="60%" zoomable="yes"}
+![Adobe Commerce Optimizer執行個體詳細資料面板，顯示端點和執行個體ID](./assets/aco-instance-details.png){width="60%" zoomable="yes"}
 
 請注意下列重要資訊：
 
 - **GraphQL端點**，以使用銷售API擷取Commerce目錄資料
 - 使用REST API進行資料擷取的&#x200B;**目錄服務端點**
 - **Commerce Optimizer URL**&#x200B;以存取[!DNL Adobe Commerce Optimizer]應用程式
-- **執行個體識別碼**&#x200B;識別執行個體的唯一租使用者識別碼
+- **執行個體識別碼**：識別執行個體的唯一租使用者識別碼
 
 如果您是開發人員，您需要這些詳細資料來設定您的開發環境並連線到[!DNL Adobe Commerce Optimizer] API。
 
@@ -217,6 +217,6 @@ Adobe提供GitHub存放庫和範例資料與工具，協助您學習及測試[!D
 ### 取得協助
 
 - **開發人員資源**： [開發人員檔案](https://developer.adobe.com/commerce/services/optimizer/)
-- **店面資源**： [Commerce店面檔案](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant)
-- **教學課程**： [Commerce Optimizer教學課程](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
-- **支援**： [Adobe Commerce支援資源](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/overview)
+- **店面資源**： [Commerce店面檔案](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **教學課程**： [Commerce Optimizer教學課程](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
+- **支援**： [Adobe Commerce支援資源](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)

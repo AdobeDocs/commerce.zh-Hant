@@ -1,8 +1,9 @@
 ---
 title: 建立和管理建議
 description: 瞭解如何建立和管理建議。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
-source-git-commit: 356b10704c9e7c7329d3e9c0e10baa15d5142ec0
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
+source-git-commit: 0b8e0222a1de1c425964f9f54294d7e0435a26d8
 workflow-type: tm+mt
 source-wordcount: '1360'
 ht-degree: 0%
@@ -135,7 +136,7 @@ _建議型別_
 >
 >指標可能永遠不會達到100%。
 
-相依於目錄資料的建議型別的整備程度指標百分比不會經常變更，因為商家的目錄不會經常變更。 但根據購物者行為資料的建議型別整備程度指標百分比會根據每日購物者活動而經常變更。
+相依於目錄資料的建議型別的整備程度指標百分比不會經常變更，因為商家的目錄不會經常變更。 但根據購物者行為資料的建議型別整備程度指標百分比會隨著每日購物者活動而經常變更。
 
 #### 如果整備程度指標百分比很低，該怎麼辦
 
