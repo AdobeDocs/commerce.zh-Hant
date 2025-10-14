@@ -395,7 +395,7 @@ _2023年3月14日_
 ![New](../assets/new.svg) [!DNL Live Search]現在支援執行Adobe Commerce 2.4.4的PHP 8.1安裝。
 ![新增](../assets/new.svg) `Magento_ElasticsearchCatalogPermissionsGraphQl`模組已新增至安裝期間停用的模組清單。
 ![新](../assets/new.svg) [[!DNL storefront popover]](overview.md)中的可用行數可以從&#x200B;*管理員*設定。
-![支援的](../assets/new.svg)新[ Beta ](https://developer.adobe.com/commerce/pwa-studio/)PWA[!DNL Live Search]。
+![支援的](../assets/new.svg)新[&#x200B; Beta &#x200B;](https://developer.adobe.com/commerce/pwa-studio/)PWA[!DNL Live Search]。
 ![新增](../assets/new.svg) [!DNL Live Search]安裝程式已更新，其中包含進階程式變更。
 ![修正](../assets/fix.svg) [進階搜尋](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search)連結已從店面頁尾移除。
 ![錯誤](../assets/bug.svg) [Commerce GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/)不支援與PWA測試版相關的下列產品屬性： `description`、`name`、`short_description`
