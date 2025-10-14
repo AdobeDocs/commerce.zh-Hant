@@ -30,7 +30,7 @@ ht-degree: 0%
 
 1. 在&#x200B;_管理員_&#x200B;側邊欄上，移至&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**。
 
-1. 按一下&#x200B;**[!UICONTROL Settings]**。 如需詳細資訊，請參閱[ [!DNL Payment Services] 首頁](payments-home.md)簡介。
+1. 按一下&#x200B;**[!UICONTROL Settings]**。 如需詳細資訊，請參閱[&#x200B; [!DNL Payment Services] 首頁](payments-home.md)簡介。
 
    ![React設定檢視](assets/react-settings-view.png){width="500" zoomable="yes"}
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 您可以新增[!UICONTROL Soft Descriptor]至您的網站或個別商店檢視設定。 軟性描述元會顯示在客戶交易銀行對帳單上。 例如，如果您有多個商店/品牌/目錄，您可以將自訂文字新增至「[!UICONTROL Soft Descriptor]」欄位，以輕鬆地在這些商店/品牌/目錄之間劃線。
 
 1. 在&#x200B;_管理員_&#x200B;側邊欄上，移至&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**。
-1. 按一下&#x200B;**[!UICONTROL Settings]**。 如需詳細資訊，請參閱[ [!DNL Payment Services] 首頁](payments-home.md)簡介。
+1. 按一下&#x200B;**[!UICONTROL Settings]**。 如需詳細資訊，請參閱[&#x200B; [!DNL Payment Services] 首頁](payments-home.md)簡介。
 1. 在&#x200B;**[!UICONTROL Scope]**&#x200B;下拉式功能表中選取您要為其建立軟性描述項的網站或商店檢視。 對於初始設定，請將此項保留為&#x200B;**[!UICONTROL Default]**&#x200B;以設定預設值。
 1. 在文字欄位中新增自訂文字（最多22個字元），取代`Soft descriptor`。
 1. 按一下&#x200B;**[!UICONTROL Save]**。
@@ -90,7 +90,7 @@ ht-degree: 0%
 現在您已啟用網站的[!UICONTROL Payment Services]，您可以變更付款功能和店面顯示的預設設定。
 
 1. 在&#x200B;_管理員_&#x200B;側邊欄上，移至&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**。
-1. 按一下&#x200B;**[!UICONTROL Settings]**。 如需詳細資訊，請參閱[ [!DNL Payment Services] 首頁](payments-home.md)簡介。
+1. 按一下&#x200B;**[!UICONTROL Settings]**。 如需詳細資訊，請參閱[&#x200B; [!DNL Payment Services] 首頁](payments-home.md)簡介。
 1. 依下列區段設定[信用卡](#credit-card-fields)、[付款按鈕](#payment-buttons)和[按鈕樣式](#button-style)的付款選項。
 
 ### 信用卡欄位

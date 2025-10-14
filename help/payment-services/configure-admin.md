@@ -16,7 +16,7 @@ ht-degree: 0%
 
 您可以使用Admin中實用的組態選項自訂[!DNL Payment Services]以符合您的需求。
 
-當您在Admin中為[!DNL Payment Services]和[!DNL Adobe Commerce]設定[!DNL Magento Open Source]時，這些設定僅適用於&#x200B;_[!UICONTROL Method]_&#x200B;的_[!UICONTROL General Configuration]_&#x200B;欄位中設定的環境。 您在設定欄位中所做的任何變更與切換&#x200B;_[!UICONTROL Method]_&#x200B;選取專案無關 — 如果您切換方法，您的選取專案不會重設。
+當您在Admin中為[!DNL Payment Services]和[!DNL Adobe Commerce]設定[!DNL Magento Open Source]時，這些設定僅適用於&#x200B;_[!UICONTROL Method]_&#x200B;的&#x200B;_[!UICONTROL General Configuration]_&#x200B;欄位中設定的環境。 您在設定欄位中所做的任何變更與切換&#x200B;_[!UICONTROL Method]_&#x200B;選取專案無關 — 如果您切換方法，您的選取專案不會重設。
 
 ## 一般設定
 

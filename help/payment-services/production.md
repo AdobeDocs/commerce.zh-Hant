@@ -30,7 +30,7 @@ ht-degree: 0%
    您被導向到[首頁]檢視中的設定區域，相關選項已展開(**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_)，您可以在此啟用[!DNL Payment Services]選項做為您的[付款方式](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"}。
 
 1. 在&#x200B;_[!UICONTROL General Configuration]_&#x200B;中，將&#x200B;**[!UICONTROL Enable]**&#x200B;設為`Yes`。
-1. 將&#x200B;**[!UICONTROL Payment Action]**&#x200B;和&#x200B;_[!UICONTROL Credit Card Fields]_&#x200B;的_[!UICONTROL PayPal payment buttons]_&#x200B;設定為下列其中一項：
+1. 將&#x200B;**[!UICONTROL Payment Action]**&#x200B;和&#x200B;_[!UICONTROL Credit Card Fields]_&#x200B;的&#x200B;_[!UICONTROL PayPal payment buttons]_&#x200B;設定為下列其中一項：
 
    | 設定 | 說明 |
    |---|---|
