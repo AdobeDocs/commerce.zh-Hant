@@ -23,7 +23,7 @@ Adobe Commerce [!DNL Live Search]與[[!DNL Catalog Service]](../catalog-service/
 
 ## 需求
 
-- [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+
+- [Adobe Commerce](https://business.adobe.com/tw/products/magento/magento-commerce.html) 2.4.4+
 - PHP 8.1、8.2或8.3
 - [!DNL Composer]
 - 執行cron工作和索引子
