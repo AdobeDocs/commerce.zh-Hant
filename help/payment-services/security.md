@@ -3,10 +3,10 @@ title: 安全性與合規性
 description: 檢閱您網站的安全與法規遵循需求。
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
 feature: Payments, Checkout, Compliance
-redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html?lang=zh-Hant
-source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
+redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html
+source-git-commit: 999407f00b118441abe39209a15f587ec73fa75d
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
@@ -19,13 +19,13 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce]和[!DNL Magento Open Source]包含對數個安全性功能的支援。
 
-請參閱核心使用手冊中的[安全性](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/security/security){target="_blank"}，以檢閱安全性最佳實務，並瞭解如何管理管理員工作階段和認證、實作驗證碼以及管理網站限制。
+請參閱核心使用手冊中的[安全性](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security){target="_blank"}，以檢閱安全性最佳實務，並瞭解如何管理管理員工作階段和認證、實作驗證碼以及管理網站限制。
 
 ## PCI法規遵循
 
 支付卡產業(PCI)針對接受透過網際網路以信用卡付款的企業建立了一套要求。 除了維護安全的環境之外，處理客戶信用卡資訊的商戶也應負責符合某些標準准則。
 
-如需詳細資訊，請參閱[PCI法規遵循指南](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/compliance/payments/compliance-pci){target="_blank"}。
+如需詳細資訊，請參閱[PCI法規遵循指南](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/payments/compliance-pci){target="_blank"}。
 
 商戶可以完成[自我評估問卷(SAQ)](https://www.pcisecuritystandards.org/pci_security/completing_self_assessment){target="_blank"}，這是評估持卡人資料安全性的自我驗證工具。
 
@@ -45,7 +45,7 @@ PCI 3-D Secure (3DS)可讓購買者線上上購買信用卡時，與其信用卡
 >
 >3DS規定適用於企業和持卡人的銀行位於[歐洲經濟區](https://www.efta.int/eea) (EEA)和英國的交易中。 美國商家不需要3DS，但可視需要為其交易啟用。
 
-商家/店舖人員為買家下單的訂單未設定3DS合規性措施。
+商戶或店員為買家下單的訂單未設定3DS合規措施。 但是，如果發卡機構需要3DS，則無論[!UICONTROL Payment Services]設定為何，都無法略過此步驟。
 
 >[!MORELIKETHIS]
 >
