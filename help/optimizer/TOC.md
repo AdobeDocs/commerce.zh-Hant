@@ -4,9 +4,9 @@ user-guide-description: ' [!DNL Adobe Commerce Optimizer]的檔案和資源。'
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: b524c75b59984ddfa63ce133a917b9891dd6719f
+source-git-commit: d788c6419831814f2a81229c2354ffc41b637873
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '106'
 ht-degree: 10%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 - [什麼是Adobe Commerce Optimizer？](overview.md)
 - [開始使用](get-started.md)
-- [User Management](user-management.md)
+- [使用者和身分管理](user-management.md)
 - [共擔責任](shared-responsibility.md)
 - [邊界和限制](boundaries-limits.md)
 - [發行說明](release-notes.md)
