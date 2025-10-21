@@ -2,16 +2,16 @@
 title: Facet
 description: '[!DNL Live Search]個Facet使用屬性值的多個維度做為搜尋條件。'
 exl-id: d036265e-1868-461d-ab4c-7f469b1c6f5b
-source-git-commit: 269f68868f5df14b1ca3709c01f6c17e6775df05
+source-git-commit: 86484d49aa4b79bfe64455dba18b84bcd9073736
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '389'
 ht-degree: 0%
 
 ---
 
 # Facet
 
-多面向是一種高效能篩選方法，使用多個屬性值的維度作為搜尋條件。 多面搜尋類似，但比標準[分層導覽](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html?lang=zh-Hant)要「聰明」得多。 可用的篩選器清單是由搜尋結果中傳回之產品的[可篩選屬性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html?lang=zh-Hant#filterable-attributes)所決定。
+多面向是一種高效能篩選方法，使用多個屬性值的維度作為搜尋條件。 多面搜尋類似，但比標準[分層導覽](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html)要「聰明」得多。 可用的篩選器清單是由搜尋結果中傳回之產品的[可篩選屬性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes)所決定。
 
 [!DNL Live Search]使用`productSearch`查詢，該查詢會傳回Faceting和特定於[!DNL Live Search]的其他資料。 如需程式碼範例，請參閱開發人員檔案中的[`productSearch`查詢](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/)。
 
@@ -37,8 +37,8 @@ ht-degree: 0%
 
 | 設定 | 說明 |
 |--- |--- |
-| [類別顯示設定](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html?lang=zh-Hant) | 錨點 — `Yes` |
-| [屬性屬性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=zh-Hant) | [目錄輸入型別](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html?lang=zh-Hant) - `Yes/No`、`Dropdown`、`Multiple Select`、`Price`、`Visual swatch` （僅限Widget）、`Text swatch` （僅限Widget） |
+| [類別顯示設定](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html) | 錨點 — `Yes` |
+| [屬性屬性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) | [目錄輸入型別](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) - `Yes/No`、`Dropdown`、`Multiple Select`、`Price`、`Visual swatch` （僅限Widget）、`Text swatch` （僅限Widget） |
 | 屬性店面屬性 | 用於搜尋結果階層式導覽 — `Yes` |
 
 ## Facet彙總
@@ -48,51 +48,3 @@ ht-degree: 0%
 * `categories`彙總 — 彙總`categories`，然後套用`color`和`price`篩選器，但不套用`categories`篩選器。
 * `color`彙總 — 彙總`color`，然後套用`price`和`categories`篩選器，但不套用`color`篩選器。
 * `price`彙總 — 彙總`price`，然後套用`color`和`categories`篩選器，但不套用`price`篩選器。
-
-## 預設屬性值
-
-下列產品屬性具有[店面屬性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=zh-Hant)，已由[!DNL Live Search]使用並預設啟用。
-
-| 屬性 | 店面屬性 | 屬性 |
-|---|---|---|
-| 可排序 | 用於產品清單中的排序 | `price` |
-| 可搜尋 | 用於搜尋 | `price` <br />`sku`<br />`name` |
-| FilterableInSearch | 用於分層導覽 — 可篩選（含結果） | `price`<br />`visibility`<br />`category_name` |
-
-## 預設非系統屬性屬性
-
-下表顯示非系統屬性的預設搜尋和可篩選屬性，包括特定於Luma範例資料的屬性。 將&#x200B;*Use in Search*&#x200B;屬性屬性設定為`Yes`，可讓屬性在[!DNL Live Search]與原生Adobe Commerce中均可搜尋。
-
-| 屬性代碼 | 可搜尋 | 用於分層導覽 |
-|--- |--- |--- |
-| 活動 | 是 | 可篩選（包含結果） |
-| attributes_brand | 是 | 否 |
-| 品牌 | 是 | 否 |
-| 氣候 | 是 | 可篩選（包含結果） |
-| 項圈 | 是 | 可篩選（包含結果） |
-| 顏色 | 是 | 可篩選（包含結果） |
-| 成本 | 是 | 否 |
-| eco_collection | 是 | 可篩選（包含結果） |
-| 性別 | 是 | 可篩選（包含結果） |
-| 製造商 | 是 | 可篩選（包含結果） |
-| 材質 | 是 | 可篩選（包含結果） |
-| 用途 | 是 | 可篩選（包含結果） |
-| strap_bag | 是 | 可篩選（包含結果） |
-| style_general | 是 | 可篩選（包含結果） |
-
-## 預設系統屬性屬性
-
-下表顯示系統屬性的預設搜尋和可篩選特性。
-
-| 屬性代碼 | 可搜尋 | 用於分層導覽 |
-|--- |--- |--- |
-| allow_open_amou | 是 | 可篩選（包含結果） |
-| 說明 | 是 | 否 |
-| 名稱 | 是 | 否 |
-| 價格 | 是 | 可篩選（包含結果） |
-| short_description | 是 | 否 |
-| sku | 是 | 否 |
-| 狀態 | 是 | 否 |
-| tax_class_id | 是 | 否 |
-| url_key | 是 | 否 |
-| 權重 | 是 | 否 |

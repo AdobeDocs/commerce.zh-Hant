@@ -3,7 +3,7 @@ title: '[!DNL Live Search]最佳實務'
 description: 瞭解在您的商店中實作 [!DNL Live Search] 的最佳實務。
 role: Admin, Developer
 exl-id: f7700339-fb13-42fe-a249-17cd4ba36e1b
-source-git-commit: 1548b7e11249febc2cd8682581616619f80c052f
+source-git-commit: 4ba9734946f551784cd429ffa7cb23358f0f9710
 workflow-type: tm+mt
 source-wordcount: '2429'
 ht-degree: 0%
@@ -63,7 +63,7 @@ ht-degree: 0%
 
 若要將產品屬性設定為Facet，它必須設定下列[屬性](facets-add.md#step-1-add-a-facet)：
 
-- **[!UICONTROL Use in Search]** -  `Yes`
+- **[!UICONTROL Use in Search]** -  `No`
 - **[!UICONTROL Use in Layered Navigation]** -  `Filterable (with results)`
 - **[!UICONTROL Use in Search Results Layered Navigation]** -  `Yes`
 
@@ -101,7 +101,7 @@ ht-degree: 0%
 
 請一律測試搜尋重新導向，以確保它們正常運作並導向最相關的頁面。 持續監控其效能，並視需要進行調整。
 
-瞭解如何[管理搜尋重新導向](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/catalog/search/search-terms)。
+瞭解如何[管理搜尋重新導向](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms)。
 
 ## 改善搜尋結果關聯性
 
@@ -155,7 +155,7 @@ ht-degree: 0%
 深入瞭解搜尋所需的產品屬性：
 
 - [將屬性設定為可搜尋](workspace.md#set-attributes-as-searchable)
-- [指派權重給屬性](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [指派權重給屬性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## 監視搜尋結果
 
