@@ -3,9 +3,9 @@ title: 維護正確且相關的內容
 description: 電子商務平台是最關鍵的參與管道之一。 確保資產管理系統中的順暢更新，以確保商務店面一律顯示最新的產品資訊。
 feature: CMS, Media, Integration
 exl-id: 2c749e84-fcc4-4bf9-90b2-87438329889e
-source-git-commit: 6640635fca5c53fe4b06b9bbb3120fffc46cb0b8
+source-git-commit: 141f2291d1ead324a159053145e92ee7d4237a7d
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '407'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,10 @@ AEM Assets整合會聆聽在&#x200B;**Admin**&#x200B;中或使用&#x200B;**API**
 * 產品更新保持快速，因為資產建立不會延遲目錄變更，使管理新產品時更靈活。
 
 * 自動化可改善效率和準確性，減少產品資料和相關內容之間的不相符。
+
+>[!NOTE]
+>
+> PaaS和SaaS中的CSV產品匯入不會觸發更新事件。 使用API進行目錄匯入和更新。
 
 ## AEM Assets生命週期變更
 
