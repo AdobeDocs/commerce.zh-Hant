@@ -1,9 +1,9 @@
 ---
 title: Facet概述
 description: 瞭解 [!DNL Adobe Commerce Optimizer] 中的Facet及其如何改善搜尋結果。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 exl-id: cf16626e-8f85-47ca-b973-891b16c31fe3
-source-git-commit: ad8fb7d1d7e1ad124647ba84377079dcfbd46a3c
+source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 0%
@@ -52,7 +52,7 @@ Facet是一種高效能篩選方法，使用多個屬性值的維度做為搜尋
 | 項圈 | 是 |
 | 顏色 | 是 |
 | 成本 | 是 |
-| eco_collection |
+| eco_collection |  |
 | 性別 | 是 |
 | 製造商 | 是 |
 | 材質 | 是 |

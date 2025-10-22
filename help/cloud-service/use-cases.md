@@ -3,8 +3,8 @@ title: 使用案例
 description: 瞭解如何使用 [!DNL Adobe Commerce as a Cloud Service]完成實際使用案例和支援的商業案例。
 role: User, Leader
 exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
-source-git-commit: 47eb8ee55bb093767f76aa23df8bb347ee280aae
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
 workflow-type: tm+mt
 source-wordcount: '1325'
 ht-degree: 0%
@@ -188,7 +188,7 @@ Adobe Commerce的情境式實驗功能可讓您在店面建立和管理實驗，
 
 1. 按一下&#x200B;[!UICONTROL **儲存**]&#x200B;以指定影像型別。
 
-1. 再按一下[儲存]儲存變更。[!UICONTROL **&#x200B;**]
+1. 再按一下[儲存]儲存變更。[!UICONTROL ****]
 
 1. 在&#x200B;[!UICONTROL **儲存資產**]&#x200B;對話方塊中，選取Commerce [!UICONTROL **目的地資料夾**]。
 
@@ -198,7 +198,7 @@ Adobe Commerce的情境式實驗功能可讓您在店面建立和管理實驗，
 
 #### 將影像新增至Commerce AEM Assets
 
-1. 從AEM as a Cloud Service的[導覽面板](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel)，選取&#x200B;**Assets** > **檔案** > **Commerce**，然後按一下您在上一節建立的資產。
+1. 從AEM as a Cloud Service的[導覽面板](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel)，選取&#x200B;**Assets** > **檔案** > **Commerce**，然後按一下您在上一節建立的資產。
 
    ![商務資料夾](./assets/commerce-folder.png){width="600" zoomable="yes"}
 
@@ -248,7 +248,7 @@ Adobe Commerce的「產生變體」功能運用Generative AI來自動產生高�
 
 ### 產生文字
 
-1. 使用[通用編輯器](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)開啟您的店面網站。
+1. 使用[通用編輯器](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)開啟您的店面網站。
 
 1. 選取您要編輯的文字區塊。
 
@@ -262,7 +262,7 @@ Adobe Commerce的「產生變體」功能運用Generative AI來自動產生高�
 
 ### 產生內容和影像
 
-1. 開啟[產生變數](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+1. 開啟[產生變數](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 1. 選取&#x200B;[!UICONTROL **Hero Banner**]&#x200B;範本。
 
@@ -280,7 +280,7 @@ Adobe Commerce的「產生變體」功能運用Generative AI來自動產生高�
 
 1. 針對&#x200B;[!UICONTROL **樣式**]&#x200B;參考影像，選取現有的Adobe商店橫幅。
 
-1. 選取您要使用的產生影像，然後按一下[儲存]。[!UICONTROL **&#x200B;**]
+1. 選取您要使用的產生影像，然後按一下[儲存]。[!UICONTROL ****]
 
 1. 對其他參照影像重複此程式以產生更多變化。
 
@@ -290,30 +290,36 @@ Adobe Commerce的「產生變體」功能運用Generative AI來自動產生高�
 嘗試這些教學課程時，請使用下列建議來解決您遇到的任何問題。
 
 * 如果您需要有關命令或旗標的指引：
+
    1. 執行`aio --help`以檢視所有可用的命令和旗標。
    1. 對於特定命令，請使用`--help`旗標。 例如：
       * `aio console --help`
       * `aio commerce –help`
 
 * 如果您遇到無效的登入問題：
-   1. 執行`aio config clear `。
-   1. 執行`aio auth login –-force `。
+
+   1. 執行`aio config clear`。
+   1. 執行`aio auth login –-force`。
    1. 登入您的瀏覽器。
    1. 選取您的設定檔。
    1. 切換回終端機以繼續。
 
 * 如果您的`init`命令失敗：
+
    1. 執行`aio api-mesh delete`。
    1. 重新執行`aio commerce init`。
 
 * 如果您在執行`init`命令之前選取了錯誤的組織、專案或工作區：
+
    1. 執行`aio console org select`。
    1. 執行`aio console project select`。
    1. 執行`aio console workspace select`。
 
 * 如果您有無效的租使用者選取專案：
+
    1. 按&#x200B;**Ctrl-C**&#x200B;取消目前的CLI執行。
    1. 執行`aio commerce init`。
 
 * 如果您遇到無效的API Mesh安裝：
+
    * 執行`aio api-mesh update mesh-config.json`。

@@ -3,7 +3,7 @@ title: 發行說明
 description: Adobe Commerce中 [!DNL Data Connection] 擴充功能的最新發行資訊。
 feature: Personalization, Integration, Release Notes
 exl-id: f3b92632-947d-40cd-89b7-24ed0680be51
-source-git-commit: 9c10aecb303dd09a85bdafa93d791d30611ec8b2
+source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
 workflow-type: tm+mt
 source-wordcount: '1290'
 ht-degree: 1%
@@ -24,9 +24,9 @@ ht-degree: 1%
 
 有關[!DNL Data Connection]擴充功能所使用的擴充功能的功能變更和修正，請參閱&#x200B;**支援的服務更新**。
 
-請參閱[即將發行的版本](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/planning/schedule)，瞭解發行排程和支援。
+請參閱[即將發行的版本](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule)，瞭解發行排程和支援。
 
-請參閱開發人員檔案以[瞭解哪些Commerce版本支援此模組](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/product-availability)。
+請參閱開發人員檔案以[瞭解哪些Commerce版本支援此模組](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)。
 
 ## 支援的服務更新
 
@@ -123,7 +123,7 @@ _2024年8月27日_
 
 [!BADGE 相容性]{type=Informative tooltip="相容性"} Adobe Commerce 2.4.4或更新版本
 
-![新](../assets/new.svg) — 如果您正在參與Beta版，請確定您的`composer.json`檔案在根層級有下列專案： ` "minimum-stability": "beta"`。 此外，新增`composer require "magento/customers-connector: ^1.2.0"`以將客戶設定檔從您的Commerce執行個體傳送至SaaS。
+![新](../assets/new.svg) — 如果您正在參與Beta版，請確定您的`composer.json`檔案在根層級有下列專案： `"minimum-stability": "beta"`。 此外，新增`composer require "magento/customers-connector: ^1.2.0"`以將客戶設定檔從您的Commerce執行個體傳送至SaaS。
 ![新](../assets/new.svg) — 此版本包含3.1.1、3.1.2、3.1.3和3.1.4中發行的修補程式。
 
 ## 3.1.4
@@ -166,7 +166,7 @@ _2024年3月4日_
 
 [!BADGE 相容性]{type=Informative tooltip="相容性"} Adobe Commerce 2.4.4或更新版本
 
-![新](../assets/new.svg) — 如果您正在參與Beta版，請確定您的`composer.json`檔案在根層級有下列專案： ` "minimum-stability": "beta"`。 此外，新增`composer require "magento/customers-connector: ^1.2.0"`以將客戶設定檔從您的Commerce執行個體傳送至SaaS。
+![新](../assets/new.svg) — 如果您正在參與Beta版，請確定您的`composer.json`檔案在根層級有下列專案： `"minimum-stability": "beta"`。 此外，新增`composer require "magento/customers-connector: ^1.2.0"`以將客戶設定檔從您的Commerce執行個體傳送至SaaS。
 ![新](../assets/new.svg) — 已新增[新增自訂屬性](custom-attributes.md)的功能。
 ![新](../assets/new.svg) — 已新增[收集設定檔記錄](connect-data.md#send-customer-profile-data)和資料並傳送至Experience Platform的功能。
 
