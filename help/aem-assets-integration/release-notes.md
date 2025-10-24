@@ -3,9 +3,9 @@ title: AEM Assets整合發行說明
 description: 如需所有AEM Assets整合發行版本的相關資訊，請參閱發行說明。
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
-source-git-commit: 655d33ea7c4b75f81770490b2e229b1bec281fe1
+source-git-commit: 4e7ad5d57dfc1da1020d4f67b1051303d3b499f9
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '566'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 如需在功能發行版本之外發行的功能變更和修正，請檢閱&#x200B;_託管服務更新_&#x200B;區段。
 
-深入瞭解即將發行的版本、產品支援，以及哪些Adobe Commerce版本支援AEM Assets整合擴充功能，請參閱Adobe Commerce [發行排程](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/planning/schedule)和[產品可用性](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/product-availability)主題。
+深入瞭解即將發行的版本、產品支援，以及哪些Adobe Commerce版本支援AEM Assets整合擴充功能，請參閱Adobe Commerce [發行排程](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule)和[產品可用性](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)主題。
 
 ## 託管服務更新
 
@@ -30,13 +30,21 @@ ht-degree: 0%
 
 _2025年9月11日_
 
-![新問題](../assets/new.svg)已更新具有新[屬性的](https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/synchronize/custom-match){target=_blank}自訂自動比對`asset_matches`端點。
+![新問題](../assets/new.svg)已更新具有新[屬性的](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match){target=_blank}自訂自動比對`asset_matches`端點。
 
 _2025年2月11日_
 
 ![新問題](../assets/new.svg)現在，商家可以同步產品與類別的影像。
 
 +++
+
+## v1.2.6
+
+_2025年10月24日_
+
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.5版和更新版本。
+
+![已修正問題](../assets/fix.svg)<!-- Issue ACAP-1163 -->已解決連續大量產品更新請求可能會卡住狀態追蹤標幟，導致後續更新無法正確處理的問題。 現在，即使發生錯誤，狀態也會重設。
 
 ## v1.2.5
 
@@ -54,7 +62,7 @@ _2025年10月17日_
 
 ![已修正問題](../assets/fix.svg)<!-- Issue ACAP-1155 -->已改善自訂屬性的整體穩定性。 使用非同步API時，自訂屬性現在可以正確更新。
 
-![已修正問題](../assets/fix.svg)<!-- Issue ACAP-1074 -->現在，定義基底連結URL時，[product-asset同步化](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/site-store/store-urls#configure-the-base-url){target=_blank}不會失敗。
+![已修正問題](../assets/fix.svg)<!-- Issue ACAP-1074 -->現在，定義基底連結URL時，[product-asset同步化](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls#configure-the-base-url){target=_blank}不會失敗。
 
 ## v1.2.3
 
@@ -78,9 +86,9 @@ _2025年8月7日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.5版和更新版本。
 
-![新問題](../assets/new.svg)<!-- Issue ACAP-1018 -->現在，商家可以在從管理員設定Assets整合時，選取[視覺效果擁有者](https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/get-started/setup-synchronization){target=_blank}來選擇影像和媒體資產的來源。
+![新問題](../assets/new.svg)<!-- Issue ACAP-1018 -->現在，商家可以在從管理員設定Assets整合時，選取[視覺效果擁有者](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization){target=_blank}來選擇影像和媒體資產的來源。
 
-![新問題](../assets/new.svg)<!-- Issue ACAP-1078 -->已更新具有新[屬性的](https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/synchronize/custom-match){target=_blank}自訂自動比對`asset_matches`端點。 此變更可讓您實作自己的比對邏輯，以傳回與特定`productSku`相關聯的所有資產。
+![新問題](../assets/new.svg)<!-- Issue ACAP-1078 -->已更新具有新[屬性的](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match){target=_blank}自訂自動比對`asset_matches`端點。 此變更可讓您實作自己的比對邏輯，以傳回與特定`productSku`相關聯的所有資產。
 
 ## v1.1.2
 
@@ -96,7 +104,7 @@ _2025年4月23日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.5版和更新版本。
 
-![新問題](../assets/new.svg)<!-- Issue ACAP-955 -->現在，可以使用[自訂網域URL](https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/get-started/setup-synchronization#optional-configure-the-custom-domain-url)，而不是AEM傳遞URL。 如果商家在其AEM儀表板中設定&#x200B;**自訂網域名稱**，則需要在Commerce中新增此&#x200B;**自訂網域URL**。
+![新問題](../assets/new.svg)<!-- Issue ACAP-955 -->現在，可以使用[自訂網域URL](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization#optional-configure-the-custom-domain-url)，而不是AEM傳遞URL。 如果商家在其AEM儀表板中設定&#x200B;**自訂網域名稱**，則需要在Commerce中新增此&#x200B;**自訂網域URL**。
 
 ![已修正問題](../assets/fix.svg)<!-- Issue ACAP-987 -->已改善AEM Assets同步程式的整體記錄。
 
@@ -106,7 +114,7 @@ _2025年3月12日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.5版和更新版本。
 
-![新問題](../assets/new.svg)<!-- Issue ACAP-xx -->現在，Assets選擇器需要[Assets選擇器IMS使用者端ID](https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/get-started/setup-synchronization)，才能將AEM Assets影像與產品類別和頁面產生器產生的內容對應。
+![新問題](../assets/new.svg)<!-- Issue ACAP-xx -->現在，Assets選擇器需要[Assets選擇器IMS使用者端ID](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization)，才能將AEM Assets影像與產品類別和頁面產生器產生的內容對應。
 
 ## v1.0.20
 
