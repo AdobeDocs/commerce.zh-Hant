@@ -30,7 +30,7 @@ ht-degree: 0%
 
 ## 103.4.15版
 
-![新](../assets/new.svg)已新增資料摘要同步狀態擴充功能的支援，以監視和疑難排解從Adobe Commerce到連線服務（目錄服務、即時搜尋和產品建議）的資料傳輸。 如需有關安裝及使用此擴充功能的詳細資訊，請參閱[Commerce管理指南](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html)中的&#x200B;*資料摘要同步狀態監視*。<!--MDEE-954-->
+![新](../assets/new.svg)已新增資料摘要同步狀態擴充功能的支援，以監視和疑難排解從Adobe Commerce到連線服務（目錄服務、即時搜尋和產品建議）的資料傳輸。 如需有關安裝及使用此擴充功能的詳細資訊，請參閱[Commerce管理指南](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html?lang=zh-Hant)中的&#x200B;*資料摘要同步狀態監視*。<!--MDEE-954-->
 
 ## 103.4.14版
 
