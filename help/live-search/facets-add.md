@@ -2,9 +2,9 @@
 title: 新增Facet
 description: 瞭解如何將可篩選的產品屬性新增為 [!DNL Live Search] Facet。
 exl-id: 80559107-2b2d-411f-8c32-99ff024e7a09
-source-git-commit: 053533bc5f3f990ce8219f1e0c7c4930b28f0cd5
+source-git-commit: 15afc6fcd1e6783640dc3980ee06290e017abf37
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '584'
 ht-degree: 0%
 
 ---
@@ -29,9 +29,9 @@ Facet已新增至*動態Facet*&#x200B;清單底部，且&#x200B;*發佈變更*&#
 
 1. 如果找不到您要新增的Facet，請移至&#x200B;**商店** >屬性> **產品**，並確認屬性具有[要當作Facet使用的必要屬性](facets.md)。 如有必要，請更新屬性的下列店面屬性：
 
-   * 用於搜尋 — `No`
-   * 用於搜尋結果階層式導覽 — `Yes`
-   * 用於分層導覽 — `Filterable (with results)`
+   * **[!UICONTROL Use in Search]** -  `Yes`
+   * **[!UICONTROL Use in Layered Navigation]** -  `Filterable (with results)`
+   * **[!UICONTROL Use in Search Results Layered Navigation]** -  `Yes`
 
 1. 出現提示時，請重新整理快取。
 
