@@ -304,7 +304,7 @@ _2023年3月20日_
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.x或更新版本
 
 ![修正](../assets/fix.svg)修正目錄匯出期間可能發生的「無法擷取產品選項資料」錯誤。
-![修正](../assets/fix.svg) _儀表板上_ Revenue _[!DNL Product Recommendations]_欄中的貨幣符號現在正確反映設定的基本貨幣。
+![修正](../assets/fix.svg) _儀表板上_ Revenue _[!DNL Product Recommendations]_&#x200B;欄中的貨幣符號現在正確反映設定的基本貨幣。
 
 ### 3.0.4的magento/product-recommendations
 
