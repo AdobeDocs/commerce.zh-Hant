@@ -15,4 +15,4 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->對於已安裝[!DNL Live Search]的Adobe Commerce安裝，[!DNL Live Search]同義字會取代標準Adobe Commerce [搜尋同義字](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html#search-synonyms)功能，不過兩者都會出現在行銷功能表的&#x200B;*SEO和搜尋*&#x200B;區段中。 如果您使用[!DNL Live Search]，請依照本節中的指示操作。
+>對於已安裝[!DNL Live Search]的Adobe Commerce安裝，[!DNL Live Search]同義字會取代標準Adobe Commerce [搜尋同義字](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html?lang=zh-Hant#search-synonyms)功能，不過兩者都會出現在行銷功能表的&#x200B;*SEO和搜尋*&#x200B;區段中。 如果您使用[!DNL Live Search]，請依照本節中的指示操作。
