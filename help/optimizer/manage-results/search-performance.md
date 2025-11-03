@@ -1,11 +1,11 @@
 ---
 title: 搜尋效能
 description: 「搜尋效能」頁面可讓insight掌握購物者使用的搜尋辭彙。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 exl-id: 75b43c6f-d876-4379-ad70-5c2a2f29a5ac
-source-git-commit: b8b7af1119163589b7d83654b13edae656fea339
+source-git-commit: c9fc68fb54f66b6d471295c6d68f09404a7ac17a
 workflow-type: tm+mt
-source-wordcount: '1737'
+source-wordcount: '1837'
 ht-degree: 0%
 
 ---
@@ -136,3 +136,41 @@ ht-degree: 0%
 | 零個結果 | 列出未傳回結果的搜尋查詢，以及在指定日期範圍內使用的次數。 報表限制：前500個詞語 |
 | 常見結果 | 列出在指定日期範圍內檢視次數最多的產品名稱。 熱門結果僅根據曝光次數計算，不受點按次數或產生收入的影響。 報表限制：前500個詞語 |
 | 不重複搜尋 | 列出指定日期範圍內使用的唯一搜尋查詢。 報表資料的計算方式與不重複搜尋快照資料相同。 如果購物者輸入相同的搜尋查詢兩次，但間隔超過一小時，則搜尋被視為兩個不重複搜尋。 報表限制：前500個詞語 |
+
+## 預設非系統屬性屬性
+
+下表顯示非系統屬性的預設搜尋和可篩選特性。 將&#x200B;*Use in Search*&#x200B;屬性屬性設定為`Yes`可讓屬性在[!DNL Adobe Commerce Optimizer]中可搜尋。
+
+| 屬性代碼 | 可搜尋 |
+|--- |--- |
+| 活動 | 是 |
+| attributes_brand | 是 |
+| 品牌 | 是 |
+| 氣候 | 是 |
+| 項圈 | 是 |
+| 顏色 | 是 |
+| 成本 | 是 |
+| eco_collection |  |
+| 性別 | 是 |
+| 製造商 | 是 |
+| 材質 | 是 |
+| 用途 | 是 |
+| strap_bag | 是 |
+| style_general | 是 |
+
+## 預設系統屬性屬性
+
+下表顯示系統屬性的預設搜尋和可篩選特性。
+
+| 屬性代碼 | 可搜尋 |
+|--- |--- |
+| allow_open_amou | 是 |
+| 說明 | 是 |
+| 名稱 | 是 |
+| 價格 | 是 |
+| short_description | 是 |
+| sku | 是 |
+| 狀態 | 是 |
+| tax_class_id | 是 |
+| url_key | 是 |
+| 權重 | 是 |

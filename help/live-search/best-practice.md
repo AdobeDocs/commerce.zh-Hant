@@ -3,9 +3,9 @@ title: '[!DNL Live Search]最佳實務'
 description: 瞭解在您的商店中實作 [!DNL Live Search] 的最佳實務。
 role: Admin, Developer
 exl-id: f7700339-fb13-42fe-a249-17cd4ba36e1b
-source-git-commit: 4634df5ef5421275d44a6a3419a4f55c11e4be45
+source-git-commit: a22a57f52503811a3a3e9294174a6626c5630b79
 workflow-type: tm+mt
-source-wordcount: '2429'
+source-wordcount: '2180'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## 最佳化您的搜尋功能
 
-在本節中，您將瞭解如何使用如自動完成的功能來最佳化您的搜尋功能，以便在購物者型別、同義字和拼字時提供即時建議，以確保購物者找到產品（即使他們使用不同的字詞）、Facet來允許購物者縮小搜尋結果，以及搜尋重新導向，以便將購物者從搜尋查詢自動重新導向至特定頁面。
+在本節中，您將瞭解如何使用如自動完成的功能來最佳化您的搜尋功能，以便在購物者型別、同義字和拼字時提供即時建議，以確保購物者找到產品（即使他們使用不同的字詞），並多面向購物者以縮小搜尋結果。
 
 ### 自動完成
 
@@ -85,24 +85,6 @@ ht-degree: 0%
 - [管理Facet](facets-manage.md) （編輯、釘選Facet、刪除、發佈）
 - [價格多面向](settings.md#price-faceting)
 
-### 搜尋重新導向
-
-搜尋重新導向可讓您將購物者從搜尋查詢自動重新導向至特定頁面。 搜尋重新導向可改善購物者體驗，並引導客戶瞭解最相關的內容，例如產品頁面、類別、登陸頁面或量身打造的搜尋結果集。 搜尋重新導向有助於簡化購物體驗，並確保購物者能夠快速且有效率地找到他們想要的東西。
-
-設定搜尋重新導向的建議使用案例：
-
-- **熱門產品或類別** — 當購物者搜尋常見或熱門辭彙時，將他們重新導向至特定的產品頁面或類別。 例如，搜尋「iPhone」可能會直接重新導向至iPhone類別頁面或特定模型頁面。
-
-- **促銷活動** — 在促銷活動或銷售期間，將相關搜尋字詞重新導向至強調特殊優惠或精選產品的登陸頁面。
-
-- **品牌搜尋** — 當購物者搜尋品牌名稱時，請將其重新導向至該品牌的專用頁面，其中會列出該品牌的所有產品。
-
-- **產品停產** — 如果產品停產，您可以將對該產品的搜尋重新導向至類似產品或產品的新版本。
-
-請一律測試搜尋重新導向，以確保它們正常運作並導向最相關的頁面。 持續監控其效能，並視需要進行調整。
-
-瞭解如何[管理搜尋重新導向](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/catalog/search/search-terms)。
-
 ## 改善搜尋結果關聯性
 
 本節探討如何實作有效的搜尋規則，並使用產品中繼資料來確保精確且詳細的屬性可供搜尋，進而改善搜尋結果的相關性。
@@ -155,7 +137,7 @@ ht-degree: 0%
 深入瞭解搜尋所需的產品屬性：
 
 - [將屬性設定為可搜尋](workspace.md#set-attributes-as-searchable)
-- [指派權重給屬性](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [指派權重給屬性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## 監視搜尋結果
 
@@ -182,7 +164,6 @@ ht-degree: 0%
   若要降低零結果率，您可以：
 
    - 找不到完全相符的專案時，提供替代或相關的搜尋字詞，例如[同義字](synonyms.md)。
-   - 當搜尋未產生結果時，透過設定搜尋重新導向，為購物者提供相關或替代建議。
    - 定期檢視零結果查詢以識別模式，並對產品目錄和搜尋設定進行必要的調整。
 
 - **熱門結果** — 可透過與購物者偏好和行為對應來大幅增強搜尋結果。
