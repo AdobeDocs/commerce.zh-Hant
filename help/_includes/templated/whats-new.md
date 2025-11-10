@@ -1,7 +1,7 @@
 ---
-source-git-commit: a35078af6a818cd87ec64e60d193d3705e462501
+source-git-commit: 27a593d86255cb48b04a876cbfd8e5413bbfa6f4
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '203'
 ht-degree: 2%
 
 ---
@@ -10,6 +10,28 @@ ht-degree: 2%
 ## 新增功能
 
 此頁面包含過去60天所做的變更。 我們將從此清單中排除所有微幅更新，例如複製編輯。
+
+### 2025年11月6日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>已更新AEM Assets整合v1.2.7版的<a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes">發行說明</a>。</p>
+</td>
+      <td>
+        技術
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/89091ee8a69259ad325a2b2d7ed8d522fe23fac9">認可</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2025年10月17日
 
@@ -23,7 +45,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>更新下列主題，以包含有關從Adobe Admin Console設定身分管理和單一登入的資訊： <br />- <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/user-management">Adobe Commerce as a Cloud Service使用者和Identity Management</a><br />- <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/user-management">Adobe Commerce Optimizer：使用者和Identity Management</a></p>
+      <td><p>更新下列主題，以包含有關從Adobe Admin Console設定身分管理和單一登入的資訊： <br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">Adobe Commerce as a Cloud Service使用者和Identity Management</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/user-management">Adobe Commerce Optimizer：使用者和Identity Management</a></p>
 </td>
       <td>
         技術意見回饋
@@ -45,7 +67,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>已更新新增使用者的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/user-management">使用者管理</a>步驟。</p>
+      <td><p>已更新新增使用者的<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">使用者管理</a>步驟。</p>
 </td>
       <td>
         重大更新
@@ -67,7 +89,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>更新Adobe Commerce Optimizer的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/storefront">店面設定指南</a>，提供使用「網站建立者」工具建立店面專案、自訂店面設定，以及透過檢查預設產品詳細資料和產品搜尋結果頁面來驗證網站和目錄資料的指示。</p>
+      <td><p>更新Adobe Commerce Optimizer的<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/storefront">店面設定指南</a>，提供使用「網站建立者」工具建立店面專案、自訂店面設定，以及透過檢查預設產品詳細資料和產品搜尋結果頁面來驗證網站和目錄資料的指示。</p>
 </td>
       <td>
         重大更新
@@ -89,7 +111,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/user-management">使用者管理</a>現在需要所有開發人員和產品管理員先新增使用者角色。</p>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">使用者管理</a>現在需要所有開發人員和產品管理員先新增使用者角色。</p>
 </td>
       <td>
         重大更新
@@ -111,64 +133,12 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>已發佈Payment Services v2.12.2的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/payment-services/release-notes">發行說明</a>。</p>
+      <td><p>已發佈Payment Services v2.12.2的<a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes">發行說明</a>。</p>
 </td>
       <td>
         重大更新
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/1e5ee370bf91d33f35585d2d64b393fede721ce6">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2025年9月9日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>已在Adobe Commerce as a Cloud Service的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/user-management">使用者管理</a>頁面中新增AEM Assets設定資訊。</p>
-</td>
-      <td>
-        重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/acce1aad405e74b1171faddf7f0d6681bd0a048d">認可</a></td>
-    </tr>
-    <tr>
-      <td><p>已在Adobe Commerce as a Cloud Service的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/getting-started">快速入門</a>頁面中新增角色型工作和工作流程資訊</p>
-</td>
-      <td>
-        新主題
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/f62434c55d21f65568af422bd278e6ed917b805b">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2025年9月4日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>新增選用的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/saas-data-export/extensibility/add-tax-attribute-set-inventory-attributes">額外產品屬性模組</a>的檔案。 當此模組安裝在Adobe Commerce環境中時，資料匯出程式會自動從Commerce產品組態將稅捐類別、屬性集和詳細目錄中繼資料匯出至<code class="language-plaintext highlighter-rouge">products</code>和<code class="language-plaintext highlighter-rouge">product attributes</code>摘要。</p>
-</td>
-      <td>
-        新主題
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/a77c6bd98622488214d89a077e1dfaa8338108fd">認可</a></td>
     </tr>
   </tbody>
 </table>
