@@ -424,7 +424,7 @@ _2023年8月30日_
 
 ![新增](../assets/new.svg)<!-- PAY-4002 -->新增功能，可讓商家[排序付款選項順序](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#payment-buttons)，以優先處理特定付款選項。 此功能可提高結帳對話率。
 
-![新](../assets/new.svg)<!-- PAY-4035 -->商戶現在可以使用[ Admin首頁提供的新](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html)交易報告[!DNL Payment Services]，有效監控其商店的健康狀況，並識別任何交易問題。 此報表也會顯示有關交易授權率及負數交易趨勢的資料。
+![新](../assets/new.svg)<!-- PAY-4035 -->商戶現在可以使用[&#x200B; Admin首頁提供的新](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html)交易報告[!DNL Payment Services]，有效監控其商店的健康狀況，並識別任何交易問題。 此報表也會顯示有關交易授權率及負數交易趨勢的資料。
 
 ## v2.1.0
 
