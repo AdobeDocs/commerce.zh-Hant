@@ -130,11 +130,11 @@ Adobe Commerce Connector的運作方式是將Commerce的`website/store/storeview
 
 從您的Adobe Commerce Optimizer執行個體詳細資料儲存下列值。
 
-* **例項ID—**您的Adobe Commerce Optimizer例項的唯一識別碼。 也稱為租使用者ID。
+* **例項ID—**&#x200B;您的Adobe Commerce Optimizer例項的唯一識別碼。 也稱為租使用者ID。
 
   從URL取得執行個體ID以存取您的Adobe Commerce Optimizer執行個體。 例如，在URL `https://na1-sandbox.admin.commerce.adobe.com/1234567890abcdef`中，執行個體識別碼為`1234567890abcdef`。
 
-* **地區 — **託管Adobe Commerce Optimizer沙箱例項的區域。
+* **地區 — &#x200B;** 託管Adobe Commerce Optimizer沙箱例項的區域。
 
   從Adobe Commerce Optimizer URL取得地區。 例如，在URL `https://na1-sandbox.admin.commerce.adobe.com/1234567890abcdef`中，區域是`na1`。
 
@@ -172,7 +172,7 @@ bin/magento aco:config:init --org_id=<<your_org_id>> --tenant_id=<<your_tenant_i
 
 1. 確認目錄資料是否從Commerce流向Commerce Optimizer：
 
-   從Commerce Admin中，選取[!UICONTROL Data Feed Sync Status]** > [!UICONTROL System] > [!UICONTROL Data Transfer]以開啟&#x200B;**[!UICONTROL Data Feed Sync Status]**&#x200B;頁面。
+   從Commerce Admin中，選取[!UICONTROL Data Feed Sync Status] **&#x200B; > [!UICONTROL System] > [!UICONTROL Data Transfer]以開啟&#x200B;**&#x200B;[!UICONTROL Data Feed Sync Status]**&#x200B;頁面。
 
    ![具有摘要專案狀態報告的[資料摘要同步處理狀態]頁面](./assets/data-feed-sync-status.png)
 
