@@ -1,13 +1,13 @@
 ---
-title: Commerce的Adobe Commerce Optimizer Connector
+title: Adobe Commerce Optimizer聯結器
 description: 瞭解如何將資料從Commerce雲端或內部部署專案連線到Adobe Commerce Optimizer
 feature: Personalization, Integration, Configuration
-badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce 。"
+badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce 。"
 hidefromtoc: true
 hide: true
-source-git-commit: 36cfafff243a2310a17a2c9ec8a00f10403bc133
+source-git-commit: 1654aede42cf53b2dffe2965680f122d7c247234
 workflow-type: tm+mt
-source-wordcount: '1552'
+source-wordcount: '1529'
 ht-degree: 0%
 
 ---
@@ -49,24 +49,24 @@ Adobe Commerce Connector的運作方式是將Commerce的`website/store/storeview
 
 ## 使用整合的需求
 
-* Adobe Commerce 2.4.5+
+* Adobe Commerce 2.4.7+
 
-   * PHP 8.1、8.2、8.3或8.4
+   * PHP 8.2、8.3或8.4
    * Composer 2.x
 
 * 具有已布建沙箱例項的Adobe Commerce Optimizer授權。
 
 * 存取[repo.magento.com](https://repo.magento.com)以使用Composer下載Commerce Connector中繼資料。
 
-* 管理員存取[Adobe Commerce Optimizer沙箱執行個體](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/adobe-commerce-optimizer/create-first-instance)。
+* 管理員存取[Adobe Commerce Optimizer沙箱執行個體](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/create-first-instance)。
 
 設定整合的Adobe Commerce使用者必須具備：
 
 * Adobe Commerce管理員的管理員存取權。
 
-* [對Adobe Commerce應用程式伺服器的命令列存取權](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/project/user-access)。
+* [對Adobe Commerce應用程式伺服器的命令列存取權](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access)。
 
-* 開發人員對布建Adobe Commerce Optimizer專案的[IMS組織](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/administration/organizations?)的存取權。
+* 開發人員對布建Adobe Commerce Optimizer專案的[IMS組織](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations?)的存取權。
 
 ## 開始使用
 
@@ -106,9 +106,9 @@ Adobe Commerce Connector的運作方式是將Commerce的`website/store/storeview
 >
 >如需詳細的擴充功能安裝指示，請參閱下列指南：
 >
->在雲端基礎結構上的Adobe Commerce上[安裝擴充功能](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure-store/extensions)
+>在雲端基礎結構上的Adobe Commerce上[安裝擴充功能](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions)
 >
->[安裝擴充功能Adobe Commerce內部部署](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/tutorials/extensions)
+>[安裝擴充功能Adobe Commerce內部部署](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions)
 
 ## 取得設定Commerce Optimizer連線所需的值
 
@@ -116,9 +116,9 @@ Adobe Commerce Connector的運作方式是將Commerce的`website/store/storeview
 
 >[!NOTE]
 >
->如果您在部署了App Builder執行個體的IMS組織中已有Commerce Optimizer開發人員專案，您可以從該專案中的OAUTH伺服器對伺服器憑證取得必要的API憑證和組織ID。
+>如果您已在部署Commerce Optimizer執行個體的IMS組織中擁有使用Data Ingestion API設定的開發人員專案，則可以從該專案中的OAUTH伺服器對伺服器憑證取得必要的API憑證和組織ID。
 
-在Adobe Developer主控台中建立新的開發人員專案，以取得API認證，設定Commerce與Commerce Optimizer執行個體之間的整合。 如需指示，請參閱開發人員檔案中的[建立App Builder專案](https://developer.adobe.com/commerce/extensibility/events/project-setup/)。
+在Adobe Developer主控台中建立新的開發人員專案，以取得Adobe Commerce Optimizer Ingestion API認證，設定Commerce與Commerce Optimizer執行個體之間的整合。 如需指示，請參閱[銷售開發人員指南](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/authentication/#obtain-ims-credentials)中的&#x200B;*取得IMS認證*。
 
 建立專案後，請從「OAUTH伺服器對伺服器認證」頁面儲存下列值：
 
@@ -130,11 +130,11 @@ Adobe Commerce Connector的運作方式是將Commerce的`website/store/storeview
 
 從您的Adobe Commerce Optimizer執行個體詳細資料儲存下列值。
 
-* **例項ID—**&#x200B;您的Adobe Commerce Optimizer例項的唯一識別碼。 也稱為租使用者ID。
+* **例項ID—**您的Adobe Commerce Optimizer例項的唯一識別碼。 也稱為租使用者ID。
 
   從URL取得執行個體ID以存取您的Adobe Commerce Optimizer執行個體。 例如，在URL `https://na1-sandbox.admin.commerce.adobe.com/1234567890abcdef`中，執行個體識別碼為`1234567890abcdef`。
 
-* **地區 — &#x200B;** 託管Adobe Commerce Optimizer沙箱例項的區域。
+* **地區 — **託管Adobe Commerce Optimizer沙箱例項的區域。
 
   從Adobe Commerce Optimizer URL取得地區。 例如，在URL `https://na1-sandbox.admin.commerce.adobe.com/1234567890abcdef`中，區域是`na1`。
 
@@ -150,7 +150,7 @@ Adobe Commerce Connector的運作方式是將Commerce的`website/store/storeview
 
    ![Adobe Commerce Optimizer設定頁面](../assets/aco-connector-config-page.png)
 
-1. 從命令列，[使用SSH](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/secure-connections)連線至Commerce中繼環境。
+1. 從命令列，[使用SSH](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections)連線至Commerce中繼環境。
 
 1. 執行下列Commerce CLI命令來設定整合，將預留位置值取代為Commerce Optimizer專案的值：
 
@@ -166,13 +166,13 @@ bin/magento aco:config:init --org_id=<<your_org_id>> --tenant_id=<<your_tenant_i
 
 您可以透過Commerce Admin和Commerce Optimizer檢查資料同步處理。
 
-* **[資料摘要同步狀態頁面](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.md)**&#x200B;會顯示從Commerce到Adobe Commerce Optimizer的目錄資料同步處理進度。
+* **[資料摘要同步狀態頁面](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.md)**&#x200B;會顯示從Commerce到Adobe Commerce Optimizer的目錄資料同步處理進度。
 
-* Adobe Commerce Optimizer中的&#x200B;**[[!UICONTROL Data Sync]頁面](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/setup/data-sync)**&#x200B;會顯示從您的Commerce執行個體傳輸的目錄資料。
+* Adobe Commerce Optimizer中的&#x200B;**[[!UICONTROL Data Sync]頁面](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync)**&#x200B;會顯示從您的Commerce執行個體傳輸的目錄資料。
 
 1. 確認目錄資料是否從Commerce流向Commerce Optimizer：
 
-   從Commerce Admin中，選取[!UICONTROL Data Feed Sync Status] **&#x200B; > [!UICONTROL System] > [!UICONTROL Data Transfer]以開啟&#x200B;**&#x200B;[!UICONTROL Data Feed Sync Status]**&#x200B;頁面。
+   從Commerce Admin中，選取[!UICONTROL Data Feed Sync Status]** > [!UICONTROL System] > [!UICONTROL Data Transfer]以開啟&#x200B;**[!UICONTROL Data Feed Sync Status]**&#x200B;頁面。
 
    ![具有摘要專案狀態報告的[資料摘要同步處理狀態]頁面](./assets/data-feed-sync-status.png)
 
@@ -204,19 +204,19 @@ bin/magento indexer:reindex" catalog indexer re-index CLI command to start PaaS 
 
 ## 設定Adobe Commerce Optimizer存放區
 
-透過建立目錄檢視和原則來設定Adobe Commerce Optimizer存放區&#x200B;。 請參閱Adobe Commerce Optimizer指南中的[建立目錄檢視](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/setup/catalog-view)。
+透過建立目錄檢視和原則來設定Adobe Commerce Optimizer存放區&#x200B;。 請參閱Adobe Commerce Optimizer指南中的[建立目錄檢視](../optimizer/setup/catalog-view.md)。
 
 請注意，價格簿是從Adobe Commerce客戶群組自動建立的。
 
 ## 在Edge Delivery Services上設定Commerce店面
 
-本節提供設定Commerce店面所需步驟的整體概觀。 詳細資訊可在[Adobe Commerce店面] (https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant)檔案網站中取得。
+本節提供設定Commerce店面所需步驟的整體概觀。 詳細資訊可在[Adobe Commerce店面] (https://experienceleague.adobe.com/developer/commerce/storefront/)檔案網站中取得。
 
 1. 使用[網站建立者工具](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator)複製Adobe Commerce店面樣板並部署到EDS。
 
-1. [設定本機開發環境](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=zh-Hant#set-up-local-environment)。
+1. [設定本機開發環境](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#set-up-local-environment)。
 
-1. [安裝GraphQL Storefront相容性套件](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility/install/?lang=zh-Hant)。&#x200B;
+1. [安裝GraphQL Storefront相容性套件](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility/install/)。&#x200B;
 
 1. [在雲端環境中設定Commerce執行個體的CORS標頭](#configure-cors-headers-for-commerce-instance)。
 
@@ -224,35 +224,24 @@ bin/magento indexer:reindex" catalog indexer re-index CLI command to start PaaS 
 
 ### 設定Commerce例項的CORS標題
 
-若要允許將GraphQL請求從Edge Delivery Services (EDS)店面傳送到雲端或內部部署環境中的Adobe Commerce，請使用下列其中一個選項，將特定的跨原始資源共用(CORS)標題新增到Adobe Commerce GraphQL端點&#x200B;。
-
-1. 將跨原始資源共用(CORS)標頭新增至Adobe Commerce GraphQL端點&#x200B;。
-
-   **選項1：實作Adobe Commerce foundation的PHP自訂模組，以便能夠新增CORS標頭。&#x200B;**
-
-   **選項2：安裝協力廠商社群模組graycore/magento2-cors&#x200B;** — 請參閱[Adobe Commerce店面](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/cors-setup/?lang=zh-Hant)檔案中的&#x200B;*CORS設定*。
-
-1. 將下列CORS變數新增至雲端執行個體`app.yaml`環境設定檔案上的Commerce：
-
-   * `CONFIG__DEFAULT__WEB__GRAPHQL__CORS_ALLOWED_HEADERS: *`
-   * `CONFIG__DEFAULT__WEB__GRAPHQL__CORS_ALLOWED_ORIGINS: *`
+若要允許將GraphQL請求從Edge Delivery Services (EDS)店面傳送到雲端或內部部署環境中的Adobe Commerce，請將特定的跨原始資源共用(CORS)標題新增到Adobe Commerce GraphQL端點&#x200B;。 如需指示，請參閱[Adobe Commerce店面](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/cors-setup/)檔案中的&#x200B;*CORS設定*。
 
 ### 將店面連線至Commerce資料來源
 
 在店面樣板程式碼的GitHub存放庫中，使用以下引數更新店面設定檔案`config.json`：
 
-* `"commerce-core-endpoint": "Commerce cloud instance GraphQL endpoint"`
+* `"commerce-core-endpoint": "Commerce cloud instance GraphQL endpoint"`，例如`https://{{your store}}/graphql`。
 
-* `"commerce-endpoint": "Commerce Optimizer instance GraphQL endpoint"` — 從[Commerce Optimizer執行個體詳細資訊頁面](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/get-started#get-instance-details)取得此值&#x200B;
+* `"commerce-endpoint": "Commerce Optimizer instance GraphQL endpoint"`，例如`https://na1-sandbox.api.commerce.adobe.com/{{instanceId}}/v1/catalog&#x200B;`。
 
-* `"AC-Environment-Id": "Customer organization ID"` — 從[Commerce雲端專案](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/project/overview#project-overview)取得此值
+* `"AC-Environment-Id": "Customer organization ID"` — 從[Commerce雲端專案](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/overview#project-overview)取得此值。
 
-* `"AC-View-ID": "Catalog view ID in Commerce Optimizer Admin"` — 從Adobe Commerce Optimizer管理員取得此值。
+* `"AC-View-ID": "Catalog view ID in Commerce Optimizer Admin"` — 從Adobe Commerce Optimizer中的[目錄檢視詳細資料](../optimizer/setup/catalog-view.md#view-details)取得此值。
 
-* `"AC-Price-Book-ID": "base::b6589fc6ab0dc82cf12099d1c2d40ab994e8410c"` — 從Adobe Commerce Optimizer管理員取得此值&#x200B;。
+* `"AC-Price-Book-ID": "base::b6589fc6ab0dc82cf12099d1c2d40ab994e8410c"` — 從Adobe Commerce Optimizer中[目錄檢視詳細資料](../optimizer/setup/catalog-view.md#view-details)的已指派價格簿清單取得此值。
 
-* `"AC-Source-Locale": "Catalog source – Store View code from Commerce cloud instance"`
+* `"AC-Source-Locale": "catalogSource"` — 指定與Commerce店面關聯的來源，以連線至店面。 您可以從Adobe Commerce Optimizer的[Data Sync](../optimizer/setup/data-sync.md)頁面檢視可用的來源。
 
-如需詳細資訊，請參閱[Adobe Commerce店面](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=zh-Hant)檔案中的&#x200B;*店面設定*。
+如需詳細資訊，請參閱[Adobe Commerce店面](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/)檔案中的&#x200B;*店面設定*。
 
 
