@@ -3,7 +3,7 @@ title: 價格手冊
 description: 瞭解如何在 [!DNL Adobe Commerce Optimizer]中管理價格簿。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 exl-id: a1849830-3d0e-4df9-ab73-380659c3f9dc
 source-git-commit: 1c720bc3ba755639eff2f17912fb3a3446e367f6
 workflow-type: tm+mt
