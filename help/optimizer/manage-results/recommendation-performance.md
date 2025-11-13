@@ -1,10 +1,11 @@
 ---
 title: Recommendations效能
 description: Recommendations效能頁面可提供insight來瞭解您的產品推薦執行情形。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
-source-git-commit: f49a86b8793e2d91413acfbc0b922cb94db67362
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+exl-id: 1b77e2ea-412b-4c78-9d38-390bd8fda87e
+source-git-commit: 0eea4658d554f2913c7c2d25e0c0753f22016aaa
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '687'
 ht-degree: 0%
 
 ---
@@ -27,14 +28,11 @@ ht-degree: 0%
 
 ## 檢視報告
 
-按一下行事曆，然後執行下列任一項作業：
+按一下&#x200B;**[!UICONTROL Date Range]**&#x200B;並選取下列範圍之一：
 
-- 若要指定單一日期，請連按兩下行事曆上的日期。
-- 若要指定日期範圍，請按一下行事曆上的第一個和最後一個日期。
+![Recommendations日期範圍](../assets/rec-perf-date-range.png)
 
->[!NOTE]
->
->日期範圍不能超過一年。
+建議表格會更新，顯示該日期範圍的量度。
 
 ## 自訂表格
 
@@ -55,13 +53,13 @@ ht-degree: 0%
 
 ![篩選量度](../assets/rec-filters.png)
 
-您可以為每個篩選器設定多個值。 如需每個篩選的說明，請參閱[&#128279;](#column-descriptions)下方的表格。
+您可以為每個篩選器設定多個值。 如需每個篩選的說明，請參閱[下方的](#column-descriptions)表格。
 
 ## 檢視詳細資料
 
 1. 在表格中，按一下您要檢查的建議旁的（![更多選取器](../assets/btn-more.png)）圖示。
 
-1. 若要變更建議狀態，請按一下[啟用] **&#x200B;**&#x200B;或[停用] **&#x200B;**。
+1. 若要變更建議狀態，請按一下[啟用] ****&#x200B;或[停用] ****。
 
 ## 建立或管理建議
 
@@ -71,7 +69,7 @@ ht-degree: 0%
 
 | 控制 | 說明 |
 |---|---|
-| ![行事曆選擇器](../assets/icon-calendar.png) | 決定用於量度計算的時間範圍。 |
+| ![日期範圍](../assets/rec-perf-date-range.png) | 決定用於量度計算的時間範圍。 |
 | ![資料行選擇器](../assets/icon-show-hide-columns.png) | 決定顯示在Recommendations表格中的欄。 |
 | 建立推薦 | 開啟[建立新建議](../merchandising/recommendations/create.md)頁面。 |
 
