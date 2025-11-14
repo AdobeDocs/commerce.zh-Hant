@@ -1,13 +1,13 @@
 ---
 title: 擴充功能的AI編碼工具
 description: 瞭解如何使用AI工具來建立Commerce App Builder擴充功能。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
+source-git-commit: 9382ce8f139f9d2f4ec1732c0d83b466cd54fa37
 workflow-type: tm+mt
-source-wordcount: '1454'
+source-wordcount: '1616'
 ht-degree: 0%
 
 ---
@@ -96,10 +96,19 @@ ht-degree: 0%
 
    下列檔案會新增至您的工作區：
 
+   **游標**
+
    * MCP組態： `.cursor/mcp.json`
    * 規則目錄： `.cursor/rules/`
 
+   **Copilot**
+
+   * MCP組態： `.vscode/mcp.json`
+   * 規則目錄： `.github/copilot-instructions.md`
+
 ## 安裝後設定
+
+### 游標
 
 1. 重新啟動Cursor IDE以載入新的MCP工具和組態。
 
@@ -119,6 +128,45 @@ ht-degree: 0%
    Server: commerce-extensibility
    Configuration: Automatically configured via .cursor/mcp.json
    ```
+
+1. 使用以下提示來檢視代理程式是否使用MCP伺服器。 如果不適用，請明確要求代理程式使用可用的MCP工具。
+
+```terminal
+What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Cloud Service when configuring a webhook that activates an App Builder runtime action?
+```
+
+### Copilot
+
+1. 重新啟動Visual Studio Code以載入新的MCP工具和組態。
+
+1. 確認`copilot-instructions.md`檔案存在於`.github`資料夾中，以驗證安裝。
+
+1. 啟用MCP伺服器：
+
+   * 按一下左側邊欄活動列中的&#x200B;**擴充功能**&#x200B;圖示，或使用&#x200B;**Cmd+Shift+X** (macOs)或&#x200B;**Ctrl+Shift+X** （Windows和Linux）來開啟「擴充功能面板」。
+   * 按一下&#x200B;**MCP伺服器 — 已安裝**。
+   * 按一下&#x200B;**commerce-extensibility MCP伺服器**&#x200B;旁的齒輪圖示，並選取&#x200B;**啟動伺服器** （如果伺服器已停止）。
+   * 再按一下齒輪圖示，然後選取&#x200B;**顯示輸出**。
+
+1. 驗證伺服器狀態。 `MCP:commerce-extensibility`輸出應該符合下列內容：
+
+   ```terminal
+   2025-11-13 12:58:50.652 [info] Starting server commerce-extensibility
+   2025-11-13 12:58:50.652 [info] Connection state: Starting
+   2025-11-13 12:58:50.652 [info] Starting server from LocalProcess extension host
+   2025-11-13 12:58:50.657 [info] Connection state: Starting
+   2025-11-13 12:58:50.657 [info] Connection state: Running
+   
+   (...)
+   
+   2025-11-13 12:58:50.753 [info] Discovered 10 tools
+   ```
+
+1. 使用以下提示來檢視代理程式是否使用MCP伺服器。 如果不適用，請明確要求代理程式使用可用的MCP工具。
+
+```terminal
+What are the differences between Adobe Commerce PaaS and SaaS when configuring a webhook that activates an App Builder runtime action?
+```
 
 ## 範例提示
 
@@ -174,7 +222,7 @@ Adobe建議您在使用AI編碼工具時，遵循下列最佳實務：
 
 * [整合入門套件](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Adobe Commerce入門套件範本](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Adobe I/O Events入門範本](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Adobe I/O Events入門範本](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [App Builder範例應用程式](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### 為何應使用這些資源
