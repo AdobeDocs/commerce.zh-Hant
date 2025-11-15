@@ -1,9 +1,10 @@
 ---
 title: 產品清單頁面Widget
 description: 啟用 [!DNL Live Search Product Listing Page Widget]並設定樣式
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 50ba8046-869a-4071-b3a3-a6392544c07b
+source-git-commit: 7684d5cded63f2b0805ee307dff77932607c47eb
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '494'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,15 @@ ht-degree: 0%
 
 安裝[!DNL Live Search]服務時，預設搜尋功能會自動轉換為[!DNL Live Search]。
 
-預設會為新安裝啟用[!DNL Live Search] PLP Widget。 如果您正在升級[!DNL Live Search]，而且PLP Widget已關閉，則會維持關閉。
+預設會為新安裝啟用[!DNL Live Search] PLP Widget。
+
+如果您正在升級[!DNL Live Search]，而且PLP Widget已關閉，則會維持關閉。 若要開啟：
+1. 在Adobe Commerce管理員中，前往儲存→設定→設定。
+1. 在左側導覽中，按一下&#x200B;**[!UICONTROL Live Search]** > **[!UICONTROL Storefront Features]**。
+1. 按一下[!UICONTROL Storefront Features]區段。
+1. 設定[!UICONTROL Enable Product Listing Widget] =是
+1. 儲存設定
+1. 如果出現提示，請排清快取（前往「系統>工具>快取管理> [!UICONTROL Flush Magento Cache]」）。
 
 >[!IMPORTANT]
 >
@@ -38,7 +47,7 @@ PLP Widget提供下列現成可用的功能：
 - 多語言支援
 - 價格滑桿
 
-如需有關如何自訂PLP Widget以處理上述功能的資訊，請參閱下列[存放庫](https://github.com/adobe/storefront-product-listing-page/)中的`storefront-product-listing-page` Readme。 此存放庫中的Readme提供範例，說明如何自訂PLP Widget，並將這些自訂內容部署至您的網站。
+如需有關如何自訂PLP Widget以處理上述功能的資訊，請參閱下列`storefront-product-listing-page`存放庫[中的](https://github.com/adobe/storefront-product-listing-page/) Readme。 此存放庫中的Readme提供範例，說明如何自訂PLP Widget，並將這些自訂內容部署至您的網站。
 
 >[!WARNING]
 >
