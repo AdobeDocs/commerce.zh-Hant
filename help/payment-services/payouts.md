@@ -5,7 +5,7 @@ role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: a0f9ddbf3d0f291855cb51fd70a782c48b8efc6c
 workflow-type: tm+mt
 source-wordcount: '1303'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 支付報表
 
-[!DNL Adobe Commerce]和[!DNL Magento Open Source]的[!DNL Payment Services]為您提供完整的報告，以便您清楚瞭解商店的交易、訂單和付款。
+[!DNL Payment Services]和[!DNL Adobe Commerce]的[!DNL Magento Open Source]為您提供完整的報告，以便您清楚瞭解商店的交易、訂單和付款。
 
 有兩個可用的「付款」報表檢視表，可讓您檢視所有付款的深入資訊：
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->付款報表只會顯示擷取的訂單（付款動作設定為[`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html?lang=zh-Hant#set-payment-services-as-payment-method)） — 或[標籤為`Invoiced`](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice)。
+>付款報表只會顯示擷取的訂單（付款動作設定為[`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method)） — 或[標籤為`Invoiced`](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice)。
 
 ## 支付資料視覺效果檢視
 
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 「付款服務」的「付款」檢視表中提供「付款」報表檢視表。 其中包含有關您商店付款的所有可用資訊。
 
-在&#x200B;_Admin_&#x200B;側邊欄上，前往&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**&#x200B;檢視詳細的表格式支付報告檢視。
+在&#x200B;_Admin_&#x200B;側邊欄上，前往&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**檢視詳細的表格式支付報告檢視。
 
 管理員中的![付款交易](assets/payouts-report-new.png){width="800" zoomable="yes"}
 
@@ -81,7 +81,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->此資料表中顯示的資料預設使用`TRANS DATE`以遞減順序(`DESC`)排序。 `TRANS DATE`是啟動交易的日期和時間。
+>此資料表中顯示的資料預設使用`DESC`以遞減順序(`TRANS DATE`)排序。 `TRANS DATE`是啟動交易的日期和時間。
 
 ### 選取資料來源
 
@@ -89,7 +89,7 @@ ht-degree: 0%
 
 ![資料來源選擇](assets/datasource.png){width="300" zoomable="yes"}
 
-如果&#x200B;_[!UICONTROL Live]_&#x200B;是選取的資料來源，您可以看到生產模式中存放區的報表資訊。 如果&#x200B;_[!UICONTROL Sandbox]_&#x200B;是選取的資料來源，您會看到以沙箱模式儲存的報告資訊。
+如果&#x200B;_[!UICONTROL Live]_是選取的資料來源，您可以看到生產模式中存放區的報表資訊。 如果_[!UICONTROL Sandbox]_&#x200B;是選取的資料來源，您會看到以沙箱模式儲存的報告資訊。
 
 資料來源選取專案的工作方式如下：
 
@@ -110,14 +110,14 @@ ht-degree: 0%
 
 搜尋中傳回或顯示在預設30天交易中的列數，會與「交易日期」行事曆選取器篩選器一起顯示在「付款」檢視網格上方。
 
-向左及向右捲動，檢視每日報表中每個支付交易[&#128279;](#column-descriptions)的資訊，包括交易日期、參考ID、商業發票號碼及付款方式詳細資料。
+向左及向右捲動，檢視每日報表中每個支付交易[的](#column-descriptions)資訊，包括交易日期、參考ID、商業發票號碼及付款方式詳細資料。
 
 #### 自訂交易時間範圍
 
 在「付款報表」檢視中，您可以輸入特定日期或從日期選擇器選取日期範圍，以自訂您要檢視之付款交易的時間範圍：
 
 1. 在&#x200B;_管理員_&#x200B;側邊欄上，前往&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**。
-1. 按一下&#x200B;_[!UICONTROL Transaction dates]_&#x200B;行事曆選擇器篩選器。
+1. 按一下&#x200B;_[!UICONTROL Transaction dates]_行事曆選擇器篩選器。
 1. 選擇適用的日期範圍。
 1. 檢視網格中指定日期的付款狀態。
 
@@ -137,7 +137,7 @@ ht-degree: 0%
 
 1. 在&#x200B;_管理員_&#x200B;側邊欄上，前往&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**。
 1. [自訂交易的日期範圍時間範圍](#customize-transactions-timeframe)。
-1. 按一下「_下載_」（![下載圖示](assets/icon-download.png){width="20" zoomable="yes"}）圖示。
+1. 按一下「_下載_」（「![下載」圖示](assets/icon-download.png){width="20" zoomable="yes"}）圖示。
 
 您的付款交易會以.csv格式下載。
 
@@ -155,7 +155,7 @@ ht-degree: 0%
 | [!UICONTROL Code] | 表示貸方(*CR*)或借方(*DR*)的交易代碼 |
 | [!UICONTROL Reference ID] | 與此事件相關的原始交易ID |
 | [!UICONTROL Invoice] | 交易的商業發票ID （每張訂單一個） |
-| [!UICONTROL Commerce order] | Commerce訂單ID <br> <br>若要檢視相關的[訂單資訊](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/order-management/orders/orders)，請按一下ID。 |
+| [!UICONTROL Commerce order] | Commerce訂單ID <br> <br>若要檢視相關的[訂單資訊](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders)，請按一下ID。 |
 | [!UICONTROL Commerce trans] | Commerce交易ID |
 | [!UICONTROL Pay method] | 信用卡型別 — *[!UICONTROL BANK]*、*[!UICONTROL PAYPAL]*、*[!UICONTROL CREDIT_CARD]* — 和相關聯的卡片提供者（例如&#x200B;*Visa*&#x200B;或&#x200B;*MasterCard*） |
 | [!UICONTROL TRANS AMT] | 交易金額 |
