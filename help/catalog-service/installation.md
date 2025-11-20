@@ -2,7 +2,7 @@
 title: 安裝
 description: 瞭解如何安裝 [!DNL Catalog Service]
 exl-id: 3f8492c3-f76d-49b7-a201-35deace36a1d
-badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce 。"
+badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce 。"
 source-git-commit: ae672ed3f2693e2f14e8c7f379e59ef117a34fc3
 workflow-type: tm+mt
 source-wordcount: '754'
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果您的Commerce執行個體使用即時搜尋或產品推薦，當您載入或升級這些服務時，目錄服務會自動安裝或更新。 如需詳細資訊，請參閱[即時搜尋](https://experienceleague.adobe.com/en/docs/commerce/live-search/install)和[產品建議](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/getting-started/install-configure)的安裝指示。
+>如果您的Commerce執行個體使用即時搜尋或產品推薦，當您載入或升級這些服務時，目錄服務會自動安裝或更新。 如需詳細資訊，請參閱[即時搜尋](https://experienceleague.adobe.com/zh-hant/docs/commerce/live-search/install)和[產品建議](https://experienceleague.adobe.com/zh-hant/docs/commerce/product-recommendations/getting-started/install-configure)的安裝指示。
 
 
 ## 系統需求
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 所有Commerce測試執行個體都使用沙箱端點。
 
-在沙箱端點上執行所有載入測試。 開始載入測試之前，請先提交[支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)，讓服務團隊可以預期額外的伺服器流量。
+在沙箱端點上執行所有載入測試。 開始載入測試之前，請先提交[支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=zh-Hant#submit-ticket)，讓服務團隊可以預期額外的伺服器流量。
 
 ## 安裝和設定
 
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 **先決條件**
 
-- 存取[repo.magento.com](https://repo.magento.com)以安裝擴充功能。 如需金鑰產生與取得必要許可權，請參閱[取得您的驗證金鑰](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)。 如需雲端安裝，請參閱[雲端基礎結構上的Commerce指南](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)
+- 存取[repo.magento.com](https://repo.magento.com)以安裝擴充功能。 如需金鑰產生與取得必要許可權，請參閱[取得您的驗證金鑰](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)。 如需雲端安裝，請參閱[雲端基礎結構上的Commerce指南](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/develop/authentication-keys)
 
 - 存取Adobe Commerce應用程式伺服器的命令列。
 
@@ -75,7 +75,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >如需有關在本機管理Commerce專案環境的資訊，請參閱《雲端基礎結構使用手冊》中[Adobe Commerce的](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches)使用CLI管理分支&#x200B;__。
+   >如需有關在本機管理Commerce專案環境的資訊，請參閱《雲端基礎結構使用手冊》中[Adobe Commerce的](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/develop/cli-branches)使用CLI管理分支&#x200B;__。
 
 1. 檢視環境分支，以使用Adobe Commerce Cloud CLI進行更新。
 
@@ -103,7 +103,7 @@ ht-degree: 0%
    git push origin <branch-name>
    ```
 
-   將更新推播到雲端環境會啟動[Commerce雲端部署程式](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process)以套用變更。 從[部署記錄](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log)檢查部署狀態。
+   將更新推播到雲端環境會啟動[Commerce雲端部署程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/develop/deploy/process)以套用變更。 從[部署記錄](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log)檢查部署狀態。
 
 >[!TAB 內部部署]
 
@@ -143,11 +143,11 @@ ht-degree: 0%
 
 安裝[!DNL Catalog Service]之後，請完成下列工作，將目錄服務與您的Adobe Commerce執行個體整合。 此整合可實現Commerce執行個體、目錄服務和其他支援服務之間的資料同步和通訊。 資料同步處理由[SaaS Data Export擴充功能](../data-export/overview.md)處理。
 
-1. 設定[Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas)，方法是指定API金鑰並選取SaaS資料空間。
+1. 設定[Commerce Services Connector](https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/integration-services/saas)，方法是指定API金鑰並選取SaaS資料空間。
 
    Commerce服務聯結器設定為使用Adobe Commerce服務（例如目錄服務、即時搜尋和產品建議）所需的一次性程式。 如果您已經為另一個服務設定了聯結器，請略過此步驟。
 
-1. 從[資料管理儀表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)執行初始資料同步。
+1. 從[資料管理儀表板](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)執行初始資料同步。
 
    視目錄大小而定，初始同步可能需要幾分鐘到幾小時的時間。 您可以從「資料管理」控制面板監視同步化狀態。 初始同步後，「目錄」會持續匯出產品資料，以保持服務在最新狀態。
 
@@ -157,10 +157,10 @@ ht-degree: 0%
 
 若要確保目錄匯出可正確執行：
 
-- [確認cron工作正在執行](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)。
-- 請確認索引子是從[Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management)執行，或使用Commerce CLI命令`bin/magento indexer:info`執行。
+- [確認cron工作正在執行](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)。
+- 請確認索引子是從[Admin](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/tools/index-management)執行，或使用Commerce CLI命令`bin/magento indexer:info`執行。
 - 確認`Catalog Attributes Feed, Product Feed, Product Overrides Feed`和`Product Variant Feed`索引子已設定為`Update by Schedule`。
 
 ### 監控資料同步並疑難排解
 
-透過Commerce Admin，您可以使用[資料管理控制面板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)來監視同步化程式。 使用[Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting)和記錄檔來管理和疑難排解程式。
+透過Commerce Admin，您可以使用[資料管理控制面板](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)來監視同步化程式。 使用[Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting)和記錄檔來管理和疑難排解程式。
