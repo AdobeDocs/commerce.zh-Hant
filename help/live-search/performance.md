@@ -1,7 +1,8 @@
 ---
 title: 效能
-description: ' [!DNL Live Search] 效能工作區可讓您深入瞭解購物者使用的搜尋字詞。'
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+description: ' [!DNL Live Search] 效能工作區可提供insight以供購物者使用搜尋字詞。'
+exl-id: 07a63df8-b981-4913-841a-7e81ec634281
+source-git-commit: ae672ed3f2693e2f14e8c7f379e59ef117a34fc3
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 0%
@@ -10,7 +11,7 @@ ht-degree: 0%
 
 # 效能
 
-*效能*&#x200B;工作區可讓您深入瞭解購物者使用的搜尋字詞。 此資訊可用於識別趨勢、增加點進和提高轉換率。 效能工作區可提供特定日期範圍的搜尋測量結果快照，並包括下列報表：
+*效能*&#x200B;工作區可讓insight進入購物者使用的搜尋辭彙。 此資訊可用於識別趨勢、增加點進和提高轉換率。 效能工作區可提供特定日期範圍的搜尋測量結果快照，並包括下列報表：
 
 * 不重複搜尋
 * 零個結果
@@ -18,7 +19,7 @@ ht-degree: 0%
 
 ![效能](assets/performance-unique-searches.png)
 
-您也可以參閱[資料管理控制面板](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html?lang=zh-Hant)，以取得資料同步的詳細資訊。
+您也可以參閱[資料管理控制面板](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html)，以取得資料同步的詳細資訊。
 
 >[!NOTE]
 >
