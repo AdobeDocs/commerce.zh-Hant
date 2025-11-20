@@ -111,7 +111,7 @@ ht-degree: 0%
    >
    >如果您選取&#x200B;**後台事件**，所有後台資料都會傳送到Experience Platform Edge。 如果購物者選擇退出資料收集，您必須在Experience Platform中明確設定購物者的隱私權偏好設定。 這與店面事件不同，店面事件收集器已根據購物者偏好設定處理同意。 深入瞭解[在Experience Platform中設定購物者的隱私權偏好設定](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html)。
 
-1. (如果您使用自己的AEP Web SDK，請略過此步驟。)[在Adobe Experience Platform中建立](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html#create)資料流，或選取您要用於收集的現有資料流。 在&#x200B;**資料流識別碼**&#x200B;欄位中輸入該資料流識別碼。
+1. (如果您使用自己的AEP Web SDK，請略過此步驟。) [在Adobe Experience Platform中建立](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html#create)資料流，或選取您要用於收集的現有資料流。 在&#x200B;**資料流識別碼**&#x200B;欄位中輸入該資料流識別碼。
 
 1. 輸入您要包含Commerce資料的&#x200B;**資料集識別碼**。 若要尋找資料集ID：
 
