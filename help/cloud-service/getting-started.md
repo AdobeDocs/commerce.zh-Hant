@@ -3,10 +3,10 @@ title: 開始使用 [!DNL Adobe Commerce as a Cloud Service]
 description: 瞭解如何開始使用 [!DNL Adobe Commerce as a Cloud Service]。
 role: Admin, Developer, User
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
-source-git-commit: 911d984efa9587c0154db3ab97f6136bf6c34166
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+source-git-commit: 69870bc7037bdad5a8d5fa769a06c07f8cd920aa
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1298'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ ht-degree: 0%
 
 >[!TAB 系統管理員與商家工作流程]
 
-此圖表提供系統管理員和商家如何存取及管理[!DNL Adobe Commerce as a Cloud Service]執行個體的概觀。 如需有關管理員工作流程的詳細資訊，請參閱[Adobe Admin Console指南](https://helpx.adobe.com/tw/enterprise/admin-guide.html)。
+此圖表提供系統管理員和商家如何存取及管理[!DNL Adobe Commerce as a Cloud Service]執行個體的概觀。 如需有關管理員工作流程的詳細資訊，請參閱[Adobe Admin Console指南](https://helpx.adobe.com/enterprise/admin-guide.html)。
 
 ![[!DNL Adobe Commerce as a Cloud Service]商家流程圖](./assets/merchant-flow.svg){zoomable="yes"}
 
@@ -148,13 +148,19 @@ ht-degree: 0%
 
 1. 為您的執行個體選擇&#x200B;[!UICONTROL **環境型別**]。 您可以選擇下列選項：
 
-   * [!UICONTROL **沙箱**] — 適用於設計和測試用途。 您應該使用沙箱環境來開始您的[!DNL Adobe Commerce as a Cloud Service]歷程。
+   * [!UICONTROL **沙箱**] — 僅供設計和測試之用。 您應該使用沙箱環境來開始您的[!DNL Adobe Commerce as a Cloud Service]歷程。
+
+   >[!NOTE]
+   >
+   > 沙箱執行個體僅供設計和測試用途。 您不應在沙箱環境中使用任何生產資料。
+   >
+   >沙箱例項僅限北美區域使用。
+
    * [!UICONTROL **生產**] — 用於線上商店和客戶對面的網站。
 
    >[!NOTE]
    >
-   >* 沙箱例項僅限北美區域使用。
-   >* 安裝範例資料的選專案前無法使用。
+   >Adobe Commerce as a Cloud Service的基礎設施可在全球使用。 如需您所在地區生產環境的詳細資訊，請聯絡您的客戶服務代表。
 
 1. 選取您要託管執行個體的區域。
 
@@ -197,7 +203,7 @@ ht-degree: 0%
 
 有兩種方式可將您的目錄匯入[!DNL Adobe Commerce as a Cloud Service]：
 
-* [**Commerce管理員**](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/import/data-import) — 使用者易記的介面，可讓您按幾下滑鼠即可匯入目錄資料。
+* [**Commerce管理員**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import) — 使用者易記的介面，可讓您按幾下滑鼠即可匯入目錄資料。
 * [**匯入JSON API**](https://developer.adobe.com/commerce/webapi/rest/modules/import/#import-json-api) - REST API可讓您以程式設計方式匯入目錄資料。
 
 ### 設定店面
@@ -208,4 +214,4 @@ ht-degree: 0%
 
 * [發行說明](release-notes.md)
 * [移轉指南](migration/overview.md)
-* [Commerce Storefront檔案](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant)
+* [Commerce Storefront檔案](https://experienceleague.adobe.com/developer/commerce/storefront/)
