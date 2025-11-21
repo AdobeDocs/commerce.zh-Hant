@@ -1,11 +1,11 @@
 ---
 title: 建立和管理規則
 description: 瞭解如何建立和管理銷售規則。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
-source-git-commit: ad8fb7d1d7e1ad124647ba84377079dcfbd46a3c
+source-git-commit: 5f3bde7070857cbfd6892e5881ce0437973f0cc0
 workflow-type: tm+mt
-source-wordcount: '1767'
+source-wordcount: '2103'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 #### 多個條件
 
-1. 若要建置包含多個條件的規則，請按一下[新增條件]。**&#x200B;**
+1. 若要建置包含多個條件的規則，請按一下[新增條件]。****
 一個規則最多可以有十個條件。 結合兩個條件的邏輯運運算元是以目前的*Match*&#x200B;設定為基礎。 依預設，*符合*&#x200B;為`All`，邏輯運運算元為`AND`。
 
 1. 選取第二個條件並輸入必要的查詢文字。
@@ -68,7 +68,7 @@ ht-degree: 0%
 
    在此範例中，不是搜尋「yoga pants」，而是有兩個不同的查詢可搜尋「yoga」或「pants」。 此規則較少具體，且在店面觸發的頻率遠高於其他規則。
 
-1. 若要新增其他條件，請按一下[新增條件] **&#x200B;**&#x200B;並重複此程式。
+1. 若要新增其他條件，請按一下[新增條件] ****&#x200B;並重複此程式。
 
 ### 智慧型排名
 
@@ -85,6 +85,33 @@ ht-degree: 0%
 - 無：產品會依關聯性排序。
 
 選取規則的策略型別。 **測試您的規則**&#x200B;視窗會顯示預期的結果。
+
+#### 智慧型排名計分的運作方式
+
+智慧型排名會藉由結合兩個關鍵因素來決定最終產品順序： **文字關聯性**&#x200B;和&#x200B;**行為訊號**。 瞭解這些因素如何互動，有助於您為搜尋結果設定切合實際的期望。
+
+**評分元件：**
+
+- **文字關聯性**：評分中的主導因素。 這會測量產品名稱、說明和屬性與搜尋查詢的符合程度。 文字關聯性分數沒有限制（沒有特定的上限），且會受下列因素的影響：
+
+   - 相符字詞的發生頻率。
+   - 產品名稱/說明的長度（字數）。
+
+- **行為訊號**：在文字關聯性分數之上套用的限制提升。 當您選取「檢視次數最多」或「購買次數最多」等智慧型排名策略時，行為訊號較高的產品會獲得固定的分數提升。 不過，此提升具有已定義的限制。
+
+**為什麼檢視次數最多的產品可能不會先出現：**
+
+文字關聯性通常會主導排名，因為其分數不受限制，而行為提升則是固定的。 因此，文字相符性強的產品，參與訊號高的產品往往比一般產品強。 行為提升本身可能無法彌補文字關聯性的巨大差距。 智慧型排名將比對品質和購物者互動都納入考量，改善整體關聯性，從而解決此問題。 不過，文字比對品質仍然是排名的主要驅動因素。
+
+**範例：**
+
+商家使用「檢視次數最多」的智慧型排名策略，並搜尋「蠟燭」。 他們預計產品SKU YAN-K-E-512會出現在結果的最上方，因為它有最高的檢視計數。 不過，其他產品的排名較高：
+
+- **Texas Candle** （第1個位置）：產品名稱較短，且較乾淨，因此會建立非常高的文字關聯分數。 即使它的檢視次數少於YAN-K-E-512，其優異的文字比對仍勝過行為提升。
+
+- **YAN-K-E-512** （較低位置）：儘管在「檢視次數最多」的行為資料中擁有最高的檢視百分位數，但其複雜的SKU型名稱會產生較低的文字相關分數。 固定行為提升並不足以克服此文字關聯性差距。
+
+請參閱[搜尋規則](./best-practice.md#tips-to-optimize-search-rules)，瞭解如何使用規則來改善產品尋找功能。
 
 #### 警告
 

@@ -3,9 +3,9 @@ title: '[!DNL Live Search]最佳實務'
 description: 瞭解在您的商店中實作 [!DNL Live Search] 的最佳實務。
 role: Admin, Developer
 exl-id: f7700339-fb13-42fe-a249-17cd4ba36e1b
-source-git-commit: a22a57f52503811a3a3e9294174a6626c5630b79
+source-git-commit: f966a3f6f59c28e9f394d5eb7e41aaef1a992fec
 workflow-type: tm+mt
-source-wordcount: '2180'
+source-wordcount: '2201'
 ht-degree: 0%
 
 ---
@@ -111,6 +111,7 @@ ht-degree: 0%
 - 稍微優先處理利潤率較高的產品，而不會影響關聯性。
 - 標示在銷售中或屬於特別促銷的產品。
 - 使用促銷期間的日期範圍，在促銷期間或銷售期間自動設定搜尋規則。
+- 請一律使用「測試規則」面板來預覽您的智慧排名策略如何影響不同查詢的實際搜尋結果。
 - 根據使用[智慧型排名](rules-add.md#intelligent-ranking)的個別購物者行為量身打造搜尋結果，例如「為您推薦」、「檢視次數最多」等。 若要量身打造購物者行為，您必須確定事件已正確實作。 對於Luma商家，事件是現成可用的。 針對Headless或自訂實作，您必須根據您的特定需求[實作事件](https://developer.adobe.com/commerce/services/shared-services/storefront-events/)。
 
 進一步瞭解搜尋規則：
@@ -137,7 +138,7 @@ ht-degree: 0%
 深入瞭解搜尋所需的產品屬性：
 
 - [將屬性設定為可搜尋](workspace.md#set-attributes-as-searchable)
-- [指派權重給屬性](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [指派權重給屬性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## 監視搜尋結果
 
