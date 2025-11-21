@@ -2,7 +2,7 @@
 title: 銷售規則最佳實務
 description: 瞭解在您的商店中實作銷售規則的最佳實務。
 role: Admin, Developer
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 exl-id: cc8d0879-c253-4ad4-8e7d-e066dff9112d
 source-git-commit: f966a3f6f59c28e9f394d5eb7e41aaef1a992fec
 workflow-type: tm+mt
