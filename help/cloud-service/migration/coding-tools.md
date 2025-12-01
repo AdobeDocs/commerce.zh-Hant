@@ -1,13 +1,13 @@
 ---
 title: 擴充功能的AI編碼工具
 description: 瞭解如何使用AI工具來建立Commerce App Builder擴充功能。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 9382ce8f139f9d2f4ec1732c0d83b466cd54fa37
+source-git-commit: 0e76dee3b33ca7906b22d33d15c6c75ca1c391ef
 workflow-type: tm+mt
-source-wordcount: '1616'
+source-wordcount: '1686'
 ht-degree: 0%
 
 ---
@@ -105,6 +105,16 @@ ht-degree: 0%
 
    * MCP組態： `.vscode/mcp.json`
    * 規則目錄： `.github/copilot-instructions.md`
+
+>[!NOTE]
+>
+>在部署專案之前，您需要完成下列設定工作：
+>
+>* 使用Adobe I/O CLI登入[Adobe Developer Console](https://developer.adobe.com/console)。
+>* 建立App Builder專案（請參閱[專案設定](https://developer.adobe.com/commerce/extensibility/events/project-setup)）。
+>* 在`.env`檔案中設定環境變數。
+>
+>您可以手動完成這些設定步驟，或利用AI編碼工具引導您完成整個流程。 如需詳細的設定指示，請參閱[建立整合](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration/)。
 
 ## 安裝後設定
 
@@ -222,7 +232,7 @@ Adobe建議您在使用AI編碼工具時，遵循下列最佳實務：
 
 * [整合入門套件](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Adobe Commerce入門套件範本](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Adobe I/O Events入門範本](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Adobe I/O Events入門範本](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [App Builder範例應用程式](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### 為何應使用這些資源
