@@ -1,13 +1,13 @@
 ---
 title: 擴充功能的AI編碼工具
 description: 瞭解如何使用AI工具來建立Commerce App Builder擴充功能。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 0e76dee3b33ca7906b22d33d15c6c75ca1c391ef
+source-git-commit: b62dafbf381eb11501c901d6e8d6ad3da972a307
 workflow-type: tm+mt
-source-wordcount: '1686'
+source-wordcount: '1838'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,11 @@ ht-degree: 0%
 
 ## 先決條件
 
-* 編碼代理程式，例如[Cursor](https://cursor.com/download)（建議）、[Github Copilot](https://github.com/features/copilot)、[Google Gemini CLI](https://github.com/google-gemini/gemini-cli)或[Claude Code](https://www.claude.com/product/claude-code)
+* 下列其中一個編碼代理程式：
+   * [游標](https://cursor.com/download) （建議使用）
+   * [Github Copilot](https://github.com/features/copilot)
+   * [Google Gemini CLI](https://github.com/google-gemini/gemini-cli)
+   * [克勞德程式碼](https://www.claude.com/product/claude-code)
 * [Node.js](https://nodejs.org/en/download)： LTS版本
 * 封裝管理員： [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)或[yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
 * [Git](https://github.com/git-guides/install-git)：用於存放庫複製和版本控制
@@ -118,6 +122,33 @@ ht-degree: 0%
 
 ## 安裝後設定
 
+### 登入[!DNL Adobe I/O CLI]
+
+安裝[!DNL Adobe I/O CLI]之後，您需要隨時登入要使用MCP伺服器。
+
+```bash
+aio auth login
+```
+
+若要確認您已登入，請執行以下命令：
+
+```bash
+aio where
+```
+
+如果您遇到問題，請嘗試登出並重新登入：
+
+```bash
+aio auth logout
+aio auth login
+```
+
+>[!NOTE]
+>
+>MCP伺服器的某些功能可以在不登入的情況下運作，但RAG (Retrieval-Enhanced Generation)服務將無法運作。 RAG服務可讓AI編碼代理程式即時存取完整的Adobe Commerce檔案集，好讓代理程式能夠回答問題，並根據目前的Commerce開發做法、API和架構模式產生程式碼。
+>
+>在未來版本中，RAG服務將可獨立存取，而不需要安裝其他工具。
+
 ### 游標
 
 1. 重新啟動Cursor IDE以載入新的MCP工具和組態。
@@ -174,9 +205,9 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 
 1. 使用以下提示來檢視代理程式是否使用MCP伺服器。 如果不適用，請明確要求代理程式使用可用的MCP工具。
 
-```terminal
-What are the differences between Adobe Commerce PaaS and SaaS when configuring a webhook that activates an App Builder runtime action?
-```
+   ```terminal
+   What are the differences between Adobe Commerce PaaS and SaaS when configuring a webhook that activates an App Builder runtime action?
+   ```
 
 ## 範例提示
 
@@ -189,6 +220,14 @@ Order ID -> orderID
 Order Total -> total
 Customer Email ID -> emailID
 Payment Type -> pType
+```
+
+## 提示命令
+
+除了提示，您還可使用`/search-commerce-docs`命令搜尋與代理程式交談的檔案。 例如：
+
+```text
+/search-commerce-docs "How do I subscribe to Commerce events?"
 ```
 
 ## 最佳實務
@@ -232,7 +271,7 @@ Adobe建議您在使用AI編碼工具時，遵循下列最佳實務：
 
 * [整合入門套件](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Adobe Commerce入門套件範本](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Adobe I/O Events入門範本](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Adobe I/O Events入門範本](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [App Builder範例應用程式](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### 為何應使用這些資源
@@ -274,6 +313,10 @@ Create a detailed implementation plan for this complex development.
 * 跨多個元件測試
 
 ### 使用MCP工具
+
+>[!NOTE]
+>
+>在使用MCP工具之前，請確定您已[登入Adobe I/O CLI](#log-in-to-the-adobe-io-cli)。
 
 工具預設為MCP工具，但在特定情況下，可以使用CLI指令代替。 如果您想要確保MCP工具的使用情況，請在提示中明確要求使用。
 
