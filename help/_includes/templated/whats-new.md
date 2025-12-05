@@ -1,7 +1,7 @@
 ---
-source-git-commit: 7e3a7794e417ecbc48cd4258b355dceeee138061
+source-git-commit: e7b8127f3d4f80366a072f3df7e2e216503c9e33
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '245'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>已針對11月的Adobe Commerce as a Cloud Service版本更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes">發行說明</a>。</p>
+      <td><p>已針對11月的Adobe Commerce as a Cloud Service版本更新<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">發行說明</a>。</p>
 </td>
       <td>
         重大更新
@@ -45,7 +45,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>記錄連線至Adobe Commerce後端的Commerce Optimizer客戶如何從摘要同步狀態頁面監視資料摘要匯出並進行疑難排解。 請參閱Adobe Commerce Optimizer指南中的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/setup/data-sync">Data Sync</a>。</p>
+      <td><p>記錄連線至Adobe Commerce後端的Commerce Optimizer客戶如何從摘要同步狀態頁面監視資料摘要匯出並進行疑難排解。 請參閱Adobe Commerce Optimizer指南中的<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync">Data Sync</a>。</p>
 </td>
       <td>
         技術
@@ -67,7 +67,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>已更新Payment Services v2.13.0版本的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/payment-services/release-notes">發行說明</a>。</p>
+      <td><p>已更新Payment Services v2.13.0版本的<a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes">發行說明</a>。</p>
 </td>
       <td>
         技術
@@ -89,7 +89,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>已更新AEM Assets整合v1.2.7版的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/release-notes">發行說明</a>。</p>
+      <td><p>已更新AEM Assets整合v1.2.7版的<a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes">發行說明</a>。</p>
 </td>
       <td>
         技術
@@ -111,7 +111,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>更新下列主題，以包含有關從Adobe Admin Console設定身分管理和單一登入的資訊： <br />- <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/user-management">Adobe Commerce as a Cloud Service使用者和Identity Management</a><br />- <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/user-management">Adobe Commerce Optimizer：使用者和Identity Management</a></p>
+      <td><p>更新下列主題，以包含有關從Adobe Admin Console設定身分管理和單一登入的資訊： <br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">Adobe Commerce as a Cloud Service使用者和Identity Management</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/user-management">Adobe Commerce Optimizer：使用者和Identity Management</a></p>
 </td>
       <td>
         技術意見回饋
@@ -133,7 +133,7 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>已更新新增使用者的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/user-management">使用者管理</a>步驟。</p>
+      <td><p>已更新新增使用者的<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">使用者管理</a>步驟。</p>
 </td>
       <td>
         重大更新
@@ -155,34 +155,12 @@ ht-degree: 2%
   </thead>
   <tbody>
     <tr>
-      <td><p>更新Adobe Commerce Optimizer的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/storefront">店面設定指南</a>，提供使用「網站建立者」工具建立店面專案、自訂店面設定，以及透過檢查預設產品詳細資料和產品搜尋結果頁面來驗證網站和目錄資料的指示。</p>
+      <td><p>更新Adobe Commerce Optimizer的<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/storefront">店面設定指南</a>，提供使用「網站建立者」工具建立店面專案、自訂店面設定，以及透過檢查預設產品詳細資料和產品搜尋結果頁面來驗證網站和目錄資料的指示。</p>
 </td>
       <td>
         重大更新
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/4c2d5fc7ad0febbeef2ff0b8ee3bdec5e9b5710c">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2025年10月2日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/user-management">使用者管理</a>現在需要所有開發人員和產品管理員先新增使用者角色。</p>
-</td>
-      <td>
-        重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/e12b4c18cacd43d73ced180a62d7162a745ced56">認可</a></td>
     </tr>
   </tbody>
 </table>
