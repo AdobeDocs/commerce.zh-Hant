@@ -1,11 +1,11 @@
 ---
 title: 建立和管理建議
 description: 瞭解如何建立和管理建議。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
-source-git-commit: 41eae72cbd01f0e0f2c4a6cf028a2a11c79921ad
+source-git-commit: 032a19183b79cea1bfe27e8a4e20c60ba5ac6b8b
 workflow-type: tm+mt
-source-wordcount: '1369'
+source-wordcount: '1365'
 ht-degree: 0%
 
 ---
@@ -161,11 +161,9 @@ _建議型別_
 
 ## 預覽建議
 
->[!IMPORTANT]
->
->此功能尚無法使用。
-
 _建議產品預覽_&#x200B;面板總是隨建議單位部署至店面時可能顯示的產品範例選項一起提供。
+
+![建議預覽](../../assets/rec-preview.png)
 
 若要在非生產環境中工作時測試建議，您可以從不同的來源擷取建議資料。 這可讓商家在部署至生產環境之前，先體驗規則並預覽建議。
 
