@@ -3,9 +3,9 @@ title: 設定AEM Assets專案
 description: 透過新增整合所需的中繼資料，啟用Adobe Commerce與AEM Assets之間的無縫資產同步。
 feature: CMS, Media, Integration
 exl-id: a5d2cbab-5ea1-446b-8ab2-2c638128a40c
-source-git-commit: 995fb071953ddad6cb2076207910679905bb0347
+source-git-commit: 6cd37fda03bb51a1375b0e9dc542f9e02d3c6e54
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '856'
 ht-degree: 0%
 
 ---
@@ -47,9 +47,9 @@ Adobe提供AEM Commerce範本`assets-commerce`，將Commerce名稱空間和中�
 
 您需要下列資源和許可權，才能將`commerce-assets`套件部署至AEM Assets as a Cloud Service AEM環境：
 
-* [存取具有計畫和部署管理員角色的AEM Assets Cloud Manager計畫和環境](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo)。
+* [存取具有計畫和部署管理員角色的AEM Assets Cloud Manager計畫和環境](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo)。
 
-* [本機AEM開發環境](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview)，而且熟悉AEM本機開發程式。
+* [本機AEM開發環境](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview)，而且熟悉AEM本機開發程式。
 
 * 瞭解[AEM專案結構](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure)以及如何使用Cloud Manager部署自訂內容套件。
 
@@ -61,11 +61,11 @@ Adobe提供AEM Commerce範本`assets-commerce`，將Commerce名稱空間和中�
 
 1. 從GitHub，從[AEM Commerce範本](https://github.com/ankumalh/assets-commerce)下載程式碼。
 
-1. 從您的[本機AEM開發環境](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview)，將自訂程式碼作為Maven套件安裝在您的AEM Assets環境設定中，或手動將程式碼複製到現有的專案設定中。
+1. 從您的[本機AEM開發環境](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview)，將自訂程式碼作為Maven套件安裝在您的AEM Assets環境設定中，或手動將程式碼複製到現有的專案設定中。
 
 1. 提交變更，並將本機開發分支推送到Cloud Manager Git存放庫。
 
-1. 從AEM Cloud Manager [部署您的程式碼以更新AEM環境](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code#deploying-code-with-cloud-manager)。
+1. 從AEM Cloud Manager [部署您的程式碼以更新AEM環境](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code#deploying-code-with-cloud-manager)。
 
 ## 選填。 設定中繼資料設定檔
 
@@ -122,13 +122,13 @@ Adobe提供AEM Commerce範本`assets-commerce`，將Commerce名稱空間和中�
      ./jcr:content/metadata/commerce:isCommerce
      ```
 
-1. 選填。 若要自動同步處理上傳至AEM Assets環境的已核准Commerce資產，請在&#x200B;_[!UICONTROL Review Status]_&#x200B;索引標籤上將`Basic`欄位的預設值設為`approved`。
+1. 選填。 若要自動同步處理上傳至AEM Assets環境的已核准Commerce資產，請在&#x200B;_[!UICONTROL Review Status]_索引標籤上將`Basic`欄位的預設值設為`approved`。
 
 1. 儲存更新。
 
 #### 將中繼資料設定檔套用至Commerce資產來源檔案夾
 
-1. 從[!UICONTROL &#x200B; Metadata Profiles]頁面，選取Commerce整合設定檔。
+1. 從[!UICONTROL  Metadata Profiles]頁面，選取Commerce整合設定檔。
 
 1. 從動作功能表中選取&#x200B;**[!UICONTROL Apply Metadata Profiles to Folders]**。
 
@@ -138,6 +138,8 @@ Adobe提供AEM Commerce範本`assets-commerce`，將Commerce名稱空間和中�
 
 1. 按一下&#x200B;**[!UICONTROL Apply]**。
 
-## 下一步
+## 後續步驟
 
 僅[!BADGE PaaS]{type=Informative tooltip="僅適用於雲端專案上的Adobe Commerce (Adobe管理的PaaS基礎結構)。"} [安裝Adobe Commerce套件](configure-commerce.md)
+
+**設定您的Commerce店面** — 若要搭配使用AEM Assets與由Edge Delivery Services支援的Commerce店面，請完成[EDS AEM Assets設定](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/)主題中所述的店面設定。
