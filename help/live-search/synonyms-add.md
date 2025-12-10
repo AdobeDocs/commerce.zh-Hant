@@ -18,7 +18,7 @@ ht-degree: 0%
 ## 步驟1：新增同義字
 
 1. 在Admin中，前往&#x200B;**行銷** > SEO與搜尋> **[!DNL Live Search]**。
-1. 針對多個存放區，將&#x200B;**領域**&#x200B;設定為套用同義字設定的[存放區檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)。
+1. 針對多個存放區，將&#x200B;**領域**&#x200B;設定為套用同義字設定的[存放區檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hant#scope-settings)。
 1. 按一下&#x200B;**同義字**&#x200B;索引標籤。
 1. 按一下&#x200B;**新增同義字**&#x200B;按鈕。
 
