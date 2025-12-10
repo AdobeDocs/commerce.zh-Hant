@@ -3,7 +3,7 @@ title: 目錄同步
 description: 瞭解如何將產品資料從 [!DNL Commerce] 伺服器匯出至 [!DNL Commerce Services]。
 feature: Catalog Management, Data Import/Export, Catalog Service
 exl-id: 99f96b93-b036-490c-8c57-40463a0de365
-source-git-commit: ae672ed3f2693e2f14e8c7f379e59ef117a34fc3
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '541'
 ht-degree: 0%
@@ -14,13 +14,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> 「目錄同步」控制面板現在是「資料管理」控制面板。 此改版後的儀表板現在支援[[!DNL Product Recommendations]](../product-recommendations/guide-overview.md) v6.0.0+、[[!DNL Live Search]](../live-search/overview.md) v4.1.0+和[[!DNL Catalog Service]](../catalog-service/overview.md) v1.17+。 客戶可以更新至其中一項服務的最新版本，以取得資料管理控制面板。 請在[資料管理儀表板](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=zh-Hant)檔案中閱讀更多相關資訊。 目前這個主題仍適用於尚未升級且仍擁有目錄同步控制面板的使用者。
+> 「目錄同步」控制面板現在是「資料管理」控制面板。 此改版後的儀表板現在支援[[!DNL Product Recommendations]](../product-recommendations/guide-overview.md) v6.0.0+、[[!DNL Live Search]](../live-search/overview.md) v4.1.0+和[[!DNL Catalog Service]](../catalog-service/overview.md) v1.17+。 客戶可以更新至其中一項服務的最新版本，以取得資料管理控制面板。 請在[資料管理儀表板](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html)檔案中閱讀更多相關資訊。 目前這個主題仍適用於尚未升級且仍擁有目錄同步控制面板的使用者。
 
-Adobe Commerce使用索引器將目錄資料編譯到表格中。 此程式會由[事件](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html?lang=zh-Hant#events-that-trigger-full-reindexing)自動觸發，例如產品價格或存貨層次的變更。
+Adobe Commerce使用索引器將目錄資料編譯到表格中。 此程式會由[事件](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing)自動觸發，例如產品價格或存貨層次的變更。
 
 目錄同步服務會持續將產品資料從[!DNL Adobe Commerce]執行個體移動到[!DNL Commerce Services]平台，以保持資料在最新狀態。 例如，[[!DNL Product Recommendations]](/help/product-recommendations/overview.md)需要目前的目錄資訊，才能正確傳回具有正確名稱、定價和可用性的建議。 使用&#x200B;_目錄同步_&#x200B;儀表板來觀察和管理同步處理或命令列介面以觸發目錄同步並重新索引產品資料以供[!DNL Commerce Services]使用。 請參閱[SaaS資料匯出](../data-export/data-export-cli-commands.md)指南中的&#x200B;_命令列介面參考_。
 
-## 存取目錄同步控制面板
+## 存取「目錄同步」控制面板
 
 若要存取目錄同步處理儀表板，請選取&#x200B;**系統** > _資料傳輸_ > **目錄同步處理**。
 

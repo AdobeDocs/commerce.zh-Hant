@@ -3,7 +3,7 @@ title: 同步資料與SaaS資料匯出
 description: 瞭解 [!DNL SaaS Data Export] 如何在Adobe Commerce執行個體和連線的SaaS服務之間收集及同步資料。
 role: Admin, Developer
 exl-id: 2ca7c92a-fb52-4055-ae16-11e99b38d161
-source-git-commit: ae672ed3f2693e2f14e8c7f379e59ef117a34fc3
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '880'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 當您安裝需要資料匯出的Commerce服務（例如「目錄服務」、「即時搜尋」或「產品建議」）時，將會安裝Saas資料匯出模組的集合，以管理資料收集和同步程式。
 
-SaaS資料匯出會持續將產品資料從Adobe Commerce執行個體移至Commerce Services平台，以保持資料在最新狀態。 例如，產品建議需要目前的目錄資訊，才能正確地傳回具有正確名稱、價格和可用性的建議。 使用[資料管理儀表板](https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/data-services/catalog-sync)來觀察和管理同步化程式，或是使用命令列介面來觸發同步化並重新索引產品資料，以供Commerce服務使用。
+SaaS資料匯出會持續將產品資料從Adobe Commerce執行個體移至Commerce Services平台，以保持資料在最新狀態。 例如，產品建議需要目前的目錄資訊，才能正確地傳回具有正確名稱、價格和可用性的建議。 使用[資料管理儀表板](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync)來觀察和管理同步化程式，或是使用命令列介面來觸發同步化並重新索引產品資料，以供Commerce服務使用。
 
 下圖顯示SaaS資料匯出流程。
 
@@ -65,7 +65,7 @@ SaaS資料匯出支援三種同步型別：完全同步、部分同步和重試�
 
 為了讓部分同步運作，Commerce應用程式需要下列設定：
 
-- [已透過cron工作啟用工作排程](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=zh-Hant)
+- [已透過cron工作啟用工作排程](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html)
 
 - 所有SaaS資料匯出索引子都是以`Update by Schedule`模式設定。
 
@@ -82,7 +82,7 @@ SaaS資料匯出支援三種同步型別：完全同步、部分同步和重試�
 
 大多數同步化活動會根據應用程式組態自動處理。 不過，SaaS資料匯出也提供管理程式的工具。
 
-- 管理員使用者可以檢視及追蹤同步處理進度，並從[資料管理儀表板](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)取得資料的相關資訊。
+- 管理員使用者可以檢視及追蹤同步處理進度，並從[資料管理儀表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)取得資料的相關資訊。
 
 - 具有Commerce應用程式伺服器存取權的開發人員、系統整合經銷商或管理員，可以使用Adobe Commerce命令列工具(CLI)管理同步流程和資料摘要。 請參閱[使用Commerce CLI管理同步作業](data-export-cli-commands.md)。
 
@@ -90,11 +90,11 @@ SaaS資料匯出支援三種同步型別：完全同步、部分同步和重試�
 
 部分同步和重試失敗專案同步僅在Commerce執行個體已正確設定時運作。 通常，設定會在設定Commerce服務時完成。 如果資料匯出無法正常運作，請檢查下列設定。
 
-- [確認cron工作正在執行](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)。
+- [確認cron工作正在執行](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)。
 
-- 請確認索引子是從[Admin](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/tools/index-management)執行，或使用Commerce CLI命令`bin/magento indexer:info`執行。
+- 請確認索引子是從[Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management)執行，或使用Commerce CLI命令`bin/magento indexer:info`執行。
 
-- 確認下列摘要的索引子已設定為`Update by Schedule`：目錄屬性、產品、產品覆寫和產品變體。 您可以在Admin中或使用CLI ([)從](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/tools/index-management)索引管理`bin/magento indexer:show-mode | grep -i feed`檢查索引子。
+- 確認下列摘要的索引子已設定為`Update by Schedule`：目錄屬性、產品、產品覆寫和產品變體。 您可以在Admin中或使用CLI ([)從](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management)索引管理`bin/magento indexer:show-mode | grep -i feed`檢查索引子。
 
 ### 資料傳輸記錄的事件管理器通知
 

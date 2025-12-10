@@ -2,7 +2,7 @@
 title: '[!DNL Product Recommendations] Workspace'
 description: 瞭解如何設定、管理和監控產品推薦效能。
 exl-id: eaf1f0b2-9d9d-4069-8269-06f30166f788
-source-git-commit: 3d92f4afc3aef990f2e86e306f4c6c47324aed97
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '874'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 ![Recommendations工作區](assets/workspace.png)
 _建議Workspace_
 
-## 資料彙集
+## 資料收集
 
 為確保工作區上的每個功能區域都包含正確的資料，您需要根據所選的店面實作來設定資料收集：
 
@@ -35,7 +35,7 @@ _建議Workspace_
 
 ## 設定範圍
 
-一開始所有建議設定的[範圍](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hant)設定為`Default Store View`。 如果您的Commerce安裝包含多個商店檢視，請將&#x200B;**範圍**&#x200B;設定為套用您建議的[商店檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hant#scope-settings)。
+一開始所有建議設定的[範圍](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)設定為`Default Store View`。 如果您的Commerce安裝包含多個商店檢視，請將&#x200B;**範圍**&#x200B;設定為套用您建議的[商店檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)。
 
 ## 設定量度日期範圍
 
@@ -75,7 +75,7 @@ _建議Workspace_
 
 - 若要變更建議行為資料的來源位置，請選擇不同的SaaS資料空間。
 
-- 若要設定新的SaaS資料空間，請按一下[編輯設定]。**&#x200B;** 若要深入瞭解，請參閱[設定](settings.md)。
+- 若要設定新的SaaS資料空間，請按一下[編輯設定]。**** 若要深入瞭解，請參閱[設定](settings.md)。
 
 ![Recommendations設定](assets/settings.png)
 _Recommendations設定_
@@ -87,7 +87,7 @@ _Recommendations設定_
    ![Recommendations工作區](assets/recommendation-detail.png)
    _首頁轉換率詳細資料_
 
-1. 若要變更建議狀態，請按一下[啟用] **&#x200B;**&#x200B;或[停用] **&#x200B;**。
+1. 若要變更建議狀態，請按一下[啟用] ****&#x200B;或[停用] ****。
 
 ## 編輯建議
 

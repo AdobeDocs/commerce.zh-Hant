@@ -1,8 +1,9 @@
 ---
 title: 建立和管理同義字
 description: 瞭解如何建立和管理 [!DNL Adobe Commerce Optimizer]的同義字。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
-source-git-commit: 356b10704c9e7c7329d3e9c0e10baa15d5142ec0
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+exl-id: d2982a0b-e7df-44e6-b3c9-9b4328635d38
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
@@ -31,7 +32,7 @@ ht-degree: 0%
    ![新增雙向同義字](../../assets/synonym-add-two-way.png)
 
 1. 輸入要比對的&#x200B;**關鍵字**&#x200B;詞語或片語。
-1. 輸入您想要新增為關鍵字同義字的&#x200B;**擴增**&#x200B;字詞。 請使用逗號分隔多個詞語。
+1. 輸入您想要新增為關鍵字同義字的&#x200B;**擴增**字詞。 請使用逗號分隔多個詞語。
 在此範例中，要比對的關鍵字是「pants」，而擴充辭彙集是「trousers， slacks」。
 
    ![雙向同義字範例](../../assets/synonym-add-two-way-example.png)

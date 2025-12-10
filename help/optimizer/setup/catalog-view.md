@@ -3,9 +3,9 @@ title: 目錄檢視
 description: 瞭解什麼是目錄檢視，以及如何建立檢視，以依業務結構、原則和定價組織您的產品目錄。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
-source-git-commit: ff53f84b4ab7cfb219aae0e29cc35b23d0f6601b
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '951'
 ht-degree: 0%
@@ -101,7 +101,7 @@ ht-degree: 0%
 
 當您設定店面或使用資料擷取API時，需要用到其中的一些組態設定。
 
-## 架構概述
+## 架構概覽
 
 目錄檢視是Merchandising Services架構的一部分，其使用更彈性的模型取代Adobe Commerce基礎中使用的網站、商店、商店評論架構：
 
@@ -158,7 +158,7 @@ ht-degree: 0%
 **挑戰**： 3,000個產品相同但價格不同的經銷商<br>
 **解決方案**：一個目錄，包含經銷商特定的目錄檢視和價格簿
 
-### 多位置Retailer
+### 多位置retailer
 
 **挑戰**：每個地點的不同定價和詳細目錄<br>
 **解決方案**：以位置為基礎的目錄檢視具有區域特定原則
