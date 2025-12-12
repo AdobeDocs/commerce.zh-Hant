@@ -23,7 +23,7 @@ ht-degree: 4%
   </thead>
   <tbody>
     <tr>
-      <td><p>現在支援將Commerce Optimizer檔案中的建議功能更新為<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/create#preview-recommendations">預覽窗格</a>。</p>
+      <td><p>現在支援將Commerce Optimizer檔案中的建議功能更新為<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/merchandising/recommendations/create#preview-recommendations">預覽窗格</a>。</p>
 </td>
       <td>
         技術
@@ -45,7 +45,7 @@ ht-degree: 4%
   </thead>
   <tbody>
     <tr>
-      <td><p>已針對11月的Adobe Commerce as a Cloud Service版本更新<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">發行說明</a>。</p>
+      <td><p>已針對11月的Adobe Commerce as a Cloud Service版本更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes">發行說明</a>。</p>
 </td>
       <td>
         重大更新
@@ -67,7 +67,7 @@ ht-degree: 4%
   </thead>
   <tbody>
     <tr>
-      <td><p>記錄連線至Adobe Commerce後端的Commerce Optimizer客戶如何從摘要同步狀態頁面監視資料摘要匯出並進行疑難排解。 請參閱Adobe Commerce Optimizer指南中的<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync">Data Sync</a>。</p>
+      <td><p>記錄連線至Adobe Commerce後端的Commerce Optimizer客戶如何從摘要同步狀態頁面監視資料摘要匯出並進行疑難排解。 請參閱Adobe Commerce Optimizer指南中的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/setup/data-sync">Data Sync</a>。</p>
 </td>
       <td>
         技術
@@ -89,7 +89,7 @@ ht-degree: 4%
   </thead>
   <tbody>
     <tr>
-      <td><p>已更新Payment Services v2.13.0版本的<a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes">發行說明</a>。</p>
+      <td><p>已更新Payment Services v2.13.0版本的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/payment-services/release-notes">發行說明</a>。</p>
 </td>
       <td>
         技術
@@ -111,7 +111,7 @@ ht-degree: 4%
   </thead>
   <tbody>
     <tr>
-      <td><p>已更新AEM Assets整合v1.2.7版的<a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes">發行說明</a>。</p>
+      <td><p>已更新AEM Assets整合v1.2.7版的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/release-notes">發行說明</a>。</p>
 </td>
       <td>
         技術
@@ -133,7 +133,7 @@ ht-degree: 4%
   </thead>
   <tbody>
     <tr>
-      <td><p>更新下列主題，以包含有關從Adobe Admin Console設定身分管理和單一登入的資訊： <br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">Adobe Commerce as a Cloud Service使用者和Identity Management</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/user-management">Adobe Commerce Optimizer：使用者和Identity Management</a></p>
+      <td><p>更新下列主題，以包含有關從Adobe Admin Console設定身分管理和單一登入的資訊： <br />- <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/user-management">Adobe Commerce as a Cloud Service使用者和Identity Management</a><br />- <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/user-management">Adobe Commerce Optimizer：使用者和Identity Management</a></p>
 </td>
       <td>
         技術意見回饋
@@ -155,7 +155,7 @@ ht-degree: 4%
   </thead>
   <tbody>
     <tr>
-      <td><p>已更新新增使用者的<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management">使用者管理</a>步驟。</p>
+      <td><p>已更新新增使用者的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/user-management">使用者管理</a>步驟。</p>
 </td>
       <td>
         重大更新
