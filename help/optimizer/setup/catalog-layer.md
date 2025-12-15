@@ -79,7 +79,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->若要進行大量圖層作業，請使用上述的資料擷取API方法[](#add-a-catalog-layer-via-data-ingestion)。
+>若要進行大量圖層作業，請使用上述的資料擷取API方法[&#128279;](#add-a-catalog-layer-via-data-ingestion)。
 
 **若要建立手動圖層：**
 
@@ -167,7 +167,7 @@ ht-degree: 0%
 
 1. 系統會根據新順序自動更新訂單編號。
 
-1. 按一下[儲存]以套用新的優先順序。****
+1. 按一下[儲存]以套用新的優先順序。**&#x200B;**
 
 >[!IMPORTANT]
 >
