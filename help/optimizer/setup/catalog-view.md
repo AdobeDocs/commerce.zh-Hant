@@ -3,11 +3,11 @@ title: 目錄檢視
 description: 瞭解什麼是目錄檢視，以及如何建立檢視，以依業務結構、原則和定價組織您的產品目錄。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: 769aafeb261d978623e68c466888924c92632883
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '1143'
 ht-degree: 0%
 
 ---
@@ -38,9 +38,11 @@ ht-degree: 0%
 
 在建立目錄檢視之前，請確定您擁有：
 
-- [已建立原則](policies.md)以定義產品篩選器
+- [已建立原則](policies.md)以定義產品篩選器。
 
-- [擷取的價格手冊](pricebooks.md)用於定價
+- [已定義目錄層](catalog-layer.md)以定義產品的變體。
+
+- [已擷取價格手冊](pricebooks.md)以進行定價。
 
 1. 從左側功能表，移至&#x200B;_商店設定_，然後按一下&#x200B;**[!UICONTROL Catalog views]**。
 
@@ -50,6 +52,7 @@ ht-degree: 0%
 
    - **名稱** — 輸入目錄檢視的名稱，例如`Celport`&#x200B;。
    - **目錄來源** — 選取目錄來源（地區設定），例如`en-US`。
+   - **目錄圖層** — 檢閱擷取的圖層和優先順序。
    - **原則** — 使用下拉式功能表選取相關原則。 例如，「品牌」、「型號」。&#x200B;URL確定您已[建立原則](policies.md)。
 
 1. 選取要連結至型錄檢視表的價格簿。
@@ -63,6 +66,20 @@ ht-degree: 0%
 目錄檢視頁面會更新以顯示新的目錄檢視&#x200B;。
 
 完成這些步驟後，目錄檢視現在會設定為根據您選取的來源和原則顯示產品和定價。
+
+## 目錄圖層
+
+目錄圖層可讓您修改目錄檢視中的產品資料，而不變更原始來源資料。 圖層會透過在基本目錄上方建立圖層來套用變更至特定產品屬性，例如名稱、說明、影像、連結和中繼資料。 您的原始產品資料會維持不變，可讓您安全地自訂產品，並隨時還原變更。
+
+目錄層的常見使用案例包括：
+
+- **SEO最佳化** — 根據[Sites Optimizer](../manage-results/opportunities.md)的AI建議覆寫產品中繼標題和說明
+- **季節性行銷活動** — 暫時更新促銷活動的產品名稱、說明或影像
+- **地區自訂** — 根據地理位置或語言顯示不同的產品資訊
+- **A/B測試** — 測試不同的產品簡報，以最佳化轉換率
+- **多品牌管理** — 針對不同的品牌目錄檢視自訂產品屬性
+
+若要深入瞭解如何建立、管理及排定目錄圖層優先順序，請參閱[目錄圖層](catalog-layer.md)。
 
 ## 管理目錄檢視
 
@@ -166,3 +183,9 @@ ht-degree: 0%
 >[!INFO]
 >
 >如需目錄資料擷取與傳遞的詳細資訊，請參閱[開發人員檔案](https://developer.adobe.com/commerce/services/optimizer/)。
+
+## 更多相關資訊
+
+- [目錄層](catalog-layer.md) — 瞭解如何在不變更原始來源的情況下修改產品資料
+- [原則](policies.md) — 建立原則以篩選目錄檢視中的產品
+- [價格簿](pricebooks.md) — 管理不同客戶區段的定價結構
