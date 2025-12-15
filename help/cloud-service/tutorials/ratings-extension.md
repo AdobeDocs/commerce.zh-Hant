@@ -4,7 +4,7 @@ description: 瞭解如何使用App Builder和AI輔助開發工具，為Adobe Com
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: d0b9fd3ebbf0c88abbbf12821c5c4825ffcf10f0
+source-git-commit: c160632905631949c9503ceaf896b47e7a71fe55
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 0%
@@ -64,7 +64,7 @@ bash --version
    - 從游標中選取游標聊天路徑，選取&#x200B;**代理程式**&#x200B;模式。
    - 輸入下列提示：
 
-   ```plain
+   ```shell-session
    Implement an Adobe Commerce as a Cloud Service extension to handle Product Ratings.
    
    Implement a REST API to handle GET ratings requests.
@@ -86,7 +86,7 @@ bash --version
 
 1. 使用下列範例文字來回答代理程式的問題，以設定隨機分級資料：
 
-   ```plain
+   ```shell-session
    Yes, this headless extension is for Adobe Commerce as a Cloud Service storefront,
    but we do not need any authentication for the GET API because guest users should be able to use it on the storefront.
    
@@ -122,7 +122,7 @@ bash --version
 
 1. 請要求代理程式協助您在本機測試程式碼。
 
-   ```plain
+   ```shell-session
    Test the ratings API locally on a dev server using cURL.
    ```
 
@@ -136,7 +136,7 @@ bash --version
 
 1. 驗證產生的程式碼後，請使用以下提示來部署擴充功能：
 
-   ```plain
+   ```shell-session
    Deploy the ratings API.
    ```
 
@@ -168,7 +168,7 @@ curl -s "https://<your-site>.adobeioruntime.net/api/v1/web/ratings/ratings?sku=T
 
 若要整合評等API與由[!DNL Adobe Commerce]提供支援的[!DNL Edge Delivery Services]店面，請要求代理程式建立具有評等API需求的服務合約：
 
-```plain
+```shell-session
 Create a service contract for the ratings api that I can pass on to the storefront agent. Name it RATINGS_API_CONTRACT.md
 ```
 
@@ -223,7 +223,7 @@ This section teaches you how to implement real storefront features and communica
 
 1. In a browser, navigate to the Apparel page:
 
-   ```plain
+   ```shell-session
    http://localhost:3000/apparel
    ```
 
@@ -231,7 +231,7 @@ This section teaches you how to implement real storefront features and communica
 
 1. Use the following prompt with your agent:
 
-   ```plain
+   ```shell-session
    Implement product ratings in the storefront.
 
    Add a 5-star rating display with a review count underneath each product name on the product list page, product details page, and product recommendations.
@@ -246,7 +246,7 @@ This section teaches you how to implement real storefront features and communica
    You should see the following changes in your development environment and browser:
 
    * A product rating "component" is automatically created.
-   * The component is integrated into product-details, product-list-page, and product-recommendations blocks using [dropin slots](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots?lang=zh-Hant).
+   * The component is integrated into product-details, product-list-page, and product-recommendations blocks using [dropin slots](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots).
    * Stars display with proper fill proportions based on mock rating values.
 
 ![Product Ratings Implementation](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}
@@ -269,7 +269,7 @@ For further experimentation with this tutorial, use the following suggestions to
 
 Use the following prompt to your agent:
 
-```plain
+```shell-session
 Change the star fill color to red.
 ```
 
@@ -305,7 +305,7 @@ The following steps show how the agent handles complex UI features with visual r
 * If the modal does not appear, check the browser console for errors.
 * If positioning is off, ask the agent to fix it using the following format:
 
-   ```plain
+   ```shell-session
    adjust the modal position to be...
    ```
 

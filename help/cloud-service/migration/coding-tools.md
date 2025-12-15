@@ -1,11 +1,11 @@
 ---
 title: 擴充功能的AI編碼工具
 description: 瞭解如何使用AI工具來建立Commerce App Builder擴充功能。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: d0b9fd3ebbf0c88abbbf12821c5c4825ffcf10f0
+source-git-commit: c160632905631949c9503ceaf896b47e7a71fe55
 workflow-type: tm+mt
 source-wordcount: '1849'
 ht-degree: 0%
@@ -72,7 +72,7 @@ ht-degree: 0%
 
 設定程式會提示您設定選項。 對於安裝位置，請選擇「目前的目錄」以在目前的工作區中安裝工具：
 
-```plain
+```shell-session
 ? Where would you like to setup the tools?
 ❯ Current directory
   New directory
@@ -80,7 +80,7 @@ ht-degree: 0%
 
 選取編碼代理程式時，Adobe建議選取`Cursor`以獲得最佳開發體驗：
 
-```plain
+```shell-session
 ? Which coding agent would you like to use?
 ❯ Cursor
   Copilot
@@ -90,7 +90,7 @@ ht-degree: 0%
 
 選取封裝管理員時，Adobe建議使用`npm`來維持一致性：
 
-```plain
+```shell-session
 ? Which package manager would you like to use?
 ❯ npm
   yarn
@@ -168,7 +168,7 @@ aio auth login
 
 1. 驗證伺服器狀態 — Commerce擴充性MCP伺服器應顯示為：
 
-   ```plain
+   ```shell-session
    Status: Connected/Active
    Server: commerce-extensibility
    Configuration: Automatically configured via .cursor/mcp.json
@@ -176,7 +176,7 @@ aio auth login
 
 1. 使用以下提示來檢視代理程式是否使用MCP伺服器。 如果不適用，請明確要求代理程式使用可用的MCP工具。
 
-```plain
+```shell-session
 What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Cloud Service when configuring a webhook that activates an App Builder runtime action?
 ```
 
@@ -195,7 +195,7 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 
 1. 驗證伺服器狀態。 `MCP:commerce-extensibility`輸出應該符合下列內容：
 
-   ```plain
+   ```shell-session
    2025-11-13 12:58:50.652 [info] Starting server commerce-extensibility
    2025-11-13 12:58:50.652 [info] Connection state: Starting
    2025-11-13 12:58:50.652 [info] Starting server from LocalProcess extension host
@@ -209,7 +209,7 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 
 1. 使用以下提示來檢視代理程式是否使用MCP伺服器。 如果不適用，請明確要求代理程式使用可用的MCP工具。
 
-   ```plain
+   ```shell-session
    What are the differences between Adobe Commerce PaaS and SaaS when configuring a webhook that activates an App Builder runtime action?
    ```
 
@@ -217,7 +217,7 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 
 下列範例提示會建立擴充功能，以便在下訂單時傳送通知。
 
-```plain
+```shell-session
 Implement an Adobe Commerce SaaS extension that will send an ERP notification when a customer places an order. The ERP notification must be sent as a POST HTTP call to <ERP URL> with the following details in the request JSON body:
 
 Order ID -> orderID
@@ -230,7 +230,7 @@ Payment Type -> pType
 
 除了提示，您還可使用`/search-commerce-docs`命令搜尋與代理程式交談的檔案。 例如：
 
-```plain
+```shell-session
 /search-commerce-docs "How do I subscribe to Commerce events?"
 ```
 
@@ -275,7 +275,7 @@ Adobe建議您在使用AI編碼工具時，遵循下列最佳實務：
 
 * [整合入門套件](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Adobe Commerce入門套件範本](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Adobe I/O Events入門範本](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Adobe I/O Events入門範本](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [App Builder範例應用程式](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### 為何應使用這些資源
@@ -304,7 +304,7 @@ Adobe建議您在使用AI編碼工具時，遵循下列最佳實務：
 
 對於涉及多個執行階段動作、接觸點或整合的複雜開發，會明確要求AI工具建立詳細的實作計畫。 當您在[階段2](#protocol)中看到包含多個元件的高階計畫時，請要求詳細的實作計畫，以將其細分為可管理的工作：
 
-```plain
+```shell-session
 Create a detailed implementation plan for this complex development.
 ```
 
@@ -326,7 +326,7 @@ Create a detailed implementation plan for this complex development.
 
 如果您看到正在使用CLI指令且想要改用MCP工具，請使用下列提示：
 
-```plain
+```shell-session
 Use only MCP tools and not CLI commands
 ```
 
@@ -346,7 +346,7 @@ CLI命令可用於下列情況：
 
 為簡單的唯讀端點新增不必要的檔案(`validator.js`、`transformer.js`、`sender.js`)時，請使用下列提示：
 
-```plain
+```shell-session
 Why do we need these files for a simple read-only endpoint?
 Perform a root cause analysis before adding complexity
 Verify if simpler solutions exist
@@ -402,47 +402,47 @@ Verify if simpler solutions exist
 
 **測試執行階段動作**：
 
-```plain
+```shell-session
 Help me test the customer-created runtime action running locally
 ```
 
 **偵錯失敗**：
 
-```plain
+```shell-session
 Why did the subscription-updated runtime action activation fail?
 ```
 
 **檢查記錄**：
 
-```plain
+```shell-session
 Help me check the logs for the last stock-monitoring runtime action invocation
 ```
 
 **建立測試承載**：
 
-```plain
+```shell-session
 Generate test data for this Commerce event
 ```
 
-```plain
+```shell-session
 Create a test payload for the customer_save_after event
 ```
 
 **尋找執行階段端點**：
 
-```plain
+```shell-session
 What's the URL for this deployed action?
 ```
 
 **處理驗證**：
 
-```plain
+```shell-session
 How do I authenticate with this external API?
 ```
 
 **疑難排解**：
 
-```plain
+```shell-session
 Help me debug why this action is returning 500 errors
 ```
 
@@ -477,19 +477,19 @@ Help me debug why this action is returning 500 errors
 
 進行重大變更後，請善用工具來清除孤立的動作。 讓AI工具系統地處理清理程式，它能夠有效地識別孤立的動作，驗證其狀態，並安全地移除它們而無需手動干預。
 
-```plain
+```shell-session
 Help me identify and clean up orphaned runtime actions
 ```
 
 請求AI工具列出已部署的動作並識別未使用的動作
 
-```plain
+```shell-session
 List all deployed actions and identify which ones are no longer needed
 ```
 
 讓AI工具使用適當的指令移除孤立的動作
 
-```plain
+```shell-session
 Remove the orphaned actions that are no longer part of the current implementation
 ```
 
