@@ -2,9 +2,9 @@
 title: 新增規則
 description: 瞭解如何建立搜尋銷售規則。
 exl-id: 7175ccf7-d838-43b0-a176-957e7db040e0
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: 085eb0fa1a278701cc889d219db7e8571327a632
 workflow-type: tm+mt
-source-wordcount: '2046'
+source-wordcount: '2067'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 ## 新增規則
 
 1. 在Admin中，前往&#x200B;**行銷** > SEO與搜尋> **[!DNL Live Search]**。
-1. 設定&#x200B;**範圍**&#x200B;以識別規則套用的[存放區檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hant#scope-settings)。
+1. 設定&#x200B;**範圍**&#x200B;以識別規則套用的[存放區檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)。
 1. 按一下&#x200B;**搜尋銷售**&#x200B;工作區。
 1. 按一下&#x200B;**新增規則**&#x200B;以啟動規則編輯器。
 
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 ### 多個條件
 
-1. 若要建置包含多個條件的規則，請按一下[新增條件]。**&#x200B;**
+1. 若要建置包含多個條件的規則，請按一下[新增條件]。****
 一個規則最多可以有十個條件。 結合兩個條件的邏輯運運算元是以目前的*Match*&#x200B;設定為基礎。 依預設，*符合*&#x200B;為`All`，邏輯運運算元為`AND`。
 
 1. 選取第二個條件並輸入必要的查詢文字。
@@ -73,7 +73,7 @@ ht-degree: 0%
 
    ![規則 — 符合](assets/rules-match.png)
 
-1. 若要新增其他條件，請按一下[新增條件] **&#x200B;**&#x200B;並重複此程式。
+1. 若要新增其他條件，請按一下[新增條件] ****&#x200B;並重複此程式。
 
 ## 智慧型排名
 
@@ -181,6 +181,10 @@ ht-degree: 0%
 1. 完成時，按一下&#x200B;**儲存並發佈**。
 
    規則已新增至&#x200B;*規則*&#x200B;工作區中的清單。
+
+   >[!IMPORTANT]
+   >
+   >如果&#x200B;**[!UICONTROL Save and publish]**&#x200B;按鈕呈現灰色，請確定您已輸入規則的所有必要資訊，包括規則名稱。
 
 1. 雖然使用中的規則會立即生效，但您可能需要等候最多15分鐘，才能重新整理店面中的快取查詢結果。
 
