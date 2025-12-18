@@ -1,7 +1,7 @@
 ---
 title: 檔案RAG服務
 description: 瞭解如何使用AI支援的檔案搜尋服務來進行Adobe Commerce開發。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 role: Developer
 hide: true
 hidefromtoc: true
@@ -30,9 +30,9 @@ RAG服務是[Commerce擴充性工具](./coding-tools.md) MCP （模型內容通�
 
 | 類別 | 索引 | 包含的內容 | 關鍵字 |
 |-------|---------|---------|------------------------|
-| [店面](https://experienceleague.adobe.com/developer/commerce/storefront/) | commerce-storefront-docs | Edge Delivery Services、下拉式清單、店面元件 | 店面、外掛程式、EDS、產品清單、結帳 |
+| [店面](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant) | commerce-storefront-docs | Edge Delivery Services、下拉式清單、店面元件 | 店面、外掛程式、EDS、產品清單、結帳 |
 | [擴充性](https://developer.adobe.com/commerce/extensibility/) | commerce-extensibility-docs | Webhook、活動、擴充功能、整合 | webhook，事件，擴充功能， API網格， GraphQL |
-| [Commerce](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview) | commerce-core-docs | 核心Commerce （目錄、客戶、訂單） | 目錄，產品，客戶，訂單，存貨 |
+| [Commerce](https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/overview) | commerce-core-docs | 核心Commerce （目錄、客戶、訂單） | 目錄，產品，客戶，訂單，存貨 |
 | [App Builder](https://developer.adobe.com/app-builder/docs/intro_and_overview/) | app-builder-docs | App Builder、執行階段動作、UI擴充功能 | 應用程式產生器，執行階段動作， React Spectrum |
 
 如需索引選取的詳細資訊，請參閱[自動索引選取](#automatic-index-selection-recommended)和[明確索引選取](#explicit-index-selection)。
