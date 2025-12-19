@@ -23,7 +23,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>更新AEM Assets整合檔案中的<a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aem#install-the-commerce-assets-package">設定AEM主題</a>。</p>
+      <td><p>更新AEM Assets整合檔案中的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/get-started/configure-aem#install-the-commerce-assets-package">設定AEM主題</a>。</p>
 </td>
       <td>
         重大更新
@@ -45,7 +45,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>新增主題：<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/manage-results/opportunities">機會</a>，透過Adobe Sites Optimizer整合記錄AI支援的網站最佳化建議，包括改善SEO、中繼資料和產品資料品質的自動偵測和自動修正工作流程。<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-layer">目錄層</a>說明如何在不變更來源資料的情況下修改產品資料，包括層優先順序管理以及與Sites Optimizer自動修正功能的整合。</p>
+      <td><p>新增主題：<br />- <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/manage-results/opportunities">機會</a>，透過Adobe Sites Optimizer整合記錄AI支援的網站最佳化建議，包括改善SEO、中繼資料和產品資料品質的自動偵測和自動修正工作流程。<br />- <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/setup/catalog-layer">目錄層</a>說明如何在不變更來源資料的情況下修改產品資料，包括層優先順序管理以及與Sites Optimizer自動修正功能的整合。</p>
 </td>
       <td>
         重大更新，新主題
@@ -67,7 +67,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>現在支援將Commerce Optimizer檔案中的建議功能更新為<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/create#preview-recommendations">預覽窗格</a>。</p>
+      <td><p>現在支援將Commerce Optimizer檔案中的建議功能更新為<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/merchandising/recommendations/create#preview-recommendations">預覽窗格</a>。</p>
 </td>
       <td>
         技術
@@ -89,7 +89,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>已針對11月的Adobe Commerce as a Cloud Service版本更新<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">發行說明</a>。</p>
+      <td><p>已針對11月的Adobe Commerce as a Cloud Service版本更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes">發行說明</a>。</p>
 </td>
       <td>
         重大更新
@@ -111,7 +111,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>記錄連線至Adobe Commerce後端的Commerce Optimizer客戶如何從摘要同步狀態頁面監視資料摘要匯出並進行疑難排解。 請參閱Adobe Commerce Optimizer指南中的<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync">Data Sync</a>。</p>
+      <td><p>記錄連線至Adobe Commerce後端的Commerce Optimizer客戶如何從摘要同步狀態頁面監視資料摘要匯出並進行疑難排解。 請參閱Adobe Commerce Optimizer指南中的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/setup/data-sync">Data Sync</a>。</p>
 </td>
       <td>
         技術
@@ -133,7 +133,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>已更新Payment Services v2.13.0版本的<a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes">發行說明</a>。</p>
+      <td><p>已更新Payment Services v2.13.0版本的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/payment-services/release-notes">發行說明</a>。</p>
 </td>
       <td>
         技術
@@ -155,7 +155,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>已更新AEM Assets整合v1.2.7版的<a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes">發行說明</a>。</p>
+      <td><p>已更新AEM Assets整合v1.2.7版的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/release-notes">發行說明</a>。</p>
 </td>
       <td>
         技術
