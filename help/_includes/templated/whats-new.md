@@ -1,8 +1,8 @@
 ---
-source-git-commit: b65f9f15fe89a52432fda9e2e29bf96176a431d3
+source-git-commit: 06e4f6538fbd2add9f066bb54acf1c18e97646c4
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 4%
+source-wordcount: '237'
+ht-degree: 3%
 
 ---
 # 新功能範本
@@ -10,6 +10,50 @@ ht-degree: 4%
 ## 新增功能
 
 此頁面包含過去60天所做的變更。 我們將從此清單中排除所有微幅更新，例如複製編輯。
+
+### 2025年12月18日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>更新AEM Assets整合檔案中的<a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aem#install-the-commerce-assets-package">設定AEM主題</a>。</p>
+</td>
+      <td>
+        重大更新
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/d46526db56dad08a8f865664c92d1214bbf063d8">認可</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2025年12月15日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>新增主題：<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/manage-results/opportunities">機會</a>，透過Adobe Sites Optimizer整合記錄AI支援的網站最佳化建議，包括改善SEO、中繼資料和產品資料品質的自動偵測和自動修正工作流程。<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-layer">目錄層</a>說明如何在不變更來源資料的情況下修改產品資料，包括層優先順序管理以及與Sites Optimizer自動修正功能的整合。</p>
+</td>
+      <td>
+        重大更新，新主題
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/dd4447d519761f43d06f13de71c5ae97f6b103e7">認可</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2025年12月9日
 
@@ -23,7 +67,7 @@ ht-degree: 4%
   </thead>
   <tbody>
     <tr>
-      <td><p>現在支援將Commerce Optimizer檔案中的建議功能更新為<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/merchandising/recommendations/create#preview-recommendations">預覽窗格</a>。</p>
+      <td><p>現在支援將Commerce Optimizer檔案中的建議功能更新為<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/create#preview-recommendations">預覽窗格</a>。</p>
 </td>
       <td>
         技術
@@ -45,7 +89,7 @@ ht-degree: 4%
   </thead>
   <tbody>
     <tr>
-      <td><p>已針對11月的Adobe Commerce as a Cloud Service版本更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes">發行說明</a>。</p>
+      <td><p>已針對11月的Adobe Commerce as a Cloud Service版本更新<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">發行說明</a>。</p>
 </td>
       <td>
         重大更新
@@ -67,7 +111,7 @@ ht-degree: 4%
   </thead>
   <tbody>
     <tr>
-      <td><p>記錄連線至Adobe Commerce後端的Commerce Optimizer客戶如何從摘要同步狀態頁面監視資料摘要匯出並進行疑難排解。 請參閱Adobe Commerce Optimizer指南中的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/setup/data-sync">Data Sync</a>。</p>
+      <td><p>記錄連線至Adobe Commerce後端的Commerce Optimizer客戶如何從摘要同步狀態頁面監視資料摘要匯出並進行疑難排解。 請參閱Adobe Commerce Optimizer指南中的<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync">Data Sync</a>。</p>
 </td>
       <td>
         技術
@@ -89,7 +133,7 @@ ht-degree: 4%
   </thead>
   <tbody>
     <tr>
-      <td><p>已更新Payment Services v2.13.0版本的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/payment-services/release-notes">發行說明</a>。</p>
+      <td><p>已更新Payment Services v2.13.0版本的<a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes">發行說明</a>。</p>
 </td>
       <td>
         技術
@@ -111,56 +155,12 @@ ht-degree: 4%
   </thead>
   <tbody>
     <tr>
-      <td><p>已更新AEM Assets整合v1.2.7版的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/release-notes">發行說明</a>。</p>
+      <td><p>已更新AEM Assets整合v1.2.7版的<a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes">發行說明</a>。</p>
 </td>
       <td>
         技術
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/89091ee8a69259ad325a2b2d7ed8d522fe23fac9">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2025年10月17日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>更新下列主題，以包含有關從Adobe Admin Console設定身分管理和單一登入的資訊： <br />- <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/user-management">Adobe Commerce as a Cloud Service使用者和Identity Management</a><br />- <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/user-management">Adobe Commerce Optimizer：使用者和Identity Management</a></p>
-</td>
-      <td>
-        技術意見回饋
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/78f1fa56d409433c90763077b63198e38a9ab692">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2025年10月14日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>已更新新增使用者的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/user-management">使用者管理</a>步驟。</p>
-</td>
-      <td>
-        重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/4088b88553cbdd328a55f3483b20ea073e6c78b2">認可</a></td>
     </tr>
   </tbody>
 </table>
