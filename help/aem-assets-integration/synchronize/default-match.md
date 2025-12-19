@@ -42,7 +42,7 @@ Commerce的AEM Assets整合提供以&#x200B;**[!UICONTROL Match by product SKU]*
    >
    > 如果資產用於多個產品，請為每個關聯的SKU設定中繼資料。
 
-1. 在`Basic`索引標籤中，將&#x200B;_[!UICONTROL Review Status]_欄位的預設值設定為`approved`。
+1. 在`Basic`索引標籤中，將&#x200B;_[!UICONTROL Review Status]_&#x200B;欄位的預設值設定為`approved`。
 
    ![範例中繼資料](../assets/metadata-review-status.png){width="600" zoomable="yes"}
 
