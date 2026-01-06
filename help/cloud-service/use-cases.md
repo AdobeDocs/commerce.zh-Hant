@@ -5,7 +5,7 @@ feature: Cloud, Integration
 role: User, Leader
 level: Beginner
 exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 source-git-commit: 3fe22d47b6fd6cf1077cbd4644ffad08f55826ca
 workflow-type: tm+mt
 source-wordcount: '1390'
@@ -200,7 +200,7 @@ ht-degree: 0%
 
 #### 將影像新增至[!DNL Commerce AEM Assets]
 
-1. 從[的](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel)導覽面板[!DNL AEM as a Cloud Service]，選取&#x200B;[!UICONTROL **Assets**] > [!UICONTROL **檔案**] > [!UICONTROL **Commerce**]，然後按一下您在上一節建立的資產。
+1. 從[的](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel)導覽面板[!DNL AEM as a Cloud Service]，選取&#x200B;[!UICONTROL **Assets**] > [!UICONTROL **檔案**] > [!UICONTROL **Commerce**]，然後按一下您在上一節建立的資產。
 
    ![中的[!DNL AEM Assets]Commerce資料夾包含產品影像](./assets/commerce-folder.png){width="600" zoomable="yes"}
 
@@ -250,7 +250,7 @@ ht-degree: 0%
 
 ### 產生文字
 
-1. 使用[通用編輯器](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)開啟您的店面網站。
+1. 使用[通用編輯器](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)開啟您的店面網站。
 
 1. 選取您要編輯的文字區塊。
 
@@ -264,7 +264,7 @@ ht-degree: 0%
 
 ### 產生內容和影像
 
-1. 開啟[[!DNL Generate Variations]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+1. 開啟[[!DNL Generate Variations]](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 1. 選取&#x200B;[!UICONTROL **Hero Banner**]&#x200B;範本。
 
