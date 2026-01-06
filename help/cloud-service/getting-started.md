@@ -1,33 +1,35 @@
 ---
 title: 開始使用 [!DNL Adobe Commerce as a Cloud Service]
 description: 瞭解如何開始使用 [!DNL Adobe Commerce as a Cloud Service]。
+feature: Cloud, Integration
 role: Admin, Developer, User
+level: Beginner
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
-source-git-commit: 69870bc7037bdad5a8d5fa769a06c07f8cd920aa
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+source-git-commit: 3fe22d47b6fd6cf1077cbd4644ffad08f55826ca
 workflow-type: tm+mt
-source-wordcount: '1298'
+source-wordcount: '1261'
 ht-degree: 0%
 
 ---
 
 # 快速入門
 
-[!DNL Adobe Commerce as a Cloud Service]提供大部分的立即可用設定。 完成幾個基本設定程式後，您的存放區將立即啟動並執行。 本指南會逐步引導您建立和使用執行個體。 本指南也可協助您設定組織以取得成功，方法是確保您的團隊有適當許可權存取[!DNL Adobe Commerce as a Cloud Service]以及開始使用所需的工具。
+[!DNL Adobe Commerce as a Cloud Service]提供大部分的立即可用設定。 完成幾個基本設定程式後，您的存放區即已啟動並立即執行。 本指南會逐步引導您建立和使用執行個體，並幫助您設定組織以取得成功。 這可確保您的團隊可以正確存取[!DNL Adobe Commerce as a Cloud Service]，以及開始使用所需的工具。
 
-[!DNL Adobe Commerce as a Cloud Service]是雲端原生commerce平台，提供彈性、擴充性和效率，用於提供數位商務體驗。 此SaaS產品是完全受管理、無版本的平台，可提供順暢的升級體驗，無需手動干預。
+[!DNL Adobe Commerce as a Cloud Service]是雲端原生commerce平台，提供彈性、擴充性和效率，用於提供數位商務體驗。 此SaaS產品是完全受管理、無版本的平台，提供順暢的升級體驗，無需手動干預。
 
 ## 主要元件
 
 [!DNL Adobe Commerce as a Cloud Service]包含下列元件：
 
-* **[Adobe Experience Cloud](https://experience.adobe.com/)** — 您在[!DNL Adobe Commerce]experience.adobe.com[所有](https://experience.adobe.com/)產品的中心進入點
+* **[[!DNL Adobe Experience Cloud]](https://experience.adobe.com/)** — 您在[!DNL Adobe Commerce]experience.adobe.com[所有](https://experience.adobe.com/)產品的中心進入點
    * 按一下「[!UICONTROL **快速存取**]」底下的「[!UICONTROL **Commerce**]」以開啟「Commerce Cloud管理員」
-* **[Commerce Cloud管理員](https://experience.adobe.com/#/commerce/cloud-service)** — 建立和管理執行個體、存取API URL和您的Commerce管理員
-* **[Adobe Admin Console](https://adminconsole.adobe.com/)** — 管理使用者和角色
+* **[[!DNL Commerce Cloud Manager]](https://experience.adobe.com/#/commerce/cloud-service)** — 建立和管理執行個體、存取API URL和您的Commerce管理員
+* **[[!DNL Adobe Admin Console]](https://adminconsole.adobe.com/)** — 管理使用者和角色
 * **Commerce管理員** — 管理產品、訂單、客戶和商店設定
-* **[由Edge Delivery Services提供支援的店面](./storefront.md)** — 使用可撰寫的高效能系統，為商家和開發人員提供卓越的速度、SEO和使用者體驗，建立並自訂面對客戶的店面
-* **[Adobe Developer App Builder](https://developer.adobe.com/app-builder/)** — 使用App Builder以及其他擴充性工具（例如[整合入門套件](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/)和[API Mesh](https://developer.adobe.com/graphql-mesh-gateway/)）建立自訂整合
+* **[店面由 [!DNL Edge Delivery Services]](./storefront.md)**&#x200B;提供技術支援 — 使用可撰寫的高效能系統，為商家和開發人員提供卓越的速度、SEO和使用者體驗，建立並自訂面對客戶的店面
+* **[[!DNL Adobe Developer App Builder]](https://developer.adobe.com/app-builder/)** — 使用[!DNL App Builder]以及其他擴充性工具（例如[整合入門套件](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/)和[[!DNL API Mesh]](https://developer.adobe.com/graphql-mesh-gateway/)）來建置自訂整合
 
 ## 設定與管理
 
@@ -46,9 +48,9 @@ ht-degree: 0%
 
 需要下列步驟才能將[!DNL Adobe Experience Manager Assets]或[!DNL Product Visuals powered by AEM Assets]與[!DNL Adobe Commerce as a Cloud Service]整合：
 
-1. **系統管理員**： [將使用者新增至AEM Assets和產品視覺效果產品設定檔](user-management.md#add-a-user-to-aem-assets-or-product-visuals)
-1. **開發人員**： [整合AEM Assets和產品視覺效果](../aem-assets-integration/overview.md)
-1. **商家**： [存取您的AEM Assets和產品視覺效果](./user-management.md#access-the-experience-manager-interface)
+1. **系統管理員**： [將使用者新增至 [!DNL AEM Assets] 和 [!DNL Product Visuals] 產品設定檔](user-management.md#add-a-user-to-aem-assets-or-product-visuals)
+1. **開發人員**： [整合 [!DNL AEM Assets] 和 [!DNL Product Visuals]](../aem-assets-integration/overview.md)
+1. **商家**： [存取您的 [!DNL AEM Assets] 和 [!DNL Product Visuals]](./user-management.md#access-the-experience-manager-interface)
 
 ### 角色型設定和管理工作
 
@@ -58,15 +60,15 @@ ht-degree: 0%
 
 >[!TAB 系統管理員與商家工作流程]
 
-此圖表提供系統管理員和商家如何存取及管理[!DNL Adobe Commerce as a Cloud Service]執行個體的概觀。 如需有關管理員工作流程的詳細資訊，請參閱[Adobe Admin Console指南](https://helpx.adobe.com/tw/enterprise/admin-guide.html)。
+此圖表提供系統管理員和商家如何存取及管理[!DNL Adobe Commerce as a Cloud Service]執行個體的概觀。 如需有關管理員工作流程的詳細資訊，請參閱[Adobe Admin Console指南](https://helpx.adobe.com/enterprise/admin-guide.html)。
 
-![[!DNL Adobe Commerce as a Cloud Service]商家流程圖](./assets/merchant-flow.svg){zoomable="yes"}
+![Adobe Commerce as a Cloud Service的系統管理員和商家工作流程圖表](./assets/merchant-flow.svg){zoomable="yes"}
 
 >[!TAB 開發人員工作流程]
 
 此圖表提供開發人員如何使用App Builder為[!DNL Adobe Commerce as a Cloud Service]建立整合的整體概觀。 如需詳細資訊，請參閱[API檔案](https://developer.adobe.com/commerce/webapi/rest/)。
 
-![[!DNL Adobe Commerce as a Cloud Service]開發人員流程圖](./assets/developer-flow.svg){zoomable="yes"}
+![用來建立Adobe Commerce as a Cloud Service整合的開發人員工作流程圖](./assets/developer-flow.svg){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -84,7 +86,7 @@ ht-degree: 0%
 | 比較功能 | 瞭解Cloud Service與其他Adobe Commerce方案之間的差異 | [功能比較](feature-comparison.md) |
 | 建立執行個體 | 布建沙箱和生產環境 | [建立執行個體](#create-an-instance) |
 | 設定使用者管理 | 新增使用者、指派角色及管理許可權 | [使用者管理](user-management.md) |
-| 設定AEM Assets和產品視覺效果（選用） | 新增使用者、指派角色及管理許可權 | [使用者管理](user-management.md#add-a-user-to-aem-assets-or-product-visuals) |
+| 設定[!DNL AEM Assets]和[!DNL Product Visuals] （選擇性） | 新增使用者、指派角色及管理許可權 | [使用者管理](user-management.md#add-a-user-to-aem-assets-or-product-visuals) |
 
 >[!TAB 商家]
 
@@ -95,7 +97,7 @@ ht-degree: 0%
 | 存取您的執行個體 | 登入Commerce管理員以管理您的存放區 | [存取執行個體](#access-an-instance) |
 | 探索使用案例 | 瞭解實用的業務案例和工作流程 | [使用案例](./use-cases.md) |
 | 匯入目錄 | 瞭解如何將產品資料匯入平台 | [匯入您的目錄](#import-your-catalog) |
-| 存取AEM Assets和產品視覺效果（選用） | 存取Experience Manager以開始使用AEM Assets和產品視覺效果 | [存取Experience Manger介面](./user-management.md#access-the-experience-manager-interface) |
+| 存取[!DNL AEM Assets]和[!DNL Product Visuals] （選擇性） | 存取Experience Manager以開始使用[!DNL AEM Assets]和[!DNL Product Visuals] | [存取Experience Manager介面](./user-management.md#access-the-experience-manager-interface) |
 
 >[!TAB 開發人員]
 
@@ -108,7 +110,7 @@ ht-degree: 0%
 | 建立店面 | 瞭解如何設定和自訂Commerce店面 | [店面設定](./storefront.md) |
 | 設定您的店面 | 瞭解如何設定您的店面 | [店面設定](./storefront.md) |
 | 探索整合選項 | 瞭解關於App Builder、API Mesh和您有權存取的其他擴充工具 | [概觀 — 開發人員平台](overview.md#developer-platform) |
-| 整合AEM Assets和產品視覺效果（選用） | 瞭解如何將AEM Assets和產品視覺效果與Adobe Commerce整合 | [AEM Assets整合](../aem-assets-integration/overview.md) |
+| 整合[!DNL AEM Assets]和[!DNL Product Visuals] （選擇性） | 瞭解如何將[!DNL AEM Assets]和[!DNL Product Visuals]與[!DNL Adobe Commerce]整合 | [AEM Assets整合](../aem-assets-integration/overview.md) |
 
 >[!ENDTABS]
 
@@ -132,7 +134,7 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce as a Cloud Service]執行個體使用信用型系統。 您可以建立多個執行個體，但每個執行個體都需要可用的學分。 您一開始擁有的積分數目取決於您的訂閱。
 
-1. 登入您的[Adobe Experience Cloud](https://experience.adobe.com/)帳戶。
+1. 登入您的[[!DNL Adobe Experience Cloud]](https://experience.adobe.com/)帳戶。
 
 1. 在[!UICONTROL Quick access]底下，按一下&#x200B;[!UICONTROL **Commerce**]&#x200B;以開啟[!UICONTROL Commerce Cloud Manager]。
 
@@ -140,7 +142,7 @@ ht-degree: 0%
 
 1. 按一下畫面右上角的&#x200B;[!UICONTROL **新增執行個體**]。
 
-   ![建立執行個體](./assets/create-instance.png){width="50%" align="center" zoomable="yes"}
+   ![在Commerce Cloud Manager中建立執行個體按鈕和執行個體名稱欄位](./assets/create-instance.png){width="50%" align="center" zoomable="yes"}
 
 1. 選取&#x200B;[!UICONTROL **Commerce as a Cloud Service**]。
 
@@ -203,15 +205,15 @@ ht-degree: 0%
 
 有兩種方式可將您的目錄匯入[!DNL Adobe Commerce as a Cloud Service]：
 
-* [**Commerce管理員**](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/import/data-import) — 使用者易記的介面，可讓您按幾下滑鼠即可匯入目錄資料。
+* [**Commerce管理員**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import) — 使用者易記的介面，可讓您按幾下滑鼠即可匯入目錄資料。
 * [**匯入JSON API**](https://developer.adobe.com/commerce/webapi/rest/modules/import/#import-json-api) - REST API可讓您以程式設計方式匯入目錄資料。
 
 ### 設定店面
 
-現在您已建立執行個體，您已準備好[設定您的店面](storefront.md) (由Edge Delivery Services提供技術支援)。
+現在您已建立執行個體，您已準備好[設定您的店面](storefront.md) （由[!DNL Edge Delivery Services]支援）。
 
 ## 其他資源
 
 * [發行說明](release-notes.md)
 * [移轉指南](migration/overview.md)
-* [Commerce Storefront檔案](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant)
+* [Commerce Storefront檔案](https://experienceleague.adobe.com/developer/commerce/storefront/)

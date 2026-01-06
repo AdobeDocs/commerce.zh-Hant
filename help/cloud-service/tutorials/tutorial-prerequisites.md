@@ -1,12 +1,14 @@
 ---
 title: 評等擴充功能教學課程的先決條件
 description: 瞭解評等擴充功能實驗室的先決條件。
+feature: App Builder, Cloud
 role: Developer
+level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: c160632905631949c9503ceaf896b47e7a71fe55
+source-git-commit: 4ca909c2f8f95fbc404ce6a745d769958b2c01f4
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
@@ -17,7 +19,7 @@ ht-degree: 0%
 >
 >本教學課程中使用的AI工具目前在Beta中，可能包含錯誤或其他問題。
 
-此頁面列出使用[!DNL Adobe Commerce as a Cloud Service]的教學課程的先決條件和設定步驟，例如[評等延伸教學課程](./ratings-extension.md)。
+此頁面列出[!DNL Adobe Commerce as a Cloud Service]教學課程的先決條件和設定步驟，例如[評等延伸教學課程](./ratings-extension.md)。
 
 ## Adobe Commerce as a Cloud Service必要條件
 
@@ -48,15 +50,15 @@ ht-degree: 0%
 1. 輸入&#x200B;[!UICONTROL **專案標題**]&#x200B;和&#x200B;[!UICONTROL **應用程式名稱**]。
 1. 請確定已標示&#x200B;**[!UICONTROL Include Runtime]**&#x200B;核取方塊。
 
-   ![使用App Builder範本建立專案](../assets/app-builder-template.png){width="600" zoomable="yes"}
+   ![已選取Adobe Developer Console範本的App Builder專案建立](../assets/app-builder-template.png){width="600" zoomable="yes"}
 
-1. 按一下&#x200B;**儲存**。
+1. 按一下&#x200B;[!UICONTROL **儲存**]。
 
 #### 將API新增至工作區
 
 1. 按一下&#x200B;[!UICONTROL **階段**]&#x200B;工作區，然後對每個API重複下列步驟。
 
-   ![個API已新增至工作區](../assets/add-apis-workspace.png){width="600" zoomable="yes"}
+   ![為API使用新增服務選項來暫存工作區](../assets/add-apis-workspace.png){width="600" zoomable="yes"}
 
 1. 按一下&#x200B;[!UICONTROL **新增服務**]&#x200B;並選取&#x200B;[!UICONTROL **API**]。
 
@@ -74,7 +76,7 @@ ht-degree: 0%
 
 1. 重複上述步驟，直到所有API新增至工作區為止。
 
-   ![個API已新增至工作區](../assets/apis-added.png){width="600" zoomable="yes"}
+   ![Workspace顯示所有必要的API，已成功新增](../assets/apis-added.png){width="600" zoomable="yes"}
 
 ### 設定Adobe I/O CLI
 
@@ -104,7 +106,7 @@ ht-degree: 0%
    aio console workspace select
    ```
 
-   ![CLI組態](../assets/cli-configuration.png){width="600" zoomable="yes"}
+   ![終端機顯示Adobe I/O CLI組織專案和工作區選擇](../assets/cli-configuration.png){width="600" zoomable="yes"}
 
 ### 複製整合入門套件
 
@@ -115,7 +117,7 @@ git clone https://github.com/adobe/commerce-integration-starter-kit.git extensio
 cd extension
 ```
 
-![複製入門套件](../assets/clone-starter-kit.png){width="600" zoomable="yes"}
+![終端機輸出顯示Commerce整合入門套件的Git Clone命令](../assets/clone-starter-kit.png){width="600" zoomable="yes"}
 
 ### 建立.env檔案
 
@@ -137,7 +139,7 @@ OAUTH_ORG_ID=
 
 您可以按一下工作區上的「**[!UICONTROL Credential details]**」索引標籤，從[Developer Console](https://developer.adobe.com/)的「**[!UICONTROL OAuth Server-to-Server]**」頁面複製這些值。
 
-![OAuth認證](../assets/oauth-credentials.png){width="600" zoomable="yes"}
+Adobe Developer Console中的![OAuth伺服器對伺服器認證頁面](../assets/oauth-credentials.png){width="600" zoomable="yes"}
 
 #### 新增Commerce設定
 
@@ -185,7 +187,7 @@ cp workspace.json scripts/
 aio app use workspace.json -m
 ```
 
-![連線到工作區](../assets/connect-workspace.png){width="600" zoomable="yes"}
+![終端機顯示成功的工作區連線與aio應用程式使用命令](../assets/connect-workspace.png){width="600" zoomable="yes"}
 
 ### 安裝擴充性AI工具
 
@@ -201,7 +203,7 @@ aio app use workspace.json -m
    aio commerce extensibility tools-setup
    ```
 
-   ![安裝AI工具](../assets/install-ai-tools.png){width="600" zoomable="yes"}
+   ![顯示AI擴充工具設定命令輸出的終端機](../assets/install-ai-tools.png){width="600" zoomable="yes"}
 <!--
 ## Storefront prerequisites
 

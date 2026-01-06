@@ -1,22 +1,24 @@
 ---
 title: 擴充功能的AI編碼工具
 description: 瞭解如何使用AI工具來建立Commerce App Builder擴充功能。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+feature: App Builder, Cloud
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 role: Developer
+level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: d2f2563a1f3a656d7bfaa12a0c3ca2b828e7fc33
+source-git-commit: 991a8683b9a333d2699f1ef22f3dc54d7b401573
 workflow-type: tm+mt
-source-wordcount: '1863'
+source-wordcount: '1847'
 ht-degree: 0%
 
 ---
 
 # 擴充功能的AI編碼工具
 
-移轉至[!DNL Adobe Commerce as a Cloud Service]時，您可以使用AI編碼工具將現有的[!DNL Adobe Commerce] PHP擴充功能轉換為[!DNL Adobe Developer App Builder]擴充功能。 它也可以用來建立新的[!DNL App Builder]擴充功能。
+移轉至[!DNL Adobe Commerce as a Cloud Service]時，您可以使用AI編碼工具將現有的[!DNL Adobe Commerce] PHP擴充功能轉換為[!DNL Adobe Developer App Builder]擴充功能。 您也可以使用這些工具來建立新的[!DNL App Builder]擴充功能。
 
-使用AI編碼工具可提供下列優點：
+AI編碼工具提供下列優點：
 
 * **增強型開發工作流程**：整合式Adobe Commerce開發工具。
 * **AI支援的協助**：內容感知程式碼產生和偵錯。
@@ -130,9 +132,9 @@ ht-degree: 0%
 
 ## 安裝後設定
 
-### 登入[!DNL Adobe I/O CLI]
+### 登入Adobe I/O CLI
 
-安裝[!DNL Adobe I/O CLI]之後，您需要隨時登入要使用MCP伺服器。
+安裝[!DNL Adobe I/O CLI]之後，您必須隨時登入要使用MCP伺服器。
 
 ```bash
 aio auth login
@@ -193,9 +195,9 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 1. 啟用MCP伺服器：
 
    * 按一下左側邊欄活動列中的&#x200B;**擴充功能**&#x200B;圖示，或使用&#x200B;**Cmd+Shift+X** (macOs)或&#x200B;**Ctrl+Shift+X** （Windows和Linux）來開啟「擴充功能面板」。
-   * 按一下&#x200B;**MCP伺服器 — 已安裝**。
-   * 按一下&#x200B;**commerce-extensibility MCP伺服器**&#x200B;旁的齒輪圖示，並選取&#x200B;**啟動伺服器** （如果伺服器已停止）。
-   * 再按一下齒輪圖示，然後選取&#x200B;**顯示輸出**。
+   * 按一下&#x200B;[!UICONTROL **MCP伺服器 — 已安裝**]。
+   * 按一下&#x200B;[!UICONTROL **commerce-extensibility MCP伺服器**]&#x200B;旁的齒輪圖示，並選取&#x200B;[!UICONTROL **啟動伺服器**] （如果伺服器已停止）。
+   * 再按一下齒輪圖示，然後選取&#x200B;[!UICONTROL **顯示輸出**]。
 
 1. 驗證伺服器狀態。 `MCP:commerce-extensibility`輸出應該符合下列內容：
 
@@ -279,7 +281,7 @@ Adobe建議您在使用AI編碼工具時，遵循下列最佳實務：
 
 * [整合入門套件](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Adobe Commerce入門套件範本](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Adobe I/O Events入門範本](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Adobe I/O Events入門範本](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [App Builder範例應用程式](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### 為何應使用這些資源
@@ -326,7 +328,7 @@ Create a detailed implementation plan for this complex development.
 >
 >在使用MCP工具之前，請確定您已[登入Adobe I/O CLI](#log-in-to-the-adobe-io-cli)。
 
-工具預設為MCP工具，但在特定情況下，可以使用CLI指令代替。 如果您想要確保MCP工具的使用情況，請在提示中明確要求使用。
+工具預設為MCP工具，但在某些情況下可以使用CLI指令代替。 若要確保MCP工具的使用情況，請在提示中明確要求使用。
 
 如果您看到正在使用CLI指令且想要改用MCP工具，請使用下列提示：
 
@@ -346,7 +348,7 @@ CLI命令可用於下列情況：
 
 ### 開發
 
-請務必質疑AI工具所造成的不必要的複雜性。
+詢問AI工具所造成的不必要的複雜性。
 
 為簡單的唯讀端點新增不必要的檔案(`validator.js`、`transformer.js`、`sender.js`)時，請使用下列提示：
 
@@ -466,7 +468,7 @@ Help me debug why this action is returning 500 errors
 
 #### 逐步部署
 
-僅部署已修改的動作以加速開發。 這樣就能降低中斷現有功能的風險，並更快速地提供變更意見回饋。 這也會降低中斷現有功能的風險。
+僅部署已修改的動作以加速開發。 此方法可減少中斷現有功能的風險，並更快速地提供變更意見回饋。
 
 * 使用MCP工具來部署特定動作
 
@@ -479,7 +481,7 @@ Help me debug why this action is returning 500 errors
 
 #### 執行階段清理
 
-進行重大變更後，請善用工具來清除孤立的動作。 讓AI工具系統地處理清理程式，它能夠有效地識別孤立的動作，驗證其狀態，並安全地移除它們而無需手動干預。
+進行重大變更後，請善用工具來清除孤立的動作。 讓AI工具系統地處理清理程式。 它能夠有效地識別孤立的動作，驗證其狀態，並安全地移除它們而無需手動介入。
 
 ```shell-session
 Help me identify and clean up orphaned runtime actions
@@ -520,7 +522,7 @@ Remove the orphaned actions that are no longer part of the current implementatio
 
 ## 避免什麼
 
-使用AI編碼工具時，您應該避免以下反圖樣：
+使用AI編碼工具時，請避免以下反圖樣：
 
 * **不要略過澄清階段** — 一律確保階段1在實施前完成。
 * **在每個功能之後不要略過測試** — 逐步測試，不要等到所有功能都完成。

@@ -1,12 +1,14 @@
 ---
 title: 評等擴充功能教學課程
 description: 瞭解如何使用App Builder和AI輔助開發工具，為Adobe Commerce as a Cloud Service建立產品評等擴充功能。
+feature: App Builder, Cloud
 role: Developer
+level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: c160632905631949c9503ceaf896b47e7a71fe55
+source-git-commit: 4ca909c2f8f95fbc404ce6a745d769958b2c01f4
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '622'
 ht-degree: 0%
 
 ---
@@ -43,25 +45,25 @@ bash --version
 
 ## 擴充功能開發
 
-本節將引導您使用AI輔助開發工具，為Adobe Commerce as a Cloud Service開發評等擴充功能的程式。
+本節將引導您使用AI輔助開發工具，為Adobe Commerce as a Cloud Service開發評等擴充功能。
 
 1. 導覽至「**[!UICONTROL Cursor]** > **[!UICONTROL Settings]** > **[!UICONTROL Cursor Settings]** > **[!UICONTROL Tools & MCP]**」，並驗證「`commerce-extensibility`」工具集已啟用且沒有錯誤。 如果您看到錯誤，請關閉和開啟工具集。
 
-   ![資料指標設定](../assets/cursor-settings.png){width="600" zoomable="yes"}
+   ![Cursor IDE設定顯示已啟用的MCP commerce-extensibility工具集](../assets/cursor-settings.png){width="600" zoomable="yes"}
 
    >[!NOTE]
    >
-   >使用AI輔助開發工具時，代理程式產生的程式碼和回應會有自然的變化。
+   >使用AI輔助開發工具時，代理程式產生的程式碼和回應會有自然變化。
    >如果您在程式碼上遇到任何問題，可以隨時要求代理程式協助您進行偵錯。
 
 1. 如果您有任何檔案新增到Cursor的內容中，請停用它：
 
    - 瀏覽至&#x200B;[!UICONTROL **Cursor**] > [!UICONTROL **設定**] > [!UICONTROL **Cursor設定**] > [!UICONTROL **索引與檔案**]，並刪除列出的任何檔案。
 
-   ![停用檔案](../assets/disable-documentation.png){width="600" zoomable="yes"}
+   ![檔案清單為空的資料指標索引和檔案設定](../assets/disable-documentation.png){width="600" zoomable="yes"}
 
 1. 產生產品評等擴充功能的程式碼：
-   - 從游標中選取游標聊天路徑，選取&#x200B;**代理程式**&#x200B;模式。
+   - 從Cursor聊天視窗中，選取&#x200B;[!UICONTROL **代理程式**]&#x200B;模式。
    - 輸入下列提示：
 
    ```shell-session
@@ -80,9 +82,9 @@ bash --version
 
 1. 請精確回答代理程式的問題，協助其產生最佳程式碼。
 
-   ![在Cursor](../assets/enter-prompt.png){width="600" zoomable="yes"}中輸入提示
+   ![已輸入副檔名提示的代理程式模式中的游標聊天視窗](../assets/enter-prompt.png){width="600" zoomable="yes"}
 
-   ![代理程式詢問澄清問題](../assets/agent-questions.png){width="600" zoomable="yes"}
+   ![AI代理程式詢問關於擴充功能需求的問題](../assets/agent-questions.png){width="600" zoomable="yes"}
 
 1. 使用下列範例文字來回答代理程式的問題，以設定隨機分級資料：
 
@@ -90,7 +92,7 @@ bash --version
    Yes, this headless extension is for Adobe Commerce as a Cloud Service storefront,
    but we do not need any authentication for the GET API because guest users should be able to use it on the storefront.
    
-   This extension will be called directly from the storefront, no async invocation, such as events or webhooks, is required.
+   This extension is called directly from the storefront, no async invocation, such as events or webhooks, is required.
    
    Start with just the GET API for now, we will implement other CRUD operations at a later time.
    
@@ -102,7 +104,7 @@ bash --version
 
    代理程式會建立`requirements.md`檔案，做為實作的信任來源。
 
-   ![已建立需求檔案](../assets/requirements-file.png){width="600" zoomable="yes"}
+   由AI代理程式建立的![Requirements.md檔案包含實作詳細資料](../assets/requirements-file.png){width="600" zoomable="yes"}
 
 1. 檢閱`requirements.md`檔案並驗證計畫。
 
@@ -112,11 +114,11 @@ bash --version
 
    代理程式會產生必要的程式碼，並提供您後續步驟的詳細摘要。
 
-   ![架構規劃](../assets/architecture-planning.png){width="600" zoomable="yes"}
+   ![評等API的AI代理程式階段2架構計畫](../assets/architecture-planning.png){width="600" zoomable="yes"}
 
-   ![程式碼產生摘要](../assets/code-generation-summary.png){width="600" zoomable="yes"}
+   ![產生的程式碼檔案和結構的摘要](../assets/code-generation-summary.png){width="600" zoomable="yes"}
 
-   ![後續步驟](../assets/next-steps.png){width="600" zoomable="yes"}
+   ![AI代理程式提供後續步驟以進行測試和部署](../assets/next-steps.png){width="600" zoomable="yes"}
 
 ### 本機測試
 
@@ -128,9 +130,9 @@ bash --version
 
 1. 請依照代理程式的指示，並確認API是否在本機運作。
 
-   ![本機測試](../assets/local-testing.png){width="600" zoomable="yes"}
+   ![本機API測試的AI代理程式指示](../assets/local-testing.png){width="600" zoomable="yes"}
 
-   ![本機測試結果](../assets/local-testing-1.png){width="600" zoomable="yes"}
+   ![終端機顯示成功的本機API測試結果（含cURL](../assets/local-testing-1.png){width="600" zoomable="yes"}）
 
 ### 部署擴充功能
 
@@ -142,19 +144,19 @@ bash --version
 
    代理程式會在部署前執行部署前準備程度評估。
 
-   ![部署前評估](../assets/pre-deployment-assessment.png){width="600" zoomable="yes"}
+   ![AI代理程式部署前準備程度評估檢查清單](../assets/pre-deployment-assessment.png){width="600" zoomable="yes"}
 
 1. 當您對評估結果有信心時，請指示代理程式繼續進行部署。
 
    代理程式會使用MCP工具組來自動驗證、建置和部署。
 
-   ![部署](../assets/deployment-process.png){width="600" zoomable="yes"}
+   ![MCP工具組驗證建置和部署程式](../assets/deployment-process.png){width="600" zoomable="yes"}
 
 ### 部署後
 
 您可以先測試API，再將其整合至店面。 代理程式應提供新動作的位置和測試策略。
 
-![測試策略](../assets/testing-strategy.png){width="600" zoomable="yes"}
+![AI代理程式測試策略，包含已部署的動作URL和測試命令](../assets/testing-strategy.png){width="600" zoomable="yes"}
 
 您也可以在終端機中使用cURL手動測試API：
 
@@ -162,7 +164,7 @@ bash --version
 curl -s "https://<your-site>.adobeioruntime.net/api/v1/web/ratings/ratings?sku=TEST-SKU-123"
 ```
 
-![cURL測試](../assets/curl-test.png){width="600" zoomable="yes"}
+![終端機顯示已部署的評等API的成功cURL測試](../assets/curl-test.png){width="600" zoomable="yes"}
 
 ### 整合Edge Delivery Services
 
@@ -172,9 +174,9 @@ curl -s "https://<your-site>.adobeioruntime.net/api/v1/web/ratings/ratings?sku=T
 Create a service contract for the ratings api that I can pass on to the storefront agent. Name it RATINGS_API_CONTRACT.md
 ```
 
-![服務合約](../assets/create-contract.png){width="600" zoomable="yes"}
+![AI代理程式正在建立店面整合的服務合約檔案](../assets/create-contract.png){width="600" zoomable="yes"}
 
-![服務合約詳細資料](../assets/contract.png){width="600" zoomable="yes"}
+![含端點與回應詳細資訊的評等API合約Markdown檔案](../assets/contract.png){width="600" zoomable="yes"}
 <!-- 
 Return to the terminal and run the following command in the `extension` folder to copy the file to the `storefront` folder:
 
@@ -246,7 +248,7 @@ This section teaches you how to implement real storefront features and communica
    You should see the following changes in your development environment and browser:
 
    * A product rating "component" is automatically created.
-   * The component is integrated into product-details, product-list-page, and product-recommendations blocks using [dropin slots](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots?lang=zh-Hant).
+   * The component is integrated into product-details, product-list-page, and product-recommendations blocks using [dropin slots](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots).
    * Stars display with proper fill proportions based on mock rating values.
 
 ![Product Ratings Implementation](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}

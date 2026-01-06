@@ -3,10 +3,10 @@ user-guide-title: '[!DNL Adobe Commerce as a Cloud Service]'
 user-guide-description: 本指南提供使用 [!DNL Adobe Commerce as a Cloud Service]的詳細指示。
 feature: Services, Saas
 recommendations: noDisplay, noCatalog
-source-git-commit: 8aa8a4f3eb6a1f8120bae15715cfb2c52de2dc02
+source-git-commit: 991a8683b9a333d2699f1ef22f3dc54d7b401573
 workflow-type: tm+mt
-source-wordcount: '55'
-ht-degree: 10%
+source-wordcount: '53'
+ht-degree: 11%
 
 ---
 
@@ -18,7 +18,6 @@ ht-degree: 10%
 - [快速入門](getting-started.md)
 - [使用者和身分管理](user-management.md)
 - [店面](storefront.md)
-- [資產管理](assets-management.md)
 - [使用案例](use-cases.md)
 - [共擔責任](shared-responsibility.md)
 - 移轉 {#migration}
@@ -30,4 +29,4 @@ ht-degree: 10%
    - [評等擴充功能教學課程的先決條件](tutorials/tutorial-prerequisites.md)
    - [評等擴充功能教學課程](tutorials/ratings-extension.md)
 - [發行說明](release-notes.md)
-- [返回Commerce服務首頁](https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/home)
+- [返回Commerce服務首頁](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)

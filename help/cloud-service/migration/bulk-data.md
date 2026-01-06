@@ -1,19 +1,21 @@
 ---
 title: 大量資料移轉工具
 description: 瞭解如何使用大量資料移轉工具，將資料從雲端例項上的現有Adobe Commerce移轉至 [!DNL Adobe Commerce as a Cloud Service]。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+feature: Cloud
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 role: Developer
+level: Intermediate
 exl-id: 81522de9-df54-4651-b8ed-58956376af86
-source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
+source-git-commit: 06bdcfbff5d376064b18bdab3945e7609075b8bc
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '706'
 ht-degree: 0%
 
 ---
 
 # 大量資料移轉工具
 
-大量資料移轉工具採用分散式架構，可安全且有效率地從PaaS環境移轉至SaaS環境。 此工具是專為解決方案實作者所設計，可將資料從雲端例項上的現有Adobe Commerce (PaaS)移轉至[!DNL Adobe Commerce as a Cloud Service] (SaaS)。 如需移轉程式的詳細資訊，請參閱[移轉概觀](./overview.md)。
+大量資料移轉工具採用分散式架構，可安全且有效率地從PaaS環境移轉至SaaS環境。 此工具可協助解決方案實作者將資料從雲端例項上的現有Adobe Commerce (PaaS)移轉至[!DNL Adobe Commerce as a Cloud Service] (SaaS)。 如需移轉程式的詳細資訊，請參閱[移轉概觀](./overview.md)。
 
 >[!NOTE]
 >
@@ -21,7 +23,7 @@ ht-degree: 0%
 
 下圖詳細說明使用大量資料移轉工具的架構和關鍵元件。
 
-![大量資料移轉工具架構](../assets/bulk-data-diagram.png)
+![大量資料移轉工具架構圖，顯示PaaS至SaaS資料流程](../assets/bulk-data-diagram.png){zoomable="yes"}
 
 ## 移轉工作流程
 
@@ -44,13 +46,13 @@ ht-degree: 0%
 
 ## 建立目標環境
 
-解決方案實作人員(SI)會建立移轉的目標環境。 此環境用於儲存從來源執行個體移轉的資料。
+解決方案實作人員(SI)會建立移轉的目標環境。 此環境會儲存從來源執行個體移轉的資料。
 
 首先，[建立新的 [!DNL Adobe Commerce as a Cloud Service] (SaaS)執行個體](../getting-started.md#create-an-instance)。
 
 ### 設定擷取工具
 
-擷取工具用於從來源例項中擷取資料。
+使用擷取工具從來源例項中擷取資料。
 
 1. 從Adobe提供的連結下載擷取工具。
 1. 在擷取工具中設定下列環境變數：
@@ -93,7 +95,7 @@ magento-cloud tunnel:open
 
 資料載入後，目錄資料會自動從SaaS租使用者資料庫傳輸至目錄服務。
 
-目錄服務會與「即時搜尋」和「產品推薦」共用此資料。 此程式不需要手動介入。 擷取完成後，資料將可用於所有服務。
+目錄服務會與「即時搜尋」和「產品推薦」共用此資料。 此程式不需要手動介入。 擷取完成後，所有服務中都會提供資料。
 
 ### 資料完整性驗證
 
