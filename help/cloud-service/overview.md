@@ -67,7 +67,7 @@ ht-degree: 0%
 
 ## Commerce店面
 
-使用由[[!DNL Commerce Storefront]支援的Adobe ](https://experienceleague.adobe.com/developer/commerce/storefront)[!DNL Edge Delivery Services]，利用[!DNL Storefront Builder]的簡單檔案式撰寫或視覺化編輯，在幾分鐘內建立豐富的體驗。
+使用由[[!DNL Commerce Storefront]支援的Adobe &#x200B;](https://experienceleague.adobe.com/developer/commerce/storefront) [!DNL Edge Delivery Services]，利用[!DNL Storefront Builder]的簡單檔案式撰寫或視覺化編輯，在幾分鐘內建立豐富的體驗。
 
 [!DNL Commerce Storefront]採用分離式架構，可透過GraphQL API層提供所有銷售服務和資料，完全實現無周邊化。 此架構讓團隊可獨立於Commerce Foundation開發他們的前端，提供使用新興技術建立和測試新接觸點的靈活性。
 
