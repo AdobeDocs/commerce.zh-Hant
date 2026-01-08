@@ -1,8 +1,8 @@
 ---
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+source-git-commit: 4ddab6bbd62a3cc7c6dff089745c1b5ef5c20f70
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 3%
+source-wordcount: '551'
+ht-degree: 1%
 
 ---
 # 投稿
@@ -17,9 +17,9 @@ ht-degree: 3%
 您應遵守此准則。 回報不可接受的行為
 [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com)。
 
-## 貢獻者指南檔案
+## 投稿人指南檔案
 
-請參閱[貢獻者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hant)。
+請參閱[貢獻者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
 
 ## 有疑問嗎？
 
@@ -40,10 +40,8 @@ ht-degree: 3%
 依專案貢獻者。 閱讀[GitHub的提取請求檔案](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
 以取得傳送提取請求的詳細資訊。
 
-<!--
-Lastly, please follow the [pull request template](PULL_REQUEST_TEMPLATE.md) when
-submitting a pull request!
--->
+最後，請於下列時間遵循[提取請求範本](PULL_REQUEST_TEMPLATE.md)：
+提交提取請求！
 
 ## 從貢獻者晉升提交者
 
@@ -56,4 +54,52 @@ submitting a pull request!
 
 ## 安全性問題
 
-若要報告安全性問題，[請向我們的安全性專家提出問題](https://helpx.adobe.com/tw/security/alertus.html)。
+若要報告安全性問題，[請向我們的安全性專家提出問題](https://helpx.adobe.com/security/alertus.html)。
+
+## 最新資訊
+
+如果您的變更引進新主題、重大更新或需要強調的更正，您可以從提取要求內文直接在[新增功能區段](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home#whats-new)新增簡短說明。
+
+新增「新增功能」反白顯示：
+
+1. 在結尾的提取要求內文中加入具有適當說明的`whatsnew`標籤。 說明應提供有關變更的前後關聯以及指向一或多個目標主題的連結。 使用以下格式（程式碼區塊引號僅供呈現，請勿將其納入提取請求內文中）：
+
+   ```text
+   whatsnew
+   Short description of the change in the [target topic](https://experienceleague.adobe.com/en/docs/commerce/target-topic.html).
+   ```
+
+   或者，如果有多個主題：
+
+   ```text
+   whatsnew
+   Short description of the changes in the [first target topic](https://experienceleague.adobe.com/en/docs/commerce/target-topic.html), [second target topic](https://experienceleague.adobe.com/en/docs/commerce/second-target-topic.html), and [third target topic](https://experienceleague.adobe.com/en/docs/commerce/third-target-topic.html).
+   ```
+
+   您也可以將清單用於多個反白專案：
+
+   ```text
+   whatsnew
+   - Short description of the first change in the [first topic](https://experienceleague.adobe.com/en/docs/commerce/first-topic.html).
+   - Short description of the second change in the [second topic](https://experienceleague.adobe.com/en/docs/commerce/second-topic.html).
+   ```
+
+   ```text
+   whatsnew
+   The following changes were made to the documentation:
+   - Short description of the first change in the [first topic](https://experienceleague.adobe.com/en/docs/commerce/first-topic.html).
+   - Short description of the second change in the [second topic](https://experienceleague.adobe.com/en/docs/commerce/second-topic.html).
+   ```
+
+1. 新增支援的標籤，以指出變更型別。 支援的標籤包括每種變更型別的標籤，例如：
+
+   - `new-topic` — 新主題
+   - `major-update` — 針對可能包含內容、結構或功能重大變更的主要更新
+   - `technical` — 技術變更不被視為重大更新，但仍需要注意
+
+**重要：**
+
+1. `whatsnew`部分必須從`whatsnew`標籤開始，並且位於提取請求主體的結尾。
+1. 變更的說明必須包含工作連結。 請確定連結正確且指向預期的主題。 如果是新主題，請在合併提取請求並發佈新主題後，確認連結運作正常。 可以在提取請求合併後修正連結。
+
+例如，搜尋存放庫中的已關閉提取要求，瞭解現有醒目提示的格式設定，並與[新增功能區段](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home#whats-new)進行比較，瞭解它們在檔案中的顯示方式。
