@@ -1,7 +1,7 @@
 ---
 title: 使用者與Identity Management
 description: 瞭解如何建立及管理 [!DNL Adobe Commerce Optimizer]的使用者並指派使用者角色。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 exl-id: 9ab2118d-b7e3-4e2e-adac-8f3950fe1824
 source-git-commit: 423d6f3fb544fb33b8e4e689fdfbbb3cf5b700f3
 workflow-type: tm+mt
@@ -18,10 +18,10 @@ ht-degree: 0%
 
 - **使用者** — 使用者可以存取[!DNL Adobe Commerce Optimizer] UI，以檢視及管理目錄檢視與銷售規則，以及追蹤效能度量。
 
-- [**開發人員**](https://helpx.adobe.com/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"} — 開發人員擁有使用者許可權和存取Adobe Developer Console的許可權。 這表示他們可以建立專案並設定認證，以使用[!DNL Adobe Commerce Optimizer] API和SDK等開發人員工具，以及App Builder和API Mesh等Adobe擴充性工具。
+- [**開發人員**](https://helpx.adobe.com/tw/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"} — 開發人員擁有使用者許可權和存取Adobe Developer Console的許可權。 這表示他們可以建立專案並設定認證，以使用[!DNL Adobe Commerce Optimizer] API和SDK等開發人員工具，以及App Builder和API Mesh等Adobe擴充性工具。
 
 - **管理員** — 有三種不同型別的管理員角色：
-   - [系統管理員](https://helpx.adobe.com/enterprise/using/admin-roles.html){target="_blank"} — 系統管理員可以透過Adobe Admin Console存取組織中的所有產品和產品設定檔。
+   - [系統管理員](https://helpx.adobe.com/tw/enterprise/using/admin-roles.html){target="_blank"} — 系統管理員可以透過Adobe Admin Console存取組織中的所有產品和產品設定檔。
    - [產品管理員](#add-a-product-admin) — 產品管理員可以在[中](#add-users-and-admins)管理產品[!DNL Adobe Admin Console]的使用者、角色和許可權。
    - [產品設定檔管理員](#add-users-developers-and-product-profile-admins) — 產品設定檔管理員可以在[!DNL Adobe Admin Console]中管理產品的使用者。
 
@@ -145,8 +145,8 @@ ht-degree: 0%
 
 您可以使用下列其中一種方法來更有效率地新增多個使用者：
 
-- 使用Adobe Admin Console中的&#x200B;**透過CSV新增使用者**&#x200B;功能來執行[大量CSV上傳](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html){target="_blank"}。
-- 建立[使用者群組](https://helpx.adobe.com/enterprise/using/user-groups.html){target="_blank"}，將多位使用者新增至角色。 然後，您可以將適當的產品新增到使用者群組。
+- 使用Adobe Admin Console中的&#x200B;**透過CSV新增使用者**&#x200B;功能來執行[大量CSV上傳](https://helpx.adobe.com/tw/enterprise/using/bulk-upload-users.html){target="_blank"}。
+- 建立[使用者群組](https://helpx.adobe.com/tw/enterprise/using/user-groups.html){target="_blank"}，將多位使用者新增至角色。 然後，您可以將適當的產品新增到使用者群組。
 
 ## 身分管理和單一登入設定
 
