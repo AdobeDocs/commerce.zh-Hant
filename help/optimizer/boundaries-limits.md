@@ -157,7 +157,7 @@ Dynamic Media使用方式會追蹤進入Adobe Commerce Optimizer中「產品視�
 
 | **功能** | **描述** | **基底配置** | **可擴充？** | **附註** |
 | --- | --- | --- | --- | --- |
-| Adobe Developer App Builder | 建置雲端原生擴充功能和整合的能力 | 根據GMV層級<p>最小配置：1包/年</p> | 是<p>新增其他套件</p> | 如需每個元件定義的限制，請參閱：<ul><li>[App Builder產品說明](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html)每個套件定義的限制。</li><li>[ ](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings)App Builder執行階段指南&#x200B;*中的系統設定和限制*。</li><li>[App Builder儲存需求](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
+| Adobe Developer App Builder | 建置雲端原生擴充功能和整合的能力 | 根據GMV層級<p>最小配置：1包/年</p> | 是<p>新增其他套件</p> | 如需每個元件定義的限制，請參閱：<ul><li>[App Builder產品說明](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html)每個套件定義的限制。</li><li>[&#x200B; &#x200B;](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings)App Builder執行階段指南&#x200B;*中的系統設定和限制*。</li><li>[App Builder儲存需求](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
 
 {style="table-layout:auto"}
 
