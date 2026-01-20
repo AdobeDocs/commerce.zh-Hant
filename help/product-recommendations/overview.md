@@ -2,7 +2,7 @@
 title: ' [!DNL Product Recommendations]簡介'
 description: '[!DNL Product Recommendations]是強大的行銷工具，可用來增加轉換率、增加收入及刺激購物者參與。'
 recommendations: noCatalog
-badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce 。"
+badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce 。"
 exl-id: 72850cfd-555c-4e0e-ac3e-097e6dac2030
 source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
 workflow-type: tm+mt
@@ -27,11 +27,11 @@ ht-degree: 0%
 
 以[!DNL Product Recommendations]為目的的資料收集不包含任何個人識別資訊(PII)。 此外，所有使用者識別碼（例如Cookie ID和IP位址）都需嚴格匿名處理。 若要進一步瞭解，請參閱[Adobe隱私權原則](https://www.adobe.com/privacy/policy.html)。
 
-[!DNL Product Recommendations]使用者可以參考[資料管理儀表板](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html)，以取得資料同步的更多資料。
+[!DNL Product Recommendations]使用者可以參考[資料管理儀表板](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=zh-Hant)，以取得資料同步的更多資料。
 
 ## 產品建議與產品關係
 
-考慮到線上購物不斷變化的複雜性，最適合店面的往往是多種關鍵技術的組合。 同時使用[!DNL Product Recommendations]和[產品關係](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships.html)可讓您在促銷產品時擁有更多彈性。 您可以善用由Adobe AI支援的[!DNL Product Recommendations]，以智慧化方式大規模自動化您的建議。 然後，當您必須手動介入並確保向目標購物者區段提出特定建議，或當必須達成某些業務目標時，您可以運用[相關產品規則](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules.html)。
+考慮到線上購物不斷變化的複雜性，最適合店面的往往是多種關鍵技術的組合。 同時使用[!DNL Product Recommendations]和[產品關係](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships.html?lang=zh-Hant)可讓您在促銷產品時擁有更多彈性。 您可以善用由Adobe AI支援的[!DNL Product Recommendations]，以智慧化方式大規模自動化您的建議。 然後，當您必須手動介入並確保向目標購物者區段提出特定建議，或當必須達成某些業務目標時，您可以運用[相關產品規則](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules.html?lang=zh-Hant)。
 
 產品建議可讓您：
 
@@ -49,4 +49,4 @@ ht-degree: 0%
 
 如果您連續90天未提交測試環境中目錄資料的查詢，則目錄資料會設定為休眠模式，且任何查詢都不會傳回任何資料。 此原則不會影響生產環境中的目錄資料。
 
-若要在您的測試環境中重新啟用目錄資料，請[提交標題為「重新啟用](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)」的支援請求[!DNL Product Recommendations]，並包含環境ID。 您測試環境中的目錄資料應在數小時內還原。
+若要在您的測試環境中重新啟用目錄資料，請[提交標題為「重新啟用](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)」的支援請求[!DNL Product Recommendations]，並包含環境ID。 您測試環境中的目錄資料應在數小時內還原。
