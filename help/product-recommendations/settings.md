@@ -2,7 +2,7 @@
 title: 設定
 description: 瞭解如何變更 [!DNL Product Recommendations] 資料的來源，以及如何啟用視覺化建議。
 exl-id: fe37624d-c53e-40cd-b182-10f62cba74c0
-source-git-commit: 7d5e3faeef2fb16779d1558027a0b76ff3fe3a38
+source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 設定
 
-當您[為Recommendations設定SaaS資料空間](../landing/saas.md#saas-configuration)時，SaaS資料空間會收集目錄資料和店面行為資料。 [Adobe Sensei](https://www.adobe.com/sensei.html)會分析該資料，並計算用於提供產品推薦的產品關聯。
+當您[為Recommendations設定SaaS資料空間](../landing/saas.md#saas-configuration)時，SaaS資料空間會收集目錄資料和店面行為資料。 [Adobe AI](https://business.adobe.com/ai.html)會分析該資料，並計算用於提供產品推薦的產品關聯。
 
 測試或測試的非生產環境通常沒有店面行為資料的數量或品質，無法提供逼真的產品建議。 實際購物者行為規模化只能在生產環境中擷取。 為解決此問題，Adobe Commerce可讓您將生產環境中的產品建議與其他非生產SaaS資料空間搭配使用。 在非生產環境中使用實際的店面資料，可讓您預覽購物者看到的建議，並實驗不同的建議型別和放置位置。 購物者可以預覽來自不同SaaS資料空間的建議，但無法點選。
 
@@ -56,7 +56,7 @@ ht-degree: 0%
 
 ### 設定新的SaaS資料空間
 
-1. 在[Recommendations來源]區段中，按一下[編輯組態]。**&#x200B;**
+1. 在[Recommendations來源]區段中，按一下[編輯組態]。****
 
 1. 依照指示設定新的[[!DNL Commerce] 服務](/help/landing/saas.md)。
 

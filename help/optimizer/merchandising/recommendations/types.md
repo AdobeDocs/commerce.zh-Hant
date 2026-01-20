@@ -1,9 +1,9 @@
 ---
 title: 建議型別
 description: 瞭解您可以部署至網站上不同頁面的建議。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 exl-id: f1c4e0ef-a8fe-452d-9870-6d6964b4335d
-source-git-commit: 3fa6816c539494ce2cc67a9e3c601b8d3048f5d9
+source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
 workflow-type: tm+mt
 source-wordcount: '1731'
 ht-degree: 0%
@@ -92,7 +92,7 @@ Product Recommendations是資料導向系統，需仰賴從店面收集的行為
 | 檢視次數最多 | 建議檢視次數最多的產品，方法是計算過去七天內發生檢視動作的工作階段數。<br/><br/>**使用位置：**<br/> — 首頁<br/> — 類別<br/> — 產品詳細資料<br/> — 購物車<br/> — 確認&#x200B;<br/><br/>**建議的標籤：**<br/> — 最受歡迎<br/> — 趨勢<br/> — 目前最受歡迎<br/> — 最近最受歡迎<br/> — 受此產品啟發的熱門產品(PDP)<br/> — 最暢銷商品 |
 | 購買最多 | 建議購物者過去七天內最常購買的產品。<br/><br/>**使用位置：**<br/> — 首頁<br/> — 類別<br/> — 產品詳細資料<br/> — 購物車<br/> — 確認&#x200B;<br/><br/>**建議的標籤：**<br/> — 最受歡迎<br/> — 趨勢<br/> — 目前最受歡迎<br/> — 最近最受歡迎<br/> — 受此產品啟發的熱門產品(PDP)<br/> — 最暢銷商品 |
 | 加入購物車次數最多 | 建議購物者在過去七天內最常新增到購物車中的產品。 此建議型別可用於所有頁面。<br/><br/>**使用位置：**<br/> — 首頁<br/> — 類別<br/> — 產品詳細資料<br/> — 購物車<br/> — 確認&#x200B;<br/><br/>**建議的標籤：**<br/> — 最受歡迎<br/> — 趨勢<br/> — 目前最受歡迎<br/> — 最近最受歡迎<br/> — 受此產品啟發的熱門產品(PDP)<br/> — 最暢銷商品 |
-| 趨勢 | 根據產品在您網站上的人氣近期動向推薦產品。<br/><br/>Adobe Sensei會彙總您網站上的瀏覽與購買資料，以判斷與排名哪些產品最近受到購物者歡迎。 由於「趨勢」會分析最近的產品動向，因此對於營業額高的目錄來說，這是一種有效的建議型別。 如果您的目錄比較靜態，除非您對象的購物模式是高度變數，否則可能沒有用處。<br/><br/>當在首頁上使用時，Trending會推薦最近在整個網站都很受歡迎的產品。 趨勢分析顯示的不是持續受歡迎的產品，而是最近受歡迎的產品。 例如，如果您有促銷特定產品的電子郵件行銷活動，電子郵件產生的熱門程度增加會增加促銷產品歸類為趨勢的可能性。<br/><br/>**使用位置：**<br/> — 首頁<br/> — 類別<br/> — 產品詳細資料<br/> — 購物車<br/> — 確認&#x200B;<br/><br/>**建議的標籤：**<br/> — 趨勢<br/> — 目前趨勢<br/> — 最近趨勢<br/> — 熱門產品<br/> — 趨勢相關產品(PDP) |
+| 趨勢 | 根據產品在您網站上的人氣近期動向推薦產品。<br/><br/>Adobe AI會彙總您網站上的瀏覽和購買資料，以判斷和排名哪些產品最近受到購物者歡迎。 由於「趨勢」會分析最近的產品動向，因此對於營業額高的目錄來說，這是一種有效的建議型別。 如果您的目錄比較靜態，除非您對象的購物模式是高度變數，否則可能沒有用處。<br/><br/>當在首頁上使用時，Trending會推薦最近在整個網站都很受歡迎的產品。 趨勢分析顯示的不是持續受歡迎的產品，而是最近受歡迎的產品。 例如，如果您有促銷特定產品的電子郵件行銷活動，電子郵件產生的熱門程度增加會增加促銷產品歸類為趨勢的可能性。<br/><br/>**使用位置：**<br/> — 首頁<br/> — 類別<br/> — 產品詳細資料<br/> — 購物車<br/> — 確認&#x200B;<br/><br/>**建議的標籤：**<br/> — 趨勢<br/> — 目前趨勢<br/> — 最近趨勢<br/> — 熱門產品<br/> — 趨勢相關產品(PDP) |
 
 ## 高效能 {#highperf}
 

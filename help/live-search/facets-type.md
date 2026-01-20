@@ -1,7 +1,8 @@
 ---
 title: 多面向型別
 description: '[!DNL Live Search]個Facet是動態的，並在相關時出現在篩選器清單中。'
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: cd05c0c5-1028-4d66-951d-0b61c1ecc440
+source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 [!DNL Live Search]使用各種Facet型別，只有在相關時才會出現在&#x200B;*篩選器*&#x200B;清單中。 可用Facet清單會根據傳回的產品而變更。 下列特性會影響其顯示和行為：
 
 * 釘選Facet — 最常用的Facet可以釘選到清單頂端。 其餘的Facet會在釘選Facet之後以&#x200B;*排序型別*&#x200B;順序列出。
-* 動態Facet - [Adobe Sensei](https://www.adobe.com/sensei.html)找到與產品集和查詢最相關的產品屬性。 計算會考量整個目錄的屬性中繼資料，並在查詢時決定與查詢最相關的Facet。
+* 動態Facet - [Adobe AI](https://business.adobe.com/ai.html)找到與產品集和查詢最相關的產品屬性。 計算會考量整個目錄的屬性中繼資料，並在查詢時決定與查詢最相關的Facet。
 
   >[!NOTE]
   >
@@ -34,7 +35,7 @@ ht-degree: 0%
 
 ### Facet標籤
 
-針對[!DNL Commerce]個店面，Facet標籤是由&#x200B;[*屬性屬性*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=zh-Hant)所決定。 對於具有多個檢視的商店，可在&#x200B;*管理標籤*&#x200B;下定義其他標籤。 針對Headless實作，標籤是從[多面向工作區](faceting-workspace.md)中編輯。
+針對[!DNL Commerce]個店面，Facet標籤是由&#x200B;[*屬性屬性*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html)所決定。 對於具有多個檢視的商店，可在&#x200B;*管理標籤*&#x200B;下定義其他標籤。 針對Headless實作，標籤是從[多面向工作區](faceting-workspace.md)中編輯。
 
 ### 排序型別
 

@@ -4,7 +4,7 @@ description: 瞭解 [!DNL Adobe Commerce Optimizer] 用來改善搜尋與建議�
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: c102c558-a680-4622-80f0-6e5c34d497e9
-source-git-commit: 15a708db9a9a31798877ea3a400d5a9f6f930bda
+source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
 workflow-type: tm+mt
 source-wordcount: '1398'
 ht-degree: 0%
@@ -78,7 +78,7 @@ ht-degree: 0%
 - **行為** — 購物者在您網站上的參與度資料，例如產品檢視、加入購物車的商品和購買。
 - **目錄** — 產品中繼資料，例如名稱、價格、可用性等。
 
-Adobe Sensei會彙總行為和目錄資料，為每個建議型別建立Recommendations。 Recommendations服務接著會以包含建議產品&#x200B;_專案_&#x200B;的Widget形式，將這些建議部署至您的店面。
+Adobe AI會彙總行為和目錄資料，為每個建議型別建立Recommendations。 Recommendations服務接著會以包含建議產品&#x200B;_專案_&#x200B;的Widget形式，將這些建議部署至您的店面。
 
 有些建議型別會使用購物者的行為資料來訓練機器學習模型，以建立個人化建議。 其他建議型別僅使用目錄資料，不使用任何行為資料。 如果您想要在您的網站上快速開始使用Recommendations，可以使用`More like this`建議型別。
 
@@ -86,7 +86,7 @@ Adobe Sensei會彙總行為和目錄資料，為每個建議型別建立Recommen
 
 您何時可以開始使用使用使用行為資料的建議型別？ 視情況而定。 這稱為&#x200B;_冷啟動_&#x200B;問題。
 
-_Cold Start_&#x200B;問題是指模型訓練及生效所需的時間。 針對建議，這表示等候Adobe Sensei收集足夠的資料以訓練其機器學習模型，然後再將建議單位部署在您的網站上。 模型擁有的資料越多，建議就越準確和有用。 由於資料收集會在即時網站上進行，因此最好及早開始此程式。
+_Cold Start_&#x200B;問題是指模型訓練及生效所需的時間。 針對建議，這表示等候Adobe AI收集足夠的資料來訓練其機器學習模型，然後再將建議單位部署在您的網站上。 模型擁有的資料越多，建議就越準確和有用。 由於資料收集會在即時網站上進行，因此最好及早開始此程式。
 
 下錶針對收集每種建議型別的足夠資料所需時間提供一些一般指引：
 
@@ -148,7 +148,7 @@ _Cold Start_&#x200B;問題是指模型訓練及生效所需的時間。 針對�
 | CTR | `page-view`，`recs-request-sent`，`recs-response-received`，`recs-unit-render`，`recs-item-click`，`recs-add-to-cart-click` | `unitId`，`sku`，`parentSku` |
 | vCTR | `page-view`，`recs-request-sent`，`recs-response-received`，`recs-unit-render`，`recs-unit-view`，`recs-item-click`，`recs-add-to-cart-click` | `unitId`，`sku`，`parentSku` |
 
-下列事件並非建議所特有，但Adobe Sensei必須具備，才能正確解譯購物者資料：
+以下事件並非建議所特有，但Adobe AI必須具備，才能正確解讀購物者資料：
 
 - `view`
 - `add-to-cart`
@@ -174,4 +174,4 @@ _Cold Start_&#x200B;問題是指模型訓練及生效所需的時間。 針對�
 
 ## 支援
 
-如果您發現任何資料差異，或如果建議和搜尋結果未如預期運作，[請提交支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。
+如果您發現任何資料差異，或如果建議和搜尋結果未如預期運作，[請提交支援票證](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。
