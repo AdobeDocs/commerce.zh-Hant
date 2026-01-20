@@ -56,7 +56,7 @@ ht-degree: 0%
 
 ### 設定新的SaaS資料空間
 
-1. 在[Recommendations來源]區段中，按一下[編輯組態]。****
+1. 在[Recommendations來源]區段中，按一下[編輯組態]。**&#x200B;**
 
 1. 依照指示設定新的[[!DNL Commerce] 服務](/help/landing/saas.md)。
 
