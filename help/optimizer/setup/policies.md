@@ -2,11 +2,11 @@
 title: 原則
 description: 瞭解如何在 [!DNL Adobe Commerce Optimizer]中建立和管理原則。
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 exl-id: 77f524f6-e283-44d2-9c79-9d40f686a7bf
-source-git-commit: 845d93e367c8e2495943afe8c7d5d0a4bde990c2
+source-git-commit: 4f238b002d1481126d4fec0a249b7f9ff437248e
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '917'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ ht-degree: 0%
    1. **屬性** — 輸入目錄中的屬性。 例如，「part_category」。 此名稱必須與目錄中屬性的名稱完全相符。
    1. **運運算元** — 選擇運運算元。 例如，**IN**。&#x200B;
    1. **值Source** — 選取&#x200B;**STATIC**。&#x200B;
-   1. **值** — 輸入您先前指定之屬性定義的值。 例如，輸入「制動器」來建立制動零件的篩選器。&#x200B;URL值必須與屬性名稱完全相符。
+   1. **值** — 輸入您先前指定之屬性定義的值。 例如，輸入「制動器」來建立制動零件的篩選器。
    1. 若要儲存值，請按&#x200B;**Enter**。
 
       如果原則的設計是要依多個值篩選，請分別輸入每個值。
