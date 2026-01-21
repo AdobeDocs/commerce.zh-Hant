@@ -16,17 +16,17 @@ ht-degree: 0%
 
 您可以使用Admin中實用的組態選項自訂[!DNL Payment Services]以符合您的需求。
 
-當您在Admin中為[!DNL Payment Services]和[!DNL Adobe Commerce]設定[!DNL Magento Open Source]時，這些設定僅適用於&#x200B;_[!UICONTROL Method]_的_[!UICONTROL General Configuration]_&#x200B;欄位中設定的環境。 您在設定欄位中所做的任何變更與切換&#x200B;_[!UICONTROL Method]_選取專案無關 — 如果您切換方法，您的選取專案不會重設。
+當您在Admin中為[!DNL Payment Services]和[!DNL Adobe Commerce]設定[!DNL Magento Open Source]時，這些設定僅適用於&#x200B;_[!UICONTROL Method]_&#x200B;的_[!UICONTROL General Configuration]_&#x200B;欄位中設定的環境。 您在設定欄位中所做的任何變更與切換&#x200B;_[!UICONTROL Method]_&#x200B;選取專案無關 — 如果您切換方法，您的選取專案不會重設。
 
 ## 一般設定
 
-您可以為商店和[!DNL Payment Services]啟用&#x200B;_[!UICONTROL Merchant Location]_，並在_[!UICONTROL General Configuration]_&#x200B;區段中啟用沙箱測試或即時付款。
+您可以為商店和[!DNL Payment Services]啟用&#x200B;_[!UICONTROL Merchant Location]_，並在&#x200B;_[!UICONTROL General Configuration]_&#x200B;區段中啟用沙箱測試或即時付款。
 
 1. 在&#x200B;_管理員_&#x200B;側邊欄上，移至&#x200B;**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**。
 1. 在左側面板中，展開&#x200B;**[!UICONTROL Sales]**&#x200B;並選擇&#x200B;**[!UICONTROL Payment Methods]**。
-1. 設定&#x200B;_[!UICONTROL Merchant Country]_中的_[!UICONTROL Merchant Location]_&#x200B;欄位。 如果未指定&#x200B;_[!UICONTROL Merchant Country]_，則會使用一般設定的_[!UICONTROL Default Country]_。
-1. 展開&#x200B;_[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_區段以存取_[!UICONTROL [!DNL Payment Services]]_&#x200B;區段。
-1. 在&#x200B;_[!UICONTROL [!DNL Payment Services]]_區段中，展開_[!UICONTROL General Configuration]_&#x200B;區段。
+1. 設定&#x200B;_[!UICONTROL Merchant Country]_&#x200B;中的&#x200B;_[!UICONTROL Merchant Location]_&#x200B;欄位。 如果未指定&#x200B;_[!UICONTROL Merchant Country]_，則會使用一般設定的&#x200B;_[!UICONTROL Default Country]_。
+1. 展開&#x200B;_[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_&#x200B;區段以存取&#x200B;_[!UICONTROL [!DNL Payment Services]]_&#x200B;區段。
+1. 在&#x200B;_[!UICONTROL [!DNL Payment Services]]_&#x200B;區段中，展開&#x200B;_[!UICONTROL General Configuration]_&#x200B;區段。
 1. 針對&#x200B;**啟用**，將其設定為`Yes`以啟用您商店的[!DNL Payment Services]。
 1. 若為&#x200B;**方法**，若您仍在測試存放區的`Sandbox`，請將其設為[!DNL Payment Services]，或若您已準備啟用即時付款，請設為`Production`。
 1. 一旦您設定&#x200B;**[!UICONTROL Payment Services Sandbox ID]** Commerce服務聯結器&#x200B;**[!UICONTROL Payment Services Production ID]**&#x200B;並首次造訪[儀表板，系統就會自動填入您的](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas){target=_blank}和[!DNL Payment Services]值。 執行此動作以完成您的沙箱和/或生產環境的上線。 這些值會將您的SaaS ID與[!DNL Payment Services]建立關聯。
@@ -60,8 +60,8 @@ ht-degree: 0%
 
 1. 在&#x200B;_管理員_&#x200B;側邊欄上，移至&#x200B;**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**。
 1. 在左側面板中，展開&#x200B;**[!UICONTROL Sales]**&#x200B;並選擇&#x200B;**[!UICONTROL Payment Methods]**。
-1. 展開&#x200B;_[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_區段。
-1. 在&#x200B;_[!UICONTROL Payment Services]_區段中，展開_[!UICONTROL Credit Card Fields]_&#x200B;區段。
+1. 展開&#x200B;_[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_&#x200B;區段。
+1. 在&#x200B;_[!UICONTROL Payment Services]_&#x200B;區段中，展開&#x200B;_[!UICONTROL Credit Card Fields]_&#x200B;區段。
 1. 針對&#x200B;**[!UICONTROL Title]**，輸入文字（如有需要）以變更結帳時顯示的付款方式名稱。
 1. 若要[設定付款動作](production.md#set-payment-services-as-payment-method)，請選取&#x200B;**[!UICONTROL Authorize]**&#x200B;或&#x200B;**授權並擷取**。
 1. 若要優先處理結帳頁面上的付款方法，請在`Numeric Only`欄位中提供&#x200B;**[!UICONTROL Sort order]**&#x200B;值。
@@ -94,8 +94,8 @@ ht-degree: 0%
 
 1. 在&#x200B;_管理員_&#x200B;側邊欄上，移至&#x200B;**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**。
 1. 在左側面板中，展開&#x200B;**[!UICONTROL Sales]**&#x200B;並選擇&#x200B;**[!UICONTROL Payment Methods]**。
-1. 展開&#x200B;_[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_區段。
-1. 在&#x200B;_[!UICONTROL Payment Services]_區段中，展開_[!UICONTROL Fastlane]_&#x200B;區段。
+1. 展開&#x200B;_[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_&#x200B;區段。
+1. 在&#x200B;_[!UICONTROL Payment Services]_&#x200B;區段中，展開&#x200B;_[!UICONTROL Fastlane]_&#x200B;區段。
 1. 若要啟用它，請為`Yes`選取&#x200B;**[!UICONTROL Enable Fastlane]** （`No`停用它）。
 
    >[!NOTE]
@@ -132,8 +132,8 @@ ht-degree: 0%
 >
 >不符合協助工具指引的樣式會回覆為預設設定。
 
-1. 在&#x200B;_[!UICONTROL Payment Services]_區段中，導覽至_[!UICONTROL Fastlane]_&#x200B;區段。
-1. 展開&#x200B;_[!UICONTROL Advanced Style Settings (optional)]_區段。
+1. 在&#x200B;_[!UICONTROL Payment Services]_&#x200B;區段中，導覽至&#x200B;_[!UICONTROL Fastlane]_&#x200B;區段。
+1. 展開&#x200B;_[!UICONTROL Advanced Style Settings (optional)]_&#x200B;區段。
 1. 視需要修改設定。
 1. 按一下&#x200B;**[!UICONTROL Save Config]**&#x200B;以儲存變更。
 
@@ -174,8 +174,8 @@ ht-degree: 0%
 
 1. 在&#x200B;_管理員_&#x200B;側邊欄上，移至&#x200B;**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**。
 1. 在左側面板中，展開&#x200B;**[!UICONTROL Sales]**&#x200B;並選擇&#x200B;**[!UICONTROL Payment Methods]**。
-1. 展開&#x200B;_[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_區段。
-1. 在&#x200B;_[!UICONTROL Payment Services]_區段中，展開_[!UICONTROL Apple Pay]_&#x200B;區段。
+1. 展開&#x200B;_[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_&#x200B;區段。
+1. 在&#x200B;_[!UICONTROL Payment Services]_&#x200B;區段中，展開&#x200B;_[!UICONTROL Apple Pay]_&#x200B;區段。
 1. 針對&#x200B;**[!UICONTROL Title]**，輸入文字（如有需要）以變更結帳時顯示的付款方式名稱。
 1. 若要[設定付款動作](production.md#set-payment-services-as-payment-method)，請選取&#x200B;**[!UICONTROL Authorize]**&#x200B;或&#x200B;**[!UICONTROL Authorize and Capture]**。
 1. 視需要選取下列選項中的[!DNL Apple Pay]，指定在Adobe Commerce中啟用`Yes`選項的位置：
@@ -208,8 +208,8 @@ ht-degree: 0%
 
 1. 在&#x200B;_管理員_&#x200B;側邊欄上，移至&#x200B;**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**。
 1. 在左側面板中，展開&#x200B;**[!UICONTROL Sales]**&#x200B;並選擇&#x200B;**[!UICONTROL Payment Methods]**。
-1. 展開&#x200B;_[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_區段。
-1. 在&#x200B;_[!UICONTROL Payment Services]_區段中，展開_[!UICONTROL Google Pay]_&#x200B;區段。
+1. 展開&#x200B;_[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_&#x200B;區段。
+1. 在&#x200B;_[!UICONTROL Payment Services]_&#x200B;區段中，展開&#x200B;_[!UICONTROL Google Pay]_&#x200B;區段。
 1. （選擇性）在&#x200B;**[!UICONTROL Title]**&#x200B;欄位中輸入新名稱，變更結帳時顯示的付款方式名稱。
 1. [選取](production.md#set-payment-services-as-payment-method)或&#x200B;**[!UICONTROL Authorize]**&#x200B;以設定付款動作&#x200B;**[!UICONTROL Authorize and Capture]**。
 1. 視需要選取下列選項中的[!DNL Google Pay]，指定在Adobe Commerce中啟用`Yes`選項的位置：
@@ -219,7 +219,7 @@ ht-degree: 0%
    * **[!UICONTROL Show Google Pay on cart page]**
 1. 若要啟用&#x200B;**[!UICONTROL 3D Secure authentication]** （預設為`Off`），請選擇`Always`或`When required`。
 1. 若要啟用偵錯模式，請為`Yes`選取&#x200B;**[!UICONTROL Debug Mode]** （`No`停用它）。
-1. 視需要選取&#x200B;_[!UICONTROL Google Pay]_、**[!UICONTROL Button Color]**和&#x200B;**[!UICONTROL Button Type]**，以設定&#x200B;**[!UICONTROL Button Style]**按鈕的外觀。
+1. 視需要選取&#x200B;_[!UICONTROL Google Pay]_、**[!UICONTROL Button Color]**&#x200B;和&#x200B;**[!UICONTROL Button Type]**，以設定&#x200B;**[!UICONTROL Button Style]**&#x200B;按鈕的外觀。
 1. 若要設定高度，請使用&#x200B;**[!UICONTROL Button Style]**&#x200B;中定義之高度的預設值。
 1. 若要儲存變更，請按一下「**[!UICONTROL Save Config]**」。
 1. 導覽至&#x200B;**[!UICONTROL System]** > **[!UICONTROL Cache Management]**，然後按一下&#x200B;**[!UICONTROL Flush Cache]**&#x200B;以重新整理所有無效的快取。
@@ -254,9 +254,9 @@ ht-degree: 0%
 
 1. 在&#x200B;_管理員_&#x200B;側邊欄上，移至&#x200B;**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**。
 1. 在左側面板中，展開&#x200B;**[!UICONTROL Sales]**&#x200B;並選擇&#x200B;**[!UICONTROL Payment Methods]**。
-1. 展開&#x200B;_[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_區段。
-1. 在&#x200B;_[!UICONTROL Payment Services]_區段中，展開_[!UICONTROL PayPal payment buttons]_&#x200B;區段。
-1. 若要變更結帳時顯示的付款方式名稱，請編輯&#x200B;_[!UICONTROL Title]_欄位。
+1. 展開&#x200B;_[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_&#x200B;區段。
+1. 在&#x200B;_[!UICONTROL Payment Services]_&#x200B;區段中，展開&#x200B;_[!UICONTROL PayPal payment buttons]_&#x200B;區段。
+1. 若要變更結帳時顯示的付款方式名稱，請編輯&#x200B;_[!UICONTROL Title]_&#x200B;欄位。
 1. 若要[設定付款動作](production.md#set-payment-services-as-payment-method)，請選取&#x200B;**[!UICONTROL Authorize]**&#x200B;或&#x200B;**[!UICONTROL Authorize and Capture]**。
 1. 若要優先處理結帳頁面上的付款方法，請在`Numeric Only`欄位中提供&#x200B;**[!UICONTROL Sort order]**&#x200B;值。
 1. 若要啟用/停用[稍後付款訊息](payments-options.md#pay-later-button)，請為`Yes`選取`No`/**[!UICONTROL Display Pay Later Message]**。
@@ -294,12 +294,12 @@ ht-degree: 0%
 
 ## 按鈕樣式
 
-您也可以設定付款按鈕的&#x200B;_[!UICONTROL Button style]_選項：
+您也可以設定付款按鈕的&#x200B;_[!UICONTROL Button style]_&#x200B;選項：
 
 1. 在&#x200B;_管理員_&#x200B;側邊欄上，移至&#x200B;**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**。
 1. 在左側面板中，展開&#x200B;**[!UICONTROL Sales]**&#x200B;並選擇&#x200B;**[!UICONTROL Payment Methods]**。
-1. 展開&#x200B;_[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_區段。
-1. 在&#x200B;_[!UICONTROL [!DNL Payment Services]]_區段中，展開_[!UICONTROL PayPal Smart Button Styling]_&#x200B;區段。
+1. 展開&#x200B;_[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_&#x200B;區段。
+1. 在&#x200B;_[!UICONTROL [!DNL Payment Services]]_&#x200B;區段中，展開&#x200B;_[!UICONTROL PayPal Smart Button Styling]_&#x200B;區段。
 1. 若要設定配置，請為`Vertical`選取`Horizontal`或&#x200B;**[!UICONTROL Layout]**
 1. 若要設定顏色，請在&#x200B;**[!UICONTROL Color]**&#x200B;中選取可用的顏色。
 1. 若要設定圖案，請為`Rectangular`選取`Pill`或&#x200B;**[!UICONTROL Shape]**。
