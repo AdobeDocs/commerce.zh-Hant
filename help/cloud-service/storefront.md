@@ -5,10 +5,10 @@ feature: Storefront
 role: Developer
 level: Beginner
 exl-id: 02928dc4-1777-483e-b0ee-b04fc813864d
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
-source-git-commit: 6eda2197fde2e88292e58b2bb4fc4759f24da558
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+source-git-commit: 0cd9749574460374a8fe875f1eff54f2a4a8d614
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '250'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 若要為[!DNL Adobe Commerce Storefront] (SaaS)設定由[!DNL Edge Delivery Services]提供支援的[!DNL Adobe Commerce as a Cloud Service]，請完成下列步驟。
 
-如需更可自訂且更詳細的逐步解說，請參閱[店面檔案](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=zh-Hant)。
+如需更可自訂且更詳細的逐步解說，請參閱[店面檔案](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/)。
 
 1. 開啟[網站建立者工具](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator)。
 
@@ -44,7 +44,8 @@ ht-degree: 0%
 
 如需詳細資訊，請參閱下列文章：
 
-* 若要進一步瞭解如何管理和顯示店面中的內容和資料，請參閱[更新店面內容](./use-cases.md#update-storefront-content)。
-* 如需內容實驗功能的詳細資訊，請參閱[內容實驗](./use-cases.md#contextual-experimentation)。
-* 如需使用Generative AI自動產生高品質內容的詳細資訊，請參閱[產生變數](./use-cases.md#generate-variations)。
-* 若要進一步瞭解如何更新網站內容以及與Commerce前端元件和後端資料整合，請參閱[[!DNL Adobe Commerce Storefront documentation]](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant)。
+* [正在更新店面內容](./use-cases.md#update-storefront-content) — 管理和顯示店面上的內容和資料。
+* [情境式實驗](./use-cases.md#contextual-experimentation) — 在您的店面建立和管理實驗。
+* [產生變數](./use-cases.md#generate-variations) — 使用Generative AI自動產生高品質的內容。
+* [Adobe Commerce Storefront檔案](https://experienceleague.adobe.com/developer/commerce/storefront/) — 取得有關更新網站內容以及與Commerce前端元件和後端資料整合的詳細資訊。
+* [組態服務](https://www.aem.live/docs/config-service-setup) — 瞭解如何從`config.json`移轉您的店面組態以使用組態服務，此服務支援進階使用案例，例如重複設定和覆蓋。
