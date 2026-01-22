@@ -2,11 +2,11 @@
 title: 什麼是Adobe Commerce Optimizer？
 description: 瞭解 [!DNL Adobe Commerce Optimizer] 及其主要功能。
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: 8cf3e66641cf4bbc6db1da1dec14f7aaa291d6fe
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '913'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 請觀看下列影片以瞭解[!DNL Adobe Commerce Optimizer]的高階概觀：
 
->[!VIDEO](https://video.tv.adobe.com/v/3450474?captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3450226)
 
 ## 誰從[!DNL Adobe Commerce Optimizer]中受益最大？
 
@@ -84,6 +84,10 @@ ht-degree: 0%
 - **之前和之後的量度** — 提供商務方案效能的即時深入分析。 您可以檢視特定KPI的結果之前和之後，並評估變更的影響和最佳化以獲得更好的結果。 您可以在PDF中匯出結果。
 - **由Edge Delivery提供支援的Commerce店面** — 透過Edge傳送，您可以使用具有整合式商務功能的預先建立店面元件來快速啟動您的網站 — 包括產品清單頁面、產品詳細資料頁面、購物車和結帳。
 - **第三方購物車和結帳** — 使用API網狀和App Builder來整合第三方購物車和結帳系統。
+
+>[!NOTE]
+>
+>若要瞭解[!DNL Adobe Commerce Optimizer]功能的系統界限和授權，請參閱[限制和界限](boundaries-limits.md)主題。
 
 ## 架構
 
