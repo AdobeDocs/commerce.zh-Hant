@@ -2,7 +2,7 @@
 title: 設定您的店面
 description: 瞭解如何設定您的 [!DNL Adobe Commerce Optimizer] 店面。
 role: Developer
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案(Adobe管理的SaaS基礎結構)。"
 exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
 source-git-commit: 0cd9749574460374a8fe875f1eff54f2a4a8d614
 workflow-type: tm+mt
@@ -218,28 +218,28 @@ ht-degree: 0%
 
 如果問題仍然存在：
 
-* 檢閱[Adobe Commerce Storefront檔案](https://experienceleague.adobe.com/developer/commerce/storefront/)
+* 檢閱[Adobe Commerce Storefront檔案](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant)
 * 檢視[Adobe Commerce Optimizer開發人員指南](https://developer.adobe.com/commerce/services/optimizer/)
-* 造訪[Adobe Commerce支援資源](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
+* 造訪[Adobe Commerce支援資源](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/overview)
 
 ## 後續步驟
 
 設定並驗證店面後，您可以：
 
-1. **[安裝Sidekick](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#install-and-configure-sidekick)** — 瀏覽器擴充功能，以便直接從您的網站編輯、預覽和發佈內容。
+1. **[安裝Sidekick](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=zh-Hant#install-and-configure-sidekick)** — 瀏覽器擴充功能，以便直接從您的網站編輯、預覽和發佈內容。
 
-2. **[設定本機開發環境](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#set-up-local-environment)** — 建立本機環境，以自訂您的店面程式碼和內容。
+2. **[設定本機開發環境](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=zh-Hant#set-up-local-environment)** — 建立本機環境，以自訂您的店面程式碼和內容。
 
 ### 學習與探索
 
 * **[完成端對端使用案例](./use-case/admin-use-case.md)** — 深入瞭解使用[!DNL Adobe Commerce Optimizer]的店面設定和目錄管理。
 
-* **[探索店面自訂](https://experienceleague.adobe.com/developer/commerce/storefront/setup/)** — 瞭解進階設定和組態選項。
+* **[探索店面自訂](https://experienceleague.adobe.com/developer/commerce/storefront/setup/?lang=zh-Hant)** — 瞭解進階設定和組態選項。
 
-* **[使用Commerce下拉式功能表來自訂店面體驗](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)** — 新增預先建立的元件以強化您的店面體驗。
+* **[使用Commerce下拉式功能表來自訂店面體驗](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=zh-Hant)** — 新增預先建立的元件以強化您的店面體驗。
 
 * **移轉至Storefront Configuration Service** — 建立初始店面後，您可以移轉組態以使用Configuration Service，其支援進階使用案例，例如重複設定與覆蓋。 如需詳細資訊，請參閱Adobe Experience Manager中的[設定服務](https://www.aem.live/docs/config-service-setup)檔案。
 
 >[!MORELIKETHIS]
 >
-> 請參閱[Adobe Commerce Storefront檔案](https://experienceleague.adobe.com/developer/commerce/storefront/)，深入瞭解如何更新網站內容以及整合Commerce前端元件和後端資料。
+> 請參閱[Adobe Commerce Storefront檔案](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant)，深入瞭解如何更新網站內容以及整合Commerce前端元件和後端資料。
