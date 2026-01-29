@@ -46,4 +46,4 @@ ht-degree: 9%
    - [GraphQL](graphql.md)
    - [設定](settings.md)
 - [開發人員指南](https://developer.adobe.com/commerce/services/shared-services/storefront-events/)
-- [返回Commerce服務首頁](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [返回Commerce服務首頁](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=zh-Hant)
