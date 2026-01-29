@@ -10,7 +10,7 @@ ht-degree: 0%
 
 # 從搜尋配接卡移轉至PLP Widget
 
-搜尋配接器自[ 4.0.0起已](release-notes.md#live-search-400)淘汰[!DNL Live Search]，將只接收安全性更新。 [產品清單頁面(PLP) Widget](plp-styling.md)是日後所有[!DNL Live Search]實作的支援解決方案。 本指南可協助您瞭解何時可直接進行移轉，以及何時需要其他工作。
+搜尋配接器自[&#x200B; 4.0.0起已](release-notes.md#live-search-400)淘汰[!DNL Live Search]，將只接收安全性更新。 [產品清單頁面(PLP) Widget](plp-styling.md)是日後所有[!DNL Live Search]實作的支援解決方案。 本指南可協助您瞭解何時可直接進行移轉，以及何時需要其他工作。
 
 ## 先決條件
 
