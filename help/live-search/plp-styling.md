@@ -2,9 +2,9 @@
 title: 產品清單頁面Widget
 description: 啟用 [!DNL Live Search Product Listing Page Widget]並設定樣式
 exl-id: 50ba8046-869a-4071-b3a3-a6392544c07b
-source-git-commit: 7684d5cded63f2b0805ee307dff77932607c47eb
+source-git-commit: c0a6f038d2528a67da6f1bb4f5e5bb140afc7dfc
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '518'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,14 @@ ht-degree: 0%
 
 預設會為新安裝啟用[!DNL Live Search] PLP Widget。
 
-如果您正在升級[!DNL Live Search]，而且PLP Widget已關閉，則會維持關閉。 若要開啟：
+如果您正在升級[!DNL Live Search]，而且PLP Widget已關閉，則會維持關閉。
+
+>[!NOTE]
+>
+>如果您要從已棄用的搜尋配接器移轉，請參閱[移轉指南](migrate-to-plp.md)，以取得有關案例、必要條件和逐步指示的詳細指引。
+
+若要開啟PLP Widget：
+
 1. 在Adobe Commerce管理員中，前往儲存→設定→設定。
 1. 在左側導覽中，按一下&#x200B;**[!UICONTROL Live Search]** > **[!UICONTROL Storefront Features]**。
 1. 按一下[!UICONTROL Storefront Features]區段。

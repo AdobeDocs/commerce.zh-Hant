@@ -3,10 +3,10 @@ user-guide-title: '[!DNL Live Search] 指南'
 user-guide-description: 本指南提供使用Adobe Commerce中 [!DNL Live Search] 的詳細指示。
 role: Admin
 feature: Services, Search
-source-git-commit: 2796cefcc9edf6247efdb9ad275048566e94c559
+source-git-commit: c0a6f038d2528a67da6f1bb4f5e5bb140afc7dfc
 workflow-type: tm+mt
-source-wordcount: '77'
-ht-degree: 10%
+source-wordcount: '81'
+ht-degree: 9%
 
 ---
 
@@ -22,6 +22,7 @@ ht-degree: 10%
    - [店面Widget](storefront-widgets.md)
    - [產品清單頁面](plp-styling.md)
    - [店面 [!DNL Popover]](storefront-popover.md)
+   - [移轉至PLP Widget](migrate-to-plp.md)
 - 管理員 {#live-search-admin}
    - [效能](performance.md)
    - Facet {#facets}
@@ -45,4 +46,4 @@ ht-degree: 10%
    - [GraphQL](graphql.md)
    - [設定](settings.md)
 - [開發人員指南](https://developer.adobe.com/commerce/services/shared-services/storefront-events/)
-- [返回Commerce服務首頁](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=zh-Hant)
+- [返回Commerce服務首頁](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
