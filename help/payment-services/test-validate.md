@@ -19,7 +19,7 @@ ht-degree: 0%
 在沙箱環境中測試[!DNL Payment Services]是重要的驗證步驟，即使它是僅連線到PayPal沙箱的模擬環境，而不是連線到真正的銀行和商家。
 
 1. 使用[信用卡欄位](payments-options.md#credit-card-fields)或任何[PayPal付款按鈕](payments-options.md#paypal-smart-buttons)，完成從商店成功結帳。 請參閱[測試認證](#testing-credentials)，以取得使用假信用卡進行測試的詳細資訊。
-1. 擷取（當您的付款動作是[設定為`Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)時）、[退款](refunds.md)或[void](voids.md)剛完成的訂單。 如果您的付款動作設為[而非](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"}，您也可以`Authorize`為訂單建立發票`Authorize and Capture`。
+1. 擷取（當您的付款動作是[設定為`Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)時）、[退款](refunds.md)或[void](voids.md)剛完成的訂單。 如果您的付款動作設為[而非](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"}，您也可以`Authorize`為訂單建立發票`Authorize and Capture`。
 1. 在24到48小時內，檢視[付款報表](payouts.md)中的交易與其他資訊。
 1. 在[訂單付款狀態報表](order-payment-status.md)中檢視訂單詳細資料。
 
