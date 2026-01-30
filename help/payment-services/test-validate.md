@@ -3,9 +3,9 @@ title: 測試及驗證
 description: 測試和驗證可確保 [!DNL Payment Services] 功能如預期般運作，並為您的客戶提供最佳付款選項
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: b75cad4fd71b5ab9c0199ca47800c36cbd1ae76c
+source-git-commit: 91a4b8fa7228fb91c8ee0bf0a1623d104f061894
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '729'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 在沙箱環境中測試[!DNL Payment Services]是重要的驗證步驟，即使它是僅連線到PayPal沙箱的模擬環境，而不是連線到真正的銀行和商家。
 
 1. 使用[信用卡欄位](payments-options.md#credit-card-fields)或任何[PayPal付款按鈕](payments-options.md#paypal-smart-buttons)，完成從商店成功結帳。 請參閱[測試認證](#testing-credentials)，以取得使用假信用卡進行測試的詳細資訊。
-1. 擷取（當您的付款動作是[設定為`Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)時）、[退款](refunds.md)或[void](voids.md)剛完成的訂單。 如果您的付款動作設為[而非](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"}，您也可以`Authorize`為訂單建立發票`Authorize and Capture`。
+1. 擷取（當您的付款動作是[設定為`Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)時）、[退款](refunds.md)或[void](voids.md)剛完成的訂單。 如果您的付款動作設為[而非](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"}，您也可以`Authorize`為訂單建立發票`Authorize and Capture`。
 1. 在24到48小時內，檢視[付款報表](payouts.md)中的交易與其他資訊。
 1. 在[訂單付款狀態報表](order-payment-status.md)中檢視訂單詳細資料。
 
@@ -49,6 +49,17 @@ ht-degree: 0%
 
 如果端點的回應時間少於5秒，PayPal會在快顯視窗中顯示錯誤訊息。
 
+#### Apple Pay本機開發
+
+Apple Pay需要額外的設定才能進行本機開發。 Apple Pay使用網域註冊來驗證您的網站是否有權接受Apple Pay付款。 這表示Apple必須能夠連線到您的網域，以驗證位於`/.well-known/apple-developer-merchantid-domain-association`的網域驗證檔案。
+
+對於本機開發，您的環境必須符合以下要求：
+
+* **可公開存取**，Apple必須能夠透過網際網路存取您的網域。
+* **HTTPS通訊協定**，Apple Pay僅適用於安全連線。
+
+使用[ngrok](https://ngrok.com/)之類的通道服務符合兩個要求。 依照上述方式設定ngrok之後，使用[ngrok](https://developer.paypal.com/docs/checkout/apm/apple-pay/#link-registeryoursandboxdomains) URL在PayPal中&#x200B;**註冊您的沙箱網域**。
+
 ### 測試認證
 
 在測試及驗證您的沙箱時，您必須使用假的信用卡號碼，這樣您就不會對現有信用卡帳戶建立真正的費用。
@@ -76,5 +87,7 @@ ht-degree: 0%
 使用真正的信用卡和PayPal帳戶完成您的生產測試，測試付款的整個生命週期，包括擷取和退款。 在測試期間完成整個結帳和付款流程，可讓您清楚瞭解當即時購物者使用您的[!DNL Payment Services]功能時將會如何運作。
 
 您也應確認出現在銀行對帳單上，用於生產測試之付款方式的資訊正確且符合預期（包括業務說明）。
+
+### 在生產環境中測試Apple Pay
 
 若要在生產模式下測試Apple Pay，您必須[註冊您的生產網域](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain)。
