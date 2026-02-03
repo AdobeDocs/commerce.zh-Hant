@@ -1,11 +1,11 @@
 ---
 title: 建立和管理建議
 description: 瞭解如何建立和管理建議。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: ca0e786da6d23364d27d69ccf0fc5ded1f39f46e
 workflow-type: tm+mt
-source-wordcount: '1365'
+source-wordcount: '1428'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ _建議單位_
 
    - **啟動**&#x200B;以啟用店面上的推薦單位。
 
-1. 出現提示時，複製建議ID。 使用此ID可協助您識別在Edge Delivery Services店面的建議下拉式清單中使用的建議單位。
+   您的建議會顯示在Recommendations工作區上。 若要在店面使用建議，您必須尋找[建議ID](#get-recommendation-id)。
 
 >[!NOTE]
 >
@@ -50,6 +50,22 @@ _建議單位_
 >[!IMPORTANT]
 >
 >有些瀏覽器可能會封鎖導致Recommendations無法如預期運作的重要指令碼。
+
+## 取得建議ID
+
+建立建議後，您需要擷取其ID，以在您的店面實施建議單位。
+
+1. 在&#x200B;**Recommendations**&#x200B;頁面上，選取建議。
+
+1. 按一下建議名稱旁邊的資訊圖示（![資訊圖示](../../assets/info-icon.png)）。
+
+   顯示&#x200B;**建議單位詳細資料**&#x200B;頁面。
+
+   ![取得建議ID](../../assets/get-rec-id.png)
+
+1. 在&#x200B;**建議ID**&#x200B;區段中，複製ID。
+
+1. 使用此ID在您的Edge Delivery Services店面設定[建議放置區](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/)。
 
 ## 管理現有的建議
 
