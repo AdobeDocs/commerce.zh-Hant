@@ -1,7 +1,7 @@
 ---
 title: 建立和管理建議
 description: 瞭解如何建立和管理建議。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
 source-git-commit: ca0e786da6d23364d27d69ccf0fc5ded1f39f46e
 workflow-type: tm+mt
@@ -65,7 +65,7 @@ _建議單位_
 
 1. 在&#x200B;**建議ID**&#x200B;區段中，複製ID。
 
-1. 使用此ID在您的Edge Delivery Services店面設定[建議放置區](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/)。
+1. 使用此ID在您的Edge Delivery Services店面設定[建議放置區](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/?lang=zh-Hant)。
 
 ## 管理現有的建議
 
