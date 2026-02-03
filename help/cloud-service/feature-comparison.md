@@ -16,9 +16,9 @@ ht-degree: 0%
 
 Adobe Commerce提供三種部署模式：
 
-- 僅[!BADGE SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"} [Adobe Commerce as a Cloud Service](overview.md) (SaaS)
-- 僅[!BADGE PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce 。"} [雲端上的Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) (PaaS)
-- [Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview) （內部部署）
+- 僅[!BADGE SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"} [Adobe Commerce as a Cloud Service](overview.md) (SaaS)
+- 僅[!BADGE PaaS]{type=Informative url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce 。"} [雲端上的Adobe Commerce](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/overview) (PaaS)
+- [Adobe Commerce](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/overview) （內部部署）
 
 這項比較著重於軟體即服務(SaaS)和平台即服務(PaaS)模式之間的差異。 這些模型提供不同等級的自訂性、擴充性，以及對Commerce實作的控制。
 
@@ -28,7 +28,7 @@ Adobe Commerce提供三種部署模式：
 
 ## 商店管理功能
 
-[Commerce管理UI](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/guide-overview)是存取功能的主要介面，可管理後端商店作業、庫存、定價、促銷和客戶互動。 但是，[!DNL Adobe Commerce as a Cloud Service]提供獨特的解決方案，取代[!DNL Adobe Commerce on Cloud]和內部部署專案中某些已知的功能。
+[Commerce管理UI](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/guide-overview)是存取功能的主要介面，可管理後端商店作業、庫存、定價、促銷和客戶互動。 但是，[!DNL Adobe Commerce as a Cloud Service]提供獨特的解決方案，取代[!DNL Adobe Commerce on Cloud]和內部部署專案中某些已知的功能。
 
 下表說明[!DNL Adobe Commerce as a Cloud Service]中可用的功能和取代解決方案：
 
@@ -36,29 +36,29 @@ Adobe Commerce提供三種部署模式：
     <thead>
         <tr>
             <th>功能</th>
-            <th>Adobe Commerce PaaS模型[!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案。"}</th>
-            <th>SaaS模型[!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"}</th>
+            <th>Adobe Commerce PaaS模型[!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案。"}</th>
+            <th>SaaS模型[!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"}</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td>數位資產管理</td>
-            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/gallery/media-gallery-asset-management">媒體集</a></td>
+            <td><a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/content-design/wysiwyg/gallery/media-gallery-asset-management">媒體集</a></td>
             <td><a href="../aem-assets-integration/overview.md">產品視覺效果</a></td>
         </tr>
         <tr>
             <td>內容管理</td>
-            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/guide-overview">內容管理系統(CMS)</a>，<a href="https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/guide-overview">頁面產生器</a>，<a href="https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite">URL重寫</a></td>
-            <td><a href="https://experienceleague.adobe.com/developer/commerce/storefront/merchants/get-started/">店面建置器</a></td>
+            <td><a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/content-design/guide-overview">內容管理系統(CMS)</a>，<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/page-builder/guide-overview">頁面產生器</a>，<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite">URL重寫</a></td>
+            <td><a href="https://experienceleague.adobe.com/developer/commerce/storefront/merchants/get-started/?lang=zh-Hant">店面建置器</a></td>
         </tr>
         <tr>
             <td>目錄銷售</td>
-            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging">內容暫存</a>，<a href="https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/merchandising/visual-merch/visual-merchandiser">Visual Merchandiser</a></td>
+            <td><a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/content-design/staging/content-staging">內容暫存</a>，<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/marketing/merchandising/visual-merch/visual-merchandiser">Visual Merchandiser</a></td>
             <td><a href="../catalog-service/overview.md">目錄服務</a></td>
         </tr>
         <tr>
             <td>付款</td>
-            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/payments">支付解決方案</a></td>
+            <td><a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/payments/payments">支付解決方案</a></td>
             <td><a href="../payment-services/guide-overview.md">付款服務</a></td>
         </tr>
         <tr>
@@ -75,7 +75,7 @@ Adobe Commerce提供三種部署模式：
     <tfoot>
         <tr>
             <td colspan="3">
-                <sup>1</sup>核心<a href="https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/guide-overview">B2B功能</a> （例如公司管理和報價）可在SaaS中立即使用。 不過，產業專屬的自訂可能需要額外的實施考量因素。
+                <sup>1</sup>核心<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/b2b/guide-overview">B2B功能</a> （例如公司管理和報價）可在SaaS中立即使用。 不過，產業專屬的自訂可能需要額外的實施考量因素。
             </td>
         </tr>
     </tfoot>
@@ -89,8 +89,8 @@ Adobe Commerce提供三種部署模式：
     <thead>
         <tr>
             <th>功能</th>
-            <th>Adobe Commerce PaaS模型[!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案。"}</th>
-            <th>SaaS模型[!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"}</th>
+            <th>Adobe Commerce PaaS模型[!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案。"}</th>
+            <th>SaaS模型[!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"}</th>
         </tr>
     </thead>
     <tbody>
