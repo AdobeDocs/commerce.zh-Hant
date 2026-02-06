@@ -16,7 +16,7 @@ ht-degree: 0%
 
 完成下列步驟，以使用必要的套件程式碼和中繼資料設定AEM Assets專案，以便從AEM製作環境管理Commerce資產：
 
-1. [瞭解 ](#aem-commerce-assets-commerce-package-contents)
+1. [瞭解 &#x200B;](#aem-commerce-assets-commerce-package-contents)
 
 1. [完成安裝步驟以設定AEM Assets專案以支援Commerce中繼資料](#step-1-install-the-assets-commerce-package)
 
@@ -173,13 +173,13 @@ Adobe提供AEM Commerce套件程式碼`assets-commerce`，將Commerce名稱空�
      ./jcr:content/metadata/commerce:isCommerce
      ```
 
-1. 選填。 若要自動同步處理上傳至AEM Assets環境的已核准Commerce資產，請在&#x200B;_[!UICONTROL Review Status]_索引標籤上將`Basic`欄位的預設值設為`approved`。
+1. 選填。 若要自動同步處理上傳至AEM Assets環境的已核准Commerce資產，請在&#x200B;_[!UICONTROL Review Status]_&#x200B;索引標籤上將`Basic`欄位的預設值設為`approved`。
 
 1. 儲存更新。
 
 ### 將中繼資料設定檔套用至Commerce資產來源檔案夾
 
-1. 從[!UICONTROL  Metadata Profiles]頁面，選取Commerce整合設定檔。
+1. 從[!UICONTROL &#x200B; Metadata Profiles]頁面，選取Commerce整合設定檔。
 
 1. 從動作功能表中選取&#x200B;**[!UICONTROL Apply Metadata Profiles to Folders]**。
 
