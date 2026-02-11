@@ -48,7 +48,7 @@ Adobe Commerce會自動將無法設定的預設篩選器套用至建議單位。
 
 >[!NOTE]
 >
->對於B2B商家，類別篩選器會遵守您已設定的任何[客戶特定產品類別](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html)。
+>對於B2B商家，類別篩選器會遵守您已設定的任何[客戶特定產品類別](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html?lang=zh-Hant)。
 
 當您將建議部署至頁面型別時，Adobe Commerce建議您使用以下類別篩選設定：
 
@@ -78,11 +78,11 @@ Adobe Commerce會自動將無法設定的預設篩選器套用至建議單位。
 
 ### 價格
 
-根據產品價格的篩選器會使用最終價格來執行比較。 最終價格包含匿名購物者可享有的任何折扣。 針對B2B商家，顯示的價格會反映您已設定的[客戶特定群組價格](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html)。
+根據產品價格的篩選器會使用最終價格來執行比較。 最終價格包含匿名購物者可享有的任何折扣。 針對B2B商家，顯示的價格會反映您已設定的[客戶特定群組價格](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=zh-Hant)。
 
 ### 庫存狀態
 
 下列排除篩選器可用於根據庫存狀態篩選產品：
 
 - 無庫存 — （僅限排除）排除無庫存的產品。
-- 庫存低 — （僅供排除）排除庫存低的產品。 低庫存狀態是以&#x200B;_詳細目錄組態_&#x200B;中的[僅X剩餘Threshold](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html)值為基礎。
+- 庫存低 — （僅供排除）排除庫存低的產品。 低庫存狀態是以&#x200B;_詳細目錄組態_&#x200B;中的[僅X剩餘Threshold](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html?lang=zh-Hant)值為基礎。
