@@ -3,9 +3,9 @@ title: 付款選項
 description: 設定付款選項，以自訂商店客戶可用的方式。
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration, Paas, Saas
-source-git-commit: 999407f00b118441abe39209a15f587ec73fa75d
+source-git-commit: 007674c3b81b95af4c0ec2688a4a98e19ec04d08
 workflow-type: tm+mt
-source-wordcount: '1350'
+source-wordcount: '1470'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 * **Standard** — 付款選項（快速結帳） （PayPal信用卡和借記卡）的子集適用於其他支援的國家/地區。 [信用卡欄位](#credit-card-fields)和[Apple Pay](#apple-pay-button)不適用於此上線選項。 在上線以啟用即時付款時，請選取[標準上線選項](../payment-services/production.md#standard-onboarding)。
 
-如需完成「進階」和「標準」上線的相關資訊，請參閱[為生產啟用 [!DNL Payment Services] &#x200B;](../payment-services/production.md#complete-merchant-onboarding)。
+如需完成「進階」和「標準」上線的相關資訊，請參閱[為生產啟用 [!DNL Payment Services] ](../payment-services/production.md#complete-merchant-onboarding)。
 
 ## [!UICONTROL Credit Card Fields]
 
@@ -135,6 +135,16 @@ ht-degree: 0%
 
 ![稍後付費訊息](assets/pay-later-messaging.png){width="500" zoomable="yes"}
 
+### PayPal付款按鈕的伺服器端送貨回呼
+
+PayPal、Pay Later和Venmo付款方法使用[伺服器端送貨回撥](https://developer.paypal.com/docs/multiparty/checkout/standard/customize/shipping-module/)，讓PayPal能夠直接與您的Commerce執行個體通訊，擷取送貨選項並即時計算總計。
+
+此伺服器端方法可讓[!DNL Payment Services]略過訂單確認快顯視窗，提供更快速、簡化的購買體驗。 由於出貨成本與稅捐會透過回撥動態計算，因此採購員會直接在PayPal或Venmo複查頁面中看到準確的總計。
+
+>[!NOTE]
+>
+>回呼端點必須可公開使用，並在5秒內回應。 如果回應時間超過此限制，PayPal會在快顯視窗中顯示錯誤訊息。 如需在本機測試這些付款方法的相關資訊，請參閱[在本機開發環境中測試](test-validate.md#test-on-local-development-environments)。
+
 ### 僅使用PayPal付款按鈕
 
 若要將您的商店快速進入生產模式，您只能設定&#x200B;_個_ PayPal付款按鈕（Venmo、PayPal等）。 — 不要再使用PayPal信用卡付款選項。
@@ -149,14 +159,14 @@ ht-degree: 0%
 
 1. 確定您的存放區在生產模式[中為](configure-admin.md#enable-payment-services)。
 1. [在[設定]中設定所需的PayPal付款按鈕](configure-admin.md#payment-buttons)。
-1. 開啟&#x200B;_區段中的_&#x200B;關閉&#x200B;**[[!UICONTROL Show PayPal Credit and Debit card button]](configure-admin.md#payment-buttons)** _[!UICONTROL Payment buttons]_&#x200B;選項。
+1. 開啟&#x200B;_區段中的_&#x200B;關閉&#x200B;**[[!UICONTROL Show PayPal Credit and Debit card button]](configure-admin.md#payment-buttons)** _[!UICONTROL Payment buttons]_選項。
 
 要&#x200B;**擷取您現有信用卡提供者的付款&#x200B;_和_ PayPal付款按鈕**：
 
 1. 確定您的存放區在生產模式[中為](configure-admin.md#enable-payment-services)。
 1. [設定所需的PayPal付款按鈕](configure-admin.md#payment-buttons)。
-1. 開啟&#x200B;_區段中的_&#x200B;關閉&#x200B;**[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#payment-buttons)** _[!UICONTROL Payment buttons]_&#x200B;選項。
-1. 開啟&#x200B;_區段中的_&#x200B;關閉&#x200B;**[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** _[!UICONTROL Credit card fields]_&#x200B;選項，並使用您的[現有信用卡提供者帳戶](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html?lang=zh-Hant#payments)。
+1. 開啟&#x200B;_區段中的_&#x200B;關閉&#x200B;**[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#payment-buttons)** _[!UICONTROL Payment buttons]_選項。
+1. 開啟&#x200B;_區段中的_&#x200B;關閉&#x200B;**[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** _[!UICONTROL Credit card fields]_選項，並使用您的[現有信用卡提供者帳戶](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments)。
 
 ## 簽出選項
 
