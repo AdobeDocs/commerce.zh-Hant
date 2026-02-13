@@ -1,7 +1,7 @@
 ---
-source-git-commit: 6f11ad00aed7642c44aeaf384f4433e9522b6bf0
+source-git-commit: b8e5e9ea5673bea4e21f18e22f8655f4ef861e6c
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '574'
 ht-degree: 3%
 
 ---
@@ -10,6 +10,80 @@ ht-degree: 3%
 ## 新增功能
 
 此頁面包含過去60天所做的變更。 我們將從此清單中排除所有微幅更新，例如複製編輯。
+
+### 2026年2月13日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>透過澄清要求並新增中繼資料匯出<a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/migrate-data">的</a>CLI命令檔案來改善AEM Assets整合檔案。</p>
+</td>
+      <td>
+        意見反應
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ac880333814d9d9a45e658e2a637cd9634dbfb1f">認可</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年2月11日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>為Product Recommendations新增<a href="https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/boundaries-limits">界限和限制</a>，記錄支援的產品型別、特殊定價限制、單位和篩選器限制、預覽/API/Cookie行為以及相關限制。</p>
+</td>
+      <td>
+        意見反應，新主題
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/2b850e32660f1a8540bb6a024f3617994b6c13f6">認可</a></td>
+    </tr>
+    <tr>
+      <td><p>增強v2.12.0 PAY-6227專案以連結至新的<a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/payments-checkout/payments-options#paypal-payment-buttons">伺服器端出貨回撥</a>區段，澄清此功能如何啟用更快速的結帳程式。</p>
+</td>
+      <td>
+        意見反應
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/007674c3b81b95af4c0ec2688a4a98e19ec04d08">認可</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年2月10日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>已針對Adobe Commerce as a Cloud Service的2月發行更新至生產環境的<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">發行說明</a>。</p>
+</td>
+      <td>
+        重大更新
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/d559417d12151d1f390b4217bca83b9ddb65e491">認可</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年2月9日
 
@@ -23,7 +97,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>AEM Assets整合v1.2.13為自訂比對器設定新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/synchronize/custom-match">Adobe I/O Workspace設定</a>。 您可以上傳App Builder <code class="language-plaintext highlighter-rouge">workspace.json</code>以進行自動驗證和認證擷取，或手動設定。 請參閱v1.2.13的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/release-notes">發行說明</a>和更新的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/synchronize/custom-match">自訂比對</a>指南。</p>
+      <td><p>AEM Assets整合v1.2.13為自訂比對器設定新增<a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match">Adobe I/O Workspace設定</a>。 您可以上傳App Builder <code class="language-plaintext highlighter-rouge">workspace.json</code>以進行自動驗證和認證擷取，或手動設定。 請參閱v1.2.13的<a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes">發行說明</a>和更新的<a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match">自訂比對</a>指南。</p>
 </td>
       <td>
         重大更新
@@ -45,7 +119,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS Data Export 103.4.19</a>版的發行說明。</p>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS Data Export 103.4.19</a>版的發行說明。</p>
 </td>
       <td>
         技術
@@ -67,7 +141,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>已針對2026年2月沙箱版本更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes">Adobe Commerce as a Cloud Service發行說明</a>。</p>
+      <td><p>已針對2026年2月沙箱版本更新<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">Adobe Commerce as a Cloud Service發行說明</a>。</p>
 </td>
       <td>
         重大更新
@@ -89,7 +163,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS Data Export 103.4.18</a>版的發行說明。</p>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS Data Export 103.4.18</a>版的發行說明。</p>
 </td>
       <td>
         技術
@@ -111,7 +185,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>記錄Commerce客戶如何從Commerce管理員的摘要同步狀態頁面監視資料摘要匯出並進行疑難排解。 請參閱資料匯出指南中的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/saas-data-export/data-synchronization#view-and-manage-the-synchronization-process">檢視及管理同步化程式</a>。</p>
+      <td><p>記錄Commerce客戶如何從Commerce管理員的摘要同步狀態頁面監視資料摘要匯出並進行疑難排解。 請參閱資料匯出指南中的<a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/data-synchronization#view-and-manage-the-synchronization-process">檢視及管理同步化程式</a>。</p>
 </td>
       <td>
         技術
@@ -133,7 +207,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>在<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/feature-comparison">功能比較頁面</a>中新增更多資訊，包括新基礎架構、營運能力及市集資訊。</p>
+      <td><p>在<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/feature-comparison">功能比較頁面</a>中新增更多資訊，包括新基礎架構、營運能力及市集資訊。</p>
 </td>
       <td>
         意見反應
@@ -155,7 +229,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/live-search/live-search-storefront/migrate-to-plp">從搜尋配接器移轉至PLP Widget</a>指南，其中包含詳細的移轉案例、逐步程式、角色導向及疑難排解，適用於從已棄用的搜尋配接器轉換的客戶。</p>
+      <td><p>新增<a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-storefront/migrate-to-plp">從搜尋配接器移轉至PLP Widget</a>指南，其中包含詳細的移轉案例、逐步程式、角色導向及疑難排解，適用於從已棄用的搜尋配接器轉換的客戶。</p>
 </td>
       <td>
         意見反應、重大更新、新主題
@@ -177,7 +251,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>已更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/storefront">Adobe Commerce Optimizer</a>和<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/storefront">Adobe Commerce as a Cloud Service</a>的店面設定指南，以包含移轉Edge Delivery Services的Commerce店面組態的相關資訊，以使用組態服務，而非店面樣板存放庫中的<code class="language-plaintext highlighter-rouge">config.json</code>檔案。 Adobe建議使用設定服務來管理部署在Edge Delivery Services上的店面設定。</p>
+      <td><p>已更新<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/storefront">Adobe Commerce Optimizer</a>和<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/storefront">Adobe Commerce as a Cloud Service</a>的店面設定指南，以包含移轉Edge Delivery Services的Commerce店面組態的相關資訊，以使用組態服務，而非店面樣板存放庫中的<code class="language-plaintext highlighter-rouge">config.json</code>檔案。 Adobe建議使用設定服務來管理部署在Edge Delivery Services上的店面設定。</p>
 </td>
       <td>
         技術意見回饋
@@ -243,7 +317,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>已更新Adobe Commerce as a Cloud Service的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes#latest">發行說明</a>。</p>
+      <td><p>已更新Adobe Commerce as a Cloud Service的<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes#latest">發行說明</a>。</p>
 </td>
       <td>
         重大更新
@@ -265,7 +339,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>更新Adobe Commerce Optimizer的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/boundaries-limits">限制和界限</a>主題，以說明授許可權制和系統界限、新增限制說明，並包含容量規劃和防止效能問題的指引。</p>
+      <td><p>更新Adobe Commerce Optimizer的<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits">限制和界限</a>主題，以說明授許可權制和系統界限、新增限制說明，並包含容量規劃和防止效能問題的指引。</p>
 </td>
       <td>
         技術意見回饋
@@ -287,7 +361,7 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS Data Export 103.4.16版和103.4.17</a>版以及<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/price-indexer/catalog-adapter/release-notes">Catalog Adapter 1.10.0</a>版的發行說明。</p>
+      <td><p>已新增<a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS Data Export 103.4.16版和103.4.17</a>版以及<a href="https://experienceleague.adobe.com/en/docs/commerce/price-indexer/catalog-adapter/release-notes">Catalog Adapter 1.10.0</a>版的發行說明。</p>
 </td>
       <td>
         技術
@@ -309,34 +383,12 @@ ht-degree: 3%
   </thead>
   <tbody>
     <tr>
-      <td><p>更新AEM Assets整合檔案中的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/get-started/configure-aem#install-the-commerce-assets-package">設定AEM主題</a>。</p>
+      <td><p>更新AEM Assets整合檔案中的<a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aem#install-the-commerce-assets-package">設定AEM主題</a>。</p>
 </td>
       <td>
         重大更新
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/d46526db56dad08a8f865664c92d1214bbf063d8">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2025年12月15日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>新增主題：<br />- <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/manage-results/opportunities">機會</a>，透過Adobe Sites Optimizer整合記錄AI支援的網站最佳化建議，包括改善SEO、中繼資料和產品資料品質的自動偵測和自動修正工作流程。<br />- <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/setup/catalog-layer">目錄層</a>說明如何在不變更來源資料的情況下修改產品資料，包括層優先順序管理以及與Sites Optimizer自動修正功能的整合。</p>
-</td>
-      <td>
-        重大更新，新主題
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/dd4447d519761f43d06f13de71c5ae97f6b103e7">認可</a></td>
     </tr>
   </tbody>
 </table>
