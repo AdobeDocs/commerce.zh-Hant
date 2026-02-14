@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!DNL Product Recommendations]簡介
 
-產品推薦是強大的行銷工具，可用來增加轉換率、增加收入及刺激購物者參與。 Adobe Commerce產品建議由[Adobe AI](https://business.adobe.com/ai.html)提供技術支援，其使用人工智慧和機器學習演演算法來對彙總的訪客資料執行深入分析。 此資料與您的Adobe Commerce目錄結合後，會產生極為引人入勝、相關且個人化的體驗。
+產品推薦是強大的行銷工具，可用來增加轉換率、增加收入及刺激購物者參與。 Adobe Commerce產品建議由[Adobe AI](https://business.adobe.com/tw/ai.html)提供技術支援，其使用人工智慧和機器學習演演算法來對彙總的訪客資料執行深入分析。 此資料與您的Adobe Commerce目錄結合後，會產生極為引人入勝、相關且個人化的體驗。
 
 產品推薦會以具有標籤的單位形式出現在商店中，例如「檢視過此產品的客戶也檢視過」。 您可以直接從Adobe Commerce管理員跨商店檢視建立、管理和部署建議。
 

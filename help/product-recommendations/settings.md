@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 設定
 
-當您[為Recommendations設定SaaS資料空間](../landing/saas.md#saas-configuration)時，SaaS資料空間會收集目錄資料和店面行為資料。 [Adobe AI](https://business.adobe.com/ai.html)會分析該資料，並計算用於提供產品推薦的產品關聯。
+當您[為Recommendations設定SaaS資料空間](../landing/saas.md#saas-configuration)時，SaaS資料空間會收集目錄資料和店面行為資料。 [Adobe AI](https://business.adobe.com/tw/ai.html)會分析該資料，並計算用於提供產品推薦的產品關聯。
 
 測試或測試的非生產環境通常沒有店面行為資料的數量或品質，無法提供逼真的產品建議。 實際購物者行為規模化只能在生產環境中擷取。 為解決此問題，Adobe Commerce可讓您將生產環境中的產品建議與其他非生產SaaS資料空間搭配使用。 在非生產環境中使用實際的店面資料，可讓您預覽購物者看到的建議，並實驗不同的建議型別和放置位置。 購物者可以預覽來自不同SaaS資料空間的建議，但無法點選。
 

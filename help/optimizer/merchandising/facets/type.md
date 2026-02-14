@@ -15,7 +15,7 @@ ht-degree: 0%
 [!DNL Adobe Commerce Optimizer]使用各種Facet型別，只有在相關時才會出現在&#x200B;*篩選器*&#x200B;清單中。 可用Facet清單會根據傳回的產品而變更。 下列特性會影響其顯示和行為：
 
 - 釘選Facet — 最常用的Facet可以釘選到清單頂端。 其餘的Facet會在釘選Facet之後以&#x200B;*排序型別*&#x200B;順序列出。
-- 動態Facet - [Adobe AI](https://business.adobe.com/ai.html)找到與產品集和查詢最相關的產品屬性。 計算會考量整個目錄的屬性中繼資料，並在查詢時決定與查詢最相關的Facet。
+- 動態Facet - [Adobe AI](https://business.adobe.com/tw/ai.html)找到與產品集和查詢最相關的產品屬性。 計算會考量整個目錄的屬性中繼資料，並在查詢時決定與查詢最相關的Facet。
 - 價格Facet — 依價格範圍傳回產品。 您可以在&#x200B;[*設定*](../../settings.md)&#x200B;工作區中指定選取專案的數目和價格範圍間隔。
 
 ## Facet標籤
