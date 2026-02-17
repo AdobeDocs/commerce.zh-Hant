@@ -129,7 +129,7 @@ GraphQL系統的核心和服務不會直接互相通訊。 您從不同的URL存
 
 實作程式涉及：
 
-1. 僅[!BADGE PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce 。"} **[安裝並設定目錄服務](installation.md)** — 安裝並設定目錄服務延伸功能，並使用[!DNL Commerce Services Connector]設定SaaS連線。
+1. 僅[!BADGE PaaS]{type=Informative url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce 。"} **[安裝並設定目錄服務](installation.md)** — 安裝並設定目錄服務延伸功能，並使用[!DNL Commerce Services Connector]設定SaaS連線。
 2. **更新店面程式碼**：將目錄服務GraphQL查詢整合至您的店面。
 3. **路由查詢**：所有目錄服務查詢都會透過GraphQL閘道（上線期間提供的URL）
 4. **監視和疑難排解資料同步處理**：驗證已改善的效能並監視結果
