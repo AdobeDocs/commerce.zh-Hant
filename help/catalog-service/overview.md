@@ -4,9 +4,9 @@ description: 透過 [!DNL Catalog Service] 加速Adobe Commerce店面 — 高效
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: 525e3ff0-efa6-48c7-9111-d0b00f42957a
-source-git-commit: e582bff6ee8ee7c4213f04bdab984efa94333fb6
+source-git-commit: 4f3f8accd653dbee6fec45c065f55ff04b17bd2d
 workflow-type: tm+mt
-source-wordcount: '1323'
+source-wordcount: '1353'
 ht-degree: 0%
 
 ---
@@ -38,6 +38,10 @@ Adobe Commerce擴充功能的[!DNL Catalog Service]透過專用的GraphQL API提
 
 
 ## 架構概覽
+
+>[!NOTE]
+>
+>如果您使用Adobe Commerce Optimizer或Adobe Commerce Optimizer Connector的可撰寫目錄來實作目錄，請參閱[Adobe Commerce Optimizer指南](../optimizer/overview.md#architecture)和銷售服務開發人員指南。
 
 [!DNL Catalog Service]使用[GraphQL](https://graphql.org/)來要求及接收目錄資料，包括產品、產品屬性、存貨及價格。 GraphQL是一種查詢語言，前端使用者端使用它來與後端(例如Adobe Commerce)上定義的應用程式設計介面(API)通訊。 GraphQL是一種常用的通訊方法，因為它很輕量，可讓系統整合商指定每個回應的內容和順序。
 
@@ -125,7 +129,7 @@ GraphQL系統的核心和服務不會直接互相通訊。 您從不同的URL存
 
 實作程式涉及：
 
-1. 僅[!BADGE PaaS]{type=Informative url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce 。"} **[安裝並設定目錄服務](installation.md)** — 安裝並設定目錄服務延伸功能，並使用[!DNL Commerce Services Connector]設定SaaS連線。
+1. 僅[!BADGE PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce 。"} **[安裝並設定目錄服務](installation.md)** — 安裝並設定目錄服務延伸功能，並使用[!DNL Commerce Services Connector]設定SaaS連線。
 2. **更新店面程式碼**：將目錄服務GraphQL查詢整合至您的店面。
 3. **路由查詢**：所有目錄服務查詢都會透過GraphQL閘道（上線期間提供的URL）
 4. **監視和疑難排解資料同步處理**：驗證已改善的效能並監視結果
