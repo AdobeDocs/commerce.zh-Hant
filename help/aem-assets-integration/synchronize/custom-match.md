@@ -3,16 +3,16 @@ title: 自訂自動比對
 description: 瞭解自訂自動比對如何對具有複雜比對邏輯的商家，或依賴第三方系統(無法將中繼資料填入AEM Assets)的商戶特別有用。
 feature: CMS, Media, Integration
 exl-id: e7d5fec0-7ec3-45d1-8be3-1beede86c87d
-source-git-commit: dfc4aaf1f780eb4a57aa4b624325fa24e571017d
+source-git-commit: 6e8d266aeaec4d47b82b0779dfc3786ccaa7d83a
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
 
 # 自訂自動比對
 
-如果預設的自動比對策略（**OOTB自動比對**）不符合您的特定業務需求，請選取自訂比對選項。 此選項支援使用[Adobe Developer App Builder](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)來開發自訂符合器應用程式，以處理複雜的符合邏輯，或來自無法將中繼資料填入AEM Assets的協力廠商系統的資產。
+如果預設的自動比對策略（**OOTB自動比對**）不符合您的特定業務需求，請選取自訂比對選項。 此選項支援使用[Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)來開發自訂符合器應用程式，以處理複雜的符合邏輯，或來自無法將中繼資料填入AEM Assets的協力廠商系統的資產。
 
 ## 設定自訂自動比對
 
@@ -114,7 +114,7 @@ ht-degree: 0%
 
 ## 自訂比對器API端點
 
-當您使用[App Builder](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}建置自訂符合專案應用程式時，應用程式必須公開下列端點：
+當您使用[App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}建置自訂符合專案應用程式時，應用程式必須公開下列端點：
 
 * **App Builder資產至產品URL**&#x200B;端點
 * **App Builder產品至資產URL**&#x200B;端點
@@ -125,7 +125,7 @@ ht-degree: 0%
 
 #### 使用範例
 
-```bash
+```javascript
 const { Core } = require('@adobe/aio-sdk')
 
 async function main(params) {
@@ -140,8 +140,11 @@ async function main(params) {
     // ...
     // End of your matching logic
 
+    // Set skip to true if the mapping hasn't changed
+    const skipSync = false;
+
     return {
-        statusCode: 500,
+        statusCode: 200,
         body: {
             asset_id: params.assetId,
             product_matches: [
@@ -150,7 +153,8 @@ async function main(params) {
                     asset_roles: ["thumbnail", "image", "swatch_image", "small_image"],
                     asset_position: 1
                 }
-            ]
+            ],
+            skip: skipSync
         }
     };
 }
@@ -160,7 +164,7 @@ exports.main = main;
 
 **要求**
 
-```bash
+```text
 POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/asset-to-product
 ```
 
@@ -171,21 +175,28 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/asset-to-
 
 **回應**
 
-```bash
+```json
 {
   "asset_id": "{ASSET_ID}",
   "product_matches": [
     {
       "product_sku": "{PRODUCT_SKU_1}",
-      "asset_roles": ["thumbnail","image"]
+      "asset_roles": ["thumbnail", "image"]
     },
     {
       "product_sku": "{PRODUCT_SKU_2}",
       "asset_roles": ["thumbnail"]
     }
-  ]
+  ],
+  "skip": false
 }
 ```
+
+| 引數 | 資料型別 | 說明 |
+| --- | --- | --- |
+| `asset_id` | 字串 | 相符的資產ID。 |
+| `product_matches` | 陣列 | 與資產相關聯的產品清單。 |
+| `skip` | 布林值 | （選用）當`true`時，規則引擎會略過此資產的同步處理（無產品對應更新）。 當`false`或省略時，正常處理會執行。 請參閱[略過同步處理](#skip-sync-processing)。 |
 
 ### App Builder產品至資產URL端點
 
@@ -193,7 +204,7 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/asset-to-
 
 #### 使用範例
 
-```bash
+```javascript
 const { Core } = require('@adobe/aio-sdk')
 
 async function main(params) {
@@ -204,8 +215,11 @@ async function main(params) {
     // ...
     // End of your matching logic
 
+    // Set skip to true if the mapping hasn't changed
+    const skipSync = false;
+
     return {
-        statusCode: 500,
+        statusCode: 200,
         body: {
             product_sku: params.productSku,
             asset_matches: [
@@ -215,7 +229,8 @@ async function main(params) {
                     asset_format: "image", // can be "image" or "video"
                     asset_position: 1
                 }
-            ]
+            ],
+            skip: skipSync
         }
     };
 }
@@ -225,7 +240,7 @@ exports.main = main;
 
 **要求**
 
-```bash
+```text
 POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-to-asset
 ```
 
@@ -236,36 +251,44 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-t
 
 **回應**
 
-```bash
+```json
 {
   "product_sku": "{PRODUCT_SKU}",
   "asset_matches": [
     {
       "asset_id": "{ASSET_ID_1}",
-      "asset_roles": ["thumbnail","image"],
+      "asset_roles": ["thumbnail", "image"],
       "asset_position": 1,
-      "asset_format": image
+      "asset_format": "image"
     },
     {
       "asset_id": "{ASSET_ID_2}",
-      "asset_roles": ["thumbnail"]
+      "asset_roles": ["thumbnail"],
       "asset_position": 2,
-      "asset_format": image     
+      "asset_format": "image"
     }
-  ]
+  ],
+  "skip": false
 }
 ```
 
 | 引數 | 資料型別 | 說明 |
 | --- | --- | --- |
-| `productSKU` | 字串 | 代表更新的產品SKU。 |
-| `asset_matches` | 字串 | 傳回與特定產品SKU相關聯的所有資產。 |
+| `product_sku` | 字串 | 相符的產品SKU。 |
+| `asset_matches` | 陣列 | 與產品相關聯的資產清單。 |
+| `skip` | 布林值 | （選用）當`true`時，規則引擎會略過此產品的同步處理（無資產對應更新）。 當`false`或省略時，正常處理會執行。 請參閱[略過同步處理](#skip-sync-processing)。 |
 
 `asset_matches`引數包含下列屬性：
 
 | 屬性 | 資料型別 | 說明 |
 | --- | --- | --- |
-| `asset_id` | 字串 | 代表更新的資產ID。 |
-| `asset_roles` | 字串 | 傳回所有可用的資產角色。 使用支援的[Commerce資產角色](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)，例如`thumbnail`、`image`、`small_image`和`swatch_image`。 |
-| `asset_format` | 字串 | 提供資產的可用格式。 可能的值為`image`和`video`。 |
-| `asset_position` | 字串 | 顯示資產的位置。 |
+| `asset_id` | 字串 | 資產識別碼。 |
+| `asset_roles` | 陣列 | 資產角色。 使用支援的[Commerce資產角色](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)，例如`thumbnail`、`image`、`small_image`和`swatch_image`。 |
+| `asset_format` | 字串 | 資產格式。 可能的值為`image`和`video`。 |
+| `asset_position` | 數字 | 資產在產品相簿中的位置。 |
+
+## 略過同步處理
+
+`skip`引數可讓您的自訂比對器略過特定資產或產品的同步處理。
+
+當您的App Builder應用程式在回應中傳回`"skip": true`時，規則引擎不會傳送該資產或產品的更新或移除API請求給Commerce。 此最佳化可減少不必要的API呼叫並改善效能。
