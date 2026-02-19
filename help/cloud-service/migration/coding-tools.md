@@ -1,22 +1,22 @@
 ---
-title: 擴充功能的AI編碼工具
-description: 瞭解如何使用AI工具來建立Commerce App Builder擴充功能。
+title: Adobe Commerce App Builder的AI編碼開發人員工具
+description: 瞭解如何使用AI工具來建立Commerce App Builder應用程式。
 feature: App Builder, Cloud
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 role: Developer
 level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: 991a8683b9a333d2699f1ef22f3dc54d7b401573
+source-git-commit: 5d4726f7191f74507524667555ab46838bb2407a
 workflow-type: tm+mt
-source-wordcount: '1847'
+source-wordcount: '2098'
 ht-degree: 0%
 
 ---
 
-# 擴充功能的AI編碼工具
+# Adobe Commerce App Builder的AI編碼開發人員工具
 
-移轉至[!DNL Adobe Commerce as a Cloud Service]時，您可以使用AI編碼工具將現有的[!DNL Adobe Commerce] PHP擴充功能轉換為[!DNL Adobe Developer App Builder]擴充功能。 您也可以使用這些工具來建立新的[!DNL App Builder]擴充功能。
+移轉至[!DNL Adobe Commerce as a Cloud Service]時，您可以使用AI編碼工具將現有的[!DNL Adobe Commerce] PHP擴充功能轉換為[!DNL Adobe Developer App Builder]應用程式。 您也可以使用這些工具來建立新的[!DNL App Builder]應用程式。
 
 AI編碼工具提供下列優點：
 
@@ -25,10 +25,26 @@ AI編碼工具提供下列優點：
 * **Commerce特定功能**： Adobe Commerce App Builder開發的專用工具。
 * **自動化工作流程**：簡化開發和部署程式。
 
+安裝AI編碼工具後，您就可以存取：
+
+* 規則 — Adobe Commerce和App Builder專屬規則集，旨在引導並通知您的應用程式開發。
+* 開發人員MCP伺服器
+* App Builder MCP伺服器
+
+## 正在更新至最新版本
+
+在[安裝AI編碼開發人員工具](#installation)後，您可以執行下列命令以更新至最新版本：
+
+```bash
+aio commerce extensibility tools-setup
+```
+
+這會將工具更新至最新版本。
+
 ## 先決條件
 
 * 下列其中一個編碼代理程式：
-   * [游標](https://cursor.com/download) （建議使用）
+   * [游標](https://cursor.com/download)
    * [Github Copilot](https://github.com/features/copilot)
    * [Google Gemini CLI](https://github.com/google-gemini/gemini-cli)
    * [克勞德程式碼](https://www.claude.com/product/claude-code)
@@ -84,7 +100,7 @@ AI編碼工具提供下列優點：
   New directory
 ```
 
-選取編碼代理程式時，Adobe建議選取`Cursor`以獲得最佳開發體驗：
+選取您偏好的編碼代理程式：
 
 ```shell-session
 ? Which coding agent would you like to use?
@@ -221,10 +237,10 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 
 ## 範例提示
 
-下列範例提示會建立擴充功能，以便在下訂單時傳送通知。
+下列範例提示會建立應用程式，以便在下訂單時傳送通知。
 
 ```shell-session
-Implement an Adobe Commerce SaaS extension that will send an ERP notification when a customer places an order. The ERP notification must be sent as a POST HTTP call to <ERP URL> with the following details in the request JSON body:
+Implement an Adobe Commerce SaaS application that will send an ERP notification when a customer places an order. The ERP notification must be sent as a POST HTTP call to <ERP URL> with the following details in the request JSON body:
 
 Order ID -> orderID
 Order Total -> total
@@ -281,14 +297,14 @@ Adobe建議您在使用AI編碼工具時，遵循下列最佳實務：
 
 * [整合入門套件](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Adobe Commerce入門套件範本](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Adobe I/O Events入門範本](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Adobe I/O Events入門範本](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [App Builder範例應用程式](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### 為何應使用這些資源
 
 * **已驗證的模式**：入門套件包含Adobe的最佳實務和架構決策
 * **加快開發**：減少花費在樣版和設定上的時間
-* **一致性**：確保您的擴充功能遵循既定的慣例
+* **一致性**：確保您的應用程式遵循既定的慣例
 * **可維護性**：遵循標準模式時，更容易維護和更新
 * **檔案**：入門套件附有範例和檔案
 * **社群支援**：使用標準方式時更容易取得協助
@@ -297,7 +313,7 @@ Adobe建議您在使用AI編碼工具時，遵循下列最佳實務：
 
 ### 通訊協定
 
-規則系統會自動強制執行下列四個階段的通訊協定。 開發擴充功能時，工具應自動遵循此通訊協定：
+規則系統會自動強制執行下列四個階段的通訊協定。 開發應用程式時，工具應自動遵循此通訊協定：
 
 * 第1階段：需求分析與釐清
    * 詢問澄清問題時，請提供完整的答案。
@@ -314,7 +330,7 @@ Adobe建議您在使用AI編碼工具時，遵循下列最佳實務：
 Create a detailed implementation plan for this complex development.
 ```
 
-複雜的Adobe Commerce擴充功能通常涉及：
+複雜的Adobe Commerce應用程式通常涉及：
 
 * 多個執行階段動作
 * 跨多個接觸點的事件設定
@@ -529,3 +545,31 @@ Remove the orphaned actions that are no longer part of the current implementatio
 * **若沒有根本原因分析，請勿增加複雜性** — 詢問不必要的檔案新增問題，並要求進行適當的調查。
 * **沒有實際資料測試就不要宣告成功** — 一律使用實際資料進行測試，而不僅僅是邊緣案例。
 * **不要忘記執行階段清除** — 在重大變更後永遠清除孤立的動作。
+
+## 提供意見回饋
+
+有興趣提供AI程式碼工具意見回饋的開發人員可以使用`/feedback`命令。
+
+此命令可讓您提供文字意見回饋，並將記錄傳送至Adobe。 您傳送的任何記錄都將經過清理，以移除任何私人或個人資訊。
+
+>[!TIP]
+>
+>使用者體驗會因您使用的IDE而稍有不同。 下列程式說明游標中的體驗。
+
+1. 在您的代理程式中，輸入`/feedback`並選取`commerce-extensibility/feedback`命令。
+
+1. 在IDE頂端所顯示的&#x200B;**意見反應**&#x200B;欄位中，針對工具提供您的意見反應，然後按&#x200B;**Enter**&#x200B;鍵。
+
+   ![游標回饋命令輸入欄位](../assets/feedback-response.png){width="600" zoomable="yes"}
+
+1. 在&#x200B;**本機儲存**&#x200B;欄位中，輸入`yes`或`no`，然後按&#x200B;**Enter**&#x200B;以指出您是否要儲存記錄檔的本機復本。
+
+   ![游標回饋命令儲存在本機欄位](../assets/feedback-save.png){width="600" zoomable="yes"}
+
+   如果您選取&#x200B;**是**，您可以在傳送您的意見回饋後檢閱`chats`資料夾中的記錄檔。
+
+1. `commerce-extensibility/feedback`命令會出現在代理程式的聊天輸入欄位中。 按下&#x200B;**Enter**&#x200B;或按一下&#x200B;**傳送**，將您的意見反應傳送至Adobe。
+
+>[!NOTE]
+>
+>如果您沒有看到`/feedback`命令，您可能需要[更新至最新版本](#updating-to-the-latest-version)。
