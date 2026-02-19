@@ -32,4 +32,4 @@ ht-degree: 11%
    - [GraphQL結構描述](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
    - [REST API結構描述](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
 - [發行說明](release-notes.md)
-- [返回Commerce服務首頁](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [返回Commerce服務首頁](https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/home)
