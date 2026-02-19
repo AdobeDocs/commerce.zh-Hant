@@ -76,7 +76,7 @@ AEM Assets整合可自動化資產管理工作流程，解決此難題。 整合
 
 觀看此影片，瞭解Adobe Commerce和AEM Assets如何共同簡化內容工作流程：
 
->[!VIDEO](https://video.tv.adobe.com/v/3447837)
+>[!VIDEO](https://video.tv.adobe.com/v/3447900?captions=chi_hant)
 
 >[!TAB ACCS教學課程]
 
