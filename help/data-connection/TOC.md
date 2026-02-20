@@ -4,18 +4,18 @@ user-guide-description: 本指南提供在Adobe Commerce中使用 [!DNL Data Con
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
-badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce 。"
-source-git-commit: d079ba51ede5272059fa6ac9d4176d484266ba21
+badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce 。"
+source-git-commit: 60a8e8f5cedff0c6fa56c563807b9604e3ae1d21
 workflow-type: tm+mt
-source-wordcount: '139'
-ht-degree: 2%
+source-wordcount: '138'
+ht-degree: 1%
 
 ---
 
 
 # Adobe Commerce的[!DNL Data Connection]延伸模組 {#data-connection}
 
-- [指南概觀](overview.md)
+- [[!DNL Data Connection]簡介](overview.md)
 - [Commerce服務的HIPAA整備](hipaa-readiness.md)
 - [Commerce服務如何處理隱私權請求](handle-privacy-request.md)
 - [發行說明](release-notes.md)
@@ -38,4 +38,4 @@ ht-degree: 2%
 - 使用案例 {#use-cases}
    - [使用Adobe Journey Optimizer傳送捨棄的購物車電子郵件](using-ajo.md)
    - [使用Commerce事件資料在Real-Time CDP中建立對象](create-audience.md)
-- [返回Commerce服務首頁](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=zh-Hant)
+- [返回Commerce服務首頁](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
