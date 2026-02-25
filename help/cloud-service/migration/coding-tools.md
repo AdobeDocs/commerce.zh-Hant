@@ -2,14 +2,12 @@
 title: Adobe Commerce App Builder的AI編碼開發人員工具
 description: 瞭解如何使用AI工具來建立Commerce App Builder應用程式。
 feature: App Builder, Cloud
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 role: Developer
 level: Intermediate
-hide: true
-hidefromtoc: true
-source-git-commit: 5d4726f7191f74507524667555ab46838bb2407a
+source-git-commit: 4e3f593ead4b0e32bdf474498421b20475dcbe52
 workflow-type: tm+mt
-source-wordcount: '2098'
+source-wordcount: '2470'
 ht-degree: 0%
 
 ---
@@ -27,7 +25,7 @@ AI編碼工具提供下列優點：
 
 安裝AI編碼工具後，您就可以存取：
 
-* 規則 — Adobe Commerce和App Builder專屬規則集，旨在引導並通知您的應用程式開發。
+* 技能 — Adobe Commerce和App Builder的特定技能組，旨在引導和通知您的應用程式開發。
 * 開發人員MCP伺服器
 * App Builder MCP伺服器
 
@@ -43,11 +41,16 @@ aio commerce extensibility tools-setup
 
 ## 先決條件
 
-* 下列其中一個編碼代理程式：
+* 任何支援[代理程式技能](https://agentskills.io/home#adoption)的編碼代理程式，例如：
+
    * [游標](https://cursor.com/download)
-   * [Github Copilot](https://github.com/features/copilot)
-   * [Google Gemini CLI](https://github.com/google-gemini/gemini-cli)
    * [克勞德程式碼](https://www.claude.com/product/claude-code)
+   * [GitHub Copilot](https://github.com/features/copilot)
+   * [Windsurf](https://windsurf.com)
+   * [Gemini CLI](https://github.com/google-gemini/gemini-cli)
+   * [OpenAI程式碼](https://openai.com/index/introducing-codex/)
+   * [斜線](https://cline.bot)
+
 * [Node.js](https://nodejs.org/en/download)： LTS版本
 * 封裝管理員： [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)或[yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
 * [Git](https://github.com/git-guides/install-git)：用於存放庫複製和版本控制
@@ -74,11 +77,19 @@ aio commerce extensibility tools-setup
    aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
    ```
 
-1. 複製Commerce [整合入門套件](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)：
+1. 複製下列其中一項：
 
-   ```bash
-   git clone git@github.com:adobe/commerce-integration-starter-kit.git
-   ```
+   * Commerce [整合入門套件](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration) — 用於建立後台整合。
+
+     ```bash
+     git clone git@github.com:adobe/commerce-integration-starter-kit.git
+     ```
+
+   * Commerce [結帳入門套件](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)，用於建立或擴充結帳體驗，包括付款、運費和稅金。
+
+     ```bash
+     git clone git@github.com:adobe/commerce-checkout-starter-kit.git
+     ```
 
 1. 導覽至入門套件目錄：
 
@@ -92,49 +103,45 @@ aio commerce extensibility tools-setup
    aio commerce extensibility tools-setup
    ```
 
-設定程式會提示您設定選項。 對於安裝位置，請選擇「目前的目錄」以在目前的工作區中安裝工具：
+   設定程式會提示您設定選項。 按照提示完成安裝。 工具將會安裝在選取的目錄中。
 
-```shell-session
-? Where would you like to setup the tools?
-❯ Current directory
-  New directory
-```
+   * 選取您專案要使用的入門套件。
 
-選取您偏好的編碼代理程式：
+     ```shell-session
+     ? Which starter kit would you like to use?
+     ❯ Integration starter kit
+        Checkout starter kit
+     ```
 
-```shell-session
-? Which coding agent would you like to use?
-❯ Cursor
-  Copilot
-  Gemini CLI
-  Claude Code
-```
+   * 選取您偏好的編碼代理程式。 支援超過40個編碼代理程式，但如果您沒有看到您偏好的代理程式，可以使用`Other`選項來安裝任何編碼代理程式的技能。 如需如何設定技能的說明，請參閱編碼代理程式的檔案。
 
-選取封裝管理員時，Adobe建議使用`npm`來維持一致性：
+     ```shell-session
+     ? Which coding agent would you like to install skills for?
+     ❯ Cursor
+        Claude Code
+        GithubCopilot
+        Windsurf
+        Gemini CLI
+        OpenAI Codex
+        Cline
+        ...
+     ```
 
-```shell-session
-? Which package manager would you like to use?
-❯ npm
-  yarn
-```
+   * 安裝程式會偵測您是否已安裝NPM或Yarn，並自動進行適當的選取。 不過，如果您尚未安裝其中一個，則會提示您選取封裝管理員。Adobe建議您使用`npm`以保持一致性：
+
+     ```shell-session
+     ? Which package manager would you like to use?
+     ❯ npm
+        yarn
+     ```
 
 1. 成功安裝編碼工具後，安裝程式會設定：
 
    * 適用於Adobe Commerce開發的MCP伺服器整合
-   * 用於增強開發體驗的游標IDE規則
+   * [增強開發體驗的代理程式技能](#skills)
    * Commerce專屬的開發工具和工作流程
 
-   下列檔案會新增至您的工作區：
-
-   **游標**
-
-   * MCP組態： `.cursor/mcp.json`
-   * 規則目錄： `.cursor/rules/`
-
-   **Copilot**
-
-   * MCP組態： `.vscode/mcp.json`
-   * 規則目錄： `.github/copilot-instructions.md`
+   現已安裝技能和MCP工具。 如果您看不到技能和MCP工具，請重新啟動編碼代理程式。
 
 >[!NOTE]
 >
@@ -179,7 +186,7 @@ aio auth login
 
 1. 重新啟動Cursor IDE以載入新的MCP工具和組態。
 
-1. 確認規則存在於`.cursor/rules/`資料夾下，以驗證安裝。
+1. 確認技能存在於`.cursor/skills/`資料夾下，以驗證安裝。
 
 1. 啟用MCP伺服器：
 
@@ -198,9 +205,9 @@ aio auth login
 
 1. 使用以下提示來檢視代理程式是否使用MCP伺服器。 如果不適用，請明確要求代理程式使用可用的MCP工具。
 
-```shell-session
-What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Cloud Service when configuring a webhook that activates an App Builder runtime action?
-```
+   ```shell-session
+   What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Cloud Service when configuring a webhook that activates an App Builder runtime action?
+   ```
 
 ### Copilot
 
@@ -237,7 +244,7 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 
 ## 範例提示
 
-下列範例提示會建立應用程式，以便在下訂單時傳送通知。
+下列範例提示使用整合入門套件建立應用程式，以在下訂單時傳送通知。
 
 ```shell-session
 Implement an Adobe Commerce SaaS application that will send an ERP notification when a customer places an order. The ERP notification must be sent as a POST HTTP call to <ERP URL> with the following details in the request JSON body:
@@ -248,6 +255,19 @@ Customer Email ID -> emailID
 Payment Type -> pType
 ```
 
+下列範例提示會使用Checkout Starter Kit來建立提供自訂送貨方法的應用程式。
+
+```shell-session
+Implement an Adobe Commerce SaaS application that provides custom shipping methods.
+The extension should:
+1. Return shipping options based on the destination postal code
+2. If postal code is in California, add an "Express California" option for $15
+3. If postal code is outside US, add an "International Standard" option for $25
+4. The carrier code should be "MYSHIP"
+```
+
+
+
 ## 提示命令
 
 除了提示，您還可使用`/search-commerce-docs`命令搜尋與代理程式交談的檔案。 例如：
@@ -256,9 +276,31 @@ Payment Type -> pType
 /search-commerce-docs "How do I subscribe to Commerce events?"
 ```
 
+## 技能
+
+雖然當您與程式碼代理程式聊天時，會自動叫用技能，但您也可以使用下列命令手動叫用技能：
+
+* `/architect` — 使用[!DNL App Builder]和選取的入門套件設計Adobe Commerce擴充功能的架構。 用於規劃整合、選取事件、設計資料流程或進行架構決策。
+* `/developer` — 依照[!DNL App Builder]模式和檔案結構實作Adobe Commerce副檔名。 在產生程式碼、更新組態檔或實作執行階段動作時使用。
+* `/devops-engineer` — 部署和運作[!DNL App Builder]擴充功能。 在部署應用程式、設定環境、疑難排解部署問題、設定CI/CD或解決上線錯誤時使用。
+* `/product-manager` - Adobe Commerce擴充功能的收集與檔案需求。 在開始新專案、定義接受條件、澄清業務目標或建立`REQUIREMENTS.md`檔案時使用。
+* `/technical-writer` — 建立[!DNL App Builder]應用程式的完整檔案。 在撰寫`README.md`、使用手冊、API檔案、變更記錄檔或確保檔案完整時使用。
+* `/tester` — 建立[!DNL App Builder]應用程式的完整測試。 在編寫單元測試、整合測試、驗證安全性或確保程式碼品質和涵蓋範圍時使用。
+* `/tutor` （實驗性） — 以明確的說明和範例來教授[!DNL Adobe Commerce]應用程式開發概念。 在學習[!DNL App Builder]、瞭解事件或需要開發模式的指引時使用。
+
 ## 最佳實務
 
 Adobe建議您在使用AI編碼工具時，遵循下列最佳實務：
+
+### 計畫模式
+
+與程式碼代理程式聊天時，您應該選取&#x200B;**計畫**&#x200B;模式，為您的專案建立詳細的實作計畫。
+
+選取&#x200B;**計畫**&#x200B;模式的方法會依您使用的代理程式而有所不同。 如需指示，請參閱您的代理程式檔案。 例如：
+
+* [游標](https://cursor.com/docs/agent/modes)
+* [克勞德程式碼](https://code.claude.com/docs/en/common-workflows#when-to-use-plan-mode)
+* [Gemini CLI](https://geminicli.com/docs/cli/plan-mode/)
 
 ### 檢查清單
 
@@ -296,8 +338,9 @@ Adobe建議您在使用AI編碼工具時，遵循下列最佳實務：
 請參閱下列資源，以開始使用：
 
 * [整合入門套件](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
+* [結帳入門套件](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
 * [Adobe Commerce入門套件範本](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Adobe I/O Events入門範本](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Adobe I/O Events入門範本](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [App Builder範例應用程式](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### 為何應使用這些資源
@@ -313,7 +356,7 @@ Adobe建議您在使用AI編碼工具時，遵循下列最佳實務：
 
 ### 通訊協定
 
-規則系統會自動強制執行下列四個階段的通訊協定。 開發應用程式時，工具應自動遵循此通訊協定：
+已安裝的技能會自動強制執行下列四階段通訊協定。 開發應用程式時，工具應自動遵循此通訊協定：
 
 * 第1階段：需求分析與釐清
    * 詢問澄清問題時，請提供完整的答案。
