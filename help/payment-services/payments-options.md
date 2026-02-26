@@ -3,9 +3,9 @@ title: 付款選項
 description: 設定付款選項，以自訂商店客戶可用的方式。
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration, Paas, Saas
-source-git-commit: 007674c3b81b95af4c0ec2688a4a98e19ec04d08
+source-git-commit: 6727102c54e0ac81df289ecd66ec61156662b8b9
 workflow-type: tm+mt
-source-wordcount: '1470'
+source-wordcount: '1728'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 * **Standard** — 付款選項（快速結帳） （PayPal信用卡和借記卡）的子集適用於其他支援的國家/地區。 [信用卡欄位](#credit-card-fields)和[Apple Pay](#apple-pay-button)不適用於此上線選項。 在上線以啟用即時付款時，請選取[標準上線選項](../payment-services/production.md#standard-onboarding)。
 
-如需完成「進階」和「標準」上線的相關資訊，請參閱[為生產啟用 [!DNL Payment Services] &#x200B;](../payment-services/production.md#complete-merchant-onboarding)。
+如需完成「進階」和「標準」上線的相關資訊，請參閱[為生產啟用 [!DNL Payment Services] ](../payment-services/production.md#complete-merchant-onboarding)。
 
 ## [!UICONTROL Credit Card Fields]
 
@@ -159,14 +159,51 @@ PayPal、Pay Later和Venmo付款方法使用[伺服器端送貨回撥](https://d
 
 1. 確定您的存放區在生產模式[中為](configure-admin.md#enable-payment-services)。
 1. [在[設定]中設定所需的PayPal付款按鈕](configure-admin.md#payment-buttons)。
-1. 開啟&#x200B;_區段中的_&#x200B;關閉&#x200B;**[[!UICONTROL Show PayPal Credit and Debit card button]](configure-admin.md#payment-buttons)** _[!UICONTROL Payment buttons]_&#x200B;選項。
+1. 開啟&#x200B;_區段中的_&#x200B;關閉&#x200B;**[[!UICONTROL Show PayPal Credit and Debit card button]](configure-admin.md#payment-buttons)** _[!UICONTROL Payment buttons]_選項。
 
 要&#x200B;**擷取您現有信用卡提供者的付款&#x200B;_和_ PayPal付款按鈕**：
 
 1. 確定您的存放區在生產模式[中為](configure-admin.md#enable-payment-services)。
 1. [設定所需的PayPal付款按鈕](configure-admin.md#payment-buttons)。
-1. 開啟&#x200B;_區段中的_&#x200B;關閉&#x200B;**[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#payment-buttons)** _[!UICONTROL Payment buttons]_&#x200B;選項。
-1. 開啟&#x200B;_區段中的_&#x200B;關閉&#x200B;**[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** _[!UICONTROL Credit card fields]_&#x200B;選項，並使用您的[現有信用卡提供者帳戶](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html?lang=zh-Hant#payments)。
+1. 開啟&#x200B;_區段中的_&#x200B;關閉&#x200B;**[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#payment-buttons)** _[!UICONTROL Payment buttons]_選項。
+1. 開啟&#x200B;_區段中的_&#x200B;關閉&#x200B;**[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** _[!UICONTROL Credit card fields]_選項，並使用您的[現有信用卡提供者帳戶](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments)。
+
+## 本地付款方法
+
+「當地付款方式(LPM)」除了現有的卡片型選項外，也支援特定地區和當地付款方式，例如銀行轉帳與當地化付款解決方案。 商家可以直接在Commerce設定中啟用或停用可用的LPM。 LPM可擴充Adobe的支付能力、支援歐洲市場的需求、改善結帳本地化，以及協助提高轉換率、商家採用率以及買家滿意度。
+
+可用的LPM包括：
+
+| 付款方法 | 國家/地區 | 貨幣 |
+|----------------|-----------|----------|
+| Bancontact | 比利時 | 歐元 |
+| 閃爍 | 波蘭 | 計畫 |
+| eps | 奧地利 | 歐元 |
+| iDEAL | 荷蘭 | 歐元 |
+| MyBank | 義大利 | 歐元 |
+| Przelewy24 | 波蘭 | 歐元，計畫 |
+
+LPM會根據其帳單地址及其網站的基本貨幣向客戶顯示。 只有當兩個條件都符合付款方式的需求時，付款方式才會出現。
+
+如需詳細資訊，請參閱[本機付款方法組態](configure-admin.md#local-payment-methods)。
+
+## 快速簽出按鈕
+
+為了提供更快速的結帳體驗，快速付款選項可在結帳流程開始時使用。 客戶可以使用PayPal、PayPal Pay Later、Venmo、Apple Pay或Google Pay完成購買。
+
+啟用後，快速結帳按鈕會在結帳程式開始時顯示，為偏好數位錢包付款方式的客戶提供更快速的購買途徑。
+
+若要啟用快速結帳按鈕，請個別設定每個付款方式：
+
+* **PayPal及稍後付款**：啟用&#x200B;**[!UICONTROL Show buttons at start of checkout]** PayPal付款按鈕[設定中的](configure-admin.md#paypal-payment-buttons)。
+
+* **Apple Pay**：啟用&#x200B;**[!UICONTROL Show Apple Pay at start of checkout]** Apple Pay[設定中的](configure-admin.md#apple-pay)。
+
+* **Google Pay**：啟用&#x200B;**[!UICONTROL Show Google Pay at start of checkout]** Google Pay[設定中的](configure-admin.md#google-pay)。
+
+>[!NOTE]
+>
+>付款方式的可用性取決於採購員的位置。 若要進行沙箱測試，請使用[購買者的國家/地區](sandbox.md#buyers-country)設定來模擬不同的區域。 例如，Venmo僅於美國提供。 「先買後付」在美國和英國有售。
 
 ## 簽出選項
 

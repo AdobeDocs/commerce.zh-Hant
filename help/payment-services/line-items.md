@@ -4,9 +4,9 @@ description: 瞭解 [!DNL Payment Services] 的行專案，以及如何檢視商
 feature: Payments, Paas, Saas
 role: User
 exl-id: f690ff94-f83d-4525-9d52-1dea25a71060
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: 6727102c54e0ac81df289ecd66ec61156662b8b9
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '651'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,29 @@ ht-degree: 0%
 
 此資訊對於客戶服務、訂單管理和適當的帳單相當實用。
 
-此功能預設為[!DNL Payment Services]啟用。 若要檢視行專案，請執行下列動作：
+## 設定條列專案
+
+行專案預設為[!DNL Payment Services]啟用。 若要設定：
+
+1. 在&#x200B;_管理員_&#x200B;側邊欄中，瀏覽至&#x200B;**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**。
+
+1. 移至&#x200B;**[!UICONTROL Sales]**&#x200B;並選取&#x200B;**[!UICONTROL Payment Methods]**。
+
+1. 展開&#x200B;_[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_區段。
+
+1. 在&#x200B;_[!UICONTROL Payment Services]_區段中，展開_[!UICONTROL Line Items]_&#x200B;區段。
+
+1. 針對&#x200B;**[!UICONTROL Line Items Enabled]**，選取`Yes`以啟用（預設）或選取`No`以停用行專案。
+
+1. 按一下&#x200B;**[!UICONTROL Save Config]**&#x200B;以儲存變更。
+
+>[!IMPORTANT]
+>
+> 如果您有協力廠商擴充功能，會在訂單中新增自訂費用（例如手續費），則您可能需要停用明細專案。 [!DNL Payment Services]會根據標準Commerce訂單元件（專案、稅捐、送貨及折扣）計算明細專案。 [!DNL Payment Services]無法辨識的協力廠商費用可能會導致明細專案總計與訂單總計不符，這可能會妨礙結帳完成。
+
+## 檢視條列專案
+
+若要檢視行專案，請執行下列動作：
 
 1. 導覽至您的[PayPal商家儀表板](https://www.paypal.com/merchant/){target=_blank}。
 
@@ -123,11 +145,11 @@ ht-degree: 0%
 
 +++
 
-如需這些欄位及其限制的詳細資訊，請參閱明細專案[&#128279;](https://developer.paypal.com/docs/api/orders/v2/#definition-line_item){target=_blank}的PayPal開發人員檔案。
+如需這些欄位及其限制的詳細資訊，請參閱明細專案[的](https://developer.paypal.com/docs/api/orders/v2/#definition-line_item){target=_blank}PayPal開發人員檔案。
 
 ## 管理條列專案
 
-Adobe Commerce [會根據各資料列](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}的總金額來計算稅捐，如果訂購了相同料號的多重數量，或目錄中顯示含稅價格，則可能會導致舍入問題。 在這種情況下，總數量可能會分成兩行，但數量會等於訂購的料號總計。
+Adobe Commerce [會根據各資料列](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}的總金額來計算稅捐，如果訂購了相同料號的多重數量，或目錄中顯示含稅價格，則可能會導致舍入問題。 在這種情況下，總數量可能會分成兩行，但數量會等於訂購的料號總計。
 
 > 商戶儀表板檢視中具有舍入問題的明細行專案範例
 
