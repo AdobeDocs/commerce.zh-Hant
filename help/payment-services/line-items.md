@@ -29,9 +29,9 @@ ht-degree: 0%
 
 1. 移至&#x200B;**[!UICONTROL Sales]**&#x200B;並選取&#x200B;**[!UICONTROL Payment Methods]**。
 
-1. 展開&#x200B;_[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_區段。
+1. 展開&#x200B;_[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_&#x200B;區段。
 
-1. 在&#x200B;_[!UICONTROL Payment Services]_區段中，展開_[!UICONTROL Line Items]_&#x200B;區段。
+1. 在&#x200B;_[!UICONTROL Payment Services]_&#x200B;區段中，展開&#x200B;_[!UICONTROL Line Items]_&#x200B;區段。
 
 1. 針對&#x200B;**[!UICONTROL Line Items Enabled]**，選取`Yes`以啟用（預設）或選取`No`以停用行專案。
 
