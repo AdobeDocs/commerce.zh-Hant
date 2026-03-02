@@ -5,9 +5,9 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce merchants support key components of their business.
 recommendations: noCatalog
 exl-id: 507af1fa-9f3e-41bc-9aaf-cd89839aae0b
-source-git-commit: 6f11ad00aed7642c44aeaf384f4433e9522b6bf0
+source-git-commit: fd7ee8757758d63f0fadf284657e4756f878102f
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '1179'
 ht-degree: 0%
 
 ---
@@ -168,11 +168,11 @@ Adobe Commerce服務提供強大的功能，可擴充店面、簡化整合，以
       </p>
    </td>
    <td valign="top">
-      <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
       <img alt="監視資料同步" src="../assets/icons/Monitoring.svg" width="40">
       </a>
       <div>
-          <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
          <strong>資料管理儀表板</strong>
          </a>
       </div>
@@ -198,10 +198,29 @@ Adobe Commerce服務提供強大的功能，可擴充店面、簡化整合，以
 | 建立全通道的個人化體驗 | 您的商務資料已設定為定址區，導致您無法跨管道提供個人化體驗。 | 使用[資料連線](../data-connection/overview.md)將行為、異動和設定檔資料傳送至Adobe Experience Platform。 建立複雜的客戶區段、建立捨棄的購物車行銷活動、鎖定相似對象，以及分析整個客戶歷程中的季節性趨勢。 |
 | 簡化數位資產管理 | 跨多個系統管理產品影像和豐富媒體既費時又容易出錯。 | [AEM Assets整合](../aem-assets-integration/overview.md)將Adobe Commerce連線至Adobe Experience Manager Assets專案，簡化工作流程，並確保所有接觸點上的品牌體驗一致，藉此提供集中式資產管理。 |
 | 最佳化付款處理 | 有限的付款選項和不良的付款體驗，影響了客戶的滿意度和轉換。 | [付款服務](../payment-services/guide-overview.md)提供多種付款方式，包括免息分期付款，並有一個統一的控制面板來管理付款、訂單及發票。 |
-| 大規模管理資料同步 | 資源密集的索引正在減慢網站的速度，而且您無法輕鬆追蹤資料同步問題。 | [SaaS資料匯出](../data-export/overview.md)、[SaaS價格索引器](../price-index/price-indexing.md)和[資料管理儀表板](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)會自動同步目錄、訂單和存貨資料，將價格計算解除安裝到Adobe的雲端基礎結構，並即時顯示同步處理狀態。 |
+| 大規模管理資料同步 | 資源密集的索引正在減慢網站的速度，而且您無法輕鬆追蹤資料同步問題。 | [SaaS資料匯出](../data-export/overview.md)、[SaaS價格索引器](../price-index/price-indexing.md)和[資料管理儀表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)會自動同步目錄、訂單和存貨資料，將價格計算解除安裝到Adobe的雲端基礎結構，並即時顯示同步處理狀態。 |
 | 挽回失去的客戶，降低回報 | 高客戶流失率和產品回報率正影響獲利能力。 | 將[資料連線](../data-connection/overview.md)與Adobe Journey Optimizer和Real-Time CDP結合，以識別傳回模式、建立回饋行銷活動、依行為劃分客戶，並透過電子郵件和簡訊傳送個人化的重新參與行銷活動。 |
 | 制定資料導向銷售決策 | 您不確定要促銷哪些產品或何時要執行促銷活動。 | [即時搜尋](../live-search/overview.md)提供搜尋效能見解和銷售工具，以存取關鍵量度、分析搜尋字詞，並使用智慧型銷售規則，根據真正的客戶行為和業務目標來提升或隱藏產品。 |
 | 維持對敏感資料的合規性 | 您需要處理敏感的客戶資料，同時維護HIPAA合規性。 | [Data Connection](../data-connection/overview.md)已可使用HIPAA，可讓您與Experience Platform共用後台資料，同時保持合規性並系統地處理隱私權要求。 |
+
+## Commerce服務如何搭配運作
+
+Adobe Commerce服務建置在統一的平台上。 使用多項服務時，您將受益於：
+
+- **整合資料管道** — 產品、定價和庫存資料會在所有服務之間自動同步，不需要重複輸入資料或自訂整合。
+- **即時個人化** — 搜尋、瀏覽和購買的客戶行為可支援智慧型建議，並在您整個店面進行排名。
+- **一致的店面整合** — 無論您是使用由Edge Delivery Services、PWA Studio或Headless實作支援的Commerce店面，相同的下拉式清單和API可在所有平台上順暢運作。
+- **多商店和多語言支援** — 所有服務會自動遵循您的商店檢視、客戶區段和B2B目錄設定，不需要額外的設定。
+- **豐富的產品視覺效果** — 當您與AEM Assets整合時，最佳化的產品影像會一致地出現在搜尋結果、產品頁面和建議中。
+- **已連線的客戶資料** — 使用Data Connection與Adobe Experience Platform、Real-Time CDP和Journey Optimizer共用購物行為，以啟用跨管道個人化和行銷活動最佳化。
+
+例如，當購物者使用即時搜尋來搜尋產品、在檢視產品推薦後將其新增到購物車，並使用支付服務完成購買時，所有這些活動都會順暢地流經統一資料管道。 然後，此行為資料可為未來購物者提供更好的搜尋結果和更相關的建議。
+
+>[!NOTE]
+>
+>您必須設定事件資料收集，以啟用服務之間的行為資料共用。 如需安裝指示，請參閱[設定Commerce服務](saas.md#saas-configuration)。
+
+每項服務皆可單獨使用，但結合使用可建立更聰明且個人化的購物體驗。
 
 {{$include /help/_includes/templated/whats-new.md}}
 
