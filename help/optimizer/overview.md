@@ -2,11 +2,11 @@
 title: 什麼是Adobe Commerce Optimizer？
 description: 瞭解 [!DNL Adobe Commerce Optimizer] 及其主要功能。
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: 8cf3e66641cf4bbc6db1da1dec14f7aaa291d6fe
+source-git-commit: bf1d88ef7daec25872678bb27bce0bb7c97fd296
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '942'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 請觀看下列影片以瞭解[!DNL Adobe Commerce Optimizer]的高階概觀：
 
->[!VIDEO](https://video.tv.adobe.com/v/3450474?captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3450226)
 
 ## 誰從[!DNL Adobe Commerce Optimizer]中受益最大？
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 - 想要維持現有後端商業系統並只轉換店面體驗的商家。
 - 由協力廠商系統管理購物車和結帳生命週期的企業。
-- AEM客戶，需要透過協力廠商商務引擎以簡單的方式管理其產品目錄。
+- [AEM客戶](setup/product-visuals.md)，想要透過協力廠商商務引擎以簡單的方式管理其產品目錄。
 
 ## 快速導覽
 
@@ -69,6 +69,7 @@ ht-degree: 0%
 定義目錄檢視和原則。 目錄不僅包含您的產品資料，也可協助您定義業務結構。 此外，您也可以檢視寶貴分析，瞭解店面是否有產品資料，確保及時顯示給購物者。
 
 - **目錄檢視** — 協助您將零售結構定義成有意義的業務群組。 例如，汽車業的經銷商、多品牌集團的子公司或供應商的製造地點。
+- **目錄層** — 修改產品資料而不變更來源資料。 將AEM Assets用於產品影像時，會透過[產品視覺效果](setup/product-visuals.md)套用AEM-Assets圖層。 如需詳細資訊，請參閱[目錄圖層](setup/catalog-layer.md)。
 - **原則** — 位於目錄檢視中的資料存取篩選器。 原則可協助確保將正確的內容傳送至正確的目的地。 例如，銷售點實體商店、市集、廣告管道(Google、Facebook、Instagram)。
 - **資料同步** — 顯示從資料來源（PIM、ERP等）傳輸到[!DNL Adobe Commerce Optimizer]之產品資料的同步處理狀態概觀。 該產品資料顯示在&#x200B;**[!UICONTROL Catalog Service]**、**[!UICONTROL Search]**&#x200B;和&#x200B;**[!UICONTROL Recommendations]**&#x200B;標籤中。
 - **事件** — 顯示店面事件資料，以支援產品探索和建議。 **事件**&#x200B;頁面可讓商家驗證是否已正確實作店面事件，以及是否成功擷取事件。 商戶可以使用此頁面來識別潛在問題，並採取措施來解決任何事件問題。
