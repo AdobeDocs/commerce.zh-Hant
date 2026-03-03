@@ -2,12 +2,12 @@
 title: Adobe Commerce App Builder的AI編碼開發人員工具
 description: 瞭解如何使用AI工具來建立Commerce App Builder應用程式。
 feature: App Builder, Cloud
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
 role: Developer
 level: Intermediate
-source-git-commit: 4e3f593ead4b0e32bdf474498421b20475dcbe52
+source-git-commit: 2c851da1dc521f5309031fc091be88f9ca39cd8f
 workflow-type: tm+mt
-source-wordcount: '2470'
+source-wordcount: '2438'
 ht-degree: 0%
 
 ---
@@ -56,10 +56,6 @@ aio commerce extensibility tools-setup
 * [Git](https://github.com/git-guides/install-git)：用於存放庫複製和版本控制
 
 ## 安裝
-
->[!NOTE]
->
->如果您只想安裝檔案RAG服務，而不是整個AI編碼工具套件，請參閱[檔案RAG服務](./doc-rag.md)。
 
 1. 全域安裝最新的[Adobe I/O CLI](https://github.com/adobe/aio-cli)：
 
@@ -179,8 +175,6 @@ aio auth login
 >[!NOTE]
 >
 >MCP伺服器的某些功能可以在不登入的情況下運作，但RAG (Retrieval-Enhanced Generation)服務將無法運作。 RAG服務可讓AI編碼代理程式即時存取完整的Adobe Commerce檔案集，好讓代理程式能夠回答問題，並根據目前的Commerce開發做法、API和架構模式產生程式碼。
->
->若要單獨安裝RAG服務，請參閱[檔案RAG服務](./doc-rag.md)。
 
 ### 游標
 
@@ -340,7 +334,7 @@ Adobe建議您在使用AI編碼工具時，遵循下列最佳實務：
 * [整合入門套件](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [結帳入門套件](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
 * [Adobe Commerce入門套件範本](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Adobe I/O Events入門範本](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Adobe I/O Events入門範本](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [App Builder範例應用程式](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### 為何應使用這些資源
