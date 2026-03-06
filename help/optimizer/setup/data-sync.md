@@ -3,11 +3,11 @@ title: 資料同步
 description: 檢閱正在從Commerce資料來源同步到 [!DNL Adobe Commerce Optimizer]的目錄資料。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案(Adobe管理的SaaS基礎結構)。"
 exl-id: c0f4664c-6afc-4762-856b-5e26a865d3a2
-source-git-commit: e2c3c8a225b2c56985ba48c7efc9ae2c2d059b2e
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -30,9 +30,9 @@ ht-degree: 0%
 | [!DNL Catalog Service] | 顯示[!DNL Catalog Service]的最新同步更新、收到的產品總數、搜尋欄位及同步產品的表格。 |
 | 產品探索 | 顯示最新同步更新、收到的產品總數、搜尋欄位，以及要搜尋的同步產品表格。 |
 | Recommendations | 顯示最新的同步更新、收到的產品總數、搜尋欄位，以及Recommendations同步產品的表格。 |
-| 過去3小時內收到的產品 | 顯示過去三小時內已從目錄來源轉移到Adobe Commerce Optimizer的產品數量。 如果您不經常更新目錄，此值通常為零。 |
-| 目錄中的產品總數 | 反映Adobe Commerce Optimizer可用的目錄產品總數。 |
-| 同步的產品 | 提供有關同步至Adobe Commerce Optimizer的產品的詳細資訊。 根據預設，此表格會依「上次更新」排序。 若要尋找特定產品，請使用&#x200B;**[!UICONTROL Search by Name or SKU]**&#x200B;欄位。 |
+| 過去3小時內收到的產品 | 顯示過去三小時內已從目錄來源傳輸到[!DNL Adobe Commerce Optimizer]的產品數目。 如果您不經常更新目錄，此值通常為零。 |
+| 目錄中的產品總數 | 反映[!DNL Adobe Commerce Optimizer]可用的目錄產品總數。 |
+| 同步的產品 | 提供有關同步至[!DNL Adobe Commerce Optimizer]的產品的詳細資料。 根據預設，此表格會依「上次更新」排序。 若要尋找特定產品，請使用&#x200B;**[!UICONTROL Search by Name or SKU]**&#x200B;欄位。 |
 
 ## 同步的產品清單
 

@@ -3,10 +3,10 @@ title: 目錄圖層
 description: 瞭解目錄圖層如何讓您修改產品資料而不變更原始來源資料，以便您可以安全地自訂並隨時還原變更。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
-source-git-commit: bf1d88ef7daec25872678bb27bce0bb7c97fd296
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案(Adobe管理的SaaS基礎結構)。"
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '1514'
+source-wordcount: '1511'
 ht-degree: 0%
 
 ---
@@ -118,7 +118,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->若要進行大量圖層作業，請使用上述的資料擷取API方法[&#128279;](#add-a-catalog-layer-via-data-ingestion)。
+>若要進行大量圖層作業，請使用上述的資料擷取API方法[](#add-a-catalog-layer-via-data-ingestion)。
 
 **若要建立手動圖層：**
 
@@ -206,7 +206,7 @@ ht-degree: 0%
 
 1. 系統會根據新順序自動更新訂單編號。
 
-1. 按一下[儲存]以套用新的優先順序。**&#x200B;**
+1. 按一下[儲存]以套用新的優先順序。****
 
 >[!IMPORTANT]
 >

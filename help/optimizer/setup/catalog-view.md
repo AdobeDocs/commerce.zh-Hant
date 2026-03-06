@@ -3,11 +3,11 @@ title: 目錄檢視
 description: 瞭解什麼是目錄檢視，以及如何建立檢視，以依業務結構、原則和定價組織您的產品目錄。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案(Adobe管理的SaaS基礎結構)。"
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
-source-git-commit: 769aafeb261d978623e68c466888924c92632883
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1350'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # 銷售服務的目錄檢視
 
-目錄檢視是Adobe Commerce Optimizer銷售服務的基礎，可讓您依業務結構、原則和定價組織產品目錄。 此彈性資料模型支援多品牌、多業務單位及多語言案例，同時維持營運效率。
+目錄檢視是[!DNL Adobe Commerce Optimizer]銷售服務的基礎，可讓您依業務結構、原則和定價組織產品目錄。 此彈性資料模型支援多品牌、多業務單位及多語言案例，同時維持營運效率。
 
 ## 什麼是目錄檢視？
 
@@ -31,6 +31,16 @@ ht-degree: 0%
 - 經銷商目錄檢視可能只會顯示該特定經銷商可用的產品
 - 區域目錄檢視可能會顯示特定地理區域的產品和定價
 - 品牌目錄檢視可能只會顯示特定品牌的產品
+
+### 目錄檢視與目錄來源
+
+以下說明目錄檢視與目錄來源之間的差異：
+
+- **目錄檢視** — 針對特定業務需求所設定的目錄檢視。 當您建立目錄檢視時，請選取要使用的目錄來源（或地區設定），然後新增[原則](policies.md)以篩選可見的產品，並連結[價格手冊](pricebooks.md)以控制定價。 單一目錄來源可以支援許多目錄檢視（例如，一個`en-US`來源具有不同品牌或地區的個別目錄檢視）。 將目錄檢視想像為&#x200B;*如何*&#x200B;將該資料公開至店面、頻道或對象。
+
+- **目錄來源** — 提供產品資訊的基礎資料內容。 目錄來源通常是地區設定（例如，`en-US`、`fr-CA`）或外部系統，例如PIM或ERP。 [!DNL Adobe Commerce Optimizer]會從一或多個目錄來源將產品資料擷取到統一的基本目錄中。 將目錄來源想像為&#x200B;*其中*&#x200B;原始目錄資料來源。
+
+總而言之，**目錄來源**&#x200B;是您從中提取的資料內容；而&#x200B;**目錄檢視**&#x200B;是您提供給購物者或管道的經過篩選、定價且有組織的內容。
 
 ## 建立目錄檢視
 
@@ -66,6 +76,14 @@ ht-degree: 0%
 目錄檢視頁面會更新以顯示新的目錄檢視&#x200B;。
 
 完成這些步驟後，目錄檢視現在會設定為根據您選取的來源和原則顯示產品和定價。
+
+### 指定建議和產品探索規則的目錄檢視
+
+>[!IMPORTANT]
+>
+>此功能目前處於Beta測試階段。
+
+當您[建立建議單位](../merchandising/recommendations/create.md)或[銷售規則](../merchandising/rules/add.md)時，您可以指定目錄檢視。
 
 ## 目錄圖層
 

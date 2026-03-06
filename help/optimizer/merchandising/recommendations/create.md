@@ -1,11 +1,11 @@
 ---
 title: 建立和管理建議
 description: 瞭解如何建立和管理建議。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案(Adobe管理的SaaS基礎結構)。"
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
-source-git-commit: ca0e786da6d23364d27d69ccf0fc5ded1f39f46e
+source-git-commit: 3d748e83e07a16e58c0c55f12a6c0ad40bbfdead
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1544'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,17 @@ _建議單位_
 
 當您啟用建議單位時，Adobe Commerce會開始[收集資料](../../manage-results/recommendation-performance.md)以測量曝光數、檢視數、點按數等。 「建議」表格會顯示每個建議單位的量度，以協助您做出明智的業務決策。
 
-1. 在&#x200B;_Adobe Commerce Optimizer_&#x200B;側邊欄上，前往&#x200B;_銷售_ > **建議**&#x200B;以顯示&#x200B;_建議_&#x200B;工作區。
+1. 在&#x200B;_[!DNL Adobe Commerce Optimizer]_側邊欄上，移至_&#x200B;銷售&#x200B;_>**建議**以顯示_&#x200B;建議&#x200B;_工作區。
+
+1. 在&#x200B;**目錄檢視**&#x200B;欄位中，選取您要讓建議可用的目錄檢視。 深入瞭解[使用建議](../../manage-results/recommendation-performance.md#select-catalog-view)的目錄檢視。
+
+   >[!IMPORTANT]
+   >
+   >此功能目前處於Beta測試階段。
 
 1. 按一下&#x200B;**建立建議**。
+
+   您建立的建議將可在您先前選取的目錄檢視中使用。
 
 1. 在&#x200B;_為您的建議命名_&#x200B;區段中，輸入描述性名稱以供內部參考，例如`Home page most popular`。
 
@@ -35,6 +43,8 @@ _建議單位_
 
 1. （選擇性）在&#x200B;_篩選器_&#x200B;區段中，[套用篩選器](filters.md)以控制哪些產品出現在建議單位中。
 
+1. 使用&#x200B;_建議的產品預覽_&#x200B;面板，以更清楚瞭解篩選器如何影響建議單位中顯示的產品。 深入瞭解如何[預覽建議](#preview-recommendations)。
+
 1. 完成後，按一下下列其中一項：
 
    - **儲存為草稿**&#x200B;以便稍後編輯建議單位。 您無法修改處於草稿狀態的建議單位的建議型別。
@@ -45,11 +55,33 @@ _建議單位_
 
 >[!NOTE]
 >
-> 您最多可以建立50個使用中的建議單位。
+>您最多可以建立50個使用中的建議單位。 如需詳細資訊，請參閱[限制和邊界](../../boundaries-limits.md)。
 
 >[!IMPORTANT]
 >
 >有些瀏覽器可能會封鎖導致Recommendations無法如預期運作的重要指令碼。
+
+## 預覽建議
+
+_建議產品預覽_&#x200B;面板總是隨建議單位部署至店面時可能顯示的產品範例選項一起提供。
+
+![建議預覽](../../assets/rec-preview.png)
+
+若要在非生產環境中工作時測試建議，您可以從不同的來源擷取建議資料。 這可讓商家在部署至生產環境之前，先體驗規則並預覽建議。
+
+| 欄位 | 說明 |
+|---|---|
+| 目錄檢視 |
+| 名稱 | 產品的名稱。 |
+| SKU | 指派給產品的庫存單位 |
+| 價格 | 產品的價格。 |
+| 結果型別 | 主要 — 表示收集到的訓練資料足夠顯示建議。<br />備份 — 表示未收集足夠的訓練資料，因此使用備份建議來填滿位置。 移至[行為資料](../../setup/events/overview.md)以進一步瞭解機器學習模型和備份建議。 |
+
+當您建立建議單位時，請嘗試使用建議型別和篩選器，以取得即將包含之產品的即時即時回饋。 當您開始瞭解顯示的產品時，可以設定建議單位以符合您的業務需求。
+
+[!DNL Adobe Commerce Optimizer] [篩選器](filters.md)建議，以避免在單一頁面上部署多個建議單位時顯示重複的產品。 因此，預覽面板中顯示的產品可能與店面中顯示的產品不同。
+
+針對多店面、多語言或多品牌設定，您可以設定每個建議是套用至所有目錄檢視（全域）還是套用至單一[目錄檢視](../../setup/catalog-view.md)。 進一步瞭解使用建議時如何[設定目錄檢視](../../manage-results/recommendation-performance.md#select-catalog-view)。
 
 ## 取得建議ID
 
@@ -65,13 +97,13 @@ _建議單位_
 
 1. 在&#x200B;**建議ID**&#x200B;區段中，複製ID。
 
-1. 使用此ID在您的Edge Delivery Services店面設定[建議放置區](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/?lang=zh-Hant)。
+1. 使用此ID在您的Edge Delivery Services店面設定[建議放置區](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/)。
 
 ## 管理現有的建議
 
 您可以編輯、停用或刪除現有的建議。
 
-1. 在&#x200B;_Adobe Commerce Optimizer_&#x200B;側邊欄上，前往&#x200B;_銷售_ > **建議**。
+1. 在&#x200B;_[!DNL Adobe Commerce Optimizer]_側邊欄上，移至_&#x200B;銷售&#x200B;_>**建議**。
 
 1. 選取您要修改的建議。
 
@@ -84,13 +116,13 @@ _建議單位_
    - 產品數量
    - 篩選產品
 
-   您無法變更建議型別。
+   您無法變更建議型別或目錄檢視。 目錄檢視是在您建立建議時設定。 若要深入瞭解，請參閱[選取目錄檢視](../../manage-results/recommendation-performance.md#select-catalog-view)。
 
 1. 完成時，按一下&#x200B;**儲存變更**。
 
 ## 整備程度指標
 
-整備程度指標會根據可用的目錄和行為資料，顯示哪些建議型別的效能最佳。 您也可以使用整備程度指標來判斷您是否有[事件集合](../../setup/events/overview.md)的問題，或您是否沒有足夠的流量填入建議型別。
+整備程度指標會根據可用的目錄和行為資料，顯示哪些建議型別的執行效果最佳。 它們也可以協助您識別[事件集合](../../setup/events/overview.md)的潛在問題，或判斷建議型別是否沒有收到足夠的流量以產生結果。
 
 整備程度指標可歸類為[靜態型](#static-based)或[動態型](#dynamic-based)。 靜態式只會使用目錄資料，而動態式則會使用購物者的行為資料。 該行為資料用於[訓練機器學習模型](../../setup/events/overview.md)，以建置個人化建議並計算其整備分數。
 
@@ -100,7 +132,7 @@ _建議單位_
 
 整備程度指標百分比是透過計算得出，該計算可指出根據建議型別可能建議的產品數量。 統計資料會根據目錄的整體大小、互動數量（例如檢視、點按、新增至購物車）以及在特定時間範圍內註冊這些事件的SKU百分比，套用至產品。 例如，在假期旺季的流量中，整備程度指標顯示的值可能會高於正常流量時的值。
 
-由於這些變數，整備程度指標百分比可能會波動。 這說明了為何您可能會看到建議型別在「準備部署」時進出。
+由於這些變數，整備程度指標百分比可能會波動。 此波動說明了為何您可能會看到建議型別進出「準備部署」。
 
 整備程度指標的計算基礎為兩個因素：
 
@@ -109,8 +141,8 @@ _建議單位_
 
 系統會根據上述因素計算整備度值，並顯示如下：
 
-- 75%或以上表示為該建議型別建議的將高度相關。
-- 至少50%表示為該建議型別建議的建議將較不相關。
+- 75%或以上表示針對該建議型別所建議的相關性極高。
+- 至少50%表示為該建議型別建議的建議相關性較低。
 - 少於50%表示為該建議型別建議的建議可能無關緊要。 在此情況下，會使用[備份建議](../../setup/events/overview.md#backuprecs)。
 
 深入瞭解[為何整備程度指標可能較低](#what-to-do-if-the-readiness-indicator-percent-is-low)。
@@ -156,9 +188,9 @@ _建議型別_
 >
 >指標可能永遠不會達到100%。
 
-相依於目錄資料的建議型別的整備程度指標百分比不會經常變更，因為商家的目錄不會經常變更。 但根據購物者行為資料的建議型別整備程度指標百分比會隨著每日購物者活動而經常變更。
+相依於目錄資料的建議型別的整備程度指標不會有多大變化，因為商家的目錄很少變更。 但根據購物者行為資料的建議型別整備程度指標可能會經常變更，具體取決於每日購物者活動。
 
-#### 如果整備程度指標百分比很低，該怎麼辦
+#### 如果整備程度指標低，該怎麼辦
 
 低整備百分比表示您的目錄中沒有許多產品符合納入此建議型別之建議中的資格。 這表示，如果仍要部署此建議型別，很可能傳回[備份建議](../../setup/events/overview.md#backuprecs)。
 
@@ -172,24 +204,5 @@ _建議型別_
 - **以動態為基礎的指標** — 以下原因可能導致以動態為基礎的指標百分比低：
 
    - 個別建議型別（requestId、產品內容等）的必要[storefront事件](../../setup/events/overview.md)中缺少欄位。
-   - 商店流量低，因此我們收到的行為事件數量低。
-   - 商店中不同產品的店面行為事件多樣性很低。 例如，如果大部分時間都只檢視或購買您產品的10%，則各自的整備程度指標將會很低。
-
-## 預覽建議
-
-_建議產品預覽_&#x200B;面板總是隨建議單位部署至店面時可能顯示的產品範例選項一起提供。
-
-![建議預覽](../../assets/rec-preview.png)
-
-若要在非生產環境中工作時測試建議，您可以從不同的來源擷取建議資料。 這可讓商家在部署至生產環境之前，先體驗規則並預覽建議。
-
-| 欄位 | 說明 |
-|---|---|
-| 名稱 | 產品的名稱。 |
-| SKU | 指派給產品的庫存單位 |
-| 價格 | 產品的價格。 |
-| 結果型別 | 主要 — 表示收集到的訓練資料足夠顯示建議。<br />備份 — 表示未收集足夠的訓練資料，所以使用備份建議來填滿位置。 移至[行為資料](../../setup/events/overview.md)以進一步瞭解機器學習模型和備份建議。 |
-
-當您建立建議單位時，請嘗試使用建議型別和篩選器，以取得即將包含之產品的即時即時回饋。 當您開始瞭解顯示的產品時，可以設定建議單位以符合您的業務需求。
-
-[!DNL Adobe Commerce Optimizer] [篩選器](filters.md)建議，以避免在單一頁面上部署多個建議單位時顯示重複的產品。 因此，預覽面板中顯示的產品可能與店面中顯示的產品不同。
+   - 存取存放區的流量低，因此收到的行為事件數量低。
+   - 商店中不同產品的店面行為事件多樣性很低。 例如，如果大部分時間都只檢視或購買您產品的10%，則各自的整備程度指標會很低。

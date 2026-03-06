@@ -1,11 +1,11 @@
 ---
 title: 建立和管理規則
 description: 瞭解如何建立和管理銷售規則。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案(Adobe管理的SaaS基礎結構)。"
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
-source-git-commit: bd54ff7afb0b6a5d78098225a8f98f81f96a7923
+source-git-commit: 9cb231055df45bbfcff3303c6e1c257c883cb852
 workflow-type: tm+mt
-source-wordcount: '2146'
+source-wordcount: '2219'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,13 @@ ht-degree: 0%
 ## 建立規則
 
 1. 在左側邊欄中，移至&#x200B;_銷售_ > **銷售規則**。
-1. 按一下&#x200B;**建立規則**&#x200B;以啟動規則編輯器。
+1. （選擇性）使用&#x200B;**目錄檢視**&#x200B;下拉式清單，選取應套用規則的目錄檢視。 您建立的規則將範圍限定在選取的檢視（如果選取&#x200B;**所有檢視**，則限定在所有目錄檢視）。 請參閱[選取目錄檢視](workspace.md#select-catalog-view)，瞭解目錄檢視範圍的運作方式。
+
+   >[!IMPORTANT]
+   >
+   >此功能目前處於Beta測試階段。
+
+1. 按一下&#x200B;**[!UICONTROL Create rule]**&#x200B;以啟動規則編輯器。
 
 ![建立規則](../../assets/create-rule.png)
 
@@ -54,7 +60,7 @@ ht-degree: 0%
 
 #### 多個條件
 
-1. 若要建置包含多個條件的規則，請按一下[新增條件]。**&#x200B;**
+1. 若要建置包含多個條件的規則，請按一下[新增條件]。****
 一個規則最多可以有十個條件。 結合兩個條件的邏輯運運算元是以目前的*Match*&#x200B;設定為基礎。 依預設，*符合*&#x200B;為`All`，邏輯運運算元為`AND`。
 
 1. 選取第二個條件並輸入必要的查詢文字。
@@ -68,7 +74,7 @@ ht-degree: 0%
 
    在此範例中，不是搜尋「yoga pants」，而是有兩個不同的查詢可搜尋「yoga」或「pants」。 此規則較少具體，且在店面觸發的頻率遠高於其他規則。
 
-1. 若要新增其他條件，請按一下[新增條件] **&#x200B;**&#x200B;並重複此程式。
+1. 若要新增其他條件，請按一下[新增條件] ****&#x200B;並重複此程式。
 
 ### 智慧型排名
 
@@ -165,7 +171,7 @@ ht-degree: 0%
 
 ## 編輯、檢視和刪除規則
 
-請依照這些指示更新現有規則的屬性。
+請依照這些指示更新現有規則的屬性。 規則建立後，您無法變更其目錄檢視（範圍）；範圍會在您建立規則時設定。 檢視[選取目錄檢視](workspace.md#select-catalog-view)。
 
 ### 編輯規則
 

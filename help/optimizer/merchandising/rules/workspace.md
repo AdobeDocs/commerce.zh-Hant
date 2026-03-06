@@ -1,17 +1,18 @@
 ---
 title: 銷售規則Workspace
 description: 瞭解銷售規則工作區的方法。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
-source-git-commit: 33a0903986cf581ece48616dad877db9516d9350
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案(Adobe管理的SaaS基礎結構)。"
+exl-id: 3deac529-731d-44b9-87f3-3c9cb36e28e7
+source-git-commit: 9cb231055df45bbfcff3303c6e1c257c883cb852
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 1%
+source-wordcount: '954'
+ht-degree: 0%
 
 ---
 
 # 銷售規則Workspace
 
-*銷售規則*&#x200B;工作區會列出目前選擇的規則及其狀態，並提供您建立和管理規則所需工具的存取權。 您可以從工作區中執行下列作業：
+*銷售規則*&#x200B;工作區會列出目前選擇的規則及其狀態，並提供您建立和管理規則所需工具的存取權。 您可以將規則範圍設定為所有[目錄檢視](../../setup/catalog-view.md) （全域）或單一目錄檢視。 請參閱[選取目錄檢視](#select-catalog-view)，瞭解如何依目錄檢視進行篩選，以及依每個目錄檢視建立規則。 您可以從工作區中執行下列作業：
 
 - 搜尋規則
 - 檢視規則詳細資料
@@ -71,6 +72,7 @@ ht-degree: 1%
 | 控制 | 說明 |
 |--- |--- |
 | 新增規則 | 開啟[規則編輯器](add.md)。 |
+| 目錄檢視 | 將表格篩選為適用於所選目錄檢視的規則。 也可在您[建立規則](add.md)時設定範圍。 選項： *所有檢視*&#x200B;或特定的[目錄檢視](../../setup/catalog-view.md)。 檢視[選取目錄檢視](#select-catalog-view)。 |
 | 狀態 | 依狀態篩選規則清單。 選項：全部、作用中、非作用中、已排程 |
 | ![資料行選擇器](../../assets/btn-show-hide-columns.png) | 指定網格中可見的欄。 選項：上次更新、開始日期、結束日期、狀態 |
 | 搜尋 | 依完整名稱或部份相符專案搜尋規則。 |
@@ -87,3 +89,41 @@ ht-degree: 1%
 | 說明 | 規則的簡短說明。 |
 | 上次更新時間 | 上次更新規則的日期和時間。 |
 | 已啟用 | 變更規則狀態的控制項。 選項：啟用/停用 |
+
+## 選取目錄檢視
+
+>[!IMPORTANT]
+>
+>此功能目前處於Beta測試階段。
+
+「銷售規則」頁面上的&#x200B;**[!UICONTROL Catalog view]**&#x200B;選取器會做兩件事：
+
+1. **篩選資料表** — 僅顯示套用至所選目錄檢視的規則（及其詳細資料）。
+1. **設定新規則的範圍** — 當您[建立規則](add.md)時，選取的目錄檢視會用作規則的範圍。 選項是&#x200B;*所有檢視*&#x200B;或特定的[目錄檢視](../../setup/catalog-view.md)。
+
+   - **所有檢視** — 規則會套用至所有目錄檢視。 使用目錄的每個店面中，搜尋和排名行為都相同。
+   - **目錄檢視** — 此規則僅適用於選取的目錄檢視（例如，一個店面、地區、經銷商或品牌）。 當不同的目錄檢視需要不同的銷售邏輯時，請使用此選項。
+
+如需建立規則及設定其範圍的詳細資訊，請參閱[建立及管理規則](add.md)。
+
+### 為何為每個目錄檢視建立規則？
+
+當不同的店面、區域或品牌需要不同的搜尋和排名行為時，為每個目錄檢視建立規則。 範例：
+
+- **經銷商或分銷商網路** — 每個經銷商都有自己的目錄檢視；您想要每個經銷商有不同的固定、提升或隱藏的產品。
+- **多區域** — 針對歐盟、美國或具有區域特定銷售規則的其他區域，提供個別的目錄檢視。
+- **多品牌** — 每個品牌都有自己的目錄檢視，而您想要的是品牌特定規則（例如，每個品牌的不同預設排名或促銷產品）。
+
+支援[智慧型排名](add.md#intelligent-ranking)的行為資料（例如檢視次數最多、購買次數最多、趨勢分析）依預設會依目錄檢視進行計算。 因此，使用智慧型排名的規則會反映該目錄檢視的購物者行為。 當您的帳戶有大量目錄檢視時，系統可能會彙總全域的行為資料以維持效能；在這種情況下，排名可能會受到高流量目錄檢視的影響，而較低流量檢視的相關性可能會降低。 如需目前限制，請參閱[限制和邊界](../../boundaries-limits.md)。
+
+### 如何為每個目錄檢視設定規則
+
+1. 在&#x200B;*銷售規則*&#x200B;工作區上，使用&#x200B;**[!UICONTROL Catalog view]**&#x200B;下拉式清單來選取應套用規則的目錄檢視。
+1. 按一下&#x200B;**[!UICONTROL Create rule]**。
+
+   您建立的規則會限定所選目錄檢視的範圍。
+1. 在[規則編輯器](add.md)中建置您的規則。
+
+   在編輯器中，定義條件、事件和詳細資訊。 此規則僅適用於該目錄檢視中的搜尋結果。
+
+規則建立後，您無法變更其目錄檢視（範圍）。 若要將類似的邏輯套用至其他目錄檢視，請先建立新規則並選取該目錄檢視，然後再建立。

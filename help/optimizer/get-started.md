@@ -3,11 +3,11 @@ title: 開始使用
 description: 瞭解如何開始使用 [!DNL Adobe Commerce Optimizer]。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案(Adobe管理的SaaS基礎結構)。"
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: c27b2a8c7dffdcc5d5195cf809d5b475f3e01059
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1032'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce Optimizer]設定和管理依賴三個關鍵角色。 每個角色都有特定的任務和責任：
 
-![Adobe Commerce Optimizer設定的角色型工作流程，顯示管理員、開發人員和使用者工作](./assets/high-level-workflow.png){zoomable="yes"}
+![ [!DNL Adobe Commerce Optimizer]安裝程式的角色型工作流程，顯示管理員、開發人員和使用者工作](./assets/high-level-workflow.png){zoomable="yes"}
 
 ### 管理員任務
 
@@ -105,7 +105,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->並非所有Adobe Commerce Optimizer使用者都能存取Cloud Manager。 存取權取決於指派給使用者帳戶的角色和許可權。
+>並非所有[!DNL Adobe Commerce Optimizer]使用者都可以存取Cloud Manager。 存取權取決於指派給使用者帳戶的角色和許可權。
 
 1. 登入[Adobe Experience Cloud](https://experience.adobe.com/)。
 
@@ -133,13 +133,13 @@ ht-degree: 0%
 
    執行處理下拉式清單列出組織中可用的所有Optimizer執行處理。 選取要檢視的執行個體。
 
-   用於選取Adobe Commerce Optimizer環境的![執行個體切換器下拉式清單](./assets/context-switcher.png){zoomable="yes"}
+   用於選取![環境的[!DNL Adobe Commerce Optimizer]執行個體切換器下拉式清單](./assets/context-switcher.png){zoomable="yes"}
 
 ### 取得執行個體詳細資訊
 
 按一下執行處理名稱旁的資訊圖示，即可檢視執行處理的詳細資訊。
 
-![Adobe Commerce Optimizer執行個體詳細資料面板，顯示端點和執行個體ID](./assets/aco-instance-details.png){width="60%" zoomable="yes"}
+顯示端點和執行個體識別碼的![[!DNL Adobe Commerce Optimizer]執行個體詳細資料面板](./assets/aco-instance-details.png){width="60%" zoomable="yes"}
 
 請注意下列重要資訊：
 
@@ -217,6 +217,6 @@ Adobe提供GitHub存放庫和範例資料與工具，協助您學習及測試[!D
 ### 取得協助
 
 - **開發人員資源**： [開發人員檔案](https://developer.adobe.com/commerce/services/optimizer/)
-- **店面資源**： [Commerce店面檔案](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant)
-- **教學課程**： [Commerce Optimizer教學課程](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
-- **支援**： [Adobe Commerce支援資源](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/overview)
+- **店面資源**： [Commerce店面檔案](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **教學課程**： [Commerce Optimizer教學課程](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
+- **支援**： [Adobe Commerce支援資源](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)

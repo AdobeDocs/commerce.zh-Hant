@@ -1,18 +1,18 @@
 ---
 title: 建議型別
 description: 瞭解您可以部署至網站上不同頁面的建議。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案(Adobe管理的SaaS基礎結構)。"
 exl-id: f1c4e0ef-a8fe-452d-9870-6d6964b4335d
-source-git-commit: 6fed7dd049019918646a9b871147c2d6ae27ed36
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '1611'
+source-wordcount: '1605'
 ht-degree: 0%
 
 ---
 
 # 建議型別
 
-Adobe Commerce Optimizer提供了一大組建議，您可以將這些建議部署至網站上的各個頁面。 所有建議型別都是資料導向。 它們由行為資料、產品屬性資料和量度提供支援。 為方便參考，建議型別分組如下：
+[!DNL Adobe Commerce Optimizer]提供大量建議，您可將其部署至網站上的不同頁面。 所有建議型別都是資料導向。 它們由行為資料、產品屬性資料和量度提供支援。 為方便參考，建議型別分組如下：
 
 - [個人化](#personalized)
 - [交叉銷售和追加銷售](#crossup)

@@ -2,24 +2,24 @@
 title: Salesforce Commerce聯結器
 description: 瞭解 [!DNL Commerce Optimizer SFCC Connector] ，此工具為整合Salesforce Commerce B2C與 [!DNL Adobe Commerce Optimizer] 以同步目錄資料，以及實作和自訂聯結器以支援業務營運提供了一個起點。
 role: Admin, Developer
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '1115'
+source-wordcount: '1094'
 ht-degree: 0%
 
 ---
 
-# Adobe Commerce Optimizer的Salesforce Commerce Connector
+# [!DNL Adobe Commerce Optimizer]的Salesforce Commerce Connector
 
 [!DNL Commerce Optimizer Salesforce Commerce Connector]以Adobe App Builder技術為基礎，可順暢地傳輸和管理從Salesforce Commerce Cloud B2C到[!DNL Adobe Commerce Optimizer]的目錄資料。 它可連線兩個平台，保持產品資訊、定價和更新的同步，而不需重新調整平台。
 
 聯結器開箱即用，提供可靠的資料同步功能，並具備彈性可自訂工作流程，滿足您的業務需求。
 
-如需端對端影片教學課程系列，請參閱[瞭解Salesforce Commerce雲端入門套件](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview)。
+如需端對端影片教學課程系列，請參閱[瞭解Salesforce Commerce雲端入門套件](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview)。
 
 ## 主要功能
 
-* **目錄資料同步：**&#x200B;將產品資料（包括變體、價格手冊和結構）從Salesforce Commerce B2C推送到Adobe Commerce Optimizer，以保持店面和體驗驅動的應用程式為最新狀態。
+* **目錄資料同步：**&#x200B;將產品資料（包括變體、價格手冊和結構）從Salesforce Commerce B2C推送到[!DNL Adobe Commerce Optimizer]，以保持店面與體驗驅動的應用程式為最新狀態。
 * **價格同步：**&#x200B;直接從Salesforce Commerce B2C匯入及管理價格資料。
 * **支援多種資料型別：**&#x200B;同步產品、定價和目錄結構，以反映複雜的銷售設定。
 
@@ -86,7 +86,7 @@ ht-degree: 0%
 
 [!DNL Commerce Optimizer SFCC Connector]包含數個主要元件：
 
-* **ACO SFCC Starter Kit App Builder應用程式** — 提供無伺服器功能，可處理SFCC與Adobe Commerce Optimizer之間的資料同步。
+* **ACO SFCC Starter Kit App Builder應用程式** — 提供無伺服器功能，可處理SFCC與[!DNL Adobe Commerce Optimizer]之間的資料同步。
 * **自訂SFCC Cartridge** — 使用資料擷取所需的API擴充您的Salesforce Commerce Cloud執行個體的必要卡匣。
 * **管理UI** — 用於監視同步狀態和管理聯結器操作的Web介面。
 
@@ -106,7 +106,7 @@ ht-degree: 0%
 
 ### 資料對應和屬性
 
-* **可搜尋屬性：** Salesforce Commerce B2C透過UI設定可搜尋屬性，而API不會公開這些屬性。 使用[[!DNL Catalog Data Ingestion metadata APIs]](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#metadata)在Adobe Commerce Optimizer中手動設定這些可搜尋的屬性。
+* **可搜尋屬性：** Salesforce Commerce B2C透過UI設定可搜尋屬性，而API不會公開這些屬性。 使用[[!DNL Catalog Data Ingestion metadata APIs]](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#metadata)在[!DNL Adobe Commerce Optimizer]中手動設定這些可搜尋的屬性。
 * **屬性對應：**&#x200B;根據您的業務需求，規劃Salesforce Commerce B2C產品屬性與[!DNL Commerce Optimizer]中繼資料的對應。
 * **預設可搜尋欄位：**&#x200B;聯結器會自動讓核心屬性(`name`、`description`、`ID`)預設為可搜尋。
 
@@ -127,7 +127,7 @@ ht-degree: 0%
 主要功能包括：
 
 * **同步處理狀態追蹤：**&#x200B;監視所有同步處理作業的狀態和時間戳記。
-* **連線驗證：**&#x200B;測試與Salesforce Commerce Cloud和Adobe Commerce Optimizer的連線。
+* **連線驗證：**&#x200B;測試與Salesforce Commerce Cloud和[!DNL Adobe Commerce Optimizer]的連線。
 * **產品資料驗證：**&#x200B;確認已同步的產品資料正確顯示在店面。
 * **錯誤記錄與疑難排解：**&#x200B;疑難排解的錯誤記錄可透過App Builder CLI存取。
 * **狀態管理：**&#x200B;追蹤同步處理進度並防止與內建狀態管理衝突。
@@ -138,10 +138,10 @@ ht-degree: 0%
 
 * **[ACO SFCC Starter Kit](https://github.com/adobe-commerce/aco-sfcc-starter-kit)** — 主要聯結器應用程式和檔案。
 * **[ACO SFCC墨水匣](https://github.com/adobe-commerce/aco-sfcc-cartridges)** - API整合所需的SFCC墨水匣。
-* **[ACO TypeScript SDK](https://github.com/adobe-commerce/aco-ts-sdk)** — 用於Adobe Commerce Optimizer整合的SDK。
+* **[ACO TypeScript SDK](https://github.com/adobe-commerce/aco-ts-sdk)** — 用於[!DNL Adobe Commerce Optimizer]整合的SDK。
 
 這些存放庫提供完整的原始程式碼、詳細檔案，以及實施和自訂聯結器的範例。
 
 ## 後續步驟
 
-準備好將您的Salesforce Commerce Cloud資料與Adobe Commerce Optimizer整合了嗎？ 首先，請檢閱[ACO SFCC Starter Kit存放庫](https://github.com/adobe-commerce/aco-sfcc-starter-kit)中的詳細實作指南，並確定您具備必要的必要條件。
+準備好將您的Salesforce Commerce Cloud資料與[!DNL Adobe Commerce Optimizer]整合嗎？ 首先，請檢閱[ACO SFCC Starter Kit存放庫](https://github.com/adobe-commerce/aco-sfcc-starter-kit)中的詳細實作指南，並確定您具備必要的必要條件。

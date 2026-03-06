@@ -1,10 +1,10 @@
 ---
 title: 機會
 description: 透過與Adobe Sites Optimizer的整合提高流量、參與度和轉換率，以實現智慧的資料導向網站改進。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
-source-git-commit: 7f7b4a3c866c453d9722b708a0ed4e1b601c8e8e
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於 [!DNL Adobe Commerce Optimizer] 個專案(Adobe管理的SaaS基礎結構)。"
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '1349'
+source-wordcount: '1342'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 什麼是機會？
 
-[機會](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview)是AI支援的建議，可協助銷售人員識別並解決影響其商務網站效能的問題。 這些建議由[Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-sites-optimizer/content/home)提供支援，這是一項雲端型服務，可分析和改善網站效能。
+[機會](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview)是AI支援的建議，可協助銷售人員識別並解決影響其商務網站效能的問題。 這些建議由[Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home)提供支援，這是一項雲端型服務，可分析和改善網站效能。
 
 ## 主要功能
 
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 ## 開始使用
 
-若要在Commerce Optimizer中啟用商機，請聯絡您的客戶成功案例經理(CSM)。 **Ultima** Adobe Sites Optimizer授權提供商機。
+若要在[!DNL Adobe Commerce Optimizer]中啟用商機，請聯絡您的客戶成功案例經理(CSM)。 **Ultima** Adobe Sites Optimizer授權提供商機。
 
 ## 快速導覽
 
@@ -96,7 +96,7 @@ ht-degree: 0%
 
 在使用自動修正之前，請確定：
 
-- 您的產品目錄已完全內嵌至Commerce Optimizer。
+- 您的產品目錄已完全內嵌至[!DNL Adobe Commerce Optimizer]。
 - 機會型別支援自動修正（某些最佳化型別需要手動實施）。
 - 您擁有適當的許可權可建立和管理目錄圖層。
 
@@ -176,7 +176,7 @@ ht-degree: 0%
 
 ## 進一步瞭解Sites Optimizer
 
-如需Sites Optimizer功能與功能的詳細資訊，請參閱[Adobe Experience Manager Sites Optimizer檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-sites-optimizer/content/home)。
+如需Sites Optimizer功能與功能的詳細資訊，請參閱[Adobe Experience Manager Sites Optimizer檔案](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home)。
 
 其他資源：
 

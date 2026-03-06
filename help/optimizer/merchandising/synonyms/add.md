@@ -1,25 +1,25 @@
 ---
 title: 建立和管理同義字
 description: 瞭解如何建立和管理 [!DNL Adobe Commerce Optimizer]的同義字。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案(Adobe管理的SaaS基礎結構)。"
 exl-id: d2982a0b-e7df-44e6-b3c9-9b4328635d38
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '584'
 ht-degree: 0%
 
 ---
 
 # 建立同義字
 
-新增您自己的[!DNL Adobe Commerce Optimizer]同義字組織清單，以提高客戶參與度。 您最多可以在每個存放區新增200個同義字。
+新增您自己的[!DNL Adobe Commerce Optimizer]同義字組織清單，以提高客戶參與度。 每個目錄來源最多可新增200個同義字。
 
 ![同義字Workspace](../../assets/synonym-workspace.png)
 
 ## 步驟1：新增同義字
 
 1. 從左側邊欄移至&#x200B;_銷售_ > **同義字**。
-1. 按一下&#x200B;**[!UICONTROL Add synonyms]**&#x200B;按鈕。
+1. 按一下&#x200B;**[!UICONTROL Create synonyms]**&#x200B;按鈕。
 
 ## 步驟2：依型別定義同義字
 
@@ -27,31 +27,25 @@ ht-degree: 0%
 
 ### 雙向同義字
 
-1. 接受預設的&#x200B;**雙向**&#x200B;選項。
-
-   ![新增雙向同義字](../../assets/synonym-add-two-way.png)
-
 1. 輸入要比對的&#x200B;**關鍵字**&#x200B;詞語或片語。
-1. 輸入您想要新增為關鍵字同義字的&#x200B;**擴增**&#x200B;字詞。 請使用逗號分隔多個詞語。
+1. 輸入您想要新增為關鍵字同義字的&#x200B;**擴增**字詞。 請使用逗號分隔多個詞語。
 在此範例中，要比對的關鍵字是「pants」，而擴充辭彙集是「trousers， slacks」。
 
-   ![雙向同義字範例](../../assets/synonym-add-two-way-example.png)
+   ![雙向同義字](../../assets/synonym-add-two-way.png)
 
 1. 完成時，按一下&#x200B;**儲存**。
 
    同義字集合會顯示在清單中，每個辭彙之間會有一個雙向箭頭，表示辭彙可以互換。
 
-   ![雙向同義字](../../assets/synonym-two-way.png)
+   ![雙向同義字範例](../../assets/synonym-add-two-way-example.png)
 
 ### 單向同義字
 
 1. 按一下&#x200B;**單向**&#x200B;同義字型別。
 
-   ![新增單向同義字](../../assets/synonym-add-one-way.png)
-
 1. 輸入&#x200B;**關鍵字**&#x200B;和&#x200B;**擴充**&#x200B;辭彙。 請使用逗號分隔多個詞語。
 
-   ![單向同義字範例](../../assets/synonym-add-one-way-example.png)
+   ![單向同義字](../../assets/synonym-add-one-way.png)
 
    在此範例中，關鍵字是「pants」，而單向擴充辭彙「capris， pedle-pushers」是「pants」的子集，但具有特定含義。
 
@@ -59,7 +53,7 @@ ht-degree: 0%
 
    同義字集合出現在清單中，有一個從展開詞指向關鍵字的單向箭頭，指示該詞是關鍵字的子集。 每個擴充詞以加號分隔。
 
-   ![單向同義字](../../assets/synonym-one-way.png)
+   ![單向同義字範例](../../assets/synonym-add-one-way-example.png)
 
 ## 步驟3：發佈變更
 

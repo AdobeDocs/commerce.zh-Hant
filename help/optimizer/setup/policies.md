@@ -2,11 +2,11 @@
 title: 原則
 description: 瞭解如何在 [!DNL Adobe Commerce Optimizer]中建立和管理原則。
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案(Adobe管理的SaaS基礎結構)。"
 exl-id: 77f524f6-e283-44d2-9c79-9d40f686a7bf
-source-git-commit: 4f238b002d1481126d4fec0a249b7f9ff437248e
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '914'
 ht-degree: 0%
 
 ---
