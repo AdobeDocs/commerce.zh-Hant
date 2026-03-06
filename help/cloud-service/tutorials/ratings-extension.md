@@ -204,7 +204,7 @@ cp RATINGS_API_CONTRACT.md ../storefront
 在開始店面整合之前，請確認您具備下列條件：
 
 * 連線到您[!DNL Commerce]執行個體的店面專案
-* 使用CLI安裝的Commerce storefront AI工具[](./tutorial-prerequisites.md#install-the-storefront-ai-tools)
+* 使用CLI安裝的Commerce storefront AI工具[&#128279;](./tutorial-prerequisites.md#install-the-storefront-ai-tools)
 
 ### 設定店面工作區
 
