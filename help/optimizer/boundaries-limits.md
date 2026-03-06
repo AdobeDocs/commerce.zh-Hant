@@ -2,11 +2,11 @@
 title: 限制和邊界
 description: 瞭解 [!DNL Adobe Commerce Optimizer] 限制與界限，以規劃容量並避免效能問題。
 role: Admin, Developer
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案(Adobe管理的SaaS基礎結構)。"
 exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+source-git-commit: 42a877f5bad8bda93ec39b8ad633f6ad0ba6b4a5
 workflow-type: tm+mt
-source-wordcount: '1320'
+source-wordcount: '1325'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 透過購買[授許可權制和系統界限](#license-limits-and-system-boundaries)一節中所述的授權套件，或針對不重複的使用案例協商自訂授權，可增加授許可權制。 請聯絡您的Adobe客戶代表以討論您的需求。
 
-若有關於系統界限的問題，請連絡[Adobe支援](https://experienceleague.adobe.com/home?lang=zh-Hant#support)。
+若有關於系統界限的問題，請連絡[Adobe支援](https://experienceleague.adobe.com/home?lang=en#support)。
 
 ## 避免效能問題
 
@@ -137,7 +137,7 @@ Dynamic Media使用方式會追蹤進入[!DNL Adobe Commerce Optimizer]內「產
 | 可排序的屬性 | 可設定用於決定搜尋結果值順序的產品特性數 | 50 | 否 |
 | 搜尋分頁深度 | 可透過分頁存取的最大產品數量(例如，第100頁×100個產品/頁面) | 10K | 否 |
 | Facet | 可篩選的產品屬性數量（例如品牌、顏色、大小、價格），可設定為協助購物者調整搜尋結果和瀏覽類別 | 100<p>必須是可篩選的屬性</p> | 否 |
-| 各Facet選項 | 購物者可從清單中選取的可篩選產品屬性值(例如「紅色」、「藍色」代表顏色；「小」、「Medium」代表大小)的數量 | 1000 | 否 |
+| 各Facet選項 | 購物者可從清單中選取的可篩選產品屬性值(例如「紅色」、「藍色」代表顏色；「小」、「Medium」代表大小)的數量 | 100 | 是<p>可透過支援要求提高</p> |
 
 {style="table-layout:auto"}
 
@@ -156,7 +156,7 @@ Dynamic Media使用方式會追蹤進入[!DNL Adobe Commerce Optimizer]內「產
 
 | **功能** | **描述** | **基底配置** | **可擴充？** | **附註** |
 | --- | --- | --- | --- | --- |
-| Adobe Developer App Builder | 建置雲端原生擴充功能和整合的能力 | 根據GMV層級<p>最小配置：1包/年</p> | 是<p>新增其他套件</p> | 如需每個元件定義的限制，請參閱：<ul><li>[App Builder產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-developer-app-builder.html)每個套件定義的限制。</li><li>[&#x200B; &#x200B;](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings)App Builder執行階段指南&#x200B;*中的系統設定和限制*。</li><li>[App Builder儲存需求](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
+| Adobe Developer App Builder | 建置雲端原生擴充功能和整合的能力 | 根據GMV層級<p>最小配置：1包/年</p> | 是<p>新增其他套件</p> | 如需每個元件定義的限制，請參閱：<ul><li>[App Builder產品說明](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html)每個套件定義的限制。</li><li>[ ](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings)App Builder執行階段指南&#x200B;*中的系統設定和限制*。</li><li>[App Builder儲存需求](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
 
 {style="table-layout:auto"}
 
