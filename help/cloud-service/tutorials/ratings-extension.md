@@ -303,7 +303,7 @@ cp RATINGS_API_CONTRACT.md ../storefront
    您應該會在開發環境和瀏覽器中看到下列變更：
 
    * 系統會自動建立產品評等元件。
-   * 元件已使用[插入式插槽](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots)整合到PDP中，或作為獨立區塊，視選擇的架構而定。
+   * 元件已使用[插入式插槽](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots?lang=zh-Hant)整合到PDP中，或作為獨立區塊，視選擇的架構而定。
    * 根據API的評等值，星級會以適當的填色比例顯示。
 
    ![產品詳細資料頁面，顯示整合在產品標題](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}下方的星級評等
