@@ -3,7 +3,7 @@ title: 透過AEM Assets呈現產品視覺效果
 description: 瞭解如何在 [!DNL Adobe Commerce Optimizer]中使用產品影像的AEM Assets。
 feature: CMS, Media, Configuration, Integration
 role: Admin, Developer
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案(Adobe管理的SaaS基礎結構)。"
 source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
 source-wordcount: '451'
@@ -56,7 +56,7 @@ AEM Assets中的影像會透過以下來源設定擷取為目錄層：
 
 ## 設定
 
-若要啟用整合，請[建立支援票證](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)，其中包含您的[!DNL Commerce Optimizer]和AEM Assets詳細資料。 Adobe支援會設定整合，並在Assets整合服務中註冊您的租使用者。
+若要啟用整合，請[建立支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)，其中包含您的[!DNL Commerce Optimizer]和AEM Assets詳細資料。 Adobe支援會設定整合，並在Assets整合服務中註冊您的租使用者。
 
 如需入門資訊，請參閱[設定Commerce Optimizer的AEM Assets](../../aem-assets-integration/get-started/configure-aco.md)。
 

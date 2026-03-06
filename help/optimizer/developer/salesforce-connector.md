@@ -15,7 +15,7 @@ ht-degree: 0%
 
 聯結器開箱即用，提供可靠的資料同步功能，並具備彈性可自訂工作流程，滿足您的業務需求。
 
-如需端對端影片教學課程系列，請參閱[瞭解Salesforce Commerce雲端入門套件](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview)。
+如需端對端影片教學課程系列，請參閱[瞭解Salesforce Commerce雲端入門套件](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview)。
 
 ## 主要功能
 
