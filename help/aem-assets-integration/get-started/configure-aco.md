@@ -2,9 +2,9 @@
 title: 設定適用於Commerce Optimizer的AEM Assets
 description: 瞭解如何設定 [!DNL Adobe Commerce Optimizer]的AEM Assets整合。
 feature: CMS, Media, Configuration, Integration
-source-git-commit: bf1d88ef7daec25872678bb27bce0bb7c97fd296
+source-git-commit: 7f0970648663331fea2af19b981c4fd3b3aedcaa
 workflow-type: tm+mt
-source-wordcount: '1148'
+source-wordcount: '1129'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 ## 入門
 
-若要將AEM Assets與[!DNL Commerce Optimizer]整合，您必須[建立支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)。
+若要將AEM Assets與[!DNL Commerce Optimizer]整合，您必須[建立支援票證](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)。
 
 Adobe支援會使用您票證中的資訊，向Assets Integration Service註冊您的租使用者，並設定整合。
 
@@ -61,8 +61,6 @@ Adobe支援處理完您的票證後，便會設定整合，並且您的租使用
 上線完成後：
 
 1. **向Assets Integration Service註冊**：您的[!DNL Commerce Optimizer]租使用者已使用[!DNL Adobe Commerce Optimizer]租使用者ID、AEM方案ID、AEM環境ID和租使用者向Assets Integration Service註冊。
-
-1. **驗證設定**： IMS服務權杖驗證設定在[!DNL Commerce Optimizer]與Assets整合服務之間，以進行安全通訊。
 
 1. **事件訂閱**： Assets Integration Service訂閱：
 
@@ -115,7 +113,7 @@ Adobe支援處理完您的票證後，便會設定整合，並且您的租使用
 
 >[!CAUTION]
 >
-> 將`AEM-Assets`圖層指派給您的[目錄檢視](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/setup/catalog-view)。 如果未指定圖層，產品影像資料可能會意外覆寫。
+> 將`AEM-Assets`圖層指派給您的[目錄檢視](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view)。 如果未指定圖層，產品影像資料可能會意外覆寫。
 
 ## 同步
 
