@@ -3,7 +3,7 @@ title: 手動選取資產
 description: 瞭解整合至Commerce Admin的AEM Asset Selector如何協助行銷人員和銷售人員輕鬆將影像從AEM Assets新增至Adobe Commerce，進而簡化資產管理。
 feature: CMS, Media, Integration
 exl-id: 3c1f906f-3ec3-4eac-a47e-b21792767359
-source-git-commit: 08f2fab39b4dcd46986f43598cdf2637b0bba5a7
+source-git-commit: a0eaaf0de53962b37c7b52f3e7e13aac4c62e372
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 0%
@@ -19,12 +19,12 @@ ht-degree: 0%
 設定&#x200B;**AEM Asset Selector**&#x200B;整合時，行銷人員和銷售人員可以：
 
 * 輕鬆管理類別影像，確保符合品牌和行銷活動准則。
-* [!BADGE 僅限PaaS]{type=Informative tooltip="僅適用於雲端專案上的Adobe Commerce (Adobe管理的PaaS基礎結構)。"}直接在Page Builder中指派資產，以取得視覺效果豐富的內容。
-* [!BADGE 僅限SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"}在Commerce店面中直接指派Assets (由Edge Delivery Services提供技術支援)，以視覺化方式豐富內容。
+* [!BADGE 僅限PaaS]{type=Informative tooltip="僅適用於雲端專案上的Adobe Commerce （Adobe管理的PaaS基礎結構）。"}直接在Page Builder中指派資產，以取得視覺效果豐富的內容。
+* [!BADGE 僅限SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"}在Commerce店面中直接指派Assets （由Edge Delivery Services提供技術支援），以取得視覺效果豐富的內容。
 
 >[!NOTE]
 >
-> AEM資產選擇器是AEM資產的前端元件，用於整合AEM Assets與製作應用程式。 如需此元件的詳細資訊，請參閱[AEM as a Cloud Service使用手冊](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector){target=_blank}中的&#x200B;*Micro-Frontend資產選擇器*。
+> AEM資產選擇器是AEM資產的前端元件，用於整合AEM Assets與製作應用程式。 如需此元件的詳細資訊，請參閱[AEM as a Cloud Service使用手冊](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector){target=_blank}中的&#x200B;*Micro-Frontend資產選擇器*。
 
 ## 主要優點
 

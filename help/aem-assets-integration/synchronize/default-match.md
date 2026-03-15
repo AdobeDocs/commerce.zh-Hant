@@ -3,9 +3,9 @@ title: 預設自動比對
 description: 瞭解預設的自動比對規則如何實現Adobe Commerce與AEM Assets整合之間的無縫同步，確保資產自動連結到正確的銷售實體。
 feature: CMS, Media, Integration
 exl-id: 8a18639b-f508-456e-8d22-18e3e0fdd515
-source-git-commit: d426c7878f7a66fe1047673be7c5bf65ae1949a7
+source-git-commit: a0eaaf0de53962b37c7b52f3e7e13aac4c62e372
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,10 @@ Commerce的AEM Assets整合提供以&#x200B;**[!UICONTROL Match by product SKU]*
 
 在Commerce Admin中設定&#x200B;**[!UICONTROL Match by product SKU]**&#x200B;相符規則後，Commerce資產檔案會根據為每個檔案設定的資產中繼資料，自動從AEM Assets同步至您的Commerce專案。 您可在&#x200B;**AEM作者**&#x200B;環境中，從AEM Assets **Commerce**&#x200B;索引標籤設定中繼資料：
 
+1. 開啟您的AEM Assets編寫執行個體（此URL已針對您的專案布建在與Adobe Commerce相同的IMS組織中）。
+
+1. 從主導覽畫面中按一下&#x200B;**Assets**&#x200B;以存取數位資產管理(DAM)介面。
+
 1. 在AEM Assets中，將`Eligible for Commerce`欄位設定為`Yes`來更新影像中繼資料，以新增Adobe Commerce關聯。
 
    ![範例中繼資料](../assets/metadata-commerce-yes.png){width="600" zoomable="yes"}
@@ -42,7 +46,7 @@ Commerce的AEM Assets整合提供以&#x200B;**[!UICONTROL Match by product SKU]*
    >
    > 如果資產用於多個產品，請為每個關聯的SKU設定中繼資料。
 
-1. 在`Basic`索引標籤中，將&#x200B;_[!UICONTROL Review Status]_&#x200B;欄位的預設值設定為`approved`。
+1. 在`Basic`索引標籤中，將&#x200B;_[!UICONTROL Review Status]_欄位的預設值設定為`approved`。
 
    ![範例中繼資料](../assets/metadata-review-status.png){width="600" zoomable="yes"}
 
