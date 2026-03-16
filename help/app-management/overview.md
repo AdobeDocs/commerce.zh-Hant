@@ -2,7 +2,7 @@
 title: '[!DNL App Management] 概覽'
 description: 透過統一管理UI管理與您的App Builder執行個體相關聯的Adobe Commerce應用程式。
 feature: App Builder, Extensibility, Integration
-source-git-commit: ab635fecb7b82294bd4a4fd045ed71931e9d265d
+source-git-commit: 4a5174d074a020f6199ed121e0289939612bc5c2
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Adobe Commerce中的[!DNL App Management]可簡化在商業環境中探索、安裝、設定和操作應用程式的方式。 它提供統一的架構，可讓組織安全且有效率地採用擴充功能，同時減少營運摩擦。
 
-![應用程式管理](assets/app-management-ui.png){width="500" zoomable="yes"}
+![應用程式管理](assets/app-management-view.png){width="500" zoomable="yes"}
 
 對於&#x200B;**應用程式管理員**，[!DNL App Management]可提供所有已安裝應用程式的集中檢視，讓治理、生命週期管理及營運監督更輕鬆。 透過簡化的安裝流程、自動化的設定步驟，以及應用程式狀態和許可權的清晰可見度，業務和技術操作人員可以放心地管理整合，而不需要深入的工程介入。
 

@@ -2,7 +2,7 @@
 title: 管理您的應用程式
 description: 將App Builder應用程式與您的Commerce執行個體建立關聯、設定和取消關聯。
 feature: App Builder, Extensibility, Integration
-source-git-commit: ab635fecb7b82294bd4a4fd045ed71931e9d265d
+source-git-commit: 4a5174d074a020f6199ed121e0289939612bc5c2
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 應用程式管理員會將App Builder應用程式與其Commerce執行個體建立關聯。 設定表單會根據應用程式的架構動態轉譯，因此不需要自訂管理員UI開發。 應用程式管理員會透過Commerce自動產生的表單來配置設定。
 
-![應用程式管理](assets/app-management-ui.png){width="500" zoomable="yes"}
+![應用程式管理](assets/app-management-view.png){width="500" zoomable="yes"}
 
 ## 先決條件
 
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 觀看此影片，瞭解如何將應用程式與Commerce執行個體建立關聯並設定設定。
 
->[!VIDEO](https://video.tv.adobe.com/v/3478966?captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3478944)
 
 ## 關聯應用程式
 
