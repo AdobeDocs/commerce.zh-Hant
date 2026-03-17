@@ -3,9 +3,9 @@ title: 設定整合
 description: 瞭解如何連線您的Adobe Commerce專案和Experience Manager Assets專案，以啟用這兩個系統之間的資產同步。
 feature: CMS, Media
 exl-id: 3533d010-926f-4d78-935c-98a9b7040d27
-source-git-commit: d59c9d179018318d7a0ab1685d8e9e172eefa3ed
+source-git-commit: 0fd98bf86555c914f7a5b1e177c31c37764dbf84
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '829'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 識別AEM Assets專案後，選取在Adobe Commerce和AEM Assets之間同步資產的相符規則。
 
-* **[!UICONTROL Match by product SKU]** — 符合資產中繼資料中的SKU與[Commerce產品SKU](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/implementation-playbook/glossary#sku)的預設規則，以確保資產與正確的產品相關聯。
+* **[!UICONTROL Match by product SKU]** — 符合資產中繼資料中的SKU與[Commerce產品SKU](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#sku)的預設規則，以確保資產與正確的產品相關聯。
 
 * **[!UICONTROL Custom match]** — 符合規則，適用於需要自訂比對邏輯的較複雜案例或特定業務需求。 實作自訂比對需要在Adobe Developer App Builder中開發自訂程式碼，以定義資產與產品的比對方式。 即將推出更多詳細資料……
 
@@ -28,33 +28,9 @@ ht-degree: 0%
 
 * [設定AEM Assets專案](configure-aem.md)
 
-* 僅[!BADGE PaaS]{type=Informative tooltip="僅適用於雲端專案上的Adobe Commerce (Adobe管理的PaaS基礎結構)。"} [安裝Adobe Commerce套件](configure-commerce.md)以新增擴充功能，並產生使用擴充功能所需的認證和連線。
+* 僅[!BADGE PaaS]{type=Informative tooltip="僅適用於雲端專案上的Adobe Commerce （Adobe管理的PaaS基礎結構）。"} [安裝Adobe Commerce套件](configure-commerce.md)以新增擴充功能，並產生使用擴充功能所需的認證和連線。
 
-### IMS和使用者許可權
-
-若要使用「資產選擇器」並在Commerce中提供更流暢的設定，需要下列許可權：
-
->[!BEGINTABS]
-
->[!TAB ACCS]
-
-僅[!BADGE SaaS]{type=Positive tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"}
-
-IMS驗證預設為啟用。 將使用者新增至&#x200B;**Adobe Admin Console**&#x200B;中的[AEM Assets DM OpenAPI使用者 — 傳遞](https://adminconsole.adobe.com/)產品設定檔，以授與AEM Assets傳遞層的存取權。
-
-適用於Admin Console傳遞的![AEM Assets產品設定檔](../assets/aem-assets-delivery-product-profile.png){width="600" zoomable="yes"}
-
->[!TAB PaaS]
-
-僅[!BADGE 個PaaS]{type=Informative tooltip="僅適用於雲端專案上的Adobe Commerce (Adobe管理的PaaS基礎結構)。"}
-
-1. [依照](https://experienceleague.adobe.com/docs/commerce-admin/start/admin/ims/adobe-ims-config.html?lang=zh-Hant){target=_blank}Commerce管理指南&#x200B;*中的指示，為Commerce*&#x200B;啟用Adobe IMS。
-
-1. [開啟支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-cases)以要求資產選擇器的自訂IMS使用者端ID。
-
-1. 將使用者新增至&#x200B;**Adobe Admin Console**&#x200B;中的[AEM Assets DM OpenAPI使用者 — 傳遞](https://adminconsole.adobe.com/)產品設定檔，以授與AEM Assets傳遞層的存取權。
-
->[!ENDTABS]
+* [使用者許可權和IMS](permissions.md) — 需要「資產選擇器」和自動填入的設定欄位（方案ID、環境ID、網域對應）。
 
 ## 設定連線
 
@@ -68,19 +44,19 @@ IMS驗證預設為啟用。 將使用者新增至&#x200B;**Adobe Admin Console**
 >
 > AEM Assets整合僅支援全域（預設）範圍內的設定。 不支援網站層級設定。 當您嘗試在網站層級設定整合時，系統會忽略網站層級的設定，改用全域設定值。
 
-1. 僅[!BADGE PaaS]{type=Informative tooltip="僅適用於雲端專案上的Adobe Commerce (Adobe管理的PaaS基礎結構)。"}輸入&#x200B;**[!UICONTROL Asset Selector IMS Client ID]**。
+1. 僅[!BADGE PaaS]{type=Informative tooltip="僅適用於雲端專案上的Adobe Commerce （Adobe管理的PaaS基礎結構）。"}輸入&#x200B;**[!UICONTROL Asset Selector IMS Client ID]**。
 
-   需要此ID才能啟用資產選擇器，並自動填入方案ID和環境ID欄位的功能。 檢視[IMS和使用者許可權](#ims-and-user-permissions)以取得此ID。 如需「資產選擇器」的詳細資訊，請參閱[手動選取資產](../synchronize/asset-selector-integration.md)。
+   需要此ID才能啟用資產選擇器，並自動填入方案ID和環境ID欄位的功能。 檢視[使用者許可權和IMS](permissions.md)以取得此ID。 如需「資產選擇器」的詳細資訊，請參閱[手動選取資產](../synchronize/asset-selector-integration.md)。
 
 1. 從下拉式功能表中選取AEM Assets環境&#x200B;**[!UICONTROL Program ID]**&#x200B;和&#x200B;**[!UICONTROL Environment ID]**。
 
-   下拉式清單會根據使用者的IMS工作階段自動填入。 若要使用此功能，請確定您擁有正確的[IMS和使用者許可權](#ims-and-user-permissions)。
+   下拉式清單會根據使用者的IMS工作階段自動填入。 若要使用此功能，請確定您擁有正確的[使用者許可權和IMS](permissions.md#user-permissions-and-ims)。
 
    如果無法使用下拉式清單，您可以從AEM Cloud Manager URL手動輸入ID： `https://author-p[Program ID]-e[EnvironmentID].adobeaemcloud.com/`
 
    從&#x200B;*[!UICONTROL Use system value]*&#x200B;中移除選取專案，以編輯設定值。
 
-1. [!BADGE 僅限PaaS]{type=Informative tooltip="僅適用於雲端專案上的Adobe Commerce (Adobe管理的PaaS基礎結構)。"}選取[[!UICONTROL Commerce integration]](configure-commerce.md#add-the-integration-to-the-commerce-environment)以驗證Commerce與資產比對服務之間的要求。
+1. [!BADGE 僅限PaaS]{type=Informative tooltip="僅適用於雲端專案上的Adobe Commerce （Adobe管理的PaaS基礎結構）。"}選取[[!UICONTROL Commerce integration]](configure-commerce.md#add-the-integration-to-the-commerce-environment)以驗證Commerce與資產比對服務之間的要求。
 
 1. 將&#x200B;**[!UICONTROL Synchronization enabled]**&#x200B;設為`Yes`以允許Commerce接受來自AEM Assets的傳入更新。
 
@@ -89,7 +65,7 @@ IMS驗證預設為啟用。 將使用者新增至&#x200B;**Adobe Admin Console**
 1. 從&#x200B;**[!UICONTROL Asset matching rule]**&#x200B;下拉式清單中選取其中一個資產比對規則以進行資產同步。
 
    * 選取&#x200B;**[!UICONTROL Match by SKU]**&#x200B;預設自動比對[的](../synchronize/default-match.md)，
-   * 選取&#x200B;**[!UICONTROL Custom match]**&#x200B;進行[自訂自動比對](../synchronize/custom-match.md) (需要[Adobe Developer App Builder](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)。)
+   * 選取&#x200B;**[!UICONTROL Custom match]**&#x200B;進行[自訂自動比對](../synchronize/custom-match.md) （需要[Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)。）
 
 1. 新增在[欄位中為AEM Assets產品SKU定義的](configure-aem.md#configure-metadata)Commerce中繼資料欄位名稱&#x200B;**[!UICONTROL Match by product SKU attribute name]**，預設為`commerce:skus`。
 
@@ -117,7 +93,7 @@ IMS驗證預設為啟用。 將使用者新增至&#x200B;**Adobe Admin Console**
 
 管理員會顯示該擁有者的可用影像，而其餘影像則會呈現灰色，並以&#x200B;**隱藏**&#x200B;標籤顯示。
 
-如需影像顯示行為的詳細資訊，請參閱[設定影像詳細資料](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/products/digital-assets/product-image#set-image-details){target=_blank}主題。
+如需影像顯示行為的詳細資訊，請參閱[設定影像詳細資料](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#set-image-details){target=_blank}主題。
 
 >[!TIP]
 >
@@ -145,7 +121,7 @@ IMS驗證預設為啟用。 將使用者新增至&#x200B;**Adobe Admin Console**
 
 ## 下一步
 
-* **設定您的Commerce店面** — 若要搭配使用AEM Assets與由Edge Delivery Services支援的Commerce店面，請完成[Adobe Commerce店面檔案](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/?lang=zh-Hant)中&#x200B;*AEM Assets整合*&#x200B;主題中所述的店面設定。
+* **設定您的Commerce店面** — 若要搭配使用AEM Assets與由Edge Delivery Services支援的Commerce店面，請完成[Adobe Commerce店面檔案](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/)中&#x200B;*AEM Assets整合*&#x200B;主題中所述的店面設定。
 
 * 設定Adobe Commerce與AEM Assets整合之間的[相符規則](../synchronize/default-match.md)。
 
