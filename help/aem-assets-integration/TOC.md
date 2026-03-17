@@ -29,4 +29,4 @@ ht-degree: 4%
    - [自訂自動比對](synchronize/custom-match.md)
    - [手動選取資產](synchronize/asset-selector-integration.md)
 - [管理Commerce媒體資產](manage-assets.md)
-- [返回Commerce服務首頁](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [返回Commerce服務首頁](https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/home)
