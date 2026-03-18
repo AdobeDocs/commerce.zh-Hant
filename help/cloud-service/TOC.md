@@ -3,10 +3,10 @@ user-guide-title: '[!DNL Adobe Commerce as a Cloud Service]'
 user-guide-description: 本指南提供使用 [!DNL Adobe Commerce as a Cloud Service]的詳細指示。
 feature: Services, Saas
 recommendations: noDisplay, noCatalog
-source-git-commit: e15af3dc45e2acebf8f069d56c7d1a01f8757285
+source-git-commit: 48fa526c2d6529cb482c8fe52bffe27c21693cb1
 workflow-type: tm+mt
-source-wordcount: '68'
-ht-degree: 10%
+source-wordcount: '81'
+ht-degree: 8%
 
 ---
 
@@ -28,11 +28,14 @@ ht-degree: 10%
    - [檔案RAG服務](migration/doc-rag.md)
 - 教學課程 {#tutorials}
    - [教學課程必要條件](tutorials/tutorial-prerequisites.md)
+   - [傳遞估計擴充功能教學課程](tutorials/delivery-estimates-extension.md)
+   - [In Stock通知擴充功能教學課程](tutorials/in-stock-notification-extension.md)
+   - [產品評論擴充功能教學課程](tutorials/product-reviews-extension.md)
    - [評等擴充功能教學課程](tutorials/ratings-extension.md)
    - [送貨方法擴充功能教學課程](tutorials/shipping-method-extension.md)
 - 結構描述 {#schemas}
    - [GraphQL結構描述](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
    - [REST API結構描述](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
-- [教學課程影片](https://experienceleague.adobe.com/zh-hant/playlists/accs-getting-started-product-overview){target="_blank"}
+- [教學課程影片](https://experienceleague.adobe.com/en/playlists/accs-getting-started-product-overview){target="_blank"}
 - [發行說明](release-notes.md)
-- [返回Commerce服務首頁](https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/home)
+- [返回Commerce服務首頁](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
