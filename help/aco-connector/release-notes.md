@@ -2,14 +2,14 @@
 title: '[!DNL Adobe Commerce Optimizer Connector]發行說明'
 description: 適用於Adobe Commerce的 [!DNL Adobe Commerce Optimizer Connector] 的最新發行資訊。
 feature: Services, Catalog Service, Release Notes
-source-git-commit: dc5bd916b93789b4a25f0bc16a40fdfc6604c6ea
+source-git-commit: 4da2776c561d88b5343442df84b691cb857fada3
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '188'
 ht-degree: 0%
 
 ---
 
-# Adobe Commerce Optimizer發行說明
+# Adobe Commerce Optimizer Connector發行說明
 
 以下版本說明說明[!DNL Adobe Commerce Optimizer Connector]的所有版本，包括：
 
