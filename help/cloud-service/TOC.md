@@ -39,6 +39,6 @@ ht-degree: 5%
 - 結構描述 {#schemas}
    - [GraphQL結構描述](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
    - [REST API結構描述](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
-- [教學課程影片](https://experienceleague.adobe.com/en/playlists/accs-getting-started-product-overview){target="_blank"}
+- [教學課程影片](https://experienceleague.adobe.com/zh-hant/playlists/accs-getting-started-product-overview){target="_blank"}
 - [發行說明](release-notes.md)
-- [返回Commerce服務首頁](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [返回Commerce服務首頁](https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/home)
