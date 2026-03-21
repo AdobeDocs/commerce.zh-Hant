@@ -46,7 +46,7 @@ _2026年3月11日_
 
 ![新問題](../assets/new.svg)<!-- Issue PAY-1041 -->已新增對Adobe Commerce 2.4.9-beta1和PHP 8.5的支援。
 
-![新問題](../assets/new.svg)<!-- Issue ACCS-169 --> **[!UICONTROL Program ID]**、**[!UICONTROL Environment ID]**&#x200B;和&#x200B;[**[!UICONTROL Domain mapping]**](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/domain-mappings/add-domain-mapping){target=_blank}欄位現在會根據[使用者的IMS工作階段](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/permissions#user-permissions-and-ims){target=_blank}自動填入為下拉式清單。
+![新問題](../assets/new.svg)<!-- Issue ACCS-169 --> **[!UICONTROL Program ID]**、**[!UICONTROL Environment ID]**&#x200B;和&#x200B;[**[!UICONTROL Domain mapping]**](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/domain-mappings/add-domain-mapping){target=_blank}欄位現在會根據[使用者的IMS工作階段](https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/get-started/permissions#user-permissions-and-ims){target=_blank}自動填入為下拉式清單。
 
 ## v1.2.14
 

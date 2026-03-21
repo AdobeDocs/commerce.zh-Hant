@@ -264,7 +264,7 @@ ht-degree: 0%
    >
    >如需這些許可權如何影響您存取[!DNL AEM Assets]的詳細資訊，請參閱[Cloud Manager產品設定檔](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/onboarding/concepts/aem-cs-team-product-profiles#cloud-manager-product-profiles){target="_blank"}。
 
-   對於Commerce管理員中的資產選擇器和自動填入的設定欄位（方案ID、環境ID、網域對應），使用者還需要&#x200B;**AEM Assets DM OpenAPI使用者 — 傳遞**&#x200B;產品設定檔。 如需詳細資訊，請參閱[使用者許可權和IMS](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/permissions){target="_blank"}。
+   對於Commerce管理員中的資產選擇器和自動填入的設定欄位（方案ID、環境ID、網域對應），使用者還需要&#x200B;**AEM Assets DM OpenAPI使用者 — 傳遞**&#x200B;產品設定檔。 如需詳細資訊，請參閱[使用者許可權和IMS](https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/get-started/permissions){target="_blank"}。
 
 1. 按一下&#x200B;[!UICONTROL **套用**]。
 
