@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## 一般
 
-- 搜尋配接器截至[ 4.0.0已](release-notes.md#live-search-400)棄用[!DNL Live Search]。產品清單頁面(PLP) Widget是未來[!DNL Live Search]所有實施的支援解決方案。 搜尋配接卡只會接收安全性相關更新。 如需移轉至PLP Widget的相關資訊，請參閱[移轉指南](migrate-to-plp.md)。
+- 搜尋配接器截至[&#x200B; 4.0.0已](release-notes.md#live-search-400)棄用[!DNL Live Search]。產品清單頁面(PLP) Widget是未來[!DNL Live Search]所有實施的支援解決方案。 搜尋配接卡只會接收安全性相關更新。 如需移轉至PLP Widget的相關資訊，請參閱[移轉指南](migrate-to-plp.md)。
 - 安裝[時，](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search)進階搜尋[!DNL Live Search]模組已停用，且店面頁尾中的進階搜尋連結已移除。
 - [層級定價](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier)在[!DNL Live Search]欄位和產品清單頁面Widget中不受支援。
 - 產品價格包含增值稅(VAT)，但[!DNL Live Search]無法將VAT顯示為個別值。
