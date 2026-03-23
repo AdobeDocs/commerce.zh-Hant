@@ -2,7 +2,7 @@
 title: 設定即時搜尋
 description: ' [!DNL Live Search] 工作區是用來設定、管理和監視搜尋效能。'
 exl-id: 07c32b26-3fa4-4fae-afba-8a10866857c3
-source-git-commit: febdd3647c8eb2b5380bf0aa88710dfd62959c62
+source-git-commit: 49709822075f0604fef7a79c8ceac8b938c6407f
 workflow-type: tm+mt
 source-wordcount: '2151'
 ht-degree: 0%
@@ -30,11 +30,11 @@ ht-degree: 0%
 
 ### 醫療保健客戶
 
-如果您是醫療保健客戶，且已安裝[Data Services HIPAA擴充功能](../data-connection/hipaa-readiness.md#installation) （屬於[Data Connection](../data-connection/overview.md)擴充功能的一部分），則不會再擷取[!DNL Live Search]使用的店面事件資料。 這是因為店面事件資料是在使用者端產生。 若要繼續擷取和傳送店面事件資料，請重新啟用[!DNL Live Search]的事件收集。 請參閱[一般組態](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/config/general/general#data-services)以瞭解更多資訊。
+如果您是醫療保健客戶，且已安裝[Data Services HIPAA擴充功能](../data-connection/hipaa-readiness.md#installation) （屬於[Data Connection](../data-connection/overview.md)擴充功能的一部分），則不會再擷取[!DNL Live Search]使用的店面事件資料。 這是因為店面事件資料是在使用者端產生。 若要繼續擷取和傳送店面事件資料，請重新啟用[!DNL Live Search]的事件收集。 請參閱[一般組態](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services)以瞭解更多資訊。
 
 ## 設定範圍
 
-所有[設定的](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hant#scope-settings)領域[!DNL Live Search]最初設定為`Default Store View`。 如果您的[!DNL Commerce]安裝包含多個存放區檢視，請將&#x200B;**範圍**&#x200B;設定為您的Facet設定套用的[存放區檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hant)。
+所有[設定的](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)領域[!DNL Live Search]最初設定為`Default Store View`。 如果您的[!DNL Commerce]安裝包含多個存放區檢視，請將&#x200B;**範圍**&#x200B;設定為您的Facet設定套用的[存放區檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)。
 
 ## 功能表選項
 
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 ## 將屬性設定為可搜尋
 
-若要產生高針對性的結果，請檢閱[可搜尋](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=zh-Hant) (`searchable=true`)產品屬性集。 為確保關聯性，請讓屬性只有在包含具有清晰精簡含義的內容時才可供搜尋。 避免使用包含較不精確、長度較長的文字的屬性，例如`description`，雖然預設會啟用搜尋，但可能會降低搜尋結果的精確度。 例如，如果有人搜尋「短褲」，而且有描述包含「短袖」字樣的襯衫，則這些襯衫會包含在搜尋結果中。
+若要產生高針對性的結果，請檢閱[可搜尋](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) (`searchable=true`)產品屬性集。 為確保關聯性，請讓屬性只有在包含具有清晰精簡含義的內容時才可供搜尋。 避免使用包含較不精確、長度較長的文字的屬性，例如`description`，雖然預設會啟用搜尋，但可能會降低搜尋結果的精確度。 例如，如果有人搜尋「短褲」，而且有描述包含「短袖」字樣的襯衫，則這些襯衫會包含在搜尋結果中。
 
 若要允許搜尋屬性，請完成下列步驟：
 
@@ -58,7 +58,7 @@ ht-degree: 0%
 1. 選取您要搜尋的屬性，例如`color`。
 1. 選取&#x200B;**店面內容**&#x200B;並將&#x200B;**在搜尋中使用**&#x200B;設定為`yes`。
 
-[!DNL Live Search]也會遵從產品屬性的[權重](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html?lang=zh-Hant#weighted-search)，如在Adobe Commerce中所設定。 權重較高的屬性會顯示在搜尋結果中較高的位置。
+[!DNL Live Search]也會遵從產品屬性的[權重](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search)，如在Adobe Commerce中所設定。 權重較高的屬性會顯示在搜尋結果中較高的位置。
 
 下列屬性一律可供搜尋：
 
@@ -113,9 +113,9 @@ ht-degree: 0%
 
 #### 實施
 
-1. 在Admin中，[將產品屬性](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties)設定為可搜尋。
+1. 在Admin中，[將產品屬性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties)設定為可搜尋。
 
-   檢視可搜尋的[屬性](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/product-attributes/attributes-input-types)清單。
+   檢視可搜尋的[屬性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types)清單。
 
 1. 指定該屬性的搜尋功能，例如&#x200B;**包含** （預設）或&#x200B;**開頭為**。 您最多可以為&#x200B;**Contains**&#x200B;指定6個要啟用的屬性，並為&#x200B;**Starts with**&#x200B;指定6個要啟用的屬性。 此外，對於&#x200B;**Contains**&#x200B;索引，字串長度限製為50個字元或更少。
 
@@ -171,10 +171,10 @@ ht-degree: 0%
 
 | Commerce組態設定 | 說明 | 由Popover支援 | 由介面卡支援 |
 |---|---|---|---|
-| 商店>設定>目錄>目錄>目錄搜尋>允許每頁所有產品 | 如果設為`Yes`，則在「每頁顯示」控制項中包含`ALL`選項。 | 是。 最多500種產品 | 是。 最多500種產品 |
+| 商店>設定>目錄>目錄>目錄搜尋>允許每頁所有產品 | 如果設為`Yes`，則在「每頁顯示」控制項中包含`ALL`選項。 | 是。 最多100個產品 | 是。 最多100個產品 |
 | 儲存>設定>目錄>目錄>目錄搜尋>最小查詢長度 | 目錄搜尋中允許的最小字元數。 | 是 | 是 |
 | 儲存>設定>目錄>目錄>目錄搜尋>每頁產品網格允許值 | 決定格線檢視中顯示的產品數目。 | 是 | 是 |
-| 商店>設定>目錄>目錄>目錄搜尋>產品每頁格點預設值 | 決定網格檢視中預設每頁顯示的產品數目。 | 是。 最多500種產品 | 是。 最多500種產品 |
+| 商店>設定>目錄>目錄>目錄搜尋>產品每頁格點預設值 | 決定網格檢視中預設每頁顯示的產品數目。 | 是。 最多100個產品 | 是。 最多100個產品 |
 | 儲存>設定>目錄>庫存>顯示無庫存產品 | 顯示無庫存的產品。 | 是 | 是 |
 | 儲存>組態>幣別>預設顯示幣別 | 用來顯示價格的主要貨幣。 | 是 | 是 |
 | 儲存>組態>一般>貨幣設定>貨幣選項>基本貨幣 | 用於所有線上付款交易的主要幣別。 | 是 | 是 |
@@ -192,7 +192,7 @@ ht-degree: 0%
 
 ## 預設屬性值
 
-下列產品屬性具有[店面屬性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=zh-Hant)，已由[!DNL Live Search]使用並預設啟用。
+下列產品屬性具有[店面屬性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html)，已由[!DNL Live Search]使用並預設啟用。
 
 | 屬性 | 店面屬性 | 屬性 |
 |---|---|---|
