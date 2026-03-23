@@ -7,9 +7,9 @@ feature-set: Commerce
 role: Developer
 level: Intermediate
 type: Tutorial
-source-git-commit: 1848c9dda4a1976e1bccb4d1f9d5a2e21540fc0b
+source-git-commit: 0ece7b58bdafd664297cbdee809c53ef2389fb12
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '1217'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 * Bash shell
    * macOS/Linux：不需要安裝
-   * Windows：使用[Git Bash](https://git-scm.com/install)或Linux (WSL) [的](https://learn.microsoft.com/en-us/windows/wsl/install)Windows子系統
+   * Windows：使用[Git Bash](https://git-scm.com/install)或Linux (WSL)[的](https://learn.microsoft.com/en-us/windows/wsl/install)Windows子系統
 
 * 下載AI輔助的IDE，例如[Cursor](https://cursor.com/download) （建議使用）。 也支援其他IDE，例如Claude Code、Gemini CLI或Copilot，但可能需要修改提示和教學課程中的其他步驟。
 
@@ -54,6 +54,125 @@ ht-degree: 0%
   ```bash
   aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
   ```
+
+安裝[!DNL Adobe I/O CLI]和必要的外掛程式之後，請設定您的擴充性工作區。 Adobe建議使用自動化設定，以獲得最快的體驗。
+
+* **[自動設定](#automated-setup) （建議）** — 執行單一命令以自動設定您的工作區。
+* **[手動設定](#manual-setup)** — 依照逐步指示個別設定每個元件。
+
+### 自動化設定（建議） {#automated-setup}
+
+>[!TIP]
+>
+>如果您遇到自動化安裝的問題，請遵循下列[手動安裝](#manual-setup)步驟。
+
+`app-setup`命令會自動執行工作區設定程式，包括建立[!DNL Adobe Developer Console]專案、新增必要的API、設定[!DNL Adobe I/O CLI]、複製入門套件、連線本機工作區，以及安裝可擴充性的AI工具。
+
+`app-setup`命令會引導您完成下列步驟：
+
+* 選擇或建立具有必要API的[!DNL Adobe Developer Console]專案
+* 使用您的組織、專案和工作區設定[!DNL Adobe I/O CLI]
+* 複製適當的入門套件並設定專案
+* 設定環境並將本機工作區連線到遠端工作區
+* 安裝Commerce擴充性工具和編碼代理程式技能
+
+執行以下命令，並遵循互動式提示：
+
+```bash
+aio commerce extensibility app-setup
+```
+
+命令完成後，瀏覽至您的專案目錄並重新啟動編碼代理程式，以載入新的MCP工具和技能。 如果您的教學課程需要店面，請重新執行命令並選取[!DNL AEM Boilerplate Commerce]入門套件。
+
+以下範例安裝顯示簽出入門套件之互動式提示和輸出。
+
++++範例安裝（結帳入門套件）
+
+```shell-session
+aio commerce extensibility app-setup
+
+🚀 Adobe Commerce Extensibility App Setup
+
+✔ Logged in
+📁 Working directory: /Users/username/projects/my-commerce-project
+
+✔ Which starter kit would you like to use? Checkout Starter Kit
+✔ Enter a name for your project directory: my-extension
+✔ Which coding agent would you like to install the skills for? Cursor
+
+📦 Cloning Checkout Starter Kit...
+   ✔ Repository cloned
+   Using npm (package-lock.json found)
+   ✔ Dependencies installed
+
+📋 Current Adobe I/O Console configuration:
+   Org: My Organization (1234567)
+   Project: My Commerce Project (1234567890123456789)
+   Workspace: Stage (9876543210987654321)
+✔ Do you want to continue with this configuration? (Answer "No" to select a different org/project/workspace)
+No
+
+🔧 Selecting Adobe I/O Console org, project, and workspace...
+
+? Select Org: My Organization
+Org selected My Organization
+You are currently in:
+1. Org: My Organization
+2. Project: <no project selected>
+3. Workspace: <no workspace selected>
+
+? Select Project: My Commerce Project
+Project selected : My Commerce Project
+You are currently in:
+1. Org: My Organization
+2. Project: My Commerce Project
+3. Workspace: <no workspace selected>
+
+? Select Workspace: Stage
+Workspace selected Stage
+You are currently in:
+1. Org: My Organization
+2. Project: My Commerce Project
+3. Workspace: Stage
+
+✅ Console configured:
+   Org: My Organization
+   Project: My Commerce Project
+   Workspace: Stage
+
+🔐 Configuring workspace credentials and services...
+   ✔ Workspace configuration loaded
+   ✔ OAuth server-to-server credentials already configured
+   ✔ All required services available in organization
+   ✔ Subscribed to: Adobe Commerce as a Cloud Service
+
+📋 Configuring Checkout Starter Kit...
+   Creating .env from env.dist...
+✔ Select tenant (type to search) My Commerce Instance:
+https://<region>.api.commerce.adobe.com/<tenant-id>/graphql
+   ✔ Commerce instance configured
+✔ Enter the event prefix for your workspace: my-prefix
+   ✔ Workspace IDs configured
+   ✔ OAuth credentials configured
+   ✔ Checkout Starter Kit configured
+
+🔧 Installing Commerce Extensibility tools and agent skills...
+   ✔ Commerce Extensibility tools installed
+
+🎉 App setup complete!
+
+📁 Project directory: /Users/username/projects/my-commerce-project/my-extension
+
+Next steps:
+   1. cd into your project directory
+   2. Restart your coding agent to load the Commerce Extensibility tools and skills
+```
+
++++
+
+### 手動設定 {#manual-setup}
+
+以下幾節將說明如何手動設定擴充性工作區的每個元件。 如果您偏好手動設定，或遇到[自動安裝程式](#automated-setup)的問題，請依照下列步驟進行。
 
 ### Adobe Developer Console必要條件
 
@@ -267,20 +386,26 @@ aio app use --merge
 
    ![終端機顯示設定了AI擴充性工具，並選取結帳啟動套件](../assets/tools-setup-checkout.png){width="600" zoomable="yes"}
 
-## 店面必要條件
+## 店面手動設定
+
+本節說明如何手動設定[Ratings擴充功能教學課程](./ratings-extension.md)和其他店面教學課程的店面。
+
+若要自動設定店面，請執行`app-setup`自動化設定[區段中說明的](#automated-setup)命令，並選取[!DNL AEM Boilerplate Commerce]入門套件。
+
+### 先決條件
 
 若要完成[評等延伸教學課程](./ratings-extension.md#connect-to-the-storefront)的[店面](./ratings-extension.md)區段，並在您的商店中顯示產品評等，必須執行下列專案。
 
 * [Google Chrome](https://www.google.com/chrome/) — 測試店面所需
 
-* 連線到您[!DNL Commerce]執行個體的店面專案。 如果您沒有店面專案，請依照[建立店面](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=zh-Hant){target="_blank"}中的步驟進行，包括[連結商務資料的存放庫](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=zh-Hant#link-repo-to-commerce-data){target="_blank"}區段。
+* 連線到您[!DNL Commerce]執行個體的店面專案。 如果您沒有店面專案，請依照[建立店面](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"}中的步驟進行，包括[連結商務資料的存放庫](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#link-repo-to-commerce-data){target="_blank"}區段。
 
 ### 複製店面存放庫
 
 開啟終端機並複製存放庫：
 
 ```bash
-git clone --branch agentic-dev https://github.com/hlxsites/aem-boilerplate-commerce.git storefront
+git clone https://github.com/hlxsites/aem-boilerplate-commerce.git storefront
 cd storefront
 ```
 
@@ -294,7 +419,9 @@ npm install
 
 ### 安裝店面AI工具
 
-在`storefront`資料夾中設定AI輔助開發工具。 從樣板專案的根目錄執行以下命令：
+在`storefront`資料夾中設定AI輔助開發工具。
+
+從樣板專案的根目錄執行以下命令。 命令會將`@adobe-commerce/commerce-extensibility-tools`套件安裝為開發相依性、將技能檔案複製到代理程式的技能目錄中，以及設定MCP （模型內容通訊協定），讓您的代理程式可以存取Commerce檔案搜尋工具。
 
 ```bash
 aio commerce extensibility tools-setup
@@ -305,5 +432,3 @@ aio commerce extensibility tools-setup
 1. **選取入門套件** — 選擇&#x200B;**AEM樣板Commerce**。
 
 1. **選取編碼代理程式** — 從支援的代理程式清單中選擇您的代理程式。
-
-命令會將`@adobe-commerce/commerce-extensibility-tools`套件安裝為開發相依性、將技能檔案複製到代理程式的技能目錄中，以及設定MCP （模型內容通訊協定），讓您的代理程式可以存取Commerce檔案搜尋工具。
