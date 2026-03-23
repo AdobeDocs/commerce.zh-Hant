@@ -37,7 +37,7 @@ ht-degree: 0%
 
 * Bash shell
    * macOS/Linux：不需要安裝
-   * Windows：使用[Git Bash](https://git-scm.com/install)或Linux (WSL)[的](https://learn.microsoft.com/en-us/windows/wsl/install)Windows子系統
+   * Windows：使用[Git Bash](https://git-scm.com/install)或Linux (WSL) [的](https://learn.microsoft.com/en-us/windows/wsl/install)Windows子系統
 
 * 下載AI輔助的IDE，例如[Cursor](https://cursor.com/download) （建議使用）。 也支援其他IDE，例如Claude Code、Gemini CLI或Copilot，但可能需要修改提示和教學課程中的其他步驟。
 
