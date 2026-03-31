@@ -2,9 +2,9 @@
 title: 使用Commerce CLI同步摘要
 description: 瞭解如何使用命令列介面命令來管理Adobe Commerce SaaS服務 [!DNL data export extension] 的摘要和程式。
 exl-id: 1ebee09e-e647-4205-b90c-d0f9d2cac963
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: a05f716200fbf2af74b8488ae66053a56e7037a0
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '573'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 Adobe不建議定期使用`saas:resync`命令。 使用指令的典型情況如下：
 
 - 初始同步
-- 變更[SaaS資料空間ID](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/config/services/saas)後，將資料同步處理至新的資料空間
+- 變更[SaaS資料空間ID](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas)後，將資料同步處理至新的資料空間
 - 疑難排解
 
 監視`var/log/saas-export.log`檔案中的同步作業。
@@ -85,9 +85,9 @@ bin/magento saas:resync --feed= products --by-ids='1,2,3' --id-type='productId'
 
 如果與`--dry-run`選項搭配使用，該作業會針對所有專案執行試執行重新同步作業。
 
->[!IMPORTANT]
+>[!WARNING]
 >
->僅在環境清理後使用，或搭配`--dry-run`選項使用。 如果用於其他情況，清理操作可能會導致資料遺失和資料同步問題。
+>使用包含`cleanup-feed`選項的resync命令會清除本機摘要匯出狀態，並可能導致不完整的同步。 例如，Adobe Commerce中的實體刪除可能不會反映在連線的Commerce服務中，或即使在Adobe Commerce中刪除或更新，過期實體仍可能會保留在遠端Commerce服務索引中。 此選項僅適用於完整環境重建，例如在SaaS資料空間清理後。
 
 **範例：**
 
