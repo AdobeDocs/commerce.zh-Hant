@@ -33,11 +33,11 @@ ht-degree: 0%
 
 「交易」報表檢視可在「付款服務」的「交易」檢視中使用。 其中包含您商店中所有可用的交易資訊。
 
-在&#x200B;_Admin_&#x200B;側邊欄上，前往&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**檢視詳細的表格式交易報告檢視。 從&#x200B;**[!UICONTROL Home]**，您也可以在&#x200B;**[!UICONTROL View Report]**與&#x200B;**[!UICONTROL Transactions]**中選擇[!DNL Adobe Commerce as a Cloud Service]下的[!DNL Adobe Commerce Optimizer]。
+在&#x200B;_Admin_&#x200B;側邊欄上，前往&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**&#x200B;檢視詳細的表格式交易報告檢視。 從&#x200B;**[!UICONTROL Home]**，您也可以在&#x200B;**[!UICONTROL View Report]**&#x200B;與&#x200B;**[!UICONTROL Transactions]**&#x200B;中選擇[!DNL Adobe Commerce as a Cloud Service]下的[!DNL Adobe Commerce Optimizer]。
 
 >[!BEGINTABS]
 
->雲端和內部部署上的[!TAB Adobe Commerce]
+>[!TAB 雲端和內部部署上的 Adobe Commerce]
 
 ![交易報告檢視](assets/transactions-report-view.png){width="800" zoomable="yes"}
 
@@ -67,7 +67,7 @@ SaaS部署也適用相同的報表功能。 階層連結顯示&#x200B;**[!UICONT
 
 ![資料來源選擇](assets/datasource.png){width="300" zoomable="yes"}
 
-如果&#x200B;_[!UICONTROL Live]_是選取的資料來源，您可以看到在生產模式中使用[!DNL Payment Services]之存放區的報表資訊。 如果_[!UICONTROL Sandbox]_&#x200B;是選取的資料來源，您可以看到沙箱模式的報告資訊。
+如果&#x200B;_[!UICONTROL Live]_&#x200B;是選取的資料來源，您可以看到在生產模式中使用[!DNL Payment Services]之存放區的報表資訊。 如果&#x200B;_[!UICONTROL Sandbox]_&#x200B;是選取的資料來源，您可以看到沙箱模式的報告資訊。
 
 資料來源選取專案的工作方式如下：
 
@@ -97,14 +97,14 @@ SaaS部署也適用相同的報表功能。 階層連結顯示&#x200B;**[!UICONT
 
 1. 在&#x200B;_管理員_&#x200B;側邊欄上，前往&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**。
 1. 按一下&#x200B;**[!UICONTROL Filter]**&#x200B;選取器。
-1. 切換&#x200B;_[!UICONTROL Transaction Result]_選項，只檢視所選訂單交易的報表結果。
-1. 切換&#x200B;_[!UICONTROL Payment Method]_選項以檢視用於交易的付款型別的報告結果。
-1. 切換&#x200B;_[!UICONTROL Payment Detail]_選項，檢視使用的付款型別的其他資訊（可用時）。
+1. 切換&#x200B;_[!UICONTROL Transaction Result]_&#x200B;選項，只檢視所選訂單交易的報表結果。
+1. 切換&#x200B;_[!UICONTROL Payment Method]_&#x200B;選項以檢視用於交易的付款型別的報告結果。
+1. 切換&#x200B;_[!UICONTROL Payment Detail]_&#x200B;選項，檢視使用的付款型別的其他資訊（可用時）。
 1. 輸入&#x200B;_最小訂單金額_&#x200B;或&#x200B;_最大訂單金額_&#x200B;以檢視該訂單金額範圍內的報表結果。
-1. 輸入&#x200B;_[!UICONTROL Order ID]_以搜尋特定交易。
-1. 介紹&#x200B;_[!UICONTROL Card Last Four]_以搜尋特定的信用卡或扣帳卡。
-1. 輸入&#x200B;_[!UICONTROL Customer ID]_以顯示特定客戶的所有交易。
-1. 輸入&#x200B;_[!UICONTROL Customer Email]_以篩選該電子郵件的交易。
+1. 輸入&#x200B;_[!UICONTROL Order ID]_&#x200B;以搜尋特定交易。
+1. 介紹&#x200B;_[!UICONTROL Card Last Four]_&#x200B;以搜尋特定的信用卡或扣帳卡。
+1. 輸入&#x200B;_[!UICONTROL Customer ID]_&#x200B;以顯示特定客戶的所有交易。
+1. 輸入&#x200B;_[!UICONTROL Customer Email]_&#x200B;以篩選該電子郵件的交易。
 1. 按一下&#x200B;**[!UICONTROL Hide filters]**&#x200B;以隱藏篩選器。
 
 ### 顯示和隱藏欄
@@ -119,7 +119,7 @@ SaaS部署也適用相同的報表功能。 階層連結顯示&#x200B;**[!UICONT
 
 ### 更新報表資料
 
-交易報告檢視會顯示&#x200B;_[!UICONTROL Last updated]_時間戳記，顯示上次更新報告資訊的時間。 依預設，交易報告資料每三小時自動重新整理一次。
+交易報告檢視會顯示&#x200B;_[!UICONTROL Last updated]_&#x200B;時間戳記，顯示上次更新報告資訊的時間。 依預設，交易報告資料每三小時自動重新整理一次。
 
 您也可以手動強制重新整理報表資料，以檢視最新的報表資訊。
 
@@ -157,7 +157,7 @@ SaaS部署也適用相同的報表功能。 階層連結顯示&#x200B;**[!UICONT
 | [!UICONTROL CVV Code] | 信用卡與借記卡的卡片驗證值代碼；如需詳細資訊，請參閱[可能的代碼清單與說明](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response)。 |
 | [!UICONTROL Amount] | 交易的訂單金額 |
 | [!UICONTROL Currency] | 用於交易訂單的貨幣 |
-| [!UICONTROL Type] | [交易 — ](../payment-services/production.md#set-payment-services-as-payment-method)或`Authorize`的付款動作`Authorize and Capture` |
+| [!UICONTROL Type] | [交易 — &#x200B;](../payment-services/production.md#set-payment-services-as-payment-method)或`Authorize`的付款動作`Authorize and Capture` |
 
 ### 錯誤回應代碼
 
