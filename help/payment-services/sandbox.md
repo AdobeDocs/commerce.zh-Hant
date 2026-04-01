@@ -1,11 +1,13 @@
 ---
 title: 設定測試沙箱
-description: 使用PayPal沙箱帳戶在測試模式中使用 [!DNL Payment Services] 。
+description: 使用PayPal沙箱帳戶和管理員上線，在即時付款之前（雲端、內部部署和SaaS上的Adobe Commerce）以測試模式執行 [!DNL Payment Services] 。
+role: Admin, User
+level: Intermediate
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install, Paas, Saas
-source-git-commit: 6727102c54e0ac81df289ecd66ec61156662b8b9
+source-git-commit: 2c6c812fd25feecfe5133d6623a1c814003d579c
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '756'
 ht-degree: 0%
 
 ---
@@ -29,7 +31,7 @@ PayPal沙箱帳戶可讓您在測試模式中使用[!DNL Payment Services]。 Pa
       如果您在沙箱PayPal上線流程中建立PayPal沙箱帳戶，您必須[重設您的上線沙箱](#reset-your-sandbox-account)，否則您無法驗證電子郵件。
 
    1. 選取&#x200B;**[!UICONTROL Business]**&#x200B;作為帳戶型別並按一下&#x200B;**[!UICONTROL Create]**。
-   1. 在&#x200B;_[!UICONTROL Sandbox Accounts]_&#x200B;區段中，針對您建立的沙箱帳戶，按一下&#x200B;_[!UICONTROL Manage accounts]_&#x200B;欄中的三個點。
+   1. 在&#x200B;_[!UICONTROL Sandbox Accounts]_區段中，針對您建立的沙箱帳戶，按一下_[!UICONTROL Manage accounts]_&#x200B;欄中的三個點。
    1. 按一下&#x200B;**[!UICONTROL View/edit account]**。
 
       ![PayPal — 檢視/編輯沙箱帳戶](assets/onboarding-viewedit-sandbox.png){width="300" zoomable="yes"}
@@ -92,9 +94,9 @@ PayPal沙箱帳戶可讓您在測試模式中使用[!DNL Payment Services]。 Pa
 
 1. 在左側面板中，展開&#x200B;**[!UICONTROL Sales]**&#x200B;並選取&#x200B;**[!UICONTROL Payment Methods]**。
 
-1. 展開&#x200B;_[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_&#x200B;區段。
+1. 展開&#x200B;_[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_區段。
 
-1. 在&#x200B;_[!UICONTROL Payment Services]_&#x200B;區段中，展開&#x200B;_[!UICONTROL General Configuration]_&#x200B;區段。
+1. 在&#x200B;_[!UICONTROL Payment Services]_區段中，展開_[!UICONTROL General Configuration]_&#x200B;區段。
 
 1. 將&#x200B;**[!UICONTROL Method]**&#x200B;設為`Sandbox`。
 

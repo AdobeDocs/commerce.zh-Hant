@@ -1,13 +1,13 @@
 ---
 title: 上線 [!DNL Payment Services] 流程
-description: 完成幾個上線步驟，以使用 [!DNL Payment Services] 功能連線您的執行個體。
+description: 透過完成您的Adobe Commerce部署的入門，使用PaaS、內部部署和SaaS的沙箱和生產步驟，將您的執行個體連線到 [!DNL Payment Services] 。
 role: User
 level: Intermediate
 exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
 feature: Payments, Checkout, Integration, Paas, Saas
-source-git-commit: 999407f00b118441abe39209a15f587ec73fa75d
+source-git-commit: 2c6c812fd25feecfe5133d6623a1c814003d579c
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '564'
 ht-degree: 0%
 
 ---
@@ -38,11 +38,11 @@ ht-degree: 0%
 
 **版本v2.4.7+第1部分：沙箱**&#x200B;的上線步驟
 
-1. [將您的執行個體](connect.md#configure-commerce-services)連線至Commerce服務。 每個Commerce執行個體只能完成此連線一次。 僅[!BADGE 個PaaS]{type=Informative tooltip="僅適用於雲端專案上的Adobe Commerce (Adobe管理的PaaS基礎結構)。"}
-1. [使用測試PayPal付款處理帳戶，設定沙箱服務](sandbox.md#enable-sandbox-testing) （或者，如果您已在其他環境中測試功能，請繼續[啟用即時付款](sandbox.md#enable-live-payments)）。
+1. [將您的執行個體](connect.md#configure-commerce-services)連線至Commerce服務。 每個Commerce執行個體只能完成此連線一次。 僅[!BADGE 個PaaS]{type=Informative tooltip="僅適用於雲端專案上的Adobe Commerce （Adobe管理的PaaS基礎結構）。"}
+1. [設定沙箱服務](sandbox.md#enable-sandbox-testing)
 1. 在[沙箱](sandbox.md#test-in-sandbox-environment)環境中測試付款。
 
-[![深入瞭解](assets/learn-more-button.svg)](https://helpx.adobe.com/tw/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
+[![深入瞭解](assets/learn-more-button.svg)](https://helpx.adobe.com/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
 
 >[!TAB 生產]
 
@@ -63,7 +63,7 @@ ht-degree: 0%
 
 >[!ENDTABS]
 
-### Adobe Commerce或Magento Open Source | v2.4.0-2.4.6 [!BADGE 僅限PaaS]{type=Informative tooltip="僅適用於雲端專案上的Adobe Commerce (Adobe管理的PaaS基礎結構)。"}
+### Adobe Commerce或Magento Open Source | v2.4.0-2.4.6 [!BADGE 僅限PaaS]{type=Informative tooltip="僅適用於雲端專案上的Adobe Commerce （Adobe管理的PaaS基礎結構）。"}
 
 這些流程圖表顯示使用Adobe Commerce或Magento Open Source版本2.4.0到2.4.6上線[!DNL Payment Services]的一般程式。需要下載並安裝[!DNL Payment Services]才能開始上線。
 
@@ -80,10 +80,10 @@ ht-degree: 0%
 1. [如有必要，請安裝 [!DNL Payment Services] 擴充功能](install.md#get-payment-services)。
 1. [取得API認證](connect.md#obtain-api-credentials)。
 1. [將您的執行個體](connect.md#configure-commerce-services)連線至Commerce服務。 每個Commerce執行個體只能完成此連線一次。
-1. [使用測試PayPal付款處理帳戶，設定沙箱服務](sandbox.md#enable-sandbox-testing) （或者，如果您已在其他環境中測試功能，請繼續[啟用即時付款](sandbox.md#enable-live-payments)）。
+1. [設定沙箱服務](sandbox.md#enable-sandbox-testing)
 1. 在[沙箱](sandbox.md#test-in-sandbox-environment)環境中測試付款。
 
-[![深入瞭解](assets/learn-more-button.svg)](https://helpx.adobe.com/tw/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
+[![深入瞭解](assets/learn-more-button.svg)](https://helpx.adobe.com/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
 
 >[!TAB 生產]
 
@@ -110,8 +110,8 @@ ht-degree: 0%
 
 >[!MORELIKETHIS]
 >
-> * [疑難排解 [!DNL Payment Services] 安裝](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=zh-Hant)
-> * [未驗證PayPal沙箱帳戶](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html?lang=zh-Hant)
-> * [延遲 [!DNL Payment Services] 報告資料](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html?lang=zh-Hant)
-> * 在沙箱環境中處理付款時，[測試信用卡無法透過PayPal](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=zh-Hant)
-> * [停用 [!DNL Payment Services] 擴充功能](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure-store/extensions#manage-extensions-1)
+> * [疑難排解 [!DNL Payment Services] 安裝](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=en)
+> * [未驗證PayPal沙箱帳戶](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html)
+> * [延遲 [!DNL Payment Services] 報告資料](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html)
+> * 在沙箱環境中處理付款時，[測試信用卡無法透過PayPal](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=en)
+> * [停用 [!DNL Payment Services] 擴充功能](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions#manage-extensions-1)
