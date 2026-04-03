@@ -2,11 +2,11 @@
 title: 設定您的店面
 description: 瞭解如何設定您的 [!DNL Adobe Commerce Optimizer] 店面。
 role: Developer
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
 exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
-source-git-commit: c41134938f7408d062899ecaf3f63d37e1bdbca3
+source-git-commit: b6f7286f223c6253ab9edbead63a4bc4a9baddfe
 workflow-type: tm+mt
-source-wordcount: '1400'
+source-wordcount: '1420'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ ht-degree: 0%
 * **網站**：包含樣版內容的店面登陸頁面
 * **代碼**：儲存庫包含樣版來源檔案
 * **Content**：具有網站內容檔案的檔案製作環境
-* **Commerce設定**：執行個體特定設定的[Commerce店面設定](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=zh-Hant){target="_blank"}
+* **Commerce設定**：執行個體特定設定的[Commerce店面設定](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/){target="_blank"}
 
 ### 步驟1：產生專案
 
@@ -200,8 +200,8 @@ ht-degree: 0%
 |-------|----------|----------|
 | **程式碼同步安裝失敗** | 無法完成程式碼同步處理設定 | <ul><li>確保您擁有GitHub組織的管理員存取權。</li><li>嘗試使用個人存放庫而非組織。</li><li>請檢查GitHub許可權，然後再試一次。</li></ul> |
 | **網站未載入** | 404或連線錯誤 | <ul><li>驗證您的網站URL格式： `https://main--{SITE}--{ORG}.aem.live`</li><li>檢查是否已正確安裝程式碼同步應用程式。</li><li>確儲存放庫是公用或正確設定的。</li></ul> |
-| **未顯示任何產品資料** | 產品頁面顯示預留位置或錯誤 | <ul><li>驗證`config.json`中的設定值</li><li>在[!DNL Adobe Commerce Optimizer]執行個體中，檢查[資料同步]頁面以確認是否已載入範例產品。 如果沒有可用的產品，請重新載入範例資料，或使用[資料擷取API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/using-the-api/#make-your-first-request)新增產品。 請稍候幾分鐘，讓設定變更傳播出去。</li><li>嘗試使用[Commerce店面設定](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases/#return-product-details)中設定的相同標頭，使用銷售服務[產品查詢](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=zh-Hant){target="_blank"}擷取產品詳細資料。 如果您可以擷取資料，則可能是目錄檢視設定發生問題或索引錯誤。</li></ul> |
-| **搜尋未傳回任何結果** | 空白的搜尋結果頁面 | <ul><li>確認您可以使用[Commerce店面組態](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases/#product-search)中設定的相同標頭，利用Merchandising Services [productSearch查詢](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=zh-Hant){target="_blank"}擷取產品搜尋結果。 如果您可以擷取資料，則可能是目錄檢視設定發生問題或索引錯誤。</li><li>確認[Commerce店面設定](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=zh-Hant){target="_blank"}中的目錄檢視識別碼符合[!DNL Adobe Commerce Optimizer]中的目錄檢視識別碼。</li><li>在[!DNL Adobe Commerce Optimizer]中，驗證您在店面頁首設定中所使用的原則、地區設定及價格手冊的設定。</li><li>確認已正確設定搜尋的[屬性中繼資料設定](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata)。</li></ul> |
+| **未顯示任何產品資料** | 產品頁面顯示預留位置或錯誤 | <ul><li>驗證`config.json`中的設定值</li><li>在[!DNL Adobe Commerce Optimizer]執行個體中，檢查[資料同步]頁面以確認是否已載入範例產品。 如果沒有可用的產品，請重新載入範例資料，或使用[資料擷取API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/using-the-api/#make-your-first-request){target="_blank"}新增產品。 請稍候幾分鐘，讓設定變更傳播出去。</li><li>嘗試使用[檔案中設定的相同標頭，使用銷售服務](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases/#return-product-details){target="_blank"}產品查詢`config.json`擷取產品詳細資料。 如果您可以擷取資料，則可能是目錄檢視設定發生問題或索引錯誤。</li></ul> |
+| **搜尋未傳回任何結果** | 空白的搜尋結果頁面 | <ul><li>確認您可以使用[檔案中設定的相同標頭，使用Merchandising Services ](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases/#product-search){target="_blank"}productSearch查詢`config.json`擷取產品搜尋結果。 如果您可以擷取資料，則可能是目錄檢視設定發生問題或索引錯誤。</li><li>確認`config.json`檔案中的目錄檢視識別碼符合[!DNL Adobe Commerce Optimizer]中的目錄檢視識別碼。</li><li>在Adobe Commerce Optimizer中，驗證您在店面頁首設定中所使用的原則、地區設定和價格簿的設定。</li><li>確認已正確設定搜尋的[屬性中繼資料設定](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata){target="_blank"}。</li></ul> |
 
 ### 驗證檢查清單
 
@@ -218,28 +218,25 @@ ht-degree: 0%
 
 如果問題仍然存在：
 
-* 檢閱[Adobe Commerce Storefront檔案](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant)
-* 檢視[[!DNL Adobe Commerce Optimizer] 開發人員指南](https://developer.adobe.com/commerce/services/optimizer/)
-* 造訪[Adobe Commerce支援資源](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/overview)
+* 檢閱[Adobe Commerce Storefront檔案](https://experienceleague.adobe.com/developer/commerce/storefront/){target="_blank"}
+* 檢視[Adobe Commerce Optimizer開發人員指南](https://developer.adobe.com/commerce/services/optimizer/){target="_blank"}
+* 造訪[Adobe Commerce支援資源](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview){target="_blank"}
 
 ## 後續步驟
 
-設定並驗證店面後，您可以：
-
-1. **[安裝Sidekick](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=zh-Hant#install-and-configure-sidekick)** — 瀏覽器擴充功能，以便直接從您的網站編輯、預覽和發佈內容。
-
-2. **[設定本機開發環境](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=zh-Hant#set-up-local-environment)** — 建立本機環境，以自訂您的店面程式碼和內容。
+* **[設定本機開發環境](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#set-up-local-environment){target="_blank"}** — 建立本機環境，以自訂您的店面程式碼和內容。
+* **[啟用通用編輯器](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/quick-start/universal-editor/){target="_blank"}** — 通用編輯器可讓您在轉譯頁面的內容中編輯店面內容。 然後，內容會儲存在您的Document Authoring (DA.live)專案中，您可以在其中使用大部分的內容協調應用程式，例如本地化、大量發佈、快照等等。
 
 ### 學習與探索
 
 * **[完成端對端使用案例](./use-case/admin-use-case.md)** — 深入瞭解使用[!DNL Adobe Commerce Optimizer]的店面設定和目錄管理。
 
-* **[探索店面自訂](https://experienceleague.adobe.com/developer/commerce/storefront/setup/?lang=zh-Hant)** — 瞭解進階設定和組態選項。
+* **[探索店面自訂](https://experienceleague.adobe.com/developer/commerce/storefront/setup/){target="_blank"}** — 瞭解進階設定和組態選項。
 
-* **[使用Commerce下拉式功能表來自訂店面體驗](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=zh-Hant)** — 新增預先建立的元件以強化您的店面體驗。
+* **[使用Commerce下拉式功能表來自訂店面體驗](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/){target="_blank"}** — 新增預先建立的元件以強化您的店面體驗。
 
-* **移轉至Storefront Configuration Service** — 建立初始店面後，您可以移轉組態以使用Configuration Service，其支援進階使用案例，例如重複設定與覆蓋。 如需詳細資訊，請參閱Adobe Experience Manager中的[設定服務](https://www.aem.live/docs/config-service-setup)檔案。
+* **移轉至Storefront Configuration Service** — 建立初始店面後，您可以移轉組態以使用Configuration Service，其支援進階使用案例，例如重複設定與覆蓋。 如需詳細資訊，請參閱Adobe Experience Manager中的[設定服務](https://www.aem.live/docs/config-service-setup){target="_blank"}檔案。
 
 >[!MORELIKETHIS]
 >
-> 請參閱[Adobe Commerce Storefront檔案](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant)，深入瞭解如何更新網站內容以及整合Commerce前端元件和後端資料。
+> 請參閱[Adobe Commerce Storefront檔案](https://experienceleague.adobe.com/developer/commerce/storefront/){target="_blank"}，深入瞭解如何更新網站內容以及整合Commerce前端元件和後端資料。
