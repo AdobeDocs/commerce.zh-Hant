@@ -2,7 +2,7 @@
 title: 設定您的店面
 description: 瞭解如何設定您的 [!DNL Adobe Commerce Optimizer] 店面。
 role: Developer
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
 exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
 source-git-commit: b6f7286f223c6253ab9edbead63a4bc4a9baddfe
 workflow-type: tm+mt
@@ -57,7 +57,7 @@ ht-degree: 0%
 * **網站**：包含樣版內容的店面登陸頁面
 * **代碼**：儲存庫包含樣版來源檔案
 * **Content**：具有網站內容檔案的檔案製作環境
-* **Commerce設定**：執行個體特定設定的[Commerce店面設定](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/){target="_blank"}
+* **Commerce設定**：執行個體特定設定的[Commerce店面設定](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=zh-Hant){target="_blank"}
 
 ### 步驟1：產生專案
 
@@ -218,25 +218,25 @@ ht-degree: 0%
 
 如果問題仍然存在：
 
-* 檢閱[Adobe Commerce Storefront檔案](https://experienceleague.adobe.com/developer/commerce/storefront/){target="_blank"}
+* 檢閱[Adobe Commerce Storefront檔案](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant){target="_blank"}
 * 檢視[Adobe Commerce Optimizer開發人員指南](https://developer.adobe.com/commerce/services/optimizer/){target="_blank"}
-* 造訪[Adobe Commerce支援資源](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview){target="_blank"}
+* 造訪[Adobe Commerce支援資源](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/overview){target="_blank"}
 
 ## 後續步驟
 
-* **[設定本機開發環境](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#set-up-local-environment){target="_blank"}** — 建立本機環境，以自訂您的店面程式碼和內容。
-* **[啟用通用編輯器](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/quick-start/universal-editor/){target="_blank"}** — 通用編輯器可讓您在轉譯頁面的內容中編輯店面內容。 然後，內容會儲存在您的Document Authoring (DA.live)專案中，您可以在其中使用大部分的內容協調應用程式，例如本地化、大量發佈、快照等等。
+* **[設定本機開發環境](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=zh-Hant#set-up-local-environment){target="_blank"}** — 建立本機環境，以自訂您的店面程式碼和內容。
+* **[啟用通用編輯器](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/quick-start/universal-editor/?lang=zh-Hant){target="_blank"}** — 通用編輯器可讓您在轉譯頁面的內容中編輯店面內容。 然後，內容會儲存在您的Document Authoring (DA.live)專案中，您可以在其中使用大部分的內容協調應用程式，例如本地化、大量發佈、快照等等。
 
 ### 學習與探索
 
 * **[完成端對端使用案例](./use-case/admin-use-case.md)** — 深入瞭解使用[!DNL Adobe Commerce Optimizer]的店面設定和目錄管理。
 
-* **[探索店面自訂](https://experienceleague.adobe.com/developer/commerce/storefront/setup/){target="_blank"}** — 瞭解進階設定和組態選項。
+* **[探索店面自訂](https://experienceleague.adobe.com/developer/commerce/storefront/setup/?lang=zh-Hant){target="_blank"}** — 瞭解進階設定和組態選項。
 
-* **[使用Commerce下拉式功能表來自訂店面體驗](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/){target="_blank"}** — 新增預先建立的元件以強化您的店面體驗。
+* **[使用Commerce下拉式功能表來自訂店面體驗](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=zh-Hant){target="_blank"}** — 新增預先建立的元件以強化您的店面體驗。
 
 * **移轉至Storefront Configuration Service** — 建立初始店面後，您可以移轉組態以使用Configuration Service，其支援進階使用案例，例如重複設定與覆蓋。 如需詳細資訊，請參閱Adobe Experience Manager中的[設定服務](https://www.aem.live/docs/config-service-setup){target="_blank"}檔案。
 
 >[!MORELIKETHIS]
 >
-> 請參閱[Adobe Commerce Storefront檔案](https://experienceleague.adobe.com/developer/commerce/storefront/){target="_blank"}，深入瞭解如何更新網站內容以及整合Commerce前端元件和後端資料。
+> 請參閱[Adobe Commerce Storefront檔案](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant){target="_blank"}，深入瞭解如何更新網站內容以及整合Commerce前端元件和後端資料。
