@@ -127,7 +127,7 @@ RAG服務是[Commerce擴充性工具](https://developer.adobe.com/commerce/exten
 
 ## 使用情況
 
-安裝之後，您可以自動呼叫索引[](#automatic-index-selection-recommended)或[明確](#explicit-index-selection)。 您也可以使用[`/search-commerce-docs`命令](#command-based-search)。
+安裝之後，您可以自動呼叫索引[&#128279;](#automatic-index-selection-recommended)或[明確](#explicit-index-selection)。 您也可以使用[`/search-commerce-docs`命令](#command-based-search)。
 
 >[!NOTE]
 >
