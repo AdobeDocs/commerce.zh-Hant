@@ -29,7 +29,7 @@ ht-degree: 4%
    - [檔案RAG服務](migration/doc-rag.md)
 - [以客戶身分登入](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
 - [禮卡帳戶REST端點](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/){target="_blank"}
-- 透過REST觸發[電子郵件](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/){target="_blank"}
+- [透過REST觸發電子郵件](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/){target="_blank"}
 - 教學課程 {#tutorials}
    - [教學課程必要條件](tutorials/tutorial-prerequisites.md)
    - [評等擴充功能教學課程](tutorials/ratings-extension.md)
