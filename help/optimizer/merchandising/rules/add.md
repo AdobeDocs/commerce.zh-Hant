@@ -1,7 +1,7 @@
 ---
 title: 建立和管理規則
 description: 瞭解如何建立和管理銷售規則。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
 source-git-commit: 0df932ab95666438baf1210b6fe913e4ae8e28b9
 workflow-type: tm+mt
@@ -21,7 +21,7 @@ ht-degree: 0%
 
    >[!IMPORTANT]
    >
-   >此功能目前在[beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta)中。 Beta參與者將需要重新建立任何現有的銷售規則，以善用新的目錄檢視範圍。
+   >此功能目前在[beta](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta)中。 Beta參與者將需要重新建立任何現有的銷售規則，以善用新的目錄檢視範圍。
 
 1. 按一下&#x200B;**[!UICONTROL Create rule]**&#x200B;以啟動規則編輯器。
 
