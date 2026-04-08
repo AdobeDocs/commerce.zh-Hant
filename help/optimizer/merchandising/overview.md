@@ -2,11 +2,11 @@
 title: 銷售概述
 description: 瞭解 [!DNL Adobe Commerce Optimizer]中的銷售功能。
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
 exl-id: cc0f280c-3934-47ca-b5dc-d83023d8e2be
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+source-git-commit: 8abc0593c166a2dd861cfb78674918de1d0744de
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 透過產品探索，您可以：
 
-* **設定[面向](./facets/overview.md)、[銷售規則](./rules/overview.md)和[同義字](./synonyms/overview.md)**，以引導購物者以最小的摩擦找到最相關的產品。
+* **設定[面向](./facets/overview.md)、[銷售搜尋和類別規則](./rules/overview.md)和[同義字](./synonyms/overview.md)**，以引導購物者以最小的摩擦找到最相關的產品。
 * **建立直覺式、以目標為導向的搜尋體驗**，以反映您的銷售策略和季節性優先順序。
 * **使用AI驅動的動態多面向和結果重新排名**，根據購物者行為即時調整搜尋結果 — 提升參與度和銷售量。
 * **確保促銷和高優先順序的專案有效呈現**，讓搜尋結果符合業務目標。
