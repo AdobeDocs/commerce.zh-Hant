@@ -4,7 +4,7 @@ user-guide-description: ' [!DNL Adobe Commerce Optimizer]的檔案和資源。'
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: e5cb31d0daec30b78cebf4173b72a556e7a92dd2
+source-git-commit: 67e254242d93c6f05d4c204cbc39e50116605c6b
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 11%
@@ -18,7 +18,6 @@ ht-degree: 11%
 - [使用者和身分管理](user-management.md)
 - [共擔責任](shared-responsibility.md)
 - [限制和邊界](boundaries-limits.md)
-- [發行說明](release-notes.md)
 - 管理結果 {#manage-results}
    - [機會](./manage-results/opportunities.md)
    - [成功量度](./manage-results/success-metrics.md)
@@ -66,4 +65,4 @@ ht-degree: 11%
 - 開發人員資源 {#developer}
    - [開發人員指南和API參考](https://developer.adobe.com/commerce/services/optimizer/)
    - [Salesforce Commerce聯結器](./developer/salesforce-connector.md)
-
+- [發行說明](release-notes.md)
