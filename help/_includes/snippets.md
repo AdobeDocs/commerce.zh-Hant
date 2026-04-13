@@ -1,7 +1,7 @@
 ---
-source-git-commit: 25e92d9418c5b0ac331e8aab2e13330f52ca85bb
+source-git-commit: b5208e8b68963e0d949c832668898bc6942b730d
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '288'
 ht-degree: 0%
 
 ---
@@ -21,10 +21,10 @@ ht-degree: 0%
 <table style="table-layout:fixed">
   <tr>
     <td style="vertical-align: middle;"><a href="https://developer.adobe.com/commerce/webapi/"><img alt="Developers" src="../assets/icons/developers.svg" /> <strong>Developers</strong></a></td>
-    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant"><img alt="Storefront" src="../assets/icons/storefront.svg" /> <strong>Storefront</strong></a></td>
+    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/developer/commerce/storefront/"><img alt="Storefront" src="../assets/icons/storefront.svg" /> <strong>Storefront</strong></a></td>
     <td style="vertical-align: middle;"><a href="../cloud-service/overview.md"><img alt="Merchants" src="../assets/icons/merchants.svg" /> <strong>Merchants</strong></a></td>
-    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/overview"><img alt="Videos" src="../assets/icons/videos.svg" /> <strong>Videos</strong></a></td>
-    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/developer/commerce/storefront/playgrounds/commerce-services/?lang=zh-Hant"><img alt="Playgrounds" src="../assets/icons/playgrounds.svg" /> <strong>Playgrounds</strong></a></td>
+    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/overview"><img alt="Videos" src="../assets/icons/videos.svg" /> <strong>Videos</strong></a></td>
+    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/developer/commerce/storefront/playgrounds/commerce-services/"><img alt="Playgrounds" src="../assets/icons/playgrounds.svg" /> <strong>Playgrounds</strong></a></td>
   </tr>
 </table>
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 Adobe Commerce身分管理和驗證由Adobe Identity Management系統(IMS)透過Adobe Admin Console管理。
 
-如需有關身分設定選項（包括Adobe ID、Enterprise ID和Federated ID）的資訊，以及設定單一登入(SSO)以安全存取Adobe應用程式的指示，請參閱[企業Admin Console](https://helpx.adobe.com/tw/enterprise/using/set-up-identity.html)檔案中的&#x200B;*設定身分和單一登入*。
+如需有關身分設定選項（包括Adobe ID、Enterprise ID和Federated ID）的資訊，以及設定單一登入(SSO)以安全存取Adobe應用程式的指示，請參閱[企業Admin Console](https://helpx.adobe.com/enterprise/using/set-up-identity.html)檔案中的&#x200B;*設定身分和單一登入*。
 
 ## ACCS服務與擴充功能發行說明 {#accs-release}
 
@@ -61,4 +61,14 @@ Adobe Commerce身分管理和驗證由Adobe Identity Management系統(IMS)透過
 
 | 服務 | 擴充性 | 店面 |
 | --- | --- | --- |
-| <ul><li>[目錄服務](../catalog-service/release-notes.md)</li><li>[即時搜尋](../live-search/release-notes.md)</li><li>[付款服務](../payment-services/release-notes.md)</li><li>[產品建議](../product-recommendations/release-notes.md)</li><li>[SaaS資料匯出](../data-export/release-notes.md)</li></ul> | <ul><li>[管理UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/)</li><li>[API網格](https://developer.adobe.com/graphql-mesh-gateway/mesh/release)</li><li>[個活動](https://developer.adobe.com/commerce/extensibility/events/release-notes/)</li><li>[Webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/)</li></ul> | <ul><li>[發行資訊](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=zh-Hant)</li><li>[變更記錄檔](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=zh-Hant)</li></ul> |
+| <ul><li>[目錄服務](../catalog-service/release-notes.md)</li><li>[即時搜尋](../live-search/release-notes.md)</li><li>[付款服務](../payment-services/release-notes.md)</li><li>[產品建議](../product-recommendations/release-notes.md)</li><li>[SaaS資料匯出](../data-export/release-notes.md)</li></ul> | <ul><li>[管理UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/)</li><li>[API網格](https://developer.adobe.com/graphql-mesh-gateway/mesh/release)</li><li>[個活動](https://developer.adobe.com/commerce/extensibility/events/release-notes/)</li><li>[Webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/)</li></ul> | <ul><li>[發行資訊](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)</li><li>[變更記錄檔](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/)</li></ul> |
+
+## Adobe Commerce Optimizer服務發行說明 {#aco-release}
+
+### 其他發行說明
+
+[!DNL Adobe Commerce Optimizer]使用最新版的AEM Assets整合、Commerce Optimizer聯結器及[!DNL Adobe Commerce Storefront]。 使用下列連結檢視每個區域的發行說明：
+
+| 服務 | 店面 |
+| --- | --- |
+| [AEM Assets整合](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer聯結器](../aco-connector/release-notes.md) | [店面版本資訊](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)<br>[店面變更記錄檔](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/) |
