@@ -1,18 +1,18 @@
 ---
 title: 自訂自動比對
-description: 瞭解自訂自動比對如何對具有複雜比對邏輯的商家，或依賴第三方系統(無法將中繼資料填入AEM Assets)的商戶特別有用。
+description: 瞭解自訂自動比對如何對具有複雜比對邏輯的商家，或依賴第三方系統（無法將中繼資料填入AEM Assets）的商戶特別有用。
 feature: CMS, Media, Integration
 exl-id: e7d5fec0-7ec3-45d1-8be3-1beede86c87d
-source-git-commit: 6e8d266aeaec4d47b82b0779dfc3786ccaa7d83a
+source-git-commit: cd7a332dd09840aabcc0efae081ba0a713506897
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '558'
 ht-degree: 0%
 
 ---
 
 # 自訂自動比對
 
-如果預設的自動比對策略（**OOTB自動比對**）不符合您的特定業務需求，請選取自訂比對選項。 此選項支援使用[Adobe Developer App Builder](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)來開發自訂符合器應用程式，以處理複雜的符合邏輯，或來自無法將中繼資料填入AEM Assets的協力廠商系統的資產。
+如果預設的自動比對策略（**OOTB自動比對**）不符合您的特定業務需求，請選取自訂比對選項。 此選項支援使用[Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)來開發自訂符合器應用程式，以處理複雜的符合邏輯，或來自無法將中繼資料填入AEM Assets的協力廠商系統的資產。
 
 ## 設定自訂自動比對
 
@@ -114,7 +114,7 @@ ht-degree: 0%
 
 ## 自訂比對器API端點
 
-當您使用[App Builder](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}建置自訂符合專案應用程式時，應用程式必須公開下列端點：
+當您使用[App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}建置自訂符合專案應用程式時，應用程式必須公開下列端點：
 
 * **App Builder資產至產品URL**&#x200B;端點
 * **App Builder產品至資產URL**&#x200B;端點
@@ -171,7 +171,7 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/asset-to-
 | 引數 | 資料型別 | 說明 |
 | --- | --- | --- |
 | `assetId` | 字串 | 代表更新的資產ID。 |
-| `eventData` | 字串 | 傳回與資產ID相關聯的資料裝載。 |
+| `eventData` | 物件 | 與資產相關聯的事件裝載（例如，符合專案從`eventData.assetMetadata`讀取的資產中繼資料）。 |
 
 **回應**
 
@@ -246,8 +246,8 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-t
 
 | 引數 | 資料型別 | 說明 |
 | --- | --- | --- |
-| `productSKU` | 字串 | 代表更新的產品SKU。 |
-| `eventData` | 字串 | 傳回與產品SKU相關聯的資料裝載。 |
+| `productSku` | 字串 | 代表更新的產品SKU。 |
+| `eventData` | 物件 | 與產品相關聯的事件裝載（例如，符合專案從傳入事件使用的欄位）。 |
 
 **回應**
 
@@ -283,7 +283,7 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-t
 | 屬性 | 資料型別 | 說明 |
 | --- | --- | --- |
 | `asset_id` | 字串 | 資產識別碼。 |
-| `asset_roles` | 陣列 | 資產角色。 使用支援的[Commerce資產角色](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)，例如`thumbnail`、`image`、`small_image`和`swatch_image`。 |
+| `asset_roles` | 陣列 | 資產角色。 使用支援的[Commerce資產角色](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)，例如`thumbnail`、`image`、`small_image`和`swatch_image`。 |
 | `asset_format` | 字串 | 資產格式。 可能的值為`image`和`video`。 |
 | `asset_position` | 數字 | 資產在產品相簿中的位置。 |
 
