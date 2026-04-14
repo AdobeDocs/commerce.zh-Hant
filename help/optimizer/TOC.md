@@ -4,10 +4,10 @@ user-guide-description: ' [!DNL Adobe Commerce Optimizer]的檔案和資源。'
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 67e254242d93c6f05d4c204cbc39e50116605c6b
+source-git-commit: fccfd5b75419e2f04537a48098591b53220725a5
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 11%
+source-wordcount: '108'
+ht-degree: 12%
 
 ---
 
@@ -15,13 +15,14 @@ ht-degree: 11%
 
 - [什麼是 [!DNL Adobe Commerce Optimizer]？](overview.md)
 - [開始使用](get-started.md)
+- [整合](./integrations/integrations-overview.md)
 - [使用者和身分管理](user-management.md)
 - [共擔責任](shared-responsibility.md)
 - [限制和邊界](boundaries-limits.md)
 - 管理結果 {#manage-results}
    - [機會](./manage-results/opportunities.md)
    - [成功量度](./manage-results/success-metrics.md)
-   - [搜尋效能](./manage-results/search-performance.md)
+   - [搜尋績效](./manage-results/search-performance.md)
    - [Recommendations效能](./manage-results/recommendation-performance.md)
 - 銷售 {#merchandising}
    - [概觀](./merchandising/overview.md)
@@ -51,7 +52,7 @@ ht-degree: 11%
    - [目錄檢視](./setup/catalog-view.md)
    - [目錄圖層](./setup/catalog-layer.md)
    - [原則](./setup/policies.md)
-   - [價格手冊](./setup/pricebooks.md)
+   - [價格簿](./setup/pricebooks.md)
    - [產品視覺效果](./setup/product-visuals.md)
    - [資料同步](./setup/data-sync.md)
    - 活動 {#events}
