@@ -3,9 +3,9 @@ title: 檢閱記錄檔並進行疑難排解
 description: 瞭解如何使用資料匯出和saas-export記錄檔來疑難排解 [!DNL data export] 錯誤。
 feature: Services
 exl-id: d022756f-6e75-4c2a-9601-31958698dc43
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+source-git-commit: c86e66a675f9a53a6ec7b79540ff85d10186bf3f
 workflow-type: tm+mt
-source-wordcount: '1063'
+source-wordcount: '1091'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,10 @@ ht-degree: 0%
 # 檢閱記錄檔並進行疑難排解
 
 [!DNL data export]擴充功能提供記錄檔以追蹤資料收集和同步處理程式。
+
+>[!NOTE]
+>
+>您也可以從Admin的[資料摘要同步狀態儀表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)追蹤產品與類別資料之資料匯出摘要的健康狀況和效能。
 
 ## 記錄檔
 
@@ -129,7 +133,7 @@ Price feed full resync:
 - 資料匯出錯誤記錄(`commerce-data-export-errors.log`)會擷取收集階段發生的錯誤。
 - SaaS匯出錯誤記錄(`saas-export-errors.log`)會擷取傳輸階段發生的錯誤。
 
-如果您看到與設定或協力廠商擴充功能無關的錯誤，請儘可能提交[支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)並提供更多資訊。
+如果您看到與設定或協力廠商擴充功能無關的錯誤，請儘可能提交[支援票證](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)並提供更多資訊。
 
 ### 解決目錄同步問題 {#resolvesync}
 
@@ -144,11 +148,11 @@ Price feed full resync:
 
 #### 同步處理未執行
 
-如果同步未依排程執行，或未同步任何專案，請參閱此[知識庫](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce)文章。
+如果同步未依排程執行，或未同步任何專案，請參閱此[知識庫](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce)文章。
 
 #### 同步失敗
 
-如果目錄同步處理的狀態為&#x200B;**失敗**，請提交[支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)。
+如果目錄同步處理的狀態為&#x200B;**失敗**，請提交[支援票證](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)。
 
 ## 延伸記錄
 
