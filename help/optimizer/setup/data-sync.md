@@ -3,7 +3,7 @@ title: 資料同步
 description: 檢閱正在從Commerce資料來源同步到 [!DNL Adobe Commerce Optimizer]的目錄資料。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
 exl-id: c0f4664c-6afc-4762-856b-5e26a865d3a2
 source-git-commit: 2cb17424a0f063a585ddd861b7057d9851467fbc
 workflow-type: tm+mt
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 ## 監視資料同步狀態
 
-對於透過Commerce Optimizer Connector使用Adobe Commerce作為上游資料來源的專案，您可以監視資料匯出程式，並從Commerce Admin的[資料摘要同步狀態頁面](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)啟動重新同步作業。
+對於透過Commerce Optimizer Connector使用Adobe Commerce作為上游資料來源的專案，您可以監視資料匯出程式，並從Commerce Admin的[資料摘要同步狀態頁面](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)啟動重新同步作業。
 
 ## 相關主題
 
