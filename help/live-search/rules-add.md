@@ -16,7 +16,7 @@ ht-degree: 0%
 ## 新增規則
 
 1. 在Admin中，前往&#x200B;**行銷** > SEO與搜尋> **[!DNL Live Search]**。
-1. 設定&#x200B;**範圍**&#x200B;以識別規則套用的[存放區檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)。
+1. 設定&#x200B;**範圍**&#x200B;以識別規則套用的[存放區檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hant#scope-settings)。
 1. 按一下&#x200B;**搜尋銷售**&#x200B;工作區。
 1. 按一下&#x200B;**新增規則**&#x200B;以啟動規則編輯器。
 

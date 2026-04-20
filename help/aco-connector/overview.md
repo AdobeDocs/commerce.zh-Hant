@@ -2,7 +2,7 @@
 title: Adobe Commerce Optimizer聯結器
 description: 瞭解如何將資料從Commerce雲端或內部部署專案連線到Adobe Commerce Optimizer
 feature: Personalization, Integration, Configuration
-badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
+badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
 source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '471'

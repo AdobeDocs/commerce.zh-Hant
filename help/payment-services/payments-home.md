@@ -40,14 +40,14 @@ ht-degree: 1%
 
 ## 首頁
 
-僅[!BADGE 個PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"}
+僅[!BADGE 個PaaS]{type=Informative url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"}
 
 | 欄位 | 說明 |
 |---|---|
 | [!UICONTROL Orders] | 這些報表可讓您快速檢視訂單的付款狀態，並識別任何潛在問題。 |
 | [!UICONTROL Payouts] | 「付款」報表會顯示完整的付款資訊，讓您對付款金額、已處理數量及財務調節之交易層次的詳細報表具有完全的透明度。 |
 
-僅[!BADGE SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"}
+僅[!BADGE SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"}
 
 | 欄位 | 說明 |
 |---|---|

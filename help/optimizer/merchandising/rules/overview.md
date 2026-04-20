@@ -1,7 +1,7 @@
 ---
 title: 銷售規則
 description: '[!DNL Adobe Commerce Optimizer]銷售規則結合邏輯與動作，以塑造搜尋結果、預設產品清單和類別頁面。'
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
 exl-id: f2a9b5e8-d23d-4855-b424-ca6b40e057df
 source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
