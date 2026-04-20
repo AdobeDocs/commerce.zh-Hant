@@ -2,7 +2,7 @@
 title: 新增Facet
 description: 瞭解如何將可篩選的產品屬性新增為 [!DNL Live Search] Facet。
 exl-id: 80559107-2b2d-411f-8c32-99ff024e7a09
-source-git-commit: 15afc6fcd1e6783640dc3980ee06290e017abf37
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '584'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Facet已新增至*動態Facet*&#x200B;清單底部，且&#x200B;*發佈變更*&#
 
 1. 出現提示時，請重新整理快取。
 
-   下次目錄與[!DNL Live Search]同步時，Facet便可在店面中使用。 如果兩小時後無法使用Facet，請參閱[同步目錄資料](install.md#synchronize-catalog-data)。
+   下次目錄與[!DNL Live Search]同步時，Facet便可在店面中使用。 如果兩小時後無法使用Facet，請參閱[同步目錄資料](install.md#sync)。
 
 ## 步驟2：編輯Facet屬性（選用）
 
@@ -57,7 +57,8 @@ Facet已新增至*動態Facet*&#x200B;清單底部，且&#x200B;*發佈變更*&#
 
 1. 當Facet完成時，按一下&#x200B;**發佈變更**。
 1. 等候多面向出現在存放區中。
-如果兩小時後無法使用Facet，請參閱安裝指示中的[驗證匯出](install.md#synchronize-catalog-data)。
+
+   如果兩小時後無法使用Facet，請參閱安裝指示中的[驗證匯出](install.md#sync)。
 
 ## 欄位說明
 

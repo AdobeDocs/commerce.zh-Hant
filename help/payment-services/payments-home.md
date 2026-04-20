@@ -5,7 +5,7 @@ role: Admin, User
 level: Intermediate
 exl-id: d7a4c87f-33cb-446a-b442-3cdf05b518a2
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: e4aede88f8470f79e5987afcb7311bf6ef44c16e
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 1%
@@ -20,13 +20,13 @@ ht-degree: 1%
 
 >[!BEGINTABS]
 
->[!TAB 雲端和內部部署上的 Adobe Commerce]
+>雲端和內部部署上的[!TAB Adobe Commerce]
 
 ![首頁檢視](assets/home-view.png){width="700" zoomable="yes"}
 
 >[!TAB Adobe Commerce as a Cloud Service和Commerce Optimizer]
 
-在您完成上線之前，**[!UICONTROL Home]**&#x200B;將顯示&#x200B;**[!UICONTROL ACCS Onboarding Required]**。 通知連結至[設定沙箱服務](sandbox.md#enable-sandbox-testing) （使用測試PayPal處理帳戶），或連結至[啟用即時付款](production.md#enable-live-payments) （如果您已在其他環境中測試）：
+在您完成上線之前，**[!UICONTROL Home]**&#x200B;將顯示&#x200B;**[!UICONTROL ACCS Onboarding Required]**。 通知連結至[設定沙箱服務](sandbox.md#sandbox-onboarding) （使用測試PayPal處理帳戶），或連結至[啟用即時付款](production.md#enable-live-payments) （如果您已在其他環境中測試）：
 
 ![支付服務首頁需要ACCS上線](assets/payment-services-home-accs-onboarding.png){width="700" zoomable="yes"}
 
@@ -40,14 +40,14 @@ ht-degree: 1%
 
 ## 首頁
 
-僅[!BADGE 個PaaS]{type=Informative url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"}
+僅[!BADGE 個PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"}
 
 | 欄位 | 說明 |
 |---|---|
 | [!UICONTROL Orders] | 這些報表可讓您快速檢視訂單的付款狀態，並識別任何潛在問題。 |
 | [!UICONTROL Payouts] | 「付款」報表會顯示完整的付款資訊，讓您對付款金額、已處理數量及財務調節之交易層次的詳細報表具有完全的透明度。 |
 
-僅[!BADGE SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"}
+僅[!BADGE SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"}
 
 | 欄位 | 說明 |
 |---|---|

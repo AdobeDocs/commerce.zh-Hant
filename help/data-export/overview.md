@@ -3,7 +3,7 @@ title: '[!DNL SaaS Data Export Guide]'
 description: 瞭解如何將 [!DNL data export] 擴充功能用於Adobe Commerce SaaS服務，以在Adobe Commerce與連線的Commerce服務之間同步資料。
 role: Admin, Developer
 exl-id: 8a0067ba-90a4-48a6-8276-208d09abe6fc
-source-git-commit: ae672ed3f2693e2f14e8c7f379e59ef117a34fc3
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%
@@ -25,15 +25,15 @@ SaaS資料匯出會以PHP擴充功能的形式提供。 它支援數種方法來
 
 - **從Admin或命令列手動同步處理**
 
-   - Commerce Admin中的[資料管理儀表板](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)提供同步處理狀態的圖形檢視。 您可以使用儀表板對所有摘要執行完整重新同步（_完整同步_）。 不過，Adobe建議僅在第一次將Adobe Commerce連線至Commerce服務時，才執行完整同步。 請參閱[同步化程式](data-synchronization.md)。
+   - Commerce Admin中的[資料管理儀表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)提供同步處理狀態的圖形檢視。 您可以使用儀表板對所有摘要執行完整重新同步（_完整同步_）。 不過，Adobe建議僅在第一次將Adobe Commerce連線至Commerce服務時，才執行完整同步。 請參閱[同步化程式](data-synchronization.md)。
 
-   - [Adobe Commerce命令列工具](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cli/config-cli) (CLI)提供同步特定摘要的命令，並包含自訂摘要處理的其他選項。
+   - [Adobe Commerce命令列工具](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli) (CLI)提供同步特定摘要的命令，並包含自訂摘要處理的其他選項。
 
 - **與cron工作自動同步**
 
-   - [部分資料同步](data-synchronization.md#partial-synchronization-with-cron-jobs) — 當Commerce管理員使用者更新實體時，Cron工作會觸發部分資料同步。 資料匯出程式只會將這些更新傳送至連線的Commerce服務。 部分同步程式以MView機製為基礎，不需要管理員使用者或系統整合者執行任何動作。
+   - [部分資料同步](data-synchronization.md#partial-sync) — 當Commerce管理員使用者更新實體時，Cron工作會觸發部分資料同步。 資料匯出程式只會將這些更新傳送至連線的Commerce服務。 部分同步程式以MView機製為基礎，不需要管理員使用者或系統整合者執行任何動作。
 
-   - [同步處理錯誤的自動重試](data-synchronization.md#failed-items-sync-for-error-recovery) — 當資料同步處理期間發生錯誤時，Cron工作會觸發同步處理程式的自動重試。
+   - [同步處理錯誤的自動重試](data-synchronization.md#retry-failed-items-sync) — 當資料同步處理期間發生錯誤時，Cron工作會觸發同步處理程式的自動重試。
 
 - **匯出排程與效能**
 

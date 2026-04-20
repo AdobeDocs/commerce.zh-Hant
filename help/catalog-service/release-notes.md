@@ -3,7 +3,7 @@ title: '[!DNL Commerce Storefront Catalog Service Release Notes]'
 description: 適用於Adobe Commerce的 [!DNL Catalog Service] 的最新發行資訊。
 feature: Services, Catalog Service, Release Notes
 exl-id: 74f2e46a-5592-4857-a6d7-b95b85d8b4cc
-source-git-commit: f0bc0ef5fce33b2a494499b3c4ce6746ef0867d8
+source-git-commit: 16fb13c2c98288e1ea0e441425efc2faba58ef8a
 workflow-type: tm+mt
 source-wordcount: '2412'
 ht-degree: 0%
@@ -117,7 +117,7 @@ _2025年11月3日_
 - 使用圖層遮色片控制欄位層級覆寫
 - 支援優質、季節和行動最佳化內容層
 
-  使用現有`products`查詢擷取圖層、從請求標頭套用至伺服器端，且不需要變更結構描述。 請參閱[Adobe Commerce Optimizer指南](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/setup/catalog-layer)中的&#x200B;_目錄層_。
+  使用現有`products`查詢擷取圖層、從請求標頭套用至伺服器端，且不需要變更結構描述。 請參閱[Adobe Commerce Optimizer指南](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-layer)中的&#x200B;_目錄層_。
 
 ![修正](../assets/fix.svg)當父項沒有訂價時，現在可以查詢已分組的產品；子項產品會傳回自己的可見性角色。<!--DATA-6779-->
 
@@ -228,7 +228,7 @@ _2025年7月15日_
 
 _2025年6月20日_
 
-![新的](../assets/new.svg) **階層式價格簿組態** — 上下階價格簿的精確價格範圍。 計算會遵循階層與繼承的規則；當連結多重價格簿時，可減少訂價錯誤。 僅限Adobe Commerce Optimizer。 檢視[價格手冊](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/setup/pricebooks)。
+![新的](../assets/new.svg) **階層式價格簿組態** — 上下階價格簿的精確價格範圍。 計算會遵循階層與繼承的規則；當連結多重價格簿時，可減少訂價錯誤。 僅限Adobe Commerce Optimizer。 檢視[價格手冊](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/pricebooks)。
 
 ![新](../assets/new.svg) **不區分大小寫的索引鍵** — 查詢中的索引鍵查閱現在不區分大小寫，可減少因索引鍵大小寫造成的錯誤。<!--DATA-6494, DCAT-2495-->
 
@@ -357,7 +357,7 @@ _2024年5月23日_
 
 ![修正](../assets/fix.svg) <!--DATA-5033-->選項值的`InStock`旗標現在會遵守產品變體的領域`enabled`狀態。
 
-![修正](../assets/fix.svg) <!--DATA-5888-->已新增對產品價格的支援，最多可包含16位數和4位小數。 從[資料管理儀表板](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)或[CLI](../landing/catalog-sync.md#command-line-interface)重新同步以套用更新。
+![修正](../assets/fix.svg) <!--DATA-5888-->已新增對產品價格的支援，最多可包含16位數和4位小數。 從[資料管理儀表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)或[CLI](../data-export/data-export-cli-commands.md)重新同步以套用更新。
 
 #### 已知限制
 
@@ -391,7 +391,7 @@ _2024年2月22日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
-![新增](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=zh-Hant)現在可用於資料串流（產品推薦、即時搜尋、目錄服務）。 需要`catalog-service`個中繼封裝v3.1.0+。
+![新增](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html)現在可用於資料串流（產品推薦、即時搜尋、目錄服務）。 需要`catalog-service`個中繼封裝v3.1.0+。
 
 ### v1.16版本
 

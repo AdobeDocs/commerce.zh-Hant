@@ -3,9 +3,9 @@ title: 檢閱記錄檔並進行疑難排解
 description: 瞭解如何使用資料匯出和saas-export記錄檔來疑難排解 [!DNL data export] 錯誤。
 feature: Services
 exl-id: d022756f-6e75-4c2a-9601-31958698dc43
-source-git-commit: a1afed7b635a2b05c5c0e0d1c9bf4a07fc5eef31
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1063'
 ht-degree: 0%
 
 ---
@@ -53,10 +53,10 @@ ht-degree: 0%
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
 | 完全同步 | 收集特定摘要的所有資料並傳送至SaaS。 | `bin/magento saas:resync --feed=products` |
 | 部分重新索引 | 收集特定摘要中更新的實體資料並將資料傳送至SaaS。 只有在更新的實體存在時，此記錄才會出現。 | `bin/magento cron:run --group=index` |
-| 重試失敗的專案 | 如果先前的同步作業因Commerce應用程式或伺服器錯誤而失敗，請重新傳送指定摘要的專案至SaaS。 只有存在失敗的專案時，才會出現此記錄。 | `bin/magento cron:run --group=saas_data_exporter` (任何「*_data_exporter」cron群組) |
+| 重試失敗的專案 | 如果先前的同步作業因Commerce應用程式或伺服器錯誤而失敗，請重新傳送指定摘要的專案至SaaS。 只有存在失敗的專案時，才會出現此記錄。 | `bin/magento cron:run --group=saas_data_exporter` （任何「*_data_exporter」cron群組） |
 | 完整同步（舊版） | 在舊版匯出模式中，收集指定摘要的所有資料並傳送至SaaS。 | `bin/magento saas:resync --feed=categories` |
 | 部分重新索引（舊版） | 在舊版匯出模式中，針對指定摘要將更新的實體傳送至SaaS。 只有在更新的實體存在時，此記錄才會出現。 | `bin/magento cron:run --group=index` |
-| 部分同步（舊版） | 在舊版匯出模式中，針對指定摘要將更新的實體傳送至SaaS。 只有在更新的實體存在時，此記錄才會出現。 | `bin/magento cron:run --group=saas_data_exporter` (任何「*_data_exporter」cron群組) |
+| 部分同步（舊版） | 在舊版匯出模式中，針對指定摘要將更新的實體傳送至SaaS。 只有在更新的實體存在時，此記錄才會出現。 | `bin/magento cron:run --group=saas_data_exporter` （任何「*_data_exporter」cron群組） |
 
 
 ### 記錄範例
@@ -129,7 +129,7 @@ Price feed full resync:
 - 資料匯出錯誤記錄(`commerce-data-export-errors.log`)會擷取收集階段發生的錯誤。
 - SaaS匯出錯誤記錄(`saas-export-errors.log`)會擷取傳輸階段發生的錯誤。
 
-如果您看到與設定或協力廠商擴充功能無關的錯誤，請儘可能提交[支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)並提供更多資訊。
+如果您看到與設定或協力廠商擴充功能無關的錯誤，請儘可能提交[支援票證](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)並提供更多資訊。
 
 ### 解決目錄同步問題 {#resolvesync}
 
@@ -140,15 +140,15 @@ Price feed full resync:
 1. 在搜尋結果中顯示相關產品的詳細檢視。
 1. 複製JSON輸出，並確認內容符合您在[!DNL Commerce]目錄中的內容。
 1. 如果內容不符，請對目錄中的產品進行微幅變更，例如新增空格或句點。
-1. 等候重新同步或[觸發手動重新同步](#resync)。
+1. 等候重新同步或從CLI或管理員儀表板觸發手動重新同步。
 
 #### 同步處理未執行
 
-如果同步未依排程執行，或未同步任何專案，請參閱此[知識庫](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce)文章。
+如果同步未依排程執行，或未同步任何專案，請參閱此[知識庫](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce)文章。
 
 #### 同步失敗
 
-如果目錄同步處理的狀態為&#x200B;**失敗**，請提交[支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)。
+如果目錄同步處理的狀態為&#x200B;**失敗**，請提交[支援票證](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)。
 
 ## 延伸記錄
 

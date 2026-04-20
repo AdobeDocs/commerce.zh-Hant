@@ -1,16 +1,16 @@
 ---
 title: ' [!DNL Payment Services]簡介'
-description: 瞭解如何為您的 [!DNL Adobe Commerce] 和 [!DNL Magento Open Source] 網站安裝及使用 [!DNL Payment Services] 作為全包式、健全且安全的付款處理解決方案。
+description: 瞭解如何為您的 [!DNL Payment Services] 和 [!DNL Adobe Commerce] 網站安裝及使用 [!DNL Magento Open Source] 作為全包式、健全且安全的付款處理解決方案。
 role: User
 level: Intermediate
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+exl-id: 191467ab-4c5e-4df1-b423-7a470a4910ea
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Payment Services]簡介
 
@@ -52,4 +52,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> 這裡提到的部分功能可能尚未在您的市場上提供。 如需詳細資訊，請參閱[相容性](compatibility.md)。
+> 這裡提到的部分功能可能尚未在您的市場上提供。 如需詳細資訊，請參閱[相容性](compatibility.md#standard-vs-advanced-payment-services-experience)。

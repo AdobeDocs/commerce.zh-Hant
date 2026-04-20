@@ -5,8 +5,8 @@ feature: Cloud, Integration
 role: Admin, Developer, User
 level: Beginner
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
-source-git-commit: d22ea53810e2e62337f9bd5fd633b0ed40a52b2d
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '1269'
 ht-degree: 0%
@@ -40,7 +40,7 @@ ht-degree: 0%
 作為合併的群組，系統管理員、商家和開發人員需要遵循以下基本步驟來啟動和執行您的Commerce執行個體：
 
 1. **所有使用者**： [建立執行個體](#create-an-instance)
-1. **系統管理員**： [新增使用者並指派角色](user-management.md#add-users-and-admins)
+1. **系統管理員**： [新增使用者並指派角色](user-management.md#add-users)
 1. **商家**： [存取Commerce Admin](#access-an-instance)並[匯入您的目錄](#import-your-catalog)
 1. **開發人員**： [設定您的店面](storefront.md)並探索[開發人員平台](overview.md#developer-platform)
 
@@ -60,7 +60,7 @@ ht-degree: 0%
 
 >[!TAB 系統管理員與商家工作流程]
 
-此圖表提供系統管理員和商家如何存取及管理[!DNL Adobe Commerce as a Cloud Service]執行個體的概觀。 如需有關管理員工作流程的詳細資訊，請參閱[Adobe Admin Console指南](https://helpx.adobe.com/tw/enterprise/admin-guide.html)。
+此圖表提供系統管理員和商家如何存取及管理[!DNL Adobe Commerce as a Cloud Service]執行個體的概觀。 如需有關管理員工作流程的詳細資訊，請參閱[Adobe Admin Console指南](https://helpx.adobe.com/enterprise/admin-guide.html)。
 
 ![Adobe Commerce as a Cloud Service的系統管理員和商家工作流程圖表](./assets/merchant-flow.svg){zoomable="yes"}
 
@@ -130,7 +130,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->在您建立執行個體之前，您組織的產品管理員或系統管理員必須將您新增為[!DNL Adobe Commerce as a Cloud Service]產品的使用者。 如需詳細資訊，請參閱[新增使用者和管理員](./user-management.md#add-users-and-admins)。
+>在您建立執行個體之前，您組織的產品管理員或系統管理員必須將您新增為[!DNL Adobe Commerce as a Cloud Service]產品的使用者。 如需詳細資訊，請參閱[新增使用者和管理員](./user-management.md#add-users)。
 
 [!DNL Adobe Commerce as a Cloud Service]執行個體使用信用型系統。 您可以建立多個執行個體，但每個執行個體都需要可用的學分。 您一開始擁有的積分數目取決於您的訂閱。
 
@@ -211,7 +211,7 @@ ht-degree: 0%
 
 有兩種方式可將您的目錄匯入[!DNL Adobe Commerce as a Cloud Service]：
 
-* [**Commerce管理員**](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/import/data-import) — 使用者易記的介面，可讓您按幾下滑鼠即可匯入目錄資料。
+* [**Commerce管理員**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import) — 使用者易記的介面，可讓您按幾下滑鼠即可匯入目錄資料。
 * [**匯入JSON API**](https://developer.adobe.com/commerce/webapi/rest/modules/import/#import-json-api) - REST API可讓您以程式設計方式匯入目錄資料。
 
 ### 設定店面
@@ -222,4 +222,4 @@ ht-degree: 0%
 
 * [發行說明](release-notes.md)
 * [移轉指南](migration/overview.md)
-* [Commerce Storefront檔案](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant)
+* [Commerce Storefront檔案](https://experienceleague.adobe.com/developer/commerce/storefront/)

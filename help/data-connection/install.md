@@ -3,7 +3,8 @@ title: 安裝 [!DNL Data Connection]
 description: 瞭解如何從Adobe Commerce安裝、更新及解除安裝 [!DNL Data Connection] 擴充功能。
 role: Admin, Developer
 feature: Install
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 853ef2d1-85cb-41a8-9b07-887a758ed401
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 0%
@@ -12,11 +13,11 @@ ht-degree: 0%
 
 # 安裝[!DNL Data Connection]
 
-安裝擴充功能之前，[請先檢閱必要條件](overview.md#prereqs)。
+安裝擴充功能之前，[請先檢閱必要條件](overview.md#prerequisites)。
 
 ## 安裝擴充功能
 
-[!DNL Data Connection]擴充功能可從[Adobe Marketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html)取得。 當您從伺服器的命令列安裝此擴充功能時，會以[服務](../landing/saas.md)的形式連線至您的Adobe Commerce安裝。 程式完成時，**[!DNL Data Connection]**&#x200B;和&#x200B;**Commerce Services Connector**&#x200B;會顯示在Commerce _管理員_&#x200B;中&#x200B;**服務**&#x200B;下的&#x200B;**系統**&#x200B;功能表中。
+[!DNL Data Connection]擴充功能可從[Adobe Marketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html)取得。 當您從伺服器的命令列安裝此擴充功能時，會以[服務](../landing/saas.md)的形式連線至您的Adobe Commerce安裝。 程式完成時，**[!DNL Data Connection]**&#x200B;和&#x200B;**Commerce Services Connector**&#x200B;會顯示在Commerce **管理員**&#x200B;中&#x200B;**服務**&#x200B;下的&#x200B;_系統_&#x200B;功能表中。
 
 ![[!DNL Data Connection]延伸模組管理員檢視](assets/epc-adminui.png)
 
@@ -76,7 +77,7 @@ ht-degree: 0%
 
 #### 在雲端基礎結構上
 
-在雲端基礎結構上的Adobe Commerce中，啟用`.magento.env.yaml`中的`ENABLE_EVENTING`全域變數。 [深入瞭解](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global.html?lang=zh-Hant#enable_eventing)。
+在雲端基礎結構上的Adobe Commerce中，啟用`ENABLE_EVENTING`中的`.magento.env.yaml`全域變數。 [了解更多](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global.html#enable_eventing)。
 
 ```bash
 stage:
@@ -164,4 +165,4 @@ composer update magento/experience-platform-connector-b2b --with-dependencies
 
 ## 解除安裝[!DNL Data Connection]延伸模組 {#uninstall}
 
-若要解除安裝[!DNL Data Connection]擴充功能，請參閱[解除安裝模組](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html?lang=zh-Hant)。
+若要解除安裝[!DNL Data Connection]擴充功能，請參閱[解除安裝模組](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html)。

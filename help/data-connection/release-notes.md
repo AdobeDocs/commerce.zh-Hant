@@ -3,7 +3,7 @@ title: 發行說明
 description: Adobe Commerce中 [!DNL Data Connection] 擴充功能的最新發行資訊。
 feature: Personalization, Integration, Release Notes
 exl-id: f3b92632-947d-40cd-89b7-24ed0680be51
-source-git-commit: 75d4ed88411e6f81d2c4ff8aa5e8db9dfdc6e954
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '1307'
 ht-degree: 1%
@@ -24,9 +24,9 @@ ht-degree: 1%
 
 有關[!DNL Data Connection]擴充功能所使用的擴充功能的功能變更和修正，請參閱&#x200B;**支援的服務更新**。
 
-請參閱[即將發行的版本](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/planning/schedule)，瞭解發行排程和支援。
+請參閱[即將發行的版本](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule)，瞭解發行排程和支援。
 
-請參閱開發人員檔案以[瞭解哪些Commerce版本支援此模組](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/product-availability)。
+請參閱開發人員檔案以[瞭解哪些Commerce版本支援此模組](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)。
 
 ## 支援的服務更新
 
@@ -78,7 +78,7 @@ _2023年3月30日_
 _2022年10月12日_
 
 ![新增](../assets/new.svg) — 新增兩個[店面活動](events.md)、`openCart`和`removeFromCart`至Adobe Commerce店面活動SDK和收集器。
-![新](../assets/new.svg) — 已新增對[AEM店面](overview.md#aem-support)的支援。
+![新](../assets/new.svg) — 已新增對[AEM店面](overview.md#supported-architecture)的支援。
 
 +++
 
@@ -194,7 +194,7 @@ _2023年10月10日_
 
 [!BADGE 相容性]{type=Informative tooltip="相容性"} Adobe Commerce 2.4.4或更新版本
 
-此為主要版本發行版本。 [編輯](install.md#update-the-data-connection)您專案的根composer.json檔案。
+此為主要版本發行版本。 [編輯](install.md#update)您專案的根composer.json檔案。
 
 ![新](../assets/new.svg) - [傳送歷史訂單](connect-data.md#send-historical-order-data)資料和狀態的一般可用性，給Experience Platform。
 ![新增](../assets/new.svg) — 當您[設定](connect-data.md#connect-commerce-data-to-adobe-experience-platform) [!DNL Data Connection]擴充功能時，已新增對OAuth 2.0的支援。
@@ -217,7 +217,7 @@ _2023年6月13日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.3或更新版本
 
-![新](../assets/new.svg) - (Beta)已新增[傳送歷史訂單](connect-data.md#beta-send-historical-order-data)資料和狀態至Experience Platform的功能。
+![新](../assets/new.svg) - (Beta)已新增[傳送歷史訂單](connect-data.md#send-historical-order-data)資料和狀態至Experience Platform的功能。
 
 ## 2.2.0
 

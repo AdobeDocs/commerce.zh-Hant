@@ -3,9 +3,9 @@ title: 開始使用
 description: 瞭解如何開始使用 [!DNL Adobe Commerce Optimizer]。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: aac6efa53d7a8b2907fcbe8d3b97cc38e7178aa5
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 0%
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce Optimizer]設定和管理依賴三個關鍵角色。 每個角色都有特定的任務和責任：
 
-![&#x200B; [!DNL Adobe Commerce Optimizer]安裝程式的角色型工作流程，顯示管理員、開發人員和使用者工作](./assets/high-level-workflow.png){zoomable="yes"}
+![ [!DNL Adobe Commerce Optimizer]安裝程式的角色型工作流程，顯示管理員、開發人員和使用者工作](./assets/high-level-workflow.png){zoomable="yes"}
 
 ### 管理員任務
 
@@ -75,7 +75,7 @@ ht-degree: 0%
 | 任務 | 說明 | 連結 |
 |---|---|---|
 | **管理使用者** | 新增使用者、開發人員和管理員 | [使用者管理](./user-management.md) |
-| **建立執行個體** | 設定沙箱和生產環境 | [建立執行個體](#create-an-instance) |
+| **建立執行個體** | 設定沙箱和生產環境 | [建立執行個體](#step-1-create-an-instance) |
 | **管理執行個體** | 檢查狀態、更新執行個體名稱和說明，並取得應用程式和API存取的金鑰URL | [管理執行個體](#manage-instances) |
 | **設定存取權** | 設定目錄檢視和原則 | [目錄檢視](./setup/catalog-view.md) |
 
@@ -217,6 +217,6 @@ Adobe提供GitHub存放庫和範例資料與工具，協助您學習及測試[!D
 ### 取得協助
 
 - **開發人員資源**： [開發人員檔案](https://developer.adobe.com/commerce/services/optimizer/)
-- **店面資源**： [Commerce店面檔案](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant)
-- **教學課程**： [Commerce Optimizer教學課程](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
-- **支援**： [Adobe Commerce支援資源](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/overview)
+- **店面資源**： [Commerce店面檔案](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **教學課程**： [Commerce Optimizer教學課程](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
+- **支援**： [Adobe Commerce支援資源](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)

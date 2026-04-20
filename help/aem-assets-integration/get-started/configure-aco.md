@@ -2,7 +2,7 @@
 title: 設定適用於Commerce Optimizer的AEM Assets
 description: 瞭解如何設定 [!DNL Adobe Commerce Optimizer]的AEM Assets整合。
 feature: CMS, Media, Configuration, Integration
-source-git-commit: 7f0970648663331fea2af19b981c4fd3b3aedcaa
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '1129'
 ht-degree: 0%
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 ## 入門
 
-若要將AEM Assets與[!DNL Commerce Optimizer]整合，您必須[建立支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)。
+若要將AEM Assets與[!DNL Commerce Optimizer]整合，您必須[建立支援票證](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)。
 
 Adobe支援會使用您票證中的資訊，向Assets Integration Service註冊您的租使用者，並設定整合。
 
@@ -85,7 +85,7 @@ Adobe支援處理完您的票證後，便會設定整合，並且您的租使用
 
 確保您的AEM Assets環境準備就緒：
 
-1. **AEM Assets設定**：設定Commerce中繼資料設定檔。 請參閱[設定中繼資料設定檔](configure-aem.md#configure-a-metadata-profile)。
+1. **AEM Assets設定**：設定Commerce中繼資料設定檔。 請參閱[設定中繼資料設定檔](configure-aem.md#step-2-optional-configure-a-metadata-profile)。
 
 1. **啟用Dynamic Media**：確認已在您的AEM Assets環境中啟用具有OpenAPI功能的Dynamic Media。
 
@@ -107,13 +107,13 @@ Adobe支援處理完您的票證後，便會設定整合，並且您的租使用
 
 將Commerce中繼資料新增至AEM Assets中的產品影像。
 
-檢視[AEM Commerce套件內容](configure-aem.md#aem-commerce-assets-commerce-package-contents)以取得欄位定義，以及[設定中繼資料設定檔](configure-aem.md#step-2-optional-configure-a-metadata-profile)以取得設定步驟。
+檢視[AEM Commerce封裝內容](configure-aem.md#aem-commerce-assets-commerce-package-contents)以取得欄位定義，以及[設定中繼資料設定檔](configure-aem.md#step-2-optional-configure-a-metadata-profile)以取得設定步驟。
 
 資產必須處於&#x200B;**已核准**&#x200B;狀態，資料同步才會觸發。 單獨儲存中繼資料不會觸發事件。
 
 >[!CAUTION]
 >
-> 將`AEM-Assets`圖層指派給您的[目錄檢視](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/setup/catalog-view)。 如果未指定圖層，產品影像資料可能會意外覆寫。
+> 將`AEM-Assets`圖層指派給您的[目錄檢視](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view)。 如果未指定圖層，產品影像資料可能會意外覆寫。
 
 ## 同步
 
@@ -135,7 +135,7 @@ Adobe支援處理完您的票證後，便會設定整合，並且您的租使用
 
 1. Assets整合服務會將產品影像對應傳送至[!DNL Commerce Optimizer]。 [!DNL Commerce Optimizer]中的產品已使用資產中的影像更新。
 
-1. 確認影像可見。 留出時間讓同步完成（通常在幾分鐘內），然後檢查[!DNL Commerce Optimizer] UI中的產品（例如，資料同步或目錄檢視），或查詢店面API (目錄服務、即時搜尋、店面GraphQL API)以確認傳回影像。
+1. 確認影像可見。 留出時間讓同步完成（通常在幾分鐘內），然後檢查[!DNL Commerce Optimizer] UI中的產品（例如，資料同步或目錄檢視），或查詢店面API （目錄服務、即時搜尋、店面GraphQL API）以確認傳回影像。
 
 ## 影像角色處理
 
