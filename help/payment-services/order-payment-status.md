@@ -71,7 +71,7 @@ ht-degree: 0%
 
 「付款服務」的「首頁」檢視中，提供「訂單」付款狀態報表檢視表。 其中包括所有交易的詳細狀態 — 付款、已開立商業發票、出貨、退款、爭議等等。
 
-在&#x200B;_Admin_&#x200B;側邊欄上，前往&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**檢視詳細的表格式訂單付款狀態報告檢視。
+在&#x200B;_Admin_&#x200B;側邊欄上，前往&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**&#x200B;檢視詳細的表格式訂單付款狀態報告檢視。
 
 ![管理員中的訂單付款狀態交易](assets/orders-report-data.png){width="800" zoomable="yes"}
 
@@ -144,7 +144,7 @@ ht-degree: 0%
 
 ![資料來源選擇](assets/datasource.png){width="300" zoomable="yes"}
 
-如果&#x200B;_[!UICONTROL Live]_是選取的資料來源，您可以看到在生產模式中使用[!DNL Payment Services]之存放區的報表資訊。 如果_[!UICONTROL Sandbox]_&#x200B;是選取的資料來源，您可以看到沙箱模式的報告資訊。
+如果&#x200B;_[!UICONTROL Live]_&#x200B;是選取的資料來源，您可以看到在生產模式中使用[!DNL Payment Services]之存放區的報表資訊。 如果&#x200B;_[!UICONTROL Sandbox]_&#x200B;是選取的資料來源，您可以看到沙箱模式的報告資訊。
 
 資料來源選取專案的工作方式如下：
 
@@ -155,7 +155,7 @@ ht-degree: 0%
 若要選取[!UICONTROL Order Payment Status]報表的資料來源：
 
 1. 在&#x200B;_管理員_&#x200B;側邊欄上，前往&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Orders]** > **[!UICONTROL View Report]**。
-1. 按一下&#x200B;_[!UICONTROL Data source]_選取器篩選器，然後選取&#x200B;**[!UICONTROL Live]**或&#x200B;**[!UICONTROL Sandbox]**。
+1. 按一下&#x200B;_[!UICONTROL Data source]_&#x200B;選取器篩選器，然後選取&#x200B;**[!UICONTROL Live]**&#x200B;或&#x200B;**[!UICONTROL Sandbox]**。
 
    報表結果會根據選取的資料來源重新產生。
 
@@ -164,7 +164,7 @@ ht-degree: 0%
 從「訂單付款狀態」報表檢視中，您可以選取特定日期，以自訂您要檢視之狀態結果的時間範圍。 依預設，30天的訂單付款狀態會顯示在網格中。
 
 1. 在&#x200B;_管理員_&#x200B;側邊欄上，前往&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**。
-1. 按一下&#x200B;_[!UICONTROL Order dates]_行事曆選擇器篩選器。
+1. 按一下&#x200B;_[!UICONTROL Order dates]_&#x200B;行事曆選擇器篩選器。
 1. 選擇適用的日期範圍。
 1. 檢視網格中指定日期的訂單付款狀態。
 
@@ -175,7 +175,7 @@ ht-degree: 0%
 1. 在&#x200B;_管理員_&#x200B;側邊欄上，前往&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**。
 1. 按一下&#x200B;**[!UICONTROL Filter]**&#x200B;選取器。
 1. 切換&#x200B;_付款狀態_&#x200B;選項，只檢視所選訂單付款狀態的報表結果。
-1. 輸入&#x200B;_[!UICONTROL Min Order Amount]_或_[!UICONTROL Max Order Amount_]，檢視訂單金額範圍內的報表結果。
+1. 輸入&#x200B;_[!UICONTROL Min Order Amount]_&#x200B;或_[!UICONTROL Max Order Amount_]，檢視訂單金額範圍內的報表結果。
 1. 按一下&#x200B;**[!UICONTROL Hide filters]**&#x200B;以隱藏篩選器。
 
 ### 顯示和隱藏欄
@@ -208,7 +208,7 @@ ht-degree: 0%
 
 ### 更新報表資料
 
-「訂單付款狀態」報表檢視會顯示&#x200B;_[!UICONTROL Last updated]_時間戳記，顯示上次更新報表資訊的時間。 依預設，訂單付款狀態報表資料每三小時自動重新整理一次。
+「訂單付款狀態」報表檢視會顯示&#x200B;_[!UICONTROL Last updated]_&#x200B;時間戳記，顯示上次更新報表資訊的時間。 依預設，訂單付款狀態報表資料每三小時自動重新整理一次。
 
 您也可以手動強制重新整理「訂單付款狀態」報表資料，以檢視最新的報表資訊。
 

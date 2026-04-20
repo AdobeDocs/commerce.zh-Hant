@@ -40,7 +40,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> [!DNL Payment Services]在上線期間為其他[可用國家/地區提供](../payment-services/payments-options.md)快速結帳功能[ （付款選項的子集）](../payment-services/production.md#complete-merchant-onboarding)。
+> [!DNL Payment Services]在上線期間為其他[可用國家/地區提供](../payment-services/payments-options.md)快速結帳功能[&#x200B; （付款選項的子集）](../payment-services/production.md#complete-merchant-onboarding)。
 
 ### 哪個[!DNL Payment Services]選項適合您？
 
