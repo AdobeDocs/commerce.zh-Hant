@@ -1,11 +1,11 @@
 ---
 title: 建議篩選器
 description: 瞭解如何使用篩選器來控制哪些產品出現在 [!DNL Adobe Commerce Optimizer] 建議中。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
 exl-id: f6100538-23c0-4e90-9834-a895d4707282
-source-git-commit: e15624322fabb89d0b618f9d6c689445a7c448df
+source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
 workflow-type: tm+mt
-source-wordcount: '987'
+source-wordcount: '998'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ ht-degree: 0%
 
 ### 產品
 
-產品篩選依據&#x200B;**SKU**&#x200B;以個別目錄專案為目標。 您新增一或多個SKU，以僅允許這些產品（**包含**）或封鎖它們（**排除**），使用與&#x200B;**[!UICONTROL Filter products]**&#x200B;價格篩選器[相同的](#price)頁面。 您無法顯示已停用的產品或無法在推薦單位中個別顯示的產品；無論篩選條件為何，這些產品都不會出現在店面上。
+產品篩選依據&#x200B;**SKU**&#x200B;以個別目錄專案為目標。 您新增一或多個SKU，以僅允許這些產品（**包含**）或封鎖它們（**排除**），使用與[價格篩選器](#price)相同的&#x200B;**[!UICONTROL Filter products]**&#x200B;頁面。 您無法顯示已停用的產品或無法在推薦單位中個別顯示的產品；無論篩選條件為何，這些產品都不會出現在店面上。
 
 #### 設定產品篩選
 
@@ -98,6 +98,8 @@ ht-degree: 0%
 >
 >可設定產品的子產品不會顯示在建議單位中，因為這些子產品具有&#x200B;_不個別顯示_&#x200B;的可見性。
 
-<!--### Attribute
+<!--
+### Attribute
 
-You can filter products based on attribute criteria, including attribute values. Selected values use OR logic to either include or exclude products when any of the specified values are found.-->
+You can filter products based on attribute criteria, including attribute values. Selected values use OR logic to either include or exclude products when any of the specified values are found.
+-->

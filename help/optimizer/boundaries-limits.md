@@ -2,11 +2,11 @@
 title: 限制和邊界
 description: 瞭解 [!DNL Adobe Commerce Optimizer] 限制與界限，以規劃容量並避免效能問題。
 role: Admin, Developer
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
 exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
-source-git-commit: 42a877f5bad8bda93ec39b8ad633f6ad0ba6b4a5
+source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
 workflow-type: tm+mt
-source-wordcount: '1325'
+source-wordcount: '1378'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 透過購買[授許可權制和系統界限](#license-limits-and-system-boundaries)一節中所述的授權套件，或針對不重複的使用案例協商自訂授權，可增加授許可權制。 請聯絡您的Adobe客戶代表以討論您的需求。
 
-若有關於系統界限的問題，請連絡[Adobe支援](https://experienceleague.adobe.com/home?lang=zh-Hant#support)。
+若有關於系統界限的問題，請連絡[Adobe支援](https://experienceleague.adobe.com/home?lang=en#support)。
 
 ## 避免效能問題
 
@@ -52,7 +52,7 @@ ht-degree: 0%
 | --- | --- | --- | --- |
 | 產品擷取率 | 已建立或已更新的產品數 | 每分鐘1K更新<p>每天最多可更新100,000個</p> | 是<p>新增一個授權套件：</p><ul><li>每分鐘5K更新<br>每天最多可更新500K</li> <li>每分鐘10K更新<br>每天最多可更新1M</li></ul><p>資料擷取的最大容量為每天100萬次更新。</p> |
 | 產品裝載大小 | 使用API建立、更新或擷取產品資訊時允許的最大資料量 | 200 KB | 否 |
-| 目錄變數 | 店面使用者可用的目錄檢視次數。<p>計算為(*目錄檢視次數×價格簿數量*)</p> | 100個變數 | 是<p>新增100個目錄變化授權套件</p> |
+| 目錄變數 | 店面使用者可用的目錄檢視次數。<p>計算為（*目錄檢視次數×價格簿數量*）</p> | 100個變數 | 是<p>新增100個目錄變化授權套件</p> |
 | 單一目錄來源中的產品 | 目錄中支援的SKU | 25萬SKU | 是<p>新增100K SKU授權套件</p> |
 | 各產品的變體 | 每個產品允許的產品變數（大小、顏色組合）數量 | 10K | 否 |
 | 目錄來源 | 目錄資料內容（例如PIM和ERP等地區設定或資料來源）的數量 | 50 | 否 |
@@ -72,7 +72,7 @@ ht-degree: 0%
 
 | **功能** | **描述** | **基底配置** | **可擴充？** |
 | --- | --- | --- | --- |
-| 產品視覺效果進階使用者 | 具有完整數位資產管理功能(包括AI工具、Adobe Express/Firefly整合和Content Hub共用)的授權使用者，可處理核心DAM任務和進階雲端原生功能以實現最佳效率。 | 2 | 是<p>升級至AEM Assets授權</p> |
+| 產品視覺效果進階使用者 | 具有完整數位資產管理功能（包括AI工具、Adobe Express/Firefly整合和Content Hub共用）的授權使用者，可處理核心DAM任務和進階雲端原生功能以實現最佳效率。 | 2 | 是<p>升級至AEM Assets授權</p> |
 | 產品視覺效果共同作業人員使用者 | 透過AEM Commerce整合存取及使用資產、使用Adobe Express和Firefly建立及編輯內容，以及（如果啟用）透過Content Hub入口網站利用已核准的資產。 | 2 | 是<p>升級至AEM Assets授權</p> |
 | 產品視覺效果儲存 | 為資產配置的儲存空間 | 1 TB儲存空間 | 否 |
 | Dynamic Media使用情況 | 動態媒體處理作業的裕量，包括：<ul><li>影像傳送</li><li>智慧型影像</li><li>視訊傳送</li></ul><p>如需詳細資訊，請參閱下方的&#x200B;*計算Dynamic Media使用量*。 | 根據GMV<p>最小配置：每月500萬項作業</p> | 是<ul><li>購買其他操作的授權</li><li>升級至AEM Assets授權</li></ul> |
@@ -135,9 +135,9 @@ Dynamic Media使用方式會追蹤進入[!DNL Adobe Commerce Optimizer]內「產
 | 可篩選的屬性 | 可針對分層導覽和多面向啟用的產品特性（如顏色、大小、品牌或材質）數量 | 200 | 否 |
 | 可搜尋的屬性 | 可設定為與產品目錄搜尋服務搭配使用的產品特性數 | 200 | 否 |
 | 可排序的屬性 | 可設定用於決定搜尋結果值順序的產品特性數 | 50 | 否 |
-| 搜尋分頁深度 | 可透過分頁存取的最大產品數量(例如，第100頁×100個產品/頁面) | 10K | 否 |
+| 搜尋分頁深度 | 可透過分頁存取的最大產品數量（例如，第100頁×100個產品/頁面） | 10K | 否 |
 | Facet | 可篩選的產品屬性數量（例如品牌、顏色、大小、價格），可設定為協助購物者調整搜尋結果和瀏覽類別 | 100<p>必須是可篩選的屬性</p> | 否 |
-| 各Facet選項 | 購物者可從清單中選取的可篩選產品屬性值(例如「紅色」、「藍色」代表顏色；「小」、「Medium」代表大小)的數量 | 100 | 是<p>可透過支援要求提高</p> |
+| 各Facet選項 | 購物者可從清單中選取的可篩選產品屬性值（例如「紅色」、「藍色」代表顏色；「小」、「Medium」代表大小）的數量 | 100 | 是<p>可透過支援要求提高</p> |
 
 {style="table-layout:auto"}
 
@@ -156,11 +156,12 @@ Dynamic Media使用方式會追蹤進入[!DNL Adobe Commerce Optimizer]內「產
 
 | **功能** | **描述** | **基底配置** | **可擴充？** | **附註** |
 | --- | --- | --- | --- | --- |
-| Adobe Developer App Builder | 建置雲端原生擴充功能和整合的能力 | 根據GMV層級<p>最小配置：1包/年</p> | 是<p>新增其他套件</p> | 如需每個元件定義的限制，請參閱：<ul><li>[App Builder產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-developer-app-builder.html)每個套件定義的限制。</li><li>[&#x200B; &#x200B;](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings)App Builder執行階段指南&#x200B;*中的系統設定和限制*。</li><li>[App Builder儲存需求](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
+| Adobe Developer App Builder | 建置雲端原生擴充功能和整合的能力 | 根據GMV層級<p>最小配置：1包/年</p> | 是<p>新增其他套件</p> | 如需每個元件定義的限制，請參閱：<ul><li>[App Builder產品說明](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html)每個套件定義的限制。</li><li>[ *App Builder執行階段指南*&#x200B;中的系統設定和限制](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings)。</li><li>[App Builder儲存需求](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
 
 {style="table-layout:auto"}
 
-<!--## How to size your solution
+<!--
+## How to size your solution
 
 Ask your Adobe representative for a list of available packages to determine which most closely matches your project
 
@@ -192,4 +193,5 @@ This approach ensures your solution is accurately sized for your business needs.
 1. **GenAI or Media Needs**
 
    * Need: +10M dynamic media ops/month
-   * Add-On: 10 × dynamic media packs (1M each) -->
+   * Add-On: 10 × dynamic media packs (1M each) 
+-->

@@ -1,13 +1,13 @@
 ---
 title: 檔案RAG服務
 description: 瞭解如何使用AI支援的檔案搜尋服務來進行Adobe Commerce開發。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 6c7055be007d75ff4cf3673da9938d9d79779aef
+source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '1027'
 ht-degree: 0%
 
 ---
@@ -30,9 +30,9 @@ RAG服務是[Commerce擴充性工具](https://developer.adobe.com/commerce/exten
 
 | 類別 | 索引 | 包含的內容 | 關鍵字 |
 |-------|---------|---------|------------------------|
-| [店面](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant) | commerce-storefront-docs | Edge Delivery Services、下拉式清單、店面元件 | 店面、外掛程式、EDS、產品清單、結帳 |
+| [店面](https://experienceleague.adobe.com/developer/commerce/storefront/) | commerce-storefront-docs | Edge Delivery Services、下拉式清單、店面元件 | 店面、外掛程式、EDS、產品清單、結帳 |
 | [擴充性](https://developer.adobe.com/commerce/extensibility/) | commerce-extensibility-docs | Webhook、活動、擴充功能、整合 | webhook，事件，擴充功能， API網格， GraphQL |
-| [Commerce](https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/overview) | commerce-core-docs | 核心Commerce （目錄、客戶、訂單） | 目錄，產品，客戶，訂單，存貨 |
+| [Commerce](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview) | commerce-core-docs | 核心Commerce （目錄、客戶、訂單） | 目錄，產品，客戶，訂單，存貨 |
 | [App Builder](https://developer.adobe.com/app-builder/docs/intro_and_overview/) | app-builder-docs | App Builder、執行階段動作、UI擴充功能 | 應用程式產生器，執行階段動作， React Spectrum |
 
 如需索引選取的詳細資訊，請參閱[自動索引選取](#automatic-index-selection-recommended)和[明確索引選取](#explicit-index-selection)。
@@ -46,54 +46,54 @@ RAG服務是[Commerce擴充性工具](https://developer.adobe.com/commerce/exten
 * **本機執行** — 所有工具都在您的電腦上本機執行。
 * **安全通訊** — 檔案搜尋使用HTTPS搭配權杖驗證。
 
-生產端點受到[Azure前門](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-overview)的保護，包括下列保護：
+The production endpoint is protected by [Azure Front Door](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-overview), which includes the following protections:
 
-* 具有Microsoft預設規則集2.1和機器人管理員規則集1.0的Web應用程式防火牆(WAF)
-* 封鎖美國禁運地區（古巴、伊朗、朝鮮、敘利亞、克里米亞、盧甘斯克、頓涅茨克）的地理
-* 邊緣的DDoS保護
-* API管理後端已鎖定為僅接受來自前門的流量
+* Web Application Firewall (WAF) with Microsoft Default RuleSet 2.1 and Bot Manager RuleSet 1.0
+* Geo-blocking for US embargoed regions (Cuba, Iran, North Korea, Syria, Crimea, Luhansk, Donetsk)
+* DDoS protection at the edge
+* API management backend locked down to only accept traffic from Front Door
 
-針對不同的安全性需求，您可以使用自訂端點。 如需詳細資訊，請參閱[自訂前門端點](#custom-front-door-endpoint)。
+For different security requirements, you can use a custom endpoint. See [Custom Front Door endpoint](#custom-front-door-endpoint) for more information.
 
 ## 先決條件
 
-安裝之前，請確定您擁有：
+Before installing, make sure you have:
 
-* [Node.js](https://nodejs.org/en/download){target="_blank"} 18+ （建議使用LTS）
-* [Cursor IDE](https://cursor.com/download){target="_blank"} （建議）或其他與MCP相容的IDE
+* [Node.js](https://nodejs.org/en/download){target="_blank"} 18+ (LTS recommended)
+* [Cursor IDE](https://cursor.com/download){target="_blank"} (recommended) or another MCP-compatible IDE
 
   >[!NOTE]
   >
-  >雖然支援其他MCP相容的IDE，但為獲得最佳體驗，建議使用Cursor。 如果您使用其他IDE，則需要修改檔案中的提示和其他步驟，才能使用您選取的IDE。
+  >While other MCP-compatible IDEs are supported, Cursor is the recommended IDE for the best experience. If you are using another IDE, you will need to modify the prompts and other steps in the documentation to work with your selected IDE.
 
-## 安裝
+## Installation
 
-1. 全域安裝[Adobe I/O CLI](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/)：
+1. Install the [Adobe I/O CLI](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) globally:
 
    ```bash
    npm install -g @adobe/aio-cli
    ```
 
-1. 使用Adobe IMS進行驗證：
+1. Authenticate with Adobe IMS:
 
    ```bash
    aio auth login
    ```
 
-1. 複製Commerce擴充功能工具存放庫，並導覽至目錄：
+1. Clone the Commerce extensibility tools repository and navigate to the directory:
 
    ```bash
    git clone https://github.com/adobe-commerce/commerce-extensibility-tools.git
    cd commerce-extensibility-tools
    ```
 
-1. 安裝相依性：
+1. Install dependencies:
 
    ```bash
    npm install
    ```
 
-1. 在您的Commerce專案目錄中建立或更新`.cursor/mcp.json` （非全域）以包含`commerce-extensibility-tools` MCP伺服器：
+1. Create or update `.cursor/mcp.json` in your Commerce project directory (not globally) to include the `commerce-extensibility-tools` MCP server:
 
    ```json
    {
@@ -111,15 +111,15 @@ RAG服務是[Commerce擴充性工具](https://developer.adobe.com/commerce/exten
    }
    ```
 
-   請確定您將`<your-project-directory>`取代為您複製存放庫的實際路徑。
+   Ensure that you replace `<your-project-directory>` with the actual path where you cloned the repository.
 
    >[!NOTE]
    >
-   >在Windows上，如果您在提供專案目錄的路徑時遇到問題，請參閱[路徑問題疑難排解](#path-issues-windows)。
+   >On Windows, if you encounter issues with providing the path to your project directory, refer to [Path issues troubleshooting](#path-issues-windows).
 
-1. 重新啟動Cursor IDE以載入MCP伺服器。
+1. Restart Cursor IDE to load the MCP server.
 
-1. 詢問AI助理以驗證安裝：
+1. Verify the installation by asking the AI assistant:
 
    ```shell-session
    Can you show me the available Adobe Commerce tools?
@@ -127,11 +127,11 @@ RAG服務是[Commerce擴充性工具](https://developer.adobe.com/commerce/exten
 
 ## 使用情況
 
-安裝之後，您可以自動呼叫索引[&#128279;](#automatic-index-selection-recommended)或[明確](#explicit-index-selection)。 您也可以使用[`/search-commerce-docs`命令](#command-based-search)。
+Once installed, you can call the indexes [automatically](#automatic-index-selection-recommended) or [explicitly](#explicit-index-selection). You can also use the [`/search-commerce-docs` command](#command-based-search).
 
 >[!NOTE]
 >
->RAG服務會傳回前5個最相關的結果。
+>The RAG service returns the top 5 most relevant results.
 
 ### 自動選取索引（建議）
 
@@ -243,29 +243,29 @@ Using app-builder-docs, how do I deploy runtime actions?
 
 1. 使用&#x200B;**Cmd 、** (macOS)或&#x200B;**Ctrl 、** （Windows和Linux）開啟游標設定。
 
-1. 搜尋「MCP」並確認已列出並啟用`commerce-extensibility-tools`。
+1. Search for &quot;MCP&quot; and verify that `commerce-extensibility-tools` is listed and enabled.
 
-1. 檢查MCP設定面板中的錯誤訊息。
+1. Check for error messages in the MCP settings panel.
 
-1. 確認您的專案中有`mcp.json`檔案：
+1. Verify the `mcp.json` file exists in your project:
 
    ```bash
    cat .cursor/mcp.json
    ```
 
-1. 驗證路徑正確且絕對：
+1. Verify the path is correct and absolute:
 
    ```bash
    ls -la /<your-project-directory>/commerce-extensibility-tools/index.js
    ```
 
-### 找不到工具
+### Tool not found
 
-1. 結束游標並重新開啟。
+1. Quit Cursor and reopen it.
 
-1. 使用&#x200B;**Cmd+Shift+P** (macOS)或&#x200B;**Ctrl+Shift+P** (Windows/Linux)並搜尋「開發人員：開啟記錄檔資料夾」，在Cursor的開發者主控台中檢查MCP伺服器記錄。
+1. Check the MCP server logs in Cursor&#39;s developer console by using **Cmd+Shift+P** (macOS) or **Ctrl+Shift+P** (Windows/Linux) and searching for &quot;Developer: Open Logs Folder&quot;.
 
-1. 確認安裝：
+1. Verify the installation:
 
    ```bash
    cd commerce-extensibility-tools
@@ -273,11 +273,11 @@ Using app-builder-docs, how do I deploy runtime actions?
    node index.js
    ```
 
-   伺服器應該會在沒有錯誤的情況下啟動。
+   The server should start without errors.
 
-### 路徑問題(Windows)
+### Path issues (Windows)
 
-在Windows上，使用正斜線`/`或逸出的反斜線`\\`：
+On Windows, use forward slashes `/` or escaped backslashes `\\`:
 
 ```json
 {
@@ -293,7 +293,7 @@ Using app-builder-docs, how do I deploy runtime actions?
 
 ## 其他資源
 
-* [Adobe Commerce開發人員檔案](https://developer.adobe.com/commerce/docs/){target="_blank"}
-* [App Builder檔案](https://developer.adobe.com/app-builder/docs/){target="_blank"}
-* [模型內容通訊協定](https://modelcontextprotocol.io/){target="_blank"}
-* [資料指標IDE](https://cursor.sh/docs){target="_blank"}
+* [Adobe Commerce developer documentation](https://developer.adobe.com/commerce/docs/){target="_blank"}
+* [App Builder documentation](https://developer.adobe.com/app-builder/docs/){target="_blank"}
+* [Model Context Protocol](https://modelcontextprotocol.io/){target="_blank"}
+* [Cursor IDE](https://cursor.sh/docs){target="_blank"}

@@ -1,21 +1,21 @@
 ---
-title: 共擔責任
+title: Shared responsibility
 description: 瞭解您 [!DNL Adobe Commerce as a Cloud Service] 專案中各參與者的安全性責任。
 feature: Cloud, Security
-role: Admin, Architect, Leader
+role: Admin, Developer, Leader
 level: Intermediate
 exl-id: 424fe5cd-5d54-425d-97ce-024476d18dde
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
-source-git-commit: 1ce3b6b6b94b1b4e94c0d34c081dec2884d7f0f8
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
+source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
 
 # 共擔責任安全性與營運模式
 
-[!DNL Adobe Commerce as a Cloud Service]是隨選服務，需仰賴共擔責任安全性與運作模型。 Adobe和客戶共同承擔這些責任，各方在保護和運作Adobe Commerce應用程式方面各有各的責任。
+[!DNL Adobe Commerce as a Cloud Service] is an on-demand service that relies on a shared responsibility security and operational model. Adobe and customers share these responsibilities, with each party bearing distinct accountability for securing and operating the Adobe Commerce application.
 
 >[!BEGINSHADEBOX]
 
@@ -31,7 +31,7 @@ ht-degree: 0%
 | 任務 | Adobe | 客戶 |
 | --- | --- | --- |
 | 套用Adobe Commerce基礎結構修補程式 | RA | |
-| 將修補程式套用至支援服務（例如Nginx或MySQL） | RA | |
+| Applying patches to supporting services (for example, Nginx or MySQL) | RA | |
 | 定義後端來源WAF規則 | RA | |
 | 定義後端CDN WAF規則 | RA | |
 | 部署後端平台WAF規則 | RA | |
