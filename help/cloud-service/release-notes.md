@@ -1,56 +1,94 @@
 ---
-title: '[!DNL Adobe Commerce as a Cloud Service] release notes'
-description: Learn about the latest features and improvements in [!DNL Adobe Commerce as a Cloud Service].
+title: '[!DNL Adobe Commerce as a Cloud Service]發行說明'
+description: 瞭解 [!DNL Adobe Commerce as a Cloud Service]中的最新功能和改進專案。
 feature-set: Commerce
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
 level: Beginner
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
 exl-id: cf06dec6-8d6b-413e-9977-df88373c188e
-source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
+source-git-commit: b116634e2a1534f08d6f2c7962ff1223637f7a17
 workflow-type: tm+mt
-source-wordcount: '3077'
+source-wordcount: '3315'
 ht-degree: 0%
 
 ---
 
 # 發行說明
 
-The following release notes contain updates to [!DNL Adobe Commerce as a Cloud Service].
+下列發行說明包含[!DNL Adobe Commerce as a Cloud Service]的更新。
 
 >[!NOTE]
 >
->If you are using Adobe Commerce on-premises or Adobe Commerce on cloud infrastructure, see the [Adobe Commerce release notes](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/overview).
+>如果您正在雲端基礎結構上使用Adobe Commerce內部部署或Adobe Commerce，請參閱[Adobe Commerce發行說明](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview)。
 
-## April 2026 - release #2 {#latest}
+## 2026年4月 — 發行說#3 {#latest}
 
-[!BADGE Production]{type=Neutral tooltip="列出的專案目前可在生產環境中使用。"}
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
 
-<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
+[!BADGE 沙箱]{type=Caution tooltip="列出的專案目前僅在沙箱環境中可用。 Adobe會先在沙箱環境中推出新版本，讓您可以在生產環境中使用該版本之前有時間測試即將推出的變更。"}
 
-The following items were released to Production environments on April 16, 2026.
+以下專案將於2026年4月27日發佈到生產環境。
 
 >[!BEGINSHADEBOX]
 
-### Implement custom quote totals with webhooks
+### 增強功能和錯誤修正
 
-The `plugin.magento.out_of_process_totals_collector.api.get_total_modifications.execute` [webhook](https://developer.adobe.com/commerce/extensibility/webhooks/) is now available in [!DNL Adobe Commerce as a Cloud Service]. Use it to implement custom quote totals modifications through out-of-process extensibility. <!-- CEXT-5896 -->
+此版本中包括下列選取的增強功能、最佳化和錯誤修正：
 
-### Reusable email reminder rules (experimental)
+* 新增`GET /V1/order-statuses` REST API端點以擷取所有已設定的順序狀態及其狀態指派。<!-- CEXT-6100 -->
+
+* 解決造成Order、Cart、Invoice、Credit Memo和Company等實體的`custom_attributes`無法顯示在REST結構描述中的問題。<!-- CCSAAS-4818 -->
+
+* 解決非同步大量API取用者中的重複訊息處理錯誤(`MessageLockException`)。<!-- CCSAAS-4805 -->
+
+* 為篩選選項啟用屬性時，產品屬性數量現在會在[!DNL Commerce Admin]產品格線中顯示為起始/終止範圍篩選器。<!-- ACCS-761 -->
+
+* 修正購物車放棄提醒電子郵件在使用[!DNL AEM Assets]時未顯示產品影像的問題。<!-- ACCS-798 -->
+
+* 修正將檔案、範例或連結新增至可下載產品時，可能顯示誤判的「最大上傳大小」錯誤的問題。<!-- ACCS-813 -->
+
+* 修正儲存指派給數個共用目錄的產品可能會造成錯誤的問題。<!-- ACCS-788 -->
+
+* 修正訂單歷史記錄查詢速度可能緩慢，並會導致許多訂單的公司出現資料庫記憶體不足錯誤的問題。<!-- ACCS-808 -->
+
+* 修正匯入檔案驗證可能失敗的問題。<!-- CCSAAS-4364 -->
+
+* 已從「**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**」中的「**[!UICONTROL Catalog]**」區段中移除「**[!UICONTROL Recently Viewed/Compared Products]**」設定，因為它在[!DNL Adobe Commerce as a Cloud Service]管理員中不受支援。<!-- ACCS-793 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## 2026年4月 — 發行說#2
+
+[!BADGE 生產]{type=Neutral tooltip="列出的專案目前可在生產環境中使用。"}
+
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
+
+以下專案已於2026年4月16日發佈到生產環境。
+
+>[!BEGINSHADEBOX]
+
+### 使用Webhook實作自訂報價總計
+
+`plugin.magento.out_of_process_totals_collector.api.get_total_modifications.execute` [webhook](https://developer.adobe.com/commerce/extensibility/webhooks/)現在可在[!DNL Adobe Commerce as a Cloud Service]中使用。 透過程式外的擴充功能，使用它來實作自訂報價總計修改。<!-- CEXT-5896 -->
+
+### 可重複使用的電子郵件提醒規則（實驗性）
 
 >[!IMPORTANT]
 >
->This feature is experimental and must be enabled by contacting your Adobe Commerce Customer Success Manager or creating a support ticket.
+>此功能屬於實驗性質，必須透過聯絡您的Adobe Commerce客戶成功經理或建立支援票證來啟用。
 
-[Email reminder rules](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/marketing/communications/email-reminders/email-reminder-rules#rule-repeatability) now support an optional rule reusability setting that allows the same rule to reapply to a customer after the original trigger condition no longer applies.
+[電子郵件提醒規則](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/communications/email-reminders/email-reminder-rules#rule-repeatability)現在支援選用的規則可重複使用設定，此設定可在原始觸發條件不再套用後，將相同的規則重新套用至客戶。
 
-For example, if a customer abandons a cart, completes the purchase, and later abandons a new cart, the rule can trigger again. Without this setting, a customer who clears the original trigger is permanently excluded from future matches of the same rule.
+例如，如果客戶放棄購物車、完成購買，並在稍後放棄新購物車，則規則可以再次觸發。 若沒有此設定，會永久將清除原始觸發器的客戶排除在相同規則的未來相符專案之外。
 
-### View the Payment Services Transactions report
+### 檢視「付款服務交易」報表
 
-If you have [[!DNL Payment Services]](https://experienceleague.adobe.com/zh-hant/docs/commerce/payment-services/get-started/production) enabled, the [Dashboard UI](../payment-services/payments-home.md) is now available in the [!DNL Commerce Admin], providing access to the [Transactions report](../payment-services/reporting.md#transactions-report-view) for viewing and managing payment transactions. <!-- PAY-6510 -->
+如果您已啟用[[!DNL Payment Services]](https://experienceleague.adobe.com/en/docs/commerce/payment-services/get-started/production)，則[!DNL Commerce Admin]中現在可以使用[儀表板UI](../payment-services/payments-home.md)，以提供[交易報表](../payment-services/reporting.md#transactions-report-view)的存取權，用於檢視和管理付款交易。<!-- PAY-6510 -->
 
-### Enhancements and bug fixes
+### 增強功能和錯誤修正
 
 此版本中包括下列選取的增強功能、最佳化和錯誤修正：
 
@@ -80,7 +118,7 @@ If you have [[!DNL Payment Services]](https://experienceleague.adobe.com/zh-hant
 
 ### 建立支援負值的數值產品屬性
 
-新的`numeric` [產品屬性輸入型別](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/product-attributes/attributes-input-types)可讓商家建立支援負值的十進位屬性。<!-- ACCS-600 -->
+新的`numeric` [產品屬性輸入型別](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types)可讓商家建立支援負值的十進位屬性。<!-- ACCS-600 -->
 
 ### 在一個GraphQL請求中查詢多個表單的reCAPTCHA設定
 
@@ -114,7 +152,7 @@ If you have [[!DNL Payment Services]](https://experienceleague.adobe.com/zh-hant
 
 ### 使用一次性程式碼以客戶身分登入
 
-管理員現在可以透過[!DNL Commerce Admin]和REST API產生客戶模擬的[一次性程式碼](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer)。 可透過`generateCustomerToken`或`exchangeOtpForCustomerToken`個GraphQL變動，以一次性代碼交換客戶存取權杖，讓無密碼的「以客戶身分登入」流程適用於賣家協助的購物情境。<!-- ACCS-404 -->
+管理員現在可以透過[!DNL Commerce Admin]和REST API產生客戶模擬的[一次性程式碼](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer)。 可透過`generateCustomerToken`或`exchangeOtpForCustomerToken`個GraphQL變動，以一次性代碼交換客戶存取權杖，讓無密碼的「以客戶身分登入」流程適用於賣家協助的購物情境。<!-- ACCS-404 -->
 
 如需使用API實作此功能的指引，請參閱[REST API](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/login-as-customer/)和[GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token/)檔案。
 
@@ -132,7 +170,7 @@ If you have [[!DNL Payment Services]](https://experienceleague.adobe.com/zh-hant
 
 ### 透過產品屬性上傳PDF和其他檔案
 
-新的「檔案」[屬性輸入型別](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/product-attributes/attributes-input-types)可讓您建立屬性集，以便上傳檔案（例如PDF）至個別產品。 您可以瀏覽至&#x200B;[!UICONTROL **商店**] > [!UICONTROL **設定**] > [!UICONTROL _目錄_] > [!UICONTROL **產品檔案屬性**]，以設定允許的副檔名和最大檔案大小。<!-- ACCS-535, ACCS-565 -->
+新的「檔案」[屬性輸入型別](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types)可讓您建立屬性集，以便上傳檔案（例如PDF）至個別產品。 您可以瀏覽至&#x200B;[!UICONTROL **商店**] > [!UICONTROL **設定**] > [!UICONTROL _目錄_] > [!UICONTROL **產品檔案屬性**]，以設定允許的副檔名和最大檔案大小。<!-- ACCS-535, ACCS-565 -->
 
 ### 設定公司自訂屬性
 
@@ -143,7 +181,7 @@ If you have [[!DNL Payment Services]](https://experienceleague.adobe.com/zh-hant
 
 ### 透過GraphQL訂閱價格和股票警報
 
-EDS店面現在使用[價格與庫存警示](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/inventory/configuration/product-alerts/alert-setup)。<!-- ACCS-334 -->
+EDS店面現在使用[價格與庫存警示](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/product-alerts/alert-setup)。<!-- ACCS-334 -->
 
 此外，還有數種新的GraphQL變動可供訂閱和取消訂閱價格與股票警示：
 
@@ -260,7 +298,7 @@ mutation {
 
 ### 請求實體建立限制變更
 
-網站、商店和商店檢視次數限制先前上限為50次。 您現在可以提交[支援要求](https://experienceleague.adobe.com/home?lang=zh-Hant&support-tab=home#support)來修改這些限制（如有必要）。<!-- ACCS-398 -->
+網站、商店和商店檢視次數限制先前上限為50次。 您現在可以提交[支援要求](https://experienceleague.adobe.com/home?support-tab=home#support)來修改這些限制（如有必要）。<!-- ACCS-398 -->
 
 ### 使用結構化錯誤碼自訂店面驗證訊息
 
@@ -268,7 +306,7 @@ mutation {
 
 ### 傳送購物車和願望清單閒置的自動電子郵件提醒
 
-[電子郵件提醒模組](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/marketing/communications/email-reminders/email-reminder-rules) (`Magento_Reminder`)目前在[!DNL Adobe Commerce as a Cloud Service]中啟用，可讓商家建立自動提醒規則，以根據購物車和願望清單閒置狀態觸發傳送給客戶的電子郵件。<!-- CCSAAS-4597 -->
+[電子郵件提醒模組](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/communications/email-reminders/email-reminder-rules) (`Magento_Reminder`)目前在[!DNL Adobe Commerce as a Cloud Service]中啟用，可讓商家建立自動提醒規則，以根據購物車和願望清單閒置狀態觸發傳送給客戶的電子郵件。<!-- CCSAAS-4597 -->
 
 ### 訂閱類別刪除事件webhook
 
@@ -276,7 +314,7 @@ mutation {
 
 ### 追蹤透過已註冊電子郵件下單的訪客訂單
 
-新的選用商店層級設定可讓客戶[追蹤他們下單的客服訂單](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-guest#allow-guest-order-access-for-registered-emails) （若訂單使用的電子郵件地址符合註冊的客戶帳戶）。<!-- ACCS-289 -->
+新的選用商店層級設定可讓客戶[追蹤他們下單的客服訂單](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-guest#allow-guest-order-access-for-registered-emails) （若訂單使用的電子郵件地址符合註冊的客戶帳戶）。<!-- ACCS-289 -->
 
 ### 增強功能和錯誤修正
 
@@ -330,15 +368,15 @@ mutation {
 
 * 增強處理序外[出貨webhook裝載](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-use-cases/#payload)，以包含出貨地址自訂屬性。 這項變更可讓商家實作自訂送貨方法。<!-- ACCS-235 -->
 
-* 已新增管理員報告的存取權，包括[客戶](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/reporting/customer-reports)、[行銷](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/reporting/marketing-reports)、[產品](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/reporting/product-reports)和[銷售](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/reporting/sales-reports)的報告。<!-- CCSAAS-3085 -->
+* 已新增管理員報告的存取權，包括[客戶](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/customer-reports)、[行銷](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/marketing-reports)、[產品](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/product-reports)和[銷售](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/sales-reports)的報告。<!-- CCSAAS-3085 -->
 
 >[!NOTE]
 >
->在[!DNL Adobe Commerce as a Cloud Service]中無法使用的報告僅標籤為PaaS （僅[!BADGE PaaS]{type=Informative url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"}）。
+>在[!DNL Adobe Commerce as a Cloud Service]中無法使用的報告僅標籤為PaaS （僅[!BADGE PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"}）。
 
 ### 透過REST API擷取自訂商業發票金額
 
-Invoice API現在支援使用擴充功能屬性的[自訂擷取金額](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/order-management/invoices#custom-capture-amounts)。<!-- ACCS-186, ACCS-197, ACCS-143 -->
+Invoice API現在支援使用擴充功能屬性的[自訂擷取金額](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#custom-capture-amounts)。<!-- ACCS-186, ACCS-197, ACCS-143 -->
 
 >[!NOTE]
 >
@@ -376,29 +414,29 @@ Invoice API現在支援使用擴充功能屬性的[自訂擷取金額](https://e
 
 已對B2B下拉式元件進行下列變更：
 
-* [!DNL Commerce Storefront on Edge Delivery Services]現在包含[B2B放置元件](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/?lang=zh-Hant)。 下列B2B下拉式清單現已可供使用：
+* [!DNL Commerce Storefront on Edge Delivery Services]現在包含[B2B放置元件](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/)。 下列B2B下拉式清單現已可供使用：
 
-   * **[公司管理](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-management/?lang=zh-Hant)** — 啟用Adobe Commerce店面的公司設定檔管理和角色型許可權。
-   * **[公司切換器](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-switcher/?lang=zh-Hant)** — 提供使用者介面元件，讓使用者可在相關聯的多個公司之間切換。
-   * **[採購單](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/purchase-order/?lang=zh-Hant)** — 管理B2B交易的採購單工作流程、核准規則和採購單歷史記錄。
-   * **[報價管理](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/quote-management/?lang=zh-Hant)** — 針對具有報價請求、議價及核准工作流程的B2B客戶，啟用可協商的報價。
-   * **[請購單清單](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/requisition-list/?lang=zh-Hant)** — 提供建立和管理重複購買及大量訂購的請購單清單的工具。
+   * **[公司管理](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-management/)** — 啟用Adobe Commerce店面的公司設定檔管理和角色型許可權。
+   * **[公司切換器](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-switcher/)** — 提供使用者介面元件，讓使用者可在相關聯的多個公司之間切換。
+   * **[採購單](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/purchase-order/)** — 管理B2B交易的採購單工作流程、核准規則和採購單歷史記錄。
+   * **[報價管理](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/quote-management/)** — 針對具有報價請求、議價及核准工作流程的B2B客戶，啟用可協商的報價。
+   * **[請購單清單](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/requisition-list/)** — 提供建立和管理重複購買及大量訂購的請購單清單的工具。
 
 * 已發行B2B店面相容性套件。 此套件增強了[!DNL Adobe Commerce] B2B GraphQL結構描述，以協助改善B2B系統的開發。
 
 <!-- 
-* [!DNL Commerce Storefront on Edge Delivery Services] now includes [B2B drop-in components](http://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/?lang=zh-Hant). For a complete list of available B2B drop-in blocks, refer to the [storefront documentation](http://experienceleague.adobe.com/developer/commerce/storefront/merchants/b2b-commerce-blocks/).
+* [!DNL Commerce Storefront on Edge Delivery Services] now includes [B2B drop-in components](http://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/). For a complete list of available B2B drop-in blocks, refer to the [storefront documentation](http://experienceleague.adobe.com/developer/commerce/storefront/merchants/b2b-commerce-blocks/).
 
-* Released the [B2B Storefront Compatibility Package](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility-b2b/?lang=zh-Hant). This package enhances the [!DNL Adobe Commerce] B2B GraphQL schema to help improve development on B2B systems. 
+* Released the [B2B Storefront Compatibility Package](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility-b2b/). This package enhances the [!DNL Adobe Commerce] B2B GraphQL schema to help improve development on B2B systems. 
 -->
 
 ### 外部送貨追蹤器的可點按連結
 
-透過[啟用自訂追蹤URL](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/delivery/shipping-settings#shipment-tracking-urls)，將購物者電子郵件中包含的出貨追蹤號碼從純文字轉換為可點按的連結。 USPS、UPS、FedEx和DHL支援此功能。<!-- See PR #716 in commerce-admin -->
+透過[啟用自訂追蹤URL](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/delivery/shipping-settings#shipment-tracking-urls)，將購物者電子郵件中包含的出貨追蹤號碼從純文字轉換為可點按的連結。 USPS、UPS、FedEx和DHL支援此功能。<!-- See PR #716 in commerce-admin -->
 
 ### Google reCAPTCHA企業支援
 
-[!DNL Adobe Commerce as a Cloud Service]個店面現在支援[reCAPTCHA Enterprise](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/security/captcha/security-google-recaptcha-enterprise)。 此功能透過使用適應性風險分析和機器學習來提供進階機器人保護，以便準確區分人類使用者與自動化機器人。 它可加強網站安全性、防止詐騙活動，並減少垃圾郵件和濫用，以維持受信任的購物體驗。<!-- CCSAAS-4242 -->
+[!DNL Adobe Commerce as a Cloud Service]個店面現在支援[reCAPTCHA Enterprise](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/captcha/security-google-recaptcha-enterprise)。 此功能透過使用適應性風險分析和機器學習來提供進階機器人保護，以便準確區分人類使用者與自動化機器人。 它可加強網站安全性、防止詐騙活動，並減少垃圾郵件和濫用，以維持受信任的購物體驗。<!-- CCSAAS-4242 -->
 
 ### 特定執行個體的管理員存取權
 
@@ -415,7 +453,7 @@ Invoice API現在支援使用擴充功能屬性的[自訂擷取金額](https://e
 
 ### 型錄價格規則的層級定價
 
-您現在可以使用[目錄價格規則](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/products/pricing/product-price-tier#enable-tier-pricing-for-catalog-price-rules)，將階層式定價折扣與目錄規則折扣結合。 此增強功能可讓您建立更具活力和競爭力的定價策略，在獎勵大宗購買的同時套用促銷折扣。 如此可增加吸引客戶、增加訂單價值及促進轉換的彈性。<!-- See PR #708 in commerce-admin -->
+您現在可以使用[目錄價格規則](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier#enable-tier-pricing-for-catalog-price-rules)，將階層式定價折扣與目錄規則折扣結合。 此增強功能可讓您建立更具活力和競爭力的定價策略，在獎勵大宗購買的同時套用促銷折扣。 如此可增加吸引客戶、增加訂單價值及促進轉換的彈性。<!-- See PR #708 in commerce-admin -->
 
 ### 增強功能和錯誤修正
 
@@ -460,6 +498,6 @@ Invoice API現在支援使用擴充功能屬性的[自訂擷取金額](https://e
 
 #### 自訂訂單屬性
 
-* 管理員使用者現在可以直接從「管理員」面板的「訂單檢視」、「編輯」和「建立」畫面檢視和編輯[自訂訂單屬性](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/order-management/orders/order-processing#custom-order-attributes)。 此增強功能可改善透過GraphQL建立的自訂訂單資料的管理。<!-- CEXT-5044 -->
+* 管理員使用者現在可以直接從「管理員」面板的「訂單檢視」、「編輯」和「建立」畫面檢視和編輯[自訂訂單屬性](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-processing#custom-order-attributes)。 此增強功能可改善透過GraphQL建立的自訂訂單資料的管理。<!-- CEXT-5044 -->
 
 >[!ENDSHADEBOX]
