@@ -79,9 +79,9 @@ retailer實現了全球性的多品牌服飾：
 
    ![Build Rule](assets/build-rule.png)
 
-   The **Segment Builder** workspace is where you define the rules and conditions for your audience.&#x200B; These rules and conditions are based on event and profile data from your Commerce store and define the criteria that determine whether a user qualifies for the audience. For example, you might create a rule that includes users who have viewed a specific product, or users that have made a purchase within a certain time frame. Learn more about [Segment Builder](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) and rules and conditions.
+   The **Segment Builder** workspace is where you define the rules and conditions for your audience.&#x200B; These rules and conditions are based on event and profile data from your Commerce store and define the criteria that determine whether a user qualifies for the audience. For example, you might create a rule that includes users who have viewed a specific product, or users that have made a purchase within a certain time frame. Learn more about [Segment Builder](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/segment-builder) and rules and conditions.
 
-1. Select the [Events](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#events) tab.
+1. Select the [Events](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/segment-builder#events) tab.
 
    ![Events Tab](assets/audience-events-tab.png)
 
@@ -109,7 +109,7 @@ You make an audience available in [!DNL Commerce] by activating it for the [!DNL
 
 >[!IMPORTANT]
 >
->If you have not already set [!DNL Commerce] as an available destination to receive data, see the [Adobe [!DNL Commerce] Connection](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/adobe-commerce) topic.
+>If you have not already set [!DNL Commerce] as an available destination to receive data, see the [Adobe [!DNL Commerce] Connection](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/personalization/adobe-commerce) topic.
 
 1. 在您對象的&#x200B;**詳細資料**&#x200B;標籤中，按一下&#x200B;**啟用至目的地**。
 
@@ -119,7 +119,7 @@ You make an audience available in [!DNL Commerce] by activating it for the [!DNL
 
 ## &#x200B;3. 在對象控制面板中檢視對象
 
-在[!DNL Commerce]中，您可以使用&#x200B;**Real-Time CDP Audiences**&#x200B;儀表板，檢視可為您的[!DNL Commerce]執行個體個人化的所有[作用中](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations)對象。
+在[!DNL Commerce]中，您可以使用&#x200B;**Real-Time CDP Audiences**&#x200B;儀表板，檢視可為您的[!DNL Commerce]執行個體個人化的所有[作用中](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations)對象。
 
 若要存取&#x200B;**Real-Time CDP Audiences**&#x200B;儀表板，請前往&#x200B;_管理員_&#x200B;側邊欄，然後前往&#x200B;**[!UICONTROL Customers]** > **[!UICONTROL Real-time CDP Audience]**。
 
@@ -132,9 +132,9 @@ You make an audience available in [!DNL Commerce] by activating it for the [!DNL
 本節說明如何根據新對象建立購物車價格規則。
 
 1. 確認您的新對象顯示在&#x200B;**Real-Time CDP Audiences**&#x200B;儀表板中。
-1. [建立購物車價格規則](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create)。
-1. [使用您的新對象設定購物車價格規則的條件](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#use-real-time-cdp-audiences-to-set-a-condition)。
-1. [設定當產品加入購物車時要發生的動作](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#step-3-define-the-actions)。
+1. [建立購物車價格規則](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create)。
+1. [使用您的新對象設定購物車價格規則的條件](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#use-real-time-cdp-audiences-to-set-a-condition)。
+1. [設定當產品加入購物車時要發生的動作](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#step-3-define-the-actions)。
 1. 繼續設定購物車價格規則。
 1. 前往沙箱執行個體的客戶檢視。
 1. 將您根據對象的產品新增至購物車。 請注意，購物車價格規則已啟用。

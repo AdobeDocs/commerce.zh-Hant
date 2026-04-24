@@ -174,4 +174,4 @@ _Cold Start_&#x200B;問題是指模型訓練及生效所需的時間。 針對�
 
 ## 支援
 
-如果您發現任何資料差異，或如果建議和搜尋結果未如預期運作，[請提交支援票證](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。
+如果您發現任何資料差異，或如果建議和搜尋結果未如預期運作，[請提交支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。
