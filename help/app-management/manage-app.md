@@ -46,7 +46,7 @@ ht-degree: 0%
 
 觀看此影片，瞭解如何將應用程式與Commerce執行個體建立關聯並設定設定。
 
->[!VIDEO](https://video.tv.adobe.com/v/3478944)
+>[!VIDEO](https://video.tv.adobe.com/v/3478966?captions=chi_hant)
 
 ## 關聯應用程式
 
