@@ -2,9 +2,9 @@
 title: '[!DNL App Management] 概覽'
 description: 透過統一管理UI管理與您的App Builder執行個體相關聯的Adobe Commerce應用程式。
 feature: App Builder, Extensibility, Integration
-source-git-commit: 4a5174d074a020f6199ed121e0289939612bc5c2
+source-git-commit: 780cef7af3574cd846fd7ee82d7814f2ebe9d6cc
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '430'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Adobe Commerce中的[!DNL App Management]可簡化在商業環境中探索、安
 
 ## [!DNL App Management]提供的內容
 
-* **您的所有應用程式都在一個位置**。 從&#x200B;**[!UICONTROL Apps]** > **[!UICONTROL App Management]**&#x200B;關聯、設定及管理應用程式。
+* **您的所有應用程式都在一個位置**。 從&#x200B;**[!UICONTROL Apps]** > **[!UICONTROL App Management]**&#x200B;關聯、設定及管理應用程式。 [從相同檢視搜尋、篩選和取得App](manage-app.md)。
 * **符合您企業的設定**。 針對多區域或多品牌設定，針對每個網站、商店或商店檢視套用不同的設定。
 * **自動商店同步**。 當您關聯應用程式時，會匯入來自Commerce的網站、商店和商店檢視。
 * **原生管理體驗**。 在不離開Commerce的情況下使用Adobe Exchange的應用程式或自訂部署。

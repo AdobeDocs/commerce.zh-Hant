@@ -2,9 +2,9 @@
 title: 管理您的應用程式
 description: 將App Builder應用程式與您的Commerce執行個體建立關聯、設定和取消關聯。
 feature: App Builder, Extensibility, Integration
-source-git-commit: 4a5174d074a020f6199ed121e0289939612bc5c2
+source-git-commit: 780cef7af3574cd846fd7ee82d7814f2ebe9d6cc
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '618'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,22 @@ ht-degree: 0%
 應用程式管理員會將App Builder應用程式與其Commerce執行個體建立關聯。 設定表單會根據應用程式的架構動態轉譯，因此不需要自訂管理員UI開發。 應用程式管理員會透過Commerce自動產生的表單來配置設定。
 
 ![應用程式管理](assets/app-management-view.png){width="500" zoomable="yes"}
+
+## 在Admin中尋找應用程式
+
+在&#x200B;**[!UICONTROL Apps]** > **[!UICONTROL App Management]**&#x200B;下，每個應用程式都會顯示為卡片。 清單可包含與所選Adobe IMS組織的Adobe Commerce執行個體相關聯的每個應用程式。 使用卡片上方的控制項來縮小結果範圍：
+
+| 控制 | 說明 |
+| --- | --- |
+| **依應用程式篩選……** | 依應用程式名稱搜尋。 |
+| **狀態** | 依生命週期狀態限制卡片。 **所有狀態**&#x200B;會顯示每個應用程式；其他值包括&#x200B;**已關聯**、**已安裝**、**已部分安裝**&#x200B;和&#x200B;**已取消關聯**。 每張卡片上的狀態與清單中的彩色指標相符。 |
+| **擴充性模式** | 根據應用程式使用的功能限制卡片。 **所有擴充性模式**&#x200B;會顯示每個應用程式；其他值與每個卡片上的徽章一致，例如&#x200B;**商務設定**、**管理UI SDK**、**Webhooks**&#x200B;和&#x200B;**活動**。 |
+
+搜尋文字和兩個下拉式清單會一起套用（邏輯與）。 若要再次顯示完整清單，請將&#x200B;**狀態**&#x200B;和&#x200B;**擴充性模式**&#x200B;設定回它們的&#x200B;**全部……**&#x200B;選項，並清除搜尋欄位。
+
+## 贏取應用程式
+
+**[!UICONTROL Acquire App]**&#x200B;會開啟新的瀏覽器索引標籤（或獨立的瀏覽器檢視），以存取[Adobe Exchange](https://exchange.adobe.com/experiencecloud){target="_blank"}，您可在此探索Commerce相關的市集清單，並將應用程式新增至您的Adobe IMS組織。 取得、核准及部署應用程式後，應用程式會出現在[!DNL App Management]中，以進行[關聯和安裝](#associate-an-app)。
 
 ## 先決條件
 
@@ -30,7 +46,7 @@ ht-degree: 0%
 
 觀看此影片，瞭解如何將應用程式與Commerce執行個體建立關聯並設定設定。
 
->[!VIDEO](https://video.tv.adobe.com/v/3478966?captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3478944)
 
 ## 關聯應用程式
 

@@ -3,9 +3,9 @@ title: '[!DNL SaaS Data Export Guide]'
 description: 瞭解如何將 [!DNL data export] 擴充功能用於Adobe Commerce SaaS服務，以在Adobe Commerce與連線的Commerce服務之間同步資料。
 role: Admin, Developer
 exl-id: 8a0067ba-90a4-48a6-8276-208d09abe6fc
-source-git-commit: c86e66a675f9a53a6ec7b79540ff85d10186bf3f
+source-git-commit: 780cef7af3574cd846fd7ee82d7814f2ebe9d6cc
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
@@ -25,13 +25,13 @@ SaaS資料匯出會以PHP擴充功能的形式提供。 它支援數種方法來
 
 - **從Admin或命令列手動同步處理**
 
-   - Commerce Admin中的[資料管理儀表板](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)提供同步處理狀態的圖形檢視，顯示產品資料已成功同步至商務服務。 您可以使用儀表板對所有摘要執行完整重新同步（_完整同步_）。 不過，Adobe建議僅在第一次將Adobe Commerce連線至Commerce服務時，才執行完整同步。 請參閱[同步化程式](data-synchronization.md)。
+   - Commerce Admin中的[資料管理儀表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)提供同步處理狀態的圖形檢視，顯示產品資料已成功同步至商務服務。 您可以使用儀表板對所有摘要執行完整重新同步（_完整同步_）。 不過，Adobe建議僅在第一次將Adobe Commerce連線至Commerce服務時，才執行完整同步。 請參閱[同步化程式](data-synchronization.md)。
 
-     {{aco-data-sync-verification}}
+  {{aco-data-sync-verification}}
 
-   - [資料摘要同步狀態](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)頁面會提供資料匯出摘要的健全狀況和效能的即時深入分析，這些摘要會將產品和類別資料從Commerce傳輸到外部服務，例如產品建議、即時搜尋和目錄服務或Adobe Commerce Optimizer。
+   - [資料摘要同步狀態](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)頁面會提供資料匯出摘要的健全狀況和效能的即時深入分析，這些摘要會將產品和類別資料從Commerce傳輸到外部服務，例如產品建議、即時搜尋和目錄服務或Adobe Commerce Optimizer。
 
-   - [Adobe Commerce命令列工具](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cli/config-cli) (CLI)提供同步特定摘要的命令，並包含自訂摘要處理的其他選項。
+   - [Adobe Commerce命令列工具](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli) (CLI)提供同步特定摘要的命令，並包含自訂摘要處理的其他選項。
 
 - **與cron工作自動同步**
 
