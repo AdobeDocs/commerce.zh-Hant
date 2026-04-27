@@ -28,7 +28,7 @@ ht-degree: 2%
       - [大量資料移轉工具](migration/bulk-data.md)
       - [編碼工具](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}
    - [檔案RAG服務](migration/doc-rag.md)
-- [客戶登入](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
+- [客戶登入](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
 - [禮卡帳戶REST端點](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/){target="_blank"}
 - [透過REST觸發的電子郵件](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/){target="_blank"}
 - 教學課程 {#tutorials}
@@ -42,6 +42,6 @@ ht-degree: 2%
    - [GraphQL結構描述](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
    - [REST API結構描述](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
 - [開發人員代理](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}
-- [教學影片](https://experienceleague.adobe.com/en/playlists/accs-getting-started-product-overview){target="_blank"}
+- [教學影片](https://experienceleague.adobe.com/zh-hant/playlists/accs-getting-started-product-overview){target="_blank"}
 - [發行說明](release-notes.md)
-- [返回Commerce服務首頁](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [返回Commerce服務首頁](https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/home)
