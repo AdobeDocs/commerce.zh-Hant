@@ -3,11 +3,11 @@ title: 開始使用
 description: 瞭解如何開始使用 [!DNL Adobe Commerce Optimizer]。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+source-git-commit: 5014b605e1e917e1dfa8992d74d8dc0cb058e65f
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1181'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 開始之前，請確定您已：
 
-- 具有&#x200B;**權益的** Adobe Experience Cloud帳戶[!DNL Adobe Commerce Optimizer]
+- 具有[!DNL Adobe Commerce Optimizer]權益的&#x200B;**Adobe Experience Cloud帳戶**
 - **組織管理員存取權**&#x200B;以建立執行個體和管理使用者
 - **GitHub帳戶**，用於載入範例資料和店面開發
 - **基本瞭解**&#x200B;電子商務概念
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce Optimizer]設定和管理依賴三個關鍵角色。 每個角色都有特定的任務和責任：
 
-![&#x200B; [!DNL Adobe Commerce Optimizer]安裝程式的角色型工作流程，顯示管理員、開發人員和使用者工作](./assets/high-level-workflow.png){zoomable="yes"}
+![ [!DNL Adobe Commerce Optimizer]安裝程式的角色型工作流程，顯示管理員、開發人員和使用者工作](./assets/high-level-workflow.png){zoomable="yes"}
 
 ### 管理員任務
 
@@ -86,7 +86,7 @@ ht-degree: 0%
 | 任務 | 說明 | 連結 |
 |---|---|---|
 | **存取Developer Console** | 建立專案並產生認證 | [Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started) |
-| **擷取目錄資料** | 從現有系統匯入產品資料 | 若要將資料直接擷取到Adobe Commerce Optimizer，請參閱[資料擷取API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/){target="_blank"}。<br><br>若要在雲端或內部部署環境或其他協力廠商系統上從Commerce擷取資料，請參閱[整合](./integrations/integrations-overview.md){target="_blank"}主題。 |
+| **擷取目錄資料** | 從現有系統匯入產品資料 | 若要將資料直接內嵌至Adobe Commerce Optimizer，請參閱[資料內嵌API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/){target="_blank"}。<br><br>若要在雲端或內部部署環境或其他協力廠商系統上從Commerce內嵌資料，請參閱[整合](./integrations/integrations-overview.md){target="_blank"}主題。 |
 | **設定店面** | 設定Edge Delivery Services店面 | [店面設定](./storefront.md) |
 
 ### 銷售商任務
@@ -133,7 +133,11 @@ ht-degree: 0%
 
    執行處理下拉式清單列出組織中可用的所有Optimizer執行處理。 選取要檢視的執行個體。
 
-   用於選取![環境的[!DNL Adobe Commerce Optimizer]執行個體切換器下拉式清單](./assets/context-switcher.png){zoomable="yes"}
+   用於選取[!DNL Adobe Commerce Optimizer]環境的![執行個體切換器下拉式清單](./assets/context-switcher.png){zoomable="yes"}
+
+>[!NOTE]
+>
+>如果您需要返回Commerce Cloud管理員以檢視執行個體詳細資料或管理執行個體，請按一下Commerce Optimizer頂端導覽左上角的「應用程式」圖示![圖示以開啟Experience Cloud應用程式](./assets/apps-icon.png)。
 
 ### 取得執行個體詳細資訊
 
@@ -144,9 +148,9 @@ ht-degree: 0%
 請注意下列重要資訊：
 
 - **GraphQL端點**，以使用銷售API擷取Commerce目錄資料
-- 使用REST API進行資料擷取的&#x200B;**目錄服務端點**
+- **目錄端點**，可使用REST API將目錄資料擷取到Commerce Optimizer
 - **Commerce Optimizer URL**&#x200B;以存取[!DNL Adobe Commerce Optimizer]應用程式
-- **執行個體識別碼**：識別執行個體的唯一租使用者識別碼
+- **執行個體識別碼**：識別執行個體的唯一識別碼。 執行個體識別碼也稱為&#x200B;*tenant_id*。
 
 如果您是開發人員，您需要這些詳細資料來設定您的開發環境並連線到[!DNL Adobe Commerce Optimizer] API。
 
@@ -217,6 +221,6 @@ Adobe提供GitHub存放庫和範例資料與工具，協助您學習及測試[!D
 ### 取得協助
 
 - **開發人員資源**： [開發人員檔案](https://developer.adobe.com/commerce/services/optimizer/)
-- **店面資源**： [Commerce店面檔案](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant)
-- **教學課程**： [Commerce Optimizer教學課程](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
-- **支援**： [Adobe Commerce支援資源](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/overview)
+- **店面資源**： [Commerce店面檔案](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **教學課程**： [Commerce Optimizer教學課程](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
+- **支援**： [Adobe Commerce支援資源](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
