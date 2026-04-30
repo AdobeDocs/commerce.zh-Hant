@@ -66,7 +66,7 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce Optimizer]設定和管理依賴三個關鍵角色。 每個角色都有特定的任務和責任：
 
-![ [!DNL Adobe Commerce Optimizer]安裝程式的角色型工作流程，顯示管理員、開發人員和使用者工作](./assets/high-level-workflow.png){zoomable="yes"}
+![&#x200B; [!DNL Adobe Commerce Optimizer]安裝程式的角色型工作流程，顯示管理員、開發人員和使用者工作](./assets/high-level-workflow.png){zoomable="yes"}
 
 ### 管理員任務
 
