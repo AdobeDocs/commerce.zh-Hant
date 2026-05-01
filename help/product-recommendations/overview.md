@@ -18,7 +18,7 @@ ht-degree: 0%
 >
 >**[!DNL Product Recommendations]不是HIPAA就緒的服務。** 請勿在使用HIPAA就緒的產品或以其他方式處理受保護的健康情況資訊(PHI)的任何Adobe Commerce實作中啟用或使用[!DNL Product Recommendations]。 [!DNL Product Recommendations]屬於目前分類為不符合HIPAA標準的Commerce SaaS服務。
 >
->如需哪些是HIPAA就緒的Adobe Commerce功能以及哪些服務不可搭配PHI使用的詳細資訊，請參閱Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview)和[作業](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/operations#adobe-commerce-services)上的[HIPAA就緒性。
+>如需哪些是HIPAA就緒的Adobe Commerce功能以及哪些服務不可搭配PHI使用的詳細資訊，請參閱Adobe Commerce[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview)和[作業](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/operations#adobe-commerce-services)上的HIPAA就緒性。
 
 ## 資料處理與隱私權
 
