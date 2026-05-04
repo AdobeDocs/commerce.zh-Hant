@@ -3,9 +3,9 @@ title: '[!DNL Commerce Storefront Catalog Service Release Notes]'
 description: 適用於Adobe Commerce的 [!DNL Catalog Service] 的最新發行資訊。
 feature: Services, Catalog Service, Release Notes
 exl-id: 74f2e46a-5592-4857-a6d7-b95b85d8b4cc
-source-git-commit: eb7e3e86426abb71b8b5e6d17936d26cb088edb3
+source-git-commit: a7a48e0150d817d29c147c504353245f12d2089c
 workflow-type: tm+mt
-source-wordcount: '2472'
+source-wordcount: '2873'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,19 @@ ht-degree: 0%
 
 ## 店面目錄服務
 
+### v1.53版本
+
+_2026年5月4日_
+
+![修正](../assets/fix.svg)店面產品價格現在會顯示所有產品型別的正確貨幣代碼（例如USD）。 之前，部分產品顯示`NONE`而非預期的貨幣，導致價格遺失。 此更新可確保跨店面一致且精確的價格呈現。<!--DATA-7115-->
+
+### v1.52版本
+
+_2026年4月29日_
+
+![新](../assets/new.svg)Adobe Commerce Optimizer和Adobe Commerce as a Cloud Service的每個請求強制限制，最多100個SKU
+根據[記錄的限制和邊界](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits)的使用者端。<!--DATA-7156-->
+
 ### v1.51版本
 
 _2026年4月17日_
@@ -45,7 +58,13 @@ _2026年4月17日_
 
 _2026年4月7日_
 
-![New](../assets/new.svg) `categoryTree](https://developer-stage.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree)`查詢現在已將系列輸入引數作為選用引數。 這允許透過Slug存取，而不依賴特定系列引數，因此允許更靈活的類別擷取。 此查詢僅適用於[Adobe Commerce Optimizer銷售服務](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/categories-storefront-implementation/)。
+![New](../assets/new.svg) [categoryTree](https://developer-stage.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree)查詢現在已將系列輸入引數作為選用引數。 這允許透過Slug存取，而不依賴特定系列引數，因此允許更靈活的類別擷取。 此查詢僅適用於[Adobe Commerce Optimizer銷售服務](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/categories-storefront-implementation/)。
+
+### v1.49版本
+
+_2026年3月24日_
+
+![新增](../assets/new.svg)新增支援，可計算並傳回動態套裝的價格範圍。<!--DATA-7014-->
 
 ### v1.48版本
 
@@ -57,7 +76,7 @@ _2026年2月19日_
 
 _2026年2月12日_
 
-![新](../assets/new.svg) API服務現在支援`CategoryProductView`型別，可依類別啟用產品的增強型檢視和查詢。 此更新可讓開發人員根據類別有效率地擷取及篩選產品資料，改善類別導向使用案例的彈性和效能。 如需詳細資訊，請參閱[實作店面](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/categories-storefront-implementation/)上的類別。 僅支援針對Headless店面[使用](https://developer.adobe.com/commerce/services/optimizer/)可撰寫目錄資料模型<!--DATA-6949-->的Commerce實作
+![新](../assets/new.svg) API服務現在支援`CategoryProductView`型別，可依類別啟用產品的增強型檢視和查詢。 此更新可讓開發人員根據類別有效率地擷取及篩選產品資料，改善類別導向使用案例的彈性和效能。 如需詳細資訊，請參閱[實作店面](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/categories-storefront-implementation/)上的類別。 僅支援針對Headless店面<!--DATA-6949-->使用[可撰寫目錄資料模型](https://developer.adobe.com/commerce/services/optimizer/)的Commerce實作
 
 ### v1.46版本
 
@@ -69,7 +88,7 @@ _2025年12月11日_
 
 _2025年11月17日_
 
-![新的](../assets/new.svg) **依名稱篩選屬性**- `productSearch` GraphQL查詢現在支援使用`names`欄位篩選產品屬性。 <!--DATA-6831-->使用此篩選器，您可以：
+![新的](../assets/new.svg) **依名稱篩選屬性**- `productSearch` GraphQL查詢現在支援使用`names`欄位篩選產品屬性。<!--DATA-6831--> 使用此篩選器，您可以：
 
 - 僅要求特定屬性，以減少回應裝載大小
 - 與現有的`roles`篩選器結合，以依據可見性角色和屬性名稱來縮小
@@ -125,7 +144,7 @@ _2025年11月3日_
 - 使用圖層遮色片控制欄位層級覆寫
 - 支援優質、季節和行動最佳化內容層
 
-  使用現有`products`查詢擷取圖層、從請求標頭套用至伺服器端，且不需要變更結構描述。 請參閱[Adobe Commerce Optimizer指南](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/setup/catalog-layer)中的&#x200B;_目錄層_。
+  使用現有`products`查詢擷取圖層、從請求標頭套用至伺服器端，且不需要變更結構描述。 請參閱&#x200B;_Adobe Commerce Optimizer指南_&#x200B;中的[目錄層](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-layer)。
 
 ![修正](../assets/fix.svg)當父項沒有訂價時，現在可以查詢已分組的產品；子項產品會傳回自己的可見性角色。<!--DATA-6779-->
 
@@ -236,7 +255,7 @@ _2025年7月15日_
 
 _2025年6月20日_
 
-![新的](../assets/new.svg) **階層式價格簿組態** — 上下階價格簿的精確價格範圍。 計算會遵循階層與繼承的規則；當連結多重價格簿時，可減少訂價錯誤。 僅限Adobe Commerce Optimizer。 檢視[價格手冊](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/setup/pricebooks)。
+![新的](../assets/new.svg) **階層式價格簿組態** — 上下階價格簿的精確價格範圍。 計算會遵循階層與繼承的規則；當連結多重價格簿時，可減少訂價錯誤。 僅限Adobe Commerce Optimizer。 檢視[價格手冊](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/pricebooks)。
 
 ![新](../assets/new.svg) **不區分大小寫的索引鍵** — 查詢中的索引鍵查閱現在不區分大小寫，可減少因索引鍵大小寫造成的錯誤。<!--DATA-6494, DCAT-2495-->
 
@@ -365,7 +384,7 @@ _2024年5月23日_
 
 ![修正](../assets/fix.svg) <!--DATA-5033-->選項值的`InStock`旗標現在會遵守產品變體的領域`enabled`狀態。
 
-![修正](../assets/fix.svg) <!--DATA-5888-->已新增對產品價格的支援，最多可包含16位數和4位小數。 從[資料管理儀表板](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)或[CLI](../data-export/data-export-cli-commands.md)重新同步以套用更新。
+![修正](../assets/fix.svg) <!--DATA-5888-->已新增對產品價格的支援，最多可包含16位數和4位小數。 從[資料管理儀表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)或[CLI](../data-export/data-export-cli-commands.md)重新同步以套用更新。
 
 #### 已知限制
 
@@ -399,7 +418,7 @@ _2024年2月22日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
-![新增](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=zh-Hant)現在可用於資料串流（產品推薦、即時搜尋、目錄服務）。 需要`catalog-service`個中繼封裝v3.1.0+。
+![新增](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html)現在可用於資料串流（產品推薦、即時搜尋、目錄服務）。 需要`catalog-service`個中繼封裝v3.1.0+。
 
 ### v1.16版本
 
@@ -474,7 +493,7 @@ _2023年3月28日_
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
 ![新](../assets/new.svg)已新增色票至[`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/)查詢。
-![新](../assets/new.svg)已新增使用`entityId`API Mesh[取得](mesh.md)的功能。
+![新](../assets/new.svg)已新增使用[API Mesh](mesh.md)取得`entityId`的功能。
 
 ### v1.5版本
 
@@ -567,7 +586,7 @@ _2025年10月14日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
-![新](../assets/new.svg) **資料服務升級**—`magento/data-services`相依性已更新為^8.0.0。升級之前，請先驗證環境與自訂資料服務API的使用情況，以符合8.x版本。
+![新](../assets/new.svg) **資料服務升級**—`magento/data-services`相依性已更新為^8.0.0。 升級之前，請先驗證環境與自訂資料服務API的使用情況，以符合8.x版本。
 
 ![新](../assets/new.svg)已更新3.3.0版的版本和中繼資料。
 
@@ -577,7 +596,7 @@ _2024年4月12日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
-已針對3.2.0更新![新](../assets/new.svg)版本和中繼資料。沒有其他相依性變更。
+已針對3.2.0更新![新](../assets/new.svg)版本和中繼資料。 沒有其他相依性變更。
 
 ### v3.1.0版本
 
@@ -598,7 +617,7 @@ _2024年1月26日_
 
 - 針對&#x200B;**Adobe Commerce as a Cloud Service**&#x200B;客戶，您的環境中已安裝最新安裝程式版本。
 
-- 對於雲端基礎結構上的&#x200B;**Adobe Commerce**&#x200B;或&#x200B;**內部部署**，請讓安裝程式與[目錄服務中繼資料](#catalog-service-metapackage)保持一致：當您升級`magento/catalog-service-installer`或當這些發行說明描述您需要的變更時（例如支援新的PHP版本），請使用Composer來升級`magento/catalog-service`。 如此一來，您的安裝工具就會與您執行的目錄服務版本相容。
+- 對於雲端基礎結構上的&#x200B;**Adobe Commerce**&#x200B;或&#x200B;**內部部署**，請讓安裝程式與[目錄服務中繼資料](#catalog-service-metapackage)保持一致：當您升級`magento/catalog-service`或當這些發行說明描述您需要的變更時（例如支援新的PHP版本），請使用Composer來升級`magento/catalog-service-installer`。 如此一來，您的安裝工具就會與您執行的目錄服務版本相容。
 
 ### v1.0.6版本
 
