@@ -45,7 +45,7 @@ ht-degree: 0%
 
 ## AEM-Assets層
 
-當您啟用[產品視覺效果](product-visuals.md)時，AEM Assets整合會自動建立和管理專為AEM Assets內容使用的目錄層。 預設圖層名稱為`AEM-Assets`，不過您可以在AEM Assets整合](../../aem-assets-integration/get-started/configure-aco.md)的[上線期間指定自訂名稱。
+當您啟用[產品視覺效果](product-visuals.md)時，AEM Assets整合會自動建立和管理專為AEM Assets內容使用的目錄層。 預設圖層名稱為`AEM-Assets`，不過您可以在AEM Assets整合[&#128279;](../../aem-assets-integration/get-started/configure-aco.md)的上線期間指定自訂名稱。
 
 此圖層包含與AEM Assets同步的產品影像。 如同其他目錄圖層，它是透過[產品圖層API](https://developer.adobe.com/commerce/services/reference/rest/#tag/Product-Layers){target=_blank}填入。 Assets整合服務會將AEM資產中繼資料和傳送URL轉換為API格式，並在AEM Assets核准資產時自動傳送資料。
 
@@ -118,7 +118,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->若要進行大量圖層作業，請使用上述的資料擷取API方法[](#add-a-catalog-layer-via-data-ingestion)。
+>若要進行大量圖層作業，請使用上述的資料擷取API方法[&#128279;](#add-a-catalog-layer-via-data-ingestion)。
 
 **若要建立手動圖層：**
 
@@ -206,7 +206,7 @@ ht-degree: 0%
 
 1. 系統會根據新順序自動更新訂單編號。
 
-1. 按一下[儲存]以套用新的優先順序。****
+1. 按一下[儲存]以套用新的優先順序。**&#x200B;**
 
 >[!IMPORTANT]
 >
