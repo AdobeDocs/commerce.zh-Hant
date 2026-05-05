@@ -2,7 +2,7 @@
 title: 安全性架構和資料流程
 description: 瞭解Adobe Commerce as a Cloud Service的安全性架構和資料流程。
 role: Admin, Architect, Leader
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
 source-git-commit: 0343c4f3ecc182145a97e08eca2790bd1512aa27
 workflow-type: tm+mt
 source-wordcount: '387'
