@@ -1,10 +1,10 @@
 ---
 title: 機會
 description: 透過與Adobe Sites Optimizer的整合提高流量、參與度和轉換率，以實現智慧的資料導向網站改進。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於 [!DNL Adobe Commerce Optimizer] 個專案（Adobe管理的SaaS基礎結構）。"
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於 [!DNL Adobe Commerce Optimizer] 個專案（Adobe管理的SaaS基礎結構）。"
+source-git-commit: 00f5aaa4d08e686195096b3fee0dcca2d2ac56d8
 workflow-type: tm+mt
-source-wordcount: '1342'
+source-wordcount: '1445'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 什麼是機會？
 
-[機會](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview)是AI支援的建議，可協助銷售人員識別並解決影響其商務網站效能的問題。 這些建議由[Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-sites-optimizer/content/home)提供支援，這是一項雲端型服務，可分析和改善網站效能。
+[機會](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview)是AI支援的建議，可協助銷售人員識別並解決影響其商務網站效能的問題。 這些建議由[Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home)提供支援，這是一項雲端型服務，可分析和改善網站效能。
 
 ## 主要功能
 
@@ -128,7 +128,7 @@ ht-degree: 0%
 
    - 為產品建立新的目錄層（如果尚未存在）。
    - 根據AI建議更新相關屬性（例如中繼標題、說明或H1）。
-   - 指定新圖層為目錄檢視中的最高優先順序（順序1）。
+   - 指定新圖層為目錄檢視中的最高優先順序（較高的數字）。
    - 透過目錄店面服務驗證變更。
 
 1. 監視部署狀態。 驗證完成後，系統會自動更新建議狀態。
@@ -146,7 +146,7 @@ ht-degree: 0%
 
 ### 目錄圖層與自動修復的搭配方式
 
-如果目錄檢視中不存在Adobe Sites Optimizer圖層，自動修正會自動建立一個圖層，並為其指定順序1 （最高優先順序）。 如果您刪除此圖層，則會在下次自動修復執行時重新建立該圖層，並將現有圖層移至較低順序的數字。 如果Adobe Sites Optimizer層已存在於其他訂單編號，自動修正不會變更其優先順序。 如果要保留自動修復圖層，但不立即使用，您可以停用圖層。 深入瞭解如何管理[目錄層](../setup/catalog-layer.md#activate-deactivate-or-delete-layers)。
+如果目錄檢視中不存在Adobe Sites Optimizer圖層，自動修正會自動建立圖層，並將其指派為最高優先順序（最高編號）。 如果您刪除此圖層，則會在下次自動修復執行時重新建立該圖層，並將現有圖層移至較低順序的數字。 如果Adobe Sites Optimizer層已存在於其他訂單編號，自動修正不會變更其優先順序。 如果要保留自動修復圖層，但不立即使用，您可以停用圖層。 深入瞭解如何管理[目錄層](../setup/catalog-layer.md#activate-deactivate-or-delete-layers)。
 
 ![目錄圖層](../assets/catalog-layers.png)
 
@@ -166,9 +166,9 @@ ht-degree: 0%
 
 1. 檢查&#x200B;**最佳化（完成）**&#x200B;索引標籤中的狀態指示器。
 1. 如果您看到警告圖示，請確認目錄層優先順序設定。
-1. 確認最佳化圖層在目錄檢視中設為順序1 （最高優先順序）。
+1. 確保最佳化圖層在目錄檢視中設為最高優先順序（最高數目）。
 1. 確認目錄資料同步處理作用中且為最新狀態。
-1. 允許有時間傳播變更。 即使訂單1有正確設定的圖層，變更仍可能需要一段時間才會出現在您的店面上，類似於發佈新產品時的延遲。
+1. 允許有時間傳播變更。 即使使用最高訂購數量的正確設定圖層，變更仍可能需要一段時間才會出現在您的店面上，類似於發佈新產品時的延遲。
 
 ## Sites Optimizer和成功量度如何搭配運作
 
@@ -176,7 +176,7 @@ ht-degree: 0%
 
 ## 進一步瞭解Sites Optimizer
 
-如需Sites Optimizer功能與功能的詳細資訊，請參閱[Adobe Experience Manager Sites Optimizer檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-sites-optimizer/content/home)。
+如需Sites Optimizer功能與功能的詳細資訊，請參閱[Adobe Experience Manager Sites Optimizer檔案](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home)。
 
 其他資源：
 
