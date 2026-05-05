@@ -3,10 +3,10 @@ user-guide-title: '[!DNL Adobe Commerce as a Cloud Service]'
 user-guide-description: 本指南提供使用 [!DNL Adobe Commerce as a Cloud Service]的詳細指示。
 feature: Services, Saas
 recommendations: noDisplay, noCatalog
-source-git-commit: 371b5b5377d561a002694609b95d5492d368a0ab
+source-git-commit: fb7d70be0a9325d20f3e9392a32e896fe1e1e833
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 2%
+source-wordcount: '186'
+ht-degree: 4%
 
 ---
 
@@ -19,16 +19,21 @@ ht-degree: 2%
 - [使用者與Identity Management](user-management.md)
 - [店面](storefront.md)
 - [使用案例](use-cases.md)
+- 安全性 {#security}
+   - [概觀](security/overview.md)
+   - [共擔責任](security/shared-responsibility.md)
+   - [身分和存取管理](security/access-control.md)
+   - [法規遵循與認證](security/compliance.md)
+   - [安全性架構和資料流程](security/data-flow.md)
 - [將檔案新增至產品](product-files.md)
 - [可觀察性](observability.md)
-- [共擔責任](shared-responsibility.md)
 - 移轉 {#migration}
    - [概觀](migration/overview.md)
    - 移轉工具 {#migration-tools}
       - [大量資料移轉工具](migration/bulk-data.md)
       - [編碼工具](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}
    - [檔案RAG服務](migration/doc-rag.md)
-- [客戶登入](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
+- [客戶登入](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
 - [禮卡帳戶REST端點](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/){target="_blank"}
 - [透過REST觸發的電子郵件](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/){target="_blank"}
 - 教學課程 {#tutorials}
@@ -42,6 +47,6 @@ ht-degree: 2%
    - [GraphQL結構描述](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
    - [REST API結構描述](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
 - [開發人員代理](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}
-- [教學影片](https://experienceleague.adobe.com/zh-hant/playlists/accs-getting-started-product-overview){target="_blank"}
+- [教學影片](https://experienceleague.adobe.com/en/playlists/accs-getting-started-product-overview){target="_blank"}
 - [發行說明](release-notes.md)
-- [返回Commerce服務首頁](https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/home)
+- [返回Commerce服務首頁](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)

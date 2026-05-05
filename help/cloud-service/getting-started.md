@@ -5,10 +5,10 @@ feature: Cloud, Integration
 role: Admin, Developer, User
 level: Beginner
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
+source-git-commit: e5d472336617ad687c91bb458da0004fbab21c12
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1343'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce as a Cloud Service]包含下列元件：
 
-* **[[!DNL Adobe Experience Cloud]](https://experience.adobe.com/)** — 您在[!DNL Adobe Commerce]experience.adobe.com[所有](https://experience.adobe.com/)產品的中心進入點
+* **[[!DNL Adobe Experience Cloud]](https://experience.adobe.com/)** — 您在[experience.adobe.com](https://experience.adobe.com/)所有[!DNL Adobe Commerce]產品的中心進入點
    * 按一下「[!UICONTROL **快速存取**]」底下的「[!UICONTROL **Commerce**]」以開啟「Commerce Cloud管理員」
 * **[[!DNL Commerce Cloud Manager]](https://experience.adobe.com/#/commerce/cloud-service)** — 建立和管理執行個體、存取API URL和您的Commerce管理員
 * **[[!DNL Adobe Admin Console]](https://adminconsole.adobe.com/)** — 管理使用者和角色
@@ -60,7 +60,7 @@ ht-degree: 0%
 
 >[!TAB 系統管理員與商家工作流程]
 
-此圖表提供系統管理員和商家如何存取及管理[!DNL Adobe Commerce as a Cloud Service]執行個體的概觀。 如需有關管理員工作流程的詳細資訊，請參閱[Adobe Admin Console指南](https://helpx.adobe.com/tw/enterprise/admin-guide.html)。
+此圖表提供系統管理員和商家如何存取及管理[!DNL Adobe Commerce as a Cloud Service]執行個體的概觀。 如需有關管理員工作流程的詳細資訊，請參閱[Adobe Admin Console指南](https://helpx.adobe.com/enterprise/admin-guide.html)。
 
 ![Adobe Commerce as a Cloud Service的系統管理員和商家工作流程圖表](./assets/merchant-flow.svg){zoomable="yes"}
 
@@ -118,7 +118,7 @@ ht-degree: 0%
 
 完成您的角色特定設定工作後：
 
-* **系統管理員**：檢閱[共擔責任](shared-responsibility.md)指南
+* **系統管理員**：檢閱[共擔責任](./security/shared-responsibility.md)指南
 * **商家**：探索[使用案例](use-cases.md)以瞭解常見的業務案例
 * **開發人員**：檢視[Adobe Commerce開發人員檔案](https://developer.adobe.com/commerce/docs)
 
@@ -211,7 +211,7 @@ ht-degree: 0%
 
 有兩種方式可將您的目錄匯入[!DNL Adobe Commerce as a Cloud Service]：
 
-* [**Commerce管理員**](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/import/data-import) — 使用者易記的介面，可讓您按幾下滑鼠即可匯入目錄資料。
+* [**Commerce管理員**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import) — 使用者易記的介面，可讓您按幾下滑鼠即可匯入目錄資料。
 * [**匯入JSON API**](https://developer.adobe.com/commerce/webapi/rest/modules/import/#import-json-api) - REST API可讓您以程式設計方式匯入目錄資料。
 
 ### 設定店面
@@ -222,4 +222,4 @@ ht-degree: 0%
 
 * [發行說明](release-notes.md)
 * [移轉指南](migration/overview.md)
-* [Commerce Storefront檔案](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant)
+* [Commerce Storefront檔案](https://experienceleague.adobe.com/developer/commerce/storefront/)
