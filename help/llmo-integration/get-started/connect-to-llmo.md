@@ -3,7 +3,7 @@ title: 連線 [!DNL Adobe Commerce] 至 [!DNL Adobe LLM Optimizer]
 description: 啟用必要的Commerce服務、設定LLM Optimizer連線、驗證目錄存取權，以及在檢視商機或部署更新之前確認租使用者整備程度。
 role: Admin, User
 recommendations: noCatalog
-badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
+badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
 source-git-commit: 47348a44ff7c5f890c10594f44cae6e771be046f
 workflow-type: tm+mt
 source-wordcount: '543'
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->本文主要介紹整合的Commerce方面。 如需LLM Optimizer的一般資訊，請參閱[LLM Optimizer產品檔案](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/home)。
+>本文主要介紹整合的Commerce方面。 如需LLM Optimizer的一般資訊，請參閱[LLM Optimizer產品檔案](https://experienceleague.adobe.com/zh-hant/docs/llm-optimizer/using/home)。
 
 ## 啟用必要的Commerce服務 {#enable-commerce-services}
 

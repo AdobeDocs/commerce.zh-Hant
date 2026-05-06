@@ -3,7 +3,7 @@ title: 整合 [!DNL Adobe Commerce] 與 [!DNL Adobe LLM Optimizer]
 description: 連線 [!DNL Adobe Commerce] 至 [!DNL Adobe LLM Optimizer] 以監視LLM中的目錄訊號，並部署核准的目錄最佳化。
 role: Admin, User, Leader
 recommendations: noCatalog
-badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
+badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
 source-git-commit: 47348a44ff7c5f890c10594f44cae6e771be046f
 workflow-type: tm+mt
 source-wordcount: '902'

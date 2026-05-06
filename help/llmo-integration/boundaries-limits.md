@@ -3,7 +3,7 @@ title: 整合限制和邊界
 description: 瞭解使用Commerce的協力廠商目錄、自動修正涵蓋範圍、抓取必要條件、企業規模考量事項以及LLM Optimizer的受限制測試版存取限制等範圍限制。
 role: Admin, User, Leader
 recommendations: noCatalog
-badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
+badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
 source-git-commit: 47348a44ff7c5f890c10594f44cae6e771be046f
 workflow-type: tm+mt
 source-wordcount: '258'

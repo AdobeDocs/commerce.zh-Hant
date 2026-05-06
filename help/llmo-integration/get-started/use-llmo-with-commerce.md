@@ -3,7 +3,7 @@ title: 使用 [!DNL Adobe LLM Optimizer] 搭配 [!DNL Adobe Commerce]
 description: 在LLM Optimizer中導覽Commerce商機、檢閱PDP和目錄擴充、將更新部署到 [!DNL Adobe Commerce]、在管理員和店面中驗證，以及瞭解如何覆寫和擷取標籤商機過時。
 role: Admin, User
 recommendations: noCatalog
-badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
+badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
 source-git-commit: 47348a44ff7c5f890c10594f44cae6e771be046f
 workflow-type: tm+mt
 source-wordcount: '1175'
