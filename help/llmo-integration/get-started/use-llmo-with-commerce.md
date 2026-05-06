@@ -110,7 +110,7 @@ PDP擴充適用於想要更清楚在AI驅動探索中傳送產品頁面訊息，
 
 1. 可選：如果您要保留手動輸入的名稱，請選取&#x200B;**[!UICONTROL Override LLM Optimizer provided Product Name]**。
 
-手動覆寫會影響機會與目錄保持同步的方式；請參閱Admin](#manual-override-in-the-admin)中的[手動覆寫。
+手動覆寫會影響機會與目錄保持同步的方式；請參閱Admin[&#128279;](#manual-override-in-the-admin)中的手動覆寫。
 
 1. 展開&#x200B;**[!UICONTROL Content]**&#x200B;區段並找到&#x200B;**說明**&#x200B;欄位。
 
