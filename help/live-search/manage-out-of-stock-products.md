@@ -64,7 +64,7 @@ query productSearchInStockOnly {
 為了保留結果集中的缺貨產品，但在依相關性排序時始終在缺貨產品之後，Adobe可以為您的環境啟用內部功能標幟。
 
 - [!DNL Live Search]管理UI中未公開此功能標幟。
-- 若要請求，請[聯絡Adobe支援](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide){target="_blank"}並參考該功能，以將無庫存產品移至搜尋結果的結尾。
+- 若要請求，請[聯絡Adobe支援](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide){target="_blank"}並參考該功能，以將無庫存產品移至搜尋結果的結尾。
 
 >[!NOTE]
 >
@@ -87,4 +87,4 @@ query productSearchInStockOnly {
 >[!MORELIKETHIS]
 >
 > - [搜尋銷售規則](rules.md)
-> - [設定Inventory management全域選項](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/configuration)
+> - [設定Inventory management全域選項](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/inventory/configuration/configuration)
