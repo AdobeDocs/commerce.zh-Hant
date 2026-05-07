@@ -2,18 +2,22 @@
 title: 新增Facet
 description: 瞭解如何將可篩選的產品屬性新增為 [!DNL Live Search] Facet。
 exl-id: 80559107-2b2d-411f-8c32-99ff024e7a09
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+source-git-commit: 3c6ca2398cf80649e2dbe127b1835b0a057d3534
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '600'
 ht-degree: 0%
 
 ---
 
 # 新增Facet
 
-任何可篩選的產品屬性都可以當作Facet使用。 *新增Facet*&#x200B;面板會列出目前的Facet，並可讓您輕鬆指派其他產品屬性作為Facet。 在這三個步驟的流程中，選擇屬性作為多面，視需要編輯屬性，並將變更發佈到店面。
+除了庫存狀態(`quantity_and_stock_status`)以外，任何可篩選的產品屬性都可以當做多面使用。 *[!UICONTROL Add facets]*&#x200B;面板會列出目前的Facet，並可讓您輕鬆將其他產品屬性指派為Facet。 在這三個步驟的流程中，選擇屬性作為多面，視需要編輯屬性，並將變更發佈到店面。
 
 ![新增Facet](assets/facets-add.png)
+
+>[!NOTE]
+>
+>如需依庫存狀態管理產品顯示的資訊，請參閱[管理無庫存產品](manage-out-of-stock-products.md)。
 
 ## 步驟1：新增多面向
 

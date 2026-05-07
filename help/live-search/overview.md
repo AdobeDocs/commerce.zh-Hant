@@ -3,9 +3,9 @@ title: 什麼是 [!DNL Live Search]？
 description: Adobe Commerce 的 [!DNL Live Search] 功能提供快速、具有相關性且簡單易用的搜尋體驗。
 recommendations: noCatalog
 exl-id: 15399216-6a96-4d0b-bbc1-293190cb9e14
-source-git-commit: 1ae6b0f6786375ca4e7bb7620e164008a08f8965
+source-git-commit: 3c6ca2398cf80649e2dbe127b1835b0a057d3534
 workflow-type: tm+mt
-source-wordcount: '1014'
+source-wordcount: '1180'
 ht-degree: 1%
 
 ---
@@ -35,13 +35,13 @@ ht-degree: 1%
 
 [!DNL Live Search]著重於速度、相關性和易用性，對購物者和商家來說都是一個遊戲規則的改變者。 觀看以下影片，然後從店面快速瀏覽[!DNL Live Search]。
 
->[!VIDEO](https://video.tv.adobe.com/v/3452580?captions=chi_hant&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418797?learn=on)
 
-如需有關使用和設定Live Search的更深入影片，請參閱[在 [!DNL Live Search]](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration)上的完整示範主題。
+如需有關使用和設定Live Search的更深入影片，請參閱[在 [!DNL Live Search]](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration)上的完整示範主題。
 
 ### 依輸入內容搜尋
 
-當購物者在[!DNL Live Search]搜尋[方塊中輸入查詢時，](storefront-popover.md)在[彈出視窗](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/catalog/search/search)中以建議的產品和排名最前的搜尋結果縮圖影像回應。 當購物者按一下建議或精選的產品時，會顯示[產品詳細資料](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/storefront/storefront)頁面。 彈出視窗頁尾中的&#x200B;_檢視全部_&#x200B;連結會顯示搜尋結果頁面。
+當購物者在[搜尋](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search)方塊中輸入查詢時，[!DNL Live Search]在[彈出視窗](storefront-popover.md)中以建議的產品和排名最前的搜尋結果縮圖影像回應。 當購物者按一下建議或精選的產品時，會顯示[產品詳細資料](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront)頁面。 彈出視窗頁尾中的&#x200B;_檢視全部_&#x200B;連結會顯示搜尋結果頁面。
 
 針對兩個或更多字元的查詢，[!DNL Live Search]傳回「鍵入時搜尋」結果。 若為部分相符，則每個字的字元數上限為20。 查詢中的字元數無法設定。 彈出視窗包含`name`、`sku`和`category_ids`欄位。
 
@@ -65,6 +65,15 @@ ht-degree: 1%
 
 除了模糊搜尋邏輯外，也會考慮轉置，也就是交換一個字詞中兩個相鄰字元，例如「teh」而非「the」。 請注意，這些編輯限制是按字詞而定，而非整個片語。
 
+### 篩選器與Facet
+
+[!DNL Live Search]可以依據任何索引為可篩選的屬性來篩選結果。 Facet只是可篩選的屬性，已設定為在店面中顯示為面向購物者的篩選器（例如，品牌、顏色、價格）。
+
+某些內部欄位（例如`inStock`）可篩選，但不可多面向：
+
+- 它們可用於API篩選器（例如，隱藏缺貨的產品）。
+- 未出現在[!UICONTROL Add Facet]對話方塊中，且無法顯示為面向購物者的Facet。
+
 ### 使用Facet篩選的搜尋
 
 篩選搜尋使用多個屬性值的維度或[多面向](facets.md)作為搜尋條件。 篩選器的選取專案由商家定義，並會根據傳回的產品而變更，而最常使用的多面向會釘選至清單頂端。
@@ -83,7 +92,7 @@ ht-degree: 1%
 
 - [!DNL Live Search] [彈出視窗Widget](storefront-popover.md)是在包含搜尋結果的搜尋欄位下開啟的方塊。
 - [產品清單頁面Widget](plp-styling.md) (PLP)提供具有Facet和同義字支援的可搜尋產品清單頁面。 Widget已安裝並在Live Search 4.0.0+中啟用，並取代搜尋配接器。
-- （**已棄用**） Search Adapter是PLP Widget的前身，且已安裝Live Search &lt; 4.0.0。如果您使用的Live Search版本早於4.0.0，Commerce建議您升級以享受PLP Widget功能和未來改進的優點。 日後，搜尋配接卡只會更新以解決安全性問題。 請參閱[移轉指南](migrate-to-plp.md)，以取得有關移轉至PLP Widget的詳細資訊。
+- （**已棄用**） Search Adapter是PLP Widget的前身，且已安裝Live Search &lt; 4.0.0。 如果您使用的Live Search版本早於4.0.0，Commerce建議您升級以享受PLP Widget功能和未來改進的優點。 日後，搜尋配接卡只會更新以解決安全性問題。 請參閱[移轉指南](migrate-to-plp.md)，以取得有關移轉至PLP Widget的詳細資訊。
 
 ## [!DNL Live Search]工作區
 
@@ -99,10 +108,10 @@ ht-degree: 1%
 
 ### 非使用中的測試環境
 
-若要在您的測試環境中重新啟用目錄資料，請[提交標題為「重新啟用](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)」的支援請求[!DNL Live Search]，並包含環境ID。 您測試環境中的目錄資料應在數小時內還原。
+若要在您的測試環境中重新啟用目錄資料，請[提交標題為「重新啟用[!DNL Live Search]」的支援請求](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)，並包含環境ID。 您測試環境中的目錄資料應在數小時內還原。
 
 ### 清空目錄
 
 如果您的環境在建立後45天內有空白目錄，則目錄資料會設定為休眠模式，且任何搜尋查詢都不會傳回任何資料。 這包括生產和測試環境。
 
-若要在您的環境中重新啟用目錄資料，請[提交標題為「重新啟用](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)」的支援請求[!DNL Live Search]，並包含環境ID。 您環境中的目錄資料應在數小時內還原。
+若要在您的環境中重新啟用目錄資料，請[提交標題為「重新啟用[!DNL Live Search]」的支援請求](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)，並包含環境ID。 您環境中的目錄資料應在數小時內還原。
