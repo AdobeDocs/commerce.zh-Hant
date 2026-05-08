@@ -5,7 +5,7 @@ role: Admin, Leader, User
 feature: Integration, Personalization, Services, Saas
 recommendations: noDisplay
 badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
-source-git-commit: c9cd8ca208a22d4166b2271aa11a9e9acd871d3f
+source-git-commit: 3ebee6c984a8f848e9094968be9faa667fc83250
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 13%
@@ -17,7 +17,7 @@ ht-degree: 13%
 - [概觀](home.md)
 - 發行資訊 {#release-information}
    - [發行說明](/help/landing/release-notes-all.md)
-- [產品解決方案](product-solutions.md)
+- {hide-from-toc}[產品解決方案](product-solutions.md)
 - Commerce服務 {#commerce-services}
    - [[!DNL AEM Assets Integration]](https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/overview)
    - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce/live-search/overview.html?lang=zh-Hant)
@@ -28,7 +28,7 @@ ht-degree: 13%
    - [[!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce/data-connection/overview.html?lang=zh-Hant)
    - [[!DNL App Management]](https://experienceleague.adobe.com/zh-hant/docs/commerce/app-management/overview)
    - [服務聯結器](/help/landing/saas.md)
-   - [整合 [!DNL Adobe Commerce] 與 [!DNL Adobe LLM Optimizer]](https://experienceleague.adobe.com/docs/commerce/llmo-integration/overview.html)
+   - [整合 [!DNL Adobe Commerce] 與 [!DNL Adobe LLM Optimizer]](https://experienceleague.adobe.com/docs/commerce/llmo-integration/overview.html?lang=zh-Hant)
 - 資料工具 {#data-services}
    - [SaaS資料匯出](https://experienceleague.adobe.com/docs/commerce/saas-data-export/overview.html?lang=zh-Hant)
    - [SaaS價格索引](https://experienceleague.adobe.com/docs/commerce/price-indexer/price-indexing.html?lang=zh-Hant)

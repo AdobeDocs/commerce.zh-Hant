@@ -1,9 +1,9 @@
 ---
 title: 安全性概覽
 description: 瞭解Adobe Commerce as a Cloud Service的安全性功能。
-role: Admin, Architect, Leader
+role: Admin, Developer, Leader
 badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
-source-git-commit: 0343c4f3ecc182145a97e08eca2790bd1512aa27
+source-git-commit: feb48068137c6a63e6594167fe969c3aa4b044c4
 workflow-type: tm+mt
 source-wordcount: '581'
 ht-degree: 0%

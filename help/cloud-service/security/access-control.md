@@ -1,9 +1,9 @@
 ---
 title: 識別與存取管理
 description: 瞭解Adobe Commerce as a Cloud Service的身分和存取管理功能。
-role: Admin, Architect, Leader
+role: Admin, Developer, Leader
 badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
-source-git-commit: 283e9c8b9dd0812bb19640681d1fdf86f0f7fce1
+source-git-commit: feb48068137c6a63e6594167fe969c3aa4b044c4
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 0%

@@ -1,8 +1,8 @@
 ---
 source-git-commit: e761e54e7bd7997f3f40b1dfc1293012931111b0
 workflow-type: tm+mt
-source-wordcount: '466'
-ht-degree: 5%
+source-wordcount: '506'
+ht-degree: 0%
 
 ---
 # Adobe Commerce技術檔案
@@ -11,7 +11,7 @@ ht-degree: 5%
 
 ## Adobe Open Source行為準則
 
-本專案已採用 [Adobe 開放原始碼管理辦法](code-of-conduct.md)或 [.NET Foundation 管理辦法](https://dotnetfoundation.org/code-of-conduct)。如需詳細資訊，請參閱[貢獻](contributing.md)一文。
+此專案已採用[Adobe Open Source行為準則](code-of-conduct.md)或[.NET Foundation行為準則](https://dotnetfoundation.org/code-of-conduct)。 如需詳細資訊，請參閱[貢獻](contributing.md)文章。
 
 ## 關於您對Adobe內容的貢獻
 
