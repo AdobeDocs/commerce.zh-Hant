@@ -18,7 +18,7 @@ ht-degree: 0%
 下列發行說明包含[!DNL Adobe Commerce Optimizer]的更新，包括：
 
 * [[!DNL Adobe Commerce Optimizer Studio]](overview.md#quick-tour)的新功能及改進專案。
-* 更新[資料擷取REST API](https://developer.adobe.com/commerce/services/reference/rest/)和店面目錄資料擷取](https://developer.adobe.com/commerce/services/reference/graphql/)的[GraphQL API。
+* 更新[資料擷取REST API](https://developer.adobe.com/commerce/services/reference/rest/)和店面目錄資料擷取[&#128279;](https://developer.adobe.com/commerce/services/reference/graphql/)的GraphQL API。
 
   {{aco-api-updates-and-dropins}}
 
