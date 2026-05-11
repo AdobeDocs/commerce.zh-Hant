@@ -5,11 +5,21 @@ role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
 TQID: https://experienceleague.adobe.com/G4EOSDBdBepDJG0HyuCcQlq3-megOqpOGzSbEEnT1jc
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 1391
@@ -33,17 +43,17 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> 如果您尚未為[!DNL Payment Services]上線並啟動即時模式](production.md#enable-live-payments)，則無法檢視財務報表。[
+> 如果您尚未為[!DNL Payment Services]上線並啟動即時模式[&#128279;](production.md#enable-live-payments)，則無法檢視財務報表。
 
 ## 交易報表檢視
 
 「交易」報表檢視可在「付款服務」的「交易」檢視中使用。 其中包含您商店中所有可用的交易資訊。
 
-在&#x200B;_Admin_&#x200B;側邊欄上，前往&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**檢視詳細的表格式交易報告檢視。 從&#x200B;**[!UICONTROL Home]**，您也可以在[!DNL Adobe Commerce as a Cloud Service]與[!DNL Adobe Commerce Optimizer]中選擇&#x200B;**[!UICONTROL Transactions]**下的&#x200B;**[!UICONTROL View Report]**。
+在&#x200B;_Admin_&#x200B;側邊欄上，前往&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**&#x200B;檢視詳細的表格式交易報告檢視。 從&#x200B;**[!UICONTROL Home]**，您也可以在[!DNL Adobe Commerce as a Cloud Service]與[!DNL Adobe Commerce Optimizer]中選擇&#x200B;**[!UICONTROL Transactions]**&#x200B;下的&#x200B;**[!UICONTROL View Report]**。
 
 >[!BEGINTABS]
 
->雲端和內部部署上的[!TAB Adobe Commerce]
+>[!TAB 雲端和內部部署上的 Adobe Commerce]
 
 ![交易報告檢視](assets/transactions-report-view.png){width="800" zoomable="yes"}
 
@@ -73,7 +83,7 @@ SaaS部署也適用相同的報表功能。 階層連結顯示&#x200B;**[!UICONT
 
 ![資料來源選擇](assets/datasource.png){width="300" zoomable="yes"}
 
-如果&#x200B;_[!UICONTROL Live]_是選取的資料來源，您可以看到在生產模式中使用[!DNL Payment Services]之存放區的報表資訊。 如果_[!UICONTROL Sandbox]_&#x200B;是選取的資料來源，您可以看到沙箱模式的報告資訊。
+如果&#x200B;_[!UICONTROL Live]_&#x200B;是選取的資料來源，您可以看到在生產模式中使用[!DNL Payment Services]之存放區的報表資訊。 如果&#x200B;_[!UICONTROL Sandbox]_&#x200B;是選取的資料來源，您可以看到沙箱模式的報告資訊。
 
 資料來源選取專案的工作方式如下：
 
@@ -103,14 +113,14 @@ SaaS部署也適用相同的報表功能。 階層連結顯示&#x200B;**[!UICONT
 
 1. 在&#x200B;_管理員_&#x200B;側邊欄上，前往&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**。
 1. 按一下&#x200B;**[!UICONTROL Filter]**&#x200B;選取器。
-1. 切換&#x200B;_[!UICONTROL Transaction Result]_選項，只檢視所選訂單交易的報表結果。
-1. 切換&#x200B;_[!UICONTROL Payment Method]_選項以檢視用於交易的付款型別的報告結果。
-1. 切換&#x200B;_[!UICONTROL Payment Detail]_選項，檢視使用的付款型別的其他資訊（可用時）。
+1. 切換&#x200B;_[!UICONTROL Transaction Result]_&#x200B;選項，只檢視所選訂單交易的報表結果。
+1. 切換&#x200B;_[!UICONTROL Payment Method]_&#x200B;選項以檢視用於交易的付款型別的報告結果。
+1. 切換&#x200B;_[!UICONTROL Payment Detail]_&#x200B;選項，檢視使用的付款型別的其他資訊（可用時）。
 1. 輸入&#x200B;_最小訂單金額_&#x200B;或&#x200B;_最大訂單金額_&#x200B;以檢視該訂單金額範圍內的報表結果。
-1. 輸入&#x200B;_[!UICONTROL Order ID]_以搜尋特定交易。
-1. 介紹&#x200B;_[!UICONTROL Card Last Four]_以搜尋特定的信用卡或扣帳卡。
-1. 輸入&#x200B;_[!UICONTROL Customer ID]_以顯示特定客戶的所有交易。
-1. 輸入&#x200B;_[!UICONTROL Customer Email]_以篩選該電子郵件的交易。
+1. 輸入&#x200B;_[!UICONTROL Order ID]_&#x200B;以搜尋特定交易。
+1. 介紹&#x200B;_[!UICONTROL Card Last Four]_&#x200B;以搜尋特定的信用卡或扣帳卡。
+1. 輸入&#x200B;_[!UICONTROL Customer ID]_&#x200B;以顯示特定客戶的所有交易。
+1. 輸入&#x200B;_[!UICONTROL Customer Email]_&#x200B;以篩選該電子郵件的交易。
 1. 按一下&#x200B;**[!UICONTROL Hide filters]**&#x200B;以隱藏篩選器。
 
 ### 顯示和隱藏欄
@@ -125,7 +135,7 @@ SaaS部署也適用相同的報表功能。 階層連結顯示&#x200B;**[!UICONT
 
 ### 更新報表資料
 
-交易報告檢視會顯示&#x200B;_[!UICONTROL Last updated]_時間戳記，顯示上次更新報告資訊的時間。 依預設，交易報告資料每三小時自動重新整理一次。
+交易報告檢視會顯示&#x200B;_[!UICONTROL Last updated]_&#x200B;時間戳記，顯示上次更新報告資訊的時間。 依預設，交易報告資料每三小時自動重新整理一次。
 
 您也可以手動強制重新整理報表資料，以檢視最新的報表資訊。
 
