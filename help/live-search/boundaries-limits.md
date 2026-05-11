@@ -3,9 +3,14 @@ title: 邊界和限制
 description: 瞭解 [!DNL Live Search] 的界限和限制，以確保其符合您的業務需求。
 role: Admin, Developer
 exl-id: 28b8d98f-0784-4c4d-b382-81c01838e0de
-source-git-commit: d00f9a35ba12f9a928e7e9689562116ce1bb6890
+TQID: https://experienceleague.adobe.com/QIKvaTUGLWd6yw6cEAyDkP9tCgEcJHLdiwpZDtx1-p4
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1415'
+source-wordcount: 1415
 ht-degree: 0%
 
 ---
@@ -17,8 +22,8 @@ ht-degree: 0%
 ## 一般
 
 - 搜尋配接器截至[!DNL Live Search] 4.0.0已[棄用](release-notes.md#live-search-400)。 產品清單頁面(PLP) Widget是未來[!DNL Live Search]所有實施的支援解決方案。 搜尋配接卡只會接收安全性相關更新。 如需移轉至PLP Widget的相關資訊，請參閱[移轉指南](migrate-to-plp.md)。
-- 安裝[!DNL Live Search]時，[進階搜尋](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/catalog/search/search)模組已停用，且店面頁尾中的進階搜尋連結已移除。
-- [層級定價](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/products/pricing/product-price-tier)在[!DNL Live Search]欄位和產品清單頁面Widget中不受支援。
+- 安裝[!DNL Live Search]時，[進階搜尋](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search)模組已停用，且店面頁尾中的進階搜尋連結已移除。
+- [層級定價](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier)在[!DNL Live Search]欄位和產品清單頁面Widget中不受支援。
 - 產品價格包含增值稅(VAT)，但[!DNL Live Search]無法將VAT顯示為個別值。
 - 不支援內容搜尋（CMS頁面和區塊）。
 - 可分頁的結果數量上限為10,000。 為了確保購物者在類別或搜尋結果包含大量產品時不必使用深層分頁，請提供有意義的方式來篩選產品。
@@ -29,7 +34,7 @@ ht-degree: 0%
 - 您可以使用「開頭為」或「包含」條件篩選結果，但有一些限制，如[開發人員檔案](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#limitations)中所述。
 - 您只能追蹤去年內的績效量度。
 - 如果搜尋查詢包含多個字詞，這些字詞之間的空格會導致它們被視為單獨的搜尋詞。 如果您想要說明多字搜尋查詢，請使用[同義字](./synonyms.md)。
-- [!DNL Live Search]不支援[搜尋字詞重新導向](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/catalog/search/search-terms)原生。 使用Fastly或其他自訂設定來實作重新導向。
+- [!DNL Live Search]不支援[搜尋字詞重新導向](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms)原生。 使用Fastly或其他自訂設定來實作重新導向。
 
 ## 索引
 
@@ -44,7 +49,7 @@ ht-degree: 0%
 ## Facet
 
 - 從已定義的可篩選屬性集中，您最多可以設定100個屬性為Facet。
-- 在一個Facet中，最多可傳回100個值區。 如果您需要傳回100個以上的貯體，請[建立支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)，讓Adobe能夠分析效能影響，並判斷為您的環境提高此限制是否可行。
+- 在一個Facet中，最多可傳回100個值區。 如果您需要傳回100個以上的貯體，請[建立支援票證](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)，讓Adobe能夠分析效能影響，並判斷為您的環境提高此限制是否可行。
 - 動態Facet可能會在大型索引和高序數的索引中造成效能問題。 如果您已建立動態Facet，且發現任何效能降低或頁面未載入時發生逾時錯誤，請嘗試將您的Facet變更為Pined ，以判斷這是否會解決您的效能問題。
 - Stock狀態(`quantity_and_stock_status`)不支援為Facet。 在Admin中，您可以設定[!UICONTROL Display Out of Stock Products] = [!UICONTROL No]以篩選無庫存產品。 `[PLP Widget](plp-styling.md)`模組中可立即支援此功能。 如需詳細資訊，請參閱[管理缺貨的產品](manage-out-of-stock-products.md)。
 - 日期型別屬性不支援為Facet。
@@ -84,12 +89,12 @@ ht-degree: 0%
 ## B2B和類別許可權
 
 - 產品若未新增至預設共用目錄，則不會顯示。
-- 若要使用[類別許可權](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/categories/category-permissions)限制客戶群組：
+- 若要使用[類別許可權](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions)限制客戶群組：
    - 必須將產品指派給根類別。 (**注意：**&#x200B;您可以將SaaS Data Export擴充功能更新至103.4.0+版，以移除此限制。 請參閱[管理資料匯出擴充功能](../data-export/manage-extension.md)。
    - 必須向「未登入」客戶群組提供「允許」瀏覽許可權。
-   - 若要將產品限制在「未登入」客戶群組，請移至每個類別，並為每個[客戶群組](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage)設定許可權。
+   - 若要將產品限制在「未登入」客戶群組，請移至每個類別，並為每個[客戶群組](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage)設定許可權。
 - 目前不支援在PWA Studio上透過PLP Widget提供B2B的現成支援。 不過，您可以[使用API](install.md#pwa-support)來實作此功能。
-- [!DNL Live Search]中的類別Facet可能會顯示無法顯示給特定[客戶群組](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage)的類別。
+- [!DNL Live Search]中的類別Facet可能會顯示無法顯示給特定[客戶群組](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage)的類別。
 - [!DNL Live Search]最多可支援1,000個客戶群組。
 
 ## [!DNL Storefront popover]
@@ -104,8 +109,8 @@ ht-degree: 0%
 
 如需[!DNL Live Search]中常見問題的疑難排解說明，請參閱下列知識庫文章：
 
-- [[!DNL Live Search] 目錄未同步](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync) — 針對產品目錄資料未在您的Adobe Commerce市集與即時搜尋服務之間正確同步提供解決方案。 本文介紹如何驗證同步處理狀態、識別同步處理錯誤，以及解決資料同步處理問題。
-- [[!DNL Live Search] 儀表板和搜尋結果排名不正確](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-dashboard-ranking-incorrect) — 解決「即時搜尋」儀表板中顯示的搜尋結果或績效量度未如預期顯示的問題。 本文說明如何疑難排解排名差異與控制面板資料不一致的問題。
-- [[!DNL Live Search] Facet未依字母排序](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-facets-not-sorted) — 解決Facet值以非預期順序（而非依字母順序）出現的問題。 本文提供配置和更正店面多面向排序行為的步驟。
+- [[!DNL Live Search] 目錄未同步](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync) — 針對產品目錄資料未在您的Adobe Commerce市集與即時搜尋服務之間正確同步提供解決方案。 本文介紹如何驗證同步處理狀態、識別同步處理錯誤，以及解決資料同步處理問題。
+- [[!DNL Live Search] 儀表板和搜尋結果排名不正確](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-dashboard-ranking-incorrect) — 解決「即時搜尋」儀表板中顯示的搜尋結果或績效量度未如預期顯示的問題。 本文說明如何疑難排解排名差異與控制面板資料不一致的問題。
+- [[!DNL Live Search] Facet未依字母排序](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-facets-not-sorted) — 解決Facet值以非預期順序（而非依字母順序）出現的問題。 本文提供配置和更正店面多面向排序行為的步驟。
 
-如果您需要其他協助，請連絡[支援](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。
+如果您需要其他協助，請連絡[支援](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。

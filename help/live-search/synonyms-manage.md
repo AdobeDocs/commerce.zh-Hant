@@ -1,9 +1,13 @@
 ---
 title: 管理同義字
 description: 瞭解如何管理現有的 [!DNL Live Search] 同義字。
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 648e5fec-acc5-4244-aa26-8120c62abe6a
+TQID: https://experienceleague.adobe.com/-B-ixlItkljDDCrau969-DPOvxPxhWM6NWRSG-TFcak
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: 222
 ht-degree: 0%
 
 ---
@@ -26,7 +30,7 @@ ht-degree: 0%
 
 ## 編輯同義字
 
-1. 尋找您要編輯的同義字，然後按一下&#x200B;**更多** (...)選項。
+1. 尋找您要編輯的同義字，然後按一下&#x200B;**更多** (...) 選項。
 
 1. 按一下&#x200B;**編輯**。
 關鍵字是清單中的第一個詞語，每個詞語以逗號分隔。 關鍵字和展開詞可以更新，但同義字的型別無法變更。
@@ -36,7 +40,7 @@ ht-degree: 0%
 
 ## 刪除同義字
 
-1. 在清單中尋找您要刪除的同義字，然後按一下&#x200B;**更多** (...)選項。
+1. 在清單中尋找您要刪除的同義字，然後按一下&#x200B;**更多** (...) 選項。
 1. 按一下&#x200B;**刪除**。
 1. 出現提示時，按一下&#x200B;**刪除同義字**&#x200B;以進行確認。
 

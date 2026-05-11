@@ -2,9 +2,14 @@
 title: '[!DNL Product Recommendations] Workspace'
 description: 瞭解如何設定、管理和監控產品推薦效能。
 exl-id: eaf1f0b2-9d9d-4069-8269-06f30166f788
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+TQID: https://experienceleague.adobe.com/1dnLBQhNwu1rP0FtnvUGMGpdbKveACW9SNMBIHYzmAg
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '874'
+source-wordcount: 919
 ht-degree: 0%
 
 ---
@@ -17,7 +22,7 @@ ht-degree: 0%
 >
 >建議單位是包含建議產品&#x200B;_專案_&#x200B;的Widget。
 
-![Recommendations工作區](assets/workspace.png)
+![建議工作區](assets/workspace.png)
 _建議Workspace_
 
 ## 資料收集
@@ -35,7 +40,7 @@ _建議Workspace_
 
 ## 設定範圍
 
-一開始所有建議設定的[範圍](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hant)設定為`Default Store View`。 如果您的Commerce安裝包含多個商店檢視，請將&#x200B;**範圍**&#x200B;設定為套用您建議的[商店檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hant#scope-settings)。
+一開始所有建議設定的[範圍](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)設定為`Default Store View`。 如果您的Commerce安裝包含多個商店檢視，請將&#x200B;**範圍**&#x200B;設定為套用您建議的[商店檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)。
 
 ## 設定量度日期範圍
 
@@ -66,7 +71,7 @@ _建議Workspace_
 
    表格會重新整理以僅包含所選欄。
 
-   ![Recommendations工作區](assets/workspace-select-columns.png)
+   ![建議工作區](assets/workspace-select-columns.png)
    _顯示/隱藏欄_
 
 ## 設定
@@ -75,7 +80,7 @@ _建議Workspace_
 
 - 若要變更建議行為資料的來源位置，請選擇不同的SaaS資料空間。
 
-- 若要設定新的SaaS資料空間，請按一下[編輯設定]。**&#x200B;** 若要深入瞭解，請參閱[設定](settings.md)。
+- 若要設定新的SaaS資料空間，請按一下[編輯設定]。**** 若要深入瞭解，請參閱[設定](settings.md)。
 
 ![Recommendations設定](assets/settings.png)
 _Recommendations設定_
@@ -84,10 +89,10 @@ _Recommendations設定_
 
 1. 在表格中，按一下您要檢查的建議。
 
-   ![Recommendations工作區](assets/recommendation-detail.png)
+   ![建議工作區](assets/recommendation-detail.png)
    _首頁轉換率詳細資料_
 
-1. 若要變更建議狀態，請按一下[啟用] **&#x200B;**&#x200B;或[停用] **&#x200B;**。
+1. 若要變更建議狀態，請按一下[啟用] ****&#x200B;或[停用] ****。
 
 ## 編輯建議
 

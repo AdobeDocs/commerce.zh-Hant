@@ -2,21 +2,26 @@
 title: 使用Commerce CLI同步摘要
 description: 瞭解如何使用命令列介面命令來管理Adobe Commerce SaaS服務 [!DNL data export extension] 的摘要和程式。
 exl-id: 1ebee09e-e647-4205-b90c-d0f9d2cac963
-source-git-commit: a05f716200fbf2af74b8488ae66053a56e7037a0
+TQID: https://experienceleague.adobe.com/Vi8hMKOBjTPkSQp0t8DCkjZsJ8s3Q5GSbSXyX2gmWRo
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: 583
 ht-degree: 0%
 
 ---
 
 # 使用Commerce CLI同步摘要
 
-`saas:resync`封裝中的`magento/saas-export`命令可讓您管理Adobe Commerce SaaS服務的資料同步處理。
+`magento/saas-export`封裝中的`saas:resync`命令可讓您管理Adobe Commerce SaaS服務的資料同步處理。
 
 Adobe不建議定期使用`saas:resync`命令。 使用指令的典型情況如下：
 
 - 初始同步
-- 變更[SaaS資料空間ID](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/config/services/saas)後，將資料同步處理至新的資料空間
+- 變更[SaaS資料空間ID](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas)後，將資料同步處理至新的資料空間
 - 疑難排解
 
 監視`var/log/saas-export.log`檔案中的同步作業。
@@ -181,7 +186,7 @@ bin/magento saas:resync --feed productAttributes --no-reindex
 
 ## `--id-type=ProductId`
 
-依照預設，當您使用包含`saas:resync feed`選項的`--by-ids`命令時所指定的實體是由產品SKU所指定。 使用`--id-type=ProductId`選項，依產品ID指定實體。
+依照預設，當您使用包含`--by-ids`選項的`saas:resync feed`命令時所指定的實體是由產品SKU所指定。 使用`--id-type=ProductId`選項，依產品ID指定實體。
 
 ```shell
 bin/magento saas:resync --feed products --by-ids='1,2,3' --id-type='productId'

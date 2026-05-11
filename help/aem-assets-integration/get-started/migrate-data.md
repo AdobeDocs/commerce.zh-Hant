@@ -3,9 +3,14 @@ title: 將媒體檔案移轉至AEM
 description: 將媒體檔案從Adobe Commerce或外部來源移轉至AEM Assets DAM。
 feature: CMS, Media, Integration
 exl-id: ccb13e90-8b18-4f1e-94ce-f0dacea2f617
-source-git-commit: ac880333814d9d9a45e658e2a637cd9634dbfb1f
+TQID: https://experienceleague.adobe.com/-fCE7lTivOuhLDzEMNexxGWLTkL52oo9p-sm54HxpQM
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: da3860b0-d637-47df-bef0-273751180266
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '867'
+source-wordcount: 1010
 ht-degree: 0%
 
 ---
@@ -19,10 +24,10 @@ Adobe Commerce和Adobe Experience Manager (AEM)皆提供內建功能，可簡化
 | 類別 | 需求 |
 |----------|-------------|
 | **系統需求** | <ul><li>已布建AEM Assets的AEM as a Cloud Service環境</li><li>足夠的儲存容量</li><li>大型檔案傳輸的網路頻寬</li></ul> |
-| **必要的存取權和許可權** | <ul><li>AEM Assets as a Cloud Service的管理員存取權</li><li>存取儲存媒體檔案的來源系統(Adobe Commerce或外部系統)</li><li>存取雲端儲存服務的適當許可權</li></ul> |
+| **必要的存取權和許可權** | <ul><li>AEM Assets as a Cloud Service的管理員存取權</li><li>存取儲存媒體檔案的來源系統（Adobe Commerce或外部系統）</li><li>存取雲端儲存服務的適當許可權</li></ul> |
 | **雲端儲存空間帳戶** | <ul><li>AWS S3或Azure Blob儲存帳戶</li><li>私人容器/貯體設定</li><li>驗證認證</li></ul> |
-| **Source內容** | <ul><li>可移轉的已整理媒體檔案</li><li>AEM Assets<a href="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/file-format-support#image-formats">支援的</a>格式影像和視訊檔案。</li><li>乾淨的重複資產</li></li> |
-| **中繼資料準備** | <ul><li>為AEM Assets資產設定的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/content-design/aem-asset-management/getting-started/aem-assets-configure-aem">Commerce中繼資料設定檔</a></li><li>每個資產的對應中繼資料值</li><li>CSV檔案編輯器(例如Microsoft Excel)</li></ul> |
+| **Source內容** | <ul><li>可移轉的已整理媒體檔案</li><li>AEM Assets</a>支援的<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/file-format-support#image-formats">格式影像和視訊檔案。</li><li>乾淨的重複資產</li></li> |
+| **中繼資料準備** | <ul><li>為AEM Assets資產設定的<a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/getting-started/aem-assets-configure-aem">Commerce中繼資料設定檔</a></li><li>每個資產的對應中繼資料值</li><li>CSV檔案編輯器（例如Microsoft Excel）</li></ul> |
 
 ## 移轉最佳實務
 
@@ -42,11 +47,11 @@ Adobe Commerce和Adobe Experience Manager (AEM)皆提供內建功能，可簡化
 
 ### 步驟1：從現有的資料來源匯出內容
 
-僅[!BADGE 個PaaS]{type=Informative tooltip="僅適用於雲端專案上的Adobe Commerce (Adobe管理的PaaS基礎結構)。"}
+僅[!BADGE 個PaaS]{type=Informative tooltip="僅適用於雲端專案上的Adobe Commerce （Adobe管理的PaaS基礎結構）。"}
 
-對Adobe Commerce商家而言，**遠端儲存模組**&#x200B;可方便媒體檔案匯入和匯出。 此模組可讓企業使用AWS S3等遠端儲存服務來儲存和管理媒體檔案。 若要設定Commerce執行個體的遠端儲存空間，請參閱[Commerce設定指南](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-aws-s3)中的&#x200B;**設定遠端儲存空間**。
+對Adobe Commerce商家而言，**遠端儲存模組**&#x200B;可方便媒體檔案匯入和匯出。 此模組可讓企業使用AWS S3等遠端儲存服務來儲存和管理媒體檔案。 若要設定Commerce執行個體的遠端儲存空間，請參閱&#x200B;**Commerce設定指南**&#x200B;中的[設定遠端儲存空間](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-aws-s3)。
 
-如果您將媒體檔案儲存在Adobe Commerce外部，請直接將它們上傳到AEM as a Cloud Service支援的[資料來源](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view#prerequisites)之一。
+如果您將媒體檔案儲存在Adobe Commerce外部，請直接將它們上傳到AEM as a Cloud Service支援的[資料來源](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/bulk-import-assets-view#prerequisites)之一。
 
 ### 步驟2：建立中繼資料對應的CSV檔案
 
@@ -57,7 +62,7 @@ Adobe Commerce和Adobe Experience Manager (AEM)皆提供內建功能，可簡化
 
 #### 使用CLI匯出中繼資料
 
-僅[!BADGE 個PaaS]{type=Informative tooltip="僅適用於雲端專案上的Adobe Commerce (Adobe管理的PaaS基礎結構)。"}
+僅[!BADGE 個PaaS]{type=Informative tooltip="僅適用於雲端專案上的Adobe Commerce （Adobe管理的PaaS基礎結構）。"}
 
 使用AEM Assets整合CLI命令，從儲存在Commerce專案中的產品媒體檔案自動產生中繼資料CSV檔案，其中包含影像URL、職位和角色。
 
@@ -81,7 +86,7 @@ Adobe Commerce和Adobe Experience Manager (AEM)皆提供內建功能，可簡化
    bin/magento aem:assets:export:csv /content/dam/commerce/
    ```
 
-   這會在`metadata.csv`目錄中建立`var/export`檔案，包含Commerce目錄中每個產品資產的影像URL、職位和角色。
+   這會在`var/export`目錄中建立`metadata.csv`檔案，包含Commerce目錄中每個產品資產的影像URL、職位和角色。
 
 #### 手動建立CSV
 
@@ -97,7 +102,7 @@ Adobe Commerce和Adobe Experience Manager (AEM)皆提供內建功能，可簡化
 
 +++CSV程式碼
 
-使用這個範例CSV程式碼，在程式碼編輯器或試算表應用程式(如Microsoft Excel)中建立檔案。
+使用這個範例CSV程式碼，在程式碼編輯器或試算表應用程式（如Microsoft Excel）中建立檔案。
 
 ```csv
 assetPath,commerce:positions{{Number: multi}},commerce:isCommerce{{String}},commerce:skus{{String: multi}},commerce:roles{{String: multi}}
@@ -113,7 +118,7 @@ assetPath,commerce:positions{{Number: multi}},commerce:isCommerce{{String}},comm
 
 以下是使用該工具的高層級概觀。
 
-1. [登入您的AEM Assets as a Cloud Service作者環境](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/onboarding/journey/aem-users#login-aem)。
+1. [登入您的AEM Assets as a Cloud Service作者環境](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/aem-users#login-aem)。
 
 1. 從Experience Manager工具檢視中，選取&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL Bulk Import]**。
 
@@ -132,12 +137,12 @@ assetPath,commerce:positions{{Number: multi}},commerce:isCommerce{{String}},comm
    * 選填。 關於自訂匯入組態的MIME型別、檔案大小和其他引數的資訊
    * 中繼資料對應CSV檔案的路徑，您已上傳至雲端儲存空間執行個體。
 
-   如需詳細步驟，請參閱[AEM Assets as a Cloud Service使用手冊](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/manage/add-assets#configure-bulk-ingestor-tool)中的&#x200B;*設定大量匯入工具*。
+   如需詳細步驟，請參閱&#x200B;*AEM Assets as a Cloud Service使用手冊*&#x200B;中的[設定大量匯入工具](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/add-assets#configure-bulk-ingestor-tool)。
 
 1. 儲存組態後，請使用大量匯入工具來測試及執行匯入作業。
 
 >[!MORELIKETHIS]
 >
-> [大量匯入工具影片示範](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/manage/add-assets#asset-bulk-ingestor)
-> [秘訣、最佳實務和限制](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/manage/add-assets#tips-limitations)
-> [使用API上傳或內嵌資產](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#asset-upload)
+> [大量匯入工具影片示範](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/add-assets#asset-bulk-ingestor)
+> [提示、最佳實務和限制](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/add-assets#tips-limitations)
+> [使用API上傳或內嵌資產](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#asset-upload)

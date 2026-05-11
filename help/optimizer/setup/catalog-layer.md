@@ -3,10 +3,15 @@ title: 目錄圖層
 description: 瞭解目錄圖層如何讓您修改產品資料而不變更原始來源資料，以便您可以安全地自訂並隨時還原變更。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
-source-git-commit: 00f5aaa4d08e686195096b3fee0dcca2d2ac56d8
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
+TQID: https://experienceleague.adobe.com/aeuD7Ev8AhkzIspV08x4ZTA9knMjZ3EObSZJpidY8QI
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1555'
+source-wordcount: 1555
 ht-degree: 0%
 
 ---
@@ -45,7 +50,7 @@ ht-degree: 0%
 
 ## AEM-Assets層
 
-當您啟用[產品視覺效果](product-visuals.md)時，AEM Assets整合會自動建立和管理專為AEM Assets內容使用的目錄層。 預設圖層名稱為`AEM-Assets`，不過您可以在AEM Assets整合[&#128279;](../../aem-assets-integration/get-started/configure-aco.md)的上線期間指定自訂名稱。
+當您啟用[產品視覺效果](product-visuals.md)時，AEM Assets整合會自動建立和管理專為AEM Assets內容使用的目錄層。 預設圖層名稱為`AEM-Assets`，不過您可以在AEM Assets整合](../../aem-assets-integration/get-started/configure-aco.md)的[上線期間指定自訂名稱。
 
 此圖層包含與AEM Assets同步的產品影像。 如同其他目錄圖層，它是透過[產品圖層API](https://developer.adobe.com/commerce/services/reference/rest/#tag/Product-Layers){target=_blank}填入。 Assets整合服務會將AEM資產中繼資料和傳送URL轉換為API格式，並在AEM Assets核准資產時自動傳送資料。
 
@@ -118,7 +123,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->若要進行大量圖層作業，請使用上述的資料擷取API方法[&#128279;](#add-a-catalog-layer-via-data-ingestion)。
+>若要進行大量圖層作業，請使用上述的資料擷取API方法[](#add-a-catalog-layer-via-data-ingestion)。
 
 **若要建立手動圖層：**
 
@@ -206,7 +211,7 @@ ht-degree: 0%
 
 1. 系統會根據新順序自動更新訂單編號。
 
-1. 按一下[儲存]以套用新的優先順序。**&#x200B;**
+1. 按一下[儲存]以套用新的優先順序。****
 
 >[!IMPORTANT]
 >

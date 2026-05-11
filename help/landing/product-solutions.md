@@ -5,16 +5,21 @@ feature: Paas, Saas
 recommendations: noDisplay, noCatalog
 hide: true
 exl-id: 5ba1fa65-391f-4af7-8c40-d8314ec9d3e5
-source-git-commit: 3ebee6c984a8f848e9094968be9faa667fc83250
+TQID: https://experienceleague.adobe.com/oZhTlFfL9a27vwbBhbSVS2NYptl13DDkYJZcuV0cM5U
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: 576
 ht-degree: 0%
 
 ---
 
 # Adobe Commerce產品解決方案
 
-Adobe提供數種解決方案來滿足電子商務業務的需求。 有關[Experience League](https://experienceleague.adobe.com/zh-hant/docs/commerce)和[Adobe Developer](https://developer.adobe.com/commerce/docs/)網站的Adobe Commerce檔案為客戶提供自助服務資源，以支援所有解決方案。 但是，如果沒有指引，導覽如此大量的內容可能具有挑戰性。
+Adobe提供數種解決方案來滿足電子商務業務的需求。 有關[Experience League](https://experienceleague.adobe.com/en/docs/commerce)和[Adobe Developer](https://developer.adobe.com/commerce/docs/)網站的Adobe Commerce檔案為客戶提供自助服務資源，以支援所有解決方案。 但是，如果沒有指引，導覽如此大量的內容可能具有挑戰性。
 
 >[!NOTE]
 >
@@ -44,7 +49,7 @@ Adobe提供數種解決方案來滿足電子商務業務的需求。 有關[Expe
 
 #### 僅[!BADGE 個PaaS]{type=Informative tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"}
 
-此徽章只會識別與Cloud[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/overview)和內部部署專案上的Adobe Commerce相關的檔案。 雲端上的Adobe Commerce專案在預先布建的環境中於雲端原生、完全受管理的平台即服務(PaaS)解決方案上託管，該解決方案具有Adobe Commerce的所有核心功能。 內部部署專案在客戶管理的基礎架構上託管。
+此徽章只會識別與Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)和內部部署專案上的[Adobe Commerce相關的檔案。 雲端上的Adobe Commerce專案在預先布建的環境中於雲端原生、完全受管理的平台即服務(PaaS)解決方案上託管，該解決方案具有Adobe Commerce的所有核心功能。 內部部署專案在客戶管理的基礎架構上託管。
 
 >[!NOTE]
 >

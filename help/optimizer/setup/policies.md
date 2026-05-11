@@ -2,11 +2,15 @@
 title: 原則
 description: 瞭解如何在 [!DNL Adobe Commerce Optimizer]中建立和管理原則。
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
 exl-id: 77f524f6-e283-44d2-9c79-9d40f686a7bf
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+TQID: https://experienceleague.adobe.com/hUwBKWEcFOlkC2WOwBtDDitnj-nu-kixJ9WuencZIe4
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: 917
 ht-degree: 0%
 
 ---
@@ -15,7 +19,7 @@ ht-degree: 0%
 
 原則是目錄檢視中所包含的資料存取篩選器，可進一步調整傳送至每個目錄檢視的資料。 原則可確保將正確的內容傳送至正確的目的地。 例如，銷售點實體商店、市集、廣告管道(Google、Facebook、Instagram)。
 
-原則是根據產品屬性（例如品牌、模型或零件類別），並用來量身打造目錄資料以符合特定業務需求。&#x200B;URL
+原則是根據產品屬性（例如品牌、模型或零件類別），並用來量身打造目錄資料以符合特定業務需求。 &#x200B;
 
 ## 篩選器
 
@@ -28,7 +32,7 @@ ht-degree: 0%
 | 部分 | 說明 | 範例 |
 |---|---|---|
 | **屬性** | 用於篩選的產品屬性。 | `part_category` |
-| **運運算元** | 套用至屬性的條件。 | `IN`，`EQUALS`，`CONTAINS` |
+| **運運算元** | 套用至屬性的條件。 | `IN`, `EQUALS`, `CONTAINS` |
 | **值來源** | 指定值是`STATIC`或`TRIGGER`。 | `STATIC` [進一步瞭解](#value-source-types) |
 | **值** | 符合條件的特定值。 | `brakes, suspension` |
 
@@ -63,7 +67,7 @@ ht-degree: 0%
 
 1. 按一下&#x200B;**[!UICONTROL Add Policy]**&#x200B;按鈕。
 
-   新頁面隨即開啟，供您填寫原則詳細資訊。&#x200B;URL
+   新頁面隨即開啟，供您填寫原則詳細資訊。 &#x200B;
 
 1. 輸入原則的名稱，例如「Celport零件類別」。
 
@@ -74,22 +78,22 @@ ht-degree: 0%
 1. 新增篩選器詳細資訊。 例如：
 
    1. **屬性** — 輸入目錄中的屬性。 例如，「part_category」。 此名稱必須與目錄中屬性的名稱完全相符。
-   1. **運運算元** — 選擇運運算元。 例如，**IN**。&#x200B;
-   1. **值Source** — 選取&#x200B;**STATIC**。&#x200B;
+   1. **運運算元** — 選擇運運算元。 例如，**IN**。 &#x200B;
+   1. **值Source** — 選取&#x200B;**靜態**。 &#x200B;
    1. **值** — 輸入您先前指定之屬性定義的值。 例如，輸入「制動器」來建立制動零件的篩選器。
    1. 若要儲存值，請按&#x200B;**Enter**。
 
       如果原則的設計是要依多個值篩選，請分別輸入每個值。
 
-1. 按一下篩選器詳細資料對話方塊中的&#x200B;**[!UICONTROL Save]**&#x200B;按鈕。&#x200B;URL
+1. 按一下篩選器詳細資料對話方塊中的&#x200B;**[!UICONTROL Save]**&#x200B;按鈕。 &#x200B;
 
-1. 按一下您建立的篩選器旁的動作點(...)，然後選取&#x200B;**啟用**。 從這裡，您也可以&#x200B;**編輯**、**停用**&#x200B;或&#x200B;**刪除**&#x200B;篩選器。
+1. 按一下動作點(...) 在您建立的篩選器旁邊，並選取&#x200B;**啟用**。 從這裡，您也可以&#x200B;**編輯**、**停用**&#x200B;或&#x200B;**刪除**&#x200B;篩選器。
 
    **狀態**&#x200B;欄會顯示綠色圖示和「已啟用」一字。
 
-1. 按一下&#x200B;**[!UICONTROL Save]**&#x200B;按鈕以儲存新原則&#x200B;。 如果按鈕未啟用，請按一下&#x200B;**新增原則**&#x200B;旁的鉛筆圖示，確定已新增原則名稱。
+1. 按一下&#x200B;**[!UICONTROL Save]**&#x200B;按鈕以儲存新原則。&#x200B;如果按鈕未啟用，請按一下&#x200B;**新原則**&#x200B;旁的鉛筆圖示，確定已新增原則名稱。
 
-1. 若要驗證您的新原則，請按一下「上一步」箭頭，返回原則清單。&#x200B;URL您將會看到列出您的新原則。
+1. 若要驗證您的新原則，請按一下「上一步」箭頭，返回原則清單。 您會&#x200B;看到新原則列出。
 
 ### 建立TRIGGER原則
 
@@ -97,7 +101,7 @@ ht-degree: 0%
 
 1. 按一下&#x200B;**[!UICONTROL Add Policy]**&#x200B;按鈕。
 
-   新頁面隨即開啟，供您填寫原則詳細資訊。&#x200B;URL
+   新頁面隨即開啟，供您填寫原則詳細資訊。 &#x200B;
 
 1. 輸入原則的名稱，例如「Celport零件類別」。
 
@@ -118,18 +122,18 @@ ht-degree: 0%
 1. 新增篩選器詳細資訊。 例如：
 
    1. **屬性** — 輸入目錄中的屬性。 例如，「part_category」。 此名稱必須與目錄中屬性的名稱完全相符。
-   1. **運運算元** — 選擇運運算元。 例如，**IN**。&#x200B;
-   1. **值Source** — 選取&#x200B;**TRIGGER**&#x200B;。
+   1. **運運算元** — 選擇運運算元。 例如，**IN**。 &#x200B;
+   1. **值Source** — 選取&#x200B;**觸發器**。 &#x200B;
    1. **值** — 輸入您先前建立的觸發程式名稱(**AC-Policy-Brand**)。
 
-1. 按一下篩選器詳細資料對話方塊中的&#x200B;**[!UICONTROL Save]**&#x200B;按鈕。&#x200B;URL
+1. 按一下篩選器詳細資料對話方塊中的&#x200B;**[!UICONTROL Save]**&#x200B;按鈕。 &#x200B;
 
-1. 按一下您建立的篩選器旁的動作點(...)，然後選取&#x200B;**啟用**。 從這裡，您也可以&#x200B;**編輯**、**停用**&#x200B;或&#x200B;**刪除**&#x200B;篩選器。
+1. 按一下動作點(...) 在您建立的篩選器旁邊，並選取&#x200B;**啟用**。 從這裡，您也可以&#x200B;**編輯**、**停用**&#x200B;或&#x200B;**刪除**&#x200B;篩選器。
 
    **狀態**&#x200B;欄會顯示綠色圖示和「已啟用」一字。
 
-1. 按一下&#x200B;**[!UICONTROL Save]**&#x200B;按鈕以儲存新原則&#x200B;。 如果按鈕未啟用，請按一下&#x200B;**新增原則**&#x200B;旁的鉛筆圖示，確定已新增原則名稱。
+1. 按一下&#x200B;**[!UICONTROL Save]**&#x200B;按鈕以儲存新原則。&#x200B;如果按鈕未啟用，請按一下&#x200B;**新原則**&#x200B;旁的鉛筆圖示，確定已新增原則名稱。
 
-1. 若要驗證您的新原則，請按一下「上一步」箭頭，返回原則清單。&#x200B;URL您將會看到列出您的新原則。
+1. 若要驗證您的新原則，請按一下「上一步」箭頭，返回原則清單。 您會&#x200B;看到新原則列出。
 
 依照這些步驟，將建立原則並準備好連結至目錄檢視以控制產品可見度。

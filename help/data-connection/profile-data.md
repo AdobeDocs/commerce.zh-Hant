@@ -3,9 +3,14 @@ title: 更新Commerce資料擷取的設定檔記錄結構描述
 description: 瞭解如何建立結構、資料集和資料串流，以收集Commerce設定檔記錄資料並傳送至Experience Platform。
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 25741837-f423-4204-8520-80b7cd9d44bd
+TQID: https://experienceleague.adobe.com/I8bptw1tNdzXfCC6hFtn7fuz-BIiALXG4g6lLhga6ec
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: 340
 ht-degree: 0%
 
 ---
@@ -14,24 +19,24 @@ ht-degree: 0%
 
 當您的購物者在您的Commerce網站中建立設定檔時，會建立設定檔記錄並擷取資料。 您必須先建立該設定檔記錄專屬的結構描述和資料集，才能將該設定檔資料串流至Experience Platform。
 
-1. [建立](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/ui/resources/schemas)結構描述，並將類別設定為&#x200B;**個別設定檔**。
+1. [建立](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas)結構描述，並將類別設定為&#x200B;**個別設定檔**。
 
-1. [新增](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/ui/resources/schemas)下列設定檔特定欄位群組：
+1. [新增](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas)下列設定檔特定欄位群組：
 
    - identityMap
    - 人口統計細節
    - 個人聯絡詳細資訊
    - 使用者帳戶詳細資訊
 
-1. [為設定檔啟用](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/ui/resources/schemas)結構描述。
+1. [為設定檔啟用](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas)結構描述。
 
    為設定檔啟用結構描述時，從此結構描述建立的任何資料集都會參與Real-Time CDP，其會合併來自不同來源的資料，以建構每個客戶的完整檢視。
 
-1. [根據您建立或更新的結構描述建立資料集](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform)。
+1. [根據您建立或更新的結構描述建立資料集](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform)。
 
    資料集是資料集合的儲存和管理結構，通常是包含結構（欄）和欄位（列）的表格。 資料集也包含中繼資料，可說明其儲存資料的各個層面。
 
-1. 使用以下值在Experience Platform中建立[自訂名稱空間](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/features/namespaces#create-namespaces)：
+1. 使用以下值在Experience Platform中建立[自訂名稱空間](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces#create-namespaces)：
 
    - **顯示名稱**： _Commerce客戶ID_
    - **身分識別符號**： _CustomerId_

@@ -2,9 +2,14 @@
 title: 新增規則
 description: 瞭解如何建立搜尋銷售規則。
 exl-id: 7175ccf7-d838-43b0-a176-957e7db040e0
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+TQID: https://experienceleague.adobe.com/QnJ-q-Y-ccQ7HKEt2RgPYQFeWcBnhjwSDOtKjlF7Rp0
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '2067'
+source-wordcount: 2085
 ht-degree: 0%
 
 ---
@@ -16,7 +21,7 @@ ht-degree: 0%
 ## 新增規則
 
 1. 在Admin中，前往&#x200B;**行銷** > SEO與搜尋> **[!DNL Live Search]**。
-1. 設定&#x200B;**範圍**&#x200B;以識別規則套用的[存放區檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hant#scope-settings)。
+1. 設定&#x200B;**範圍**&#x200B;以識別規則套用的[存放區檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)。
 1. 按一下&#x200B;**搜尋銷售**&#x200B;工作區。
 1. 按一下&#x200B;**新增規則**&#x200B;以啟動規則編輯器。
 
@@ -46,7 +51,7 @@ ht-degree: 0%
    * 搜尋查詢開頭為 — 輸入必須在購物者查詢開頭的字元或文字字串。
    * 搜尋查詢結尾為 — 輸入必須在購物者查詢結尾的字元或文字字串。
 
-   結果會立即顯示在&#x200B;*測試您的規則*&#x200B;窗格中，並依優先順序編號。 您可以使用上方的&#x200B;*每列*&#x200B;結果    可變更每列中的產品數量。
+   結果會立即顯示在&#x200B;*測試您的規則*&#x200B;窗格中，並依優先順序編號。 您可以使用右上角的&#x200B;*每列結果*&#x200B;滑桿來變更每列的產品數目。
 
    ![規則 — 簡單](assets/rule-simple-test.png)
 
@@ -57,7 +62,7 @@ ht-degree: 0%
 
 ### 多個條件
 
-1. 若要建置包含多個條件的規則，請按一下[新增條件]。**&#x200B;**
+1. 若要建置包含多個條件的規則，請按一下[新增條件]。****
 一個規則最多可以有十個條件。 結合兩個條件的邏輯運運算元是以目前的*Match*&#x200B;設定為基礎。 依預設，*符合*&#x200B;為`All`，邏輯運運算元為`AND`。
 
 1. 選取第二個條件並輸入必要的查詢文字。
@@ -73,7 +78,7 @@ ht-degree: 0%
 
    ![規則 — 符合](assets/rules-match.png)
 
-1. 若要新增其他條件，請按一下[新增條件] **&#x200B;**&#x200B;並重複此程式。
+1. 若要新增其他條件，請按一下[新增條件] ****&#x200B;並重複此程式。
 
 ## 智慧型排名
 

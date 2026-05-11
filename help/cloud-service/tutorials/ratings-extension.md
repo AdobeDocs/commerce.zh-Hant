@@ -7,16 +7,22 @@ feature-set: Commerce
 role: Developer
 level: Intermediate
 type: Tutorial
-source-git-commit: 33ba97fd6766c9d11baea74170a7119d72e06379
+TQID: https://experienceleague.adobe.com/FozTiUWpL6Ab2eqbbf3nhL-faFHdwBIFOgAkvGe5jXQ
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1701'
+source-wordcount: 1738
 ht-degree: 0%
 
 ---
 
 # 評等擴充功能教學課程
 
-本教學課程會引導您使用[!DNL Adobe Commerce as a Cloud Service]和AI輔助開發工具，為[!DNL Adobe App Builder]建立產品評等延伸。
+本教學課程會引導您使用[!DNL Adobe App Builder]和AI輔助開發工具，為[!DNL Adobe Commerce as a Cloud Service]建立產品評等延伸。
 
 開始之前，請先完成[必要條件](./tutorial-prerequisites.md)。
 
@@ -171,7 +177,7 @@ curl -s "https://<your-site>.adobeioruntime.net/api/v1/web/ratings/ratings?sku=T
 
 ### 整合Edge Delivery Services
 
-若要整合評等API與由[!DNL Adobe Commerce]提供支援的[!DNL Edge Delivery Services]店面，請要求代理程式建立具有評等API需求的服務合約：
+若要整合評等API與由[!DNL Edge Delivery Services]提供支援的[!DNL Adobe Commerce]店面，請要求代理程式建立具有評等API需求的服務合約：
 
 ```shell-session
 Create a service contract for the ratings api that I can pass on to the storefront agent. Name it RATINGS_API_CONTRACT.md
@@ -204,7 +210,7 @@ cp RATINGS_API_CONTRACT.md ../storefront
 在開始店面整合之前，請確認您具備下列條件：
 
 * 連線到您[!DNL Commerce]執行個體的店面專案
-* 使用CLI安裝的Commerce storefront AI工具[&#128279;](./tutorial-prerequisites.md#install-the-storefront-ai-tools)
+* 使用CLI安裝的Commerce storefront AI工具[](./tutorial-prerequisites.md#install-the-storefront-ai-tools)
 
 ### 設定店面工作區
 
@@ -303,7 +309,7 @@ cp RATINGS_API_CONTRACT.md ../storefront
    您應該會在開發環境和瀏覽器中看到下列變更：
 
    * 系統會自動建立產品評等元件。
-   * 元件已使用[插入式插槽](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots?lang=zh-Hant)整合到PDP中，或作為獨立區塊，視選擇的架構而定。
+   * 元件已使用[插入式插槽](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots)整合到PDP中，或作為獨立區塊，視選擇的架構而定。
    * 根據API的評等值，星級會以適當的填色比例顯示。
 
    ![產品詳細資料頁面，顯示整合在產品標題](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}下方的星級評等

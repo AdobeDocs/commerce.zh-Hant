@@ -3,11 +3,15 @@ title: 資料同步
 description: 檢閱正在從Commerce資料來源同步到 [!DNL Adobe Commerce Optimizer]的目錄資料。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
 exl-id: c0f4664c-6afc-4762-856b-5e26a865d3a2
-source-git-commit: 2cb17424a0f063a585ddd861b7057d9851467fbc
+TQID: https://experienceleague.adobe.com/ZTMFkch-YNS-CUgCdadmg1kemA8ORXQ7KGCEkI7d-Yw
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: 483
 ht-degree: 0%
 
 ---
@@ -54,7 +58,7 @@ ht-degree: 0%
 
 ## 監視資料同步狀態
 
-對於透過Commerce Optimizer Connector使用Adobe Commerce作為上游資料來源的專案，您可以監視資料匯出程式，並從Commerce Admin的[資料摘要同步狀態頁面](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)啟動重新同步作業。
+對於透過Commerce Optimizer Connector使用Adobe Commerce作為上游資料來源的專案，您可以監視資料匯出程式，並從Commerce Admin的[資料摘要同步狀態頁面](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)啟動重新同步作業。
 
 ## 相關主題
 

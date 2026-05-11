@@ -1,9 +1,15 @@
 ---
 title: 多面向Workspace
 description: 瞭解如何在 [!DNL Live Search] 多面向工作區中運作。
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 7108e41b-44a7-4943-b20f-6ee544d099e9
+TQID: https://experienceleague.adobe.com/LsVM4inUqk2EozfVN--FH1Ukggt8A8QBIQXW-SmnxZs
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: 229
 ht-degree: 0%
 
 ---
@@ -16,7 +22,7 @@ ht-degree: 0%
 
 ## 設定範圍
 
-如果您的Adobe Commerce安裝包含多個存放區檢視，請將&#x200B;**範圍**&#x200B;設定為您的Facet設定套用的[存放區檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hant#scope-settings)。
+如果您的Adobe Commerce安裝包含多個存放區檢視，請將&#x200B;**範圍**&#x200B;設定為您的Facet設定套用的[存放區檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)。
 
 ## 篩選清單
 
@@ -45,4 +51,4 @@ ht-degree: 0%
 | 控制 | 說明 |
 |--- |--- |
 | 新增多面向 | 開啟[面向編輯器](facets-add.md)。 |
-| 篩選依據 | 決定出現在清單中的Facet[&#128279;](facets-type.md)的型別。 選項：全部、固定、動態 |
+| 篩選依據 | 決定出現在清單中的Facet](facets-type.md)的[型別。 選項：全部、固定、動態 |

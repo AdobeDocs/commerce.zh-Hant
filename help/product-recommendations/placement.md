@@ -2,9 +2,14 @@
 title: 位置與標籤
 description: 瞭解您可以在網站的各個頁面上放置建議，以及針對每種建議型別的常用標籤提供建議。
 exl-id: 0576add8-50dd-4aac-91f5-38b7d85b751f
-source-git-commit: f67010c80c3dedcf3c431cb7dc6e4e7b0cdbde09
+TQID: https://experienceleague.adobe.com/Bu5SbZHmj-PfJ3-KnVTu6sc4emkmRJeWTusmQHYz1aU
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: 500
 ht-degree: 0%
 
 ---
@@ -59,4 +64,4 @@ ht-degree: 0%
 | 產品詳細資料 | 主要內容底部（預設） | 檢視次數最多<br>購買次數最多<br>加入購物車次數最多<br>檢視此專案、檢視專案<br>檢視此專案、購買專案<br>購買此專案、購買專案<br>類似專案<br>趨勢<br>視覺相似度 |
 | 購物車 | 主要內容底部（預設） | 檢視次數最多<br>購買次數最多<br>加入購物車次數最多<br>檢視此專案，檢視的專案<br>檢視此專案，購買此專案<br>購買此專案，購買其他<br>類似專案<br>趨勢分析 |
 | 確認 | 主要內容底部（預設） | 檢視次數最多<br>購買次數最多<br>加入購物車次數最多<br>檢視此專案，檢視的專案<br>檢視此專案，購買此專案<br>購買此專案，購買其他<br>類似專案<br>趨勢分析 |
-| 頁面產生器 | [拖放](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html?lang=zh-Hant)以定位內容型別 | 檢視次數最多<br>購買次數最多<br>加入購物車次數最多<br>為您推薦<br>趨勢分析 |
+| 頁面產生器 | [拖放](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)以定位內容型別 | 檢視次數最多<br>購買次數最多<br>加入購物車次數最多<br>為您推薦<br>趨勢分析 |

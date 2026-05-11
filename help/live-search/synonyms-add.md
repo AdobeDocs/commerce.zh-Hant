@@ -2,9 +2,13 @@
 title: 新增同義字
 description: 新增 [!DNL Live Search] 同義字以改善搜尋要求的回應。
 exl-id: 2dc535ea-35a3-45a8-8171-901005223cc9
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+TQID: https://experienceleague.adobe.com/eGBxKnn3lLD5VQel52jyrt7EB8rcrhGOi-DDwhW7wzc
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5520579-b31f-4df7-9281-f0d9f91e2edc
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: 410
 ht-degree: 0%
 
 ---
@@ -18,7 +22,7 @@ ht-degree: 0%
 ## 步驟1：新增同義字
 
 1. 在Admin中，前往&#x200B;**行銷** > SEO與搜尋> **[!DNL Live Search]**。
-1. 針對多個存放區，將&#x200B;**領域**&#x200B;設定為套用同義字設定的[存放區檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hant#scope-settings)。
+1. 針對多個存放區，將&#x200B;**領域**&#x200B;設定為套用同義字設定的[存放區檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)。
 1. 按一下&#x200B;**同義字**&#x200B;索引標籤。
 1. 按一下&#x200B;**新增同義字**&#x200B;按鈕。
 
@@ -33,7 +37,7 @@ ht-degree: 0%
    ![新增雙向同義字](assets/synonym-add-two-way.png)
 
 1. 輸入要比對的&#x200B;**關鍵字**&#x200B;詞語或片語。
-1. 輸入您想要新增為關鍵字同義字的&#x200B;**擴增**&#x200B;字詞。 請使用逗號分隔多個詞語。
+1. 輸入您想要新增為關鍵字同義字的&#x200B;**擴增**字詞。 請使用逗號分隔多個詞語。
 在此範例中，要比對的關鍵字是「pants」，而擴充辭彙集是「trousers， slacks」。
 
    ![雙向同義字範例](assets/synonym-add-two-way-example.png)

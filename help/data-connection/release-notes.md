@@ -3,10 +3,15 @@ title: 發行說明
 description: Adobe Commerce中 [!DNL Data Connection] 擴充功能的最新發行資訊。
 feature: Personalization, Integration, Release Notes
 exl-id: f3b92632-947d-40cd-89b7-24ed0680be51
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+TQID: https://experienceleague.adobe.com/kjXCkifzTRTjVJZuy3fb6VPhQkblOaT7-GxwJP4Dv3Y
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1307'
-ht-degree: 1%
+source-wordcount: 1350
+ht-degree: 2%
 
 ---
 
@@ -24,9 +29,9 @@ ht-degree: 1%
 
 有關[!DNL Data Connection]擴充功能所使用的擴充功能的功能變更和修正，請參閱&#x200B;**支援的服務更新**。
 
-請參閱[即將發行的版本](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/planning/schedule)，瞭解發行排程和支援。
+請參閱[即將發行的版本](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule)，瞭解發行排程和支援。
 
-請參閱開發人員檔案以[瞭解哪些Commerce版本支援此模組](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/product-availability)。
+請參閱開發人員檔案以[瞭解哪些Commerce版本支援此模組](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)。
 
 ## 支援的服務更新
 
@@ -60,7 +65,7 @@ _2023年10月10日_
 ![修正](../assets/fix.svg) — 修正重新整理快取後，貨幣設定變更未反映在事件中的問題。
 ![修正](../assets/fix.svg) — 修正啟用非同步下單時，未顯示訂單確認訊息的錯誤。
 ![新](../assets/new.svg) — 已將資料新增至[類別檢視]頁面上簡單產品的`addToRequisitionList`事件。
-![修正](../assets/fix.svg) — 修正從訂購確認頁面新增產品時，`selectedOptions`事件中`addToRequisitionList`資料的問題。
+![修正](../assets/fix.svg) — 修正從訂購確認頁面新增產品時，`addToRequisitionList`事件中`selectedOptions`資料的問題。
 ![新增](../assets/new.svg) — 當產品從類別檢視頁面新增至請購單清單時，已將產品資料新增至`addToRequisitionList`事件。
 ![New](../assets/new.svg) — 當可設定的產品從「產品檢視」頁面新增至請購單清單時，已新增`addToRequisitionList`事件。
 ![新](../assets/new.svg) — 當產品數量增加和/或從請購單清單中減少時，新增`addToRequisitionList`和`removeFromRequisitionList`個事件。

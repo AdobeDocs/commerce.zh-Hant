@@ -3,16 +3,21 @@ title: 預設自動比對
 description: 瞭解預設的自動比對規則如何實現Adobe Commerce與AEM Assets整合之間的無縫同步，確保資產自動連結到正確的銷售實體。
 feature: CMS, Media, Integration
 exl-id: 8a18639b-f508-456e-8d22-18e3e0fdd515
-source-git-commit: a0eaaf0de53962b37c7b52f3e7e13aac4c62e372
+TQID: https://experienceleague.adobe.com/z7vpuhsVJnKohiU-bKNrcGnoIQ5WAwcwiccYlvawN0U
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: 317
 ht-degree: 0%
 
 ---
 
 # 預設自動比對
 
-Commerce的AEM Assets整合提供以&#x200B;**[!UICONTROL Match by product SKU]** AEM Assets **中繼資料組態為基礎的預設自動比對機制(**)。 此規則可讓您在&#x200B;**Adobe Commerce**&#x200B;與&#x200B;**AEM Assets**&#x200B;之間無縫同步，確保資產會自動連結至正確的銷售實體。
+Commerce的AEM Assets整合提供以&#x200B;**AEM Assets**&#x200B;中繼資料組態為基礎的預設自動比對機制(**[!UICONTROL Match by product SKU]**)。 此規則可讓您在&#x200B;**Adobe Commerce**&#x200B;與&#x200B;**AEM Assets**&#x200B;之間無縫同步，確保資產會自動連結至正確的銷售實體。
 
 ## 設定自動比對機制
 
@@ -46,7 +51,7 @@ Commerce的AEM Assets整合提供以&#x200B;**[!UICONTROL Match by product SKU]*
    >
    > 如果資產用於多個產品，請為每個關聯的SKU設定中繼資料。
 
-1. 在`Basic`索引標籤中，將&#x200B;_[!UICONTROL Review Status]_&#x200B;欄位的預設值設定為`approved`。
+1. 在`Basic`索引標籤中，將&#x200B;_[!UICONTROL Review Status]_欄位的預設值設定為`approved`。
 
    ![範例中繼資料](../assets/metadata-review-status.png){width="600" zoomable="yes"}
 

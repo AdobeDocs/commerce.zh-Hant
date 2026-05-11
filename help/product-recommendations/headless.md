@@ -2,20 +2,25 @@
 title: Headless
 description: 瞭解如何將 [!DNL Product Recommendations] 整合到Headless店面。
 exl-id: c40dac31-f87e-402a-ba50-e8aa4c1d66aa
-source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
+TQID: https://experienceleague.adobe.com/J3qXs-SWuDCz7pQwzGm0VcOOFoU1QM2M4qwsTxxPwE8
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: 372
 ht-degree: 0%
 
 ---
 
 # Headless
 
-您可以使用[!DNL Product Recommendations]PWA Studio[或自訂前端技術（例如React或Vue JS）將](https://developer.adobe.com/commerce/pwa-studio/)整合到Headless店面。
+您可以使用[PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)或自訂前端技術（例如React或Vue JS）將[!DNL Product Recommendations]整合到Headless店面。
 
 自訂和Headless整合經銷商應參考這些Luma和PWA指示，作為建議的實作。 有許多方式可將產品建議實作到Headless解決方案中，本檔案未涵蓋所有案例。 整合經銷商必須為其實作提供事件、設計和測試服務。
 
-[!DNL Product Recommendations]需要[行為和目錄資料](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/development-overview.html?lang=zh-Hant)才能運作。 Headless實作中的目錄資料同步程式維持不變，但行為資料收集需要變更。
+[!DNL Product Recommendations]需要[行為和目錄資料](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/development-overview.html)才能運作。 Headless實作中的目錄資料同步程式維持不變，但行為資料收集需要變更。
 
 >[!NOTE]
 >

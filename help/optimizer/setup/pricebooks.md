@@ -3,11 +3,15 @@ title: 價格手冊
 description: 瞭解如何在 [!DNL Adobe Commerce Optimizer]中管理價格簿。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
 exl-id: a1849830-3d0e-4df9-ab73-380659c3f9dc
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+TQID: https://experienceleague.adobe.com/-vL79MMePcUdhE-gPwjFJZStZUtNLKAUxpePm4Fvmfk
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: 384
 ht-degree: 0%
 
 ---
@@ -30,7 +34,7 @@ ht-degree: 0%
 
 1. 移至&#x200B;_存放區設定_，然後按一下&#x200B;**[!UICONTROL Catalog views]**。
 
-1. 按一下&#x200B;**[!UICONTROL Create catalog view]**&#x200B;。
+1. 按一下&#x200B;**[!UICONTROL Create catalog view]**。 &#x200B;
 
    在設定型錄檢視詳細資訊中，選取其中一個可用的價格簿。
 

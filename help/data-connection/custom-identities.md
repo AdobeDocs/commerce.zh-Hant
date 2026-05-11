@@ -3,13 +3,18 @@ title: 將自訂屬性新增到設定檔
 description: 瞭解如何將自訂屬性新增到客戶設定檔。
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: 5489910382edc70eea5d7c0ca94da41c653b577d
+exl-id: ad786572-9158-429a-b4dd-5f15efc0f624
+TQID: https://experienceleague.adobe.com/yCA2EjsIzzx7AEOQubLMW4Ib3v8Bbad1Wsq3RsgvCXM
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11id: df401a2a-327d-468c-a5e4-b7b7ccd071a0id: e0eb8757-182f-49f3-94a4-1587d16f5094id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: 473
 ht-degree: 0%
 
 ---
-
 
 # 將自訂屬性新增到設定檔
 
@@ -37,7 +42,7 @@ ht-degree: 0%
 ## 步驟1：設定Experience Platform綱要
 
 1. 登入Adobe Experience Platform並選取您的Commerce結構描述。
-1. [在根層級新增自訂身分識別欄位](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/ui/resources/schemas?lang=en#custom-fields-for-standard-groups)：
+1. [在根層級新增自訂身分識別欄位](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas?lang=en#custom-fields-for-standard-groups)：
    - `hashedPID` （字串） — 主要身分雜湊
    - `hashedSID` （字串） — 次要身分雜湊
    - `primaryID` （字串） — 主要身分欄位名稱

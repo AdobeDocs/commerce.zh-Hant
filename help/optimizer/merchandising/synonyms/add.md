@@ -1,11 +1,15 @@
 ---
 title: 建立和管理同義字
 description: 瞭解如何建立和管理 [!DNL Adobe Commerce Optimizer]的同義字。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
 exl-id: d2982a0b-e7df-44e6-b3c9-9b4328635d38
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+TQID: https://experienceleague.adobe.com/YtlgC9okQYDboZg-A0bcnLUVFRH4IVEeBLMeshGad4s
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: b5520579-b31f-4df7-9281-f0d9f91e2edcid: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: 606
 ht-degree: 0%
 
 ---
@@ -28,7 +32,7 @@ ht-degree: 0%
 ### 雙向同義字
 
 1. 輸入要比對的&#x200B;**關鍵字**&#x200B;詞語或片語。
-1. 輸入您想要新增為關鍵字同義字的&#x200B;**擴增**&#x200B;字詞。 請使用逗號分隔多個詞語。
+1. 輸入您想要新增為關鍵字同義字的&#x200B;**擴增**字詞。 請使用逗號分隔多個詞語。
 在此範例中，要比對的關鍵字是「pants」，而擴充辭彙集是「trousers， slacks」。
 
    ![雙向同義字](../../assets/synonym-add-two-way.png)
@@ -86,7 +90,7 @@ ht-degree: 0%
 
 ## 編輯同義字
 
-1. 尋找您要編輯的同義字，然後按一下&#x200B;**更多** (...)選項。
+1. 尋找您要編輯的同義字，然後按一下&#x200B;**更多** (...) 選項。
 
 1. 按一下&#x200B;**編輯**。
 關鍵字是清單中的第一個詞語，每個詞語以逗號分隔。 關鍵字和展開詞可以更新，但同義字的型別無法變更。
@@ -96,7 +100,7 @@ ht-degree: 0%
 
 ## 刪除同義字
 
-1. 在清單中尋找您要刪除的同義字，然後按一下&#x200B;**更多** (...)選項。
+1. 在清單中尋找您要刪除的同義字，然後按一下&#x200B;**更多** (...) 選項。
 1. 按一下&#x200B;**刪除**。
 1. 出現提示時，按一下&#x200B;**刪除同義字**&#x200B;以進行確認。
 
