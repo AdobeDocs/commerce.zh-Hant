@@ -5,9 +5,25 @@ feature: Services, Saas
 role: Admin, User
 exl-id: 1aa6ba8b-be39-496e-b83d-a4a7db9f5dd8
 badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
-source-git-commit: 6e107238b8eae31f35f43524aee5690c0fe0e03d
+TQID: https://experienceleague.adobe.com/pWbJSCrV9CcdJXNTkuXyCxh73eUA7nYt1okexwtK7II
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2:
+  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1564'
+source-wordcount: 1662
 ht-degree: 0%
 
 ---
@@ -20,7 +36,7 @@ ht-degree: 0%
 
 ## 可用的服務 {#availableservices}
 
-以下列出您可以透過[!DNL Commerce]存取的[!DNL Commerce Services Connector]功能：
+以下列出您可以透過[!DNL Commerce Services Connector]存取的[!DNL Commerce]功能：
 
 | 服務 | 可用性 |
 | --- | --- |
@@ -40,7 +56,7 @@ ht-degree: 0%
 
 ## 認證 {#apikey}
 
-從[!DNL Commerce]授權擁有者[的](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/start/onboarding)帳戶產生生產和沙箱API金鑰。 Commerce帳戶由唯一的[!DNL Commerce] ID (MageID)識別。 只要帳戶處於良好狀態，商家組織的授權擁有者就能為產品推薦或Live Search等服務產生API金鑰。
+從[授權擁有者](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding)的[!DNL Commerce]帳戶產生生產和沙箱API金鑰。 Commerce帳戶由唯一的[!DNL Commerce] ID (MageID)識別。 只要帳戶處於良好狀態，商家組織的授權擁有者就能為產品推薦或Live Search等服務產生API金鑰。
 
 這些金鑰可在「需知」基礎上與系統整合商或開發團隊分享，後者代表授權持有人管理專案和環境。 已獲授權擁有者授予[!DNL Shared Access]的開發人員，無法代表授權擁有者產生金鑰，即使商家組織出現在他們帳戶的[!DNL Switch Accounts]下拉式清單中。
 
@@ -52,7 +68,7 @@ ht-degree: 0%
 
 ### 產生生產和沙箱API金鑰 {#genapikey}
 
-1. 在[!DNL Commerce]https://account.magento.com[登入您的](https://account.magento.com/customer/account/login){:target="_blank"}帳戶。
+1. 在[https://account.magento.com](https://account.magento.com/customer/account/login){:target="_blank"}登入您的[!DNL Commerce]帳戶。
 
 1. 在&#x200B;**Magento**&#x200B;標籤下，選取側邊欄上的&#x200B;**API入口網站**。
 
@@ -80,7 +96,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
-> 只會在您的生產&#x200B;**安裝中使用您的**&#x200B;生產SaaS資料空間[!DNL Commerce]。 在非生產環境中使用它可以混合測試和即時資料（例如，中繼URL或測試目錄資料）。 如果發生這種狀況，[請提交支援要求](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/overview)以要求清除資料。
+> 只會在您的生產[!DNL Commerce]安裝中使用您的&#x200B;**生產SaaS資料空間**。 在非生產環境中使用它可以混合測試和即時資料（例如，中繼URL或測試目錄資料）。 如果發生這種狀況，[請提交支援要求](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/overview)以要求清除資料。
 
 如果您在Admin中找不到Live Search設定欄位，請確認您為選取的資料空間輸入了正確的API金鑰組（生產資料空間使用生產金鑰，測試資料空間使用沙箱金鑰）。 如果您設定的索引鍵不正確，在該Adobe Commerce環境中將無法使用SaaS服務（例如Live Search）。
 
@@ -118,7 +134,7 @@ ht-degree: 0%
 
 1. 在&#x200B;_管理員_&#x200B;側邊欄上，前往&#x200B;**系統** >服務> **Commerce服務聯結器**。
 
-   如果您沒有看到&#x200B;**[!UICONTROL Commerce Services Connector]**&#x200B;區段，請為所需的[!DNL Commerce]服務[[!DNL Commerce] 安裝](#availableservices)模組，並確定已安裝`magento/module-services-id`套件。
+   如果您沒有看到&#x200B;**[!UICONTROL Commerce Services Connector]**&#x200B;區段，請為所需的[[!DNL Commerce] 服務](#availableservices)安裝[!DNL Commerce]模組，並確定已安裝`magento/module-services-id`套件。
 
 1. 在&#x200B;_[!UICONTROL Sandbox API Keys]_&#x200B;和_[!UICONTROL Production API Keys]_&#x200B;區段中，貼上您的金鑰值。
 
@@ -137,7 +153,7 @@ ht-degree: 0%
 
 1. 選取&#x200B;**資料空間**，以用於您[!DNL Commerce]存放區的目前組態。
 
-   如果您有要與Commerce服務整合的個別執行個體，請[提交支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)，為每個額外的執行個體請求新的SaaS專案。 支援人員建立SaaS專案後，請使用相同的API金鑰&#x200B;**為執行個體**&#x200B;設定Commerce Services聯結器，並選取新的SaaS專案和資料空間。
+   如果您有要與Commerce服務整合的個別執行個體，請[提交支援票證](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)，為每個額外的執行個體請求新的SaaS專案。 支援人員建立SaaS專案後，請使用相同的API金鑰&#x200B;**為執行個體**&#x200B;設定Commerce Services聯結器，並選取新的SaaS專案和資料空間。
 
 >[!WARNING]
 >
@@ -151,4 +167,4 @@ ht-degree: 0%
 
 ## SaaS資料匯出
 
-當您的[!DNL Commerce]執行個體成功連線至[!DNL Commerce Services]時，SaaS資料匯出程式會將Commerce資料從您的[!DNL Commerce]伺服器匯出至[!DNL Commerce SaaS Services]，以便同步處理至連線的Commerce服務。 在Admin中，您可以使用[資料管理儀表板](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)來檢查同步處理狀態。 如需詳細資訊，請參閱[SaaS資料匯出指南](../data-export/overview.md)。
+當您的[!DNL Commerce]執行個體成功連線至[!DNL Commerce Services]時，SaaS資料匯出程式會將Commerce資料從您的[!DNL Commerce]伺服器匯出至[!DNL Commerce SaaS Services]，以便同步處理至連線的Commerce服務。 在Admin中，您可以使用[資料管理儀表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)來檢查同步處理狀態。 如需詳細資訊，請參閱[SaaS資料匯出指南](../data-export/overview.md)。

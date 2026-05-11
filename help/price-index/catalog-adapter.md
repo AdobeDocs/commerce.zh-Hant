@@ -4,9 +4,17 @@ description: 使用目錄配接器從Commerce Services呈現價格
 seo-title: Catalog Adapter Extension
 seo-description: Using Catalog Adapter to render prices from Commerce Services
 exl-id: e42101fa-9c30-482c-a649-44dc35376abb
-source-git-commit: 74f6cb64724194651c4eeb538c0c69142b01ac5d
+TQID: https://experienceleague.adobe.com/WnL4dJbZV0acHT5kpEAOyTVjhzW23RjHbQFVdDl4HDk
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: 758
 ht-degree: 0%
 
 ---
@@ -56,7 +64,7 @@ Catalog Adapter擴充功能是Composer中繼套件，可安裝下列模組：
 
    >[!NOTE]
    >
-   >如需有關在本機管理Commerce專案環境的資訊，請參閱《雲端基礎結構使用手冊》中[Adobe Commerce的](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/develop/cli-branches)使用CLI管理分支&#x200B;__。
+   >如需有關在本機管理Commerce專案環境的資訊，請參閱《雲端基礎結構使用手冊》中&#x200B;_Adobe Commerce的[使用CLI管理分支](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/develop/cli-branches)_。
 
 1. 檢視環境分支，以使用Adobe Commerce Cloud CLI進行更新。
 
@@ -166,4 +174,4 @@ composer require magento/module-price-indexer-disabler
 - 具有已安裝所需服務（即時搜尋、產品推薦、目錄服務）的Headless Commerce執行個體的商家
 - 不依賴預設的Adobe Commerce產品價格索引器
 
-1. 從`magento/module-price-indexer-disabler`封裝安裝[!DNL Catalog Adapter]模組。
+1. 從[!DNL Catalog Adapter]封裝安裝`magento/module-price-indexer-disabler`模組。

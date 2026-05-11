@@ -2,13 +2,24 @@
 title: 大量資料移轉工具
 description: 瞭解如何使用大量資料移轉工具，將資料從雲端例項上的現有Adobe Commerce移轉至 [!DNL Adobe Commerce as a Cloud Service]。
 feature: Cloud
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
 role: Developer
 level: Intermediate
 exl-id: 81522de9-df54-4651-b8ed-58956376af86
-source-git-commit: 66bb62e1288f034fa246056dbec43c0104803451
+TQID: https://experienceleague.adobe.com/4Zx1cFtsyfuy21Af6Ov9pU7ndMW35NyCwlcdlKNTk6Q
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: 756
 ht-degree: 0%
 
 ---
@@ -65,7 +76,7 @@ ht-degree: 0%
       - IMS URL — 基礎URL。 例如，`https://ims-na1.adobelogin.com/`。
       - IMS組織ID
 
-   針對IMS範圍和其他值，請在&#x200B;**Adobe Developer Console**&#x200B;中專案內的[認證](https://developer.adobe.com/console/)區段中選取您的OAuth型別。 在擷取工具隨附的`.example.env`檔案中提供詳細資訊。
+   針對IMS範圍和其他值，請在[Adobe Developer Console](https://developer.adobe.com/console/)中專案內的&#x200B;**認證**&#x200B;區段中選取您的OAuth型別。 在擷取工具隨附的`.example.env`檔案中提供詳細資訊。
 
 ### 擷取資料
 

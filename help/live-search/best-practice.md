@@ -3,9 +3,21 @@ title: '[!DNL Live Search]最佳實務'
 description: 瞭解在您的商店中實作 [!DNL Live Search] 的最佳實務。
 role: Admin, Developer
 exl-id: f7700339-fb13-42fe-a249-17cd4ba36e1b
-source-git-commit: c3d431a6536c3c5528b9aee45f03b0b94b4ea64e
+TQID: https://experienceleague.adobe.com/X9zgHooEzDJe-zzmLLXHdVVVFUHVX4be47dOUaJyUXU
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '2892'
+source-wordcount: 2966
 ht-degree: 0%
 
 ---
@@ -23,7 +35,7 @@ ht-degree: 0%
 - 搜尋規則至關重要，因為它們可以根據熱門程度、新到訪次數、促銷條件或任何其他銷售策略，提升特定產品的可見度，以滿足您的業務需求。
 - 多面嚮導覽可讓購物者調整搜尋範圍，並快速取得相關結果。
 
-若要管理[!DNL Live Search]，請在Adobe **管理員中前往**&#x200B;行銷&#x200B;*>* SEO和搜尋&#x200B;**[!DNL Live Search]** > [!DNL Commerce]。 
+若要管理[!DNL Live Search]，請在Adobe [!DNL Commerce]管理員中前往&#x200B;**行銷** > *SEO和搜尋* > **[!DNL Live Search]**。 
 
 ## 最佳化您的搜尋功能
 
@@ -123,7 +135,7 @@ ht-degree: 0%
    - [建立](rules-add.md)
    - [編輯、檢視、刪除](rules-manage.md)
 - 資料收集
-   - [[!DNL Live Search] 個事件](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search)
+   - [[!DNL Live Search]個事件](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search)
    - [Adobe Commerce事件收集器](https://developer.adobe.com/commerce/services/shared-services/storefront-events/reference/event-framework/)
    - [GitHub Commerce事件](https://github.com/adobe/commerce-events/tree/main/examples) 
 
@@ -209,7 +221,7 @@ ht-degree: 0%
 深入瞭解搜尋所需的產品屬性：
 
 - [將屬性設定為可搜尋](workspace.md#set-attributes-as-searchable)
-- [指派權重給屬性](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [為屬性指派權重](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## 監視搜尋結果
 

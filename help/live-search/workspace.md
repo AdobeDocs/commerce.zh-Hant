@@ -2,9 +2,20 @@
 title: 設定即時搜尋
 description: ' [!DNL Live Search] 工作區是用來設定、管理和監視搜尋效能。'
 exl-id: 07c32b26-3fa4-4fae-afba-8a10866857c3
-source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
+TQID: https://experienceleague.adobe.com/RQ6BKo7AknERkwrXylYHNAuD-FDxLvG74nU1YvuVgwE
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '2317'
+source-wordcount: 2317
 ht-degree: 0%
 
 ---
@@ -115,7 +126,7 @@ ht-degree: 0%
 
 1. 在Admin中，[將產品屬性](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties)設定為可搜尋。
 
-   檢視可搜尋的[屬性](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/product-attributes/attributes-input-types)清單。
+   檢視可搜尋的[屬性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types)清單。
 
 1. 指定該屬性的搜尋功能，例如&#x200B;**包含** （預設）或&#x200B;**開頭為**。 您最多可以為&#x200B;**Contains**&#x200B;指定6個要啟用的屬性，並為&#x200B;**Starts with**&#x200B;指定6個要啟用的屬性。 此外，對於&#x200B;**Contains**&#x200B;索引，字串長度限製為50個字元或更少。
 
@@ -141,37 +152,37 @@ ht-degree: 0%
 
 - 提供一般類別、價格、品牌和屬性篩選
 - 提供使用者可輕鬆瞭解及選取的直覺式篩選器選項
-- Showing available options based on current search results
-- Displaying filter counts and ranges that help users understand available options
-- Working with common product characteristics like color, size, material, and so on.
+- 根據目前的搜尋結果顯示可用選項
+- 顯示有助於使用者瞭解可用選項的篩選器計數和範圍
+- 使用常見的產品特性，例如顏色、尺寸、材質等。
 
-**Best Practice:** Use layered search for complex, technical searches where users have specific criteria, and use facets for standard e-commerce filtering where users want to explore and narrow down options visually.
+**最佳實務：**&#x200B;使用階層式搜尋來搜尋使用者具有特定條件的複雜技術搜尋，並使用Facet來篩選標準電子商務篩選，讓使用者以視覺化方式探索及縮小選項。
 
-## Facets and synonyms
+## 多面向和同義字
 
-Facets and synonyms are another way you can enahnce the search experience for your shoppers.
+多面向和同義字是另一種提升購物者搜尋體驗的方式。
 
-[Facets](facets.md) are product attributes that are defined in [!DNL Live Search] to be filterable. You can set any filterable attribute as a facet in [!DNL Live Search], but there are [limits](boundaries-limits.md) to how many facets you can search for at one time.
+[Facet](facets.md)是在[!DNL Live Search]中定義的可篩選產品屬性。 您可以在[!DNL Live Search]中將任何可篩選的屬性設定為Facet，但您一次可搜尋的Facet數目有[限制](boundaries-limits.md)。
 
 >[!NOTE]
 >
->A product attribute is filterable only if the product attribute configuration has the required properties: *Use in Search = Yes*, *Use in Search Results Layered Navigation=yes*, and *Use in Layered Navigation=Filterable (with results)*. If these properties are missing or not set correctly, the attribute is not visible in the Facet configuration. For configuration instructions, see [Add a Facet](facets-add.md#step-1-add-a-facet).
+>產品屬性只有在產品屬性組態具有必要的屬性時才可篩選： *在搜尋中使用=是*、*在搜尋結果中使用Layered Navigation=是*&#x200B;以及&#x200B;*在分層導覽中使用Layered Navigation=可篩選（含結果）*。 如果這些屬性遺失或未正確設定，則在Facet設定中不會顯示此屬性。 如需設定指示，請參閱[新增Facet](facets-add.md#step-1-add-a-facet)。
 
-[Synonyms](synonyms.md) are terms that you can define to help guide users to the correct product. Users looking for pants might type in &quot;trousers&quot; or &quot;slacks&quot;. You can set synonyms so that these search terms will get users to the &quot;pants&quot; results.
+[同義字](synonyms.md)是可定義的術語，可協助引導使用者使用正確的產品。 尋找褲子的使用者可能會輸入「trousers」或「slacks」。 您可以設定同義字，讓這些搜尋詞將使用者帶到「褲子」結果。
 
-## Commerce configuration settings
+## Commerce組態設定
 
-The following section describes the supported and unsupported Commerce configuration settings for [!DNL Live Search].
+下節說明[!DNL Live Search]支援和不支援的Commerce組態設定。
 
-### Supported configuration values
+### 支援的設定值
 
 >[!IMPORTANT]
 >
->It is highly recommended you use the product listing widgets, enabled by default in Live Search 4.0.0. The widgets are targeted to replace adapter implementation in future releases completely. See [enable product listing widgets](install.md#enable-product-listing-widgets) to learn more.
+>強烈建議您使用在Live Search 4.0.0中預設為啟用的產品清單Widget。 Widget的目標是完全取代未來版本中的介面卡實作。 請參閱[啟用產品清單Widget](install.md#enable-product-listing-widgets)以深入瞭解。
 
-| Commerce Configuration Setting | 說明 | Supported by Popover | Supported by Adapter |
+| Commerce組態設定 | 說明 | 由Popover支援 | 由介面卡支援 |
 |---|---|---|---|
-| Stores > Configuration > Catalog > Catalog > Catalog Search > Allow All Products per Page | If set to `Yes`, includes the `ALL` option in the &quot;Show per Page&quot; control. | 是。 最多100個產品 | 是。 最多100個產品 |
+| 商店>設定>目錄>目錄>目錄搜尋>允許每頁所有產品 | 如果設為`Yes`，則在「每頁顯示」控制項中包含`ALL`選項。 | 是。 最多100個產品 | 是。 最多100個產品 |
 | 儲存>設定>目錄>目錄>目錄搜尋>最小查詢長度 | 目錄搜尋中允許的最小字元數。 | 是 | 是 |
 | 儲存>設定>目錄>目錄>目錄搜尋>每頁產品網格允許值 | 決定格線檢視中顯示的產品數目。 | 是 | 是 |
 | 商店>設定>目錄>目錄>目錄搜尋>產品每頁格點預設值 | 決定網格檢視中預設每頁顯示的產品數目。 | 是。 最多100個產品 | 是。 最多100個產品 |

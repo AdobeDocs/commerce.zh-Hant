@@ -3,16 +3,37 @@ title: 將Commerce資料連線至Adobe Experience Platform
 description: 瞭解如何將Commerce資料連結至Adobe Experience Platform。
 feature: Personalization, Integration, Configuration
 exl-id: 8ba33277-38a5-45af-86e0-906cfb3b998d
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+TQID: https://experienceleague.adobe.com/Hof7ftSKKkdMzoJ7eXLr9D2jv-U1LfFnMiFuGwzJpYE
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '2878'
+source-wordcount: 3071
 ht-degree: 0%
 
 ---
 
 # 將Commerce資料連線至Adobe Experience Platform
 
-安裝[!DNL Data Connection]擴充功能時，在Commerce **Admin**&#x200B;的&#x200B;**服務**&#x200B;下的&#x200B;_系統_&#x200B;功能表中會出現兩個新的設定頁面。
+安裝[!DNL Data Connection]擴充功能時，在Commerce _Admin_&#x200B;的&#x200B;**服務**&#x200B;下的&#x200B;**系統**&#x200B;功能表中會出現兩個新的設定頁面。
 
 - Commerce服務聯結器
 - [!DNL Data Connection]
@@ -109,9 +130,9 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >如果您選取&#x200B;**後台事件**，所有後台資料都會傳送到Experience Platform Edge。 如果購物者選擇退出資料收集，您必須在Experience Platform中明確設定購物者的隱私權偏好設定。 這與店面事件不同，店面事件收集器已根據購物者偏好設定處理同意。 深入瞭解[在Experience Platform中設定購物者的隱私權偏好設定](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html?lang=zh-Hant)。
+   >如果您選取&#x200B;**後台事件**，所有後台資料都會傳送到Experience Platform Edge。 如果購物者選擇退出資料收集，您必須在Experience Platform中明確設定購物者的隱私權偏好設定。 這與店面事件不同，店面事件收集器已根據購物者偏好設定處理同意。 深入瞭解[在Experience Platform中設定購物者的隱私權偏好設定](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html)。
 
-1. （如果您使用自己的AEP Web SDK，請略過此步驟。）[在Adobe Experience Platform中建立](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=zh-Hant#create)資料流，或選取您要用於收集的現有資料流。 在&#x200B;**資料流識別碼**&#x200B;欄位中輸入該資料流識別碼。
+1. （如果您使用自己的AEP Web SDK，請略過此步驟。） 在Adobe Experience Platform中[建立](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html#create)資料流，或選取要用於集合的現有資料流。 在&#x200B;**資料流識別碼**&#x200B;欄位中輸入該資料流識別碼。
 
 1. 輸入您要包含Commerce資料的&#x200B;**資料集識別碼**。 若要尋找資料集ID：
 
@@ -209,7 +230,7 @@ Adobe Commerce最多會收集五年的[歷史訂單資料和狀態](events-backo
    >
    >RabbitMQ已設定為Commerce 2.4.7版及更新版本，但您必須啟用消費者。
 
-1. 使用`.magento.env.yaml`環境變數，透過`CRON_CONSUMERS_RUNNER`中的cron工作啟用訊息佇列消費者。
+1. 使用`CRON_CONSUMERS_RUNNER`環境變數，透過`.magento.env.yaml`中的cron工作啟用訊息佇列消費者。
 
    ```yaml
       stage:
@@ -258,7 +279,7 @@ Adobe Commerce最多會收集五年的[歷史訂單資料和狀態](events-backo
 
 >[!IMPORTANT]
 >
->確定您在[資料彙集](#data-collection)索引標籤上&#x200B;**指定的**&#x200B;資料串流ID符合連結至結構描述以擷取自訂屬性的ID。
+>確定您在&#x200B;**資料彙集**&#x200B;索引標籤上[指定的](#data-collection)資料串流ID符合連結至結構描述以擷取自訂屬性的ID。
 
 建立訂單的自訂屬性並將其傳送至Experience Platform時，Commerce中的屬性名稱必須與Experience Platform上[!DNL Commerce]結構描述中的屬性名稱相符。 如果兩者不符，就很難辨識差異。 如果名稱不相符，**自訂訂單屬性**&#x200B;表格可協助解決問題。
 
@@ -266,7 +287,7 @@ Adobe Commerce最多會收集五年的[歷史訂單資料和狀態](events-backo
 
 如果您在表格中的自訂屬性名稱旁邊沒有看到綠色核取記號，表示來源中的屬性名稱不符。 在一個來源中更正屬性名稱，將會出現綠色核取記號，表示名稱現在相符。
 
-- 如果屬性名稱在Experience Platform的結構描述中更新，您必須將設定儲存在&#x200B;**資料自訂**&#x200B;索引標籤上，才能觸發Experience Platform結構描述變更。 當您按一下&#x200B;**按鈕時，此變更將會反映在**&#x200B;自訂訂單屬性&#x200B;**[!UICONTROL Refresh]**&#x200B;表格中。
+- 如果屬性名稱在Experience Platform的結構描述中更新，您必須將設定儲存在&#x200B;**資料自訂**&#x200B;索引標籤上，才能觸發Experience Platform結構描述變更。 當您按一下&#x200B;**[!UICONTROL Refresh]**&#x200B;按鈕時，此變更將會反映在&#x200B;**自訂訂單屬性**&#x200B;表格中。
 - 如果屬性名稱在[!DNL Commerce]中更新，則必須產生訂單事件以更新&#x200B;**自訂訂單屬性**&#x200B;資料表中的名稱。 此變更將在60分鐘左右反映出來。
 
 深入瞭解如何[設定自訂屬性](custom-attributes.md)。

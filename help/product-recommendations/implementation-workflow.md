@@ -2,9 +2,23 @@
 title: 實作工作流程
 description: 瞭解在您的店面成功實作 [!DNL Product Recommendations] 的步驟。
 exl-id: 4a784d04-8be6-473f-afb3-264af06c850a
-source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
+TQID: https://experienceleague.adobe.com/-nvORlxBNwoCcZb6s-OvaX8TtIh28Q-fjeUxsDXpe9E
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: 563
 ht-degree: 0%
 
 ---
@@ -27,9 +41,9 @@ ht-degree: 0%
 
 1. **將資料收集部署至生產環境**
 
-   部署[!DNL Product Recommendations]需要兩個主要[資料來源](type.md)：目錄和行為。 由於生產是擷取和分析購物者動作的唯一環境，因此請儘早在生產上開始收集資料。 [瞭解](events.md) Adobe AI如何訓練產生更高品質推薦的機器學習模型。 額外好處是，當您開始收集生產環境的行為資料時，可以在非生產環境中作業時，根據此生產資料[擷取建議](staging-environment.md#fetch-recommendations-from-production-environment-recommended)。 接著，您可以測試和實驗不同的建議，這些建議是根據實際生產中收集的購物者資料計算而得。
+   部署[!DNL Product Recommendations]需要兩個主要[資料來源](type.md)：目錄和行為。 由於生產是擷取和分析購物者動作的唯一環境，因此請儘早在生產上開始收集資料。 [瞭解](events.md) Adobe AI如何訓練產生更高品質建議的機器學習模型。 額外好處是，當您開始收集生產環境的行為資料時，可以在非生產環境中作業時，根據此生產資料[擷取建議](staging-environment.md#fetch-recommendations-from-production-environment-recommended)。 接著，您可以測試和實驗不同的建議，這些建議是根據實際生產中收集的購物者資料計算而得。
 
-   若要將資料收集部署至生產環境，您必須[藉由提供](install-configure.md)API金鑰[!DNL Product Recommendations]來[安裝並設定](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=zh-Hant)模組。
+   若要將資料收集部署至生產環境，您必須[&#128279;](install-configure.md)藉由提供[API金鑰](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=zh-Hant)來安裝並設定[!DNL Product Recommendations]模組。
 
    >[!TIP]
    >

@@ -2,9 +2,19 @@
 title: 新增規則
 description: 瞭解如何建立搜尋銷售規則。
 exl-id: 7175ccf7-d838-43b0-a176-957e7db040e0
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+TQID: https://experienceleague.adobe.com/QnJ-q-Y-ccQ7HKEt2RgPYQFeWcBnhjwSDOtKjlF7Rp0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '2067'
+source-wordcount: 2085
 ht-degree: 0%
 
 ---
@@ -46,7 +56,7 @@ ht-degree: 0%
    * 搜尋查詢開頭為 — 輸入必須在購物者查詢開頭的字元或文字字串。
    * 搜尋查詢結尾為 — 輸入必須在購物者查詢結尾的字元或文字字串。
 
-   結果會立即顯示在&#x200B;*測試您的規則*&#x200B;窗格中，並依優先順序編號。 您可以使用上方的&#x200B;*每列*&#x200B;結果    可變更每列中的產品數量。
+   結果會立即顯示在&#x200B;*測試您的規則*&#x200B;窗格中，並依優先順序編號。 您可以使用右上角的&#x200B;*每列結果*&#x200B;滑桿來變更每列的產品數目。
 
    ![規則 — 簡單](assets/rule-simple-test.png)
 

@@ -3,9 +3,22 @@ title: 建立和管理規則
 description: 瞭解如何建立和管理搜尋、預設產品清單和類別頁面的銷售規則。
 badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
-source-git-commit: 0d1ebaddada8be82645164368ebfbb6dd0a569cd
+TQID: https://experienceleague.adobe.com/UOe-TPaF80Wrk-gNuJwLTdndVQMQfbYrbpAfb-r4pJc
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '2714'
+source-wordcount: 2760
 ht-degree: 0%
 
 ---
@@ -208,7 +221,7 @@ ht-degree: 0%
 
 ### 編輯規則
 
-1. 在&#x200B;*銷售規則*&#x200B;工作區中，在格線中找到您要編輯的規則，然後按一下&#x200B;**更多** (...)選項。
+1. 在&#x200B;*銷售規則*&#x200B;工作區中，在格線中找到您要編輯的規則，然後按一下&#x200B;**更多** (...) 選項。
 1. 按一下&#x200B;**編輯**&#x200B;以存取規則編輯器。
 1. 視需要更新條件、運運算元和事件。
 1. 視需要更新名稱、開始和結束日期以及說明欄位。 所有規則名稱必須是唯一的。
@@ -220,13 +233,13 @@ ht-degree: 0%
 
 此選項提供在&#x200B;*規則*&#x200B;表格中時快速檢視所有規則引數的方法。
 
-1. 在&#x200B;*銷售規則*&#x200B;工作區中，在您要編輯的格線中找到規則，然後按一下&#x200B;**更多** (...)選項。
+1. 在&#x200B;*銷售規則*&#x200B;工作區中，在您要編輯的格線中找到規則，然後按一下&#x200B;**更多** (...) 選項。
 1. 按一下&#x200B;**檢視詳細資料**&#x200B;以檢視規則引數。
 1. 選擇&#x200B;**編輯**&#x200B;或&#x200B;**刪除**，或按一下X關閉面板。
 
 ### 刪除規則
 
-1. 在&#x200B;*規則*&#x200B;工作區上，在格線中尋找要編輯的規則，然後按一下&#x200B;**更多** (...)選項。
+1. 在&#x200B;*規則*&#x200B;工作區上，在格線中尋找要編輯的規則，然後按一下&#x200B;**更多** (...) 選項。
 1. 按一下&#x200B;**刪除**。
 
 ## 欄位說明 {#field-descriptions}

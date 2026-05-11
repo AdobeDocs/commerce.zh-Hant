@@ -2,11 +2,22 @@
 title: 安裝Adobe Commerce套件
 description: 瞭解如何在Adobe Commerce執行個體上安裝適用於Adobe Commerce的AEM Assets整合擴充功能。 若要搭配使用AEM Assets與Adobe Commerce，此擴充功能為必要專案。
 feature: CMS, Media
-badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce 。"
+badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
 exl-id: c0fb59e1-daf8-4f48-a7a7-b48e8782dfad
-source-git-commit: d46526db56dad08a8f865664c92d1214bbf063d8
+TQID: https://experienceleague.adobe.com/z4WBMzUa6Jn8EjUH1e5oojV4I3bTDZJylwtQ7LZ4wPE
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1460'
+source-wordcount: 1675
 ht-degree: 0%
 
 ---
@@ -59,7 +70,7 @@ Commerce的這項整合可讓您在Adobe Commerce和Adobe Experience Manager Ass
 
    >[!NOTE]
    >
-   >如需有關在本機管理Commerce專案環境的資訊，請參閱《雲端基礎結構使用手冊》中[Adobe Commerce的](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/develop/cli-branches)使用CLI管理分支&#x200B;__。
+   >如需有關在本機管理Commerce專案環境的資訊，請參閱《雲端基礎結構使用手冊》中&#x200B;_Adobe Commerce的[使用CLI管理分支](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/develop/cli-branches)_。
 
 1. 檢視環境分支，以使用Adobe Commerce Cloud CLI進行更新。
 
@@ -152,8 +163,8 @@ AEM Assets整合使用Adobe I/O Events服務在Commerce執行個體和Experience
 設定Adobe I/O Events之前，請先確認Commerce專案的RabbitMQ和cron工作設定：
 
 - 確保RabbitMQ已啟用且正在監聽事件。
-   - 內部部署Adobe Commerce的[RabbitMQ設定](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq)
-   - 雲端基礎結構上Adobe Commerce的[RabbitMQ設定](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq)
+   - [內部部署Adobe Commerce的RabbitMQ設定](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq)
+   - [雲端基礎結構上Adobe Commerce的RabbitMQ設定](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq)
    - 確認[cron工作已啟用](https://developer.adobe.com/commerce/extensibility/events/configure-commerce/#check-cron-and-message-queue-configuration)。 AEM Assets整合的通訊和工作流程需要Cron工作。
 
 >[!NOTE]
@@ -213,7 +224,7 @@ AEM Assets整合使用Adobe I/O Events服務在Commerce執行個體和Experience
 
 - `content`：要執行的VCL程式碼片段，會檢查使用者端IP位址。 如果IP位在Edge ACL中，則會封鎖整個網站的存取權，並產生`405 Not allowed`錯誤。 允許存取所有其他使用者端IP位址。
 
-如需使用VCL片段封鎖傳入要求的詳細資訊，請參閱[雲端基礎結構上的Commerce](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking)中的&#x200B;_封鎖要求的自訂VCL_。
+如需使用VCL片段封鎖傳入要求的詳細資訊，請參閱&#x200B;_雲端基礎結構上的Commerce_&#x200B;中的[封鎖要求的自訂VCL](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking)。
 
 >[!ENDSHADEBOX]
 

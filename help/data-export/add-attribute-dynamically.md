@@ -3,9 +3,20 @@ title: 動態新增產品屬性
 description: 瞭解如何在資料同步程式進行期間，以動態方式將自訂產品屬性新增至資料匯出摘要。
 role: Admin, Developer
 exl-id: d5ed7497-4be1-440a-a567-81b64fdc54fc
-source-git-commit: 37d5699315e34f1504602090fae5201ee51cf470
+TQID: https://experienceleague.adobe.com/SZWtLSvxb-w-968f4wqWrPTBn1c9IEuthvhIv86Pvss
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: 297
 ht-degree: 0%
 
 ---
@@ -16,7 +27,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->擴充產品屬性的最佳方式是[將它們新增至Adobe Commerce](extensibility-and-customizations.md#add-product-attributes-to-adobe-commerce)，您可以在其中從Commerce管理員設定和管理這些屬性。 只有在您僅需要Commerce店面服務才能動態新增這些值，且不想在Adobe Commerce中註冊這些值時，才可動態新增。 您也可以選擇搭配目錄服務[使用](../catalog-service/mesh.md)API Mesh來管理自訂屬性，以擴充目錄服務GraphQL結構描述。
+>擴充產品屬性的最佳方式是[將它們新增至Adobe Commerce](extensibility-and-customizations.md#add-product-attributes-to-adobe-commerce)，您可以在其中從Commerce管理員設定和管理這些屬性。 只有在您僅需要Commerce店面服務才能動態新增這些值，且不想在Adobe Commerce中註冊這些值時，才可動態新增。 您也可以選擇搭配目錄服務[&#128279;](../catalog-service/mesh.md)使用API Mesh來管理自訂屬性，以擴充目錄服務GraphQL結構描述。
 
 ## 新增產品屬性
 
@@ -105,7 +116,7 @@ ht-degree: 0%
 
 1. 建立下列提供者`\Magento\CatalogDataExporter\Model\Provider\ProductMetadata`的外掛程式。
 
-   檢查`ProductAttributeMetadata`中的`vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`以取得必要欄位。
+   檢查`vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`中的`ProductAttributeMetadata`以取得必要欄位。
 
    ```php
     <?php

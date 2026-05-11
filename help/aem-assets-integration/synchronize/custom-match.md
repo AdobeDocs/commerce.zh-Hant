@@ -3,9 +3,18 @@ title: 自訂自動比對
 description: 瞭解自訂自動比對如何對具有複雜比對邏輯的商家，或依賴第三方系統（無法將中繼資料填入AEM Assets）的商戶特別有用。
 feature: CMS, Media, Integration
 exl-id: e7d5fec0-7ec3-45d1-8be3-1beede86c87d
-source-git-commit: cd7a332dd09840aabcc0efae081ba0a713506897
+TQID: https://experienceleague.adobe.com/RHRfW99iShMpajrEC8BhvoMEfQ-ABdipWTCdK-KaVH4
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: 603
 ht-degree: 0%
 
 ---
@@ -26,7 +35,7 @@ ht-degree: 0%
 
 **[!UICONTROL Adobe I/O Workspace Configuration]**&#x200B;欄位透過匯入App Builder `workspace.json`設定檔，提供簡化的自訂比對器設定方式。
 
-您可以從`workspace.json`Adobe Developer Console[下載](https://developer.adobe.com/console)檔案。 此檔案包含您App Builder工作區的所有認證和設定詳細資料。
+您可以從[Adobe Developer Console](https://developer.adobe.com/console)下載`workspace.json`檔案。 此檔案包含您App Builder工作區的所有認證和設定詳細資料。
 
 +++範例`workspace.json`
 

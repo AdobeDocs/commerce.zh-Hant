@@ -3,10 +3,30 @@ title: 開始使用 [!DNL Live Search]
 description: 從Adobe Commerce瞭解 [!DNL Live Search] 的系統需求和安裝步驟。
 role: Admin, Developer
 exl-id: 45b985f1-9afb-4a07-93e8-f2fe231c5400
-badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
-source-git-commit: f32015409cdf68dae004ba48bb285832d9872b53
+badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
+TQID: https://experienceleague.adobe.com/63Lia0NKyJV2ngoXLlcGkciK3xZWYsmtwzfkyOg5Bfw
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '2934'
+source-wordcount: 2934
 ht-degree: 0%
 
 ---
@@ -237,12 +257,12 @@ bin/magento saas:resync --feed categoryPermissions
   >
   >如果您收到`table does not exist`錯誤，請尋找`catalog_data_exporter_products`和`catalog_data_exporter_product_attributes`表格中的專案。 這些資料表名稱用於4.2.1之前的[!DNL Live Search]版本。
 
-- 搭配預設查詢使用[GraphQL遊樂場](https://experienceleague.adobe.com/zh-hant/docs/commerce/live-search/live-search-admin/graphql) （如需詳細資訊，請參閱[GraphQL參考資料](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/)）以驗證下列專案：
+- 搭配預設查詢使用[GraphQL遊樂場](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/graphql) （如需詳細資訊，請參閱[GraphQL參考資料](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/)）以驗證下列專案：
 
    - 傳回的產品計數接近您對商店檢視的預期。
    - 會傳回多面向。
 
-如需其他說明，請參閱支援知識庫中的[[!DNL Live Search] 目錄未同步](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync)。
+如需其他說明，請參閱支援知識庫中的[[!DNL Live Search] 目錄未同步](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync)。
 
 ## &#x200B;5. 設定資料 {#configuredata}
 
@@ -357,7 +377,7 @@ composer update magento/live-search --with-dependencies
 
 ## 正在解除安裝[!DNL Live Search]
 
-若要解除安裝[!DNL Live Search]，請參閱[解除安裝模組](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/tutorials/uninstall-modules)。
+若要解除安裝[!DNL Live Search]，請參閱[解除安裝模組](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules)。
 
 ## [!DNL Live Search]個套件
 
@@ -368,7 +388,7 @@ composer update magento/live-search --with-dependencies
 | `module-live-search` | 允許商戶設定其面向、同義字、查詢規則等的搜尋設定，並提供唯讀GraphQL遊樂場的存取權，以測試來自&#x200B;*Admin*&#x200B;的查詢。 |
 | `module-live-search-storefront-popover` | 「依輸入方式搜尋」彈出視窗會取代標準快速搜尋，並傳回熱門搜尋結果的資料和縮圖。 |
 | `module-live-search-product-listing` | 提供搜尋和瀏覽(PLP)結果的涵蓋範圍，並包括頁面上的多面向、排序和產品卡區域。 |
-| `module-live-search-adapter` | **（截至[!DNL Live Search] 4.0.0，搜尋配接器已[棄用](release-notes.md#live-search-400)。）** 將搜尋要求從店面路由到[!DNL Live Search]服務，並在店面中呈現結果。 <br /> — 類別瀏覽 — 將要求從店面[上層導覽](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/catalog/navigation/navigation-top)路由到搜尋服務。<br /> — 全域搜尋 — 將要求從[快速搜尋](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/catalog/search/search)欄位路由到[!DNL Live Search]服務。 快速搜尋欄位位於店面頁面的右上角。 |
+| `module-live-search-adapter` | **（截至[!DNL Live Search] 4.0.0，搜尋配接器已[棄用](release-notes.md#live-search-400)。）** 將搜尋要求從店面路由到[!DNL Live Search]服務，並在店面中呈現結果。 <br /> — 類別瀏覽 — 將要求從店面[上層導覽](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/catalog/navigation/navigation-top)路由到搜尋服務。<br /> — 全域搜尋 — 將要求從[快速搜尋](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search)欄位路由到[!DNL Live Search]服務。 快速搜尋欄位位於店面頁面的右上角。 |
 
 ## [!DNL Live Search]相依性
 

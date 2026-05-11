@@ -2,9 +2,18 @@
 title: 入門
 description: 瞭解 [!DNL Product Recommendations]中的需求與支援平台。
 exl-id: 7b8a1117-b6d5-4e5d-bb97-09f76a024cbd
-source-git-commit: 8f421bd4421b9599ad52aa68c5caaee6592ccb43
+TQID: https://experienceleague.adobe.com/FLrOFe-Lwe7i3dOwCISflVGEv2MIkXmmE-NqTvpaY-0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: 418
 ht-degree: 0%
 
 ---
@@ -13,9 +22,9 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->**產品建議不是可供HIPAA使用的服務。**&#x200B;請勿在使用HIPAA就緒的產品或以其他方式處理受保護的健康資訊(PHI)的任何Adobe Commerce實作中啟用或使用產品建議。 產品建議是Commerce SaaS服務的一部分，目前分類為不符合HIPAA標準。
+>**產品建議不是可支援HIPAA的服務。** 請勿在使用HIPAA就緒的產品或以其他方式處理受保護的健康資訊(PHI)的Adobe Commerce實作中啟用或使用產品建議。 產品建議是Commerce SaaS服務的一部分，目前分類為不符合HIPAA標準。
 >
->如需哪些是HIPAA就緒的Adobe Commerce功能以及哪些服務不可搭配PHI使用的詳細資訊，請參閱Adobe Commerce[和](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/compliance/hipaa-ready-service/overview)作業[上的](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/compliance/hipaa-ready-service/operations#adobe-commerce-services)HIPAA就緒性。
+>如需哪些是HIPAA就緒的Adobe Commerce功能以及哪些服務不可搭配PHI使用的詳細資訊，請參閱Adobe Commerce[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/compliance/hipaa-ready-service/overview)和[作業](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/compliance/hipaa-ready-service/operations#adobe-commerce-services)上的HIPAA就緒性。
 
 [!DNL Product Recommendations]的上線流程需要存取伺服器的命令列，且包含下列步驟。 如果您不熟悉如何使用命令列，請向開發人員或系統整合商尋求協助。
 

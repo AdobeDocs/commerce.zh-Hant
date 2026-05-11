@@ -2,9 +2,20 @@
 title: 建立新建議
 description: 瞭解如何建立產品推薦單位。
 exl-id: 1d5f83c4-1613-4236-9d98-d455f45a47da
-source-git-commit: 41eae72cbd01f0e0f2c4a6cf028a2a11c79921ad
+TQID: https://experienceleague.adobe.com/K3cKFg-m22bUzlupyhsHgDVxaJka7xhOvFnOt8wDdII
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1505'
+source-wordcount: 1573
 ht-degree: 0%
 
 ---
@@ -74,7 +85,7 @@ _建議單位_
 
 1. （選擇性）在&#x200B;_篩選器_&#x200B;區段中，[套用篩選器](filters.md)以控制哪些產品出現在建議單位中。
 
-   ![建議篩選器](assets/create-recommendation-filter-products.png)
+   ![個建議篩選器](assets/create-recommendation-filter-products.png)
    _推薦產品篩選器_
 
 1. 完成後，按一下下列其中一項：

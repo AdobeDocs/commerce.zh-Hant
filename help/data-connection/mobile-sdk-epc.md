@@ -4,9 +4,20 @@ description: 瞭解如何搭配無周邊或自訂Adobe Experience Platform店面
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: 02d07abb-8d7f-4f0a-9f96-f42654cd79d3
-source-git-commit: a3e19940e2a3d8a240bb17703cfdd9903df311aa
+TQID: https://experienceleague.adobe.com/iBxx54enSjy-vWbhCSSM-5QSjut6TjcRpWT5wWpeU2Y
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: 616
 ht-degree: 0%
 
 ---
@@ -27,7 +38,7 @@ ht-degree: 0%
 
 ### Experience Platform
 
-1. 檢閱行動應用程式教學課程[中的](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=zh-Hant)Adobe Experience Cloud，瞭解行動應用程式功能。
+1. 檢閱行動應用程式教學課程[&#128279;](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html)中的Adobe Experience Cloud，瞭解行動應用程式功能。
 
 1. [在Experience Platform中安裝和設定](https://developer.adobe.com/client-sdks/documentation/getting-started/) SDK。
 

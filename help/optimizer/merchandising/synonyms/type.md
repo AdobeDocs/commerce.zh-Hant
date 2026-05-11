@@ -1,11 +1,20 @@
 ---
 title: 同義字型別
 description: 瞭解 [!DNL Adobe Commerce Optimizer]中不同型別的同義字。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
 exl-id: a74e48ea-e069-4ccc-a67f-2f85be251fb5
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+TQID: https://experienceleague.adobe.com/23kmFWLruZeFMxIjKZJKbs0y9q10DDtbFG8ioLC5U-o
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: 393
 ht-degree: 0%
 
 ---
@@ -19,7 +28,7 @@ ht-degree: 0%
 雙向同義字具有相同涵義，並傳回相同的搜尋結果。 在下列範例中，以粗體顯示的第一個字是目錄中所使用的關鍵字，後面跟著與原始關鍵字具有相同含義的字詞。 您可以為相同關鍵字建立一對簡單的雙向同義字，或是多個雙向同義字的鏈結。
 
 **夾克** ![雙向選擇器](../../assets/two-way.png)外套
-**褲子** ![雙向選擇器](../../assets/two-way.png)短褲![雙向選擇器](../../assets/two-way.png)褲子
+**褲子** ![雙向選擇器](../../assets/two-way.png)褲子![雙向選擇器](../../assets/two-way.png)褲子
 
 ## 單向
 

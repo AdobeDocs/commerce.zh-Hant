@@ -3,9 +3,21 @@ title: 什麼是 [!DNL Live Search]？
 description: Adobe Commerce 的 [!DNL Live Search] 功能提供快速、具有相關性且簡單易用的搜尋體驗。
 recommendations: noCatalog
 exl-id: 15399216-6a96-4d0b-bbc1-293190cb9e14
-source-git-commit: 3c6ca2398cf80649e2dbe127b1835b0a057d3534
+TQID: https://experienceleague.adobe.com/360T44Ynj6BelCeuhHPH4OZ-1-35ocW1s1eY3Ag49Cc
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1180'
+source-wordcount: 1180
 ht-degree: 1%
 
 ---
@@ -41,7 +53,7 @@ ht-degree: 1%
 
 ### 依輸入內容搜尋
 
-當購物者在[搜尋](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/catalog/search/search)方塊中輸入查詢時，[!DNL Live Search]在[彈出視窗](storefront-popover.md)中以建議的產品和排名最前的搜尋結果縮圖影像回應。 當購物者按一下建議或精選的產品時，會顯示[產品詳細資料](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/storefront/storefront)頁面。 彈出視窗頁尾中的&#x200B;_檢視全部_&#x200B;連結會顯示搜尋結果頁面。
+當購物者在[搜尋](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search)方塊中輸入查詢時，[!DNL Live Search]在[彈出視窗](storefront-popover.md)中以建議的產品和排名最前的搜尋結果縮圖影像回應。 當購物者按一下建議或精選的產品時，會顯示[產品詳細資料](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/storefront/storefront)頁面。 彈出視窗頁尾中的&#x200B;_檢視全部_&#x200B;連結會顯示搜尋結果頁面。
 
 針對兩個或更多字元的查詢，[!DNL Live Search]傳回「鍵入時搜尋」結果。 若為部分相符，則每個字的字元數上限為20。 查詢中的字元數無法設定。 彈出視窗包含`name`、`sku`和`category_ids`欄位。
 

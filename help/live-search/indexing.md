@@ -2,9 +2,19 @@
 title: 索引
 description: 瞭解 [!DNL Live Search] 如何索引產品屬性屬性。
 exl-id: 01cbbf56-2e12-4ad0-a56d-de0fe13df50f
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+TQID: https://experienceleague.adobe.com/8STop-AunMGpKCLgjQaywtpPRNHF-l7sobRnh82QOXI
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: 787
 ht-degree: 0%
 
 ---
@@ -33,7 +43,7 @@ ht-degree: 0%
 
 使用者端從店面呼叫搜尋服務以擷取（可篩選、可排序）索引中繼資料。 搜尋服務只能呼叫具有層次導覽中&#x200B;*使用*&#x200B;屬性設定為`Filterable (with results)`且&#x200B;*產品清單中用於排序*&#x200B;設定為`Yes`的可搜尋產品屬性。
 
-若要建構動態查詢，搜尋服務必須知道哪些屬性可搜尋，以及它們的[權重](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/catalog/search/search-results)。 [!DNL Live Search]遵循Adobe Commerce搜尋權重（1-10，其中10是最高優先順序）。 您可以在結構描述中找到已同步並與目錄服務共用的資料清單，其定義如下：
+若要建構動態查詢，搜尋服務必須知道哪些屬性可搜尋，以及它們的[權重](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results)。 [!DNL Live Search]遵循Adobe Commerce搜尋權重（1-10，其中10是最高優先順序）。 您可以在結構描述中找到已同步並與目錄服務共用的資料清單，其定義如下：
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
 
@@ -53,7 +63,7 @@ ht-degree: 0%
 * 正在上線[目錄資料同步](install.md#sync)
 * 屬性中繼資料的變更
 
-例如，將`Use in Search`屬性的`color`屬性從`No`變更為`Yes`會將屬性中繼資料變更為`searchable=true`，並觸發完全同步和重新索引。 下列屬性中繼資料在變更時觸發完整同步和重新索引：
+例如，將`color`屬性的`Use in Search`屬性從`No`變更為`Yes`會將屬性中繼資料變更為`searchable=true`，並觸發完全同步和重新索引。 下列屬性中繼資料在變更時觸發完整同步和重新索引：
 
 * `filterableInSearch`
 * `searchable`

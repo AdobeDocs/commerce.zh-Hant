@@ -3,9 +3,22 @@ title: 使用Adobe Journey Optimizer傳送捨棄的購物車電子郵件
 description: 瞭解如何使用Adobe Journey Optimizer傳送捨棄的購物車電子郵件。
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 229fac48-1c7f-4b3a-8edf-6086b7361911
+TQID: https://experienceleague.adobe.com/p4p0Gde7aPp15kj1KJTiCAijRF7wBnKDqhJN-pHgFKU
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1262'
+source-wordcount: 1395
 ht-degree: 0%
 
 ---
@@ -21,13 +34,13 @@ ht-degree: 0%
 | 資料型別 | 店面資料（行為事件） | 後台資料（伺服器端事件） |
 |---|---|---|
 | **定義** | 客戶在您網站上採取的點按或動作。 | 生命週期相關資訊和每個訂單（過去和目前）的詳細資訊。 |
-| 由Adobe Commerce擷取的&#x200B;**個事件** | [pageView](https://experienceleague.adobe.com/zh-hant/docs/commerce/data-connection/event-forwarding/events#pageview)<br>[productPageView](https://experienceleague.adobe.com/zh-hant/docs/commerce/data-connection/event-forwarding/events)<br>[addToCart](https://experienceleague.adobe.com/zh-hant/docs/commerce/data-connection/event-forwarding/events#addtocart)<br>[openCart](https://experienceleague.adobe.com/zh-hant/docs/commerce/data-connection/event-forwarding/events#opencart)<br>[startCheckout](https://experienceleague.adobe.com/zh-hant/docs/commerce/data-connection/event-forwarding/events#startcheckout)<br>[completeCheckout](https://experienceleague.adobe.com/zh-hant/docs/commerce/data-connection/event-forwarding/events#completecheckout) | [orderPlaced](https://experienceleague.adobe.com/zh-hant/docs/commerce/data-connection/event-forwarding/events-backoffice#orderplaced)<br>[訂單歷史記錄](https://experienceleague.adobe.com/zh-hant/docs/commerce/data-connection/fundamentals/connect-data#send-historical-order-data) |
+| 由Adobe Commerce擷取的&#x200B;**個事件** | [pageView](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#pageview)<br>[productPageView](https://experienceleague.adobe.com/zh-hant/docs/commerce/data-connection/event-forwarding/events)<br>[addToCart](https://experienceleague.adobe.com/zh-hant/docs/commerce/data-connection/event-forwarding/events#addtocart)<br>[openCart](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#opencart)<br>[startCheckout](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#startcheckout)<br>[completeCheckout](https://experienceleague.adobe.com/zh-hant/docs/commerce/data-connection/event-forwarding/events#completecheckout) | [orderPlaced](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events-backoffice#orderplaced)<br>[訂單歷史記錄](https://experienceleague.adobe.com/zh-hant/docs/commerce/data-connection/fundamentals/connect-data#send-historical-order-data) |
 
 ### 其他客戶都取得了哪些成就？
 
 Adobe [!DNL Commerce]客戶透過Adobe [!DNL Commerce]、Adobe [!DNL Journey Optimizer]和Adobe [!DNL Real-Time CDP]實作個人化的放棄行銷活動，已取得顯著的業務影響。
 
-一家全球多品牌服裝零售商達成：
+retailer實現了全球性的多品牌服飾：
 
 - 來自新行銷活動的1.9倍點選轉換
 - 來自全頻道放棄歷程的收入增加57%
@@ -47,7 +60,7 @@ Adobe [!DNL Commerce]客戶透過Adobe [!DNL Commerce]、Adobe [!DNL Journey Opt
 
 ### 什麼是Adobe Journey Optimizer？
 
-[Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html?lang=zh-Hant)可協助您為購物者打造個人化的商務體驗。 例如，您可以使用Journey Optimizer建立並傳送排程行銷活動（例如零售商店的每週促銷活動），或如果客戶將產品加入購物車但未完成結帳程式，則產生放棄的購物車電子郵件。
+[Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html)可協助您為購物者打造個人化的商務體驗。 例如，您可以使用Journey Optimizer建立並傳送排程行銷活動（例如零售商店的每週促銷活動），或如果客戶將產品加入購物車但未完成結帳程式，則產生放棄的購物車電子郵件。
 
 在此主題中，您將瞭解如何藉由聆聽從您的[!DNL Commerce]執行個體產生的`checkout`事件並在Journey Optimizer中回應該事件，建置捨棄的購物車電子郵件。
 

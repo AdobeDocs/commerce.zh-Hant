@@ -3,9 +3,23 @@ title: 管理資產
 description: 使用適用於Commerce的AEM Assets整合，管理店面的媒體資產。
 feature: CMS, Media
 exl-id: 40ca36e0-d617-4814-852d-bc60ff53b2b3
-source-git-commit: 0fd98bf86555c914f7a5b1e177c31c37764dbf84
+TQID: https://experienceleague.adobe.com/y-207fJaMiLZbQW7bzv2WCzFItckGDnyKUm6Q0tqMw8
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2:
+  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: da3860b0-d637-47df-bef0-273751180266
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1001'
+source-wordcount: 1072
 ht-degree: 0%
 
 ---
@@ -71,7 +85,7 @@ Adobe Commerce為未使用CMS (Adobe Experience Manager)工具集的商家提供
 
 [!BADGE 僅限PaaS]{type=Informative tooltip="僅適用於雲端專案上的Adobe Commerce （Adobe管理的PaaS基礎結構）。"}若要使用&#x200B;**AEM資產選擇器**&#x200B;來內嵌影像，請確定使用者具備必要的[許可權和IMS驗證](get-started/permissions.md)。
 
-1. 使用&#x200B;**頁面產生器**&#x200B;導覽至`content enrichment`Adobe Commerce Admin **中支援**&#x200B;的任何區段。
+1. 使用&#x200B;**頁面產生器**&#x200B;導覽至&#x200B;**Adobe Commerce Admin**&#x200B;中支援`content enrichment`的任何區段。
 
 1. 開啟[頁面產生器](https://developer.adobe.com/commerce/frontend-core/page-builder/){target=_blank}。
 
@@ -147,7 +161,7 @@ Adobe Commerce可讓商家將影像與產品類別建立關聯，協助建立吸
 
 1. 選取要更新的類別。
 
-1. 展開![區段中的](../assets/icon-display-expand.png)擴充選擇器&#x200B;**[!UICONTROL Content]**。
+1. 展開&#x200B;**[!UICONTROL Content]**&#x200B;區段中的![擴充選擇器](../assets/icon-display-expand.png)。
 
 1. 在&#x200B;**[!UICONTROL Content]**&#x200B;區段中，找出與類別相關聯的&#x200B;*影像欄位*。
 
@@ -163,7 +177,7 @@ Adobe Commerce可讓商家將影像與產品類別建立關聯，協助建立吸
 
 1. 按一下&#x200B;**[!UICONTROL Save]**&#x200B;並繼續。
 
-   如需建立類別的詳細資訊，請參閱[Commerce Catalog Management Guide](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content)中的&#x200B;**完成類別內容**。
+   如需建立類別的詳細資訊，請參閱&#x200B;**Commerce Catalog Management Guide**&#x200B;中的[完成類別內容](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content)。
 
 ## 更新資產
 
@@ -173,6 +187,6 @@ Adobe Commerce可讓商家將影像與產品類別建立關聯，協助建立吸
 
 如需AEM Assets程式的相關資訊，請參閱下列檔案：
 
-* [正在重新處理數位資產](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
+* [重新處理數位資產](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
 
 * [核准資產](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)

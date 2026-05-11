@@ -2,9 +2,19 @@
 title: 產品清單頁面Widget
 description: 啟用 [!DNL Live Search Product Listing Page Widget]並設定樣式
 exl-id: 50ba8046-869a-4071-b3a3-a6392544c07b
-source-git-commit: c0a6f038d2528a67da6f1bb4f5e5bb140afc7dfc
+TQID: https://experienceleague.adobe.com/rEQBfgR9CqVBTFtBtq21QFZ6L5ZvoWJ02VI2xiWqAcw
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: 539
 ht-degree: 0%
 
 ---
@@ -54,7 +64,7 @@ PLP Widget提供下列現成可用的功能：
 - 多語言支援
 - 價格滑桿
 
-如需有關如何自訂PLP Widget以處理上述功能的資訊，請參閱下列`storefront-product-listing-page`存放庫[中的](https://github.com/adobe/storefront-product-listing-page/) Readme。 此存放庫中的Readme提供範例，說明如何自訂PLP Widget，並將這些自訂內容部署至您的網站。
+如需有關如何自訂PLP Widget以處理上述功能的資訊，請參閱下列[存放庫](https://github.com/adobe/storefront-product-listing-page/)中的`storefront-product-listing-page` Readme。 此存放庫中的Readme提供範例，說明如何自訂PLP Widget，並將這些自訂內容部署至您的網站。
 
 >[!WARNING]
 >

@@ -2,9 +2,14 @@
 title: 同義字的型別
 description: 單向 [!DNL Live Search] 和雙向同義字會擴展關鍵字的定義。
 exl-id: f5522428-c7cc-4627-a09b-d9148918c127
-source-git-commit: 81bde302463a70e41318b494565694929703dff9
+TQID: https://experienceleague.adobe.com/n0ON02CVlSTTOdRCPFRGVIVPWbGRltq4B0INC-U3ldo
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: 617
 ht-degree: 0%
 
 ---
@@ -18,14 +23,14 @@ ht-degree: 0%
 雙向同義字具有相同涵義，並傳回相同的搜尋結果。 在下列範例中，以粗體顯示的第一個字是目錄中所使用的關鍵字，後面跟著與原始關鍵字具有相同含義的字詞。 您可以為相同關鍵字建立一對簡單的雙向同義字，或是多個雙向同義字的鏈結。
 
 **夾克** ![雙向選擇器](assets/btn-two-way.png)外套
-**褲子** ![雙向選擇器](assets/btn-two-way.png)短褲![雙向選擇器](assets/btn-two-way.png)褲子
+**褲子** ![雙向選擇器](assets/btn-two-way.png)褲子![雙向選擇器](assets/btn-two-way.png)褲子
 
 ## 單向
 
 單向同義字是關鍵字的子集，但具有更明確的含義。 例如，羊毛衫和短褲都是短褲，但並非所有短褲都是羊毛衫或短褲。 搜尋短褲包括卡布衫和短褲。 不過，搜尋短褲不會傳回Capris。
 
 **運動衫** ![單向選擇器](assets/btn-one-way.png)連帽衫
-**褲子** ![單向選擇器](assets/btn-one-way.png)卡普里斯![多個單向選擇器](assets/btn-multiple-one-way.png)小腿長褲![多個單向選擇器](assets/btn-multiple-one-way.png)兜售推手
+**褲子** ![單向選擇器](assets/btn-one-way.png)卡普里斯![多個單向選擇器](assets/btn-multiple-one-way.png)小腿長褲![多個單向選擇器](assets/btn-multiple-one-way.png)兜售推杆
 
 ## 最佳實務
 
@@ -55,4 +60,4 @@ a、an、and、are、as、at、be、but、by、for、if、in、into、is、it、
 
 建立同義字後，搜尋行為會變更，以尋找確切的片語&#x200B;**廚房表**。 這樣可能會減少結果的數量，因為系統只會顯示含有精確片語的產品。
 
-如果您想要像之前一樣分別搜尋字詞，您可以[建立支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。 如果有足夠的需求，Commerce會考慮在未來版本中新增此功能至產品。
+如果您想要像之前一樣分別搜尋字詞，您可以[建立支援票證](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。 如果有足夠的需求，Commerce會考慮在未來版本中新增此功能至產品。

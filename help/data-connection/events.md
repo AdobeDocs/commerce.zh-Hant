@@ -4,9 +4,20 @@ description: 瞭解每個行為事件擷取哪些資料。
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: bcabccc9-8a2e-4045-9306-1d999bb75624
-source-git-commit: 631dfacd26a333e70a70f354d191d256d90d946f
+TQID: https://experienceleague.adobe.com/YS3jKQ3jmy76aeaqAp1PR8cGpD0euagdhoqL6CoMAnQ
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: 467
 ht-degree: 0%
 
 ---
@@ -39,7 +50,7 @@ ht-degree: 0%
 
 搜尋事件會提供與購物者意圖相關的資料。 insight迎合購物者的意圖，可協助商家瞭解購物者如何搜尋商品、他們點選了什麼，最終購買或放棄。 此資料如何使用的範例是，如果您想要鎖定搜尋您最熱門產品但從未購買產品的現有購物者。 您必須安裝[[!DNL Live Search]](../live-search/install.md)擴充功能才能存取這些事件。
 
-使用在`searchRequest.id`和`searchResponse.id`事件中找到的`searchRequestSent`和`searchResponseReceived`欄位，以互動參照搜尋要求至對應的搜尋回應。
+使用在`searchRequestSent`和`searchResponseReceived`事件中找到的`searchRequest.id`和`searchResponse.id`欄位，以互動參照搜尋要求至對應的搜尋回應。
 
 請參閱[開發人員檔案](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#data-connection)，深入瞭解搜尋事件。
 

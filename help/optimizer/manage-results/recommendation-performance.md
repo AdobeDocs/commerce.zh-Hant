@@ -1,11 +1,22 @@
 ---
 title: Recommendations效能
 description: Recommendations效能頁面可提供insight來瞭解您的產品推薦執行情形。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
 exl-id: 1b77e2ea-412b-4c78-9d38-390bd8fda87e
-source-git-commit: 9cb231055df45bbfcff3303c6e1c257c883cb852
+TQID: https://experienceleague.adobe.com/YDgbC964pr7YI4Yas7pHTgnzDY2oxk-uR-eM6eVJE1w
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2:
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '953'
+source-wordcount: 964
 ht-degree: 0%
 
 ---
@@ -90,7 +101,7 @@ ht-degree: 0%
 >
 >此功能目前處於Beta測試階段。
 
-**[!UICONTROL Catalog view]** Recommendations **頁面上的**&#x200B;選取器會做兩件事：
+**Recommendations**&#x200B;頁面上的&#x200B;**[!UICONTROL Catalog view]**&#x200B;選取器會做兩件事：
 
 1. **篩選資料表** — 僅顯示套用至所選目錄檢視的建議（及其量度）。
 1. **設定新建議的範圍** — 當您[建立](../merchandising/recommendations/create.md)建議時，會使用選取的目錄檢視做為單位的範圍。 選項是&#x200B;*所有檢視*&#x200B;或特定的[目錄檢視](../setup/catalog-view.md)。

@@ -3,10 +3,23 @@ title: 設定整合
 description: 瞭解如何連線您的Adobe Commerce專案和Experience Manager Assets專案，以啟用這兩個系統之間的資產同步。
 feature: CMS, Media
 exl-id: 3533d010-926f-4d78-935c-98a9b7040d27
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+TQID: https://experienceleague.adobe.com/MM-neGrH-N8xBcCwLgnsaIrIjhbX6uYL5kS41QdV79I
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2:
+  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '829'
-ht-degree: 0%
+source-wordcount: 904
+ht-degree: 2%
 
 ---
 
@@ -64,10 +77,10 @@ ht-degree: 0%
 
 1. 從&#x200B;**[!UICONTROL Asset matching rule]**&#x200B;下拉式清單中選取其中一個資產比對規則以進行資產同步。
 
-   * 選取&#x200B;**[!UICONTROL Match by SKU]**&#x200B;預設自動比對[的](../synchronize/default-match.md)，
+   * 選取[預設自動比對](../synchronize/default-match.md)的&#x200B;**[!UICONTROL Match by SKU]**，
    * 選取&#x200B;**[!UICONTROL Custom match]**&#x200B;進行[自訂自動比對](../synchronize/custom-match.md) （需要[Adobe Developer App Builder](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)。）
 
-1. 新增在[欄位中為AEM Assets產品SKU定義的](configure-aem.md#define-the-metadata-profile)Commerce中繼資料欄位名稱&#x200B;**[!UICONTROL Match by product SKU attribute name]**，預設為`commerce:skus`。
+1. 新增在&#x200B;**[!UICONTROL Match by product SKU attribute name]**&#x200B;欄位中為AEM Assets產品SKU定義的[Commerce中繼資料欄位名稱](configure-aem.md#define-the-metadata-profile)，預設為`commerce:skus`。
 
 1. 選取&#x200B;**[!UICONTROL Save Config]**&#x200B;以套用更新並啟動資產同步處理。
 
@@ -121,7 +134,7 @@ ht-degree: 0%
 
 ## 下一步
 
-* **設定您的Commerce店面** — 若要搭配使用AEM Assets與由Edge Delivery Services支援的Commerce店面，請完成[Adobe Commerce店面檔案](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/?lang=zh-Hant)中&#x200B;*AEM Assets整合*&#x200B;主題中所述的店面設定。
+* **設定您的Commerce店面** — 若要搭配使用AEM Assets與由Edge Delivery Services支援的Commerce店面，請完成&#x200B;*Adobe Commerce店面檔案*&#x200B;中[AEM Assets整合](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/?lang=zh-Hant)主題中所述的店面設定。
 
 * 設定Adobe Commerce與AEM Assets整合之間的[相符規則](../synchronize/default-match.md)。
 

@@ -2,9 +2,16 @@
 title: 篩選產品
 description: 定義包含或排除不將產品用作建議的條件。
 exl-id: 140bf047-4f6a-48da-b536-d96e78ae3d17
-source-git-commit: 1b10163c39d9f309afd24aa2e808a57e069258f8
+TQID: https://experienceleague.adobe.com/IcJh0vfW3tvlyeZT0K9OnyqLqRmHlgfmUOX3lY-50tg
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: 775
 ht-degree: 0%
 
 ---
@@ -85,4 +92,4 @@ Adobe Commerce會自動將無法設定的預設篩選器套用至建議單位。
 下列排除篩選器可用於根據庫存狀態篩選產品：
 
 - 無庫存 — （僅限排除）排除無庫存的產品。
-- 庫存低 — （僅供排除）排除庫存低的產品。 低庫存狀態是以&#x200B;_詳細目錄組態_&#x200B;中的[僅X剩餘Threshold](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html?lang=zh-Hant)值為基礎。
+- 庫存低 — （僅供排除）排除庫存低的產品。 低庫存狀態是以[詳細目錄組態](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html?lang=zh-Hant)中的&#x200B;_僅X剩餘Threshold_&#x200B;值為基礎。

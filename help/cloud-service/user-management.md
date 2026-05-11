@@ -6,9 +6,21 @@ role: Admin
 level: Intermediate
 exl-id: 9bc80fe6-6dfd-4bb3-8dc5-d5efd8a8d90c
 badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
-source-git-commit: cdb15907871faec9a94b2671a44ac2d6ce8f51c5
+TQID: https://experienceleague.adobe.com/8cIklZrl3rmXMD4Hf6oTU5bBuseh3ianLw2IMujps-E
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1558'
+source-wordcount: 1787
 ht-degree: 0%
 
 ---
@@ -29,7 +41,7 @@ ht-degree: 0%
 
 下列角色適用於[!DNL Adobe Commerce as a Cloud Service]。 若要檢視或編輯這些角色，請在Commerce管理員中導覽至&#x200B;[!UICONTROL **系統**] > [!UICONTROL **許可權**] > [!UICONTROL **使用者角色**]。
 
-* **使用者** — 使用者擁有Commerce管理員的管理員存取權，但無法在Admin Console中管理產品層級的存取權。 使用者也可以使用積分在[中](./getting-started.md#create-an-instance)建立執行個體[!DNL Commerce Cloud Manager]。
+* **使用者** — 使用者擁有Commerce管理員的管理員存取權，但無法在Admin Console中管理產品層級的存取權。 使用者也可以使用積分在[!DNL Commerce Cloud Manager]中[建立執行個體](./getting-started.md#create-an-instance)。
 
   >[!NOTE]
   >
@@ -43,7 +55,7 @@ ht-degree: 0%
 
 * 管理員 — 管理員分為三種型別：
    * [系統管理員](https://helpx.adobe.com/tw/enterprise/using/admin-roles.html){target="_blank"} — 系統管理員可以透過Admin Console存取組織中的所有產品和產品設定檔。
-   * [產品管理員](#add-a-product-admin) — 產品管理員可以在[中](#add-users)管理產品的使用者、角色和許可權[!DNL Adobe Admin Console]，並在Commerce管理員中[管理使用者](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"}。
+   * [產品管理員](#add-a-product-admin) — 產品管理員可以在[!DNL Adobe Admin Console]中[管理產品的使用者、角色和許可權](#add-users)，並在Commerce管理員中[管理使用者](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"}。
    * [產品設定檔管理員](#add-developers-and-product-profile-admins) — 產品設定檔管理員無法存取Adobe Commerce管理員，但可以在[!DNL Adobe Admin Console]中管理產品的使用者。
 
 如需授與Adobe Commerce中每個角色的許可權的詳細資訊，請參閱[角色資源](#role-resources)。
@@ -276,7 +288,7 @@ ht-degree: 0%
 
 ## 存取Experience Manager介面
 
-將使用者新增至[!DNL AEM Assets]後，他們可以導覽至[!DNL Experience Manager]https://experience.adobe.com/[以存取](https://experience.adobe.com/){target="_blank"}介面。
+將使用者新增至[!DNL AEM Assets]後，他們可以導覽至[https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}以存取[!DNL Experience Manager]介面。
 
 1. 在&#x200B;[!UICONTROL **快速存取**]&#x200B;區段中，按一下&#x200B;[!UICONTROL **Experience Manager**]，或按一下&#x200B;[!UICONTROL **檢視全部**] （如果您沒有看見&#x200B;[!UICONTROL **Experience Manager**]）。 然後按一下&#x200B;[!UICONTROL **Cloud Manager**]&#x200B;或直接導覽至[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}。
 
@@ -293,7 +305,7 @@ ht-degree: 0%
 1. [將使用者新增至產品設定檔](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-manager/content/requirements/users-and-roles){target="_blank"}。
 
 * [設定 [!DNL AEM Assets] 以支援Commerce中繼資料](https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/get-started/configure-aem)
-* [整合 [!DNL AEM Assets] 與Commerce以進行資產同步](https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/get-started/setup-synchronization)
+* [整合 [!DNL AEM Assets] 與Commerce以進行資產同步](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization)
 
 {{aem-assets-instance-mapping}}
 

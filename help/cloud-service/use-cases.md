@@ -5,10 +5,26 @@ feature: Cloud, Integration
 role: User, Leader
 level: Beginner
 exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案(Adobe管理的SaaS基礎結構)。"
-source-git-commit: 3fe22d47b6fd6cf1077cbd4644ffad08f55826ca
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
+TQID: https://experienceleague.adobe.com/4L-M8vsEkT6uuafrOISankRaarQ-OVHDWLXwoVLaUZQ
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: 1464
 ht-degree: 0%
 
 ---
@@ -63,7 +79,7 @@ ht-degree: 0%
 
 1. 輸入必要的聯絡詳細資料和送貨資訊。 您可以針對此訂單使用虛構的資訊。
 
-1. 若要結帳，請選取&#x200B;[!UICONTROL **支票/匯票**]。 若要使用信用卡，請使用Paypal[提供的](https://developer.paypal.com/tools/sandbox/card-testing/#link-teststaticcardnumbers)測試卡之一。 您可以將其用於任何未來的到期日和任何CVC。
+1. 若要結帳，請選取&#x200B;[!UICONTROL **支票/匯票**]。 若要使用信用卡，請使用Paypal[&#128279;](https://developer.paypal.com/tools/sandbox/card-testing/#link-teststaticcardnumbers)提供的測試卡之一。 您可以將其用於任何未來的到期日和任何CVC。
 
    ![包含聯絡人及運送資訊欄位的結帳表單](./assets/enter-details.png){width="600" zoomable="yes"}
 
@@ -115,7 +131,7 @@ ht-degree: 0%
 
 1. 按一下&#x200B;[!UICONTROL **新增**]&#x200B;按鈕並選取&#x200B;[!UICONTROL **資料夾**]，在主資料夾下建立&#x200B;[!UICONTROL **實驗**]&#x200B;資料夾。
 
-1. 在&#x200B;**實驗**&#x200B;資料夾中建立名為&#x200B;[!UICONTROL **1234**]&#x200B;的資料夾。
+1. 在&#x200B;[!UICONTROL **實驗**]&#x200B;資料夾中建立名為&#x200B;**1234**&#x200B;的資料夾。
 
 1. 將索引頁面的兩個復本貼到&#x200B;**1234**&#x200B;資料夾中。
 
@@ -158,13 +174,13 @@ ht-degree: 0%
 
 1. 開啟您在先決條件中建立的[店面](./storefront.md)，並導覽至您要變更的專案。 記下專案SKU或產品代碼。
 
-1. 在[!DNL AEM Assets]Adobe Experience Cloud[中選取](https://experience.adobe.com/#/home)，以將其開啟。
+1. 在[Adobe Experience Cloud](https://experience.adobe.com/#/home)中選取[!DNL AEM Assets]，以將其開啟。
 
-   顯示![[!DNL AEM Assets]介面的[!DNL Adobe Experience Cloud]選取器](./assets/select-aem-assets.png){width="600" zoomable="yes"}
+   顯示[!DNL Adobe Experience Cloud]介面的![[!DNL AEM Assets]選取器](./assets/select-aem-assets.png){width="600" zoomable="yes"}
 
 1. 按一下&#x200B;[!UICONTROL **Assets**]。
 
-   ![介面中的[!DNL AEM Assets]Assets導覽選項](./assets/click-assets.png){width="600" zoomable="yes"}
+   [!DNL AEM Assets]介面中的![Assets導覽選項](./assets/click-assets.png){width="600" zoomable="yes"}
 
 1. 依&#x200B;**SKU**&#x200B;或&#x200B;**產品代碼**&#x200B;搜尋專案。
 
@@ -200,19 +216,19 @@ ht-degree: 0%
 
 #### 將影像新增至[!DNL Commerce AEM Assets]
 
-1. 從[的](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel)導覽面板[!DNL AEM as a Cloud Service]，選取&#x200B;[!UICONTROL **Assets**] > [!UICONTROL **檔案**] > [!UICONTROL **Commerce**]，然後按一下您在上一節建立的資產。
+1. 從[!DNL AEM as a Cloud Service]的[導覽面板](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel)，選取&#x200B;[!UICONTROL **Assets**] > [!UICONTROL **檔案**] > [!UICONTROL **Commerce**]，然後按一下您在上一節建立的資產。
 
-   ![中的[!DNL AEM Assets]Commerce資料夾包含產品影像](./assets/commerce-folder.png){width="600" zoomable="yes"}
+   [!DNL AEM Assets]中的![Commerce資料夾包含產品影像](./assets/commerce-folder.png){width="600" zoomable="yes"}
 
 1. 按一下&#x200B;[!UICONTROL **屬性**]。
 
-   ![工具列中的[!DNL AEM Assets]屬性按鈕](./assets/properties.png){width="600" zoomable="yes"}
+   [!DNL AEM Assets]工具列中的![屬性按鈕](./assets/properties.png){width="600" zoomable="yes"}
 
 1. 選取&#x200B;[!UICONTROL **Commerce**]&#x200B;索引標籤。
 
    資產屬性面板中的![Commerce索引標籤](./assets/commerce-tab.png){width="600" zoomable="yes"}
 
-1. 確定&#x200B;[!UICONTROL **存在於Adobe Commerce中嗎？**]&#x200B;欄位已設定為&#x200B;[!UICONTROL **是**]。
+1. 確定&#x200B;[!UICONTROL **存在於Adobe Commerce中嗎？**] 欄位已設定為&#x200B;[!UICONTROL **是**]。
 
 1. 按一下「[!UICONTROL **新增**]」，然後輸入要新增資產的產品SKU。
 
@@ -270,7 +286,7 @@ ht-degree: 0%
 
 1. 在&#x200B;[!UICONTROL **說明使用者互動**]&#x200B;文字方塊中，輸入：「Adobe員工和合作夥伴購買Adobe品牌用具的體驗！」
 
-1. 在網域知識&#x200B;[!UICONTROL **的**] URL中，輸入&#x200B;**www.adobestore.com**。
+1. 在網域知識&#x200B;**的** URL中，輸入&#x200B;**www.adobestore.com**。
 
 1. 按一下&#x200B;[!UICONTROL **產生**]。
 

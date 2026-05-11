@@ -7,9 +7,18 @@ feature-set: Commerce
 role: Developer
 level: Intermediate
 type: Tutorial
-source-git-commit: 0ece7b58bdafd664297cbdee809c53ef2389fb12
+TQID: https://experienceleague.adobe.com/UvtVXuUjbanuVWqNG3-bYQh6IzY1OuDjGYpojtXHMHY
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '1217'
+source-wordcount: 1291
 ht-degree: 0%
 
 ---
@@ -37,7 +46,7 @@ ht-degree: 0%
 
 * Bash shell
    * macOS/Linux：不需要安裝
-   * Windows：使用[Git Bash](https://git-scm.com/install)或Linux (WSL) [的](https://learn.microsoft.com/en-us/windows/wsl/install)Windows子系統
+   * Windows：使用[Git Bash](https://git-scm.com/install)或Linux (WSL) [&#128279;](https://learn.microsoft.com/en-us/windows/wsl/install)的Windows子系統
 
 * 下載AI輔助的IDE，例如[Cursor](https://cursor.com/download) （建議使用）。 也支援其他IDE，例如Claude Code、Gemini CLI或Copilot，但可能需要修改提示和教學課程中的其他步驟。
 
@@ -293,7 +302,7 @@ OAUTH_TECHNICAL_ACCOUNT_EMAIL=
 OAUTH_ORG_ID=
 ```
 
-按一下工作區上的「**[!UICONTROL Credential details]**」索引標籤，從[Developer Console](https://developer.adobe.com/)的「**[!UICONTROL OAuth Server-to-Server]**」頁面複製這些值。
+按一下工作區上的「**[!UICONTROL OAuth Server-to-Server]**」索引標籤，從[Developer Console](https://developer.adobe.com/)的「**[!UICONTROL Credential details]**」頁面複製這些值。
 
 Adobe Developer Console中的![OAuth伺服器對伺服器認證頁面](../assets/oauth-credentials.png){width="600" zoomable="yes"}
 
@@ -382,7 +391,7 @@ aio app use --merge
 
    >[!NOTE]
    >
-   >如果您看到開機套件找不到任何技能的警告，表示發生錯誤，這通常是因為安裝程式是在開機套件複製位置以外的資料夾中執行。 從`aio commerce extensibility tools-setup`資料夾（入門套件專案根目錄）執行`extension`，並在出現提示時選取適當的入門套件。
+   >如果您看到開機套件找不到任何技能的警告，表示發生錯誤，這通常是因為安裝程式是在開機套件複製位置以外的資料夾中執行。 從`extension`資料夾（入門套件專案根目錄）執行`aio commerce extensibility tools-setup`，並在出現提示時選取適當的入門套件。
 
    ![終端機顯示設定了AI擴充性工具，並選取結帳啟動套件](../assets/tools-setup-checkout.png){width="600" zoomable="yes"}
 
@@ -390,11 +399,11 @@ aio app use --merge
 
 本節說明如何手動設定[Ratings擴充功能教學課程](./ratings-extension.md)和其他店面教學課程的店面。
 
-若要自動設定店面，請執行`app-setup`自動化設定[區段中說明的](#automated-setup)命令，並選取[!DNL AEM Boilerplate Commerce]入門套件。
+若要自動設定店面，請執行[自動化設定](#automated-setup)區段中說明的`app-setup`命令，並選取[!DNL AEM Boilerplate Commerce]入門套件。
 
 ### 先決條件
 
-若要完成[評等延伸教學課程](./ratings-extension.md#connect-to-the-storefront)的[店面](./ratings-extension.md)區段，並在您的商店中顯示產品評等，必須執行下列專案。
+若要完成[評等延伸教學課程](./ratings-extension.md)的[店面](./ratings-extension.md#connect-to-the-storefront)區段，並在您的商店中顯示產品評等，必須執行下列專案。
 
 * [Google Chrome](https://www.google.com/chrome/) — 測試店面所需
 

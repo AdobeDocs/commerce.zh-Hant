@@ -1,11 +1,32 @@
 ---
 title: 成功量度
 description: 成功量度可將insight提供至 [!DNL Adobe Commerce Optimizer] 存放區的關鍵效能量度。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案(Adobe管理的SaaS基礎結構)。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
 exl-id: 7202a531-fec3-4698-89b9-6bdbcc37015e
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+TQID: https://experienceleague.adobe.com/Z1Ntq9O5Pde8B2N8UCarCf-V5NZw-YiCx78ortu5PwY
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '2594'
+source-wordcount: 2627
 ht-degree: 0%
 
 ---
@@ -131,7 +152,7 @@ ht-degree: 0%
 
 **它測量的內容：**&#x200B;在選取的時段內，您的商店產生的總收入。
 
-**計算方式：**&#x200B;收入是報告期間所有已售出產品之所有完成訂單(基本價格×數量)的總和。 此計算使用從您的店面擷取的`place-order`個事件中的資料。
+**計算方式：**&#x200B;收入是報告期間所有已售出產品之所有完成訂單（基本價格×數量）的總和。 此計算使用從您的店面擷取的`place-order`個事件中的資料。
 
 >[!IMPORTANT]
 >
@@ -189,8 +210,8 @@ Conversion Rate = (Total Number of Orders ÷ Total Unique Visitors) × 100
 
 **運作方式：**
 
-- 當訪客檢視產品頁面時（使用&#x200B;**個事件），會追蹤**&#x200B;產品檢視`product-view`。
-- 當訂單完成時（使用&#x200B;**個事件），會追蹤**&#x200B;次購買`place-order`。
+- 當訪客檢視產品頁面時（使用`product-view`個事件），會追蹤&#x200B;**產品檢視**。
+- 當訂單完成時（使用`place-order`個事件），會追蹤&#x200B;**次購買**。
 - 計算方式會將檢視特定產品的使用者與購買這些產品的使用者進行比對。
 
 **重要備註：**
@@ -342,7 +363,7 @@ Bounce Rate = (Number of Bounced Sessions ÷ Total Sessions) × 100
 - 比較不同頁面型別和流量來源之間的跳出率，以找出問題區域。
 - 跳出率的突然增加通常表示技術問題或行銷活動目標定位不佳。
 
-**什麼是良好的跳出率？**&#x200B;這依產業和頁面型別而異，但一般而言：
+**什麼是良好的跳出率？** 這依產業和頁面型別而異，但一般而言：
 
 - 40-60%：電子商務網站的平均值。
 - 低於40%：優異的參與度。

@@ -2,9 +2,14 @@
 title: 設定
 description: 設定 [!DNL Live Search] 服務的設定。
 exl-id: 6387a365-7e23-4023-95ac-27908164d81c
-source-git-commit: 70ff444afbe7ddf41e966e479e03975a02f4e10f
+TQID: https://experienceleague.adobe.com/Dn4x8Boo-1F5RQgMXVx6Dpt7iYWFIlqOlO5QwhJrjVU
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: 467
 ht-degree: 0%
 
 ---
@@ -24,7 +29,7 @@ ht-degree: 0%
 您可以指定價格範圍群組的數量，以及價格值在群組之間的分配方式。 每個價格範圍會依序與上一個群組重疊。 例如，間隔為20的五個群組會建立下列價格範圍：0-20、20-40、40-60、60-80和>80。 如果目錄中沒有足夠產品可填滿所有已定義的範圍，則會相應地調整可用群組的顯示。 例如：0-20、60-80、>80。
 
 1. 在Admin中，移至&#x200B;**行銷** > *SEO與搜尋* > **[!DNL Live Search]**。
-1. 在&#x200B;**價格面向**&#x200B;下的&#x200B;*設定*&#x200B;工作區上，執行下列動作：
+1. 在&#x200B;*價格面向*&#x200B;下的&#x200B;**設定**&#x200B;工作區上，執行下列動作：
    * 輸入可用的&#x200B;**選擇數目**&#x200B;或價格群組。 透過[!DNL Live Search] 4.4.0，您可以定義最多100個價格群組。 舊版允許50個價格群組。
    * 輸入每個群組的&#x200B;**間隔值**&#x200B;或價格範圍。 最大值為40,000,000。
 1. 按一下&#x200B;**儲存**。
