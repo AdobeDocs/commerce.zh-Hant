@@ -42,7 +42,7 @@ ht-degree: 2%
 
 請參閱[即將發行的版本](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule)，瞭解發行排程和支援。
 
-請參閱開發人員檔案以[瞭解哪些Commerce版本支援此模組](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)。
+請參閱開發人員檔案以[瞭解哪些Commerce版本支援此模組](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/product-availability)。
 
 ## 支援的服務更新
 

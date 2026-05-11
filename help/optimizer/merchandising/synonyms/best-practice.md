@@ -2,7 +2,7 @@
 title: 同義字最佳作法
 description: 瞭解在存放區中實作同義字的最佳實務。
 role: Admin, Developer
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
 exl-id: 026bb17b-14e3-4493-ae10-376837b69de6
 TQID: https://experienceleague.adobe.com/2ktYgzsiM-BvHEJNeu0-XkxhgDThHVuXMnDux3Fb9WA
 product_v2:

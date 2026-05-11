@@ -39,4 +39,4 @@ AEM Assets整合會顯示在AEM Assets中管理的產品影像，而非使用Ado
 
 Commerce下拉式清單會自動偵測`commerce-assets-enabled`設定，並據此調整影像處理。
 
-如需如何使用AEM Assets搭配Edge Delivery Services支援的Commerce店面的詳細資訊，請完成&#x200B;*Adobe Commerce店面*&#x200B;檔案中[AEM Assets整合](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/)主題中所述的店面設定。
+如需如何使用AEM Assets搭配Edge Delivery Services支援的Commerce店面的詳細資訊，請完成&#x200B;*Adobe Commerce店面*&#x200B;檔案中[AEM Assets整合](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/?lang=zh-Hant)主題中所述的店面設定。

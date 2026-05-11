@@ -24,16 +24,16 @@ ht-degree: 0%
 
 當您的購物者在您的Commerce網站中建立設定檔時，會建立設定檔記錄並擷取資料。 您必須先建立該設定檔記錄專屬的結構描述和資料集，才能將該設定檔資料串流至Experience Platform。
 
-1. [建立](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas)結構描述，並將類別設定為&#x200B;**個別設定檔**。
+1. [建立](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/ui/resources/schemas)結構描述，並將類別設定為&#x200B;**個別設定檔**。
 
-1. [新增](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas)下列設定檔特定欄位群組：
+1. [新增](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/ui/resources/schemas)下列設定檔特定欄位群組：
 
    - identityMap
    - 人口統計細節
    - 個人聯絡詳細資訊
    - 使用者帳戶詳細資訊
 
-1. [為設定檔啟用](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas)結構描述。
+1. [為設定檔啟用](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/ui/resources/schemas)結構描述。
 
    為設定檔啟用結構描述時，從此結構描述建立的任何資料集都會參與Real-Time CDP，其會合併來自不同來源的資料，以建構每個客戶的完整檢視。
 

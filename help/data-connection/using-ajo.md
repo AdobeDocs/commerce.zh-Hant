@@ -34,7 +34,7 @@ ht-degree: 0%
 | 資料型別 | 店面資料（行為事件） | 後台資料（伺服器端事件） |
 |---|---|---|
 | **定義** | 客戶在您網站上採取的點按或動作。 | 生命週期相關資訊和每個訂單（過去和目前）的詳細資訊。 |
-| 由Adobe Commerce擷取的&#x200B;**個事件** | [pageView](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#pageview)<br>[productPageView](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events)<br>[addToCart](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#addtocart)<br>[openCart](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#opencart)<br>[startCheckout](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#startcheckout)<br>[completeCheckout](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#completecheckout) | [orderPlaced](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events-backoffice#orderplaced)<br>[訂單歷史記錄](https://experienceleague.adobe.com/en/docs/commerce/data-connection/fundamentals/connect-data#send-historical-order-data) |
+| 由Adobe Commerce擷取的&#x200B;**個事件** | [pageView](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#pageview)<br>[productPageView](https://experienceleague.adobe.com/zh-hant/docs/commerce/data-connection/event-forwarding/events)<br>[addToCart](https://experienceleague.adobe.com/zh-hant/docs/commerce/data-connection/event-forwarding/events#addtocart)<br>[openCart](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#opencart)<br>[startCheckout](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#startcheckout)<br>[completeCheckout](https://experienceleague.adobe.com/zh-hant/docs/commerce/data-connection/event-forwarding/events#completecheckout) | [orderPlaced](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events-backoffice#orderplaced)<br>[訂單歷史記錄](https://experienceleague.adobe.com/zh-hant/docs/commerce/data-connection/fundamentals/connect-data#send-historical-order-data) |
 
 ### 其他客戶都取得了哪些成就？
 
@@ -96,7 +96,7 @@ retailer實現了全球性的多品牌服飾：
 
 在您的[!DNL Commerce]沙箱環境中，檢視產品頁面、將專案新增至購物車並完成購物者將執行的各種其他活動，以觸發店面上的事件。 然後，確認這些事件正在流入Journey Optimizer。
 
-1. 啟動[Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html)。
+1. 啟動[Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html?lang=zh-Hant)。
 1. 選取&#x200B;**[!UICONTROL Profiles]**。
 1. 將&#x200B;**[!UICONTROL Identity namespace]**&#x200B;設為`Email`。
 1. 將&#x200B;**[!UICONTROL Identity value]**&#x200B;設定為您的電子郵件地址。
@@ -125,7 +125,7 @@ retailer實現了全球性的多品牌服飾：
 
 ### 建立監聽器事件
 
-1. 啟動[Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html)。
+1. 啟動[Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html?lang=zh-Hant)。
 
 1. 按一下左窗格&#x200B;**[!UICONTROL Administration]**&#x200B;區段下的&#x200B;**[!UICONTROL Configurations]**。
 
@@ -198,7 +198,7 @@ retailer實現了全球性的多品牌服飾：
 
 1. 在您上述建立的歷程中，按兩下畫布上的&#x200B;**[!UICONTROL Email]**&#x200B;圖示。
 
-1. 依照Journey Optimizer指南中的[步驟](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/personalization/personalization-use-cases/personalization-use-case-helper-functions.html#configure-email)建立捨棄的購物車電子郵件。
+1. 依照Journey Optimizer指南中的[步驟](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/personalization/personalization-use-cases/personalization-use-case-helper-functions.html?lang=zh-Hant#configure-email)建立捨棄的購物車電子郵件。
 
 您現在在Journey Optimizer中有一個從您的[!DNL Commerce]商店監聽`commerce.checkouts`事件的歷程，以及一個一段時間後傳送的捨棄購物車電子郵件。 下一節將說明如何測試歷程。
 

@@ -27,7 +27,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->您也可以從Admin的[資料摘要同步狀態儀表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)追蹤產品與類別資料之資料匯出摘要的健康狀況和效能。
+>您也可以從Admin的[資料摘要同步狀態儀表板](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)追蹤產品與類別資料之資料匯出摘要的健康狀況和效能。
 
 ## 記錄檔
 
@@ -159,11 +159,11 @@ Price feed full resync:
 
 #### 同步處理未執行
 
-如果同步未依排程執行，或未同步任何專案，請參閱此[知識庫](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce)文章。
+如果同步未依排程執行，或未同步任何專案，請參閱此[知識庫](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce)文章。
 
 #### 同步失敗
 
-如果目錄同步處理的狀態為&#x200B;**失敗**，請提交[支援票證](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)。
+如果目錄同步處理的狀態為&#x200B;**失敗**，請提交[支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)。
 
 ## 延伸記錄
 

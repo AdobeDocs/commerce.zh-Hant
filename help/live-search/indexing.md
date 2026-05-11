@@ -31,7 +31,7 @@ ht-degree: 0%
 
 屬性中繼資料的範圍是`website/store/store view`。
 
-[!DNL Live Search] API允許使用者端在Adobe Commerce管理中，依任何具有[storefront屬性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) `Use in Search`設定為`Yes`的產品屬性來排序。 啟用時，可以為屬性設定`Search Weight`。
+[!DNL Live Search] API允許使用者端在Adobe Commerce管理中，依任何具有[storefront屬性](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/product-attributes/product-attributes) `Use in Search`設定為`Yes`的產品屬性來排序。 啟用時，可以為屬性設定`Search Weight`。
 
 [!DNL Live Search]未索引已刪除的產品或設定為`Not Visible Individually`的產品。
 
@@ -100,7 +100,7 @@ ht-degree: 0%
 
 ## 使用者端搜尋
 
-[!DNL Live Search] API可讓使用者端藉由將[storefront屬性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes)，*產品清單中用於排序的*&#x200B;設定為`Yes`，依任何可排序的產品屬性排序。 根據主題，此設定會導致在目錄頁面上的[排序依據](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/navigation/navigation)分頁控制項中包含屬性作為選項。 [!DNL Live Search]最多可為200個產品屬性編制索引，其中有[可搜尋且可篩選的店面屬性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes)。
+[!DNL Live Search] API可讓使用者端藉由將[storefront屬性](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/product-attributes/product-attributes)，*產品清單中用於排序的*&#x200B;設定為`Yes`，依任何可排序的產品屬性排序。 根據主題，此設定會導致在目錄頁面上的[排序依據](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/catalog/navigation/navigation)分頁控制項中包含屬性作為選項。 [!DNL Live Search]最多可為200個產品屬性編制索引，其中有[可搜尋且可篩選的店面屬性](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/product-attributes/product-attributes)。
 
 索引中繼資料儲存在索引管道中，並可由搜尋服務存取。
 

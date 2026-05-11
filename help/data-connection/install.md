@@ -85,7 +85,7 @@ ht-degree: 0%
 
 #### 在雲端基礎結構上
 
-在雲端基礎結構上的Adobe Commerce中，啟用`.magento.env.yaml`中的`ENABLE_EVENTING`全域變數。 [了解更多](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global.html#enable_eventing)。
+在雲端基礎結構上的Adobe Commerce中，啟用`.magento.env.yaml`中的`ENABLE_EVENTING`全域變數。 [了解更多](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global.html?lang=zh-Hant#enable_eventing)。
 
 ```bash
 stage:

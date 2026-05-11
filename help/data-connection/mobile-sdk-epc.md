@@ -30,7 +30,7 @@ ht-degree: 0%
 
 將[Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/home/)與Commerce行動應用程式整合後，商戶可將Commerce [事件資料](events.md)傳送至Experience Platform Edge。
 
-當Commerce事件資料位於邊緣時，其他Adobe Experience Cloud應用程式即可存取這些資料。 例如，您可以使用資料在Real-Time CDP中建立對象，然後[使用這些對象](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html)個人化您的Commerce行動應用程式。
+當Commerce事件資料位於邊緣時，其他Adobe Experience Cloud應用程式即可存取這些資料。 例如，您可以使用資料在Real-Time CDP中建立對象，然後[使用這些對象](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html?lang=zh-Hant)個人化您的Commerce行動應用程式。
 
 ## 設定
 
@@ -174,4 +174,4 @@ ht-degree: 0%
 
 ## 後續步驟
 
-若要瞭解如何從您的行動Real-Time CDP應用程式擷取Commerce對象，以告知購物車價格規則、動態區塊和相關產品規則，請參閱[Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk)。
+若要瞭解如何從您的行動Real-Time CDP應用程式擷取Commerce對象，以告知購物車價格規則、動態區塊和相關產品規則，請參閱[Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html?lang=zh-Hant#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk)。

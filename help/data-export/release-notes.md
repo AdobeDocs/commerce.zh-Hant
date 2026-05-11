@@ -134,7 +134,7 @@ _2025年11月24日_
 
 _2025年10月22日_
 
-![新](../assets/new.svg)已新增資料摘要同步狀態擴充功能的支援，以監視和疑難排解從Adobe Commerce到連線服務（目錄服務、即時搜尋和產品建議）的資料傳輸。 如需有關安裝及使用此擴充功能的詳細資訊，請參閱&#x200B;*Commerce管理指南*&#x200B;中的[資料摘要同步狀態監視](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html)。<!--MDEE-954-->
+![新](../assets/new.svg)已新增資料摘要同步狀態擴充功能的支援，以監視和疑難排解從Adobe Commerce到連線服務（目錄服務、即時搜尋和產品建議）的資料傳輸。 如需有關安裝及使用此擴充功能的詳細資訊，請參閱&#x200B;*Commerce管理指南*&#x200B;中的[資料摘要同步狀態監視](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html?lang=zh-Hant)。<!--MDEE-954-->
 
 ### 103.4.14版
 
@@ -160,7 +160,7 @@ _2025年9月18日_
 
 _2025年8月29日_
 
-僅![新](../assets/new.svg) [!BADGE PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"}
+僅![新](../assets/new.svg) [!BADGE PaaS]{type=Informative url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"}
 新增對其他產品屬性的支援，以在產品摘要中包含Commerce產品設定的稅種、屬性集和存貨資料。 如果客戶想要在產品匯出摘要中包含這些屬性，必須將「額外產品屬性」模組新增至其Adobe Commerce專案。 請參閱[新增稅捐類別、屬性集及存貨屬性](add-tax-attribute-set-inventory-attributes.md)。<!--MDEE-1135-->
 
 ![修正](../assets/fix.svg)解決在完整產品索引期間發生錯誤時，所刪除產品更新的同步處理不正確的問題。 現在，即使索引過程中發生錯誤，所有產品刪除仍會正確同步。<!--MDEE-1144-->

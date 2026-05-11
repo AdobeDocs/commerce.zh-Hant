@@ -43,7 +43,7 @@ Adobe Commerce [!DNL Live Search]與[[!DNL Catalog Service]](../catalog-service/
 
 ## 需求
 
-- [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+
+- [Adobe Commerce](https://business.adobe.com/tw/products/magento/magento-commerce.html) 2.4.4+
 - PHP 8.1、8.2、8.3或8.4
 - [!DNL Composer]
 - 執行cron工作和索引子
@@ -69,7 +69,7 @@ Adobe Commerce [!DNL Live Search]與[[!DNL Catalog Service]](../catalog-service/
 >
 >如果您使用Adobe Commerce搭配HIPAA就緒擴充功能和Healthcare附加元件，請勿透過LiveSearch處理任何受保護的健康資訊(PHI)> 即時搜尋不是HIPAA就緒服務。
 >
->如需詳細資訊，請參閱Adobe Commerce[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview)上的HIPAA整備，以及[Operations](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/operations)指南，其中列出非HIPAA整備Commerce服務中的即時搜尋。
+>如需詳細資訊，請參閱Adobe Commerce[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/compliance/hipaa-ready-service/overview)上的HIPAA整備，以及[Operations](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/compliance/hipaa-ready-service/operations)指南，其中列出非HIPAA整備Commerce服務中的即時搜尋。
 
 ## 工作流程概觀
 
@@ -94,7 +94,7 @@ Adobe Commerce [!DNL Live Search]與[[!DNL Catalog Service]](../catalog-service/
 
 如果您在新的Commerce執行個體上安裝[!DNL Live Search]，請依照這些指示操作。
 
-1. 確認[cron工作](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)和[索引子](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management)正在執行。
+1. 確認[cron工作](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)和[索引子](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/tools/index-management)正在執行。
 
 1. 使用Composer將「即時搜尋」模組新增至您的專案：
 
@@ -122,7 +122,7 @@ Adobe Commerce [!DNL Live Search]與[[!DNL Catalog Service]](../catalog-service/
    bin/magento setup:upgrade
    ```
 
-1. 確認下列[索引子](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management)已設定為「依排程更新」：
+1. 確認下列[索引子](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/tools/index-management)已設定為「依排程更新」：
 
    - 產品摘要
    - 產品變體摘要
@@ -139,7 +139,7 @@ Adobe Commerce [!DNL Live Search]與[[!DNL Catalog Service]](../catalog-service/
 
 如果您要在現有的Commerce執行個體上安裝[!DNL Live Search]，請依照這些指示操作。
 
-1. 確認[cron工作](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)和[索引子](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management)正在執行。
+1. 確認[cron工作](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)和[索引子](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/tools/index-management)正在執行。
 
 1. 使用Composer將「即時搜尋」模組新增至您的專案：
 
@@ -167,7 +167,7 @@ Adobe Commerce [!DNL Live Search]與[[!DNL Catalog Service]](../catalog-service/
    bin/magento setup:upgrade
    ```
 
-1. 確認下列[索引子](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management)已設定為「依排程更新」：
+1. 確認下列[索引子](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/tools/index-management)已設定為「依排程更新」：
 
    - 產品摘要
    - 產品變體摘要
@@ -234,7 +234,7 @@ bin/magento saas:resync --feed categoryPermissions
 
 ### 監視同步處理進度
 
-使用[資料管理儀表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)監視同步處理進度。 此儀表板提供您店面產品資料可用性的寶貴見解，確保可及時向客戶顯示。
+使用[資料管理儀表板](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)監視同步處理進度。 此儀表板提供您店面產品資料可用性的寶貴見解，確保可及時向客戶顯示。
 
 ![資料管理儀表板](assets/data-management-dashboard.png)
 
@@ -282,7 +282,7 @@ bin/magento saas:resync --feed categoryPermissions
 
 當您變更此設定時，會出現訊息`Page cache is invalidated`。 您需要清除Magento快取以儲存變更。
 
-1. 執行下列其中一項作業來存取[快取管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management)頁面：
+1. 執行下列其中一項作業來存取[快取管理](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/tools/cache-management)頁面：
 
    - 按一下工作區上方訊息中的&#x200B;**[!UICONTROL Cache Management]**&#x200B;連結。
    - 在&#x200B;_管理員_&#x200B;側邊欄上，移至&#x200B;**[!UICONTROL System]** > _[!UICONTROL Tools]_>**[!UICONTROL Cache Management]**。
@@ -293,7 +293,7 @@ bin/magento saas:resync --feed categoryPermissions
 
 ### 指派類別
 
-在[!DNL Live Search]中傳回的產品必須指派給[類別](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories)。 例如，在Luma中，產品分為「男性」、「女性」和「齒輪」等類別。 也會為「Top」、「Bottoms」和「Watch」設定子類別。 這些類別指派可改善篩選時的精細度。
+在[!DNL Live Search]中傳回的產品必須指派給[類別](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/categories/categories)。 例如，在Luma中，產品分為「男性」、「女性」和「齒輪」等類別。 也會為「Top」、「Bottoms」和「Watch」設定子類別。 這些類別指派可改善篩選時的精細度。
 
 ## &#x200B;6. 測試連線 {#test}
 
@@ -388,7 +388,7 @@ composer update magento/live-search --with-dependencies
 | `module-live-search` | 允許商戶設定其面向、同義字、查詢規則等的搜尋設定，並提供唯讀GraphQL遊樂場的存取權，以測試來自&#x200B;*Admin*&#x200B;的查詢。 |
 | `module-live-search-storefront-popover` | 「依輸入方式搜尋」彈出視窗會取代標準快速搜尋，並傳回熱門搜尋結果的資料和縮圖。 |
 | `module-live-search-product-listing` | 提供搜尋和瀏覽(PLP)結果的涵蓋範圍，並包括頁面上的多面向、排序和產品卡區域。 |
-| `module-live-search-adapter` | **（截至[!DNL Live Search] 4.0.0，搜尋配接器已[棄用](release-notes.md#live-search-400)。）** 將搜尋要求從店面路由到[!DNL Live Search]服務，並在店面中呈現結果。 <br /> — 類別瀏覽 — 將要求從店面[上層導覽](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/navigation/navigation-top)路由到搜尋服務。<br /> — 全域搜尋 — 將要求從[快速搜尋](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search)欄位路由到[!DNL Live Search]服務。 快速搜尋欄位位於店面頁面的右上角。 |
+| `module-live-search-adapter` | **（截至[!DNL Live Search] 4.0.0，搜尋配接器已[棄用](release-notes.md#live-search-400)。）** 將搜尋要求從店面路由到[!DNL Live Search]服務，並在店面中呈現結果。 <br /> — 類別瀏覽 — 將要求從店面[上層導覽](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/catalog/navigation/navigation-top)路由到搜尋服務。<br /> — 全域搜尋 — 將要求從[快速搜尋](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search)欄位路由到[!DNL Live Search]服務。 快速搜尋欄位位於店面頁面的右上角。 |
 
 ## [!DNL Live Search]相依性
 
@@ -499,7 +499,7 @@ Adobe建議直接呼叫SaaS API，尤其是目錄服務端點。
 
 ### Inventory management
 
-[!DNL Live Search]在Commerce中支援[Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction)功能（先前稱為多Source詳細目錄，或MSI）。 若要啟用完整支援，您必須[將](install.md#updating-live-search)相依性模組`commerce-data-export`更新為102.2.0+版。
+[!DNL Live Search]在Commerce中支援[Inventory management](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/inventory/introduction)功能（先前稱為多Source詳細目錄，或MSI）。 若要啟用完整支援，您必須[將](install.md#updating-live-search)相依性模組`commerce-data-export`更新為102.2.0+版。
 
 [!DNL Live Search]傳回布林值，指出產品是否可在Inventory management中使用，但不包含有關哪個來源有庫存的資訊。
 
@@ -536,7 +536,7 @@ composer require magento/module-data-services-graphql
 
 ### B2B支援
 
-[!DNL Live Search]支援[B2B功能](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/guide-overview)及其他[限制](boundaries-limits.md#b2b-and-category-permissions)。
+[!DNL Live Search]支援[B2B功能](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/b2b/guide-overview)及其他[限制](boundaries-limits.md#b2b-and-category-permissions)。
 
 ### PWA支援
 

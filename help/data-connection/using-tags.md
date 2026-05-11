@@ -26,7 +26,7 @@ ht-degree: 0%
 
 # 使用Adobe Experience Platform標籤收集Commerce資料
 
-雖然您可以使用[!DNL Data Connection]擴充功能來發佈及訂閱店面活動，但有些商家可能已經在使用資料收集解決方案，例如[Adobe Experience Platform標籤](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html)。 對於這些商家，Adobe Commerce會在使用Adobe Commerce Event SDK的[!DNL Data Connection]擴充功能中提供僅發佈選項。
+雖然您可以使用[!DNL Data Connection]擴充功能來發佈及訂閱店面活動，但有些商家可能已經在使用資料收集解決方案，例如[Adobe Experience Platform標籤](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html?lang=zh-Hant)。 對於這些商家，Adobe Commerce會在使用Adobe Commerce Event SDK的[!DNL Data Connection]擴充功能中提供僅發佈選項。
 
 ![[!DNL Data Connection]擴充功能資料流程](assets/tags-data-flow.png)
 _[!DNL Data Connection]含標籤的擴充功能資料流程_
@@ -1425,7 +1425,7 @@ return IdentityMap;
 
 ## 設定同意
 
-當您在Adobe Commerce中安裝[!DNL Data Connection]擴充功能時，預設會啟用資料彙集同意。 選擇退出是透過[`mg_dnt` Cookie](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html)管理。 如果您選擇使用`mg_dnt`管理同意，可以依照這裡概述的步驟進行。 [Adobe Experience Platform Web SDK檔案](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html)提供幾個管理同意的其他選項。
+當您在Adobe Commerce中安裝[!DNL Data Connection]擴充功能時，預設會啟用資料彙集同意。 選擇退出是透過[`mg_dnt` Cookie](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=zh-Hant)管理。 如果您選擇使用`mg_dnt`管理同意，可以依照這裡概述的步驟進行。 [Adobe Experience Platform Web SDK檔案](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html)提供幾個管理同意的其他選項。
 
 1. 為`mg_dnt` Cookie建立&#x200B;**核心自訂程式碼**&#x200B;資料元素(`%do not track cookie%`)：
 
