@@ -18,9 +18,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 118e2865ce9d4903b9a82254e0f56fc76c9fdadf
 workflow-type: tm+mt
-source-wordcount: 1787
+source-wordcount: 1822
 ht-degree: 0%
 
 ---
@@ -53,10 +53,15 @@ ht-degree: 0%
 
 * [**開發人員**](https://helpx.adobe.com/tw/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"} — 開發人員擁有使用者許可權，並且已作為開發人員使用者新增至Commerce執行個體。 他們可以使用[[!DNL Admin UI SDK]](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/){target="_blank"}、[設定事件](https://developer.adobe.com/commerce/extensibility/events/){target="_blank"}和[建立Webhook](https://developer.adobe.com/commerce/extensibility/webhooks/){target="_blank"}。
 
-* 管理員 — 管理員分為三種型別：
+* 管理員 — 有不同型別的管理員角色：
    * [系統管理員](https://helpx.adobe.com/tw/enterprise/using/admin-roles.html){target="_blank"} — 系統管理員可以透過Admin Console存取組織中的所有產品和產品設定檔。
    * [產品管理員](#add-a-product-admin) — 產品管理員可以在[!DNL Adobe Admin Console]中[管理產品的使用者、角色和許可權](#add-users)，並在Commerce管理員中[管理使用者](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"}。
    * [產品設定檔管理員](#add-developers-and-product-profile-admins) — 產品設定檔管理員無法存取Adobe Commerce管理員，但可以在[!DNL Adobe Admin Console]中管理產品的使用者。
+   * 支援管理員 — 支援管理員可以建立和管理支援票證。
+
+>[!NOTE]
+>
+>如果您希望使用者能夠建立支援票證，必須在Admin Console中為其指派&#x200B;**支援管理員**&#x200B;角色。
 
 如需授與Adobe Commerce中每個角色的許可權的詳細資訊，請參閱[角色資源](#role-resources)。
 
@@ -305,7 +310,7 @@ ht-degree: 0%
 1. [將使用者新增至產品設定檔](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-manager/content/requirements/users-and-roles){target="_blank"}。
 
 * [設定 [!DNL AEM Assets] 以支援Commerce中繼資料](https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/get-started/configure-aem)
-* [整合 [!DNL AEM Assets] 與Commerce以進行資產同步](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization)
+* [整合 [!DNL AEM Assets] 與Commerce以進行資產同步](https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/get-started/setup-synchronization)
 
 {{aem-assets-instance-mapping}}
 
