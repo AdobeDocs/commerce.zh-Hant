@@ -4,10 +4,21 @@ description: Adobe Commerce中 [!DNL Live Search] 的最新發行資訊。
 feature: Services, Search, Release Notes
 exl-id: 099cf79c-968c-4381-b66d-7f6141ad2db3
 TQID: https://experienceleague.adobe.com/yqNae8Xsc51q4Zn-WXJ3y48cNnzUDTkDncv-RppkIlI
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d095671a-1355-40aa-8b5f-06c33c68080bid: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: c3e995d46b7cfca3186b7599e22b825f0efa80f1
 workflow-type: tm+mt
 source-wordcount: 3052
@@ -36,7 +47,7 @@ _2025年10月1日_
 
 _2025年4月29日_
 
-![修正](../assets/fix.svg)修正&#x200B;[**效能**](./performance.md)&#x200B;索引標籤上的&#x200B;**匯出至CSV**報告未包含日期範圍中指定之所有資料的問題。
+![修正](../assets/fix.svg)修正&#x200B;[**效能**](./performance.md)&#x200B;索引標籤上的&#x200B;**匯出至CSV**&#x200B;報告未包含日期範圍中指定之所有資料的問題。
 ![修正](../assets/fix.svg)修正使用搜尋查詢篩選時，無法儲存[銷售規則](./rules.md)的問題。
 ![修正](../assets/fix.svg)修正[釘選產品](./facets-manage.md#pinunpin-facet)未列在結果頁面頂端的問題。
 
@@ -62,7 +73,7 @@ _2024年9月19日_
 
 _2024年9月4日_
 
-![修正](../assets/fix.svg)將Facet](boundaries-limits.md#facets)內可傳回[的最大值區數增加到100。
+![修正](../assets/fix.svg)將Facet[&#128279;](boundaries-limits.md#facets)內可傳回的最大值區數增加到100。
 
 _2024年8月7日_
 
