@@ -19,9 +19,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: c3e995d46b7cfca3186b7599e22b825f0efa80f1
 workflow-type: tm+mt
-source-wordcount: 2996
+source-wordcount: 3052
 ht-degree: 1%
 
 ---
@@ -61,7 +61,7 @@ _2025年4月3日_
 
 _2025年2月20日_
 
-![新](../assets/new.svg) Commerce支援多字同義字。 [了解更多](synonyms-type.md#multi-word-synonym-behavior)。 2月20日正式發行後，才能支援多字同義字。 任何現有的多字同義字都需要完整重新索引才能運作，您可以透過[建立支援票證](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)來要求這樣做。
+![新](../assets/new.svg) Commerce支援多字同義字。 [了解更多](synonyms-type.md#multi-word-synonym-behavior)。 2月20日正式發行後，才能支援多字同義字。 任何現有的多字同義字都需要完整重新索引才能運作，您可以透過[建立支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)來要求這樣做。
 
 _2025年1月31日_
 
@@ -117,6 +117,15 @@ _2024年5月31日_
 _2023年10月27日_
 
 ![新](../assets/new.svg) [!DNL Live Search] PLP Widget現在支援色票。
+
+
+## [!DNL Live Search] 4.7.1
+
+_2026年5月12日_
+
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
+
+![修正](../assets/fix.svg)修正當CSP設定為限制模式且停用內嵌指令碼時，[!DNL Live Search]店面彈出視窗指令碼造成內容安全性原則(CSP)錯誤的問題。 擴充功能現在會針對這些指令碼使用安全轉譯，因此頁面載入時不會出現CSP script-src違規。
 
 ## [!DNL Live Search] 4.7.0
 
@@ -362,7 +371,7 @@ _2023年3月14日_
  — 釘選到頂端 — 將產品放在第一個位置
  — 釘選到底部 — 將產品放置在結果的底部
  — 按一下即可取消釘選事件
-![新](../assets/new.svg) [規則的智慧型排名](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/rules/rules-add)
+![新](../assets/new.svg) [規則的智慧型排名](https://experienceleague.adobe.com/zh-hant/docs/commerce/live-search/live-search-admin/rules/rules-add)
 ![新的](../assets/new.svg) [!DNL Live Search]現在支援Commerce中的完整[Inventory management](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/inventory/introduction)功能（以前稱為多Source詳細目錄，或MSI）。 若要啟用完整支援，您必須[將](install.md#updating-live-search)相依性模組`commerce-data-export`更新為102.2.0+版。
 
 #### 更新
@@ -433,7 +442,7 @@ _2023年3月14日_
 ![新](../assets/new.svg) [[!DNL storefront popover]](overview.md)中的可用行數可以從&#x200B;*管理員*設定。
 [!DNL Live Search]支援的![新](../assets/new.svg) Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/)。
 ![新增](../assets/new.svg) [!DNL Live Search]安裝程式已更新，其中包含進階程式變更。
-![修正](../assets/fix.svg) [進階搜尋](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search)連結已從店面頁尾移除。
+![修正](../assets/fix.svg) [進階搜尋](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/catalog/search/search)連結已從店面頁尾移除。
 ![錯誤](../assets/bug.svg) [Commerce GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/)不支援與PWA測試版相關的下列產品屬性： `description`，`name`， `short_description`
 ![錯誤](../assets/bug.svg) [!DNL Live Search]的PWA測試版不支援[事件處理](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/)。
 
@@ -441,7 +450,7 @@ _2023年3月14日_
 
 [!BADGE 支援]{type="Informative" tooltip="支援"} Adobe Commerce 2.4.x或更新版本
 
-![修正](../assets/fix.svg) [自訂價格屬性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types)在設定為[Facet](facets-add.md)時不再傳回錯誤。
+![修正](../assets/fix.svg) [自訂價格屬性](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/product-attributes/attributes-input-types)在設定為[Facet](facets-add.md)時不再傳回錯誤。
 ![修正](../assets/fix.svg)修正無法使用[貨幣符號](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration#step-5-customize-currency-symbols-optional) (`data-currency-symbol`)時，發生錯誤的問題。
 ![修正](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md)現在會顯示[特別價格](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/products/pricing/product-price-special) （最低最終價格）（可用時）。
 
@@ -474,7 +483,7 @@ _2023年3月14日_
 [!BADGE 支援]{type="Informative" tooltip="支援"} Adobe Commerce 2.4.x或更新版本
 
 ![錯誤](../assets/bug.svg) [!DNL Live Search]服務只支援Adobe Commerce安裝的[基本貨幣](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration)。
-![錯誤](../assets/bug.svg)新增Facet時，產品屬性摘要設定為`Update on Save`時未正確更新。 若要避免此問題，請移至[索引管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management)，並將產品屬性摘要設定為`Update by Schedule`。
+![錯誤](../assets/bug.svg)新增Facet時，產品屬性摘要設定為`Update on Save`時未正確更新。 若要避免此問題，請移至[索引管理](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/tools/index-management)，並將產品屬性摘要設定為`Update by Schedule`。
 ![錯誤](../assets/bug.svg) [!DNL Live Search]同義字是依商店檢視定義，但目前是依網站儲存，並以`environmentId`與`storeViewCode`的組合識別。 因此，Adobe Commerce安裝中的所有網站和商店檢視會共用同義字。 存放區檢視最近建立的同義字集優先。
 ![錯誤](../assets/bug.svg)如果同義字詞包含多個字詞，每個字詞都會被視為個別的同義字。 例如，如果您將「time piece」定義為「watch」的同義字，則「time」和「piece」都會被視為監視的同義字。
 
