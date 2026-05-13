@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 22f44afb7221c735785b6e9a38fb70c733cf0942
 workflow-type: tm+mt
-source-wordcount: 2709
+source-wordcount: 2742
 ht-degree: 0%
 
 ---
@@ -54,6 +54,12 @@ ht-degree: 0%
 ## 店面目錄服務
 
 ### 2026年5月
+
+**發行日期**： 2026年5月13日
+<!--v1.54-->
+
+![新的](../assets/new.svg) **GraphQL中的類別排序順序** — 現在`CategoryView` GraphQL型別包含位置欄位，所以店面可以顯示目錄階層中商戶設定的順序類別。
+<!--DATA-7166-->
 
 **發行日期**：2026年5月4日
 <!-- v1.53 -->
