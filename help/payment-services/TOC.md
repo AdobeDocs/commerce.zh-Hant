@@ -5,7 +5,8 @@ index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
-source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
+nudge: true
+source-git-commit: 82cea97c9c0498f91e3c2b4b44e0f21c736a2dc4
 workflow-type: tm+mt
 source-wordcount: '110'
 ht-degree: 2%
@@ -16,8 +17,8 @@ ht-degree: 2%
 # 適用於Commerce的[!DNL Payment Services] {#payment-services}
 
 - [指南概述](guide-overview.md)
-- [&#x200B; [!DNL Payment Services]簡介](introduction.md)
-- [&#x200B; [!DNL Payment Services]的相容性](compatibility.md)
+- [ [!DNL Payment Services]簡介](introduction.md)
+- [ [!DNL Payment Services]的相容性](compatibility.md)
 - [發行說明](release-notes.md)
 - 上線[!DNL Payment Services] {#get-started}
    - [入門概觀](onboard.md)
@@ -35,18 +36,18 @@ ht-degree: 2%
    - [信用卡保險存放](vaulting.md)
    - [在 [!DNL Payment Services]簽出](checkout.md)
    - 管理付款 {#manage}
-      - [&#x200B; [!DNL Payment Services]的行專案](line-items.md)
+      - [ [!DNL Payment Services]的行專案](line-items.md)
       - [退款](refunds.md)
       - [空隙](voids.md)
    - [在管理員中建立訂單](create-order.md)
-   - [Tracking your shipments in [!DNL Payment Services]](track-shipment.md)
+   - [正在追蹤您在 [!DNL Payment Services]中的出貨](track-shipment.md)
 - Financial reporting {#financial-reports}
    - [報告](reporting.md)
-   - [Order payment status report](order-payment-status.md)
-   - [Payouts report](payouts.md)
-   - [Available data](data.md)
-   - [Level 2 and level 3 processing](levels-card-payment-transactions.md)
-- Security and compliance {#security-compliance}
-   - [Security](security.md)
-   - [Signifyd fraud protection](fraud-protection.md)
-- [返回Commerce服務首頁](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html?lang=zh-Hant)
+   - [訂單付款狀態報表](order-payment-status.md)
+   - [付款報表](payouts.md)
+   - [可用資料](data.md)
+   - [第2級和第3級處理](levels-card-payment-transactions.md)
+- 安全性與合規性 {#security-compliance}
+   - [安全性](security.md)
+   - [有效保護詐騙](fraud-protection.md)
+- [返回Commerce服務首頁](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)

@@ -3,7 +3,8 @@ user-guide-title: '[!DNL Product Recommendations] 指南'
 user-guide-description: 本指南提供使用Adobe Commerce中 [!DNL Product Recommendations] 的詳細指示。
 role: Admin
 feature: Services, Recommendations
-source-git-commit: 2b1186d83718347149516de469c31cdfeaa72b4a
+nudge: true
+source-git-commit: f5a75403fd7187a6441ad16f3778bfddbc05c1c2
 workflow-type: tm+mt
 source-wordcount: '64'
 ht-degree: 10%
@@ -36,4 +37,4 @@ ht-degree: 10%
    - [收集資料](events.md)
    - [自訂](customize.md)
    - [處理Cookie限制](setting-cookie.md)
-- [返回Commerce服務首頁](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=zh-Hant)
+- [返回Commerce服務首頁](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
