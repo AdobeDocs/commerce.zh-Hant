@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install, Paas, Saas
-source-git-commit: 2c6c812fd25feecfe5133d6623a1c814003d579c
+source-git-commit: 5312d23f050d9007132f7f14b17caf13ab52c7df
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '777'
 ht-degree: 0%
 
 ---
@@ -61,11 +61,11 @@ PayPal沙箱帳戶可讓您在測試模式中使用[!DNL Payment Services]。 Pa
 
 >[!IMPORTANT]
 >
->如果您撤銷[!DNL Payment Services]與[!DNL Adobe Commerce]對[!DNL Magento Open Source]的同意，以處理您的付款（在您的PayPal帳戶設定中），則[!DNL Payment Services]無法處理您商店中的訂單。 在您的「付款服務」首頁上，會出現有關撤銷同意的警報。 若要關閉警示，請按一下&#x200B;**[!UICONTROL Do not show again]**。
+>如果您撤銷[!DNL Adobe Commerce]與[!DNL Magento Open Source]對[!DNL Payment Services]的同意，以處理您的付款（在您的PayPal帳戶設定中），則[!DNL Payment Services]無法處理您商店中的訂單。 在您的「付款服務」首頁上，會出現有關撤銷同意的警報。 若要關閉警示，請按一下&#x200B;**[!UICONTROL Do not show again]**。
 
 ### 重設您的沙箱帳戶
 
-如果您在沙箱PayPal上線流程中建立PayPal沙箱帳戶，您必須重設上線沙箱，因為或您無法驗證電子郵件。
+如果您在沙箱PayPal上線流程中建立PayPal沙箱帳戶，您必須重設上線沙箱，因為您無法驗證電子郵件。
 
 若要重設您的沙箱帳戶：
 
@@ -106,7 +106,7 @@ PayPal沙箱帳戶可讓您在測試模式中使用[!DNL Payment Services]。 Pa
 
 >[!NOTE]
 >
->只有在方法設為&#x200B;**[!UICONTROL Buyer's country]**&#x200B;時，`Sandbox`設定才會出現。 這不會影響生產環境。
+>只有在方法設為`Sandbox`時，**[!UICONTROL Buyer's country]**&#x200B;設定才會出現。 這不會影響生產環境。
 
 ## 在沙箱環境中測試
 
