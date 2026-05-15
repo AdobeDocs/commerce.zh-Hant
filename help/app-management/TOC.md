@@ -1,11 +1,12 @@
 ---
 user-guide-title: '[!DNL App Management]'
+breadcrumb-title: '[!DNL App Management]'
 user-guide-description: 將App Builder應用程式與您的Adobe Commerce執行個體建立關聯、設定和管理。
 feature: App Builder, Extensibility, Integration
-source-git-commit: ab635fecb7b82294bd4a4fd045ed71931e9d265d
+source-git-commit: 9f052a6d2d38163dbe431e082228fcf48ae24656
 workflow-type: tm+mt
-source-wordcount: '27'
-ht-degree: 7%
+source-wordcount: '34'
+ht-degree: 5%
 
 ---
 
@@ -17,4 +18,4 @@ ht-degree: 7%
 - 管理您的應用程式 {#manage-app}
    - [管理您的應用程式](manage-app.md)
    - [疑難排解](troubleshooting.md)
-- [返回Commerce服務首頁](https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/home)
+- [返回Commerce服務首頁](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
