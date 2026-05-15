@@ -5,7 +5,7 @@ user-guide-description: 為 Adobe Commerce 和 Magento Open Source 提供延伸�
 role: Admin, Leader, User
 feature: Integration, Personalization, Services, Saas
 recommendations: noDisplay
-badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
+badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
 source-git-commit: 9f052a6d2d38163dbe431e082228fcf48ae24656
 workflow-type: tm+mt
 source-wordcount: '154'
@@ -20,17 +20,17 @@ ht-degree: 12%
    - [發行說明](/help/landing/release-notes-all.md)
 - {hide-from-toc}[產品解決方案](product-solutions.md)
 - Commerce服務 {#commerce-services}
-   - [[!DNL AEM Assets Integration]](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview)
-   - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce/live-search/overview.html)
-   - [[!DNL Product Recommendations]](https://experienceleague.adobe.com/docs/commerce/product-recommendations/guide-overview.html)
-   - [[!DNL Catalog Service]](https://experienceleague.adobe.com/docs/commerce/catalog-service/guide-overview.html)
-   - [[!DNL Payment Services]](https://experienceleague.adobe.com/docs/commerce/payment-services/guide-overview.html)
+   - [[!DNL AEM Assets Integration]](https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/overview)
+   - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce/live-search/overview.html?lang=zh-Hant)
+   - [[!DNL Product Recommendations]](https://experienceleague.adobe.com/docs/commerce/product-recommendations/guide-overview.html?lang=zh-Hant)
+   - [[!DNL Catalog Service]](https://experienceleague.adobe.com/docs/commerce/catalog-service/guide-overview.html?lang=zh-Hant)
+   - [[!DNL Payment Services]](https://experienceleague.adobe.com/docs/commerce/payment-services/guide-overview.html?lang=zh-Hant)
 - Integration services {#integration-services}
-   - [[!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce/data-connection/overview.html)
-   - [[!DNL App Management]](https://experienceleague.adobe.com/en/docs/commerce/app-management/overview)
+   - [[!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce/data-connection/overview.html?lang=zh-Hant)
+   - [[!DNL App Management]](https://experienceleague.adobe.com/zh-hant/docs/commerce/app-management/overview)
    - [服務聯結器](/help/landing/saas.md)
-   - [整合 [!DNL Adobe Commerce] 與 [!DNL Adobe LLM Optimizer]](https://experienceleague.adobe.com/docs/commerce/llmo-integration/overview.html)
+   - [整合 [!DNL Adobe Commerce] 與 [!DNL Adobe LLM Optimizer]](https://experienceleague.adobe.com/docs/commerce/llmo-integration/overview.html?lang=zh-Hant)
 - 資料工具 {#data-services}
-   - [SaaS資料匯出](https://experienceleague.adobe.com/docs/commerce/saas-data-export/overview.html)
-   - [SaaS價格索引](https://experienceleague.adobe.com/docs/commerce/price-indexer/price-indexing.html)
+   - [SaaS資料匯出](https://experienceleague.adobe.com/docs/commerce/saas-data-export/overview.html?lang=zh-Hant)
+   - [SaaS價格索引](https://experienceleague.adobe.com/docs/commerce/price-indexer/price-indexing.html?lang=zh-Hant)
    - [目錄同步](/help/landing/catalog-sync.md)
