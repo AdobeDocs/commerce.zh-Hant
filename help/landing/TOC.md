@@ -1,14 +1,15 @@
 ---
 user-guide-title: 服務指南
+breadcrumb-title: Commerce服務
 user-guide-description: 為 Adobe Commerce 和 Magento Open Source 提供延伸功能託管服務的文件和資源。
 role: Admin, Leader, User
 feature: Integration, Personalization, Services, Saas
 recommendations: noDisplay
 badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
-source-git-commit: 3ebee6c984a8f848e9094968be9faa667fc83250
+source-git-commit: 9f052a6d2d38163dbe431e082228fcf48ae24656
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 13%
+source-wordcount: '154'
+ht-degree: 12%
 
 ---
 

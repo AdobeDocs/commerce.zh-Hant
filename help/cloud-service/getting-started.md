@@ -23,7 +23,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 9f052a6d2d38163dbe431e082228fcf48ae24656
 workflow-type: tm+mt
 source-wordcount: 1343
 ht-degree: 0%
@@ -79,13 +79,13 @@ ht-degree: 0%
 
 此圖表提供系統管理員和商家如何存取及管理[!DNL Adobe Commerce as a Cloud Service]執行個體的概觀。 如需有關管理員工作流程的詳細資訊，請參閱[Adobe Admin Console指南](https://helpx.adobe.com/tw/enterprise/admin-guide.html)。
 
-![Adobe Commerce as a Cloud Service的系統管理員和商家工作流程圖表](./assets/merchant-flow.svg){zoomable="yes"}
+![Adobe Commerce as a Cloud Service的系統管理員和商家工作流程圖表](./assets/merchant-flow.png){zoomable="yes"}
 
 >[!TAB 開發人員工作流程]
 
 此圖表提供開發人員如何使用App Builder為[!DNL Adobe Commerce as a Cloud Service]建立整合的整體概觀。 如需詳細資訊，請參閱[API檔案](https://developer.adobe.com/commerce/webapi/rest/)。
 
-![用來建立Adobe Commerce as a Cloud Service整合的開發人員工作流程圖](./assets/developer-flow.svg){zoomable="yes"}
+![用來建立Adobe Commerce as a Cloud Service整合的開發人員工作流程圖](./assets/developer-flow.png){zoomable="yes"}
 
 >[!ENDTABS]
 

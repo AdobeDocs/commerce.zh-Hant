@@ -1,13 +1,14 @@
 ---
 user-guide-title: Adobe Commerce的[!DNL Data Connection]延伸模組
+breadcrumb-title: '[!DNL Data Connection]'
 user-guide-description: 本指南提供在Adobe Commerce中使用 [!DNL Data Connection] 擴充功能的詳細指示。
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
-badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce 。"
-source-git-commit: 60a8e8f5cedff0c6fa56c563807b9604e3ae1d21
+badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
+source-git-commit: 9f052a6d2d38163dbe431e082228fcf48ae24656
 workflow-type: tm+mt
-source-wordcount: '138'
+source-wordcount: '153'
 ht-degree: 1%
 
 ---
