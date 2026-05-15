@@ -15,7 +15,7 @@ ht-degree: 9%
 # 適用於Adobe Commerce的[!DNL Catalog Service] {#catalog-service}
 
 - [指南概觀](guide-overview.md)
-- [&#x200B; [!DNL Catalog Service]簡介](overview.md)
+- [ [!DNL Catalog Service]簡介](overview.md)
 - [安裝](installation.md)
 - [開始使用 [!DNL Catalog Service]](get-started.md)
 - [擷取目錄資料](graphql-queries.md)
@@ -23,6 +23,6 @@ ht-degree: 9%
    - [目錄服務和API網格](mesh.md)
    - [使用案例：顯示課稅價格](taxes.md)
 - [發行說明](release-notes.md)
-- [返回Commerce服務首頁](https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/home)
+- [返回Commerce服務首頁](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
 
 

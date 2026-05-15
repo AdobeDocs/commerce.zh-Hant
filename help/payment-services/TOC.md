@@ -18,8 +18,8 @@ ht-degree: 2%
 # 適用於Commerce的[!DNL Payment Services] {#payment-services}
 
 - [指南概述](guide-overview.md)
-- [&#x200B; [!DNL Payment Services]簡介](introduction.md)
-- [&#x200B; [!DNL Payment Services]的相容性](compatibility.md)
+- [ [!DNL Payment Services]簡介](introduction.md)
+- [ [!DNL Payment Services]的相容性](compatibility.md)
 - [發行說明](release-notes.md)
 - 上線[!DNL Payment Services] {#get-started}
    - [入門概觀](onboard.md)
@@ -37,7 +37,7 @@ ht-degree: 2%
    - [信用卡保險存放](vaulting.md)
    - [在 [!DNL Payment Services]簽出](checkout.md)
    - 管理付款 {#manage}
-      - [&#x200B; [!DNL Payment Services]的行專案](line-items.md)
+      - [ [!DNL Payment Services]的行專案](line-items.md)
       - [退款](refunds.md)
       - [空隙](voids.md)
    - [在管理員中建立訂單](create-order.md)
@@ -51,4 +51,4 @@ ht-degree: 2%
 - 安全性與合規性 {#security-compliance}
    - [安全性](security.md)
    - [有效保護詐騙](fraud-protection.md)
-- [返回Commerce服務首頁](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html?lang=zh-Hant)
+- [返回Commerce服務首頁](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
