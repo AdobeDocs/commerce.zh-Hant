@@ -27,9 +27,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 4288998fdae56112dc9ddcebfc42b85b9f5d8c00
 workflow-type: tm+mt
-source-wordcount: 3633
+source-wordcount: 4032
 ht-degree: 0%
 
 ---
@@ -42,11 +42,51 @@ ht-degree: 0%
 >
 >如果您正在雲端基礎結構上使用Adobe Commerce內部部署或Adobe Commerce，請參閱[Adobe Commerce發行說明](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/overview)。
 
-## 2026年5月 — 發行說#1 {#latest}
+## 2026年5月 — 發行說#2 {#latest}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+[!BADGE 沙箱]{type=Caution tooltip="列出的專案目前僅在沙箱環境中可用。 Adobe會先在沙箱環境中推出新版本，讓您可以在生產環境中使用該版本之前有時間測試即將推出的變更。"}
+
+以下專案將於2026年5月21日發佈到生產環境。
+
+>[!BEGINSHADEBOX]
+
+### 使用預設和自訂承運商追蹤出貨
+
+對於[!DNL Commerce Admin]中的預設和自訂運送業者，訂單追蹤現在相當可靠，可協助商家提供一致的購買後追蹤體驗。 先前，選取UPS或FedEx之類的電信業者並套用追蹤ID可能會阻止追蹤連結顯示 — 不需要商家採取行動來還原此行為。 使用[!DNL App Builder Integration Starter Kit]建立的[自訂電信業者](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-reference/)也可使用追蹤連結支援。<!-- ACCS-891 -->
+
+### 在「產品屬性」格線中檢視屬性輸入型別
+
+新的&#x200B;[!UICONTROL **屬性型別**]&#x200B;欄現在顯示在（[!UICONTROL **商店**] > _[!UICONTROL Attributes]_>[!UICONTROL **產品**]）的產品屬性格線中，顯示每個產品屬性的輸入型別（例如文字欄位、下拉式清單或yes/no），包括擴充功能貢獻的型別。 這樣可讓您在使用大型屬性集時，更輕鬆地識別和管理屬性。<!-- ACCS-925 -->
+
+### 增強功能和錯誤修正
+
+此版本中包括下列選取的增強功能、最佳化和錯誤修正：
+
+* 修正POST `V1/async/custom-email/send` REST端點傳回`UnstructuredArray`驗證錯誤的問題。 非同步端點現在與同步POST `V1/custom-email/send`端點一致運作。<!-- ACCS-921 -->
+
+* 修正透過REST更新實體，但未在裝載中包含自訂屬性時，無意中清除公司(Company)等實體上自訂可序列化屬性的問題。 未提供時，現在會保留自訂屬性。<!-- ACCS-946 -->
+
+* 解決當請求中出現`X-Adobe-Company`標頭時，可能會阻止來賓GraphQL登入的「消費者未獲授權」錯誤。<!-- ACCS-949 -->
+
+* 修正透過PUT `V1/customers/companies` REST端點將客戶指派給公司後，在[!DNL Commerce Admin]中編輯或刪除公司可能會失敗並出現「沒有此等實體」錯誤的問題。<!-- ACCS-856 -->
+
+* 解決過期銷售訂單網格狀態的問題。<!-- CCSAAS-4915 -->
+
+* 修正在[!DNL Commerce Admin]中，從產品編輯頁面存取時，附加為範例和可下載產品連結的檔案傳回`404`錯誤的問題。<!-- CCSAAS-4394 -->
+
+* 修正建立包含可設定產品之訂單的出貨時，可能會發生的「未定義的陣列索引鍵&#39;simple_sku&#39;」錯誤。<!-- CCSAAS-4877 -->
+
+* 使用格式錯誤的Token呼叫時，`guestOrderByToken` GraphQL查詢現在會傳回資訊更豐富的錯誤訊息，而不是內部伺服器錯誤。<!-- CCSAAS-4921 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## 2026年5月 — 發行說#1
 
 [!BADGE 生產]{type=Neutral tooltip="列出的專案目前可在生產環境中使用。"}
-
-<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
 以下專案已於2026年5月7日發佈到生產環境。
 
