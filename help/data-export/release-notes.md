@@ -18,9 +18,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 8f424228d96072636ac24a2d50dd58e5c8d655da
 workflow-type: tm+mt
-source-wordcount: 2840
+source-wordcount: 2868
 ht-degree: 0%
 
 ---
@@ -40,6 +40,12 @@ ht-degree: 0%
 >SaaS資料匯出擴充功能是隨「即時搜尋」、「產品建議」和「目錄服務」自動安裝的模組集合。 您可以使用Composer檢查系統上安裝的版本。 在某些情況下，您可能會想要升級系統上的資料匯出擴充功能，以取得修正或新功能，而不更新Commerce服務版本。
 
 ## 2026版本
+
+### 103.4.25版
+
+_2026年5月19日_
+
+![修正](../assets/fix.svg) **已最佳化過時摘要資料的清除** — 已刪除實體留下的摘要記錄現已更有效率地移除，減少資料庫儲存空間的使用量。<!--MDEE-1355-->
 
 ### 103.4.24版
 
@@ -80,7 +86,7 @@ _2026年4月13日_
 - 修正刪除期間無法使用匯出服務時，無法從連線的Commerce服務正確移除已刪除產品的問題。 重試和重新同步操作現在可確保已刪除的產品正確地反映在SaaS中。<!--MDEE-1319-->
 - 目錄實體（產品和類別）現在可以匯出至已連線的Commerce服務，即使管理商店檢視缺少屬性值亦然。 這麼做可改善與協力廠商擴充功能的相容性，並減少因遺失預設值導致的匯出錯誤。<!--MDEE-1333-->
 
-![修正](../assets/fix.svg)解決當摘要記錄包含非預期或遺失資料時，在資料摘要同步處理狀態頁面上可能發生的錯誤。 系統現在可順利處理這類案例，提升穩定性並避免當機。 如果您使用Adobe Commerce Optimizer Connector將資料從Adobe Commerce同步到Adobe Commerce Optimizer，請更新至[ACO Connector 1.0.11](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/release-notes)版或更新版本以修正此問題。<!--MDEE-1327-->
+![修正](../assets/fix.svg)解決當摘要記錄包含非預期或遺失資料時，在資料摘要同步處理狀態頁面上可能發生的錯誤。 系統現在可順利處理這類案例，提升穩定性並避免當機。 如果您使用Adobe Commerce Optimizer Connector將資料從Adobe Commerce同步到Adobe Commerce Optimizer，請更新至[ACO Connector 1.0.11](https://experienceleague.adobe.com/zh-hant/docs/commerce/aco-optimizer-connector/release-notes)版或更新版本以修正此問題。<!--MDEE-1327-->
 
 ### 103.4.21版
 
@@ -106,7 +112,7 @@ _2026年2月6日_
 
 _2026年2月2日_
 
-![修正](../assets/fix.svg)修正更新期間專案批次可能超過允許限制，導致同步資料至[Commerce服務](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)或[Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync)時發生`items_limit_exceeded`個錯誤的問題。<!--MDEE-1264-->
+![修正](../assets/fix.svg)修正更新期間專案批次可能超過允許限制，導致同步資料至[Commerce服務](https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/home)或[Adobe Commerce Optimizer](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/setup/data-sync)時發生`items_limit_exceeded`個錯誤的問題。<!--MDEE-1264-->
 
 ![修正](../assets/fix.svg)在組合產品選項收集期間新增邏輯以登入失敗的專案，藉此改善產品資料匯出的可靠性。<!--CCSAAS-4458-->
 
