@@ -3,9 +3,9 @@ title: AEM Assets整合發行說明
 description: 如需所有AEM Assets整合發行版本的相關資訊，請參閱發行說明。
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
-source-git-commit: cd7a332dd09840aabcc0efae081ba0a713506897
+source-git-commit: 5dc61e0351e338c4d184d7d882decff49b13a12b
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '1198'
 ht-degree: 0%
 
 ---
@@ -30,13 +30,21 @@ ht-degree: 0%
 
 _2025年9月11日_
 
-![新問題](../assets/new.svg)已更新具有新[屬性的](https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/synchronize/custom-match){target=_blank}自訂自動比對`asset_matches`端點。
+![新問題](../assets/new.svg)已更新具有新`asset_matches`屬性的[自訂自動比對](https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/synchronize/custom-match){target=_blank}端點。
 
 _2025年2月11日_
 
 ![新問題](../assets/new.svg)現在，商家可以同步產品與類別的影像。
 
 +++
+
+## v1.3.6
+
+_2026年5月14日_
+
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.5版和更新版本。
+
+![新問題](../assets/new.svg)<!-- Issue ACAP-1268 -->從AEM匯入影像或資產至Commerce產品媒體集時，替代文字現在會作為同步處理的一部分移轉。 可在AEM Assets中為每個商店檢視設定替代文字。 檢視AEM Assets中繼資料[&#128279;](configure-aem.md#alt-text-in-aem-assets-metadata){target=_blank}中的替代文字。
 
 ## v1.3.5
 
@@ -72,7 +80,7 @@ _2026年2月10日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.5版和更新版本。
 
-![新問題](../assets/new.svg)<!-- Issue ACCS-171 -->已新增簡化&#x200B;**[!UICONTROL Adobe I/O Workspace Configuration]**&#x200B;自訂比對[設定的](https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/synchronize/custom-match){target=_blank}欄位。 商戶現在可以上傳其App Builder `workspace.json`檔案，以自動填入OAuth認證和執行階段動作端點。
+![新問題](../assets/new.svg)<!-- Issue ACCS-171 -->已新增簡化[自訂比對](https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/synchronize/custom-match){target=_blank}設定的&#x200B;**[!UICONTROL Adobe I/O Workspace Configuration]**&#x200B;欄位。 商戶現在可以上傳其App Builder `workspace.json`檔案，以自動填入OAuth認證和執行階段動作端點。
 
 ## v1.2.12
 
@@ -160,7 +168,7 @@ _2025年8月7日_
 
 ![新問題](../assets/new.svg)<!-- Issue ACAP-1018 -->現在，商家可以在從管理員設定Assets整合時，選取[視覺效果擁有者](https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/get-started/setup-synchronization){target=_blank}來選擇影像和媒體資產的來源。
 
-![新問題](../assets/new.svg)<!-- Issue ACAP-1078 -->已更新具有新[屬性的](https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/synchronize/custom-match){target=_blank}自訂自動比對`asset_matches`端點。 此變更可讓您實作自己的比對邏輯，以傳回與特定`productSku`相關聯的所有資產。
+![新問題](../assets/new.svg)<!-- Issue ACAP-1078 -->已更新具有新`asset_matches`屬性的[自訂自動比對](https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/synchronize/custom-match){target=_blank}端點。 此變更可讓您實作自己的比對邏輯，以傳回與特定`productSku`相關聯的所有資產。
 
 ## v1.1.2
 
