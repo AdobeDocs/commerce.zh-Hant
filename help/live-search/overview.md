@@ -15,9 +15,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: d30ce9f02c9d2217c6669e8e9a1794bbc0387128
 workflow-type: tm+mt
-source-wordcount: 1180
+source-wordcount: 1167
 ht-degree: 1%
 
 ---
@@ -53,7 +53,7 @@ ht-degree: 1%
 
 ### 依輸入內容搜尋
 
-當購物者在[搜尋](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search)方塊中輸入查詢時，[!DNL Live Search]在[彈出視窗](storefront-popover.md)中以建議的產品和排名最前的搜尋結果縮圖影像回應。 當購物者按一下建議或精選的產品時，會顯示[產品詳細資料](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/storefront/storefront)頁面。 彈出視窗頁尾中的&#x200B;_檢視全部_&#x200B;連結會顯示搜尋結果頁面。
+當購物者在[搜尋](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/catalog/search/search)方塊中輸入查詢時，[!DNL Live Search]在[彈出視窗](storefront-popover.md)中以建議的產品和排名最前的搜尋結果縮圖影像回應。 當購物者按一下建議或精選的產品時，會顯示[產品詳細資料](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/storefront/storefront)頁面。 彈出視窗頁尾中的&#x200B;_檢視全部_&#x200B;連結會顯示搜尋結果頁面。
 
 針對兩個或更多字元的查詢，[!DNL Live Search]傳回「鍵入時搜尋」結果。 若為部分相符，則每個字的字元數上限為20。 查詢中的字元數無法設定。 彈出視窗包含`name`、`sku`和`category_ids`欄位。
 
@@ -104,7 +104,7 @@ ht-degree: 1%
 
 - [!DNL Live Search] [彈出視窗Widget](storefront-popover.md)是在包含搜尋結果的搜尋欄位下開啟的方塊。
 - [產品清單頁面Widget](plp-styling.md) (PLP)提供具有Facet和同義字支援的可搜尋產品清單頁面。 Widget已安裝並在Live Search 4.0.0+中啟用，並取代搜尋配接器。
-- （**已棄用**） Search Adapter是PLP Widget的前身，且已安裝Live Search &lt; 4.0.0。 如果您使用的Live Search版本早於4.0.0，Commerce建議您升級以享受PLP Widget功能和未來改進的優點。 日後，搜尋配接卡只會更新以解決安全性問題。 請參閱[移轉指南](migrate-to-plp.md)，以取得有關移轉至PLP Widget的詳細資訊。
+- （**已棄用**） Search Adapter是PLP Widget的前身，且已安裝Live Search &lt; 4.0.0。 如果您使用的Live Search版本早於4.0.0，Commerce建議您升級以享受PLP Widget功能和未來改進的優點。 請參閱[移轉指南](migrate-to-plp.md)，以取得有關移轉至PLP Widget的詳細資訊。
 
 ## [!DNL Live Search]工作區
 
