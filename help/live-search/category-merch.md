@@ -3,7 +3,7 @@ title: 類別銷售
 description: 使用 [!DNL Live Search] 類別銷售，以獲得更快的購物體驗。
 gourl: ls_catalog_merchandising
 exl-id: b2645096-aafc-4d68-8adc-ab5410a9dfb6
-badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
+badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
 TQID: https://experienceleague.adobe.com/2omWXwNttfwW04upO-QlQlRa41w9vgpdlPOYVFOX7-4
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -51,7 +51,7 @@ ht-degree: 0%
 類別銷售使用與[個別產品](rules-workspace.md)相同的排名型別。
 有兩種排名：智慧型與手動。
 
-**智慧型排名**&#x200B;利用[Adobe AI](https://business.adobe.com/ai.html)的店面行為資料分析，以特定演演算法排序選定類別中的所有產品。 一旦選擇智慧型排名，由於Adobe AI會持續重新分析基礎資料，因此預期產品的特定訂單會隨著時間變更。 例如，熱門趨勢產品會隨著購物者偏好設定變更而自動隨時間變更。
+**智慧型排名**&#x200B;利用[Adobe AI](https://business.adobe.com/tw/ai.html)的店面行為資料分析，以特定演演算法排序選定類別中的所有產品。 一旦選擇智慧型排名，由於Adobe AI會持續重新分析基礎資料，因此預期產品的特定訂單會隨著時間變更。 例如，熱門趨勢產品會隨著購物者偏好設定變更而自動隨時間變更。
 智慧型排名方法為：
 
 * 最多購買：依購物者過去七天購買的頻率來排名產品。
