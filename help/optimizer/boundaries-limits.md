@@ -1,19 +1,19 @@
 ---
-title: 限制和邊界
-description: 瞭解 [!DNL Adobe Commerce Optimizer] 限制與界限，以規劃容量並避免效能問題。
+title: Adobe Commerce Optimizer限制和邊界
+description: 瞭解Adobe Commerce Optimizer授許可權制和系統界限。 規劃容量、追蹤使用量，以及避免延遲和超過限制時的節流現象。
 role: Admin, Developer
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
 exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
-source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
+source-git-commit: 5b2babd2aed812d6679c2614e10e052dd5196f76
 workflow-type: tm+mt
-source-wordcount: '1378'
+source-wordcount: '1387'
 ht-degree: 0%
 
 ---
 
 # 限制和邊界
 
-[!DNL Adobe Commerce Optimizer]有兩種限制：
+[!DNL Adobe Commerce Optimizer]套用&#x200B;**授許可權制**&#x200B;和&#x200B;**系統界限**，以定義專案可使用的容量：
 
 - **授許可權制** — 根據您購買的容量；可以購買其他套件來擴充。
 - **系統界限** — 已修正限制，可保護系統資源並確保所有使用者的可靠效能。
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 透過購買[授許可權制和系統界限](#license-limits-and-system-boundaries)一節中所述的授權套件，或針對不重複的使用案例協商自訂授權，可增加授許可權制。 請聯絡您的Adobe客戶代表以討論您的需求。
 
-若有關於系統界限的問題，請連絡[Adobe支援](https://experienceleague.adobe.com/home?lang=zh-Hant#support)。
+若有關於系統界限的問題，請連絡[Adobe支援](https://experienceleague.adobe.com/home?lang=en#support)。
 
 ## 避免效能問題
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 | **環境** | **描述** | **基底配置** | **可擴充？** |
 | --- | --- | --- | --- |
 | **沙箱環境** | 包含的沙箱環境數量 | 每個執行個體2個 | 是<p>為每個執行個體新增額外的環境授權</p> |
-| **生產環境** | 包含的生產環境數量 | 每個執行個體1個 | 授權<p>為每個執行個體新增額外的環境授權</p> |
+| **生產環境** | 包含的生產環境數量 | 每個執行個體1個 | 是<p>為每個執行個體新增額外的環境授權</p> |
 
 {style="table-layout:auto"}
 
@@ -68,23 +68,23 @@ ht-degree: 0%
 
 {style="table-layout:auto"}
 
-### 由AEM Assets支援的產品視覺效果
+### [!DNL Product Visuals]限制
 
 | **功能** | **描述** | **基底配置** | **可擴充？** |
 | --- | --- | --- | --- |
-| 產品視覺效果進階使用者 | 具有完整數位資產管理功能（包括AI工具、Adobe Express/Firefly整合和Content Hub共用）的授權使用者，可處理核心DAM任務和進階雲端原生功能以實現最佳效率。 | 2 | 是<p>升級至AEM Assets授權</p> |
-| 產品視覺效果共同作業人員使用者 | 透過AEM Commerce整合存取及使用資產、使用Adobe Express和Firefly建立及編輯內容，以及（如果啟用）透過Content Hub入口網站利用已核准的資產。 | 2 | 是<p>升級至AEM Assets授權</p> |
+| 產品視覺效果進階使用者 | 具有完整數位資產管理功能（包括AI工具、[!DNL Adobe Express]/[!DNL Firefly]整合和Content Hub共用）的授權使用者，可處理核心DAM任務和進階雲端原生功能以獲得最佳效率。 | 2 | 是<p>升級至[!DNL AEM Assets]授權</p> |
+| 產品視覺效果共同作業人員使用者 | 透過AEM Commerce整合存取及使用資產、使用[!DNL Adobe Express]和[!DNL Firefly]建立及編輯內容，以及（如果已啟用）透過Content Hub入口網站運用已核准的資產。 | 2 | 是<p>升級至[!DNL AEM Assets]授權</p> |
 | 產品視覺效果儲存 | 為資產配置的儲存空間 | 1 TB儲存空間 | 否 |
-| Dynamic Media使用情況 | 動態媒體處理作業的裕量，包括：<ul><li>影像傳送</li><li>智慧型影像</li><li>視訊傳送</li></ul><p>如需詳細資訊，請參閱下方的&#x200B;*計算Dynamic Media使用量*。 | 根據GMV<p>最小配置：每月500萬項作業</p> | 是<ul><li>購買其他操作的授權</li><li>升級至AEM Assets授權</li></ul> |
-| 視訊傳送 | 視訊傳送或下載的備抵 | 300部影片，每部影片1分鐘 | 是<p>升級至AEM Assets授權</p> |
-| 資產產生 | 存取用於建立影像的Adobe Express和Adobe Firefly generative AI | 無 | 單獨購買Generative AI積分 |
+| Dynamic Media使用情況 | 動態媒體處理作業的裕量，包括：<ul><li>影像傳送</li><li>智慧型影像</li><li>視訊傳送</li></ul><p>如需詳細資訊，請參閱下方的&#x200B;*計算Dynamic Media使用量*。 | 根據GMV （商品總值）<p>最小配置：每月500萬項作業</p> | 是<ul><li>購買其他操作的授權</li><li>升級至[!DNL AEM Assets]授權</li></ul> |
+| 視訊傳送 | 視訊傳送或下載的備抵 | 300部影片，每部影片1分鐘 | 是<p>升級至[!DNL AEM Assets]授權</p> |
+| 資產產生 | 存取用於建立影像的[!DNL Adobe Express]和[!DNL Adobe Firefly]產生AI | 無 | 單獨購買Generative AI積分 |
 
 {style="table-layout:auto"}
 
 
 >[!NOTE]
 >
->**超級使用者**&#x200B;可以直接存取Adobe Express或在[!DNL Adobe Commerce Optimizer]記憶體取。 **Collaborator使用者**&#x200B;可以直接存取Adobe Express應用程式。 使用方式受[Adobe Express與Firefly產品特定授權條款](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/PSLT-AdobeExpressWFirefly-WW-2025v1.pdf)所規範。
+>**超級使用者**&#x200B;可以直接存取[!DNL Adobe Express]或在[!DNL Adobe Commerce Optimizer]記憶體取。 **Collaborator使用者**&#x200B;可以直接存取[!DNL Adobe Express]應用程式。 使用方式受[Adobe Express與Firefly產品特定授權條款](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/PSLT-AdobeExpressWFirefly-WW-2025v1.pdf)所規範。
 
 
 >[!BEGINSHADEBOX 「計算Dynamic Media使用量」]
@@ -112,32 +112,34 @@ Dynamic Media使用方式會追蹤進入[!DNL Adobe Commerce Optimizer]內「產
 
 ### 目錄店面
 
-目錄店面功能的基本配置是根據GMV層級來決定。 此表格指出每項功能的最小配置。
+目錄店面功能的基本配置是根據GMV （毛商品價值）層級來決定。 此表格指出每項功能的最小配置。
 
 | **功能** | **描述** | **基底配置** | **可擴充？** |
 | --- | --- | --- | --- |
 | 目錄擷取率 | 系統（店面、交易系統、ERP或其他）每月呼叫目錄API以從目錄中擷取資料的次數 | 根據GMV層級<p>最小配置：1000萬/月</p> | 是<p>每月新增100萬個授權套件要求</p> |
-| 內容請求 | 向Commerce商店請求HTML頁面檢視或JSON API呼叫。 計為1次頁面檢視或5次API呼叫。 | 根據GMV層級<p>最小配置：2M/月</p> | 是<p>每月新增100萬個授權套件</p> |
+| 內容請求 | 要求店面提供HTML頁面檢視或JSON API呼叫。 計為1次頁面檢視或5次API呼叫。 | 根據GMV層級<p>最小配置：2M/月</p> | 是<p>每月新增100萬個授權套件</p> |
 | 店面GenAI變數 | 允許產生文字式內容 | 根據GMV層級<p>最小配置：1K個變數/月</p> | 是<p>單獨購買Generative AI積分</p> |
 
 {style="table-layout:auto"}
 
 >[!NOTE]
 >
->影像產生需要布建至與[!DNL Adobe Commerce Optimizer]相同的IMS組織的Adobe Firefly授權。
+>產生影像需要布建至與[!DNL Adobe Commerce Optimizer]相同的IMS組織的[!DNL Adobe Firefly]授權。
 
 
 ### 產品探索
 
+下列限制適用於店面產品搜尋、清單和銷售設定。
+
 | **功能** | **描述** | **基底配置** | **可擴充？** |
 | --- | --- | --- | --- |
-| 每個搜尋要求的產品 | 搜尋結果中每頁傳回的最大產品數量 | 100 | 否 |
+| 產品擷取 | 擷取具有`products`、`productSearch`、`refineProduct`和`variants`的產品資料時，每個[!DNL Catalog Service] GraphQL要求的最大SKU數。 將較大的請求分割為多個呼叫。 | 100 | 否 |
 | 可篩選的屬性 | 可針對分層導覽和多面向啟用的產品特性（如顏色、大小、品牌或材質）數量 | 200 | 否 |
-| 可搜尋的屬性 | 可設定為與產品目錄搜尋服務搭配使用的產品特性數 | 200 | 否 |
-| 可排序的屬性 | 可設定用於決定搜尋結果值順序的產品特性數 | 50 | 否 |
-| 搜尋分頁深度 | 可透過分頁存取的最大產品數量（例如，第100頁×100個產品/頁面） | 10K | 否 |
+| 可搜尋的屬性 | 可針對目錄搜尋編制索引的產品特性數 | 200 | 否 |
+| 可排序的屬性 | 搜尋和類別頁面上可作為排序選項的產品特性數。 | 50 | 否 |
+| 搜尋分頁深度 | 透過搜尋分頁可存取的產品上限（例如，第100頁×100個產品/頁面） | 10K | 否 |
 | Facet | 可篩選的產品屬性數量（例如品牌、顏色、大小、價格），可設定為協助購物者調整搜尋結果和瀏覽類別 | 100<p>必須是可篩選的屬性</p> | 否 |
-| 各Facet選項 | 購物者可從清單中選取的可篩選產品屬性值（例如「紅色」、「藍色」代表顏色；「小」、「Medium」代表大小）的數量 | 100 | 是<p>可透過支援要求提高</p> |
+| 各Facet選項 | 購物者可在Facet中選取的可篩選產品屬性值數量（例如「紅色」、「藍色」代表顏色；「小」、「Medium」代表大小） | 100 | 是<p>可透過支援要求提高</p> |
 
 {style="table-layout:auto"}
 
@@ -148,7 +150,7 @@ Dynamic Media使用方式會追蹤進入[!DNL Adobe Commerce Optimizer]內「產
 | **功能** | **描述** | **基底配置** | **可擴充？** |
 | --- | --- | --- | --- |
 | 使用中的建議單位 | 店面上的即時建議元件數量（例如「已檢視客戶」或「您可能也喜歡」） | 50 | 否 |
-| 類別或屬性包含/排除 | 將產品篩選為符合建議資格的特定集合 | 不支援 | |
+| 類別或屬性包含/排除 | 將產品篩選為符合建議資格的特定集合 | 不支援 | — |
 
 {style="table-layout:auto"}
 
@@ -156,7 +158,7 @@ Dynamic Media使用方式會追蹤進入[!DNL Adobe Commerce Optimizer]內「產
 
 | **功能** | **描述** | **基底配置** | **可擴充？** | **附註** |
 | --- | --- | --- | --- | --- |
-| Adobe Developer App Builder | 建置雲端原生擴充功能和整合的能力 | 根據GMV層級<p>最小配置：1包/年</p> | 是<p>新增其他套件</p> | 如需每個元件定義的限制，請參閱：<ul><li>[App Builder產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-developer-app-builder.html)每個套件定義的限制。</li><li>[&#x200B; *App Builder執行階段指南*&#x200B;中的系統設定和限制](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings)。</li><li>[App Builder儲存需求](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
+| Adobe Developer App Builder | 建置雲端原生擴充功能和整合的能力 | 根據GMV層級<p>最小配置：1包/年</p> | 是<p>新增其他套件</p> | 如需每個元件定義的限制，請參閱：<ul><li>[App Builder產品說明](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html)每個套件定義的限制。</li><li>[ *App Builder執行階段指南*&#x200B;中的系統設定和限制](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings)。</li><li>[App Builder儲存需求](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
 
 {style="table-layout:auto"}
 
@@ -193,5 +195,5 @@ This approach ensures your solution is accurately sized for your business needs.
 1. **GenAI or Media Needs**
 
    * Need: +10M dynamic media ops/month
-   * Add-On: 10 × dynamic media packs (1M each) 
+   * Add-On: 10 × dynamic media packs (1M each)
 -->
