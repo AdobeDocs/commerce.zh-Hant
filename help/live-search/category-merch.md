@@ -5,10 +5,14 @@ gourl: ls_catalog_merchandising
 exl-id: b2645096-aafc-4d68-8adc-ab5410a9dfb6
 badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
 TQID: https://experienceleague.adobe.com/2omWXwNttfwW04upO-QlQlRa41w9vgpdlPOYVFOX7-4
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
 source-git-commit: 86b218d78731585dca4e8829fb886010ef27a2d5
 workflow-type: tm+mt
 source-wordcount: 1171
@@ -76,7 +80,7 @@ ht-degree: 0%
 
 ![已覆寫子類別清單](assets/category_overwite_subs.png){width="700"}
 
-如果按一下[檢視全部]****，會開啟對話方塊，其中包含提議的變更詳細資料。
+如果按一下[檢視全部]&#x200B;**&#x200B;**，會開啟對話方塊，其中包含提議的變更詳細資料。
 
 ![排名變更詳細資料](assets/category_overwrite.png)
 
@@ -114,8 +118,8 @@ ht-degree: 0%
 
 若要修改現有規則，請執行下列動作：
 
-1. 按一下[動作]資料欄中的&#x200B;**...**，然後選擇[編輯]****。
-1. 在[編輯類別]規則檢視中，進行任何必要的變更，然後按一下[儲存並發佈]。****
+1. 按一下[動作]資料欄中的&#x200B;**...**，然後選擇[編輯]&#x200B;**&#x200B;**。
+1. 在[編輯類別]規則檢視中，進行任何必要的變更，然後按一下[儲存並發佈]。**&#x200B;**
 
 當[!DNL Live Search]處理變更時，變更會反映在存放區上。
 
