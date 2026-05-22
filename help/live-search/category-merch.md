@@ -13,9 +13,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 86b218d78731585dca4e8829fb886010ef27a2d5
 workflow-type: tm+mt
-source-wordcount: 1131
+source-wordcount: 1171
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 >
 >類別銷售可搭配[!DNL Live Search] [3.0.0或更新版本](release-notes.md)使用。 如果您看到類別銷售工作區，但其中未填入資料，請更新[!DNL Live Search]模組。
 
-![類別銷售](assets/category_workspace.png)
+![類別銷售工作區](assets/category_workspace.png)
 
 「類別銷售」檢視會顯示已定義的類別規則，其中包含下列專案的欄：
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 類別銷售使用與[個別產品](rules-workspace.md)相同的排名型別。
 有兩種排名：智慧型與手動。
 
-**智慧型排名**&#x200B;利用[Adobe AI](https://business.adobe.com/ai.html)的店面行為資料分析，以特定演演算法排序選定類別中的所有產品。 一旦選擇智慧型排名，由於Adobe AI會持續重新分析基礎資料，因此預期產品的特定訂單會隨著時間變更。 例如，熱門趨勢產品會隨著購物者偏好設定變更而自動隨時間變更。
+**智慧型排名**&#x200B;利用[Adobe AI](https://business.adobe.com/tw/ai.html)的店面行為資料分析，以特定演演算法排序選定類別中的所有產品。 一旦選擇智慧型排名，由於Adobe AI會持續重新分析基礎資料，因此預期產品的特定訂單會隨著時間變更。 例如，熱門趨勢產品會隨著購物者偏好設定變更而自動隨時間變更。
 智慧型排名方法為：
 
 * 最多購買：依購物者過去七天購買的頻率來排名產品。
@@ -60,6 +60,9 @@ ht-degree: 0%
 * 為您建議：根據每位購物者之前和目前的站上行為，依購物者與每位購物者互動的可能性對產品進行排名。
 * 趨勢：根據檢視次數，依人氣近期上升對產品進行排名。
 * 無：依預設順序將產品排名。
+
+
+對於除了&#x200B;**None**&#x200B;之外的任何智慧型排名方法，您可以在規則編輯器中設定&#x200B;**[!UICONTROL Intelligent Ranking Boost]**&#x200B;以調整行為訊號對產品訂購影響的程度。 如需有關預設值、限制、預覽行為，以及提升與&#x200B;**手動排名**&#x200B;的比較方式的詳細資訊，請參閱[智慧型排名提升](rules-add.md#intelligent-ranking-boost)。
 
 **手動排名**&#x200B;可讓使用者定義手動圖釘、提升、隱藏和隱藏規則，以覆寫自動產品排序順序。
 
@@ -104,7 +107,7 @@ ht-degree: 0%
    ![選取類別](assets/category_select.png)
 
 1. 在&#x200B;_新增類別規則_檢視中，選取您要套用至類別的智慧型排名方法。
-類別預覽頁面會使用您的即時搜尋資料，顯示所選排名的實際結果。
+類別預覽頁面會使用您的[!DNL Live Search]資料，顯示所選排名的實際結果。
 1. 按一下&#x200B;**儲存並發佈**&#x200B;以儲存規則。
 
 ![選取智慧型排名方法](assets/category_ranking.png)

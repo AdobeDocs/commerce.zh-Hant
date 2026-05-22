@@ -15,9 +15,9 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 86b218d78731585dca4e8829fb886010ef27a2d5
 workflow-type: tm+mt
-source-wordcount: 2966
+source-wordcount: 3008
 ht-degree: 0%
 
 ---
@@ -124,6 +124,7 @@ ht-degree: 0%
 - 標示在銷售中或屬於特別促銷的產品。
 - 使用促銷期間的日期範圍，在促銷期間或銷售期間自動設定搜尋規則。
 - 請一律使用「測試規則」面板來預覽您的智慧排名策略如何影響不同查詢的實際搜尋結果。
+- 當您啟用智慧型排名時，請在規則編輯器中調整&#x200B;**[智慧型排名提升](rules-add.md#intelligent-ranking-boost)**，以平衡人氣樣式的訊號與文字關聯性，並在&#x200B;**測試您的規則**&#x200B;中驗證目標查詢的結果。 智慧型排名提升不適用於&#x200B;**無**&#x200B;策略。
 - 根據使用[智慧型排名](rules-add.md#intelligent-ranking)的個別購物者行為量身打造搜尋結果，例如「為您推薦」、「檢視次數最多」等。 若要量身打造購物者行為，您必須確定事件已正確實作。 對於Luma商家，事件是現成可用的。 針對Headless或自訂實作，您必須根據您的特定需求[實作事件](https://developer.adobe.com/commerce/services/shared-services/storefront-events/)。
 
 進一步瞭解搜尋規則：
@@ -221,7 +222,7 @@ ht-degree: 0%
 深入瞭解搜尋所需的產品屬性：
 
 - [將屬性設定為可搜尋](workspace.md#set-attributes-as-searchable)
-- [為屬性指派權重](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [為屬性指派權重](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## 監視搜尋結果
 

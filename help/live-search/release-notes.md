@@ -19,9 +19,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: d30ce9f02c9d2217c6669e8e9a1794bbc0387128
+source-git-commit: 63f363c970a8a147cb6f564a52a41818023451c4
 workflow-type: tm+mt
-source-wordcount: 3060
+source-wordcount: 3098
 ht-degree: 1%
 
 ---
@@ -40,6 +40,10 @@ ht-degree: 1%
 ## 託管服務更新
 
 這些附註會說明在版本設定發行之外發佈的更新，或託管服務的改進。
+
+_2026年5月22日_
+
+![新的](../assets/new.svg)搜尋銷售規則、預設規則和[類別銷售](./category-merch.md)規則現在包含&#x200B;**[!UICONTROL Intelligent Ranking Boost]**，因此您可以調整智慧型排名策略對結果相對於文字關聯性的影響程度。 規則預覽符合設定的Boost。 [了解更多](./rules-add.md#intelligent-ranking-boost)。
 
 _2025年10月1日_
 
