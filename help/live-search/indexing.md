@@ -43,7 +43,7 @@ ht-degree: 0%
 
 使用者端從店面呼叫搜尋服務以擷取（可篩選、可排序）索引中繼資料。 搜尋服務只能呼叫具有層次導覽中&#x200B;*使用*&#x200B;屬性設定為`Filterable (with results)`且&#x200B;*產品清單中用於排序*&#x200B;設定為`Yes`的可搜尋產品屬性。
 
-若要建構動態查詢，搜尋服務必須知道哪些屬性可搜尋，以及它們的[權重](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results)。 [!DNL Live Search]遵循Adobe Commerce搜尋權重（1-10，其中10是最高優先順序）。 您可以在結構描述中找到已同步並與目錄服務共用的資料清單，其定義如下：
+若要建構動態查詢，搜尋服務必須知道哪些屬性可搜尋，以及它們的[權重](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/catalog/search/search-results)。 [!DNL Live Search]遵循Adobe Commerce搜尋權重（1-10，其中10是最高優先順序）。 您可以在結構描述中找到已同步並與目錄服務共用的資料清單，其定義如下：
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
 

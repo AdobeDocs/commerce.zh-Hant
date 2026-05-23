@@ -23,7 +23,7 @@ ht-degree: 2%
 
 [Data Connection擴充功能](overview.md)會將您的Commerce資料連線到Experience Platform。 打算用於Experience Platform的資料會分組為兩種行為型別：屬於&#x200B;**體驗事件**&#x200B;類別的時間序列資料，以及屬於&#x200B;**個人設定檔**&#x200B;類別的記錄資料。
 
-深入瞭解Experience Platform中的[資料行為](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=zh-Hant#data-behaviors)和[類別](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#class)。
+深入瞭解Experience Platform中的[資料行為](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=zh-Hant#data-behaviors)和[類別](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=zh-Hant#class)。
 
 ## 時間序列資料
 

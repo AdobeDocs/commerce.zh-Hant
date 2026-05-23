@@ -99,12 +99,12 @@ ht-degree: 0%
 ## B2B和類別許可權
 
 - 產品若未新增至預設共用目錄，則不會顯示。
-- 若要使用[類別許可權](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions)限制客戶群組：
+- 若要使用[類別許可權](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/categories/category-permissions)限制客戶群組：
    - 必須將產品指派給根類別。 (**注意：**&#x200B;您可以將SaaS Data Export擴充功能更新至103.4.0+版，以移除此限制。 請參閱[管理資料匯出擴充功能](../data-export/manage-extension.md)。
    - 必須向「未登入」客戶群組提供「允許」瀏覽許可權。
-   - 若要將產品限制在「未登入」客戶群組，請移至每個類別，並為每個[客戶群組](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage)設定許可權。
+   - 若要將產品限制在「未登入」客戶群組，請移至每個類別，並為每個[客戶群組](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage)設定許可權。
 - 目前不支援在PWA Studio上透過PLP Widget提供B2B的現成支援。 不過，您可以[使用API](install.md#pwa-support)來實作此功能。
-- [!DNL Live Search]中的類別Facet可能會顯示無法顯示給特定[客戶群組](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage)的類別。
+- [!DNL Live Search]中的類別Facet可能會顯示無法顯示給特定[客戶群組](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage)的類別。
 - [!DNL Live Search]最多可支援1,000個客戶群組。
 
 ## [!DNL Storefront popover]

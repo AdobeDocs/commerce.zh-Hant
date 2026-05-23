@@ -32,7 +32,7 @@ ht-degree: 0%
             <li><a href="https://experienceleague.adobe.com/docs/commerce/catalog-service/release-notes.html?lang=zh-Hant">[!DNL Catalog Service]</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/live-search/release-notes.html?lang=zh-Hant">[!DNL Live Search]</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/payment-services/release-notes.html?lang=zh-Hant">[!DNL Payment Services]</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/product-recommendations/release-notes.html">產品推薦</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/product-recommendations/release-notes.html?lang=zh-Hant">產品推薦</a></li>
           </ul>
         </td>
       <td><strong>整合服務</strong>
@@ -45,8 +45,8 @@ ht-degree: 0%
       <td><strong>資料服務</strong>
         <p>瞭解資料服務的最新改善，這些改善可讓我們的Commerce服務管理產品資料。</p>
           <ul>
-           <li><a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes">SaaS資料匯出擴充功能</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/data-services/catalog-sync.html">目錄同步</a></li>
+           <li><a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/saas-data-export/release-notes">SaaS資料匯出擴充功能</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/data-services/catalog-sync.html?lang=zh-Hant">目錄同步</a></li>
           </ul>
       </td>
     </tr>

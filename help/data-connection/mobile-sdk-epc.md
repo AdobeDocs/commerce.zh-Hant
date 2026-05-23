@@ -38,7 +38,7 @@ ht-degree: 0%
 
 ### Experience Platform
 
-1. 檢閱行動應用程式教學課程[&#128279;](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html)中的Adobe Experience Cloud，瞭解行動應用程式功能。
+1. 檢閱行動應用程式教學課程[&#128279;](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=zh-Hant)中的Adobe Experience Cloud，瞭解行動應用程式功能。
 
 1. [在Experience Platform中安裝和設定](https://developer.adobe.com/client-sdks/documentation/getting-started/) SDK。
 

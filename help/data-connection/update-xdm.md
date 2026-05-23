@@ -32,7 +32,7 @@ ht-degree: 0%
 
 深入瞭解[時間序列資料](data-ingestion.md)。
 
-深入瞭解結構描述組合[的基本概念](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html)。
+深入瞭解結構描述組合[的基本概念](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=zh-Hant)。
 
 ## 使用時間序列行為和後台事件資料更新結構描述
 
