@@ -56,7 +56,7 @@ ht-degree: 0%
 
 ## 認證 {#apikey}
 
-從[授權擁有者](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding)的[!DNL Commerce]帳戶產生生產和沙箱API金鑰。 Commerce帳戶由唯一的[!DNL Commerce] ID (MageID)識別。 只要帳戶處於良好狀態，商家組織的授權擁有者就能為產品推薦或Live Search等服務產生API金鑰。
+從[授權擁有者](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/start/onboarding)的[!DNL Commerce]帳戶產生生產和沙箱API金鑰。 Commerce帳戶由唯一的[!DNL Commerce] ID (MageID)識別。 只要帳戶處於良好狀態，商家組織的授權擁有者就能為產品推薦或Live Search等服務產生API金鑰。
 
 這些金鑰可在「需知」基礎上與系統整合商或開發團隊分享，後者代表授權持有人管理專案和環境。 已獲授權擁有者授予[!DNL Shared Access]的開發人員，無法代表授權擁有者產生金鑰，即使商家組織出現在他們帳戶的[!DNL Switch Accounts]下拉式清單中。
 
@@ -153,7 +153,7 @@ ht-degree: 0%
 
 1. 選取&#x200B;**資料空間**，以用於您[!DNL Commerce]存放區的目前組態。
 
-   如果您有要與Commerce服務整合的個別執行個體，請[提交支援票證](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)，為每個額外的執行個體請求新的SaaS專案。 支援人員建立SaaS專案後，請使用相同的API金鑰&#x200B;**為執行個體**&#x200B;設定Commerce Services聯結器，並選取新的SaaS專案和資料空間。
+   如果您有要與Commerce服務整合的個別執行個體，請[提交支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)，為每個額外的執行個體請求新的SaaS專案。 支援人員建立SaaS專案後，請使用相同的API金鑰&#x200B;**為執行個體**&#x200B;設定Commerce Services聯結器，並選取新的SaaS專案和資料空間。
 
 >[!WARNING]
 >
@@ -167,4 +167,4 @@ ht-degree: 0%
 
 ## SaaS資料匯出
 
-當您的[!DNL Commerce]執行個體成功連線至[!DNL Commerce Services]時，SaaS資料匯出程式會將Commerce資料從您的[!DNL Commerce]伺服器匯出至[!DNL Commerce SaaS Services]，以便同步處理至連線的Commerce服務。 在Admin中，您可以使用[資料管理儀表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)來檢查同步處理狀態。 如需詳細資訊，請參閱[SaaS資料匯出指南](../data-export/overview.md)。
+當您的[!DNL Commerce]執行個體成功連線至[!DNL Commerce Services]時，SaaS資料匯出程式會將Commerce資料從您的[!DNL Commerce]伺服器匯出至[!DNL Commerce SaaS Services]，以便同步處理至連線的Commerce服務。 在Admin中，您可以使用[資料管理儀表板](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)來檢查同步處理狀態。 如需詳細資訊，請參閱[SaaS資料匯出指南](../data-export/overview.md)。

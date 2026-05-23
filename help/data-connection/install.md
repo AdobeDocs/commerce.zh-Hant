@@ -173,4 +173,4 @@ composer update magento/experience-platform-connector-b2b --with-dependencies
 
 ## 解除安裝[!DNL Data Connection]延伸模組 {#uninstall}
 
-若要解除安裝[!DNL Data Connection]擴充功能，請參閱[解除安裝模組](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html)。
+若要解除安裝[!DNL Data Connection]擴充功能，請參閱[解除安裝模組](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html?lang=zh-Hant)。
