@@ -1,7 +1,7 @@
 ---
-source-git-commit: c435c7751fca8c46077cbab3534bd9f47cd03b2b
+source-git-commit: bfbfd43620580b8db464b823be6f0f64c97c261d
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1218'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,66 @@ ht-degree: 1%
 ## 新增功能
 
 此頁面包含過去60天所做的變更。 我們將從此清單中排除所有微幅更新，例如複製編輯。
+
+### 2026年5月22日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>已針對2026年5月20日發行版本新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/release-notes">Adobe Commerce Optimizer</a>及Commerce <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/release-notes">目錄服務</a>的API更新發行說明，該版本現在會在擷取產品資料時，強制實施記錄的每個請求100-SKU限制。 請參閱<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/boundaries-limits">限制和邊界</a>。</p>
+</td>
+      <td>
+        技術
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/342a3015f743e12b7089e4d430a517804a7cd40c">認可</a></td>
+    </tr>
+    <tr>
+      <td><p>在<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/live-search/live-search-admin/rules/rules-add#intelligent-ranking-boost">新增規則</a>和<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/live-search/best-practice">最佳實務</a>中記錄[!DNL Live Search]的智慧型排名提升（每個規則可設定的行為權重，預設5.0），並包含來自<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/live-search/live-search-admin/category-merch">類別銷售</a>的互動參照。 在「<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking-boost">建立和管理</a>」和「<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/merchandising/rules/best-practice">銷售規則最佳實務</a>」中，為「[!DNL Adobe Commerce Optimizer]」新增了相同的指引。</p>
+</td>
+      <td>
+        重大更新
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/40b4528d417a4df09ac9ae9fb0d97b0f678b55ac">認可</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年5月19日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>AEM Assets整合指南說明編輯器如何在<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/release-notes">AEM Assets整合v1.3.6 </a>中設定<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/get-started/configure-aem#localized-alt-text-in-aem-assets-metadata">替代文字</a>。</p>
+</td>
+      <td>
+        重大更新
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/6d3dfbc59e72c00c3552af5805b57c69e60b38b4">認可</a></td>
+    </tr>
+    <tr>
+      <td><p>已新增Adobe Commerce as a Cloud Service的沙箱<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes">發行說明</a>。</p>
+</td>
+      <td>
+        重大更新
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/14aa082c1f0f8ce4c51328eb8ee9f4af25adf859">認可</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年4月30日
 
@@ -363,72 +423,6 @@ ht-degree: 1%
         重大更新
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/522240cfd305bb00026ba477dc94e0bd2de30f06">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年3月23日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/tutorials/tutorial-prerequisites">教學課程必要條件</a>的自動安裝。</p>
-</td>
-      <td>
-        重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/a383e95e23291959f039390dfd3943bf98aa83ef">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年3月19日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>新增主題：<br />- <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer">登入Adobe Commerce as a Cloud Service的客戶身份</a>。<br />- <a href="https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/">Adobe Commerce as a Cloud Service的禮卡帳戶REST端點</a>。<br />- Adobe Commerce as a Cloud Service的<a href="https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/">透過REST觸發的電子郵件</a>。<br />透過2026年3月更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes">版本注意事項</a> — 版本編號2版本資訊。</p>
-</td>
-      <td>
-        新主題
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/58b94a9a587b3947d4b340ce77c8b3f7b28c27f4">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年3月17日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/get-started/permissions">設定AEM Assets整合的IMS使用者許可權</a>，以說明如何設定IMS和傳遞層許可權，以啟用「資產選擇器」和在Admin中自動填入的設定欄位（方案ID、環境ID、網域對應）。</p>
-</td>
-      <td>
-        新主題
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/0fd98bf86555c914f7a5b1e177c31c37764dbf84">認可</a></td>
     </tr>
   </tbody>
 </table>
