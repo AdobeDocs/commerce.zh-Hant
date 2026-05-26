@@ -1,7 +1,7 @@
 ---
-source-git-commit: bfbfd43620580b8db464b823be6f0f64c97c261d
+source-git-commit: 976bc4114790473d3bdcab6c06684f0c955893ee
 workflow-type: tm+mt
-source-wordcount: '1218'
+source-wordcount: '1103'
 ht-degree: 1%
 
 ---
@@ -225,7 +225,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/8f2cc1e79ede56192a8ab03194b0f69854f89f7b">認可</a></td>
     </tr>
     <tr>
-      <td><p>記錄<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/release-notes">AEM Assets整合v1.3.5</a>並修正<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/synchronize/custom-match">自訂自動比對</a> API要求欄位(<code class="language-plaintext highlighter-rouge">eventData</code>， <code class="language-plaintext highlighter-rouge">productSku</code>)。</p>
+      <td><p>記錄<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/release-notes">AEM Assets整合v1.3.5</a>並修正<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/synchronize/custom-match">自訂自動比對</a> API要求欄位(<code>eventData</code>， <code>productSku</code>)。</p>
 </td>
       <td>
         新主題
@@ -371,58 +371,6 @@ ht-degree: 1%
         重大更新
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/4a60783dbed189475bcd0090c949cd76b0566f54">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年3月27日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>已使用最新沙箱發行資訊更新Adobe Commerce as a Cloud Service <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes">發行說明</a>。</p>
-</td>
-      <td>
-        重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ccecbf0dcbb0cb02d7874beba5d4b14d7f04cd44">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年3月25日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/app-management/install">安裝及存取應用程式管理</a>，其中包含Commerce webhook區段以及App Management儀表板中webhook驗證錯誤的熒幕擷圖。</p>
-</td>
-      <td>
-        技術
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/86c0945bbb0a562de1b66d420dec2a05d4d81e5f">認可</a></td>
-    </tr>
-    <tr>
-      <td><p>更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes#latest">發行說明</a>，將3月發行版本#2移至「生產」。</p>
-</td>
-      <td>
-        重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/522240cfd305bb00026ba477dc94e0bd2de30f06">認可</a></td>
     </tr>
   </tbody>
 </table>
