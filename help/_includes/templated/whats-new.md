@@ -23,7 +23,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>已針對2026年5月20日發行版本新增<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/release-notes">Adobe Commerce Optimizer</a>及Commerce <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/release-notes">目錄服務</a>的API更新發行說明，該版本現在會在擷取產品資料時，強制實施記錄的每個請求100-SKU限制。 請參閱<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits">限制和邊界</a>。</p>
+      <td><p>已針對2026年5月20日發行版本新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/release-notes">Adobe Commerce Optimizer</a>及Commerce <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/release-notes">目錄服務</a>的API更新發行說明，該版本現在會在擷取產品資料時，強制實施記錄的每個請求100-SKU限制。 請參閱<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/boundaries-limits">限制和邊界</a>。</p>
 </td>
       <td>
         技術
@@ -31,7 +31,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/342a3015f743e12b7089e4d430a517804a7cd40c">認可</a></td>
     </tr>
     <tr>
-      <td><p>在<a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/rules/rules-add#intelligent-ranking-boost">新增規則</a>和<a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/best-practice">最佳實務</a>中記錄[!DNL Live Search]的智慧型排名提升（每個規則可設定的行為權重，預設5.0），並包含來自<a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/category-merch">類別銷售</a>的互動參照。 在「<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking-boost">建立和管理</a>」和「<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/best-practice">銷售規則最佳實務</a>」中，為「[!DNL Adobe Commerce Optimizer]」新增了相同的指引。</p>
+      <td><p>在<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/live-search/live-search-admin/rules/rules-add#intelligent-ranking-boost">新增規則</a>和<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/live-search/best-practice">最佳實務</a>中記錄[!DNL Live Search]的智慧型排名提升（每個規則可設定的行為權重，預設5.0），並包含來自<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/live-search/live-search-admin/category-merch">類別銷售</a>的互動參照。 在「<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking-boost">建立和管理</a>」和「<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/merchandising/rules/best-practice">銷售規則最佳實務</a>」中，為「[!DNL Adobe Commerce Optimizer]」新增了相同的指引。</p>
 </td>
       <td>
         重大更新
@@ -53,7 +53,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>AEM Assets整合指南說明編輯器如何在<a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes">AEM Assets整合v1.3.6 </a>中設定<a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aem#localized-alt-text-in-aem-assets-metadata">替代文字</a>。</p>
+      <td><p>AEM Assets整合指南說明編輯器如何在<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/release-notes">AEM Assets整合v1.3.6 </a>中設定<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/get-started/configure-aem#localized-alt-text-in-aem-assets-metadata">替代文字</a>。</p>
 </td>
       <td>
         重大更新
@@ -61,7 +61,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/6d3dfbc59e72c00c3552af5805b57c69e60b38b4">認可</a></td>
     </tr>
     <tr>
-      <td><p>已新增Adobe Commerce as a Cloud Service的沙箱<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">發行說明</a>。</p>
+      <td><p>已新增Adobe Commerce as a Cloud Service的沙箱<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes">發行說明</a>。</p>
 </td>
       <td>
         重大更新
@@ -83,7 +83,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>展開<a href="https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/overview">Adobe Commerce Optimizer聯結器總覽</a>，其中包含主要優點、端對端架構（新圖表）、更清楚的範圍對應、典型的設定和同步工作流程、支援的案例，以及必要條件或責任，讓團隊可以更輕鬆地評估及操作整合。</p>
+      <td><p>展開<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/aco-optimizer-connector/overview">Adobe Commerce Optimizer聯結器總覽</a>，其中包含主要優點、端對端架構（新圖表）、更清楚的範圍對應、典型的設定和同步工作流程、支援的案例，以及必要條件或責任，讓團隊可以更輕鬆地評估及操作整合。</p>
 </td>
       <td>
         意見反應，重大更新
@@ -105,7 +105,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>已新增Adobe Commerce as a Cloud Service的<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview">可觀察性</a>頁面。</p>
+      <td><p>已新增Adobe Commerce as a Cloud Service的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/overview">可觀察性</a>頁面。</p>
 </td>
       <td>
         意見反應，新主題
@@ -113,7 +113,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/bf83f213d1774845c4c99f3b154e9fb3220c3cd1">認可</a></td>
     </tr>
     <tr>
-      <td><p>更新<a href="https://experienceleague.adobe.com/en/docs/commerce/app-management/manage-app/manage-app">管理您的應用程式</a>，瞭解如何在管理員（搜尋、狀態和擴充性模式篩選器）和贏取Adobe Exchange的應用程式路徑中尋找應用程式，其中連結來自<a href="https://experienceleague.adobe.com/en/docs/commerce/app-management/overview">應用程式管理總覽</a>和<a href="https://experienceleague.adobe.com/en/docs/commerce/app-management/install">安裝和存取應用程式管理</a>。</p>
+      <td><p>更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/app-management/manage-app/manage-app">管理您的應用程式</a>，瞭解如何在管理員（搜尋、狀態和擴充性模式篩選器）和贏取Adobe Exchange的應用程式路徑中尋找應用程式，其中連結來自<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/app-management/overview">應用程式管理總覽</a>和<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/app-management/install">安裝和存取應用程式管理</a>。</p>
 </td>
       <td>
         重大更新
@@ -121,7 +121,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/780cef7af3574cd846fd7ee82d7814f2ebe9d6cc">認可</a></td>
     </tr>
     <tr>
-      <td><p>已新增Adobe Commerce as a Cloud Service的生產<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">發行說明</a>。</p>
+      <td><p>已新增Adobe Commerce as a Cloud Service的生產<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes">發行說明</a>。</p>
 </td>
       <td>
         重大更新
@@ -143,7 +143,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>已新增Adobe Commerce as a Cloud Service的沙箱<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">發行說明</a>。</p>
+      <td><p>已新增Adobe Commerce as a Cloud Service的沙箱<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes">發行說明</a>。</p>
 </td>
       <td>
         重大更新
@@ -165,7 +165,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>已釐清監視SaaS資料匯出和同步處理的位置 — <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard">資料管理儀表板</a>、<a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status">資料摘要同步處理狀態</a>和<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync">Commerce Optimizer資料同步處理</a>。</p>
+      <td><p>已釐清監視SaaS資料匯出和同步處理的位置 — <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard">資料管理儀表板</a>、<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status">資料摘要同步處理狀態</a>和<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/setup/data-sync">Commerce Optimizer資料同步處理</a>。</p>
 </td>
       <td>
         技術意見回饋
@@ -187,7 +187,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>針對Adobe Commerce as a Cloud Service四月的第二個生產版本更新<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes#latest">發行說明</a>。</p>
+      <td><p>針對Adobe Commerce as a Cloud Service四月的第二個生產版本更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes#latest">發行說明</a>。</p>
 </td>
       <td>
         重大更新
@@ -209,7 +209,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>新增<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/integrations-overview">[!DNL Adobe Commerce Optimizer]整合總覽</a>主題，說明每個可用的整合（Adobe Commerce Optimizer Connector、AEM Assets、AEM Sites Optimizer和Salesforce Commerce Connector）如何融入Adobe Commerce Optimizer，並提供設定和設定指南的連結。</p>
+      <td><p>新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/integrations-overview">[!DNL Adobe Commerce Optimizer]整合總覽</a>主題，說明每個可用的整合（Adobe Commerce Optimizer Connector、AEM Assets、AEM Sites Optimizer和Salesforce Commerce Connector）如何融入Adobe Commerce Optimizer，並提供設定和設定指南的連結。</p>
 </td>
       <td>
         意見反應，新主題
@@ -217,7 +217,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/41c8bfe8f15b1988f574fe589ba6e27bb1839ba8">認可</a></td>
     </tr>
     <tr>
-      <td><p>已新增Adobe Commerce as a Cloud Service的沙箱<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">發行說明</a>。</p>
+      <td><p>已新增Adobe Commerce as a Cloud Service的沙箱<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes">發行說明</a>。</p>
 </td>
       <td>
         重大更新
@@ -225,7 +225,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/8f2cc1e79ede56192a8ab03194b0f69854f89f7b">認可</a></td>
     </tr>
     <tr>
-      <td><p>記錄<a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes">AEM Assets整合v1.3.5</a>並修正<a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match">自訂自動比對</a> API要求欄位(<code class="language-plaintext highlighter-rouge">eventData</code>， <code class="language-plaintext highlighter-rouge">productSku</code>)。</p>
+      <td><p>記錄<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/release-notes">AEM Assets整合v1.3.5</a>並修正<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/synchronize/custom-match">自訂自動比對</a> API要求欄位(<code class="language-plaintext highlighter-rouge">eventData</code>， <code class="language-plaintext highlighter-rouge">productSku</code>)。</p>
 </td>
       <td>
         新主題
@@ -247,7 +247,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>新增<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/launch/launch-checklist">啟動檢查清單</a>，作為啟動前驗證生產[!DNL Adobe Commerce Optimizer]設定、店面上線、SEO、CDN、整合、安全性、分析和測試的參考。</p>
+      <td><p>新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/launch/launch-checklist">啟動檢查清單</a>，作為啟動前驗證生產[!DNL Adobe Commerce Optimizer]設定、店面上線、SEO、CDN、整合、安全性、分析和測試的參考。</p>
 </td>
       <td>
         意見反應，新主題
@@ -269,7 +269,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>為Adobe Commerce Optimizer新增<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add">類別銷售</a>：將類別規則與類別頁面上的智慧型排名和手動動作搭配使用。</p>
+      <td><p>為Adobe Commerce Optimizer新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/merchandising/rules/add">類別銷售</a>：將類別規則與類別頁面上的智慧型排名和手動動作搭配使用。</p>
 </td>
       <td>
         新主題
@@ -291,7 +291,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>新增有關<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/product-files">在Adobe Commerce as a Cloud Service中將檔案新增至產品</a>的指引。</p>
+      <td><p>新增有關<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/product-files">在Adobe Commerce as a Cloud Service中將檔案新增至產品</a>的指引。</p>
 </td>
       <td>
         重大更新
@@ -313,7 +313,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>已更新<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/recommendations/filters">建議篩選器</a>，其中包含價格和產品篩選器程式、篩選和顯示價格的價格簿型最終價格行為，以及篩選器產品UI的新熒幕擷取畫面。</p>
+      <td><p>已更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/merchandising/recommendations/filters">建議篩選器</a>，其中包含價格和產品篩選器程式、篩選和顯示價格的價格簿型最終價格行為，以及篩選器產品UI的新熒幕擷取畫面。</p>
 </td>
       <td>
         重大更新
@@ -335,7 +335,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>更新<a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/configure/payments-home">Payment Services首頁</a>、<a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/financial-reports/reporting">報表</a>和<a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/get-started/onboard">入門總覽</a>，其中包含SaaS/ACCS熒幕擷取畫面和UI指引（入門橫幅、以交易為中心的首頁、交易格線）。</p>
+      <td><p>更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/payment-services/configure/payments-home">Payment Services首頁</a>、<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/payment-services/financial-reports/reporting">報表</a>和<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/payment-services/get-started/onboard">入門總覽</a>，其中包含SaaS/ACCS熒幕擷取畫面和UI指引（入門橫幅、以交易為中心的首頁、交易格線）。</p>
 </td>
       <td>
         重大更新
@@ -343,7 +343,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/79c71b55e463d7e9570fe67b664b4e77a0d741f7">認可</a></td>
     </tr>
     <tr>
-      <td><p>已新增Adobe Commerce as a Cloud Service的4月生產版<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">發行說明</a>。</p>
+      <td><p>已新增Adobe Commerce as a Cloud Service的4月生產版<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes">發行說明</a>。</p>
 </td>
       <td>
         重大更新
@@ -365,7 +365,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>以最新的沙箱部署更新Adobe Commerce as a Cloud Service <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">發行說明</a>。</p>
+      <td><p>以最新的沙箱部署更新Adobe Commerce as a Cloud Service <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes">發行說明</a>。</p>
 </td>
       <td>
         重大更新
@@ -387,7 +387,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>已使用最新沙箱發行資訊更新Adobe Commerce as a Cloud Service <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">發行說明</a>。</p>
+      <td><p>已使用最新沙箱發行資訊更新Adobe Commerce as a Cloud Service <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes">發行說明</a>。</p>
 </td>
       <td>
         重大更新
@@ -409,7 +409,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>更新<a href="https://experienceleague.adobe.com/en/docs/commerce/app-management/install">安裝及存取應用程式管理</a>，其中包含Commerce webhook區段以及App Management儀表板中webhook驗證錯誤的熒幕擷圖。</p>
+      <td><p>更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/app-management/install">安裝及存取應用程式管理</a>，其中包含Commerce webhook區段以及App Management儀表板中webhook驗證錯誤的熒幕擷圖。</p>
 </td>
       <td>
         技術
@@ -417,7 +417,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/86c0945bbb0a562de1b66d420dec2a05d4d81e5f">認可</a></td>
     </tr>
     <tr>
-      <td><p>更新<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes#latest">發行說明</a>，將3月發行版本#2移至「生產」。</p>
+      <td><p>更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes#latest">發行說明</a>，將3月發行版本#2移至「生產」。</p>
 </td>
       <td>
         重大更新
