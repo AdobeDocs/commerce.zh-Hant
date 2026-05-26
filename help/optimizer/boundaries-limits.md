@@ -4,7 +4,8 @@ description: 瞭解Adobe Commerce Optimizer授許可權制和系統界限。 規
 role: Admin, Developer
 badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
 exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
-source-git-commit: 5b2babd2aed812d6679c2614e10e052dd5196f76
+nudge: true
+source-git-commit: 6ae571dd77206859e69e57100e80bb01416a36cd
 workflow-type: tm+mt
 source-wordcount: '1387'
 ht-degree: 0%
