@@ -97,7 +97,7 @@ ht-degree: 0%
 
 ## 入門
 
-若要將AEM Assets與[!DNL Commerce Optimizer]整合，您必須[建立支援票證](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)。
+若要將AEM Assets與[!DNL Commerce Optimizer]整合，您必須[建立支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)。
 
 Adobe支援會使用您票證中的資訊，向Assets Integration Service註冊您的租使用者，並設定整合。
 
@@ -123,7 +123,7 @@ Adobe支援處理完您的票證後，便會設定整合，並且您的租使用
    * AEM Assets事件（資產已核准、更新、已移除）
    * [!DNL Commerce Optimizer]個目錄事件（已建立、已更新的產品）
 
-設定您的[目錄檢視](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view)，讓店面和API顯示AEM驅動的影像資料：
+設定您的[目錄檢視](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/setup/catalog-view)，讓店面和API顯示AEM驅動的影像資料：
 
 * **目錄來源（地區）** — 選取您在支援票證中指定的相同地區（例如&#x200B;**`en-US`**）。 整合會為每個租使用者註冊一個地區設定；如果不相符，同步影像就不會出現在預期的目錄檢視中。
 * **目錄圖層** — 將&#x200B;**`AEM-Assets`**&#x200B;圖層（或票證中的自訂圖層名稱）指派給該目錄檢視。
