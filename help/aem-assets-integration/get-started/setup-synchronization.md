@@ -16,9 +16,9 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: a6a91fbd6cc6907d070998f67eb0b9c8171dda23
 workflow-type: tm+mt
-source-wordcount: 904
+source-wordcount: 948
 ht-degree: 2%
 
 ---
@@ -63,11 +63,13 @@ ht-degree: 2%
 
 1. 從下拉式功能表中選取AEM Assets環境&#x200B;**[!UICONTROL Program ID]**&#x200B;和&#x200B;**[!UICONTROL Environment ID]**。
 
-   下拉式清單會根據使用者的IMS工作階段自動填入。 若要使用此功能，請確定您擁有正確的[使用者許可權和IMS](permissions.md#user-permissions-and-ims)。
+   當您的Commerce管理員使用者符合以下體驗的[使用者許可權和IMS](permissions.md#user-permissions-and-ims)時，就會出現選取器： **Adobe Commerce as a Cloud Service**、**Adobe Commerce Optimizer**&#x200B;和&#x200B;**Adobe Commerce on Cloud Infrastructure**&#x200B;整合功能可從您的IMS連結工作階段自動填入這些欄位，而非依賴貼上的ID。
 
-   如果無法使用下拉式清單，您可以從AEM Cloud Manager URL手動輸入ID： `https://author-p[Program ID]-e[EnvironmentID].adobeaemcloud.com/`
+   如果選取器無法使用，請從AEM Cloud Manager複製&#x200B;**[!UICONTROL Program ID]**&#x200B;和&#x200B;**[!UICONTROL Environment ID]**，或從您的作者URL衍生它們： `https://author-<ProgramID>-<EnvironmentID>.adobeaemcloud.com/` （將預留位置取代為您的識別碼）。
 
-   從&#x200B;*[!UICONTROL Use system value]*&#x200B;中移除選取專案，以編輯設定值。
+   在貼上或手動選取新值之前，清除任一欄位的&#x200B;**[!UICONTROL Use system value]**。
+
+   ![AEM Assets整合表單，含方案ID和環境ID選取器](../assets/aem-assets-view.png){width="600" zoomable="yes"}
 
 1. [!BADGE 僅限PaaS]{type=Informative tooltip="僅適用於雲端專案上的Adobe Commerce （Adobe管理的PaaS基礎結構）。"}選取[[!UICONTROL Commerce integration]](configure-commerce.md#add-the-integration-to-the-commerce-environment)以驗證Commerce與資產比對服務之間的要求。
 
