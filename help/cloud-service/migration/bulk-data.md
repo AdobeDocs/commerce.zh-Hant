@@ -17,9 +17,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 6a3bacace012153f6b8f7c87192d19bf349a2446
 workflow-type: tm+mt
-source-wordcount: 756
+source-wordcount: 729
 ht-degree: 0%
 
 ---
@@ -52,8 +52,7 @@ ht-degree: 0%
 
 大量資料移轉工具的可用性如下：
 
-- **2026年第1季** （尚未提供） — 首次發行大量資料移轉工具後，您將可以透過提交支援票證來存取該工具。
-- **2026年第1季** （尚未提供） — 在公開發行大量資料移轉工具後，將可從此頁面存取該工具。
+此工具目前可透過已部署的工程參與取得。 如果您有興趣使用此工具，請聯絡您的Adobe代表。
 
 ## 建立目標環境
 
