@@ -1,7 +1,7 @@
 ---
-source-git-commit: 976bc4114790473d3bdcab6c06684f0c955893ee
+source-git-commit: dcb3300c80fb74d597cee66e981acb426490d34b
 workflow-type: tm+mt
-source-wordcount: '1103'
+source-wordcount: '1201'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,30 @@ ht-degree: 1%
 ## 新增功能
 
 此頁面包含過去60天所做的變更。 我們將從此清單中排除所有微幅更新，例如複製編輯。
+
+### 2026年5月28日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><ul>
+  <li>改善<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/get-started/configure-aco">為Commerce Optimizer設定AEM Assets</a>上線，因此AEM Assets設定會在租使用者註冊之前進行，提供專屬目錄層及圖層相關限制的更清楚指引。<br /> — 更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/get-started/configure-aem">為存放庫存取和管道部署設定AEM Assets專案</a>，其中包含重新排序的安裝步驟和Cloud Manager熒幕擷取畫面。<br /> — 說明<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/get-started/setup-synchronization">設定整合</a>中的IMS型方案ID和環境ID選取專案。</li>
+</ul>
+</td>
+      <td>
+        重大更新
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/de94aaad29313b3e8254d11d8801ba0d7efff3dc">認可</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年5月22日
 
@@ -23,7 +47,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>已針對2026年5月20日發行版本新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/release-notes">Adobe Commerce Optimizer</a>及Commerce <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/release-notes">目錄服務</a>的API更新發行說明，該版本現在會在擷取產品資料時，強制實施記錄的每個請求100-SKU限制。 請參閱<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/boundaries-limits">限制和邊界</a>。</p>
+      <td><p>已針對2026年5月20日發行版本新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/release-notes">Adobe Commerce Optimizer</a>及Commerce <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/release-notes">目錄服務</a>的API更新發行說明，該版本現在會在擷取產品資料時，強制記錄在案的每個請求100-SKU限制。</p>
 </td>
       <td>
         技術
