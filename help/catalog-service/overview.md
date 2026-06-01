@@ -17,9 +17,9 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 70990a7bb7e8926a171ea6d2148542b7b73f4dba
 workflow-type: tm+mt
-source-wordcount: 1398
+source-wordcount: 1405
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Adobe Commerce擴充功能的[!DNL Catalog Service]透過專用的GraphQL API提
 
 >[!NOTE]
 >
->如果您使用Adobe Commerce Optimizer或Adobe Commerce Optimizer Connector的可撰寫目錄來實作目錄，請參閱[Adobe Commerce Optimizer指南](../optimizer/overview.md#architecture)和銷售服務開發人員指南。
+>如果您使用Adobe Commerce Optimizer或Adobe Commerce Optimizer Connector的可撰寫目錄來實作目錄，請參閱[Adobe Commerce Optimizer指南](../optimizer/overview.md#architecture)和[Merchandising Services開發人員指南](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/)。
 
 [!DNL Catalog Service]使用[GraphQL](https://graphql.org/)來要求及接收目錄資料，包括產品、產品屬性、存貨及價格。 GraphQL是一種查詢語言，前端使用者端使用它來與後端（例如Adobe Commerce）上定義的應用程式設計介面(API)通訊。 GraphQL是一種常用的通訊方法，因為它很輕量，可讓系統整合商指定每個回應的內容和順序。
 

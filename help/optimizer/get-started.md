@@ -22,9 +22,9 @@ topic_v2:
   - id: dba482e5-29a8-4127-afa2-c4b913512ef8
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 423b35b15e845e49b1cf36910ffbad775de9758c
 workflow-type: tm+mt
-source-wordcount: 1181
+source-wordcount: 1332
 ht-degree: 0%
 
 ---
@@ -32,6 +32,17 @@ ht-degree: 0%
 # 開始使用
 
 本指南會逐步引導您完成設定[!DNL Adobe Commerce Optimizer]。 雖然本指南涵蓋所有角色，但如需開發人員特定內容的詳細資訊，請參閱[開發人員檔案](https://developer.adobe.com/commerce/services/optimizer/)。
+
+## 執行個體型別和環境隔離
+
+Adobe Commerce Optimizer針對不同的環境使用個別的執行個體，例如&#x200B;**沙箱**&#x200B;和&#x200B;**生產**。 每個執行個體都有自己的執行個體ID和獨立的資料，包括目錄檢視、原則、搜尋設定和產品建議。
+
+與Adobe Commerce as a Cloud Service、協力廠商商務平台或Edge Delivery Services店面整合時，請一律比對環境：
+
+- 將&#x200B;**Sandbox Optimizer執行個體**&#x200B;連線到非生產商業和店面環境。
+- 將&#x200B;**production Optimizer執行個體**&#x200B;連線到生產商務和店面環境。
+
+將沙箱環境與生產環境混合會導致目錄資料不一致、未預期的搜尋和銷售行為以及不可靠的量度。 設定整合時，請在Commerce Cloud Manager中使用執行個體型別和執行個體ID作為您的真實來源。
 
 ## 先決條件
 
@@ -140,21 +151,23 @@ ht-degree: 0%
 
 使用篩選和搜尋工具，依建立日期、區域、建立者、產品型別、環境或狀態快速尋找特定例項。
 
-### 存取[!DNL Adobe Commerce Optimizer]應用程式
+### 存取[!DNL Adobe Commerce Optimizer Studio]管理介面
 
 應用程式開啟後，可在沙箱和生產環境等環境之間輕鬆切換，以便檢視每個環境的資料和設定，而無需返回Commerce Cloud Manager。
 
-1. 在Commerce Cloud管理員中，按一下執行個體名稱以開啟[!DNL Adobe Commerce Optimizer]應用程式。
+1. 在Commerce Cloud管理員中，按一下執行個體名稱以開啟[!DNL Adobe Commerce Optimizer Studio]。
 
 1. 在不離開應用程式的情況下在[!DNL Adobe Commerce Optimizer]個執行個體之間切換。
 
-   執行處理下拉式清單列出組織中可用的所有Optimizer執行處理。 選取要檢視的執行個體。
+   - 按一下執行處理下拉式清單，以檢視組織中可用的所有Optimizer執行處理。
 
-   用於選取[!DNL Adobe Commerce Optimizer]環境的![執行個體切換器下拉式清單](./assets/context-switcher.png){zoomable="yes"}
+     用於選取[!DNL Adobe Commerce Optimizer]環境的![執行個體切換器下拉式清單](./assets/context-switcher.png){zoomable="yes"}
+
+- 選取要檢視的執行個體。
 
 >[!NOTE]
 >
->如果您需要返回Commerce Cloud管理員以檢視執行個體詳細資料或管理執行個體，請按一下Commerce Optimizer頂端導覽左上角的「應用程式」圖示![圖示以開啟Experience Cloud應用程式](./assets/apps-icon.png)。
+>若要返回Commerce Cloud管理員以檢視執行個體詳細資料或管理執行個體，請按一下Commerce Optimizer頂端導覽左上角的![圖示以開啟Experience Cloud應用程式](./assets/apps-icon.png) （應用程式）圖示。
 
 ### 取得執行個體詳細資訊
 
@@ -164,10 +177,10 @@ ht-degree: 0%
 
 請注意下列重要資訊：
 
-- **GraphQL端點**，以使用銷售API擷取Commerce目錄資料
-- **目錄端點**，可使用REST API將目錄資料擷取到Commerce Optimizer
-- **Commerce Optimizer URL**&#x200B;以存取[!DNL Adobe Commerce Optimizer]應用程式
-- **執行個體識別碼**：識別執行個體的唯一識別碼。 執行個體識別碼也稱為&#x200B;*tenant_id*。
+- **GraphQL端點** GraphQL端點您的店面會使用[銷售服務API](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/){target=_blank}，從此執行個體查詢目錄和銷售資料
+- **目錄端點** REST API端點，用來從您的商務或PIM系統擷取產品和價格到Adobe Commerce Optimizer。 檢視[資料擷取API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/)
+- **Commerce Optimizer URL**&#x200B;開啟[Adobe Commerce Optimizer Studio](overview.md)管理UI以設定和管理目錄檢視、原則及銷售。
+- **執行個體識別碼**：此Adobe Commerce Optimizer執行個體的唯一識別碼（租使用者ID），由店面、API和工具用來連線到正確的環境。
 
 如果您是開發人員，您需要這些詳細資料來設定您的開發環境並連線到[!DNL Adobe Commerce Optimizer] API。
 
@@ -186,7 +199,7 @@ ht-degree: 0%
 ## 新增範例資料
 
 Adobe提供GitHub存放庫和範例資料與工具，協助您學習及測試[!DNL Adobe Commerce Optimizer]功能。
-範例資料是以[Carvelo商業案例](./use-case/admin-use-case.md)為基礎，包含：
+範例資料是以[Carvelo商業案例](./use-case/admin-use-case.md)為基礎，並包含：
 
 - 含汽車零件的產品目錄
 - 多重價格簿與訂價案例

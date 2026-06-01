@@ -21,9 +21,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: be4140fb3305b354e8a11463131182a3b571d2f2
 workflow-type: tm+mt
-source-wordcount: 1233
+source-wordcount: 1177
 ht-degree: 0%
 
 ---
@@ -60,12 +60,6 @@ Commerce會保留您產品、價格和目錄結構的記錄系統。 Commerce Op
 - 聯結器會匯出目錄、價格和類別摘要
 - Commerce Optimizer會將摘要資料內嵌並標準化至目錄來源、價格手冊和目錄檢視中
 - 店面（Edge Delivery上的Commerce店面或自訂Headless組建）呼叫Commerce Optimizer GraphQL API以進行探索和推薦，並呼叫Commerce或其他連線的第三方平台以進行購物車和結帳作業
-
-## 聯結器如何與Adobe Commerce搭配運作 {#how-it-works}
-
-- Commerce Optimizer會將摘要資料內嵌並標準化至目錄來源、價格手冊和目錄檢視中。
-
-- 店面（Edge Delivery上的Commerce店面或自訂Headless組建）呼叫Commerce Optimizer GraphQL API以進行探索和推薦，並呼叫Commerce或其他連線的第三方平台以進行購物車和結帳作業。
 
 ## 聯結器如何與Adobe Commerce搭配運作
 

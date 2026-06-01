@@ -1,11 +1,18 @@
 ---
-source-git-commit: aaefe284749df25953c2581f000af2989bcc8fb2
+source-git-commit: edc47115830f5ca7ec1e485de1ddf9939de2586d
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
 # Commerce代碼片段
+
+
+## ACO整合環境校準 {#aco-integration-environment-alignment}
+
+>[!IMPORTANT]
+>
+>一律將沙箱Optimizer執行個體連線到非生產環境，將生產執行個體連線到生產環境。 不相符的環境會導致不一致的目錄資料、搜尋結果和推薦。
 
 
 ## Optimizer的銷售服務 {#aco-merchandising-services}
