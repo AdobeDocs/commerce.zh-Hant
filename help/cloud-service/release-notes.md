@@ -27,9 +27,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 4288998fdae56112dc9ddcebfc42b85b9f5d8c00
+source-git-commit: be8fbcd77dc56b2193eee20d7a06a315ac1abb9f
 workflow-type: tm+mt
-source-wordcount: 4032
+source-wordcount: 4189
 ht-degree: 0%
 
 ---
@@ -42,15 +42,19 @@ ht-degree: 0%
 >
 >如果您正在雲端基礎結構上使用Adobe Commerce內部部署或Adobe Commerce，請參閱[Adobe Commerce發行說明](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/overview)。
 
-## 2026年5月 — 發行說#2 {#latest}
+## 2026年6月 — 發行說#1 {#latest}
 
 <!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
 
 [!BADGE 沙箱]{type=Caution tooltip="列出的專案目前僅在沙箱環境中可用。 Adobe會先在沙箱環境中推出新版本，讓您可以在生產環境中使用該版本之前有時間測試即將推出的變更。"}
 
-以下專案將於2026年5月21日發佈到生產環境。
+以下專案將於2026年6月4日發佈到生產環境。
 
 >[!BEGINSHADEBOX]
+
+### 在「管理員」中新增及編輯自訂優惠券代碼
+
+商戶現在可以直接從手動購物車價格規則上的[!DNL Commerce Admin]建立和編輯自訂優惠券代碼。 編輯購物車價格規則時，[!UICONTROL **管理優惠券代碼**]&#x200B;區段中提供新的&#x200B;[!UICONTROL **新增自訂優惠券**]&#x200B;按鈕。<!-- CCSAAS-4508 -->
 
 ### 使用預設和自訂承運商追蹤出貨
 
@@ -59,6 +63,14 @@ ht-degree: 0%
 ### 在「產品屬性」格線中檢視屬性輸入型別
 
 新的&#x200B;[!UICONTROL **屬性型別**]&#x200B;欄現在顯示在（[!UICONTROL **商店**] > _[!UICONTROL Attributes]_>[!UICONTROL **產品**]）的產品屬性格線中，顯示每個產品屬性的輸入型別（例如文字欄位、下拉式清單或yes/no），包括擴充功能貢獻的型別。 這樣可讓您在使用大型屬性集時，更輕鬆地識別和管理屬性。<!-- ACCS-925 -->
+
+### 自訂自訂電子郵件的回覆標題
+
+商戶現在可以設定[POST /rest/V1/custom-email/send](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/)端點使用的&#x200B;[!UICONTROL **回覆**]&#x200B;標頭，因此可將客戶的回覆路由至與寄件者不同的位址。<!-- ACCS-1037 -->
+
+### 在大型共用目錄環境中的產品編輯頁面上檢視層級價格
+
+擁有大量共用目錄的商家，現在可以存取[!DNL Commerce Admin]中產品編輯頁面上的唯讀&#x200B;[!UICONTROL **層級價格**]&#x200B;標籤。<!-- CCSAAS-4922 -->
 
 ### 增強功能和錯誤修正
 
@@ -70,7 +82,7 @@ ht-degree: 0%
 
 * 解決當請求中出現`X-Adobe-Company`標頭時，可能會阻止來賓GraphQL登入的「消費者未獲授權」錯誤。<!-- ACCS-949 -->
 
-* 修正透過PUT `V1/customers/companies` REST端點將客戶指派給公司後，在[!DNL Commerce Admin]中編輯或刪除公司可能會失敗並出現「沒有此等實體」錯誤的問題。<!-- ACCS-856 -->
+* 修正透過PUT `V1/customers/companies` REST端點將客戶指派給公司後，在[!DNL Commerce Admin]中編輯或刪除公司可能會失敗並出現「無此實體」錯誤的問題。<!-- ACCS-856 -->
 
 * 解決過期銷售訂單網格狀態的問題。<!-- CCSAAS-4915 -->
 
@@ -79,6 +91,10 @@ ht-degree: 0%
 * 修正建立包含可設定產品之訂單的出貨時，可能會發生的「未定義的陣列索引鍵&#39;simple_sku&#39;」錯誤。<!-- CCSAAS-4877 -->
 
 * 使用格式錯誤的Token呼叫時，`guestOrderByToken` GraphQL查詢現在會傳回資訊更豐富的錯誤訊息，而不是內部伺服器錯誤。<!-- CCSAAS-4921 -->
+
+* 無法載入客戶訂單時，`customer` GraphQL查詢現在會傳回資訊更豐富的錯誤訊息。<!-- ACCS-867 -->
+
+* GET `V1/customers/{customerId}` REST端點現在會傳回`assistance_allowed`設定欄位。<!-- USF-4132 -->
 
 {{accs-release}}
 
@@ -355,7 +371,7 @@ mutation {
 
 * 修正大型共用目錄可能發生的產品編輯頁面逾時問題。<!-- CCSAAS-4657 -->
 
-* 重新啟用GET `/V1/directory/countries`和GET `/V1/directory/countries/:countryId` REST API端點以進行管理員整合，讓使用者端可查詢有效的國家/地區資料。<!-- ACCS-518 -->
+* 重新啟用GET `/V1/directory/countries`和GET `/V1/directory/countries/:countryId` REST API端點以進行管理整合，允許使用者端查詢有效的國家/地區資料。<!-- ACCS-518 -->
 
 * 修正使用者擁有大型共用目錄時，REST API中可能發生的逾時問題。<!-- ACCS-4657 -->
 
