@@ -2,28 +2,16 @@
 title: Adobe Commerce Optimizer聯結器
 description: 瞭解如何將資料從Commerce雲端或內部部署專案連線到Adobe Commerce Optimizer
 feature: Personalization, Integration, Configuration
-badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
+badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
 TQID: https://experienceleague.adobe.com/-C-XP5YYxwyGrkvVR6CDd-FpDybqnlaKMmFPKOKUbFA
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-subfeature_v2:
-  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
-  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+subfeature_v2: id: ae62cf09-5996-4921-bda8-fbe67b62e470id: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: be4140fb3305b354e8a11463131182a3b571d2f2
 workflow-type: tm+mt
-source-wordcount: 1233
+source-wordcount: 1177
 ht-degree: 0%
 
 ---
@@ -60,12 +48,6 @@ Commerce會保留您產品、價格和目錄結構的記錄系統。 Commerce Op
 - 聯結器會匯出目錄、價格和類別摘要
 - Commerce Optimizer會將摘要資料內嵌並標準化至目錄來源、價格手冊和目錄檢視中
 - 店面（Edge Delivery上的Commerce店面或自訂Headless組建）呼叫Commerce Optimizer GraphQL API以進行探索和推薦，並呼叫Commerce或其他連線的第三方平台以進行購物車和結帳作業
-
-## 聯結器如何與Adobe Commerce搭配運作 {#how-it-works}
-
-- Commerce Optimizer會將摘要資料內嵌並標準化至目錄來源、價格手冊和目錄檢視中。
-
-- 店面（Edge Delivery上的Commerce店面或自訂Headless組建）呼叫Commerce Optimizer GraphQL API以進行探索和推薦，並呼叫Commerce或其他連線的第三方平台以進行購物車和結帳作業。
 
 ## 聯結器如何與Adobe Commerce搭配運作
 

@@ -5,21 +5,13 @@ role: Admin, Developer
 recommendations: noCatalog
 exl-id: 525e3ff0-efa6-48c7-9111-d0b00f42957a
 TQID: https://experienceleague.adobe.com/CEbJ8-hkc0AGQ4RnRNMDXA6mMijvhPGAfsxyC4eT39Y
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 70990a7bb7e8926a171ea6d2148542b7b73f4dba
 workflow-type: tm+mt
-source-wordcount: 1398
+source-wordcount: 1405
 ht-degree: 0%
 
 ---
@@ -52,7 +44,7 @@ Adobe Commerce擴充功能的[!DNL Catalog Service]透過專用的GraphQL API提
 
 >[!NOTE]
 >
->如果您使用Adobe Commerce Optimizer或Adobe Commerce Optimizer Connector的可撰寫目錄來實作目錄，請參閱[Adobe Commerce Optimizer指南](../optimizer/overview.md#architecture)和銷售服務開發人員指南。
+>如果您使用Adobe Commerce Optimizer或Adobe Commerce Optimizer Connector的可撰寫目錄來實作目錄，請參閱[Adobe Commerce Optimizer指南](../optimizer/overview.md#architecture)和[Merchandising Services開發人員指南](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/)。
 
 [!DNL Catalog Service]使用[GraphQL](https://graphql.org/)來要求及接收目錄資料，包括產品、產品屬性、存貨及價格。 GraphQL是一種查詢語言，前端使用者端使用它來與後端（例如Adobe Commerce）上定義的應用程式設計介面(API)通訊。 GraphQL是一種常用的通訊方法，因為它很輕量，可讓系統整合商指定每個回應的內容和順序。
 
@@ -92,7 +84,7 @@ Adobe Commerce提供兩種GraphQL系統，其用途不同：
 
 GraphQL系統的核心和服務不會直接互相通訊。 您從不同的URL存取每個系統，而呼叫需要不同的標題資訊。 這兩個GraphQL系統旨在搭配使用。 [!DNL Catalog Service] GraphQL系統可增強核心系統，讓產品店面體驗更快速。
 
-您可以選擇實作Adobe Developer App Builder[&#128279;](https://developer.adobe.com/graphql-mesh-gateway/)的API Mesh，以使用Adobe Developer將兩個Adobe Commerce GraphQL系統與私人和協力廠商API及其他軟體介面整合。 您可以設定網格，以確保路由到每個端點的呼叫在標題中包含正確的授權資訊。
+您可以選擇實作Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/)的[API Mesh，以使用Adobe Developer將兩個Adobe Commerce GraphQL系統與私人和協力廠商API及其他軟體介面整合。 您可以設定網格，以確保路由到每個端點的呼叫在標題中包含正確的授權資訊。
 
 ## 架構詳細資料
 
@@ -140,7 +132,7 @@ GraphQL系統的核心和服務不會直接互相通訊。 您從不同的URL存
 
 實作程式涉及：
 
-1. 僅[!BADGE PaaS]{type=Informative url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"} **[安裝並設定目錄服務](installation.md)** — 安裝並設定目錄服務延伸功能，並使用[!DNL Commerce Services Connector]設定SaaS連線。
+1. 僅[!BADGE PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"} **[安裝並設定目錄服務](installation.md)** — 安裝並設定目錄服務延伸功能，並使用[!DNL Commerce Services Connector]設定SaaS連線。
 2. **更新店面程式碼**：將目錄服務GraphQL查詢整合至您的店面。
 3. **路由查詢**：所有目錄服務查詢都會透過GraphQL閘道（上線期間提供的URL）
 4. **監視和疑難排解資料同步處理**：驗證已改善的效能並監視結果
