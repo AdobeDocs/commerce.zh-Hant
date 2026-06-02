@@ -3,10 +3,10 @@ user-guide-title: '[!DNL AEM Assets]整合指南'
 breadcrumb-title: '[!DNL AEM Assets]整合'
 user-guide-description: 有關適用於Adobe Commerce和AEM Assets管理員以及電子商務行銷人員的Magento Open Source整合的完整資訊。
 feature: CMS, Page Content
-source-git-commit: 9f052a6d2d38163dbe431e082228fcf48ae24656
+source-git-commit: 04c1717905367549d2818b1842f05a6a1488ccfd
 workflow-type: tm+mt
-source-wordcount: '96'
-ht-degree: 4%
+source-wordcount: '101'
+ht-degree: 3%
 
 ---
 
@@ -23,6 +23,7 @@ ht-degree: 4%
    - [設定Commerce Optimizer](get-started/configure-aco.md)
    - [設定您的店面](get-started/configure-storefront.md)
    - [檢視和管理記錄檔](get-started/logs.md)
+   - [檢視AEM Assets同步狀態](get-started/sync-status.md)
    - [移轉資料](get-started/migrate-data.md)
 - 同步機制 {#synchronize}
    - [維護正確且相關的內容](synchronize/commerce-content.md)
