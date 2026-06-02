@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 63f363c970a8a147cb6f564a52a41818023451c4
+source-git-commit: 29b54d68ec20d000f4cc1ffe8080c5919457ff8c
 workflow-type: tm+mt
-source-wordcount: 1104
+source-wordcount: 1191
 ht-degree: 0%
 
 ---
@@ -42,11 +42,24 @@ ht-degree: 0%
 
 ### API更新
 
+_2026年5月28日_
+
+<!-- v1.2 -->
+
+![修正](../assets/fix.svg) **完整的導覽樹狀結構** — 當路徑中存在未標籤的中繼節點時，已標籤的下階類別現在會正確包含在系列篩選的`navigation`樹狀結構中。這項修正可確保購物者在導覽中看見所有相關類別，讓您更輕鬆地瀏覽及探索專案。
+<!--DATA-7183-->
+
+![修正](../assets/fix.svg) **在`categoryTree`要求中處理空白的Slug** — 修正當`slugs`引數包含空白字串時，[`categoryTree`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree)查詢傳回內部伺服器錯誤的問題。空的概要(Slug)值現在會被忽略，因此儲存體和整合功能可繼續解析類別資料，而不會發生請求失敗的情況。
+<!--DATA-7184-->
+
+![修正](../assets/fix.svg) **`searchCategory`要求傳回不區分大小寫、以字母順序排列的結果** — 現在`searchCategory`查詢會依字母順序排序搜尋結果，而不會區分大小寫，以確保順序一致且可預測。如果名稱完全相同，首碼較短的類別會先出現。
+<!--COMOPT-2142-->
+
 _2026年5月4日_
 
 <!--v1.53-->
 
-店面產品價格現在為所有產品型別顯示正確的貨幣代碼（例如USD）。 之前，部分產品顯示`NONE`而非預期的貨幣，導致價格遺失。
+**正確的貨幣顯示** — 店面產品價格現在會顯示所有產品型別的正確貨幣代碼（例如USD）。 之前，部分產品顯示`NONE`而非預期的貨幣，導致價格遺失。
 
 <!--DATA-7115-->
 
