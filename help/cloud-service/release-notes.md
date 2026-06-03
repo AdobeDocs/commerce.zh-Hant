@@ -27,9 +27,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: be8fbcd77dc56b2193eee20d7a06a315ac1abb9f
+source-git-commit: 9e4bf260a145815f97a69251005309edb480ae11
 workflow-type: tm+mt
-source-wordcount: 4189
+source-wordcount: 4182
 ht-degree: 0%
 
 ---
@@ -44,17 +44,17 @@ ht-degree: 0%
 
 ## 2026年6月 — 發行說#1 {#latest}
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE 生產]{type=Neutral tooltip="列出的專案目前可在生產環境中使用。"}
 
-[!BADGE 沙箱]{type=Caution tooltip="列出的專案目前僅在沙箱環境中可用。 Adobe會先在沙箱環境中推出新版本，讓您可以在生產環境中使用該版本之前有時間測試即將推出的變更。"}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-以下專案將於2026年6月4日發佈到生產環境。
+以下專案已於2026年6月4日發佈到生產環境。
 
 >[!BEGINSHADEBOX]
 
 ### 在「管理員」中新增及編輯自訂優惠券代碼
 
-商戶現在可以直接從手動購物車價格規則上的[!DNL Commerce Admin]建立和編輯自訂優惠券代碼。 編輯購物車價格規則時，[!UICONTROL **管理優惠券代碼**]&#x200B;區段中提供新的&#x200B;[!UICONTROL **新增自訂優惠券**]&#x200B;按鈕。<!-- CCSAAS-4508 -->
+商戶現在可以直接從手動購物車價格規則上的[!DNL Commerce Admin] [建立和編輯自訂優惠券代碼](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-coupon#method-3-custom-coupon-codes)。 編輯購物車價格規則時，[!UICONTROL **管理優惠券代碼**]&#x200B;區段中提供新的&#x200B;[!UICONTROL **新增自訂優惠券**]&#x200B;按鈕。<!-- CCSAAS-4508 -->
 
 ### 使用預設和自訂承運商追蹤出貨
 
