@@ -1,0 +1,49 @@
+---
+title: SaaS資料匯出的饋送鎖定機制
+description: 瞭解 [!DNL SaaS Data Export] 如何使用摘要鎖定，以防止衝突的同步作業，並在同時更新摘要期間保護資料完整性。
+role: Admin, Developer
+feature: Services
+source-git-commit: cfa1002653bf66afd3f6b8484b33076adcd1b7d4
+workflow-type: tm+mt
+source-wordcount: '357'
+ht-degree: 0%
+
+---
+
+
+# SaaS資料匯出的饋送鎖定機制
+
+[!DNL SaaS Data Export]擴充功能使用摘要鎖定機制，以防止多個處理序同時同步處理相同摘要時發生競爭情形。 例如，當cron觸發的重新同步與手動`saas:resync` CLI呼叫重疊時，就可能發生這種情況。
+
+## 摘要鎖定的運作方式
+
+每個摘要同步作業（不論是由cron作業或手動`saas:resync` CLI呼叫所觸發）都遵循相同的順序：
+
+1. 該程式會嘗試取得摘要鎖定。 鎖定嘗試不會受阻，如果鎖定已被其他處理序保留，則會立即傳回。
+1. 如果鎖定為&#x200B;**無法使用**，則會略過[作業並記錄]。
+
+   不會遺失任何資料。 下次cron執行會在目前程式完成後挑選擱置的變更。
+1. 如果鎖定為&#x200B;**已取得**，處理序會記錄其名稱和PID以供診斷之用，然後執行同步。
+1. 當同步完成或失敗時，鎖定會無條件釋放，以便下一個排程的cron工作可正常繼續。
+
+一次只能有一個同步作業可以保持摘要鎖定，無論它是由cron啟動還是由CLI啟動。 摘要鎖定是透過[!DNL Adobe Commerce]的`LockManagerInterface`實作。 預設後端是MySQL，它使用`GET_LOCK`和`RELEASE_LOCK`函式。 若要設定不同的鎖定提供者，請參閱[設定鎖定提供者](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/lock-provider){target="_blank"}。
+
+## 預期的記錄訊息
+
+`commerce-data-export.log`中的下列訊息是正常的，並不表示有問題：
+
+```json
+{"feed":"products","operation":"partial sync","status":"operation skipped - process locked by \"full sync(1234)\"", ...}
+```
+
+當已在進行完整重新索引或`saas:resync`時，cron觸發的部分同步嘗試執行時，會出現此訊息。 略過的作業不會遺失。 當執行中的程式完成並解除鎖定後，下一個cron執行就會擷取並同步任何暫止的變更。
+
+>[!NOTE]
+>
+>如需`commerce-data-export.log`中記錄之記錄檔格式與作業型別的一般資訊，請參閱[檢閱記錄檔與疑難排解](troubleshooting-logging.md)。
+
+## 有關此主題的更多說明
+
+- [與SaaS資料匯出同步資料](data-synchronization.md)
+- [使用Commerce CLI同步摘要](data-export-cli-commands.md)
+- [設定鎖定提供者](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/lock-provider){target="_blank"}
