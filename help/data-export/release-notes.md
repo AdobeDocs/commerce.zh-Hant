@@ -18,9 +18,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: d35a3ad39c504c5c6eb1073737babae252a3127d
+source-git-commit: f472cadb124207b04b158b410b7fe1db8f5a9f7d
 workflow-type: tm+mt
-source-wordcount: 2818
+source-wordcount: 2855
 ht-degree: 0%
 
 ---
@@ -40,6 +40,13 @@ ht-degree: 0%
 >SaaS資料匯出擴充功能是隨「即時搜尋」、「產品建議」和「目錄服務」自動安裝的模組集合。 您可以使用Composer檢查系統上安裝的版本。 在某些情況下，您可能會想要升級系統上的資料匯出擴充功能，以取得修正或新功能，而不更新Commerce服務版本。
 
 ## 2026版本
+
+### 103.4.27版
+
+_2026年6月4日_
+
+![修正](../assets/fix.svg) **同時更新目錄後仍可看到套件組合產品** — 修正同時更新可設定和套件組合產品時，套件組合產品未出現在店面的問題。在您將`magento/module-data-exporter`升級至103.4.27版後，產品摘要會自動排程重新同步以修正[!DNL Catalog Service]、[!DNL Live Search]和其他連線的Commerce服務中現有的套件組合資料不一致。
+<!--MDEE-1379-->
 
 ### 103.4.26版
 
