@@ -3,7 +3,7 @@ title: 語意搜尋
 description: 從[設定]啟用 [!DNL Adobe Commerce Optimizer] 中的AI語意搜尋。 不需要屬性設定或店面變更。
 role: Admin, User
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
 source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
 workflow-type: tm+mt
 source-wordcount: '792'
