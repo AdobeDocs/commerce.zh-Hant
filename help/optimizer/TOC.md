@@ -5,9 +5,9 @@ user-guide-description: ' [!DNL Adobe Commerce Optimizer]的檔案和資源。'
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 12783fe12fad940b95dfed05c1b86657e63c725c
+source-git-commit: 8b93be7e618c7a93803e62eabb1cd38ebe8b45ba
 workflow-type: tm+mt
-source-wordcount: '114'
+source-wordcount: '116'
 ht-degree: 12%
 
 ---
@@ -56,6 +56,7 @@ ht-degree: 12%
    - [價格簿](./setup/pricebooks.md)
    - [產品視覺效果](./setup/product-visuals.md)
    - [資料同步](./setup/data-sync.md)
+   - [語意搜尋](./setup/semantic-search.md)
    - 活動 {#events}
       - [概觀](./setup/events/overview.md)
 - [店面](storefront.md)
