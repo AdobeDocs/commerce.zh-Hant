@@ -4,10 +4,16 @@ description: 設定 [!DNL Adobe Commerce Optimizer]的設定。
 badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
 exl-id: 6ac223de-8e03-4842-8b67-92ce321d323d
 TQID: https://experienceleague.adobe.com/9-BMXoWad0bbvsnwgHQrs19ZC9ngGrVE9J7PszcX4Zc
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
 workflow-type: tm+mt
 source-wordcount: 867
@@ -127,7 +133,7 @@ ht-degree: 0%
   >
   > 僅支援&#x200B;**英文**&#x200B;目錄的語意搜尋。 在&#x200B;**[語言](#language)**&#x200B;索引標籤上選取其他語言會停用&#x200B;**[!UICONTROL Enable semantic search]**。
 
-- **[!UICONTROL Fuzzy search]** — 開啟&#x200B;****&#x200B;以尋找搜尋查詢的近似相符專案，這有助於更正拼字和細微變化。
+- **[!UICONTROL Fuzzy search]** — 開啟&#x200B;**&#x200B;**&#x200B;以尋找搜尋查詢的近似相符專案，這有助於更正拼字和細微變化。
 - **[!UICONTROL Fuzzy search similarity threshold]** — 設定出現模糊相符項所需的最小相似度（以百分比表示）。 較低的臨界值會傳回比較接近的相符專案；如果模糊結果範圍太廣，請提高臨界值。
 
 如需優點、驗證指南、最佳實務、疑難排解及限制，請參閱[語意搜尋](setup/semantic-search.md)。
