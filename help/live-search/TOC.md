@@ -4,9 +4,9 @@ breadcrumb-title: '[!DNL Live Search]'
 user-guide-description: 本指南提供使用Adobe Commerce中 [!DNL Live Search] 的詳細指示。
 role: Admin
 feature: Services, Search
-source-git-commit: 5fe92e91e4ddb55f371615d467d29cffd60782b0
+source-git-commit: 8b93be7e618c7a93803e62eabb1cd38ebe8b45ba
 workflow-type: tm+mt
-source-wordcount: '98'
+source-wordcount: '100'
 ht-degree: 8%
 
 ---
@@ -47,5 +47,6 @@ ht-degree: 8%
    - [索引](indexing.md)
    - [GraphQL](graphql.md)
    - [設定](settings.md)
+   - [語意搜尋](semantic-search.md)
 - [開發人員指南](https://developer.adobe.com/commerce/services/shared-services/storefront-events/)
 - [返回Commerce服務首頁](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=zh-Hant)

@@ -15,9 +15,9 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
 workflow-type: tm+mt
-source-wordcount: 1863
+source-wordcount: 1905
 ht-degree: 0%
 
 ---
@@ -64,6 +64,7 @@ ht-degree: 0%
 有幾個關鍵因素可決定搜尋結果的相關性和成效：
 
 - 結構良好的產品資料可確保搜尋演演算法能夠有效地將產品與查詢比對。 低品質的產品資料會導致搜尋結果的相關性降低。 若要直接影響銷售策略的成功：
+   - 設定[語意搜尋](../setup/semantic-search.md)，以進行自然語言和意圖相符的搜尋。
    - 將正確的[屬性設定為可搜尋](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata)及其對應的權重。
    - 請確定這些屬性中的資料具有相關性。
 - 精心設計的搜尋體驗能建立客戶信任，並灌輸他們找到所需內容的信心。
@@ -92,6 +93,7 @@ ht-degree: 0%
 
   若要降低零結果率，您可以：
 
+   - 確認已在[設定]中的[進階搜尋] **[索引標籤](../settings.md#advanced-search)**&#x200B;上啟用[語意搜尋](../setup/semantic-search.md)。 預設會為[!DNL Adobe Commerce Optimizer]客戶啟用語意搜尋；不需要店面或開發人員變更。 索引完成之後會更新結果。
    - 找不到完全相符的專案時，提供替代或相關的搜尋字詞，例如[同義字](../merchandising/synonyms/overview.md)。
    - 定期檢視零結果查詢以識別模式，並對產品目錄和搜尋設定進行必要的調整。
 

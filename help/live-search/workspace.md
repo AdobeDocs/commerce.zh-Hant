@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
 workflow-type: tm+mt
-source-wordcount: 2317
+source-wordcount: 2318
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ ht-degree: 0%
 | [搜尋銷售](rules.md) | 使用可觸發已排程動作的邏輯規則來塑造搜尋體驗。 提升、隱藏、釘選或隱藏產品，以校正搜尋結果，支援您的業務目標。 |
 | [類別銷售](category-merch.md) | 在類別層級套用規則和智慧型銷售。 |
 | [GraphQL](graphql.md) | 開發人員若已登入您商店的管理員，可使用實際目錄資料撰寫和測試查詢。 若要深入瞭解，請前往[!DNL Live Search]開發人員檔案中的[GraphQL概觀](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/)。 |
-| [設定](settings.md) | 決定如何在店面中依價格範圍分組價格方面值，並設定索引語言。 |
+| [設定](settings.md) | 管理語意搜尋（預設為[!DNL Adobe Commerce as a Cloud Service]啟用）、設定店面的價格Facet群組，以及設定索引語言。 |
 
 ## 將屬性設定為可搜尋
 

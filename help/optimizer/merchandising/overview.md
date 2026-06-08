@@ -18,9 +18,9 @@ topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 48b94b1b5f38560d5a7be6c5f5431007685202fa
 workflow-type: tm+mt
-source-wordcount: 264
+source-wordcount: 237
 ht-degree: 0%
 
 ---
@@ -35,10 +35,8 @@ ht-degree: 0%
 
 透過產品探索，您可以：
 
+* **使用[語意搜尋](../setup/semantic-search.md)** — 預設會在[設定](../settings.md#advanced-search)中啟用，以改善自然語言和意圖型查詢的相關性。 不需要屬性設定或店面變更。
 * **設定[面向](./facets/overview.md)、[銷售搜尋和類別規則](./rules/overview.md)和[同義字](./synonyms/overview.md)**，以引導購物者以最小的摩擦找到最相關的產品。
-* **建立直覺式、以目標為導向的搜尋體驗**，以反映您的銷售策略和季節性優先順序。
-* **使用AI驅動的動態多面向和結果重新排名**，根據購物者行為即時調整搜尋結果 — 提升參與度和銷售量。
-* **確保促銷和高優先順序的專案有效呈現**，讓搜尋結果符合業務目標。
 
 ## Recommendations
 
