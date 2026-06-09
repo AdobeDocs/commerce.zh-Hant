@@ -52,7 +52,7 @@ AEM Assets中的影像會透過以下來源設定擷取為目錄層：
 
 ## 先決條件
 
-在啟用產品視覺效果之前，請確定您符合Commerce Optimizer](../../aem-assets-integration/get-started/configure-aco.md#prerequisites)的[必要條件。
+在啟用產品視覺效果之前，請確定您符合Commerce Optimizer[&#128279;](../../aem-assets-integration/get-started/configure-aco.md#prerequisites)的必要條件。
 
 ## 設定
 
