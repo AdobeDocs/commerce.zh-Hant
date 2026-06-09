@@ -3,10 +3,10 @@ title: 透過AEM Assets呈現產品視覺效果
 description: 瞭解如何在 [!DNL Adobe Commerce Optimizer]中使用產品影像的AEM Assets。
 feature: CMS, Media, Configuration, Integration
 role: Admin, Developer
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案(Adobe管理的SaaS基礎結構)。"
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
+source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 * **從AEM Assets**：當資產被核准、拒絕或移除時，事件會透過Adobe Pipeline傳輸至Assets Integration Service。 此服務會使用`match-by-SKU`或自訂比對器策略比對資產與產品，然後將`product-asset`對應傳送至[!DNL Commerce Optimizer]，並儲存為產品層。
 
-* **從ACO**：在[!DNL Commerce Optimizer]中更新產品時，事件會透過Adobe管道傳輸至Assets整合服務。 此服務會將任何相符的資產對應同步回ACO。
+* **從[!DNL Commerce Optimizer]**：在[!DNL Commerce Optimizer]中更新產品時，事件會透過Adobe管道傳輸至Assets整合服務。 此服務會將任何符合的資產對應同步回[!DNL Commerce Optimizer]。
 
 更新的影像可透過店面API （目錄服務、即時搜尋、產品推薦）取得。
 
@@ -52,11 +52,11 @@ AEM Assets中的影像會透過以下來源設定擷取為目錄層：
 
 ## 先決條件
 
-在啟用產品視覺效果之前，請確定您符合Commerce Optimizer[的](../../aem-assets-integration/get-started/configure-aco.md#prerequisites)必要條件。
+在啟用產品視覺效果之前，請確定您符合Commerce Optimizer](../../aem-assets-integration/get-started/configure-aco.md#prerequisites)的[必要條件。
 
 ## 設定
 
-若要啟用整合，請[建立支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)，其中包含您的[!DNL Commerce Optimizer]和AEM Assets詳細資料。 Adobe支援會設定整合，並在Assets整合服務中註冊您的租使用者。
+若要啟用整合，請[建立支援票證](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)，其中包含您的[!DNL Commerce Optimizer]和AEM Assets詳細資料。 Adobe支援會設定整合，並在Assets整合服務中註冊您的租使用者。
 
 如需入門資訊，請參閱[設定Commerce Optimizer的AEM Assets](../../aem-assets-integration/get-started/configure-aco.md)。
 

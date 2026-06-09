@@ -3,28 +3,14 @@ title: Salesforce Commerce聯結器
 description: 瞭解 [!DNL Commerce Optimizer SFCC Connector] ，此工具為整合Salesforce Commerce B2C與 [!DNL Adobe Commerce Optimizer] 以同步目錄資料，以及實作和自訂聯結器以支援業務營運提供了一個起點。
 role: Admin, Developer
 TQID: https://experienceleague.adobe.com/pbzScjaJ7FybdPP06QIhKlowmMbkDHTxUSJUw6eG6JY
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2:
-  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
-  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c18ed297-2187-4aec-affb-9d9654eca6fcid: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: e91a50b1-0b31-436e-9033-00e4776e94cbid: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
 workflow-type: tm+mt
-source-wordcount: 1177
+source-wordcount: 1183
 ht-degree: 0%
 
 ---
@@ -35,7 +21,7 @@ ht-degree: 0%
 
 聯結器開箱即用，提供可靠的資料同步功能，並具備彈性可自訂工作流程，滿足您的業務需求。
 
-如需端對端影片教學課程系列，請參閱[瞭解Salesforce Commerce雲端入門套件](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview)。
+如需端對端影片教學課程系列，請參閱[瞭解Salesforce Commerce雲端入門套件](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview)。
 
 >[!NOTE]
 >
@@ -99,7 +85,7 @@ ht-degree: 0%
 
 1. **資料擷取** — 使用您的Salesforce Commerce B2C執行個體進行驗證，並使用自訂SCAPI擷取目錄資料。
 1. **資料轉換** — 轉換產品資料以符合[!DNL Commerce Optimizer]資料模型和結構描述需求。
-1. **資料擷取** — 使用ACO TypeScript SDK將轉換後的資料安全地傳輸至[!DNL Commerce Optimizer]。
+1. **資料擷取** — 使用Commerce Optimizer TypeScript SDK將轉換後的資料安全地傳輸至[!DNL Commerce Optimizer]。
 1. **店面整合** — 透過[!DNL Commerce Optimizer]個店面體驗的API取得同步資料。
 
 下圖說明整合的高階資料流程：
@@ -110,7 +96,7 @@ ht-degree: 0%
 
 [!DNL Commerce Optimizer SFCC Connector]包含數個主要元件：
 
-* **ACO SFCC Starter Kit App Builder應用程式** — 提供無伺服器功能，可處理SFCC與[!DNL Adobe Commerce Optimizer]之間的資料同步。
+* **Commerce Optimizer SFCC Starter Kit App Builder應用程式** — 提供無伺服器功能，可處理SFCC與[!DNL Adobe Commerce Optimizer]之間的資料同步。
 * **自訂SFCC Cartridge** — 使用資料擷取所需的API擴充您的Salesforce Commerce Cloud執行個體的必要卡匣。
 * **管理UI** — 用於監視同步狀態和管理聯結器操作的Web介面。
 
@@ -142,7 +128,7 @@ ht-degree: 0%
 
 ## 監控與管理
 
-安裝及設定之後，[!DNL Commerce Optimizer SFCC Connector]會從[!DNL SFCC to ACO Sync Panel]提供完整的監視及管理功能：
+安裝及設定之後，[!DNL Commerce Optimizer SFCC Connector]會從[!DNL SFCC to Commerce Optimizer Sync Panel]提供完整的監視及管理功能：
 
 ![Salesforce Commerce Connector管理UI](../assets/sfcc_management_ui.png){width="700" zoomable="yes"}
 
@@ -160,12 +146,12 @@ ht-degree: 0%
 
 [!DNL Commerce Optimizer SFCC Connector]是開放原始碼，可供自訂。 主要存放庫包括：
 
-* **[ACO SFCC Starter Kit](https://github.com/adobe-commerce/aco-sfcc-starter-kit)** — 主要聯結器應用程式和檔案。
-* **[ACO SFCC墨水匣](https://github.com/adobe-commerce/aco-sfcc-cartridges)** - API整合所需的SFCC墨水匣。
-* **[ACO TypeScript SDK](https://github.com/adobe-commerce/aco-ts-sdk)** — 用於[!DNL Adobe Commerce Optimizer]整合的SDK。
+* **[Commerce Optimizer SFCC Starter Kit](https://github.com/adobe-commerce/aco-sfcc-starter-kit)** — 主要聯結器應用程式和檔案。
+* **[Commerce Optimizer SFCC卡匣](https://github.com/adobe-commerce/aco-sfcc-cartridges)** - API整合需要SFCC卡匣。
+* **[Commerce Optimizer TypeScript SDK](https://github.com/adobe-commerce/aco-ts-sdk)** — 用於[!DNL Adobe Commerce Optimizer]整合的SDK。
 
 這些存放庫提供完整的原始程式碼、詳細檔案，以及實施和自訂聯結器的範例。
 
 ## 後續步驟
 
-準備好將您的Salesforce Commerce Cloud資料與[!DNL Adobe Commerce Optimizer]整合嗎？ 首先，請檢閱[ACO SFCC Starter Kit存放庫](https://github.com/adobe-commerce/aco-sfcc-starter-kit)中的詳細實作指南，並確定您具備必要的必要條件。
+準備好將您的Salesforce Commerce Cloud資料與[!DNL Adobe Commerce Optimizer]整合嗎？ 首先，請檢閱[Commerce Optimizer SFCC Starter Kit存放庫](https://github.com/adobe-commerce/aco-sfcc-starter-kit)中的詳細實作指南，並確定您已具備必要的必要條件。

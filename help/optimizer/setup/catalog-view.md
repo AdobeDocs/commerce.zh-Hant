@@ -3,25 +3,16 @@ title: 目錄檢視
 description: 瞭解什麼是目錄檢視，以及如何建立檢視，以依業務結構、原則和定價組織您的產品目錄。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
 TQID: https://experienceleague.adobe.com/Jmze0Pq3kSNMIXqkkML-hmmlZnv-XKgeEgRB8Q8NZ6s
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 4d08de7974c79dc6fe20366e0164f6078e83be5f
 workflow-type: tm+mt
-source-wordcount: 1384
+source-wordcount: 1216
 ht-degree: 0%
 
 ---
@@ -37,23 +28,13 @@ ht-degree: 0%
 - 根據業務結構（品牌、地區、經銷商）**可看見哪些產品**
 - **透過連結的價格手冊顯示哪些價格**
 - **如何使用原則（品牌、模型、類別等屬性）篩選產品**
-- **使用的目錄來源**&#x200B;根據地區設定等屬性
+- **使用哪些[目錄來源](catalog-source.md)**，根據地區設定等屬性
 
 將目錄檢視視為不同的「鏡頭」，客戶可透過這些鏡頭檢視您的目錄。 例如：
 
 - 經銷商目錄檢視可能只會顯示該特定經銷商可用的產品
 - 區域目錄檢視可能會顯示特定地理區域的產品和定價
 - 品牌目錄檢視可能只會顯示特定品牌的產品
-
-### 目錄檢視與目錄來源
-
-以下說明目錄檢視與目錄來源之間的差異：
-
-- **目錄檢視** — 針對特定業務需求所設定的目錄檢視。 當您建立目錄檢視時，請選取要使用的目錄來源（或地區設定），然後新增[原則](policies.md)以篩選可見的產品，並連結[價格手冊](pricebooks.md)以控制定價。 單一目錄來源可以支援許多目錄檢視（例如，一個`en-US`來源具有不同品牌或地區的個別目錄檢視）。 將目錄檢視想像為&#x200B;*如何*&#x200B;將該資料公開至店面、頻道或對象。
-
-- **目錄來源** — 提供產品資訊的基礎資料內容。 目錄來源通常是地區設定（例如，`en-US`、`fr-CA`）或外部系統，例如PIM或ERP。 [!DNL Adobe Commerce Optimizer]會從一或多個目錄來源將產品資料擷取到統一的基本目錄中。 將目錄來源想像為&#x200B;*其中*&#x200B;原始目錄資料來源。
-
-總而言之，**目錄來源**&#x200B;是您從中提取的資料內容；而&#x200B;**目錄檢視**&#x200B;是您提供給購物者或管道的經過篩選、定價且有組織的內容。
 
 ## 建立目錄檢視
 
@@ -69,12 +50,12 @@ ht-degree: 0%
 
 1. 從左側功能表，移至&#x200B;_商店設定_，然後按一下&#x200B;**[!UICONTROL Catalog views]**。
 
-1. 按一下&#x200B;**[!UICONTROL Create catalog view]**。 &#x200B;
+1. 按一下&#x200B;**[!UICONTROL Create catalog view]**&#x200B;。
 
 1. 設定目錄檢視詳細資料：
 
-   - **名稱** — 輸入目錄檢視的名稱，例如`Celport`。 &#x200B;
-   - **目錄來源** — 選取目錄來源（地區設定），例如`en-US`。
+   - **名稱** — 輸入目錄檢視的名稱，例如`Celport`&#x200B;。
+   - **目錄來源** — 選取[目錄來源](catalog-source.md)，例如`en-US`。
    - **目錄圖層** — 檢閱擷取的圖層和優先順序。
    - **原則** — 使用下拉式功能表選取相關原則。 例如，「品牌」、「型號」。 請&#x200B;確定您已[建立原則](policies.md)。
 
@@ -217,6 +198,7 @@ ht-degree: 0%
 
 ## 更多相關資訊
 
+- [目錄來源](catalog-source.md) — 定義搜尋、篩選和排序行為的產品、屬性和類別的權威範圍
 - [目錄層](catalog-layer.md) — 瞭解如何在不變更原始來源的情況下修改產品資料
 - [原則](policies.md) — 建立原則以篩選目錄檢視中的產品
 - [價格簿](pricebooks.md) — 管理不同客戶區段的定價結構
