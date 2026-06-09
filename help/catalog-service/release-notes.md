@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 4bd744e26afca4519fb1c04edcb7d2a118369ff9
+source-git-commit: acc520f67bdd1bdafd34b356b59bb32145192497
 workflow-type: tm+mt
-source-wordcount: 2782
+source-wordcount: 2682
 ht-degree: 0%
 
 ---
@@ -376,7 +376,7 @@ query {
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
-![修正](../assets/fix.svg)現在可以擷取產品資訊，而不需要產品覆寫（價格）資料。 以前，這些查詢會傳回： `The following sku does not have product override data in the DB: <SKU value>. Make sure data is synced.`
+![修正](../assets/fix.svg)現在可以擷取產品資訊，而不需要產品覆寫（價格）資料。以前，這些查詢會傳回： `The following sku does not have product override data in the DB: <SKU value>. Make sure data is synced.`
 <!--DATA-6121-->
 
 **發行日期**：2024年8月13日
@@ -384,7 +384,7 @@ query {
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
-![New](../assets/new.svg)已新增支援，以依據產品SKU擷取所有變體。 請參閱[目錄服務API參考](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/)。
+![New](../assets/new.svg)已新增支援，以依據產品SKU擷取所有變體。請參閱[目錄服務API參考](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/)。
 <!--DATA-6067-->
 
 ### 2024年5月
@@ -399,7 +399,7 @@ query {
 
 <!--DATA-5033-->
 
-![Fix](../assets/fix.svg)已新增對產品價格的支援，最多可包含16位數和4位小數。 從[資料管理儀表板](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)或[CLI](../data-export/data-export-cli-commands.md)重新同步以套用更新。
+![Fix](../assets/fix.svg)已新增對產品價格的支援，最多可包含16位數和4位小數。從[資料管理儀表板](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)或[CLI](../data-export/data-export-cli-commands.md)重新同步以套用更新。
 <!--DATA-5033-->
 
 #### 已知限制
@@ -444,7 +444,7 @@ query {
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
 目錄服務API現在支援![新](../assets/new.svg)產品影片。
-![Fix](../assets/fix.svg)無存貨的選項現在顯示在PDP Widget中。
+![修正](../assets/fix.svg)無庫存的選項現在顯示在PDP Widget中。
 
 #### 已知限制
 
@@ -467,7 +467,7 @@ query {
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
 ![新](../assets/new.svg)目錄服務支援產品變體的`inStock`旗標。
-![新](../assets/new.svg) `urlKey`和`externalId`欄位已新增至GraphQL結構描述。
+![新增](../assets/new.svg) `urlKey`和`externalId`欄位已新增至GraphQL結構描述。
 現在支援![新](../assets/new.svg)可下載的產品和禮品卡。
 
 ### 2023年9月
@@ -566,7 +566,7 @@ query {
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.x或更新版本
 
 套件和群組產品的![新](../assets/new.svg)支援。
-![新](../assets/new.svg)已新增B2B可見性覆寫。 產品現在可供搜尋，並可新增至特定客戶群組的購物車。
+![新](../assets/new.svg)已新增B2B可見性覆寫。產品現在可供搜尋，並可新增至特定客戶群組的購物車。
 ![Fix](../assets/fix.svg)服務現在更穩定且效能更佳。
 
 ### 2022年9月
@@ -607,6 +607,16 @@ query {
 - 針對Adobe Commerce as a Cloud Service客戶，您的環境中已安裝最新版本。
 
 - 針對雲端或內部部署的Adobe Commerce，Adobe建議使用撰寫器，將雲端環境中的目錄服務中繼資料升級為最新版本。
+
+### v3.4.0版本
+
+**發行日期**： 2026年6月8日
+
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
+
+![新](../assets/new.svg) **支援資料摘要同步處理狀態監視** — 已更新目錄服務中繼封裝相依性以包含資料匯出工具狀態延伸(`magento/module-data-exporter-status`)。 這可啟用Commerce Admin的[資料摘要同步狀態監視](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)，而不需要任何其他安裝或設定步驟
+
+![新](../assets/new.svg)已更新相依性，以維持目錄服務與您的Commerce棧疊之間的相容性。
 
 ### v3.3.0版本
 
