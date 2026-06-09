@@ -19,7 +19,7 @@ role_v2:
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
 workflow-type: tm+mt
 source-wordcount: 816
 ht-degree: 0%
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 1. 按一下&#x200B;**+**&#x200B;以新增產品。
 
-1. 選取要新增管理員的現有Commerce Optimizer執行個體。 Commerce Optimizer執行個體使用以下格式： `Adobe Commerce - <instance-name> - ACO - <environment-type> - <tenant-id>`。
+1. 選取要新增管理員的現有Commerce Optimizer執行個體。 Commerce Optimizer執行個體使用以下格式： `Adobe Commerce - <instance-name> - Commerce Optimizer - <environment-type> - <tenant-id>`。
 
 1. 選取產品設定檔。
 
@@ -115,7 +115,7 @@ ht-degree: 0%
 
 1. 選取&#x200B;[!UICONTROL **Adobe Commerce**]&#x200B;產品。
 
-1. 如果您想要將使用者新增到Commerce Cloud Manager介面（他們可以在此建立和管理Commerce Optimizer執行個體），請選取Manager產品，或選取要新增使用者的現有Commerce Optimizer執行個體。 Commerce Optimizer執行個體使用以下格式： `Adobe Commerce - <instance-name> - ACO - <environment-type> - <tenant-id>`。
+1. 如果您想要將使用者新增到Commerce Cloud Manager介面（他們可以在此建立和管理Commerce Optimizer執行個體），請選取Manager產品，或選取要新增使用者的現有Commerce Optimizer執行個體。 Commerce Optimizer執行個體使用以下格式： `Adobe Commerce - <instance-name> - Commerce Optimizer - <environment-type> - <tenant-id>`。
 
 1. 選取&#x200B;[!UICONTROL **使用者**]&#x200B;索引標籤，然後按一下&#x200B;[!UICONTROL **新增使用者**]。
 

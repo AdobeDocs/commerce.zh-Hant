@@ -1,14 +1,14 @@
 ---
-source-git-commit: edc47115830f5ca7ec1e485de1ddf9939de2586d
+source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
 # Commerce代碼片段
 
 
-## ACO整合環境校準 {#aco-integration-environment-alignment}
+## Adobe Commerce Optimizer整合環境校準 {#aco-integration-environment-alignment}
 
 >[!IMPORTANT]
 >
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->針對使用Adobe Commerce Optimizer或Adobe Commerce Optimizer聯結器的Commerce解決方案，請使用[銷售服務GraphQL API](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/using-the-api/)，而不要使用目錄服務GraphQL API。
+>針對使用Adobe Commerce Optimizer或Adobe Commerce Optimizer Connector的Commerce解決方案，請使用[銷售服務GraphQL API](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/using-the-api/)，而不要使用目錄服務GraphQL API。
 
 ## Optimizer的資料同步檢查 {#aco-data-sync-verification}
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 >
 >如果您已安裝[Adobe Commerce Optimizer Connector](../aco-connector/overview.md)以將目錄資料匯出至Adobe Commerce Optimizer，請使用Commerce Optimizer Studio中的[資料摘要同步狀態頁面](../optimizer/setup/data-sync.md)，檢查資料是否已成功同步至Adobe Commerce Optimizer，而非資料管理儀表板。
 
-## API更新的ACO下拉式註解 {#aco-api-updates-and-dropins}
+## 適用於API更新的Adobe Commerce Optimizer下拉式注意事項 {#aco-api-updates-and-dropins}
 
 >[!NOTE]
 >

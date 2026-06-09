@@ -21,9 +21,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: be4140fb3305b354e8a11463131182a3b571d2f2
+source-git-commit: b954ce1acf338978acad4fbb2ec5e01db174bbf9
 workflow-type: tm+mt
-source-wordcount: 1177
+source-wordcount: 1167
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Commerce會保留您產品、價格和目錄結構的記錄系統。 Commerce Op
 
 下圖說明聯結器的端對端架構，包括Adobe Commerce、Commerce Optimizer以及商店和結帳系統。
 
-![Commerce Optimizer Connector端對端架構圖Commerce](./assets/aco-connector-end2end-architecture.png){width="700" zoomable="yes"}
+![Adobe Commerce Optimizer Connector端對端架構圖](./assets/aco-connector-end2end-architecture.png){width="700" zoomable="yes"}
 
 在此架構中：
 
@@ -89,31 +89,18 @@ Commerce Optimizer擷取資料後，您可以設定：
 
 ### 初始設定 {#initial-setup}
 
-1. **使用撰寫器在Adobe Commerce中安裝聯結器套件**：
 
-   `composer require adobe-commerce/commerce-data-export-aco-adapter`
+設定和設定的高階步驟：
 
-1. **在Commerce Admin中或透過CLI設定驗證和環境詳細資料**：
+1. 安裝Adobe Commerce的聯結器套件。
 
-   ```terminal
-   bin/magento aco:config:init \
-     --org_id=<your-org> \
-     --tenant_id=<your-tenant> \
-     --client_id=<your-client-id> \
-     --client_secret=<your-secret> \
-     --region=na1 \
-     --type=production
-   ```
+1. 設定驗證和環境詳細資訊。
 
-1. **將Commerce範圍對應至Commerce Optimizer：**
+1. 將Commerce範圍對應至Commerce Optimizer。
 
-   - 確認哪些網站和商店檢視必須位於範圍內
-   - 確保客戶群組和價格規則如預期般模型
+1. 驗證連線能力。
 
-1. **驗證連線能力：**
-
-   - 執行測試同步，並確認目錄來源、價格手冊和初始產品出現在Commerce Optimizer中
-   - 使用Commerce中的資料摘要同步狀態頁面和Commerce Optimizer中的資料同步儀表板進行驗證
+如需詳細指示，請參閱&#x200B;_開始使用_&#x200B;指南中的[設定步驟](./get-started.md#configuration-steps)。
 
 ### 進行中的資料同步 {#ongoing-sync}
 
@@ -121,11 +108,16 @@ Commerce Optimizer擷取資料後，您可以設定：
 
 - **完整目錄同步**&#x200B;以進行初始移轉或大型結構變更
 - 當產品或價格變更時，針對持續更新進行&#x200B;**差異同步**
-- 針對目標摘要（包括截至v1.0.12的類別） **重新同步命令**：
+- 針對目標摘要重新同步命令&#x200B;**&#x200B;**
 
-   - `bin/magento saas:resync --feed=products`
-   - `bin/magento saas:resync --feed=prices`
-   - `bin/magento saas:resync --feed=categories`
+Adobe Commerce Optimizer Connector提供下列摘要：
+
+- `products` — 產品資料
+- `productAttributes` — 產品屬性的中繼資料
+- `priceBooks` — 價格簿
+- `prices` — 產品價格
+- `categories` — 類別資料
+如需使用Commerce命令列介面(CLI)進行重新同步操作的詳細資訊，請參閱[CLI resync命令](../data-export/data-export-cli-commands.md#sync-using-cli-commands){target="blank"}。
 
 ### 設定銷售與店面 {#merchandising-storefronts}
 

@@ -18,9 +18,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: f472cadb124207b04b158b410b7fe1db8f5a9f7d
+source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
 workflow-type: tm+mt
-source-wordcount: 2855
+source-wordcount: 2857
 ht-degree: 0%
 
 ---
@@ -101,7 +101,7 @@ _2026年4月13日_
 - 修正刪除期間無法使用匯出服務時，無法從連線的Commerce服務正確移除已刪除產品的問題。 重試和重新同步操作現在可確保已刪除的產品正確地反映在SaaS中。<!--MDEE-1319-->
 - 目錄實體（產品和類別）現在可以匯出至已連線的Commerce服務，即使管理商店檢視缺少屬性值亦然。 這麼做可改善與協力廠商擴充功能的相容性，並減少因遺失預設值導致的匯出錯誤。<!--MDEE-1333-->
 
-![修正](../assets/fix.svg)解決當摘要記錄包含非預期或遺失資料時，在資料摘要同步處理狀態頁面上可能發生的錯誤。 系統現在可順利處理這類案例，提升穩定性並避免當機。 如果您使用Adobe Commerce Optimizer Connector將資料從Adobe Commerce同步到Adobe Commerce Optimizer，請更新至[ACO Connector 1.0.11](https://experienceleague.adobe.com/zh-hant/docs/commerce/aco-optimizer-connector/release-notes)版或更新版本以修正此問題。<!--MDEE-1327-->
+![修正](../assets/fix.svg)解決當摘要記錄包含非預期或遺失資料時，在資料摘要同步處理狀態頁面上可能發生的錯誤。 系統現在可順利處理這類案例，提升穩定性並避免當機。 如果您使用Adobe Commerce Optimizer Connector將資料從Adobe Commerce同步到Adobe Commerce Optimizer，請更新至[Adobe Commerce Optimizer Connector 1.0.11](https://experienceleague.adobe.com/zh-hant/docs/commerce/aco-optimizer-connector/release-notes)版或更新版本以修正此問題。<!--MDEE-1327-->
 
 ### 103.4.21版
 

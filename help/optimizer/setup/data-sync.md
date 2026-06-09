@@ -14,9 +14,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
 workflow-type: tm+mt
-source-wordcount: 483
+source-wordcount: 484
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ ht-degree: 0%
 
 ## 監視資料同步狀態
 
-對於透過Commerce Optimizer Connector使用Adobe Commerce作為上游資料來源的專案，您可以監視資料匯出程式，並從Commerce Admin的[資料摘要同步狀態頁面](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)啟動重新同步作業。
+對於透過Adobe Commerce Optimizer Connector使用Adobe Commerce作為上游資料來源的專案，您可以監視資料匯出程式，並從Commerce Admin的[資料摘要同步狀態頁面](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)啟動重新同步作業。
 
 ## 相關主題
 
