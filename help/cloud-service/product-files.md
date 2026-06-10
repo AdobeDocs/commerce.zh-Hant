@@ -5,9 +5,17 @@ feature: Catalog Management, Products, Integration
 role: Admin, Developer
 level: Intermediate
 badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+TQID: 'https://experienceleague.adobe.com/fFbsXGO54L1lSuQULqfP7A-BJKSYggdt7cy-GDvaSzU'
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+source-git-commit: ef32511703a96b5f4db32d54229e9a7cbe961f12
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: 753
 ht-degree: 0%
 
 ---
@@ -42,7 +50,7 @@ ht-degree: 0%
 
 1. 找到檔案屬性欄位，然後按一下&#x200B;**[!UICONTROL Upload]**&#x200B;以選取檔案。
 
-在Admin![中](./assets/upload-file.png){width="600" zoomable="yes"}上傳檔案按鈕
+在Admin![&#128279;](./assets/upload-file.png){width="600" zoomable="yes"}中上傳檔案按鈕
 
 1. 按一下&#x200B;**[!UICONTROL Save]**。
 
@@ -54,14 +62,14 @@ ht-degree: 0%
 
 此程式包含四個步驟：
 
-1. 呼叫具有檔案名稱及產品檔案屬性`POST V1/media/initiate-upload`的`media_resource_type`。
+1. 呼叫具有檔案名稱及產品檔案屬性`media_resource_type`的`POST V1/media/initiate-upload`。
 1. 使用傳回的預簽署URL將檔案`PUT`直接傳給Amazon S3。
 1. 呼叫`POST V1/media/finish-upload`以確認上傳。
 1. 透過`PUT /V1/products/{sku}`將傳回的金鑰指派給產品的檔案屬性，並將金鑰傳遞為[自訂屬性](https://developer.adobe.com/commerce/webapi/rest/modules/custom-attributes/)值。
 
 ## 透過產品匯入上傳
 
-您可以使用[匯入API](https://developer.adobe.com/commerce/webapi/rest/modules/import/){target="_blank"}或管理員匯入UI，大量附加檔案至產品。 產品檔案屬性僅支援從外部URL匯入，其方式與產品影像匯入[的](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/import/data-import-product-images#method-2-import-images-from-external-server){target="_blank"}方法2相同。 Commerce會從提供的URL下載檔案，並將其儲存至S3媒體儲存空間。
+您可以使用[匯入API](https://developer.adobe.com/commerce/webapi/rest/modules/import/){target="_blank"}或管理員匯入UI，大量附加檔案至產品。 產品檔案屬性僅支援從外部URL匯入，其方式與產品影像匯入[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/import/data-import-product-images#method-2-import-images-from-external-server){target="_blank"}的方法2相同。 Commerce會從提供的URL下載檔案，並將其儲存至S3媒體儲存空間。
 
 >[!NOTE]
 >
@@ -89,7 +97,7 @@ ADB112,"My Product",file_upload=https://example.com/files/manual.pdf
 
 ## 透過GraphQL擷取檔案
 
-在[!DNL Adobe Commerce as a Cloud Service]中，[目錄服務GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/){target="_blank"}端點會提供產品資料。 檔案屬性出現在`attributes`上的`ProductView`欄位中，`value`包含檔案的完整公用URL：
+在[!DNL Adobe Commerce as a Cloud Service]中，[目錄服務GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/){target="_blank"}端點會提供產品資料。 檔案屬性出現在`ProductView`上的`attributes`欄位中，`value`包含檔案的完整公用URL：
 
 ```graphql
 {
