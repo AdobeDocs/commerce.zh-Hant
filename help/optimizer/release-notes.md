@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 29b54d68ec20d000f4cc1ffe8080c5919457ff8c
+source-git-commit: bd4c59c451d7b08de7dc6ef00da2556fb9a6696f
 workflow-type: tm+mt
-source-wordcount: 1191
+source-wordcount: 1319
 ht-degree: 0%
 
 ---
@@ -31,6 +31,22 @@ ht-degree: 0%
 * 更新[資料擷取REST API](https://developer.adobe.com/commerce/services/reference/rest/)和店面目錄資料擷取[&#128279;](https://developer.adobe.com/commerce/services/reference/graphql/)的GraphQL API。
 
   {{aco-api-updates-and-dropins}}
+
+## 2026年6月
+
+>[!BEGINSHADEBOX]
+
+### 語意搜尋
+
+[!DNL Adobe Commerce Optimizer]現在支援&#x200B;**[!UICONTROL Settings]**&#x200B;中&#x200B;[**進階搜尋**](./settings.md#advanced-search)&#x200B;索引標籤上的&#x200B;**[語意搜尋]**。 語意搜尋使用AI透過含意和內容以及關鍵字搜尋來比對產品，減少自然語言查詢的空白搜尋頁面。 符合資格的英文目錄預設會啟用此功能。 您可以選擇在相同索引標籤上調整&#x200B;**[!UICONTROL Semantic boost]**、**[!UICONTROL Similarity threshold]**&#x200B;和&#x200B;**[!UICONTROL Fuzzy search]**。 不需要屬性設定或店面變更。 [了解更多](./setup/semantic-search.md)。
+
+### 建議價格篩選器(Beta)
+
+產品推薦單位現在在&#x200B;**[!UICONTROL Filter products]**&#x200B;步驟上支援&#x200B;[**價格篩選器**](./merchandising/recommendations/filters.md#price)。 在產品詳細資料頁面上包含或排除使用&#x200B;**靜態**&#x200B;最小和最大範圍或&#x200B;**動態**&#x200B;規則的適用者，這些規則會將建議的產品與店面使用中價格簿上目前檢視之產品的&#x200B;**最終計算價格**&#x200B;進行比較。 價格規則會篩選候選集。 它們不會重新排名產品。 [了解更多](./merchandising/recommendations/filters.md#price)。
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
 
 ## 2026年5月
 
