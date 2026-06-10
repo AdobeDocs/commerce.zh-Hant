@@ -4,16 +4,20 @@ description: 瞭解如何使用App Builder、結帳入門套件和AI輔助開發
 feature: App Builder, Cloud
 role: Developer
 level: Intermediate
-source-git-commit: e55bc4db196d3d973b981bb2484be950dcd6b7c3
+TQID: 'https://experienceleague.adobe.com/vU71zRP-KEPdrmTW-M1mwkv-FFa0oHOcUJcG4afFo2s'
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: ef32511703a96b5f4db32d54229e9a7cbe961f12
 workflow-type: tm+mt
-source-wordcount: '1849'
+source-wordcount: 1893
 ht-degree: 0%
 
 ---
 
 # 送貨方法擴充功能教學課程
 
-本教學課程會使用[!DNL Adobe Commerce as a Cloud Service]、[!DNL Adobe App Builder]結帳入門套件[和AI輔助開發工具，引導您建立](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/){target="_blank"}的送貨方法延伸模組。
+本教學課程會使用[!DNL Adobe App Builder]、[結帳入門套件](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/){target="_blank"}和AI輔助開發工具，引導您建立[!DNL Adobe Commerce as a Cloud Service]的送貨方法延伸模組。
 
 擴充功能會在結帳時新增可設定的送貨方法，讓運費來自外部模擬運費服務。 商戶會在Admin UI中設定服務URL、API金鑰和倉儲（出貨）地址，並在結帳時，擴充功能會要求該服務的費率，並向客戶顯示傳回的選項。
 
@@ -132,7 +136,7 @@ bash --version
 
 ## 擴充功能開發
 
-本節將引導您使用[!DNL Adobe Commerce as a Cloud Service]結帳入門套件[和AI輔助開發工具，為](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/){target="_blank"}開傳送貨方法延伸模組。
+本節將引導您使用[結帳入門套件](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/){target="_blank"}和AI輔助開發工具，為[!DNL Adobe Commerce as a Cloud Service]開傳送貨方法延伸模組。
 
 1. 導覽至編碼代理程式中的MCP設定。 例如，在游標中，移至&#x200B;**[!UICONTROL Cursor]** > **[!UICONTROL Settings]** > **[!UICONTROL Cursor Settings]** > **[!UICONTROL Tools & MCP]**。 確認`commerce-extensibility`工具集已啟用且沒有錯誤。 如果您看到錯誤，請關閉和開啟工具集。
 
@@ -181,7 +185,7 @@ bash --version
 1. 檢閱`requirements.md` （或同等專案）檔案並驗證計畫。 如果一切看起來正確，請指示代理程式移至架構規劃（或&#x200B;**階段2**）。 確認：
 
    - **shipping-methods**&#x200B;動作（或同等動作）會處理Commerce webhook並呼叫外部費率API。
-   - **shipping-config** （或同等專案）動作支援GET （讀取設定、API金鑰已遮罩）和SET （儲存服務URL、API金鑰、倉儲位址），且設定儲存安全，例如在執行階段狀態。
+   - **shipping-config** （或同等專案）動作支援GET （讀取設定、遮罩API金鑰）和SET （儲存服務URL、API金鑰、倉儲位址），且設定儲存安全，例如在執行階段狀態。
    - 管理UI包含&#x200B;**Mock Shipping** （或類似）標籤，內含服務URL、API金鑰（密碼/遮罩）及倉儲位址的欄位。
 
    ![由AI代理程式建立的需求檔案，包含送貨擴充功能實作詳細資料](../assets/requirements-file-shipping.png){width="600" zoomable="yes"}
@@ -192,7 +196,7 @@ bash --version
 
 1. 指示代理程式繼續產生程式碼。 代理程式應將&#x200B;**模型**&#x200B;電信業者新增至出貨電信業者設定，以允許Commerce接受傳回的方法，並使用webhook方法`plugin.magento.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates` （webhook型別&#x200B;**after**，必要的&#x200B;**Optional**）。
 
-   代理程式會產生必要的程式碼，並提供您後續步驟(包括安裝相依性、註冊模擬電信業者、設定Commerce webhook和部署)的詳細摘要。
+   代理程式會產生必要的程式碼，並提供您後續步驟（包括安裝相依性、註冊模擬電信業者、設定Commerce webhook和部署）的詳細摘要。
 
    ![針對出貨擴充功能產生的程式碼與實作摘要](../assets/code-generation-summary-shipping.png){width="600" zoomable="yes"}
 
@@ -218,7 +222,7 @@ Proceed with Phase 5 cleanup.
    Deploy the app.
    ```
 
-   代理程式會執行預先部署整備程度評估(例如，如果使用Admin UI或Commerce API，請檢查`.env`、`COMMERCE_WEBHOOKS_PUBLIC_KEY`和OAuth/IMS變數的`COMMERCE_BASE_URL`)。
+   代理程式會執行預先部署整備程度評估（例如，如果使用Admin UI或Commerce API，請檢查`COMMERCE_WEBHOOKS_PUBLIC_KEY`、`COMMERCE_BASE_URL`和OAuth/IMS變數的`.env`）。
 
    Mock Shipping擴充功能的![AI代理程式預先部署整備與部署步驟](../assets/pre-deployment-assessment-shipping.png){width="600" zoomable="yes"}
 

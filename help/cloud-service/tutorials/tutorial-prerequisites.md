@@ -7,16 +7,12 @@ feature-set: Commerce
 role: Developer
 level: Intermediate
 type: Tutorial
-TQID: https://experienceleague.adobe.com/UvtVXuUjbanuVWqNG3-bYQh6IzY1OuDjGYpojtXHMHY
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+TQID: 'https://experienceleague.adobe.com/aF6iiuFf5sCDyT0gmYmh8h94ZhMWr0DbIKrG1pI0G6I'
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+source-git-commit: ef32511703a96b5f4db32d54229e9a7cbe961f12
 workflow-type: tm+mt
 source-wordcount: 1291
 ht-degree: 0%
@@ -46,7 +42,7 @@ ht-degree: 0%
 
 * Bash shell
    * macOS/Linux：不需要安裝
-   * Windows：使用[Git Bash](https://git-scm.com/install)或Linux (WSL) [&#128279;](https://learn.microsoft.com/en-us/windows/wsl/install)的Windows子系統
+   * Windows：使用[Git Bash](https://git-scm.com/install)或Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install)的[Windows子系統
 
 * 下載AI輔助的IDE，例如[Cursor](https://cursor.com/download) （建議使用）。 也支援其他IDE，例如Claude Code、Gemini CLI或Copilot，但可能需要修改提示和教學課程中的其他步驟。
 
@@ -407,7 +403,7 @@ aio app use --merge
 
 * [Google Chrome](https://www.google.com/chrome/) — 測試店面所需
 
-* 連線到您[!DNL Commerce]執行個體的店面專案。 如果您沒有店面專案，請依照[建立店面](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=zh-Hant){target="_blank"}中的步驟進行，包括[連結商務資料的存放庫](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=zh-Hant#link-repo-to-commerce-data){target="_blank"}區段。
+* 連線到您[!DNL Commerce]執行個體的店面專案。 如果您沒有店面專案，請依照[建立店面](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"}中的步驟進行，包括[連結商務資料的存放庫](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#link-repo-to-commerce-data){target="_blank"}區段。
 
 ### 複製店面存放庫
 

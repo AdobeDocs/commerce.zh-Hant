@@ -3,38 +3,17 @@ title: 移轉至 [!DNL Adobe Commerce as a Cloud Service]
 description: 瞭解如何移轉至 [!DNL Adobe Commerce as a Cloud Service]。
 feature: Cloud
 exl-id: 9065c92a-f6b2-4464-8ec0-5c549bf78104
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
 role: Developer
 level: Intermediate
-TQID: https://experienceleague.adobe.com/GmxaQdGKvAIDpZ2jvmlLFSYw0IFQysIMOT0lUnsJBsI
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2:
-  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
-  - id: f56d26ed-050b-4fb7-b29b-8e6e994e80a2
-  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: addc3a3a-2b1c-4fdf-aea4-4b1eb2931ba6
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+TQID: 'https://experienceleague.adobe.com/qGoDL49v3KtjduEVoHsxgqnleCSiX4SOG4--ZBmxJaA'
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: c18ed297-2187-4aec-affb-9d9654eca6fcid: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: e91a50b1-0b31-436e-9033-00e4776e94cbid: f56d26ed-050b-4fb7-b29b-8e6e994e80a2id: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: addc3a3a-2b1c-4fdf-aea4-4b1eb2931ba6id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d095671a-1355-40aa-8b5f-06c33c68080bid: eb30f47f-d87a-400f-8f78-63ce7979ff56id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: ef32511703a96b5f4db32d54229e9a7cbe961f12
 workflow-type: tm+mt
 source-wordcount: 3150
 ht-degree: 0%
@@ -53,13 +32,13 @@ ht-degree: 0%
 
 **主要差異**
 
-* 僅[!BADGE PaaS]{type=Informative url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"} **PaaS （目前）**：商家在Adobe的託管環境中管理應用程式程式碼、升級、修補、基礎架構設定。 [服務（MySQL、Elasticsearch等）的共用職責模型](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/security-and-compliance/shared-responsibility)。
-* [!BADGE 僅限SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"} **SaaS （新增 — [!DNL Adobe Commerce as a Cloud Service]）**： Adobe可完全管理核心應用程式、基礎架構和更新。 商家專注於透過擴充點(API、App Builder、UI SDK)進行自訂。 核心應用程式程式碼已鎖定。
+* 僅[!BADGE PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"} **PaaS （目前）**：商家在Adobe的託管環境中管理應用程式程式碼、升級、修補、基礎架構設定。 [服務（MySQL、Elasticsearch等）的共用職責模型](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility)。
+* [!BADGE 僅限SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"} **SaaS （新增 — [!DNL Adobe Commerce as a Cloud Service]）**： Adobe可完全管理核心應用程式、基礎架構和更新。 商家專注於透過擴充點(API、App Builder、UI SDK)進行自訂。 核心應用程式程式碼已鎖定。
 
 **架構影響**
 
 * **無版本平台**：持續更新表示核心不再有重大版本升級。
-* **微服務與API-1&rbrace;：對API的延伸性與整合依賴性更深。**
+* **微服務與API-1}：對API的延伸性與整合依賴性更深。**
 * **依預設Headless （選用）**：對分離式店面的強大支援（例如，由Edge Delivery Services支援的Commerce店面）。
 * **Edge Delivery Services**：對前端效能和部署的影響。
 
@@ -67,7 +46,7 @@ ht-degree: 0%
 
 * 適用於Adobe Developer App Builder的[Adobe Developer App Builder](https://developer.adobe.com/app-builder/)和[API Mesh](https://developer.adobe.com/graphql-mesh-gateway)
 * [Commerce Optimizer](../../optimizer/overview.md)
-* [Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant)
+* [Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/)
 * 使用[Commerce Cloud Manager](../getting-started.md#create-an-instance)進行自助布建
 
 ## 移轉路徑
@@ -197,7 +176,7 @@ ht-degree: 0%
 
 * **目錄資料同步**：請確定您的Adobe Commerce PaaS執行個體繼續將產品和目錄資料同步至您現有的Adobe Commerce目錄SaaS服務。 這通常會仰賴PaaS執行個體中已建立的聯結器或模組。 目錄SaaS服務仍然是搜尋和銷售功能的權威來源，其資料源自您的PaaS後端。
 * **最佳化的API Mesh**：雖然Headless店面（在Edge Delivery Services上）和其他服務可以直接使用目錄SaaS服務的資料，Adobe強烈建議使用API Mesh （在App Builder內）。 API Mesh可以將目錄SaaS服務的API與PaaS後端的其他必要API （例如，交易式資料庫中的即時詳細目錄檢查或未完全複製到目錄SaaS服務的自訂產品屬性）整合到單一高效能GraphQL端點中。 這也允許集中式快取、驗證和回應轉換。
-* **整合即時搜尋和產品建議**：設定即時搜尋和產品建議SaaS服務，以直接從您現有的Adobe Commerce目錄SaaS服務[擷取目錄資料](https://experienceleague.adobe.com/zh-hant/docs/commerce/live-search/install#configure-the-data)，而您的PaaS後端會填入這些資料。
+* **整合即時搜尋和產品建議**：設定即時搜尋和產品建議SaaS服務，以直接從您現有的Adobe Commerce目錄SaaS服務[擷取目錄資料](https://experienceleague.adobe.com/en/docs/commerce/live-search/install#configure-the-data)，而您的PaaS後端會填入這些資料。
 
 **優點**：這可善用現有且運作中的Catalog SaaS服務，及其與PaaS後端的整合管道，讓您更快速地前往Headless店面和進階SaaS銷售功能。 但是，它仍保留主要目錄資料來源在PaaS後端上的相依性，不提供新的「可組合目錄資料模型」中固有的多來源彙總功能。 此選項是邁向更完整可撰寫架構的有效基礎。
 

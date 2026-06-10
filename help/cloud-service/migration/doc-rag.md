@@ -1,25 +1,15 @@
 ---
 title: 檔案RAG服務
 description: 瞭解如何使用AI支援的檔案搜尋服務來進行Adobe Commerce開發。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
 role: Developer
 hide: true
-TQID: https://experienceleague.adobe.com/eGNktkTH-i2HV8iEFTfSFtGlsyr4ZUVuRXxj9XcwbZk
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+TQID: 'https://experienceleague.adobe.com/Sh2qzDm-gTh-ugtuHxLq8maftPM4vVyeFNf0RI31rPY'
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: c1256247-af4b-46d8-9dca-0c654ecfa157id: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080bid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: ef32511703a96b5f4db32d54229e9a7cbe961f12
 workflow-type: tm+mt
 source-wordcount: 1027
 ht-degree: 0%
@@ -44,9 +34,9 @@ RAG服務是[Commerce擴充性工具](https://developer.adobe.com/commerce/exten
 
 | 類別 | 索引 | 包含的內容 | 關鍵字 |
 |-------|---------|---------|------------------------|
-| [店面](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant) | commerce-storefront-docs | Edge Delivery Services、下拉式清單、店面元件 | 店面、外掛程式、EDS、產品清單、結帳 |
+| [店面](https://experienceleague.adobe.com/developer/commerce/storefront/) | commerce-storefront-docs | Edge Delivery Services、下拉式清單、店面元件 | 店面、外掛程式、EDS、產品清單、結帳 |
 | [擴充性](https://developer.adobe.com/commerce/extensibility/) | commerce-extensibility-docs | Webhook、活動、擴充功能、整合 | webhook，事件，擴充功能， API網格， GraphQL |
-| [Commerce](https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/overview) | commerce-core-docs | 核心Commerce （目錄、客戶、訂單） | 目錄，產品，客戶，訂單，存貨 |
+| [Commerce](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview) | commerce-core-docs | 核心Commerce （目錄、客戶、訂單） | 目錄，產品，客戶，訂單，存貨 |
 | [App Builder](https://developer.adobe.com/app-builder/docs/intro_and_overview/) | app-builder-docs | App Builder、執行階段動作、UI擴充功能 | 應用程式產生器，執行階段動作， React Spectrum |
 
 如需索引選取的詳細資訊，請參閱[自動索引選取](#automatic-index-selection-recommended)和[明確索引選取](#explicit-index-selection)。
@@ -141,7 +131,7 @@ RAG服務是[Commerce擴充性工具](https://developer.adobe.com/commerce/exten
 
 ## 使用情況
 
-安裝之後，您可以自動呼叫索引[&#128279;](#automatic-index-selection-recommended)或[明確](#explicit-index-selection)。 您也可以使用[`/search-commerce-docs`命令](#command-based-search)。
+安裝之後，您可以自動呼叫索引[](#automatic-index-selection-recommended)或[明確](#explicit-index-selection)。 您也可以使用[`/search-commerce-docs`命令](#command-based-search)。
 
 >[!NOTE]
 >

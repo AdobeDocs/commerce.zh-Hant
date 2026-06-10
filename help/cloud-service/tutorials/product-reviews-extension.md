@@ -8,9 +8,13 @@ role: Developer
 level: Intermediate
 type: Tutorial
 hide: true
-source-git-commit: 3ebee6c984a8f848e9094968be9faa667fc83250
+TQID: 'https://experienceleague.adobe.com/vsy2xSV-3oVjPNc0JUzsunl3ooiWjWrWo1poXHB1TgY'
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: ef32511703a96b5f4db32d54229e9a7cbe961f12
 workflow-type: tm+mt
-source-wordcount: '2533'
+source-wordcount: 2533
 ht-degree: 0%
 
 ---
@@ -52,8 +56,8 @@ bash --version
 
 此外，請確認下列專案：
 
-- 您有一個包含產品資料的[!DNL Adobe Commerce as a Cloud Service]執行個體。 請參閱[Commerce Cloud服務執行個體](https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/overview){target="_blank"}。
-- 您有一個店面專案連線到您的[!DNL Commerce]執行個體。 如果沒有店面，請依照[建立店面](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=zh-Hant){target="_blank"}中的步驟操作。
+- 您有一個包含產品資料的[!DNL Adobe Commerce as a Cloud Service]執行個體。 請參閱[Commerce Cloud服務執行個體](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview){target="_blank"}。
+- 您有一個店面專案連線到您的[!DNL Commerce]執行個體。 如果沒有店面，請依照[建立店面](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"}中的步驟操作。
 - 已安裝`aem` CLI：
 
   ```bash
@@ -135,7 +139,7 @@ STOP and ask me any clarifying questions you have about the requirements before 
 1. **REST API — 主機和消費者** — CRUD REST API是否應為儲存區域呼叫的此App Builder應用程式（Adobe I/O Runtime上的Web動作）的一部分？ 誰會將其命名為（EDS Storefront、自訂/Headless店面或兩者）？ 您需要CORS、公開（未驗證）存取，還是來電者會使用API金鑰或OAuth？
 1. **資料模型** — 一個「評論」或「問題」代表什麼？ 客戶識別碼（僅限電子郵件或客戶ID）？ 產品識別碼（僅限SKU或SKU +商店檢視）？ 同一客戶是否可針對同一個SKU提交多個稽核？
 1. **持續性** — `aio-lib-state`是持續稽核和問答的正確位置，還是您有外部存放區？ 設計應假設是多租使用者還是單一租使用者？
-1. **分頁語意** — 針對GET問答集，`limit`是否僅適用於問題（含巢狀答案），或適用於問題加答案的總數？
+1. **分頁語意** — 若是Q&amp;A GET，`limit`是否只適用於問題（含巢狀答案），或適用於問題加答案的總數？
 
 **範例答案：**
 
@@ -235,7 +239,7 @@ aio app deploy
      -d '{"sku":"ADB153","type":"answer","questionId":"<QUESTION-UUID>","content":"Yes, it comes in blue and red.","user":"seller@example.com"}'
    ```
 
-1. 使用GET請求驗證資料：
+1. 使用GET要求驗證資料：
 
    ```bash
    curl -s "$API_URL/reviews-get?sku=ADB153"
@@ -308,7 +312,7 @@ Create a service contract for the Product Review and Q&A application that define
 在開始店面整合之前，請確認您具備下列條件：
 
 - 連線到您[!DNL Commerce]執行個體的店面專案
-- 使用CLI安裝的Commerce storefront AI工具[&#128279;](./tutorial-prerequisites.md#install-the-storefront-ai-tools)
+- 使用CLI安裝的Commerce storefront AI工具[](./tutorial-prerequisites.md#install-the-storefront-ai-tools)
 - `PRODUCT_REVIEW_QA_CONTRACT.md`檔案已複製到您的店面專案
 
 ### 步驟1：驗證環境
