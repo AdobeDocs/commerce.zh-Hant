@@ -2,7 +2,7 @@
 title: 識別與存取管理
 description: 瞭解Adobe Commerce as a Cloud Service的身分和存取管理功能。
 role: Admin, Developer, Leader
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
 TQID: 'https://experienceleague.adobe.com/lbI3nsLtafel6GtquXnkZmXD2Z3b-rRGPOyr8EqzrjE'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce as a Cloud Service]利用Adobe的企業級身分基礎結構，確保所有環境都具備安全、可擴充和集中的存取控制。 [!DNL Adobe Commerce as a Cloud Service]中的識別與存取管理(IAM)旨在簡化使用者布建、強制最低許可權存取，以及支援符合全域安全性標準。
 
-- **[!DNL Adobe Identity Management Services (IMS)]**： [!DNL Adobe Commerce as a Cloud Service]使用[Adobe Identity Management Services (IMS)](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/ims/adobe-ims-integration-overview)驗證使用者和管理權益。 這包括支援同盟識別服務提供者和[角色型存取控制](../user-management.md)。
+- **[!DNL Adobe Identity Management Services (IMS)]**： [!DNL Adobe Commerce as a Cloud Service]使用[Adobe Identity Management Services (IMS)](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/admin/ims/adobe-ims-integration-overview)驗證使用者和管理權益。 這包括支援同盟識別服務提供者和[角色型存取控制](../user-management.md)。
 
 - **Admin Console控管**：管理員透過[!DNL Adobe Admin Console]管理對店面和後端的存取。 許可權可限定於特定功能和角色，以確保最低許可權的存取權。
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 - **產品設定檔**：為不同的環境（例如測試和生產）定義存取範圍。
 - **委派管理**：系統管理員和產品管理員可以管理使用者存取權而無需IT人員介入。
 
-如需詳細資訊，請參閱[使用者管理](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management)。
+如需詳細資訊，請參閱[使用者管理](https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/user-management)。
 
 ## API驗證和整合安全性
 
