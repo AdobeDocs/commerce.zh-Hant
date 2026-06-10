@@ -2,7 +2,7 @@
 title: '[!DNL Adobe Commerce Optimizer Connector]'
 description: 瞭解目錄同步、搜尋和店面傳遞的 [!DNL Adobe Commerce] 與 [!DNL Adobe Commerce Optimizer] 之間的 [!DNL Adobe Commerce Optimizer Connector] 整合。
 feature: Integration, Storefront, Configuration
-badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
+badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
 autotag-review: '2026-06-09T19:00:00.000Z'
 TQID: 'https://experienceleague.adobe.com/-C-XP5YYxwyGrkvVR6CDd-FpDybqnlaKMmFPKOKUbFA'
 product_v2:
@@ -118,7 +118,7 @@ ht-degree: 0%
 
 ### 設定銷售與店面 {#merchandising-storefronts}
 
-在[!DNL Adobe Commerce Optimizer]中有[!DNL Adobe Commerce]資料可用後，請使用[[!DNL Commerce Optimizer] Studio](https://experienceleague.adobe.com/en/docs/commerce/optimizer/overview#quick-tour)將銷售和店面體驗連結到您的同步目錄。
+在[!DNL Adobe Commerce Optimizer]中有[!DNL Adobe Commerce]資料可用後，請使用[[!DNL Commerce Optimizer] Studio](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/overview#quick-tour)將銷售和店面體驗連結到您的同步目錄。
 
 **若要在[!DNL Commerce Optimizer] Studio中設定銷售與店面：**
 
