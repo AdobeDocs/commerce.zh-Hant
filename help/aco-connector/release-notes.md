@@ -17,9 +17,9 @@ role_v2:
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 6d4493db5e0714577a8800007cc6d2c552578fa4
+source-git-commit: af45543a52d1c88149574dc22cdef37af01404c8
 workflow-type: tm+mt
-source-wordcount: 267
+source-wordcount: 353
 ht-degree: 0%
 
 ---
@@ -33,6 +33,18 @@ ht-degree: 0%
 ![已知問題](../assets/bug.svg)已知問題
 
 ## 2026版本
+
+### 1.0.14版本
+
+_2026年6月11日_
+
+![修正](../assets/fix.svg) **PHP 8.5相容性** - [!DNL Adobe Commerce Optimizer Connector]現在支援PHP 8.5，因此您可以升級[!DNL Adobe Commerce]環境，而不會中斷聯結器功能或目錄同步處理。<!--MDEE-1388-->
+
+![修正](../assets/fix.svg) **貨幣變更後價格簿更新** — 貨幣變更後，更新的價格會自動反映在Adobe Commerce Optimizer中。<!--MDEE-1384-->
+
+![修正](../assets/fix.svg) **導覽遵循已停用或隱藏的父類別** — 來自已停用或隱藏類別階層的產品不再意外出現在導覽體驗中。<!--MDEE-1385-->
+
+![修正](../assets/fix.svg) **中繼更新後一致的類別URL** — 套用中繼更新後，類別連結和導覽仍會維持正確。<!--MDEE-1395-->
 
 ### 1.0.13版本
 
