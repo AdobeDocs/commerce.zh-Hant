@@ -3,18 +3,13 @@ title: 索引
 description: 瞭解 [!DNL Live Search] 如何索引產品屬性屬性。
 exl-id: 01cbbf56-2e12-4ad0-a56d-de0fe13df50f
 TQID: https://experienceleague.adobe.com/8STop-AunMGpKCLgjQaywtpPRNHF-l7sobRnh82QOXI
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: f7ea996f3adcd3beb2a9c064ce57d251f49ae5b3
 workflow-type: tm+mt
-source-wordcount: 787
+source-wordcount: 812
 ht-degree: 0%
 
 ---
@@ -31,7 +26,7 @@ ht-degree: 0%
 
 屬性中繼資料的範圍是`website/store/store view`。
 
-[!DNL Live Search] API允許使用者端在Adobe Commerce管理中，依任何具有[storefront屬性](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/product-attributes/product-attributes) `Use in Search`設定為`Yes`的產品屬性來排序。 啟用時，可以為屬性設定`Search Weight`。
+[!DNL Live Search] API允許使用者端在Adobe Commerce管理中，依任何具有[storefront屬性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) `Use in Search`設定為`Yes`的產品屬性來排序。 啟用時，可以為屬性設定`Search Weight`。
 
 [!DNL Live Search]未索引已刪除的產品或設定為`Not Visible Individually`的產品。
 
@@ -43,9 +38,11 @@ ht-degree: 0%
 
 使用者端從店面呼叫搜尋服務以擷取（可篩選、可排序）索引中繼資料。 搜尋服務只能呼叫具有層次導覽中&#x200B;*使用*&#x200B;屬性設定為`Filterable (with results)`且&#x200B;*產品清單中用於排序*&#x200B;設定為`Yes`的可搜尋產品屬性。
 
-若要建構動態查詢，搜尋服務必須知道哪些屬性可搜尋，以及它們的[權重](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/catalog/search/search-results)。 [!DNL Live Search]遵循Adobe Commerce搜尋權重（1-10，其中10是最高優先順序）。 您可以在結構描述中找到已同步並與目錄服務共用的資料清單，其定義如下：
+若要建構動態查詢，搜尋服務必須知道哪些屬性可搜尋，以及它們的[權重](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results)。 [!DNL Live Search]遵循Adobe Commerce搜尋權重（1-10，其中10是最高優先順序）。 您可以在結構描述中找到已同步並與目錄服務共用的資料清單，其定義如下：
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
+
+若要瞭解可搜尋的屬性和權重如何在查詢時與&#x200B;**精確**、**附近**、相同欄位和跨欄位比對互動，請參閱[搜尋比對和排名](search-relevance-matching.md)。
 
 ![[!DNL Live Search]索引使用者端搜尋圖表](assets/indexing-pipeline.svg)
 
@@ -100,7 +97,7 @@ ht-degree: 0%
 
 ## 使用者端搜尋
 
-[!DNL Live Search] API可讓使用者端藉由將[storefront屬性](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/product-attributes/product-attributes)，*產品清單中用於排序的*&#x200B;設定為`Yes`，依任何可排序的產品屬性排序。 根據主題，此設定會導致在目錄頁面上的[排序依據](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/catalog/navigation/navigation)分頁控制項中包含屬性作為選項。 [!DNL Live Search]最多可為200個產品屬性編制索引，其中有[可搜尋且可篩選的店面屬性](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/product-attributes/product-attributes)。
+[!DNL Live Search] API可讓使用者端藉由將[storefront屬性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes)，*產品清單中用於排序的*&#x200B;設定為`Yes`，依任何可排序的產品屬性排序。 根據主題，此設定會導致在目錄頁面上的[排序依據](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/navigation/navigation)分頁控制項中包含屬性作為選項。 [!DNL Live Search]最多可為200個產品屬性編制索引，其中有[可搜尋且可篩選的店面屬性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes)。
 
 索引中繼資料儲存在索引管道中，並可由搜尋服務存取。
 
