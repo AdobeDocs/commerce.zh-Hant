@@ -15,9 +15,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: d30ce9f02c9d2217c6669e8e9a1794bbc0387128
+source-git-commit: f7ea996f3adcd3beb2a9c064ce57d251f49ae5b3
 workflow-type: tm+mt
-source-wordcount: 1167
+source-wordcount: 1195
 ht-degree: 1%
 
 ---
@@ -30,6 +30,7 @@ ht-degree: 1%
 
 - 建立有意義的搜尋體驗，協助購物者和買家儘可能輕鬆地找到他們想要的。
 - 利用AI支援的動態多面向和重新排名搜尋結果，以回應工作階段中的購物者行為。
+- 優先處理&#x200B;**精確和接近的相符專案**&#x200B;和相同欄位的相符專案，以確保高意圖查詢會先傳回最相關的產品。 如需詳細資訊，請參閱&#x200B;*[搜尋比對和排名](search-relevance-matching.md)*。
 - 使用輕量型的SaaS服務，提供輕鬆的更新並包含在您的授權中，以降低總擁有成本。
 - 啟用GraphQL API、Headless彈性、API沙箱環境和超快速SaaS，以取得技術優勢。
 

@@ -12,9 +12,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: f7ea996f3adcd3beb2a9c064ce57d251f49ae5b3
 workflow-type: tm+mt
-source-wordcount: 787
+source-wordcount: 812
 ht-degree: 0%
 
 ---
@@ -46,6 +46,8 @@ ht-degree: 0%
 若要建構動態查詢，搜尋服務必須知道哪些屬性可搜尋，以及它們的[權重](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/catalog/search/search-results)。 [!DNL Live Search]遵循Adobe Commerce搜尋權重（1-10，其中10是最高優先順序）。 您可以在結構描述中找到已同步並與目錄服務共用的資料清單，其定義如下：
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
+
+若要瞭解可搜尋的屬性和權重如何在查詢時與&#x200B;**精確**、**附近**、相同欄位和跨欄位比對互動，請參閱[搜尋比對和排名](search-relevance-matching.md)。
 
 ![[!DNL Live Search]索引使用者端搜尋圖表](assets/indexing-pipeline.svg)
 

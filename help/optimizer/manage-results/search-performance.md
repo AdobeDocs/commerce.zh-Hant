@@ -15,9 +15,9 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
+source-git-commit: b9b57bb7279354c9d5c2a7efc6e1ba14c1c36598
 workflow-type: tm+mt
-source-wordcount: 1905
+source-wordcount: 1936
 ht-degree: 0%
 
 ---
@@ -37,6 +37,10 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 >如果您沒有看到任何搜尋效能測量結果，請確定正在[收集搜尋事件資料](../setup/events/overview.md)。
+
+>[!NOTE]
+>
+>若要瞭解產品探索如何將&#x200B;**精確及接近相符專案**、相同欄位相符專案，以及更廣泛的相符專案排名（以及如何與關鍵字權重及銷售規則互動），請參閱[搜尋相符專案及排名](../search-relevance-matching.md)。
 
 ## 選擇&#x200B;**目錄檢視**
 
