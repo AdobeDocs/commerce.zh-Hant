@@ -18,9 +18,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
+source-git-commit: fad62add01dfb6155f30bcfe791eb66de210b7a1
 workflow-type: tm+mt
-source-wordcount: 2857
+source-wordcount: 2903
 ht-degree: 0%
 
 ---
@@ -40,6 +40,12 @@ ht-degree: 0%
 >SaaS資料匯出擴充功能是隨「即時搜尋」、「產品建議」和「目錄服務」自動安裝的模組集合。 您可以使用Composer檢查系統上安裝的版本。 在某些情況下，您可能會想要升級系統上的資料匯出擴充功能，以取得修正或新功能，而不更新Commerce服務版本。
 
 ## 2026版本
+
+### 103.4.28版本
+
+_2026年6月11日_
+
+![修正](../assets/fix.svg) **在排程更新後修正正確的類別URL** — 修正排程類別URL變更在連線的Commerce服務中可能留下重複或陳舊的Slug的問題。 套用變更後，類別導覽和產品類別連結現在會顯示更新的URL。
 
 ### 103.4.27版
 
