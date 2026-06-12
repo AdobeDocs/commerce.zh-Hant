@@ -30,7 +30,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->下列功能位於[私人測試版](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta)。
+>下列功能位於[私人測試版](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/beta)。
 
 [!DNL Live Search]排名結果，讓購物者能先看到最相關的產品。 此服務對目錄文字&#x200B;**與購物者型別最符合**&#x200B;的產品提供最強勁的提升，然後偏好以有意義的方式一起出現查詢字詞的符合，最後包括更廣泛的符合（包括支援自動完成樣式比對的行為）。
 
@@ -81,7 +81,7 @@ ht-degree: 0%
 - 從&#x200B;**精確/近**&#x200B;個字詞比對增加
 - 當&#x200B;**所有查詢詞**&#x200B;出現在&#x200B;**相同**&#x200B;欄位中時提升
 - **智慧型排名** （啟用時），將文字關聯性與行為訊號融合在一起 — 請參閱[智慧型排名計分的運作方式](rules-add.md#how-intelligent-ranking-scoring-works)
-- **[搜尋每個屬性的權重](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results)**&#x200B;以及其他文字關聯性因素（例如，詞匯出現的頻率以及名稱或描述長度）。 在[!DNL Adobe Commerce] Admin中，設定&#x200B;**用於搜尋**&#x200B;和&#x200B;**搜尋產品屬性的權重**。
+- **[搜尋每個屬性的權重](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/catalog/search/search-results)**&#x200B;以及其他文字關聯性因素（例如，詞匯出現的頻率以及名稱或描述長度）。 在[!DNL Adobe Commerce] Admin中，設定&#x200B;**用於搜尋**&#x200B;和&#x200B;**搜尋產品屬性的權重**。
 - **[搜尋銷售規則](rules.md)**，例如pin、boost和bury
 
 由於這些訊號會互動，只有在最廣泛的層級符合的產品有時可以排在較緊的詞語符合項之上 — 例如，當&#x200B;**搜尋權重**&#x200B;或高權重欄位中的詞語頻率超過其他位置較弱的詞語符合項時。
