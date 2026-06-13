@@ -1,24 +1,16 @@
 ---
 title: 建立和管理規則
 description: 瞭解如何建立和管理搜尋、預設產品清單和類別頁面的銷售規則。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
 TQID: https://experienceleague.adobe.com/UOe-TPaF80Wrk-gNuJwLTdndVQMQfbYrbpAfb-r4pJc
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 841e772971e7ec18d37fa8ba137b27b8950fc569
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
-source-wordcount: 3222
+source-wordcount: 3074
 ht-degree: 0%
 
 ---
@@ -32,10 +24,6 @@ ht-degree: 0%
 1. 在左側邊欄中，移至&#x200B;_銷售_ > **銷售規則**。
 1. （選擇性）使用&#x200B;**目錄檢視**&#x200B;下拉式清單，選取應套用規則的目錄檢視。 您建立的規則將範圍限定在選取的檢視（如果選取&#x200B;**所有檢視**，則限定在所有目錄檢視）。 請參閱[選取目錄檢視](workspace.md#select-catalog-view)，瞭解目錄檢視範圍的運作方式。
 
-   >[!IMPORTANT]
-   >
-   >目錄檢視目前在[beta](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta)中。 Beta參與者將需要重新建立任何現有的銷售規則，以善用新的目錄檢視範圍。
-
 1. 按一下&#x200B;**[!UICONTROL Create rule]**&#x200B;以啟動規則編輯器。
 
 ![建立規則](../../assets/create-rule.png)
@@ -47,7 +35,7 @@ ht-degree: 0%
 | 規則類型 | 用途 |
 | --- | --- |
 | **所有產品規則** | 當沒有更具體的搜尋或類別規則套用時，跨產品清單的預設排名和銷售。 您只能建立一個這樣的規則；它不能包含條件。 |
-| **類別規則** (Beta) | 將銷售與排名套用至一或多個選取的類別，控制這些類別頁面上的產品順序。 |
+| **類別規則** | 將銷售與排名套用至一或多個選取的類別，控制這些類別頁面上的產品順序。 |
 | **搜尋規則** | 當購物者執行符合規則查詢條件的搜尋時，套用銷售與排名。 |
 
 在&#x200B;**建置您的規則**&#x200B;區段中，您可以定義規則名稱、排程、規則是否套用至所有清單或特定搜尋條件，以及排名型別。
@@ -79,14 +67,14 @@ ht-degree: 0%
    結果會立即顯示在&#x200B;*測試您的規則*&#x200B;窗格中，並依優先順序編號。 您可以使用右上角的&#x200B;*每列結果*&#x200B;滑桿來變更每列的產品數目。
 
 1. 若要測試其他查詢，請在&#x200B;*測試您的規則*&#x200B;搜尋方塊中變更查詢文字，然後按&#x200B;**Return**。
-最初，測試窗格會從「條件」搜尋方塊轉譯查詢。 但是現在它正在從測試查詢方塊轉譯查詢。 測試窗格一次只轉譯一個查詢。
+最初，測試窗格會從「條件」搜尋方塊轉譯查詢。但是現在它正在從測試查詢方塊轉譯查詢。測試窗格一次只轉譯一個查詢。
 1. 如果您想要結果，請更新&#x200B;*條件*&#x200B;搜尋方塊中的文字。 然後，按一下頁面上的任何位置，以更新測試窗格中的結果。
 1. 設定[智慧型排名](#intelligent-ranking)和[手動排名](#manual-ranking)，如下列章節所述。 相同的控制項適用於類別頁面，但會指出任何差異。
 
 **多個條件**
 
-1. 若要建置包含多個條件的規則，請按一下[新增條件]。**&#x200B;**
-一個規則最多可以有十個條件。 結合兩個條件的邏輯運運算元是以目前的*Match*&#x200B;設定為基礎。 依預設，*符合*&#x200B;為`All`，邏輯運運算元為`AND`。
+1. 若要建置包含多個條件的規則，請按一下[新增條件]。****
+一個規則最多可以有十個條件。結合兩個條件的邏輯運運算元是以目前的*Match*&#x200B;設定為基礎。依預設，*Match*&#x200B;為`All`，邏輯運運算元為`AND`。
 
 1. 選取第二個條件並輸入必要的查詢文字。
 
@@ -99,14 +87,10 @@ ht-degree: 0%
 
    在此範例中，不是搜尋「yoga pants」，而是有兩個不同的查詢可搜尋「yoga」或「pants」。 此規則較少具體，且在店面觸發的頻率遠高於其他規則。
 
-1. 若要新增其他條件，請按一下[新增條件] **&#x200B;**&#x200B;並重複此程式。
+1. 若要新增其他條件，請按一下[新增條件] ****&#x200B;並重複此程式。
 1. 設定[智慧型排名](#intelligent-ranking)和[手動排名](#manual-ranking)，如下列章節所述。 相同的控制項適用於類別頁面，但會指出任何差異。
 
 >[!TAB 類別規則]
-
->[!IMPORTANT]
->
->類別規則為測試版。
 
 類別規則可控制產品在&#x200B;**類別頁面**&#x200B;上的排序方式。 您將&#x200B;**類別規則**&#x200B;與&#x200B;**智慧型排名** （包括AI驅動訊號）以及&#x200B;**手動**&#x200B;動作（例如pin、boost和bury）結合，因此您可以組織探索、執行促銷活動，以及將類別頁面與策略對齊，而不需依賴外部工具。
 
@@ -258,7 +242,7 @@ ht-degree: 0%
 1. 視需要更新名稱、開始和結束日期以及說明欄位。 所有規則名稱必須是唯一的。
 1. 測試規則。
 1. 發佈變更。
-規則已新增至*規則*&#x200B;工作區中的清單。 雖然使用中的規則會立即生效，但重新整理店面中的快取查詢結果最多可能需要15分鐘。
+規則已新增至*規則*&#x200B;工作區中的清單。雖然使用中的規則會立即生效，但重新整理店面中的快取查詢結果最多可能需要15分鐘。
 
 ### 檢視詳細資料
 
