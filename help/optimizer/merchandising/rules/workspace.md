@@ -12,10 +12,10 @@ role_v2:
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
-source-wordcount: 969
-ht-degree: 0%
+source-wordcount: 963
+ht-degree: 1%
 
 ---
 
@@ -100,10 +100,6 @@ ht-degree: 0%
 | 已啟用 | 變更規則狀態的控制項。 選項：啟用/停用 |
 
 ## 選取目錄檢視
-
->[!IMPORTANT]
->
->此功能目前處於Beta測試階段。
 
 「銷售規則」頁面上的&#x200B;**[!UICONTROL Catalog view]**&#x200B;選取器會做兩件事：
 

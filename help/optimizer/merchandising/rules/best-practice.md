@@ -12,16 +12,16 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 841e772971e7ec18d37fa8ba137b27b8950fc569
+source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
-source-wordcount: 404
+source-wordcount: 398
 ht-degree: 0%
 
 ---
 
 # 銷售規則最佳實務
 
-若要最佳化轉換和收入，請實作有效的&#x200B;**搜尋規則**、強大的&#x200B;**預設清單**&#x200B;規則和&#x200B;**[類別規則](add.md#rule-types)** （測試版）。 使用銷售資料、庫存、促銷活動和[智慧型排名](add.md#intelligent-ranking)調整排名。
+若要最佳化轉換和收入，請實作有效的&#x200B;**搜尋規則**、強大的&#x200B;**預設清單**&#x200B;規則和&#x200B;**[類別規則](add.md#rule-types)**。 使用銷售資料、庫存、促銷活動和[智慧型排名](add.md#intelligent-ranking)調整排名。
 
 建立深思熟慮的&#x200B;**預設規則**&#x200B;至關重要。 您的[預設規則](overview.md#default-rule)會決定搜尋結果在未套用特定搜尋規則時的初始排序方式，這可以改善探索和購買的可能性。 請定期檢閱，以符合購物者需求和行銷活動。
 
@@ -38,10 +38,6 @@ ht-degree: 0%
 - 請一律使用「測試規則」面板來預覽您的智慧排名策略如何影響不同查詢的實際搜尋結果。
 
 ## 類別規則的提示
-
->[!IMPORTANT]
->
->類別規則為測試版。
 
 - 在高流量或高利潤的&#x200B;**類別頁面**&#x200B;上使用[類別規則](add.md#rule-types)，其中已組織的訂單與搜尋一樣重要，例如，季節性系列或精選部門。
 - 將&#x200B;**智慧型排名** （例如，趨勢、檢視次數最多）與購物者瀏覽該類別的方式對齊；類別頁面不會像搜尋規則那樣使用搜尋查詢文字。 請參閱[智慧型排名](add.md#intelligent-ranking)。 對於&#x200B;**無**&#x200B;以外的智慧方法，請使用&#x200B;**[智慧排名提升](add.md#intelligent-ranking-boost)**&#x200B;和類別預覽來調整該類別規則的行為強度。

@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: bd4c59c451d7b08de7dc6ef00da2556fb9a6696f
+source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
-source-wordcount: 1319
+source-wordcount: 1316
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 ### 智慧型排名提升
 
-搜尋的[銷售規則](./merchandising/rules/add.md#intelligent-ranking-boost)、預設產品清單和[類別頁面](./merchandising/rules/add.md#rule-types) （測試版）現在包含&#x200B;**[!UICONTROL Intelligent Ranking Boost]**。 您可以調整如&#x200B;**檢視次數最多**&#x200B;或&#x200B;**趨勢**&#x200B;等策略對產品訂單的影響，以決定搜尋的相關性，以及類別清單上的行為訊號。 規則預覽會反映您的設定。 提升功能會在查詢時套用，因此當您變更目錄時，就不需要重新同步目錄。
+搜尋、預設產品清單和[類別頁面](./merchandising/rules/add.md#rule-types)的[銷售規則](./merchandising/rules/add.md#intelligent-ranking-boost)現在包含&#x200B;**[!UICONTROL Intelligent Ranking Boost]**。 您可以調整如&#x200B;**檢視次數最多**&#x200B;或&#x200B;**趨勢**&#x200B;等策略對產品訂單的影響，以決定搜尋的相關性，以及類別清單上的行為訊號。 規則預覽會反映您的設定。 提升功能會在查詢時套用，因此當您變更目錄時，就不需要重新同步目錄。
 
 ### API更新
 
@@ -89,7 +89,7 @@ _2026年5月4日_
 
 >[!BEGINSHADEBOX]
 
-### 目錄規則（測試版）
+### 目錄規則
 
 [類別規則](./merchandising/rules/add.md)可擴充銷售規則，讓您可以在類別頁面上以搜尋相同的排名和動作（釘選、提升、隱藏）鎖定類別並控制產品順序。
 
@@ -145,7 +145,7 @@ _2026年3月24日_
 
 >[!BEGINSHADEBOX]
 
-### 銷售規則與建議的目錄檢視(Beta)
+### 銷售規則和建議的目錄檢視
 
 現在當您[建立建議單位](./merchandising/recommendations/create.md)或[銷售規則](./merchandising/rules/add.md)時，可以指定目錄檢視。
 

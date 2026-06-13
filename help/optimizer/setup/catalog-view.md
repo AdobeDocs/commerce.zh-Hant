@@ -19,9 +19,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 4d08de7974c79dc6fe20366e0164f6078e83be5f
+source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
-source-wordcount: 1216
+source-wordcount: 1210
 ht-degree: 0%
 
 ---
@@ -81,10 +81,6 @@ ht-degree: 0%
 完成這些步驟後，目錄檢視現在會設定為根據您選取的來源和原則顯示產品和定價。
 
 ### 指定建議和產品探索規則的目錄檢視
-
->[!IMPORTANT]
->
->此功能目前處於Beta測試階段。
 
 當您[建立建議單位](../merchandising/recommendations/create.md)或[銷售規則](../merchandising/rules/add.md)時，您可以指定目錄檢視。
 
