@@ -3,7 +3,7 @@ title: 搜尋比對和排名
 description: 瞭解 [!DNL Adobe Commerce Optimizer] 如何排定精確和接近符合、相同欄位符合和跨欄位符合的優先順序，以及排名如何與搜尋權重、智慧型排名和銷售規則互動。
 role: Admin, Leader, User
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
 hide: true
 autotag-review: '2026-06-12T19:49:25.241Z'
 TQID: 'https://experienceleague.adobe.com/GBfssL1pTVx4FKjsi45mDsTx2XyCr0aViexH3OpPjVo'
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->下列功能位於[私人測試版](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta)。
+>下列功能位於[私人測試版](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/beta)。
 
 [!DNL Adobe Commerce Optimizer]排名結果，讓購物者能先看到最相關的產品。 此服務對目錄文字&#x200B;**與購物者型別最符合**&#x200B;的產品提供最強勁的提升，然後偏好以有意義的方式一起出現查詢字詞的符合，最後包括更廣泛的符合（包括支援自動完成樣式比對的行為）。
 
@@ -82,7 +82,7 @@ ht-degree: 0%
 - 從&#x200B;**精確/近**&#x200B;個字詞比對增加
 - 當&#x200B;**所有查詢詞**&#x200B;出現在&#x200B;**相同**&#x200B;欄位中時提升
 - **智慧型排名** （啟用時），將文字關聯性與行為訊號融合在一起 — 請參閱[智慧型排名計分的運作方式](../merchandising/rules/add.md#how-intelligent-ranking-scoring-works-search)
-- **[搜尋每個屬性的權重](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results)**&#x200B;以及其他文字關聯性因素（例如，詞匯出現的頻率以及名稱或描述長度）。 在&#x200B;*設定*&#x200B;中，設定哪些屬性參與關鍵字搜尋，以及它們的相對&#x200B;**[關鍵字搜尋權重](../settings.md)**。
+- **[搜尋每個屬性的權重](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/catalog/search/search-results)**&#x200B;以及其他文字關聯性因素（例如，詞匯出現的頻率以及名稱或描述長度）。 在&#x200B;*設定*&#x200B;中，設定哪些屬性參與關鍵字搜尋，以及它們的相對&#x200B;**[關鍵字搜尋權重](../settings.md)**。
 - **[銷售規則](../merchandising/rules/overview.md)**，例如pin、boost和bury
 
 由於這些訊號會互動，只有在最廣泛的層級符合的產品有時可以排在較緊的詞語符合項之上 — 例如，當&#x200B;**搜尋權重**&#x200B;或高權重欄位中的詞語頻率超過其他位置較弱的詞語符合項時。
