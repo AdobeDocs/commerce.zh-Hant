@@ -4,18 +4,11 @@ description: 瞭解如何將 [!DNL data export] 擴充功能用於Adobe Commerce
 role: Admin, Developer
 exl-id: 8a0067ba-90a4-48a6-8276-208d09abe6fc
 TQID: https://experienceleague.adobe.com/OHE1GBUEd8hHFPwFlO9fJa3Y0wK2xZ0HOYnwUn0-DSk
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 2a09ef51939649a12b72c45cbb8b0dc0d0a4c8ad
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 69f39a6a62e05c86a0e2897d09079543b3d8830e
 workflow-type: tm+mt
 source-wordcount: 571
 ht-degree: 0%
@@ -41,13 +34,13 @@ SaaS資料匯出會以PHP擴充功能的形式提供。 它支援數種方法來
 
 - **從Admin或命令列手動同步處理**
 
-   - Commerce Admin中的[資料管理儀表板](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)提供同步處理狀態的圖形檢視，顯示產品資料已成功同步至商務服務。 您可以使用儀表板對所有摘要執行完整重新同步（_完整同步_）。 不過，Adobe建議僅在第一次將Adobe Commerce連線至Commerce服務時，才執行完整同步。 請參閱[同步化程式](data-synchronization.md)。
+   - Commerce Admin中的[資料管理儀表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)提供同步處理狀態的圖形檢視，顯示產品資料已成功同步至商務服務。 您可以使用儀表板對所有摘要執行完整重新同步（_完整同步_）。 不過，Adobe建議僅在第一次將Adobe Commerce連線至Commerce服務時，才執行完整同步。 請參閱[同步化程式](data-synchronization.md)。
 
      {{aco-data-sync-verification}}
 
-   - [資料摘要同步狀態](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)頁面會提供資料匯出摘要的健全狀況和效能的即時深入分析，這些摘要會將產品和類別資料從Commerce傳輸到外部服務，例如產品建議、即時搜尋和目錄服務或Adobe Commerce Optimizer。
+   - [資料摘要同步狀態](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)頁面會提供資料匯出摘要的健全狀況和效能的即時深入分析，這些摘要會將產品和類別資料從Commerce傳輸到外部服務，例如產品建議、即時搜尋和目錄服務或Adobe Commerce Optimizer。
 
-   - [Adobe Commerce命令列工具](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cli/config-cli) (CLI)提供同步特定摘要的命令，並包含自訂摘要處理的其他選項。
+   - [Adobe Commerce命令列工具](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli) (CLI)提供同步特定摘要的命令，並包含自訂摘要處理的其他選項。
 
 - **與cron工作自動同步**
 
@@ -62,3 +55,4 @@ SaaS資料匯出會以PHP擴充功能的形式提供。 它支援數種方法來
    - 在需要更快速進行同步的情況下，SaaS資料匯出可提供自訂選項來改善匯出處理效能。 請參閱[改善資料匯出效能](customize-export-processing.md)。
 
 - **追蹤並疑難排解資料匯出活動** — 使用資料匯出和saas-export記錄檔，在同步和索引化程式期間檢閱同步狀態和摘要裝載。 請參閱[記錄及疑難排解](troubleshooting-logging.md)。
+
