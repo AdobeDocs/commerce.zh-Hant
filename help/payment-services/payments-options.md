@@ -129,7 +129,7 @@ ht-degree: 0%
 * 新增至[!DNL Google Pay]工資表的代碼只能從工資表中移除 — 不能從Commerce購物車頁面移除。
 * 在Adobe Commerce 2.4.4-2.4.6中，[!DNL Google Pay]張工資表中的折扣行由於平台限制可能無法顯示任何值。
 * 在Adobe Commerce 2.4.7上，由於GraphQL回應中的平台限制，某些產品（主要是可下載的產品）的折扣值可能不會顯示在[!DNL Google Pay]工資單中。
-* 如果套用自動[購物車價格規則](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart.html) （例如，「超過$200時優惠$50」），該規則會與購物者套用在工資單中的任何程式碼結合。 因此，[!DNL Google Pay]工資單中所顯示的總數可能與訂單摘要不同。
+* 如果套用自動[購物車價格規則](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart.html?lang=zh-Hant) （例如，「超過$200時優惠$50」），該規則會與購物者套用在工資單中的任何程式碼結合。 因此，[!DNL Google Pay]工資單中所顯示的總數可能與訂單摘要不同。
 
 ### [!DNL PayPal Payment Buttons]
 
@@ -208,7 +208,7 @@ PayPal、Pay Later和Venmo付款方法使用[伺服器端送貨回撥](https://d
 1. 確定您的存放區在生產模式[&#128279;](configure-admin.md#general-configuration)中為。
 1. [設定所需的PayPal付款按鈕](configure-admin.md#paypal-payment-buttons)。
 1. 開啟&#x200B;_[!UICONTROL Payment buttons]_&#x200B;區段中的_&#x200B;關閉&#x200B;_&#x200B;**[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)**&#x200B;選項。
-1. 開啟&#x200B;_[!UICONTROL Credit card fields]_&#x200B;區段中的_&#x200B;關閉&#x200B;_&#x200B;**[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)**&#x200B;選項，並使用您的[現有信用卡提供者帳戶](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments)。
+1. 開啟&#x200B;_[!UICONTROL Credit card fields]_&#x200B;區段中的_&#x200B;關閉&#x200B;_&#x200B;**[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)**&#x200B;選項，並使用您的[現有信用卡提供者帳戶](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html?lang=zh-Hant#payments)。
 
 ## 本地付款方法
 
