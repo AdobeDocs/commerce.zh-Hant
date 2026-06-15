@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: d7a4c87f-33cb-446a-b442-3cdf05b518a2
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+source-git-commit: d85c2ab6b4f0372f8abfe09e92b3143c08ad883c
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '483'
 ht-degree: 1%
 
 ---
@@ -37,6 +37,10 @@ ht-degree: 1%
 >[!ENDTABS]
 
 在此首頁檢視中，您可以存取&#x200B;_首頁_、_瞭解_&#x200B;關於[!DNL Payment Services]、設定擴充功能&#x200B;_設定_，或取得&#x200B;_說明_。 使用&#x200B;**[!UICONTROL View Report]** (SaaS)或&#x200B;**[!UICONTROL Orders]**&#x200B;和&#x200B;**[!UICONTROL Payouts]**&#x200B;進入點（雲端和內部部署上的Adobe Commerce）來開啟報告；請參閱[報告](reporting.md)。
+
+>[!NOTE]
+>
+>在[!DNL Adobe Commerce as a Cloud Service]和[!DNL Adobe Commerce Optimizer]中，[!DNL Payment Services] **儀表板**&#x200B;僅公開&#x200B;**選取的**&#x200B;報告：您從&#x200B;**[!UICONTROL Home]**&#x200B;取得[交易](reporting.md)報告（請參閱下方的SaaS表格）。 首頁上的&#x200B;**[!UICONTROL Orders]**&#x200B;和&#x200B;**[!UICONTROL Payouts]**&#x200B;區域（及其圖表和連結報表）僅適用於雲端和內部部署上的Adobe Commerce ([PaaS](#home))。 如需跨部署的現金流報表概觀，請參閱[財務報告](financial-reporting.md)。
 
 ## 首頁
 

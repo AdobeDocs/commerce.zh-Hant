@@ -5,16 +5,20 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders, Paas, Saas
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+source-git-commit: d85c2ab6b4f0372f8abfe09e92b3143c08ad883c
 workflow-type: tm+mt
-source-wordcount: '2045'
+source-wordcount: '2188'
 ht-degree: 0%
 
 ---
 
 # 訂單付款狀態報表
 
-[!DNL Payment Services]和[!DNL Adobe Commerce]的[!DNL Magento Open Source]提供您完整的報告，以便您可以清楚瞭解商店的[交易](reporting.md)、訂單和付款。
+[!DNL Adobe Commerce]和[!DNL Magento Open Source]的[!DNL Payment Services]提供您完整的報告，以便您可以清楚瞭解商店的[交易](reporting.md)、訂單和付款。
+
+>[!NOTE]
+>
+>以下訂單付款狀態檢視可從Adobe Commerce雲端和內部部署上的[!DNL Payment Services] **[!UICONTROL Home]**&#x200B;取得。 它們未顯示在[!DNL Adobe Commerce as a Cloud Service]或[!DNL Adobe Commerce Optimizer]的[!DNL Payment Services]儀表板中；請參閱[[!DNL Payment Services] 首頁](payments-home.md)。
 
 有兩個可用的「訂單」付款狀態報表檢視表，可讓您快速檢視訂單的付款狀態：
 
@@ -27,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果您尚未為[上線並啟動即時模式](production.md#enable-live-payments)，則無法檢視財務報表。[!DNL Payment Services]
+>如果您尚未為[!DNL Payment Services]上線並啟動即時模式[&#128279;](production.md#enable-live-payments)，則無法檢視財務報表。
 
 ## 訂單付款狀態資料視覺效果檢視
 
@@ -81,7 +85,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->此資料表中顯示的資料預設使用`DESC`以遞減順序(`TRANS DATE`)排序。 `TRANS DATE`是啟動交易的日期和時間。
+>此資料表中顯示的資料預設使用`TRANS DATE`以遞減順序(`DESC`)排序。 `TRANS DATE`是啟動交易的日期和時間。
 
 ### 付款狀態更新
 
@@ -128,13 +132,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->此資料表中顯示的資料預設使用`DESC`以遞減順序(`ORDER DATE`)排序。 `ORDER DATE`是建立訂單的日期時間戳記。
+>此資料表中顯示的資料預設使用`ORDER DATE`以遞減順序(`DESC`)排序。 `ORDER DATE`是建立訂單的日期時間戳記。
 
 #### 設定資料匯出
 
 即使預設會在`ON SAVE`模式下重新索引，仍建議您在`BY SCHEDULE`模式下索引。 `BY SCHEDULE`索引會以1分鐘的cron排程執行，且任何變更的資料會在任何資料變更後的2分鐘內顯示在您的「訂單狀態」報表中。 這個排程的重新索引可幫助您減少商店上的任何負擔，尤其是如果您有大量傳入的訂單，因為這會按照排程進行（而不是每次下訂單時）。
 
-您可以在管理員`ON SAVE`中變更索引模式 — `BY SCHEDULE`或[—](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/tools/index-management#change-the-index-mode)。
+您可以在管理員[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/tools/index-management#change-the-index-mode)中變更索引模式 — `ON SAVE`或`BY SCHEDULE`—。
 
 若要瞭解如何設定資料匯出，請參閱[命令列組態](configure-cli.md#configure-data-export)。
 
@@ -224,7 +228,7 @@ ht-degree: 0%
 1. 在&#x200B;_管理員_&#x200B;側邊欄上，前往&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**。
 1. 導覽至&#x200B;**[!UICONTROL Disputes column]**。
 1. 檢視特定訂單的任何爭議，並檢視[爭議狀態](#statuses-information)。
-1. 按一下以[PP-D-](https://www.paypal.com/us/cshelp/article/what-is-the-resolution-center-help246)開頭的爭議ID連結，檢閱&#x200B;_PayPal解決中心_&#x200B;的爭議詳細資料。
+1. 按一下以&#x200B;_PP-D-_&#x200B;開頭的爭議ID連結，檢閱[PayPal解決中心](https://www.paypal.com/us/cshelp/article/what-is-the-resolution-center-help246)的爭議詳細資料。
 1. 視需要對爭議採取適當行動。
 
    若要依狀態排序順序爭議，請按一下[!UICONTROL Disputes]欄標題。
@@ -256,7 +260,7 @@ ht-degree: 0%
 | [!UICONTROL Pay Status] | 特定訂單的付款狀態 |
 | [!UICONTROL Paid Amt] | 訂單上的已付金額 |
 | [!UICONTROL Cur] | 訂單付款金額的幣別型別 |
-| [!UICONTROL Refund Status] | 訂單上的退款狀態（例如退貨、RMA及銷退折讓單的資訊） —    *[!UICONTROL Requires refund]*、*[!UICONTROL Refund requested]*、*[!UICONTROL Refunded]*、*[!UICONTROL Refund failed]*&#x200B;或&#x200B;*[!UICONTROL Voided]* |
+| [!UICONTROL Refund Status] | 訂單上的退款狀態（例如退貨、RMA和銷退折讓單中的資訊） — *[!UICONTROL Requires refund]*、*[!UICONTROL Refund requested]*、*[!UICONTROL Refunded]*、*[!UICONTROL Refund failed]*&#x200B;或&#x200B;*[!UICONTROL Voided]* |
 | [!UICONTROL Refund Amount] | 訂單的已退款金額總計 |
 | [!UICONTROL Cur] | 訂單退款金額的幣別型態 |
 | [!UICONTROL Disputes] | 訂單上的任何爭議狀態（爭議和借項衝回的資訊） — *[!UICONTROL Open]*、*[!UICONTROL Waiting for buyer response]*、*[!UICONTROL Waiting for seller response]*、*[!UICONTROL Under review]*、*[!UICONTROL Resolved]*&#x200B;或&#x200B;*[!UICONTROL Other]* |

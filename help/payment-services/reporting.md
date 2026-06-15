@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: d0d0634283493f61faae94bebb9da1c8bd177e55
 workflow-type: tm+mt
-source-wordcount: 1391
+source-wordcount: 1439
 ht-degree: 0%
 
 ---
@@ -59,9 +59,13 @@ ht-degree: 0%
 
 >[!TAB Adobe Commerce as a Cloud Service和Commerce Optimizer]
 
-SaaS部署也適用相同的報表功能。 階層連結顯示&#x200B;**[!UICONTROL Home]** > **[!UICONTROL Transactions]**，而且格線包含&#x200B;**[!UICONTROL Order ID]**、**[!UICONTROL PayPal Transaction ID]**、**[!UICONTROL Customer ID]**、**[!UICONTROL Transaction Date]**、**[!UICONTROL Payment Method]**、**[!UICONTROL Payment Detail]**、**[!UICONTROL Card Last Four]**、**[!UICONTROL Result]**&#x200B;和&#x200B;**[!UICONTROL Response Code]**&#x200B;等欄。
+對於這些SaaS部署，控制面板中的表格式交易報告符合本主題中說明的功能（篩選器、欄、資料來源、下載等）。 階層連結顯示&#x200B;**[!UICONTROL Home]** > **[!UICONTROL Transactions]**，而且格線包含&#x200B;**[!UICONTROL Order ID]**、**[!UICONTROL PayPal Transaction ID]**、**[!UICONTROL Customer ID]**、**[!UICONTROL Transaction Date]**、**[!UICONTROL Payment Method]**、**[!UICONTROL Payment Detail]**、**[!UICONTROL Card Last Four]**、**[!UICONTROL Result]**&#x200B;和&#x200B;**[!UICONTROL Response Code]**&#x200B;等欄。
 
 ![SaaS上的交易報告檢視](assets/transactions-report-view-saas.png){width="800" zoomable="yes"}
+
+>[!NOTE]
+>
+>SaaS [!DNL Payment Services]儀表板不包含為雲端和內部部署上的Adobe Commerce顯示的每個報告或首頁進入點。 請參閱[[!DNL Payment Services] 首頁](payments-home.md)，瞭解每個部署可用的專案。
 
 >[!ENDTABS]
 
