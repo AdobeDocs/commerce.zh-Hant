@@ -20,7 +20,7 @@ level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: da5950c0f2071f48f163dd02f6c38953804ae152
+source-git-commit: 717ecbc9c6aa41f8a504579de8ce55f514cc4307
 workflow-type: tm+mt
 source-wordcount: 946
 ht-degree: 0%
@@ -71,7 +71,7 @@ ht-degree: 0%
 - **相同欄位中的所有字詞** — 在&#x200B;**same**&#x200B;可搜尋屬性中尋找&#x200B;**brauseschlauch**&#x200B;和&#x200B;**chrom**，仍然沒有解壓縮（例如，兩者都在&#x200B;**name**&#x200B;中）。
 - 跨不同欄位的&#x200B;**字** — 將&#x200B;**Brauseschlauch**&#x200B;解複合成&#x200B;**Brause**&#x200B;和&#x200B;**Schlauch**。 這些Token必須出現在&#x200B;**相同**&#x200B;欄位中（不一定是相鄰的片語）。 **chrom**&#x200B;可在&#x200B;**不同**&#x200B;欄位中符合（例如，**name**，**chrom** **color**&#x200B;中的&#x200B;**brause**&#x200B;和&#x200B;**schlauch**）。
 
-在[設定](./settings.md)中的[語言](./settings.md#language)索引標籤上將&#x200B;**語言**&#x200B;設定為&#x200B;**德文**，因此會套用分解規則。 在生產環境中啟用變更之前，請先在預備店面驗證高價值德文查詢。
+在[設定](../settings.md)中的[語言](../settings.md#language)索引標籤上將&#x200B;**語言**&#x200B;設定為&#x200B;**德文**，因此會套用分解規則。 在生產環境中啟用變更之前，請先在預備店面驗證高價值德文查詢。
 
 分解是以規則為基礎，可以在此圖層新增邊緣大小寫。 如果字典中遺漏子字，則代碼化可能會不完整，並傳回比您預期更廣的相符專案，例如，**gaszahler**&#x200B;中遺漏的&#x200B;**gas**&#x200B;可能只產生&#x200B;**zahl**，或是&#x200B;**thermostat**&#x200B;中遺漏的&#x200B;**stat**。 字乾也會產生未預期的根（例如，**schrauber**&#x200B;字乾至&#x200B;**schraub**，或&#x200B;**schelle**&#x200B;至&#x200B;**schell**）。 Adobe會針對已識別問題的已知案例更新字典和詞幹覆寫。
 
@@ -81,9 +81,9 @@ ht-degree: 0%
 
 - 從&#x200B;**精確/近**&#x200B;個字詞比對增加
 - 當&#x200B;**所有查詢詞**&#x200B;出現在&#x200B;**相同**&#x200B;欄位中時提升
-- **智慧型排名** （啟用時），將文字關聯性與行為訊號融合在一起 — 請參閱[智慧型排名計分的運作方式](./merchandising/rules/add.md#how-intelligent-ranking-scoring-works-search)
-- **[搜尋每個屬性的權重](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/catalog/search/search-results)**&#x200B;以及其他文字關聯性因素（例如，詞匯出現的頻率以及名稱或描述長度）。 在&#x200B;*設定*&#x200B;中，設定哪些屬性參與關鍵字搜尋，以及它們的相對&#x200B;**[關鍵字搜尋權重](./settings.md)**。
-- **[銷售規則](./merchandising/rules/overview.md)**，例如pin、boost和bury
+- **智慧型排名** （啟用時），將文字關聯性與行為訊號融合在一起 — 請參閱[智慧型排名計分的運作方式](../merchandising/rules/add.md#how-intelligent-ranking-scoring-works-search)
+- **[搜尋每個屬性的權重](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/catalog/search/search-results)**&#x200B;以及其他文字關聯性因素（例如，詞匯出現的頻率以及名稱或描述長度）。 在&#x200B;*設定*&#x200B;中，設定哪些屬性參與關鍵字搜尋，以及它們的相對&#x200B;**[關鍵字搜尋權重](../settings.md)**。
+- **[銷售規則](../merchandising/rules/overview.md)**，例如pin、boost和bury
 
 由於這些訊號會互動，只有在最廣泛的層級符合的產品有時可以排在較緊的詞語符合項之上 — 例如，當&#x200B;**搜尋權重**&#x200B;或高權重欄位中的詞語頻率超過其他位置較弱的詞語符合項時。
 
@@ -97,8 +97,8 @@ ht-degree: 0%
 
 ## 相關主題
 
-- [設定](./settings.md)
-- [搜尋績效](./manage-results/search-performance.md)
-- [銷售規則概觀](./merchandising/rules/overview.md)
-- [新增搜尋規則](./merchandising/rules/add.md)
-- [同義字概觀](./merchandising/synonyms/overview.md)
+- [設定](../settings.md)
+- [搜尋績效](search-performance.md)
+- [銷售規則概觀](../merchandising/rules/overview.md)
+- [新增搜尋規則](../merchandising/rules/add.md)
+- [同義字概觀](../merchandising/synonyms/overview.md)

@@ -4,7 +4,7 @@ description: 瞭解 [!DNL Adobe Commerce Optimizer] 及其主要功能。
 recommendations: noCatalog
 badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: e68d731bbcc168439c9a56a7cb778648a7c473e9
+source-git-commit: 3e759c0d7e51082b70ea9a1fcc5757b60a8aab61
 workflow-type: tm+mt
 source-wordcount: '982'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 - 從任何來源擷取目錄資料。
 - 定義企業目錄檢視和原則。
 - 使用AI和ML建立個人化搜尋和建議。
-- 改善產品探索關聯性，其排名會將&#x200B;**完全和接近的相符專案**&#x200B;和相同欄位相符專案排定優先順序；請參閱[搜尋相符專案和排名](search-relevance-matching.md)。
+- 改善產品探索關聯性，其排名會將&#x200B;**完全和接近的相符專案**&#x200B;和相同欄位相符專案排定優先順序；請參閱[搜尋相符專案和排名](./manage-results/search-relevance-matching.md)。
 - 檢視重要的產品資料可用性，包括同步化狀態和店面事件資料，以取得準確的實作和疑難排解。
 
 請觀看下列影片以瞭解[!DNL Adobe Commerce Optimizer]的高階概觀：
