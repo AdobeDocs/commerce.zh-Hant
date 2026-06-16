@@ -2,9 +2,9 @@
 title: 設定適用於Commerce Optimizer的AEM Assets
 description: 瞭解如何設定 [!DNL Adobe Commerce Optimizer]的AEM Assets整合。
 feature: CMS, Media, Configuration, Integration
-source-git-commit: 42f0e0cb72c6429eb6f08f1922c4171195a78d2b
+source-git-commit: 2cc7b70a6923687c74fe3f4b88448eaada6d16af
 workflow-type: tm+mt
-source-wordcount: '1460'
+source-wordcount: '1453'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 適用於[!DNL Adobe Commerce Optimizer]的AEM Assets整合可讓商家使用AEM Assets作為產品影像的集中式數位資產管理解決方案。 本指南涵蓋[!DNL Commerce Optimizer]的特定組態。
 
-不同於Adobe Commerce (PaaS)或Adobe Commerce as a Cloud Service (ACCS)，[!DNL Commerce Optimizer]沒有管理員設定UI。 若要啟用整合，請使用您的[!DNL Adobe Commerce Optimizer]和AEM Assets詳細資料建立支援票證。 Adobe支援會設定整合，並在Assets整合服務中註冊您的租使用者。
+與Adobe Commerce (PaaS)或[!DNL Adobe Commerce as a Cloud Service]不同，[!DNL Commerce Optimizer]沒有管理員設定UI。 若要啟用整合，請使用您的[!DNL Adobe Commerce Optimizer]和AEM Assets詳細資料建立支援票證。 Adobe支援會設定整合，並在Assets整合服務中註冊您的租使用者。
 
 **在提交票證之前準備AEM Assets。** 租使用者註冊會假設AEM端可用於Commerce。 例如，在您部署AEM Commerce `assets-commerce`套件後，讓中繼資料和事件如說明般運作。 **在設定AEM之前開啟票證可能會延遲上線。**
 
@@ -97,7 +97,7 @@ ht-degree: 0%
 
 ## 入門
 
-若要將AEM Assets與[!DNL Commerce Optimizer]整合，您必須[建立支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)。
+若要將AEM Assets與[!DNL Commerce Optimizer]整合，您必須[建立支援票證](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)。
 
 Adobe支援會使用您票證中的資訊，向Assets Integration Service註冊您的租使用者，並設定整合。
 
@@ -123,7 +123,7 @@ Adobe支援處理完您的票證後，便會設定整合，並且您的租使用
    * AEM Assets事件（資產已核准、更新、已移除）
    * [!DNL Commerce Optimizer]個目錄事件（已建立、已更新的產品）
 
-設定您的[目錄檢視](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/setup/catalog-view)，讓店面和API顯示AEM驅動的影像資料：
+設定您的[目錄檢視](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view)，讓店面和API顯示AEM驅動的影像資料：
 
 * **目錄來源（地區）** — 選取您在支援票證中指定的相同地區（例如&#x200B;**`en-US`**）。 整合會為每個租使用者註冊一個地區設定；如果不相符，同步影像就不會出現在預期的目錄檢視中。
 * **目錄圖層** — 將&#x200B;**`AEM-Assets`**&#x200B;圖層（或票證中的自訂圖層名稱）指派給該目錄檢視。

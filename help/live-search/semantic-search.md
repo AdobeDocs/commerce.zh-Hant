@@ -3,9 +3,9 @@ title: 語意搜尋
 description: 從設定啟用 [!DNL Live Search] 的AI語意搜尋。 不需要屬性設定或店面變更。
 role: Admin
 recommendations: noCatalog
-source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
+source-git-commit: e631346aa13737ded2c14daecbb91457e15417eb
 workflow-type: tm+mt
-source-wordcount: '778'
+source-wordcount: '777'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ ht-degree: 0%
 
    索引完成之後會更新搜尋結果。 對於中型型錄，編制索引最多可能需要半小時。 若為包含數百萬項產品的大型目錄，則可能需要數小時的時間。
 
-### 針對ACCS客戶
+### 針對[!DNL Adobe Commerce as a Cloud Service]個客戶
 
 [!DNL Adobe Commerce as a Cloud Service]客戶在[!DNL Live Search]管理員中使用相同的&#x200B;**設定**&#x200B;工作區。 語意搜尋預設為&#x200B;**為符合資格的英文目錄啟用**。 確認已啟用&#x200B;**[!UICONTROL Semantic search]**，或如果您不想在店面進行語意比對，請將其停用。
 
