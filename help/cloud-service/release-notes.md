@@ -32,9 +32,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 776aa6f6d887c93686539897e936fe8d3898e462
+source-git-commit: 469111676c7ac8bdf66f8f42bd26745ce7f88928
 workflow-type: tm+mt
-source-wordcount: 4439
+source-wordcount: 4489
 ht-degree: 0%
 
 ---
@@ -60,6 +60,10 @@ ht-degree: 0%
 ### 依公司篩選訂單與發票
 
 `GET /V1/orders`和`GET /V1/invoices` REST API端點現在支援`company_id`和`company_name`的篩選功能，可讓B2B整合功能在單一要求中擷取特定公司的訂單或發票。<!-- ACCS-1111, CCSAAS-5076 -->
+
+### 透過API列出自訂電子郵件範本
+
+新的`GET /V1/custom-email/templates` REST API端點傳回您的[自訂電子郵件範本](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/)，包括每個範本的ID、程式碼和主旨。 整合可以使用傳回的範本識別碼搭配`POST /V1/custom-email/send`端點，而非手動查詢識別碼。<!-- CCSAAS-5089 -->
 
 ### 在管理員中檢視訂單修改歷史記錄
 
