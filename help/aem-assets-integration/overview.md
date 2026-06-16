@@ -20,9 +20,9 @@ topic_v2:
   - id: da3860b0-d637-47df-bef0-273751180266
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: e631346aa13737ded2c14daecbb91457e15417eb
 workflow-type: tm+mt
-source-wordcount: 802
+source-wordcount: 805
 ht-degree: 1%
 
 ---
@@ -95,7 +95,7 @@ AEM Assets整合可自動化資產管理工作流程，解決此難題。 整合
 
 >[!VIDEO](https://video.tv.adobe.com/v/3447900?captions=chi_hant)
 
->[!TAB ACCS教學課程]
+>[!TAB Adobe Commerce as a Cloud Service教學課程]
 
 瞭解如何使用Adobe Commerce as a Cloud Service與AEM Assets整合。
 
@@ -113,7 +113,7 @@ AEM Assets整合可自動化資產管理工作流程，解決此難題。 整合
 
 1. 為您的環境設定整合：
 
-   * 僅[!BADGE PaaS]{type=Informative tooltip="僅適用於雲端專案上的Adobe Commerce （Adobe管理的PaaS基礎結構）。"} [Adobe Commerce (PaaS/ACCS)](get-started/setup-synchronization.md)
+   * 僅[!BADGE PaaS]{type=Informative tooltip="僅適用於雲端專案上的Adobe Commerce （Adobe管理的PaaS基礎結構）。"} [Adobe Commerce](get-started/setup-synchronization.md)
    * 僅[!BADGE SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"} [Adobe Commerce Optimizer](get-started/configure-aco.md)
 
 ## 支援
