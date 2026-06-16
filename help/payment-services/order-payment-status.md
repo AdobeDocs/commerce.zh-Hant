@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders, Paas, Saas
-source-git-commit: d85c2ab6b4f0372f8abfe09e92b3143c08ad883c
+source-git-commit: 09630af055b4d59f37fba2d3c398042161a7afa0
 workflow-type: tm+mt
-source-wordcount: '2188'
+source-wordcount: '2254'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果您尚未為[!DNL Payment Services]上線並啟動即時模式[&#128279;](production.md#enable-live-payments)，則無法檢視財務報表。
+>如果您尚未為[!DNL Payment Services]上線並啟動即時模式](production.md#enable-live-payments)，則無法檢視財務報表。[
 
 ## 訂單付款狀態資料視覺效果檢視
 
@@ -75,7 +75,7 @@ ht-degree: 0%
 
 「付款服務」的「首頁」檢視中，提供「訂單」付款狀態報表檢視表。 其中包括所有交易的詳細狀態 — 付款、已開立商業發票、出貨、退款、爭議等等。
 
-在&#x200B;_Admin_&#x200B;側邊欄上，前往&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**&#x200B;檢視詳細的表格式訂單付款狀態報告檢視。
+在&#x200B;_Admin_&#x200B;側邊欄上，前往&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**檢視詳細的表格式訂單付款狀態報告檢視。
 
 ![管理員中的訂單付款狀態交易](assets/orders-report-data.png){width="800" zoomable="yes"}
 
@@ -108,9 +108,22 @@ ht-degree: 0%
 
 偵測暫止的擷取交易何時進入`Completed`狀態，讓商家可以繼續處理受影響的訂單。
 
-為確保此程式可如預期運作，商家必須設定新的cron工作。 一旦工作設定為自動執行，商家就不需要進行其他干預。
+>[!NOTE]
+>
+>預設會停用非同步監視。 停用時，具有`Pending`擷取交易的訂單不會自動移至`Payment Review`。 若要啟用此行為，請遵循下列步驟來開啟非同步監視。
 
-請參閱[設定cron工作](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=zh-Hant)。 設定之後，新工作每30分鐘執行一次，以擷取處於`Payment Review`狀態的訂單的更新。
+啟用非同步監視：僅[!BADGE PaaS]{type=Informative tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"}
+
+1. 啟用`async_status_updates`設定。 由於此設定在Admin中無法使用，請從命令列將其啟用：
+
+   ```bash
+   bin/magento config:set payment/payment_services/async_status_updates 1
+   ```
+
+1. 啟用並排程`sync_order_payment_status` cron工作，以便自動擷取狀態更新。 請參閱[設定cron工作](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html)。
+
+設定和cron工作啟用後，cron工作每10分鐘執行一次，以擷取`Payment Review`狀態中訂單的更新。 設定後，在正常操作下不需要額外的商家動作。
+
 
 商戶可以透過「訂單付款狀態」報表檢視來檢查更新的付款狀態。
 
@@ -118,11 +131,11 @@ ht-degree: 0%
 
 [!DNL Payment Services]使用訂單資料，並將其與其他來源（包括PayPal）的彙總付款資料結合，以提供有意義且非常有用的報表。
 
-訂單資料會匯出並保留在付款服務中。 當您[變更或新增訂單狀態](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/order-management/orders/order-status#custom-order-status)或[編輯商店檢視](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/site-store/store-views#edit-a-store-view)、[商店](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/setup/store-details#store-information)或網站名稱時，該資料會與付款資料結合，而訂單付款狀態報表會填入結合資訊。
+訂單資料會匯出並保留在付款服務中。 當您[變更或新增訂單狀態](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-status#custom-order-status)或[編輯商店檢視](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-views#edit-a-store-view)、[商店](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/store-details#store-information)或網站名稱時，該資料會與付款資料結合，而訂單付款狀態報表會填入結合資訊。
 
 此程式包含兩個步驟：
 
-1. 索引已變更資料`ON SAVE` （每次變更訂單資訊或存放區資訊時）或`BY SCHEDULE` （依預先設定的cron排程），視它在管理員的[索引管理](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/tools/index-management)中的設定方式而定。
+1. 索引已變更資料`ON SAVE` （每次變更訂單資訊或存放區資訊時）或`BY SCHEDULE` （依預先設定的cron排程），視它在管理員的[索引管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management)中的設定方式而定。
 
    依預設，資料索引會發生`ON SAVE`，這表示每當順序、訂單狀態、商店檢視、商店或網站發生變更時，索引程式就會立即發生。
 
@@ -138,7 +151,7 @@ ht-degree: 0%
 
 即使預設會在`ON SAVE`模式下重新索引，仍建議您在`BY SCHEDULE`模式下索引。 `BY SCHEDULE`索引會以1分鐘的cron排程執行，且任何變更的資料會在任何資料變更後的2分鐘內顯示在您的「訂單狀態」報表中。 這個排程的重新索引可幫助您減少商店上的任何負擔，尤其是如果您有大量傳入的訂單，因為這會按照排程進行（而不是每次下訂單時）。
 
-您可以在管理員[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/tools/index-management#change-the-index-mode)中變更索引模式 — `ON SAVE`或`BY SCHEDULE`—。
+您可以在管理員](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode)中變更索引模式 — `ON SAVE`或`BY SCHEDULE`—[。
 
 若要瞭解如何設定資料匯出，請參閱[命令列組態](configure-cli.md#configure-data-export)。
 
@@ -148,7 +161,7 @@ ht-degree: 0%
 
 ![資料來源選擇](assets/datasource.png){width="300" zoomable="yes"}
 
-如果&#x200B;_[!UICONTROL Live]_&#x200B;是選取的資料來源，您可以看到在生產模式中使用[!DNL Payment Services]之存放區的報表資訊。 如果&#x200B;_[!UICONTROL Sandbox]_&#x200B;是選取的資料來源，您可以看到沙箱模式的報告資訊。
+如果&#x200B;_[!UICONTROL Live]_是選取的資料來源，您可以看到在生產模式中使用[!DNL Payment Services]之存放區的報表資訊。 如果_[!UICONTROL Sandbox]_&#x200B;是選取的資料來源，您可以看到沙箱模式的報告資訊。
 
 資料來源選取專案的工作方式如下：
 
@@ -159,7 +172,7 @@ ht-degree: 0%
 若要選取[!UICONTROL Order Payment Status]報表的資料來源：
 
 1. 在&#x200B;_管理員_&#x200B;側邊欄上，前往&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Orders]** > **[!UICONTROL View Report]**。
-1. 按一下&#x200B;_[!UICONTROL Data source]_&#x200B;選取器篩選器，然後選取&#x200B;**[!UICONTROL Live]**&#x200B;或&#x200B;**[!UICONTROL Sandbox]**。
+1. 按一下&#x200B;_[!UICONTROL Data source]_選取器篩選器，然後選取&#x200B;**[!UICONTROL Live]**或&#x200B;**[!UICONTROL Sandbox]**。
 
    報表結果會根據選取的資料來源重新產生。
 
@@ -168,7 +181,7 @@ ht-degree: 0%
 從「訂單付款狀態」報表檢視中，您可以選取特定日期，以自訂您要檢視之狀態結果的時間範圍。 依預設，30天的訂單付款狀態會顯示在網格中。
 
 1. 在&#x200B;_管理員_&#x200B;側邊欄上，前往&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**。
-1. 按一下&#x200B;_[!UICONTROL Order dates]_&#x200B;行事曆選擇器篩選器。
+1. 按一下&#x200B;_[!UICONTROL Order dates]_行事曆選擇器篩選器。
 1. 選擇適用的日期範圍。
 1. 檢視網格中指定日期的訂單付款狀態。
 
@@ -179,7 +192,7 @@ ht-degree: 0%
 1. 在&#x200B;_管理員_&#x200B;側邊欄上，前往&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**。
 1. 按一下&#x200B;**[!UICONTROL Filter]**&#x200B;選取器。
 1. 切換&#x200B;_付款狀態_&#x200B;選項，只檢視所選訂單付款狀態的報表結果。
-1. 輸入&#x200B;_[!UICONTROL Min Order Amount]_&#x200B;或_[!UICONTROL Max Order Amount_]，檢視訂單金額範圍內的報表結果。
+1. 輸入&#x200B;_[!UICONTROL Min Order Amount]_或_[!UICONTROL Max Order Amount_]，檢視訂單金額範圍內的報表結果。
 1. 按一下&#x200B;**[!UICONTROL Hide filters]**&#x200B;以隱藏篩選器。
 
 ### 顯示和隱藏欄
@@ -212,7 +225,7 @@ ht-degree: 0%
 
 ### 更新報表資料
 
-「訂單付款狀態」報表檢視會顯示&#x200B;_[!UICONTROL Last updated]_&#x200B;時間戳記，顯示上次更新報表資訊的時間。 依預設，訂單付款狀態報表資料每三小時自動重新整理一次。
+「訂單付款狀態」報表檢視會顯示&#x200B;_[!UICONTROL Last updated]_時間戳記，顯示上次更新報表資訊的時間。 依預設，訂單付款狀態報表資料每三小時自動重新整理一次。
 
 您也可以手動強制重新整理「訂單付款狀態」報表資料，以檢視最新的報表資訊。
 
@@ -249,10 +262,10 @@ ht-degree: 0%
 
 | 欄 | 說明 |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | Commerce訂單ID<br> <br>若要檢視相關的[訂單資訊](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"}，請按一下ID。 |
+| [!UICONTROL Order ID] | Commerce訂單ID<br> <br>若要檢視相關的[訂單資訊](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"}，請按一下ID。 |
 | [!UICONTROL Order Date] | 訂購日期時間戳記 |
 | [!UICONTROL Authorized Date] | 付款授權的日期時間戳記 |
-| [!UICONTROL Order Status] | 目前的Commerce [訂單狀態](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/order-management/orders/order-status){target="_blank"} |
+| [!UICONTROL Order Status] | 目前的Commerce [訂單狀態](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-status){target="_blank"} |
 | [!UICONTROL Invoiced] | 訂單的商業發票狀態 — *[!UICONTROL No]*、*[!UICONTROL Partial]*&#x200B;或&#x200B;*[!UICONTROL Yes]* |
 | [!UICONTROL Shipped] | 訂單的運送狀態 — *[!UICONTROL No]*、*[!UICONTROL Partial]*&#x200B;或&#x200B;*[!UICONTROL Yes]* |
 | [!UICONTROL Order Amt] | 訂單的總金額 |
