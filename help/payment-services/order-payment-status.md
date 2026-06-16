@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders, Paas, Saas
-source-git-commit: d85c2ab6b4f0372f8abfe09e92b3143c08ad883c
+source-git-commit: 09630af055b4d59f37fba2d3c398042161a7afa0
 workflow-type: tm+mt
-source-wordcount: '2188'
+source-wordcount: '2254'
 ht-degree: 0%
 
 ---
@@ -108,9 +108,22 @@ ht-degree: 0%
 
 偵測暫止的擷取交易何時進入`Completed`狀態，讓商家可以繼續處理受影響的訂單。
 
-為確保此程式可如預期運作，商家必須設定新的cron工作。 一旦工作設定為自動執行，商家就不需要進行其他干預。
+>[!NOTE]
+>
+>預設會停用非同步監視。 停用時，具有`Pending`擷取交易的訂單不會自動移至`Payment Review`。 若要啟用此行為，請遵循下列步驟來開啟非同步監視。
 
-請參閱[設定cron工作](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=zh-Hant)。 設定之後，新工作每30分鐘執行一次，以擷取處於`Payment Review`狀態的訂單的更新。
+啟用非同步監視：僅[!BADGE PaaS]{type=Informative tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"}
+
+1. 啟用`async_status_updates`設定。 由於此設定在Admin中無法使用，請從命令列將其啟用：
+
+   ```bash
+   bin/magento config:set payment/payment_services/async_status_updates 1
+   ```
+
+1. 啟用並排程`sync_order_payment_status` cron工作，以便自動擷取狀態更新。 請參閱[設定cron工作](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=zh-Hant)。
+
+設定和cron工作啟用後，cron工作每10分鐘執行一次，以擷取`Payment Review`狀態中訂單的更新。 設定後，在正常操作下不需要額外的商家動作。
+
 
 商戶可以透過「訂單付款狀態」報表檢視來檢查更新的付款狀態。
 
