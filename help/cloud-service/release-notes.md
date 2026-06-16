@@ -32,9 +32,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: ef32511703a96b5f4db32d54229e9a7cbe961f12
+source-git-commit: 776aa6f6d887c93686539897e936fe8d3898e462
 workflow-type: tm+mt
-source-wordcount: 4182
+source-wordcount: 4439
 ht-degree: 0%
 
 ---
@@ -47,7 +47,45 @@ ht-degree: 0%
 >
 >如果您正在雲端基礎結構上使用Adobe Commerce內部部署或Adobe Commerce，請參閱[Adobe Commerce發行說明](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/overview)。
 
-## 2026年6月 — 發行說#1 {#latest}
+## 2026年6月 — 發行說#2 {#latest}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+[!BADGE 沙箱]{type=Caution tooltip="列出的專案目前僅在沙箱環境中可用。 Adobe會先在沙箱環境中推出新版本，讓您可以在生產環境中使用該版本之前有時間測試即將推出的變更。"}
+
+以下專案目前僅在沙箱環境中可用，並計畫在7月移至生產環境。
+
+>[!BEGINSHADEBOX]
+
+### 依公司篩選訂單與發票
+
+`GET /V1/orders`和`GET /V1/invoices` REST API端點現在支援`company_id`和`company_name`的篩選功能，可讓B2B整合功能在單一要求中擷取特定公司的訂單或發票。<!-- ACCS-1111, CCSAAS-5076 -->
+
+### 在管理員中檢視訂單修改歷史記錄
+
+[!DNL Commerce Admin]訂單詳細資訊頁面現在會顯示訂單的完整修改鏈結，其中包括原始訂單及透過後續編輯建立的所有下階訂單。 商戶可以在訂單之間切換瀏覽、切換已取消訂單的可見度，並從鏈結檢視表記憶體取所有相關的商業發票、出貨、銷退折讓單及訂單註解。<!-- ACCS-968 -->
+
+>[!NOTE]
+>
+>若要啟用此功能，請聯絡您的Adobe Commerce客戶成功經理。
+
+### 在[!DNL AEM Assets]中檢視已同步化的資產
+
+[!DNL AEM Assets]整合現在包含&#x200B;[!UICONTROL **同步狀態**]&#x200B;頁面（[!UICONTROL **商店**] > [!UICONTROL **AEM Assets**] > [!UICONTROL **同步狀態**]），其中包含所有已同步化資產的資產中心清單檢視，包括篩選、可排序的欄（例如上次同步日期）以及失敗同步的錯誤詳細資料。<!-- ACAP-1246 -->
+
+### 增強功能和錯誤修正
+
+此版本中包括下列選取的增強功能、最佳化和錯誤修正：
+
+* 現在，管理員可更輕鬆管理大型共用目錄，不但縮短載入時間，也降低逾時的可能性。<!-- CCSAAS-4946, CCSAAS-4925, CCSAAS-1245, CCSAAS-1246 -->
+
+* 修正建立包含可設定產品之訂單的出貨時，所發生的出貨建立失敗。<!-- ACCS-1095 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## 2026年6月 — 發行說#1
 
 [!BADGE 生產]{type=Neutral tooltip="列出的專案目前可在生產環境中使用。"}
 
