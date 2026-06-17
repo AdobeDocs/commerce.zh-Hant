@@ -41,7 +41,7 @@ ht-degree: 0%
 1. 如果鎖定為&#x200B;**已取得**，處理序會記錄其名稱和PID以供診斷之用，然後執行同步。
 1. 當同步完成或失敗時，鎖定會無條件釋放，以便下一個排程的cron工作可正常繼續。
 
-一次只能有一個同步作業可以保持摘要鎖定，無論它是由cron啟動還是由CLI啟動。 摘要鎖定是透過[!DNL Adobe Commerce]的`LockManagerInterface`實作。 預設後端是MySQL，它使用`GET_LOCK`和`RELEASE_LOCK`函式。 若要設定不同的鎖定提供者，請參閱[設定鎖定提供者](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/lock-provider){target="_blank"}。
+一次只能有一個同步作業可以保持摘要鎖定，無論它是由cron啟動還是由CLI啟動。 摘要鎖定是透過[!DNL Adobe Commerce]的`LockManagerInterface`實作。 預設後端是MySQL，它使用`GET_LOCK`和`RELEASE_LOCK`函式。 若要設定不同的鎖定提供者，請參閱[設定鎖定提供者](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/tutorials/lock-provider){target="_blank"}。
 
 ## 預期的記錄訊息
 
@@ -62,4 +62,4 @@ ht-degree: 0%
 > - [使用SaaS資料匯出同步處理資料](sync-overview.md)
 > - [使用Commerce CLI同步摘要](data-export-cli-commands.md)
 > - [聯結器同步管道](../aco-connector/connector-sync-pipeline.md)
-> - [設定鎖定提供者](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/lock-provider){target="_blank"}
+> - [設定鎖定提供者](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/tutorials/lock-provider){target="_blank"}

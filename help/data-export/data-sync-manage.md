@@ -36,7 +36,7 @@ ht-degree: 0%
 
 - **[資料摘要同步狀態頁面](../optimizer/setup/data-sync.md)** — 檢查與[!DNL Live Search]、[!DNL Product Recommendations]或[!DNL Catalog Service]連線的部署摘要匯出狀態。 此儀表板會顯示每個摘要的摘要匯出狀態，包括遇到的任何錯誤。 詳細資料檢視會顯示個別摘要專案的摘要匯出狀態。
 
-- **[資料管理儀表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)** — 管理員使用者可以檢視及追蹤已成功匯出並同步處理至連線之Commerce服務的資料。 此儀表板會顯示同步至Commerce服務的產品資料。
+- **[資料管理儀表板](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)** — 管理員使用者可以檢視及追蹤已成功匯出並同步處理至連線之Commerce服務的資料。 此儀表板會顯示同步至Commerce服務的產品資料。
 
 >[!NOTE]
 >

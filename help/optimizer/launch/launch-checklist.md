@@ -9,7 +9,7 @@ role: Admin, Developer
 level: Intermediate
 topic: Administration
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
 feature_v2:
@@ -55,11 +55,11 @@ ht-degree: 0%
 
 確認雲端環境上的Adobe Commerce已準備好投入生產。
 
-▢雲端執行個體為[已布建](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/new-project)。
+▢雲端執行個體為[已布建](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/start/new-project)。
 ▢從執行個體移除測試和虛擬資料。
 ▢生產資料已載入執行個體上。
 ▢您知道[GraphQL端點](https://developer.adobe.com/commerce/webapi/graphql/)。
-▢執行個體符合[準備啟動](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/launch/checklist)的要求。
+▢執行個體符合[準備啟動](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/launch/checklist)的要求。
 
 ## 驗證Commerce Optimizer執行個體 {#verify-optimizer}
 
@@ -76,7 +76,7 @@ ht-degree: 0%
 
 確認您的Edge Delivery Services店面網站存在，並且存取許可權受限。
 
-▢店面網站已存在。請參閱[建立店面](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/)。
+▢店面網站已存在。請參閱[建立店面](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=zh-Hant)。
 ▢您知道網站名稱。
 ▢只有授權人員才有[許可權可發佈](https://tools.aem.live/tools/user-admin/index.html)。
 ▢只有授權人員才有[作者許可權](https://docs.da.live/administrators/guides/permissions)。
@@ -116,18 +116,18 @@ ht-degree: 0%
 
 ### 在Adobe Commerce上
 
-▢店面相容性套件已[安裝](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility/install/)。
+▢店面相容性套件已[安裝](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility/install/?lang=zh-Hant)。
 
 ### 在店面
 
-▢店面`commerce-core-endpoint`設定指向您的[雲端GraphQL端點](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/)。
+▢店面`commerce-core-endpoint`設定指向您的[雲端GraphQL端點](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=zh-Hant)。
 ▢如果您使用API Mesh做為Cloud GraphQL的Proxy，`commerce-core-endpoint`會指向API Mesh端點，而非Cloud GraphQL端點。
 
 ## 驗證店面與Optimizer整合 {#storefront-optimizer-integration}
 
 確認店面設定中的Commerce Optimizer設定。
 
-▢您的店面使用正確的[Commerce Optimizer設定](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/)。
+▢您的店面使用正確的[Commerce Optimizer設定](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=zh-Hant)。
 ▢ `adobe-commerce-optimizer`是`true`。
 ▢ `commerce-endpoint`指向生產Commerce Optimizer GraphQL端點，或您使用API Mesh時的API Mesh端點。
 ▢ `headers.cs.AC-view-ID`保有您生產Commerce Optimizer執行個體的目錄檢視ID。
@@ -155,7 +155,7 @@ ht-degree: 0%
 
 ▢生產工作區包含所有必要的設定和服務。
 ▢生產應用程式通過了組建案例測試。
-▢已根據[Adobe Developer App Builder產品說明](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html){target="_blank"}和[App Builder系統設定和限制](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings){target="_blank"}檢閱並確認產品限制和界限。
+▢已根據[Adobe Developer App Builder產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-developer-app-builder.html){target="_blank"}和[App Builder系統設定和限制](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings){target="_blank"}檢閱並確認產品限制和界限。
 ▢生產應用程式使用App Builder生產端點。
 ▢自訂&#x200B;*Admin*&#x200B;面板擴充功能已部署至生產工作區。
 
@@ -188,8 +188,8 @@ ht-degree: 0%
 
 確認中繼資料、URL和抓取行為。
 
-關鍵頁面（尤其是PDP和PLP）有▢個檔案標題中繼資料。請參閱&#x200B;_Adobe Commerce店面_&#x200B;檔案中的[SEO中繼資料](https://experienceleague.adobe.com/developer/commerce/storefront/setup/seo/metadata/){target="_blank"}。
-▢個PDP包含[個中繼資料和結構化資料](https://experienceleague.adobe.com/developer/commerce/storefront/setup/seo/metadata/){target="_blank"} （例如JSON-LD）。
+關鍵頁面（尤其是PDP和PLP）有▢個檔案標題中繼資料。請參閱&#x200B;_Adobe Commerce店面_&#x200B;檔案中的[SEO中繼資料](https://experienceleague.adobe.com/developer/commerce/storefront/setup/seo/metadata/?lang=zh-Hant){target="_blank"}。
+▢個PDP包含[個中繼資料和結構化資料](https://experienceleague.adobe.com/developer/commerce/storefront/setup/seo/metadata/?lang=zh-Hant){target="_blank"} （例如JSON-LD）。
 ▢產品URL格式一致（例如，`domain/product-name`）。
 ▢個虛名URL會重新導向至標準URL。
 ▢專案包含`robots.txt`，可在適當時允許編制索引、參考Sitemap，以及封鎖您不想編制索引的路徑（例如`/drafts`）。
@@ -203,7 +203,7 @@ ht-degree: 0%
 
 確認啟用伺服器端轉譯。
 
-關鍵頁面的▢預先呈現已開啟。請參閱&#x200B;_AEM店面_&#x200B;檔案中的[Adobe Commerce預先呈現](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-prerender/){target="_blank"}。
+關鍵頁面的▢預先呈現已開啟。請參閱&#x200B;_AEM店面_&#x200B;檔案中的[Adobe Commerce預先呈現](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-prerender/?lang=zh-Hant){target="_blank"}。
 ▢個URL會使用小寫，所以預先呈現不會中斷連結。
 ▢ HTML來源包含中繼資料和內文內容，以確認預先轉譯的運作方式。
 ▢地區設定會顯示適用的正確翻譯頁面。
@@ -213,10 +213,10 @@ ht-degree: 0%
 
 確認效能基準和分析配線。
 
-▢您的店面遵循&#x200B;_Adobe Commerce店面_&#x200B;檔案中的[效能最佳做法](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/performance/){target="_blank"}。
+▢您的店面遵循&#x200B;_Adobe Commerce店面_&#x200B;檔案中的[效能最佳做法](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/performance/?lang=zh-Hant){target="_blank"}。
 已設定▢ （選用） Google Analytics和Google Tag Manager。
 ▢ [Storefront事件](https://github.com/adobe/commerce-events/tree/main/examples/events/snowplow-debugger)實作有效，資料會顯示在Adobe Commerce *管理員*&#x200B;的[!DNL Live Search]和[!DNL Product Recommendations]儀表板中。
-▢ [Commerce設定](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/){target="_blank"}中的`environment`分析引數在開發期間為`"Testing"`，在上線時為`"Production"`。請參閱[Analytics檢測](https://experienceleague.adobe.com/developer/commerce/storefront/setup/analytics/instrumentation/){target="_blank"}。
+▢ [Commerce設定](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=zh-Hant){target="_blank"}中的`environment`分析引數在開發期間為`"Testing"`，在上線時為`"Production"`。請參閱[Analytics檢測](https://experienceleague.adobe.com/developer/commerce/storefront/setup/analytics/instrumentation/){target="_blank"}。
 根據此主題的指引，▢ Lighthouse分數符合您的目標（例如，關鍵頁面上的`100`）。
 
 ### 安全性與存取權
@@ -224,8 +224,8 @@ ht-degree: 0%
 確認許可權和密碼。
 
 ▢已為DA內容和EDS網站設定適當的許可權。請參閱[DA.live許可權](https://da.live/docs/administration/permissions)和[製作驗證設定](https://www.aem.live/docs/authentication-setup-authoring)。
-▢已布建產品視覺效果整合。請參閱[AEM Cloud Service存取總覽](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview#)。
-▢電子郵件範本中的密碼重設連結符合您的Edge Delivery Services設定。請參閱店面常見問題集：[如果我的電子郵件範本連結在移轉至Edge Delivery Services或Helix後中斷，怎麼辦？](https://experienceleague.adobe.com/developer/commerce/storefront/troubleshooting/faq/#what-should-i-do-if-my-email-template-links-are-broken-after-migrating-to-edge-delivery-services-or-helix){target="_blank"}。
+▢已布建產品視覺效果整合。請參閱[AEM Cloud Service存取總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/accessing/overview#)。
+▢電子郵件範本中的密碼重設連結符合您的Edge Delivery Services設定。請參閱店面常見問題集：[如果我的電子郵件範本連結在移轉至Edge Delivery Services或Helix後中斷，怎麼辦？](https://experienceleague.adobe.com/developer/commerce/storefront/troubleshooting/faq/?lang=zh-Hant#what-should-i-do-if-my-email-template-links-are-broken-after-migrating-to-edge-delivery-services-or-helix){target="_blank"}。
 ▢整合和付款提供者的生產金鑰已準備就緒。
 ▢網域已加入允許清單，後端Webhook可正常運作。
 
@@ -235,7 +235,7 @@ ht-degree: 0%
 
 ▢ CDN設定會針對Sidekick擴充功能和指令碼（例如Sitemap產生和影像匯入工具）使用生產GraphQL端點(`yourproject.com/graphql`)。
 ▢當您使用Adobe Commerce Fastly時，可使用CDN清除權杖，且[網站設定](https://tools.aem.live/tools/cdn-setup/index.html)包含`authToken`和`serviceId`。
-▢ [CDN設定](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/content-delivery-network/){target="_blank"}驗證快取和失效。
+▢ [CDN設定](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/content-delivery-network/?lang=zh-Hant){target="_blank"}驗證快取和失效。
 ▢對於[多存放區設定](https://experienceleague.adobe.com/developer/commerce/storefront/setup/seo/indexing/#multi-store-setups){target="_blank"}，目錄服務和[!DNL Live Search]要求包含存放區特定的快取匯出工具（例如，查詢引數或CDN規則）。
 ▢個推播失效工作端對端進行（發佈變更，然後在生產網域上驗證）。
 在切換前，▢個DNS TTL已經夠低。

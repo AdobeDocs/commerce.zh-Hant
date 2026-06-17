@@ -35,4 +35,4 @@ ht-degree: 2%
    - [管理SaaS資料匯出擴充功能](manage-extension.md)
    - [使用Commerce CLI同步摘要](data-export-cli-commands.md)
    - [摘要表格結構描述](reference/feed-table-reference.md)
-- [返回Commerce服務首頁](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [返回Commerce服務首頁](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=zh-Hant)

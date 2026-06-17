@@ -2,7 +2,7 @@
 title: 目錄同步管道
 description: 瞭解 [!DNL Adobe Commerce Optimizer Connector] 同步管道的運作方式，包括摘要轉換、cron排程、範圍控制和錯誤處理。
 feature: Integration, Configuration
-badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
+badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
 autotag-review: '2026-06-09T16:21:52.214Z'
 TQID: 'https://experienceleague.adobe.com/EXUQzAd0I6Hnq4twzhaBZZnv0jLjeGBuTx-QgQz-5MA'
 product_v2:
@@ -33,7 +33,7 @@ ht-degree: 1%
 
 # 聯結器同步管道
 
-**[!DNL Adobe Commerce Optimizer Connector]**&#x200B;以[[!DNL SaaS Data Export]](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/overview)建置，將[!DNL SaaS Data Export]索引子收集的資料對應至[!DNL Adobe Commerce Optimizer] [!DNL Catalog Data Ingestion API]所需的格式，並處理驗證、批次提交及範圍型同步控制。 以下各節將說明此同步的運作方式。
+**[!DNL Adobe Commerce Optimizer Connector]**&#x200B;以[[!DNL SaaS Data Export]](https://experienceleague.adobe.com/zh-hant/docs/commerce/saas-data-export/overview)建置，將[!DNL SaaS Data Export]索引子收集的資料對應至[!DNL Adobe Commerce Optimizer] [!DNL Catalog Data Ingestion API]所需的格式，並處理驗證、批次提交及範圍型同步控制。 以下各節將說明此同步的運作方式。
 
 相關內容：
 
@@ -70,7 +70,7 @@ ht-degree: 1%
 
 #### 需求
 
-- [Commerce cron必須執行](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues){target="_blank"}。
+- [Commerce cron必須執行](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues){target="_blank"}。
 - 摘要索引子必須使用&#x200B;**[!UICONTROL Update by Schedule]**&#x200B;模式。 請參閱[部分同步](../data-export/sync-overview.md#partial-sync){target="_blank"}。
 
 ## 範圍型同步控制
@@ -93,7 +93,7 @@ ht-degree: 1%
 | 暫時性失敗 | 每5分鐘重試一次 |
 | 完整同步或大型目錄 | 分鐘到小時 |
 
-從Commerce管理員的[[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)頁面監視每個摘要的狀態。 請參閱[確認資料同步正在運作](./data-sync-manage.md#verify-that-the-data-sync-is-working)。
+從Commerce管理員的[[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)頁面監視每個摘要的狀態。 請參閱[確認資料同步正在運作](./data-sync-manage.md#verify-that-the-data-sync-is-working)。
 
 ## 摘要提交和錯誤處理
 
