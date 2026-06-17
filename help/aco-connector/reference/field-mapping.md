@@ -3,28 +3,17 @@ title: ' [!DNL Adobe Commerce Optimizer Connector] 摘要的欄位對應'
 description: 瞭解所有摘要的 [!DNL Adobe Commerce Optimizer Connector] 欄位從 [!DNL Adobe Commerce] 目錄資料對應到 [!DNL Adobe Commerce Optimizer] 擷取API格式。
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
+badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
 autotag-review: '2026-06-09T15:49:03.934Z'
 TQID: 'https://experienceleague.adobe.com/SOWOnguudhqzX-r66nGUqc-WKet5qq6GRV11ADx0Me4'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
-source-git-commit: 1f901b4a72c10dc4e710742b98c03e88cbc8739f
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e7dae43f-215c-4cdf-90d3-c5a461a6e669id: c32adafa-ed01-4b31-997e-2413013911b0
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: e0eb8757-182f-49f3-94a4-1587d16f5094id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: 465
+source-wordcount: 665
 ht-degree: 0%
 
 ---
@@ -35,6 +24,8 @@ ht-degree: 0%
 此頁面記錄了[!DNL Adobe Commerce Optimizer Connector]如何將[!DNL Adobe Commerce]目錄欄位轉換為[!DNL Commerce Optimizer] [!DNL Catalog Data Ingestion API]所需的格式。 如需支援的摘要及其API端點的清單，請參閱[聯結器參考](connector-reference.md#supported-feeds)。
 
 ## 產品
+
+`products`摘要傳送資料至[產品端點](https://developer.adobe.com/commerce/services/reference/rest/#tag/Products){target="_blank"}。
 
 | [!DNL Adobe Commerce]欄位 | [!DNL Commerce Optimizer] API欄位 | 附註 |
 | ----------------------------------------------- | -------------- | ------- |
@@ -62,6 +53,9 @@ ht-degree: 0%
 
 ## 產品屬性中繼資料
 
+`productAttributes`摘要傳送資料至[中繼資料端點](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata){target="_blank"}。
+
+
 | [!DNL Adobe Commerce]欄位 | [!DNL Commerce Optimizer] API欄位 | 附註 |
 | --------------- | -------------- | ------- |
 | `attributeCode` | `code` | |
@@ -78,7 +72,9 @@ ht-degree: 0%
 | `searchWeight` | `searchWeight` | |
 | `searchTypes` | `searchTypes` | |
 
-**資料型別轉換：**
+### 資料型別轉換
+
+聯結器從對應表格中的Commerce `dataType`和`frontendInput`欄位衍生API `dataType`。 下表顯示聯結器套用的轉換規則。
 
 | [!DNL Adobe Commerce] `dataType` | [!DNL Adobe Commerce] `frontendInput` | [!DNL Commerce Optimizer] API `dataType` |
 | -------------------- | -------------------------- | ------------------- |
@@ -90,7 +86,13 @@ ht-degree: 0%
 | `OBJECT` | - | `OBJECT` |
 | 任何其他 | - | `TEXT` |
 
+>[!NOTE]
+>
+>當屬性的`dataType`設定為`OBJECT`時，[products API](https://developer.adobe.com/commerce/services/reference/graphql/#products){target="_blank"}會將屬性值視為結構化物件，而非純字串。 在查詢時，API會嘗試將儲存的值剖析為JSON。 如果剖析成功，結果會在回應中傳回為巢狀物件。 **當您以動態方式提供自訂屬性時，此行為特別有用**，例如，用來承載無法以純量值表示的結構化或多欄位資料。 如需指示，請參閱[動態新增產品屬性](../../data-export/add-attribute-dynamically.md)。
+
 ## 價格簿
+
+`priceBooks`摘要傳送資料至[價格簿端點](https://developer.adobe.com/commerce/services/reference/rest/#tag/Price-Books){target="_blank"}。
 
 與其他聯結器摘要不同，[!DNL Adobe Commerce]中的[!DNL SaaS Data Export]索引器不會收集`priceBooks`摘要。 聯結器會從Admin的網站和客戶群組設定產生此摘要。
 
@@ -112,6 +114,8 @@ ht-degree: 0%
 
 ## 價格
 
+`prices`摘要傳送資料至[價格端點](https://developer.adobe.com/commerce/services/reference/rest/#tag/Prices){target="_blank"}。
+
 | [!DNL Adobe Commerce]欄位 | [!DNL Commerce Optimizer] API欄位 | 附註 |
 | --------------- | -------------- | ------------------------------------------------------------------------------- |
 | `sku` | `sku` | |
@@ -121,6 +125,8 @@ ht-degree: 0%
 | `tierPrices[]` | `tierPrices[]` | |
 
 ## 類別
+
+`categories`摘要傳送資料至[類別端點](https://developer.adobe.com/commerce/services/reference/rest/#tag/Categories){target="_blank"}。
 
 含有空白`urlPath` （邏輯根類別）的專案會被略過，且永遠不會提交。
 

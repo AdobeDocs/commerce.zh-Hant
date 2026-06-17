@@ -1,22 +1,17 @@
 ---
 title: 預估資料量和傳輸時間
 description: 瞭解如何估算 [!DNL data export] 工具所需的資料量和傳輸時間，以便在Adobe Commerce和連線的服務之間同步摘要資料。
+autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 787d05d6-fc2f-4f23-8ea7-ef54330e1f37
 TQID: https://experienceleague.adobe.com/nhVfGHgrsvqIjUcWfsVDcriEFwUhRQa9D-4xAU-cAnU
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088bid: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: 559
+source-wordcount: 585
 ht-degree: 0%
 
 ---
@@ -24,6 +19,10 @@ ht-degree: 0%
 # 預估資料同步處理的資料量和傳輸時間
 
 Adobe建議您在開始任何資料摘要同步處理前，先預估資料量和同步處理時間，以確保順暢的排程並避免網站作業中斷。 在計畫初始同步或大規模目錄更新（例如大量價格變更）時，此預估很重要。
+
+>[!NOTE]
+>
+>對於[!DNL Adobe Commerce Optimizer Connector]部署，請檢閱[聯結器模組和摘要端點](../aco-connector/reference/connector-reference.md#supported-feeds)中聯結器特定的支援摘要和批次限制。
 
 依預設，資料匯出工具會以單一執行緒模式，以預設批次大小處理資料。 使用預設設定時，摘要提交程式不會平行化。 此外，此元件接受每秒要求(RPS)，其轉譯為：
 
@@ -57,3 +56,9 @@ Adobe建議您在開始任何資料摘要同步處理前，先預估資料量和
 | 類別許可權 | 所有類別許可權計數+ 4個遞補記錄(CP)： 10000 | CP = 10000 | 10000/批次大小(100) = 100個請求 | （100個請求*每個請求0.5秒） / 60 = 0.8分鐘（50秒） |
 | 存貨存量狀態 | 產品(P)：10000，庫存指派給(S)的產品：5 （假設每個產品都指派給每個庫存） | P * S = 50000 | 50000/批次大小(100) = 500個請求 | （500個請求*每個請求0.5秒） / 60 = 4.2分鐘 |
 | 銷售訂單 | 所有訂單記錄（包括商業發票、出貨等） (SO)：10000 | SO = 10000 | 10000/批次大小(100) = 100個請求 | （100個請求*每個請求0.5秒） / 60 = 0.8分鐘（50秒） |
+
+>[!MORELIKETHIS]
+>
+> - [改善資料匯出效能](customize-export-processing.md)
+> - [管理同步處理](data-sync-manage.md)
+> - [同步化的運作方式](sync-overview.md)

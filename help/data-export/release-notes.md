@@ -1,24 +1,16 @@
 ---
 title: '[!DNL SaaS Data Export Extension]發行說明'
 description: 適用於Adobe Commerce的 [!DNL Data Export Extension] 的最新發行資訊。
+autotag-review: '2026-06-17T15:08:59.000Z'
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
 TQID: https://experienceleague.adobe.com/l3Z3-ncMTQ3j-4s6xL9X8ZYtlBHqzhBfMLc2jL4Kv6A
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 69f39a6a62e05c86a0e2897d09079543b3d8830e
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088bid: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
 source-wordcount: 2903
 ht-degree: 0%
@@ -72,7 +64,7 @@ _2026年5月19日_
 
 _2026年5月5日_
 
-![修正](../assets/fix.svg) **匯出記錄檔的疑難排解更容易** — 許多與匯出相關的錯誤和警告現在包含一致的記錄檔代碼。這些程式碼可協助您在使用支援或檔案時更快追蹤問題。如需詳細資訊，請參閱記錄程式碼參考。
+![修正](../assets/fix.svg) **匯出記錄檔的疑難排解更容易** — 許多與匯出相關的錯誤和警告現在包含一致的記錄檔代碼。這些程式碼可協助您在使用支援或檔案時更快追蹤問題。如需詳細資訊，請參閱[記錄檔代碼參考](troubleshooting/log-codes-reference.md)。
 <!--MDEE-1276-->
 
 ![修正](../assets/fix.svg) **當屬性選項標籤變更時自動重新同步** — 變更商店檢視的產品屬性選項標籤（包括多重選取屬性）現在會再次將受影響的產品排入佇列以供匯出，這樣Live Search、Product Recommendations、Catalog Service和其他連線的Commerce服務就會在購物者檢視中顯示更新的Facet和篩選標籤。以前，僅限標籤的編輯可能會讓SaaS目錄顯示過時字詞，直到更廣泛的產品變更觸發同步為止。
@@ -107,7 +99,7 @@ _2026年4月13日_
 - 修正刪除期間無法使用匯出服務時，無法從連線的Commerce服務正確移除已刪除產品的問題。 重試和重新同步操作現在可確保已刪除的產品正確地反映在SaaS中。<!--MDEE-1319-->
 - 目錄實體（產品和類別）現在可以匯出至已連線的Commerce服務，即使管理商店檢視缺少屬性值亦然。 這麼做可改善與協力廠商擴充功能的相容性，並減少因遺失預設值導致的匯出錯誤。<!--MDEE-1333-->
 
-![修正](../assets/fix.svg)解決當摘要記錄包含非預期或遺失資料時，在資料摘要同步處理狀態頁面上可能發生的錯誤。 系統現在可順利處理這類案例，提升穩定性並避免當機。 如果您使用Adobe Commerce Optimizer Connector將資料從Adobe Commerce同步到Adobe Commerce Optimizer，請更新至[Adobe Commerce Optimizer Connector 1.0.11](https://experienceleague.adobe.com/zh-hant/docs/commerce/aco-optimizer-connector/release-notes)版或更新版本以修正此問題。<!--MDEE-1327-->
+![修正](../assets/fix.svg)解決當摘要記錄包含非預期或遺失資料時，在資料摘要同步處理狀態頁面上可能發生的錯誤。 系統現在可順利處理這類案例，提升穩定性並避免當機。 如果您使用Adobe Commerce Optimizer Connector將資料從Adobe Commerce同步到Adobe Commerce Optimizer，請更新至[Adobe Commerce Optimizer Connector 1.0.11](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/release-notes)版或更新版本以修正此問題。<!--MDEE-1327-->
 
 ### 103.4.21版
 
@@ -133,7 +125,7 @@ _2026年2月6日_
 
 _2026年2月2日_
 
-![修正](../assets/fix.svg)修正更新期間專案批次可能超過允許限制，導致同步資料至[Commerce服務](https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/home)或[Adobe Commerce Optimizer](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/setup/data-sync)時發生`items_limit_exceeded`個錯誤的問題。<!--MDEE-1264-->
+![修正](../assets/fix.svg)修正更新期間專案批次可能超過允許限制，導致同步資料至[Commerce服務](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)或[Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync)時發生`items_limit_exceeded`個錯誤的問題。<!--MDEE-1264-->
 
 ![修正](../assets/fix.svg)在組合產品選項收集期間新增邏輯以登入失敗的專案，藉此改善產品資料匯出的可靠性。<!--CCSAAS-4458-->
 
@@ -161,7 +153,7 @@ _2025年11月24日_
 
 _2025年10月22日_
 
-![新](../assets/new.svg)已新增資料摘要同步狀態擴充功能的支援，以監視和疑難排解從Adobe Commerce到連線服務（目錄服務、即時搜尋和產品建議）的資料傳輸。 如需有關安裝及使用此擴充功能的詳細資訊，請參閱&#x200B;*Commerce管理指南*&#x200B;中的[資料摘要同步狀態監視](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html?lang=zh-Hant)。<!--MDEE-954-->
+![新](../assets/new.svg)已新增資料摘要同步狀態擴充功能的支援，以監視和疑難排解從Adobe Commerce到連線服務（目錄服務、即時搜尋和產品建議）的資料傳輸。 如需有關安裝及使用此擴充功能的詳細資訊，請參閱&#x200B;*Commerce管理指南*&#x200B;中的[資料摘要同步狀態監視](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html)。<!--MDEE-954-->
 
 ### 103.4.14版
 
@@ -187,7 +179,7 @@ _2025年9月18日_
 
 _2025年8月29日_
 
-僅![新](../assets/new.svg) [!BADGE PaaS]{type=Informative url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"}
+僅![新](../assets/new.svg) [!BADGE PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"}
 新增對其他產品屬性的支援，以在產品摘要中包含Commerce產品設定的稅種、屬性集和存貨資料。 如果客戶想要在產品匯出摘要中包含這些屬性，必須將「額外產品屬性」模組新增至其Adobe Commerce專案。 請參閱[新增稅捐類別、屬性集及存貨屬性](add-tax-attribute-set-inventory-attributes.md)。<!--MDEE-1135-->
 
 ![修正](../assets/fix.svg)解決在完整產品索引期間發生錯誤時，所刪除產品更新的同步處理不正確的問題。 現在，即使索引過程中發生錯誤，所有產品刪除仍會正確同步。<!--MDEE-1144-->
