@@ -1,11 +1,15 @@
 ---
 title: '[!DNL SaaS Data Export Guide]'
 description: 瞭解如何將 [!DNL data export] 擴充功能用於Adobe Commerce SaaS服務，以在Adobe Commerce與連線的Commerce服務之間同步資料。
+autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 8a0067ba-90a4-48a6-8276-208d09abe6fc
 TQID: https://experienceleague.adobe.com/OHE1GBUEd8hHFPwFlO9fJa3Y0wK2xZ0HOYnwUn0-DSk
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
 feature_v2:
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
@@ -15,16 +19,16 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 69f39a6a62e05c86a0e2897d09079543b3d8830e
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: 571
+source-wordcount: 402
 ht-degree: 0%
 
 ---
 
 # [!DNL SaaS Data Export] 指南
 
-[!DNL SaaS data export]會在Adobe Commerce執行個體和連線的Commerce Services之間同步資料。 當您將Live Search、Product Recommendations、目錄服務或[!DNL Adobe Commerce Optimizer Connector]新增至Adobe Commerce安裝時，[!DNL Data export]擴充功能會自動安裝。
+[!DNL SaaS data export]會在Adobe Commerce執行個體和連線的Commerce Services之間同步資料。 當您將Live Search、Product Recommendations、目錄服務或[!DNL Adobe Commerce Optimizer Connector]新增至Adobe Commerce安裝時，[!DNL Data Export]擴充功能會自動安裝。
 
 >[!NOTE]
 >
@@ -37,29 +41,24 @@ SaaS資料匯出會收集並匯出各種型別的資料，稱為&#x200B;_摘要_
 - **銷售訂單摘要**&#x200B;會彙總訂單資料，包括其相關實體，例如商業發票、出貨、銷退折讓單等。
 - **多Source庫存摘要**&#x200B;會彙總有關庫存狀態專案的資料。
 
-SaaS資料匯出會以PHP擴充功能的形式提供。 它支援數種方法來啟動及管理資料同步流程。
+SaaS資料匯出會以PHP擴充功能提供，支援自動和手動同步處理：
 
-- **從Admin或命令列手動同步處理**
+- **自動同步處理** — 當您連線Commerce服務時，在初始完整同步處理之後，cron工作會使用部分同步處理以及自動重試失敗的專案，讓連線的服務保持最新狀態，而不需要管理員使用者或系統整合員採取任何動作。
 
-   - Commerce Admin中的[資料管理儀表板](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)提供同步處理狀態的圖形檢視，顯示產品資料已成功同步至商務服務。 您可以使用儀表板對所有摘要執行完整重新同步（_完整同步_）。 不過，Adobe建議僅在第一次將Adobe Commerce連線至Commerce服務時，才執行完整同步。 請參閱[同步化程式](data-synchronization.md)。
+- **手動同步** — 從Commerce Admin或[Commerce CLI](data-export-cli-commands.md)執行完整的重新同步或重新同步選取的摘要。
 
-     {{aco-data-sync-verification}}
+- **監視** — 從Commerce管理員的[!UICONTROL Data Feed Sync Status]頁面和資料管理儀表板追蹤摘要健康狀態、狀態和傳遞。 請參閱[管理同步處理](data-sync-manage.md)，以取得驗證和重新同步處理步驟。
 
-   - [資料摘要同步狀態](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)頁面會提供資料匯出摘要的健全狀況和效能的即時深入分析，這些摘要會將產品和類別資料從Commerce傳輸到外部服務，例如產品建議、即時搜尋和目錄服務或Adobe Commerce Optimizer。
+如需同步化行為、模式和匯出流程圖，請參閱[同步化的運作方式](sync-overview.md)。
 
-   - [Adobe Commerce命令列工具](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cli/config-cli) (CLI)提供同步特定摘要的命令，並包含自訂摘要處理的其他選項。
+SaaS資料匯出還提供工具，用於規劃和疑難排解同步化程式：
 
-- **與cron工作自動同步**
+- **排程與效能** — 預估同步處理時間，以排程處理並避免網站中斷，以及自訂匯出處理以提升效能。 請參閱[預估資料量和傳輸時間](estimate-data-volume-sync-time.md)和[改善資料匯出效能](customize-export-processing.md)。
 
-   - [部分資料同步](data-synchronization.md#partial-sync) — 當Commerce管理員使用者更新實體時，Cron工作會觸發部分資料同步。 資料匯出程式只會將這些更新傳送至連線的Commerce服務。 部分同步程式以MView機製為基礎，不需要管理員使用者或系統整合者執行任何動作。
+- **追蹤和疑難排解** — 使用資料匯出和saas-export記錄檔來檢閱同步處理狀態和摘要裝載。 檢視[檢閱記錄檔及疑難排解](troubleshooting/logging.md)。
 
-   - [同步處理錯誤的自動重試](data-synchronization.md#retry-failed-items-sync) — 當資料同步處理期間發生錯誤時，Cron工作會觸發同步處理程式的自動重試。
-
-- **匯出排程與效能**
-
-   - 開發人員和系統整合經銷商能估計SaaS資料匯出所需的時間，以便在Adobe Commerce和連線的服務之間同步資料。 此預估可協助排程資料匯出處理，以防止網站中斷。 請參閱[估計資料量和傳輸時間](estimate-data-volume-sync-time.md)。
-
-   - 在需要更快速進行同步的情況下，SaaS資料匯出可提供自訂選項來改善匯出處理效能。 請參閱[改善資料匯出效能](customize-export-processing.md)。
-
-- **追蹤並疑難排解資料匯出活動** — 使用資料匯出和saas-export記錄檔，在同步和索引化程式期間檢閱同步狀態和摘要裝載。 請參閱[記錄及疑難排解](troubleshooting-logging.md)。
-
+>[!MORELIKETHIS]
+>
+> - [延伸與自訂SaaS資料匯出摘要](extensibility-and-customizations.md) — 新增或修改摘要資料。
+> - [疑難排解狀況](troubleshooting/troubleshooting-scenarios.md) — 診斷設定錯誤和意外的同步處理結果。
+> - [發行說明](release-notes.md) — 擴充功能更新和已知問題。

@@ -7,6 +7,8 @@ autotag-review: '2026-06-09T15:48:19.494Z'
 TQID: 'https://experienceleague.adobe.com/UM6Y-xoQpUDzWpaMe1GRPp4XoAtHBLBsHw388kumN8g'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
   - id: c32adafa-ed01-4b31-997e-2413013911b0
@@ -18,9 +20,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 6d4493db5e0714577a8800007cc6d2c552578fa4
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: 289
+source-wordcount: 296
 ht-degree: 1%
 
 ---
@@ -45,7 +47,7 @@ ht-degree: 1%
 
 ## 支援的摘要
 
-聯結器將多個摘要型別提交至[!DNL Commerce Optimizer] [!DNL Catalog Data Ingestion API]。 下表列出每個摘要及其在[!DNL Adobe Commerce]中的端點、批次限制、索引器名稱和摘要表格。
+聯結器將多個摘要型別提交至[!DNL Commerce Optimizer] [[!DNL Catalog Data Ingestion API]](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/){target="_blank"}。 下表列出每個摘要及其在[!DNL Adobe Commerce]中的端點、批次限制、索引器名稱和摘要表格。
 
 | 摘要 | [!DNL Commerce Optimizer] API端點 | 批次限制 | AC索引名稱 | 摘要表格 |
 | ---- | ----------------------------------- | ----------- | ------------- | ---------- |
@@ -58,6 +60,7 @@ ht-degree: 1%
 [!DNL SaaS Data Export]索引子收集的`products`、`productAttributes`、`categories`和`prices`摘要會重複使用資料。 聯結器從網站和客戶群組設定產生`priceBooks`摘要，且不依賴[!DNL SaaS Data Export]索引器。
 
 如需每個摘要的欄位層級對應詳細資訊，請參閱 [!DNL Commerce Optimizer Connector] 摘要[&#128279;](field-mapping.md)的欄位對應。
+若要根據您的目錄大小預估同步處理所需的時間，請參閱[預估資料量和同步處理時間](estimate-data-volume-sync-time.md)。
 
 ## 設定路徑
 

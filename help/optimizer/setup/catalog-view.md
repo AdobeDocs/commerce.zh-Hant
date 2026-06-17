@@ -1,6 +1,7 @@
 ---
 title: 目錄檢視
 description: 瞭解什麼是目錄檢視，以及如何建立檢視，以依業務結構、原則和定價組織您的產品目錄。
+autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 recommendations: noCatalog
 badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
@@ -19,7 +20,7 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
 source-wordcount: 1210
 ht-degree: 0%
@@ -37,7 +38,7 @@ ht-degree: 0%
 - 根據業務結構（品牌、地區、經銷商）**可看見哪些產品**
 - **透過連結的價格手冊顯示哪些價格**
 - **如何使用原則（品牌、模型、類別等屬性）篩選產品**
-- **使用哪些[目錄來源](catalog-source.md)**，根據地區設定等屬性
+- **使用哪些[目錄來源](catalog-sources.md)**，根據地區設定等屬性
 
 將目錄檢視視為不同的「鏡頭」，客戶可透過這些鏡頭檢視您的目錄。 例如：
 
@@ -64,7 +65,7 @@ ht-degree: 0%
 1. 設定目錄檢視詳細資料：
 
    - **名稱** — 輸入目錄檢視的名稱，例如`Celport`&#x200B;。
-   - **目錄來源** — 選取[目錄來源](catalog-source.md)，例如`en-US`。
+   - **目錄來源** — 選取[目錄來源](catalog-sources.md)，例如`en-US`。
    - **目錄圖層** — 檢閱擷取的圖層和優先順序。
    - **原則** — 使用下拉式功能表選取相關原則。 例如，「品牌」、「型號」。 請&#x200B;確定您已[建立原則](policies.md)。
 
@@ -203,7 +204,7 @@ ht-degree: 0%
 
 ## 更多相關資訊
 
-- [目錄來源](catalog-source.md) — 定義搜尋、篩選和排序行為的產品、屬性和類別的權威範圍
+- [目錄來源](catalog-sources.md) — 定義搜尋、篩選和排序行為的產品、屬性和類別的權威範圍
 - [目錄層](catalog-layer.md) — 瞭解如何在不變更原始來源的情況下修改產品資料
 - [原則](policies.md) — 建立原則以篩選目錄檢視中的產品
 - [價格簿](pricebooks.md) — 管理不同客戶區段的定價結構

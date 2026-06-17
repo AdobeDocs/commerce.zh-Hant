@@ -7,6 +7,8 @@ autotag-review: '2026-06-09T19:00:00.000Z'
 TQID: 'https://experienceleague.adobe.com/-C-XP5YYxwyGrkvVR6CDd-FpDybqnlaKMmFPKOKUbFA'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
@@ -24,9 +26,9 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 23e4f419628a7838357752ecef0c242f1dcdd4c4
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: 990
+source-wordcount: 1075
 ht-degree: 0%
 
 ---
@@ -49,7 +51,7 @@ ht-degree: 0%
 | **使用[!DNL Adobe Commerce Optimizer]**&#x200B;更快產生值 | 在您現有的[!DNL Adobe Commerce]部署上開啟AI 搜尋、建議和Headless店面。 |
 | **與Commerce領域對齊** | 自動將網站、商店檢視和客戶群組對應到[!DNL Adobe Commerce Optimizer]個目錄建構（目錄來源和價格簿）。 |
 | **作業可見度** | 從專用的[!UICONTROL Data Feed Sync Status]檢視監視摘要健康狀態、上次同步時間和每個SKU的狀態。 |
-| **通往SaaS的未來可用路徑** | 提供從PaaS到[!DNL Adobe Commerce as a Cloud Service] + [!DNL Adobe Commerce Optimizer]的低風險現代化路徑，無需重新平台。 |
+| **通往SaaS的未來可用路徑** | 提供從雲端或內部部署Commerce到[!DNL Adobe Commerce as a Cloud Service] + [!DNL Adobe Commerce Optimizer]的分階段移轉路徑，無需重新平台。 |
 
 ## 聯結器架構 {#connector-architecture}
 
@@ -63,6 +65,8 @@ ht-degree: 0%
 - 聯結器會匯出目錄、價格和類別摘要
 - [!DNL Adobe Commerce Optimizer]內嵌摘要資料並將摘要資料標準化至目錄來源、價格簿和目錄檢視
 - 店面（[!DNL Edge Delivery Services]上的Commerce店面或自訂Headless組建）呼叫[!DNL Adobe Commerce Optimizer]個GraphQL API以進行探索和推薦，並呼叫[!DNL Adobe Commerce]或其他連線的協力廠商平台以進行購物車和結帳作業
+
+聯結器以[[!DNL SaaS Data Export]](/help/data-export/overview.md)建置，將收集的摘要對應至[!DNL Catalog Data Ingestion API]格式，並處理驗證和提交。 請參閱[聯結器同步管道](/help/aco-connector/connector-sync-pipeline.md)，瞭解同步行為、範圍控制及錯誤處理。
 
 ## 聯結器如何與[!DNL Adobe Commerce]搭配運作 {#how-the-connector-works-with-adobe-commerce}
 
@@ -102,6 +106,8 @@ ht-degree: 0%
 - 當產品或價格變更時，針對持續更新進行&#x200B;**差異同步**
 - 針對目標摘要重新同步命令&#x200B;**&#x200B;**
 
+如需自動同步行為、cron排程和錯誤處理，請參閱[聯結器同步管道](/help/aco-connector/connector-sync-pipeline.md)。 在完整目錄同步處理或大型更新之前，請使用[預估資料量和同步處理時間](/help/aco-connector/reference/estimate-data-volume-sync-time.md)來計畫時間並避免網站中斷。
+
 下列摘要可用於[!DNL Adobe Commerce Optimizer Connector]：
 
 - `products` — 產品資料
@@ -112,7 +118,8 @@ ht-degree: 0%
 
 如需其他詳細資訊，請參閱下列主題：
 
-- 如需[!DNL Adobe Commerce] CLI重新同步作業，請參閱[CLI重新同步命令](/help/data-export/data-export-cli-commands.md#sync-using-cli-commands){target="_blank"}
+- 驗證目錄資料同步並手動重新同步聯結器摘要： [管理同步處理](/help/aco-connector/data-sync-manage.md)
+- 如需[!DNL Adobe Commerce] CLI重新同步作業，請參閱[使用Commerce CLI的同步摘要](/help/data-export/data-export-cli-commands.md)
 - [[!DNL Adobe Commerce Optimizer Connector]模組和摘要端點](/help/aco-connector/reference/connector-reference.md)
 - [聯結器摘要的欄位對應](/help/aco-connector/reference/field-mapping.md)
 
@@ -122,7 +129,7 @@ ht-degree: 0%
 
 - **目錄檢視和原則** — 從[!UICONTROL Store setup]功能表定義區域、品牌或客戶特定的子集和存取規則
 - **產品探索和建議** — 在[!UICONTROL Merchandising]功能表中設定搜尋、Facet、銷售規則、同義字和建議單位。 搜尋和建議行為是在[!DNL Adobe Commerce Optimizer]中管理的；[!DNL Adobe Commerce]管理員中的[!DNL Live Search]和[!DNL Product Recommendations]設定不再套用至這些流程
-- **店面連線** — 在[!DNL Edge Delivery Services]上指向Commerce店面，或在正確的[!DNL Adobe Commerce Optimizer]租使用者、目錄檢視和銷售API端點上的協力廠商Headless組建。 如需第三方整合的範例，請參閱 [!DNL Adobe Commerce Optimizer][&#128279;](/help/optimizer/developer/salesforce-connector.md)的Salesforce Commerce Connector
+- **店面連線** — 在[!DNL Edge Delivery Services]上指向Commerce店面，或在正確的[!DNL Adobe Commerce Optimizer]租使用者、目錄檢視和銷售API端點上的協力廠商Headless組建。 如需自訂Headless整合，請參閱[Headless店面整合](/help/aco-connector/headless-storefront.md)。 如需第三方整合的範例，請參閱 [!DNL Adobe Commerce Optimizer][&#128279;](/help/optimizer/developer/salesforce-connector.md)的Salesforce Commerce Connector
 - **結帳** — 將購物車、結帳、訂單管理及客戶帳戶保留在[!DNL Adobe Commerce]或連線的協力廠商平台上。 必要時使用[!DNL App Builder]和[!DNL API Mesh]進行購物車移交
 
 如需逐步設定指南，請參閱[開始使用](/help/aco-connector/get-started.md)和[[!DNL Adobe Commerce Optimizer] 銷售工具](/help/optimizer/overview.md#quick-tour)。
@@ -133,7 +140,7 @@ ht-degree: 0%
 
 **常見使用案例：**
 
-- **僅更新店面**
+- **店面移轉至Edge Delivery**
 保留您現有的[!DNL Adobe Commerce]後端，將PLP/Search/PDP移至[!DNL Edge Delivery Services]個由[!DNL Adobe Commerce Optimizer]提供支援的店面
 
 - **正在縮放目錄和搜尋效能**
@@ -144,7 +151,7 @@ ht-degree: 0%
 
 ## 責任與實作必要條件 {#responsibilities-prerequisites}
 
-[!DNL Adobe Commerce]是產品、定價和客戶群組的真實來源。 在[!DNL Adobe Commerce]中進行變更；聯結器會將變更同步至[!DNL Adobe Commerce Optimizer]。
+[!DNL Adobe Commerce]是產品、定價和客戶群組的真實來源。 在[!DNL Adobe Commerce]中進行變更，聯結器會將其同步至[!DNL Adobe Commerce Optimizer]。
 
 **[!DNL Adobe Commerce Optimizer]負責：**
 
@@ -162,11 +169,11 @@ ht-degree: 0%
 - 驗證[!DNL Adobe Commerce]是否符合最低版本和[!DNL Adobe Commerce Optimizer Connector]需求。 如需詳細資訊，請參閱[開始使用](/help/aco-connector/get-started.md#requirements-to-use-the-integration)。
 - 確定您擁有IMS組織存取權、[!DNL Adobe Commerce Optimizer]執行個體，以及必要的認證和區域詳細資料。
 
-## 有關此主題的更多說明 {#more-help-on-this-topic}
-
-- 設定整合併啟用關鍵工作流程： [開始使用 [!DNL Adobe Commerce Optimizer Connector]](/help/aco-connector/get-started.md)
-- 瞭解[!DNL Adobe Commerce Optimizer]概念和架構： [什麼是 [!DNL Adobe Commerce Optimizer]？](/help/optimizer/overview.md)
-- 瞭解同步機制、初始化和錯誤處理： [聯結器同步管道](/help/aco-connector/connector-sync-pipeline.md)
-- 所有摘要的欄位層級資料對應： [聯結器摘要的欄位對應](/help/aco-connector/reference/field-mapping.md)
-- 使用GraphQL和套裝編碼整合Headless店面： [Headless店面整合](/help/aco-connector/headless-storefront.md)
-- 診斷同步和設定問題： [疑難排解](/help/aco-connector/troubleshooting.md)
+>[!MORELIKETHIS]
+>
+> - [開始使用 [!DNL Adobe Commerce Optimizer Connector]](/help/aco-connector/get-started.md) — 設定整合併啟用關鍵工作流程。
+> - [聯結器同步管道](/help/aco-connector/connector-sync-pipeline.md) — 瞭解同步機制、初始化和錯誤處理。
+> - [管理同步處理](/help/aco-connector/data-sync-manage.md) — 驗證目錄資料同步處理並手動重新同步處理摘要。
+> - [聯結器摘要的欄位對應](/help/aco-connector/reference/field-mapping.md) — 檢閱所有摘要的欄位層級資料對應。
+> - [疑難排解案例](/help/aco-connector/troubleshooting/troubleshooting-scenarios.md) — 解決設定錯誤或意外的同步處理結果。
+> - [發行說明](/help/aco-connector/release-notes.md) — 檢閱聯結器更新和已知問題。

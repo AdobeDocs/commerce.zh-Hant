@@ -1,7 +1,7 @@
 ---
-source-git-commit: 61e34c6fb4a004789bffa43c5b9356ad4edc685e
+source-git-commit: 2cae607e49298fa07c35e59bfc1e8388fe3b58cf
 workflow-type: tm+mt
-source-wordcount: '1182'
+source-wordcount: '1184'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/8ec59cfc8c9d4d1e804adefe7f88806843e3caa3">認可</a></td>
     </tr>
     <tr>
-      <td><p>已針對SaaS資料匯出新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/saas-data-export/feed-lock-mechanism">摘要鎖定機制</a>，以說明摘要鎖定如何防止並行同步衝突，以及如何解譯Commerce資料匯出記錄檔(<code>commerce-data-export.log</code>)中包含的正常略過訊息。</p>
+      <td><p>已針對SaaS資料匯出新增<a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/data-synchronization/feed-lock-mechanism">摘要鎖定機制</a>，以說明摘要鎖定如何防止並行同步衝突，以及如何解譯Commerce資料匯出記錄檔(<code>commerce-data-export.log</code>)中包含的正常略過訊息。</p>
 </td>
       <td>
         新主題

@@ -1,11 +1,15 @@
 ---
 title: 檢閱記錄檔並進行疑難排解
 description: 瞭解如何使用資料匯出和saas-export記錄檔來疑難排解 [!DNL data export] 錯誤。
+autotag-review: '2026-06-17T15:08:59.000Z'
 feature: Services
 exl-id: d022756f-6e75-4c2a-9601-31958698dc43
 TQID: https://experienceleague.adobe.com/PkV4L0RpfA-jeja0Fd6JCDriE6wwjd25Qou0JhG5o8E
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
@@ -14,9 +18,9 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: 1155
+source-wordcount: 1007
 ht-degree: 0%
 
 ---
@@ -46,7 +50,7 @@ ht-degree: 0%
 
 每個記錄檔記錄都有以下結構。
 
-```
+```text
 [<log record datetime>] report.<log level>:
 {
    "feed": "<feed name>",
@@ -99,7 +103,7 @@ ht-degree: 0%
 
 +++ **範例：價格摘要的完整重新同步記錄檔**
 
-```
+```text
 Price feed full resync:
 
 [2024-03-05T21:00:51.754687+00:00] report.INFO: {"feed":"prices","operation":"full sync","status":"Initialize","elapsed":"383 ms","pid":"14469","caller":"bin\/magento saas:resync --feed=prices"} [] []
@@ -148,22 +152,7 @@ Price feed full resync:
 
 ### 解決目錄同步問題 {#resolvesync}
 
-觸發資料重新同步時，最多可能需要一小時的時間才會更新資料，並反映在UI元件（例如即時搜尋和建議單位）中。 如果您仍然看到目錄與Commerce店面上的資料不一致，或目錄同步失敗，請參閱以下內容：
-
-#### 資料差異
-
-1. 在搜尋結果中顯示相關產品的詳細檢視。
-1. 複製JSON輸出，並確認內容符合您在[!DNL Commerce]目錄中的內容。
-1. 如果內容不符，請對目錄中的產品進行微幅變更，例如新增空格或句點。
-1. 等候重新同步或從CLI或管理員儀表板觸發手動重新同步。
-
-#### 同步處理未執行
-
-如果同步未依排程執行，或未同步任何專案，請參閱此[知識庫](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce)文章。
-
-#### 同步失敗
-
-如果目錄同步處理的狀態為&#x200B;**失敗**，請提交[支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)。
+有關目錄同步問題（包括資料差異、同步未執行以及同步狀態失敗）的問題疑難排解，請參閱[疑難排解案例](troubleshooting-scenarios.md)。
 
 ## 延伸記錄
 
@@ -173,7 +162,7 @@ Price feed full resync:
 
 當您重新同步摘要時，新增`EXPORTER_EXTENDED_LOG=1`環境變數，將摘要裝載包含在SaaS匯出記錄中。
 
-```shell script
+```shell
 EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed=products
 ```
 
@@ -185,7 +174,7 @@ EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed=products
 
 不建議在生產環境中保留索引表中的裝載資料，但在開發人員環境中可能會很有用。 當您重新同步摘要時，新增`PERSIST_EXPORTED_FEED=1`環境變數，以在索引中包含摘要裝載。
 
-```shell script
+```shell
 PERSIST_EXPORTED_FEED=1 bin/magento saas:resync --feed=products
 ```
 
@@ -195,12 +184,18 @@ PERSIST_EXPORTED_FEED=1 bin/magento saas:resync --feed=products
 
 執行reindex命令時新增`EXPORTER_PROFILER=1`環境變數，以執行Profiler。
 
-```
+```shell
 EXPORTER_PROFILER=1 bin/magento indexer:reindex catalog_data_exporter_products
 ```
 
 效能分析工具資料會以下列格式儲存在資料匯出記錄檔(`var/log/commerce-data-export.log`)中：
 
-```
+```text
 <Provider class name>, <# of processed entities>, <execution time im ms>, <memory consumption in Mb>
 ```
+
+>[!MORELIKETHIS]
+>
+> - [疑難排解案例](troubleshooting-scenarios.md) — 解決目錄同步問題和資料差異。
+> - [記錄代碼參考](log-codes-reference.md) — 查詢匯出記錄代碼。
+> - [使用Commerce CLI同步摘要](../data-export-cli-commands.md) — 執行目標摘要重新同步。

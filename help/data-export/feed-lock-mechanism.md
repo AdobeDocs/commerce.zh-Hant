@@ -1,11 +1,26 @@
 ---
 title: SaaS資料匯出的饋送鎖定機制
 description: 瞭解 [!DNL SaaS Data Export] 如何使用摘要鎖定，以防止衝突的同步作業，並在同時更新摘要期間保護資料完整性。
+autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 feature: Services
-source-git-commit: cfa1002653bf66afd3f6b8484b33076adcd1b7d4
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: 355
 ht-degree: 0%
 
 ---
@@ -20,7 +35,7 @@ ht-degree: 0%
 每個摘要同步作業（不論是由cron作業或手動`saas:resync` CLI呼叫所觸發）都遵循相同的順序：
 
 1. 該程式會嘗試取得摘要鎖定。 鎖定嘗試不會受阻，如果鎖定已被其他處理序保留，則會立即傳回。
-1. 如果鎖定為&#x200B;**無法使用**，則會略過[作業並記錄]。
+1. 如果鎖定為&#x200B;**無法使用**，則會略過作業並加以記錄。
 
    不會遺失任何資料。 下次cron執行會在目前程式完成後挑選擱置的變更。
 1. 如果鎖定為&#x200B;**已取得**，處理序會記錄其名稱和PID以供診斷之用，然後執行同步。
@@ -40,10 +55,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如需`commerce-data-export.log`中記錄之記錄檔格式與作業型別的一般資訊，請參閱[檢閱記錄檔與疑難排解](troubleshooting-logging.md)。
+>如需`commerce-data-export.log`中記錄之記錄檔格式與作業型別的一般資訊，請參閱[檢閱記錄檔與疑難排解](troubleshooting/logging.md)。
 
-## 有關此主題的更多說明
-
-- [與SaaS資料匯出同步資料](data-synchronization.md)
-- [使用Commerce CLI同步摘要](data-export-cli-commands.md)
-- [設定鎖定提供者](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/tutorials/lock-provider){target="_blank"}
+>[!MORELIKETHIS]
+>
+> - [使用SaaS資料匯出同步處理資料](sync-overview.md)
+> - [使用Commerce CLI同步摘要](data-export-cli-commands.md)
+> - [聯結器同步管道](../aco-connector/connector-sync-pipeline.md)
+> - [設定鎖定提供者](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/tutorials/lock-provider){target="_blank"}

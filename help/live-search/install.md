@@ -1,6 +1,7 @@
 ---
 title: 開始使用 [!DNL Live Search]
 description: 從Adobe Commerce瞭解 [!DNL Live Search] 的系統需求和安裝步驟。
+autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 45b985f1-9afb-4a07-93e8-f2fe231c5400
 badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
@@ -24,9 +25,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: 2934
+source-wordcount: 2883
 ht-degree: 0%
 
 ---
@@ -67,7 +68,7 @@ Adobe Commerce [!DNL Live Search]與[[!DNL Catalog Service]](../catalog-service/
 >
 > **HIPAA整備程度**
 >
->如果您使用Adobe Commerce搭配HIPAA就緒擴充功能和Healthcare附加元件，請勿透過LiveSearch處理任何受保護的健康資訊(PHI)> 即時搜尋不是HIPAA就緒服務。
+>如果您使用Adobe Commerce搭配HIPAA-Ready擴充功能和Healthcare附加元件，請勿透過LiveSearch處理任何受保護的健康資訊(PHI)> 即時搜尋不是HIPAA-Ready服務。
 >
 >如需詳細資訊，請參閱Adobe Commerce[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/compliance/hipaa-ready-service/overview)上的HIPAA整備，以及[Operations](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/compliance/hipaa-ready-service/operations)指南，其中列出非HIPAA整備Commerce服務中的即時搜尋。
 
@@ -238,7 +239,7 @@ bin/magento saas:resync --feed categoryPermissions
 
 ![資料管理儀表板](assets/data-management-dashboard.png)
 
-您也可以使用[Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting)和資料匯出擴充功能記錄檔，執行同步處理命令並疑難排解同步處理程式。
+您也可以使用[Commerce CLI](../data-export/data-export-cli-commands.md)和[資料匯出擴充功能記錄檔](../data-export/troubleshooting/logging.md)，執行同步處理命令並疑難排解同步處理程式。
 
 #### 未來的產品更新
 
@@ -324,7 +325,7 @@ bin/magento saas:resync --feed categoryPermissions
 您可以視需要定義自訂CSS規則，以設定彈出視窗和PLP Widget的樣式。 請參閱[樣式彈出視窗元素](storefront-popover.md#styling-popover-example)和[產品清單頁面Widget](plp-styling.md#styling-example)。
 
 如果您想要擴充Widget的功能，每個元件的原始碼都可在公用存放庫中取得。
-在這種情況下，您可以根據自己的需求自訂JavaScript，然後在CDN上託管自訂程式碼。 此自訂指令碼會與[!DNL Live Search]服務通訊，並傳回正常的結果，讓您控制Widget的功能。
+在這種情況下，您可以根據自己的需求自訂JavaScript，然後在CDN上託管自訂程式碼。此自訂指令碼會與[!DNL Live Search]服務通訊，並傳回正常的結果，讓您控制Widget的功能。
 
 - [PLP Widget存放庫](https://github.com/adobe/storefront-product-listing-page)
 - [搜尋列存放庫](https://github.com/adobe/storefront-search-as-you-type)

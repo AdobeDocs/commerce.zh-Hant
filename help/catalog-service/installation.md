@@ -1,6 +1,7 @@
 ---
 title: 安裝
 description: 瞭解如何安裝 [!DNL Catalog Service]
+autotag-review: '2026-06-17T15:08:59.000Z'
 exl-id: 3f8492c3-f76d-49b7-a201-35deace36a1d
 badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
 TQID: https://experienceleague.adobe.com/qVI-zFFljrUZzjSMmBxs5jRCsKbxfivQV1xzzpBS2uw
@@ -13,7 +14,7 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
 source-wordcount: 972
 ht-degree: 0%
@@ -57,7 +58,7 @@ ht-degree: 0%
 
 所有Commerce測試執行個體都使用沙箱端點。
 
-在沙箱端點上執行所有載入測試。 開始載入測試之前，請先提交[支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=zh-Hant#submit-ticket)，讓服務團隊可以預期額外的伺服器流量。
+在沙箱端點上執行所有載入測試。 開始載入測試之前，請先提交[支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)，讓服務團隊可以預期額外的伺服器流量。
 
 ## 安裝和設定
 
@@ -179,4 +180,4 @@ ht-degree: 0%
 
 ### 監控資料同步並疑難排解
 
-透過Commerce Admin，您可以使用[資料管理控制面板](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)來監視同步化程式。 使用[Commerce CLI](../data-export/data-export-cli-commands.md#troubleshooting)和記錄檔來管理和疑難排解程式。
+透過Commerce Admin，您可以使用[資料管理控制面板](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)來監視同步化程式。 使用[Commerce CLI](../data-export/data-export-cli-commands.md)和[記錄檔](../data-export/troubleshooting/logging.md)管理及疑難排解程式。

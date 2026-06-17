@@ -1,21 +1,35 @@
 ---
 title: '[！Data Export]記錄程式碼參考'
 description: 資料匯出記錄檔代碼、訊息和嚴重性等級的參考清單，用於疑難排解同步問題並決定何時需要部分或完全重新同步。
+autotag-review: '2026-06-17T15:08:59.000Z'
 feature: Services
 exl-id: c1341863-1ec4-4d67-8ff2-821ef0a61f33
-source-git-commit: c3c0574667e49a2449858f992983df404b90fc07
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: ea4d7562942cdf1f827f9926dd3fb7278d084f37
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: 568
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Data Export]記錄程式碼參考
 
 此頁面提供「資料匯出」日誌訊息的參考資料，以協助疑難排解同步問題，並判斷何時需要部分或完整重新同步。 它只包含[!DNL Data Export]擴充功能發出的錯誤、警告和嚴重記錄碼。
 
-請參閱[檢閱記錄檔及疑難排解](troubleshooting-logging.md)，以取得有關記錄檔及疑難排解指導的資訊。
+請參閱[檢閱記錄檔及疑難排解](logging.md)，以取得有關記錄檔及疑難排解指導的資訊。
 
 ## 記錄程式碼詳細資料
 
@@ -35,7 +49,7 @@ Only columns retained here: Log Code, Message, Level. File paths are intentional
 
 與從來源實體（通常在資料提供者內）收集資料時發生的錯誤或警告相關的記錄代碼。
 - 受影響的實體可能會使用部分資料進行處理，或如果發生錯誤則完全跳過。 如需詳細資訊，請參閱記錄訊息。
-- 警告可能表示協力廠商模組與Data Export擴充功能的整合不正確；不過，同步作業通常會繼續。
+- 警告可能表示協力廠商模組與Data Export擴充功能的整合不正確。 不過，同步作業通常會繼續。
 
 | 記錄代碼 | 平準 | 訊息 | 檔案路徑 |
 |----------|---------|------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
@@ -138,3 +152,9 @@ Only columns retained here: Log Code, Message, Level. File paths are intentional
 | CDE04-18 | 警告 | `CDE04-18 Fixture generator: failed to filter indexer changelog tables from fixture SQL: {message}` | `commerce-data-export/CatalogDataExporter/Plugin/FilterChangeLogTable.php:43` |
 | CDE04-19 | 警告 | `CDE04-19 The identifier for a feed item is empty. Sync is skipped for the entity.` | `commerce-data-export/DataExporter/Model/Indexer/FeedIndexProcessorCreateUpdate.php:439` |
 | CDE04-20 | 警告 | `CDE04-20 Unexpected call: feed "{feed_name}" is not locked, trace: {stack_trace}` | `commerce-data-export/DataExporter/Model/Indexer/FeedIndexer.php:204` |
+
+>[!MORELIKETHIS]
+>
+> - [檢閱記錄檔並進行疑難排解](logging.md)
+> - [疑難排解案例](troubleshooting-scenarios.md)
+> - [摘要資料表結構描述](../reference/feed-table-reference.md)

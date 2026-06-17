@@ -1,11 +1,15 @@
 ---
 title: 動態新增產品屬性
 description: 瞭解如何在資料同步程式進行期間，以動態方式將自訂產品屬性新增至資料匯出摘要。
+autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: d5ed7497-4be1-440a-a567-81b64fdc54fc
 TQID: https://experienceleague.adobe.com/SZWtLSvxb-w-968f4wqWrPTBn1c9IEuthvhIv86Pvss
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
@@ -14,20 +18,20 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: 297
+source-wordcount: 267
 ht-degree: 0%
 
 ---
 
-# 在資料同步期間動態新增產品屬性
+# 動態新增產品屬性
 
-您可以在資料同步過程中建立外掛程式來新增屬性，以擴充產品屬性而不需在Adobe Commerce中註冊它們。
+您可以在資料同步處理過程中建立外掛程式來新增屬性，而不需在[!DNL Adobe Commerce]中註冊產品屬性。
 
 >[!NOTE]
 >
->擴充產品屬性的最佳方式是[將它們新增至Adobe Commerce](extensibility-and-customizations.md#add-product-attributes-to-adobe-commerce)，您可以在其中從Commerce管理員設定和管理這些屬性。 只有在您僅需要Commerce店面服務才能動態新增這些值，且不想在Adobe Commerce中註冊這些值時，才可動態新增。 您也可以選擇搭配目錄服務[&#128279;](../catalog-service/mesh.md)使用API Mesh來管理自訂屬性，以擴充目錄服務GraphQL結構描述。
+>擴充產品屬性的最佳方式是使用 [!DNL Catalog Service][&#128279;](../catalog-service/mesh.md)將這些屬性[新增至 [!DNL Adobe Commerce]](extensibility-and-customizations.md#add-product-attributes-to-adobe-commerce) where you can configure and manage them from the Commerce Admin. Only add them dynamically if you need them solely for Commerce storefront services and do not want to register them in [!DNL Adobe Commerce]. You also have the option to manage custom attributes using [!DNL API Mesh] ，以擴充[!DNL Catalog Service] [!DNL GraphQL]結構描述。
 
 ## 新增產品屬性
 
@@ -98,7 +102,7 @@ ht-degree: 0%
 
    新增外掛程式後，在下次排定的同步處理期間，變更會同步處理至已連線的店面服務。 若要立即傳送更新，請使用下列CLI命令手動啟動同步化程式。
 
-   ```
+   ```shell
    bin/magento saas:resync --feed=products
    ```
 
@@ -109,12 +113,12 @@ ht-degree: 0%
 1. 更新[相依性插入組態檔](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/) (`di.xml`)以定義產品屬性中繼資料的外掛程式。
 
    ```xml
-   <type name="\Magento\CatalogDataExporter\Model\Provider\ProductMetadata">
+   <type name="Magento\CatalogDataExporter\Model\Provider\ProductMetadata">
      <plugin name="product_customer_attributes_metadata" type="Vendor\CatalogDataExporter\Model\Plugin\AddAttributeMetadata"/>
    </type>
    ```
 
-1. 建立下列提供者`\Magento\CatalogDataExporter\Model\Provider\ProductMetadata`的外掛程式。
+1. 為下列提供者`Magento\CatalogDataExporter\Model\Provider\ProductMetadata`建立外掛程式。
 
    檢查`vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`中的`ProductAttributeMetadata`以取得必要欄位。
 
@@ -184,7 +188,13 @@ ht-degree: 0%
 
    新增外掛程式後，在下次排定的同步處理期間，變更會同步處理至已連線的店面服務。 若要立即傳送更新，請使用下列CLI命令手動啟動同步化程式。
 
-   ```
-   bin/magento saas:resync --feed=productattributes
+   ```shell
+   bin/magento saas:resync --feed=productAttributes
    ```
 
+>[!MORELIKETHIS]
+>
+> * [延伸與自訂SaaS資料匯出摘要](extensibility-and-customizations.md)
+> * [使用Commerce CLI同步摘要](data-export-cli-commands.md)
+> * [同步如何運作](sync-overview.md) — 瞭解同步模式，以及排程與手動重新同步。
+> * [檢閱記錄檔並進行疑難排解](troubleshooting/logging.md)

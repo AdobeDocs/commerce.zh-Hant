@@ -1,12 +1,16 @@
 ---
 title: '[!DNL SaaS Data Export Extension]發行說明'
 description: 適用於Adobe Commerce的 [!DNL Data Export Extension] 的最新發行資訊。
+autotag-review: '2026-06-17T15:08:59.000Z'
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
 TQID: https://experienceleague.adobe.com/l3Z3-ncMTQ3j-4s6xL9X8ZYtlBHqzhBfMLc2jL4Kv6A
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
@@ -18,7 +22,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 69f39a6a62e05c86a0e2897d09079543b3d8830e
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
 source-wordcount: 2903
 ht-degree: 0%
@@ -72,7 +76,7 @@ _2026年5月19日_
 
 _2026年5月5日_
 
-![修正](../assets/fix.svg) **匯出記錄檔的疑難排解更容易** — 許多與匯出相關的錯誤和警告現在包含一致的記錄檔代碼。這些程式碼可協助您在使用支援或檔案時更快追蹤問題。如需詳細資訊，請參閱記錄程式碼參考。
+![修正](../assets/fix.svg) **匯出記錄檔的疑難排解更容易** — 許多與匯出相關的錯誤和警告現在包含一致的記錄檔代碼。這些程式碼可協助您在使用支援或檔案時更快追蹤問題。如需詳細資訊，請參閱[記錄檔代碼參考](troubleshooting/log-codes-reference.md)。
 <!--MDEE-1276-->
 
 ![修正](../assets/fix.svg) **當屬性選項標籤變更時自動重新同步** — 變更商店檢視的產品屬性選項標籤（包括多重選取屬性）現在會再次將受影響的產品排入佇列以供匯出，這樣Live Search、Product Recommendations、Catalog Service和其他連線的Commerce服務就會在購物者檢視中顯示更新的Facet和篩選標籤。以前，僅限標籤的編輯可能會讓SaaS目錄顯示過時字詞，直到更廣泛的產品變更觸發同步為止。
