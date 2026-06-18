@@ -7,12 +7,23 @@ level: Intermediate
 badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
 autotag-review: '2026-06-18T16:03:48.301Z'
 TQID: 'https://experienceleague.adobe.com/fFbsXGO54L1lSuQULqfP7A-BJKSYggdt7cy-GDvaSzU'
-product_v2: id: de2e2e68-c5d7-4efe-be7b-27528698f06bid: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: c18ed297-2187-4aec-affb-9d9654eca6fcid: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-subfeature_v2: id: ae62cf09-5996-4921-bda8-fbe67b62e470
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2:
+  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
 workflow-type: tm+mt
 source-wordcount: 753
@@ -50,7 +61,7 @@ ht-degree: 0%
 
 1. 找到檔案屬性欄位，然後按一下&#x200B;**[!UICONTROL Upload]**&#x200B;以選取檔案。
 
-在Admin](./assets/upload-file.png){width="600" zoomable="yes"}中![上傳檔案按鈕
+在Admin![&#128279;](./assets/upload-file.png){width="600" zoomable="yes"}中上傳檔案按鈕
 
 1. 按一下&#x200B;**[!UICONTROL Save]**。
 
@@ -69,7 +80,7 @@ ht-degree: 0%
 
 ## 透過產品匯入上傳
 
-您可以使用[匯入API](https://developer.adobe.com/commerce/webapi/rest/modules/import/){target="_blank"}或管理員匯入UI，大量附加檔案至產品。 產品檔案屬性僅支援從外部URL匯入，其方式與產品影像匯入](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import-product-images#method-2-import-images-from-external-server){target="_blank"}的[方法2相同。 Commerce會從提供的URL下載檔案，並將其儲存至S3媒體儲存空間。
+您可以使用[匯入API](https://developer.adobe.com/commerce/webapi/rest/modules/import/){target="_blank"}或管理員匯入UI，大量附加檔案至產品。 產品檔案屬性僅支援從外部URL匯入，其方式與產品影像匯入[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import-product-images#method-2-import-images-from-external-server){target="_blank"}的方法2相同。 Commerce會從提供的URL下載檔案，並將其儲存至S3媒體儲存空間。
 
 >[!NOTE]
 >
