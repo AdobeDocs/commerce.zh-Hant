@@ -5,24 +5,16 @@ feature: Cloud, Integration
 role: User, Leader
 level: Beginner
 exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
-TQID: https://experienceleague.adobe.com/4L-M8vsEkT6uuafrOISankRaarQ-OVHDWLXwoVLaUZQ
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
+autotag-review: '2026-06-18T16:06:00.993Z'
+TQID: 'https://experienceleague.adobe.com/4L-M8vsEkT6uuafrOISankRaarQ-OVHDWLXwoVLaUZQ'
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2: id: ae62cf09-5996-4921-bda8-fbe67b62e470
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
 workflow-type: tm+mt
 source-wordcount: 1464
 ht-degree: 0%
@@ -79,7 +71,7 @@ ht-degree: 0%
 
 1. 輸入必要的聯絡詳細資料和送貨資訊。 您可以針對此訂單使用虛構的資訊。
 
-1. 若要結帳，請選取&#x200B;[!UICONTROL **支票/匯票**]。 若要使用信用卡，請使用Paypal[&#128279;](https://developer.paypal.com/tools/sandbox/card-testing/#link-teststaticcardnumbers)提供的測試卡之一。 您可以將其用於任何未來的到期日和任何CVC。
+1. 若要結帳，請選取&#x200B;[!UICONTROL **支票/匯票**]。 若要使用信用卡，請使用Paypal](https://developer.paypal.com/tools/sandbox/card-testing/#link-teststaticcardnumbers)提供的[測試卡之一。 您可以將其用於任何未來的到期日和任何CVC。
 
    ![包含聯絡人及運送資訊欄位的結帳表單](./assets/enter-details.png){width="600" zoomable="yes"}
 
@@ -206,7 +198,7 @@ ht-degree: 0%
 
 1. 按一下&#x200B;[!UICONTROL **儲存**]&#x200B;以指定影像型別。
 
-1. 再按一下[儲存]儲存變更。[!UICONTROL **&#x200B;**]
+1. 再按一下[儲存]儲存變更。[!UICONTROL ****]
 
 1. 在&#x200B;[!UICONTROL **儲存資產**]&#x200B;對話方塊中，選取Commerce [!UICONTROL **目的地資料夾**]。
 
@@ -216,7 +208,7 @@ ht-degree: 0%
 
 #### 將影像新增至[!DNL Commerce AEM Assets]
 
-1. 從[!DNL AEM as a Cloud Service]的[導覽面板](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel)，選取&#x200B;[!UICONTROL **Assets**] > [!UICONTROL **檔案**] > [!UICONTROL **Commerce**]，然後按一下您在上一節建立的資產。
+1. 從[!DNL AEM as a Cloud Service]的[導覽面板](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel)，選取&#x200B;[!UICONTROL **Assets**] > [!UICONTROL **檔案**] > [!UICONTROL **Commerce**]，然後按一下您在上一節建立的資產。
 
    [!DNL AEM Assets]中的![Commerce資料夾包含產品影像](./assets/commerce-folder.png){width="600" zoomable="yes"}
 
@@ -266,7 +258,7 @@ ht-degree: 0%
 
 ### 產生文字
 
-1. 使用[通用編輯器](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)開啟您的店面網站。
+1. 使用[通用編輯器](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)開啟您的店面網站。
 
 1. 選取您要編輯的文字區塊。
 
@@ -280,13 +272,13 @@ ht-degree: 0%
 
 ### 產生內容和影像
 
-1. 開啟[[!DNL Generate Variations]](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+1. 開啟[[!DNL Generate Variations]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 1. 選取&#x200B;[!UICONTROL **Hero Banner**]&#x200B;範本。
 
 1. 在&#x200B;[!UICONTROL **說明使用者互動**]&#x200B;文字方塊中，輸入：「Adobe員工和合作夥伴購買Adobe品牌用具的體驗！」
 
-1. 在網域知識&#x200B;**的** URL中，輸入&#x200B;**www.adobestore.com**。
+1. 在網域知識&#x200B;**]的[!UICONTROL ** URL中，輸入&#x200B;**www.adobestore.com**。
 
 1. 按一下&#x200B;[!UICONTROL **產生**]。
 
@@ -298,7 +290,7 @@ ht-degree: 0%
 
 1. 針對&#x200B;[!UICONTROL **樣式**]&#x200B;參考影像，選取現有的Adobe商店橫幅。
 
-1. 選取您要使用的產生影像，然後按一下[儲存]。[!UICONTROL **&#x200B;**]
+1. 選取您要使用的產生影像，然後按一下[儲存]。[!UICONTROL ****]
 
 1. 對其他參照影像重複此程式以產生更多變化。
 

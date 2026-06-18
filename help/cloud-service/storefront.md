@@ -5,22 +5,16 @@ feature: Storefront
 role: Developer
 level: Beginner
 exl-id: 02928dc4-1777-483e-b0ee-b04fc813864d
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
-TQID: https://experienceleague.adobe.com/LoeNTJ-evBJB-TaJV0mEQpD2G2MwxHX7cYHx67kP0cA
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-subfeature_v2:
-  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
+autotag-review: '2026-06-18T16:05:19.363Z'
+TQID: 'https://experienceleague.adobe.com/LoeNTJ-evBJB-TaJV0mEQpD2G2MwxHX7cYHx67kP0cA'
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2: id: ae62cf09-5996-4921-bda8-fbe67b62e470
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
 workflow-type: tm+mt
 source-wordcount: 300
 ht-degree: 0%
@@ -31,7 +25,7 @@ ht-degree: 0%
 
 若要為[!DNL Adobe Commerce as a Cloud Service] (SaaS)設定由[!DNL Edge Delivery Services]提供支援的[!DNL Adobe Commerce Storefront]，請完成下列步驟。
 
-如需更可自訂且更詳細的逐步解說，請參閱[店面檔案](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=zh-Hant)。
+如需更可自訂且更詳細的逐步解說，請參閱[店面檔案](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/)。
 
 1. 開啟[網站建立者工具](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator)。
 
@@ -61,5 +55,5 @@ ht-degree: 0%
 * [正在更新店面內容](./use-cases.md#update-storefront-content) — 管理和顯示店面上的內容和資料。
 * [情境式實驗](./use-cases.md#contextual-experimentation) — 在您的店面建立和管理實驗。
 * [產生變數](./use-cases.md#generate-variations) — 使用Generative AI自動產生高品質的內容。
-* [Adobe Commerce Storefront檔案](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant) — 取得有關更新網站內容以及與Commerce前端元件和後端資料整合的詳細資訊。
+* [Adobe Commerce Storefront檔案](https://experienceleague.adobe.com/developer/commerce/storefront/) — 取得有關更新網站內容以及與Commerce前端元件和後端資料整合的詳細資訊。
 * [組態服務](https://www.aem.live/docs/config-service-setup) — 瞭解如何從`config.json`移轉您的店面組態以使用組態服務，此服務支援進階使用案例，例如重複設定和覆蓋。
