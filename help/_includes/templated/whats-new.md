@@ -1,7 +1,7 @@
 ---
-source-git-commit: 71c8c06fbc4e8717d02b1da3001985f7203a8adf
+source-git-commit: 7a4031966113a9131b85a7d0bfc4a3add606d2f7
 workflow-type: tm+mt
-source-wordcount: '1764'
+source-wordcount: '1690'
 ht-degree: 1%
 
 ---
@@ -445,28 +445,6 @@ ht-degree: 1%
         重大更新
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/eb10bd0ff636f70360e1ca35e51b6643ad1f70d4">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年4月20日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>已釐清監視SaaS資料匯出和同步處理的位置 — <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard">資料管理儀表板</a>、<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status">資料摘要同步處理狀態</a>和<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/setup/data-sync">Commerce Optimizer資料同步處理</a>。</p>
-</td>
-      <td>
-        技術意見回饋
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/fcb9d4ae76bf0336fbad0dbff6518ed661d5b23b">認可</a></td>
     </tr>
   </tbody>
 </table>
