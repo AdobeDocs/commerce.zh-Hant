@@ -68,4 +68,4 @@ ht-degree: 0%
 
 ## [!DNL SaaS Data Export]診斷
 
-如需底層[!DNL SaaS Data Export]診斷（包括記錄位置與摘要重新同步命令），請參閱[[!DNL SaaS Data Export] 疑難排解指南](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/troubleshooting/logging){target="_blank"}。
+如需底層[!DNL SaaS Data Export]診斷（包括記錄位置與摘要重新同步命令），請參閱[[!DNL SaaS Data Export] 疑難排解指南](https://experienceleague.adobe.com/zh-hant/docs/commerce/saas-data-export/troubleshooting/logging){target="_blank"}。
