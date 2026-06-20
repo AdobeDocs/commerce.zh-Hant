@@ -216,7 +216,7 @@ ht-degree: 0%
 ▢您的店面遵循&#x200B;_Adobe Commerce店面_&#x200B;檔案中的[效能最佳做法](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/performance/?lang=zh-Hant){target="_blank"}。
 已設定▢ （選用） Google Analytics和Google Tag Manager。
 ▢ [Storefront事件](https://github.com/adobe/commerce-events/tree/main/examples/events/snowplow-debugger)實作有效，資料會顯示在Adobe Commerce *管理員*&#x200B;的[!DNL Live Search]和[!DNL Product Recommendations]儀表板中。
-▢ [Commerce設定](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=zh-Hant){target="_blank"}中的`environment`分析引數在開發期間為`"Testing"`，在上線時為`"Production"`。請參閱[Analytics檢測](https://experienceleague.adobe.com/developer/commerce/storefront/setup/analytics/instrumentation/){target="_blank"}。
+▢ [Commerce設定](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=zh-Hant){target="_blank"}中的`environment`分析引數在開發期間為`"Testing"`，在上線時為`"Production"`。請參閱[Analytics檢測](https://experienceleague.adobe.com/developer/commerce/storefront/setup/analytics/instrumentation/?lang=zh-Hant){target="_blank"}。
 根據此主題的指引，▢ Lighthouse分數符合您的目標（例如，關鍵頁面上的`100`）。
 
 ### 安全性與存取權
@@ -236,7 +236,7 @@ ht-degree: 0%
 ▢ CDN設定會針對Sidekick擴充功能和指令碼（例如Sitemap產生和影像匯入工具）使用生產GraphQL端點(`yourproject.com/graphql`)。
 ▢當您使用Adobe Commerce Fastly時，可使用CDN清除權杖，且[網站設定](https://tools.aem.live/tools/cdn-setup/index.html)包含`authToken`和`serviceId`。
 ▢ [CDN設定](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/content-delivery-network/?lang=zh-Hant){target="_blank"}驗證快取和失效。
-▢對於[多存放區設定](https://experienceleague.adobe.com/developer/commerce/storefront/setup/seo/indexing/#multi-store-setups){target="_blank"}，目錄服務和[!DNL Live Search]要求包含存放區特定的快取匯出工具（例如，查詢引數或CDN規則）。
+▢對於[多存放區設定](https://experienceleague.adobe.com/developer/commerce/storefront/setup/seo/indexing/?lang=zh-Hant#multi-store-setups){target="_blank"}，目錄服務和[!DNL Live Search]要求包含存放區特定的快取匯出工具（例如，查詢引數或CDN規則）。
 ▢個推播失效工作端對端進行（發佈變更，然後在生產網域上驗證）。
 在切換前，▢個DNS TTL已經夠低。
 所有網域和主機名稱的▢ DNS A和CNAME記錄都正確。

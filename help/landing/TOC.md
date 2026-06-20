@@ -30,7 +30,7 @@ ht-degree: 12%
    - [[!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce/data-connection/overview.html?lang=zh-Hant)
    - [[!DNL App Management]](https://experienceleague.adobe.com/zh-hant/docs/commerce/app-management/overview)
    - [服務聯結器](/help/landing/saas.md)
-   - [整合 [!DNL Adobe Commerce] 與 [!DNL Adobe LLM Optimizer]](https://experienceleague.adobe.com/docs/commerce/llmo-integration/overview.html)
+   - [整合 [!DNL Adobe Commerce] 與 [!DNL Adobe LLM Optimizer]](https://experienceleague.adobe.com/docs/commerce/llmo-integration/overview.html?lang=zh-Hant)
 - 資料工具 {#data-services}
    - [SaaS資料匯出](https://experienceleague.adobe.com/docs/commerce/saas-data-export/overview.html?lang=zh-Hant)
    - [SaaS價格索引](https://experienceleague.adobe.com/docs/commerce/price-indexer/price-indexing.html?lang=zh-Hant)

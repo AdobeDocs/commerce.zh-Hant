@@ -58,7 +58,7 @@ ht-degree: 0%
 
 所有Commerce測試執行個體都使用沙箱端點。
 
-在沙箱端點上執行所有載入測試。 開始載入測試之前，請先提交[支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)，讓服務團隊可以預期額外的伺服器流量。
+在沙箱端點上執行所有載入測試。 開始載入測試之前，請先提交[支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=zh-Hant#submit-ticket)，讓服務團隊可以預期額外的伺服器流量。
 
 ## 安裝和設定
 
