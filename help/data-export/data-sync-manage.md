@@ -3,23 +3,13 @@ title: 檢視及管理同步化程式
 description: 瞭解如何使用「資料管理」控制面板和「資料摘要同步狀態」頁面檢視及管理 [!DNL SaaS Data Export] 同步化程式。
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088bid: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: e7d9c056ef8d565b4a143b05ff4e06d607fbfa8e
 workflow-type: tm+mt
-source-wordcount: 652
+source-wordcount: 544
 ht-degree: 0%
 
 ---
@@ -34,9 +24,9 @@ ht-degree: 0%
 
 對於雲端上的Adobe Commerce、內部部署或Adobe Commerce as a Cloud Service部署，請從以下Commerce管理員資源檢視及管理同步程式：
 
-- **[資料摘要同步狀態頁面](../optimizer/setup/data-sync.md)** — 檢查與[!DNL Live Search]、[!DNL Product Recommendations]或[!DNL Catalog Service]連線的部署摘要匯出狀態。 此儀表板會顯示每個摘要的摘要匯出狀態，包括遇到的任何錯誤。 詳細資料檢視會顯示個別摘要專案的摘要匯出狀態。
+- **[資料摘要同步狀態頁面](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)** — 檢查與[!DNL Live Search]、[!DNL Product Recommendations]或[!DNL Catalog Service]連線的部署的摘要匯出狀態。 此儀表板會顯示每個摘要的摘要匯出狀態，包括遇到的任何錯誤。 詳細資料檢視會顯示個別摘要專案的摘要匯出狀態。
 
-- **[資料管理儀表板](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)** — 管理員使用者可以檢視及追蹤已成功匯出並同步處理至連線之Commerce服務的資料。 此儀表板會顯示同步至Commerce服務的產品資料。
+- **[資料管理儀表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)** — 管理員使用者可以檢視及追蹤已成功匯出並同步處理至連線之Commerce服務的資料。 此儀表板會顯示同步至Commerce服務的產品資料。
 
 >[!NOTE]
 >
@@ -46,7 +36,7 @@ ht-degree: 0%
 
 對於雲端上的Commerce或與[!DNL Commerce Optimizer]整合的內部部署，請使用下列資源檢視及管理同步化程式：
 
-- **[資料摘要同步狀態頁面](../optimizer/setup/data-sync.md)** — 對於使用[!DNL Commerce Optimizer]的Commerce專案，請從[!DNL Commerce Optimizer]的資料摘要同步狀態頁面檢查店面的目錄資料可用性。 此儀表板會顯示資料匯出摘要的同步狀態。
+- **[資料摘要同步狀態頁面](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)** — 從Commerce管理員監視聯結器摘要匯出狀態。 此頁面顯示是否成功從[!DNL Adobe Commerce]匯出目錄資料，包括每個摘要和每個專案的錯誤詳細資料。
 
 - **[資料同步頁面](../optimizer/setup/data-sync.md)** — 資料同步頁面提供從上游目錄來源到[!DNL Commerce Optimizer]的產品資料同步狀態概觀。
 
@@ -56,29 +46,8 @@ ht-degree: 0%
 
 ## 確認資料同步處理運作正常 {#verify-that-the-data-sync-is-working}
 
-若要確認資料同步處理是否正常運作，請確認已成功從[!DNL Adobe Commerce]匯出資料，且資料已成功傳遞至連線的Commerce服務。 使用您部署的控制面板來檢查兩個步驟。
 
-從匯出開始，然後確認傳送。
-
-1. 在「Commerce管理員」中檢查同步狀態。
-
-   前往&#x200B;**[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Feed Sync Status]**。
-
-   ![具有摘要專案狀態報告的[資料摘要同步處理狀態]頁面](./assets/data-feed-sync-status.png){width="800" zoomable="yes"}
-
-   同步執行時，摘要資料會顯示已成功傳送的記錄。 選取摘要以檢視詳細資料或疑難排解同步問題。
-
-1. 確認資料已傳送至連線的Commerce服務。
-
-   從Commerce Admin移至&#x200B;**[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Management Dashboard]**。
-
-   ![資料管理儀表板顯示已連線之Commerce服務中的同步目錄資料](./assets/data-management-dashboard.png){width="700" zoomable="yes"}
-
-   確認已出現預期的產品、價格和屬性。
-
->[!TIP]
->
->如果您有任何資料同步問題，請參閱[檢閱記錄檔及疑難排解](troubleshooting/logging.md)。
+{{$include /help/_includes/data-export/verify-commerce-service-data-sync.md}}
 
 ## 手動重新同步資料
 
@@ -100,5 +69,3 @@ ht-degree: 0%
 > - [使用Commerce CLI同步摘要](data-export-cli-commands.md) — 針對目標摘要重新同步使用`saas:resync`命令。
 > - [檢閱記錄檔並疑難排解](troubleshooting/logging.md) — 診斷資料匯出和SaaS匯出錯誤。
 > - [管理與 [!DNL Commerce Optimizer]](../aco-connector/data-sync-manage.md)的同步處理 — 驗證目錄資料同步處理並手動重新同步聯結器摘要。
-
-
