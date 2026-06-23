@@ -5,10 +5,10 @@ user-guide-description: 本指南提供使用 [!DNL Adobe Commerce Optimizer Con
 role: Developer, Admin
 feature: Integration, Storefront, Configuration
 nudge: false
-source-git-commit: 83218416c513412f2ff6328aa8a23e915cbb8750
+source-git-commit: 98d604a71c2062a44070b207fc43b9d9b1c434fd
 workflow-type: tm+mt
-source-wordcount: '65'
-ht-degree: 6%
+source-wordcount: '69'
+ht-degree: 5%
 
 ---
 
@@ -25,6 +25,7 @@ ht-degree: 6%
    - [疑難排解案例](troubleshooting/troubleshooting-scenarios.md)
 - 參考 {#reference}
    - [聯結器模組及饋送端點](reference/connector-reference.md)
+   - [摘要表格結構描述參考](reference/feed-table-reference.md)
    - [聯結器摘要的欄位對應](reference/field-mapping.md)
    - [預估資料量和同步處理時間](reference/estimate-data-volume-sync-time.md)
 - [發行說明](release-notes.md)

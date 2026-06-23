@@ -17,9 +17,9 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: e7d9c056ef8d565b4a143b05ff4e06d607fbfa8e
+source-git-commit: 98d604a71c2062a44070b207fc43b9d9b1c434fd
 workflow-type: tm+mt
-source-wordcount: 544
+source-wordcount: 557
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ ht-degree: 0%
 | 任務 | 選項 | 附註 |
 | --- | --- | --- |
 | 重新同步選取的失敗或有問題的摘要專案 | **[!UICONTROL Data Feed Sync Status]頁** | 從Commerce管理員監視和重新同步所選的摘要專案。 請參閱[確認資料同步正在運作](#verify-that-the-data-sync-is-working)。 |
-| 完整重新同步所有摘要 | **[!UICONTROL Data Management Dashboard]** | 從Commerce管理員對所有摘要執行完整重新同步；Adobe建議這主要是當您首次連線到Commerce服務時。 請參閱[確認資料同步正在運作](#verify-that-the-data-sync-is-working)。 |
+| 完整重新同步所有摘要 | **[!UICONTROL Data Management Dashboard]** | 從Commerce管理員對所有摘要執行完整重新同步；Adobe建議這主要是當您首次連線到Commerce服務時。 會略過自上次匯出以來內容雜湊未變更的專案。 請參閱[確認資料同步正在運作](#verify-that-the-data-sync-is-working)。 |
 | 目標摘要與作業控制重新同步 | **Commerce CLI** | 使用`saas:resync`命令進行目標摘要重新同步。 請參閱[使用Commerce CLI同步摘要](data-export-cli-commands.md)。 |
 
 >[!MORELIKETHIS]
