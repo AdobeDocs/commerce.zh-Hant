@@ -35,14 +35,14 @@ ht-degree: 0%
 
 [!DNL Catalog Service]可用作GraphQL API，您可從Commerce管理員或任何支援GraphQL查詢的前端應用程式中存取。 此服務同時適用於SaaS和PaaS環境。
 
-僅[!BADGE 個PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"}
+僅[!BADGE 個PaaS]{type=Informative url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"}
 
 | 環境 | 端點 |
 | ------------ | ----------: |
 | **正在測試** | `https://catalog-service-sandbox.adobe.io/graphql` |
 | **生產** | `https://catalog-service.adobe.io/graphql` |
 
-僅[!BADGE SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"}
+僅[!BADGE SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"}
 
 | 環境 | 端點 |
 | ----------- | --------:|
@@ -65,7 +65,7 @@ https://<region>-<environment>.api.commerce.adobe.com/<tenantId>/graphql
 
 若要與Headless店面整合，您必須更新店面設定以啟用店面與[!DNL Catalog Service]之間的通訊，以擷取產品和類別資料。
 
-如果您在Edge Delivery Services上使用Adobe Commerce店面，請將目錄服務端點新增至店面設定。 如需詳細資訊，請參閱[Edge Delivery Services檔案](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/#storefront-configuration)。
+如果您在Edge Delivery Services上使用Adobe Commerce店面，請將目錄服務端點新增至店面設定。 如需詳細資訊，請參閱[Edge Delivery Services檔案](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=zh-Hant#storefront-configuration)。
 
 如需其他整合，請參閱專案設定檔案，以取得有關如何設定服務與後端資料來源之間整合的詳細資訊。
 

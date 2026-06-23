@@ -4,7 +4,7 @@ description: 瞭解如何驗證 [!DNL Adobe Commerce] 和 [!DNL Adobe Commerce O
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
+badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
@@ -54,5 +54,5 @@ ht-degree: 0%
 > - [估算資料量並同步處理時間](reference/estimate-data-volume-sync-time.md) — 計算預期的同步處理持續時間
 > - [疑難排解](troubleshooting.md) — 診斷認證、同步和範圍匯出問題
 > - [聯結器模組和摘要端點](reference/connector-reference.md) — 檢閱模組、API端點和支援的摘要
-> - [Commerce Admin中的資料摘要同步狀態頁面](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status){target="_blank"} — 深入瞭解可用於監視摘要狀態的欄位和功能
+> - [Commerce Admin中的資料摘要同步狀態頁面](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status){target="_blank"} — 深入瞭解可用於監視摘要狀態的欄位和功能
 > - [資料同步儀表板位於 [!DNL Commerce Optimizer]](https://experienceleague.adobe.com/en/docs/commerce-optimizer/data-sync/data-sync){target="_blank"} — 可用於監視目錄資料同步的欄位和動作參考檔案
