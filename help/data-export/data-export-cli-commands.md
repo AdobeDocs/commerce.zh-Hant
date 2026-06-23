@@ -4,21 +4,13 @@ description: 瞭解如何使用Commerce CLI命令來管理Adobe Commerce SaaS服
 autotag-review: '2026-06-17T15:08:59.000Z'
 exl-id: 1ebee09e-e647-4205-b90c-d0f9d2cac963
 TQID: 'https://experienceleague.adobe.com/Vi8hMKOBjTPkSQp0t8DCkjZsJ8s3Q5GSbSXyX2gmWRo'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088bid: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: cc250cf1-34eb-4863-80d0-d170d45ea067
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: ef1a9efc579d8d21c145e6981235489a2e4ea203
 workflow-type: tm+mt
-source-wordcount: 670
+source-wordcount: 728
 ht-degree: 0%
 
 ---
@@ -34,7 +26,7 @@ ht-degree: 0%
 Adobe不建議定期使用`saas:resync`命令。 使用指令的典型情況如下：
 
 - 初始同步
-- 變更[SaaS資料空間ID](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/config/services/saas)後，將資料同步處理至新的資料空間
+- 變更[SaaS資料空間ID](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas)後，將資料同步處理至新的資料空間
 - 疑難排解
 
 監視`var/log/saas-export.log`檔案中的同步作業。
@@ -96,6 +88,10 @@ bin/magento saas:resync --help
 >
 >已安裝的模組會決定您可以重新同步哪些摘要。 例如，`productOverrides`需要雲端、內部部署或Commerce as a Cloud Service上的[!DNL Adobe Commerce]，而`orders`需要銷售訂單模組。
 
+>[!NOTE]
+>
+>`saas:resync`命令只會傳輸新專案、更新的專案，以及先前無法匯出的專案。 會略過自上次匯出以來內容雜湊未變更的專案。
+
 **範例：**
 
 ```shell
@@ -107,6 +103,10 @@ bin/magento saas:resync --feed products
 依其ID部分重新同步特定實體。 支援`products`、`productAttributes`、`productOverrides`、`inventoryStockStatus`、`prices`、`variants`和`categoryPermissions`摘要。
 
 依預設，當您使用`--by-ids`選項時，您會使用產品SKU值來指定值。 若要改用產品ID，請新增`--id-type=productId`選項。
+
+>[!NOTE]
+>
+>與標準重新同步不同，`--by-ids`會略過雜湊驗證，並強制將指定的實體提交至連線的Commerce服務，無論其內容在上次匯出後是否有所變更。
 
 **範例：**
 

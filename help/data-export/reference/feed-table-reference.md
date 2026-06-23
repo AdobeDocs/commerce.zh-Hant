@@ -4,22 +4,13 @@ description: 瞭解 [!DNL SaaS Data Export] 用來追蹤摘要專案狀態、匯
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 feature: Services
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088bid: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: cc250cf1-34eb-4863-80d0-d170d45ea067
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: c70c1643afbf8e9633df89a613d6798416c8eb44
 workflow-type: tm+mt
-source-wordcount: 416
+source-wordcount: 429
 ht-degree: 0%
 
 ---
@@ -71,25 +62,75 @@ ht-degree: 0%
 
 ## 常見診斷查詢
 
-使用下列SQL查詢直接檢查摘要表格狀態。 將`cde_products_feed`取代為您正在調查的摘要的表格。 如需資料表名稱的完整清單，請參閱[支援的摘要](#supported-feeds)。
+使用下列SQL查詢直接檢查摘要表格狀態。 將預留位置值（例如`<SKU>`、`<ATTRIBUTE_CODE>`和`<CATEGORY_ID>`）取代為您環境中的實際值。 如需資料表名稱的完整清單，請參閱[支援的摘要](#supported-feeds)。
 
-**尋找所有尚未成功匯出的專案：**
+**產品摘要 — 依SKU：**
 
 ```sql
-SELECT source_entity_id, status, errors, modified_at
-FROM cde_products_feed
-WHERE status != 200
-ORDER BY modified_at DESC
-LIMIT 50;
+SELECT JSON_EXTRACT(f.feed_data, '$.sku') AS 'SKU',
+       JSON_EXTRACT(f.feed_data, '$.storeViewCode') AS 'store view code',
+       f.status, f.modified_at, f.is_deleted, f.errors
+FROM cde_products_feed f
+WHERE JSON_EXTRACT(f.feed_data, '$.sku') IN ('<SKU>');
 ```
 
-**檢查所有領域之特定SKU的匯出狀態：**
+**產品屬性摘要 — 依屬性代碼：**
 
 ```sql
-SELECT p.sku, f.status, f.modified_at, f.is_deleted, f.feed_data, f.errors
-FROM catalog_product_entity p
-LEFT JOIN cde_products_feed f ON f.source_entity_id = p.entity_id
-WHERE p.sku = 'ADB295';
+SELECT JSON_EXTRACT(f.feed_data, '$.attributeCode') AS 'code',
+       JSON_EXTRACT(f.feed_data, '$.storeViewCode') AS 'store view code',
+       f.status, f.modified_at, f.is_deleted, f.errors
+FROM cde_product_attributes_feed f
+WHERE JSON_EXTRACT(f.feed_data, '$.attributeCode') IN ('<ATTRIBUTE_CODE>');
+```
+
+**價格摘要 — 依SKU：**
+
+```sql
+SELECT JSON_EXTRACT(f.feed_data, '$.sku') AS 'SKU',
+       JSON_EXTRACT(f.feed_data, '$.websiteCode') AS 'website code',
+       JSON_EXTRACT(f.feed_data, '$.customerGroupCode') AS 'customer group code',
+       IFNULL(cg.customer_group_code, '-- (base price)') AS 'AC customer group',
+       f.status, f.modified_at, f.is_deleted, f.errors
+FROM cde_product_prices_feed f
+LEFT JOIN customer_group cg
+       ON sha1(cg.customer_group_id) = JSON_EXTRACT(f.feed_data, '$.customerGroupCode')
+WHERE JSON_EXTRACT(f.feed_data, '$.sku') IN ('<SKU>');
+```
+
+**產品覆寫摘要 — 依SKU：**
+
+```sql
+SELECT JSON_EXTRACT(f.feed_data, '$.sku') AS 'SKU',
+       JSON_EXTRACT(f.feed_data, '$.websiteCode') AS 'website code',
+       JSON_EXTRACT(f.feed_data, '$.customerGroupCode') AS 'customer group code',
+       IFNULL(cg.customer_group_code, 'NA (deleted)') AS 'AC customer group',
+       f.status, f.modified_at, f.is_deleted, f.errors
+FROM cde_product_overrides_feed f
+LEFT JOIN customer_group cg
+       ON sha1(cg.customer_group_id) = JSON_EXTRACT(f.feed_data, '$.customerGroupCode')
+WHERE JSON_EXTRACT(f.feed_data, '$.sku') IN ('<SKU>');
+```
+
+**類別摘要 — 依類別識別碼：**
+
+```sql
+SELECT JSON_EXTRACT(feed_data, '$.categoryId') AS 'Category ID',
+       JSON_EXTRACT(f.feed_data, '$.storeViewCode') AS 'store view code',
+       f.status, f.modified_at, f.is_deleted, f.errors
+FROM cde_categories_feed f
+WHERE JSON_EXTRACT(feed_data, '$.categoryId') IN (<CATEGORY_ID>);
+```
+
+**變體摘要 — 依可設定的產品SKU：**
+
+```sql
+SELECT JSON_EXTRACT(feed_data, '$.parentSku') AS 'configurable SKU',
+       JSON_EXTRACT(feed_data, '$.productSku') AS 'Variant SKU',
+       JSON_EXTRACT(f.feed_data, '$.optionValues') AS 'options',
+       f.status, f.modified_at, f.is_deleted, f.errors
+FROM cde_product_variants_feed f
+WHERE JSON_EXTRACT(feed_data, '$.parentSku') = '<SKU>';
 ```
 
 

@@ -2,32 +2,22 @@
 title: '[!DNL Adobe Commerce Optimizer Connector]模組和摘要端點'
 description: 瞭解 [!DNL Adobe Commerce]的 [!DNL Adobe Commerce Optimizer Connector] 模組、目錄摘要API端點、批次限制和core_config_data設定路徑。
 feature: Integration, Configuration
-badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
+badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
 autotag-review: '2026-06-09T15:48:19.494Z'
 TQID: 'https://experienceleague.adobe.com/UM6Y-xoQpUDzWpaMe1GRPp4XoAtHBLBsHw388kumN8g'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: c32adafa-ed01-4b31-997e-2413013911b0id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 19de20caafd45e3a00896d0d4b29b7e96dfe94e1
 workflow-type: tm+mt
-source-wordcount: 296
+source-wordcount: 301
 ht-degree: 1%
 
 ---
 
-# 聯結器模組及饋送端點
+# Adobe Commerce Optimizer聯結器的聯結器模組和饋送端點
 
 此參考列出儲存在`core_config_data`中的[!DNL Adobe Commerce Optimizer Connector]模組套件、支援的摘要API端點和組態金鑰路徑。 若要瞭解這些元件在同步處理期間如何共同運作，請參閱[聯結器同步處理管道](../connector-sync-pipeline.md)。
 
@@ -59,7 +49,7 @@ ht-degree: 1%
 
 [!DNL SaaS Data Export]索引子收集的`products`、`productAttributes`、`categories`和`prices`摘要會重複使用資料。 聯結器從網站和客戶群組設定產生`priceBooks`摘要，且不依賴[!DNL SaaS Data Export]索引器。
 
-如需每個摘要的欄位層級對應詳細資訊，請參閱 [!DNL Commerce Optimizer Connector] 摘要[&#128279;](field-mapping.md)的欄位對應。
+如需每個摘要的欄位層級對應詳細資訊，請參閱 [!DNL Commerce Optimizer Connector] 摘要](field-mapping.md)的[欄位對應。
 若要根據您的目錄大小預估同步處理所需的時間，請參閱[預估資料量和同步處理時間](estimate-data-volume-sync-time.md)。
 
 ## 設定路徑
