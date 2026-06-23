@@ -14,7 +14,7 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
+source-git-commit: c7633056caec2fcec318f8ebcc9664cfc7b3b9b4
 workflow-type: tm+mt
 source-wordcount: 484
 ht-degree: 0%
@@ -34,7 +34,7 @@ ht-degree: 0%
 **資料同步**&#x200B;頁面包含下列欄位：
 
 | 欄位 | 說明 |
-|--- |--- |
+| --- | --- |
 | 目錄來源 | 同步資料的特定地區設定。 |
 | [!DNL Catalog Service] | 顯示[!DNL Catalog Service]的最新同步更新、收到的產品總數、搜尋欄位及同步產品的表格。 |
 | 產品探索 | 顯示最新同步更新、收到的產品總數、搜尋欄位，以及要搜尋的同步產品表格。 |
@@ -61,12 +61,11 @@ ht-degree: 0%
 >
 >完成同步所需的時間會依您的目錄大小和更新的資料量而有所不同。
 
-## 監視資料同步狀態
+## 確認資料同步處理運作正常
 
-對於透過Adobe Commerce Optimizer Connector使用Adobe Commerce作為上游資料來源的專案，您可以監視資料匯出程式，並從Commerce Admin的[資料摘要同步狀態頁面](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)啟動重新同步作業。
+對於透過Adobe Commerce Optimizer Connector使用Adobe Commerce作為上游資料來源的專案，您可以監視資料匯出程式，並從「資料摘要同步狀態」頁面啟動重新同步作業。 如需詳細資訊，請參閱&#x200B;_Adobe Commerce Optimizer Connector_&#x200B;檔案中的[確認資料同步正在運作](../../aco-connector/data-sync-manage.md#verify-that-the-data-sync-is-working)。
 
 ## 相關主題
 
 - [Adobe Commerce Optimizer聯結器](../../aco-connector/overview.md){target="_blank"}
-
 

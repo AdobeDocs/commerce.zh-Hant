@@ -15,9 +15,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 029d78d5c87bf75ccc26b8af462081f8e08d1176
 workflow-type: tm+mt
-source-wordcount: 398
+source-wordcount: 475
 ht-degree: 0%
 
 ---
@@ -71,7 +71,17 @@ bin/magento saas:resync --feed=scopesWebsite
 bin/magento saas:resync --feed=prices
 ```
 
-### 自訂產品型別的價格
+## 監視同步處理進度
+
+{{$include /help/_includes/data-export/verify-commerce-service-data-sync.md}}
+
+必要時使用[Commerce CLI](../data-export/data-export-cli-commands.md)手動重新同步摘要。 如需重新同步選項及其他疑難排解步驟，請參閱&#x200B;_SaaS Data Export Guide_&#x200B;中的[Manage synchronization](../data-export/data-sync-manage.md)。
+
+>[!NOTE]
+>
+>如果雲端或內部部署的Commerce的Commerce Admin中沒有資料摘要同步狀態頁面，請依照[擴充功能安裝指示](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension)加以啟用。
+
+## 自訂產品型別的價格
 
 自訂產品型別支援價格計算，例如基本價格、特殊價格、群組價格、目錄規則價格等。
 
@@ -102,7 +112,7 @@ bin/magento saas:resync --feed=prices
        */
        public function afterGet(ProductPrice $subject, array $result, array $values) : array
        {
-           // Override the output $result with your data for the corresponding products (see original method for details) 
+           // Override the output $result with your data for the corresponding products (see original method for details)
            return $result;
        }
    }

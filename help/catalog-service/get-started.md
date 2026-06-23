@@ -18,9 +18,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 10a91a91337778648e99078bcbf0c9ef25a49f86
 workflow-type: tm+mt
-source-wordcount: 586
+source-wordcount: 437
 ht-degree: 0%
 
 ---
@@ -81,12 +81,8 @@ https://<region>-<environment>.api.commerce.adobe.com/<tenantId>/graphql
 
 ## 監視及疑難排解資料匯出
 
-Commerce管理員提供的工具可監控從Commerce匯出至連線服務的資料，並對其進行疑難排解：
+{{$include /help/_includes/data-export/verify-commerce-service-data-sync.md}}
 
-- **[資料管理儀表板](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)** — 監視[!DNL Catalog Service]與您的Adobe Commerce執行個體之間的資料同步處理。 儀表板會顯示整體同步狀態，並列出所有同步的產品。
+必要時使用[Commerce CLI](../data-export/data-export-cli-commands.md)手動重新同步摘要。 如需重新同步選項及其他疑難排解步驟，請參閱&#x200B;_SaaS Data Export Guide_&#x200B;中的[Manage synchronization](../data-export/data-sync-manage.md)。
 
-- **[資料摘要同步狀態頁面](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)** — 追蹤所有資料摘要的匯出狀態，以確保資料的一致性。 此頁面會針對匯出程式期間發生的問題提供警示，以便您快速解決問題。 「成功」狀態表示資料已匯出，當資料同步程式完成時，可在連線的Commerce服務中使用。
-
->[!NOTE]
->
->如果雲端或內部部署的Commerce的Commerce Admin中沒有資料摘要同步狀態頁面，請依照[擴充功能安裝指示](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension)加以啟用。
+{{install-data-sync-feed-status}}

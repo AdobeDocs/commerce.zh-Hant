@@ -14,9 +14,9 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 10a91a91337778648e99078bcbf0c9ef25a49f86
 workflow-type: tm+mt
-source-wordcount: 972
+source-wordcount: 958
 ht-degree: 0%
 
 ---
@@ -180,4 +180,8 @@ ht-degree: 0%
 
 ### 監控資料同步並疑難排解
 
-透過Commerce Admin，您可以使用[資料管理控制面板](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)來監視同步化程式。 使用[Commerce CLI](../data-export/data-export-cli-commands.md)和[記錄檔](../data-export/troubleshooting/logging.md)管理及疑難排解程式。
+{{$include /help/_includes/data-export/verify-commerce-service-data-sync.md}}
+
+必要時使用[Commerce CLI](../data-export/data-export-cli-commands.md)手動重新同步摘要。 如需重新同步選項及其他疑難排解步驟，請參閱&#x200B;_SaaS Data Export Guide_&#x200B;中的[Manage synchronization](../data-export/data-sync-manage.md)。
+
+{{install-data-sync-feed-status}}

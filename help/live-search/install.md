@@ -25,9 +25,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 10a91a91337778648e99078bcbf0c9ef25a49f86
 workflow-type: tm+mt
-source-wordcount: 2883
+source-wordcount: 2842
 ht-degree: 0%
 
 ---
@@ -235,21 +235,19 @@ bin/magento saas:resync --feed categoryPermissions
 
 ### 監視同步處理進度
 
-使用[資料管理儀表板](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)監視同步處理進度。 此儀表板提供您店面產品資料可用性的寶貴見解，確保可及時向客戶顯示。
+{{$include /help/_includes/data-export/verify-commerce-service-data-sync.md}}
 
-![資料管理儀表板](assets/data-management-dashboard.png)
+{{install-data-sync-feed-status}}
 
-您也可以使用[Commerce CLI](../data-export/data-export-cli-commands.md)和[資料匯出擴充功能記錄檔](../data-export/troubleshooting/logging.md)，執行同步處理命令並疑難排解同步處理程式。
-
-#### 未來的產品更新
+### 未來的產品更新
 
 初始同步後，增量產品更新最多可能需要15分鐘才能用於店面搜尋。 若要深入瞭解，請參閱索引檔案中的[串流產品更新](indexing.md)。
 
 ## &#x200B;4. 驗證是否已匯出資料 {#verify}
 
-若要檢查您的目錄資料是否已從Adobe Commerce匯出並與[!DNL Live Search]同步，您有幾個選擇：
+除了使用「資料摘要同步狀態」頁面和「資料管理控制面板」之外，您還可以驗證直接從Adobe Commerce匯出的資料庫目錄資料，並使用[!DNL Live Search] GraphQL工作區確認資料已成功同步至[!DNL Live Search]。
 
-- 在下清單格中尋找專案：
+- 從資料庫中，使用SQL查詢來尋找下清單格中的專案：
 
    - `cde_products_feed`
    - `cde_product_attributes_feed`
