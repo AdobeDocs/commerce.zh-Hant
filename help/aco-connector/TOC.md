@@ -29,4 +29,4 @@ ht-degree: 5%
    - [聯結器摘要的欄位對應](reference/field-mapping.md)
    - [預估資料量和同步處理時間](reference/estimate-data-volume-sync-time.md)
 - [發行說明](release-notes.md)
-- [返回Commerce服務首頁](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [返回Commerce服務首頁](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=zh-Hant)
