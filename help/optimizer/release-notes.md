@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
+source-git-commit: f1c7779558406641972e9c690d0f508d46da3e0c
 workflow-type: tm+mt
-source-wordcount: 1316
+source-wordcount: 1328
 ht-degree: 0%
 
 ---
@@ -35,6 +35,13 @@ ht-degree: 0%
 ## 2026年6月
 
 >[!BEGINSHADEBOX]
+
+_2026年6月24日_
+
+<!-- v1.3 -->
+
+![新](../assets/new.svg) **新`canEditQuantity`欄位** — 已將`canEditQuantity`新增至目錄服務GraphQL中的`ProductViewOptionValueProduct`。它會公開Commerce Admin中套件組合選取專案的可選&#x200B;**使用者定義**&#x200B;數量設定，讓店面消費者可以判斷套件組合選取專案的數量是否可編輯。
+<!--COMOPT-2050-->
 
 ### 語意搜尋
 
