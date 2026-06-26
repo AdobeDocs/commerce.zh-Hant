@@ -1,8 +1,8 @@
 ---
-source-git-commit: 7a4031966113a9131b85a7d0bfc4a3add606d2f7
+source-git-commit: b5e8f023260bd5bfffb76084c175a01cd6a61ff3
 workflow-type: tm+mt
-source-wordcount: '1690'
-ht-degree: 1%
+source-wordcount: '1783'
+ht-degree: 0%
 
 ---
 # 新功能範本
@@ -10,6 +10,36 @@ ht-degree: 1%
 ## 新增功能
 
 此頁面包含過去60天所做的變更。 我們將從此清單中排除所有微幅更新，例如複製編輯。
+
+### 2026年6月23日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>已更新Commerce服務檔案的目錄資料同步驗證指引。 服務安裝和設定主題現在使用一致的兩步驟工作流程 — 在<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status">資料摘要同步狀態頁面</a>上確認匯出，然後在<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard">資料管理儀表板</a>上確認傳遞 — 其中包含<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/catalog-service/get-started#monitor-and-troubleshoot-data-export">目錄服務開始使用</a>、<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/live-search/install#monitor-sync-progress">即時搜尋安裝</a>、<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/product-recommendations/getting-started/install-configure#monitor-and-troubleshoot-data-synchronization">產品建議安裝</a>以及<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/saas-data-export/data-synchronization/data-sync-manage#verify-that-the-data-sync-is-working">在<em>SaaS資料匯出指南</em>中管理同步</a>的更新指示。</p>
+</td>
+      <td>
+        意見反應
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/82bdfd342d2d745721ed2b35f2dbfd8fa394ab5a">認可</a></td>
+    </tr>
+    <tr>
+      <td><p>新增新的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/aco-optimizer-connector/reference/feed-table-reference">Adobe Commerce Optimizer聯結器摘要資料表結構描述參考</a>並更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/saas-data-export/data-synchronization/sync-overview">SaaS資料匯出同步</a>、<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/saas-data-export/data-synchronization/data-sync-manage">手動同步管理</a>、<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/saas-data-export/reference/data-export-cli-commands">Commerce CLI resync命令</a>以及<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/saas-data-export/reference/feed-table-reference">摘要資料表結構描述</a>指南。</p>
+</td>
+      <td>
+        重大更新，新主題
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/601d02435f388096d59ce7f8e2a9e3e7c8bec65b">認可</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年6月17日
 
@@ -385,66 +415,6 @@ ht-degree: 1%
         意見反應，重大更新
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/fc4ac765d4bcbb8b2a0217f33b6f8a4b353e5b33">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年4月27日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>已新增Adobe Commerce as a Cloud Service的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/overview">可觀察性</a>頁面。</p>
-</td>
-      <td>
-        意見反應，新主題
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/bf83f213d1774845c4c99f3b154e9fb3220c3cd1">認可</a></td>
-    </tr>
-    <tr>
-      <td><p>更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/app-management/manage-app/manage-app">管理您的應用程式</a>，瞭解如何在管理員（搜尋、狀態和擴充性模式篩選器）和贏取Adobe Exchange的應用程式路徑中尋找應用程式，其中連結來自<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/app-management/overview">應用程式管理總覽</a>和<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/app-management/install">安裝和存取應用程式管理</a>。</p>
-</td>
-      <td>
-        重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/780cef7af3574cd846fd7ee82d7814f2ebe9d6cc">認可</a></td>
-    </tr>
-    <tr>
-      <td><p>已新增Adobe Commerce as a Cloud Service的生產<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes">發行說明</a>。</p>
-</td>
-      <td>
-        重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/41035e75111d370e5dc40c17607337ae75f11fa0">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年4月24日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>已新增Adobe Commerce as a Cloud Service的沙箱<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes">發行說明</a>。</p>
-</td>
-      <td>
-        重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/eb10bd0ff636f70360e1ca35e51b6643ad1f70d4">認可</a></td>
     </tr>
   </tbody>
 </table>
