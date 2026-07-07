@@ -3,7 +3,7 @@ title: 語意搜尋
 description: 從設定啟用 [!DNL Live Search] 的AI語意搜尋。 不需要屬性設定或店面變更。
 role: Admin
 recommendations: noCatalog
-source-git-commit: e631346aa13737ded2c14daecbb91457e15417eb
+source-git-commit: 94598c3cbc6b9fa84f92532e42ec5e9027c5b1fc
 workflow-type: tm+mt
 source-wordcount: '777'
 ht-degree: 0%
@@ -106,3 +106,4 @@ ht-degree: 0%
 - [設定](settings.md#semantic-search)
 - [同義字](synonyms.md)
 - [效能](performance.md)
+
