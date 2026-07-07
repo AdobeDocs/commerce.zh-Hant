@@ -2,7 +2,7 @@
 title: 設定AEM Assets整合的IMS使用者許可權
 description: 瞭解IMS身分和Admin Console設定檔如何啟用AEM Assets傳送存取、資產選擇器和自動填入的Commerce設定欄位。
 feature: CMS, Media, Configuration
-source-git-commit: e631346aa13737ded2c14daecbb91457e15417eb
+source-git-commit: 94598c3cbc6b9fa84f92532e42ec5e9027c5b1fc
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 0%
@@ -82,3 +82,4 @@ Paa需要&#x200B;**IMS使用者端ID**&#x200B;才能啟用資產選擇器。 如
 * [手動選取資產](../synchronize/asset-selector-integration.md) — 使用類別影像和頁面產生器的資產選擇器。
 * [新增使用者至AEM Assets或產品視覺效果](https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/user-management#add-a-user-to-aem-assets-or-product-visuals){target=_blank} — 針對[!DNL Adobe Commerce as a Cloud Service]，請先新增使用者至Commerce和AEM Cloud Manager （業務負責人、部署管理員）。 **AEM Assets DM OpenAPI使用者 — 傳遞**&#x200B;設定檔（或作為遞補的&#x200B;**作者**&#x200B;設定檔）是「資產選擇器」和自動填入功能的額外需求。
 * [將團隊成員指派給AEM傳遞層](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem#add-team-members){target=_blank}。 傳遞存取許可權的AEM檔案。
+
