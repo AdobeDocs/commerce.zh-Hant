@@ -32,9 +32,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: 7ab609a2da3173f4be31bb0927418c4b9ec05ff4
 workflow-type: tm+mt
-source-wordcount: 4489
+source-wordcount: 4655
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 0%
 >
 >如果您正在雲端基礎結構上使用Adobe Commerce內部部署或Adobe Commerce，請參閱[Adobe Commerce發行說明](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/overview)。
 
-## 2026年6月 — 發行說#2 {#latest}
+## 2026年7月 — 發行說#1 {#latest}
 
 <!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
 
@@ -64,6 +64,27 @@ ht-degree: 0%
 ### 透過API列出自訂電子郵件範本
 
 新的`GET /V1/custom-email/templates` REST API端點傳回您的[自訂電子郵件範本](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/)，包括每個範本的ID、程式碼和主旨。 整合可以使用傳回的範本識別碼搭配`POST /V1/custom-email/send`端點，而非手動查詢識別碼。<!-- CCSAAS-5089 -->
+
+### 透過REST API管理完整的訂單鏈
+
+>[!IMPORTANT]
+>
+>此功能屬於實驗性質，必須透過聯絡您的Adobe Commerce客戶成功經理或建立支援票證來啟用。
+
+新的`orderChain` REST API端點可讓整合功能使用其ID來修改訂單，並自動解析已編輯訂單的完整鏈結：
+
+| 方法 | 端點 | 說明 |
+| --- | --- | --- |
+| `POST` | `/V1/orderChain/{orderId}/invoice` | 建立訂單的商業發票，將料號解析為跨訂單鏈的商業發票。 |
+| `POST` | `/V1/orderChain/{id}/cancel` | 取消鏈結中的目前訂單。 |
+| `POST` | `/V1/orderChain/{id}/hold` | 保留訂單。 |
+| `POST` | `/V1/orderChain/{id}/unhold` | 移除訂單的保留。 |
+| `POST` | `/V1/orderChain/{id}/emails` | 傳送訂單電子郵件通知。 |
+| `POST` | `/V1/orderChain/{id}/comments` | 新增註解至訂單。 |
+| `GET` | `/V1/orderChain/{id}/comments` | 擷取訂單註解。 |
+| `GET` | `/V1/orderChain/{id}/statuses` | 擷取目前的訂單狀態。 |
+
+`GET`端點支援對發票、出貨、銷退折讓單及退貨進行篩選，現在支援由`order_original_id`進行篩選。 依`order_original_id`篩選會傳回整個訂單鏈結的詳細資料，而不只是單一訂單。 支援此功能的端點範例為`GET /V1/invoices`。<!-- ACCS-1004, ACCS-1005 -->
 
 ### 在管理員中檢視訂單修改歷史記錄
 
@@ -84,6 +105,10 @@ ht-degree: 0%
 * 現在，管理員可更輕鬆管理大型共用目錄，不但縮短載入時間，也降低逾時的可能性。<!-- CCSAAS-4946, CCSAAS-4925, CCSAAS-1245, CCSAAS-1246 -->
 
 * 修正建立包含可設定產品之訂單的出貨時，所發生的出貨建立失敗。<!-- ACCS-1095 -->
+
+* 修正[!DNL Commerce Admin]中左側導覽功能表可能消失的問題。<!-- ACCS-1035 -->
+
+* 改善共用目錄中指派和取消指派的效能。<!-- ACCS-1324, CCSAAS-5177, CCSAAS-5190, CCSAAS-5192 -->
 
 {{accs-release}}
 
