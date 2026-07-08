@@ -6,33 +6,14 @@ seo-description: Access the product documentation for hosted services that help 
 recommendations: noCatalog
 exl-id: 507af1fa-9f3e-41bc-9aaf-cd89839aae0b
 TQID: https://experienceleague.adobe.com/zKL5fNTECsNOKZfEl7OUSYHTo-wrh81z3-C7wB1SoWM
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-subfeature_v2:
-  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: da3860b0-d637-47df-bef0-273751180266
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 976bc4114790473d3bdcab6c06684f0c955893ee
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2: id: ae62cf09-5996-4921-bda8-fbe67b62e470
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b4dd41a7-ccf8-4e9d-918e-acaab534a307id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: da3860b0-d637-47df-bef0-273751180266id: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: ee8113dcf4e6d4d91fdf6cc69078d6104315a33f
 workflow-type: tm+mt
-source-wordcount: 1291
+source-wordcount: 1314
 ht-degree: 0%
 
 ---
@@ -77,7 +58,7 @@ Adobe Commerce服務提供強大的功能，可擴充店面、簡化整合，以
       <div>
          <a href="../catalog-service/overview.md">
          <strong>目錄服務</strong>
-         </a>
+         
       </div>
       <p>
          <em>提供客戶最佳化的產品體驗，同時提升效能、改善擴充能力，並提高轉換率。</em>
@@ -103,7 +84,7 @@ Adobe Commerce服務提供強大的功能，可擴充店面、簡化整合，以
       <div>
          <a href="../product-recommendations/overview.md">
          <strong>產品建議</strong>
-         </a>
+         
       </div>
       <p>
          <em>根據購物者行為、熱門趨勢、產品相似度等等，新增AI輔助建議。</em>
@@ -116,7 +97,7 @@ Adobe Commerce服務提供強大的功能，可擴充店面、簡化整合，以
       <div>
          <a href="../payment-services/guide-overview.md">
          <strong>付款服務</strong>
-         </a>
+         
       </div>
       <p>
          <em>透過多種付款方式提高客戶滿意度，包括免息分期付款，以及簡化付款處理、訂單及發票的檢視。</em>
@@ -151,22 +132,10 @@ Adobe Commerce服務提供強大的功能，可擴充店面、簡化整合，以
       <div>
           <a href="../aem-assets-integration/overview.md">
          <strong>AEM Assets整合</strong>
-         </a>
+         
       </div>
       <p>
          <em>使用與Adobe Experience Manager整合的系統簡化數位資產管理，以管理多媒體內容。</em>
-      </p>
-      <br/>
-      <a href="../llmo-integration/overview.md">
-      <img alt="LLM最佳化" src="../assets/icons/gauge4.svg" width="40">
-      </a>
-      <div>
-          <a href="../llmo-integration/overview.md">
-         <strong>[!DNL Adobe LLM Optimizer]整合</strong>
-         </a>
-      </div>
-      <p>
-         <em>將您的目錄連線至[!DNL Adobe LLM Optimizer]以監視產品在AI導向的答案中的顯示方式，並將已核准的產品名稱和說明更新從機會部署回[!DNL Adobe Commerce]。</em>
       </p>
    </td>
    <td valign="top">
@@ -176,7 +145,7 @@ Adobe Commerce服務提供強大的功能，可擴充店面、簡化整合，以
       <div>
          <a href="../app-management/overview.md">
          <strong>應用程式管理</strong>
-         </a>
+         
       </div>
       <p>
          <em>透過Admin UI將App Builder應用程式與您的Commerce執行個體建立關聯、設定和管理。</em>
@@ -201,8 +170,7 @@ Adobe Commerce服務提供強大的功能，可擴充店面、簡化整合，以
          </a>
       </div>
       <p>
-         <em>自動將目錄、訂單及詳細目錄資料從Adobe Commerce同步至連線的服務。 使用Commerce CLI命令或<strong>資料管理儀表板</strong>來管理同步處理。</em>
-      </p>
+         <em>自動將目錄、訂單及詳細目錄資料從Adobe Commerce同步至連線的服務。 使用Commerce CLI命令或<strong>資料管理儀表板</strong>來管理同步處理。</em></p>
    </td>
    <td valign="top">
       <a href="../price-index/price-indexing.md">
@@ -211,24 +179,23 @@ Adobe Commerce服務提供強大的功能，可擴充店面、簡化整合，以
       <div>
           <a href="../price-index/price-indexing.md">
          <strong>SaaS價格索引器</strong>
-         </a>
+         
       </div>
       <p>
          <em>從Commerce應用程式解除安裝大量資源工作（例如索引和價格計算）至Adobe的雲端基礎結構，以最佳化網站效能。</em>
       </p>
    </td>
    <td valign="top">
-      <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
       <img alt="監視資料同步" src="../assets/icons/Monitoring.svg" width="40">
       </a>
       <div>
-          <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
          <strong>資料管理儀表板</strong>
-         </a>
+         
       </div>
       <p>
-         <em>從Commerce管理員的統一儀表板輕鬆追蹤Commerce資料同步並觸發重新同步。 取得資料可用性的寶貴見解，以便及時向購物者顯示。</em>
-      </p>
+         <em>從Commerce管理員的統一儀表板輕鬆追蹤Commerce資料同步並觸發重新同步。 取得資料可用性的寶貴見解，以便及時向購物者顯示。</em></p>
    </td>
 </table>
 
@@ -248,7 +215,7 @@ Adobe Commerce服務提供強大的功能，可擴充店面、簡化整合，以
 | 建立全通道的個人化體驗 | 您的商務資料已設定為定址區，導致您無法跨管道提供個人化體驗。 | 使用[資料連線](../data-connection/overview.md)將行為、異動和設定檔資料傳送至Adobe Experience Platform。 建立複雜的客戶區段、建立捨棄的購物車行銷活動、鎖定相似對象，以及分析整個客戶歷程中的季節性趨勢。 |
 | 簡化數位資產管理 | 跨多個系統管理產品影像和豐富媒體既費時又容易出錯。 | [AEM Assets整合](../aem-assets-integration/overview.md)將Adobe Commerce連線至Adobe Experience Manager Assets專案，簡化工作流程，並確保所有接觸點上的品牌體驗一致，藉此提供集中式資產管理。 |
 | 最佳化付款處理 | 有限的付款選項和不良的付款體驗，影響了客戶的滿意度和轉換。 | [付款服務](../payment-services/guide-overview.md)提供多種付款方式，包括免息分期付款，並有一個統一的控制面板來管理付款、訂單及發票。 |
-| 大規模管理資料同步 | 資源密集的索引正在減慢網站的速度，而且您無法輕鬆追蹤資料同步問題。 | [SaaS資料匯出](../data-export/overview.md)、[SaaS價格索引器](../price-index/price-indexing.md)和[資料管理儀表板](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)會自動同步目錄、訂單和存貨資料，將價格計算解除安裝到Adobe的雲端基礎結構，並即時顯示同步處理狀態。 |
+| 大規模管理資料同步 | 資源密集的索引正在減慢網站的速度，而且您無法輕鬆追蹤資料同步問題。 | [SaaS資料匯出](../data-export/overview.md)、[SaaS價格索引器](../price-index/price-indexing.md)和[資料管理儀表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)會自動同步目錄、訂單和存貨資料，將價格計算解除安裝到Adobe的雲端基礎結構，並即時顯示同步處理狀態。 |
 | 挽回失去的客戶，降低回報 | 高客戶流失率和產品回報率正影響獲利能力。 | 將[資料連線](../data-connection/overview.md)與Adobe Journey Optimizer和Real-Time CDP結合，以識別傳回模式、建立回饋行銷活動、依行為劃分客戶，並透過電子郵件和簡訊傳送個人化的重新參與行銷活動。 |
 | 制定資料導向銷售決策 | 您不確定要促銷哪些產品或何時要執行促銷活動。 | [即時搜尋](../live-search/overview.md)提供搜尋效能見解和銷售工具，以存取關鍵量度、分析搜尋字詞，並使用智慧型銷售規則，根據真正的客戶行為和業務目標來提升或隱藏產品。 |
 | 維持對敏感資料的合規性 | 您需要處理敏感的客戶資料，同時維護HIPAA合規性。 | [Data Connection](../data-connection/overview.md)已可使用HIPAA，可讓您與Experience Platform共用後台資料，同時保持合規性並系統地處理隱私權要求。 |
