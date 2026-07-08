@@ -30,9 +30,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 976bc4114790473d3bdcab6c06684f0c955893ee
+source-git-commit: ee8113dcf4e6d4d91fdf6cc69078d6104315a33f
 workflow-type: tm+mt
-source-wordcount: 1291
+source-wordcount: 1314
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ Adobe Commerce服務提供強大的功能，可擴充店面、簡化整合，以
       <div>
          <a href="../catalog-service/overview.md">
          <strong>目錄服務</strong>
-         </a>
+         
       </div>
       <p>
          <em>提供客戶最佳化的產品體驗，同時提升效能、改善擴充能力，並提高轉換率。</em>
@@ -103,7 +103,7 @@ Adobe Commerce服務提供強大的功能，可擴充店面、簡化整合，以
       <div>
          <a href="../product-recommendations/overview.md">
          <strong>產品建議</strong>
-         </a>
+         
       </div>
       <p>
          <em>根據購物者行為、熱門趨勢、產品相似度等等，新增AI輔助建議。</em>
@@ -116,7 +116,7 @@ Adobe Commerce服務提供強大的功能，可擴充店面、簡化整合，以
       <div>
          <a href="../payment-services/guide-overview.md">
          <strong>付款服務</strong>
-         </a>
+         
       </div>
       <p>
          <em>透過多種付款方式提高客戶滿意度，包括免息分期付款，以及簡化付款處理、訂單及發票的檢視。</em>
@@ -151,22 +151,10 @@ Adobe Commerce服務提供強大的功能，可擴充店面、簡化整合，以
       <div>
           <a href="../aem-assets-integration/overview.md">
          <strong>AEM Assets整合</strong>
-         </a>
+         
       </div>
       <p>
          <em>使用與Adobe Experience Manager整合的系統簡化數位資產管理，以管理多媒體內容。</em>
-      </p>
-      <br/>
-      <a href="../llmo-integration/overview.md">
-      <img alt="LLM最佳化" src="../assets/icons/gauge4.svg" width="40">
-      </a>
-      <div>
-          <a href="../llmo-integration/overview.md">
-         <strong>[!DNL Adobe LLM Optimizer]整合</strong>
-         </a>
-      </div>
-      <p>
-         <em>將您的目錄連線至[!DNL Adobe LLM Optimizer]以監視產品在AI導向的答案中的顯示方式，並將已核准的產品名稱和說明更新從機會部署回[!DNL Adobe Commerce]。</em>
       </p>
    </td>
    <td valign="top">
@@ -176,7 +164,7 @@ Adobe Commerce服務提供強大的功能，可擴充店面、簡化整合，以
       <div>
          <a href="../app-management/overview.md">
          <strong>應用程式管理</strong>
-         </a>
+         
       </div>
       <p>
          <em>透過Admin UI將App Builder應用程式與您的Commerce執行個體建立關聯、設定和管理。</em>
@@ -201,8 +189,7 @@ Adobe Commerce服務提供強大的功能，可擴充店面、簡化整合，以
          </a>
       </div>
       <p>
-         <em>自動將目錄、訂單及詳細目錄資料從Adobe Commerce同步至連線的服務。 使用Commerce CLI命令或<strong>資料管理儀表板</strong>來管理同步處理。</em>
-      </p>
+         <em>自動將目錄、訂單及詳細目錄資料從Adobe Commerce同步至連線的服務。 使用Commerce CLI命令或<strong>資料管理儀表板</strong>來管理同步處理。</em></p>
    </td>
    <td valign="top">
       <a href="../price-index/price-indexing.md">
@@ -211,7 +198,7 @@ Adobe Commerce服務提供強大的功能，可擴充店面、簡化整合，以
       <div>
           <a href="../price-index/price-indexing.md">
          <strong>SaaS價格索引器</strong>
-         </a>
+         
       </div>
       <p>
          <em>從Commerce應用程式解除安裝大量資源工作（例如索引和價格計算）至Adobe的雲端基礎結構，以最佳化網站效能。</em>
@@ -224,11 +211,10 @@ Adobe Commerce服務提供強大的功能，可擴充店面、簡化整合，以
       <div>
           <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
          <strong>資料管理儀表板</strong>
-         </a>
+         
       </div>
       <p>
-         <em>從Commerce管理員的統一儀表板輕鬆追蹤Commerce資料同步並觸發重新同步。 取得資料可用性的寶貴見解，以便及時向購物者顯示。</em>
-      </p>
+         <em>從Commerce管理員的統一儀表板輕鬆追蹤Commerce資料同步並觸發重新同步。 取得資料可用性的寶貴見解，以便及時向購物者顯示。</em></p>
    </td>
 </table>
 
