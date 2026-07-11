@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: ff5d3ee7f421c8fee9a40a71ea1de366fd5e6d47
+source-git-commit: 616ad9e9b45a66f127a55ef87dd6c6b9c0b470c8
 workflow-type: tm+mt
-source-wordcount: 2946
+source-wordcount: 3024
 ht-degree: 0%
 
 ---
@@ -593,6 +593,16 @@ query {
 - 針對Adobe Commerce as a Cloud Service客戶，您的環境中已安裝最新版本。
 
 - 針對雲端或內部部署的Adobe Commerce，Adobe建議使用撰寫器，將雲端環境中的目錄服務中繼資料升級為最新版本。
+
+### v3.5.0版本
+
+**發行日期**：2026年7月10日
+
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
+
+![新](../assets/new.svg) **階段類別URL金鑰同步** — 已更新目錄服務中繼套件相依性以包含目錄階段資料匯出程式模組(`magento/module-catalog-staging-data-exporter`)。 當階段類別`url_key`變更套用時，此模組會重新匯出產品摘要，因此階段目錄變更會正確傳播至SaaS目錄（目錄服務、即時搜尋和產品建議）。
+
+![新](../assets/new.svg)已更新相依性，以維持目錄服務與您的Commerce棧疊之間的相容性。
 
 ### v3.4.0版本
 

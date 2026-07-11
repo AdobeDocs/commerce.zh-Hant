@@ -23,9 +23,9 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 4eb33526927e1c5a81612aab0de0ce4bc7746368
 workflow-type: tm+mt
-source-wordcount: 353
+source-wordcount: 366
 ht-degree: 0%
 
 ---
@@ -39,6 +39,12 @@ ht-degree: 0%
 ![已知問題](../assets/bug.svg)已知問題
 
 ## 2026版本
+
+### 1.0.15版
+
+_2026年7月10日_
+
+![修正](../assets/fix.svg)已新增排序支援至類別摘要。<!--MDEE-1409-->
 
 ### 1.0.14版本
 
@@ -57,7 +63,7 @@ _2026年6月11日_
 _2026年5月6日_
 
 ![修正](../assets/fix.svg) **已改善[!DNL Adobe Commerce Optimizer Connector]設定指示** — 已更新Commerce管理員中的[!DNL Adobe Commerce Optimizer]設定頁面，以連結至&#x200B;_[!DNL Adobe Commerce Optimizer Connector]整合指南_。
-<!--COMOPT-1922-->
+
 
 ![修正](../assets/fix.svg) **[!DNL Adobe Commerce Optimizer Connector]中繼資料增強功能** - [!DNL Adobe Commerce Optimizer Connector]現在會在中繼資料標頭中包含已安裝版本。 這項改善可讓團隊快速識別在疑難排解或支援工作期間使用的聯結器版本。<!--MDEE-1323-->
 
