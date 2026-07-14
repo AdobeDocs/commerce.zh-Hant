@@ -22,9 +22,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 55d4fefaa15a09e475bcda93f23801319b56db70
+source-git-commit: ee2211b243171ebfc9ca744f169c786943c40ad9
 workflow-type: tm+mt
-source-wordcount: 3115
+source-wordcount: 3256
 ht-degree: 0%
 
 ---
@@ -45,12 +45,19 @@ ht-degree: 0%
 
 ## 2026版本
 
+### 103.4.30版
+
+_2026年7月10日_
+
+![修正](../assets/fix.svg)修正Commerce Admin中「資料摘要同步狀態」頁面上「依ID篩選摘要狀態方格」功能，以便在您依「摘要ID」篩選時，能正確顯示相符的摘要記錄。 <!--MDEE-1396-->
+![新](../assets/new.svg)在`bin/magento saas:resync`命令中新增`--force`選項，以重新同步所有選取的資料摘要，即使它們已顯示為已同步處理，讓完整重新同步和復原方案更容易。<!--MDEE-1334-->
+
 ### 103.4.29版
 
 _2026年7月6日_
 
-![修正](../assets/fix.svg)排序產品連結以避免隨機同步。 <!--MDEE-1391-->
-![修正](../assets/fix.svg)價格摘要會在UTC午夜之後，傳送UTC負面網站的基本價格而非目錄規則價格。<!--MDEE-1401-->
+![修正](../assets/fix.svg)修正產品摘要中相關、向上銷售和交叉銷售產品連結的順序在執行之間可能有所差異，導致未變更的產品在每`bin/magento saas:resync --feed products`次執行時都重新提交的問題。 現在，這些連結會以一致的順序匯出，因此產品只有在實際變更時才會重新同步。 <!--MDEE-1391-->
+![修正](../assets/fix.svg)修正在UTC之後的時區（例如，美國和加拿大）中，價格摘要在UTC的清晨時段傳送完整基本價格而非目錄規則價格的問題。 現在不論網站的時區為何，系統都能正確提供目錄規則定價。<!--MDEE-1401-->
 
 ### 103.4.28版本
 
