@@ -4,29 +4,13 @@ description: 瞭解如何將Commerce資料連結至Adobe Experience Platform。
 feature: Personalization, Integration, Configuration
 exl-id: 8ba33277-38a5-45af-86e0-906cfb3b998d
 TQID: https://experienceleague.adobe.com/Hof7ftSKKkdMzoJ7eXLr9D2jv-U1LfFnMiFuGwzJpYE
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11id: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: d00e9f03-e50b-4162-b143-0c0817c937c2id: d095671a-1355-40aa-8b5f-06c33c68080bid: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+source-git-commit: 5ba5dfa23580b5eefa8271277e78c6ea67879b90
 workflow-type: tm+mt
-source-wordcount: 3071
+source-wordcount: 3511
 ht-degree: 0%
 
 ---
@@ -54,9 +38,36 @@ ht-degree: 0%
 
 在本節中，您將瞭解如何設定[!DNL Data Connection]擴充功能。
 
+### 設定範圍 {#configuration-scope}
+
+[!DNL Data Connection]設定會混合使用全域和網站範圍的值。 全域設定會套用至您的整個Adobe Commerce執行個體。 網站範圍的設定可讓多品牌和多網站商家將資料路由至每個網站的不同Adobe Experience Platform沙箱和資料集。
+
+在您設定店面、後台或設定檔資料收集之前，請將「**[!UICONTROL Settings]**」標籤上的「**[!UICONTROL Scope]**」下拉式清單設定為您要設定的網站。 針對需要不同Experience Platform路由的每個網站重複設定。
+
+| 設定或欄位 | 範圍 | 附註 |
+| --- | --- | --- |
+| 組織ID | 全域 | 每個Adobe Commerce例項一個組織ID。 已在[Commerce Services聯結器](../landing/saas.md#organizationid)中設定。 |
+| 服務帳戶認證 | 全域 | 請輸入一次服務帳戶詳細資料。 除非您的部署另有需求，否則相同的認證可驗證所有網站的Experience Platform API呼叫。 |
+| 沙箱名稱 | 網站 | 在範圍中選取網站的Experience Platform沙箱。 [!DNL Data Connection]個後台事件的主要網站範圍設定。 |
+| **[!UICONTROL Test connection]** | 網站 | 驗證目前在&#x200B;**範圍**&#x200B;中選取之網站的服務帳戶認證和沙箱。 |
+| 資料串流ID | 網站 | 路由所選網站的行為和後台事件資料。 |
+| 資料集ID | 網站 | 識別儲存所選網站Commerce資料的資料集。 |
+| 店面活動、後台活動、客戶個人資料 | 網站 | 資料彙集選項套用至&#x200B;**範圍**&#x200B;中選取的網站。 |
+
+#### 多網站範例 {#multi-website-example}
+
+商家透過一個Adobe Commerce例項經營兩個網站：
+
+- **網站A （品牌A）**&#x200B;將店面和後台資料傳送至&#x200B;**生產環境** Experience Platform沙箱。
+- **網站B （品牌B）**&#x200B;傳送資料至&#x200B;**開發** Experience Platform沙箱進行測試。
+
+商家在&#x200B;**[!UICONTROL Service Account/Credential details]**&#x200B;頁面上輸入一次服務帳戶認證。 在&#x200B;**[!UICONTROL Settings]**&#x200B;索引標籤上，商家將&#x200B;**[!UICONTROL Scope]**&#x200B;設定為&#x200B;**網站A**，選取生產沙箱名稱並儲存。 然後，商家將&#x200B;**[!UICONTROL Scope]**&#x200B;設定為&#x200B;**網站B**，選取開發沙箱名稱並儲存。 對每個網站執行&#x200B;**[!UICONTROL Test connection]**&#x200B;以確認正確的沙箱和認證。
+
 ### 新增服務帳戶和認證詳細資料
 
-如果您計畫收集並傳送[歷史訂單資料](#send-historical-order-data)或[客戶設定檔資料](#send-customer-profile-data)，您必須新增服務帳戶與認證詳細資料。 此外，若您正在設定[Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html?lang=zh-Hant)擴充功能，則必須完成這些步驟。
+如果您計畫收集並傳送[歷史訂單資料](#send-historical-order-data)或[客戶設定檔資料](#send-customer-profile-data)，您必須新增服務帳戶與認證詳細資料。 此外，若您正在設定[Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html)擴充功能，則必須完成這些步驟。
+
+服務帳戶認證設定在&#x200B;**預設設定**&#x200B;範圍，並套用至全域。 請參閱[設定範圍](#configuration-scope)以取得網站範圍的設定，例如沙箱名稱。
 
 如果您只收集和傳送店面或後台資料，您可以跳至[一般](#general)區段。
 
@@ -64,12 +75,12 @@ ht-degree: 0%
 
 在Adobe Developer Console中建立可驗證Commerce的專案，以便進行Experience Platform API呼叫。
 
-若要建立專案，請依照[驗證及存取Experience Platform API](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html?lang=zh-Hant)教學課程中概述的步驟進行。
+若要建立專案，請依照[驗證及存取Experience Platform API](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html)教學課程中概述的步驟進行。
 
 進行教學課程的過程中，請確定您的專案具備下列專案：
 
-- 存取下列[產品設定檔](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html?lang=zh-Hant#select-product-profiles)： **預設的生產所有存取權**&#x200B;和&#x200B;**AEP預設的所有存取權**。
-- 已設定正確的[角色和許可權](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html?lang=zh-Hant#assign-api-to-a-role)。
+- 存取下列[產品設定檔](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#select-product-profiles)： **預設的生產所有存取權**&#x200B;和&#x200B;**AEP預設的所有存取權**。
+- 已設定正確的[角色和許可權](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#assign-api-to-a-role)。
 - 如果您決定使用JSON Web權杖(JWT)作為伺服器對伺服器的驗證方法，您也必須上傳私密金鑰。
 
 此步驟的結果會建立您在下一步中使用的組態檔。
@@ -86,9 +97,9 @@ ht-degree: 0%
 
 1. 將`<workspace-name>.json`檔案的內容複製到&#x200B;**服務帳戶/認證詳細資料**&#x200B;欄位，例如`"client_id"`、`"client_secrets"`、`"technical_account_email"`、`"technical_account_id"`等。
 
-1. 按一下&#x200B;**儲存設定**。
+1. 按一下&#x200B;**[!UICONTROL Save Config]**。
 
-1. 按一下&#x200B;**[!UICONTROL Test connection]**&#x200B;按鈕，確定您輸入的服務帳戶與認證資訊正確無誤。
+   儲存後，請在「**[!UICONTROL Settings]**」標籤上完成網站範圍的組態，包括&#x200B;**[!UICONTROL Sandbox name]**&#x200B;和&#x200B;**[!UICONTROL Test connection]**。 請參閱[一般](#general)。
 
 ### 一般
 
@@ -96,11 +107,15 @@ ht-degree: 0%
 
    ![[!DNL Data Connection]設定](./assets/epc-settings.png){width="700" zoomable="yes"}
 
-1. 在「**一般**」下的「**設定**」標籤上，確認與您的Adobe Experience Platform帳戶相關聯的ID （如[Commerce Services Connector](../landing/saas.md#organizationid)中所設定）。 組織ID為全域。 每個Adobe Commerce例項只能關聯一個組織ID。
+1. 在「**[!UICONTROL General]**」下的「**[!UICONTROL Settings]**」標籤上，依照[Adobe Experience Platform Services Connector](../landing/saas.md#organizationid)中的設定，驗證與您的Commerce帳戶相關聯的ID。 組織ID為全域。 每個Adobe Commerce例項只能關聯一個組織ID。
 
-1. 在&#x200B;**領域**&#x200B;下拉式清單中，將內容設定為&#x200B;**網站**。
+1. 在&#x200B;**[!UICONTROL Scope]**&#x200B;下拉式清單中，將內容設定為&#x200B;**網站**。 檢視設定全域和每個網站套用的[設定範圍](#configuration-scope)。
 
-1. （選用）如果您已將[AEP Web SDK (alloy)](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hant)部署至您的網站，請啟用核取方塊並新增AEP Web SDK的名稱。 否則，請將這些欄位留空，[!DNL Data Connection]擴充功能會為您部署一個擴充功能。
+1. 在範圍中輸入網站的&#x200B;**[!UICONTROL Sandbox name]**。
+
+1. 按一下&#x200B;**[!UICONTROL Test connection]**&#x200B;以驗證服務帳戶認證，以及目前在&#x200B;**[!UICONTROL Scope]**&#x200B;中選取之網站的沙箱。 對每個使用不同沙箱的網站重複此步驟。
+
+1. （選用）如果您已將[AEP Web SDK (alloy)](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html)部署至您的網站，請啟用核取方塊並新增AEP Web SDK的名稱。 否則，請將這些欄位留空，[!DNL Data Connection]擴充功能會為您部署一個擴充功能。
 
    >[!NOTE]
    >
@@ -118,7 +133,7 @@ ht-degree: 0%
 
 若要確保您的Adobe Commerce執行個體可以開始資料收集，請檢閱[必要條件](overview.md#prerequisites)。
 
-請參閱活動主題以進一步瞭解[店面](events.md#storefront-events)、[後台](events-backoffice.md)和[設定檔](events-backoffice.md#customer-profile-events)活動。
+請參閱活動主題以進一步瞭解[店面](events.md#storefront-events)、[後台](events-backoffice.md)和[個人檔案記錄](events-profilerecord.md)資料。 對於時間序列[設定檔事件](events-backoffice.md#customer-profile-events)，請參閱後台事件參考。
 
 >[!NOTE]
 >
@@ -130,9 +145,9 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >如果您選取&#x200B;**後台事件**，所有後台資料都會傳送到Experience Platform Edge。 如果購物者選擇退出資料收集，您必須在Experience Platform中明確設定購物者的隱私權偏好設定。 這與店面事件不同，店面事件收集器已根據購物者偏好設定處理同意。 深入瞭解[在Experience Platform中設定購物者的隱私權偏好設定](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html?lang=zh-Hant)。
+   >如果您選取&#x200B;**後台事件**，所有後台資料都會傳送到Experience Platform Edge。 如果購物者選擇退出資料收集，您必須在Experience Platform中明確設定購物者的隱私權偏好設定。 這與店面事件不同，店面事件收集器已根據購物者偏好設定處理同意。 深入瞭解[在Experience Platform中設定購物者的隱私權偏好設定](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html)。
 
-1. （如果您使用自己的AEP Web SDK，請略過此步驟。） 在Adobe Experience Platform中[建立](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=zh-Hant#create)資料流，或選取要用於集合的現有資料流。 在&#x200B;**資料流識別碼**&#x200B;欄位中輸入該資料流識別碼。
+1. （如果您使用自己的AEP Web SDK，請略過此步驟。） 在Adobe Experience Platform中[建立](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html#create)資料流，或選取要用於集合的現有資料流。 在&#x200B;**資料流識別碼**&#x200B;欄位中輸入該資料流識別碼。
 
 1. 輸入您要包含Commerce資料的&#x200B;**資料集識別碼**。 若要尋找資料集ID：
 
@@ -140,7 +155,7 @@ ht-degree: 0%
    1. 開啟與資料流相關聯的資料集。
    1. 在右側窗格中，檢視資料集的詳細資訊。 複製資料集ID
 
-1. 若要確保根據[cron](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html?lang=zh-Hant)工作的排程更新後台事件資料，您必須將`Sales Orders Feed`索引變更為`Update by Schedule`。
+1. 若要確保根據[cron](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html)工作的排程更新後台事件資料，您必須將`Sales Orders Feed`索引變更為`Update by Schedule`。
 
    1. 在&#x200B;_管理員_&#x200B;側邊欄上，移至&#x200B;**[!UICONTROL System]** > _[!UICONTROL Tools]_>**[!UICONTROL Index Management]**。
 
@@ -148,7 +163,7 @@ ht-degree: 0%
 
    1. 將&#x200B;**[!UICONTROL Actions]**&#x200B;設為`Update by Schedule`。
 
-   1. 如果您是第一次啟用後台資料，請執行以下命令來重新索引並觸發重新同步。 只要[cron](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html?lang=zh-Hant)工作設定正確，後續的重新同步就會自動發生。
+   1. 如果您是第一次啟用後台資料，請執行以下命令來重新索引並觸發重新同步。 只要[cron](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html)工作設定正確，後續的重新同步就會自動發生。
 
       ```bash
       bin/magento index:reindex sales_order_data_exporter_v2
@@ -162,22 +177,24 @@ ht-degree: 0%
 
 | 欄位 | 說明 |
 |--- |--- |
-| 範圍 | 您要套用組態設定的特定網站。 |
-| 組織ID （全域） | 屬於購買Adobe DX產品的組織的ID。 此ID會將您的Adobe Commerce執行個體連結至Adobe Experience Platform。 |
+| 範圍 | 套用網站範圍設定的網站。 切換範圍，為每個網站設定沙箱名稱、資料流ID、資料集ID和資料收集選項。 |
+| 組織ID （全域） | 屬於購買Adobe DX產品的組織的ID。 此ID會將您的Adobe Commerce執行個體連結至Adobe Experience Platform。 全域設定；未針對每個網站設定。 |
+| 沙箱名稱（網站） | Commerce傳送所選網站資料的Experience Platform沙箱名稱。 多品牌或多網站部署將資料路由至不同沙箱時，請分別為每個網站設定。 |
 | AEP Web SDK是否已部署至您的網站 | 如果您已將自己的AEP Web SDK部署到網站，請選取此核取方塊 |
 | AEP Web SDK名稱（全域） | 如果您已將Experience Platform Web SDK部署至網站，請在此欄位中指定該SDK的名稱。 這可讓店面事件收集器和店面事件SDK使用您的Experience Platform Web SDK，而非[!DNL Data Connection]擴充功能部署的版本。 如果您未將Experience Platform Web SDK部署至您的網站，請將此欄位留空，而[!DNL Data Connection]擴充功能會為您部署一個擴充功能。 |
 | 店面活動 | 只要組織ID和資料流ID有效，就會預設勾選。 店面活動會在購物者瀏覽您的網站時，從他們那裡收集匿名的行為資料。 |
 | 後台活動 | 若勾選，事件裝載會包含匿名處理的訂單狀態資訊，例如訂單是否已下達、取消、退款或出貨。 |
 | 資料串流ID （網站） | 可讓資料從Adobe Experience Platform流向其他Adobe DX產品的ID。 此ID必須與您特定Adobe Commerce執行個體中的特定網站相關聯。 如果您指定自己的Experience Platform Web SDK，請勿在此欄位中指定資料串流ID。 [!DNL Data Connection]擴充功能會使用與該SDK相關聯的資料串流ID，並忽略此欄位中指定的任何資料串流ID （如果有的話）。 |
 | 資料集ID （網站） | 包含您Commerce資料的資料集ID。 除非您已取消選取&#x200B;**店面事件**&#x200B;或&#x200B;**後台事件**&#x200B;核取方塊，否則此欄位為必要欄位。 此外，如果您使用自己的Experience Platform Web SDK，因此沒有指定資料串流ID，您還是必須新增與資料串流相關聯的資料集ID。 否則，您無法儲存此表單。 |
+| **[!UICONTROL Test connection]** | 驗證&#x200B;**範圍**&#x200B;中目前選取之網站的服務帳戶認證及沙箱名稱。 在您設定認證及變更網站的沙箱名稱或範圍後，請執行測試。 |
 
-上線後，店面資料開始流入Experience Platform Edge。 後端辦公室資料大約需要5分鐘才會顯示在邊緣。 後續更新會根據cron排程顯示在邊緣。
+在您設定擴充功能後，店面資料會開始流入Experience Platform Edge。 後端辦公室資料大約需要5分鐘才會顯示在邊緣。 後續更新會根據cron排程顯示在邊緣。
 
 ### 傳送客戶設定檔資料
 
 有兩種型別的設定檔資料可傳送至Experience Platform：設定檔記錄和時間序列設定檔事件。
 
-個人資料記錄包含購物者在Commerce執行個體中建立個人資料時所儲存的資料，例如購物者的姓名。 當您的結構描述和資料集[已正確設定](profile-data.md)時，設定檔記錄會傳送至Experience Platform並轉送至Adobe的設定檔管理和細分服務： [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html?lang=zh-Hant)。
+個人資料記錄包含購物者在Commerce執行個體中建立個人資料時所儲存的資料，例如購物者的姓名。 當您的結構描述和資料集[已正確設定](profile-data.md)時，設定檔記錄會傳送至Experience Platform並轉送至Adobe的設定檔管理和細分服務： [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html)。
 
 時間序列設定檔事件包含購物者設定檔資訊的相關資料，例如是否他們在您的網站上建立、編輯或刪除帳戶。 將設定檔事件資料傳送至Experience Platform時，該資料會位於資料集中，以供其他DX產品使用。
 
@@ -197,7 +214,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->若未在Experience Platform中看到設定檔資料，請參閱[Commerce知識庫](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported)以取得疑難排解建議。
+>若未在Experience Platform中看到設定檔資料，請參閱[Commerce知識庫](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported)以取得疑難排解建議。
 
 #### 欄位說明
 
@@ -216,7 +233,7 @@ Adobe Commerce最多會收集五年的[歷史訂單資料和狀態](events-backo
 
 觀看此影片以進一步瞭解歷史訂單，然後完成下列步驟以實施歷史訂單收集。
 
->[!VIDEO](https://video.tv.adobe.com/v/3450238?captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3424672)
 
 #### 設定Order Sync服務
 
@@ -224,7 +241,7 @@ Adobe Commerce最多會收集五年的[歷史訂單資料和狀態](events-backo
 
 1. 請確定您已提供[個](#add-service-account-and-credential-details)服務帳戶和認證詳細資料。
 
-1. [啟用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq.html?lang=zh-Hant) RabbitMQ。
+1. [啟用](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq.html) RabbitMQ。
 
    >[!NOTE]
    >
@@ -241,7 +258,7 @@ Adobe Commerce最多會收集五年的[歷史訂單資料和狀態](events-backo
 
    >[!NOTE]
    >
-   >請參閱[部署變數檔案](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=zh-Hant#cron_consumers_runner)以瞭解所有可用的設定選項。
+   >請參閱[部署變數檔案](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#cron_consumers_runner)以瞭解所有可用的設定選項。
 
 啟用訂單同步服務後，您就可以在&#x200B;**[!UICONTROL [!DNL Data Connection]]**&#x200B;頁面中指定歷史訂單日期範圍。
 
@@ -301,9 +318,9 @@ Adobe Commerce最多會收集五年的[歷史訂單資料和狀態](events-backo
 | Experience Platform | 顯示在Experience Platform中[!DNL Commerce]結構描述中指定的任何自訂屬性。 |
 | 重新整理 | 從Experience Platform中的[!DNL Commerce]結構描述擷取任何自訂屬性名稱。 |
 
-## 確認已收集事件資料
+## 確認已收集事件資料 {#confirm-that-event-data-is-collected}
 
-若要確認正在從您的Commerce存放區收集資料，請使用[Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=zh-Hant)來檢查您的Commerce網站。 確認資料正在收集後，您可以執行查詢，從您建立的[資料集](overview.md#prerequisites)傳回資料，以確認店面和後台事件資料是否出現在邊緣。
+若要確認正在從您的Commerce存放區收集資料，請使用[Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html)來檢查您的Commerce網站。 確認資料正在收集後，您可以執行查詢，從您在組態期間建立的[資料集中傳回資料，以確認您的店面和後台事件資料是否出現在邊緣](overview.md#enable-extension)。
 
 1. 在Experience Platform的左側導覽中選取&#x200B;**查詢**，然後按一下[!UICONTROL Create Query]。
 
@@ -325,11 +342,11 @@ Adobe Commerce最多會收集五年的[歷史訂單資料和狀態](events-backo
 
 在此範例中，您會看到來自`commerce.productListAdds`、`commerce.productViews`、`web.webpagedetails.pageViews`等的事件資料。 此檢視可讓您驗證Commerce資料是否到達邊緣。
 
-如果結果不符合您的預期，請開啟您的資料集並尋找任何失敗的批次匯入。 深入瞭解[疑難排解批次匯入](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html?lang=zh-Hant)。
+如果結果不符合您的預期，請開啟您的資料集並尋找任何失敗的批次匯入。 深入瞭解[疑難排解批次匯入](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html)。
 
 ### 驗證設定檔資料是否出現在Experience Platform中
 
-若未在Experience Platform中看到設定檔資料，請參閱[Commerce知識庫](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported)以取得疑難排解建議。
+如需疑難排解建議，請參閱[傳送客戶設定檔資料](#send-customer-profile-data)中的提示。
 
 ## 後續步驟
 

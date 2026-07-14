@@ -5,16 +5,12 @@ role: Admin, Developer
 feature: Install
 exl-id: 853ef2d1-85cb-41a8-9b07-887a758ed401
 TQID: https://experienceleague.adobe.com/EbYHB6L9Q7bZNnoz3-yT4aaBcRiLiatvjO-hQyGOwoo
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
 workflow-type: tm+mt
-source-wordcount: 476
+source-wordcount: 491
 ht-degree: 0%
 
 ---
@@ -28,6 +24,10 @@ ht-degree: 0%
 [!DNL Data Connection]擴充功能可從[Adobe Marketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html)取得。 當您從伺服器的命令列安裝此擴充功能時，會以[服務](../landing/saas.md)的形式連線至您的Adobe Commerce安裝。 程式完成時，**[!DNL Data Connection]**&#x200B;和&#x200B;**Commerce Services Connector**&#x200B;會顯示在Commerce _管理員_&#x200B;中&#x200B;**服務**&#x200B;下的&#x200B;**系統**&#x200B;功能表中。
 
 ![[!DNL Data Connection]延伸模組管理員檢視](assets/epc-adminui.png)
+
+>[!NOTE]
+>
+>安裝後，請在[管理員]中設定[!DNL Data Connection]。 如需全域與網站範圍的設定，請參閱[設定範圍](connect-data.md#configuration-scope)。
 
 >[!IMPORTANT]
 >
@@ -85,7 +85,7 @@ ht-degree: 0%
 
 #### 在雲端基礎結構上
 
-在雲端基礎結構上的Adobe Commerce中，啟用`.magento.env.yaml`中的`ENABLE_EVENTING`全域變數。 [了解更多](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global.html?lang=zh-Hant#enable_eventing)。
+在雲端基礎結構上的Adobe Commerce中，啟用`.magento.env.yaml`中的`ENABLE_EVENTING`全域變數。 [了解更多](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global.html#enable_eventing)。
 
 ```bash
 stage:
@@ -162,7 +162,7 @@ composer update magento/experience-platform-connector-b2b --with-dependencies
 1. **儲存** `composer.json`。 然後，從命令列執行下列動作：
 
    ```bash
-   composer update magento/experience-platform-connector –-with-dependencies
+   composer update magento/experience-platform-connector --with-dependencies
    ```
 
    或者，對於B2B商家：
@@ -173,4 +173,4 @@ composer update magento/experience-platform-connector-b2b --with-dependencies
 
 ## 解除安裝[!DNL Data Connection]延伸模組 {#uninstall}
 
-若要解除安裝[!DNL Data Connection]擴充功能，請參閱[解除安裝模組](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html?lang=zh-Hant)。
+若要解除安裝[!DNL Data Connection]擴充功能，請參閱[解除安裝模組](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html)。

@@ -5,19 +5,11 @@ role: Admin, Developer
 feature: Personalization, Integration
 exl-id: dcd0b9e7-8d36-4bde-b226-ac19e83f00e4
 TQID: https://experienceleague.adobe.com/L0LoTkKV0LCiO3mj8W1cKyK-A0HO0z32zu1ZSNC9GR4
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
 workflow-type: tm+mt
 source-wordcount: 616
 ht-degree: 2%
@@ -362,7 +354,7 @@ ComponentRegistrar::register(
 
 為了確保您的[!DNL Commerce]結構描述可以在Experience Platform中擷取新的自訂訂單屬性，您需要擴充結構描述以包含這些自訂欄位。
 
-若要瞭解如何擴充現有的XDM結構描述以包含這些自訂欄位，請參閱Experience Platform檔案中的[在UI中建立和編輯結構描述](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups)一文。 租使用者ID欄位是動態產生的；但是，欄位結構應類似於Experience Platform檔案中提供的範例。
+若要瞭解如何擴充現有的XDM結構描述以包含這些自訂欄位，請參閱Experience Platform檔案中的[在UI中建立和編輯結構描述](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups)一文。 租使用者ID欄位是動態產生的；但是，欄位結構應類似於Experience Platform檔案中提供的範例。
 
 >[!IMPORTANT]
 >
@@ -384,6 +376,6 @@ ComponentRegistrar::register(
 
 如果您在&#x200B;**[!UICONTROL Data Customization]**&#x200B;標籤上看到訊息`No custom order attributes found.`，請確認下列事項：
 
-1. 您已完成啟用[Data Connector擴充功能](overview.md#prerequisites)的必要條件。
+1. 您已完成啟用[!DNL Data Connection]擴充功能的先決條件。 請參閱[必要條件](overview.md#prerequisites)。
 1. 您已設定[自訂訂單屬性](#add-custom-attributes-to-orders)。
 1. 至少已產生一個訂購事件。
