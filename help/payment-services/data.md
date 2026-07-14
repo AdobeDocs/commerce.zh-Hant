@@ -7,7 +7,7 @@ exl-id: dbf41ce9-01f9-45d0-b651-e4c499e83822
 feature: Payments, Checkout, Data Import/Export, Paas, Saas
 source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
-source-wordcount: '152'
+source-wordcount: '167'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ID可輕易地從付款的商家活動詳細資料和PayPal webhook中存取。
 
 `invoice_id`與`custom_id`會顯示在付款的商家活動詳細資訊的底部附近：
 
-商戶活動詳細資料![&#128279;](assets/merchant-activity-ids.png){width="600" zoomable="yes"}中的`custom_id`
+商戶活動詳細資料](assets/merchant-activity-ids.png){width="600" zoomable="yes"}中的![`custom_id`
 
 PayPal的webhook詳細資料中的`custom_id`和`invoice_id`：
 
@@ -79,5 +79,5 @@ PayPal的webhook詳細資料中的`custom_id`和`invoice_id`：
 
 如需詳細資訊，請參閱PayPal的REST API檔案：
 
-* [`purchase_unit`，其中`custom_id`與`invoice_id`位於](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit)
+* [`purchase_unit`，其中`custom_id`與`invoice_id`位在](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit)
 * [顯示訂單詳細資料](https://developer.paypal.com/docs/api/orders/v2/#orders_get)
