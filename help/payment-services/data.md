@@ -26,7 +26,7 @@ ID可輕易地從付款的商家活動詳細資料和PayPal webhook中存取。
 
 `invoice_id`與`custom_id`會顯示在付款的商家活動詳細資訊的底部附近：
 
-商戶活動詳細資料](assets/merchant-activity-ids.png){width="600" zoomable="yes"}中的![`custom_id`
+商戶活動詳細資料![&#128279;](assets/merchant-activity-ids.png){width="600" zoomable="yes"}中的`custom_id`
 
 PayPal的webhook詳細資料中的`custom_id`和`invoice_id`：
 
