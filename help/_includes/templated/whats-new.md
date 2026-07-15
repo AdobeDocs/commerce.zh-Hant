@@ -1,8 +1,8 @@
 ---
-source-git-commit: b5e8f023260bd5bfffb76084c175a01cd6a61ff3
+source-git-commit: c99194b2eb7111a593cfe7c4ba1b4917e38589d2
 workflow-type: tm+mt
-source-wordcount: '1783'
-ht-degree: 0%
+source-wordcount: '1799'
+ht-degree: 1%
 
 ---
 # 新功能範本
@@ -10,6 +10,50 @@ ht-degree: 0%
 ## 新增功能
 
 此頁面包含過去60天所做的變更。 我們將從此清單中排除所有微幅更新，例如複製編輯。
+
+### 2026年7月7日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>已新增Adobe Commerce as a Cloud Service的沙箱<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes">發行說明</a>。</p>
+</td>
+      <td>
+        重大更新
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/976a43b367be87363307dc27c55f98df18271eb1">認可</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年7月6日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>移除LLM Optimizer和Commerce整合檔案。 此功能已重新設定範圍，並移至<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/products/catalog-enrichment">Commerce管理指南</a>。</p>
+</td>
+      <td>
+        重大更新
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/edab7c8b3c7965425c5d3008a537f7e4a1fc374b">認可</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年6月23日
 
@@ -393,28 +437,6 @@ ht-degree: 0%
         重大更新
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/14aa082c1f0f8ce4c51328eb8ee9f4af25adf859">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年4月30日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>展開<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/aco-optimizer-connector/overview">Adobe Commerce Optimizer聯結器總覽</a>，其中包含主要優點、端對端架構（新圖表）、更清楚的範圍對應、典型的設定和同步工作流程、支援的案例，以及必要條件或責任，讓團隊可以更輕鬆地評估及操作整合。</p>
-</td>
-      <td>
-        意見反應，重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/fc4ac765d4bcbb8b2a0217f33b6f8a4b353e5b33">認可</a></td>
     </tr>
   </tbody>
 </table>

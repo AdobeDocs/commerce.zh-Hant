@@ -16,7 +16,7 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
 workflow-type: tm+mt
 source-wordcount: 1395
 ht-degree: 0%
@@ -36,7 +36,7 @@ ht-degree: 0%
 | **定義** | 客戶在您網站上採取的點按或動作。 | 生命週期相關資訊和每個訂單（過去和目前）的詳細資訊。 |
 | 由Adobe Commerce擷取的&#x200B;**個事件** | [pageView](https://experienceleague.adobe.com/zh-hant/docs/commerce/data-connection/event-forwarding/events#pageview)<br>[productPageView](https://experienceleague.adobe.com/zh-hant/docs/commerce/data-connection/event-forwarding/events)<br>[addToCart](https://experienceleague.adobe.com/zh-hant/docs/commerce/data-connection/event-forwarding/events#addtocart)<br>[openCart](https://experienceleague.adobe.com/zh-hant/docs/commerce/data-connection/event-forwarding/events#opencart)<br>[startCheckout](https://experienceleague.adobe.com/zh-hant/docs/commerce/data-connection/event-forwarding/events#startcheckout)<br>[completeCheckout](https://experienceleague.adobe.com/zh-hant/docs/commerce/data-connection/event-forwarding/events#completecheckout) | [orderPlaced](https://experienceleague.adobe.com/zh-hant/docs/commerce/data-connection/event-forwarding/events-backoffice#orderplaced)<br>[訂單歷史記錄](https://experienceleague.adobe.com/zh-hant/docs/commerce/data-connection/fundamentals/connect-data#send-historical-order-data) |
 
-### 其他客戶都取得了哪些成就？
+### 其他客戶都取得了哪些成就？ {#what-have-other-customers-achieved}
 
 Adobe [!DNL Commerce]客戶透過Adobe [!DNL Commerce]、Adobe [!DNL Journey Optimizer]和Adobe [!DNL Real-Time CDP]實作個人化的放棄行銷活動，已取得顯著的業務影響。
 

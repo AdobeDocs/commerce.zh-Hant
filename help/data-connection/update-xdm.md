@@ -14,21 +14,23 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 5ba5dfa23580b5eefa8271277e78c6ea67879b90
 workflow-type: tm+mt
-source-wordcount: 1019
+source-wordcount: 1028
 ht-degree: 0%
 
 ---
 
 # 更新Commerce資料擷取的時間序列事件結構
 
-使用[!DNL Data Connection]擴充功能的[上線步驟](overview.md#onboarding-steps)之一，是存取資料流工作區並[建立Adobe Commerce專屬的資料流](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=zh-Hant)。 當您建立該資料流時，也必須選取描述您計畫擷取之資料的結構描述。 該結構描述必須包含商務特定欄位群組。
+您[啟用 [!DNL Data Connection]](overview.md#enable-extension)擴充功能的其中一個步驟是存取資料流工作區並[建立Adobe Commerce特定的資料流](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=zh-Hant)。 當您建立該資料流時，也必須選取描述您計畫擷取之資料的結構描述。 該結構描述必須包含商務特定欄位群組。
 
 本文提供結構描述必須包含的欄位群組，才能成功收集Adobe Commerce事件提供的下列時間序列資料：
 
-- [行為](events.md) — 包含店面、個人資料、搜尋和B2B事件。
-- [後台](events-backoffice.md) — 包含訂單狀態和設定檔事件。
+- [行為](events.md) — 包含店面、搜尋和B2B活動。
+- [後台](events-backoffice.md) — 包含訂單狀態與時間序列[設定檔事件](events-backoffice.md#customer-profile-events)。
+
+如需設定檔&#x200B;*記錄*，請參閱[更新設定檔記錄結構描述](profile-data.md)。
 
 深入瞭解[時間序列資料](data-ingestion.md)。
 

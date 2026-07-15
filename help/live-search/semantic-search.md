@@ -3,14 +3,18 @@ title: 語意搜尋
 description: 從設定啟用 [!DNL Live Search] 的AI語意搜尋。 不需要屬性設定或店面變更。
 role: Admin
 recommendations: noCatalog
-source-git-commit: 94598c3cbc6b9fa84f92532e42ec5e9027c5b1fc
+source-git-commit: 33d9172b2d0455a061c00781128a9f2fe804af7b
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '790'
 ht-degree: 0%
 
 ---
 
 # 語意搜尋
+
+>[!AVAILABILITY]
+>
+>語意搜尋適用於使用Adobe Commerce 2.4.4版及更新版本的商家。
 
 語意搜尋會使用AI來瞭解購物者的意思，而不只是他們鍵入的字詞。 即使您的目錄未使用相關片語，如「沙灘婚禮的禮服」或「一整天都穿著舒服的鞋子」等查詢仍可傳回相關產品。
 

@@ -17,9 +17,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
 workflow-type: tm+mt
-source-wordcount: 2655
+source-wordcount: 2684
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ _[!DNL Data Connection]含標籤的擴充功能資料流程_
 
   >[!NOTE]
   >
-  > 請&#x200B;**不** [設定](connect-data.md)組織ID和資料流ID。
+  > 當您使用標籤進行收集時，請&#x200B;**勿** [在Commerce管理中設定](connect-data.md)組織ID和資料流ID。 多網站商家在Tags中根據屬性或環境設定資料串流。 如需Commerce管理範圍行為，請參閱[設定範圍](connect-data.md#configuration-scope)。
 
 ## 將Commerce店面資料對應至Adobe Experience Platform
 
@@ -75,7 +75,7 @@ _[!DNL Data Connection]含標籤的擴充功能資料流程_
 
 1. 建立資料元素：
 
-   ![建立新資料元素](assets/create-new-data-elements.png)
+   !&lbrack;建立新資料元素
    _建立新資料元素_
 
 1. 將&#x200B;**名稱**&#x200B;設為`sign out`。
@@ -88,14 +88,14 @@ _[!DNL Data Connection]含標籤的擴充功能資料流程_
 
 1. 在&#x200B;**userAccount** > **登出**&#x200B;底下，將&#x200B;**訪客登出**&#x200B;中的&#x200B;**值**&#x200B;設定為`1`。
 
-   ![更新登出值](assets/signout-value.png)
+   !&lbrack;更新登出值
    _更新登出值_
 
 1. 選取&#x200B;**儲存**。
 
 1. 建立規則：
 
-   ![建立新規則](assets/create-new-rule.png)
+   !&lbrack;建立新規則
    _建立新規則_
 
 1. 選取&#x200B;**EVENTS**&#x200B;下的&#x200B;**新增**。
@@ -1351,7 +1351,7 @@ _[!DNL Data Connection]含標籤的擴充功能資料流程_
 
 1. 使用ECID的自訂程式碼設定資料元素：
 
-   ![使用自訂程式碼設定資料元素](assets/set-custom-code-ecid.png)
+   !&lbrack;使用自訂程式碼設定資料元素
    _使用自訂程式碼設定資料元素_
 
 1. 選取[!UICONTROL Open Editor]並新增下列自訂程式碼：
@@ -1378,12 +1378,12 @@ _[!DNL Data Connection]含標籤的擴充功能資料流程_
 
 1. 以設為ECID的`identityMap`更新XDM結構描述：
 
-   ![將identityMap設為ECID](assets/identity-map-data-element.png)
+   !&lbrack;將identityMap設為ECID
    _將identityMap設為ECID_
 
 1. 定義擷取ECID的規則動作：
 
-   ![擷取ECID](assets/rule-retrieve-ecid.png)
+   !&lbrack;擷取ECID
    _擷取ECID_
 
 ## 在後台事件中設定身分
@@ -1392,7 +1392,7 @@ _[!DNL Data Connection]含標籤的擴充功能資料流程_
 
 1. 建立身分對應元素。
 
-   ![後台身分對應](assets/custom-code-backoffice.png)
+   !&lbrack;後台身分對應
    _建立後台身分對應_
 
 1. 選取[!UICONTROL Open Editor]並新增下列自訂程式碼：
@@ -1420,7 +1420,7 @@ return IdentityMap;
 
 1. 將此新元素新增至每個`identityMap`欄位。
 
-   ![更新每個身分對應](assets/add-element-back-office.png)
+   !&lbrack;更新每個身分對應
    _更新每個identityMap_
 
 ## 設定同意
@@ -1429,17 +1429,17 @@ return IdentityMap;
 
 1. 為`mg_dnt` Cookie建立&#x200B;**核心自訂程式碼**&#x200B;資料元素(`%do not track cookie%`)：
 
-   ![建立不追蹤資料元素](assets/element-dnt-cookie.png)
+   !&lbrack;建立不追蹤資料元素
    _建立不追蹤資料元素_
 
 1. 建立&#x200B;**核心自訂程式碼**&#x200B;資料元素(`%consent%`)，如果設定Cookie，會傳回`out`，否則會傳回`in`：
 
-   ![建立同意資料元素](assets/element-consent-dnt-cookie.png)
+   !&lbrack;建立同意資料元素
    _建立同意資料元素_
 
 1. 使用`%consent%`資料元素設定Adobe Experience Platform Web SDK擴充功能：
 
-   ![經同意更新SDK](assets/config-sdk-consent.png)
+   !&lbrack;經同意更新SDK
    _經同意更新SDK_
 
 ## 警告

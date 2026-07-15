@@ -21,14 +21,14 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
 workflow-type: tm+mt
-source-wordcount: 595
+source-wordcount: 598
 ht-degree: 1%
 
 ---
 
-# 隱私權請求
+# [!DNL Commerce]服務如何處理隱私權要求
 
 Adobe Experience Platform Privacy Service提供RESTful API和使用者介面，協助您管理客戶資料請求。 透過Privacy Service，您可以提交存取和刪除Adobe Experience Cloud應用程式中個人客戶資料的請求，協助促進法律資訊和組織隱私法規的自動合規性。
 

@@ -17,7 +17,7 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
 workflow-type: tm+mt
 source-wordcount: 616
 ht-degree: 2%
@@ -384,6 +384,6 @@ ComponentRegistrar::register(
 
 如果您在&#x200B;**[!UICONTROL Data Customization]**&#x200B;標籤上看到訊息`No custom order attributes found.`，請確認下列事項：
 
-1. 您已完成啟用[Data Connector擴充功能](overview.md#prerequisites)的必要條件。
+1. 您已完成啟用[!DNL Data Connection]擴充功能的先決條件。 請參閱[必要條件](overview.md#prerequisites)。
 1. 您已設定[自訂訂單屬性](#add-custom-attributes-to-orders)。
 1. 至少已產生一個訂購事件。

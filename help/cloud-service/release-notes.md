@@ -32,9 +32,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 7ab609a2da3173f4be31bb0927418c4b9ec05ff4
+source-git-commit: eb561a73951ba42542a8b08340a7df9cc30477d3
 workflow-type: tm+mt
-source-wordcount: 4655
+source-wordcount: 4657
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 [!BADGE 沙箱]{type=Caution tooltip="列出的專案目前僅在沙箱環境中可用。 Adobe會先在沙箱環境中推出新版本，讓您可以在生產環境中使用該版本之前有時間測試即將推出的變更。"}
 
-以下專案目前僅在沙箱環境中可用，並計畫在7月移至生產環境。
+以下專案目前僅在沙箱環境中可用，並計畫於2026年7月28日移至生產環境。
 
 >[!BEGINSHADEBOX]
 

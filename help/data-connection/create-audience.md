@@ -15,9 +15,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
 workflow-type: tm+mt
-source-wordcount: 1132
+source-wordcount: 1107
 ht-degree: 0%
 
 ---
@@ -37,16 +37,7 @@ ht-degree: 0%
 
 ## 其他客戶都取得了哪些成就？
 
-Adobe [!DNL Commerce]客戶透過啟用Real-Time CDP中建置的受眾並將其部署至其[!DNL Commerce]執行個體，已取得顯著的業務影響。
-
-retailer實現了全球性的多品牌服飾：
-
-- 擁有數百萬個統一客戶設定檔的單一信任來源
-- 建立40多個「高意圖客戶」的不重複受眾，以跨管道參與
-
-一家全球飲料公司收集到：
-
-- 來自100多個國家/地區的9,800萬個客戶設定檔
+Adobe [!DNL Commerce]客戶透過啟用Real-Time CDP中建置的受眾並將其部署至其[!DNL Commerce]執行個體，已取得顯著的業務影響。 如需Commerce事件資料中的相關客戶結果，請參閱[使用Adobe Journey Optimizer傳送捨棄的購物車電子郵件](using-ajo.md#what-have-other-customers-achieved)。
 
 ## 讓我們開始吧
 

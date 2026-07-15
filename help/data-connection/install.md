@@ -12,9 +12,9 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
 workflow-type: tm+mt
-source-wordcount: 476
+source-wordcount: 491
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ ht-degree: 0%
 [!DNL Data Connection]擴充功能可從[Adobe Marketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html)取得。 當您從伺服器的命令列安裝此擴充功能時，會以[服務](../landing/saas.md)的形式連線至您的Adobe Commerce安裝。 程式完成時，**[!DNL Data Connection]**&#x200B;和&#x200B;**Commerce Services Connector**&#x200B;會顯示在Commerce _管理員_&#x200B;中&#x200B;**服務**&#x200B;下的&#x200B;**系統**&#x200B;功能表中。
 
 ![[!DNL Data Connection]延伸模組管理員檢視](assets/epc-adminui.png)
+
+>[!NOTE]
+>
+>安裝後，請在[管理員]中設定[!DNL Data Connection]。 如需全域與網站範圍的設定，請參閱[設定範圍](connect-data.md#configuration-scope)。
 
 >[!IMPORTANT]
 >
@@ -162,7 +166,7 @@ composer update magento/experience-platform-connector-b2b --with-dependencies
 1. **儲存** `composer.json`。 然後，從命令列執行下列動作：
 
    ```bash
-   composer update magento/experience-platform-connector –-with-dependencies
+   composer update magento/experience-platform-connector --with-dependencies
    ```
 
    或者，對於B2B商家：

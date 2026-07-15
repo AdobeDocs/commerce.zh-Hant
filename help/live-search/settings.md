@@ -7,9 +7,9 @@ product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
+source-git-commit: 1f5246b6f5853f8b53a356ae2d6d58077b07a9a5
 workflow-type: tm+mt
-source-wordcount: 650
+source-wordcount: 679
 ht-degree: 0%
 
 ---
@@ -21,6 +21,10 @@ ht-degree: 0%
 ![設定](assets/settings.png)
 
 ## 語意搜尋 {#semantic-search}
+
+>[!AVAILABILITY]
+>
+>語意搜尋適用於使用Adobe Commerce 2.4.4版及更新版本的商家。
 
 語意搜尋使用AI根據含義和內容來比對產品，而不只是精確的關鍵字。 啟用&#x200B;**[!UICONTROL Semantic search]**&#x200B;後，使用自然語言或文字與目錄不符的購物者仍可找到相關產品。 [!DNL Live Search]在店面的一個整合式搜尋體驗中提供關鍵字和語意比對。 語意搜尋可與您的現有設定搭配使用；[搜尋規則](rules.md)、[同義字](synonyms.md)、[面向](facets.md)、提升和[類別銷售](category-merch.md)會繼續套用。
 
@@ -72,8 +76,7 @@ ht-degree: 0%
 
 語言設定可告知[!DNL Live Search]讀取目錄和寫入索引時預期的語言。
 
-語言有不同的語法規則集：例如，如何分隔字詞、動詞句子和字詞形式。
-語言設定可確保將正確的規則集套用到索引機制。
+語言有不同的語法規則集：例如，如何分隔字詞、動詞句子和字詞形式。語言設定可確保將正確的規則集套用到索引機制。
 
 將語言設定設為目錄的主要語言。 變更索引的語言時，視目錄的大小和複雜度而定，可能需要5到60分鐘的時間才能在店面反映變更。
 
