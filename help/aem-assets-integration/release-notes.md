@@ -70,7 +70,7 @@ _2026年5月14日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.5版和更新版本。
 
-![新問題](../assets/new.svg)<!-- Issue ACAP-1268 -->從AEM匯入影像或資產至Commerce產品媒體集時，替代文字現在會作為同步處理的一部分移轉。 可在AEM Assets中為每個商店檢視設定替代文字。 請參閱AEM Assets中繼資料](metadata.md#localized-alt-text-in-aem-assets-metadata){target=_blank}中的[本地化替代文字。
+![新問題](../assets/new.svg)<!-- Issue ACAP-1268 -->從AEM匯入影像或資產至Commerce產品媒體集時，替代文字現在會作為同步處理的一部分移轉。 可在AEM Assets中為每個商店檢視設定替代文字。 請參閱AEM Assets中繼資料[&#128279;](metadata.md#localized-alt-text-in-aem-assets-metadata){target=_blank}中的本地化替代文字。
 
 ## v1.3.5
 
