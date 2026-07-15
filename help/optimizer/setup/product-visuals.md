@@ -3,7 +3,7 @@ title: 透過AEM Assets呈現產品視覺效果
 description: 瞭解如何在 [!DNL Adobe Commerce Optimizer]中使用產品影像的AEM Assets。
 feature: CMS, Media, Configuration, Integration
 role: Admin, Developer
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
 source-git-commit: 264658bee09a22cfd55828c6960153cc1239d3fb
 workflow-type: tm+mt
 source-wordcount: '634'
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->**產品視覺效果**&#x200B;是隨[!DNL Adobe Commerce as a Cloud Service]和[!DNL Adobe Commerce Optimizer]提供的組合名稱。 它結合了[Dynamic Media與OpenAPI功能](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview)和[AEM Assets Prime](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-prime)。
+>**產品視覺效果**&#x200B;是隨[!DNL Adobe Commerce as a Cloud Service]和[!DNL Adobe Commerce Optimizer]提供的組合名稱。 它結合了[Dynamic Media與OpenAPI功能](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview)和[AEM Assets Prime](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/assets-prime)。
 >
 >擁有不同AEM Assets授權（例如，**AEM Assets Ultimate**）的客戶可以使用相同的整合；只有AEM版本會影響上線步驟，不會影響授權型別。
 
@@ -62,7 +62,7 @@ AEM Assets中的影像會透過以下來源設定擷取為目錄層：
 
 ## 設定
 
-若要啟用整合，請[建立支援票證](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/help-and-support/create-a-support-ticket)，其中包含您的[!DNL Commerce Optimizer]和AEM Assets詳細資料。 Adobe支援會設定整合，並在Assets整合服務中註冊您的租使用者。
+若要啟用整合，請[建立支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/help-and-support/create-a-support-ticket)，其中包含您的[!DNL Commerce Optimizer]和AEM Assets詳細資料。 Adobe支援會設定整合，並在Assets整合服務中註冊您的租使用者。
 
 如需入門資訊，請參閱[設定Commerce Optimizer的AEM Assets](../../aem-assets-integration/get-started/configure-aco.md)。
 
