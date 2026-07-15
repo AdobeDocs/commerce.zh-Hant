@@ -5,9 +5,9 @@ role: Admin, Developer
 badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
 exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
 nudge: true
-source-git-commit: 6ae571dd77206859e69e57100e80bb01416a36cd
+source-git-commit: 172fcbd659f4fe8868059d29ed335a5136af8d33
 workflow-type: tm+mt
-source-wordcount: '1387'
+source-wordcount: '1410'
 ht-degree: 0%
 
 ---
@@ -100,6 +100,9 @@ Dynamic Media使用方式會追蹤進入[!DNL Adobe Commerce Optimizer]內「產
 
 >[!ENDSHADEBOX]
 
+>[!NOTE]
+>
+>上述限制涵蓋容量與使用量配置。 如需產品視覺效果功能概觀和功能限制，請參閱[AEM Assets產品視覺效果](setup/product-visuals.md)。
 
 ### 目錄檢視與原則
 

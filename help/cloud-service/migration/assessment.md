@@ -26,9 +26,9 @@ level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: 4cd054b64c3b95fd50ab9bb682469ace7cc871a3
 workflow-type: tm+mt
-source-wordcount: 2505
+source-wordcount: 2497
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 Commerce移轉評估是對您現有Adobe Commerce實作的自動分析。 Adobe的工具會掃描您的Commerce程式碼基底，並產生結構化報表，以清查所有建置、自訂或修改的內容。 報表接著會指出對程式碼基底所做的自訂如何影響移轉至[!DNL Adobe Commerce as a Cloud Service]。
 
-報表會以HTML檔案傳送，您可透過任何瀏覽器開啟。 除了最初共用您的專案程式碼基底外，不需要存取您的生產環境。
+可以在`https://experience.adobe.com/@<ims-org-name>/commerce-migration-assessment/shared-assessments`存取已處理的移轉評估報告。 除了最初共用您的專案程式碼基底外，不需要存取您的生產環境。
 
 **評定提供：**
 

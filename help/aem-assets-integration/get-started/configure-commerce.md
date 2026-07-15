@@ -15,7 +15,7 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 41c5b4267888595926ae1bae48f73c928e6547ad
 workflow-type: tm+mt
 source-wordcount: 1675
 ht-degree: 0%
@@ -158,7 +158,7 @@ Commerce的這項整合可讓您在Adobe Commerce和Adobe Experience Manager Ass
 
 ## 設定適用於Commerce的Adobe I/O Events
 
-AEM Assets整合使用Adobe I/O Events服務在Commerce執行個體和Experience Cloud之間傳送自訂事件資料。 事件資料可用來協調AEM Assets整合的工作流程。
+AEM Assets整合使用Adobe I/O Events服務，在Commerce執行個體和Experience Cloud之間傳送自訂事件資料。 事件資料可用來協調AEM Assets整合的工作流程。
 
 設定Adobe I/O Events之前，請先確認Commerce專案的RabbitMQ和cron工作設定：
 

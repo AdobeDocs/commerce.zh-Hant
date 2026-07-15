@@ -16,9 +16,9 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: a6a91fbd6cc6907d070998f67eb0b9c8171dda23
+source-git-commit: 0c2e50338cbf286704239b6d1f628180e85a3bef
 workflow-type: tm+mt
-source-wordcount: 948
+source-wordcount: 965
 ht-degree: 2%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 2%
 
 * 僅[!BADGE PaaS]{type=Informative tooltip="僅適用於雲端專案上的Adobe Commerce （Adobe管理的PaaS基礎結構）。"} [安裝Adobe Commerce套件](configure-commerce.md)以新增擴充功能，並產生使用擴充功能所需的認證和連線。
 
-* [使用者許可權和IMS](permissions.md) — 需要「資產選擇器」和自動填入的設定欄位（方案ID、環境ID、網域對應）。
+* [使用者許可權和IMS](permissions.md) — 設定「資產選擇器」的必要許可權和自動填入的設定欄位（方案ID、環境ID、網域對應）。
 
 ## 設定連線
 
@@ -63,11 +63,11 @@ ht-degree: 2%
 
 1. 從下拉式功能表中選取AEM Assets環境&#x200B;**[!UICONTROL Program ID]**&#x200B;和&#x200B;**[!UICONTROL Environment ID]**。
 
-   當您的Commerce管理員使用者符合以下體驗的[使用者許可權和IMS](permissions.md#user-permissions-and-ims)時，就會出現選取器： **Adobe Commerce as a Cloud Service**、**Adobe Commerce Optimizer**&#x200B;和&#x200B;**Adobe Commerce on Cloud Infrastructure**&#x200B;整合功能可從您的IMS連結工作階段自動填入這些欄位，而非依賴貼上的ID。
+   當您的Commerce管理員使用者擁有以下體驗所需的[使用者許可權](permissions.md#user-permissions-and-ims)時，就會出現選取器： **Adobe Commerce as a Cloud Service**、**Adobe Commerce Optimizer**&#x200B;以及&#x200B;**Adobe Commerce on Cloud Infrastructure**&#x200B;整合可自動從您的IMS連結工作階段填入這些欄位，而非依賴貼上的ID。
 
    如果選取器無法使用，請從AEM Cloud Manager複製&#x200B;**[!UICONTROL Program ID]**&#x200B;和&#x200B;**[!UICONTROL Environment ID]**，或從您的作者URL衍生它們： `https://author-<ProgramID>-<EnvironmentID>.adobeaemcloud.com/` （將預留位置取代為您的識別碼）。
 
-   在貼上或手動選取新值之前，清除任一欄位的&#x200B;**[!UICONTROL Use system value]**。
+   您必須清除兩個欄位的&#x200B;**[!UICONTROL Use system value]**，才能手動貼上或選取新值。
 
    ![AEM Assets整合表單，含方案ID和環境ID選取器](../assets/aem-assets-view.png){width="600" zoomable="yes"}
 
@@ -90,13 +90,13 @@ ht-degree: 2%
 
 ### 同步SLA
 
-此整合可保證以下同步處理效能等級：
+用於整合的service level agreement (SLA)可保證以下同步處理效能等級：
 
 * `< 5 minutes for 99% of updates`
 
 * `< 30 minutes for 99.9% of updates`
 
-這可確保產品頁面一律顯示最新影像，讓店面內容保持精確且美觀。
+此等級的服務可確保產品頁面一律顯示最新的影像，讓店面內容保持精確且美觀。
 
 ### 設定視覺效果擁有者
 

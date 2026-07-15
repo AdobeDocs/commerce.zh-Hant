@@ -3,9 +3,9 @@ title: AEM Assets整合發行說明
 description: 如需所有AEM Assets整合發行版本的相關資訊，請參閱發行說明。
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
-source-git-commit: e055a3d44eda7e7f082a884c316ad437ea9ac15e
+source-git-commit: e269b5a3bbd246530ba77d8c50467e2b0f4e2f7e
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1352'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ _2026年5月14日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.5版和更新版本。
 
-![新問題](../assets/new.svg)<!-- Issue ACAP-1268 -->從AEM匯入影像或資產至Commerce產品媒體集時，替代文字現在會作為同步處理的一部分移轉。 可在AEM Assets中為每個商店檢視設定替代文字。 檢視AEM Assets中繼資料[&#128279;](configure-aem.md#alt-text-in-aem-assets-metadata){target=_blank}中的替代文字。
+![新問題](../assets/new.svg)<!-- Issue ACAP-1268 -->從AEM匯入影像或資產至Commerce產品媒體集時，替代文字現在會作為同步處理的一部分移轉。 可在AEM Assets中為每個商店檢視設定替代文字。 請參閱AEM Assets中繼資料[&#128279;](metadata.md#localized-alt-text-in-aem-assets-metadata){target=_blank}中的本地化替代文字。
 
 ## v1.3.5
 
