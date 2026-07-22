@@ -1,7 +1,7 @@
 ---
-source-git-commit: e761e54e7bd7997f3f40b1dfc1293012931111b0
+source-git-commit: bdde436394667a2d5477fbc44eac5b90bd865c68
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '528'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 ## 關於您對Adobe內容的貢獻
 
-請參閱[Adobe檔案投稿人指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hant)。
+請參閱[Adobe檔案投稿人指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
 
 貢獻方式取決於您的身分和您要貢獻的變更型別：
 
 ### 微幅變更
 
-如果您要提出微幅更新，請瀏覽文章，然後按一下文章底部的意見區域，按一下&#x200B;**詳細的意見選項**，然後按一下&#x200B;**建議編輯**，即可前往GitHub的Markdown來源檔案。 使用GitHub UI進行更新。 如需詳細資訊，請參閱一般[Adobe檔案投稿人指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hant)。
+如果您要提出微幅更新，請瀏覽文章，然後按一下文章底部的意見區域，按一下&#x200B;**詳細的意見選項**，然後按一下&#x200B;**建議編輯**，即可前往GitHub的Markdown來源檔案。 使用GitHub UI進行更新。 如需詳細資訊，請參閱一般[Adobe檔案投稿人指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
 
 您在本存放庫為檔案和程式碼範例提交的小幅更正或釐清均包含在Adobe使用條款中。
 
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 社群投稿人可以使用GitHub UI進行基本編輯或建立存放庫復本，以做出重大貢獻。
 
-如需詳細資訊，請參閱[Adobe檔案貢獻者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=zh-Hant)。
+如需詳細資訊，請參閱[Adobe檔案貢獻者指南](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)。
 
 ## 如何使用Markdown將主題格式化
 
@@ -60,10 +60,11 @@ ht-degree: 0%
 
 ### 鉤子會做什麼
 
-- 自動偵測分階段影像檔案(PNG、JPG、JPEG、GIF、SVG)
-- 執行`image_optim`以壓縮和最佳化影像
+- 自動偵測分階段影像檔案(PNG、JPEG、GIF、SVG)
+- 執行`image_optim`以壓縮和最佳化點陣影像(PNG、JPEG、GIF)
 - 自動重新存放最佳化的影像
-- 確保所有認可的影像都已適當最佳化
+- 確保所有認可的點陣化影像都已適當最佳化
+- 根據大小限制檢查分段SVG，並在任何SVG超過時中止認可
 
 ### 優點
 
@@ -76,7 +77,9 @@ ht-degree: 0%
 
 ## 可用的Rake任務
 
-此存放庫使用`adobe-comdox-exl-rake-tasks` gem提供的Rake工作。 若要檢視所有可用的工作，請執行：
+此存放庫使用
+[`adobe-comdox-exl-rake-tasks`](https://github.com/commerce-docs/adobe-comdox-exl-rake-tasks)
+珠寶。若要檢視所有可用的工作，請執行：
 
 ```bash
 cd _jekyll
