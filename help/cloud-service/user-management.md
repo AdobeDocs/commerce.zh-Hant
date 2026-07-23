@@ -5,26 +5,18 @@ feature: Cloud, Integration
 role: Admin
 level: Intermediate
 exl-id: 9bc80fe6-6dfd-4bb3-8dc5-d5efd8a8d90c
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
 autotag-review: '2026-06-18T16:07:29.468Z'
 TQID: 'https://experienceleague.adobe.com/kaQ6N23X6S9zNjDpcq5BsDJnUpke3mjPpzxElMGwqL0'
-product_v2:
-  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-subfeature_v2:
-  - id: d9ced453-36f4-4eb5-b2f3-1d593e32476b
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+product_v2: id: de2e2e68-c5d7-4efe-be7b-27528698f06bid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2: id: d9ced453-36f4-4eb5-b2f3-1d593e32476b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 09692e5e2630568a48d14f727930d324c6932ca6
 workflow-type: tm+mt
-source-wordcount: 1822
+source-wordcount: 1816
 ht-degree: 0%
 
 ---
@@ -37,9 +29,9 @@ ht-degree: 0%
 
 >[!TIP]
 >
->若要同時新增多個使用者，您可以執行[大量CSV上傳](https://helpx.adobe.com/tw/enterprise/using/bulk-upload-users.html){target="_blank"}。
+>若要同時新增多個使用者，您可以執行[大量CSV上傳](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html){target="_blank"}。
 >
-> 您也可以建立[使用者群組](https://helpx.adobe.com/tw/enterprise/using/user-groups.html){target="_blank"}，將多位使用者新增至角色。 然後，您可以將適當的產品新增到使用者群組。
+> 您也可以建立[使用者群組](https://helpx.adobe.com/enterprise/using/user-groups.html){target="_blank"}，將多位使用者新增至角色。 然後，您可以將適當的產品新增到使用者群組。
 
 ## 瞭解角色
 
@@ -53,15 +45,15 @@ ht-degree: 0%
 
   >[!TIP]
   >
-  >如果您想要依IP位址限制對Commerce管理員的存取權，請參閱[依IP位址限制產品存取權](https://helpx.adobe.com/tw/enterprise/using/ip-based-access.html){target="_blank"}。
+  >如果您想要依IP位址限制對Commerce管理員的存取權，請參閱[依IP位址限制產品存取權](https://helpx.adobe.com/enterprise/using/ip-based-access.html){target="_blank"}。
 
-* [**開發人員**](https://helpx.adobe.com/tw/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"} — 開發人員擁有使用者許可權，並且已作為開發人員使用者新增至Commerce執行個體。 他們可以使用[[!DNL Admin UI SDK]](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/){target="_blank"}、[設定事件](https://developer.adobe.com/commerce/extensibility/events/){target="_blank"}和[建立Webhook](https://developer.adobe.com/commerce/extensibility/webhooks/){target="_blank"}。
+* [**開發人員**](https://helpx.adobe.com/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"} — 開發人員擁有使用者許可權，並且已作為開發人員使用者新增至Commerce執行個體。 他們可以使用[[!DNL Admin UI SDK]](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/){target="_blank"}、[設定事件](https://developer.adobe.com/commerce/extensibility/events/){target="_blank"}和[建立Webhook](https://developer.adobe.com/commerce/extensibility/webhooks/){target="_blank"}。
 
 * 管理員 — 有不同型別的管理員角色：
-   * [系統管理員](https://helpx.adobe.com/tw/enterprise/using/admin-roles.html){target="_blank"} — 系統管理員可以透過Admin Console存取組織中的所有產品和產品設定檔。
-   * [產品管理員](#add-a-product-admin) — 產品管理員可以在[!DNL Adobe Admin Console]中[管理產品的使用者、角色和許可權](#add-users)，並在Commerce管理員中[管理使用者](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"}。
-   * [產品設定檔管理員](#add-developers-and-product-profile-admins) — 產品設定檔管理員無法存取Adobe Commerce管理員，但可以在[!DNL Adobe Admin Console]中管理產品的使用者。
-   * 支援管理員 — 支援管理員可以建立和管理支援票證。
+  * [系統管理員](https://helpx.adobe.com/enterprise/using/admin-roles.html){target="_blank"} — 系統管理員可以透過Admin Console存取組織中的所有產品和產品設定檔。
+  * [產品管理員](#add-a-product-admin) — 產品管理員可以在[!DNL Adobe Admin Console]中[管理產品的使用者、角色和許可權](#add-users)，並在Commerce管理員中[管理使用者](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"}。
+  * [產品設定檔管理員](#add-developers-and-product-profile-admins) — 產品設定檔管理員無法存取Adobe Commerce管理員，但可以在[!DNL Adobe Admin Console]中管理產品的使用者。
+  * 支援管理員 — 支援管理員可以建立和管理支援票證。
 
 >[!NOTE]
 >
@@ -117,7 +109,7 @@ ht-degree: 0%
 
 1. 按一下&#x200B;[!UICONTROL **新增管理員**]。
 
-1. 輸入您要新增為管理員的使用者使用者名稱或電子郵件地址，然後按一下[儲存]。[!UICONTROL **&#x200B;**]
+1. 輸入您要新增為管理員的使用者使用者名稱或電子郵件地址，然後按一下[儲存]。[!UICONTROL ****]
 
 >[!ENDTABS]
 
@@ -147,7 +139,7 @@ ht-degree: 0%
 
 1. 選取&#x200B;[!UICONTROL **使用者**]&#x200B;索引標籤，然後按一下&#x200B;[!UICONTROL **新增使用者**]。
 
-1. 輸入要新增的使用者使用者名稱或電子郵件地址，然後按一下[儲存]。[!UICONTROL **&#x200B;**]
+1. 輸入要新增的使用者使用者名稱或電子郵件地址，然後按一下[儲存]。[!UICONTROL ****]
 
 1. 選取所需的產品設定檔。
 
@@ -171,7 +163,7 @@ ht-degree: 0%
 
    ![在Admin Console產品設定檔中選擇使用者索引標籤](./assets/tab-select.png){width="600" zoomable="yes"}
 
-1. 輸入要新增的使用者使用者名稱或電子郵件地址，然後按一下[儲存]。[!UICONTROL **&#x200B;**]
+1. 輸入要新增的使用者使用者名稱或電子郵件地址，然後按一下[儲存]。[!UICONTROL ****]
 
 >[!ENDTABS]
 
@@ -194,49 +186,49 @@ ht-degree: 0%
 **位使用者**
 
 * 目錄
-   * 詳細目錄
-      * 產品
-         * 讀取產品價格
+  * 詳細目錄
+    * 產品
+      * 讀取產品價格
 
 **開發人員**
 
 * 目錄
-   * 詳細目錄
-      * 產品
-         * 讀取產品價格
+  * 詳細目錄
+    * 產品
+      * 讀取產品價格
 * 系統
-   * 資料傳輸
-      * 匯入歷史記錄
+  * 資料傳輸
+    * 匯入歷史記錄
 * Adobe IO事件設定
-   * 組態檢查
-   * 建立事件提供者
-   * 設定更新
-   * 同步事件
-   * 取得事件提供者清單
+  * 組態檢查
+  * 建立事件提供者
+  * 設定更新
+  * 同步事件
+  * 取得事件提供者清單
 * 事件架構
-   * 事件清單
-   * 測試事件連線
-   * 訂閱事件
-   * 取消訂閱事件
-   * 事件狀態
-   * 取得事件訂閱的API
-   * 檢視事件訂閱管理UI
-   * 建立事件訂閱管理員UI
-   * 請求新的事件管理員UI
+  * 事件清單
+  * 測試事件連線
+  * 訂閱事件
+  * 取消訂閱事件
+  * 事件狀態
+  * 取得事件訂閱的API
+  * 檢視事件訂閱管理UI
+  * 建立事件訂閱管理員UI
+  * 請求新的事件管理員UI
 * Webhooks
-   * Webhooks數位簽名
-      * Webhooks數位簽名設定
-      * Webhooks數位簽名產生金鑰
-   * Webhooks管理
-      * Webhooks格線
-      * Webhooks編輯
-      * 測試Webhook
-      * API訂閱webhook
-      * API從webhook取消訂閱
-      * Webhooks清單
-      * 請求新Webhook
-      * Webhooks記錄
-      * 取得Webhook清單
+  * Webhooks數位簽名
+    * Webhooks數位簽名設定
+    * Webhooks數位簽名產生金鑰
+  * Webhooks管理
+    * Webhooks格線
+    * Webhooks編輯
+    * 測試Webhook
+    * API訂閱webhook
+    * API從webhook取消訂閱
+    * Webhooks清單
+    * 請求新Webhook
+    * Webhooks記錄
+    * 取得Webhook清單
 
 **管理員**
 
@@ -246,23 +238,23 @@ ht-degree: 0%
 
 [!DNL Adobe Experience Manager Assets]和[!DNL Product Visuals powered by AEM Assets]使用者需要下列設定。
 
-如果您的帳戶可以存取[[!DNL Adobe Experience Manager as a Cloud Service]](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service)，而且您想要允許使用者存取[[!DNL AEM Assets]](https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/overview){target="_blank"}與[!DNL Adobe Commerce as a Cloud Service]的進階功能，請完成下列程式：
+如果您的帳戶可以存取[[!DNL Adobe Experience Manager as a Cloud Service]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service)，而且您想要允許使用者存取[[!DNL AEM Assets]](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/overview){target="_blank"}與[!DNL Adobe Commerce as a Cloud Service]的進階功能，請完成下列程式：
 
 >[!NOTE]
 >
->沒有適當資產許可權的使用者將無法存取[!DNL AEM Assets]的進階功能，例如[AI影像產生](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/generative-ai/generative-ai-in-aem){target="_blank"}、[產生的變數](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/generative-ai/generate-variations-integrated-editor){target="_blank"}等等。
+>沒有適當資產許可權的使用者將無法存取[!DNL AEM Assets]的進階功能，例如[AI影像產生](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generative-ai-in-aem){target="_blank"}、[產生的變數](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations-integrated-editor){target="_blank"}等等。
 
 >[!TIP]
 >
->若要同時新增多個使用者，您可以執行[大量CSV上傳](https://helpx.adobe.com/tw/enterprise/using/bulk-upload-users.html){target="_blank"}。
+>若要同時新增多個使用者，您可以執行[大量CSV上傳](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html){target="_blank"}。
 >
->您也可以建立[使用者群組](https://helpx.adobe.com/tw/enterprise/using/user-groups.html){target="_blank"}，將多位使用者新增至角色。 然後您可以將&#x200B;[!UICONTROL **Adobe Experience Manager as a Cloud Service - Cloud Manager**]&#x200B;產品新增到使用者群組。
+>您也可以建立[使用者群組](https://helpx.adobe.com/enterprise/using/user-groups.html){target="_blank"}，將多位使用者新增至角色。 然後您可以將&#x200B;[!DNL **Adobe Experience Manager as a Cloud Service**]&#x200B;產品新增到使用者群組。
 
 1. 導覽至<https://adminconsole.adobe.com>並使用您的Adobe ID登入。
 
 1. 選取您的組織。
 
-1. 在「[!UICONTROL **產品**]」標籤的「[!UICONTROL **產品和服務**]」下，選取「[!UICONTROL **Adobe Experience Manager as a Cloud Service - Cloud Manager**]」產品。
+1. 在&#x200B;[!UICONTROL **產品**]&#x200B;標籤的&#x200B;[!UICONTROL **產品和服務**]&#x200B;下，選取&#x200B;[!UICONTROL **Adobe Experience Manager as a Cloud Service**]&#x200B;產品。
 
    Admin Console中的![AEM Cloud Manager產品選擇](./assets/backend-aem.png){width="600" zoomable="yes"}
 
@@ -283,15 +275,15 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >如需這些許可權如何影響您存取[!DNL AEM Assets]的詳細資訊，請參閱[Cloud Manager產品設定檔](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/onboarding/concepts/aem-cs-team-product-profiles#cloud-manager-product-profiles){target="_blank"}。
+   >如需這些許可權如何影響您存取[!DNL AEM Assets]的詳細資訊，請參閱[Cloud Manager產品設定檔](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/concepts/aem-cs-team-product-profiles#cloud-manager-product-profiles){target="_blank"}。
 
-   對於Commerce管理員中的資產選擇器和自動填入的設定欄位（方案ID、環境ID、網域對應），使用者還需要&#x200B;**AEM Assets DM OpenAPI使用者 — 傳遞**&#x200B;產品設定檔。 如需詳細資訊，請參閱[使用者許可權和IMS](https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/get-started/permissions){target="_blank"}。
+   對於Commerce管理員中的資產選擇器和自動填入的設定欄位（方案ID、環境ID、網域對應），使用者還需要&#x200B;**AEM Assets DM OpenAPI使用者 — 傳遞**&#x200B;產品設定檔。 如需詳細資訊，請參閱[使用者許可權和IMS](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/permissions){target="_blank"}。
 
 1. 按一下&#x200B;[!UICONTROL **套用**]。
 
 1. 按一下&#x200B;[!UICONTROL **儲存**]。
 
-若要確認使用者是否具有存取權，請按一下使用者的名稱以開啟其設定檔頁面。 在&#x200B;[!UICONTROL **產品**]&#x200B;區段中，在&#x200B;[!UICONTROL **Adobe Experience Manager as a Cloud Service - Cloud Manager**]&#x200B;產品底下應顯示&#x200B;[!UICONTROL **已完成**]。 新增使用者後，可能需要幾秒鐘才能看到其設定檔上的狀態更新。 重新整理頁面以檢視更新的狀態。
+若要確認使用者是否具有存取權，請按一下使用者的名稱以開啟其設定檔頁面。 在&#x200B;[!UICONTROL **產品**]&#x200B;區段中，它應在&#x200B;[!UICONTROL **Adobe Experience Manager as a Cloud Service**]&#x200B;產品下顯示&#x200B;[!UICONTROL **已完成**]。 新增使用者後，可能需要幾秒鐘才能看到其設定檔上的狀態更新。 重新整理頁面以檢視更新的狀態。
 
 ![顯示已完成產品存取狀態的使用者設定檔](./assets/product-access.png){width="600" zoomable="yes"}
 
@@ -303,18 +295,18 @@ ht-degree: 0%
 
 1. 從&#x200B;[!UICONTROL **Cloud Manager**]&#x200B;頁面，按一下&#x200B;[!UICONTROL **新增程式**]&#x200B;以開始。
 
-1. [建立新程式](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/onboarding/journey/create-program){target="_blank"}。
+1. [建立新程式](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-program){target="_blank"}。
 
-1. [建立新環境](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/creating-an-environment){target="_blank"}。
+1. [建立新環境](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/screens-as-cloud-service/onboarding-screens-cloud/creating-an-environment){target="_blank"}。
 
 1. 建立環境之後，請返回[Admin Console](https://adminconsole.adobe.com){target="_blank"}並選取&#x200B;[!UICONTROL **Adobe Experience Manager as a Cloud Service**]。
 
 1. 您現在應該會看到新的產品設定檔。 選取包含`- author -`的。 例如，`<environment-name> - author - <program-id> - <environment-id>`。
 
-1. [將使用者新增至產品設定檔](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-manager/content/requirements/users-and-roles){target="_blank"}。
+1. [將使用者新增至產品設定檔](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/users-and-roles){target="_blank"}。
 
-* [設定 [!DNL AEM Assets] 以支援Commerce中繼資料](https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/get-started/configure-aem)
-* [整合 [!DNL AEM Assets] 與Commerce以進行資產同步](https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/get-started/setup-synchronization)
+* [設定 [!DNL AEM Assets] 以支援Commerce中繼資料](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aem)
+* [整合 [!DNL AEM Assets] 與Commerce以進行資產同步](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization)
 
 {{aem-assets-instance-mapping}}
 
