@@ -32,9 +32,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: eb561a73951ba42542a8b08340a7df9cc30477d3
+source-git-commit: b05e2183cc0e4b8352a150df9dabfc9dfdb31750
 workflow-type: tm+mt
-source-wordcount: 4657
+source-wordcount: 5265
 ht-degree: 0%
 
 ---
@@ -57,13 +57,42 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
+### 使用REST編輯訂單
+
+>[!IMPORTANT]
+>
+>此功能預設為停用。 若要啟用此功能，請聯絡您的Adobe Commerce客戶成功經理或建立支援票證。
+
+新的REST API端點會復寫[!DNL Commerce Admin] [!UICONTROL **編輯順序**]&#x200B;功能，以允許整合以程式設計方式編輯順序：
+
+| 方法 | 端點 | 說明 |
+| --- | --- | --- |
+| `POST` | `/V1/orders/{orderId}/edit/start` | 將訂單複製到新的可編輯購物車中，並傳回購物車ID。 |
+| `POST` | `/V1/orders/{orderId}/edit/submit` | 將修改後的購物車提交為新訂單，並取消原始訂單。 |
+
+呼叫`edit/start`之後，使用標準購物車REST端點修改傳回的購物車，然後呼叫`edit/submit`。 新訂單會繼承原始訂單的付款方式，除非您透過購物車加以覆寫，而且會建立為已取消原始訂單的連結替代訂單。 兩個端點都需要`Magento_Sales::actions_edit` ACL資源。<!-- ACCS-1284 -->
+
 ### 依公司篩選訂單與發票
 
 `GET /V1/orders`和`GET /V1/invoices` REST API端點現在支援`company_id`和`company_name`的篩選功能，可讓B2B整合功能在單一要求中擷取特定公司的訂單或發票。<!-- ACCS-1111, CCSAAS-5076 -->
 
-### 透過API列出自訂電子郵件範本
+### 每個檔案匯入更多優惠券代碼
 
-新的`GET /V1/custom-email/templates` REST API端點傳回您的[自訂電子郵件範本](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/)，包括每個範本的ID、程式碼和主旨。 整合可以使用傳回的範本識別碼搭配`POST /V1/custom-email/send`端點，而非手動查詢識別碼。<!-- CCSAAS-5089 -->
+如需調整每檔案大量抵用券匯入上限，請聯絡您的Adobe Commerce客戶成功經理或建立支援票證。<!-- CCSAAS-5176 -->
+
+### 透過API管理自訂電子郵件範本
+
+以下新的REST API端點可讓整合列出、擷取及建立[自訂電子郵件範本](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/)：
+
+| 方法 | 端點 | 說明 |
+| --- | --- | --- |
+| `GET` | `/V1/custom-email/templates` | 列出您的自訂電子郵件範本，傳回每個範本的ID、代碼、主旨和型別。 |
+| `GET` | `/V1/custom-email/templates/{id}` | 擷取單一範本，包括其內文和樣式。 |
+| `POST` | `/V1/custom-email/templates` | 建立自訂電子郵件範本並傳回其伺服器指派的ID。 |
+
+使用傳回的範本識別碼搭配`POST /V1/custom-email/send`端點，而非手動查詢識別碼。
+
+所有`custom-email`端點都需要存取`Marketing > Communications > Email template` [角色資源](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/user-accounts/permissions-user-roles#step-2assign-resources)。<!-- CCSAAS-5089, CCSAAS-5090 -->
 
 ### 透過REST API管理完整的訂單鏈
 
@@ -85,6 +114,26 @@ ht-degree: 0%
 | `GET` | `/V1/orderChain/{id}/statuses` | 擷取目前的訂單狀態。 |
 
 `GET`端點支援對發票、出貨、銷退折讓單及退貨進行篩選，現在支援由`order_original_id`進行篩選。 依`order_original_id`篩選會傳回整個訂單鏈結的詳細資料，而不只是單一訂單。 支援此功能的端點範例為`GET /V1/invoices`。<!-- ACCS-1004, ACCS-1005 -->
+
+### 依自訂屬性值搜尋排序格線
+
+>[!IMPORTANT]
+>
+>此功能預設為停用。 若要啟用此功能，請聯絡您的Adobe Commerce客戶成功經理或建立支援票證。
+
+商戶現在可以透過儲存在順序自訂屬性中的值來篩選[!DNL Commerce Admin]順序格線。 排序格線篩選列中有&#x200B;[!UICONTROL **自訂屬性**]&#x200B;篩選可用。<!-- ACCS-923 -->
+
+### 在購物車專案上設定指派的庫存來源
+
+新的`setNominatedSourceOnCartItems` GraphQL變異會將特定存貨來源指派給購物車專案，支援店內取貨(BOPIS)和出貨地點商店等情況。 變異接受`cart_id`和專案清單，每個專案都有`cart_item_uid`和`source_code`，並傳回任何`rejected_items`和結構化的錯誤碼： `UNKNOWN_SOURCE`、`SOURCE_DISABLED`、`NOT_ENOUGH_QTY`或`SKU_SOURCE_CONFLICT`。 購物車中的每個SKU都會解析為單一指派的來源，而傳遞Null或空白`source_code`會清除指派。<!-- ACCS-932 -->
+
+### 訂閱購物車符合提醒規則的事件
+
+在電子郵件提醒規則執行其比對邏輯後，會發出新的`observer.reminder_matched_carts`事件，其中會包含符合之購物車的相關資訊。 整合可訂閱此事件並將資料轉送至外部系統，例如行銷平台，而非依賴原生提醒電子郵件。<!-- CCSAAS-5173 -->
+
+### 按區域或範本隱藏異動電子郵件
+
+新的&#x200B;[!UICONTROL **電子郵件隱藏**]&#x200B;設定（[!UICONTROL **商店**] > [!UICONTROL **設定**] > [!UICONTROL **Adobe服務**] > [!UICONTROL **電子郵件隱藏**]）可讓系統管理員選擇性停止[!DNL Commerce]傳送異動電子郵件。 您可以依功能區域（例如客戶帳戶、Order Management、退貨、結帳、行銷或B2B）或範本識別碼的精確清單來隱藏電子郵件。<!-- ACCS-1025 -->
 
 ### 在管理員中檢視訂單修改歷史記錄
 
@@ -109,6 +158,28 @@ ht-degree: 0%
 * 修正[!DNL Commerce Admin]中左側導覽功能表可能消失的問題。<!-- ACCS-1035 -->
 
 * 改善共用目錄中指派和取消指派的效能。<!-- ACCS-1324, CCSAAS-5177, CCSAAS-5190, CCSAAS-5192 -->
+
+* 改善[!DNL AEM Assets]整合效能。<!-- ACAP-1242 -->
+
+* 修正在[!DNL Commerce Admin]中將簡單產品SKU新增至可設定產品時可能發生的錯誤。<!-- ACCS-1132 -->
+
+* 修正當訊息佇列累積太多過期記錄時，訊息佇列可能會停止處理新訊息的問題。<!-- ACCS-1292 -->
+
+* 修正管理員訂單建立失敗並出現「SKU無法用於共用目錄」錯誤的問題。<!-- ACCS-1318 -->
+
+* 解決建立或編輯套件產品時發生的當機問題。<!-- CCSAAS-5211 -->
+
+* 修正下單未在使用店內取貨或出貨商店之料號的指定來源預留存貨的問題。<!-- ACCS-1374 -->
+
+* 過時的自訂費用現在可從購物車查詢回應中清除。<!-- ACCS-1400 -->
+
+* 解決[!DNL AEM Assets]整合中，產品資產角色屬性在目錄匯出期間遺失地區設定資料的問題。<!-- ACCS-1401 -->
+
+* 改善儲存整合時收到的警告，指出[!DNL Dynamic Media]未啟用。<!-- ACAP-1298 -->
+
+* 當您訂閱事件時，事件名稱和別名欄位現在會驗證為小寫。<!-- CEXT-6164 -->
+
+* 現在當您儲存條件式webhook時，系統會驗證Webhook規則模式。<!-- CEXT-6287 -->
 
 {{accs-release}}
 
@@ -598,11 +669,11 @@ Invoice API現在支援使用擴充功能屬性的[自訂擷取金額](https://e
 
 * [!DNL Commerce Storefront on Edge Delivery Services]現在包含[B2B放置元件](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/?lang=zh-Hant)。 下列B2B下拉式清單現已可供使用：
 
-   * **[公司管理](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-management/?lang=zh-Hant)** — 啟用Adobe Commerce店面的公司設定檔管理和角色型許可權。
-   * **[公司切換器](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-switcher/?lang=zh-Hant)** — 提供使用者介面元件，讓使用者可在相關聯的多個公司之間切換。
-   * **[採購單](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/purchase-order/?lang=zh-Hant)** — 管理B2B交易的採購單工作流程、核准規則和採購單歷史記錄。
-   * **[報價管理](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/quote-management/?lang=zh-Hant)** — 針對具有報價請求、議價及核准工作流程的B2B客戶，啟用可協商的報價。
-   * **[請購單清單](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/requisition-list/?lang=zh-Hant)** — 提供建立和管理重複購買及大量訂購的請購單清單的工具。
+  * **[公司管理](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-management/?lang=zh-Hant)** — 啟用Adobe Commerce店面的公司設定檔管理和角色型許可權。
+  * **[公司切換器](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-switcher/?lang=zh-Hant)** — 提供使用者介面元件，讓使用者可在相關聯的多個公司之間切換。
+  * **[採購單](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/purchase-order/?lang=zh-Hant)** — 管理B2B交易的採購單工作流程、核准規則和採購單歷史記錄。
+  * **[報價管理](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/quote-management/?lang=zh-Hant)** — 針對具有報價請求、議價及核准工作流程的B2B客戶，啟用可協商的報價。
+  * **[請購單清單](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/requisition-list/?lang=zh-Hant)** — 提供建立和管理重複購買及大量訂購的請購單清單的工具。
 
 * 已發行B2B店面相容性套件。 此套件增強了[!DNL Adobe Commerce] B2B GraphQL結構描述，以協助改善B2B系統的開發。
 
