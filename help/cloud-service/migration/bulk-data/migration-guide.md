@@ -2,7 +2,7 @@
 title: 執行大量資料移轉
 description: 瞭解如何使用CLI設定並執行從Adobe Commerce PaaS或內部部署執行個體到Adobe Commerce as a Cloud Service的大量資料移轉。
 feature: Cloud
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
 role: Developer
 level: Intermediate
 autotag-review: '2026-07-22T19:19:07.600Z'
@@ -130,7 +130,7 @@ SOURCE_INSTANCE_ACCESS_TOKEN_SECRET=<access_token_secret>
 
 >[!NOTE]
 >
->如果您是第一次使用Cloud CLI，您也必須將SSH公開金鑰新增至帳戶。 如需指示，請參閱[安全連線指南](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections)。
+>如果您是第一次使用Cloud CLI，您也必須將SSH公開金鑰新增至帳戶。 如需指示，請參閱[安全連線指南](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/secure-connections)。
 
 ### 調整Commerce管理設定
 

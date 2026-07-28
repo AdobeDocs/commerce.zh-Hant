@@ -2,7 +2,7 @@
 title: 客戶整備檢查清單
 description: 瞭解如何透過整備檢查清單（涵蓋參與、機器、來源和目標），準備將大量資料移轉至Adobe Commerce as a Cloud Service。
 feature: Cloud
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
 role: Developer
 level: Intermediate
 autotag-review: '2026-07-22T19:19:18.443Z'
@@ -64,7 +64,7 @@ ht-degree: 0%
 - **可寫入的工作目錄** — 移轉使用者必須完全可寫入擷取移轉工具的目錄。 工具會在執行期間寫入記錄、快取、[!DNL Composer]相依性和產生的檔案。
 - **足夠的磁碟空間** — 確保有足夠的可用磁碟空間供擷取的資料、[!DNL Docker]影像和記錄檔輸出使用。 空間需求會依來源資料庫的大小而有所不同。
 - **內部部署來源：從移轉機器直接的資料庫連線** — 對於內部部署來源執行個體，移轉機器必須擁有來源資料庫的直接網路存取權。 此工具不會自動建立內部部署資料庫連線。 在執行任何移轉命令之前，請確認可從移轉機器存取主機、連線埠和認證。
-- 已安裝&#x200B;**雲端CLI且已登入SSH金鑰** — 對於[!DNL Adobe Commerce on Cloud]來源執行個體，[雲端CLI](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview)必須安裝在移轉機器上。 您的SSH公開金鑰也必須在帳戶中註冊。 如需指示，請參閱[安全連線指南](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections)。
+- 已安裝&#x200B;**雲端CLI且已登入SSH金鑰** — 對於[!DNL Adobe Commerce on Cloud]來源執行個體，[雲端CLI](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview)必須安裝在移轉機器上。 您的SSH公開金鑰也必須在帳戶中註冊。 如需指示，請參閱[安全連線指南](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/secure-connections)。
 
 ### Source執行個體
 
