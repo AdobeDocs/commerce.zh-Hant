@@ -1,7 +1,7 @@
 ---
-source-git-commit: 10a91a91337778648e99078bcbf0c9ef25a49f86
+source-git-commit: 039f848c37235195a3ffcc90238dad77513a9ec3
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '620'
 ht-degree: 0%
 
 ---
@@ -104,3 +104,9 @@ Adobe Commerce身分管理和驗證由Adobe Identity Management系統(IMS)透過
 | 服務 | 店面 |
 | --- | --- |
 | [AEM Assets整合](../aem-assets-integration/release-notes.md)<br>[Commerce Optimizer聯結器](../aco-connector/release-notes.md) | [店面版本資訊](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=zh-Hant)<br>[店面變更記錄檔](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=zh-Hant) |
+
+## 大量資料移轉工具早期存取 {#bulk-data-early-access}
+
+>[!IMPORTANT]
+>
+>大量資料移轉工具目前正在搶先使用。 存取權完全透過Commerce部署工程(CDE)參與程式提供。 如需工具及其適用性要求的概述，請參閱[大量資料移轉工具](../cloud-service/migration/bulk-data/migration-tool.md)。

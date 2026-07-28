@@ -35,9 +35,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: 2e43a6abbca117cef5dc559a9f6881980d2d934c
 workflow-type: tm+mt
-source-wordcount: 3150
+source-wordcount: 3153
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如需移轉工具的詳細資訊，請參閱[大量資料移轉工具](./bulk-data.md)。
+>如需移轉工具的詳細資訊，請參閱[大量資料移轉工具](./bulk-data/migration-tool.md)。
 
 ## 了解轉換 — 比較PaaS和SaaS
 
@@ -101,7 +101,7 @@ ht-degree: 0%
 
 如表所示，每次移轉的緩解措施將包含：
 
-* **資料移轉** — 使用提供的[移轉工具](./bulk-data.md)，將資料從您現有的執行個體移轉至[!DNL Adobe Commerce as a Cloud Service]。
+* **資料移轉** — 使用提供的[移轉工具](./bulk-data/migration-tool.md)，將資料從您現有的執行個體移轉至[!DNL Adobe Commerce as a Cloud Service]。
 * **店面** — 由Edge Delivery提供支援的現有Commerce店面和Headless店面不需要減輕影響，但Luma店面需要移轉至Edge Delivery提供支援的Commerce店面。 PWA Studio店面可移轉至Edge Delivery支援的Commerce店面，或維持其目前狀態。 Adobe將提供加速器來協助店面遷移。
 * **[API網格](https://developer.adobe.com/graphql-mesh-gateway)** — 建立新網格或修改現有網格。 Adobe將提供預先設定的網格，以協助進行此程式。
 * **整合** — 所有整合都需要運用[整合入門套件](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/)或[[!DNL Adobe Commerce as a Cloud Service] REST API](https://developer.adobe.com/commerce/webapi/reference/rest/saas/)。
@@ -150,11 +150,11 @@ ht-degree: 0%
 
 * **分階段移轉與一次完整移轉：**&#x200B;評估每種方法的優劣。
 * **識別核心業務流程：**&#x200B;優先處理必須先移轉的功能，例如：
-   * 複雜的定價規則
-   * 在正式下訂單或處理訂單之前套用的自訂商業規則
-   * 複雜的稅捐計算
-   * 地址驗證
-   * 下訂單後觸發的自訂邏輯
+  * 複雜的定價規則
+  * 在正式下訂單或處理訂單之前套用的自訂商業規則
+  * 複雜的稅捐計算
+  * 地址驗證
+  * 下訂單後觸發的自訂邏輯
 * **無頭式與整體式店面：**&#x200B;新店面開發或調整現有店面的決策點。
 * **整合策略：**&#x200B;決定如何重新平台化現有的整合（API網格、App Builder、直接API）。
 * **資料移轉策略：**&#x200B;決定您要使用完整歷史資料、部分資料或無移轉資料進行移轉。
@@ -209,12 +209,12 @@ ht-degree: 0%
 這是策略性、經得起未來考驗的方法，可善用Adobe Commerce Optimizer。 CCDM提供彈性、可擴充且統一的目錄服務，專為多來源資料彙總及動態銷售所設計。
 
 * **資料擷取與統一**
-   * 首先，從您現有的Adobe Commerce PaaS執行個體（和/或其他PIM/ERP系統）將產品和目錄資料擷取至新的可撰寫目錄資料模型(CCDM)。
-   * 將現有的產品屬性對應至CDM的彈性結構。 優先處理關鍵產品資料以進行初始內嵌。
-   * 建立強大的資料管道以進行持續同步。 這可能包括：
-      * **事件導向** （透過App Builder）：利用您PaaS執行個體的Adobe I/O Events，觸發公開可用或自訂的Adobe App Builder應用程式。 這些應用程式會透過其API轉換及推送資料變更（建立、更新和刪除）至CCDM。
-      * **批次擷取**：對於大型初始載入或定期大量更新，請使用安全檔案傳輸（例如CSV或JSON）至臨時區域，由Adobe Experience Platform (AEP)擷取服務處理至CCDM。
-      * **直接API整合** （使用App Builder協調流程）：對於更複雜的情境，App Builder可以充當協調層，對您的PaaS後端進行直接API呼叫、轉換資料，並將其推送至CCDM。
+  * 首先，從您現有的Adobe Commerce PaaS執行個體（和/或其他PIM/ERP系統）將產品和目錄資料擷取至新的可撰寫目錄資料模型(CCDM)。
+  * 將現有的產品屬性對應至CDM的彈性結構。 優先處理關鍵產品資料以進行初始內嵌。
+  * 建立強大的資料管道以進行持續同步。 這可能包括：
+    * **事件導向** （透過App Builder）：利用您PaaS執行個體的Adobe I/O Events，觸發公開可用或自訂的Adobe App Builder應用程式。 這些應用程式會透過其API轉換及推送資料變更（建立、更新和刪除）至CCDM。
+    * **批次擷取**：對於大型初始載入或定期大量更新，請使用安全檔案傳輸（例如CSV或JSON）至臨時區域，由Adobe Experience Platform (AEP)擷取服務處理至CCDM。
+    * **直接API整合** （使用App Builder協調流程）：對於更複雜的情境，App Builder可以充當協調層，對您的PaaS後端進行直接API呼叫、轉換資料，並將其推送至CCDM。
 * **目錄檢視和原則定義**：設定目錄檢視（邏輯群組，用於唯一目錄簡報，例如商店檢視、區域和B2B/B2C區段），並在CCDM中定義原則（用於產品簡報、篩選和銷售的規則集）。 如此可讓您動態控制每個目錄檢視的產品分類與顯示邏輯。
 * **整合即時搜尋和產品建議**：一旦目錄資料出現在CCDM中，請整合Adobe的SaaS式即時搜尋和產品建議服務。 這些利用了Adobe AI AI和機器學習模型，提供絕佳的搜尋相關性和個人化建議，並直接使用CCDM的資料。
 
@@ -228,14 +228,14 @@ ht-degree: 0%
 
 * **初始設定**：使用Edge Delivery Services的Adobe Commerce店面樣板設定您的專案。 這是以現代Web技術為基礎的Headless前端。
 * **連線到目錄服務和API Mesh**：您的Commerce店面將主要透過GraphQL API使用資料：
-   * **選項1**：從現有的目錄SaaS服務（透過API Mesh）取得產品資訊和銷售規則。
-   * **選項2**：從CCDM取得產品資訊和銷售規則。
-   * 對於來自舊版後端（PaaS執行個體）或自訂App Builder服務（例如即時詳細目錄、自訂產品屬性和忠誠度點顯示）的任何協調資料，從API網格中建立。
+  * **選項1**：從現有的目錄SaaS服務（透過API Mesh）取得產品資訊和銷售規則。
+  * **選項2**：從CCDM取得產品資訊和銷售規則。
+  * 對於來自舊版後端（PaaS執行個體）或自訂App Builder服務（例如即時詳細目錄、自訂產品屬性和忠誠度點顯示）的任何協調資料，從API網格中建立。
 * **內容移轉（AEM服務）**：將您現有的靜態內容（例如「關於我們」頁面、部落格和行銷橫幅）移轉到AEM服務，以支援Commerce店面。 運用AEM的內容製作功能，並確保資產已針對Edge Delivery Services最佳化。
 * **開發核心UI元件**：使用Edge Delivery Services下拉式元件和自訂React/Vue元件，為產品詳細資料頁面(PDP)、產品清單頁面(PLP)和一般內容頁面建置重要的使用者介面元件。 排定核心商務流程的優先順序。
 * **與現有購物車/結帳整合**：最初，Edge Delivery Services店面會協調您與現有Adobe Commerce PaaS （或其他協力廠商平台）的移交，以進行購物車管理和結帳。 這通常涉及：
-   * **重新導向**：將使用者重新導向至舊版平台的原生購物車與結帳URL，並傳遞必要的工作階段與購物車識別碼。
-   * **直接API互動** （使用App Builder協調流程）：在Edge Delivery Services中建立自訂購物車和結帳UI元件，這些元件會直接與您的PaaS後端的購物車和結帳API互動。 這通常涉及App Builder做為前端後端(BFF)，以協調對多個後端服務（例如PaaS cart、付款閘道和運送計算器）的呼叫。
+  * **重新導向**：將使用者重新導向至舊版平台的原生購物車與結帳URL，並傳遞必要的工作階段與購物車識別碼。
+  * **直接API互動** （使用App Builder協調流程）：在Edge Delivery Services中建立自訂購物車和結帳UI元件，這些元件會直接與您的PaaS後端的購物車和結帳API互動。 這通常涉及App Builder做為前端後端(BFF)，以協調對多個後端服務（例如PaaS cart、付款閘道和運送計算器）的呼叫。
 
 **優點**：提供超快、SEO最佳化及高度彈性的店面體驗。 此階段可直接提供卓越的客戶體驗，為未來前端創新奠定基礎。
 
@@ -249,13 +249,13 @@ ht-degree: 0%
 
 大量資料移轉涉及從Adobe Commerce PaaS執行個體取得完整資料傾印、轉換整個資料集，以及一次將資料匯入Adobe Commerce as a Cloud Service。 此方法通常用於初始的資料填入。
 
-* **工具可用性**：將在2026年第1季透過請求提供客戶用於第一方Commerce大量資料移轉的專用[大量資料移轉工具](./bulk-data.md)。 如果客戶事先需要大量資料移轉的相關協助，Adobe可協助他們依請求傳輸資料。
+* **工具可用性**：供客戶用於第一方Commerce大量資料移轉的專用[大量資料移轉工具](./bulk-data/migration-tool.md)正在提早存取。 計畫上線日期為2027年第1季。 如果客戶事先需要大量資料移轉的相關協助，Adobe可協助他們依請求傳輸資料。
 
 * **處理序**：
-   * **完整資料匯出**：從您的Adobe Commerce PaaS執行個體擷取完整的資料集（例如，產品、類別、客戶帳戶、歷史訂單資料、靜態區塊和頁面內容）。
-   * **資料轉換**：套用必要的轉換，使擷取的資料符合新Adobe Commerce as a Cloud Service元件的結構描述需求，包括可撰寫目錄資料模型(CCDM) （若採用）以及任何其他相關的Adobe服務或資料庫。 這可能涉及自訂指令碼或專門的資料對應工具。
-   * **初始匯入**：將轉換後的完整資料集匯入Adobe Commerce as a Cloud Service的個別元件。 對於產品和類別資料，這會填入所選的目錄服務（CCDM或現有的目錄SaaS）。 針對客戶和訂單資料，這會填入交易式後端或關聯的服務。
-   * **驗證**：嚴格驗證匯入的資料，以確保所有新系統的完整性、正確性和一致性。
+  * **完整資料匯出**：從您的Adobe Commerce PaaS執行個體擷取完整的資料集（例如，產品、類別、客戶帳戶、歷史訂單資料、靜態區塊和頁面內容）。
+  * **資料轉換**：套用必要的轉換，使擷取的資料符合新Adobe Commerce as a Cloud Service元件的結構描述需求，包括可撰寫目錄資料模型(CCDM) （若採用）以及任何其他相關的Adobe服務或資料庫。 這可能涉及自訂指令碼或專門的資料對應工具。
+  * **初始匯入**：將轉換後的完整資料集匯入Adobe Commerce as a Cloud Service的個別元件。 對於產品和類別資料，這會填入所選的目錄服務（CCDM或現有的目錄SaaS）。 針對客戶和訂單資料，這會填入交易式後端或關聯的服務。
+  * **驗證**：嚴格驗證匯入的資料，以確保所有新系統的完整性、正確性和一致性。
 
 **反複資料移轉**
 
@@ -264,11 +264,11 @@ ht-degree: 0%
 * **工具可用性**：專門為反複資料移轉設計的工具將於2026年推出。
 
 * **處理序**：
-   * **差異識別**：建立機制以識別自上次同步以來PaaS環境中重要資料集中的變更（建立、更新及刪除）。 這可能涉及變更資料擷取(CDC)、時間戳記比較或事件型觸發器。
-   * **連續同步**：實作健全的機制，以便從PaaS環境連續、增量同步資料至新的Cloud Service元件（例如CCDM和交易式後端）。 這對於維持資料新鮮度以及在轉換期間將停機時間減至最少至關重要。
-   * **善用事件**：儘可能利用Adobe I/O Events觸發App Builder動作，即時或近乎即時地從您的PaaS執行個體更新至新服務。 例如，PaaS中的產品更新可能會觸發更新CCDM中對應條目的事件。
-   * **API導向更新**：對於非事件導向的資料，請使用排程的API呼叫（透過App Builder或其他整合平台）從PaaS提取變更，並將其推送到新系統。
-   * **錯誤處理與監視**：針對所有反複資料管道實作健全的錯誤處理、記錄與監視，以確保在整個處理過程中維持資料完整性。
+  * **差異識別**：建立機制以識別自上次同步以來PaaS環境中重要資料集中的變更（建立、更新及刪除）。 這可能涉及變更資料擷取(CDC)、時間戳記比較或事件型觸發器。
+  * **連續同步**：實作健全的機制，以便從PaaS環境連續、增量同步資料至新的Cloud Service元件（例如CCDM和交易式後端）。 這對於維持資料新鮮度以及在轉換期間將停機時間減至最少至關重要。
+  * **善用事件**：儘可能利用Adobe I/O Events觸發App Builder動作，即時或近乎即時地從您的PaaS執行個體更新至新服務。 例如，PaaS中的產品更新可能會觸發更新CCDM中對應條目的事件。
+  * **API導向更新**：對於非事件導向的資料，請使用排程的API呼叫（透過App Builder或其他整合平台）從PaaS提取變更，並將其推送到新系統。
+  * **錯誤處理與監視**：針對所有反複資料管道實作健全的錯誤處理、記錄與監視，以確保在整個處理過程中維持資料完整性。
 
 ### 移轉後與持續性作業
 
