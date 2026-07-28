@@ -54,7 +54,7 @@ ht-degree: 0%
 
 設定大量資料移轉的環境：
 
->[!VIDEO](https://video.tv.adobe.com/v/3496121)
+>[!VIDEO](https://video.tv.adobe.com/v/3496131?captions=chi_hant)
 
 1. 擷取`ccsaas-migration-tools.tar.gz`的內容。
 
@@ -97,7 +97,7 @@ SOURCE_INSTANCE_ACCESS_TOKEN_SECRET=<access_token_secret>
 
 ### 設定來源OAuth認證
 
->[!VIDEO](https://video.tv.adobe.com/v/3496142)
+>[!VIDEO](https://video.tv.adobe.com/v/3496151?captions=chi_hant)
 
 這四個值會簽署從移轉工具到來源存放區API的請求。 若要取得這些擴充功能，請開啟來源[!UICONTROL Admin]，並移至&#x200B;[!UICONTROL **系統**] > [!UICONTROL **擴充功能**] > [!UICONTROL **整合**]。 建立或開啟整合，然後將值複製到`.env`：
 
@@ -142,7 +142,7 @@ SOURCE_INSTANCE_ACCESS_TOKEN_SECRET=<access_token_secret>
 
 ### 設定目標SaaS和IMS憑證
 
->[!VIDEO](https://video.tv.adobe.com/v/3496167)
+>[!VIDEO](https://video.tv.adobe.com/v/3496176?captions=chi_hant)
 
 這些是目標的[!DNL Adobe Commerce as a Cloud Service] IMS和API設定。 您需要租使用者ID、組織ID、IMS OAuth伺服器對伺服器認證，以及您環境的正確IMS主機。 與您的Adobe團隊協調，以取得組織、租使用者和設定檔存取權。 請勿嘗試推斷或估計敏感值。
 
@@ -247,7 +247,7 @@ CDMS_PORT=443
 
 ## 設定資料庫連線檔案
 
->[!VIDEO](https://video.tv.adobe.com/v/3496152)
+>[!VIDEO](https://video.tv.adobe.com/v/3496166?captions=chi_hant)
 
 `.my.cnf`檔案為移轉工具的擷取端提供[!DNL MySQL]個連線設定。 將`.my.cnf.example`複製到專案根目錄中的`.my.cnf`以建立它。 區段名稱必須符合`.env`中的`SOURCE_CONNECTION_NAME`。
 
