@@ -32,9 +32,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: b05e2183cc0e4b8352a150df9dabfc9dfdb31750
+source-git-commit: 155703001fc049470266874e0f519ab060248b31
 workflow-type: tm+mt
-source-wordcount: 5265
+source-wordcount: 5259
 ht-degree: 0%
 
 ---
@@ -49,11 +49,11 @@ ht-degree: 0%
 
 ## 2026年7月 — 發行說#1 {#latest}
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE 生產]{type=Neutral tooltip="列出的專案目前可在生產環境中使用。"}
 
-[!BADGE 沙箱]{type=Caution tooltip="列出的專案目前僅在沙箱環境中可用。 Adobe會先在沙箱環境中推出新版本，讓您可以在生產環境中使用該版本之前有時間測試即將推出的變更。"}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-以下專案目前僅在沙箱環境中可用，並計畫於2026年7月28日移至生產環境。
+以下專案自2026年7月28日起可在生產環境中使用。
 
 >[!BEGINSHADEBOX]
 
@@ -63,7 +63,7 @@ ht-degree: 0%
 >
 >此功能預設為停用。 若要啟用此功能，請聯絡您的Adobe Commerce客戶成功經理或建立支援票證。
 
-新的REST API端點會復寫[!DNL Commerce Admin] [!UICONTROL **編輯順序**]&#x200B;功能，以允許整合以程式設計方式編輯順序：
+新的[REST API端點](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/order-management)復寫[!DNL Commerce Admin] [!UICONTROL **編輯順序**]&#x200B;功能，可讓整合以程式設計方式編輯順序：
 
 | 方法 | 端點 | 說明 |
 | --- | --- | --- |
@@ -100,7 +100,7 @@ ht-degree: 0%
 >
 >此功能屬於實驗性質，必須透過聯絡您的Adobe Commerce客戶成功經理或建立支援票證來啟用。
 
-新的`orderChain` REST API端點可讓整合功能使用其ID來修改訂單，並自動解析已編輯訂單的完整鏈結：
+新的[`orderChain` REST API端點](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/order-management)可讓整合使用其ID修改訂單，並自動解析已編輯訂單的完整鏈結：
 
 | 方法 | 端點 | 說明 |
 | --- | --- | --- |
@@ -133,7 +133,7 @@ ht-degree: 0%
 
 ### 按區域或範本隱藏異動電子郵件
 
-新的&#x200B;[!UICONTROL **電子郵件隱藏**]&#x200B;設定（[!UICONTROL **商店**] > [!UICONTROL **設定**] > [!UICONTROL **Adobe服務**] > [!UICONTROL **電子郵件隱藏**]）可讓系統管理員選擇性停止[!DNL Commerce]傳送異動電子郵件。 您可以依功能區域（例如客戶帳戶、Order Management、退貨、結帳、行銷或B2B）或範本識別碼的精確清單來隱藏電子郵件。<!-- ACCS-1025 -->
+新的[電子郵件隱藏](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/email-suppression)設定（[!UICONTROL **商店**] > [!UICONTROL **設定**] > [!UICONTROL **Adobe服務**] > [!UICONTROL **電子郵件隱藏**]）可讓系統管理員選擇性停止[!DNL Commerce]傳送異動電子郵件。 您可以依功能區域（例如客戶帳戶、Order Management、退貨、結帳、行銷或B2B）或範本識別碼的精確清單來隱藏電子郵件。<!-- ACCS-1025 -->
 
 ### 在管理員中檢視訂單修改歷史記錄
 
