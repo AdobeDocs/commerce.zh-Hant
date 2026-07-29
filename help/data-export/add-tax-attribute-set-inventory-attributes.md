@@ -36,9 +36,9 @@ ht-degree: 0%
 
 Adobe Commerce額外產品屬性模組可擴充產品資料摘要。 其中包括Adobe Commerce產品設定中的其他產品屬性：
 
-* [稅捐分類](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/tax-class)
-* [屬性集](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-sets)
-* [詳細目錄](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/product-options#advanced-product-options)
+* [稅捐分類](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/site-store/taxes/tax-class)
+* [屬性集](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/product-attributes/create/attribute-sets)
+* [詳細目錄](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/inventory/configuration/product-options#advanced-product-options)
 
 安裝後，模組會自動運作。 它會在產品同步期間擷取並匯出其他屬性。 不需要額外設定。
 
@@ -175,11 +175,11 @@ Adobe Commerce額外產品屬性模組可擴充產品資料摘要。 其中包�
 
 **需求**
 
-* [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+。 如需詳細資訊，請參閱[系統需求](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)。
+* [Adobe Commerce](https://business.adobe.com/tw/products/magento/magento-commerce.html) 2.4.4+。 如需詳細資訊，請參閱[系統需求](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/system-requirements)。
 * [Adobe Commerce Data Export擴充功能](manage-extension.md#update-a-module-to-a-specific-version)，103.4.11版或更新版本
 * 存取[repo.magento.com](https://repo.magento.com)
 
-  若要產生金鑰並取得必要的許可權，請參閱[取得您的驗證金鑰](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)。 如需雲端安裝，請參閱[雲端基礎結構上的Commerce指南](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys)。
+  若要產生金鑰並取得必要的許可權，請參閱[取得您的驗證金鑰](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)。 如需雲端安裝，請參閱[雲端基礎結構上的Commerce指南](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/authentication-keys)。
 * 存取Adobe Commerce應用程式伺服器的命令列。
 
 ### 安裝步驟
@@ -192,8 +192,8 @@ composer require adobe-commerce/module-extra-product-attributes
 
 如需詳細的安裝步驟，請參閱下列指南：
 
-* [在雲端基礎結構上安裝Adobe Commerce的擴充功能](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions)
-* [在Adobe Commerce內部部署安裝擴充功能](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions)
+* [在雲端基礎結構上安裝Adobe Commerce的擴充功能](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure-store/extensions)
+* [在Adobe Commerce內部部署安裝擴充功能](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/tutorials/extensions)
 
 ## 同步產品資料
 
@@ -221,9 +221,9 @@ bin/magento saas:resync --feed=productAttributes
 
 * 確認已在Admin中正確設定詳細目錄設定
 * 檢查網站特定詳細目錄覆寫
-* 驗證[Inventory management模組](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/guide-overview)是否正常運作
+* 驗證[Inventory management模組](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/inventory/guide-overview)是否正常運作
 
-如需詳細資訊，請參閱&#x200B;*Inventory management商家檔案*&#x200B;中的[Adobe Commerce指南](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/guide-overview)。
+如需詳細資訊，請參閱&#x200B;*Inventory management商家檔案*&#x200B;中的[Adobe Commerce指南](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/inventory/guide-overview)。
 
 **效能問題：**
 

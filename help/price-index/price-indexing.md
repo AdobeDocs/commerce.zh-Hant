@@ -26,7 +26,7 @@ ht-degree: 0%
 
 SaaS定價索引可藉由將資源密集的作業（例如索引和價格計算）從Commerce應用程式解除安裝到Adobe的雲端基礎架構，以最佳化網站效能。 此方式可讓商戶快速擴充資源，以加快價格指數化時間，並更快速地提供店面價格更新和連線Commerce服務。
 
-下圖顯示當Commerce使用Commerce應用程式中包含的[價格索引](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers)程式時，指向SaaS服務的索引資料流程：
+下圖顯示當Commerce使用Commerce應用程式中包含的[價格索引](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cli/manage-indexers)程式時，指向SaaS服務的索引資料流程：
 
 ![預設資料流程](assets/old_way.png)
 
@@ -46,7 +46,7 @@ SaaS定價索引可藉由將資源密集的作業（例如索引和價格計算�
 
 ### 需求
 
-* [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+。 如需詳細資訊，請參閱[系統需求](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}。
+* [Adobe Commerce](https://business.adobe.com/tw/products/magento/magento-commerce.html) 2.4.4+。 如需詳細資訊，請參閱[系統需求](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}。
 
 ### 先決條件
 
@@ -78,7 +78,7 @@ bin/magento saas:resync --feed=prices
 
 >[!NOTE]
 >
->若要在Commerce雲端或內部部署的Commerce管理員中無法使用資料摘要同步狀態頁面時將其啟用，請依照[擴充功能安裝指示](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension)操作。
+>若要在Commerce雲端或內部部署的Commerce管理員中無法使用資料摘要同步狀態頁面時將其啟用，請依照[擴充功能安裝指示](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension)操作。
 
 ## 自訂產品型別的價格
 
