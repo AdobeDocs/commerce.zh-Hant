@@ -5,14 +5,14 @@ exl-id: 1542a33f-9c01-4c36-bbce-bfa3107fbeb8
 feature: Payments, Checkout, Paas, Saas
 source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
 workflow-type: tm+mt
-source-wordcount: '140'
+source-wordcount: '169'
 ht-degree: 0%
 
 ---
 
 # 建立具有[!DNL Payment Services]的訂單
 
-[!DNL Payment Services]與[!DNL Adobe Commerce]的[!DNL Magento Open Source]可讓您由商家為其需要協助的客戶直接履行管理員的訂單。 **[!UICONTROL Create New Order]**&#x200B;表單包含完成正常結帳程式所需的所有資訊，包括含有信用卡資訊的託管欄位。 如需必要步驟的詳細資訊，請參閱[建立訂單](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order){target="_blank"}。
+[!DNL Adobe Commerce]與[!DNL Magento Open Source]的[!DNL Payment Services]可讓您由商家為其需要協助的客戶直接履行管理員的訂單。 **[!UICONTROL Create New Order]**&#x200B;表單包含完成正常結帳程式所需的所有資訊，包括含有信用卡資訊的託管欄位。 如需必要步驟的詳細資訊，請參閱[建立訂單](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order){target="_blank"}。
 
 ## 託管信用卡欄位
 

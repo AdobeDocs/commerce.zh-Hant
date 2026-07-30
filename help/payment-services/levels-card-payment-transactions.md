@@ -6,7 +6,7 @@ feature: Payments, Paas, Saas
 exl-id: db8993fe-dd6f-48b5-9e7b-69a0f2e08552
 source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '362'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 0%
 * 防止詐騙，降低處理器風險
 * 增強交易安全性
 
-檢視[什麼是IC++?PayPal開發人員檔案中的](https://www.paypal.com/us/brc/article/what-is-interchange-plus-plus){target=_blank}以取得詳細資訊。
+檢視[什麼是IC++?](https://www.paypal.com/us/brc/article/what-is-interchange-plus-plus){target=_blank} 如需詳細資訊，請參閱PayPal開發人員檔案。
 
 ## [!DNL Payment Services]中的第2級與第3級卡片付款交易
 

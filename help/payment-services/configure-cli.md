@@ -5,10 +5,10 @@ role: Admin, Developer
 level: Intermediate
 exl-id: 265ab1be-fe52-41f3-85cb-addbc2ddfb17
 feature: Payments, Checkout, Configuration, Integration, Paas
-badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce 。"
+badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
 source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '733'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ### 在[!DNL Magento Open Source]上設定cron
 
-若要在`BY SCHEDULE`上使用[!DNL Magento Open Source]索引模式，您必須設定cron。 請參閱[設定並執行cron](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)。
+若要在[!DNL Magento Open Source]上使用`BY SCHEDULE`索引模式，您必須設定cron。 請參閱[設定並執行cron](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)。
 
 ### 設定索引子
 
@@ -53,9 +53,9 @@ bin/magento indexer:set-mode schedule sales_order_data_exporter sales_order_stat
 
 ### 手動重新索引資料
 
-您可以手動重新索引資料，而不是等待資料自動發生。 如需詳細資訊，請參閱[管理索引子](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cli/manage-indexers#reindex){target="_blank"}中的[重新索引](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cli/manage-indexers){target="_blank"}。
+您可以手動重新索引資料，而不是等待資料自動發生。 如需詳細資訊，請參閱[管理索引子](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cli/manage-indexers){target="_blank"}中的[重新索引](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cli/manage-indexers#reindex){target="_blank"}。
 
-設定`BY SCHEDULE`模式時，系統會追蹤變更的實體，而cron作業會根據設定的排程更新這些實體的索引。 請參閱[設定並執行cron](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs#config-cli-cron-group-run)中的命令列[從命令列執行cron](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)，瞭解如何使用cron工作手動觸發索引。
+設定`BY SCHEDULE`模式時，系統會追蹤變更的實體，而cron作業會根據設定的排程更新這些實體的索引。 請參閱[設定並執行cron](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)中的命令列[從命令列執行cron](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs#config-cli-cron-group-run)，瞭解如何使用cron工作手動觸發索引。
 
 ### 將重新索引的資料傳送至付款服務
 
