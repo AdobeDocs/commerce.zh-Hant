@@ -14,9 +14,9 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 10a91a91337778648e99078bcbf0c9ef25a49f86
+source-git-commit: df9b8455e52b2721ba92971b1d0fddb92da8159a
 workflow-type: tm+mt
-source-wordcount: 958
+source-wordcount: 971
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 {{aco-merchandising-services}}
 
-安裝目錄服務，以使用[目錄服務GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/)從Commerce執行個體要求及接收產品資料。 目錄服務是以Composer PHP中繼資料的形式從repo.magento.com存放庫提供。
+若要使用[目錄服務GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/)從Commerce執行個體要求及接收產品資料，請安裝目錄服務。 目錄服務是以Composer PHP中繼資料的形式從repo.magento.com存放庫提供。
 
 >[!NOTE]
 >
@@ -33,16 +33,14 @@ ht-degree: 0%
 >
 >如果您正在使用Adobe Commerce as a Cloud Service，您的環境中會提供最新版本的中繼資料。 若要開始使用服務，請參閱[目錄服務快速入門](get-started.md)。
 >
->如需使用Adobe Commerce Optimizer的Commerce店面實作，請參閱[Merchandising Services開發人員指南](https://developer-stage.adobe.com/commerce/services/optimizer/)。
+>如需使用Adobe Commerce Optimizer的Commerce店面實作，請參閱Adobe Commerce Optimizer的[銷售服務開發人員指南](https://developer-stage.adobe.com/commerce/services/optimizer/)。
 
 
 ## 系統需求
 
 **軟體需求**
 
-- Adobe Commerce 2.4.4+
-- PHP 8.1、8.2、8.3、8.4
-- Composer： 2.x
+[Adobe Commerce](https://business.adobe.com/tw/products/magento/magento-commerce.html) 2.4.4+。 如需詳細資訊，請參閱[系統需求](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}。
 
 **支援的平台**
 
@@ -58,7 +56,7 @@ ht-degree: 0%
 
 所有Commerce測試執行個體都使用沙箱端點。
 
-在沙箱端點上執行所有載入測試。 開始載入測試之前，請先提交[支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=zh-Hant#submit-ticket)，讓服務團隊可以預期額外的伺服器流量。
+在沙箱端點上執行所有載入測試。 開始載入測試之前，請先提交[支援票證](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#create-a-support-ticket-with-experience-league)，讓服務團隊可以預期額外的伺服器流量。
 
 ## 安裝和設定
 
@@ -74,7 +72,7 @@ ht-degree: 0%
 
 **先決條件**
 
-- 存取[repo.magento.com](https://repo.magento.com)以安裝擴充功能。 如需金鑰產生與取得必要許可權，請參閱[取得您的驗證金鑰](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)。 如需雲端安裝，請參閱[雲端基礎結構上的Commerce指南](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/develop/authentication-keys)
+- 存取[repo.magento.com](https://repo.magento.com)以安裝擴充功能。 如需金鑰產生與取得必要許可權，請參閱[取得您的驗證金鑰](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)。 如需雲端安裝，請參閱[雲端基礎結構上的Commerce指南](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/authentication-keys)
 
 - 存取Adobe Commerce應用程式伺服器的命令列。
 
@@ -100,7 +98,7 @@ ht-degree: 0%
    magento-cloud environment:checkout <environment-id>
    ```
 
-1. 新增目錄服務模組。
+1. 使用撰寫器新增`magento/catalog-service`模組：
 
    ```bash
    composer require magento/catalog-service --no-update
@@ -120,13 +118,13 @@ ht-degree: 0%
    git push origin <branch-name>
    ```
 
-   將更新推播到雲端環境會啟動[Commerce雲端部署程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/develop/deploy/process)以套用變更。 從[部署記錄](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log)檢查部署狀態。
+   將更新推播到雲端環境會啟動[Commerce雲端部署程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/deploy/process)以套用變更。 從[部署記錄](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/test/log-locations#deploy-log)檢查部署狀態。
 
 >[!TAB 內部部署]
 
 使用此方法來安裝內部部署執行個體的[!DNL Catalog Service]。
 
-1. 使用Composer將目錄服務模組新增至您的專案：
+1. 使用撰寫器新增`magento/catalog-service`套件：
 
    ```bash
    composer require magento/catalog-service --no-update
@@ -158,7 +156,7 @@ ht-degree: 0%
 
 ### 設定服務與資料匯出
 
-安裝[!DNL Catalog Service]之後，請完成下列工作，將目錄服務與您的Adobe Commerce執行個體整合。 此整合可實現Commerce執行個體、目錄服務和其他支援服務之間的資料同步和通訊。 資料同步處理由[SaaS Data Export擴充功能](../data-export/overview.md)處理。
+若要在安裝[!DNL Catalog Service]之後將目錄服務與Adobe Commerce執行個體整合，請完成下列工作。 此整合可實現Commerce執行個體、目錄服務和其他支援服務之間的資料同步和通訊。 [SaaS Data Export擴充功能](../data-export/overview.md)會處理資料同步處理。
 
 1. 設定[Commerce Services Connector](https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/integration-services/saas)，方法是指定API金鑰並選取SaaS資料空間。
 

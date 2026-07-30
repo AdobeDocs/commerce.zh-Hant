@@ -25,9 +25,9 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 7c592b78454fdfafb377b101e366c8213ce43a0a
 workflow-type: tm+mt
-source-wordcount: 822
+source-wordcount: 835
 ht-degree: 0%
 
 ---
@@ -53,11 +53,11 @@ Adobe Commerce額外產品屬性模組可擴充產品資料摘要。 其中包�
 
 此模組會新增三個其他屬性至您現有的產品資料摘要：
 
-* `ac_tax_class`
-* `ac_attribute_set`
-* `ac_inventory`
+* `[ac_tax_class](#tax-class-information-ac_tax_class)`
+* `[ac_attribute_set](attribute-set-information-ac_attribute_set)`
+* `[ac_inventory](advanced-inventory-data-ac_inventory)`
 
-### &#x200B;1. 稅捐類別資訊(`ac_tax_class`)
+### 稅捐類別資訊(`ac_tax_class`) {#tax-class-information-ac_tax_class}
 
 **用途**：提供每項產品的稅捐類別資訊
 
@@ -84,7 +84,7 @@ Adobe Commerce額外產品屬性模組可擴充產品資料摘要。 其中包�
 * 與外部稅捐計算服務整合
 * 會計系統的產品分類
 
-### &#x200B;2. 屬性集資訊(`ac_attribute_set`)
+### 屬性集資訊(`ac_attribute_set`) {#attribute-set-information-ac_attribute_set}
 
 **用途**：識別指派給每個產品的屬性集
 
@@ -113,7 +113,7 @@ Adobe Commerce額外產品屬性模組可擴充產品資料摘要。 其中包�
 * 目錄管理和組織
 * 需要屬性集內容的協力廠商系統整合
 
-### &#x200B;3. 進階清查資料(`ac_inventory`)
+### 進階清查資料(`ac_inventory`) {#advanced-inventory-data-ac_inventory}
 
 **用途**：提供每個產品的詳細目錄管理設定
 
@@ -125,9 +125,9 @@ Adobe Commerce額外產品屬性模組可擴充產品資料摘要。 其中包�
 * `cartMinQty` （浮動）：購物車允許的最小數量
 * `cartMaxQty` （浮動）：購物車允許的最大數量
 * `backorders` （字串）：延交原則。 值為下列其中一項：
-   * `"no"`：不允許延期交貨
-   * `"allow"`：允許數量低於0
-   * `"allow_notify"`：允許數量低於0並通知客戶
+  * `"no"`：不允許延期交貨
+  * `"allow"`：允許數量低於0
+  * `"allow_notify"`：允許數量低於0並通知客戶
 * `enableQtyIncrements` （布林值）：是否啟用數量增加
 * `qtyIncrements` （浮點數）：必要的數量增加值
 
@@ -161,22 +161,21 @@ Adobe Commerce額外產品屬性模組可擴充產品資料摘要。 其中包�
 
 * **產品摘要** (`products`)：已增強3個額外屬性
 
-   * 將`ac_tax_class`、`ac_attribute_set`和`ac_inventory`屬性新增至每個產品記錄
-   * 保持原始產品資料不變
-   * 維持與現有摘要使用者的回溯相容性
+  * 將`ac_tax_class`、`ac_attribute_set`和`ac_inventory`屬性新增至每個產品記錄
+  * 保持原始產品資料不變
+  * 維持與現有摘要使用者的回溯相容性
 
 * **產品屬性摘要** (`productAttributes`)：新屬性的屬性中繼資料已增強
 
-   * 在`productAttributes`摘要中自動註冊三個新屬性的中繼資料
-   * 提供屬性組態詳細資訊（資料型別、可見度設定等）
-   * 協助外部系統瞭解新的屬性結構
+  * 在`productAttributes`摘要中自動註冊三個新屬性的中繼資料
+  * 提供屬性組態詳細資訊（資料型別、可見度設定等）
+  * 協助外部系統瞭解新的屬性結構
 
 ## 安裝擴充功能
 
 **需求**
 
-* PHP 8.1、8.2、8.3或8.4
-* Adobe Commerce 2.4.4+
+* [Adobe Commerce](https://business.adobe.com/tw/products/magento/magento-commerce.html) 2.4.4+。 如需詳細資訊，請參閱[系統需求](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/system-requirements)。
 * [Adobe Commerce Data Export擴充功能](manage-extension.md#update-a-module-to-a-specific-version)，103.4.11版或更新版本
 * 存取[repo.magento.com](https://repo.magento.com)
 
@@ -193,8 +192,8 @@ composer require adobe-commerce/module-extra-product-attributes
 
 如需詳細的安裝步驟，請參閱下列指南：
 
-* [在雲端基礎結構上的Adobe Commerce上安裝擴充功能](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure-store/extensions)
-* [在內部部署安裝擴充功能Adobe Commerce](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/tutorials/extensions)
+* [在雲端基礎結構上安裝Adobe Commerce的擴充功能](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure-store/extensions)
+* [在Adobe Commerce內部部署安裝擴充功能](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/tutorials/extensions)
 
 ## 同步產品資料
 
@@ -215,7 +214,7 @@ bin/magento saas:resync --feed=productAttributes
 **遺失其他屬性的產品：**
 
 * 驗證模組是否已正確安裝及啟用
-* 執行resync命令以重新整理產品資料
+* 若要重新整理產品資料，請執行重新同步命令
 * 檢查產品是否具有有效的稅捐類別與屬性集指定
 
 **詳細目錄資料顯示不正確：**

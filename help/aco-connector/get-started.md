@@ -25,9 +25,9 @@ level_v2:
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: f35d602bd25d2b5192a289c444c1bc0a93a91945
 workflow-type: tm+mt
-source-wordcount: 1079
+source-wordcount: 1059
 ht-degree: 0%
 
 ---
@@ -41,10 +41,7 @@ ht-degree: 0%
 
 ## 使用整合的需求 {#requirements-to-use-the-integration}
 
-* [!DNL Adobe Commerce] 2.4.7+
-
-   * PHP 8.2、8.3或8.4
-   * Composer 2.x
+* [Adobe Commerce](https://business.adobe.com/tw/products/magento/magento-commerce.html) 2.4.7+。 如需詳細需求，請參閱[系統需求](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/system-requirements)。
 
 * 具有已布建沙箱執行個體的[!DNL Commerce Optimizer]授權。
 
@@ -71,17 +68,17 @@ ht-degree: 0%
 * [!DNL Adobe Commerce Catalog Service] (`magento/catalog-service`, `magento/catalog-service-installer`)
 * **[!UICONTROL Data Management Dashboard]** (`magento-catalog-sync-admin`)
 
-與這些擴充功能相關聯的資料仍可在Commerce資料庫中使用。 但是，當聯結器啟用時，它不會匯出到[!DNL Commerce Optimizer]。 若要在啟用聯結器後實作這些擴充功能所提供的搜尋與銷售功能，請從[[!DNL Commerce Optimizer] 管理UI](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/overview#quick-tour)進行設定。
+與這些擴充功能相關聯的資料仍可在Commerce資料庫中使用。 但是，當聯結器啟用時，它不會匯出到[!DNL Commerce Optimizer]。 若要在啟用聯結器後實作這些擴充功能提供的Adobe Commerce搜尋和銷售功能，請從[[!DNL Commerce Optimizer] 管理UI](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/overview#quick-tour)進行設定。
 
 >[!IMPORTANT]
 >
->如果在啟用聯結器之前未移除這些擴充功能，您可能會看到設定畫面損毀、[!DNL Commerce Optimizer]中的重複資料（因為相同的資料會從聯結器和現有擴充功能匯出），以及記錄中的401或403錯誤（因為擴充功能和聯結器驗證連線服務的方式發生衝突）。
+>若在啟用聯結器之前未移除這些擴充功能，會導致設定畫面損毀、[!DNL Commerce Optimizer]中的資料重複，以及401或403驗證錯誤。
 
 >[!ENDSHADEBOX]
 
 ## 設定步驟 {#configuration-steps}
 
-請依照下列步驟來啟用[!DNL Adobe Commerce Optimizer Connector]，並開始將資料從[!DNL Adobe Commerce]同步至您的[!DNL Commerce Optimizer]執行個體。
+若要啟用[!DNL Adobe Commerce Optimizer Connector]並開始將資料從[!DNL Adobe Commerce]同步至您的[!DNL Commerce Optimizer]執行個體，請遵循下列步驟。
 
 1. **[使用Composer安裝 [!DNL Adobe Commerce Optimizer Connector] 封裝](#install-the-adobe-commerce-optimizer-connector-package)**，以將您的[!DNL Adobe Commerce]執行個體連線到[!DNL Commerce Optimizer]。
 
@@ -117,7 +114,7 @@ ht-degree: 0%
 
 ## 自訂Commerce範圍匯出設定 {#customize-the-commerce-scopes-export-configuration}
 
-依預設，所有Commerce範圍（網站、客戶群組和商店檢視）的目錄資料同步已啟用。 您可以根據業務需求自訂匯出設定，以僅同步特定範圍的資料。 例如，如果您有多個共用相同語言的存放區檢視，您可以選擇只匯出其中一個存放區檢視的資料，並在[!DNL Commerce Optimizer]中作為多個目錄檢視的[目錄來源](../optimizer/setup/catalog-sources.md)。
+依預設，所有Commerce範圍（網站、客戶群組和商店檢視）的目錄資料同步已啟用。 您可以根據業務需求自訂匯出設定，以僅同步特定範圍的資料。 例如，如果多個存放區檢視共用相同的語言，您可以匯出一個存放區檢視的資料，並將其用作[!DNL Commerce Optimizer]中多個目錄檢視的[目錄來源](../optimizer/setup/catalog-sources.md)。
 
 >[!IMPORTANT]
 >
@@ -166,7 +163,7 @@ ht-degree: 0%
 
 ### 取得必要的連線詳細資料
 
-從[Adobe Developer Console](https://developer.adobe.com/console)，建立啟用[!DNL Commerce Optimizer]內嵌服務的新專案，並產生OAuth伺服器對伺服器認證。 如需詳細指示，請參閱&#x200B;*銷售開發人員指南*&#x200B;中的[取得IMS認證](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/authentication/#obtain-ims-credentials)。
+從[Adobe Developer Console](https://developer.adobe.com/console)，建立啟用[!DNL Commerce Optimizer]內嵌服務的新專案，並產生OAuth伺服器對伺服器認證。 如需詳細指示，請參閱&#x200B;*Adobe Commerce Optimizer銷售開發人員指南*&#x200B;中的[取得IMS認證](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/authentication#obtain-ims-credentials)。
 
 從證明資料頁面儲存下列值：
 
@@ -186,7 +183,7 @@ ht-degree: 0%
 
 1. 從命令列，[使用SSH](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/secure-connections)連線到[!DNL Adobe Commerce]中繼環境。
 
-1. 執行下列[!DNL Adobe Commerce] CLI命令以設定整合，將預留位置值取代為[!DNL Commerce Optimizer]專案的值：
+1. 若要設定整合，請執行下列[!DNL Adobe Commerce] CLI命令，將預留位置值取代為[!DNL Commerce Optimizer]專案的值：
 
    ```shell
    bin/magento aco:config:init --org_id=your-org --tenant_id=your-tenant --client_id=your-client-id --client_secret=your-secret
@@ -208,4 +205,4 @@ ht-degree: 0%
 
 1. **在[!DNL Edge Delivery Services]**&#x200B;設定Commerce店面
 
-   依照[店面設定檔案](https://experienceleague.adobe.com/developer/commerce/storefront/setup/?lang=zh-Hant){target="_blank"}將您的店面連線到[!DNL Commerce Optimizer]執行個體，並開始提供個人化的商務體驗。
+   若要將店面連線到[!DNL Commerce Optimizer]執行個體並開始提供個人化的商務體驗，請依照[店面設定檔案](https://experienceleague.adobe.com/developer/commerce/storefront/setup/?lang=zh-Hant){target="_blank"}操作。

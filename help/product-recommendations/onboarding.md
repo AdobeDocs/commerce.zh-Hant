@@ -11,9 +11,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: f35d602bd25d2b5192a289c444c1bc0a93a91945
 workflow-type: tm+mt
-source-wordcount: 418
+source-wordcount: 447
 ht-degree: 0%
 
 ---
@@ -31,19 +31,19 @@ ht-degree: 0%
 - [實作工作流程](implementation-workflow.md)
 - [安裝與設定](install-configure.md)
 - [設定](settings.md)
-- [驗證](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/)
+- [驗證](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify)
 - [中繼環境](staging-environment.md)
 
 ## 需求
 
-- Adobe Commerce 2.4.4+
-- PHP 8.1、8.2、8.3或8.4
-- Composer 2
+[Adobe Commerce](https://business.adobe.com/tw/products/magento/magento-commerce.html) 2.4.4+。 如需詳細資訊，請參閱[系統需求](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}。
 
 ### 支援平台
 
 - Adobe Commerce內部部署(EE) ：2.4.4+
 - 雲端上的Adobe Commerce (ECE) ： 2.4.4+
+
+如需詳細需求，請參閱[系統需求](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/system-requirements)。
 
 ## 端點
 
@@ -57,11 +57,11 @@ ht-degree: 0%
 
 ### SaaS價格索引
 
-產品推薦客戶可以使用[SaaS價格索引](../price-index/price-indexing.md)，提供更快的價格變更更新和同步化時間。
+產品推薦客戶可以使用[SaaS價格索引](../price-index/price-indexing.md)，提供更快的價格變更更新和同步處理時間。
 
 ### B2B支援 {#b2bsupport}
 
-B2B店面通常需要複雜的邏輯，這些邏輯會指定每個購物者或客戶群組的產品可見度和價格。 [!DNL Product Recommendations]現在[支援](release-notes.md)此功能，接受[類別許可權](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html?lang=zh-Hant)、[共用目錄](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html?lang=zh-Hant)和[客戶群組特定定價](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=zh-Hant)。 例如，如果您隱藏零售客戶區段中的某些類別，則該區段中的購物者不會看到這些類別中產品的建議。 此外，當您為特定客戶群組和公司定義共用目錄時，這些購物者只會看到他們可存取之產品的建議。 所有建議產品都會根據每位購物者的客戶群組，反映正確的客戶群組特定價格。
+B2B店面通常需要複雜的邏輯，這些邏輯會指定每個購物者或客戶群組的產品可見度和價格。 [!DNL Product Recommendations]現在[支援](release-notes.md)此功能，接受[類別許可權](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/categories/category-permissions)、[共用目錄](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html?lang=zh-Hant)和[客戶群組特定定價](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=zh-Hant)。 例如，如果您隱藏零售客戶區段中的某些類別，則該區段中的購物者不會顯示這些類別中產品的建議。 此外，當您為特定客戶群組和公司定義共用目錄時，這些購物者只會看到他們可存取之產品的建議。 所有建議產品都會根據每位購物者的客戶群組，反映正確的客戶群組特定價格。
 
 >[!NOTE]
 >

@@ -15,16 +15,16 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 029d78d5c87bf75ccc26b8af462081f8e08d1176
+source-git-commit: 75da477c3725f754495f5b13f99d65c66a2bf5ae
 workflow-type: tm+mt
-source-wordcount: 475
+source-wordcount: 491
 ht-degree: 0%
 
 ---
 
 # SaaS價格索引
 
-SaaS定價索引可藉由將資源密集的作業（例如索引和價格計算）從Commerce應用程式解除安裝到Adobe的雲端基礎架構，以最佳化網站效能。 此方式可讓商家快速擴充資源，以加快價格指數化時間，並更快速地提供店面價格更新和連線Commerce服務。
+SaaS定價索引可藉由將資源密集的作業（例如索引和價格計算）從Commerce應用程式解除安裝到Adobe的雲端基礎架構，以最佳化網站效能。 此方式可讓商戶快速擴充資源，以加快價格指數化時間，並更快速地提供店面價格更新和連線Commerce服務。
 
 下圖顯示當Commerce使用Commerce應用程式中包含的[價格索引](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cli/manage-indexers)程式時，指向SaaS服務的索引資料流程：
 
@@ -36,9 +36,9 @@ SaaS定價索引可藉由將資源密集的作業（例如索引和價格計算�
 
 所有商戶都可以從使用SaaS價格索引中受益，但擁有以下特性專案的商戶可獲得最大的收益：
 
-* **價格持續變動**&#x200B;需要重複變更價格以符合策略性目標的商家，例如頻繁促銷活動、季節性折扣或存貨減價。
+* **不變價格變更** — 需要重複變更價格以符合策略性目標（例如頻繁促銷、季節性折扣或存貨減價）的商家。
 * **多個網站和/或客戶群組** — 跨多個網站（網域/品牌）和/或客戶群組共用產品目錄的商家。
-* **多個網站或客戶群組的許多不重複價格** — 具有廣泛共用產品目錄的商家，其中包含多個網站或客戶群組的不重複價格。 例如B2B商傢俱有預先議價的價格，或品牌具有不同的定價策略。
+* **跨網站或客戶群組的許多獨特價格** — 具有廣泛共用產品目錄的商家，其中包含跨網站或客戶群組的獨特價格。 例如B2B商傢俱有預先議價的價格，或品牌具有不同的定價策略。
 
 ## 使用SaaS價格索引
 
@@ -46,16 +46,15 @@ SaaS定價索引可藉由將資源密集的作業（例如索引和價格計算�
 
 ### 需求
 
-* Adobe Commerce 2.4.4+
+* [Adobe Commerce](https://business.adobe.com/tw/products/magento/magento-commerce.html) 2.4.4+。 如需詳細資訊，請參閱[系統需求](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}。
 
 ### 先決條件
 
 * 下列其中一個Commerce服務必須搭配最新版的Commerce擴充功能安裝：
 
-   * [目錄服務](../catalog-service/overview.md)
-   * [即時搜尋](../live-search/overview.md)
-   * [產品推薦](../product-recommendations/guide-overview.md)
-
+  * [目錄服務](../catalog-service/overview.md)
+  * [即時搜尋](../live-search/overview.md)
+  * [產品推薦](../product-recommendations/guide-overview.md)
 
 >[!NOTE]
 >
@@ -79,11 +78,11 @@ bin/magento saas:resync --feed=prices
 
 >[!NOTE]
 >
->如果雲端或內部部署的Commerce的Commerce Admin中沒有資料摘要同步狀態頁面，請依照[擴充功能安裝指示](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension)加以啟用。
+>若要在Commerce雲端或內部部署的Commerce管理員中無法使用資料摘要同步狀態頁面時將其啟用，請依照[擴充功能安裝指示](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension)操作。
 
 ## 自訂產品型別的價格
 
-自訂產品型別支援價格計算，例如基本價格、特殊價格、群組價格、目錄規則價格等。
+自訂產品型別（例如，基本、特殊、群組和目錄規則價格）支援價格計算。
 
 如果您的自訂產品型別使用特定公式來計算最終價格，您可以擴充產品價格摘要的行為。
 

@@ -14,9 +14,9 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 88c74f789dc398afa8f40ee2258450e83f134d87
 workflow-type: tm+mt
-source-wordcount: 454
+source-wordcount: 506
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 ![check](assets/icon-check.png)標準價格
 
-![檢查](assets/icon-check.png) **在XX國家/地區提供**
+![檢查](assets/icon-check.png) **在200多個國家/地區提供**
 
 [![深入瞭解](assets/learn-more-button.svg)](onboard.md)
 
@@ -99,7 +99,7 @@ ht-degree: 0%
 
 ![檢查](assets/icon-check.png) （L2/L3定價功能 — 僅限美國）
 
-![檢查](assets/icon-check.png) **僅於美國（美國）、加拿大(CA)、澳洲(AUS)提供。 法國(FR)、英國(UK)**
+![check](assets/icon-check.png)在37個國家/地區提供。 澳洲、奧地利、比利時、保加利亞、加拿大、中國、塞普勒斯、捷克共和國、丹麥、愛沙尼亞、芬蘭、法國、德國、希臘、香港、匈牙利、愛爾蘭、義大利、日本、拉脫維亞、列支敦斯登、立陶宛、盧森堡、馬爾他、墨西哥、荷蘭、挪威、波蘭、葡萄牙、羅馬尼亞、新加坡、斯洛伐克、斯洛維尼亞、西班牙、瑞典、英國、美國。 **美國（美國）、加拿大(CA)、澳洲(AU)、法國(FR)、英國(GB)、義大利(IT)、荷蘭(NL)、德國(DE)**&#x200B;的議價匯率
 
 [![深入瞭解](assets/learn-more-button.svg)](onboard.md)
 

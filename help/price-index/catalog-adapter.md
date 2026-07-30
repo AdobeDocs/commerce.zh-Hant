@@ -12,9 +12,9 @@ feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 75da477c3725f754495f5b13f99d65c66a2bf5ae
 workflow-type: tm+mt
-source-wordcount: 758
+source-wordcount: 775
 ht-degree: 0%
 
 ---
@@ -37,19 +37,19 @@ ht-degree: 0%
 
 ## 需求
 
-- Adobe Commerce 2.4.4+
+- [Adobe Commerce](https://business.adobe.com/tw/products/magento/magento-commerce.html) 2.4.4+。 如需詳細資訊，請參閱[系統需求](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}。
 - 您的Adobe Commerce環境必須啟用並設定下列Commerce服務之一：
 
-   - [即時搜尋](../live-search/install.md)
-   - [產品推薦](../product-recommendations/install-configure.md)
-   - [目錄服務](../catalog-service/installation.md)
+  - [即時搜尋](../live-search/install.md)
+  - [產品推薦](../product-recommendations/install-configure.md)
+  - [目錄服務](../catalog-service/installation.md)
 
 ## 安裝
 
 Catalog Adapter擴充功能是Composer中繼套件，可安裝下列模組：
 
 - **價格索引器停用程式** — 此模組會停用Commerce應用程式中的價格索引，以便透過SaaS價格索引來傳遞價格。 安裝SaaS價格索引擴充功能時，無法開啟Commerce應用程式中的產品價格索引器。
-- **價格提供者** — 此模組提供來自Adobe Commerce服務的產品價格。 它會形成搜尋查詢並取得前端產品的價格。
+- **價格提供者** — 此模組提供來自Adobe Commerce服務的產品價格。 它會產生搜尋查詢，並取得前端產品的價格。
 - **目錄服務搜尋配接器** — 此模組會回應產品搜尋要求，將價格從Adobe Commerce應用程式傳輸至Adobe Commerce服務。
 
 ## 安裝步驟
@@ -94,7 +94,7 @@ Catalog Adapter擴充功能是Composer中繼套件，可安裝下列模組：
    git push origin <branch-name>
    ```
 
-   將更新推播到雲端環境會啟動[Commerce雲端部署程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/develop/deploy/process)以套用變更。 從[部署記錄](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log)檢查部署狀態。
+   將更新推播到雲端環境會啟動[Commerce雲端部署程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/deploy/process)以套用變更。 從[部署記錄](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/test/log-locations#deploy-log)檢查部署狀態。
 
 >[!TAB 內部部署]
 
@@ -144,7 +144,7 @@ bin/magento index:reindex catalog_product_price
 
 ## 停用Headless店面案例的產品價格索引器
 
-如果您有Headless Commerce執行個體，您可能需要停用Adobe Commerce產品價格索引器，以減少Adobe Commerce執行個體的負載。 您可以透過安裝`magento/module-price-indexer-disabler`模組來完成此工作：
+如果您有Headless Commerce執行個體，請停用Adobe Commerce產品價格索引器，以減少Adobe Commerce執行個體的負載。 您可以透過安裝`magento/module-price-indexer-disabler`模組來完成此工作：
 
 ```bash
 composer require magento/module-price-indexer-disabler
@@ -171,7 +171,7 @@ composer require magento/module-price-indexer-disabler
 
 ### Headless Commerce執行個體
 
-- 具有已安裝所需服務（即時搜尋、產品推薦、目錄服務）的Headless Commerce執行個體的商家
+- 使用Headless Commerce執行個體並安裝所需服務（即時搜尋、產品推薦、目錄服務）的商家
 - 不依賴預設的Adobe Commerce產品價格索引器
 
 1. 從[!DNL Catalog Adapter]封裝安裝`magento/module-price-indexer-disabler`模組。

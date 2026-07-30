@@ -25,16 +25,16 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 10a91a91337778648e99078bcbf0c9ef25a49f86
+source-git-commit: df9b8455e52b2721ba92971b1d0fddb92da8159a
 workflow-type: tm+mt
-source-wordcount: 2842
+source-wordcount: 2803
 ht-degree: 0%
 
 ---
 
 # 設定以透過[!DNL Live Search]成功
 
-Adobe Commerce [!DNL Live Search]與[[!DNL Catalog Service]](../catalog-service/guide-overview.md)共同合作，提供效能、相關且直覺式的搜尋解決方案，讓您的客戶快速找到他們所需的專案。 具體來說，[!DNL Catalog Service]會呈現您的目錄資料以供SaaS服務使用，例如[!DNL Live Search]。
+Adobe Commerce [!DNL Live Search]與[[!DNL Catalog Service]](../catalog-service/guide-overview.md)共同合作，提供效能、相關且直覺式的搜尋解決方案。 此解決方案可讓您的客戶快速準確地找到所需的專案。 具體來說，[!DNL Catalog Service]會呈現您的目錄資料以供SaaS服務使用，例如[!DNL Live Search]。
 
 本文提供使用[!DNL Catalog Service]實作[!DNL Live Search]的逐步指示。
 
@@ -44,9 +44,7 @@ Adobe Commerce [!DNL Live Search]與[[!DNL Catalog Service]](../catalog-service/
 
 ## 需求
 
-- [Adobe Commerce](https://business.adobe.com/tw/products/magento/magento-commerce.html) 2.4.4+
-- PHP 8.1、8.2、8.3或8.4
-- [!DNL Composer]
+- [Adobe Commerce](https://business.adobe.com/tw/products/magento/magento-commerce.html) 2.4.4+。 如需詳細資訊，請參閱[系統需求](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}。
 - 執行cron工作和索引子
 
 >[!IMPORTANT]
@@ -68,13 +66,13 @@ Adobe Commerce [!DNL Live Search]與[[!DNL Catalog Service]](../catalog-service/
 >
 > **HIPAA整備程度**
 >
->如果您使用Adobe Commerce搭配HIPAA-Ready擴充功能和Healthcare附加元件，請勿透過LiveSearch處理任何受保護的健康資訊(PHI)> 即時搜尋不是HIPAA-Ready服務。
+>如果您使用Adobe Commerce搭配HIPAA就緒擴充功能和Healthcare附加元件，請勿透過即時搜尋處理任何受保護的健康資訊(PHI)> 即時搜尋不是HIPAA就緒服務。
 >
 >如需詳細資訊，請參閱Adobe Commerce[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/compliance/hipaa-ready-service/overview)上的HIPAA整備，以及[Operations](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/compliance/hipaa-ready-service/operations)指南，其中列出非HIPAA整備Commerce服務中的即時搜尋。
 
 ## 工作流程概觀
 
-從高層面來看，上線[!DNL Live Search]需要您：
+加入[!DNL Live Search]需要您：
 
 1. [安裝](#install) [!DNL Live Search]延伸模組
 1. [設定](#configure) API金鑰
@@ -245,12 +243,12 @@ bin/magento saas:resync --feed categoryPermissions
 
 ## &#x200B;4. 驗證是否已匯出資料 {#verify}
 
-除了使用「資料摘要同步狀態」頁面和「資料管理控制面板」之外，您還可以驗證直接從Adobe Commerce匯出的資料庫目錄資料，並使用[!DNL Live Search] GraphQL工作區確認資料已成功同步至[!DNL Live Search]。
+您可以驗證從資料庫中的Adobe Commerce匯出的目錄資料，並確認資料已使用[!DNL Live Search] GraphQL工作區成功同步至[!DNL Live Search]。
 
 - 從資料庫中，使用SQL查詢來尋找下清單格中的專案：
 
-   - `cde_products_feed`
-   - `cde_product_attributes_feed`
+  - `cde_products_feed`
+  - `cde_product_attributes_feed`
 
   >[!NOTE]
   >
@@ -258,8 +256,8 @@ bin/magento saas:resync --feed categoryPermissions
 
 - 搭配預設查詢使用[GraphQL遊樂場](https://experienceleague.adobe.com/zh-hant/docs/commerce/live-search/live-search-admin/graphql) （如需詳細資訊，請參閱[GraphQL參考資料](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/)）以驗證下列專案：
 
-   - 傳回的產品計數接近您對商店檢視的預期。
-   - 會傳回多面向。
+  - 傳回的產品計數接近您對商店檢視的預期。
+  - 會傳回多面向。
 
 如需其他說明，請參閱支援知識庫中的[[!DNL Live Search] 目錄未同步](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync)。
 
@@ -269,7 +267,7 @@ bin/magento saas:resync --feed categoryPermissions
 
 ### 啟用產品清單Widget
 
-安裝[!DNL Live Search] 4.0.0+時，預設會啟用產品清單Widget。 Widget啟用時，搜尋結果和類別瀏覽產品清單頁面會使用不同的UI元件。 此UI元件會直接呼叫[目錄服務API](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/)，如此可加快回應時間。
+安裝[!DNL Live Search] 4.0.0+時，系統會依預設啟用產品清單Widget。 Widget啟用時，搜尋結果和類別瀏覽產品清單頁面會使用不同的UI元件。 此UI元件會直接呼叫[目錄服務API](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search)，如此可加快回應時間。
 
 如果您的[!DNL Live Search]版本早於4.0.0+，則必須手動啟用產品清單Widget。
 
@@ -314,7 +312,7 @@ bin/magento saas:resync --feed categoryPermissions
 
 - 檢閱[!DNL Live Search]所需的[事件](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search)。
 - 確定[即時搜尋儀表板](performance.md)顯示的是來自非生產環境的資料。
-- [驗證事件集合](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/)。
+- [驗證事件集合](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify)。
 
 ## &#x200B;8. 為您的店面自訂 {#customize}
 
@@ -425,7 +423,7 @@ Adobe建議直接呼叫SaaS API，尤其是目錄服務端點。
 - 略過Commerce資料庫/Graphql程式，獲得效能並降低處理器負載
 - 利用[!DNL Catalog Service]同盟從單一端點呼叫[!DNL Live Search]、[!DNL Catalog Service]和[!DNL Product Recommendations]。
 
-對於某些使用案例，最好是呼叫[!DNL Catalog Service]以取得產品詳細資料和類似案例。 如需詳細資訊，請參閱[refineProduct](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product/)。
+對於某些使用案例，最好是呼叫[!DNL Catalog Service]以取得產品詳細資料和類似案例。 如需詳細資訊，請參閱[refineProduct](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product)。
 
 如果您有自訂Headless實作，請檢視[!DNL Live Search]參考實作：
 
@@ -498,7 +496,7 @@ Adobe建議直接呼叫SaaS API，尤其是目錄服務端點。
 
 ### Inventory management
 
-[!DNL Live Search]在Commerce中支援[Inventory management](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/inventory/introduction)功能（先前稱為多Source詳細目錄，或MSI）。 若要啟用完整支援，您必須[將](install.md#updating-live-search)相依性模組`commerce-data-export`更新為102.2.0+版。
+[!DNL Live Search]在Commerce中支援[Inventory management](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/inventory/introduction)功能。 若要啟用完整支援，您必須[將](install.md#updating-live-search)相依性模組`commerce-data-export`更新為102.2.0+版。
 
 [!DNL Live Search]傳回布林值，指出產品是否可在Inventory management中使用，但不包含有關哪個來源有庫存的資訊。
 
@@ -521,7 +519,7 @@ Adobe建議直接呼叫SaaS API，尤其是目錄服務端點。
 
 ### Headless店面支援
 
-您可以選擇安裝`module-data-services-graphql`模組，該模組會擴充應用程式的現有GraphQL涵蓋範圍，以包含店面行為資料收集所需的欄位。
+您可以選擇安裝`module-data-services-graphql`模組，此模組會擴充應用程式的現有GraphQL涵蓋範圍，以包含店面行為資料收集所需的欄位。
 
 ```bash
 composer require magento/module-data-services-graphql
@@ -539,7 +537,7 @@ composer require magento/module-data-services-graphql
 
 ### PWA支援
 
-[!DNL Live Search]可與PWA Studio搭配使用，但使用者在其他Commerce實作中可能會看到細微的差異。 在Venia中，基本功能（例如搜尋和產品清單頁面）可正常運作，但Graphql的某些排列可能無法正常運作。 可能也會有效能差異。
+[!DNL Live Search]可與PWA Studio搭配使用，但storefront開發人員與其他Commerce實作可能會發現細微差異，尤其是在某些GraphQL導向的案例和整體回應特性中。
 
 - 目前[!DNL Live Search]的PWA實作需要比[!DNL Live Search]更長的處理時間才能傳回搜尋結果（使用原生Commerce店面）。
 - PWA中的[!DNL Live Search]不支援[事件處理](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/)。 因此，搜尋報告和智慧型銷售無法在PWA商店上運作。
@@ -567,4 +565,4 @@ composer require magento/module-data-services-graphql
 
 ### Cookie
 
-[!DNL Live Search]會收集使用者互動資料以改進搜尋功能，並將此資訊儲存在瀏覽器Cookie中。 啟用Cookie限制時，此資料收集需要使用者同意。 [!DNL Live Search]和[!DNL Product Recommendations]共用相同的資料收集機制和Cookie處理。 如需Cookie限制和隱私權法規遵循的詳細資訊，請參閱[處理Cookie限制](../product-recommendations/setting-cookie.md)。
+為了改善搜尋功能，[!DNL Live Search]會收集使用者互動資料，並將此資訊儲存在瀏覽器Cookie中。 啟用Cookie限制時，此資料收集需要使用者同意。 [!DNL Live Search]和[!DNL Product Recommendations]共用相同的資料收集機制和Cookie處理。 如需Cookie限制和隱私權法規遵循的詳細資訊，請參閱[處理Cookie限制](../product-recommendations/setting-cookie.md)。
