@@ -57,7 +57,7 @@ Page Builder的[!DNL Product Recommendations]為選用模組，需另行安裝�
 composer require magento/module-page-builder-product-recommendations
 ```
 
-透過在頁面產生器中啟用[!DNL Product Recommendations]，您可以將現有的作用中[建議單位](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)新增到頁面產生器中建立的任何內容，例如頁面、區塊和動態區塊。
+透過在頁面產生器中啟用[!DNL Product Recommendations]，您可以將現有的作用中[建議單位](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/page-builder/add-content/recommendations)新增到頁面產生器中建立的任何內容，例如頁面、區塊和動態區塊。
 
 如需進一步說明，請參閱[搭配頁面產生器內容](page-builder.md)使用 [!DNL Product Recommendations] 。
 
@@ -75,7 +75,7 @@ composer require magento/module-visual-product-recommendations
 
    設定此連線會啟用Commerce執行個體、目錄服務和其他支援服務之間的資料同步和通訊。 資料同步處理由[SaaS Data Export擴充功能](../data-export/overview.md)處理。
 
-1. 若要確保目錄匯出可以正確執行，請確認[cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)工作和[索引子](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers)正在執行，且`Product Feed`索引子設定為`Update by Schedule`。
+1. 若要確保目錄匯出可以正確執行，請確認[cron](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)工作和[索引子](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cli/manage-indexers)正在執行，且`Product Feed`索引子設定為`Update by Schedule`。
 
 當您成功將Commerce應用程式連結至Commerce Services並指定[SaaS資料空間](../landing/saas.md#saas-configuration)後，目錄同步作業就會開始。 然後，您可以[驗證](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/)行為資料正在傳送至您的店面。
 
@@ -135,4 +135,4 @@ composer update --with-dependencies magento/product-recommendations magento/modu
 
 ## 解除安裝[!DNL Product Recommendations] {#uninstall}
 
-如有必要，您可以[解除安裝](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules)產品建議模組。
+如有必要，您可以[解除安裝](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/tutorials/uninstall-modules)產品建議模組。
