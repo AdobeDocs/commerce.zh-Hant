@@ -133,7 +133,7 @@ ht-degree: 0%
 
 ### 按區域或範本隱藏異動電子郵件
 
-新的[電子郵件隱藏](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/email-suppression)設定（[!UICONTROL **商店**] > [!UICONTROL **設定**] > [!UICONTROL **Adobe服務**] > [!UICONTROL **電子郵件隱藏**]）可讓系統管理員選擇性停止[!DNL Commerce]傳送異動電子郵件。 您可以依功能區域（例如客戶帳戶、Order Management、退貨、結帳、行銷或B2B）或範本識別碼的精確清單來隱藏電子郵件。<!-- ACCS-1025 -->
+新的[電子郵件隱藏](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/config/services/email-suppression)設定（[!UICONTROL **商店**] > [!UICONTROL **設定**] > [!UICONTROL **Adobe服務**] > [!UICONTROL **電子郵件隱藏**]）可讓系統管理員選擇性停止[!DNL Commerce]傳送異動電子郵件。 您可以依功能區域（例如客戶帳戶、Order Management、退貨、結帳、行銷或B2B）或範本識別碼的精確清單來隱藏電子郵件。<!-- ACCS-1025 -->
 
 ### 在管理員中檢視訂單修改歷史記錄
 
