@@ -26,9 +26,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: 04f966aca4d7ce85990b42ad958938a186629af1
 workflow-type: tm+mt
-source-wordcount: 1464
+source-wordcount: 1452
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 1. 在Commerce管理員中，瀏覽至&#x200B;[!UICONTROL **商店**] > [!UICONTROL Settings] > [!UICONTROL **設定**] > [!UICONTROL **付款方法**]。
 
-1. 在&#x200B;[!UICONTROL **一般組態**]&#x200B;區段中，輸入您的`Payment Services Sandbox ID`和`Payment Services Sandbox Key`。 您可以依照[沙箱上線](../payment-services/sandbox.md#sandbox-onboarding)中所述的步驟來取得這些ID
+1. 在&#x200B;[!UICONTROL **一般組態**]&#x200B;區段中，輸入您的`Payment Services Sandbox ID`和`Payment Services Sandbox Key`。 您可以依照[沙箱上線](../payment-services/sandbox.md#sandbox-onboarding){target="_blank"}中所述的步驟來取得這些ID
 
 1. 將&#x200B;[!UICONTROL **啟用**]&#x200B;下拉式清單設定為&#x200B;[!UICONTROL **是**]。
 
@@ -83,7 +83,7 @@ ht-degree: 0%
 
 1. 輸入必要的聯絡詳細資料和送貨資訊。 您可以針對此訂單使用虛構的資訊。
 
-1. 若要結帳，請選取&#x200B;[!UICONTROL **支票/匯票**]。 若要使用信用卡，請使用Paypal[&#128279;](https://developer.paypal.com/tools/sandbox/card-testing/#link-teststaticcardnumbers)提供的測試卡之一。 您可以將其用於任何未來的到期日和任何CVC。
+1. 若要結帳，請選取&#x200B;[!UICONTROL **支票/匯票**]。 若要使用信用卡，請使用PayPal[&#128279;](https://developer.paypal.com/credit-card-number-generator#link-teststaticcardnumbers)提供的測試卡之一。 您可以將其用於任何未來的到期日和任何CVC。
 
    ![包含聯絡人及運送資訊欄位的結帳表單](./assets/enter-details.png){width="600" zoomable="yes"}
 
@@ -125,7 +125,7 @@ ht-degree: 0%
 
 ## 內容相關實驗
 
-[!DNL Adobe Commerce]的情境式實驗功能可讓您在店面建立和管理實驗，以測試不同的內容和設定。
+Adobe的情境式實驗功能可讓您在店面建立和管理實驗，以測試不同的內容和設定。
 
 ### 先決條件
 
@@ -139,9 +139,9 @@ ht-degree: 0%
 
 1. 將索引頁面的兩個復本貼到&#x200B;**1234**&#x200B;資料夾中。
 
-1. 開啟每個頁面，並將它們重新命名為「homev1」和「homev2」。 這些是您的[挑戰者](https://www.aem.live/docs/experimentation#create-your-challenger-page)。
+1. 開啟每個頁面，並將它們重新命名為「homev1」和「homev2」。 這些頁面是您的[挑戰者](https://www.aem.live/docs/experimentation#create-your-challenger-page)。
 
-1. 修改每個頁面以包含不同的內容。 例如，變更主圖影像或文字。 您必須能識別每個頁面之間的差異。
+1. 若要包含不同的內容，請修改每個頁面。 例如，變更主圖影像或文字。 您必須能識別每個頁面之間的差異。
 
 1. 發佈您的每個挑戰者頁面。
 
@@ -155,14 +155,14 @@ ht-degree: 0%
    * 說明 — 網站商店
    * 實驗 — 1234
    * 實驗變體
-      * `https://<your-site>.aem.live/experiments/1234/indexv1`
-      * `https://<your-site>.aem.live/experiments/1234/indexv2`
+     * `https://<your-site>.aem.live/experiments/1234/indexv1`
+     * `https://<your-site>.aem.live/experiments/1234/indexv2`
 
    ![關聯式實驗的中繼資料區塊組態](./assets/metadata-block.png){width="600" zoomable="yes"}
 
 1. 開啟無痕瀏覽或私人瀏覽視窗，並導覽至您的首頁面。
 
-1. 關閉私人瀏覽視窗並重複之前的步驟。 每次開啟頁面時，您都會看到已建立的隨機變體。
+1. 關閉私人瀏覽視窗並重複之前的步驟。 每次開啟頁面時，您都會看到自己建立的隨機變體。
 
 ## 增強店面內容
 
@@ -174,9 +174,9 @@ ht-degree: 0%
 
 ### 自訂影像的背景
 
-假設您想快速修改產品影像的背景。 [!DNL Adobe Commerce]、[!DNL AEM Assets]和[!DNL Adobe Express]的組合可讓您以幾個簡單的步驟完成此變更。
+假設您想快速修改產品影像的背景。 [!DNL Adobe Commerce]、[!DNL AEM Assets]和[!DNL Adobe Express]的組合可讓您在幾個步驟中完成此變更。
 
-1. 開啟您在先決條件中建立的[店面](./storefront.md)，並導覽至您要變更的專案。 記下專案SKU或產品代碼。
+1. 開啟您在先決條件中建立的[店面](./storefront.md)，並導覽至您要變更的專案。 記下專案的SKU或產品代碼。
 
 1. 在[Adobe Experience Cloud](https://experience.adobe.com/#/home)中選取[!DNL AEM Assets]，以將其開啟。
 
@@ -200,7 +200,7 @@ ht-degree: 0%
 
    ![文字方塊，用於描述要透過AI產生的影像](./assets/insert-object-edit.png){width="600" zoomable="yes"}
 
-1. 調整[!UICONTROL Brush size]並繪製您想要新增產生影像的位置。 在此範例中，請圍繞現有物件繪製以選取背景。
+1. 調整[!UICONTROL Brush size]並繪製您想要新增產生影像的位置。 若要選取此範例的背景，請圍繞現有物件繪圖。
 
 1. 按一下&#x200B;[!UICONTROL **產生**]&#x200B;以檢視結果。
 
@@ -284,7 +284,7 @@ ht-degree: 0%
 
 ### 產生內容和影像
 
-1. 開啟[[!DNL Generate Variations]](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+1. 開啟[[!DNL Generate Variations]](/en/docs/experience-manager-cloud-service/content/ai-in-aem/generate-variations/generate-variations)
 
 1. 選取&#x200B;[!UICONTROL **Hero Banner**]&#x200B;範本。
 
@@ -304,7 +304,7 @@ ht-degree: 0%
 
 1. 選取您要使用的產生影像，然後按一下[儲存]。[!UICONTROL **&#x200B;**]
 
-1. 對其他參照影像重複此程式以產生更多變化。
+1. 若要產生更多變化，請對其他參照影像重複此程式。
 
 
 ## 疑難排解
@@ -313,35 +313,35 @@ ht-degree: 0%
 
 * 如果您需要有關命令或旗標的指引：
 
-   1. 執行`aio --help`以檢視所有可用的命令和旗標。
-   1. 對於特定命令，請使用`--help`旗標。 例如：
-      * `aio console --help`
-      * `aio commerce --help`
+  1. 執行`aio --help`以檢視所有可用的命令和旗標。
+  1. 對於特定命令，請使用`--help`旗標。 例如：
+     * `aio console --help`
+     * `aio commerce --help`
 
 * 如果您遇到無效的登入問題：
 
-   1. 執行`aio config clear`。
-   1. 執行`aio auth login --force`。
-   1. 登入您的瀏覽器。
-   1. 選取您的設定檔。
-   1. 切換回終端機以繼續。
+  1. 執行`aio config clear`。
+  1. 執行`aio auth login --force`。
+  1. 登入您的瀏覽器。
+  1. 選取您的設定檔。
+  1. 切換回終端機以繼續。
 
 * 如果您的`init`命令失敗：
 
-   1. 執行`aio api-mesh delete`。
-   1. 重新執行`aio commerce init`。
+  1. 執行`aio api-mesh delete`。
+  1. 重新執行`aio commerce init`。
 
 * 如果您在執行`init`命令之前選取了錯誤的組織、專案或工作區：
 
-   1. 執行`aio console org select`。
-   1. 執行`aio console project select`。
-   1. 執行`aio console workspace select`。
+  1. 執行`aio console org select`。
+  1. 執行`aio console project select`。
+  1. 執行`aio console workspace select`。
 
 * 如果您有無效的租使用者選取專案：
 
-   1. 按&#x200B;**Ctrl-C**&#x200B;取消目前的CLI執行。
-   1. 執行`aio commerce init`。
+  1. 按&#x200B;**Ctrl-C**&#x200B;取消目前的CLI執行。
+  1. 執行`aio commerce init`。
 
 * 如果您遇到無效的API Mesh安裝：
 
-   * 執行`aio api-mesh update mesh-config.json`。
+  * 執行`aio api-mesh update mesh-config.json`。

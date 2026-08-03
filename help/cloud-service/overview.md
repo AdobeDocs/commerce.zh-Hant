@@ -36,9 +36,9 @@ topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: da3860b0-d637-47df-bef0-273751180266
-source-git-commit: 55eeb27812ce67a1b26705864ec969b826580452
+source-git-commit: c5b10a715f64a220fc965328a7c913951d44dedc
 workflow-type: tm+mt
-source-wordcount: 1444
+source-wordcount: 1461
 ht-degree: 0%
 
 ---
@@ -96,22 +96,27 @@ ht-degree: 0%
 
 ## Commerce店面
 
-使用由[!DNL Edge Delivery Services]支援的Adobe [[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront?lang=zh-Hant)，利用[!DNL Storefront Builder]的簡單檔案式撰寫或視覺化編輯，在幾分鐘內建立豐富的體驗。
+若要使用[!DNL Storefront Builder]的簡單檔案式撰寫或視覺化編輯，在幾分鐘內建立豐富體驗，請使用Adobe的[[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant) （由[!DNL Edge Delivery Services]提供技術支援）。
 
 [!DNL Commerce Storefront]採用分離式架構，可透過GraphQL API層提供所有銷售服務和資料，完全實現無周邊化。 此架構讓團隊可獨立於Commerce Foundation開發他們的前端，提供使用新興技術建立和測試新接觸點的靈活性。
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service]不支援Luma店面。 如果您要從雲端或內部部署上的Adobe Commerce進行移轉，請參閱[現有店面](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/?lang=zh-Hant#existing-storefronts)以取得移轉指南。
+>[!DNL Adobe Commerce as a Cloud Service]不支援Luma店面。 如果您正從雲端或內部部署的Adobe Commerce移轉，請參閱[現有店面](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/?lang=zh-Hant#existing-storefronts)以了解轉換指南。
 
 ## 銷售服務與付款服務
 
 Adobe提供豐富的智慧型可撰寫銷售服務，協助您支援關鍵業務目標。 這些服務也提供對大規模最佳化效能至關重要的應用程式開發介面。
 
-- [即時搜尋](../live-search/overview.md) — 使用此AI支援的搜尋工具，為購物者提供更聰明、更快速且相關的結果。
-- [產品推薦](../optimizer/merchandising/recommendations/overview.md) — 根據購物者行為、熱門趨勢、產品相似性等新增AI輔助推薦。
+- [[!DNL Live Search]](../live-search/overview.md) — 使用此AI支援的搜尋工具，為購物者提供更聰明、更快速且相關的結果。 如需設定指示，請參閱[設定 [!DNL Live Search]](../live-search/workspace.md)。
+- [[!DNL Product Recommendations]](../product-recommendations/overview.md) — 根據購物者行為、熱門趨勢、產品相似度等，新增AI支援的建議。 如需設定指示，請參閱[[!DNL Product Recommendations] Workspace](../product-recommendations/workspace.md)。
 - [目錄服務](../catalog-service/guide-overview.md) — 提供客戶最佳化的產品體驗，同時提升效能、改善擴充能力，並提高轉換率。
-- [付款服務](../payment-services/guide-overview.md) — 提供多種付款方式，包括免息分期付款，以及付款處理、訂單和發票的單一檢視，以提升客戶滿意度。
+
+  >[!NOTE]
+  >
+  >目錄服務已自動與[!DNL Live Search]和[!DNL Product Recommendations]一併納入。
+
+- [付款服務](../payment-services/guide-overview.md) — 提供多種付款方式，包括免息分期付款，以及付款處理、訂單和發票的單一檢視，以提升客戶滿意度。 如需設定指示，請參閱[付款服務首頁](../payment-services/payments-home.md)。
 
 ## [!DNL Product Visuals powered by AEM Assets]
 
@@ -119,7 +124,7 @@ Adobe提供豐富的智慧型可撰寫銷售服務，協助您支援關鍵業務
 
 此整合可根據SKU或其他關鍵屬性，確保數位資產（例如產品影像或行銷內容）動態連結至適當的銷售實體，包括Adobe Commerce中的產品和類別。
 
-[!DNL Product Visuals]可與[!DNL Adobe Commerce as a Cloud Service]一起使用且現成可用，其中提供來自[!DNL AEM Assets]的部分功能。
+[!DNL Product Visuals]可透過[!DNL Adobe Commerce as a Cloud Service]以原生方式使用，提供來自[!DNL AEM Assets]的部分功能。
 
 另外，[!DNL Adobe Commerce as a Cloud Service]中的原生功能可提供儲存和管理數位資產的基本資產管理工具。
 
@@ -189,7 +194,7 @@ Adobe為開發人員提供全方位的擴充點和工具，以便建立可擴充
 Adobe提供下列開發人員工具，用於建立整合與自訂：
 
 - 適用於Adobe Developer App Builder的&#x200B;[**API Mesh**](https://developer.adobe.com/graphql-mesh-gateway/) — 協調多個API、GraphQL、REST和其他來源並將其合併為單一、可查詢的GraphQL端點。
-- [**App Builder**](https://developer.adobe.com/app-builder/docs/overview/) — 建置並部署安全且可擴充的Web應用程式，這些應用程式可擴充Commerce功能並與協力廠商解決方案整合。
+- [**App Builder**](https://developer.adobe.com/app-builder/docs/intro_and_overview/) — 建置並部署安全且可擴充的Web應用程式，這些應用程式可擴充Commerce功能並與協力廠商解決方案整合。
 - [**事件**](https://developer.adobe.com/commerce/extensibility/events/) — 使用自訂事件觸發程式與其他可擴充的開發工具互動。
 - [**Webhooks**](https://developer.adobe.com/commerce/extensibility/webhooks/) — 使用Webhook自動觸發Commerce與協力廠商系統之間的互動。
 - [**管理UI SDK**](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/) — 使用商戶的新頁面和功能，自訂並增強Commerce管理。
