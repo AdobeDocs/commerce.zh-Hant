@@ -1,7 +1,7 @@
 ---
-source-git-commit: 64d5e1d1ee41241bce36faa31db7c436e018037c
+source-git-commit: 16a200892f2d116a38ebde370a79d333f65e4c8a
 workflow-type: tm+mt
-source-wordcount: '1665'
+source-wordcount: '1515'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,72 @@ ht-degree: 1%
 ## 新增功能
 
 此頁面包含過去60天所做的變更。 我們將從此清單中排除所有微幅更新，例如複製編輯。
+
+### 2026年7月30日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>更新Standard Services </a>的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/payment-services/compatibility#standard-vs-advanced-payment-services-experience">Payment Services相容性表格，以反映更廣泛的地理可用性，並擴充進階方案的支援國家/地區詳細資料。</p>
+</td>
+      <td>
+        意見反應
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/b667dfd60809e55bc82cecc8c4f7df60483eecba">認可</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年7月29日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>已將Adobe Commerce as a Cloud Service <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes">發行說明</a>更新至生產環境。</p>
+</td>
+      <td>
+        重大更新
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/1f91b5535d30ac894531508278b19d961f5a9d2c">認可</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年7月28日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/migration/migration-tools/bulk-data/migration-tool">大量資料移轉工具</a>檔案，其中包含移轉程式的詳細資訊。</p>
+</td>
+      <td>
+        重大更新
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/c8cab2404d47a6cb4a0418a59b533bf11e082b0b">認可</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年7月23日
 
@@ -323,104 +389,6 @@ ht-degree: 1%
         重大更新，新主題
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/475c99e18380c961e400a75de1c06cd8cdb929d1">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年6月3日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>已新增Adobe Commerce as a Cloud Service的生產<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes">發行說明</a>。</p>
-</td>
-      <td>
-        重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/8ec59cfc8c9d4d1e804adefe7f88806843e3caa3">認可</a></td>
-    </tr>
-    <tr>
-      <td><p>已針對SaaS資料匯出新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/saas-data-export/data-synchronization/feed-lock-mechanism">摘要鎖定機制</a>，以說明摘要鎖定如何防止並行同步衝突，以及如何解譯Commerce資料匯出記錄檔(<code>commerce-data-export.log</code>)中包含的正常略過訊息。</p>
-</td>
-      <td>
-        新主題
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/cb045b490482649a65bac9d763062700a90e9ecd">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年6月2日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Commerce管理員新增以資產為中心的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/get-started/sync-status">同步狀態</a>清單，以依資產屬性搜尋、篩選和疑難排解已同步的AEM Assets。</p>
-</td>
-      <td>
-        重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/a1cb3a063d9c4595220ca431356d34e6cbe8ea33">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年6月1日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>已新增Adobe Commerce as a Cloud Service的沙箱<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes">發行說明</a>。</p>
-</td>
-      <td>
-        重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/3e5f1a5366cb57cbdd1ed3f5721a82cd0c5c5271">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年5月28日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><ul>
-  <li>改善<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/get-started/configure-aco">為Commerce Optimizer設定AEM Assets</a>上線，因此AEM Assets設定會在租使用者註冊之前進行，提供專屬目錄層及圖層相關限制的更清楚指引。<br /> — 更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/get-started/configure-aem">為存放庫存取和管道部署設定AEM Assets專案</a>，其中包含重新排序的安裝步驟和Cloud Manager熒幕擷取畫面。<br /> — 說明<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/get-started/setup-synchronization">設定整合</a>中的IMS型方案ID和環境ID選取專案。</li>
-</ul>
-</td>
-      <td>
-        重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/de94aaad29313b3e8254d11d8801ba0d7efff3dc">認可</a></td>
     </tr>
   </tbody>
 </table>
