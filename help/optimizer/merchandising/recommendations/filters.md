@@ -1,20 +1,15 @@
 ---
 title: 建議篩選器
 description: 瞭解如何使用篩選器來控制哪些產品出現在 [!DNL Adobe Commerce Optimizer] 建議中。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
 exl-id: f6100538-23c0-4e90-9834-a895d4707282
 TQID: https://experienceleague.adobe.com/-pmVrAgEsSkn66K00-eaoQ4TF-7Xyxuwlniip1cR4HM
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 116d8bd804df364ddc9cb1175525f08fd32c01bf
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: c5a8861614fbf0e8d719305e239f926d5232ac49
 workflow-type: tm+mt
-source-wordcount: 1919
+source-wordcount: 1932
 ht-degree: 0%
 
 ---
@@ -98,7 +93,7 @@ ht-degree: 0%
 
 當建議相對於產品詳細資料頁面(PDP)上目前已檢視的&#x200B;**產品**&#x200B;應有所限制時，請使用&#x200B;**動態**&#x200B;價格篩選器。 篩選器會使用該產品的最終價格做為&#x200B;**錨點**，並將建議的產品與您定義的邊界進行比較。
 
-動態運運算元僅適用於在產品內容中執行的[SKU相關建議型別](types.md)，例如：
+動態運運算元僅適用於產品內容中執行的[SKU相關建議型別](types.md)：
 
 - 已檢視這個專案，已檢視那個專案
 - 已檢視此專案，但購買了其他專案
@@ -106,7 +101,16 @@ ht-degree: 0%
 - 更多相關資訊
 - 視覺相似度
 
-這些單位&#x200B;**不**&#x200B;適用於熱門型別（例如，**檢視次數最多**&#x200B;或&#x200B;**購買次數最多**），因為這些單位沒有單一目前產品可錨定篩選。
+它們&#x200B;**不**&#x200B;可用於以熱門程度為基礎的型別，因為這些單位沒有單一目前產品可錨定篩選器：
+
+- 檢視次數最多
+- 購買最多
+- 加入購物車次數最多
+- 趨勢
+- 為您推薦
+- 最近檢視的專案
+- 檢視到購物車轉換
+- 檢視購買轉換
 
 在店面，建議下拉式清單會從PDP內容讀取目前產品的價格，並連同建議要求一併傳送。 在評估動態價格規則時，[!DNL Adobe Commerce Optimizer]會使用該值作為錨點。 對於可設定的產品，錨點為&#x200B;**最低變體**&#x200B;最終價格(`priceRange.minimum`)。
 
