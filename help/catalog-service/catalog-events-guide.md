@@ -1,24 +1,17 @@
 ---
-title: 目錄事件和Adobe I/O Events整合指南
+title: 目錄與Adobe I/O Events整合指南
 description: 瞭解如何驗證目錄資料、為Adobe Commerce設定 [!DNL Adobe I/O Events] 、訂閱目錄事件型別，以及驗證消費者的傳遞。
 level: Intermediate
 recommendations: noCatalog
 role: Admin, Developer
 feature: Services, Catalog Service
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 15aaeadde61b9d70ec107db2ed4c118d1f8ee731
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: c32adafa-ed01-4b31-997e-2413013911b0
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: d8e9d612392967d19d0da56e81337362f9006c2c
 workflow-type: tm+mt
-source-wordcount: 1567
+source-wordcount: 1566
 ht-degree: 0%
 
 ---
@@ -157,7 +150,7 @@ ht-degree: 0%
 >* [已為Adobe Commerce](https://developer.adobe.com/commerce/extensibility/events/configure-commerce)設定 [!DNL Adobe I/O] 連線。
 >* 存取布建Commerce環境的相同IMS組織中的[!DNL Adobe Developer Console]。
 >* 若要確認同步處理至Commerce SaaS服務，請在[管理]中使用&#x200B;**[!UICONTROL Data Management Dashboard]**。
->* 儀表板驗證需要Product Recommendations v6.0、[!DNL Live Search] v4.1.0+或[!DNL Catalog Service] v1.17+。 Adobe建議將您的Commerce專案更新至這些服務的最新支援版本。 對於舊版服務，請使用[目錄同步](https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/data-services/catalog-sync)進行同步驗證。
+>* 儀表板驗證需要Product Recommendations v6.0、[!DNL Live Search] v4.1.0+或[!DNL Catalog Service] v1.17+。 Adobe建議將您的Commerce專案更新至這些服務的最新支援版本。 對於舊版服務，請使用[目錄同步](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync)進行同步驗證。
 
 
 >[!NOTE]
@@ -172,11 +165,11 @@ ht-degree: 0%
 
 1. 確認成功從Commerce **匯出**&#x200B;摘要。
 
-   從[!DNL Adobe Commerce] Admin開啟[資料摘要同步狀態](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)頁面(**[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Feed Sync Status]**)，並確認每個[!DNL Catalog Service]摘要的最後匯出狀態都成功。
+   從[!DNL Adobe Commerce] Admin開啟[資料摘要同步狀態](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)頁面(**[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Feed Sync Status]**)，並確認每個[!DNL Catalog Service]摘要的最後匯出狀態都成功。
 
 1. 確認從[!DNL Adobe Commerce]管理員成功&#x200B;**同步處理至連線的Commerce服務**。
 
-   從[!DNL Adobe Commerce]管理員開啟[資料管理儀表板](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) (**[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Management Dashboard]**)，然後確認同步的產品資料包含預期的產品。
+   從[!DNL Adobe Commerce]管理員開啟[資料管理儀表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) (**[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Data Management Dashboard]**)，然後確認同步的產品資料包含預期的產品。
 
 ### 註冊並訂閱[!DNL Adobe I/O Events] {#register-events}
 
@@ -295,9 +288,9 @@ ht-degree: 0%
 
    目錄事件需要[!DNL Catalog Service]中的目前資料。 確認匯出路徑的兩個階段：
 
-   * 從Commerce匯出&#x200B;**摘要** — 在[資料摘要同步狀態](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)頁面或`var/log/saas-export.log`中，確認[!DNL Catalog Service]摘要已成功從[!DNL Commerce]匯出。
+   * 從Commerce匯出&#x200B;**摘要** — 在[資料摘要同步狀態](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)頁面或`var/log/saas-export.log`中，確認[!DNL Catalog Service]摘要已成功從[!DNL Commerce]匯出。
 
-   * **同步處理至連線的Commerce SaaS服務** — 在[資料管理儀表板](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)、[目錄同步](https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/data-services/catalog-sync)或匯出記錄檔中，確認資料已成功同步處理至[!DNL Catalog Service]。
+   * **同步處理至連線的Commerce SaaS服務** — 在[資料管理儀表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)、[目錄同步](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync)或匯出記錄檔中，確認資料已成功同步處理至[!DNL Catalog Service]。
 
    如需疑難排解匯出和同步處理工作，請參閱[使用SaaS資料匯出同步處理資料](../data-export/data-sync-manage.md)和[記錄及疑難排解](../data-export/troubleshooting/logging.md)。
 
@@ -319,7 +312,7 @@ ht-degree: 0%
    * [!DNL Adobe I/O Events]訂閱詳細資料。
    * 遺失事件的近似時間和說明。
 
-   如需其他說明，請參閱[支援票證](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)。
+   如需其他說明，請參閱[支援票證](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)。
 
 >[!MORELIKETHIS]
 >
