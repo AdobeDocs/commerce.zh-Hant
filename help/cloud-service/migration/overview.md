@@ -3,7 +3,7 @@ title: 移轉至 [!DNL Adobe Commerce as a Cloud Service]
 description: 瞭解如何移轉至 [!DNL Adobe Commerce as a Cloud Service]。
 feature: Cloud
 exl-id: 9065c92a-f6b2-4464-8ec0-5c549bf78104
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
 role: Developer
 level: Intermediate
 autotag-review: '2026-06-18T16:12:28.840Z'
@@ -73,15 +73,15 @@ Adobe不將移轉視為單一整體專案，而是提供建置在[三個移轉�
 
 **主要差異**
 
-- 僅[!BADGE 個PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"}
+- 僅[!BADGE 個PaaS]{type=Informative url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"}
 - **[!DNL Adobe Commerce on Cloud Infrastructure]**：商家管理應用程式程式碼、升級、修補和基礎結構設定。
 - **[!DNL Adobe Commerce]內部部署**：商家在Adobe的託管環境中管理應用程式程式碼、升級、修補、基礎結構設定。
 
   >[!NOTE]
   >
-  >[服務（MySQL、Elasticsearch等）的共用職責模型](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility)。
+  >[服務（MySQL、Elasticsearch等）的共用職責模型](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/security-and-compliance/shared-responsibility)。
 
-- [!BADGE 僅限SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"} **SaaS （新增 — [!DNL Adobe Commerce as a Cloud Service]）**： Adobe可完全管理核心應用程式、基礎架構和更新。 商家專注於透過擴充點(API、App Builder、UI SDK)進行自訂。 核心應用程式程式碼已鎖定。
+- [!BADGE 僅限SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"} **SaaS （新增 — [!DNL Adobe Commerce as a Cloud Service]）**： Adobe可完全管理核心應用程式、基礎架構和更新。 商家專注於透過擴充點(API、App Builder、UI SDK)進行自訂。 核心應用程式程式碼已鎖定。
 
 **架構影響**
 
@@ -94,7 +94,7 @@ Adobe不將移轉視為單一整體專案，而是提供建置在[三個移轉�
 
 - 適用於Adobe Developer App Builder的[Adobe Developer App Builder](https://developer.adobe.com/app-builder/)和[API Mesh](https://developer.adobe.com/graphql-mesh-gateway/)
 - [Commerce Optimizer](../../optimizer/overview.md)
-- [Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- [Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant)
 - 使用[Commerce Cloud Manager](../getting-started.md#create-an-instance)進行自助布建
 
 ### 移轉歷程
@@ -216,7 +216,7 @@ Commerce Developer MCP會使用[移轉評估](#migration-assessment-tool)中的�
 
 ### 店面現代化
 
-在前端，Commerce開發人員MCP使用Adobe Commerce樣板、下拉式元件和EDS區塊，將Commerce的Edge Delivery Services (EDS)上的[店面](https://experienceleague.adobe.com/developer/commerce/storefront/)現代化。
+在前端，Commerce開發人員MCP使用Adobe Commerce樣板、下拉式元件和EDS區塊，將Commerce的Edge Delivery Services (EDS)上的[店面](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant)現代化。
 
 Commerce開發人員MCP會根據Commerce範本載入現有的店面專案。 透過以下方式將您的店面現代化：
 
@@ -315,4 +315,4 @@ Commerce資料移轉服務在世界各地進行生產，並已提供多個企業
 
 檢閱[大量資料移轉工具指南](bulk-data/migration-tool.md)檔案，以進一步瞭解工作流程、支援的資料和驗證。
 
-準備來源環境的系統整合經銷商也可以使用標準[Adobe Commerce Cloud CLI](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview)和[Adobe Developer Console](https://developer.adobe.com)作為IMS認證。
+準備來源環境的系統整合經銷商也可以使用標準[Adobe Commerce Cloud CLI](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview)和[Adobe Developer Console](https://developer.adobe.com)作為IMS認證。
