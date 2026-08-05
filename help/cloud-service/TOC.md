@@ -4,12 +4,10 @@ breadcrumb-title: '[!DNL Adobe Commerce as a Cloud Service]'
 user-guide-description: 本指南提供使用 [!DNL Adobe Commerce as a Cloud Service]的詳細指示。
 feature: Services, Saas
 recommendations: noDisplay, noCatalog
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-source-git-commit: 039f848c37235195a3ffcc90238dad77513a9ec3
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+source-git-commit: 43d5571c6a1a3c5152d3b389b73887fd4739fa7f
 workflow-type: tm+mt
-source-wordcount: 222
+source-wordcount: 224
 ht-degree: 4%
 
 ---
@@ -20,7 +18,7 @@ ht-degree: 4%
 - [Adobe Commerce as a Cloud Service](overview.md)
 - [功能比較](feature-comparison.md)
 - [快速入門](getting-started.md)
-- [使用者與Identity Management](user-management.md)
+- [使用者和身分管理](user-management.md)
 - [店面](storefront.md)
 - [使用案例](use-cases.md)
 - 安全性 {#security}
@@ -39,11 +37,11 @@ ht-degree: 4%
       - [客戶整備檢查清單](migration/bulk-data/readiness-checklist.md)
       - [驗證移轉服務存取權](migration/bulk-data/cdms-access.md)
       - [執行大量資料移轉](migration/bulk-data/migration-guide.md)
-      - [影片逐步解說](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/bulk-data-migration-tool/introduction){target="_blank"}
-    - [移轉評估](migration/assessment.md)
+      - [影片逐步解說](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/bulk-data-migration-tool/introduction){target="_blank"}
+    - [移轉評估工具](migration/assessment.md)
     - [編碼工具](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}
   - {hide-from-toc}[檔案RAG服務](migration/doc-rag.md)
-- [客戶登入](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
+- [客戶登入](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
 - [禮卡帳戶REST端點](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/){target="_blank"}
 - [透過REST觸發的電子郵件](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/){target="_blank"}
 - 教學課程 {#tutorials}
@@ -51,12 +49,12 @@ ht-degree: 4%
   - [評等擴充功能教學課程](tutorials/ratings-extension.md)
   - [送貨方法擴充功能教學課程](tutorials/shipping-method-extension.md)
   - {hide-from-toc}[傳遞預估延伸教學課程](tutorials/delivery-estimates-extension.md)
-  - {hide-from-toc}[在Stock通知延伸教學課程中](tutorials/in-stock-notification-extension.md)
+  - {hide-from-toc}[庫存通知擴充功能教學課程](tutorials/in-stock-notification-extension.md)
   - {hide-from-toc}[產品評論擴充功能教學課程](tutorials/product-reviews-extension.md)
 - 結構描述 {#schemas}
   - [GraphQL結構描述](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
   - [REST API結構描述](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
-- [開發人員代理](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}
-- [教學影片](https://experienceleague.adobe.com/zh-hant/playlists/accs-getting-started-product-overview){target="_blank"}
+- [Commerce Developer Agent](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}
+- [教學影片](https://experienceleague.adobe.com/en/playlists/accs-getting-started-product-overview){target="_blank"}
 - [發行說明](release-notes.md)
-- [返回Commerce服務首頁](https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/home)
+- [返回Commerce服務首頁](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
