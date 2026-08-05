@@ -33,8 +33,8 @@ topic_v2:
 last-update: 2026-07-24
 source-git-commit: 7ce47d7abf7519a7e3ecd436faabf4089005cd63
 workflow-type: tm+mt
-source-wordcount: 1221
-ht-degree: 0%
+source-wordcount: 1335
+ht-degree: 1%
 
 ---
 
@@ -190,7 +190,7 @@ Adobe Commerce服務提供強大的功能，可擴充店面、簡化整合，以
          </a>
       </div>
       <p>
-         <em>自動將目錄、訂單及詳細目錄資料從Adobe Commerce同步至連線的服務。使用Commerce CLI命令或<strong>資料管理儀表板</strong>來管理同步處理。</em>
+         <em>自動將目錄、訂單及詳細目錄資料從Adobe Commerce同步至連線的服務。 使用Commerce CLI命令或<strong>資料管理儀表板</strong>來管理同步處理。</em>
       </p>
    </td>
    <td valign="top">
@@ -216,7 +216,7 @@ Adobe Commerce服務提供強大的功能，可擴充店面、簡化整合，以
          </a>
       </div>
       <p>
-         <em>從Commerce管理員的統一儀表板輕鬆追蹤Commerce資料同步並觸發重新同步。取得資料可用性的寶貴見解，以便及時向購物者顯示。</em>
+         <em>從Commerce管理員的統一儀表板輕鬆追蹤Commerce資料同步並觸發重新同步。 取得資料可用性的寶貴見解，以便及時向購物者顯示。</em>
       </p>
    </td>
 </table>
