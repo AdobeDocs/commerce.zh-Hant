@@ -32,10 +32,10 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-last-update: 2026-08-06
-source-git-commit: 1dd79f88f97d2f6a2f6314434f11049871dcdb6e
+last-update: 2026-08-07
+source-git-commit: 477802467d8f60f05137d60e0d703c0302de5144
 workflow-type: tm+mt
-source-wordcount: 5259
+source-wordcount: 5371
 ht-degree: 0%
 
 ---
@@ -48,7 +48,31 @@ ht-degree: 0%
 >
 >如果您正在雲端基礎結構上使用Adobe Commerce內部部署或Adobe Commerce，請參閱[Adobe Commerce發行說明](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/overview)。
 
-## 2026年7月 — 發行說#1 {#latest}
+## 2026年8月 — 發行說#1 {#latest}
+
+[!BADGE 沙箱]{type=Caution tooltip="列出的專案目前僅在沙箱環境中可用。 Adobe會先在沙箱環境中推出新版本，讓您可以在生產環境中使用該版本之前有時間測試即將推出的變更。"}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+以下專案將於2026年8月11日發佈到生產環境。
+
+>[!BEGINSHADEBOX]
+
+### 訂閱商業發票付款事件
+
+記錄商業發票付款時，會發出新的`observer.sales_order_invoice_pay`事件，因此整合功能可以訂閱事件，而非輪詢商業發票狀態變更。<!-- CEXT-5983 -->
+
+### 增強功能和錯誤修正
+
+此版本中包括下列選取的增強功能、最佳化和錯誤修正：
+
+* 修正透過GraphQL擷取客戶指派的公司時速度緩慢的問題。<!-- ACCS-1425 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## 2026年7月
 
 [!BADGE 生產]{type=Neutral tooltip="列出的專案目前可在生產環境中使用。"}
 
