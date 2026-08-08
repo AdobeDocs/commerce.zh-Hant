@@ -1,7 +1,7 @@
 ---
-source-git-commit: 16a200892f2d116a38ebde370a79d333f65e4c8a
+source-git-commit: 06d8280f848fa6fc390194ebdd05a5dba1bfac94
 workflow-type: tm+mt
-source-wordcount: '1515'
+source-wordcount: '1539'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,72 @@ ht-degree: 1%
 ## 新增功能
 
 此頁面包含過去60天所做的變更。 我們將從此清單中排除所有微幅更新，例如複製編輯。
+
+### 2026年8月7日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>已新增Adobe Commerce as a Cloud Service的沙箱<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes">發行說明</a>。</p>
+</td>
+      <td>
+        重大更新
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/c88ec8730e24220b6dfd32da406d1ba3fd3a2ef2">認可</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年8月5日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>使用移轉評估工具、Commerce開發人員MCP和Commerce資料移轉服務，以更新的移轉流程更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/migration/overview">移轉概觀</a>。</p>
+</td>
+      <td>
+        重大更新
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/2a0d741c141a4d122b0a068f3a1e7c435d86fd75">認可</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年8月4日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>全新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/catalog-service/integration/catalog-events-guide">目錄事件與Adobe I/O整合指南</a>說明如何啟用目錄事件、驗證SaaS資料匯出摘要匯出與同步，以及與Adobe I/O Events整合。</p>
+</td>
+      <td>
+        重大更新，新主題
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/719b6661370f1e639fafb2a89bc1a906a20df37b">認可</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年7月30日
 
@@ -357,38 +423,6 @@ ht-degree: 1%
         意見反應，重大更新
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/bccb739bbbfcc7e3bfa645c2a0245933014b934f">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年6月8日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>新增參考頁面，以提供更詳細的資訊，說明Adobe Commerce Optimizer <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/setup/catalog-sources">目錄來源</a>及其建立方式。</p>
-</td>
-      <td>
-        意見回饋，新主題，技術
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/8b4d08af43cbff9aaf9fc8f417ddab12185f5565">認可</a></td>
-    </tr>
-    <tr>
-      <td><ul>
-  <li>已針對[!DNL Live Search]新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/live-search/live-search-admin/semantic-search">語意搜尋</a>，並包含啟用步驟、最佳作法和英文目錄限制。<br /> — 已針對[!DNL Adobe Commerce Optimizer]新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/setup/semantic-search">語意搜尋</a>，並更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/settings">設定 — 進階搜尋</a>，並包含簡化的啟用和選用的調整控制項。</li>
-</ul>
-</td>
-      <td>
-        重大更新，新主題
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/475c99e18380c961e400a75de1c06cd8cdb929d1">認可</a></td>
     </tr>
   </tbody>
 </table>
