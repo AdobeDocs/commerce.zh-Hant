@@ -2,11 +2,11 @@
 title: 什麼是 [!DNL Adobe Commerce Optimizer]？
 description: 瞭解 [!DNL Adobe Commerce Optimizer] 及其主要功能。
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: 3e759c0d7e51082b70ea9a1fcc5757b60a8aab61
+source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
@@ -21,12 +21,12 @@ ht-degree: 0%
 - 從任何來源擷取目錄資料。
 - 定義企業目錄檢視和原則。
 - 使用AI和ML建立個人化搜尋和建議。
-- 改善產品探索關聯性，其排名會將&#x200B;**完全和接近的相符專案**&#x200B;和相同欄位相符專案排定優先順序；請參閱[搜尋相符專案和排名](./manage-results/search-relevance-matching.md)。
+- 改善產品探索關聯性，以優先排序&#x200B;**完全和接近相符專案**&#x200B;和相同欄位相符專案。 請參閱[搜尋比對和排名](./manage-results/search-relevance-matching.md)。
 - 檢視重要的產品資料可用性，包括同步化狀態和店面事件資料，以取得準確的實作和疑難排解。
 
 請觀看下列影片以瞭解[!DNL Adobe Commerce Optimizer]的高階概觀：
 
->[!VIDEO](https://video.tv.adobe.com/v/3450474?captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3450226)
 
 ## 誰從[!DNL Adobe Commerce Optimizer]中受益最大？
 
@@ -72,6 +72,7 @@ ht-degree: 0%
 - **目錄檢視** — 協助您將零售結構定義成有意義的業務群組。 例如，汽車業的經銷商、多品牌集團的子公司或供應商的製造地點。
 - **目錄層** — 修改產品資料而不變更來源資料。 將AEM Assets用於產品影像時，會透過[產品視覺效果](setup/product-visuals.md)套用AEM-Assets圖層。 如需詳細資訊，請參閱[目錄圖層](setup/catalog-layer.md)。
 - **原則** — 位於目錄檢視中的資料存取篩選器。 原則可協助確保將正確的內容傳送至正確的目的地。 例如，銷售點實體商店、市集、廣告管道(Google、Facebook、Instagram)。
+- **私人目錄檢視** — 限制目錄檢視，以便只有攜帶有效簽署權杖的要求才能擷取其資料。 如需設定，請參閱[私人目錄檢視](setup/private-catalog-view.md)。
 - **資料同步** — 顯示從資料來源（PIM、ERP等）傳輸到[!DNL Adobe Commerce Optimizer]之產品資料的同步處理狀態概觀。 該產品資料顯示在&#x200B;**[!UICONTROL Catalog Service]**、**[!UICONTROL Search]**&#x200B;和&#x200B;**[!UICONTROL Recommendations]**&#x200B;標籤中。
 - **事件** — 顯示店面事件資料，以支援產品探索和建議。 **事件**&#x200B;頁面可讓商家驗證是否已正確實作店面事件，以及是否成功擷取事件。 商戶可以使用此頁面來識別潛在問題，並採取措施來解決任何事件問題。
 

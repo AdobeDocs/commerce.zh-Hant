@@ -4,28 +4,16 @@ description: 診斷並解決 [!DNL Adobe Commerce Optimizer Connector] 中因設
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
-  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
-subfeature_v2:
-  - id: a40ebd6b-b542-4432-a730-1803ef74518d
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: c32adafa-ed01-4b31-997e-2413013911b0id: e7dae43f-215c-4cdf-90d3-c5a461a6e669id: c18ed297-2187-4aec-affb-9d9654eca6fc
+subfeature_v2: id: a40ebd6b-b542-4432-a730-1803ef74518d
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 13c9dae2f2f8442f2d5c7be5f6e3317b94956cf0
 workflow-type: tm+mt
-source-wordcount: 516
+source-wordcount: 645
 ht-degree: 0%
 
 ---
@@ -69,6 +57,17 @@ ht-degree: 0%
 
 - 確認網站已設定為可在聯結器的匯出設定中同步。 請參閱[自訂資料匯出組態](../get-started.md#customize-the-commerce-scopes-export-configuration)。
 - 確認用於[!DNL Commerce Optimizer]的價格簿識別碼存在於用於執行產品查詢的[目錄檢視](../../optimizer/setup/catalog-view.md){target="_blank"}組態中。
+
+## Storefront請求傳回存取被拒絕的錯誤，或目錄資料完全消失
+
+**問題：**&#x200B;對於先前傳回資料的目錄檢視，對Merchandising API的請求現在會失敗，並產生`access-key-invalid`錯誤，或是正在運作的店面停止顯示目錄資料。
+
+**原因：**&#x200B;目錄檢視已啟用[目錄保護](../../optimizer/setup/private-catalog-view.md)，而且要求遺漏必要的`AC-Catalog-View-Access-Token`標頭，或指派給檢視的所有受限制存取金鑰已過期。 [!DNL Adobe Commerce Optimizer Connector]不會自動建立、指派或旋轉受限存取金鑰，金鑰管理完全由您的使用者端應用程式處理。
+
+**解決方案：**
+
+- 確認目錄檢視仍至少指派了一個未過期的[受限制存取金鑰](../../optimizer/setup/restricted-access-keys.md)，並視需要旋轉或新增金鑰。
+- 驗證storefront或使用者端是否連同每個要求一起傳送有效的已簽署`AC-Catalog-View-Access-Token`標頭。 檢視[私人目錄檢視](../../optimizer/setup/private-catalog-view.md)。
 
 ## 同步之後，[!DNL Adobe Commerce Optimizer]中的資料被覆寫或意外修改
 

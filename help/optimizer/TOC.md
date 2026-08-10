@@ -6,10 +6,10 @@ role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
 nudge: true
-source-git-commit: de2af14a02ba21bfedd4fa6841f0f8b544b013cc
+source-git-commit: de75e0c9be95ff421af438dd6dc491732e2effb5
 workflow-type: tm+mt
-source-wordcount: '122'
-ht-degree: 11%
+source-wordcount: '128'
+ht-degree: 10%
 
 ---
 
@@ -22,53 +22,55 @@ ht-degree: 11%
 - [共擔責任](shared-responsibility.md)
 - [限制和邊界](boundaries-limits.md)
 - 管理結果 {#manage-results}
-   - [機會](./manage-results/opportunities.md)
-   - [成功量度](./manage-results/success-metrics.md)
-   - [搜尋績效](./manage-results/search-performance.md)
-   - {hide-from-toc}[搜尋比對和排名](./manage-results/search-relevance-matching.md)
-   - [Recommendations效能](./manage-results/recommendation-performance.md)
+  - [機會](./manage-results/opportunities.md)
+  - [成功量度](./manage-results/success-metrics.md)
+  - [搜尋績效](./manage-results/search-performance.md)
+  - {hide-from-toc}[搜尋比對和排名](./manage-results/search-relevance-matching.md)
+  - [Recommendations效能](./manage-results/recommendation-performance.md)
 - 銷售 {#merchandising}
-   - [概觀](./merchandising/overview.md)
-   - Recommendations {#recommendations}
-      - [概觀](./merchandising/recommendations/overview.md)
-      - [建立和管理](./merchandising/recommendations/create.md)
-      - [篩選器](./merchandising/recommendations/filters.md)
-      - [型別](./merchandising/recommendations/types.md)
-      - [最佳實務](./merchandising/recommendations/best-practice.md)
-   - 銷售規則 {#rules}
-      - [概觀](./merchandising/rules/overview.md)
-      - [Workspace](./merchandising/rules/workspace.md)
-      - [建立和管理](./merchandising/rules/add.md)
-      - [最佳實務](./merchandising/rules/best-practice.md)
-   - Facet {#facets}
-      - [概觀](./merchandising/facets/overview.md)
-      - [Workspace](./merchandising/facets/workspace.md)
-      - [建立和管理](./merchandising/facets/add.md)
-      - [型別](./merchandising/facets/type.md)
-      - [最佳實務](./merchandising/facets/best-practice.md)
-   - 同義字 {#synonyms}
-      - [概觀](./merchandising/synonyms/overview.md)
-      - [建立和管理](./merchandising/synonyms/add.md)
-      - [型別](./merchandising/synonyms/type.md)
-      - [最佳實務](./merchandising/synonyms/best-practice.md)
+  - [概觀](./merchandising/overview.md)
+  - Recommendations {#recommendations}
+    - [概觀](./merchandising/recommendations/overview.md)
+    - [建立和管理](./merchandising/recommendations/create.md)
+    - [篩選器](./merchandising/recommendations/filters.md)
+    - [型別](./merchandising/recommendations/types.md)
+    - [最佳實務](./merchandising/recommendations/best-practice.md)
+  - 銷售規則 {#rules}
+    - [概觀](./merchandising/rules/overview.md)
+    - [Workspace](./merchandising/rules/workspace.md)
+    - [建立和管理](./merchandising/rules/add.md)
+    - [最佳實務](./merchandising/rules/best-practice.md)
+  - Facet {#facets}
+    - [概觀](./merchandising/facets/overview.md)
+    - [Workspace](./merchandising/facets/workspace.md)
+    - [建立和管理](./merchandising/facets/add.md)
+    - [型別](./merchandising/facets/type.md)
+    - [最佳實務](./merchandising/facets/best-practice.md)
+  - 同義字 {#synonyms}
+    - [概觀](./merchandising/synonyms/overview.md)
+    - [建立和管理](./merchandising/synonyms/add.md)
+    - [型別](./merchandising/synonyms/type.md)
+    - [最佳實務](./merchandising/synonyms/best-practice.md)
 - 存放區設定 {#setup}
-   - [目錄來源](./setup/catalog-sources.md)
-   - [目錄檢視](./setup/catalog-view.md)
-   - [目錄圖層](./setup/catalog-layer.md)
-   - [原則](./setup/policies.md)
-   - [價格簿](./setup/pricebooks.md)
-   - [產品視覺效果](./setup/product-visuals.md)
-   - [資料同步](./setup/data-sync.md)
-   - [語意搜尋](./setup/semantic-search.md)
-   - 活動 {#events}
-      - [概觀](./setup/events/overview.md)
+  - [目錄來源](./setup/catalog-sources.md)
+  - [目錄檢視](./setup/catalog-view.md)
+  - [私人目錄檢視](./setup/private-catalog-view.md)
+  - [受限制的存取金鑰](./setup/restricted-access-keys.md)
+  - [目錄圖層](./setup/catalog-layer.md)
+  - [原則](./setup/policies.md)
+  - [價格簿](./setup/pricebooks.md)
+  - [產品視覺效果](./setup/product-visuals.md)
+  - [資料同步](./setup/data-sync.md)
+  - [語意搜尋](./setup/semantic-search.md)
+  - 活動 {#events}
+    - [概觀](./setup/events/overview.md)
 - [店面](storefront.md)
 - [設定](settings.md)
 - 使用案例 {#use-case}
-   - [店面和目錄管理員端對端使用案例](./use-case/admin-use-case.md)
+  - [店面和目錄管理員端對端使用案例](./use-case/admin-use-case.md)
 - 啟動網站 {#launch}
-   - [啟動檢查清單](./launch/launch-checklist.md)
+  - [啟動檢查清單](./launch/launch-checklist.md)
 - 開發人員資源 {#developer}
-   - [開發人員指南和API參考](https://developer.adobe.com/commerce/services/optimizer/)
-   - [Salesforce Commerce聯結器](./developer/salesforce-connector.md)
+  - [開發人員指南和API參考](https://developer.adobe.com/commerce/services/optimizer/)
+  - [Salesforce Commerce聯結器](./developer/salesforce-connector.md)
 - [發行說明](release-notes.md)
