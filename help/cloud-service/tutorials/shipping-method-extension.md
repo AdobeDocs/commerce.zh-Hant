@@ -6,28 +6,12 @@ role: Developer
 level: Intermediate
 autotag-review: '2026-06-18T16:22:26.484Z'
 TQID: 'https://experienceleague.adobe.com/vU71zRP-KEPdrmTW-M1mwkv-FFa0oHOcUJcG4afFo2s'
-product_v2:
-  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2:
-  - id: adedf3b3-e153-47a3-ae73-b5d65067b544
-  - id: a743e5dc-8f37-4b5d-a848-03c32ca30598
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+product_v2: id: de2e2e68-c5d7-4efe-be7b-27528698f06bid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: cc250cf1-34eb-4863-80d0-d170d45ea067id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: adedf3b3-e153-47a3-ae73-b5d65067b544id: a743e5dc-8f37-4b5d-a848-03c32ca30598
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: d378ca77-2da1-4f39-ad92-1917fe974a38
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
 workflow-type: tm+mt
 source-wordcount: 1893
@@ -266,10 +250,10 @@ Proceed with Phase 5 cleanup.
 
    - 移至&#x200B;**商店** >設定> **設定** > **Adobe服務** > **Commerce Webhooks**。
    - 新增webhook：
-      - **Webhook方法：** `plugin.magento.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates`
-      - **Webhook型別：** **after**
-      - **URL：**&#x200B;已部署的&#x200B;**shipping-methods** Web動作URL （來自部署輸出或[!DNL Adobe Developer Console]）。
-      - **必要：** **選擇性** — 如果外部API未傳回任何費率，簽出仍可運作。
+     - **Webhook方法：** `plugin.magento.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates`
+     - **Webhook型別：** **after**
+     - **URL：**&#x200B;已部署的&#x200B;**shipping-methods** Web動作URL （來自部署輸出或[!DNL Adobe Developer Console]）。
+     - **必要：** **選擇性** — 如果外部API未傳回任何費率，簽出仍可運作。
 
    模擬運費的![Commerce Admin webhook設定](../assets/admin-webhook-shipping.png){width="600" zoomable="yes"}
 
@@ -287,9 +271,9 @@ Proceed with Phase 5 cleanup.
    - 開啟&#x200B;**應用程式**&#x200B;並選取您的應用程式。
    - 開啟&#x200B;**Mock Shipping**&#x200B;標籤（或同等專案）。
    - 輸入下列明細：
-      - **服務URL：**&#x200B;您複製的Pipedream工作流程URL （例如`https://123456.m.pipedream.net`）。
-      - **API金鑰：**&#x200B;模擬的任何非空白值，例如`tutorial-key`。
-      - **倉儲（出貨地點）地址：**&#x200B;名稱、電話、街道、城市、州、郵遞區號、國家/地區。
+     - **服務URL：**&#x200B;您複製的Pipedream工作流程URL （例如`https://123456.m.pipedream.net`）。
+     - **API金鑰：**&#x200B;模擬的任何非空白值，例如`tutorial-key`。
+     - **倉儲（出貨地點）地址：**&#x200B;名稱、電話、街道、城市、州、郵遞區號、國家/地區。
    - 按一下&#x200B;**儲存**。 組態儲存在「執行階段狀態」中，並由shipping-methods動作使用。
 
    ![具有服務URL、API金鑰和倉儲位址的模擬出貨設定表單](../assets/admin-ui-mock-shipping.png){width="600" zoomable="yes"}
