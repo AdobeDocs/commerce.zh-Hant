@@ -23,7 +23,7 @@ topic_v2:
   - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
 workflow-type: tm+mt
 source-wordcount: 1445
 ht-degree: 0%
@@ -167,7 +167,7 @@ ht-degree: 0%
 
 ### 目錄圖層與自動修復的搭配方式
 
-如果目錄檢視中不存在Adobe Sites Optimizer圖層，自動修正會自動建立圖層，並將其指派為最高優先順序（最高編號）。 如果您刪除此圖層，則會在下次自動修復執行時重新建立該圖層，並將現有圖層移至較低順序的數字。 如果Adobe Sites Optimizer層已存在於其他訂單編號，自動修正不會變更其優先順序。 如果要保留自動修復圖層，但不立即使用，您可以停用圖層。 深入瞭解如何管理[目錄層](../setup/catalog-layer.md#activate-deactivate-or-delete-layers)。
+如果目錄檢視中不存在Adobe Sites Optimizer圖層，自動修正會自動建立圖層，並將其指派為最高優先順序（最高編號）。 如果您刪除此圖層，則會在下次自動修復執行時重新建立該圖層，並將現有圖層移至較低順序的數字。 如果Adobe Sites Optimizer層已存在於其他訂單編號，自動修正不會變更其優先順序。 如果要保留自動修復圖層，但不立即使用，您可以停用圖層。 深入瞭解如何管理[目錄層](../setup/catalog-layer.md#manage-layer-activation-and-deletion)。
 
 ![目錄圖層](../assets/catalog-layers.png)
 

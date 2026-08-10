@@ -26,9 +26,9 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 13c9dae2f2f8442f2d5c7be5f6e3317b94956cf0
 workflow-type: tm+mt
-source-wordcount: 1075
+source-wordcount: 1087
 ht-degree: 0%
 
 ---
@@ -127,7 +127,7 @@ ht-degree: 0%
 
 在[!DNL Adobe Commerce Optimizer]中有[!DNL Adobe Commerce]資料可用後，請使用[[!DNL Adobe Commerce Optimizer] Studio](/help/optimizer/overview.md#quick-tour)將銷售和店面體驗連結到您的同步目錄。 典型的後續步驟包括：
 
-- **目錄檢視和原則** — 從[!UICONTROL Store setup]功能表定義區域、品牌或客戶特定的子集和存取規則
+- **目錄檢視和原則** — 從[!UICONTROL Store setup]功能表定義區域、品牌或客戶特定的子集和存取規則。 若要限制可以查詢目錄檢視的人員，請參閱[私人目錄檢視](/help/optimizer/setup/private-catalog-view.md)
 - **產品探索和建議** — 在[!UICONTROL Merchandising]功能表中設定搜尋、Facet、銷售規則、同義字和建議單位。 搜尋和建議行為是在[!DNL Adobe Commerce Optimizer]中管理的；[!DNL Adobe Commerce]管理員中的[!DNL Live Search]和[!DNL Product Recommendations]設定不再套用至這些流程
 - **店面連線** — 在[!DNL Edge Delivery Services]上指向Commerce店面，或在正確的[!DNL Adobe Commerce Optimizer]租使用者、目錄檢視和銷售API端點上的協力廠商Headless組建。 如需自訂Headless整合，請參閱[Headless店面整合](/help/aco-connector/headless-storefront.md)。 如需第三方整合的範例，請參閱 [!DNL Adobe Commerce Optimizer][&#128279;](/help/optimizer/developer/salesforce-connector.md)的Salesforce Commerce Connector
 - **結帳** — 將購物車、結帳、訂單管理及客戶帳戶保留在[!DNL Adobe Commerce]或連線的協力廠商平台上。 必要時使用[!DNL App Builder]和[!DNL API Mesh]進行購物車移交

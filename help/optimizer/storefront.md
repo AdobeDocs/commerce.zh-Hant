@@ -20,9 +20,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
+source-git-commit: 13c9dae2f2f8442f2d5c7be5f6e3317b94956cf0
 workflow-type: tm+mt
-source-wordcount: 1562
+source-wordcount: 1573
 ht-degree: 0%
 
 ---
@@ -37,20 +37,20 @@ ht-degree: 0%
 
 * **GitHub帳戶**，可以建立存放庫並設定為本機開發(github.com)
 * **[!DNL Adobe Commerce Optimizer]執行個體**，包含範例資料及已設定的目錄檢視和原則
-   * 如需安裝程式指示，請參閱[新增範例資料](get-started.md#add-sample-data)。
+  * 如需安裝程式指示，請參閱[新增範例資料](get-started.md#add-sample-data)。
 
 ### 必要的執行個體資料
 
 開始之前，請先從您的[!DNL Adobe Commerce Optimizer]執行個體收集下列資訊：
 
 * **租使用者識別碼** （也稱為執行個體識別碼）
-   * 可從[執行個體詳細資訊頁面](get-started.md#manage-instances)取得
+  * 可從[執行個體詳細資訊頁面](get-started.md#manage-instances)取得
 * 您執行個體的&#x200B;**GraphQL端點**
-   * 可從[執行個體詳細資訊頁面](get-started.md#manage-instances)取得
+  * 可從[執行個體詳細資訊頁面](get-started.md#manage-instances)取得
 * 全域目錄檢視的&#x200B;**目錄檢視識別碼**
-   * 可從[目錄詳細資料頁面](./setup/catalog-view.md#manage-catalog-view)取得
+  * 可從[目錄詳細資料頁面](./setup/catalog-view.md#manage-catalog-views)取得
 * 目錄檢視的&#x200B;**Source地區設定**
-   * 範例資料的預設值為`en-US`
+  * 範例資料的預設值為`en-US`
 
 >[!NOTE]
 >
@@ -81,7 +81,7 @@ ht-degree: 0%
 
    ![[!DNL Site Creator tool]](./assets/storefront-setup-site-creator.png){width="700" zoomable="yes"}
 
-1. 選取&#x200B;**建立新網站（程式碼與內容）**。
+1. 選取&#x200B;**[!UICONTROL Create New Site (Code & Content)]**。
 
 1. 完成站台設定：
 
@@ -89,7 +89,7 @@ ht-degree: 0%
    * **網站名稱**：選擇店面的描述性名稱
    * **Commerce GraphQL端點（選用）**：輸入您[!DNL Adobe Commerce Optimizer]執行個體的GraphQL端點
 
-1. 按一下&#x200B;**建立網站**，使用店面樣板程式碼建立GitHub存放庫。
+1. 按一下&#x200B;**[!UICONTROL Create Site]**&#x200B;以使用店面樣板程式碼建立GitHub存放庫。
 
    建立存放庫時，網站建立者會更新並提示您安裝程式碼同步應用程式。
 
@@ -103,7 +103,7 @@ ht-degree: 0%
    * 按一下&#x200B;**[!UICONTROL Select repositories]**&#x200B;功能表，然後選擇您建立的店面程式碼存放庫。
    * 按一下&#x200B;**[!UICONTROL Save]**&#x200B;註冊您的存放庫。
 
-1. 返回開啟網站建立者的瀏覽器視窗，然後按一下&#x200B;**建立網站**。
+1. 返回開啟網站建立者的瀏覽器視窗，然後按一下&#x200B;**[!UICONTROL Create Site]**。
 
    「網站建立者」會將店面樣板內容複製到檔案製作環境。 此程式需要1-2分鐘。
 
@@ -115,7 +115,7 @@ ht-degree: 0%
 
    使用這些連結來管理您的店面程式碼、內容和設定。
 
-1. 複製並儲存這些連結以供日後參考：按一下**[!UICONTROL Copy]。
+1. 複製並儲存這些連結以供日後參考：按一下&#x200B;**[!UICONTROL Copy]**。
 
 ## 設定您的店面
 
@@ -140,6 +140,10 @@ ht-degree: 0%
    >[!NOTE]
    >
    >若要尋找價格簿識別碼，請檢查[!DNL Adobe Commerce Optimizer]中的[目錄檢視組態詳細資料](./setup/catalog-view.md)，以檢視指派的價格簿。 如果未指定任何價格簿，您可以從組態檔中移除此標題。 當價格簿已指派給目錄檢視時，將其新增回。
+
+   >[!NOTE]
+   >
+   >如果目錄檢視已啟用[!UICONTROL Catalog Protection]，請新增包含有效簽署權杖的`AC-Catalog-View-Access-Token`標頭，或拒絕對該目錄檢視的店面要求。 檢視[私人目錄檢視](./setup/private-catalog-view.md)。
 
 1. 儲存組態檔。
 
@@ -228,7 +232,7 @@ ht-degree: 0%
 ![檢查清單](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg)至少有一個產品詳細資料頁面顯示完整資訊<br>
 ![檢查清單](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg)搜尋功能會傳回相關結果<br>
 ![檢查清單](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg)產品影像正在正確載入<br>
-![檢查清單](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg)組態值符合您的執行個體設定<br>
+<br>
 
 ### 取得協助
 

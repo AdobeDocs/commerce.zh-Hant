@@ -23,9 +23,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 13c9dae2f2f8442f2d5c7be5f6e3317b94956cf0
 workflow-type: tm+mt
-source-wordcount: 516
+source-wordcount: 645
 ht-degree: 0%
 
 ---
@@ -69,6 +69,17 @@ ht-degree: 0%
 
 - 確認網站已設定為可在聯結器的匯出設定中同步。 請參閱[自訂資料匯出組態](../get-started.md#customize-the-commerce-scopes-export-configuration)。
 - 確認用於[!DNL Commerce Optimizer]的價格簿識別碼存在於用於執行產品查詢的[目錄檢視](../../optimizer/setup/catalog-view.md){target="_blank"}組態中。
+
+## Storefront請求傳回存取被拒絕的錯誤，或目錄資料完全消失
+
+**問題：**&#x200B;對於先前傳回資料的目錄檢視，對Merchandising API的請求現在會失敗，並產生`access-key-invalid`錯誤，或是正在運作的店面停止顯示目錄資料。
+
+**原因：**&#x200B;目錄檢視已啟用[目錄保護](../../optimizer/setup/private-catalog-view.md)，而且要求遺漏必要的`AC-Catalog-View-Access-Token`標頭，或指派給檢視的所有受限制存取金鑰已過期。 [!DNL Adobe Commerce Optimizer Connector]不會自動建立、指派或旋轉受限存取金鑰，金鑰管理完全由您的使用者端應用程式處理。
+
+**解決方案：**
+
+- 確認目錄檢視仍至少指派了一個未過期的[受限制存取金鑰](../../optimizer/setup/restricted-access-keys.md)，並視需要旋轉或新增金鑰。
+- 驗證storefront或使用者端是否連同每個要求一起傳送有效的已簽署`AC-Catalog-View-Access-Token`標頭。 檢視[私人目錄檢視](../../optimizer/setup/private-catalog-view.md)。
 
 ## 同步之後，[!DNL Adobe Commerce Optimizer]中的資料被覆寫或意外修改
 

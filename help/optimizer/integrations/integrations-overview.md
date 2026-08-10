@@ -7,9 +7,9 @@ role: Developer, Admin
 level: Beginner
 badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於 [!DNL Adobe Commerce Optimizer] 個專案（Adobe管理的SaaS基礎結構）。"
 exl-id: 8f3a2c1b-9d4e-5f6a-bc7d-1e2f3a4b5c6d
-source-git-commit: a404c2ff7cec5e72ce65d3670330b1f3f3c4702d
+source-git-commit: 13c9dae2f2f8442f2d5c7be5f6e3317b94956cf0
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '409'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## Adobe Commerce Optimizer聯結器 {#aco-connector}
 
-Adobe Commerce Optimizer聯結器是在Adobe Commerce （雲端或內部部署）和[!DNL Adobe Commerce Optimizer]之間同步目錄和定價資料的橋接器。 啟用聯結器後，Commerce仍會是產品資料的記錄系統，而[!DNL Adobe Commerce Optimizer]會支援產品探索、建議、銷售規則、分析和Headless店面體驗。
+Adobe Commerce Optimizer聯結器是在Adobe Commerce （雲端或內部部署）和[!DNL Adobe Commerce Optimizer]之間同步目錄和定價資料的橋接器。 啟用聯結器後，Commerce仍會是產品資料的記錄系統，而[!DNL Adobe Commerce Optimizer]會支援產品探索、建議、銷售規則、分析和Headless店面體驗。 若要限制可以查詢同步目錄檢視的使用者，請參閱[私人目錄檢視](../setup/private-catalog-view.md)。
 
 - [Adobe Commerce Optimizer聯結器總覽](../../aco-connector/overview.md){target="_blank"}
 - [開始使用聯結器](../../aco-connector/get-started.md){target="_blank"}

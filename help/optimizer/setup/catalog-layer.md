@@ -18,22 +18,22 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
 workflow-type: tm+mt
-source-wordcount: 1555
+source-wordcount: 1533
 ht-degree: 0%
 
 ---
 
 # 目錄圖層
 
-目錄圖層可讓您修改產品資料，而不變更原始來源資料。 圖層會透過在基本目錄上方建立圖層來套用變更至特定產品屬性，例如名稱、說明、影像、連結和中繼資料。 您的原始產品資料會維持不變，可讓您安全地自訂產品，並隨時還原變更。
+目錄圖層可讓您修改產品資料，而不變更原始來源資料。 圖層會透過在基本目錄上方建立圖層來修改產品屬性，例如名稱、說明、影像、連結和中繼資料。 您的原始產品資料會維持不變，可讓您安全地自訂產品，並隨時還原變更。
 
 ![目錄圖層](../assets/catalog-layers.png)
 
 ## 目錄圖層的運作方式
 
-當客戶檢視您的店面時，系統會將您的基本目錄資料與使用中的目錄圖層相結合，以顯示最終產品資訊。 以下是該程式的運作方式：
+當客戶檢視您的店面時，系統會將您的基本目錄資料與使用中的目錄圖層相結合，以顯示最終產品資訊。 此程式的運作方式如下：
 
 1. **圖層應用程式** — 使用管道ID和環境ID提出請求時，存放區服務會擷取相關的目錄檢視。
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 1. **欄位處理** — 不同的欄位型別處理方式不同：
 
-   * **覆寫欄位** — 名稱、說明和中繼標題等文字欄位會取代為圖層中所定義的值，並以較高優先順序的圖層優先。
+   * **覆寫欄位** — 名稱、說明和中繼標題等文字欄位會以圖層值取代，而優先順序較高的圖層優先。
    * **合併欄位** — 從多個圖層合併影像、連結和屬性等陣列欄位，以提供統一的回應。
 
 1. **優先順序解析度** — 順序欄位決定優先的圖層。 當多個圖層修改相同的欄位時，順序編號較高的圖層優先順序較高（例如，順序10是最高的）。
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 ## AEM-Assets層
 
-當您啟用[產品視覺效果](product-visuals.md)時，AEM Assets整合會自動建立和管理專為AEM Assets內容使用的目錄層。 預設圖層名稱為`AEM-Assets`，不過您可以在AEM Assets整合[&#128279;](../../aem-assets-integration/get-started/configure-aco.md)的上線期間指定自訂名稱。
+當您啟用[產品視覺效果](product-visuals.md)時，AEM Assets整合會自動建立和管理專為AEM Assets內容使用的目錄層。 預設圖層名稱為`AEM-Assets`；不過，您可以在AEM Assets整合[&#128279;](../../aem-assets-integration/get-started/configure-aco.md)的上線期間指定自訂名稱。
 
 此圖層包含與AEM Assets同步的產品影像。 如同其他目錄圖層，它是透過[產品圖層API](https://developer.adobe.com/commerce/services/reference/rest/#tag/Product-Layers){target=_blank}填入。 Assets整合服務會將AEM資產中繼資料和傳送URL轉換為API格式，並在AEM Assets核准資產時自動傳送資料。
 
@@ -67,7 +67,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
-> 將AEM-Assets圖層指派給目錄檢視。 如果未指定圖層，產品影像資料可能會意外覆寫。
+> 將AEM-Assets圖層指派給目錄檢視。 如果未指定圖層，產品影像資料會意外覆寫。
 
 ### AEM-Assets圖層的運作方式
 
@@ -81,13 +81,13 @@ ht-degree: 0%
 
 若要在店面顯示AEM Assets影像：
 
-1. 瀏覽至&#x200B;_市集設定_，然後按一下&#x200B;**[!UICONTROL Catalog views]**。
+1. 瀏覽至&#x200B;**[!UICONTROL Store setup]**，然後按一下&#x200B;**[!UICONTROL Catalog views]**。
 
 1. 選取要套用圖層的目錄檢視。
 
 1. 在目錄圖層區段中，找出&#x200B;**AEM-Assets**&#x200B;圖層。
 
-1. 啟動圖層以為此目錄檢視啟用它。
+1. 若要為此目錄檢視啟用圖層，請啟動它。
 
 1. 按一下&#x200B;**[!UICONTROL Save]**&#x200B;以套用變更。
 
@@ -128,7 +128,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果目錄檢視中沒有Sites Optimizer圖層，Sites Optimizer中的自動修正功能會自動建立一個圖層，並為其指定最高優先順序（最高編號）。 如果您刪除此圖層，則會在下次執行Sites Optimizer中的自動修復功能時重新建立該圖層，並將現有圖層移至較低順序的數字。 如果Sites Optimizer圖層已存在於不同的訂單編號，則自動修正功能不會變更其優先順序。
+>如果目錄檢視中沒有Sites Optimizer圖層，Sites Optimizer中的自動修正功能會自動建立一個圖層，並為其指定最高優先順序（最高編號）。 如果您刪除此圖層，則會在下次執行Sites Optimizer中的自動修復功能時重新建立此圖層，並將現有圖層移至較低順序的數字。 如果Sites Optimizer圖層已存在於不同的訂單編號，則自動修正功能不會變更其優先順序。
 
 >[!TIP]
 >
@@ -136,7 +136,7 @@ ht-degree: 0%
 
 **若要建立手動圖層：**
 
-1. 瀏覽至&#x200B;**存放區設定** > **目錄檢視**。
+1. 導覽至&#x200B;**[!UICONTROL Store setup]** > **[!UICONTROL Catalog views]**。
 
 1. 選取要套用圖層的目錄檢視。
 
@@ -149,7 +149,7 @@ ht-degree: 0%
    * **屬性** — 選擇要修改的產品屬性（名稱、說明、影像、中繼標籤等）。
    * **值** — 為每個選取的屬性輸入新值。
 
-1. 按一下&#x200B;**儲存**&#x200B;以建立圖層。
+1. 按一下&#x200B;**[!UICONTROL Save]**&#x200B;以建立圖層。
 
 新圖層會加入目錄檢視中，並自動指定下一個可用的訂單編號。
 
@@ -163,7 +163,7 @@ ht-degree: 0%
 
 **若要預覽圖層變更：**
 
-1. 瀏覽至&#x200B;**存放區設定** > **目錄檢視**。
+1. 導覽至&#x200B;**[!UICONTROL Store setup]** > **[!UICONTROL Catalog views]**。
 
 1. 選取包含要預覽圖層的型錄檢視。
 
@@ -173,13 +173,13 @@ ht-degree: 0%
 
 1. 視需要調整圖層內容或優先順序。
 
-## 啟動、停用或刪除圖層
+## 管理圖層啟用和刪除
 
 您可以啟用或停用目錄圖層而不刪除它們，讓您控制何時套用特定的自訂。
 
 **若要啟用或停用圖層：**
 
-1. 瀏覽至&#x200B;**存放區設定** > **目錄檢視**。
+1. 導覽至&#x200B;**[!UICONTROL Store setup]** > **[!UICONTROL Catalog views]**。
 
 1. 選取包含圖層的目錄檢視。
 
@@ -203,14 +203,14 @@ ht-degree: 0%
 **瞭解優先順序：**
 
 * 每個圖層都會指定順序編號（1、2、3等）
-* 數字越高表示優先順序越高，會覆寫所有其他圖層
+* 數字越大，表示優先順序越高，並覆寫所有其他圖層
 * 當多個圖層修改相同欄位時，順序編號較高的圖層優先
 * 優先順序僅適用於覆寫欄位（名稱、說明、中繼標籤）
 * 合併欄位（影像、連結、屬性）以組合來自所有圖層的資料
 
 **若要重新排序圖層優先順序：**
 
-1. 瀏覽至&#x200B;**存放區設定** > **目錄檢視**。
+1. 導覽至&#x200B;**[!UICONTROL Store setup]** > **[!UICONTROL Catalog views]**。
 
 1. 選取包含要重新排序之圖層的目錄檢視。
 
@@ -220,11 +220,11 @@ ht-degree: 0%
 
 1. 系統會根據新順序自動更新訂單編號。
 
-1. 按一下[儲存]以套用新的優先順序。**&#x200B;**
+1. 按一下&#x200B;**[!UICONTROL Save]**&#x200B;以套用新的優先順序。
 
 >[!IMPORTANT]
 >
->對圖層優先順序的變更會立即生效，並可能影響客戶在您店面看到的內容。 儲存前請先檢閱預覽，以確保套用正確的值（**尚未提供預覽**）。
+>對圖層優先順序的變更會立即生效，並影響客戶在您店面看到的內容。 儲存前請先檢閱預覽，以確保套用正確的值（**尚未提供預覽**）。
 
 ## 最佳實務
 
@@ -234,11 +234,10 @@ ht-degree: 0%
 
 * **限制圖層** — 雖然系統支援多個圖層，但使用太多可能會影響效能。 儘可能合併圖層。
 
-<!--- **Test before activating**—Always preview layer effects before activating them on your live storefront. !!!REMOVE IF PREVIEW NOT AVAILABLE FOR GA!!!-->
 
-* **檔案優先順序邏輯** — 追蹤哪些圖層應該優先處理，以避免意外覆寫。
+* **檔案優先順序邏輯** — 追蹤哪些圖層優先，以避免意外覆寫。
 
-* **檢閱Sites Optimizer圖層** — 使用Sites Optimizer的自動修復時，系統會建立最高優先順序的圖層。 在新增可能覆寫AI建議的手動圖層時請務必小心。 深入瞭解如何使用[Sites Optimizer](../manage-results/opportunities.md)。
+* **檢閱Sites Optimizer圖層** — 使用Sites Optimizer的自動修復時，系統會建立最高優先順序的圖層。 在新增覆寫AI建議的手動圖層時請小心。 深入瞭解如何使用[Sites Optimizer](../manage-results/opportunities.md)。
 
 * **監控效能** — 如果您發現產品頁面載入速度緩慢，請檢閱您的圖層組態，並考慮合併圖層。
 
@@ -247,3 +246,4 @@ ht-degree: 0%
 * [目錄檢視](catalog-view.md) — 設定不同店面的目錄檢視
 * [產品視覺效果](product-visuals.md) — 將AEM Assets用於產品影像
 * [機會](../manage-results/opportunities.md) — 瞭解使用目錄層的AI支援的最佳化
+* [受限制的存取金鑰](restricted-access-keys.md) — 使用已簽署的權杖驗證保護目錄檢視

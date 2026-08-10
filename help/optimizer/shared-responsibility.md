@@ -16,9 +16,9 @@ role_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
 workflow-type: tm+mt
-source-wordcount: 278
+source-wordcount: 290
 ht-degree: 0%
 
 ---
@@ -63,6 +63,7 @@ ht-degree: 0%
 | 執行PCI ASV掃描 | RA | I |
 | 正在修復[!DNL Adobe Commerce Optimizer]基礎架構PCI掃描 | R | |
 | 管理作業系統和平台機密 | RA | |
+| 正在產生、旋轉和撤銷[受限存取金鑰](setup/restricted-access-keys.md)以及[!UICONTROL Catalog Protection]的簽署權杖 | | RA |
 | 監控後端安全性記錄 | RA | |
 | 控制客戶支援與存取 | A | R |
 | Adobe DR計畫及備份與還原的年度測試和檔案 | RA | |

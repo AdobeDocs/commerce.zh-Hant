@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 13c9dae2f2f8442f2d5c7be5f6e3317b94956cf0
 workflow-type: tm+mt
-source-wordcount: 237
+source-wordcount: 263
 ht-degree: 0%
 
 ---
@@ -65,6 +65,10 @@ Headless店面呼叫`commerceOptimizer` GraphQL查詢以擷取目前客戶工作
 | 已登入的客戶 | `websiteCode::sha1(customerGroupId)` |
 
 `Store`要求標頭會決定網站範圍，因此會決定`websiteCode`元件。 `sha1(customerGroupId)`元件符合資料同步處理期間使用的價格簿識別碼公式。 請參閱[價格手冊](reference/field-mapping.md#price-books)。
+
+>[!NOTE]
+>
+>如果目標目錄檢視已啟用[!UICONTROL Catalog Protection]，請在Merchandising API要求中同時加入已簽署的`AC-Catalog-View-Access-Token`標頭與`AC-View-ID`及`AC-Price-Book-ID`，或要求遭到拒絕。 檢視[私人目錄檢視](../optimizer/setup/private-catalog-view.md)。
 
 ## 套件組合產品：加入購物車格式 {#bundle-products-add-to-cart-format}
 

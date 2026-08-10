@@ -26,10 +26,10 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 last-update: 2026-07-29
-source-git-commit: 7ce47d7abf7519a7e3ecd436faabf4089005cd63
+source-git-commit: fb025e5232902ba9fea7e858085ea85abeb11720
 workflow-type: tm+mt
-source-wordcount: 1059
-ht-degree: 0%
+source-wordcount: 1106
+ht-degree: 3%
 
 ---
 
@@ -202,7 +202,7 @@ ht-degree: 0%
 
 1. **設定[!DNL Commerce Optimizer]目錄檢視與原則**
 
-   在[!DNL Commerce Optimizer] UI中建立目錄檢視和原則。 請注意，價格簿是從[!DNL Adobe Commerce]客戶群組自動建立的。 如需指示，請參閱&#x200B;*[!DNL Commerce Optimizer]使用手冊*&#x200B;中的[目錄檢視](../optimizer/setup/catalog-view.md)和[原則](../optimizer/setup/policies.md)檔案。
+   在[!DNL Commerce Optimizer] UI中建立目錄檢視和原則。 請注意，價格簿是從[!DNL Adobe Commerce]客戶群組自動建立的。 如需指示，請參閱&#x200B;*[!DNL Commerce Optimizer]使用手冊*&#x200B;中的[目錄檢視](../optimizer/setup/catalog-view.md)和[原則](../optimizer/setup/policies.md)檔案。 若要限制目錄檢視的存取權，請參閱[私人目錄檢視](../optimizer/setup/private-catalog-view.md)。
 
 1. **在[!DNL Edge Delivery Services]**&#x200B;設定Commerce店面
 

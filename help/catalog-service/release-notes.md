@@ -26,18 +26,18 @@ ht-degree: 0%
 
 - **[店面目錄服務發行版本](#storefront-catalog-service)**
 
-   - 目錄服務API結構描述增強功能可改善資料擷取
-   - 目錄服務API和基礎基礎結構的安全性、效能和可靠性改善。
+  - 目錄服務API結構描述增強功能可改善資料擷取
+  - 目錄服務API和基礎基礎結構的安全性、效能和可靠性改善。
 
   如需這些API的詳細資訊，請參閱Commerce開發人員檔案中的[Storefront Services結構描述](https://developer.adobe.com/commerce/webapi/graphql/schema/storefront-services/)。
 
 - **[目錄服務中繼套件發行版本](#catalog-service-metapackage)**
 
-   - 更新相依性，以提升效能、穩定性以及與其他Adobe Commerce元件的相容性。
+  - 更新相依性，以提升效能、穩定性以及與其他Adobe Commerce元件的相容性。
 
 - **[目錄服務安裝程式版本](#catalog-service-installer)**
 
-   - 更新相依性，以維護目錄服務與Commerce棧疊之間的相容性。
+  - 更新相依性，以維護目錄服務與Commerce棧疊之間的相容性。
 
 >[!NOTE]
 >
@@ -58,6 +58,7 @@ ht-degree: 0%
 **發行日期**： 2026年7月1日
 
 ![新](../assets/new.svg) **新`canEditQuantity`欄位** — 已將`canEditQuantity`新增至目錄服務GraphQL中的`ProductViewOptionValueProduct`。 它會公開Commerce Admin中套件組合選取專案的可選&#x200B;**使用者定義**&#x200B;數量設定，讓店面消費者可以判斷套件組合選取專案的數量是否可編輯。
+<!--COMOPT-2050-->
 
 ### 2026年5月
 
@@ -65,13 +66,13 @@ ht-degree: 0%
 <!-- v1.55 -->
 
 ![新](../assets/new.svg)根據[記錄的限制和界限](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/boundaries-limits)，對Adobe Commerce和Adobe Commerce as a Cloud Service使用者端強制規定每個請求最多100個SKU的限制。
-
+<!--DATA-7163-->
 
 **發行日期**： 2026年5月13日
-
+<!--v1.54-->
 
 ![新的](../assets/new.svg) **GraphQL中的類別排序順序** — 現在`CategoryView` GraphQL型別包含位置欄位，所以店面可以顯示目錄階層中商戶設定的順序類別。
-
+<!--DATA-7166-->
 
 **發行日期**：2026年5月4日
 <!-- v1.53 -->
@@ -81,13 +82,13 @@ ht-degree: 0%
 ### 2026年4月
 
 **發行日期**： 2026年4月29日
-
+<!--v1.52-->
 
 ![新](../assets/new.svg)Adobe Commerce Optimizer和Adobe Commerce as a Cloud Service的每個請求強制限制，最多100個SKU
 根據[記錄的限制和邊界](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/boundaries-limits)的使用者端。<!--DATA-7156-->
 
 **發行日期**： 2026年4月17日
-
+<!--v1.51-->
 
 ![新](../assets/new.svg)已新增新的`searchCategory` GraphQL查詢，讓使用者端能依名稱搜尋具有分頁結果的類別。 查詢接受必要的`searchTerm` （至少3個字元）以及選用的`family`、`pageSize`和`currentPage`引數。 結果包含比對具有完整類別中繼資料的`CategoryTreeView`物件、`totalCount`以及分頁的`pageInfo`。<!--COMOPT-1819-->
 
@@ -96,10 +97,10 @@ ht-degree: 0%
 ### 2026年3月
 
 **發行日期**： 2026年3月24日
-
+<!--v1.49-->
 
 ![新增](../assets/new.svg)新增支援，可計算並傳回動態套裝的價格範圍。
-
+<!--DATA-7115-->
 
 ### 2025年12
 
@@ -107,7 +108,7 @@ ht-degree: 0%
 <!-- v1.46 -->
 
 ![修正](../assets/fix.svg)系統層級和基礎建設的改善，以強化效能和穩定性。
-
+<!--DATA-6852, DATA-6864-->
 
 ### 2025年11月
 
@@ -316,7 +317,7 @@ query {
 ![修正](../assets/fix.svg)沒有角色的屬性預設不再為可撰寫的目錄編制索引，因此可縮短編制索引的時間並減少儲存空間。 舊版行為可透過功能標幟重新啟用。
 
 ![修正](../assets/fix.svg)系統層級和基礎建設改善，以強化安全性、效能和穩定性。
-
+<!--DATA-6348, DATA-6440, DATA-6446, DATA-6641-->
 
 ### 2025年2月
 
@@ -355,7 +356,7 @@ query {
 <!-- v1.28 -->
 
 ![修正](../assets/fix.svg)系統層級和基礎建設改善，以強化安全性、效能和穩定性。
-
+<!--DATA-6180, DATA-6230, DATA-6254, DATA-6257-->
 
 ### 2024年10
 
@@ -365,7 +366,7 @@ query {
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
 ![新的](../assets/new.svg) GraphQL結構描述現在在產品資訊中包含`lastModifiedAt`，以取得精確的Sitemap和搜尋引擎重新索引（例如Google）。
-
+<!--DATA-6209-->
 
 ### 2024年9月
 
@@ -373,7 +374,7 @@ query {
 <!-- v1.27 -->
 
 ![修正](../assets/fix.svg)系統層級和基礎建設改善，以強化安全性、效能和穩定性。
-
+<!--DATA-6243-->
 
 ### 2024年8月
 
@@ -382,7 +383,8 @@ query {
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
-![修正](../assets/fix.svg)現在可以擷取產品資訊，而不需要產品覆寫（價格）資料。 以前，這些查詢會傳回： 
+![修正](../assets/fix.svg)現在可以擷取產品資訊，而不需要產品覆寫（價格）資料。 以前，這些查詢會傳回： `The following sku does not have product override data in the DB: <SKU value>. Make sure data is synced.`
+<!--DATA-6121-->
 
 **發行日期**：2024年8月13日
 <!-- v1.22 -->
@@ -390,6 +392,7 @@ query {
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
 ![New](../assets/new.svg)已新增支援，以依據產品SKU擷取所有變體。 請參閱[目錄服務API參考](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/)。
+<!--DATA-6067-->
 
 ### 2024年5月
 
@@ -404,6 +407,7 @@ query {
 <!--DATA-5033-->
 
 ![Fix](../assets/fix.svg)已新增對產品價格的支援，最多可包含16位數和4位小數。 從[資料管理儀表板](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)或[CLI](../data-export/data-export-cli-commands.md)重新同步以套用更新。
+<!--DATA-5033-->
 
 #### 已知限制
 
@@ -446,7 +450,8 @@ query {
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
-目錄服務API現在支援![新](../assets/new.svg)產品影片。![Fix](../assets/fix.svg)無存貨的選項現在顯示在PDP Widget中。
+目錄服務API現在支援![新](../assets/new.svg)產品影片。
+![Fix](../assets/fix.svg)無存貨的選項現在顯示在PDP Widget中。
 
 #### 已知限制
 
@@ -468,7 +473,9 @@ query {
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
-![新](../assets/new.svg)目錄服務支援產品變體的`inStock`旗標。![新](../assets/new.svg) `urlKey`和`externalId`欄位已新增至GraphQL結構描述。現在支援![新](../assets/new.svg)可下載的產品和禮品卡。
+![新](../assets/new.svg)目錄服務支援產品變體的`inStock`旗標。
+![新](../assets/new.svg) `urlKey`和`externalId`欄位已新增至GraphQL結構描述。
+現在支援![新](../assets/new.svg)可下載的產品和禮品卡。
 
 ### 2023年9月
 
@@ -477,7 +484,8 @@ query {
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
-![新](../assets/new.svg)目錄服務現在使用[SaaS價格索引](../price-index/price-indexing.md)。![修正](../assets/fix.svg)此版本包含服務端的錯誤修正和改善。
+![新](../assets/new.svg)目錄服務現在使用[SaaS價格索引](../price-index/price-indexing.md)。
+![修正](../assets/fix.svg)此版本包含服務端的錯誤修正和改善。
 
 ### 2023年7月
 
@@ -504,7 +512,8 @@ query {
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
-![新](../assets/new.svg)目錄服務現在會清除已刪除的產品變體。![修正](../assets/fix.svg)基礎架構擴充性與效能的改善。
+![新](../assets/new.svg)目錄服務現在會清除已刪除的產品變體。
+![修正](../assets/fix.svg)基礎架構擴充性與效能的改善。
 
 ### 2023年3月
 
@@ -513,14 +522,16 @@ query {
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
-![新](../assets/new.svg)已新增色票至[`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/)查詢。![新](../assets/new.svg)已新增使用[API Mesh](mesh.md)取得`entityId`的功能。
+![新](../assets/new.svg)已新增色票至[`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/)查詢。
+![新](../assets/new.svg)已新增使用[API Mesh](mesh.md)取得`entityId`的功能。
 
 **發行日期**： 2023年3月6日
 <!-- v1.5 -->
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
-![新](../assets/new.svg)已新增[`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) GraphQL功能。![修正](../assets/fix.svg)已改善效能和API擴充性。
+![新](../assets/new.svg)已新增[`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) GraphQL功能。
+![修正](../assets/fix.svg)已改善效能和API擴充性。
 
 ### 2023年2月
 
@@ -529,7 +540,8 @@ query {
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.x或更新版本
 
-![新增](../assets/new.svg)已發佈的目錄服務中繼資料以簡化安裝步驟。![修正](../assets/fix.svg) API擴充性和效能改善。
+![新增](../assets/new.svg)已發佈的目錄服務中繼資料以簡化安裝步驟。
+![修正](../assets/fix.svg) API擴充性和效能改善。
 
 ### 2023年1月
 
@@ -538,7 +550,10 @@ query {
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.x或更新版本
 
-![新](../assets/new.svg)簡化並改善入門體驗。![新的](../assets/new.svg)新客戶沙箱端點可用於生產前測試。已新增虛擬產品的![新](../assets/new.svg)支援。![修正](../assets/fix.svg) API擴充性和效能改善。
+![新](../assets/new.svg)簡化並改善入門體驗。
+![新的](../assets/new.svg)新客戶沙箱端點可用於生產前測試。
+已新增虛擬產品的![新](../assets/new.svg)支援。
+![修正](../assets/fix.svg) API擴充性和效能改善。
 
 ### 2022年11月
 
@@ -547,7 +562,8 @@ query {
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.x或更新版本
 
-![新](../assets/new.svg)目錄服務現在支援Adobe的[API Mesh](https://developer.adobe.com/graphql-mesh-gateway/)。![修正](../assets/fix.svg)已改善API擴充性和整體效能。
+![新](../assets/new.svg)目錄服務現在支援Adobe的[API Mesh](https://developer.adobe.com/graphql-mesh-gateway/)。
+![修正](../assets/fix.svg)已改善API擴充性和整體效能。
 
 ### 2022年10
 
@@ -556,7 +572,9 @@ query {
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.x或更新版本
 
-套件和群組產品的![新](../assets/new.svg)支援。![新](../assets/new.svg)已新增B2B可見性覆寫。 產品現在可供搜尋，並可新增至特定客戶群組的購物車。![Fix](../assets/fix.svg)服務現在更穩定且效能更佳。
+套件和群組產品的![新](../assets/new.svg)支援。
+![新](../assets/new.svg)已新增B2B可見性覆寫。 產品現在可供搜尋，並可新增至特定客戶群組的購物車。
+![Fix](../assets/fix.svg)服務現在更穩定且效能更佳。
 
 ### 2022年9月
 
@@ -565,7 +583,10 @@ query {
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.x或更新版本
 
-![新](../assets/new.svg)變體影像：根據選取的選項傳回產品影像。![新](../assets/new.svg)價格角色：只有特定客戶群組的成員才能看到產品價格。![修正](../assets/fix.svg)已改善服務的穩定性和效能。從目錄中刪除產品時，會收到![新的](../assets/new.svg)更新。
+![新](../assets/new.svg)變體影像：根據選取的選項傳回產品影像。
+![新](../assets/new.svg)價格角色：只有特定客戶群組的成員才能看到產品價格。
+![修正](../assets/fix.svg)已改善服務的穩定性和效能。
+從目錄中刪除產品時，會收到![新的](../assets/new.svg)更新。
 
 ### 2022年8月
 
@@ -665,14 +686,14 @@ query {
 
 - 對於部署在**Adobe Commerce雲端、內部部署或Adobe Commerce as a Cloud Service上的專案，請參閱下列檔案：
 
-   - [目錄服務指南](overview.md)
-   - [目錄服務GraphQL API參考](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/)
-   - [Adobe Commerce管理指南](https://experienceleague.adobe.com/en/docs/commerce-admin/)
-   - [Adobe Commerce as a Cloud Service指南](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/)
-   - [雲端上的Adobe Commerce指南](https://experienceleague.adobe.com/en/docs/commerce-cloud/)
+  - [目錄服務指南](overview.md)
+  - [目錄服務GraphQL API參考](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/)
+  - [Adobe Commerce管理指南](https://experienceleague.adobe.com/en/docs/commerce-admin/)
+  - [Adobe Commerce as a Cloud Service指南](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/)
+  - [雲端上的Adobe Commerce指南](https://experienceleague.adobe.com/en/docs/commerce-cloud/)
 
 - 對於使用&#x200B;**Adobe Commerce Optimizer**&#x200B;或&#x200B;**Adobe Commerce Optimizer Connector**&#x200B;的專案，請參閱下列檔案：
 
-   - [Merchandising Services開發人員指南](https://developer.adobe.com/commerce/services/optimizer/)
-   - [銷售GraphQL API參考](https://developer.adobe.com/commerce/services/reference/graphql/)
-   - [Adobe Commerce Optimizer指南](../optimizer/overview.md)
+  - [Merchandising Services開發人員指南](https://developer.adobe.com/commerce/services/optimizer/)
+  - [銷售GraphQL API參考](https://developer.adobe.com/commerce/services/reference/graphql/)
+  - [Adobe Commerce Optimizer指南](../optimizer/overview.md)
