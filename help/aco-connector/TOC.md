@@ -4,8 +4,8 @@ breadcrumb-title: '[!DNL Optimizer Connector]'
 user-guide-description: 本指南提供使用 [!DNL Adobe Commerce Optimizer Connector] 匯出目錄資料、同步價格，以及使用 [!DNL Adobe Commerce Optimizer]傳遞 [!DNL Edge Delivery Services] 店面的詳細指示。
 role: Developer, Admin
 feature: Integration, Storefront, Configuration
-nudge: false
-source-git-commit: 98d604a71c2062a44070b207fc43b9d9b1c434fd
+nudge: true
+source-git-commit: 83120d472ea7838a255c7767cd0bbe9085dff013
 workflow-type: tm+mt
 source-wordcount: '69'
 ht-degree: 5%
@@ -21,12 +21,12 @@ ht-degree: 5%
 - [管理同步](data-sync-manage.md)
 - [Headless店面整合](headless-storefront.md)
 - 疑難排解 {#troubleshooting}
-   - [概觀](troubleshooting.md)
-   - [疑難排解案例](troubleshooting/troubleshooting-scenarios.md)
+  - [概觀](troubleshooting.md)
+  - [疑難排解案例](troubleshooting/troubleshooting-scenarios.md)
 - 參考 {#reference}
-   - [聯結器模組及饋送端點](reference/connector-reference.md)
-   - [摘要表格結構描述參考](reference/feed-table-reference.md)
-   - [聯結器摘要的欄位對應](reference/field-mapping.md)
-   - [預估資料量和同步處理時間](reference/estimate-data-volume-sync-time.md)
+  - [聯結器模組及饋送端點](reference/connector-reference.md)
+  - [摘要表格結構描述參考](reference/feed-table-reference.md)
+  - [聯結器摘要的欄位對應](reference/field-mapping.md)
+  - [預估資料量和同步處理時間](reference/estimate-data-volume-sync-time.md)
 - [發行說明](release-notes.md)
-- [返回Commerce服務首頁](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=zh-Hant)
+- [返回Commerce服務首頁](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
