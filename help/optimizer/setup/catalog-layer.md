@@ -5,10 +5,19 @@ role: Admin, Developer
 recommendations: noCatalog
 badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
 TQID: https://experienceleague.adobe.com/aeuD7Ev8AhkzIspV08x4ZTA9knMjZ3EObSZJpidY8QI
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
 workflow-type: tm+mt
 source-wordcount: 1533
@@ -50,7 +59,7 @@ ht-degree: 0%
 
 ## AEM-Assets層
 
-當您啟用[產品視覺效果](product-visuals.md)時，AEM Assets整合會自動建立和管理專為AEM Assets內容使用的目錄層。 預設圖層名稱為`AEM-Assets`；不過，您可以在AEM Assets整合](../../aem-assets-integration/get-started/configure-aco.md)的[上線期間指定自訂名稱。
+當您啟用[產品視覺效果](product-visuals.md)時，AEM Assets整合會自動建立和管理專為AEM Assets內容使用的目錄層。 預設圖層名稱為`AEM-Assets`；不過，您可以在AEM Assets整合[&#128279;](../../aem-assets-integration/get-started/configure-aco.md)的上線期間指定自訂名稱。
 
 此圖層包含與AEM Assets同步的產品影像。 如同其他目錄圖層，它是透過[產品圖層API](https://developer.adobe.com/commerce/services/reference/rest/#tag/Product-Layers){target=_blank}填入。 Assets整合服務會將AEM資產中繼資料和傳送URL轉換為API格式，並在AEM Assets核准資產時自動傳送資料。
 
@@ -123,7 +132,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->若要進行大量圖層作業，請使用上述的資料擷取API方法[](#add-a-catalog-layer-via-data-ingestion)。
+>若要進行大量圖層作業，請使用上述的資料擷取API方法[&#128279;](#add-a-catalog-layer-via-data-ingestion)。
 
 **若要建立手動圖層：**
 
