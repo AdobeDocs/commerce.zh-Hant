@@ -23,9 +23,9 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 4eb33526927e1c5a81612aab0de0ce4bc7746368
+source-git-commit: 1d14f7827de3274564941765fd2943ecefac5fad
 workflow-type: tm+mt
-source-wordcount: 366
+source-wordcount: 460
 ht-degree: 0%
 
 ---
@@ -39,6 +39,14 @@ ht-degree: 0%
 ![已知問題](../assets/bug.svg)已知問題
 
 ## 2026版本
+
+### 1.0.16版
+
+_2026年8月7日_
+
+![修正](../assets/fix.svg) **目錄同步不再停留在無效的設定上** — 修正了如果[!DNL Adobe Commerce Optimizer Connector]設定遺失或無效，目錄同步處理可能會無限期執行的問題。 同步現在完成並記錄警告，而非繼續執行。 <!--MDEE-1413-->
+![修正](../assets/fix.svg) **更可靠的[!DNL Adobe Commerce Optimizer]管理員要求** — 修正[!DNL Adobe Commerce Optimizer Connector]可能對[!DNL Adobe Commerce Optimizer]個管理員要求使用不正確URL的問題，此問題可能導致這些要求失敗。 <!--COMOPT-2288-->
+![修正](../assets/fix.svg) **更可靠的重新整理和修補程式作業** — 修正重新整理和修補程式作業可能針對錯誤環境的問題，此問題可能導致要求失敗。<!--COMOPT-2288-->
 
 ### 1.0.15版
 
@@ -63,7 +71,7 @@ _2026年6月11日_
 _2026年5月6日_
 
 ![修正](../assets/fix.svg) **已改善[!DNL Adobe Commerce Optimizer Connector]設定指示** — 已更新Commerce管理員中的[!DNL Adobe Commerce Optimizer]設定頁面，以連結至&#x200B;_[!DNL Adobe Commerce Optimizer Connector]整合指南_。
-
+<!--COMOPT-1922-->
 
 ![修正](../assets/fix.svg) **[!DNL Adobe Commerce Optimizer Connector]中繼資料增強功能** - [!DNL Adobe Commerce Optimizer Connector]現在會在中繼資料標頭中包含已安裝版本。 這項改善可讓團隊快速識別在疑難排解或支援工作期間使用的聯結器版本。<!--MDEE-1323-->
 
