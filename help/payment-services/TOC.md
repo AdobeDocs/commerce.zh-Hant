@@ -7,9 +7,9 @@ role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
 nudge: true
-source-git-commit: 22c2fa72c3603e28b5ab55a34a908c10c02457fe
+source-git-commit: 2abebf247603b37a28eb6f4653d63e83aa5d9fd5
 workflow-type: tm+mt
-source-wordcount: '110'
+source-wordcount: '118'
 ht-degree: 2%
 
 ---
@@ -18,37 +18,38 @@ ht-degree: 2%
 # 適用於Commerce的[!DNL Payment Services] {#payment-services}
 
 - [指南概述](guide-overview.md)
-- [&#x200B; [!DNL Payment Services]簡介](introduction.md)
-- [&#x200B; [!DNL Payment Services]的相容性](compatibility.md)
+- [ [!DNL Payment Services]簡介](introduction.md)
+- [ [!DNL Payment Services]的相容性](compatibility.md)
 - [發行說明](release-notes.md)
 - 上線[!DNL Payment Services] {#get-started}
-   - [入門概觀](onboard.md)
-   - [安裝 [!DNL Payment Services] 擴充功能](install.md)
-   - [連線您的執行個體](connect.md)
-   - [設定測試沙箱](sandbox.md)
-   - [為生產啟用](production.md)
+  - [入門概觀](onboard.md)
+  - [安裝 [!DNL Payment Services] 擴充功能](install.md)
+  - [連線您的執行個體](connect.md)
+  - [設定測試沙箱](sandbox.md)
+  - [為生產啟用](production.md)
 - 設定[!DNL Payment Services] {#configure}
-   - [[!DNL Payment Services]首頁](payments-home.md)
-   - [[!DNL Payment Services]設定](configure-admin.md)
-   - [命令列設定](configure-cli.md)
-   - [測試及驗證](test-validate.md)
+  - [[!DNL Payment Services]首頁](payments-home.md)
+  - [[!DNL Payment Services]設定](configure-admin.md)
+  - [為網站連線其他PayPal帳戶](connect-website-account.md)
+  - [命令列設定](configure-cli.md)
+  - [測試及驗證](test-validate.md)
 - 付款和結帳 {#payments-checkout}
-   - [付款選項](payments-options.md)
-   - [信用卡保險存放](vaulting.md)
-   - [在 [!DNL Payment Services]簽出](checkout.md)
-   - 管理付款 {#manage}
-      - [&#x200B; [!DNL Payment Services]的行專案](line-items.md)
-      - [退款](refunds.md)
-      - [空隙](voids.md)
-   - [在管理員中建立訂單](create-order.md)
-   - [正在追蹤您在 [!DNL Payment Services]中的出貨](track-shipment.md)
+  - [付款選項](payments-options.md)
+  - [信用卡保險存放](vaulting.md)
+  - [在 [!DNL Payment Services]簽出](checkout.md)
+  - 管理付款 {#manage}
+    - [ [!DNL Payment Services]的行專案](line-items.md)
+    - [退款](refunds.md)
+    - [空隙](voids.md)
+  - [在管理員中建立訂單](create-order.md)
+  - [正在追蹤您在 [!DNL Payment Services]中的出貨](track-shipment.md)
 - Financial reporting {#financial-reports}
-   - [報告](reporting.md)
-   - [訂單付款狀態報表](order-payment-status.md)
-   - [付款報表](payouts.md)
-   - [可用資料](data.md)
-   - [第2級和第3級處理](levels-card-payment-transactions.md)
+  - [報告](reporting.md)
+  - [訂單付款狀態報表](order-payment-status.md)
+  - [付款報表](payouts.md)
+  - [可用資料](data.md)
+  - [第2級和第3級處理](levels-card-payment-transactions.md)
 - 安全性與合規性 {#security-compliance}
-   - [安全性](security.md)
-   - [有效保護詐騙](fraud-protection.md)
-- [返回Commerce服務首頁](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html?lang=zh-Hant)
+  - [安全性](security.md)
+  - [有效保護詐騙](fraud-protection.md)
+- [返回Commerce服務首頁](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
