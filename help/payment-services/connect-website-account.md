@@ -30,7 +30,7 @@ ht-degree: 0%
 
 只有當您的商店符合以下要求時，才可使用網站層級的上線：
 
-- [Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas)安裝完成。
+- [Commerce Services Connector](https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/integration-services/saas)安裝完成。
 - PayPal帳戶已連線至全域（預設設定）範圍。
 
 您可以檢查下列欄位是否已填入預設範圍，以確認此動作：
