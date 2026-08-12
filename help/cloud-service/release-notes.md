@@ -33,9 +33,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 last-update: 2026-08-07
-source-git-commit: 477802467d8f60f05137d60e0d703c0302de5144
+source-git-commit: ecaeba0d36376bf7f9ac864135cbf225c7fd8634
 workflow-type: tm+mt
-source-wordcount: 5371
+source-wordcount: 5345
 ht-degree: 0%
 
 ---
@@ -50,11 +50,11 @@ ht-degree: 0%
 
 ## 2026年8月 — 發行說#1 {#latest}
 
-[!BADGE 沙箱]{type=Caution tooltip="列出的專案目前僅在沙箱環境中可用。 Adobe會先在沙箱環境中推出新版本，讓您可以在生產環境中使用該版本之前有時間測試即將推出的變更。"}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE 生產]{type=Neutral tooltip="列出的專案目前可在生產環境中使用。"}
 
-以下專案將於2026年8月11日發佈到生產環境。
+以下專案已於2026年8月12日發佈到生產環境。
 
 >[!BEGINSHADEBOX]
 
