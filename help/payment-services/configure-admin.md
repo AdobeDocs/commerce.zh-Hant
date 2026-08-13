@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration, Paas, Saas
-source-git-commit: 379345261bebe5bee9cdbcb6fd3b0ce6275df6ea
+source-git-commit: 882a39a5b0eeb616c7ca1d9e64c3fae76760afad
 workflow-type: tm+mt
-source-wordcount: '3710'
+source-wordcount: '3778'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 0%
 您可以使用Admin中實用的組態選項自訂[!DNL Payment Services]以符合您的需求。
 
 當您在Admin中為[!DNL Adobe Commerce]和[!DNL Magento Open Source]設定[!DNL Payment Services]時，這些設定僅適用於&#x200B;_[!UICONTROL General Configuration]_&#x200B;的_[!UICONTROL Method]_&#x200B;欄位中設定的環境。 您在設定欄位中所做的任何變更與切換&#x200B;_[!UICONTROL Method]_&#x200B;選取專案無關 — 如果您切換方法，您的選取專案不會重設。
+
+如果您執行具有&#x200B;**多個網站** （和商店檢視）的單一Commerce執行個體，某些網站可能需要&#x200B;**不同的PayPal商家帳戶**。 在執行個體設定並上線至&#x200B;**全域** （預設）範圍後，[!DNL Payment Services]可讓您在Admin中完成&#x200B;**網站範圍**&#x200B;的PayPal上線。 請參閱[為網站連線其他PayPal帳戶](connect-website-account.md)，以取得先決條件並完成將網站範圍的PayPal帳戶上線的步驟。
 
 ## 一般設定
 
@@ -56,11 +58,11 @@ ht-degree: 0%
 
 如果您執行具有&#x200B;**多個網站** （和商店檢視）的單一Commerce執行個體，某些網站可能需要&#x200B;**不同的PayPal商家帳戶**。 在執行個體設定並上線至&#x200B;**全域** （預設）範圍後，[!DNL Payment Services]可讓您在Admin中完成&#x200B;**網站範圍**&#x200B;的PayPal上線。
 
-在舊版中，網站層級PayPal帳戶對應通常要求您[聯絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=zh-Hant#Solution)或您的Adobe代表。 當您符合下列必要條件時，請使用&#x200B;**[!UICONTROL Connect different account for website]**&#x200B;動作。
+在舊版中，網站層級PayPal帳戶對應通常要求您[聯絡支援人員](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=zh-Hant#Solution)或您的Adobe代表。 當您符合下列必要條件時，請使用&#x200B;**[!UICONTROL Connect different account]**&#x200B;動作。
 
 ### 先決條件（全域範圍）
 
-**[!UICONTROL Connect different account for website]**&#x200B;控制項只能在&#x200B;**網站**&#x200B;範圍上使用並啟用，但下列的&#x200B;**全部**&#x200B;專案在&#x200B;**預設/全域**&#x200B;組態的執行個體中已經為True：
+**[!UICONTROL Connect different account]**&#x200B;控制項只能在&#x200B;**網站**&#x200B;範圍上使用並啟用，但下列的&#x200B;**全部**&#x200B;專案在&#x200B;**預設/全域**&#x200B;組態的執行個體中已經為True：
 
 1. [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas)安裝完成。
 
@@ -70,7 +72,7 @@ ht-degree: 0%
 
 1. **全域** PayPal商家帳戶已&#x200B;**連線**，而您已為該預設範圍&#x200B;**完成PayPal上線** （已為[一般設定](#general-configuration)中說明的全域範圍填入&#x200B;**[!UICONTROL PayPal Merchant ID]**&#x200B;和相關欄位）。
 
-   如果全域上線未完成，請將設定範圍切換為&#x200B;**[!UICONTROL Website]**，在&#x200B;**[!UICONTROL Payment Methods]**&#x200B;中開啟&#x200B;**[!UICONTROL Payment Services]**，且&#x200B;**[!UICONTROL Connect different account for website]**&#x200B;按鈕為&#x200B;**已停用**；請先完成聯結器設定和&#x200B;**全域** PayPal上線。
+   如果全域上線未完成，請將設定範圍切換為&#x200B;**[!UICONTROL Website]**，在&#x200B;**[!UICONTROL Payment Methods]**&#x200B;中開啟&#x200B;**[!UICONTROL Payment Services]**，且&#x200B;**[!UICONTROL Connect different account]**&#x200B;按鈕為&#x200B;**已停用**；請先完成聯結器設定和&#x200B;**全域** PayPal上線。
 
 ## [!UICONTROL Credit Card Fields]
 
@@ -444,6 +446,6 @@ ht-degree: 0%
 
 如需有關網站、商店和商店檢視階層的詳細資訊，請參閱[網站、商店和檢視範圍](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hant)。
 
-若要在&#x200B;**全域** Commerce服務和PayPal上線完成之後，從管理員將&#x200B;**不同的PayPal帳戶連線至個別網站**，請在&#x200B;**[!UICONTROL Website]**&#x200B;範圍使用&#x200B;**[!UICONTROL Connect different account for website]**。 請參閱[為網站連線其他PayPal帳戶](#connect-a-different-paypal-account-for-a-website)。
+若要在&#x200B;**全域** Commerce服務和PayPal上線完成之後，從管理員將&#x200B;**不同的PayPal帳戶連線至個別網站**，請在&#x200B;**[!UICONTROL Website]**&#x200B;範圍使用&#x200B;**[!UICONTROL Connect different account]**。 請參閱[為網站連線其他PayPal帳戶](#connect-a-different-paypal-account-for-a-website)。
 
 如需透過CLI為多個PayPal帳戶設定範圍的詳細資訊，請參閱[命令列設定](configure-cli.md#configure-scope-via-cli)。
