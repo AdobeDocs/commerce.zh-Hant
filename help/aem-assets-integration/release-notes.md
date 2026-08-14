@@ -3,9 +3,9 @@ title: AEM Assets整合發行說明
 description: 如需所有AEM Assets整合發行版本的相關資訊，請參閱發行說明。
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
-source-git-commit: e269b5a3bbd246530ba77d8c50467e2b0f4e2f7e
+source-git-commit: afef108e512c69047a0420566a498dab164c207e
 workflow-type: tm+mt
-source-wordcount: '1352'
+source-wordcount: '1491'
 ht-degree: 0%
 
 ---
@@ -38,13 +38,29 @@ _2025年2月11日_
 
 +++
 
+## v1.4.4
+
+_2026年7月30日_
+
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.5版和更新版本。
+
+![新問題](../assets/new.svg)現在，商家可以隱藏AEM資產的特定商店檢視。 當AEM Assets將影像標示為一個或多個商店檢視的隱藏時，Commerce會從這些商店檢視上的店面中排除該影像。 Admin產品媒體集現在包含&#x200B;**[!UICONTROL Store View Visibility]**&#x200B;欄位，顯示哪些商店檢視會隱藏影像。<!-- Issue ACAP-1308 -->
+
+## v1.4.2
+
+_2026年7月10日_
+
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.5版和更新版本。
+
+![已修正問題](../assets/fix.svg)修正資產角色屬性（影像、小型影像、縮圖和色票影像）可能累積空白的存放區檢視層級值，導致影像在非預設存放區檢視中遺失的問題。 現在，這些屬性在範圍中是全域的，並移除現有的空白存放區檢視列，以便影像正確地從預設存放區檢視繼承。<!-- Issue ACCS-1401 -->
+
 ## v1.4.1
 
 _2026年6月15日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.5版和更新版本。
 
-![已修正問題](../assets/fix.svg)修正啟用AEM Assets整合時，Admin **[!UICONTROL System]**&#x200B;功能表中缺少&#x200B;**[!UICONTROL OBSERVABILITY]**&#x200B;區段標題的問題，並保留&#x200B;**[!UICONTROL Subscription List]**&#x200B;連結而沒有標題。<!--ACAP-1302 -->
+![已修正問題](../assets/fix.svg)修正啟用AEM Assets整合時，Admin **[!UICONTROL System]**&#x200B;功能表中缺少&#x200B;**[!UICONTROL OBSERVABILITY]**&#x200B;區段標題的問題，並保留&#x200B;**[!UICONTROL Subscription List]**&#x200B;連結而沒有標題。<!-- Issue ACAP-1302 -->
 
 ![已修正問題](../assets/fix.svg)修正在未啟用Dynamic Media Open API的執行個體上，儲存AEM Assets整合設定會顯示原始PHP警告，而非清除訊息的問題。 現在會顯示清楚的一般錯誤訊息。<!-- ACAP-1298 -->
 
