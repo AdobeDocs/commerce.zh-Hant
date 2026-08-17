@@ -4,18 +4,13 @@ description: 適用於Adobe Commerce的 [!DNL Catalog Service] 的最新發行�
 feature: Services, Catalog Service, Release Notes
 exl-id: 74f2e46a-5592-4857-a6d7-b95b85d8b4cc
 TQID: https://experienceleague.adobe.com/-yxW4sTuk7LPjGy5YsQ65phtkBLiByg8SmBaQPHMevM
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 616ad9e9b45a66f127a55ef87dd6c6b9c0b470c8
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 1375139292fb11df9406948010916dbd2507ef4e
 workflow-type: tm+mt
-source-wordcount: 3024
+source-wordcount: 3063
 ht-degree: 0%
 
 ---
@@ -53,11 +48,17 @@ ht-degree: 0%
 
 ## 店面目錄服務
 
-## 2026年6月
+### 2026年8月
+
+**發行日期**：2026年8月7日
+
+![修正](../assets/fix.svg)修正當選項的`sku`欄位空白或未編制索引時，`products` GraphQL查詢中可自訂選項（`inputOptions`和`options`）的`title`欄位不正確地傳回`null`，而不是選項自己的標題的問題。<!--DATA-7304-->
+
+### 2026年7月
 
 **發行日期**： 2026年7月1日
 
-![新](../assets/new.svg) **新`canEditQuantity`欄位** — 已將`canEditQuantity`新增至目錄服務GraphQL中的`ProductViewOptionValueProduct`。 它會公開Commerce Admin中套件組合選取專案的可選&#x200B;**使用者定義**&#x200B;數量設定，讓店面消費者可以判斷套件組合選取專案的數量是否可編輯。
+![新](../assets/new.svg) **新`canEditQuantity`欄位** — 已將`canEditQuantity`新增至目錄服務GraphQL中的`ProductViewOptionValueProduct`。 它會公開Commerce Admin中套件組合選取專案的可選&#x200B;**使用者定義**數量設定，讓店面消費者可以判斷套件組合選取專案的數量是否可編輯。
 <!--COMOPT-2050-->
 
 ### 2026年5月
@@ -65,7 +66,7 @@ ht-degree: 0%
 **發行日期**： 2026年5月20日
 <!-- v1.55 -->
 
-![新](../assets/new.svg)根據[記錄的限制和界限](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/boundaries-limits)，對Adobe Commerce和Adobe Commerce as a Cloud Service使用者端強制規定每個請求最多100個SKU的限制。
+![新](../assets/new.svg)根據[記錄的限制和界限](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits)，對Adobe Commerce和Adobe Commerce as a Cloud Service使用者端強制規定每個請求最多100個SKU的限制。
 <!--DATA-7163-->
 
 **發行日期**： 2026年5月13日
@@ -85,7 +86,7 @@ ht-degree: 0%
 <!--v1.52-->
 
 ![新](../assets/new.svg)Adobe Commerce Optimizer和Adobe Commerce as a Cloud Service的每個請求強制限制，最多100個SKU
-根據[記錄的限制和邊界](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/boundaries-limits)的使用者端。<!--DATA-7156-->
+根據[記錄的限制和邊界](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits)的使用者端。<!--DATA-7156-->
 
 **發行日期**： 2026年4月17日
 <!--v1.51-->
@@ -269,7 +270,7 @@ query {
 **發行日期**： 2025年6月20日
 <!-- v1.37 -->
 
-![新的](../assets/new.svg) **階層式價格簿組態** — 上下階價格簿的精確價格範圍。 計算會遵循階層與繼承的規則；當連結多重價格簿時，可減少訂價錯誤。 僅限Adobe Commerce Optimizer。 檢視[價格手冊](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/setup/pricebooks)。
+![新的](../assets/new.svg) **階層式價格簿組態** — 上下階價格簿的精確價格範圍。 計算會遵循階層與繼承的規則；當連結多重價格簿時，可減少訂價錯誤。 僅限Adobe Commerce Optimizer。 檢視[價格手冊](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/pricebooks)。
 
 ![新](../assets/new.svg) **不區分大小寫的索引鍵** — 查詢中的索引鍵查閱現在不區分大小寫，可減少因索引鍵大小寫造成的錯誤。<!--DATA-6494, DCAT-2495-->
 
@@ -406,7 +407,7 @@ query {
 
 <!--DATA-5033-->
 
-![Fix](../assets/fix.svg)已新增對產品價格的支援，最多可包含16位數和4位小數。 從[資料管理儀表板](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)或[CLI](../data-export/data-export-cli-commands.md)重新同步以套用更新。
+![Fix](../assets/fix.svg)已新增對產品價格的支援，最多可包含16位數和4位小數。 從[資料管理儀表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)或[CLI](../data-export/data-export-cli-commands.md)重新同步以套用更新。
 <!--DATA-5033-->
 
 #### 已知限制
@@ -443,7 +444,7 @@ query {
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
-![新增](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=zh-Hant)現在可用於資料串流（產品推薦、即時搜尋、目錄服務）。 需要`catalog-service`個中繼封裝v3.1.0+。
+![新增](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html)現在可用於資料串流（產品推薦、即時搜尋、目錄服務）。 需要`catalog-service`個中繼封裝v3.1.0+。
 
 **發行日期**： 2024年2月13日
 <!-- v1.16 -->
@@ -631,7 +632,7 @@ query {
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
-![新](../assets/new.svg) **支援資料摘要同步處理狀態監視** — 已更新目錄服務中繼封裝相依性以包含資料匯出工具狀態延伸(`magento/module-data-exporter-status`)。 這可啟用Commerce Admin的[資料摘要同步狀態監視](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)，而不需要任何其他安裝或設定步驟
+![新](../assets/new.svg) **支援資料摘要同步處理狀態監視** — 已更新目錄服務中繼封裝相依性以包含資料匯出工具狀態延伸(`magento/module-data-exporter-status`)。 這可啟用Commerce Admin的[資料摘要同步狀態監視](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)，而不需要任何其他安裝或設定步驟
 
 ![新](../assets/new.svg)已更新相依性，以維持目錄服務與您的Commerce棧疊之間的相容性。
 
