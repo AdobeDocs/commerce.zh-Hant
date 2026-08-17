@@ -16,7 +16,7 @@ ht-degree: 0%
 
 您使用API金鑰和私密金鑰來連線Commerce執行個體，並使用[Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html?lang=zh-Hant)指定設定中的資料空間。 **您只設定此連線一次。**
 
->[!VIDEO](https://video.tv.adobe.com/v/3447835)
+>[!VIDEO](https://video.tv.adobe.com/v/3448028?captions=chi_hant)
 
 >[!INFO]
 >
