@@ -4,21 +4,15 @@ description: ' [!DNL Adobe Commerce Optimizer]的每月發行資訊，包括店�
 feature: Release Notes
 role: Admin, Developer, User, Leader
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
 exl-id: e420d461-9ea2-4e32-aa37-230b14a297d7
 TQID: https://experienceleague.adobe.com/apcpxN0AOniRcHDCa5MMAVWysxRO5mTcudXXXjET-Lo
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 27cbf66e4851f0d21ecc039fd53aa838b4c211ba
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 413d0932d402615c9e155e1650a7c8aba2c082a1
 workflow-type: tm+mt
-source-wordcount: 1365
+source-wordcount: 1522
 ht-degree: 0%
 
 ---
@@ -28,9 +22,25 @@ ht-degree: 0%
 下列發行說明包含[!DNL Adobe Commerce Optimizer]的更新，包括：
 
 * [[!DNL Adobe Commerce Optimizer Studio]](overview.md#quick-tour)的新功能及改進專案。
-* 更新[資料擷取REST API](https://developer.adobe.com/commerce/services/reference/rest/)和店面目錄資料擷取[&#128279;](https://developer.adobe.com/commerce/services/reference/graphql/)的GraphQL API。
+* 更新[資料擷取REST API](https://developer.adobe.com/commerce/services/reference/rest/)和店面目錄資料擷取](https://developer.adobe.com/commerce/services/reference/graphql/)的[GraphQL API。
 
   {{aco-api-updates-and-dropins}}
+
+## 2026年8月
+
+>[!BEGINSHADEBOX]
+
+_2026年8月7日_
+
+![新](../assets/new.svg) **新`externalIds`欄位** — 已將`externalIds`新增至目錄服務GraphQL，公開與產品相關的外部資料來源，讓店面和整合消費者可以識別原始資料來源。 檢視產品的[傳回externalIds](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases#return-external-ids-for-a-product){target="_blank"}
+<!--DATA-7307-->
+
+![修正](../assets/fix.svg) **可設定產品的`refineProduct`回應正確** — 修正`refineProduct`查詢傳回特定可設定產品的`priceRange: null`和`roles: ["hidden"]`的問題，確保店面消費者可獲得精確的定價和可見度資訊。
+<!--COMOPT-2367-->
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
 
 ## 2026年7月
 
@@ -53,7 +63,7 @@ _2026年6月24日_
 
 <!-- v1.3 -->
 
-![新](../assets/new.svg) **新`canEditQuantity`欄位** — 已將`canEditQuantity`新增至目錄服務GraphQL中的`ProductViewOptionValueProduct`。它會公開Commerce Admin中套件組合選取專案的可選&#x200B;**使用者定義**&#x200B;數量設定，讓店面消費者可以判斷套件組合選取專案的數量是否可編輯。
+![新](../assets/new.svg) **新`canEditQuantity`欄位** — 已將`canEditQuantity`新增至目錄服務GraphQL中的`ProductViewOptionValueProduct`。 它會公開Commerce Admin中套件組合選取專案的可選&#x200B;**使用者定義**數量設定，讓店面消費者可以判斷套件組合選取專案的數量是否可編輯。
 <!--COMOPT-2050-->
 
 ### 語意搜尋
@@ -82,13 +92,13 @@ _2026年5月28日_
 
 <!-- v1.2 -->
 
-![修正](../assets/fix.svg) **完整的導覽樹狀結構** — 當路徑中存在未標籤的中繼節點時，已標籤的下階類別現在會正確包含在系列篩選的`navigation`樹狀結構中。這項修正可確保購物者在導覽中看見所有相關類別，讓您更輕鬆地瀏覽及探索專案。
+![修正](../assets/fix.svg) **完整的導覽樹狀結構** — 當路徑中存在未標籤的中繼節點時，已標籤的下階類別現在會正確包含在系列篩選的`navigation`樹狀結構中。 這項修正可確保購物者在導覽中看見所有相關類別，讓您更輕鬆地瀏覽及探索專案。
 <!--DATA-7183-->
 
-![修正](../assets/fix.svg) **在`categoryTree`要求中處理空白的Slug** — 修正當`slugs`引數包含空白字串時，[`categoryTree`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree)查詢傳回內部伺服器錯誤的問題。空的概要(Slug)值現在會被忽略，因此儲存體和整合功能可繼續解析類別資料，而不會發生請求失敗的情況。
+![修正](../assets/fix.svg) **在`categoryTree`要求中處理空白的Slug** — 修正當`slugs`引數包含空白字串時，[`categoryTree`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree)查詢傳回內部伺服器錯誤的問題。 空的概要(Slug)值現在會被忽略，因此儲存體和整合功能可繼續解析類別資料，而不會發生請求失敗的情況。
 <!--DATA-7184-->
 
-![修正](../assets/fix.svg) **`searchCategory`要求傳回不區分大小寫、以字母順序排列的結果** — 現在`searchCategory`查詢會依字母順序排序搜尋結果，而不會區分大小寫，以確保順序一致且可預測。如果名稱完全相同，首碼較短的類別會先出現。
+![修正](../assets/fix.svg) **`searchCategory`要求傳回不區分大小寫、以字母順序排列的結果** — 現在`searchCategory`查詢會依字母順序排序搜尋結果，而不會區分大小寫，以確保順序一致且可預測。 如果名稱完全相同，首碼較短的類別會先出現。
 <!--COMOPT-2142-->
 
 _2026年5月4日_
@@ -123,7 +133,7 @@ _2026年4月29日_
 
 <!--v1.52 release-->
 
-**需要批次處理請求** — 現在，當您擷取目錄資料時，GraphQL API會針對每個請求強制最多100個SKU。 請參閱[已記錄的限制和邊界](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/boundaries-limits#product-discovery)。
+**需要批次處理請求** — 現在，當您擷取目錄資料時，GraphQL API會針對每個請求強制最多100個SKU。 請參閱[已記錄的限制和邊界](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits#product-discovery)。
 
 <!--DATA-7156-->
 
