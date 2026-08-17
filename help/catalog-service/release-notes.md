@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 616ad9e9b45a66f127a55ef87dd6c6b9c0b470c8
+source-git-commit: 1375139292fb11df9406948010916dbd2507ef4e
 workflow-type: tm+mt
-source-wordcount: 3024
+source-wordcount: 3063
 ht-degree: 0%
 
 ---
@@ -53,7 +53,13 @@ ht-degree: 0%
 
 ## 店面目錄服務
 
-## 2026年6月
+### 2026年8月
+
+**發行日期**：2026年8月7日
+
+![修正](../assets/fix.svg)修正當選項的`sku`欄位空白或未編制索引時，`products` GraphQL查詢中可自訂選項（`inputOptions`和`options`）的`title`欄位不正確地傳回`null`，而不是選項自己的標題的問題。<!--DATA-7304-->
+
+### 2026年7月
 
 **發行日期**： 2026年7月1日
 

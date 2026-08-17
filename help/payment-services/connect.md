@@ -3,10 +3,10 @@ title: 連線您的執行個體
 description: 使用API金鑰和私密金鑰連線您的Commerce執行個體，並在設定中指定資料空間。
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Paas
-badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案(Adobe管理的PaaS基礎結構)和內部部署專案的Adobe Commerce 。"
-source-git-commit: 0f2e9c3a7d990a46bafc5f3b8a083436d42643b5
+badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '806'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 ## 取得API認證
 
-若要使用Commerce SaaS服務，您必須針對沙箱和生產使用執行個體的API金鑰(Commerce公開API金鑰和私密金鑰)，這些API金鑰是在[我的帳戶控制面板](https://account.magento.com/customer/account/login)中建立和管理的。 [可以為Commerce帳戶建立金鑰組](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/config/services/saas)，一個用於沙箱，一個用於生產，但一次只能使用一對金鑰組。
+若要使用Commerce SaaS服務，您必須針對沙箱和生產使用執行個體的API金鑰（Commerce公開API金鑰和私密金鑰），這些API金鑰是在[我的帳戶控制面板](https://account.magento.com/customer/account/login)中建立和管理的。 [可以為Commerce帳戶建立金鑰組](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/config/services/saas)，一個用於沙箱，一個用於生產，但一次只能使用一對金鑰組。
 
 >[!NOTE]
 >
