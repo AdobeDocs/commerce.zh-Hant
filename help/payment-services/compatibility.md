@@ -23,7 +23,7 @@ ht-degree: 0%
 
 # [!DNL Payment Services]的相容性
 
-[!DNL Payment Services]可用於[!DNL Adobe Commerce as a Cloud Service]、所有支援的[!DNL Adobe Commerce on Cloud]和內部部署版本，以及Magento Open Source。 請參閱[生命週期原則](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy)頁面，以取得特定版本的資訊。
+[!DNL Payment Services]可用於[!DNL Adobe Commerce as a Cloud Service]、所有支援的[!DNL Adobe Commerce on Cloud]和內部部署版本，以及Magento Open Source。 請參閱[生命週期原則](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/planning/lifecycle-policy)頁面，以取得特定版本的資訊。
 
 ## 先決條件
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
    >[!TIP]
    >
-   > 如需詳細資訊，請參閱我們的[Adobe Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector)教學課程影片。
+   > 如需詳細資訊，請參閱我們的[Adobe Commerce Services Connector](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector)教學課程影片。
 
 1. 如果您已經連線執行個體，請瀏覽至[上線](onboard.md)頁面以瞭解後續步驟。
 
@@ -105,13 +105,13 @@ ht-degree: 0%
 
 >[!ENDTABS]
 
-如需發行版本和特定版本的詳細資訊，請參閱[生命週期原則](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy)和[[!DNL Payment Services] 發行說明](release-notes.md)頁面。
+如需發行版本和特定版本的詳細資訊，請參閱[生命週期原則](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/planning/lifecycle-policy)和[[!DNL Payment Services] 發行說明](release-notes.md)頁面。
 
 若要取得完整指示並開始入門流程，請參閱[開始使用 [!DNL Payment Services]](onboard.md)。
 
 ### 接受的信用卡與貨幣
 
-[!DNL Payment Services]接受其所在國家/地區的貨幣。 如需設定貨幣匯率的詳細資訊，請參閱[貨幣組態](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration)。
+[!DNL Payment Services]接受其所在國家/地區的貨幣。 如需設定貨幣匯率的詳細資訊，請參閱[貨幣組態](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration)。
 
 如需PayPal產品與服務可用貨幣與付款方式的詳細資訊，請參閱下列頁面：
 
