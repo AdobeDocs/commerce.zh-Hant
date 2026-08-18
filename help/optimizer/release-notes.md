@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 27cbf66e4851f0d21ecc039fd53aa838b4c211ba
+source-git-commit: 413d0932d402615c9e155e1650a7c8aba2c082a1
 workflow-type: tm+mt
-source-wordcount: 1365
+source-wordcount: 1522
 ht-degree: 0%
 
 ---
@@ -31,6 +31,22 @@ ht-degree: 0%
 * 更新[資料擷取REST API](https://developer.adobe.com/commerce/services/reference/rest/)和店面目錄資料擷取[&#128279;](https://developer.adobe.com/commerce/services/reference/graphql/)的GraphQL API。
 
   {{aco-api-updates-and-dropins}}
+
+## 2026年8月
+
+>[!BEGINSHADEBOX]
+
+_2026年8月7日_
+
+![新](../assets/new.svg) **新`externalIds`欄位** — 已將`externalIds`新增至目錄服務GraphQL，公開與產品相關的外部資料來源，讓店面和整合消費者可以識別原始資料來源。 檢視產品的[傳回externalIds](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases#return-external-ids-for-a-product){target="_blank"}
+<!--DATA-7307-->
+
+![修正](../assets/fix.svg) **可設定產品的`refineProduct`回應正確** — 修正`refineProduct`查詢傳回特定可設定產品的`priceRange: null`和`roles: ["hidden"]`的問題，確保店面消費者可獲得精確的定價和可見度資訊。
+<!--COMOPT-2367-->
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
 
 ## 2026年7月
 
@@ -53,7 +69,7 @@ _2026年6月24日_
 
 <!-- v1.3 -->
 
-![新](../assets/new.svg) **新`canEditQuantity`欄位** — 已將`canEditQuantity`新增至目錄服務GraphQL中的`ProductViewOptionValueProduct`。它會公開Commerce Admin中套件組合選取專案的可選&#x200B;**使用者定義**&#x200B;數量設定，讓店面消費者可以判斷套件組合選取專案的數量是否可編輯。
+![新](../assets/new.svg) **新`canEditQuantity`欄位** — 已將`canEditQuantity`新增至目錄服務GraphQL中的`ProductViewOptionValueProduct`。 它會公開Commerce Admin中套件組合選取專案的可選&#x200B;**使用者定義**&#x200B;數量設定，讓店面消費者可以判斷套件組合選取專案的數量是否可編輯。
 <!--COMOPT-2050-->
 
 ### 語意搜尋
@@ -82,13 +98,13 @@ _2026年5月28日_
 
 <!-- v1.2 -->
 
-![修正](../assets/fix.svg) **完整的導覽樹狀結構** — 當路徑中存在未標籤的中繼節點時，已標籤的下階類別現在會正確包含在系列篩選的`navigation`樹狀結構中。這項修正可確保購物者在導覽中看見所有相關類別，讓您更輕鬆地瀏覽及探索專案。
+![修正](../assets/fix.svg) **完整的導覽樹狀結構** — 當路徑中存在未標籤的中繼節點時，已標籤的下階類別現在會正確包含在系列篩選的`navigation`樹狀結構中。 這項修正可確保購物者在導覽中看見所有相關類別，讓您更輕鬆地瀏覽及探索專案。
 <!--DATA-7183-->
 
-![修正](../assets/fix.svg) **在`categoryTree`要求中處理空白的Slug** — 修正當`slugs`引數包含空白字串時，[`categoryTree`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree)查詢傳回內部伺服器錯誤的問題。空的概要(Slug)值現在會被忽略，因此儲存體和整合功能可繼續解析類別資料，而不會發生請求失敗的情況。
+![修正](../assets/fix.svg) **在`categoryTree`要求中處理空白的Slug** — 修正當`slugs`引數包含空白字串時，[`categoryTree`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree)查詢傳回內部伺服器錯誤的問題。 空的概要(Slug)值現在會被忽略，因此儲存體和整合功能可繼續解析類別資料，而不會發生請求失敗的情況。
 <!--DATA-7184-->
 
-![修正](../assets/fix.svg) **`searchCategory`要求傳回不區分大小寫、以字母順序排列的結果** — 現在`searchCategory`查詢會依字母順序排序搜尋結果，而不會區分大小寫，以確保順序一致且可預測。如果名稱完全相同，首碼較短的類別會先出現。
+![修正](../assets/fix.svg) **`searchCategory`要求傳回不區分大小寫、以字母順序排列的結果** — 現在`searchCategory`查詢會依字母順序排序搜尋結果，而不會區分大小寫，以確保順序一致且可預測。 如果名稱完全相同，首碼較短的類別會先出現。
 <!--COMOPT-2142-->
 
 _2026年5月4日_
