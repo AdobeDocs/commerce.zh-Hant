@@ -3,7 +3,7 @@ title: 私人目錄檢視
 description: 瞭解如何透過啟用目錄保護來建立私人目錄檢視，以便只有具有有效已簽署Token的請求才能擷取其產品和定價資料。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
 feature_v2:
