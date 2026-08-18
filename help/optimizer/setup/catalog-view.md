@@ -4,26 +4,17 @@ description: 瞭解什麼是目錄檢視，以及如何建立檢視，以依業�
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
 TQID: https://experienceleague.adobe.com/Jmze0Pq3kSNMIXqkkML-hmmlZnv-XKgeEgRB8Q8NZ6s
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094
 nudge: true
-source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
+source-git-commit: 42c252f70f6ed1d7a5c1fd2832324308294da264
 workflow-type: tm+mt
-source-wordcount: 1276
+source-wordcount: 1317
 ht-degree: 0%
 
 ---
@@ -78,6 +69,7 @@ ht-degree: 0%
 
    - **使用所有可用的價格簿** — 此選項會從所有可用的價格簿提取價格資料。
    - **僅允許選取的價格簿** — 此選項會顯示&#x200B;**新增允許的價格簿**&#x200B;對話方塊。 使用此對話方塊來選取目錄檢視要使用的特定價格簿。
+   - **僅限單一價格簿** — 如果只套用一份價格簿，請選取此選項。 如果您想要設定僅能參考一個價格簿的私人型錄檢視表，則需要使用此選項。 檢視私人目錄檢視的[價格簿限制](private-catalog-view.md#price-book-restriction-on-private-catalog-views)。
    - **停用定價** — 目前無法使用此選項。
 
    >[!NOTE]

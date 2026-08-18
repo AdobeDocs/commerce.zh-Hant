@@ -3,23 +3,14 @@ title: 私人目錄檢視
 description: 瞭解如何透過啟用目錄保護來建立私人目錄檢視，以便只有具有有效已簽署Token的請求才能擷取其產品和定價資料。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 16e3405e1500dfd39603b1e300f4625e5a57cf02
 workflow-type: tm+mt
-source-wordcount: 467
+source-wordcount: 642
 ht-degree: 0%
 
 ---
@@ -28,15 +19,30 @@ ht-degree: 0%
 
 依預設，[目錄檢視](catalog-view.md)是公用的。 在目錄檢視上啟用目錄保護，以限制對包含有效已簽署Token之要求的存取權。
 
-目錄保護僅套用至選取的目錄檢視。 它不會變更檢視的原則、圖層或價格簿。
+目錄保護僅套用至選取的目錄檢視。 它不會變更檢視的原則或圖層。 它會將檢視限製為單一價格簿 — 請參閱私人目錄檢視上的[價格簿限制](#price-book-restriction-on-private-catalog-views)。
 
 如需保護目錄檢視的時機範例，請參閱[受限制的存取金鑰使用案例](restricted-access-keys.md#restricted-access-key-use-cases)。
 
 ## 瞭解保護界限
 
-目錄保護僅適用於啟用它的目錄檢視。 它可保護目錄和搜尋請求，但不變更檢視的原則或價格簿、保護其他目錄檢視，或保護購物車、結帳或訂單操作。
+目錄保護僅適用於啟用它的目錄檢視。 它可保護目錄和搜尋請求，但不會變更檢視的原則或層、保護其他目錄檢視，或保護購物車、結帳或訂單操作。
 
 連線的商務後端必須獨立強制執行購買資格。
+
+## 私人目錄檢視的價格簿限制
+
+私人目錄檢視只能參考一個價格簿。 這與公用型錄檢視不同，後者可以使用多個價格簿。
+
+啟用[!UICONTROL Catalog Protection]時，目錄檢視表表單上的價格簿選擇器會從多選控制項切換為單選（選項按鈕）控制項。
+
+![私人目錄檢視價格簿限制](../assets/catalog-view-private-pricebook-restrictions.png)
+
+- 如果您在已指派多個價格簿的型錄檢視上啟用[!UICONTROL Catalog Protection]，則您必須移除除一個價格簿以外的所有價格簿，才能儲存檢視。
+- 如果您先前儲存的私人型錄檢視具有在此限制存在之前的多個價格簿指定，則型錄檢視組態不會自動變更。 不過，下次編輯檢視表時，您必須先移除所有價目表（僅一個價目表除外），才能儲存更新。
+
+在這些案例中，[!DNL Adobe Commerce Optimizer]會顯示下列驗證訊息： `A protected catalog view can use only one price book. Select 'Single price book only' to continue.`
+
+公開目錄檢視不受此限制影響，並可繼續參考多個價格簿。
 
 ## 保護目錄檢視
 
