@@ -13,9 +13,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 42c252f70f6ed1d7a5c1fd2832324308294da264
 workflow-type: tm+mt
-source-wordcount: 384
+source-wordcount: 405
 ht-degree: 0%
 
 ---
@@ -36,6 +36,10 @@ ht-degree: 0%
 
 將價格簿擷取至[!DNL Adobe Commerce Optimizer]之後，您可以在&#x200B;**目錄檢視**&#x200B;頁面上看到價格簿清單及其對應的ID。
 
+>[!NOTE]
+>
+>私人目錄檢視（已啟用[!UICONTROL Catalog Protection]的檢視）只能參考一個價格簿。 檢視私人目錄檢視的[價格簿限制](private-catalog-view.md#price-book-restriction-on-private-catalog-views)。
+
 1. 移至&#x200B;_存放區設定_，然後按一下&#x200B;**[!UICONTROL Catalog views]**。
 
 1. 按一下&#x200B;**[!UICONTROL Create catalog view]**。 &#x200B;
@@ -52,6 +56,6 @@ ht-degree: 0%
 | **遞補價格手冊** | 階層中最上層的價格簿。 它沒有父代，而且是&#x200B;*僅*&#x200B;價格簿，定義其本身及其所有子系價格簿的貨幣。<br/><br/>如果在建立價格簿期間（透過API）未定義上階，則會建立新的備援價格簿。 |
 | **父價格簿** | 較高層級的價格簿，若未明確設定子項價格，則子項價格簿可從中繼承價格。 |
 | **階層深度** | 最多3個層級（備援 — >子項 — >子項）<br/><br/>在內嵌時未強制執行。 |
-| **貨幣** | 僅針對遞補價格簿定義。 由所有下階價格簿繼承。<br/><br/>如果在建立備援價格簿期間未指定貨幣（透過API），則貨幣預設為USD。 |
+| **貨幣** | 僅針對遞補價格簿定義。 由所有下階價格簿繼承。<br/><br/>如果在建立遞補價格簿期間未指定貨幣（透過API），該貨幣會預設為USD。 |
 | **產品價格** | 指定給特定價格簿中之產品(SKU)的特定價格。 |
 | **折扣** | 折扣以產品價格定義。 未繼承。 |

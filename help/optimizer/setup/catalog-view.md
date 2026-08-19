@@ -21,9 +21,9 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 nudge: true
-source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
+source-git-commit: 42c252f70f6ed1d7a5c1fd2832324308294da264
 workflow-type: tm+mt
-source-wordcount: 1276
+source-wordcount: 1317
 ht-degree: 0%
 
 ---
@@ -78,6 +78,7 @@ ht-degree: 0%
 
    - **使用所有可用的價格簿** — 此選項會從所有可用的價格簿提取價格資料。
    - **僅允許選取的價格簿** — 此選項會顯示&#x200B;**新增允許的價格簿**&#x200B;對話方塊。 使用此對話方塊來選取目錄檢視要使用的特定價格簿。
+   - **僅限單一價格簿** — 如果只套用一份價格簿，請選取此選項。 如果您想要設定僅能參考一個價格簿的私人型錄檢視表，則需要使用此選項。 檢視私人目錄檢視的[價格簿限制](private-catalog-view.md#price-book-restriction-on-private-catalog-views)。
    - **停用定價** — 目前無法使用此選項。
 
    >[!NOTE]
