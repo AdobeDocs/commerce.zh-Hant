@@ -14,7 +14,7 @@ ht-degree: 0%
 
 [!DNL Payment Services]可讓商家在其PayPal商家儀表板中檢視運送的追蹤資訊。
 
-請參閱[出貨](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/shipments){target=_blank}主題，以取得有關Adobe Commerce出貨格線的詳細資訊。
+請參閱[出貨](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/order-management/shipments){target=_blank}主題，以取得有關Adobe Commerce出貨格線的詳細資訊。
 
 ## 追蹤您運送的運作方式
 
