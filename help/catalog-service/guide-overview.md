@@ -4,18 +4,13 @@ description: '[!DNL Catalog Service for Adobe Commerce] 能夠獲取產品展示
 recommendations: noCatalog
 exl-id: 1a83bbc5-8901-49c0-8d8f-daec415edf70
 TQID: https://experienceleague.adobe.com/HnFtCC2mLVAvjHUB1ak9bbXKhgT6bMvSbKV76WM-Yz4
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 73814f5ac5d53399131263f47e170e612643e903
 workflow-type: tm+mt
-source-wordcount: 253
+source-wordcount: 256
 ht-degree: 9%
 
 ---
@@ -35,15 +30,15 @@ ht-degree: 9%
 
 | 指南 | 說明 |
 |------ | ----------- |
-| [Adobe Commerce 2.4使用手冊](https://experienceleague.adobe.com/docs/commerce.html?lang=zh-Hant) | 適用於Adobe Commerce和Magento Open Source的以商家為中心的檔案 |
+| [Adobe Commerce 2.4使用手冊](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home) | 適用於Adobe Commerce和Magento Open Source的以商家為中心的檔案 |
 | [Adobe Commerce 2.4開發人員指南](https://developer.adobe.com/commerce/docs) | 用於建置和自訂Adobe Commerce或Magento Open Source的開發人員專屬檔案 |
 
 ## 支援
 
-[上線程式](https://experienceleague.adobe.com/docs/commerce/catalog-service/installation.html?lang=zh-Hant)旨在引導您完成設定和啟用[!DNL Catalog Service]功能的必要步驟。
+[上線程式](installation.md)旨在引導您完成設定和啟用[!DNL Catalog Service]功能的必要步驟。
 
 如果您需要本指南未涵蓋的資訊或問題，請使用下列資源：
 
-* 疑難排解文章的[說明中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html?lang=zh-Hant)。
-* [支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=zh-Hant#submit-ticket) — 提交票證以接收其他說明。
+* 疑難排解文章的[說明中心](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)。
+* [支援票證](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) — 提交票證以接收其他說明。
 * 加入Adobe Commerce工程團隊，以及[#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4)公用Slack頻道中的SaaS storefront服務使用者以取得最新資訊。

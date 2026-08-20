@@ -2,27 +2,20 @@
 title: Adobe Commerce App Builder的AI編碼開發人員工具
 description: 瞭解如何使用AI工具來建立Commerce App Builder應用程式。
 feature: App Builder, Cloud
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
 role: Developer
 level: Intermediate
 autotag-review: '2026-06-18T16:11:12.988Z'
 TQID: 'https://experienceleague.adobe.com/ZbqP1MO-QrqAtocvmgFStqaluqQdzMm4LXlY3o4o3xY'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2:
-  - id: adedf3b3-e153-47a3-ae73-b5d65067b544
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: adedf3b3-e153-47a3-ae73-b5d65067b544
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
-source-wordcount: 2634
+source-wordcount: 2635
 ht-degree: 0%
 
 ---
@@ -58,13 +51,13 @@ aio commerce extensibility tools-setup
 
 * 任何支援[代理程式技能](https://agentskills.io/home#adoption)的編碼代理程式，例如：
 
-   * [游標](https://cursor.com/download)
-   * [克勞德程式碼](https://www.claude.com/product/claude-code)
-   * [GitHub Copilot](https://github.com/features/copilot)
-   * [Windsurf](https://windsurf.com)
-   * [Gemini CLI](https://github.com/google-gemini/gemini-cli)
-   * [OpenAI程式碼](https://openai.com/index/introducing-codex/)
-   * [斜面](https://cline.bot)
+  * [游標](https://cursor.com/download)
+  * [克勞德程式碼](https://www.claude.com/product/claude-code)
+  * [GitHub Copilot](https://github.com/features/copilot)
+  * [Windsurf](https://windsurf.com)
+  * [Gemini CLI](https://github.com/google-gemini/gemini-cli)
+  * [OpenAI程式碼](https://openai.com/index/introducing-codex/)
+  * [斜面](https://cline.bot)
 
 * [Node.js](https://nodejs.org/en/download)： LTS版本
 * 封裝管理員： [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)或[yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
@@ -349,7 +342,7 @@ Adobe建議您在使用AI編碼工具時，遵循下列最佳實務：
 * [整合入門套件](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [結帳入門套件](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
 * [Adobe Commerce入門套件範本](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Adobe I/O Events入門範本](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [Adobe I/O Events入門範本](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [App Builder應用程式範例](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### 為何應使用這些資源
@@ -368,9 +361,9 @@ Adobe建議您在使用AI編碼工具時，遵循下列最佳實務：
 已安裝的技能會自動強制執行下列四階段通訊協定。 開發應用程式時，工具應自動遵循此通訊協定：
 
 * 第1階段：需求分析與釐清
-   * 詢問澄清問題時，請提供完整的答案。
+  * 詢問澄清問題時，請提供完整的答案。
 * 第2階段：架構規劃與使用者核准
-   * 提出計畫時，請在核准前仔細檢閱計畫。
+  * 提出計畫時，請在核准前仔細檢閱計畫。
 * 階段3：程式碼產生和實施
 * 第4階段：檔案與驗證
 

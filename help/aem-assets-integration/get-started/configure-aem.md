@@ -4,19 +4,13 @@ description: 瞭解如何透過部署assets-commerce套件並在Adobe Commerce�
 feature: CMS, Media, Integration
 exl-id: a5d2cbab-5ea1-446b-8ab2-2c638128a40c
 TQID: https://experienceleague.adobe.com/QPlM-eeRjJ0gwmpGO4SSYR4PLtL97O-NeozWorDWtv0
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: da3860b0-d637-47df-bef0-273751180266
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 0c2e50338cbf286704239b6d1f628180e85a3bef
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: da3860b0-d637-47df-bef0-273751180266id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 1741
+source-wordcount: 1744
 ht-degree: 1%
 
 ---
@@ -43,7 +37,7 @@ ht-degree: 1%
 
 ### 自助服務必要條件
 
-* [使用計畫和部署管理員角色存取AEM Cloud Manager計畫和環境](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo)。
+* [使用計畫和部署管理員角色存取AEM Cloud Manager計畫和環境](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo)。
 
 * 發行版本`2026.5.26309`或更新版本的AEM程式。
 
@@ -116,21 +110,21 @@ ht-degree: 1%
 
 若要將`assets-commerce`封裝程式碼部署至AEM Assets as a Cloud Service AEM環境，您需要下列資源和許可權：
 
-* [存取具有計畫和部署管理員角色的AEM Assets Cloud Manager計畫和環境](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo)。
+* [存取具有計畫和部署管理員角色的AEM Assets Cloud Manager計畫和環境](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/cloud-manager#access-sysadmin-bo)。
 
-* [本機AEM開發環境](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview)，而且熟悉AEM本機開發程式。
+* [本機AEM開發環境](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview)，而且熟悉AEM本機開發程式。
 
 * 瞭解[AEM專案結構](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure)以及如何使用Cloud Manager部署自訂內容套件。
 
 * 您的Commerce執行個體的&#x200B;**IMS組織ID**。 您的Commerce執行個體和AEM Assets編寫環境都必須位於相同的IMS組織中。
 
-* 若要啟用[具有OpenAPI功能的Dynamic Media](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview#enable-dynamic-media-open-apis)：
+* 若要啟用[具有OpenAPI功能的Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview#enable-dynamic-media-open-apis)：
 
 >[!BEGINTABS]
 
 >[!TAB 產品視覺效果]
 
-[!BADGE 僅限SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"}具備OpenAPI功能的Dynamic Media是自助式，提供AEM Assets所支援的產品視覺效果。
+[!BADGE 僅限SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"}具備OpenAPI功能的Dynamic Media是自助式，提供AEM Assets所支援的產品視覺效果。
 
 1. 導覽至您的Cloud Manager。
 
@@ -146,12 +140,12 @@ ht-degree: 1%
 
 * 標題：啟用Dynamic Media OpenAPI以將Adobe Commerce與AEM Assets完全整合
 
-   * 支援票證的內容：
+  * 支援票證的內容：
 
-      * **[!UICONTROL AEM Program ID]**
-      * **[!UICONTROL Adobe Commerce URL]**
-      * **[!UICONTROL AEM Environment ID]**
-      * **[!UICONTROL IMS Org ID]**
+    * **[!UICONTROL AEM Program ID]**
+    * **[!UICONTROL Adobe Commerce URL]**
+    * **[!UICONTROL AEM Environment ID]**
+    * **[!UICONTROL IMS Org ID]**
 
 提交支援票證後，Adobe會在您的雲端服務環境中啟用具有OpenAPI功能的Dynamic Media，並共用詳細資訊（例如IMS使用者端ID），以便您繼續整合。
 
@@ -159,9 +153,9 @@ ht-degree: 1%
 
 ### 安裝步驟
 
-1. 導覽至AEM Cloud Manager、選取方案，然後[建立您要與Adobe Commerce整合的生產和中繼環境](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments#creating-environments)。
+1. 導覽至AEM Cloud Manager、選取方案，然後[建立您要與Adobe Commerce整合的生產和中繼環境](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/create-environments#creating-environments)。
 
-1. [複製所選程式的Adobe受管理Git存放庫](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/retrieve-access#repo-access)。
+1. [複製所選程式的Adobe受管理Git存放庫](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/retrieve-access#repo-access)。
 
    ![Cloud Manager存放庫認證與複製命令](../assets/cloud-manager-repository-info.png){width="600" zoomable="yes"}
 
@@ -169,7 +163,7 @@ ht-degree: 1%
 
 1. 從GitHub下載[AEM Assets Commerce存放庫](https://github.com/ankumalh/assets-commerce)的封裝程式碼。
 
-1. 從您的[本機AEM開發環境](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview)，手動將下載的程式碼複製到現有的Adobe受管理存放庫。
+1. 從您的[本機AEM開發環境](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview)，手動將下載的程式碼複製到現有的Adobe受管理存放庫。
 
 1. 在您的專案的所有`filter.xml`和`pom.xml`檔案中，以您的應用程式名稱取代所有出現的&lt;my-app>。
 
@@ -179,13 +173,13 @@ ht-degree: 1%
 
 1. 提交變更，並將本機開發分支推送到Cloud Manager Git存放庫。
 
-1. 設定[部署管道](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup#create-front-end-pipeline)，或確認您的管道可以將變更部署到選取的環境。
+1. 設定[部署管道](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/site-creation/quick-site/pipeline-setup#create-front-end-pipeline)，或確認您的管道可以將變更部署到選取的環境。
 
    ![Cloud Manager管道](../assets/cloud-manager-pipelines.png){width="600" zoomable="yes"}
 
    當管道存在時，開啟動作功能表(**...**) 至&#x200B;**[!UICONTROL Run]**、**[!UICONTROL Edit]**、**[!UICONTROL View/Edit variables]**&#x200B;或其他動作 — 請參閱以上連結的Cloud Manager管道檔案。
 
-1. 從AEM Cloud Manager [使用管道來部署程式碼，以更新AEM環境](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code#deploying-code-with-cloud-manager)。
+1. 從AEM Cloud Manager [使用管道來部署程式碼，以更新AEM環境](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code#deploying-code-with-cloud-manager)。
 
 1. 前往任何資產並編輯其屬性以驗證變更：
 
@@ -209,7 +203,7 @@ ht-degree: 1%
 
 1. 將&#x200B;**checkbox**&#x200B;元件拖放至&#x200B;**Commerce**&#x200B;標籤，並將其對應至屬性`commerce:isCommerce`。 將&#x200B;**是**&#x200B;和&#x200B;**否**&#x200B;定義為選項。
 
-如果您遇到任何其他問題，請建立[支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)或聯絡您的AEM Assets整合銷售代表以尋求協助。
+如果您遇到任何其他問題，請建立[支援票證](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)或聯絡您的AEM Assets整合銷售代表以尋求協助。
 
 ## 設定中繼資料設定檔（選用）
 
@@ -267,7 +261,7 @@ ht-degree: 1%
      ./jcr:content/metadata/commerce:isCommerce
      ```
 
-1. 選填。 若要自動同步處理上傳至AEM Assets環境的已核准Commerce資產，請在`Basic`索引標籤上將&#x200B;_[!UICONTROL Review Status]_&#x200B;欄位的預設值設為`approved`。
+1. 選填。 若要自動同步處理上傳至AEM Assets環境的已核准Commerce資產，請在`Basic`索引標籤上將&#x200B;_[!UICONTROL Review Status]_欄位的預設值設為`approved`。
 
 1. 儲存更新。
 
@@ -287,4 +281,4 @@ ht-degree: 1%
 
 * 僅[!BADGE PaaS]{type=Informative tooltip="僅適用於雲端專案上的Adobe Commerce （Adobe管理的PaaS基礎結構）。"} [安裝Adobe Commerce套件](configure-commerce.md)。
 
-* 僅[!BADGE SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"} [從管理員設定整合](setup-synchronization.md)。
+* 僅[!BADGE SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"} [從管理員設定整合](setup-synchronization.md)。

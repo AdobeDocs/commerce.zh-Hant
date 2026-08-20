@@ -5,22 +5,13 @@ autotag-review: '2026-06-17T15:08:59.000Z'
 feature: Services
 exl-id: d022756f-6e75-4c2a-9601-31958698dc43
 TQID: https://experienceleague.adobe.com/PkV4L0RpfA-jeja0Fd6JCDriE6wwjd25Qou0JhG5o8E
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088bid: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 1007
+source-wordcount: 1010
 ht-degree: 0%
 
 ---
@@ -31,7 +22,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->您也可以從Admin的[資料摘要同步狀態儀表板](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)追蹤產品與類別資料之資料匯出摘要的健康狀況和效能。
+>您也可以從Admin的[資料摘要同步狀態儀表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)追蹤產品與類別資料之資料匯出摘要的健康狀況和效能。
 
 ## 記錄檔
 
@@ -98,8 +89,8 @@ ht-degree: 0%
 - **`"Progress 2/5"`**&#x200B;表示已完成5個反複專案中的2個。 版序的數目取決於匯出的圖元數目。
 - **`"processed: 200"`**&#x200B;表示已處理200個專案。
 - **`"synced: 100"`**&#x200B;表示已傳送100個專案至SaaS。 預期`"synced"`不等於`"processed"`。 範例如下：
-   - **`"synced" < "processed"`**&#x200B;表示與先前同步版本相比，摘要資料表未偵測到專案中的任何變更。 同步作業期間會忽略此類專案。
-   - **`"synced" > "processed"`**&#x200B;相同的實體ID （例如，`Product ID`）可以在不同的範圍中有多個值。 例如，一個產品可指派至五個網站。 在此情況下，您可能會有「1個已處理」專案和「5個已同步」專案。
+  - **`"synced" < "processed"`**&#x200B;表示與先前同步版本相比，摘要資料表未偵測到專案中的任何變更。 同步作業期間會忽略此類專案。
+  - **`"synced" > "processed"`**&#x200B;相同的實體ID （例如，`Product ID`）可以在不同的範圍中有多個值。 例如，一個產品可指派至五個網站。 在此情況下，您可能會有「1個已處理」專案和「5個已同步」專案。
 
 +++ **範例：價格摘要的完整重新同步記錄檔**
 
@@ -148,7 +139,7 @@ Price feed full resync:
 - 資料匯出錯誤記錄(`commerce-data-export-errors.log`)會擷取收集階段發生的錯誤。
 - SaaS匯出錯誤記錄(`saas-export-errors.log`)會擷取傳輸階段發生的錯誤。
 
-如果您看到與設定或協力廠商擴充功能無關的錯誤，請儘可能提交[支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)並提供更多資訊。
+如果您看到與設定或協力廠商擴充功能無關的錯誤，請儘可能提交[支援票證](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)並提供更多資訊。
 
 ### 解決目錄同步問題 {#resolvesync}
 

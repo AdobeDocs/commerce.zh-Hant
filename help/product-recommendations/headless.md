@@ -3,21 +3,13 @@ title: Headless
 description: 瞭解如何將 [!DNL Product Recommendations] 整合到Headless店面。
 exl-id: c40dac31-f87e-402a-ba50-e8aa4c1d66aa
 TQID: https://experienceleague.adobe.com/J3qXs-SWuDCz7pQwzGm0VcOOFoU1QM2M4qwsTxxPwE8
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 73814f5ac5d53399131263f47e170e612643e903
 workflow-type: tm+mt
-source-wordcount: 372
+source-wordcount: 363
 ht-degree: 0%
 
 ---
@@ -28,7 +20,7 @@ ht-degree: 0%
 
 自訂和Headless整合經銷商應參考這些Luma和PWA指示，作為建議的實作。 有許多方式可將產品建議實作到Headless解決方案中，本檔案未涵蓋所有案例。 整合經銷商必須為其實作提供事件、設計和測試服務。
 
-[!DNL Product Recommendations]需要[行為和目錄資料](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/development-overview.html?lang=zh-Hant)才能運作。 Headless實作中的目錄資料同步程式維持不變，但行為資料收集需要變更。
+[!DNL Product Recommendations]需要[行為和目錄資料](development-overview.md)才能運作。 Headless實作中的目錄資料同步程式維持不變，但行為資料收集需要變更。
 
 >[!NOTE]
 >

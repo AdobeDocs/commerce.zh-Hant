@@ -2,38 +2,24 @@
 title: 目錄同步管道
 description: 瞭解 [!DNL Adobe Commerce Optimizer Connector] 同步管道的運作方式，包括摘要轉換、cron排程、範圍控制和錯誤處理。
 feature: Integration, Configuration
-badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
+badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
 autotag-review: '2026-06-09T16:21:52.214Z'
 TQID: 'https://experienceleague.adobe.com/EXUQzAd0I6Hnq4twzhaBZZnv0jLjeGBuTx-QgQz-5MA'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-feature_v2:
-  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
-  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: addc3a3a-2b1c-4fdf-aea4-4b1eb2931ba6
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+feature_v2: id: c18ed297-2187-4aec-affb-9d9654eca6fcid: c32adafa-ed01-4b31-997e-2413013911b0id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: cc250cf1-34eb-4863-80d0-d170d45ea067id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: addc3a3a-2b1c-4fdf-aea4-4b1eb2931ba6id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 662
+source-wordcount: 673
 ht-degree: 1%
 
 ---
 
 # 聯結器同步管道
 
-**[!DNL Adobe Commerce Optimizer Connector]**&#x200B;以[[!DNL SaaS Data Export]](https://experienceleague.adobe.com/zh-hant/docs/commerce/saas-data-export/overview)建置，將[!DNL SaaS Data Export]索引子收集的資料對應至[!DNL Adobe Commerce Optimizer] [!DNL Catalog Data Ingestion API]所需的格式，並處理驗證、批次提交及範圍型同步控制。 以下各節將說明此同步的運作方式。
+**[!DNL Adobe Commerce Optimizer Connector]**&#x200B;以[[!DNL SaaS Data Export]](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/overview)建置，將[!DNL SaaS Data Export]索引子收集的資料對應至[!DNL Adobe Commerce Optimizer] [!DNL Catalog Data Ingestion API]所需的格式，並處理驗證、批次提交及範圍型同步控制。 以下各節將說明此同步的運作方式。
 
 相關內容：
 
@@ -70,7 +56,7 @@ ht-degree: 1%
 
 #### 需求
 
-- [Commerce cron必須執行](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues){target="_blank"}。
+- [Commerce cron必須執行](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-39832){target="_blank"}。
 - 摘要索引子必須使用&#x200B;**[!UICONTROL Update by Schedule]**&#x200B;模式。 請參閱[部分同步](../data-export/sync-overview.md#partial-sync){target="_blank"}。
 
 ## 範圍型同步控制
@@ -78,7 +64,7 @@ ht-degree: 1%
 `CommerceOptimizerScopeMapper`模組會讀取每個網站和每個商店檢視的匯出設定，並在摘要收集和提交期間強制執行。
 
 - **已啟用範圍**，以一般差異排程匯出資料。
-- **已停用的領域**&#x200B;已從管道中排除。
+- **已停用的領域**已從管道中排除。
 先前同步的實體在下次cron執行時從[!DNL Commerce Optimizer]中移除。
 
 如果同步問題只影響一個目錄來源或價格簿，請參閱[資料未同步](troubleshooting.md#data-not-syncing)。
@@ -93,7 +79,7 @@ ht-degree: 1%
 | 暫時性失敗 | 每5分鐘重試一次 |
 | 完整同步或大型目錄 | 分鐘到小時 |
 
-從Commerce管理員的[[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)頁面監視每個摘要的狀態。 請參閱[確認資料同步正在運作](./data-sync-manage.md#verify-that-the-data-sync-is-working)。
+從Commerce管理員的[[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)頁面監視每個摘要的狀態。 請參閱[確認資料同步正在運作](./data-sync-manage.md#verify-that-the-data-sync-is-working)。
 
 ## 摘要提交和錯誤處理
 

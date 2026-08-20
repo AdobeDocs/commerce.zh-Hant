@@ -2,23 +2,13 @@
 title: 從搜尋配接卡移轉至PLP Widget
 description: 瞭解如何從已棄用的搜尋配接卡移轉至 [!DNL Live Search] 產品清單頁面Widget。
 TQID: https://experienceleague.adobe.com/YAwhAbTVeYpGYKh4dTe1umcfgoRUOg8QPZNIiGFjKVo
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: d30ce9f02c9d2217c6669e8e9a1794bbc0387128
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 2102
+source-wordcount: 2105
 ht-degree: 0%
 
 ---
@@ -333,7 +323,7 @@ PLP Widget預設會在[!DNL Live Search] 4.0.0+的新安裝中啟用。 如果�
 
 **選項3：以Adobe Analytics取代GTM**
 
-- 考慮移轉至[Adobe Analytics](https://business.adobe.com/tw/products/adobe-analytics.html) （如適用）。
+- 考慮移轉至[Adobe Analytics](https://business.adobe.com/products/adobe-analytics.html) （如適用）。
 - 如需指引，請聯絡客戶工程部門。
 
 **聯絡對象**：提交支援票證，以取得GTM相容性更新或客戶工程協助。
@@ -358,11 +348,11 @@ PLP Widget預設會在[!DNL Live Search] 4.0.0+的新安裝中啟用。 如果�
 1. **實作事件集合**：
    - 檢閱[Storefront活動檔案](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search)。
    - 實作必要事件：
-      - `search-request-sent`
-      - `search-response-received`
-      - `search-results-view`
-      - `product-page-view`
-      - `add-to-cart`
+     - `search-request-sent`
+     - `search-response-received`
+     - `search-results-view`
+     - `product-page-view`
+     - `add-to-cart`
    - 測試事件資料流入Adobe Commerce。
 
 1. **設定Facet排序**：
@@ -458,7 +448,7 @@ PLP Widget預設會在[!DNL Live Search] 4.0.0+的新安裝中啟用。 如果�
 - Headless或PWA實作
 - 自訂事件追蹤
 
-若要聯絡Adobe支援，請參閱[說明中心使用手冊](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。
+若要聯絡Adobe支援，請參閱[說明中心使用手冊](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。
 
 ## 常見問題集
 

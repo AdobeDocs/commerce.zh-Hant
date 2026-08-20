@@ -5,9 +5,9 @@ user-guide-description: 本指南提供使用 [!DNL Adobe Commerce Optimizer Con
 role: Developer, Admin
 feature: Integration, Storefront, Configuration
 nudge: true
-source-git-commit: 83120d472ea7838a255c7767cd0bbe9085dff013
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: '69'
+source-wordcount: '70'
 ht-degree: 5%
 
 ---
@@ -29,4 +29,4 @@ ht-degree: 5%
   - [聯結器摘要的欄位對應](reference/field-mapping.md)
   - [預估資料量和同步處理時間](reference/estimate-data-volume-sync-time.md)
 - [發行說明](release-notes.md)
-- [返回Commerce服務首頁](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=zh-Hant)
+- [返回Commerce服務首頁](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)

@@ -2,9 +2,9 @@
 title: 設定適用於Commerce Optimizer的AEM Assets
 description: 瞭解如何設定 [!DNL Adobe Commerce Optimizer]的AEM Assets整合。
 feature: CMS, Media, Configuration, Integration
-source-git-commit: 0c2e50338cbf286704239b6d1f628180e85a3bef
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: '1244'
+source-wordcount: '1247'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ ht-degree: 0%
 
 在設定整合之前，請確定您具備：
 
-* 具有&#x200B;**產品視覺效果**&#x200B;權益的有效[!DNL Adobe Commerce Optimizer]執行個體（整合Dynamic Media與OpenAPI功能+ [AEM Assets Prime](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/assets-prime)），或客戶提供的AEM Assets授權（例如&#x200B;**AEM Assets Ultimate**）並啟用Dynamic Media。
+* 具有&#x200B;**產品視覺效果**&#x200B;權益的有效[!DNL Adobe Commerce Optimizer]執行個體（整合Dynamic Media與OpenAPI功能+ [AEM Assets Prime](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-prime)），或客戶提供的AEM Assets授權（例如&#x200B;**AEM Assets Ultimate**）並啟用Dynamic Media。
 * 存取AEM Assets as a Cloud Service環境。
 * 同一Adobe IMS組織中的[!DNL Commerce Optimizer]和AEM Assets。
 * 在您的AEM Assets環境中啟用OpenAPI的Dynamic Media （請參閱[設定AEM Assets專案](configure-aem.md#prerequisites)以取得啟用步驟）。
@@ -85,7 +85,7 @@ ht-degree: 0%
 * AEM Assets事件（資產已核准、更新、已移除）
 * [!DNL Commerce Optimizer]個目錄事件（已建立、已更新的產品）
 
-若要啟動此程式，請[建立支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)，其中包含下列資訊：
+若要啟動此程式，請[建立支援票證](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)，其中包含下列資訊：
 
 * 在您的[!DNL Commerce Optimizer] URL或Commerce Cloud Manager UI中找到&#x200B;**[!DNL Adobe Commerce Optimizer]租使用者識別碼** （執行個體識別碼）。
 * **當您[設定AEM Assets](#configure-aem-assets-first)進行整合時，所設定的AEM方案ID和環境ID**。

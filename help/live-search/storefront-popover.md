@@ -3,25 +3,20 @@ title: '[!DNL Storefront Popover]'
 description: ' [!DNL Live Search storefront popover] 會動態傳回建議的產品與縮圖。'
 exl-id: 240a5333-15e9-4178-ba3c-ae6c62c2238c
 TQID: https://experienceleague.adobe.com/nGvwmtPuwoiFgCxrK9shUPS-FSKr-ZxWNUf-qDWjOdQ
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
-source-wordcount: 479
+source-wordcount: 482
 ht-degree: 0%
 
 ---
 
 # [!DNL Storefront Popover]
 
-當[!DNL Live Search]已[安裝](install.md)時，當購物者在[搜尋](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html?lang=zh-Hant#quick-search)方塊中鍵入時，店面中會出現[!DNL popover]。 輸入每個字元後，[!DNL popover]會以建議的產品和排名最前的搜尋結果的縮圖影像更新。
+當[!DNL Live Search]已[安裝](install.md)時，當購物者在[搜尋](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search#quick-search)方塊中鍵入時，店面中會出現[!DNL popover]。 輸入每個字元後，[!DNL popover]會以建議的產品和排名最前的搜尋結果的縮圖影像更新。
 
 [!DNL Live Search]傳回兩個或更多字元之查詢的結果。 若為部分相符，則每個字的字元數上限為20。 「鍵入時搜尋」查詢中的字元數無法設定。
 
@@ -33,7 +28,7 @@ ht-degree: 0%
 
 ## [!DNL Popover]頁大小
 
-[!DNL popover]的頁面大小決定可以傳回多少行的自動完成產品。 在Live Search安裝期間，`page_size`值變更為[目錄搜尋](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/catalog.html?lang=zh-Hant) - `Autocomplete Limit`設定的目前值。
+[!DNL popover]的頁面大小決定可以傳回多少行的自動完成產品。 在Live Search安裝期間，`page_size`值變更為[目錄搜尋](https://experienceleague.adobe.com/en/docs/commerce-admin/config/catalog/catalog) - `Autocomplete Limit`設定的目前值。
 
 依預設，「目錄搜尋 — 自動完成限制」值會設定為八行（或數列）。 若要變更[!DNL popover]的頁面大小，請執行下列動作：
 
@@ -129,7 +124,7 @@ ht-degree: 0%
 
 ## 正在停用[!DNL popover]
 
-若要停用[!DNL popover]並還原標準[快速搜尋](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html?lang=zh-Hant#quick-search)功能，請輸入下列命令：
+若要停用[!DNL popover]並還原標準[快速搜尋](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search#quick-search)功能，請輸入下列命令：
 
 ```bash
 bin/magento module:disable Magento_LiveSearchStorefrontPopover

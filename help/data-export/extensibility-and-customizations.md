@@ -5,20 +5,11 @@ autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 694bd281-12c5-415c-a251-b4251e2edea7
 TQID: https://experienceleague.adobe.com/T71zNl7WOrqzEsz4H8A8arx--q6w1B0h33CF2Q0VI4A
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088bid: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
 source-wordcount: 815
 ht-degree: 0%
@@ -39,7 +30,7 @@ ht-degree: 0%
 
 產品摘要包含產品處理所需或消費者常用的預設系統屬性。 您可以將其他系統屬性新增至摘要，以將其納入產品摘要中。
 
-若要完成此工作，請更新`magento/catalog-data-exporter`模組以將其他系統屬性新增到[相依性插入組態檔](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/) (`di.xml`)。
+若要完成此工作，請更新`magento/catalog-data-exporter`模組以將其他系統屬性新增到[相依性插入組態檔](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file) (`di.xml`)。
 
 將屬性新增至產品屬性查詢(`Magento\CatalogDataExporter\Model\Query\ProductAttributeQuery`)。
 
@@ -74,7 +65,7 @@ ht-degree: 0%
 
 1. 視需要新增屬性至屬性集。
 
-請參閱&#x200B;*Adobe Commerce管理指南*&#x200B;中的[建立產品屬性](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create)。
+請參閱&#x200B;*Adobe Commerce管理指南*&#x200B;中的[建立產品屬性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create)。
 
 #### 以程式設計方式建立產品屬性
 
@@ -85,7 +76,7 @@ ht-degree: 0%
 - **`user_defined`=`1`** — 在資料同步處理期間，將屬性匯出至storefront services
 - **`used_in_product_listing`=`1`** — 讓屬性可在產品清單資料庫查詢中存取
 
-如需有關建立資料修補程式的資訊，請參閱&#x200B;*PHP Developer Guide*&#x200B;中的[開發資料與結構描述修補程式](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches/)。
+如需有關建立資料修補程式的資訊，請參閱&#x200B;*PHP Developer Guide*&#x200B;中的[開發資料與結構描述修補程式](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches)。
 
 ### 動態新增產品屬性
 
@@ -163,7 +154,7 @@ class DataSentOutsideObserver implements ObserverInterface
 </event>
 ```
 
-如需有關活動和觀察者的一般資訊，請參閱Adobe Commerce開發人員檔案中的[活動和觀察者](https://developer.adobe.com/commerce/php/development/components/events-and-observers){target="_blank"}。
+如需有關活動和觀察者的一般資訊，請參閱Adobe Commerce開發人員檔案中的[活動和觀察者](https://developer.adobe.com/commerce/php/development/components/events-and-observers/){target="_blank"}。
 
 ## 提交前篩選資料
 

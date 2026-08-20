@@ -5,19 +5,13 @@ role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: bcabccc9-8a2e-4045-9306-1d999bb75624
 TQID: https://experienceleague.adobe.com/YS3jKQ3jmy76aeaqAp1PR8cGpD0euagdhoqL6CoMAnQ
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
-source-wordcount: 467
+source-wordcount: 469
 ht-degree: 0%
 
 ---
@@ -26,13 +20,13 @@ ht-degree: 0%
 
 以下列出您在安裝[!DNL Data Connection]擴充功能時可用的Commerce行為事件。 這些事件收集的資料會傳送至Adobe Experience Platform。 您也可以建立[自訂事件](custom-events.md)，以立即收集未提供的其他資料。
 
-除了下列事件收集的資料之外，您也會取得Adobe Experience Platform Web SDK提供的[其他資料](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html?lang=zh-Hant)。
+除了下列事件收集的資料之外，您也會取得Adobe Experience Platform Web SDK提供的[其他資料](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview)。
 
 行為事件會在購物者瀏覽您的網站時，從他們那裡收集匿名的行為資料。 您可以使用這些事件收集到的資料，建立以特定購物者集為目標的促銷活動和行銷活動。
 
 >[!NOTE]
 >
->所有行為事件都包含[`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html?lang=zh-Hant)欄位，其中包括購物者的電子郵件地址（可用時）和ECID。
+>所有行為事件都包含[`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap)欄位，其中包括購物者的電子郵件地址（可用時）和ECID。
 
 ## 店面活動
 
@@ -58,6 +52,6 @@ ht-degree: 0%
 
 Adobe Commerce的![B2B](../assets/b2b.svg)針對B2B商家，您必須[安裝](install.md#install-the-b2b-extension) `experience-platform-connector-b2b`擴充功能才能存取這些事件。
 
-B2B事件包含[請購單清單](https://experienceleague.adobe.com/docs/commerce-admin/b2b/requisition-lists/requisition-lists.html?lang=zh-Hant)資訊，例如，請購單清單是否已建立、新增或刪除。 透過追蹤請購單清單的特定事件，您可以檢視客戶經常購買哪些產品，並根據該資料建立行銷活動。
+B2B事件包含[請購單清單](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/requisition-lists/requisition-lists)資訊，例如，請購單清單是否已建立、新增或刪除。 透過追蹤請購單清單的特定事件，您可以檢視客戶經常購買哪些產品，並根據該資料建立行銷活動。
 
 請參閱[開發人員檔案](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#data-connection)，深入瞭解B2B事件。

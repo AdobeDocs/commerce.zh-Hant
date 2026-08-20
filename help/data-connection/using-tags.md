@@ -5,28 +5,20 @@ role: Admin, Developer
 feature: Personalization, Integration
 exl-id: dab333e8-5f71-4f3e-9660-6363b0e230c8
 TQID: https://experienceleague.adobe.com/7HNafiIenZfLrAhILPMwuUzRDzBVuClvDchJBGEg6bs
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
-source-wordcount: 2684
+source-wordcount: 2697
 ht-degree: 0%
 
 ---
 
 # 使用Adobe Experience Platform標籤收集Commerce資料
 
-雖然您可以使用[!DNL Data Connection]擴充功能來發佈及訂閱店面活動，但有些商家可能已經在使用資料收集解決方案，例如[Adobe Experience Platform標籤](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html?lang=zh-Hant)。 對於這些商家，Adobe Commerce會在使用Adobe Commerce Event SDK的[!DNL Data Connection]擴充功能中提供僅發佈選項。
+雖然您可以使用[!DNL Data Connection]擴充功能來發佈及訂閱店面活動，但有些商家可能已經在使用資料收集解決方案，例如[Adobe Experience Platform標籤](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/tags/create-a-property)。 對於這些商家，Adobe Commerce會在使用Adobe Commerce Event SDK的[!DNL Data Connection]擴充功能中提供僅發佈選項。
 
 ![[!DNL Data Connection]擴充功能資料流程](assets/tags-data-flow.png)
 _[!DNL Data Connection]含標籤的擴充功能資料流程_
@@ -47,15 +39,15 @@ _[!DNL Data Connection]含標籤的擴充功能資料流程_
 
 若要將Commerce店面資料對應至Adobe Experience Platform，請從Adobe Experience Platform標籤中設定並安裝下列專案：
 
-1. [在Adobe Experience Platform資料彙集中設定標籤屬性](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html?lang=zh-Hant)。
+1. [在Adobe Experience Platform資料彙集中設定標籤屬性](https://experienceleague.adobe.com/en/docs/platform-learn/implement-in-websites/configure-tags/create-a-property)。
 
 1. 在&#x200B;**製作**&#x200B;下，選取&#x200B;**擴充功能**，然後安裝並設定下列擴充功能：
 
-   - [Adobe使用者端資料層](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html?lang=zh-Hant)
+   - [Adobe使用者端資料層](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/client-data-layer/overview)
 
-   - [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=zh-Hant)
+   - [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview)
 
-1. [發佈標籤](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=zh-Hant)至您的開發環境。
+1. [發佈標籤](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview)至您的開發環境。
 
 1. 請依照下列&#x200B;**事件對應**&#x200B;步驟來設定特定事件的資料元素和規則。
 
@@ -71,11 +63,11 @@ _[!DNL Data Connection]含標籤的擴充功能資料流程_
 
 使用Adobe Commerce專屬的事件資料更新Adobe Experience Platform標籤中的資料元素和規則時，建議您採取一些常見步驟。
 
-例如，將Adobe Commerce `signOut`事件新增至Adobe Experience Platform標籤。 除了您設定的特定值外，以下概述的步驟會說明如何新增[資料元素](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html#data-element)和[規則](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html#create-a-rule)，這些規則會套用至您新增至標籤的所有Adobe Commerce事件。
+例如，將Adobe Commerce `signOut`事件新增至Adobe Experience Platform標籤。 除了您設定的特定值外，以下概述的步驟會說明如何新增[資料元素](https://experienceleague.adobe.com/en/docs/experience-platform/tags/ui/data-elements#create-a-data-element)和[規則](https://experienceleague.adobe.com/en/docs/experience-platform/tags/ui/rules#create-a-rule)，這些規則會套用至您新增至標籤的所有Adobe Commerce事件。
 
 1. 建立資料元素：
 
-   !&lbrack;建立新資料元素
+   ![建立新資料元素](assets/create-new-data-elements.png)
    _建立新資料元素_
 
 1. 將&#x200B;**名稱**&#x200B;設為`sign out`。
@@ -88,14 +80,14 @@ _[!DNL Data Connection]含標籤的擴充功能資料流程_
 
 1. 在&#x200B;**userAccount** > **登出**&#x200B;底下，將&#x200B;**訪客登出**&#x200B;中的&#x200B;**值**&#x200B;設定為`1`。
 
-   !&lbrack;更新登出值
+   ![更新登出值](assets/signout-value.png)
    _更新登出值_
 
 1. 選取&#x200B;**儲存**。
 
 1. 建立規則：
 
-   !&lbrack;建立新規則
+   ![建立新規則](assets/create-new-rule.png)
    _建立新規則_
 
 1. 選取&#x200B;**EVENTS**&#x200B;下的&#x200B;**新增**。
@@ -1351,7 +1343,7 @@ _[!DNL Data Connection]含標籤的擴充功能資料流程_
 
 1. 使用ECID的自訂程式碼設定資料元素：
 
-   !&lbrack;使用自訂程式碼設定資料元素
+   ![使用自訂程式碼設定資料元素](assets/set-custom-code-ecid.png)
    _使用自訂程式碼設定資料元素_
 
 1. 選取[!UICONTROL Open Editor]並新增下列自訂程式碼：
@@ -1378,12 +1370,12 @@ _[!DNL Data Connection]含標籤的擴充功能資料流程_
 
 1. 以設為ECID的`identityMap`更新XDM結構描述：
 
-   !&lbrack;將identityMap設為ECID
+   ![將identityMap設為ECID](assets/identity-map-data-element.png)
    _將identityMap設為ECID_
 
 1. 定義擷取ECID的規則動作：
 
-   !&lbrack;擷取ECID
+   ![擷取ECID](assets/rule-retrieve-ecid.png)
    _擷取ECID_
 
 ## 在後台事件中設定身分
@@ -1392,7 +1384,7 @@ _[!DNL Data Connection]含標籤的擴充功能資料流程_
 
 1. 建立身分對應元素。
 
-   !&lbrack;後台身分對應
+   ![後台身分對應](assets/custom-code-backoffice.png)
    _建立後台身分對應_
 
 1. 選取[!UICONTROL Open Editor]並新增下列自訂程式碼：
@@ -1420,26 +1412,26 @@ return IdentityMap;
 
 1. 將此新元素新增至每個`identityMap`欄位。
 
-   !&lbrack;更新每個身分對應
+   ![更新每個身分對應](assets/add-element-back-office.png)
    _更新每個identityMap_
 
 ## 設定同意
 
-當您在Adobe Commerce中安裝[!DNL Data Connection]擴充功能時，預設會啟用資料彙集同意。 選擇退出是透過[`mg_dnt` Cookie](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=zh-Hant)管理。 如果您選擇使用`mg_dnt`管理同意，可以依照這裡概述的步驟進行。 [Adobe Experience Platform Web SDK檔案](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html?lang=zh-Hant)提供幾個管理同意的其他選項。
+當您在Adobe Commerce中安裝[!DNL Data Connection]擴充功能時，預設會啟用資料彙集同意。 選擇退出是透過[`mg_dnt` Cookie](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law)管理。 如果您選擇使用`mg_dnt`管理同意，可以依照這裡概述的步驟進行。 [Adobe Experience Platform Web SDK檔案](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview)提供幾個管理同意的其他選項。
 
 1. 為`mg_dnt` Cookie建立&#x200B;**核心自訂程式碼**&#x200B;資料元素(`%do not track cookie%`)：
 
-   !&lbrack;建立不追蹤資料元素
+   ![建立不追蹤資料元素](assets/element-dnt-cookie.png)
    _建立不追蹤資料元素_
 
 1. 建立&#x200B;**核心自訂程式碼**&#x200B;資料元素(`%consent%`)，如果設定Cookie，會傳回`out`，否則會傳回`in`：
 
-   !&lbrack;建立同意資料元素
+   ![建立同意資料元素](assets/element-consent-dnt-cookie.png)
    _建立同意資料元素_
 
 1. 使用`%consent%`資料元素設定Adobe Experience Platform Web SDK擴充功能：
 
-   !&lbrack;經同意更新SDK
+   ![經同意更新SDK](assets/config-sdk-consent.png)
    _經同意更新SDK_
 
 ## 警告
