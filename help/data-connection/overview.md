@@ -4,10 +4,23 @@ description: 瞭解如何使用 [!DNL Data Connection] 擴充功能整合Adobe C
 recommendations: noCatalog
 exl-id: 660f9337-cad8-47fb-a959-0770f0fd813c
 TQID: https://experienceleague.adobe.com/-wfkGM2isTVmAaJokndxVy0-UtZ4pM9msYXmh2IE-Hc
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
 source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
 source-wordcount: 1399
@@ -94,7 +107,7 @@ Adobe Experience Platform提供了一套技術，可在與Commerce商店中的�
 
 1. [安裝](install.md) [!DNL Data Connection]延伸模組。
 1. [登入](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html)您的Adobe帳戶，並[檢視以確認](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255)您的組織識別碼。 組織ID是與已布建Experience Cloud公司相關聯的ID。 此ID是24個字元的英數字串，後面接著（而且必須包含） `@AdobeOrg`。
-1. 確定您擁有Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions)中資料收集的[許可權。
+1. 確定您擁有Experience Platform[&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/collection/permissions)中資料收集的許可權。
 1. 檢閱您可以收集及傳送的[資料型別](data-ingestion.md)。
 1. 使用Commerce特定的欄位群組建立或更新您的[時間序列事件結構描述](update-xdm.md)或[設定檔記錄資料結構描述](profile-data.md)。
 1. [根據您建立或更新的結構描述建立資料集](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform#create-a-dataset)。 此資料集包含傳送至Experience Platform Edge的Commerce資料。
