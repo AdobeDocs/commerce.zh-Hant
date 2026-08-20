@@ -1,5 +1,5 @@
 ---
-source-git-commit: 039f848c37235195a3ffcc90238dad77513a9ec3
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 0%
@@ -93,7 +93,7 @@ Adobe Commerce身分管理和驗證由Adobe Identity Management系統(IMS)透過
 
 | 服務 | 擴充性 | 店面 |
 | --- | --- | --- |
-| <ul><li>[目錄服務](../catalog-service/release-notes.md)</li><li>[即時搜尋](../live-search/release-notes.md)</li><li>[付款服務](../payment-services/release-notes.md)</li><li>[產品建議](../product-recommendations/release-notes.md)</li><li>[SaaS資料匯出](../data-export/release-notes.md)</li></ul> | <ul><li>[管理UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/)</li><li>[API網格](https://developer.adobe.com/graphql-mesh-gateway/mesh/release)</li><li>[個活動](https://developer.adobe.com/commerce/extensibility/events/release-notes/)</li><li>[Webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/)</li></ul> | <ul><li>[發行資訊](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=zh-Hant)</li><li>[變更記錄檔](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=zh-Hant)</li></ul> |
+| <ul><li>[目錄服務](../catalog-service/release-notes.md)</li><li>[即時搜尋](../live-search/release-notes.md)</li><li>[付款服務](../payment-services/release-notes.md)</li><li>[產品建議](../product-recommendations/release-notes.md)</li><li>[SaaS資料匯出](../data-export/release-notes.md)</li></ul> | <ul><li>[管理UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/)</li><li>[API網格](https://developer.adobe.com/graphql-mesh-gateway/mesh/release/)</li><li>[個活動](https://developer.adobe.com/commerce/extensibility/events/release-notes/)</li><li>[Webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/)</li></ul> | <ul><li>[發行資訊](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=zh-Hant)</li><li>[變更記錄檔](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=zh-Hant)</li></ul> |
 
 ## Adobe Commerce Optimizer服務發行說明 {#aco-release}
 

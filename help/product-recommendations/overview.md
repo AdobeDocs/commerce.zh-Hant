@@ -17,9 +17,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 738
+source-wordcount: 744
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 [!DNL Product Recommendations]的資料收集不含任何個人識別資訊(PII)。 所有使用者識別碼（例如Cookie ID和IP位址）都需嚴格匿名處理。 若要進一步瞭解，請參閱[Adobe隱私權原則](https://www.adobe.com/privacy/policy.html)。
 
-如需資料同步的詳細資訊，請參閱[資料管理儀表板](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=zh-Hant)。
+如需資料同步的詳細資訊，請參閱[資料管理儀表板](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)。
 
 ## 建議出現的位置
 
@@ -58,7 +58,7 @@ Recommendations會以有標籤的單位的形式出現在店面上，例如「�
 
 ## 產品建議與產品關係
 
-考慮到線上購物不斷變化的複雜性，最適合店面的往往是多種關鍵技術的組合。 同時使用[!DNL Product Recommendations]和[產品關係](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships.html?lang=zh-Hant)可讓您在促銷產品時擁有更多彈性。 您可以運用Adobe AI支援的[!DNL Product Recommendations]，以智慧化方式大規模自動化您的建議。 然後，當您必須手動介入並確保向目標購物者區段提出特定建議，或當必須達成某些業務目標時，您可以運用[相關產品規則](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules.html?lang=zh-Hant)。
+考慮到線上購物不斷變化的複雜性，最適合店面的往往是多種關鍵技術的組合。 同時使用[!DNL Product Recommendations]和[產品關係](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships)可讓您在促銷產品時擁有更多彈性。 您可以運用Adobe AI支援的[!DNL Product Recommendations]，以智慧化方式大規模自動化您的建議。 然後，當您必須手動介入並確保向目標購物者區段提出特定建議，或當必須達成某些業務目標時，您可以運用[相關產品規則](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules)。
 
 產品建議可讓您：
 
@@ -82,4 +82,4 @@ Recommendations會以有標籤的單位的形式出現在店面上，例如「�
 
 ### 重新啟用目錄資料
 
-若要在休眠後還原目錄資料，[提交標題為「重新啟用[!DNL Product Recommendations]」的支援請求](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)並包含環境ID。 目錄資料應會在數小時內還原。
+若要在休眠後還原目錄資料，[提交標題為「重新啟用[!DNL Product Recommendations]」的支援請求](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page)並包含環境ID。 目錄資料應會在數小時內還原。

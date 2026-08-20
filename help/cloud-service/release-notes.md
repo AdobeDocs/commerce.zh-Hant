@@ -33,7 +33,7 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 last-update: 2026-08-07
-source-git-commit: ecaeba0d36376bf7f9ac864135cbf225c7fd8634
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
 source-wordcount: 5345
 ht-degree: 0%
@@ -88,7 +88,7 @@ ht-degree: 0%
 >
 >此功能預設為停用。 若要啟用此功能，請聯絡您的Adobe Commerce客戶成功經理或建立支援票證。
 
-新的[REST API端點](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/order-management)復寫[!DNL Commerce Admin] [!UICONTROL **編輯順序**]&#x200B;功能，可讓整合以程式設計方式編輯順序：
+新的[REST API端點](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/order-management/)復寫[!DNL Commerce Admin] [!UICONTROL **編輯順序**]&#x200B;功能，可讓整合以程式設計方式編輯順序：
 
 | 方法 | 端點 | 說明 |
 | --- | --- | --- |
@@ -125,7 +125,7 @@ ht-degree: 0%
 >
 >此功能屬於實驗性質，必須透過聯絡您的Adobe Commerce客戶成功經理或建立支援票證來啟用。
 
-新的[`orderChain` REST API端點](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/order-management)可讓整合使用其ID修改訂單，並自動解析已編輯訂單的完整鏈結：
+新的[`orderChain` REST API端點](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/order-management/)可讓整合使用其ID修改訂單，並自動解析已編輯訂單的完整鏈結：
 
 | 方法 | 端點 | 說明 |
 | --- | --- | --- |

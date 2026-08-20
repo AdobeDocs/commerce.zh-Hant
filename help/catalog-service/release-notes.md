@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 1375139292fb11df9406948010916dbd2507ef4e
+source-git-commit: 60df4a608155a4f8ff8b4bf57cfd625aa1b3ccea
 workflow-type: tm+mt
-source-wordcount: 3063
+source-wordcount: 3064
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ ht-degree: 0%
 **發行日期**：2026年5月4日
 <!-- v1.53 -->
 
-![Fix](../assets/fix.svg)店面產品價格現在會顯示所有產品型別的正確貨幣代碼（例如USD）。 之前，部分產品顯示`NONE`而非預期的貨幣，導致價格遺失。 此更新可確保跨店面一致且精確的價格呈現。<!--DATA-7115-->
+![修正](../assets/fix.svg)店面產品價格現在針對所有產品型別顯示正確的貨幣代碼（例如USD）。 之前，部分產品顯示`NONE`而非預期的貨幣，導致價格遺失。 此更新可確保跨店面一致且精確的價格呈現。<!--DATA-7115-->
 
 ### 2026年4月
 
@@ -449,7 +449,7 @@ query {
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
-![新增](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=zh-Hant)現在可用於資料串流（產品推薦、即時搜尋、目錄服務）。 需要`catalog-service`個中繼封裝v3.1.0+。
+![新增](../assets/new.svg) [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)現在可用於資料串流（產品推薦、即時搜尋、目錄服務）。 需要`catalog-service`個中繼封裝v3.1.0+。
 
 **發行日期**： 2024年2月13日
 <!-- v1.16 -->
@@ -694,9 +694,9 @@ query {
 
   - [目錄服務指南](overview.md)
   - [目錄服務GraphQL API參考](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/)
-  - [Adobe Commerce管理指南](https://experienceleague.adobe.com/en/docs/commerce-admin/)
-  - [Adobe Commerce as a Cloud Service指南](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/)
-  - [雲端上的Adobe Commerce指南](https://experienceleague.adobe.com/en/docs/commerce-cloud/)
+  - [Adobe Commerce管理指南](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/user-guides/home)
+  - [Adobe Commerce as a Cloud Service指南](../cloud-service/overview.md)
+  - [雲端上的Adobe Commerce指南](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/overview)
 
 - 對於使用&#x200B;**Adobe Commerce Optimizer**&#x200B;或&#x200B;**Adobe Commerce Optimizer Connector**&#x200B;的專案，請參閱下列檔案：
 

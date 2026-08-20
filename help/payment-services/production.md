@@ -3,9 +3,9 @@ title: '為生產啟用 [!DNL Payment Services] '
 description: 啟用 [!DNL Payment Services] 以進行生產，以完成入門流程。
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install, Paas, Saas
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: '1043'
+source-wordcount: '1081'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
    您被導向到[首頁]檢視中的設定區域，相關選項已展開(**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_)，您可以在此啟用[!DNL Payment Services]選項做為您的[付款方式](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"}。
 
 1. 在&#x200B;_[!UICONTROL General Configuration]_&#x200B;中，將&#x200B;**[!UICONTROL Enable]**&#x200B;設為`Yes`。
-1. 將&#x200B;**[!UICONTROL Payment Action]**&#x200B;和&#x200B;_[!UICONTROL Credit Card Fields]_&#x200B;的_[!UICONTROL PayPal payment buttons]_&#x200B;設定為下列其中一項：
+1. 將&#x200B;_[!UICONTROL Credit Card Fields]_&#x200B;和_[!UICONTROL PayPal payment buttons]_&#x200B;的&#x200B;**[!UICONTROL Payment Action]**&#x200B;設定為下列其中一項：
 
    | 設定 | 說明 |
    |---|---|
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 1. 按一下&#x200B;**[!UICONTROL Save]**。
 1. 按一下&#x200B;**[!UICONTROL Go to Payment Services]**&#x200B;以導向回[!DNL Payment Services]首頁。
-1. [清除您的快取](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html?lang=zh-Hant)。
+1. [清除您的快取](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/tools/cache-management)。
 
    應在每次設定變更後進行清除。
 
@@ -117,14 +117,14 @@ ht-degree: 0%
 
    >[!IMPORTANT]
    >
-   >如果您撤銷[!DNL Payment Services]與[!DNL Adobe Commerce]對[!DNL Magento Open Source]的同意，以處理您的付款（在您的PayPal帳戶設定中），則[!DNL Payment Services]無法處理您商店中的訂單。 在您的「付款服務首頁」上，會出現有關撤銷同意的警報。
+   >如果您撤銷[!DNL Adobe Commerce]與[!DNL Magento Open Source]對[!DNL Payment Services]的同意，以處理您的付款（在您的PayPal帳戶設定中），則[!DNL Payment Services]無法處理您商店中的訂單。 在您的「付款服務首頁」上，會出現有關撤銷同意的警報。
 
 ## 向Adobe要求付款權益
 
 若要讓您的商店上線，請向Adobe要求付款權益（僅限[進階上線](#advanced-onboarding)）：
 
 1. 在&#x200B;_管理員_&#x200B;側邊欄上，移至&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**。
-1. 在您的&#x200B;**[!UICONTROL Get Live Payments]**&#x200B;首頁按一下[!DNL Payment Services]。
+1. 在您的[!DNL Payment Services]首頁按一下&#x200B;**[!UICONTROL Get Live Payments]**。
 
    ![要求權益](assets/request-entitlements.png){width="500" zoomable="yes"}
 

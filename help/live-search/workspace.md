@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 2318
+source-wordcount: 2323
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 ## 設定範圍
 
-所有[!DNL Live Search]設定的[領域](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hant#scope-settings)最初設定為`Default Store View`。 如果您的[!DNL Commerce]安裝包含多個存放區檢視，請將&#x200B;**範圍**&#x200B;設定為您的Facet設定套用的[存放區檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hant)。
+所有[!DNL Live Search]設定的[領域](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)最初設定為`Default Store View`。 如果您的[!DNL Commerce]安裝包含多個存放區檢視，請將&#x200B;**範圍**&#x200B;設定為您的Facet設定套用的[存放區檢視](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/setup/websites-stores-views)。
 
 ## 功能表選項
 
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 ## 將屬性設定為可搜尋
 
-若要產生高針對性的結果，請檢閱[可搜尋](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=zh-Hant) (`searchable=true`)產品屬性集。 為確保關聯性，請讓屬性只有在包含具有清晰精簡含義的內容時才可供搜尋。 避免使用包含較不精確、長度較長的文字的屬性，例如`description`，雖然預設會啟用搜尋，但可能會降低搜尋結果的精確度。 例如，如果有人搜尋「短褲」，而且有描述包含「短袖」字樣的襯衫，則這些襯衫會包含在搜尋結果中。
+若要產生高針對性的結果，請檢閱[可搜尋](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/product-attributes/product-attributes) (`searchable=true`)產品屬性集。 為確保關聯性，請讓屬性只有在包含具有清晰精簡含義的內容時才可供搜尋。 避免使用包含較不精確、長度較長的文字的屬性，例如`description`，雖然預設會啟用搜尋，但可能會降低搜尋結果的精確度。 例如，如果有人搜尋「短褲」，而且有描述包含「短袖」字樣的襯衫，則這些襯衫會包含在搜尋結果中。
 
 若要允許搜尋屬性，請完成下列步驟：
 
@@ -69,7 +69,7 @@ ht-degree: 0%
 1. 選取您要搜尋的屬性，例如`color`。
 1. 選取&#x200B;**店面內容**&#x200B;並將&#x200B;**在搜尋中使用**&#x200B;設定為`yes`。
 
-[!DNL Live Search]也會遵從產品屬性的[權重](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html?lang=zh-Hant#weighted-search)，如在Adobe Commerce中所設定。 權重較高的屬性會顯示在搜尋結果中較高的位置。
+[!DNL Live Search]也會遵從產品屬性的[權重](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)，如在Adobe Commerce中所設定。 權重較高的屬性會顯示在搜尋結果中較高的位置。
 
 下列屬性一律可供搜尋：
 
@@ -104,21 +104,21 @@ ht-degree: 0%
 
 - **分層搜尋** — 在另一個搜尋內容中搜尋 — 使用此功能，您最多可以執行兩個層級的搜尋來搜尋您的搜尋查詢。 例如：
 
-   - **第1層搜尋** — 在`product_attribute_1`上搜尋「馬達」。
-   - **第2層搜尋** — 搜尋`product_attribute_2`上的「零件編號123」。 此範例會在結果中搜尋「馬達」的「零件編號123」。
+  - **第1層搜尋** — 在`product_attribute_1`上搜尋「馬達」。
+  - **第2層搜尋** — 搜尋`product_attribute_2`上的「零件編號123」。 此範例會在結果中搜尋「馬達」的「零件編號123」。
 
   分層搜尋可用於分層搜尋的第二層中的`startsWith`搜尋索引和`contains`搜尋索引，如下所述：
 
 - **startsWith搜尋索引** — 使用`startsWith`索引搜尋。 這項新功能可讓：
 
-   - 搜尋屬性值以指定字串開頭的產品。
-   - 設定「結尾為」搜尋，讓購物者可以搜尋屬性值結尾為特定字串的產品。 若要啟用「結尾為」搜尋，產品屬性需要反向擷取，且API呼叫也應該為反向字串。 例如，如果您想要搜尋結尾為「pants」的產品名稱，您必須將此專案傳送為「stap」。
+  - 搜尋屬性值以指定字串開頭的產品。
+  - 設定「結尾為」搜尋，讓購物者可以搜尋屬性值結尾為特定字串的產品。 若要啟用「結尾為」搜尋，產品屬性需要反向擷取，且API呼叫也應該為反向字串。 例如，如果您想要搜尋結尾為「pants」的產品名稱，您必須將此專案傳送為「stap」。
 
 - **包含搜尋索引** — 使用搜尋包含索引的屬性。 這項新功能可讓：
 
-   - 在較大的字串中搜尋查詢。 例如，如果購物者搜尋字串「HAPE-123」中的產品編號「PE-123」。
+  - 在較大的字串中搜尋查詢。 例如，如果購物者搜尋字串「HAPE-123」中的產品編號「PE-123」。
 
-      - 注意：此搜尋型別與執行自動完成搜尋的現有[片語搜尋](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#phrase)不同。 例如，如果您的產品屬性值是&quot;outdoor pants&quot;，則短語搜尋會傳回&quot;out pan&quot;的回應，但不會傳回&quot;oor ants&quot;的回應。 但是，「包含搜尋」會傳回「或螞蟻」的回應。
+    - 注意：此搜尋型別與執行自動完成搜尋的現有[片語搜尋](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#phrase)不同。 例如，如果您的產品屬性值是&quot;outdoor pants&quot;，則短語搜尋會傳回&quot;out pan&quot;的回應，但不會傳回&quot;oor ants&quot;的回應。 但是，「包含搜尋」會傳回「或螞蟻」的回應。
 
 這些新條件會增強搜尋查詢篩選機制，以縮小搜尋結果。 這些新條件不會影響主要搜尋查詢。
 
@@ -203,7 +203,7 @@ ht-degree: 0%
 
 ## 預設屬性值
 
-下列產品屬性具有[店面屬性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=zh-Hant)，已由[!DNL Live Search]使用並預設啟用。
+下列產品屬性具有[店面屬性](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/product-attributes/product-attributes)，已由[!DNL Live Search]使用並預設啟用。
 
 | 屬性 | 店面屬性 | 屬性 |
 |---|---|---|

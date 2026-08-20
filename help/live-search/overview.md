@@ -15,9 +15,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: f7ea996f3adcd3beb2a9c064ce57d251f49ae5b3
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 1195
+source-wordcount: 1201
 ht-degree: 1%
 
 ---
@@ -121,10 +121,10 @@ ht-degree: 1%
 
 ### 非使用中的測試環境
 
-若要在您的測試環境中重新啟用目錄資料，請[提交標題為「重新啟用[!DNL Live Search]」的支援請求](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)，並包含環境ID。 您測試環境中的目錄資料應在數小時內還原。
+若要在您的測試環境中重新啟用目錄資料，請[提交標題為「重新啟用[!DNL Live Search]」的支援請求](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page)，並包含環境ID。 您測試環境中的目錄資料應在數小時內還原。
 
 ### 清空目錄
 
 如果您的環境在建立後45天內有空白目錄，則目錄資料會設定為休眠模式，且任何搜尋查詢都不會傳回任何資料。 這包括生產和測試環境。
 
-若要在您的環境中重新啟用目錄資料，請[提交標題為「重新啟用[!DNL Live Search]」的支援請求](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page)，並包含環境ID。 您環境中的目錄資料應在數小時內還原。
+若要在您的環境中重新啟用目錄資料，請[提交標題為「重新啟用[!DNL Live Search]」的支援請求](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page)，並包含環境ID。 您環境中的目錄資料應在數小時內還原。

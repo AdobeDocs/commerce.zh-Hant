@@ -16,9 +16,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
-source-wordcount: 1395
+source-wordcount: 1404
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ retailer實現了全球性的多品牌服飾：
 
 ### 什麼是Adobe Journey Optimizer？
 
-[Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html?lang=zh-Hant)可協助您為購物者打造個人化的商務體驗。 例如，您可以使用Journey Optimizer建立並傳送排程行銷活動（例如零售商店的每週促銷活動），或如果客戶將產品加入購物車但未完成結帳程式，則產生放棄的購物車電子郵件。
+[Adobe Journey Optimizer](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/get-started/essentials/get-started)可協助您為購物者打造個人化的商務體驗。 例如，您可以使用Journey Optimizer建立並傳送排程行銷活動（例如零售商店的每週促銷活動），或如果客戶將產品加入購物車但未完成結帳程式，則產生放棄的購物車電子郵件。
 
 在此主題中，您將瞭解如何藉由聆聽從您的[!DNL Commerce]執行個體產生的`checkout`事件並在Journey Optimizer中回應該事件，建置捨棄的購物車電子郵件。
 
@@ -96,7 +96,7 @@ retailer實現了全球性的多品牌服飾：
 
 在您的[!DNL Commerce]沙箱環境中，檢視產品頁面、將專案新增至購物車並完成購物者將執行的各種其他活動，以觸發店面上的事件。 然後，確認這些事件正在流入Journey Optimizer。
 
-1. 啟動[Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html?lang=zh-Hant)。
+1. 啟動[Adobe Journey Optimizer](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/get-started/work-efficiently/user-interface)。
 1. 選取&#x200B;**[!UICONTROL Profiles]**。
 1. 將&#x200B;**[!UICONTROL Identity namespace]**&#x200B;設為`Email`。
 1. 將&#x200B;**[!UICONTROL Identity value]**&#x200B;設定為您的電子郵件地址。
@@ -125,7 +125,7 @@ retailer實現了全球性的多品牌服飾：
 
 ### 建立監聽器事件
 
-1. 啟動[Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html?lang=zh-Hant)。
+1. 啟動[Adobe Journey Optimizer](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/get-started/work-efficiently/user-interface)。
 
 1. 按一下左窗格&#x200B;**[!UICONTROL Administration]**&#x200B;區段下的&#x200B;**[!UICONTROL Configurations]**。
 
@@ -198,7 +198,7 @@ retailer實現了全球性的多品牌服飾：
 
 1. 在您上述建立的歷程中，按兩下畫布上的&#x200B;**[!UICONTROL Email]**&#x200B;圖示。
 
-1. 依照Journey Optimizer指南中的[步驟](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/personalization/personalization-use-cases/personalization-use-case-helper-functions.html?lang=zh-Hant#configure-email)建立捨棄的購物車電子郵件。
+1. 依照Journey Optimizer指南中的[步驟](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/content-management/personalization/personalization-use-cases/personalization-use-case-helper-functions#configure-email)建立捨棄的購物車電子郵件。
 
 您現在在Journey Optimizer中有一個從您的[!DNL Commerce]商店監聽`commerce.checkouts`事件的歷程，以及一個一段時間後傳送的捨棄購物車電子郵件。 下一節將說明如何測試歷程。
 

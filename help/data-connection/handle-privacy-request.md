@@ -21,9 +21,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 598
+source-wordcount: 595
 ht-degree: 1%
 
 ---
@@ -41,8 +41,8 @@ Adobe Experience Platform Privacy Service提供RESTful API和使用者介面，�
 
 您可以透過兩種方式提交個別請求，以從[!DNL Commerce]存取和刪除消費者資料：
 
-* 透過&#x200B;**Privacy Service UI**。 請參閱檔案[這裡](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/privacy/ui/user-guide#_blank)。
-* 透過&#x200B;**Privacy Service API**。 請參閱檔案[這裡](https://developer.adobe.com/experience-platform-apis/references/privacy-service/#_blank)和API資訊[這裡](https://developer.adobe.com/experience-platform-apis/#_blank)。
+* 透過&#x200B;**Privacy Service UI**。 請參閱檔案[這裡](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/privacy/ui/user-guide){target="_blank"}。
+* 透過&#x200B;**Privacy Service API**。 請參閱檔案[這裡](https://developer.adobe.com/experience-platform-apis/references/privacy-service){target="_blank"}和API資訊[這裡](https://developer.adobe.com/experience-platform-apis/){target="_blank"}。
 
 Privacy Service支援兩種請求： **資料存取**&#x200B;和&#x200B;**資料刪除**。
 

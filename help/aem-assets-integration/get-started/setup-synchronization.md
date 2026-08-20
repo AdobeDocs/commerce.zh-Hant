@@ -16,9 +16,9 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 0c2e50338cbf286704239b6d1f628180e85a3bef
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
-source-wordcount: 965
+source-wordcount: 966
 ht-degree: 2%
 
 ---
@@ -80,7 +80,7 @@ ht-degree: 2%
 1. 從&#x200B;**[!UICONTROL Asset matching rule]**&#x200B;下拉式清單中選取其中一個資產比對規則以進行資產同步。
 
    * 選取[預設自動比對](../synchronize/default-match.md)的&#x200B;**[!UICONTROL Match by SKU]**，
-   * 選取&#x200B;**[!UICONTROL Custom match]**&#x200B;進行[自訂自動比對](../synchronize/custom-match.md) （需要[Adobe Developer App Builder](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder)。）
+   * 選取&#x200B;**[!UICONTROL Custom match]**&#x200B;進行[自訂自動比對](../synchronize/custom-match.md) （需要[Adobe Developer App Builder](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)。）
 
 1. 新增在&#x200B;**[!UICONTROL Match by product SKU attribute name]**&#x200B;欄位中為AEM Assets產品SKU定義的[Commerce中繼資料欄位名稱](configure-aem.md#define-the-metadata-profile)，預設為`commerce:skus`。
 

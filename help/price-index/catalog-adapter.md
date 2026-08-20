@@ -12,7 +12,7 @@ feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 75da477c3725f754495f5b13f99d65c66a2bf5ae
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
 source-wordcount: 775
 ht-degree: 0%
@@ -64,7 +64,7 @@ Catalog Adapter擴充功能是Composer中繼套件，可安裝下列模組：
 
    >[!NOTE]
    >
-   >如需有關在本機管理Commerce專案環境的資訊，請參閱《雲端基礎結構使用手冊》中&#x200B;_Adobe Commerce的[使用CLI管理分支](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/develop/cli-branches)_。
+   >如需有關在本機管理Commerce專案環境的資訊，請參閱《雲端基礎結構使用手冊》中&#x200B;_Adobe Commerce的[使用CLI管理分支](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/cli-branches)_。
 
 1. 檢視環境分支，以使用Adobe Commerce Cloud CLI進行更新。
 

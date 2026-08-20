@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 2abebf247603b37a28eb6f4653d63e83aa5d9fd5
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: '5483'
+source-wordcount: '5478'
 ht-degree: 0%
 
 ---
@@ -447,7 +447,7 @@ _2024年3月20日_
 
 ![新的](../assets/new.svg)<!-- PAY-4868 -->商戶可透過管理員成功[設定Google Pay的整個購買體驗](payments-options.md)，類似於[!DNL Payment Services]中的其他付款按鈕。
 
-![新增](../assets/new.svg)<!-- PAY-4381 --> [Payment Services透過GraphQL支援Google Pay](https://developer.adobe.com/commerce/webapi/graphql/payment-services/)，讓商戶可以使用Google Pay付款方式取得Headless Commerce體驗。
+![新增](../assets/new.svg)<!-- PAY-4381 --> [Payment Services透過GraphQL支援Google Pay](https://developer.adobe.com/commerce/webapi/graphql/payment-services-extension/)，讓商戶可以使用Google Pay付款方式取得Headless Commerce體驗。
 
 ![新增](../assets/new.svg)<!-- PAY-4878 -->現在，[!DNL Payment Services]基本簽出功能已針對Adobe Commerce和Magento Open Source商家整合。[!DNL Payment Services] 現在可以支援業務遍及全球200個地區的商家。[!DNL Payment Services] 基本結帳功能在自助入門中提供借記/貸記、PayPal、Venmo （可用時）和PayLater （可用時）選項。
 
@@ -491,7 +491,7 @@ _2023年12月7日_
 
 - 店面的客戶訂單頁面
 - 訂單確認電子郵件已傳送給購物者
-- 從Commerce管理員的[訂單詳細資料檢視](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-processing.html?lang=zh-Hant#view-an-order)。
+- 從Commerce管理員的[訂單詳細資料檢視](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/order-management/orders/order-processing#view-an-order)。
 
 ## v2.3.0
 
@@ -499,7 +499,7 @@ _2023年12月1日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
-![新增](../assets/new.svg)<!-- PAY-4381 --> [付款服務現在支援GraphQL整合](https://developer.adobe.com/commerce/webapi/graphql/payment-services/)。 透過GraphQL對PayPal付款按鈕、託管欄位和Apple Pay的支援，[!DNL Payment Services]現在可支援Headless Commerce設定。
+![新增](../assets/new.svg)<!-- PAY-4381 --> [付款服務現在支援GraphQL整合](https://developer.adobe.com/commerce/webapi/graphql/payment-services-extension/)。 透過GraphQL對PayPal付款按鈕、託管欄位和Apple Pay的支援，[!DNL Payment Services]現在可支援Headless Commerce設定。
 
 ## v2.2.1
 
@@ -615,7 +615,7 @@ _2022年11月18日_
 
 ![新](../assets/new.svg)<!-- Issue PAY-3880 -->購物者現在可以在結帳時[儲存其信用卡資訊](vaulting.md)，以便稍後為相同商家帳戶內的相同或其他商店購買。
 
-![新](../assets/new.svg)<!-- Issue PAY-3950 -->商戶現在可以為其商店啟用[立即購買Commerce功能](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html?lang=zh-Hant)，讓購物者可以（使用[保管式信用卡資訊](vaulting.md)）加快結帳速度。
+![新](../assets/new.svg)<!-- Issue PAY-3950 -->商戶現在可以為其商店啟用[立即購買Commerce功能](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase)，讓購物者可以（使用[保管式信用卡資訊](vaulting.md)）加快結帳速度。
 
 ## v1.4.1
 
@@ -673,7 +673,7 @@ _2022年6月29日_
 
 ![已修正問題](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 -->當Commerce Services認證無效時，[!DNL Payment Services]現在會從Admin的[!DNL Payment Services]首頁顯示認證錯誤，以警示您。
 
-![已知問題](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services]與`commerce-data-export` v101.20和更新版本不相容，這會使其與[[!DNL Channel manager] 擴充功能](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html?lang=zh-Hant)不相容。
+![已知問題](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services]與`commerce-data-export` v101.20和更新版本不相容，這會使其與[[!DNL Channel manager] 擴充功能](https://experienceleague.adobe.com/zh-hant/docs/discontinued/using/commerce-channels) （已停止）不相容。
 
 ## v1.1.0
 
@@ -701,7 +701,7 @@ _2022年3月31日_
 
 ![已修正問題](../assets/fix.svg)<!-- Issue PAY-2561 -->先前移除的產品未出現在&#x200B;_檢閱訂單_&#x200B;頁面的購物車中。
 
-![已知問題](../assets/bug.svg)<!-- Issue PAY-2842 -->在沙箱環境中處理付款時，透過PayPal測試信用卡交易[可能會失敗](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=zh-Hant)。
+![已知問題](../assets/bug.svg)<!-- Issue PAY-2842 -->在沙箱環境中處理付款時，透過PayPal測試信用卡交易[可能會失敗](https://experienceleague.adobe.com/zh-hant/docs/experience-cloud-kcs/kbarticles/ka-26825)。
 
 ## v1.0.0
 
@@ -725,9 +725,9 @@ _2021年11月29日_
 
 ![新增](../assets/new.svg)<!-- Issue PAY-1443 -->您可以輕鬆[自訂[!DNL Payment Services]分機的PayPal付款按鈕和信用卡欄位的外觀與風格](payments-options.md)。
 
-![已知問題](../assets/bug.svg)<!-- Issue PAY-2473 -->在安裝擴充功能期間使用[不正確的撰寫器金鑰](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=zh-Hant)，會導致使用者無法[使用正確的`MAGEID`驗證](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)。
+![已知問題](../assets/bug.svg)<!-- Issue PAY-2473 -->在安裝擴充功能期間使用[不正確的撰寫器金鑰](https://experienceleague.adobe.com/zh-hant/docs/experience-cloud-kcs/kbarticles/ka-26826)，會導致使用者無法[使用正確的`MAGEID`驗證](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)。
 
-![已知問題](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services]報告[可能無法立即同步](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html?lang=zh-Hant)。
+![已知問題](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services]報告[可能無法立即同步](https://experienceleague.adobe.com/zh-hant/docs/experience-cloud-kcs/kbarticles/ka-26837)。
 
-![已知問題](../assets/bug.svg)<!-- Issue PAY-2475 -->如果您在上線期間建立您的[!DNL Payment Services]的[PayPal沙箱帳戶](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html?lang=zh-Hant)，則無法驗證該帳戶。
+![已知問題](../assets/bug.svg)<!-- Issue PAY-2475 -->如果您在上線期間建立您的[!DNL Payment Services]的[PayPal沙箱帳戶](https://experienceleague.adobe.com/zh-hant/docs/experience-cloud-kcs/kbarticles/ka-26836)，則無法驗證該帳戶。
 

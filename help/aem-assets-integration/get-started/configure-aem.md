@@ -14,9 +14,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: da3860b0-d637-47df-bef0-273751180266
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 0c2e50338cbf286704239b6d1f628180e85a3bef
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 1741
+source-wordcount: 1744
 ht-degree: 1%
 
 ---
@@ -146,12 +146,12 @@ ht-degree: 1%
 
 * 標題：啟用Dynamic Media OpenAPI以將Adobe Commerce與AEM Assets完全整合
 
-   * 支援票證的內容：
+  * 支援票證的內容：
 
-      * **[!UICONTROL AEM Program ID]**
-      * **[!UICONTROL Adobe Commerce URL]**
-      * **[!UICONTROL AEM Environment ID]**
-      * **[!UICONTROL IMS Org ID]**
+    * **[!UICONTROL AEM Program ID]**
+    * **[!UICONTROL Adobe Commerce URL]**
+    * **[!UICONTROL AEM Environment ID]**
+    * **[!UICONTROL IMS Org ID]**
 
 提交支援票證後，Adobe會在您的雲端服務環境中啟用具有OpenAPI功能的Dynamic Media，並共用詳細資訊（例如IMS使用者端ID），以便您繼續整合。
 
@@ -209,7 +209,7 @@ ht-degree: 1%
 
 1. 將&#x200B;**checkbox**&#x200B;元件拖放至&#x200B;**Commerce**&#x200B;標籤，並將其對應至屬性`commerce:isCommerce`。 將&#x200B;**是**&#x200B;和&#x200B;**否**&#x200B;定義為選項。
 
-如果您遇到任何其他問題，請建立[支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)或聯絡您的AEM Assets整合銷售代表以尋求協助。
+如果您遇到任何其他問題，請建立[支援票證](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)或聯絡您的AEM Assets整合銷售代表以尋求協助。
 
 ## 設定中繼資料設定檔（選用）
 

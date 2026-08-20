@@ -22,7 +22,7 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
 source-wordcount: 1738
 ht-degree: 0%
@@ -318,7 +318,7 @@ cp RATINGS_API_CONTRACT.md ../storefront
    您應該會在開發環境和瀏覽器中看到下列變更：
 
    * 系統會自動建立產品評等元件。
-   * 元件已使用[插入式插槽](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots?lang=zh-Hant)整合到PDP中，或作為獨立區塊，視選擇的架構而定。
+   * 元件已使用[插入式插槽](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots/?lang=zh-Hant)整合到PDP中，或作為獨立區塊，視選擇的架構而定。
    * 根據API的評等值，星級會以適當的填色比例顯示。
 
    ![產品詳細資料頁面，顯示整合在產品標題](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}下方的星級評等

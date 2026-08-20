@@ -12,9 +12,9 @@ role_v2:
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 393
+source-wordcount: 396
 ht-degree: 0%
 
 ---
@@ -45,4 +45,4 @@ ht-degree: 0%
 
 建立同義字後，搜尋行為會變更，以尋找確切的片語&#x200B;**廚房表**。 這樣可能會減少結果的數量，因為系統只會顯示含有精確片語的產品。
 
-如果您想要像之前一樣分別搜尋字詞，您可以[建立支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。 如果有足夠的需求，[!DNL Adobe Commerce Optimizer]將會考慮在未來版本中將此功能新增至產品。
+如果您想要像之前一樣分別搜尋字詞，您可以[建立支援票證](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。 如果有足夠的需求，[!DNL Adobe Commerce Optimizer]將會考慮在未來版本中將此功能新增至產品。

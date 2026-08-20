@@ -2,9 +2,9 @@
 title: 邊界和限制
 description: 瞭解 [!DNL Product Recommendations] 的界限和限制，以確保其符合您的業務需求。
 role: Admin, Developer
-source-git-commit: 66830c9d950a27269aca1bda0dcc7d0d86f05647
+source-git-commit: 60df4a608155a4f8ff8b4bf57cfd625aa1b3ccea
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '937'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 ## B2B
 
-- 產品建議遵循[類別許可權](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions.html)、[共用類別](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html)和客戶群組特定定價。 購物者只會根據自己的區段和目錄指派，看見他們可存取之產品的建議。 請參閱[上線](onboarding.md)。
+- 產品建議遵循[類別許可權](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/categories/category-permissions)、[共用類別](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/b2b/shared-catalogs/catalog-shared)和客戶群組特定定價。 購物者只會根據自己的區段和目錄指派，看見他們可存取之產品的建議。 請參閱[上線](onboarding.md)。
 
 ## 資料與整備
 
@@ -63,4 +63,4 @@ ht-degree: 0%
 
 ## 疑難排解
 
-如需目錄同步、建議未顯示或其他常見問題的說明，請搜尋[Commerce知識庫](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/overview)或聯絡[支援](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。
+如需目錄同步、建議未顯示或其他常見問題的說明，請搜尋[Commerce知識庫](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/overview)或聯絡[支援](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。

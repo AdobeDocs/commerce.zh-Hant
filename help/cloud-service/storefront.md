@@ -22,7 +22,7 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
 source-wordcount: 300
 ht-degree: 0%
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 1. 在&#x200B;**[!UICONTROL Commerce GraphQL Endpoint (optional)]**&#x200B;欄位中，輸入您的[!DNL Adobe Commerce as a Cloud Service] (SaaS) GraphQL端點，您可以在[建立您的執行個體](./getting-started.md#create-an-instance)後，在Commerce Cloud Manager中存取該端點。
 
-   或者，如果您使用[[!DNL API Mesh]](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic)，請在&#x200B;**[!UICONTROL Commerce GraphQL Endpoint (optional)]**&#x200B;欄位中輸入您的[!DNL API Mesh] GraphQL端點。 如需詳細資訊，請參閱[建立網格](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/create-mesh)。
+   或者，如果您使用[[!DNL API Mesh]](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/)，請在&#x200B;**[!UICONTROL Commerce GraphQL Endpoint (optional)]**&#x200B;欄位中輸入您的[!DNL API Mesh] GraphQL端點。 如需詳細資訊，請參閱[建立網格](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/create-mesh)。
 
 1. 按一下&#x200B;**[!UICONTROL Create Site]**。 依照畫面上的指示，授權存取您的GitHub存放庫。
 

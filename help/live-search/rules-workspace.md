@@ -7,9 +7,9 @@ product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 586
+source-wordcount: 583
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 1%
 
 ## 設定範圍
 
-如果您的Adobe Commerce安裝包含多個存放區檢視，請將&#x200B;**範圍**&#x200B;設定為套用您規則的[存放區檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hant#scope-settings)。
+如果您的Adobe Commerce安裝包含多個存放區檢視，請將&#x200B;**範圍**&#x200B;設定為套用您規則的[存放區檢視](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)。
 
 ## 顯示/隱藏欄
 

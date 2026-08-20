@@ -15,9 +15,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 last-update: 2026-07-29
-source-git-commit: 7ce47d7abf7519a7e3ecd436faabf4089005cd63
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
-source-wordcount: 971
+source-wordcount: 966
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 >
 >如果您正在使用Adobe Commerce as a Cloud Service，您的環境中會提供最新版本的中繼資料。 若要開始使用服務，請參閱[目錄服務快速入門](get-started.md)。
 >
->如需使用Adobe Commerce Optimizer的Commerce店面實作，請參閱Adobe Commerce Optimizer的[銷售服務開發人員指南](https://developer-stage.adobe.com/commerce/services/optimizer/)。
+>如需使用Adobe Commerce Optimizer的Commerce店面實作，請參閱Adobe Commerce Optimizer的[銷售服務開發人員指南](https://developer.adobe.com/commerce/services/optimizer/)。
 
 
 ## 系統需求
@@ -91,7 +91,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >如需有關在本機管理Commerce專案環境的資訊，請參閱《雲端基礎結構使用手冊》中&#x200B;_Adobe Commerce的[使用CLI管理分支](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/user-guide/develop/cli-branches)_。
+   >如需有關在本機管理Commerce專案環境的資訊，請參閱《雲端基礎結構使用手冊》中&#x200B;_Adobe Commerce的[使用CLI管理分支](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/cli-branches)_。
 
 1. 檢視環境分支，以使用Adobe Commerce Cloud CLI進行更新。
 
@@ -173,7 +173,7 @@ ht-degree: 0%
 
 若要確保目錄匯出可正確執行：
 
-- [確認cron工作正在執行](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)。
+- [確認cron工作正在執行](https://experienceleague.adobe.com/zh-hant/docs/experience-cloud-kcs/kbarticles/ka-39832)。
 - 請確認索引子是從[Admin](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/tools/index-management)執行，或使用Commerce CLI命令`bin/magento indexer:info`執行。
 - 確認`Catalog Attributes Feed, Product Feed, Product Overrides Feed`和`Product Variant Feed`索引子已設定為`Update by Schedule`。
 

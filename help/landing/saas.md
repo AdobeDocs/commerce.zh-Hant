@@ -21,9 +21,9 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 1662
+source-wordcount: 1665
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ ht-degree: 0%
 
 ## 認證 {#apikey}
 
-從[授權擁有者](https://experienceleague.adobe.com/zh-hant/docs/commerce-cloud-service/start/onboarding)的[!DNL Commerce]帳戶產生生產和沙箱API金鑰。 Commerce帳戶由唯一的[!DNL Commerce] ID (MageID)識別。 只要帳戶處於良好狀態，商家組織的授權擁有者就能為產品推薦或Live Search等服務產生API金鑰。
+從[授權擁有者](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/start/onboarding)的[!DNL Commerce]帳戶產生生產和沙箱API金鑰。 Commerce帳戶由唯一的[!DNL Commerce] ID (MageID)識別。 只要帳戶處於良好狀態，商家組織的授權擁有者就能為產品推薦或Live Search等服務產生API金鑰。
 
 這些金鑰可在「需知」基礎上與系統整合商或開發團隊分享，後者代表授權持有人管理專案和環境。 已獲授權擁有者授予[!DNL Shared Access]的開發人員，無法代表授權擁有者產生金鑰，即使商家組織出現在他們帳戶的[!DNL Switch Accounts]下拉式清單中。
 
@@ -153,7 +153,7 @@ ht-degree: 0%
 
 1. 選取&#x200B;**資料空間**，以用於您[!DNL Commerce]存放區的目前組態。
 
-   如果您有要與Commerce服務整合的個別執行個體，請[提交支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)，為每個額外的執行個體請求新的SaaS專案。 支援人員建立SaaS專案後，請使用相同的API金鑰&#x200B;**為執行個體**&#x200B;設定Commerce Services聯結器，並選取新的SaaS專案和資料空間。
+   如果您有要與Commerce服務整合的個別執行個體，請[提交支援票證](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)，為每個額外的執行個體請求新的SaaS專案。 支援人員建立SaaS專案後，請使用相同的API金鑰&#x200B;**為執行個體**&#x200B;設定Commerce Services聯結器，並選取新的SaaS專案和資料空間。
 
 >[!WARNING]
 >

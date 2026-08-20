@@ -12,9 +12,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-source-git-commit: 657c4b3123407580dfeb2c021a5a1ba515e82115
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 2547
+source-wordcount: 2561
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 ## 新增規則
 
 1. 在Admin中，前往&#x200B;**行銷** > SEO與搜尋> **[!DNL Live Search]**。
-1. 設定&#x200B;**範圍**&#x200B;以識別規則套用的[存放區檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hant#scope-settings)。
+1. 設定&#x200B;**範圍**&#x200B;以識別規則套用的[存放區檢視](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)。
 1. 按一下&#x200B;**搜尋銷售**&#x200B;工作區。
 1. 按一下&#x200B;**新增規則**&#x200B;以啟動規則編輯器。
 
@@ -136,8 +136,8 @@ ht-degree: 0%
 
 * **文字關聯性**：評分中的主導因素。 這會測量產品名稱、說明和屬性與搜尋查詢的符合程度。 文字關聯性分數沒有限制（沒有特定的上限），且會受下列因素的影響：
 
-   * 相符字詞的發生頻率。
-   * 產品名稱/說明的長度（字數）。
+  * 相符字詞的發生頻率。
+  * 產品名稱/說明的長度（字數）。
 
 * **行為訊號**：在文字關聯性分數之上套用的限制提升。 當您選取「檢視次數最多」或「購買次數最多」等智慧型排名策略時，行為訊號較高的產品會獲得較大的相對權重。 該權重的強度由&#x200B;**[!UICONTROL Intelligent Ranking Boost]**&#x200B;控制（請參閱[智慧型排名提升](#intelligent-ranking-boost)）；提升仍為有界限，但您可以增加其改變順序的程度。
 
@@ -164,11 +164,11 @@ ht-degree: 0%
 * 查詢中的撇號和引號可能會導致某些語言中的排名和相關性出現一些小問題。
 * 若要確保智慧型排名正常運作，請確定用於搜尋或篩選(Facet)之任何產品屬性的&#x200B;**搜尋權數**&#x200B;為`5`或更少。 若要在[!DNL Commerce]管理員中尋找此設定：
 
-   1. 選取&#x200B;**商店** > _屬性_ > **產品**。
-   1. 搜尋屬性，例如「name」。
-   1. 在&#x200B;**屬性資訊** > **店面屬性**&#x200B;頁面中，將搜尋權重設定為小於或等於`5`。
+  1. 選取&#x200B;**商店** > _屬性_ > **產品**。
+  1. 搜尋屬性，例如「name」。
+  1. 在&#x200B;**屬性資訊** > **店面屬性**&#x200B;頁面中，將搜尋權重設定為小於或等於`5`。
 
-      ![產品 — 搜尋權數](assets/set-search-weight.png)
+     ![產品 — 搜尋權數](assets/set-search-weight.png)
 
 >[!NOTE]
 >

@@ -16,9 +16,9 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 236
+source-wordcount: 249
 ht-degree: 0%
 
 ---
@@ -43,12 +43,12 @@ ht-degree: 0%
 
 | 指南 | 說明 |
 |------ | ----------- |
-| [Adobe Commerce 2.4使用手冊](https://experienceleague.adobe.com/docs/commerce.html?lang=zh-Hant) | 適用於Adobe Commerce和Magento Open Source的以商家為中心的檔案 |
+| [Adobe Commerce 2.4使用手冊](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/user-guides/home) | 適用於Adobe Commerce和Magento Open Source的以商家為中心的檔案 |
 | [Adobe Commerce 2.4開發人員指南](https://developer.adobe.com/commerce/docs) | 用於建置和自訂Adobe Commerce或Magento Open Source的開發人員專屬檔案 |
 
 ## 支援
 
 如果您需要本指南未涵蓋的資訊或問題，請使用下列資源：
 
-* [說明中心](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=zh-Hant#submit-tickets){target="_blank"} — 請參閱[!DNL Product Recommendations]相關的疑難排解文章。
-* [支援票證](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=zh-Hant#submit-ticket){target="_blank"} — 提交票證以接收其他說明。
+* [說明中心](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-cases){target="_blank"} — 請參閱[!DNL Product Recommendations]相關的疑難排解文章。
+* [支援票證](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case){target="_blank"} — 提交票證以接收其他說明。

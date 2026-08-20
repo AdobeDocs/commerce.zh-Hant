@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 413d0932d402615c9e155e1650a7c8aba2c082a1
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
-source-wordcount: 1522
+source-wordcount: 1506
 ht-degree: 0%
 
 ---
@@ -101,7 +101,7 @@ _2026年5月28日_
 ![修正](../assets/fix.svg) **完整的導覽樹狀結構** — 當路徑中存在未標籤的中繼節點時，已標籤的下階類別現在會正確包含在系列篩選的`navigation`樹狀結構中。 這項修正可確保購物者在導覽中看見所有相關類別，讓您更輕鬆地瀏覽及探索專案。
 <!--DATA-7183-->
 
-![修正](../assets/fix.svg) **在`categoryTree`要求中處理空白的Slug** — 修正當`slugs`引數包含空白字串時，[`categoryTree`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree)查詢傳回內部伺服器錯誤的問題。 空的概要(Slug)值現在會被忽略，因此儲存體和整合功能可繼續解析類別資料，而不會發生請求失敗的情況。
+![修正](../assets/fix.svg) **在`categoryTree`要求中處理空白的Slug** — 修正當`slugs`引數包含空白字串時，[`categoryTree`](https://developer.adobe.com/commerce/services/reference/graphql/#categorytree)查詢傳回內部伺服器錯誤的問題。 空的概要(Slug)值現在會被忽略，因此儲存體和整合功能可繼續解析類別資料，而不會發生請求失敗的情況。
 <!--DATA-7184-->
 
 ![修正](../assets/fix.svg) **`searchCategory`要求傳回不區分大小寫、以字母順序排列的結果** — 現在`searchCategory`查詢會依字母順序排序搜尋結果，而不會區分大小寫，以確保順序一致且可預測。 如果名稱完全相同，首碼較短的類別會先出現。
@@ -153,7 +153,7 @@ _2026年4月7日_
 
 <!--v1.50 release-->
 
-**較簡單的類別查詢** — [categoryTree](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree)查詢會將`family`視為選用專案，因此您可以透過Slug解析類別，而不需要提供系列。
+**較簡單的類別查詢** — [categoryTree](https://developer.adobe.com/commerce/services/reference/graphql/#categorytree)查詢會將`family`視為選用專案，因此您可以透過Slug解析類別，而不需要提供系列。
 
 {{aco-release}}
 
@@ -191,13 +191,13 @@ _2026年2月19日_
 
 <!--v1.48-->
 
-**店面更豐富的類別內容** — [categoryTree](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree)查詢現在會傳回說明、影像和SEO中繼標籤，讓店面可以呈現更豐富的類別頁面。<!--DATA-6933-->
+**店面更豐富的類別內容** — [categoryTree](https://developer.adobe.com/commerce/services/reference/graphql/#categorytree)查詢現在會傳回說明、影像和SEO中繼標籤，讓店面可以呈現更豐富的類別頁面。<!--DATA-6933-->
 
 _2026年2月12日_
 
 <!--v1.49-->
 
-**依類別增強產品資料** — GraphQL API新增[`CategoryProductView`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#definition-CategoryProductView){target="blank"}型別，因此您可以依類別查詢及篩選往返較少的產品。
+**依類別增強產品資料** — GraphQL API新增[`CategoryProductView`](https://developer.adobe.com/commerce/services/reference/graphql/#categoryproductview){target="blank"}型別，因此您可以依類別查詢及篩選往返較少的產品。
 
 {{aco-release}}
 

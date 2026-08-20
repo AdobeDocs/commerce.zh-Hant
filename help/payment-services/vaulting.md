@@ -3,9 +3,9 @@ title: 信用卡存放
 description: 購物者可以儲存信用卡詳細資料，以便日後購買。
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '542'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 0%
    ![新增卡片](assets/add-new-card.png){width="400" zoomable="yes"}
 
    客戶必須提供所有必要的詳細資訊（例如卡片與帳單資訊），以儲存付款方式。
-儲存卡時（購物者的PayPal帳戶中），所有儲存的付款方法都會使用帳單地址集。 客戶可能會看到與Commerce中顯示的帳單地址不同的帳單地址。
+   儲存卡時（購物者的PayPal帳戶中），所有儲存的付款方法都會使用帳單地址集。 客戶可能會看到與Commerce中顯示的帳單地址不同的帳單地址。
 
 1. 按一下&#x200B;**[!UICONTROL Save New Card]**
 
@@ -73,10 +73,10 @@ Commerce會儲存Token，協助客戶取得已儲存的信用卡資訊，完成�
 
 若要在「管理員」中，使用客戶的保管式信用卡來建立訂單：
 
-1. [建立訂單並新增產品](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=zh-Hant)。
+1. [建立訂單並新增產品](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order)。
 1. 在&#x200B;_[!UICONTROL Payment & Shipping Information]_&#x200B;中，選取&#x200B;**[!UICONTROL Stored Cards]**&#x200B;作為付款方式。
 1. 選取所需的存放信用卡付款方式。
-1. 完成訂單的其他必要步驟後，[送出](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=zh-Hant#step-3%3A-submit-the-order)。
+1. 完成訂單的其他必要步驟後，[送出](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order?lang=en#step-3%3A-submit-the-order)。
 
    ![在管理員中使用客戶的保管信用卡](assets/admin-vaultedcard.png){width="600" zoomable="yes"}
 

@@ -15,9 +15,9 @@ topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 919
+source-wordcount: 921
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ _建議Workspace_
 
 ## 設定範圍
 
-一開始所有建議設定的[範圍](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hant)設定為`Default Store View`。 如果您的Commerce安裝包含多個商店檢視，請將&#x200B;**範圍**&#x200B;設定為套用您建議的[商店檢視](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hant#scope-settings)。
+一開始所有建議設定的[範圍](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/setup/websites-stores-views)設定為`Default Store View`。 如果您的Commerce安裝包含多個商店檢視，請將&#x200B;**範圍**&#x200B;設定為套用您建議的[商店檢視](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)。
 
 ## 設定量度日期範圍
 

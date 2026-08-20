@@ -2,9 +2,9 @@
 title: 安裝及存取 [!DNL App Management]
 description: 使用Adobe Commerce [!DNL App Management]的先決條件和存取需求。
 feature: App Builder, Extensibility, Integration
-source-git-commit: 780cef7af3574cd846fd7ee82d7814f2ebe9d6cc
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 ## 安裝App Builder應用程式
 
-如果您需要從Adobe Exchange安裝App Builder應用程式（例如預先建立的整合或市集應用程式），請參閱[從Adobe Exchange安裝App Builder應用程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/adobe-developer-app-builder/install-app-builder-app){target="_blank"}以取得逐步指示。
+如果您需要從Adobe Exchange安裝App Builder應用程式（例如預先建立的整合或市集應用程式），請參閱[從Adobe Exchange安裝App Builder應用程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/install-app-builder-app){target="_blank"}以取得逐步指示。
 
 安裝及部署應用程式後，請使用[!DNL App Management]將其與您的Commerce執行個體建立關聯[&#128279;](manage-app.md#associate-an-app)，並設定其設定。
 

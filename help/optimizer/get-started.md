@@ -22,9 +22,9 @@ topic_v2:
   - id: dba482e5-29a8-4127-afa2-c4b913512ef8
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
-source-wordcount: 1368
+source-wordcount: 1367
 ht-degree: 0%
 
 ---
@@ -253,5 +253,5 @@ Adobe提供GitHub存放庫和範例資料與工具，協助您學習及測試[!D
 
 - **開發人員資源**： [開發人員檔案](https://developer.adobe.com/commerce/services/optimizer/)
 - **店面資源**： [Commerce店面檔案](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant)
-- **教學課程**： [Commerce Optimizer教學課程](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
+- **教學課程**： [Commerce Optimizer教學課程](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/adobe-commerce-optimizer/overview)
 - **支援**： [Adobe Commerce支援資源](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/overview)

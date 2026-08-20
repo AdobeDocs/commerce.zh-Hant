@@ -12,10 +12,10 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 339
-ht-degree: 2%
+source-wordcount: 342
+ht-degree: 0%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 [Data Connection擴充功能](overview.md)會將您的Commerce資料連線到Experience Platform。 打算用於Experience Platform的資料會分組為兩種行為型別：屬於&#x200B;**體驗事件**&#x200B;類別的時間序列資料，以及屬於&#x200B;**個人設定檔**&#x200B;類別的記錄資料。
 
-深入瞭解Experience Platform中的[資料行為](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=zh-Hant#data-behaviors)和[類別](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=zh-Hant#class)。
+深入瞭解Experience Platform中的[資料行為](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/schema/composition#data-behaviors)和[類別](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/schema/composition#class)。
 
 ## 時間序列資料
 
@@ -39,7 +39,7 @@ ht-degree: 2%
 
 ## 記錄資料
 
-記錄資料提供有關主旨屬性的資訊。 主旨可以是組織或個人。 例如，您網站上的購物者會建立帳戶，並產生記錄資料。 此資料是使用類別設定為&#x200B;**個別設定檔**&#x200B;的結構描述擷取到Experience Platform中。 您可以將該記錄資料傳送至Adobe的設定檔管理和細分服務： [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html?lang=zh-Hant)。
+記錄資料提供有關主旨屬性的資訊。 主旨可以是組織或個人。 例如，您網站上的購物者會建立帳戶，並產生記錄資料。 此資料是使用類別設定為&#x200B;**個別設定檔**&#x200B;的結構描述擷取到Experience Platform中。 您可以將該記錄資料傳送至Adobe的設定檔管理和細分服務： [Real-Time CDP](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview)。
 
 ### 已擷取的設定檔記錄資料
 

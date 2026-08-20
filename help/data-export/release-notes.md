@@ -22,9 +22,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 0c38384dc0b8c9c964402cd3d363ff784d7a0cf5
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
-source-wordcount: 3270
+source-wordcount: 3271
 ht-degree: 0%
 
 ---
@@ -186,7 +186,7 @@ _2025年11月24日_
 
 _2025年10月22日_
 
-![新](../assets/new.svg)已新增資料摘要同步狀態擴充功能的支援，以監視和疑難排解從[!DNL Adobe Commerce]到連線服務（[!DNL Catalog Service]、[!DNL Live Search]和[!DNL Product Recommendations]）的資料傳輸。 如需有關安裝及使用此擴充功能的詳細資訊，請參閱&#x200B;*Commerce管理指南*&#x200B;中的[資料摘要同步狀態監視](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html?lang=zh-Hant)。<!--MDEE-954-->
+![新](../assets/new.svg)已新增資料摘要同步狀態擴充功能的支援，以監視和疑難排解從[!DNL Adobe Commerce]到連線服務（[!DNL Catalog Service]、[!DNL Live Search]和[!DNL Product Recommendations]）的資料傳輸。 如需有關安裝及使用此擴充功能的詳細資訊，請參閱&#x200B;*Commerce管理指南*&#x200B;中的[資料摘要同步狀態監視](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)。<!--MDEE-954-->
 
 ### 103.4.14版
 

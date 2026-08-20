@@ -11,9 +11,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 500
+source-wordcount: 501
 ht-degree: 0%
 
 ---
@@ -68,4 +68,4 @@ ht-degree: 0%
 | 產品詳細資料 | 主要內容底部（預設） | 檢視次數最多<br>購買次數最多<br>加入購物車次數最多<br>檢視此專案、檢視專案<br>檢視此專案、購買專案<br>購買此專案、購買專案<br>類似專案<br>趨勢<br>視覺相似度 |
 | 購物車 | 主要內容底部（預設） | 檢視次數最多<br>購買次數最多<br>加入購物車次數最多<br>檢視此專案，檢視的專案<br>檢視此專案，購買此專案<br>購買此專案，購買其他<br>類似專案<br>趨勢分析 |
 | 確認 | 主要內容底部（預設） | 檢視次數最多<br>購買次數最多<br>加入購物車次數最多<br>檢視此專案，檢視的專案<br>檢視此專案，購買此專案<br>購買此專案，購買其他<br>類似專案<br>趨勢分析 |
-| 頁面產生器 | [拖放](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html?lang=zh-Hant)以定位內容型別 | 檢視次數最多<br>購買次數最多<br>加入購物車次數最多<br>為您推薦<br>趨勢分析 |
+| 頁面產生器 | [拖放](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/page-builder/add-content/recommendations)以定位內容型別 | 檢視次數最多<br>購買次數最多<br>加入購物車次數最多<br>為您推薦<br>趨勢分析 |

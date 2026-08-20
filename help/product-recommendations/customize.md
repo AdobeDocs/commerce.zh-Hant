@@ -10,9 +10,9 @@ feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
-source-wordcount: 645
+source-wordcount: 646
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 `<your theme>/Magento_ProductRecommendationsLayout/web/template/recommendations.html`
 
-如需有關修改範本檔案的詳細資訊，請參閱前端開發人員指南中的[範本自訂](https://developer.adobe.com/commerce/frontend-core/guide/templates/walkthrough/)。
+如需有關修改範本檔案的詳細資訊，請參閱前端開發人員指南中的[範本自訂](https://developer.adobe.com/commerce/frontend-core/guide/templates/walkthrough)。
 
 如果您修改`recommendations.html`檔案，必須在檔案中保留下列標籤，以確保Adobe Commerce可以從您的店面收集建議量度：
 
@@ -121,7 +121,7 @@ ht-degree: 0%
 
 ![新增徽章](assets/unit-custom.png)
 
-若要確定當您在頁面上轉譯建議單位時，可以使用自訂產品屬性，請在Admin的[產品屬性](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=zh-Hant)頁面中，將`Used in Product Listing`屬性設定為`Yes`。
+若要確定當您在頁面上轉譯建議單位時，可以使用自訂產品屬性，請在Admin的[產品屬性](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create)頁面中，將`Used in Product Listing`屬性設定為`Yes`。
 
 設定此屬性時，JSON裝載會包含`attributes`物件，其中包含屬性程式碼和值的陣列。 然後，您可以根據這些屬性值套用自訂店面樣式，例如新增特殊視覺處理或徽章，如之前所述。
 

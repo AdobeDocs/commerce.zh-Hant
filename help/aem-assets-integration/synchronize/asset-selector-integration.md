@@ -14,9 +14,9 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
   - id: da3860b0-d637-47df-bef0-273751180266
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
-source-wordcount: 396
+source-wordcount: 397
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> AEM資產選擇器是AEM資產的前端元件，用於整合AEM Assets與製作應用程式。 如需此元件的詳細資訊，請參閱&#x200B;*AEM as a Cloud Service使用手冊*&#x200B;中的[Micro-Frontend資產選擇器](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector){target=_blank}。
+> AEM資產選擇器是AEM資產的前端元件，用於整合AEM Assets與製作應用程式。 如需此元件的詳細資訊，請參閱&#x200B;*AEM as a Cloud Service使用手冊*&#x200B;中的[Micro-Frontend資產選擇器](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/content-advisor/integrate-adobe-non-adobe-applications){target=_blank}。
 
 ## 主要優點
 

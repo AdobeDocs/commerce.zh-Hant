@@ -18,7 +18,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
 source-wordcount: 267
 ht-degree: 0%
@@ -31,13 +31,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->擴充產品屬性的最佳方式是使用 [!DNL Catalog Service][&#128279;](../catalog-service/mesh.md)將這些屬性[新增至 [!DNL Adobe Commerce]](extensibility-and-customizations.md#add-product-attributes-to-adobe-commerce) where you can configure and manage them from the Commerce Admin. Only add them dynamically if you need them solely for Commerce storefront services and do not want to register them in [!DNL Adobe Commerce]. You also have the option to manage custom attributes using [!DNL API Mesh] ，以擴充[!DNL Catalog Service] [!DNL GraphQL]結構描述。
+>擴充產品屬性的最佳方式是使用 [!DNL Catalog Service]&#x200B;[&#128279;](../catalog-service/mesh.md)將這些屬性[新增至 [!DNL Adobe Commerce]](extensibility-and-customizations.md#add-product-attributes-to-adobe-commerce) where you can configure and manage them from the Commerce Admin. Only add them dynamically if you need them solely for Commerce storefront services and do not want to register them in [!DNL Adobe Commerce]. You also have the option to manage custom attributes using [!DNL API Mesh] ，以擴充[!DNL Catalog Service] [!DNL GraphQL]結構描述。
 
 ## 新增產品屬性
 
 建立將`customer_attribute`新增至`Magento\CatalogDataExporter\Model\Provider\Product\Attributes`類別的外掛程式。
 
-1. 更新[相依性插入組態檔](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/) (`di.xml`)以定義外掛程式。
+1. 更新[相依性插入組態檔](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file) (`di.xml`)以定義外掛程式。
 
    ```xml
    <type name="Magento\CatalogDataExporter\Model\Provider\Product\Attributes">
@@ -110,7 +110,7 @@ ht-degree: 0%
 
 如果您動態建立自訂產品屬性，並想要將其用於店面服務中的顯示、搜尋或篩選，請新增產品屬性中繼資料以設定店面行為。
 
-1. 更新[相依性插入組態檔](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/) (`di.xml`)以定義產品屬性中繼資料的外掛程式。
+1. 更新[相依性插入組態檔](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file) (`di.xml`)以定義產品屬性中繼資料的外掛程式。
 
    ```xml
    <type name="Magento\CatalogDataExporter\Model\Provider\ProductMetadata">

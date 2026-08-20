@@ -24,9 +24,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 991
+source-wordcount: 983
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ ht-degree: 0%
 1. 如果內容不符，請對目錄中的產品進行微幅編輯，例如新增空格或句點，以強制偵測變更。
 1. 等候重新同步或從CLI或Admin中的[[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)頁面觸發手動重新同步。
 
-如需[!DNL Product Recommendations]中目錄資料的其他疑難排解，請參閱Commerce知識庫中的[產品建議模組疑難排解](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce)。
+如需[!DNL Product Recommendations]中目錄資料的其他疑難排解，請參閱Commerce知識庫中的[產品建議模組疑難排解](https://experienceleague.adobe.com/zh-hant/docs/experience-cloud-kcs/kbarticles/ka-40095)。
 
 ## 資料同步未依排程執行 {#sync-not-on-schedule}
 
@@ -96,7 +96,7 @@ ht-degree: 0%
 
 **解決方案：**
 
-- [確認cron工作正在執行](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)。
+- [確認cron工作正在執行](https://experienceleague.adobe.com/zh-hant/docs/experience-cloud-kcs/kbarticles/ka-39832)。
 - 確認下列摘要的索引子已設定為&#x200B;**[!UICONTROL Update by Schedule]**：目錄屬性、產品、產品覆寫和產品變體。 在Commerce管理員中或使用CLI從[[!UICONTROL Index Management]](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/tools/index-management)檢查： `bin/magento indexer:show-mode | grep -i feed`。
 
 ## 目錄同步處理具有「失敗」狀態 {#catalog-sync-failed}
@@ -110,7 +110,7 @@ ht-degree: 0%
 1. 請檢閱資料匯出錯誤記錄檔，以取得失敗的詳細資訊。 請參閱[檢閱記錄檔及疑難排解](logging.md)，以取得記錄檔格式及擴充的記錄檔選項：
    - `var/log/commerce-data-export-errors.log`在資料收集期間發生錯誤。
    - `var/log/saas-export-errors.log`資料提交期間發生錯誤。
-1. 如果錯誤與組態或協力廠商延伸無關，請[提交支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)以及相關記錄專案。
+1. 如果錯誤與組態或協力廠商延伸無關，請[提交支援票證](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)以及相關記錄專案。
 
 ## 記錄顯示「作業已略過 — 處理程式已鎖定」訊息 {#process-locked}
 

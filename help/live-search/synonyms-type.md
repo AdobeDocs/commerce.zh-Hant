@@ -7,9 +7,9 @@ product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 617
+source-wordcount: 620
 ht-degree: 0%
 
 ---
@@ -60,4 +60,4 @@ a、an、and、are、as、at、be、but、by、for、if、in、into、is、it、
 
 建立同義字後，搜尋行為會變更，以尋找確切的片語&#x200B;**廚房表**。 這樣可能會減少結果的數量，因為系統只會顯示含有精確片語的產品。
 
-如果您想要像之前一樣分別搜尋字詞，您可以[建立支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)。 如果有足夠的需求，Commerce會考慮在未來版本中新增此功能至產品。
+如果您想要像之前一樣分別搜尋字詞，您可以[建立支援票證](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。 如果有足夠的需求，Commerce會考慮在未來版本中新增此功能至產品。

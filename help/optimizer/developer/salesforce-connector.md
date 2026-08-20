@@ -22,7 +22,7 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
 source-wordcount: 1183
 ht-degree: 0%
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 聯結器開箱即用，提供可靠的資料同步功能，並具備彈性可自訂工作流程，滿足您的業務需求。
 
-如需端對端影片教學課程系列，請參閱[瞭解Salesforce Commerce雲端入門套件](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview)。
+如需端對端影片教學課程系列，請參閱[瞭解Salesforce Commerce雲端入門套件](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/adobe-commerce-optimizer/sfcc-starter-kit/overview)。
 
 >[!NOTE]
 >
@@ -48,13 +48,13 @@ ht-degree: 0%
 * **支援多種資料型別：**&#x200B;同步產品、定價和目錄結構，以反映複雜的銷售設定。
 
 * **彈性同步工作流程**
-   * **排程同步：**&#x200B;使用cron工作排程自動化更新，不需要手動操作。
-   * **隨選更新：**&#x200B;立即觸發SKU層級的更新，以取得緊急變更、更正或產品啟動。
+  * **排程同步：**&#x200B;使用cron工作排程自動化更新，不需要手動操作。
+  * **隨選更新：**&#x200B;立即觸發SKU層級的更新，以取得緊急變更、更正或產品啟動。
 
 * **為擴充性建置**
-   * 使用自訂[Salesforce Commerce B2C API](https://developer.salesforce.com/docs/commerce/commerce-api/guide/get-started.html) (SCAPI)端點，以相容性及輕鬆適應獨特或進階使用案例。
-   * 透過目錄和價格同步處理隨您的業務啟動進行擴充，然後擴充工作流程以支援其他整合或業務邏輯。
-   * 設定和改進工作流程，而不需重建核心整合。
+  * 使用自訂[Salesforce Commerce B2C API](https://developer.salesforce.com/docs/commerce/commerce-api/guide/get-started.html) (SCAPI)端點，以相容性及輕鬆適應獨特或進階使用案例。
+  * 透過目錄和價格同步處理隨您的業務啟動進行擴充，然後擴充工作流程以支援其他整合或業務邏輯。
+  * 設定和改進工作流程，而不需重建核心整合。
 
 >[!NOTE]
 >
@@ -89,7 +89,7 @@ ht-degree: 0%
 善用Salesforce Commerce B2C本地化功能：
 
 * 針對不同地區設定，從Salesforce Commerce B2C同步本地化版本的產品文字欄位（名稱、說明）。
-* 將Salesforce地區設定概念1:1與[!DNL Commerce Optimizer]地區設定對應。
+* 將Salesforce地區設定概念與[!DNL Commerce Optimizer]地區設定對應1:1。
 * 針對不同的本地化支援多個產品擷取週期。
 * 維持全球產品目錄的一致性。
 

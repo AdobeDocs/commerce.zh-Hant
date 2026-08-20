@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
-source-wordcount: 428
+source-wordcount: 429
 ht-degree: 0%
 
 ---
@@ -42,11 +42,11 @@ ht-degree: 0%
 
 為[!DNL Commerce]店面轉譯的Facet會由搜尋配接卡處理，這會路由要求並轉譯店面中的結果。 所有[!DNL Commerce]店面多面都是使用單選選項依字母順序排序，無論指派給對應屬性的輸入型別為何。 店面中可用的多面會根據目前的主題來演算，並反映對分層導覽的呈現所做的任何自訂。
 
-相反地，[headless](https://developer.adobe.com/commerce/php/architecture/technical-vision/web-api/)實作是由API處理並支援其他選項。 Headless Facet可依字母順序或計數排序，且可具有單選或多選選項。
+相反地，[headless](https://developer.adobe.com/commerce/php/architecture/technical-vision/web-api)實作是由API處理並支援其他選項。 Headless Facet可依字母順序或計數排序，且可具有單選或多選選項。
 
 ### Facet標籤
 
-針對[!DNL Commerce]個店面，Facet標籤是由&#x200B;[*屬性屬性*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=zh-Hant)所決定。 對於具有多個檢視的商店，可在&#x200B;*管理標籤*&#x200B;下定義其他標籤。 針對Headless實作，標籤是從[多面向工作區](faceting-workspace.md)中編輯。
+針對[!DNL Commerce]個店面，Facet標籤是由&#x200B;[*屬性屬性*](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create)所決定。 對於具有多個檢視的商店，可在&#x200B;*管理標籤*&#x200B;下定義其他標籤。 針對Headless實作，標籤是從[多面向工作區](faceting-workspace.md)中編輯。
 
 ### 排序型別
 

@@ -4,9 +4,9 @@ description: 瞭解如何在 [!DNL Live Search] 中為Adobe Commerce管理無庫
 feature: Services, Search
 role: Admin, Developer
 level: Intermediate
-source-git-commit: bc8f35434c9f01f1a920745fe42617df2003ca60
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '450'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ query productSearchInStockOnly {
 為了保留結果集中的缺貨產品，但在依相關性排序時始終在缺貨產品之後，Adobe可以為您的環境啟用內部功能標幟。
 
 - [!DNL Live Search]管理UI中未公開此功能標幟。
-- 若要請求，請[聯絡Adobe支援](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide){target="_blank"}並參考該功能，以將無庫存產品移至搜尋結果的結尾。
+- 若要請求，請[聯絡Adobe支援](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide){target="_blank"}並參考該功能，以將無庫存產品移至搜尋結果的結尾。
 
 >[!NOTE]
 >

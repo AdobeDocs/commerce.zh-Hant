@@ -9,9 +9,9 @@ feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 775
+source-wordcount: 778
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Adobe Commerce會自動將無法設定的預設篩選器套用至建議單位。
 
 >[!NOTE]
 >
->對於B2B商家，類別篩選器會遵守您已設定的任何[客戶特定產品類別](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html?lang=zh-Hant)。
+>對於B2B商家，類別篩選器會遵守您已設定的任何[客戶特定產品類別](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/categories/category-permissions)。
 
 當您將建議部署至頁面型別時，Adobe Commerce建議您使用以下類別篩選設定：
 
@@ -85,11 +85,11 @@ Adobe Commerce會自動將無法設定的預設篩選器套用至建議單位。
 
 ### 價格
 
-根據產品價格的篩選器會使用最終價格來執行比較。 最終價格包含匿名購物者可享有的任何折扣。 針對B2B商家，顯示的價格會反映您已設定的[客戶特定群組價格](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=zh-Hant)。
+根據產品價格的篩選器會使用最終價格來執行比較。 最終價格包含匿名購物者可享有的任何折扣。 針對B2B商家，顯示的價格會反映您已設定的[客戶特定群組價格](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/products/pricing/pricing-advanced)。
 
 ### 庫存狀態
 
 下列排除篩選器可用於根據庫存狀態篩選產品：
 
 - 無庫存 — （僅限排除）排除無庫存的產品。
-- 庫存低 — （僅供排除）排除庫存低的產品。 低庫存狀態是以[詳細目錄組態](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html?lang=zh-Hant)中的&#x200B;_僅X剩餘Threshold_&#x200B;值為基礎。
+- 庫存低 — （僅供排除）排除庫存低的產品。 低庫存狀態是以[詳細目錄組態](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/config/catalog/inventory)中的&#x200B;_僅X剩餘Threshold_&#x200B;值為基礎。

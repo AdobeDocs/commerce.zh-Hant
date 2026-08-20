@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: da3860b0-d637-47df-bef0-273751180266
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 73814f5ac5d53399131263f47e170e612643e903
 workflow-type: tm+mt
-source-wordcount: 1010
+source-wordcount: 994
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Adobe Commerce和Adobe Experience Manager (AEM)皆提供內建功能，可簡化
 | **必要的存取權和許可權** | <ul><li>AEM Assets as a Cloud Service的管理員存取權</li><li>存取儲存媒體檔案的來源系統（Adobe Commerce或外部系統）</li><li>存取雲端儲存服務的適當許可權</li></ul> |
 | **雲端儲存空間帳戶** | <ul><li>AWS S3或Azure Blob儲存帳戶</li><li>私人容器/貯體設定</li><li>驗證認證</li></ul> |
 | **Source內容** | <ul><li>可移轉的已整理媒體檔案</li><li>AEM Assets</a>支援的<a href="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/file-format-support#image-formats">格式影像和視訊檔案。</li><li>乾淨的重複資產</li></li> |
-| **中繼資料準備** | <ul><li>為AEM Assets資產設定的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/content-design/aem-asset-management/getting-started/aem-assets-configure-aem">Commerce中繼資料設定檔</a></li><li>每個資產的對應中繼資料值</li><li>CSV檔案編輯器（例如Microsoft Excel）</li></ul> |
+| **中繼資料準備** | <ul><li>為AEM Assets資產設定的<a href="configure-aem.md">Commerce中繼資料設定檔</a></li><li>每個資產的對應中繼資料值</li><li>CSV檔案編輯器（例如Microsoft Excel）</li></ul> |
 
 ## 移轉最佳實務
 
