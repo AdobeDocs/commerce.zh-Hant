@@ -2,27 +2,20 @@
 title: Adobe Commerce App Builder的AI編碼開發人員工具
 description: 瞭解如何使用AI工具來建立Commerce App Builder應用程式。
 feature: App Builder, Cloud
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
 role: Developer
 level: Intermediate
 autotag-review: '2026-06-18T16:11:12.988Z'
 TQID: 'https://experienceleague.adobe.com/ZbqP1MO-QrqAtocvmgFStqaluqQdzMm4LXlY3o4o3xY'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2:
-  - id: adedf3b3-e153-47a3-ae73-b5d65067b544
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: adedf3b3-e153-47a3-ae73-b5d65067b544
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: d9ea778afc86de323e53cd1be4768bc87cb71a8b
 workflow-type: tm+mt
-source-wordcount: 2635
+source-wordcount: 2611
 ht-degree: 0%
 
 ---
@@ -52,22 +45,22 @@ AI編碼工具提供下列優點：
 aio commerce extensibility tools-setup
 ```
 
-這會將工具更新至最新版本。
+這個指令會將工具更新到最新版本。
 
 ## 先決條件
 
 * 任何支援[代理程式技能](https://agentskills.io/home#adoption)的編碼代理程式，例如：
 
   * [游標](https://cursor.com/download)
-  * [克勞德程式碼](https://www.claude.com/product/claude-code)
+  * [克勞德程式碼](https://claude.com/product/claude-code)
   * [GitHub Copilot](https://github.com/features/copilot)
-  * [Windsurf](https://windsurf.com)
+  * [Devin案頭](https://devin.ai/desktop)
   * [Gemini CLI](https://github.com/google-gemini/gemini-cli)
   * [OpenAI程式碼](https://openai.com/index/introducing-codex/)
   * [斜面](https://cline.bot)
 
 * [Node.js](https://nodejs.org/en/download)： LTS版本
-* 封裝管理員： [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)或[yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
+* 封裝管理員： [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm/)或[yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
 * [Git](https://github.com/git-guides/install-git)：用於存放庫複製和版本控制
 
 ## 安裝
@@ -114,7 +107,7 @@ aio commerce extensibility tools-setup
    aio commerce extensibility tools-setup
    ```
 
-   設定程式會提示您設定選項。 按照提示完成安裝。 工具將會安裝在選取的目錄中。
+   設定程式會提示您設定選項。 若要完成安裝，請依照提示操作。 工具會安裝在選取的目錄中。
 
    * 選取您專案要使用的入門套件。
 
@@ -138,7 +131,7 @@ aio commerce extensibility tools-setup
         ...
      ```
 
-   * 安裝程式會偵測您是否已安裝NPM或Yarn，並自動進行適當的選取。 不過，如果您尚未安裝其中一個，則會提示您選取封裝管理員。Adobe建議您使用`npm`以保持一致性：
+   * 安裝程式會偵測您是否已安裝NPM或Yarn，並自動進行適當的選取。 但是，如果您尚未安裝其中一個，則會提示您選取您的封裝管理員；Adobe建議您使用`npm`以保持一致性：
 
      ```shell-session
      ? Which package manager would you like to use?
@@ -156,13 +149,13 @@ aio commerce extensibility tools-setup
 
 >[!NOTE]
 >
->在部署專案之前，您需要完成下列設定工作：
+>在部署專案之前，請先完成下列設定工作：
 >
 >* 使用Adobe I/O CLI登入[Adobe Developer Console](https://developer.adobe.com/console)。
 >* 建立App Builder專案（請參閱[專案設定](https://developer.adobe.com/commerce/extensibility/events/project-setup)）。
 >* 在`.env`檔案中設定環境變數。
 >
->您可以手動完成這些設定步驟，或利用AI編碼工具引導您完成整個流程。 如需詳細的設定指示，請參閱[建立整合](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration/)。
+>您可以手動完成這些設定任務，或利用AI編碼工具引導您完成整個過程。 如需詳細的設定指示，請參閱[建立整合](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)。
 
 ## 安裝後設定
 
@@ -189,7 +182,7 @@ aio auth login
 
 >[!NOTE]
 >
->MCP伺服器的某些功能可以在不登入的情況下運作，但RAG (Retrieval-Enhanced Generation)服務將無法運作。 RAG服務可讓AI編碼代理程式即時存取完整的Adobe Commerce檔案集，好讓代理程式能夠回答問題，並根據目前的Commerce開發做法、API和架構模式產生程式碼。
+>MCP伺服器的部分功能可在不登入的情況下運作，但RAG (Retrieval-Enhanced Generation)服務無法運作。 RAG服務可讓AI編碼代理程式即時存取完整的Adobe Commerce檔案集，好讓代理程式能夠回答問題，並根據目前的Commerce開發做法、API和架構模式產生程式碼。
 
 ### 游標
 
@@ -204,7 +197,7 @@ aio auth login
    * 在清單中找到&#x200B;**commerce-extensibility MCP伺服器**
    * 切換伺服器&#x200B;**開啟**&#x200B;以啟用編碼工具
 
-1. 驗證伺服器狀態 — Commerce擴充性MCP伺服器應顯示為：
+1. 驗證伺服器狀態 — Commerce擴充性MCP伺服器顯示為：
 
    ```shell-session
    Status: Connected/Active
@@ -226,12 +219,12 @@ aio auth login
 
 1. 啟用MCP伺服器：
 
-   * 按一下左側邊欄活動列中的&#x200B;**擴充功能**&#x200B;圖示，或使用&#x200B;**Cmd+Shift+X** (macOs)或&#x200B;**Ctrl+Shift+X** （Windows和Linux）來開啟「擴充功能面板」。
+   * 按一下左側邊欄活動列中的&#x200B;**擴充功能**&#x200B;圖示，或使用&#x200B;**Cmd+Shift+X** (macOS)或&#x200B;**Ctrl+Shift+X** （Windows和Linux）來開啟「擴充功能面板」。
    * 按一下&#x200B;[!UICONTROL **MCP伺服器 — 已安裝**]。
    * 按一下&#x200B;[!UICONTROL **commerce-extensibility MCP伺服器**]&#x200B;旁的齒輪圖示，並選取&#x200B;[!UICONTROL **啟動伺服器**] （如果伺服器已停止）。
    * 再按一下齒輪圖示，然後選取&#x200B;[!UICONTROL **顯示輸出**]。
 
-1. 驗證伺服器狀態。 `MCP:commerce-extensibility`輸出應該符合下列內容：
+1. 驗證伺服器狀態。 `MCP:commerce-extensibility`輸出符合以下內容：
 
    ```shell-session
    2025-11-13 12:58:50.652 [info] Starting server commerce-extensibility
@@ -287,7 +280,7 @@ The extension should:
 
 ## 技能
 
-雖然當您與程式碼代理程式聊天時，會自動叫用技能，但您也可以使用下列命令手動叫用技能：
+當您與程式碼代理程式聊天時，會自動叫用技能，您也可以使用下列指令手動叫用技能：
 
 * `/architect` — 使用[!DNL App Builder]和選取的入門套件設計Adobe Commerce擴充功能的架構。 用於規劃整合、選取事件、設計資料流程或進行架構決策。
 * `/developer` — 依照[!DNL App Builder]模式和檔案結構實作Adobe Commerce副檔名。 在產生程式碼、更新組態檔或實作執行階段動作時使用。
@@ -299,15 +292,15 @@ The extension should:
 
 ## 最佳實務
 
-Adobe建議您在使用AI編碼工具時，遵循下列最佳實務：
+Adobe建議您在使用AI編碼工具時遵循下列最佳實務：
 
 ### 計畫模式
 
-與程式碼代理程式聊天時，您應該選取&#x200B;**計畫**&#x200B;模式，為您的專案建立詳細的實作計畫。
+與程式碼代理程式聊天時，請選取&#x200B;**計畫**&#x200B;模式，為您的專案建立詳細的實作計畫。
 
 選取&#x200B;**計畫**&#x200B;模式的方法會依您使用的代理程式而有所不同。 如需指示，請參閱您的代理程式檔案。 例如：
 
-* [游標](https://cursor.com/docs/agent/modes)
+* [游標](https://cursor.com/docs/agent/plan-mode)
 * [克勞德程式碼](https://code.claude.com/docs/en/common-workflows#when-to-use-plan-mode)
 * [Gemini CLI](https://geminicli.com/docs/cli/plan-mode/)
 
@@ -340,7 +333,7 @@ Adobe建議您在使用AI編碼工具時，遵循下列最佳實務：
 
 ### 工作流程
 
-使用AI編碼工具進行開發時，請從範常式式碼或支架專案開始。 此方法可確保您以堅實的基礎為基礎進行建置，而不是從零開始，同時也會最佳化您的AI開發工作流程。
+使用AI編碼工具進行開發時，請從範常式式碼或支架專案開始。 此方法可確保您以既定的基礎為基礎（而不是從零開始），同時也會最佳化您的AI開發工作流程。
 
 這也允許您利用Adobe的範本，並以經過驗證的模式和架構為基礎，同時保留既定的目錄結構和慣例。
 
@@ -349,10 +342,10 @@ Adobe建議您在使用AI編碼工具時，遵循下列最佳實務：
 * [整合入門套件](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [結帳入門套件](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
 * [Adobe Commerce入門套件範本](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [Adobe I/O Events入門範本](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/io-events/getting-started-io-events)
-* [App Builder應用程式範例](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
+* [Adobe I/O Events入門範本](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [App Builder應用程式範例](https://developer.adobe.com/app-builder/docs/resources/sample_apps/)
 
-#### 為何應使用這些資源
+#### 為何使用這些資源
 
 * **已驗證的模式**：入門套件包含Adobe的最佳實務和架構決策
 * **加快開發**：減少花費在樣版和設定上的時間
@@ -365,7 +358,7 @@ Adobe建議您在使用AI編碼工具時，遵循下列最佳實務：
 
 ### 通訊協定
 
-已安裝的技能會自動強制執行下列四階段通訊協定。 開發應用程式時，工具應自動遵循此通訊協定：
+安裝的技能會自動強制執行以下四個階段的通訊協定。 開發應用程式時，工具會自動遵循此通訊協定：
 
 * 第1階段：需求分析與釐清
   * 詢問澄清問題時，請提供完整的答案。
@@ -435,7 +428,7 @@ Verify if simpler solutions exist
 完成實作計畫中的功能開發後，請立即測試。 及早測試可避免複合問題，並簡化偵錯作業。
 
 * 請勿等到所有功能都完成才使用
-* 逐步測試以及早發現問題
+* 若要及早發現問題，請逐步測試。
 * 在移到下一個功能之前驗證功能
 
 #### 先在本機測試
@@ -522,7 +515,7 @@ Help me debug why this action is returning 500 errors
 
 ### 偵錯
 
-停止並評估何時發生錯誤。 如果您遇到問題：
+停止並在發生錯誤時進行評估。 如果您遇到問題：
 
 * 停止並評估 — 不要在中斷狀態中繼續
 * 檢查記錄 — 使用啟用記錄來識別問題
@@ -602,11 +595,11 @@ Remove the orphaned actions that are no longer part of the current implementatio
 
 有興趣提供AI程式碼工具意見回饋的開發人員可以使用`/feedback`命令。
 
-此命令可讓您提供文字意見回饋，並將記錄傳送至Adobe。 您傳送的任何記錄都將經過清理，以移除任何私人或個人資訊。
+此命令可讓您提供文字意見回饋，並將記錄傳送至Adobe。 您傳送的任何記錄都會經過處理，以移除私人或個人資訊。
 
 >[!TIP]
 >
->使用者體驗會因您使用的IDE而稍有不同。 下列程式說明游標中的體驗。
+>使用者體驗會因您使用的IDE而略有不同。 下列程式說明游標中的體驗。
 
 1. 在您的代理程式中，輸入`/feedback`並選取`commerce-extensibility/feedback`命令。
 
@@ -624,4 +617,4 @@ Remove the orphaned actions that are no longer part of the current implementatio
 
 >[!NOTE]
 >
->如果您沒有看到`/feedback`命令，您可能需要[更新至最新版本](#updating-to-the-latest-version)。
+>如果您沒有看到`/feedback`命令，[請更新至最新版本](#updating-to-the-latest-version)。

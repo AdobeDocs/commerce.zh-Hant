@@ -9,26 +9,15 @@ level: Intermediate
 type: Tutorial
 autotag-review: '2026-06-18T16:21:35.357Z'
 TQID: 'https://experienceleague.adobe.com/aF6iiuFf5sCDyT0gmYmh8h94ZhMWr0DbIKrG1pI0G6I'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2:
-  - id: adedf3b3-e153-47a3-ae73-b5d65067b544
-  - id: a743e5dc-8f37-4b5d-a848-03c32ca30598
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: e7840a7b-a94f-4256-aed0-4e94b08e157b
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: cc250cf1-34eb-4863-80d0-d170d45ea067id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: adedf3b3-e153-47a3-ae73-b5d65067b544id: a743e5dc-8f37-4b5d-a848-03c32ca30598
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: e7840a7b-a94f-4256-aed0-4e94b08e157b
+source-git-commit: d9ea778afc86de323e53cd1be4768bc87cb71a8b
 workflow-type: tm+mt
-source-wordcount: 1291
+source-wordcount: 1289
 ht-degree: 0%
 
 ---
@@ -55,8 +44,8 @@ ht-degree: 0%
   ```
 
 * Bash shell
-   * macOS/Linux：不需要安裝
-   * Windows：使用[Git Bash](https://git-scm.com/install)或Linux (WSL) [&#128279;](https://learn.microsoft.com/en-us/windows/wsl/install)的Windows子系統
+  * macOS/Linux：不需要安裝
+  * Windows：使用[Git Bash](https://git-scm.com/install)或Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install)的[Windows子系統
 
 * 下載AI輔助的IDE，例如[Cursor](https://cursor.com/download) （建議使用）。 也支援其他IDE，例如Claude Code、Gemini CLI或Copilot，但可能需要修改提示和教學課程中的其他步驟。
 
@@ -74,7 +63,7 @@ ht-degree: 0%
   aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
   ```
 
-安裝[!DNL Adobe I/O CLI]和必要的外掛程式之後，請設定您的擴充性工作區。 Adobe建議使用自動化設定，以獲得最快的體驗。
+安裝[!DNL Adobe I/O CLI]和必要的外掛程式之後，請設定您的擴充性工作區。 Adobe建議您使用自動化設定，以獲得最有效率的體驗。
 
 * **[自動設定](#automated-setup) （建議）** — 執行單一命令以自動設定您的工作區。
 * **[手動設定](#manual-setup)** — 依照逐步指示個別設定每個元件。
@@ -202,7 +191,7 @@ Next steps:
 
 #### 建立新專案
 
-在Adobe Developer Console中建立App Builder專案，以託管您的擴充功能。
+若要託管您的擴充功能，請在Adobe Developer Console中建立[!DNL App Builder]專案。
 
 1. 導覽至[Adobe Developer Console](https://developer.adobe.com/)。
 1. 按一下&#x200B;**[!UICONTROL Create project from a template]**。
@@ -227,10 +216,10 @@ Next steps:
 1. 選取下列其中一個API。 請對下列每個API重複此程式：
 
    * **[!UICONTROL Adobe Services]**&#x200B;篩選器：
-      * **[!UICONTROL I/O Management API]**
-      * **[!UICONTROL I/O Events]** API
+     * **[!UICONTROL I/O Management API]**
+     * **[!UICONTROL I/O Events]** API
    * **[!UICONTROL Experience Cloud]**&#x200B;篩選器：
-      * **[!UICONTROL Adobe I/O Events for Adobe Commerce]** API
+     * **[!UICONTROL Adobe I/O Events for Adobe Commerce]** API
 
 1. 按一下&#x200B;**[!UICONTROL Next]**。
 
@@ -342,7 +331,7 @@ EVENT_PREFIX=test
 
 ### 下載工作區設定
 
-執行以下命令來下載工作區組態檔：
+若要下載工作區組態檔，請執行以下命令：
 
 ```bash
 aio console workspace download workspace.json
@@ -407,9 +396,9 @@ aio app use --merge
 
 ## 店面手動設定
 
-本節說明如何手動設定[Ratings擴充功能教學課程](./ratings-extension.md)和其他店面教學課程的店面。
+本節說明如何為[Ratings擴充功能教學課程](./ratings-extension.md)和其他店面教學課程，手動設定您的店面。
 
-若要自動設定店面，請執行[自動化設定](#automated-setup)區段中說明的`app-setup`命令，並選取[!DNL AEM Boilerplate Commerce]入門套件。
+若要自動設定您的店面，請執行[自動設定](#automated-setup)區段中說明的`app-setup`命令，並選取[!DNL AEM Boilerplate Commerce]入門套件。
 
 ### 先決條件
 
@@ -417,7 +406,7 @@ aio app use --merge
 
 * [Google Chrome](https://www.google.com/chrome/) — 測試店面所需
 
-* 連線到您[!DNL Commerce]執行個體的店面專案。 如果您沒有店面專案，請依照[建立店面](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=zh-Hant){target="_blank"}中的步驟進行，包括[連結商務資料的存放庫](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=zh-Hant#link-repo-to-commerce-data){target="_blank"}區段。
+* 連線到您[!DNL Commerce]執行個體的店面專案。 如果您沒有店面專案，請依照[建立店面](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"}中的步驟進行，包括[連結商務資料的存放庫](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#link-repo-to-commerce-data){target="_blank"}區段。
 
 ### 複製店面存放庫
 
