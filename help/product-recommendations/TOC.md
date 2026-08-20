@@ -38,4 +38,4 @@ ht-degree: 10%
   - [收集資料](events.md)
   - [自訂](customize.md)
   - [處理Cookie限制](setting-cookie.md)
-- [返回Commerce服務首頁](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [返回Commerce服務首頁](https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/home)

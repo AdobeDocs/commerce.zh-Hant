@@ -3,7 +3,7 @@ title: 連線您的執行個體
 description: 使用API金鑰和私密金鑰連線您的Commerce執行個體，並在設定中指定資料空間。
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Paas
-badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
+badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
 source-git-commit: 73814f5ac5d53399131263f47e170e612643e903
 workflow-type: tm+mt
 source-wordcount: '698'
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!INFO]
 >
-> 如需其他資訊，請參閱我們的[[!DNL Adobe Commerce] 服務聯結器](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector)影片。
+> 如需其他資訊，請參閱我們的[[!DNL Adobe Commerce] 服務聯結器](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector)影片。
 
 * 如果您&#x200B;*已連線您的執行個體*，透過取得和使用您的API認證並設定Commerce服務，您可以繼續[設定您的測試沙箱](sandbox.md)。
 * 如果您仍&#x200B;*需要連線執行個體*，請參閱本主題中有關[取得API認證](#obtain-api-credentials)和[設定Commerce服務](#configure-commerce-services)的資訊。
@@ -32,11 +32,11 @@ ht-degree: 0%
 
 ## 取得API認證
 
-若要使用Commerce SaaS服務，您必須針對沙箱和生產使用執行個體的API金鑰（Commerce公開API金鑰和私密金鑰），這些API金鑰是在[我的帳戶控制面板](https://account.magento.com/customer/account/login)中建立和管理的。 [可以為Commerce帳戶建立金鑰組](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas)，一個用於沙箱，一個用於生產，但一次只能使用一對金鑰組。
+若要使用Commerce SaaS服務，您必須針對沙箱和生產使用執行個體的API金鑰（Commerce公開API金鑰和私密金鑰），這些API金鑰是在[我的帳戶控制面板](https://account.magento.com/customer/account/login)中建立和管理的。 [可以為Commerce帳戶建立金鑰組](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/config/services/saas)，一個用於沙箱，一個用於生產，但一次只能使用一對金鑰組。
 
 >[!NOTE]
 >
->需要協助存取您的[!UICONTROL My Account]儀表板嗎？ 請參閱[建立Commerce帳戶](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create)。
+>需要協助存取您的[!UICONTROL My Account]儀表板嗎？ 請參閱[建立Commerce帳戶](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/commerce-account/commerce-account-create)。
 
 公開API金鑰一經建立，即可在您的「我的帳戶控制面板」中使用。 您可以視需要複製或刪除它。 當您為沙箱或生產環境建立公用API金鑰時，私用API金鑰會變成可見；它只能從後續的對話方塊中複製或儲存，並且之後無法存取。
 
@@ -73,7 +73,7 @@ ht-degree: 0%
 
    >[!INFO]
    >
-   > 如需其他資訊，請參閱我們的[[!DNL Adobe Commerce] 服務聯結器](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector#configuration-faqs)影片。
+   > 如需其他資訊，請參閱我們的[[!DNL Adobe Commerce] 服務聯結器](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector#configuration-faqs)影片。
 
 ## 端點
 

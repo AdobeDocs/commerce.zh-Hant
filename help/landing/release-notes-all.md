@@ -29,24 +29,24 @@ ht-degree: 0%
       <td><strong>Commerce服務</strong>
         <p>瞭解作為擴充功能提供的創新Commerce服務的最新改善。</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce/catalog-service/release-notes">[!DNL Catalog Service]</a></li>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/release-notes">[!DNL Live Search]</a></li>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes">[!DNL Payment Services]</a></li>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/release-notes">產品推薦</a></li>
+            <li><a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/catalog-service/release-notes">[!DNL Catalog Service]</a></li>
+            <li><a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/live-search/release-notes">[!DNL Live Search]</a></li>
+            <li><a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/payment-services/release-notes">[!DNL Payment Services]</a></li>
+            <li><a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/product-recommendations/release-notes">產品推薦</a></li>
           </ul>
         </td>
       <td><strong>整合服務</strong>
         <p>瞭解整合服務的最新改善，這些改善可讓我們的Commerce服務連結其他服務和Adobe擴充功能及產品。</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce/data-connection/release-notes">[!DNL Data Connection]</a></li>
+            <li><a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/data-connection/release-notes">[!DNL Data Connection]</a></li>
             <li><a href="../landing/saas.md">[!DNL Services Connector]</a></li>
           </ul>
       </td>
       <td><strong>資料服務</strong>
         <p>瞭解資料服務的最新改善，這些改善可讓我們的Commerce服務管理產品資料。</p>
           <ul>
-           <li><a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes">SaaS資料匯出擴充功能</a></li>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync">目錄同步</a></li>
+           <li><a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/saas-data-export/release-notes">SaaS資料匯出擴充功能</a></li>
+            <li><a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/data-services/catalog-sync">目錄同步</a></li>
           </ul>
       </td>
     </tr>

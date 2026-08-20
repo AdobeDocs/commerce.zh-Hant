@@ -35,7 +35,7 @@ ht-degree: 9%
 
 | 指南 | 說明 |
 |------ | ----------- |
-| [Adobe Commerce 2.4使用手冊](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home) | 適用於Adobe Commerce和Magento Open Source的以商家為中心的檔案 |
+| [Adobe Commerce 2.4使用手冊](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/user-guides/home) | 適用於Adobe Commerce和Magento Open Source的以商家為中心的檔案 |
 | [Adobe Commerce 2.4開發人員指南](https://developer.adobe.com/commerce/docs) | 用於建置和自訂Adobe Commerce或Magento Open Source的開發人員專屬檔案 |
 
 ## 支援
@@ -44,6 +44,6 @@ ht-degree: 9%
 
 如果您需要本指南未涵蓋的資訊或問題，請使用下列資源：
 
-* 疑難排解文章的[說明中心](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)。
-* [支援票證](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) — 提交票證以接收其他說明。
+* 疑難排解文章的[說明中心](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/overview)。
+* [支援票證](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) — 提交票證以接收其他說明。
 * 加入Adobe Commerce工程團隊，以及[#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4)公用Slack頻道中的SaaS storefront服務使用者以取得最新資訊。

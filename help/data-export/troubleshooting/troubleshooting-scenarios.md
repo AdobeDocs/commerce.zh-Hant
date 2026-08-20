@@ -4,7 +4,7 @@ description: 瞭解如何診斷並解決因設定錯誤、索引器設定或同�
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
+badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
@@ -84,9 +84,9 @@ ht-degree: 0%
 1. 從Commerce店面，開啟搜尋結果。 然後，選取相關產品以開啟其詳細檢視。
 1. 複製JSON輸出，並確認其符合您在[!DNL Commerce]目錄中所擁有的內容。
 1. 如果內容不符，請對目錄中的產品進行微幅編輯，例如新增空格或句點，以強制偵測變更。
-1. 等候重新同步或從CLI或Admin中的[[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)頁面觸發手動重新同步。
+1. 等候重新同步或從CLI或Admin中的[[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)頁面觸發手動重新同步。
 
-如需[!DNL Product Recommendations]中目錄資料的其他疑難排解，請參閱Commerce知識庫中的[產品建議模組疑難排解](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-40095)。
+如需[!DNL Product Recommendations]中目錄資料的其他疑難排解，請參閱Commerce知識庫中的[產品建議模組疑難排解](https://experienceleague.adobe.com/zh-hant/docs/experience-cloud-kcs/kbarticles/ka-40095)。
 
 ## 資料同步未依排程執行 {#sync-not-on-schedule}
 
@@ -96,8 +96,8 @@ ht-degree: 0%
 
 **解決方案：**
 
-- [確認cron工作正在執行](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-39832)。
-- 確認下列摘要的索引子已設定為&#x200B;**[!UICONTROL Update by Schedule]**：目錄屬性、產品、產品覆寫和產品變體。 在Commerce管理員中或使用CLI從[[!UICONTROL Index Management]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management)檢查： `bin/magento indexer:show-mode | grep -i feed`。
+- [確認cron工作正在執行](https://experienceleague.adobe.com/zh-hant/docs/experience-cloud-kcs/kbarticles/ka-39832)。
+- 確認下列摘要的索引子已設定為&#x200B;**[!UICONTROL Update by Schedule]**：目錄屬性、產品、產品覆寫和產品變體。 在Commerce管理員中或使用CLI從[[!UICONTROL Index Management]](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/tools/index-management)檢查： `bin/magento indexer:show-mode | grep -i feed`。
 
 ## 目錄同步處理具有「失敗」狀態 {#catalog-sync-failed}
 
@@ -110,7 +110,7 @@ ht-degree: 0%
 1. 請檢閱資料匯出錯誤記錄檔，以取得失敗的詳細資訊。 請參閱[檢閱記錄檔及疑難排解](logging.md)，以取得記錄檔格式及擴充的記錄檔選項：
    - `var/log/commerce-data-export-errors.log`在資料收集期間發生錯誤。
    - `var/log/saas-export-errors.log`資料提交期間發生錯誤。
-1. 如果錯誤與組態或協力廠商延伸無關，請[提交支援票證](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)以及相關記錄專案。
+1. 如果錯誤與組態或協力廠商延伸無關，請[提交支援票證](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)以及相關記錄專案。
 
 ## 記錄顯示「作業已略過 — 處理程式已鎖定」訊息 {#process-locked}
 

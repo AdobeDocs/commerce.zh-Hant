@@ -86,7 +86,7 @@ SaaS資料匯出支援三種同步型別：完全同步、部分同步和重試�
 透過部分同步，SaaS資料匯出會自動從Commerce應用程式將更新（例如產品名稱變更或價格更新）傳送至連線的商務服務。
 為了讓部分同步運作，Commerce應用程式需要下列設定：
 
-- [已透過cron工作啟用工作排程](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/next-steps/configuration)
+- [已透過cron工作啟用工作排程](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/next-steps/configuration)
 - 所有SaaS資料匯出索引子都是以`Update by Schedule`模式設定。
 
 ### 重試失敗的專案同步 {#retry-failed-items-sync}
@@ -119,7 +119,7 @@ SaaS資料匯出支援三種同步型別：完全同步、部分同步和重試�
 
 除了HTTP層級失敗之外，`*_resend_failed_items` cron工作也會排程應用程式層級錯誤（例如本機處理失敗或網路中斷）以進行自動重試。
 
-從Commerce管理員的[[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)頁面監視每個摘要的狀態。
+從Commerce管理員的[[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)頁面監視每個摘要的狀態。
 
 >[!MORELIKETHIS]
 >

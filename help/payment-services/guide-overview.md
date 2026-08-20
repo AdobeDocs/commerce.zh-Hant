@@ -113,11 +113,11 @@ Adobe Commerce和Magento Open Source的[!DNL Payment Services]是完全整合的
 
 >[!MORELIKETHIS]
 >
-> * [[!DNL Adobe Commerce] 2.4使用手冊](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home) — 同時針對[!DNL Adobe Commerce]和[!DNL Magento Open Source]以商家為中心的檔案
-> * [[!DNL Adobe Commerce] 2.4使用手冊](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home) — 用來建置和自訂[!DNL Adobe Commerce]或[!DNL Magento Open Source]的開發人員專用檔案
+> * [[!DNL Adobe Commerce] 2.4使用手冊](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/user-guides/home) — 同時針對[!DNL Adobe Commerce]和[!DNL Magento Open Source]以商家為中心的檔案
+> * [[!DNL Adobe Commerce] 2.4使用手冊](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/user-guides/home) — 用來建置和自訂[!DNL Adobe Commerce]或[!DNL Magento Open Source]的開發人員專用檔案
 > * [發行說明](release-notes.md) — 進一步瞭解即將發行的版本、產品詳細資料，以及哪些Adobe Commerce版本支援[!DNL Payment Services]擴充功能
-> * [說明中心](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) — 在知識庫中搜尋[!DNL Payment Services]相關的疑難排解文章
-> * [支援票證](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)—Commerce客戶可以提交票證，以取得其他協助
+> * [說明中心](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/overview) — 在知識庫中搜尋[!DNL Payment Services]相關的疑難排解文章
+> * [支援票證](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)—Commerce客戶可以提交票證，以取得其他協助
 
 ## 支援
 

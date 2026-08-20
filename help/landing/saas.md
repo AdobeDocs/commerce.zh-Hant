@@ -4,7 +4,7 @@ description: 瞭解如何使用生產和沙箱API金鑰將您的Adobe Commerce�
 feature: Services, Saas
 role: Admin, User
 exl-id: 1aa6ba8b-be39-496e-b83d-a4a7db9f5dd8
-badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
+badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
 TQID: https://experienceleague.adobe.com/pWbJSCrV9CcdJXNTkuXyCxh73eUA7nYt1okexwtK7II
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -56,7 +56,7 @@ ht-degree: 0%
 
 ## 認證 {#apikey}
 
-從[授權擁有者](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/onboarding)的[!DNL Commerce]帳戶產生生產和沙箱API金鑰。 Commerce帳戶由唯一的[!DNL Commerce] ID (MageID)識別。 只要帳戶處於良好狀態，商家組織的授權擁有者就能為產品推薦或Live Search等服務產生API金鑰。
+從[授權擁有者](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/start/onboarding)的[!DNL Commerce]帳戶產生生產和沙箱API金鑰。 Commerce帳戶由唯一的[!DNL Commerce] ID (MageID)識別。 只要帳戶處於良好狀態，商家組織的授權擁有者就能為產品推薦或Live Search等服務產生API金鑰。
 
 這些金鑰可在「需知」基礎上與系統整合商或開發團隊分享，後者代表授權持有人管理專案和環境。 已獲授權擁有者授予[!DNL Shared Access]的開發人員，無法代表授權擁有者產生金鑰，即使商家組織出現在他們帳戶的[!DNL Switch Accounts]下拉式清單中。
 
@@ -92,11 +92,11 @@ ht-degree: 0%
 
 [!DNL Commerce]執行個體必須設定有SaaS專案和SaaS資料空間，這樣[!DNL Commerce Services]才能將資料傳送到正確的位置。 SaaS專案會將所有SaaS資料空間分組。 SaaS資料空間用於收集和儲存可讓[!DNL Commerce Services]運作的資料。 某些資料可從[!DNL Commerce]執行個體匯出，而某些資料可從店面的購物者行為收集。 然後，這些資料會持續儲存以保護雲端儲存空間。
 
-針對[!DNL Product Recommendations]和[!DNL Live Search]，SaaS資料空間包含目錄和行為資料。 您可以在[!DNL Commerce]設定中選取[執行個體](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas)，以將[!DNL Commerce]執行個體指向SaaS資料空間。
+針對[!DNL Product Recommendations]和[!DNL Live Search]，SaaS資料空間包含目錄和行為資料。 您可以在[!DNL Commerce]設定中選取[執行個體](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/config/services/saas)，以將[!DNL Commerce]執行個體指向SaaS資料空間。
 
 >[!WARNING]
 >
-> 只會在您的生產[!DNL Commerce]安裝中使用您的&#x200B;**生產SaaS資料空間**。 在非生產環境中使用它可以混合測試和即時資料（例如，中繼URL或測試目錄資料）。 如果發生這種狀況，[請提交支援要求](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)以要求清除資料。
+> 只會在您的生產[!DNL Commerce]安裝中使用您的&#x200B;**生產SaaS資料空間**。 在非生產環境中使用它可以混合測試和即時資料（例如，中繼URL或測試目錄資料）。 如果發生這種狀況，[請提交支援要求](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/overview)以要求清除資料。
 
 如果您在Admin中找不到Live Search設定欄位，請確認您為選取的資料空間輸入了正確的API金鑰組（生產資料空間使用生產金鑰，測試資料空間使用沙箱金鑰）。 如果您設定的索引鍵不正確，在該Adobe Commerce環境中將無法使用SaaS服務（例如Live Search）。
 
@@ -118,15 +118,15 @@ ht-degree: 0%
 
 您可以在非生產環境中使用測試資料空間，但避免同時在多個環境中使用相同的資料空間。 如果您想要將測試資料空間移動到不同的環境，請先執行資料清理，然後再在新環境中選取和設定它。
 
-對於具有多個中繼環境的Adobe Commerce Cloud Pro專案，您可以透過[提交支援請求](https://experienceleague.adobe.com/home?support-tab=home#support)，為每個中繼環境請求額外的測試資料空間。 不過，如果您只有一個測試環境，且需要額外的測試資料空間，您有以下選項：
+對於具有多個中繼環境的Adobe Commerce Cloud Pro專案，您可以透過[提交支援請求](https://experienceleague.adobe.com/home?lang=zh-Hant&support-tab=home#support)，為每個中繼環境請求額外的測試資料空間。 不過，如果您只有一個測試環境，且需要額外的測試資料空間，您有以下選項：
 
 - 請聯絡客戶成功團隊或您指派的客戶成功案例經理，以要求額外的測試環境。
 
-- [提交支援要求](https://experienceleague.adobe.com/home?support-tab=home#support)以要求額外的測試資料空間，並指明額外資料空間的商業理由。 此請求有待核准。
+- [提交支援要求](https://experienceleague.adobe.com/home?lang=zh-Hant&support-tab=home#support)以要求額外的測試資料空間，並指明額外資料空間的商業理由。 此請求有待核准。
 
-使用Adobe付款服務的Magento Open Source客戶可能也會要求額外的資料空間。 請在提交[支援要求](https://experienceleague.adobe.com/home?support-tab=home#support)以要求測試資料空間之前，先連絡付款團隊以取得其他資料空間的預先核准。
+使用Adobe付款服務的Magento Open Source客戶可能也會要求額外的資料空間。 請在提交[支援要求](https://experienceleague.adobe.com/home?lang=zh-Hant&support-tab=home#support)以要求測試資料空間之前，先連絡付款團隊以取得其他資料空間的預先核准。
 
-擁有多個雲端專案或內部部署（即時/生產）安裝的客戶，也可透過[提交支援要求](https://experienceleague.adobe.com/home?support-tab=home#support)，要求每個專案或執行個體的額外生產及測試資料空間。
+擁有多個雲端專案或內部部署（即時/生產）安裝的客戶，也可透過[提交支援要求](https://experienceleague.adobe.com/home?lang=zh-Hant&support-tab=home#support)，要求每個專案或執行個體的額外生產及測試資料空間。
 
 ### 選取或建立SaaS專案 {#createsaasenv}
 
@@ -153,7 +153,7 @@ ht-degree: 0%
 
 1. 選取&#x200B;**資料空間**，以用於您[!DNL Commerce]存放區的目前組態。
 
-   如果您有要與Commerce服務整合的個別執行個體，請[提交支援票證](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)，為每個額外的執行個體請求新的SaaS專案。 支援人員建立SaaS專案後，請使用相同的API金鑰&#x200B;**為執行個體**&#x200B;設定Commerce Services聯結器，並選取新的SaaS專案和資料空間。
+   如果您有要與Commerce服務整合的個別執行個體，請[提交支援票證](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)，為每個額外的執行個體請求新的SaaS專案。 支援人員建立SaaS專案後，請使用相同的API金鑰&#x200B;**為執行個體**&#x200B;設定Commerce Services聯結器，並選取新的SaaS專案和資料空間。
 
 >[!WARNING]
 >
@@ -167,4 +167,4 @@ ht-degree: 0%
 
 ## SaaS資料匯出
 
-當您的[!DNL Commerce]執行個體成功連線至[!DNL Commerce Services]時，SaaS資料匯出程式會將Commerce資料從您的[!DNL Commerce]伺服器匯出至[!DNL Commerce SaaS Services]，以便同步處理至連線的Commerce服務。 在Admin中，您可以使用[資料管理儀表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)來檢查同步處理狀態。 如需詳細資訊，請參閱[SaaS資料匯出指南](../data-export/overview.md)。
+當您的[!DNL Commerce]執行個體成功連線至[!DNL Commerce Services]時，SaaS資料匯出程式會將Commerce資料從您的[!DNL Commerce]伺服器匯出至[!DNL Commerce SaaS Services]，以便同步處理至連線的Commerce服務。 在Admin中，您可以使用[資料管理儀表板](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)來檢查同步處理狀態。 如需詳細資訊，請參閱[SaaS資料匯出指南](../data-export/overview.md)。
