@@ -36,9 +36,9 @@ topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: da3860b0-d637-47df-bef0-273751180266
-source-git-commit: c5b10a715f64a220fc965328a7c913951d44dedc
+source-git-commit: bef6657cdf6703b6a0a1109bd6582ecbe4e19930
 workflow-type: tm+mt
-source-wordcount: 1461
+source-wordcount: 1456
 ht-degree: 0%
 
 ---
@@ -98,13 +98,13 @@ ht-degree: 0%
 
 若要使用[!DNL Storefront Builder]的簡單檔案式撰寫或視覺化編輯，在幾分鐘內建立豐富體驗，請使用Adobe的[[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant) （由[!DNL Edge Delivery Services]提供技術支援）。
 
-[!DNL Commerce Storefront]採用分離式架構，可透過GraphQL API層提供所有銷售服務和資料，完全實現無周邊化。 此架構讓團隊可獨立於Commerce Foundation開發他們的前端，提供使用新興技術建立和測試新接觸點的靈活性。
+[!DNL Commerce Storefront]採用分離式架構，可透過GraphQL API層提供所有Adobe Merchandising服務和資料，因此完全採用Headless。 此架構讓團隊可獨立於Commerce Foundation開發他們的前端，提供使用新興技術建立和測試新接觸點的靈活性。
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service]不支援Luma店面。 如果您正從雲端或內部部署的Adobe Commerce移轉，請參閱[現有店面](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/?lang=zh-Hant#existing-storefronts)以了解轉換指南。
+>[!DNL Adobe Commerce as a Cloud Service]不支援Luma店面。 如果您是從[!DNL Adobe Commerce on Cloud]或內部部署移轉，請參閱[現有店面](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/?lang=zh-Hant#existing-storefronts)以取得轉換指南。
 
-## 銷售服務與付款服務
+## Adobe Merchandising服務與支付服務
 
 Adobe提供豐富的智慧型可撰寫銷售服務，協助您支援關鍵業務目標。 這些服務也提供對大規模最佳化效能至關重要的應用程式開發介面。
 
@@ -116,7 +116,7 @@ Adobe提供豐富的智慧型可撰寫銷售服務，協助您支援關鍵業務
   >
   >目錄服務已自動與[!DNL Live Search]和[!DNL Product Recommendations]一併納入。
 
-- [付款服務](../payment-services/guide-overview.md) — 提供多種付款方式，包括免息分期付款，以及付款處理、訂單和發票的單一檢視，以提升客戶滿意度。 如需設定指示，請參閱[付款服務首頁](../payment-services/payments-home.md)。
+- [付款服務](../payment-services/guide-overview.md) — 提供多種付款方式，包括免息分期付款，以及單一檢視處理、訂購及發票等方式，提升客戶滿意度。 如需設定指示，請參閱[付款服務首頁](../payment-services/payments-home.md)。
 
 ## [!DNL Product Visuals powered by AEM Assets]
 
@@ -224,7 +224,7 @@ Adobe提供下列開發人員工具，用於建立整合與自訂：
 
 >[!NOTE]
 >
->Adobe可保證所有更新的回溯相容性。 這表示套用更新時，不會破壞符合[API優先擴充性](https://developer.adobe.com/commerce/extensibility/)模型的現有功能或自訂。
+>Adobe可保證所有更新的回溯相容性。 這表示套用更新時，不會破壞遵守[API優先擴充性](https://developer.adobe.com/commerce/extensibility/)模型的現有功能或自訂。
 
 ### 協力廠商整合
 
@@ -245,13 +245,13 @@ Adobe提供下列開發人員工具，用於建立整合與自訂：
 ### 業務領導者
 
 - **增加收入**：透過可提升SEO的高效能店面，促進自然流量。 建立個人化體驗，使用豐富的資料推動轉換。
-- **擴充營運**：自動擴充服務可提供99.9%的可用性，滿足您業務的高峰需求。 轉出多個品牌和區域，並從單一執行個體支援B2B和B2C。 透過彈性的資料模型支援大型且複雜的產品目錄。
+- **擴充營運**：自動擴充服務可提供99.9%的可用性，滿足您業務的高峰需求。 推出多個品牌和區域，並從單一執行個體支援B2B和B2C。 透過彈性的資料模型支援大型且複雜的產品目錄。
 - **提升銷售商生產力**：使用AI支援的銷售服務來改善轉換。 原生實驗，直接在店面中。 管理店面體驗，透過簡單的檔案式撰寫或視覺化編輯器，在幾分鐘內建立豐富的體驗。
-- **降低總體擁有成本(TCO)並加速創新**：隨時更新服務可讓您立即使用新功能。 從市集輕鬆安裝應用程式，啟動新功能。 將資源從繁瑣的維護中釋出，以專注於建立新功能。
+- **降低總體擁有成本(TCO)並加速創新**：隨時更新服務可讓您立即使用新功能。 從市集輕鬆安裝應用程式，啟動新功能。 從例行維護中重新分配資源，以專注於建立新功能。
 
 ### 資訊科技(IT)領導者
 
 - **快速布建**：快速開始自助布建，只需幾分鐘即可完成。 所有服務皆已預先設定為緊密合作，以更快開始。 視需要布建沙箱以供開發人員實驗使用。
 - **低廉的擁有成本**：永遠最新的服務不再升級。 使用自動套用的最新安全性修補程式，確保安全無虞並符合規範。 自動擴充，以因應最繁重的工作負荷。
 - **高效能店面**：使用簡單的檔案式撰寫或視覺化編輯器，在幾分鐘內建立豐富的體驗。 使用AI支援的銷售服務來改善轉換。 店面內建的原生實驗。
-- **更快速的創新**：將資源從繁瑣的維護中釋出，專注於建立提供商業價值的新功能。 使用全方位的擴充能力和以標準為基礎的技術（JavaScript、HTML、CSS和低程式碼工具），建置差異化的體驗。 按一下以安裝協力廠商應用程式，將新功能新增至您的Commerce平台。
+- **更快速的創新**：從例行維護重新分配資源，以專注於建立提供商業價值的新功能。 使用全方位的擴充能力和以標準為基礎的技術（JavaScript、HTML、CSS和低程式碼工具），建置差異化的體驗。 按一下以安裝協力廠商應用程式，將新功能新增至您的Commerce平台。

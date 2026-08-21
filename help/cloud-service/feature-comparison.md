@@ -26,9 +26,9 @@ topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: da3860b0-d637-47df-bef0-273751180266
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: bef6657cdf6703b6a0a1109bd6582ecbe4e19930
 workflow-type: tm+mt
-source-wordcount: 1019
+source-wordcount: 1076
 ht-degree: 0%
 
 ---
@@ -96,7 +96,7 @@ Adobe Commerce提供三種部署模式：
     <tfoot>
         <tr>
             <td colspan="3">
-                <sup>1</sup>核心<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/b2b/guide-overview">B2B功能</a> （例如公司管理和報價）可在SaaS中立即使用。不過，產業專屬的自訂可能需要額外的實施考量因素。
+                <sup>1</sup>核心<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/b2b/guide-overview">B2B功能</a> （例如公司管理和報價）可在SaaS中立即使用。 不過，產業專屬的自訂可能需要額外的實施考量因素。
             </td>
         </tr>
     </tfoot>
@@ -216,9 +216,9 @@ Adobe Commerce提供三種部署模式：
     <tfoot>
         <tr>
             <td colspan="3">
-                SaaS中的<sup>1</sup>資料模型擴充性支援<a href="https://developer.adobe.com/commerce/webapi/graphql/schema/attributes/mutations/">擴充核心實體</a>，超出產品和客戶範圍，包括B2B實體。不過，產業特定的資料模型（例如經銷商特定的屬性）可能需要額外的架構考量。
+                SaaS中的<sup>1</sup>資料模型擴充性支援<a href="https://developer.adobe.com/commerce/webapi/graphql/schema/attributes/mutations/">擴充核心實體</a>，超出產品和客戶範圍，包括B2B實體。 不過，產業特定的資料模型（例如經銷商特定的屬性）可能需要額外的架構考量。
                 <br><br>
-                <sup>2</sup> Adobe正在積極處理Document DB整合，以滿足SaaS的持續儲存需求。目前，需要長期資料儲存的實作可能需要布建和維護額外的基礎架構。
+                <sup>2</sup> Adobe正在積極處理Document DB整合，以滿足SaaS的持續儲存需求。 目前，需要長期資料儲存的實作可能需要布建和維護額外的基礎架構。
             </td>
         </tr>
     </tfoot>
@@ -229,7 +229,7 @@ Adobe Commerce提供三種部署模式：
 >在考慮移轉至SaaS時，Adobe建議您：
 >
 >- 儘可能將適當的功能移至「程式外」擴充性。
->- 減少需要轉接的曲面面積。
+>- 縮小需要轉換的範圍。
 >- 請考慮使用[!DNL API Mesh]來擴充API功能。
 >- 監控Adobe的持續平台演化和新功能發行。
 >- 根據可用的擴充性選項評估特定產業資料模型的需求。

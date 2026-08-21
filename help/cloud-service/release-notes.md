@@ -33,7 +33,7 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 last-update: 2026-08-07
-source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
+source-git-commit: 8f993feaea79eaca19f6ebd3dc5195e287fc4a36
 workflow-type: tm+mt
 source-wordcount: 5345
 ht-degree: 0%
@@ -119,7 +119,7 @@ ht-degree: 0%
 
 所有`custom-email`端點都需要存取`Marketing > Communications > Email template` [角色資源](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/user-accounts/permissions-user-roles#step-2assign-resources)。<!-- CCSAAS-5089, CCSAAS-5090 -->
 
-### 透過REST API管理完整的訂單鏈
+### 透過REST API管理完整的訂單序列
 
 >[!IMPORTANT]
 >
@@ -138,7 +138,7 @@ ht-degree: 0%
 | `GET` | `/V1/orderChain/{id}/comments` | 擷取訂單註解。 |
 | `GET` | `/V1/orderChain/{id}/statuses` | 擷取目前的訂單狀態。 |
 
-`GET`端點支援對發票、出貨、銷退折讓單及退貨進行篩選，現在支援由`order_original_id`進行篩選。 依`order_original_id`篩選會傳回整個訂單鏈結的詳細資料，而不只是單一訂單。 支援此功能的端點範例為`GET /V1/invoices`。<!-- ACCS-1004, ACCS-1005 -->
+`GET`端點支援對發票、出貨、銷退折讓單及退貨進行篩選，現在支援由`order_original_id`進行篩選。 依`order_original_id`篩選會傳回整個訂單鏈結的詳細資料，而不僅僅是單一訂單。 支援此功能的端點範例為`GET /V1/invoices`。<!-- ACCS-1004, ACCS-1005 -->
 
 ### 依自訂屬性值搜尋排序格線
 
@@ -158,11 +158,11 @@ ht-degree: 0%
 
 ### 按區域或範本隱藏異動電子郵件
 
-新的[電子郵件隱藏](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/config/services/email-suppression)設定（[!UICONTROL **商店**] > [!UICONTROL **設定**] > [!UICONTROL **Adobe服務**] > [!UICONTROL **電子郵件隱藏**]）可讓系統管理員選擇性停止[!DNL Commerce]傳送異動電子郵件。 您可以依功能區域（例如客戶帳戶、Order Management、退貨、結帳、行銷或B2B）或範本識別碼的精確清單來隱藏電子郵件。<!-- ACCS-1025 -->
+新的[電子郵件隱藏](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/config/services/email-suppression)設定（[!UICONTROL **商店**] > [!UICONTROL **設定**] > [!UICONTROL **Adobe服務**] > [!UICONTROL **電子郵件隱藏**]）可讓系統管理員選擇性停止[!DNL Commerce]傳送異動電子郵件。 您可以依功能區域（客戶帳戶、Order Management、退貨、結帳、行銷或B2B）或範本識別碼的精確清單來隱藏電子郵件。<!-- ACCS-1025 -->
 
 ### 在管理員中檢視訂單修改歷史記錄
 
-[!DNL Commerce Admin]訂單詳細資訊頁面現在會顯示訂單的完整修改鏈結，其中包括原始訂單及透過後續編輯建立的所有下階訂單。 商戶可以在訂單之間切換瀏覽、切換已取消訂單的可見度，並從鏈結檢視表記憶體取所有相關的商業發票、出貨、銷退折讓單及訂單註解。<!-- ACCS-968 -->
+[!DNL Commerce Admin]訂單詳細資訊頁面現在會顯示訂單的完整修改順序，包括原始訂單及透過後續編輯建立的所有下階訂單。 商戶可在訂單之間切換作業選項、切換已取消訂單的可見度，並從序號檢視表中存取所有相關的商業發票、出貨、銷退折讓單及訂單註解。<!-- ACCS-968 -->
 
 >[!NOTE]
 >
@@ -226,7 +226,7 @@ ht-degree: 0%
 
 ### 使用預設和自訂承運商追蹤出貨
 
-對於[!DNL Commerce Admin]中的預設和自訂運送業者，訂單追蹤現在相當可靠，可協助商家提供一致的購買後追蹤體驗。 先前，選取UPS或FedEx之類的電信業者並套用追蹤ID可能會阻止追蹤連結顯示 — 不需要商家採取行動來還原此行為。 使用[!DNL App Builder Integration Starter Kit]建立的[自訂電信業者](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-reference/)也可使用追蹤連結支援。<!-- ACCS-891 -->
+對於[!DNL Commerce Admin]中的預設和自訂運送業者，訂單追蹤現在相當可靠，可協助商家提供一致的購買後追蹤體驗。 先前，選取UPS或FedEx之類的電信業者並套用追蹤ID可能會阻止追蹤連結顯示 — 不需要商家採取行動來還原此行為。 使用[!DNL App Builder Integration Starter Kit]建立的[自訂電信業者](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-reference)也可使用追蹤連結支援。<!-- ACCS-891 -->
 
 ### 在「產品屬性」格線中檢視屬性輸入型別
 
@@ -268,7 +268,7 @@ ht-degree: 0%
 
 >[!ENDSHADEBOX]
 
-## 2026年5月 — 發行說#1
+## 2026年5月發行說#1
 
 [!BADGE 生產]{type=Neutral tooltip="列出的專案目前可在生產環境中使用。"}
 
@@ -278,7 +278,7 @@ ht-degree: 0%
 
 ### 略過reCAPTCHA以進行程式化OTP驗證
 
-新的組態選項可讓您略過[`exchangeOtpForCustomerToken`](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/exchange-otp-customer-token/) GraphQL突變的reCAPTCHA驗證。 這可啟用B2B點選工作流程，其中以程式設計方式起始一次性密碼(OTP)交換作業，而不需要輸入表單，因此不需要reCAPTCHA驗證。 此功能以2026年3月發行版本中引入的[一次性程式碼登入](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}功能為基礎。 為客戶登入啟用reCAPTCHA時，依預設，`exchangeOtpForCustomerToken`突變仍需要reCAPTCHA。 請聯絡您的Adobe Commerce客戶成功案例經理以啟用此選項。<!-- ACCS-850 -->
+新的組態選項可讓您略過[`exchangeOtpForCustomerToken`](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/exchange-otp-customer-token) GraphQL突變的reCAPTCHA驗證。 這可啟用B2B點選工作流程。 一次性密碼(OTP)交換是以程式設計方式啟動，不需要輸入表單，因此不需要reCAPTCHA驗證。 此功能以2026年3月發行版本中引入的[一次性程式碼登入](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}功能為基礎。 為客戶登入啟用reCAPTCHA時，依預設，`exchangeOtpForCustomerToken`突變仍需要reCAPTCHA。 請聯絡您的Adobe Commerce客戶成功案例經理以啟用此選項。<!-- ACCS-850 -->
 
 ### 編輯已部份開立商業發票的訂單
 
@@ -392,7 +392,7 @@ ht-degree: 0%
 
 ### 透過GraphQL檢查價格和庫存警示訂閱狀態
 
-新的GraphQL查詢[`isSubscribedProductAlertStock`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/is-subscribed-product-alert-stock/){target="_blank"}和[`isSubscribedProductAlertPrice`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/is-subscribed-product-alert-price/){target="_blank"}，讓店面判斷購物者是否已訂閱產品的庫存或價格警示。<!-- ACCS-334 -->
+新的GraphQL查詢[`isSubscribedProductAlertStock`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/is-subscribed-product-alert-stock){target="_blank"}和[`isSubscribedProductAlertPrice`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/is-subscribed-product-alert-price){target="_blank"}，讓店面判斷購物者是否已訂閱產品的庫存或價格警示。<!-- ACCS-334 -->
 
 ### 建立支援負值的數值產品屬性
 
@@ -400,11 +400,11 @@ ht-degree: 0%
 
 ### 在一個GraphQL請求中查詢多個表單的reCAPTCHA設定
 
-[`recaptchaFormConfigs`查詢](https://developer.adobe.com/commerce/webapi/graphql/schema/store/queries/recaptcha-form-configs/)可以在單一要求中傳回多個表單型別的組態詳細資料。<!-- ACCS-628 -->
+[`recaptchaFormConfigs`查詢](https://developer.adobe.com/commerce/webapi/graphql/schema/store/queries/recaptcha-form-configs)可以在單一要求中傳回多個表單型別的組態詳細資料。<!-- ACCS-628 -->
 
 ### 檢視具有新B2B許可權的所有公司訂單
 
-新的`view_all_company_orders` [公司角色](https://developer.adobe.com/commerce/webapi/rest/b2b/roles/)可讓B2B公司客戶檢視其公司內的所有訂單，包括管理員使用者建立的歷史訂單。<!-- ACCS-675 -->
+新的`view_all_company_orders` [公司角色](https://developer.adobe.com/commerce/webapi/rest/b2b/roles)可讓B2B公司客戶檢視其公司內的所有訂單，包括管理員使用者建立的歷史訂單。<!-- ACCS-675 -->
 
 ### 增強功能和錯誤修正
 
@@ -432,7 +432,7 @@ ht-degree: 0%
 
 管理員現在可以透過[!DNL Commerce Admin]和REST API產生客戶模擬的[一次性程式碼](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer)。 可透過`generateCustomerToken`或`exchangeOtpForCustomerToken`個GraphQL變動，以一次性代碼交換客戶存取權杖，讓無密碼的「以客戶身分登入」流程適用於賣家協助的購物情境。<!-- ACCS-404 -->
 
-如需使用API實作此功能的指引，請參閱[REST API](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/login-as-customer/)和[GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token/)檔案。
+如需使用API實作此功能的指引，請參閱[REST API](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/login-as-customer/)和[GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token)檔案。
 
 ### 透過REST API管理禮品卡帳戶
 
@@ -444,7 +444,7 @@ ht-degree: 0%
 
 ### 訂閱跨處理序送貨取得費率webhook
 
-`plugin.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates` webhook現在可在[!DNL Adobe Commerce as a Cloud Service]的Admin Webhook清單中使用。 使用它來實作[自訂送貨方法](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-use-cases/#shipping-methods)。<!-- ACCS-478 -->
+`plugin.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates` webhook現在可在[!DNL Adobe Commerce as a Cloud Service]的Admin Webhook清單中使用。 使用它來實作[自訂送貨方法](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-use-cases#shipping-methods)。<!-- ACCS-478 -->
 
 ### 透過產品屬性上傳PDF和其他檔案
 
@@ -580,11 +580,11 @@ mutation {
 
 ### 使用結構化錯誤碼自訂店面驗證訊息
 
-[`generateCustomerToken` GraphQL突變](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token/){target="_blank"}現在會連同錯誤訊息傳回輸入的錯誤碼，讓儲存區域能夠依據失敗原因顯示特定的UI訊息。 可用的錯誤碼包括： `CUSTOMER_MISSING_EMAIL`、`CUSTOMER_MISSING_PASSWORD`、`CUSTOMER_SIGN_IN_INCORRECT_OR_LOCKED`、`CUSTOMER_ACCOUNT_NOT_CONFIRMED`和`CUSTOMER_GENERIC_ERROR`。<!-- ACCS-301 -->
+[`generateCustomerToken` GraphQL突變](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token){target="_blank"}現在會連同錯誤訊息傳回輸入的錯誤碼，讓儲存區域能夠依據失敗原因顯示特定的UI訊息。 可用的錯誤碼包括： `CUSTOMER_MISSING_EMAIL`、`CUSTOMER_MISSING_PASSWORD`、`CUSTOMER_SIGN_IN_INCORRECT_OR_LOCKED`、`CUSTOMER_ACCOUNT_NOT_CONFIRMED`和`CUSTOMER_GENERIC_ERROR`。<!-- ACCS-301 -->
 
 ### 傳送購物車和願望清單閒置的自動電子郵件提醒
 
-[電子郵件提醒模組](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/marketing/communications/email-reminders/email-reminder-rules) (`Magento_Reminder`)目前在[!DNL Adobe Commerce as a Cloud Service]中啟用，可讓商家建立自動提醒規則，以根據購物車和願望清單閒置狀態觸發傳送給客戶的電子郵件。<!-- CCSAAS-4597 -->
+[電子郵件提醒模組](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/marketing/communications/email-reminders/email-reminder-rules) (`Magento_Reminder`)目前在[!DNL Adobe Commerce as a Cloud Service]中處於使用中。 它可讓商家建立自動提醒規則，以根據購物車和願望清單閒置狀態觸發傳送給客戶的電子郵件。<!-- CCSAAS-4597 -->
 
 ### 訂閱類別刪除事件webhook
 
@@ -592,7 +592,7 @@ mutation {
 
 ### 追蹤透過已註冊電子郵件下單的訪客訂單
 
-新的選用商店層級設定可讓客戶[追蹤他們下單的客服訂單](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-guest#allow-guest-order-access-for-registered-emails) （若訂單使用的電子郵件地址符合註冊的客戶帳戶）。<!-- ACCS-289 -->
+新的選用商店層級設定可讓客戶[追蹤他們進行的訪客訂單](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-guest#allow-guest-order-access-for-registered-emails)。 如果訂單使用的電子郵件地址符合註冊的客戶帳戶，則適用此規定。<!-- ACCS-289 -->
 
 ### 增強功能和錯誤修正
 
@@ -616,7 +616,7 @@ mutation {
 
 ### 使用商務事件傳送內容欄位
 
-[!DNL Adobe Commerce as a Cloud Service]現在在事件裝載中支援[內容欄位](https://developer.adobe.com/commerce/extensibility/events/context-fields/)，可讓您加入預設不屬於事件的資料。<!-- CEXT-5713 -->
+[!DNL Adobe Commerce as a Cloud Service]現在在事件裝載中支援[內容欄位](https://developer.adobe.com/commerce/extensibility/events/context-fields)，可讓您加入預設不屬於事件的資料。<!-- CEXT-5713 -->
 
 ### 使用新的webhook訂閱報價專案儲存事件
 
@@ -644,7 +644,7 @@ mutation {
 
 已對[!DNL Commerce Admin]進行下列增強功能：
 
-* 增強處理序外[出貨webhook裝載](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-use-cases/#payload)，以包含出貨地址自訂屬性。 這項變更可讓商家實作自訂送貨方法。<!-- ACCS-235 -->
+* 增強處理序外[出貨webhook裝載](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-use-cases#payload)，以包含出貨地址自訂屬性。 這項變更可讓商家實作自訂送貨方法。<!-- ACCS-235 -->
 
 * 已新增管理員報告的存取權，包括[客戶](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/reporting/customer-reports)、[行銷](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/reporting/marketing-reports)、[產品](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/reporting/product-reports)和[銷售](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/reporting/sales-reports)的報告。<!-- CCSAAS-3085 -->
 
@@ -735,7 +735,7 @@ Invoice API現在支援使用擴充功能屬性的[自訂擷取金額](https://e
 
 ### 增強功能和錯誤修正
 
-此版本中包含下列已選取的增強功能、最佳化和錯誤修正：
+此版本中包括下列選取的增強功能、最佳化和錯誤修正：
 
 * 解決上傳檔案至S3時可能發生的錯誤。<!-- CCSAAS-4189 -->
 
@@ -745,7 +745,7 @@ Invoice API現在支援使用擴充功能屬性的[自訂擷取金額](https://e
 
 * 修正按一下管理控制面板上的&#x200B;[!UICONTROL **重新載入資料**]&#x200B;按鈕時所發生的`404`錯誤。<!-- CCSAAS-4468 -->
 
-* 解決啟用[!DNL AEM Assets integration]且產品具有影像時，無法透過REST API更新產品自訂屬性的問題。<!-- ACAP-1178 -->
+* 解決啟用[!DNL AEM Assets integration]且產品具有影像時，未透過REST API更新產品自訂屬性的問題。<!-- ACAP-1178 -->
 
 * 各種效能和最佳化改善專案。
 <!-- CCSAAS-4255 -->
@@ -766,11 +766,11 @@ Invoice API現在支援使用擴充功能屬性的[自訂擷取金額](https://e
 
 * [使用者管理](./user-management.md) — 已變更Admin Console中的&#x200B;**產品管理員**&#x200B;角色，以自動更新使用者對Commerce管理員的存取權。<!-- CCSAAS-3012 -->
 
-* 新增使用[GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads)和[REST](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/s3-uploads)中的預先簽署URL，將可轉讓的報價附件以及與客戶和客戶地址相關的檔案和影像上傳和擷取到Amazon S3的功能。 透過REST，您還可以上傳類別影像。<!-- CCSAAS-3250 -->
+* 新增使用[GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads/)和[REST](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/s3-uploads/)中的預先簽署URL，將可轉讓的報價附件以及與客戶和客戶地址相關的檔案和影像上傳和擷取到Amazon S3的功能。 透過REST，您還可以上傳類別影像。<!-- CCSAAS-3250 -->
 
 * 已將`POST /V1/customers`和`PUT /V1/customers/{customerId}`端點新增至[REST API](https://developer.adobe.com/commerce/webapi/rest/reference/)，以建立和更新客戶。 這些端點需要IMS授權。<!-- CCSAAS-3112 -->
 
-* 新增[`exchangeOtpForCustomerToken`突變](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/exchange-otp-customer-token/) (需要購物者的電子郵件地址和一次性密碼(OTP))，並接收交換的客戶權杖。 此突變通常用於客戶需要使用傳送至其電子郵件或電話的OTP進行驗證的情況。
+* 新增[`exchangeOtpForCustomerToken`突變](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/exchange-otp-customer-token) (需要購物者的電子郵件地址和一次性密碼(OTP))，並接收交換的客戶權杖。 此突變通常用於客戶需要使用傳送至其電子郵件或電話的OTP進行驗證的情況。
 
 * 如果在Admin的&#x200B;[!UICONTROL **存放區電子郵件地址**]&#x200B;設定畫面中定義的位址包含結尾為`example.com`的值，Commerce不會傳送電子郵件至此位址。 系統會改為記錄未傳送電子郵件。 <!-- CCSAAS-3533 -->
 

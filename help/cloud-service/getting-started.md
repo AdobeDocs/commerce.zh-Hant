@@ -29,16 +29,16 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: bef6657cdf6703b6a0a1109bd6582ecbe4e19930
 workflow-type: tm+mt
-source-wordcount: 1343
+source-wordcount: 1337
 ht-degree: 0%
 
 ---
 
 # 快速入門
 
-[!DNL Adobe Commerce as a Cloud Service]提供大部分的立即可用設定。 完成幾個基本設定程式後，您的存放區即已啟動並立即執行。 本指南會逐步引導您建立和使用執行個體，並幫助您設定組織以取得成功。 這可確保您的團隊可以正確存取[!DNL Adobe Commerce as a Cloud Service]，以及開始使用所需的工具。
+根據預設，[!DNL Adobe Commerce as a Cloud Service]提供大部分的設定。 完成幾個基本設定程式後，您的存放區即已啟動並立即執行。 本指南會逐步引導您建立和使用執行個體，並幫助您設定組織以取得成功。 這可確保您的團隊可以正確存取[!DNL Adobe Commerce as a Cloud Service]，以及開始使用所需的工具。
 
 [!DNL Adobe Commerce as a Cloud Service]是雲端原生commerce平台，提供彈性、擴充性和效率，用於提供數位商務體驗。 此SaaS產品是完全受管理、無版本的平台，提供順暢的升級體驗，無需手動干預。
 
@@ -47,7 +47,7 @@ ht-degree: 0%
 [!DNL Adobe Commerce as a Cloud Service]包含下列元件：
 
 * **[[!DNL Adobe Experience Cloud]](https://experience.adobe.com/)** — 您在[experience.adobe.com](https://experience.adobe.com/)所有[!DNL Adobe Commerce]產品的中心進入點
-   * 按一下「[!UICONTROL **快速存取**]」底下的「[!UICONTROL **Commerce**]」以開啟「Commerce Cloud管理員」
+  * 按一下「[!UICONTROL **快速存取**]」底下的「[!UICONTROL **Commerce**]」以開啟「Commerce Cloud管理員」
 * **[[!DNL Commerce Cloud Manager]](https://experience.adobe.com/#/commerce/cloud-service)** — 建立和管理執行個體、存取API URL和您的Commerce管理員
 * **[[!DNL Adobe Admin Console]](https://adminconsole.adobe.com/)** — 管理使用者和角色
 * **Commerce管理員** — 管理產品、訂單、客戶和商店設定
@@ -83,7 +83,7 @@ ht-degree: 0%
 
 >[!TAB 系統管理員與商家工作流程]
 
-此圖表提供系統管理員和商家如何存取及管理[!DNL Adobe Commerce as a Cloud Service]執行個體的概觀。 如需有關管理員工作流程的詳細資訊，請參閱[Adobe Admin Console指南](https://helpx.adobe.com/tw/enterprise/admin-guide.html)。
+此圖表提供系統管理員和商家如何存取及管理[!DNL Adobe Commerce as a Cloud Service]執行個體的概觀。 如需有關管理員工作流程的詳細資訊，請參閱[Adobe Admin Console指南](https://helpx.adobe.com/tw/business/enterprise.html)。
 
 ![Adobe Commerce as a Cloud Service的系統管理員和商家工作流程圖表](./assets/merchant-flow.png){zoomable="yes"}
 
@@ -143,7 +143,7 @@ ht-degree: 0%
 
 * **系統管理員**：檢閱[共擔責任](./security/shared-responsibility.md)指南
 * **商家**：探索[使用案例](use-cases.md)以瞭解常見的業務案例
-* **開發人員**：檢視[Adobe Commerce開發人員檔案](https://developer.adobe.com/commerce/docs)
+* **開發人員**：檢視[Adobe Commerce開發人員檔案](https://developer.adobe.com/commerce/docs/)
 
 ## Adobe Commerce as a Cloud Service基本需知
 
@@ -173,7 +173,7 @@ ht-degree: 0%
 
 1. 為您的執行個體選擇&#x200B;[!UICONTROL **環境型別**]。 您可以選擇下列選項：
 
-   * [!UICONTROL **沙箱**] — 僅供設計和測試之用。 您應該使用沙箱環境來開始您的[!DNL Adobe Commerce as a Cloud Service]歷程。
+   * [!UICONTROL **沙箱**] — 僅供設計和測試之用。 Adobe建議使用沙箱環境開始您的[!DNL Adobe Commerce as a Cloud Service]歷程。
 
    >[!NOTE]
    >
@@ -215,18 +215,18 @@ ht-degree: 0%
 
 >[!TIP]
 >
->若要檢視執行個體的相關資訊，包括REST和GraphQL端點以及管理員URL，請按一下執行個體名稱旁邊的資訊圖示。
+>若要檢視執行個體資訊，包括REST和GraphQL端點以及管理員URL，請按一下執行個體名稱旁邊的資訊圖示。
 
 管理員和端點的基礎URL會因地區和環境而異，使用下列模式：
 
 * 管理員
-   * 北美生產系統管理員： `https://na1.admin.commerce.adobe.com`
-   * 北美沙箱管理員： `https://na1-sandbox.admin.commerce.adobe.com`
-   * 歐洲生產系統管理員： `https://eu1.admin.commerce.adobe.com`
+  * 北美生產系統管理員： `https://na1.admin.commerce.adobe.com`
+  * 北美沙箱管理員： `https://na1-sandbox.admin.commerce.adobe.com`
+  * 歐洲生產系統管理員： `https://eu1.admin.commerce.adobe.com`
 * REST和GraphQL
-   * 北美生產GraphQL： `https://na1.api.commerce.adobe.com`
-   * 北美洲沙箱GraphQL： `https://na1-sandbox.api.commerce.adobe.com`
-   * 歐洲生產GraphQL： `https://eu1.api.commerce.adobe.com`
+  * 北美生產GraphQL： `https://na1.api.commerce.adobe.com`
+  * 北美洲沙箱GraphQL： `https://na1-sandbox.api.commerce.adobe.com`
+  * 歐洲生產GraphQL： `https://eu1.api.commerce.adobe.com`
 
 ### 匯入您的目錄
 

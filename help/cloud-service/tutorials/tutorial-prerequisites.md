@@ -26,9 +26,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: e7840a7b-a94f-4256-aed0-4e94b08e157b
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: d9ea778afc86de323e53cd1be4768bc87cb71a8b
 workflow-type: tm+mt
-source-wordcount: 1291
+source-wordcount: 1289
 ht-degree: 0%
 
 ---
@@ -55,8 +55,8 @@ ht-degree: 0%
   ```
 
 * Bash shell
-   * macOS/Linux：不需要安裝
-   * Windows：使用[Git Bash](https://git-scm.com/install)或Linux (WSL) [&#128279;](https://learn.microsoft.com/en-us/windows/wsl/install)的Windows子系統
+  * macOS/Linux：不需要安裝
+  * Windows：使用[Git Bash](https://git-scm.com/install)或Linux (WSL) [&#128279;](https://learn.microsoft.com/en-us/windows/wsl/install)的Windows子系統
 
 * 下載AI輔助的IDE，例如[Cursor](https://cursor.com/download) （建議使用）。 也支援其他IDE，例如Claude Code、Gemini CLI或Copilot，但可能需要修改提示和教學課程中的其他步驟。
 
@@ -74,7 +74,7 @@ ht-degree: 0%
   aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
   ```
 
-安裝[!DNL Adobe I/O CLI]和必要的外掛程式之後，請設定您的擴充性工作區。 Adobe建議使用自動化設定，以獲得最快的體驗。
+安裝[!DNL Adobe I/O CLI]和必要的外掛程式之後，請設定您的擴充性工作區。 Adobe建議您使用自動化設定，以獲得最有效率的體驗。
 
 * **[自動設定](#automated-setup) （建議）** — 執行單一命令以自動設定您的工作區。
 * **[手動設定](#manual-setup)** — 依照逐步指示個別設定每個元件。
@@ -202,7 +202,7 @@ Next steps:
 
 #### 建立新專案
 
-在Adobe Developer Console中建立App Builder專案，以託管您的擴充功能。
+若要託管您的擴充功能，請在Adobe Developer Console中建立[!DNL App Builder]專案。
 
 1. 導覽至[Adobe Developer Console](https://developer.adobe.com/)。
 1. 按一下&#x200B;**[!UICONTROL Create project from a template]**。
@@ -227,10 +227,10 @@ Next steps:
 1. 選取下列其中一個API。 請對下列每個API重複此程式：
 
    * **[!UICONTROL Adobe Services]**&#x200B;篩選器：
-      * **[!UICONTROL I/O Management API]**
-      * **[!UICONTROL I/O Events]** API
+     * **[!UICONTROL I/O Management API]**
+     * **[!UICONTROL I/O Events]** API
    * **[!UICONTROL Experience Cloud]**&#x200B;篩選器：
-      * **[!UICONTROL Adobe I/O Events for Adobe Commerce]** API
+     * **[!UICONTROL Adobe I/O Events for Adobe Commerce]** API
 
 1. 按一下&#x200B;**[!UICONTROL Next]**。
 
@@ -342,7 +342,7 @@ EVENT_PREFIX=test
 
 ### 下載工作區設定
 
-執行以下命令來下載工作區組態檔：
+若要下載工作區組態檔，請執行以下命令：
 
 ```bash
 aio console workspace download workspace.json
@@ -407,9 +407,9 @@ aio app use --merge
 
 ## 店面手動設定
 
-本節說明如何手動設定[Ratings擴充功能教學課程](./ratings-extension.md)和其他店面教學課程的店面。
+本節說明如何為[Ratings擴充功能教學課程](./ratings-extension.md)和其他店面教學課程，手動設定您的店面。
 
-若要自動設定店面，請執行[自動化設定](#automated-setup)區段中說明的`app-setup`命令，並選取[!DNL AEM Boilerplate Commerce]入門套件。
+若要自動設定您的店面，請執行[自動設定](#automated-setup)區段中說明的`app-setup`命令，並選取[!DNL AEM Boilerplate Commerce]入門套件。
 
 ### 先決條件
 

@@ -22,9 +22,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
+source-git-commit: d7623f5d42eaa50b95a2f36c244b8a3e78d4c7a9
 workflow-type: tm+mt
-source-wordcount: 1738
+source-wordcount: 1737
 ht-degree: 0%
 
 ---
@@ -233,7 +233,7 @@ cp RATINGS_API_CONTRACT.md ../storefront
 
 1. 在新的「游標」視窗中開啟店面資料夾。
 
-   或者，如果您已安裝[Cursor CLI](https://cursor.com/docs/configuration/shell#installing-cli-commands)，請在終端機中使用下列命令開啟視窗：
+   或者，如果您已安裝[Cursor CLI](https://cursor.com/help/customization/keyboard-shortcuts#installing-cli-commands)，請在終端機中使用下列命令開啟視窗：
 
    ```bash
    cursor .
@@ -266,8 +266,8 @@ cp RATINGS_API_CONTRACT.md ../storefront
 1. 代理程式會評估任務複雜度並叫用分階段工作流程。 在&#x200B;**階段1 （需求收集）**&#x200B;期間，代理程式會建立需求檔案，並詢問下列問題：
 
    * PDP上應該顯示評等的位置？
-   * 這應該是一個新的獨立區塊，還是現有PDP外掛程式元件內的插槽自訂？
-   * 如果API無法使用或未傳回任何資料，則應該進行何種遞補？
+   * 這是新的獨立區塊，還是現有PDP下拉式元件中的插槽自訂？
+   * 如果API無法使用或未傳回任何資料，有何遞補？
    * 評等應該也出現在PLP （產品清單）上，還是僅出現在PDP上？
    * 是否有任何設計規格或模型？
 

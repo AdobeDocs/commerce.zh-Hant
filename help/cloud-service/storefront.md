@@ -22,9 +22,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
+source-git-commit: 28102ad0dba698e37a69bbae90e3e9cec364ca81
 workflow-type: tm+mt
-source-wordcount: 300
+source-wordcount: 332
 ht-degree: 0%
 
 ---
@@ -65,3 +65,4 @@ ht-degree: 0%
 * [產生變數](./use-cases.md#generate-variations) — 使用Generative AI自動產生高品質的內容。
 * [Adobe Commerce Storefront檔案](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant) — 取得有關更新網站內容以及與Commerce前端元件和後端資料整合的詳細資訊。
 * [組態服務](https://www.aem.live/docs/config-service-setup) — 瞭解如何從`config.json`移轉您的店面組態以使用組態服務，此服務支援進階使用案例，例如重複設定和覆蓋。
+* [店面B2B功能](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility/b2b/?lang=zh-Hant#major-features) — 瞭解店面相容性套件中可用的B2B功能，所有[!DNL Adobe Commerce as a Cloud Service]執行個體都會自動安裝該套件。
