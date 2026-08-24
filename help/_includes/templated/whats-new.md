@@ -1,7 +1,7 @@
 ---
-source-git-commit: 4ecab54255029c3e9e84ba9f6de96888157d8fea
+source-git-commit: a2126f6cc24cc3a17c31e0d8dd095f7d7df26354
 workflow-type: tm+mt
-source-wordcount: '1355'
+source-wordcount: '916'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,36 @@ ht-degree: 1%
 ## 新增功能
 
 此頁面包含過去60天所做的變更。 我們將從此清單中排除所有微幅更新，例如複製編輯。
+
+### 2026年8月18日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>更新最新<a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md">source log-codes.md</a>的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/saas-data-export/troubleshooting/log-codes-reference">資料匯出記錄檔代碼參考</a>。</p>
+</td>
+      <td>
+        技術
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/1291cadbeca63d454eabab31c415b2d037d280ba">認可</a></td>
+    </tr>
+    <tr>
+      <td><p>Adobe Commerce Optimizer現在將私人目錄檢視限製為單一價格簿。 深入瞭解<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/setup/private-catalog-view#price-book-restriction-on-private-catalog-views">私人目錄檢視</a>、<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/setup/catalog-view">目錄檢視</a>和<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/setup/pricebooks">價格手冊</a>。</p>
+</td>
+      <td>
+        重大更新
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/b6613edbf84681a860b9c71a07f43a7df40e8784">認可</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年8月12日
 
@@ -279,88 +309,6 @@ ht-degree: 1%
         重大更新
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/edab7c8b3c7965425c5d3008a537f7e4a1fc374b">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年6月23日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>已更新Commerce服務檔案的目錄資料同步驗證指引。 服務安裝和設定主題現在使用一致的兩步驟工作流程 — 在<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status">資料摘要同步狀態頁面</a>上確認匯出，然後在<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard">資料管理儀表板</a>上確認傳遞 — 其中包含<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/catalog-service/get-started#monitor-and-troubleshoot-data-export">目錄服務開始使用</a>、<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/live-search/install#monitor-sync-progress">即時搜尋安裝</a>、<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/product-recommendations/getting-started/install-configure#monitor-and-troubleshoot-data-synchronization">產品建議安裝</a>以及<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/saas-data-export/data-synchronization/data-sync-manage#verify-that-the-data-sync-is-working">在<em>SaaS資料匯出指南</em>中管理同步</a>的更新指示。</p>
-</td>
-      <td>
-        意見反應
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/82bdfd342d2d745721ed2b35f2dbfd8fa394ab5a">認可</a></td>
-    </tr>
-    <tr>
-      <td><p>新增新的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/aco-optimizer-connector/reference/feed-table-reference">Adobe Commerce Optimizer聯結器摘要資料表結構描述參考</a>並更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/saas-data-export/data-synchronization/sync-overview">SaaS資料匯出同步</a>、<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/saas-data-export/data-synchronization/data-sync-manage">手動同步管理</a>、<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/saas-data-export/reference/data-export-cli-commands">Commerce CLI resync命令</a>以及<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/saas-data-export/reference/feed-table-reference">摘要資料表結構描述</a>指南。</p>
-</td>
-      <td>
-        重大更新，新主題
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/601d02435f388096d59ce7f8e2a9e3e7c8bec65b">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年6月17日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>更新管理Adobe Commerce與連線的Commerce服務之間目錄資料同步的檔案。<br /> — 在<em>SaaS資料匯出指南</em>中新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/saas-data-export/data-synchronization/data-sync-manage">檢視及管理同步化程式</a>主題，以監視匯出狀態、確認資料傳遞及手動重新同步Commerce服務與Adobe Commerce Optimizer整合的摘要。<br /> — 在<em>SaaS資料匯出指南</em>中新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/saas-data-export/troubleshooting/troubleshooting-scenarios">疑難排解案例</a>、<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/saas-data-export/reference/manage-extension">摘要資料表結構描述參考</a>以及其他疑難排解和參考資訊。<br /> — 更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/aco-optimizer-connector/get-started">開始使用Adobe Commerce Optimizer聯結器</a>並新增了<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/aco-optimizer-connector/data-sync-manage">管理與Commerce Optimizer的同步</a>、<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/aco-optimizer-connector/troubleshooting/troubleshooting">Adobe Commerce Optimizer聯結器疑難解答</a>、<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/aco-optimizer-connector/reference/connector-reference">聯結器模組和饋送端點</a>，以及有關估計資料量和與<em>Adobe Commerce Optimizer聯結器指南</em>同步時間的說明。</p>
-</td>
-      <td>
-        重大更新，新主題
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/66d9db3ab63102a0fd639f274a4131bf69ac868a">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年6月16日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>已新增Adobe Commerce as a Cloud Service的沙箱<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes">發行說明</a>。</p>
-</td>
-      <td>
-        重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/0321b64a787b37a95af0568473bfcfc5e5d4189e">認可</a></td>
-    </tr>
-    <tr>
-      <td><p>更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/payment-services/financial-reports/order-payment-status#asynchronous-monitoring-of-pending-capture-transactions">訂單付款狀態報告</a>，以澄清預設停用擱置擷取交易的非同步監視，並記錄啟用步驟。</p>
-</td>
-      <td>
-        重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/7be26764bc3f3878c3c78a881ad8912038c7f07f">認可</a></td>
     </tr>
   </tbody>
 </table>
