@@ -4,9 +4,9 @@ description: 瞭解如何在 [!DNL Adobe Commerce Optimizer]中使用產品影�
 feature: CMS, Media, Configuration, Integration
 role: Admin, Developer
 badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
-source-git-commit: 264658bee09a22cfd55828c6960153cc1239d3fb
+source-git-commit: bf87cbdc38a17ea3f5ad339cb7b4f4f030317450
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '650'
 ht-degree: 0%
 
 ---
@@ -103,3 +103,4 @@ AEM Assets中的影像會透過以下來源設定擷取為目錄層：
 * [目錄圖層](catalog-layer.md)
 * [目錄檢視](catalog-view.md)
 * [AEM Assets整合指南](../../aem-assets-integration/overview.md)
+* [產品視覺效果限制和邊界](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/boundaries-limits#product-visuals-limits)
