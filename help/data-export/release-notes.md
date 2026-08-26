@@ -22,9 +22,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
+source-git-commit: 5964358bb4370fa4fb0c2f4c447bacb3603d0f5e
 workflow-type: tm+mt
-source-wordcount: 3271
+source-wordcount: 3356
 ht-degree: 0%
 
 ---
@@ -44,6 +44,14 @@ ht-degree: 0%
 >[!DNL SaaS data export]擴充功能是與[!DNL Live Search]、[!DNL Product Recommendations]及[!DNL Catalog Service]一起自動安裝的模組集合。 您可以使用[!DNL Composer]檢查系統上安裝的版本。 在某些情況下，您可能會想要升級系統上的資料匯出擴充功能，以取得修正或新功能，而不更新Commerce服務版本。
 
 ## 2026版本 {#release-notes-2026}
+
+### 103.4.32版
+
+_2026年8月25日_
+
+![新的](../assets/new.svg) **產品摘要中包含的可自訂選項** — 產品可自訂選項（例如色票、大小選擇或個人化欄位）現在會匯出為`customizable_options`產品屬性。 屬性包含每個選項的標題、是否為必要及其可用值，因此連線的Commerce服務可在店面顯示精確的可自訂選項資料。<!--MDEE-1029-->
+
+![修正](../assets/fix.svg) **可靠的類別許可權同步處理** — 修正類別許可權摘要無法完整重新同步處理遺失網站識別碼的設定，進而造成同步處理錯誤的問題。<!--MDEE-1411-->
 
 ### 103.4.31版
 
