@@ -14,9 +14,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: da3860b0-d637-47df-bef0-273751180266
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+source-git-commit: 9fce350099392041ec9f648ae2d67a459ff53d91
 workflow-type: tm+mt
-source-wordcount: 1744
+source-wordcount: 1784
 ht-degree: 1%
 
 ---
@@ -34,6 +34,10 @@ ht-degree: 1%
 >[!TIP]
 >
 >您可以從右上角功能表檢視目前的AEM版本： **[!UICONTROL Help]** > **[!UICONTROL About AEM]**。
+
+>[!IMPORTANT]
+>
+>無論您使用哪個選項，[在AEM中繼資料結構編輯器中設定中繼資料結構以進行資產核准](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets#configuration)，以便您核准Commerce資產。
 
 ## 啟用Commerce整合（自助服務） {#enable-aem-commerce-self-service}
 
@@ -53,7 +57,7 @@ ht-degree: 1%
 
 ### 步驟1：建立方案和環境
 
-在Cloud Manager中建立方案是一個精靈過程 — 方案及其環境會跨多個步驟進行配置，並在最後儲存在一起。
+在Cloud Manager中建立方案是多步驟的過程 — 方案及其環境會跨多個步驟進行設定並一起儲存。
 
 1. 在Cloud Manager中，選取&#x200B;**[!UICONTROL Add Program]**。
 
@@ -197,7 +201,7 @@ ht-degree: 1%
 
 如果&#x200B;**Commerce**&#x200B;索引標籤未出現在屬性中，您必須在中繼資料結構編輯器中，手動完成下列步驟：
 
-1. 導覽至中繼資料結構編輯器。
+1. 導覽至「中繼資料結構編輯器」。
 
 1. 選取&#x200B;**編輯**&#x200B;以修改預設的中繼資料結構表單。
 
@@ -231,7 +235,7 @@ ht-degree: 1%
 
    ![AEM Assets製作](../assets/aem-assets-authoring.png){width="600" zoomable="yes"}
 
-1. 選取槌子圖示，開啟「管理員」工具。
+1. 選取槌子圖示，開啟管理工具。
 
    ![AEM作者管理員管理中繼資料設定檔](../assets/aem-manage-metadata-profiles.png){width="600" zoomable="yes"}
 
@@ -267,17 +271,17 @@ ht-degree: 1%
      ./jcr:content/metadata/commerce:isCommerce
      ```
 
-1. 選填。 若要自動同步處理上傳至AEM Assets環境的已核准Commerce資產，請在`Basic`索引標籤上將&#x200B;_[!UICONTROL Review Status]_&#x200B;欄位的預設值設為`approved`。
+1. 選填。 若要在上傳至Commerce環境時自動同步已核准的AEM Assets Assets，`Basic`索引標籤上&#x200B;_[!UICONTROL Review Status]_&#x200B;欄位的預設值設定為`approved`。
 
 1. 儲存更新。
 
-### 將中繼資料設定檔套用至Commerce資產來源檔案夾
+### 將中繼資料設定檔套用至Commerce Assets來源資料夾
 
 1. 從&#x200B;**[!UICONTROL Metadata Profiles]**&#x200B;頁面，選取Commerce整合設定檔。
 
 1. 從動作功能表中選取&#x200B;**[!UICONTROL Apply Metadata Profiles to Folders]**。
 
-1. 選取包含Commerce資產的資料夾。
+1. 選取包含Commerce Assets的資料夾。
 
    建立Commerce資料夾（如果沒有）。
 

@@ -24,9 +24,9 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 2cb4bac8e36ce8b945eabf31e562a5e7fd097c2a
 workflow-type: tm+mt
-source-wordcount: 2627
+source-wordcount: 2835
 ht-degree: 0%
 
 ---
@@ -70,6 +70,26 @@ ht-degree: 0%
    **熱門焦點**、**收入**、**轉換**、**參與**、**贏取**&#x200B;和&#x200B;**跳出率**&#x200B;都根據您的報告設定更新。
 
 1. 按一下「**[!UICONTROL Export]**」以將報表儲存為PDF。
+
+## 匯出報表上的C2PA中繼資料 {#c2pa-metadata-on-exported-reports}
+
+「成功量度」報表包含使用創作AI的重點和摘要。 將報表匯出至PDF時，Adobe會自動附加C2PA中繼資料至匯出的檔案。
+
+C2PA中繼資料是明顯被竄改、機器可讀取的中繼資料，以[C2PA開啟標準](https://c2pa.org/)為基礎。 創作AI用於產生報表中內容的中繼資料記錄，以及如使用的AI系統等資訊，無論內容是使用創作AI產生或編輯還是具有時間戳記。
+
+>[!NOTE]
+>
+>C2PA中繼資料會自動附加。 不需要其他動作，而且此行為無法關閉。 C2PA中繼資料不會變更您的報表外觀。 這些是PDF內攜帶的隱藏中繼資料。
+
+**這對您匯出的報告有何意義**
+
+- 將成功度量報表匯出至PDF時，匯出的檔案會攜帶C2PA中繼資料。
+- 當您共用或下載C2PA中繼資料時，它會隨PDF一起傳送。 支援C2PA中繼資料的協力廠商平台可能會讀取此中繼資料，並向檢視者顯示透明度資訊。
+- 您可以上傳至[Inspect](https://contentauthenticity.adobe.com/inspect)，以驗證附加到任何檔案的C2PA中繼資料。
+
+![檢查樣本](../assets/inspect-sample.png)
+
+深入瞭解[產生AI內容透明度](https://experienceleague.adobe.com/zh-hant/docs/cx-enterprise-ai/experience-cloud-ai/overview/content-transparency)。
 
 ## 將成功量度與Sites Optimizer搭配使用
 
