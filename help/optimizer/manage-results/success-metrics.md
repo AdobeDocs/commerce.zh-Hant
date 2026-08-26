@@ -1,32 +1,16 @@
 ---
 title: 成功量度
 description: 成功量度可將insight提供至 [!DNL Adobe Commerce Optimizer] 存放區的關鍵效能量度。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
 exl-id: 7202a531-fec3-4698-89b9-6bdbcc37015e
 TQID: https://experienceleague.adobe.com/Z1Ntq9O5Pde8B2N8UCarCf-V5NZw-YiCx78ortu5PwY
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b4dd41a7-ccf8-4e9d-918e-acaab534a307id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 2cb4bac8e36ce8b945eabf31e562a5e7fd097c2a
 workflow-type: tm+mt
-source-wordcount: 2627
+source-wordcount: 2835
 ht-degree: 0%
 
 ---
@@ -70,6 +54,26 @@ ht-degree: 0%
    **熱門焦點**、**收入**、**轉換**、**參與**、**贏取**&#x200B;和&#x200B;**跳出率**&#x200B;都根據您的報告設定更新。
 
 1. 按一下「**[!UICONTROL Export]**」以將報表儲存為PDF。
+
+## 匯出報表上的C2PA中繼資料 {#c2pa-metadata-on-exported-reports}
+
+「成功量度」報表包含使用創作AI的重點和摘要。 將報表匯出至PDF時，Adobe會自動附加C2PA中繼資料至匯出的檔案。
+
+C2PA中繼資料是明顯被竄改、機器可讀取的中繼資料，以[C2PA開啟標準](https://c2pa.org/)為基礎。 創作AI用於產生報表中內容的中繼資料記錄，以及如使用的AI系統等資訊，無論內容是使用創作AI產生或編輯還是具有時間戳記。
+
+>[!NOTE]
+>
+>C2PA中繼資料會自動附加。 不需要其他動作，而且此行為無法關閉。 C2PA中繼資料不會變更您的報表外觀。 這些是PDF內攜帶的隱藏中繼資料。
+
+**這對您匯出的報告有何意義**
+
+- 將成功度量報表匯出至PDF時，匯出的檔案會攜帶C2PA中繼資料。
+- 當您共用或下載C2PA中繼資料時，它會隨PDF一起傳送。 支援C2PA中繼資料的協力廠商平台可能會讀取此中繼資料，並向檢視者顯示透明度資訊。
+- 您可以上傳至[Inspect](https://contentauthenticity.adobe.com/inspect)，以驗證附加到任何檔案的C2PA中繼資料。
+
+![檢查樣本](../assets/inspect-sample.png)
+
+深入瞭解[產生AI內容透明度](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/content-transparency)。
 
 ## 將成功量度與Sites Optimizer搭配使用
 
