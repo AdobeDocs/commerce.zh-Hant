@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 60df4a608155a4f8ff8b4bf57cfd625aa1b3ccea
+source-git-commit: 4b3bf2c28d4570141497bf6aa514152311fa4a37
 workflow-type: tm+mt
-source-wordcount: 3064
+source-wordcount: 3099
 ht-degree: 0%
 
 ---
@@ -55,6 +55,10 @@ ht-degree: 0%
 
 ### 2026年8月
 
+**發行資料**：2026年8月24日
+
+![新](../assets/new.svg) **支援Adobe Commerce as a Cloud Service**&#x200B;上的`categoryTree`查詢 — 現在可為[!DNL Adobe Commerce as a Cloud Service]使用`categoryTree` GraphQL查詢，因此店面可透過輔助資料單及轉譯類別樹狀結構來解析類別。<!-- DATA-7299 -->
+
 **發行日期**：2026年8月7日
 
 ![修正](../assets/fix.svg)修正當選項的`sku`欄位空白或未編制索引時，`products` GraphQL查詢中可自訂選項（`inputOptions`和`options`）的`title`欄位不正確地傳回`null`，而不是選項自己的標題的問題。<!--DATA-7304-->
@@ -83,7 +87,7 @@ ht-degree: 0%
 **發行日期**：2026年5月4日
 <!-- v1.53 -->
 
-![修正](../assets/fix.svg)店面產品價格現在針對所有產品型別顯示正確的貨幣代碼（例如USD）。 之前，部分產品顯示`NONE`而非預期的貨幣，導致價格遺失。 此更新可確保跨店面一致且精確的價格呈現。<!--DATA-7115-->
+![Fix](../assets/fix.svg)店面產品價格現在會顯示所有產品型別的正確貨幣代碼（例如USD）。 之前，部分產品顯示`NONE`而非預期的貨幣，導致價格遺失。 此更新可確保跨店面一致且精確的價格呈現。<!--DATA-7115-->
 
 ### 2026年4月
 
