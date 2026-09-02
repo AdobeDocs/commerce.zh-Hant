@@ -26,23 +26,23 @@ ht-degree: 0%
 
 # 什麼是[!DNL Product Recommendations]？
 
-[!DNL Product Recommendations]使用[Adobe AI](https://business.adobe.com/ai.html)和機器學習（已針對彙總購物者行為和目錄資料進行訓練），在Adobe Commerce店面提供個人化建議。 此概觀涵蓋服務限制（包括HIPAA）、資料隱私權、建議單位位置、店面實作選項、產品關係整合和目錄資料保留。
+[!DNL Product Recommendations]使用[Adobe AI](https://business.adobe.com/tw/ai.html)和機器學習（已針對彙總購物者行為和目錄資料進行訓練），在Adobe Commerce店面提供個人化建議。 此概觀涵蓋服務限制（包括HIPAA）、資料隱私權、建議單位位置、店面實作選項、產品關係整合和目錄資料保留。
 
 >[!IMPORTANT]
 >
 >**[!DNL Product Recommendations]不是HIPAA就緒的服務。** 請勿在使用HIPAA就緒的產品或以其他方式處理受保護的健康情況資訊(PHI)的任何Adobe Commerce實作中啟用或使用[!DNL Product Recommendations]。 [!DNL Product Recommendations]屬於目前分類為不符合HIPAA標準的Commerce SaaS服務。
 >
->如需哪些是HIPAA就緒的Adobe Commerce功能以及哪些服務不可搭配PHI使用的詳細資訊，請參閱Adobe Commerce[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview)和[作業](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/operations#adobe-commerce-services)上的HIPAA就緒性。
+>如需哪些是HIPAA就緒的Adobe Commerce功能以及哪些服務不可搭配PHI使用的詳細資訊，請參閱Adobe Commerce[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/compliance/hipaa-ready-service/overview)和[作業](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/compliance/hipaa-ready-service/operations#adobe-commerce-services)上的HIPAA就緒性。
 
 ## 資料處理與隱私權
 
 [!DNL Product Recommendations]的資料收集不含任何個人識別資訊(PII)。 所有使用者識別碼（例如Cookie ID和IP位址）都需嚴格匿名處理。 若要進一步瞭解，請參閱[Adobe隱私權原則](https://www.adobe.com/privacy/policy.html)。
 
-如需資料同步的詳細資訊，請參閱[資料管理儀表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)。
+如需資料同步的詳細資訊，請參閱[資料管理儀表板](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)。
 
 ## 建議出現的位置
 
-Recommendations會以有標籤的單位的形式出現在店面上，例如「檢視過此產品的客戶也檢視過」。 您可以透過Adobe Commerce管理員在商店檢視中建立、管理和部署建議。 如果您的Commerce專案使用[Adobe Commerce Optimizer Connector](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/overview)，您可以透過[Adobe Commerce Optimizer](../optimizer/overview.md)建立、管理和部署建議。
+Recommendations會以有標籤的單位的形式出現在店面上，例如「檢視過此產品的客戶也檢視過」。 您可以透過Adobe Commerce管理員在商店檢視中建立、管理和部署建議。 如果您的Commerce專案使用[Adobe Commerce Optimizer Connector](https://experienceleague.adobe.com/zh-hant/docs/commerce/aco-optimizer-connector/overview)，您可以透過[Adobe Commerce Optimizer](../optimizer/overview.md)建立、管理和部署建議。
 
 ## 店面實施
 
@@ -50,7 +50,7 @@ Recommendations會以有標籤的單位的形式出現在店面上，例如「�
 
 - **PWA Studio** — [PWA檔案](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/)
 - **自訂前端（例如React或Vue.js）** — [整合 [!DNL Product Recommendations]](headless.md)於Headless店面
-- **Commerce Edge Delivery Services (EDS)** — [EDS的Adobe Commerce Storefront檔案](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/)
+- **Commerce Edge Delivery Services (EDS)** — [EDS的Adobe Commerce Storefront檔案](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=zh-Hant)
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ Recommendations會以有標籤的單位的形式出現在店面上，例如「�
 
 ## 產品建議與產品關係
 
-考慮到線上購物不斷變化的複雜性，最適合店面的往往是多種關鍵技術的組合。 同時使用[!DNL Product Recommendations]和[產品關係](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships)可讓您在促銷產品時擁有更多彈性。 若要大規模自動化您的建議，您可以利用Adobe AI支援的[!DNL Product Recommendations]。 然後，當您必須手動介入並確保向目標購物者區段提出特定建議，或當必須達成某些業務目標時，您可以運用[相關產品規則](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules)。
+考慮到線上購物不斷變化的複雜性，最適合店面的往往是多種關鍵技術的組合。 同時使用[!DNL Product Recommendations]和[產品關係](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships)可讓您在促銷產品時擁有更多彈性。 若要大規模自動化您的建議，您可以利用Adobe AI支援的[!DNL Product Recommendations]。 然後，當您必須手動介入並確保向目標購物者區段提出特定建議，或當必須達成某些業務目標時，您可以運用[相關產品規則](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules)。
 
 產品建議可讓您：
 
@@ -82,4 +82,4 @@ Recommendations會以有標籤的單位的形式出現在店面上，例如「�
 
 ### 重新啟用目錄資料
 
-若要在目錄資料變成非使用中後還原該資料，請[提交標題為「重新啟用[!DNL Product Recommendations]」的支援要求](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page)並包含環境ID。 目錄資料應在兩小時內還原。
+若要在目錄資料變成非使用中後還原該資料，請[提交標題為「重新啟用[!DNL Product Recommendations]」的支援要求](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page)並包含環境ID。 目錄資料應在兩小時內還原。

@@ -39,7 +39,7 @@ ht-degree: 0%
 
 如果您是醫療保健客戶，且已安裝[資料服務HIPAA擴充功能](../data-connection/hipaa-readiness.md#installation) （包含在[資料連線](../data-connection/overview.md)擴充功能中），則[!DNL Product Recommendations]會停止收集店面事件資料，因為資料是在使用者端產生。
 
-若要繼續收集和傳送店面事件資料，請重新啟用[!DNL Product Recommendations]的事件收集。 如需詳細資訊，請參閱[一般組態](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services)。
+若要繼續收集和傳送店面事件資料，請重新啟用[!DNL Product Recommendations]的事件收集。 如需詳細資訊，請參閱[一般組態](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/config/general/general#data-services)。
 
 ## 資料型別和事件
 
@@ -104,4 +104,4 @@ _冷開始_&#x200B;問題是機器學習模型訓練所需的時間，之後才�
 
 >[!NOTE]
 >
->如果啟用[Cookie限制模式](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law)，Adobe Commerce不會收集行為資料，直到購物者同意使用Cookie為止。 如果「Cookie限制模式」已停用，Adobe Commerce會依預設收集行為資料。
+>如果啟用[Cookie限制模式](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law)，Adobe Commerce不會收集行為資料，直到購物者同意使用Cookie為止。 如果「Cookie限制模式」已停用，Adobe Commerce會依預設收集行為資料。

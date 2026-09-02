@@ -333,7 +333,7 @@ ht-degree: 0%
 
 **選項3：以Adobe Analytics取代GTM**
 
-- 考慮移轉至[Adobe Analytics](https://business.adobe.com/products/adobe-analytics.html) （如適用）。
+- 考慮移轉至[Adobe Analytics](https://business.adobe.com/tw/products/adobe-analytics.html) （如適用）。
 - 如需指引，請聯絡客戶工程部門。
 
 **聯絡對象**：提交支援票證，以取得GTM相容性更新或客戶工程協助。
@@ -458,7 +458,7 @@ ht-degree: 0%
 - Headless或PWA實作
 - 自訂事件追蹤
 
-若要聯絡Adobe支援，請參閱[Adobe說明中心使用手冊](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。
+若要聯絡Adobe支援，請參閱[Adobe說明中心使用手冊](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。
 
 ## 常見問題集
 
