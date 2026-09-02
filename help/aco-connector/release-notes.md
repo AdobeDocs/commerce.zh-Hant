@@ -23,9 +23,9 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 1d14f7827de3274564941765fd2943ecefac5fad
+source-git-commit: 355b319def41c3763bc0dddbe6b32707891bb811
 workflow-type: tm+mt
-source-wordcount: 460
+source-wordcount: 514
 ht-degree: 0%
 
 ---
@@ -40,12 +40,20 @@ ht-degree: 0%
 
 ## 2026版本
 
+### 1.0.17版
+
+_2026年9月1日_
+
+![修正](../assets/fix.svg) **為擁有多個商店檢視的商店加快目錄同步處理速度**- [!DNL Adobe Commerce Optimizer Connector]現在會先依商店檢視篩選產品和類別，再擷取摘要資料，而不是擷取每個商店檢視並在之後捨棄無關的結果。 此更新大幅減少具有許多存放區檢視的目錄的同步和重新同步時間。<!--MDEE-1441-->
+
 ### 1.0.16版
 
 _2026年8月7日_
 
-![修正](../assets/fix.svg) **目錄同步不再停留在無效的設定上** — 修正了如果[!DNL Adobe Commerce Optimizer Connector]設定遺失或無效，目錄同步處理可能會無限期執行的問題。 同步現在完成並記錄警告，而非繼續執行。 <!--MDEE-1413-->
-![修正](../assets/fix.svg) **更可靠的[!DNL Adobe Commerce Optimizer]管理員要求** — 修正[!DNL Adobe Commerce Optimizer Connector]可能對[!DNL Adobe Commerce Optimizer]個管理員要求使用不正確URL的問題，此問題可能導致這些要求失敗。 <!--COMOPT-2288-->
+![修正](../assets/fix.svg) **目錄同步不再停留在無效的設定上** — 修正了如果[!DNL Adobe Commerce Optimizer Connector]設定遺失或無效，目錄同步處理可能會無限期執行的問題。 同步現在完成並記錄警告，而非繼續執行。<!--MDEE-1413-->
+
+![修正](../assets/fix.svg) **更可靠的[!DNL Adobe Commerce Optimizer]管理員要求** — 修正[!DNL Adobe Commerce Optimizer Connector]可能對[!DNL Adobe Commerce Optimizer]個管理員要求使用不正確URL的問題，此問題可能導致這些要求失敗。<!--COMOPT-2288-->
+
 ![修正](../assets/fix.svg) **更可靠的重新整理和修補程式作業** — 修正重新整理和修補程式作業可能針對錯誤環境的問題，此問題可能導致要求失敗。<!--COMOPT-2288-->
 
 ### 1.0.15版

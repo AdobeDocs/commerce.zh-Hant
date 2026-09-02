@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 4b3bf2c28d4570141497bf6aa514152311fa4a37
+source-git-commit: 695f349ce38a3127beccab83f63f4157cc05e549
 workflow-type: tm+mt
-source-wordcount: 3099
+source-wordcount: 3190
 ht-degree: 0%
 
 ---
@@ -624,6 +624,16 @@ query {
 - 針對Adobe Commerce as a Cloud Service客戶，您的環境中已安裝最新版本。
 
 - 針對雲端或內部部署的Adobe Commerce，Adobe建議使用撰寫器，將雲端環境中的目錄服務中繼資料升級為最新版本。
+
+### v3.6.0版本
+
+**發行日期**：2026年8月31日
+
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
+
+![新](../assets/new.svg) **可自訂選項匯出** — 已更新目錄服務中繼資料相依性以包含可自訂選項資料匯出程式模組(`magento/module-customizable-options-data-exporter`)。 此模組會匯出產品的Adobe Commerce可自訂選項 — 包括可選取的選項（下拉式清單、單選按鈕、核取方塊、多重選取）和購物者輸入選項（文字欄位、文字區域、檔案、日期、日期和時間、時間） — 以便它們傳播至目錄服務所使用的SaaS目錄。<!--DATA-7366-->
+
+![新](../assets/new.svg)已更新相依性，以維持目錄服務與您的Commerce棧疊之間的相容性。
 
 ### v3.5.0版本
 

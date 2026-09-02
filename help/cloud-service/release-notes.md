@@ -33,9 +33,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 last-update: 2026-08-07
-source-git-commit: 9d128fd11c1b83276f8a2158f1f2fb98a49bf6c5
+source-git-commit: 49a235a3a545b422b0371b53163d7de770df6a38
 workflow-type: tm+mt
-source-wordcount: 6100
+source-wordcount: 6271
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 <!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
 
-以下專案將於2026年9月1日發佈到生產環境。
+以下專案將於2026年9月8日發佈到生產環境。
 
 >[!BEGINSHADEBOX]
 
@@ -122,7 +122,7 @@ ht-degree: 0%
 * 可協商的引號
 * 報價範本
 
-如需詳細資訊，包括GraphQL變動和REST端點，請參閱[店面相容性B2B封裝變更記錄檔](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=zh-Hant)，並檢視&#x200B;**店面相容性B2B封裝v1.0.24**&#x200B;區段。
+如需詳細資訊，包括GraphQL變動和REST端點，請參閱[店面相容性B2B封裝變更記錄檔](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=zh-Hant#storefront-compatibility-b2b-package-v1-0-24-2026-07-20)。
 
 <!-- USF-3629, USF-4187, USF-4188, USF-4189, USF-4191, USF-4192, USF-4193, USF-4194, USF-4195 -->
 
@@ -141,6 +141,24 @@ ht-degree: 0%
 此規則可讓您在滿足規則條件時，將免費禮品新增到購物車。
 
 <!-- dependent on https://github.com/Adobe-Enterprise-Docs/commerce-admin.en/pull/856 and https://github.com/AdobeDocs/commerce-webapi/pull/590 -->
+
+### 依日期和時間排程購物車價格規則
+
+您現在可以設定要[購物車價格規則](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create)在[!DNL Commerce Admin]中開始或結束的當日時間。 購物車價格規則格線會顯示排程時間，而REST API會遵循在`from_date`和`to_date`上提交的時間，而不是將規則設定為午夜。<!-- ACCS-970 -->
+
+<!-- commenting this out until the B2B compatibility package version is live. -->
+
+<!-- ### Use a temporary shipping address at B2B checkout -->
+
+<!-- B2B company customers can now enter a custom, temporary shipping address during checkout without saving it to the Company Address Book, when custom shipping addresses are allowed. For detailed information, see the [Storefront Compatibility B2B Package changelog](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=zh-Hant) and view the **Storefront Compatibility B2B Package v1.0.28** section. USF-4310 -->
+
+### 在訂單歷史記錄中記錄訂單編輯
+
+>[!IMPORTANT]
+>
+>此功能預設為停用。 若要啟用此功能，請聯絡您的Adobe Commerce客戶成功經理或建立支援票證。
+
+編輯訂單時，Commerce現在可以向新訂單的歷史記錄新增人類看得懂的註解，該註解摘要相對於其取代的訂單所發生的變更。<!-- ACCS-1157 -->
 
 ### 增強功能和錯誤修正
 
@@ -163,6 +181,12 @@ ht-degree: 0%
 * 修正類別資料匯出摘要中的類別影像URL損毀的問題。<!-- ACCS-1571 -->
 
 * 修正同時指派或取消指派不同共用目錄中的產品可能會斷斷續續失敗的問題。<!-- CCSAAS-5287 -->
+
+* 將&#x200B;**Use in Search Options**&#x200B;設定為[否]，可讓屬性顯示為格線欄，但不會計入16欄限制。<!-- CCSAAS-5370 -->
+
+* 已解決可能影響管理員導覽的問題。<!-- CCSAAS-5232 -->
+
+* 修正空白購物車可能報告非零總計的問題。<!-- ACCS-1730 -->
 
 {{accs-release}}
 
@@ -676,7 +700,7 @@ mutation {
 
 ### App Builder AI編碼工具和教學課程
 
-您現在可以使用[AI編碼開發人員工具](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}來建立新的[!DNL App Builder]應用程式，並將現有的[!DNL Adobe Commerce] PHP擴充功能轉換成[!DNL App Builder]應用程式。 下列教學課程可示範如何使用工具：
+您現在可以使用[AI編碼開發人員工具](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/){target="_blank"}來建立新的[!DNL App Builder]應用程式，並將現有的[!DNL Adobe Commerce] PHP擴充功能轉換成[!DNL App Builder]應用程式。 下列教學課程可示範如何使用工具：
 
 * [教學課程必要條件](./tutorials/tutorial-prerequisites.md)
 * [評等擴充功能教學課程](./tutorials/ratings-extension.md)
