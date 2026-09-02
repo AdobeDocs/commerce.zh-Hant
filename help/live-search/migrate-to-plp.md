@@ -16,9 +16,9 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 2105
+source-wordcount: 2114
 ht-degree: 0%
 
 ---
@@ -45,9 +45,9 @@ ht-degree: 0%
 
 1. 備份您的資料庫和程式碼。
 1. 記錄目前的自訂專案。
-1. 請檢閱[界限和限制](boundaries-limits.md)，以確保PLP Widget符合您的需求。
+1. 若要確保PLP Widget符合您的需求，請檢閱[界限與限制](boundaries-limits.md)。
 1. 在低流量期間排程移轉。
-1. 通知利害關係人店面行為的潛在變更。
+1. 若要讓利害關係人做好準備，請將店面行為的潛在變更通知他們。
 
 **檢閱目前的實作**：
 
@@ -95,7 +95,7 @@ ht-degree: 0%
 - 覆寫Luma範本的自訂PLP配置。
 - 以搜尋配接器特定元素為目標的自訂CSS或JavaScript。
 - PLP或相關檔案的自訂範本修改。
-- 主題不會繼承自Luma （例如從頭開始的自訂主題）。
+- 主題不會繼承自Luma （例如，自訂主題是獨立建立的）。
 
 **自訂產品屬性**：
 
@@ -131,7 +131,7 @@ ht-degree: 0%
 
 ### 步驟1：升級[!DNL Live Search]
 
-將您的[!DNL Live Search]擴充功能升級至4.0版或更新版本，以存取PLP Widget。
+若要存取PLP Widget，請將您的[!DNL Live Search]擴充功能升級至4.0版或更新版本。
 
 **角色**：商家或合作夥伴
 
@@ -147,7 +147,7 @@ ht-degree: 0%
    bin/magento module:enable Magento_AdvancedSearch
    ```
 
-1. 更新`composer.json`以需要[!DNL Live Search] 4.0或更新版本：
+1. 若要需要[!DNL Live Search] 4.0或更新版本，請更新`composer.json`：
 
    ```json
    "require": {
@@ -180,7 +180,7 @@ ht-degree: 0%
 
 **角色**：商人
 
-PLP Widget預設會在[!DNL Live Search] 4.0.0+的新安裝中啟用。 如果從舊版升級：
+針對新安裝，[!DNL Live Search] 4.0.0+預設啟用PLP Widget。 如果從舊版升級：
 
 1. 移至「**[!UICONTROL Stores]** >設定> **[!UICONTROL Configuration]**」。
 1. 導覽至&#x200B;**[!UICONTROL Live Search]** > **[!UICONTROL Storefront Features]**。
@@ -280,7 +280,7 @@ PLP Widget預設會在[!DNL Live Search] 4.0.0+的新安裝中啟用。 如果�
 
 ### 具有自訂來源模型的產品屬性
 
-在此案例中，您有多面向使用自訂來源模型的產品屬性，搜尋配接卡不支援這些模型，但PLP Widget支援這些模型。
+此情境中，Facet是以具有自訂來源模型的產品屬性為基礎。 雖然搜尋配接卡不支援這些來源模型，但PLP Widget卻支援。
 
 **角色**：商人（管理員設定）
 
@@ -366,7 +366,7 @@ PLP Widget預設會在[!DNL Live Search] 4.0.0+的新安裝中啟用。 如果�
    - 測試事件資料流入Adobe Commerce。
 
 1. **設定Facet排序**：
-   - 針對Headless實作，Facet可依計數排序。
+   - 針對Headless實作，您可以依計數來排序Facet。
    - 在&#x200B;**[!UICONTROL Live Search]** > **[!UICONTROL Facets]**&#x200B;工作區中設定。
    - 設定&#x200B;**[!UICONTROL Sort Type]**&#x200B;為&#x200B;**Count**，以獲得較好的UX。
 
@@ -423,20 +423,20 @@ PLP Widget預設會在[!DNL Live Search] 4.0.0+的新安裝中啟用。 如果�
 **與搜尋配接器的功能差異**：
 
 - **色票**： `color`屬性的拼字必須與`color`完全相同（不是「color」或自訂名稱），色票才能正常運作。
-- **佈景主題樣式**：自訂佈景主題類別不會由Widget繼承；必須鎖定特定於Widget的CSS類別。
+- **佈景主題樣式**： Widget不會繼承自訂佈景主題類別。 您必須鎖定特定於Widget的CSS類別。
 - **自訂產品型別**： Widget中不支援。
 
 **效能考量**：
 
-- 大型目錄（50,000種以上的產品）的初始頁面載入時間可能會更長。
+- 大型目錄（50,000種以上的產品）的初始頁面載入時間較長。
 - 具有許多值的多個Facet可能會影響效能。
-- 行動裝置效能可能會因目錄大小而異。
+- 行動裝置效能會依目錄大小而異。
 
 **相容性問題**：
 
 - Google Tag Manager相容性問題（請參閱[GTM案例](#google-tag-manager-gtm-integration)）。
-- 某些協力廠商擴充功能可能會與PLP Widget發生衝突。
-- 自訂簽出擴充功能可能需要更新。
+- 某些協力廠商擴充功能與PLP Widget衝突。
+- 自訂簽出擴充功能需要更新。
 
 ## 取得協助
 
@@ -458,7 +458,7 @@ PLP Widget預設會在[!DNL Live Search] 4.0.0+的新安裝中啟用。 如果�
 - Headless或PWA實作
 - 自訂事件追蹤
 
-若要聯絡Adobe支援，請參閱[說明中心使用手冊](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。
+若要聯絡Adobe支援，請參閱[Adobe說明中心使用手冊](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。
 
 ## 常見問題集
 
@@ -482,7 +482,7 @@ PLP Widget預設會在[!DNL Live Search] 4.0.0+的新安裝中啟用。 如果�
 
 **問：我是否需要重新設定我的Facet？**
 
-答：通常不會，但如果您受到搜尋配接器的自訂來源模型屬性的限制，現在可以將其與PLP Widget搭配使用。
+答：不會。 您可以繼續使用現有的Facet組態。 不過，如果搜尋配接卡先前限制您在自訂來源模型中使用產品屬性，您現在可以將這些屬性與PLP Widget搭配使用。
 
 **問：我的自訂CSS呢？**
 

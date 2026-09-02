@@ -17,16 +17,16 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 744
+source-wordcount: 737
 ht-degree: 0%
 
 ---
 
 # 什麼是[!DNL Product Recommendations]？
 
-[!DNL Product Recommendations]會使用[Adobe AI](https://business.adobe.com/tw/ai.html)，以及針對彙總購物者行為和目錄進行機器學習，協助您在Adobe Commerce店面上顯示個人化產品推薦。 此概觀涵蓋服務限制（包括HIPAA）、資料和隱私權、建議單位出現的位置、店面實作路徑、建議如何補充產品關係，以及目錄資料保留。
+[!DNL Product Recommendations]使用[Adobe AI](https://business.adobe.com/tw/ai.html)和機器學習（已針對彙總購物者行為和目錄資料進行訓練），在Adobe Commerce店面提供個人化建議。 此概觀涵蓋服務限制（包括HIPAA）、資料隱私權、建議單位位置、店面實作選項、產品關係整合和目錄資料保留。
 
 >[!IMPORTANT]
 >
@@ -58,7 +58,7 @@ Recommendations會以有標籤的單位的形式出現在店面上，例如「�
 
 ## 產品建議與產品關係
 
-考慮到線上購物不斷變化的複雜性，最適合店面的往往是多種關鍵技術的組合。 同時使用[!DNL Product Recommendations]和[產品關係](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships)可讓您在促銷產品時擁有更多彈性。 您可以運用Adobe AI支援的[!DNL Product Recommendations]，以智慧化方式大規模自動化您的建議。 然後，當您必須手動介入並確保向目標購物者區段提出特定建議，或當必須達成某些業務目標時，您可以運用[相關產品規則](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules)。
+考慮到線上購物不斷變化的複雜性，最適合店面的往往是多種關鍵技術的組合。 同時使用[!DNL Product Recommendations]和[產品關係](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships)可讓您在促銷產品時擁有更多彈性。 若要大規模自動化您的建議，您可以利用Adobe AI支援的[!DNL Product Recommendations]。 然後，當您必須手動介入並確保向目標購物者區段提出特定建議，或當必須達成某些業務目標時，您可以運用[相關產品規則](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules)。
 
 產品建議可讓您：
 
@@ -68,18 +68,18 @@ Recommendations會以有標籤的單位的形式出現在店面上，例如「�
 
 ## 產品推薦示範
 
-觀看此影片以瞭解[!DNL Product Recommendations]：
+若要瞭解[!DNL Product Recommendations]，請觀看此影片：
 
 >[!VIDEO](https://video.tv.adobe.com/v/343991?quality=12)
 
 ## 目錄資料保留原則
 
-[!DNL Product Recommendations]服務取決於與您的Adobe Commerce環境保持同步的目錄資料。 停止查詢資料的非使用中目錄或環境可以進入休眠，這會影響在您重新啟用之前服務會傳回的內容。
+[!DNL Product Recommendations]服務取決於與您的Adobe Commerce環境保持同步的目錄資料。 停用中目錄或停止查詢資料的環境可能會變成非使用中，這會影響服務在您重新啟用之前所傳回的內容。
 
-如果您連續90天未在&#x200B;**測試**&#x200B;環境中提交目錄資料的查詢，則目錄資料會設定為休眠模式，且不會傳回任何查詢的資料。 **生產**&#x200B;環境中的目錄資料不受90天規則影響。
+如果您連續90天未在&#x200B;**測試**&#x200B;環境中提交目錄資料的查詢，則目錄資料會設定為非使用中模式，且不會傳回任何查詢的資料。 90天規則不會影響&#x200B;**生產**&#x200B;環境中的目錄資料。
 
-如果您的環境在建立後45天內有&#x200B;**空白的目錄**，則目錄資料會設定為休眠模式，且不會傳回任何查詢的資料。 這同時適用於生產環境和測試環境。
+如果您的環境在建立後45天內有&#x200B;**空的目錄**，則目錄資料會設定為非使用中模式，且不會傳回任何查詢的資料。 這同時適用於生產環境和測試環境。
 
 ### 重新啟用目錄資料
 
-若要在休眠後還原目錄資料，[提交標題為「重新啟用[!DNL Product Recommendations]」的支援請求](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page)並包含環境ID。 目錄資料應會在數小時內還原。
+若要在目錄資料變成非使用中後還原該資料，請[提交標題為「重新啟用[!DNL Product Recommendations]」的支援要求](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page)並包含環境ID。 目錄資料應在兩小時內還原。

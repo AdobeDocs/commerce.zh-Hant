@@ -14,20 +14,20 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 127067a1ef47c7d9e51c5792e03b568dd818fe8e
 workflow-type: tm+mt
-source-wordcount: 319
+source-wordcount: 300
 ht-degree: 0%
 
 ---
 
 # 產品Recommendations管理員開發
 
-產品推薦是強大的行銷工具，可用來增加轉換率、增加收入及刺激購物者參與。 產品推薦會以單位的形式出現在商店中，例如「檢視過此產品的客戶也檢視過」、「購買此產品的客戶也購買了」、「為您推薦」等。 Adobe Commerce產品推薦由[Adobe AI](https://business.adobe.com/tw/ai.html)提供技術支援，其使用人工智慧和機器學習演演算法來對彙總的購物者資料執行深入分析。 此資料與您的Commerce目錄結合後，可為購物者提供極為引人入勝、相關且個人化的體驗。
+產品推薦是強大的行銷工具，可用來增加轉換率、增加收入及刺激購物者參與。 產品推薦會以單位的形式出現在商店中，例如「檢視過此產品的客戶也檢視過」、「購買此產品的客戶也購買了」、「為您推薦」等。 [Adobe AI](https://business.adobe.com/tw/ai.html)支援Adobe Commerce產品建議，此建議會使用人工智慧和機器學習演演算法，對彙總的購物者資料執行深入分析。 此資料與您的Commerce目錄結合後，可為購物者提供極為引人入勝、相關且個人化的體驗。
 
 >[!NOTE]
 >
->如果您的店面是使用PWA Studio實作，請參閱[PWA檔案](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/)。 如果您使用自訂前端技術，例如React或Vue JS，請參閱使用指南以瞭解如何在[headless](headless.md)環境中整合產品建議。 Headless執行個體必須實作事件，才能支援產品推薦工作區。
+>如果您的店面是使用PWA Studio實作，請參閱[PWA檔案](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/)。 瞭解如果您使用自訂前端技術（例如React或Vue JS），如何在[headless](headless.md)環境中整合產品建議。 Headless執行個體必須實作事件，才能支援產品推薦工作區。
 
 ## 架構概觀
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 ![產品建議架構圖](assets/arch-diag-sensei.svg)
 
-安裝及設定建議模組後，您的店面就會開始收集行為資料。 Adobe AI會處理此行為資料與目錄資料，並計算Recommendations服務所利用的產品關聯。 此時，商家可以直接從管理UI建立、管理產品推薦單位，並將其部署至店面。
+安裝及設定後，建議模組會讓您的店面收集行為資料。 Adobe AI會將此資料與目錄資料結合，以計算Recommendations服務所使用的產品關聯。 然後，您可以直接從管理員UI建立、管理和部署產品推薦單位。
 
 ## 後續步驟
 

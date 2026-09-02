@@ -15,9 +15,9 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 73814f5ac5d53399131263f47e170e612643e903
+source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
 workflow-type: tm+mt
-source-wordcount: 363
+source-wordcount: 365
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 若要將[!DNL Product Recommendations]整合到Headless店面，您必須：
 
-1. 將行為資料傳送至Adobe AI，以分析和計算產品推薦結果。 您也可以傳送其他資料以啟用產品推薦[量度報告](workspace.md)。
+1. 將行為資料傳送至Adobe AI，以分析和計算產品推薦結果。 若要啟用產品建議[量度報告](workspace.md)，您也可以傳送其他資料。
 
 1. 擷取產品推薦結果並在頁面上呈現這些結果。
 
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 1. [安裝](install-configure.md) [!DNL Product Recommendations]模組。
 
-1. 安裝並使用[Adobe Commerce店面活動SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/)以引發[行為活動](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations)。
+1. 若要引發[行為事件](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations)，請安裝並使用[Adobe Commerce店面事件SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/)。
 
    傳回[!DNL Product Recommendations]個結果所需的最小事件數：
 
@@ -63,10 +63,10 @@ ht-degree: 0%
    | `rec-click` | recommendation-unit |
    | `rec-add-to-cart-click` | recommendation-unit （如果Recommendations範本中出現「加入購物車」按鈕） |
 
-1. 觸發事件時，請使用[Adobe Commerce Storefront事件收集器](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/)來處理事件並將它們傳送到Adobe AI。
+1. 觸發事件時，請使用[Adobe Commerce Storefront事件收集器](https://developer.adobe.com/commerce/services/shared-services/storefront-events/reference/event-framework/)來處理事件並將它們傳送到Adobe AI。
 
 1. 收集行為資料後，您可以在Admin中[建立](create.md) [!DNL Product Recommendations]。
 
 1. 使用[Recommendations SDK](https://developer.adobe.com/commerce/services/product-recommendations/)擷取店面上的推薦單位。 SDK會傳回必要的產品資料以轉譯頁面上的推薦單位。
 
-1. 瞭解如何使用[`recommendations` GraphQL查詢](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/)，傳回指定SKU的產品建議區塊相關資訊等。
+1. 瞭解如何使用[`recommendations` GraphQL查詢](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations)，傳回指定SKU的產品建議區塊相關資訊等。

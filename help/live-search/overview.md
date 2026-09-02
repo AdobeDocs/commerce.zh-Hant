@@ -15,9 +15,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+source-git-commit: 08c4badb4cae27a2cefb9fcb8eb5589bc8264467
 workflow-type: tm+mt
-source-wordcount: 1201
+source-wordcount: 1170
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->在網站搜尋方面，Adobe Commerce會提供您選項。 在實作之前，請檢閱[界限和限制](boundaries-limits.md)資訊，以確定[!DNL Live Search]適合您的業務需求。
+>若要確保[!DNL Live Search]符合您的業務需求，請在實作前檢閱[界限和限制](boundaries-limits.md)資訊。
 
 ## 架構
 
@@ -46,7 +46,7 @@ ht-degree: 1%
 
 ## 快速導覽
 
-[!DNL Live Search]著重於速度、相關性和易用性，對購物者和商家來說都是一個遊戲規則的改變者。 觀看以下影片，然後從店面快速瀏覽[!DNL Live Search]。
+[!DNL Live Search]著重於速度、相關性和易用性，對購物者和商家而言都是一項重大改進。 觀看以下影片，然後從店面快速瀏覽[!DNL Live Search]。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452580?captions=chi_hant&learn=on)
 
@@ -80,7 +80,7 @@ ht-degree: 1%
 
 ### 篩選器與Facet
 
-[!DNL Live Search]可以依據任何索引為可篩選的屬性來篩選結果。 Facet只是可篩選的屬性，已設定為在店面中顯示為面向購物者的篩選器（例如，品牌、顏色、價格）。
+[!DNL Live Search]可以依據任何索引為可篩選的屬性來篩選結果。 面向是可篩選的屬性，已設定為在店面中顯示為面向購物者的篩選器（例如，品牌、顏色、價格）。
 
 某些內部欄位（例如`inStock`）可篩選，但不可多面向：
 
@@ -89,13 +89,13 @@ ht-degree: 1%
 
 ### 使用Facet篩選的搜尋
 
-篩選搜尋使用多個屬性值的維度或[多面向](facets.md)作為搜尋條件。 篩選器的選取專案由商家定義，並會根據傳回的產品而變更，而最常使用的多面向會釘選至清單頂端。
+篩選搜尋使用多個屬性值的維度或[多面向](facets.md)作為搜尋條件。 商家會定義篩選器的選擇，會根據傳回的產品而變更，最常使用的Facet會釘選至清單頂端。
 
-使用Facet做為URL引數： `http://yourwebsite.com?color=red`，且「即時搜尋」會根據這些屬性值篩選結果。
+使用Facet做為URL引數： `https://www.mywebsite.com/?color=red`，且「即時搜尋」會根據這些屬性值篩選結果。
 
 ### 同義字
 
-[同義字](synonyms.md)可包含購物者可能使用的字詞與目錄中的字詞，以擴大觸及範圍並強化查詢重點。 您可以微調同義字字典，讓購物者持續參與並前往購買路徑。
+[同義字](synonyms.md)將購物者使用的文字與目錄中的文字區分開來，以擴大觸及範圍並強化查詢重點。 為了讓購物者持續參與購物並在購買路徑上，請微調同義字字典。
 
 ### 銷售規則
 
@@ -117,14 +117,14 @@ ht-degree: 1%
 
 ## 目錄資料保留原則
 
-如果您連續90天未提交測試環境中目錄資料的搜尋查詢，則目錄資料會設定為休眠模式，且任何搜尋查詢都不會傳回任何資料。 此原則不會影響生產環境中的目錄資料。
+如果您在90天內未針對測試環境提交搜尋查詢，則目錄資料會進入休眠模式且不會傳回任何結果。 此原則不會影響生產環境中的目錄資料。
 
 ### 非使用中的測試環境
 
-若要在您的測試環境中重新啟用目錄資料，請[提交標題為「重新啟用[!DNL Live Search]」的支援請求](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page)，並包含環境ID。 您測試環境中的目錄資料應在數小時內還原。
+若要在您的測試環境中重新啟用目錄資料，請[提交標題為「重新啟用[!DNL Live Search]」的支援請求](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page)，並包含環境ID。 您測試環境中的目錄資料應在兩小時內還原。
 
 ### 清空目錄
 
 如果您的環境在建立後45天內有空白目錄，則目錄資料會設定為休眠模式，且任何搜尋查詢都不會傳回任何資料。 這包括生產和測試環境。
 
-若要在您的環境中重新啟用目錄資料，請[提交標題為「重新啟用[!DNL Live Search]」的支援請求](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page)，並包含環境ID。 您環境中的目錄資料應在數小時內還原。
+若要在您的環境中重新啟用目錄資料，請[提交標題為「重新啟用[!DNL Live Search]」的支援請求](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page)，並包含環境ID。 您環境中的目錄資料應在兩小時內還原。

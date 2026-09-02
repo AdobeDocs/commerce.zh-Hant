@@ -17,9 +17,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
 workflow-type: tm+mt
-source-wordcount: 2233
+source-wordcount: 2260
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Adobe支援最新發行的Product Recommendations版本。 舊版的發行說明
 ![修正](../assets/fix.svg)修正和改良
 ![錯誤](../assets/bug.svg)已知問題
 
-請參閱開發人員檔案以[瞭解產品支援](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/product-availability)。
+[進一步瞭解產品支援](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/product-availability)。
 
 ## 託管服務更新
 
@@ -73,11 +73,11 @@ _2024年6月28日_
 
 _2023年7月18日_
 
-![新](../assets/new.svg) [!DNL Product Recommendations]現在有GraphQL [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/)查詢。
+![新](../assets/new.svg) [!DNL Product Recommendations]現在有GraphQL [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations)查詢。
 
 _2023年4月25日_
 
-![新](../assets/new.svg) [!DNL Product Recommendations]客戶現在可以利用[SaaS價格索引](../price-index/price-indexing.md)。
+![新](../assets/new.svg) [!DNL Product Recommendations]客戶現在可以使用[SaaS價格索引](../price-index/price-indexing.md)。
 
 ## 目前的主要版本
 
@@ -113,7 +113,7 @@ _2025年9月17日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
-![修正](../assets/fix.svg)解決當本機儲存體資料無法使用時，產品建議單位會因JavaScript錯誤而消失的間歇性問題。 此修正可確保PREX在本機存放區中缺少`ds-view-history-time-decay`時不再擲回錯誤。
+![修正](../assets/fix.svg)解決本機儲存體資料無法使用時，產品建議單位因JavaScript錯誤而消失的間歇性問題。 此修正可確保PREX在本機存放區中缺少`ds-view-history-time-decay`時不再擲回錯誤。
 ![新](../assets/new.svg)已將`recommendations-sdk`的CDN URL更新至`adobe.io`網域。
 
 ### 6.3.0的magento/product-recommendations
@@ -194,7 +194,7 @@ _2023年9月15日_
 
 ![新](../assets/new.svg)已新增模組以支援[Saas價格索引器](../price-index/price-indexing.md)。
 ![新](../assets/new.svg)已新增新的資料匯出模組，以支援匯出更多產品型別，包括套件產品和禮品卡。
-![修正](../assets/fix.svg)產品與價格摘要的資料表大小已大幅縮減。 資料表`catalog_data_exporter_products`和`catalog_data_exporter_product_prices`應該會大幅縮減大小。
+![修正](../assets/fix.svg)產品與價格摘要的資料表大小已大幅縮減。 資料表`catalog_data_exporter_products`和`catalog_data_exporter_product_prices`大幅縮減大小。
 
 #### 已知限制
 
@@ -208,13 +208,13 @@ _2023年3月20日_
 
 ![新](../assets/new.svg)已更新[!DNL Product Recommendations]以支援Adobe Commerce 2.4.6。
 ![新](../assets/new.svg)此版本為主要版本。 [編輯](install-configure.md#update)專案的根`composer.json`檔案。
-![新的](../assets/new.svg) [!DNL Product Recommendations]現在支援Commerce中的完整[Inventory management](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/inventory/introduction)功能（先前稱為多Source詳細目錄，或MSI）。 若要啟用完整支援，您必須[將](install-configure.md#update)相依性模組`commerce-data-export`更新為102.2.0+版。
+![新的](../assets/new.svg) [!DNL Product Recommendations]現在支援Commerce中的完整[Inventory management](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/inventory/introduction)功能（先前稱為多Source詳細目錄或MSI）。 若要啟用完整支援，您必須[將](install-configure.md#update)相依性模組`commerce-data-export`更新為102.2.0+版。
 
 ### 4.0.1的magento/product-recommendations
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
-![修正](../assets/fix.svg)先前，當顯示貨幣切換為非預設貨幣時，[!DNL Product Recommendations]會顯示錯誤。 現在切換貨幣已可正常運作。
+![Fix](../assets/fix.svg)先前當顯示貨幣切換為非預設貨幣時，[!DNL Product Recommendations]顯示錯誤。 現在切換貨幣已可正常運作。
 
 ### 4.0.0的magento/product-recommendations
 
@@ -252,9 +252,9 @@ _2023年3月20日_
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.x或更新版本
 
 ![新](../assets/new.svg)已新增新的[建議型別](type.md)：轉換（檢視到購物車）、轉換（檢視到購買）和最近檢視。 這些新建議型別可在`magento/product-recommendations`模組3.2.2和更新版本中使用。
-![修正](../assets/fix.svg)修正Fastly的Web應用程式防火牆(WAF)無法正確封鎖Cookie的問題
-![修正](../assets/fix.svg)針對特定商店檢視建立建議時，指派給非預設商店檢視的產品未顯示在&#x200B;_Recommendations產品預覽_面板中的問題
-![修正](../assets/fix.svg)修正頁面產生器中的某些建議單位名稱無法顯示於店面的問題
+![修正](../assets/fix.svg)修正Fastly的Web應用程式防火牆(WAF)無法正確封鎖Cookie的問題。
+![修正](../assets/fix.svg)修正為特定商店檢視建立建議時，指派給非預設商店檢視的產品未顯示在&#x200B;_Recommendations產品預覽_面板中的問題。
+![修正](../assets/fix.svg)修正頁面產生器中的某些建議單位名稱無法顯示於店面的問題。
 
 ### 3.3.2的magento/product-recommendations
 
@@ -272,7 +272,7 @@ _2023年3月20日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.x或更新版本
 
-![新](../assets/new.svg)已新增對Adobe使用者端資料層的支援，以便標準化跨Adobe Commerce功能與服務的行為資料收集。 請參閱[讀我檔案](https://github.com/adobe/commerce-events/blob/main/packages/storefront-events-collector/README.md)以瞭解更多資訊。
+![新](../assets/new.svg)已新增對Adobe使用者端資料層的支援，以便標準化跨Adobe Commerce功能與服務的行為資料收集。 若要進一步瞭解，請參閱[讀我檔案](https://github.com/adobe/commerce-events/blob/main/packages/storefront-events-collector/README.md)。
 
 ### 3.2.6的magento/product-recommendations
 
@@ -297,15 +297,15 @@ _2023年3月20日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.x或更新版本
 
-![修正](../assets/fix.svg)修正目錄同步處理期間的「無法擷取可設定的產品選項資料」錯誤
-![修正](../assets/fix.svg)修正啟用「將存放區代碼新增至URL」設定時，存放區代碼未正確設定的問題
-![修正](../assets/fix.svg)已改善偵測管理員面板組態變更的功能，以確保這些變更會反映在目錄同步處理資料中
+![修正](../assets/fix.svg)修正目錄同步處理期間的「無法擷取可設定的產品選項資料」錯誤。
+![修正](../assets/fix.svg)修正啟用「將存放區代碼新增至URL」設定時，存放區代碼未正確設定的問題。
+![修正](../assets/fix.svg)已改善偵測管理員面板組態變更，以確保這些變更會反映在目錄同步處理資料中。
 
 ### 3.2.2的magento/product-recommendations
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.x或更新版本
 
-![新](../assets/new.svg)已新增在建立時[預覽建議結果](create.md)的功能。 您可能需要將模組更新至最新版本。
+![新](../assets/new.svg)已新增在建立時[預覽建議結果](create.md)的功能。 此更新需要您將模組更新至最新版本。
 ![新](../assets/new.svg)已新增從管理員[監視及管理](https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/data-services/catalog-sync)目錄同步處理程式的功能。
 ![新](../assets/new.svg)已新增[篩選器](filters.md)，以控制建議中顯示的產品。
 ![New](../assets/new.svg)已新增[視覺相似度](type.md#visualsim)建議型別。
@@ -346,7 +346,7 @@ _2023年3月20日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.x或更新版本
 
-![修正](../assets/fix.svg)修正目錄匯出期間可能發生的「無法擷取產品選項資料」錯誤。
+![修正](../assets/fix.svg)修正目錄匯出期間發生的「無法擷取產品選項資料」錯誤。
 ![修正](../assets/fix.svg) _[!DNL Product Recommendations]_&#x200B;儀表板上_ Revenue _欄中的貨幣符號現在正確反映設定的基本貨幣。
 
 ### 3.0.4的magento/product-recommendations

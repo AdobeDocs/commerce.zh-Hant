@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+source-git-commit: 127067a1ef47c7d9e51c5792e03b568dd818fe8e
 workflow-type: tm+mt
-source-wordcount: 2323
+source-wordcount: 2360
 ht-degree: 0%
 
 ---
@@ -30,18 +30,18 @@ ht-degree: 0%
 
 為確保工作區上的每個功能區域都包含正確的資料，您需要根據所選的店面實作來設定資料收集：
 
-1. Luma — 現成提供資料收集功能。
+1. Luma — 預設提供資料彙集。
 1. Headless — 視店面實作而定，必須手動設定資料收集。
 
-如果您使用的是Headless店面，請參閱以下檔案以取得有關您需要新增的所需事件的詳細資訊：
+若要取得有關Headless店面所需新增事件的詳細資訊，請參閱下列檔案：
 
 - [即時搜尋儀表板的必要事件](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search)。
-- [需要新增為先決條件的Storefront事件收集器](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/)。
+- [需要新增為先決條件的Storefront事件收集器](https://developer.adobe.com/commerce/services/shared-services/storefront-events/reference/event-framework/)。
 - 事件結構的[範例](https://github.com/adobe/commerce-events/tree/main/examples)。
 
 ### 醫療保健客戶
 
-如果您是醫療保健客戶，且已安裝[Data Services HIPAA擴充功能](../data-connection/hipaa-readiness.md#installation) （屬於[Data Connection](../data-connection/overview.md)擴充功能的一部分），則不會再擷取[!DNL Live Search]使用的店面事件資料。 這是因為店面事件資料是在使用者端產生。 若要繼續擷取和傳送店面事件資料，請重新啟用[!DNL Live Search]的事件收集。 請參閱[一般組態](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/config/general/general#data-services)以瞭解更多資訊。
+如果您是醫療保健客戶，且已安裝[Data Services HIPAA擴充功能](../data-connection/hipaa-readiness.md#installation) （屬於[Data Connection](../data-connection/overview.md)擴充功能的一部分），[!DNL Live Search]將不再擷取店面事件資料。 這是因為店面事件資料是在使用者端產生。 若要繼續擷取和傳送店面事件資料，請重新啟用[!DNL Live Search]的事件收集。 若要深入瞭解，請參閱[一般組態](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/config/general/general#data-services)。
 
 ## 設定範圍
 
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 ## 將屬性設定為可搜尋
 
-若要產生高針對性的結果，請檢閱[可搜尋](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/product-attributes/product-attributes) (`searchable=true`)產品屬性集。 為確保關聯性，請讓屬性只有在包含具有清晰精簡含義的內容時才可供搜尋。 避免使用包含較不精確、長度較長的文字的屬性，例如`description`，雖然預設會啟用搜尋，但可能會降低搜尋結果的精確度。 例如，如果有人搜尋「短褲」，而且有描述包含「短袖」字樣的襯衫，則這些襯衫會包含在搜尋結果中。
+若要產生高針對性的結果，請檢閱[可搜尋](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/product-attributes/product-attributes) (`searchable=true`)產品屬性集。 為確保關聯性，請讓屬性只有在包含具有清晰精簡含義的內容時才可供搜尋。 避免使用包含較不精確、長度較長的文字的屬性，例如`description`，雖然預設會啟用搜尋，但可能會降低搜尋結果的精確度。 例如，如果有人搜尋「短褲」，而有一件襯衫的說明包含「短袖」一詞，則襯衫會出現在搜尋結果中。
 
 若要允許搜尋屬性，請完成下列步驟：
 
@@ -79,13 +79,15 @@ ht-degree: 0%
 
 >[!TIP]
 >
->選擇要讓哪些屬性可搜尋，對搜尋品質有很大影響。 如需選取可搜尋屬性和避免常見組態問題的詳細指引，請參閱「最佳實務」指南中的[善用產品中繼資料](best-practice.md#leverage-product-metadata)。
+>選擇要讓哪些屬性可搜尋，對搜尋品質有顯著影響。 如需有關選取可搜尋屬性和避免常見組態問題的詳細指引，請參閱&#x200B;_最佳實務指南_&#x200B;中的[善用產品中繼資料](best-practice.md#leverage-product-metadata)。
 
 ### 複雜產品中的屬性行為
 
 對於複雜的產品型別（可配置、套件組合和群組產品），[!DNL Live Search]會索引來自父項和子項產品的屬性值，允許父項產品與相同屬性的多個值相關聯。 這會啟用變體式篩選；例如，如果任何變體為藍色，即使父產品沒有顏色設定，當依「藍色」篩選時會顯示可設定的襯衫。
 
-這非常適合色彩和大小等屬性，但可能會導致`new_arrival`、`product_ranking`、`promotion_label`或自訂價格屬性產生非預期的結果。 例如，如果可設定的產品(SKU-001)有`new_arrival = true`，但其子變體(SKU-001-01)有`new_arrival = false`，則父產品SKU-001會以兩個值（`true`和`false`）建立索引，使其顯示在任一條件的搜尋結果中。
+此行為適用於色彩和大小等屬性，但可能會對描述產品整體的屬性（例如`new_arrival`、`product_ranking`、`promotion_label`和自訂價格）產生非預期的結果。
+
+例如，假設可設定的產品(SKU-001)有`new_arrival = true`，而其子變體SKU-001-01有`new_arrival = false`。 彙總父產品的變數值時，SKU-001會與`new_arrival = true`和`new_arrival = false`一起編制索引。 因此，即使每個值套用至不同的變體，上層產品仍可出現在任一值的搜尋結果中。
 
 ### 分層搜尋和展開搜尋型別
 
@@ -98,11 +100,11 @@ ht-degree: 0%
 使用分層搜尋，您可以：
 
 - 讓購物者能夠在搜尋結果中搜尋。
-- 在分層搜尋的第二層中使用`startsWith`和`contains`搜尋索引，以進一步調整結果。
+- 若要進一步調整結果，請在階層搜尋的第二層中使用`startsWith`和`contains`搜尋索引。
 
-進階搜尋功能是使用特定運運算元，透過[`productSearch`查詢](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/)中的`filter`引數實作：
+進階搜尋功能是使用特定運運算元，透過[`productSearch`查詢](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search)中的`filter`引數實作：
 
-- **分層搜尋** — 在另一個搜尋內容中搜尋 — 使用此功能，您最多可以執行兩個層級的搜尋來搜尋您的搜尋查詢。 例如：
+- **分層搜尋** — 在另一個搜尋內容中搜尋 — 使用此功能，您最多可以為搜尋查詢執行兩個層級的搜尋。 例如：
 
   - **第1層搜尋** — 在`product_attribute_1`上搜尋「馬達」。
   - **第2層搜尋** — 搜尋`product_attribute_2`上的「零件編號123」。 此範例會在結果中搜尋「馬達」的「零件編號123」。
@@ -118,13 +120,15 @@ ht-degree: 0%
 
   - 在較大的字串中搜尋查詢。 例如，如果購物者搜尋字串「HAPE-123」中的產品編號「PE-123」。
 
-    - 注意：此搜尋型別與執行自動完成搜尋的現有[片語搜尋](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#phrase)不同。 例如，如果您的產品屬性值是&quot;outdoor pants&quot;，則短語搜尋會傳回&quot;out pan&quot;的回應，但不會傳回&quot;oor ants&quot;的回應。 但是，「包含搜尋」會傳回「或螞蟻」的回應。
+    >[!NOTE]
+    >
+    >此搜尋型別與現有的[片語搜尋](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search#phrase)不同，後者透過比對文字的開頭支援自動完成。 例如，如果產品屬性值是&quot;outdoor pants&quot;，則短語搜尋會傳回&quot;out pan&quot;的結果，因為&quot;out&quot;和&quot;pan&quot;符合值中字詞的開頭。 它不會傳回「或ants」的結果，因為這些字串出現在字詞內。 包含搜尋會比對字詞中的任何文字，因此會傳回「或ant」的結果。
 
 這些新條件會增強搜尋查詢篩選機制，以縮小搜尋結果。 這些新條件不會影響主要搜尋查詢。
 
 #### 實施
 
-1. 在Admin中，[將產品屬性](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties)設定為可搜尋。
+1. 若要讓產品屬性可供搜尋，請移至[管理員]並[設定產品屬性](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties)。
 
    檢視可搜尋的[屬性](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/product-attributes/attributes-input-types)清單。
 
@@ -132,7 +136,7 @@ ht-degree: 0%
 
    ![指定搜尋功能](./assets/search-filters-admin.png)
 
-1. 請參閱[開發人員檔案](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering-using-search-capability)，以取得如何使用新的`contains`和`startsWith`搜尋功能更新[!DNL Live Search] API呼叫的範例。
+1. 請參閱[開發人員檔案](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search#filtering-using-search-capability)，以取得如何使用新的`contains`和`startsWith`搜尋功能更新[!DNL Live Search] API呼叫的範例。
 
    您可以在搜尋結果頁面上實作這些新條件。 例如，您可以在頁面上新增區段，讓購物者可以進一步縮小搜尋結果。 您可以允許購物者選取特定產品屬性，例如「製造商」、「零件編號」和「說明」。 從該位置，他們使用`contains`或`startsWith`條件在這些屬性中搜尋。
 
@@ -166,9 +170,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->產品屬性只有在產品屬性組態具有必要的屬性時才可篩選： *在搜尋中使用=是*、*在搜尋結果中使用Layered Navigation=是*&#x200B;以及&#x200B;*在分層導覽中使用Layered Navigation=可篩選（含結果）*。 如果這些屬性遺失或未正確設定，則在Facet設定中不會顯示此屬性。 如需設定指示，請參閱[新增Facet](facets-add.md#step-1-add-a-facet)。
+>產品屬性必須具備下列必要屬性才能進行篩選： *在搜尋中使用=是*、*在搜尋結果中使用Layered Navigation=是*，以及&#x200B;*在分層導覽中使用Layered Navigation=可篩選（含結果）*。 如果這些屬性遺失或未正確設定，則在Facet設定中不會顯示此屬性。 如需設定指示，請參閱[新增Facet](facets-add.md#step-1-add-a-facet)。
 
-[同義字](synonyms.md)是可定義的術語，可協助引導使用者使用正確的產品。 尋找褲子的使用者可能會輸入「trousers」或「slacks」。 您可以設定同義字，讓這些搜尋詞將使用者帶到「褲子」結果。
+[同義字](synonyms.md)是可定義的術語，可協助引導使用者使用正確的產品。 尋找褲子的使用者可能會輸入「trousers」或「slacks」。 您可以設定同義字，讓這些搜尋字詞讓使用者看到「褲子」結果。
 
 ## Commerce組態設定
 
@@ -178,7 +182,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->強烈建議您使用在Live Search 4.0.0中預設為啟用的產品清單Widget。 Widget的目標是完全取代未來版本中的介面卡實作。 請參閱[啟用產品清單Widget](install.md#enable-product-listing-widgets)以深入瞭解。
+>Adobe建議您使用即時搜尋4.0.0中預設啟用的產品清單Widget。 這些Widget的目標是在未來版本中取代介面卡實作。 若要深入瞭解，請參閱[啟用產品清單Widget](install.md#enable-product-listing-widgets)。
 
 | Commerce組態設定 | 說明 | 由Popover支援 | 由介面卡支援 |
 |---|---|---|---|
@@ -203,7 +207,7 @@ ht-degree: 0%
 
 ## 預設屬性值
 
-下列產品屬性具有[店面屬性](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/product-attributes/product-attributes)，已由[!DNL Live Search]使用並預設啟用。
+下列產品屬性具有[店面屬性](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/product-attributes/product-attributes)，[!DNL Live Search]預設會使用並啟用。
 
 | 屬性 | 店面屬性 | 屬性 |
 |---|---|---|
@@ -213,7 +217,7 @@ ht-degree: 0%
 
 ## 預設非系統屬性屬性
 
-下表顯示非系統屬性的預設搜尋和可篩選屬性，包括特定於Luma範例資料的屬性。 將&#x200B;*Use in Search*&#x200B;屬性屬性設定為`Yes`，可讓屬性在[!DNL Live Search]與原生Adobe Commerce中均可搜尋。
+下表顯示非系統屬性的預設搜尋和可篩選屬性，包括特定於Luma範例資料的屬性。 若要讓屬性在[!DNL Live Search]與原生Adobe Commerce中均可搜尋，請將&#x200B;*Use in Search*&#x200B;屬性屬性設定為`Yes`。
 
 | 屬性代碼 | 可搜尋 | 用於分層導覽 |
 |--- |--- |--- |

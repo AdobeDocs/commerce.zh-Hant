@@ -12,24 +12,26 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 539
+source-wordcount: 524
 ht-degree: 0%
 
 ---
 
 # 產品清單頁面Widget
 
-[!DNL Live Search Product Listing Page Widget] (PLP)使用Commerce Services平台來提供高效能、可搜尋且可多面向的產品清單頁面。 本主題說明如何啟用和設定PLP Widget的樣式。
+[!DNL Live Search Product Listing Page Widget] (PLP)使用Commerce Services Platform來提供高效能、可搜尋且可多面向的產品清單頁面。 本主題說明如何啟用和設定PLP Widget的樣式。
 
 ## 啟用PLP Widget
 
 安裝[!DNL Live Search]服務時，預設搜尋功能會自動轉換為[!DNL Live Search]。
 
-預設會為新安裝啟用[!DNL Live Search] PLP Widget。
+新安裝預設會啟用[!DNL Live Search] PLP Widget。
 
-如果您正在升級[!DNL Live Search]，而且PLP Widget已關閉，則會維持關閉。
+如果您在PLP Widget停用時升級[!DNL Live Search]，則升級後它仍會停用。
+
+
 
 >[!NOTE]
 >
@@ -50,7 +52,7 @@ ht-degree: 0%
 
 ## Widget功能
 
-PLP Widget提供下列現成可用的功能：
+PLP Widget提供下列標準功能：
 
 - 加入購物車按鈕 — 僅適用於簡單產品。
 - 每個產品有多個影像 — 為可設定產品選擇不同顏色時，影像可能會變更。
@@ -58,7 +60,7 @@ PLP Widget提供下列現成可用的功能：
 
 ### 自訂Widget
 
-除了PLP Widget的現成功能以外，您也可以進一步自訂Widget以包含下列功能：
+除了PLP Widget的標準功能以外，您也可以進一步自訂Widget以包含下列功能：
 
 - 依屬性篩選
 - 多語言支援
@@ -72,17 +74,17 @@ PLP Widget提供下列現成可用的功能：
 
 ## 樣式範例
 
-您可以使用[CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/)自訂PLP Widget的外觀與風格，以符合您的網站。
+您可以使用[CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/)自訂PLP Widget的外觀以符合您的網站。
 
 >[!NOTE]
 >
->Adobe Commerce主題中自訂類別的元素不會繼承。 這些元素必須以其特定類別為目標，以符合自訂類別；主要動作類別在Widget按鈕上無法運作。 CSS內的一般目標元素是繼承的；`button`套用至Widget按鈕。
+>Adobe Commerce主題中自訂類別的元素不會繼承。 依這些元素的特定類別來鎖定這些元素，以符合自訂類別；主要動作類別在Widget按鈕上無效。 CSS內的一般目標元素是繼承的；`button`套用至Widget按鈕。
 
 反白顯示的div包含目標類別`ds-sdk-product-item__product-name`。
 
 ![分頁](assets/plp-css-example.png)
 
-新增規則以大寫方式自訂產品名稱。
+自訂產品名稱，新增規則使其大寫。
 
 ```css
 .ds-sdk-product-item__product-name {
@@ -196,10 +198,10 @@ PLP Widget提供下列現成可用的功能：
 - `.ds-sdk-product-item__product-name`
 - `.ds-sdk-product-item__product-options`
 - `.ds-sdk-product-price`
-   - `.ds-sdk-product-price--no-discount`
-   - `.ds-sdk-product-price--grouped`
-   - `.ds-sdk-product-price--bundle`
-   - `.ds-sdk-product-price--discount`
+  - `.ds-sdk-product-price--no-discount`
+  - `.ds-sdk-product-price--grouped`
+  - `.ds-sdk-product-price--bundle`
+  - `.ds-sdk-product-price--discount`
 
 ![產品](assets/plp-css-product.png)
 

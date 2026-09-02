@@ -19,9 +19,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: b540716da753f26cea4ec0198f2d176224ee5dbb
+source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
 workflow-type: tm+mt
-source-wordcount: 3355
+source-wordcount: 3382
 ht-degree: 1%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 1%
 
 _2026年6月8日_
 
-![全新](../assets/new.svg)對於使用Adobe Commerce 2.4.4版及更新版本的商家，[!DNL Live Search]現在支援語意搜尋，可從&#x200B;[**設定**](./settings.md#semantic-search)&#x200B;工作區設定。 和關鍵字搜尋不同，語意搜尋使用AI透過含義和內容比對產品 — 有助於減少零結果搜尋自然語言查詢，例如「冬季徒步的溫暖內容」。 [了解更多](./semantic-search.md)。
+![全新](../assets/new.svg)對於使用Adobe Commerce 2.4.4版及更新版本的商家，[!DNL Live Search]現在支援語意搜尋，可從&#x200B;[**設定**](./settings.md#semantic-search)&#x200B;工作區設定。 與關鍵字搜尋不同，語意搜尋使用AI透過含義和內容比對產品 — 有助於減少自然語言查詢的零結果搜尋，例如「冬季徒步的溫暖內容」。 [了解更多](./semantic-search.md)。
 
 **安裝程式**：透過單一切換即可啟用。 不需要屬性設定或店面變更。
 
@@ -54,7 +54,7 @@ _2026年6月8日_
 
 _2026年5月22日_
 
-![新的](../assets/new.svg)搜尋銷售規則、預設規則和[類別銷售](./category-merch.md)規則現在包含&#x200B;**[!UICONTROL Intelligent Ranking Boost]**，因此您可以調整智慧型排名策略對結果相對於文字關聯性的影響程度。 規則預覽符合設定的Boost。 [了解更多](./rules-add.md#intelligent-ranking-boost)。
+![新的](../assets/new.svg)搜尋銷售規則、預設規則和[類別銷售](./category-merch.md)規則現在包含&#x200B;**[!UICONTROL Intelligent Ranking Boost]**，以調整智慧型排名策略對結果相對於文字關聯性的影響程度。 規則預覽符合設定的Boost。 [了解更多](./rules-add.md#intelligent-ranking-boost)。
 
 _2025年10月1日_
 
@@ -171,7 +171,7 @@ _2026年2月19日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
-![修正](../assets/fix.svg)修正Visual Merchandiser擴充功能的特定條件可能發生的錯誤。
+![修正](../assets/fix.svg)修正Visual Merchandiser擴充功能的特定條件所發生的錯誤。
 
 ## [!DNL Live Search] 4.6.0
 
@@ -180,7 +180,7 @@ _2025年10月9日_
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
 下列進階搜尋功能的![新](../assets/new.svg) GA版本：使用`startsWith`和`contains`的分層搜尋。 [了解更多](workspace.md#layered-search-and-expansion-of-search-types)。
-![修正](../assets/fix.svg) [即時搜尋](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/)服務中的`ProductInterface`物件已被取代。 請改用目錄服務中的`ProductView`物件。
+![修正](../assets/fix.svg) [即時搜尋](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search)服務中的`ProductInterface`物件已被取代。 請改用目錄服務中的`ProductView`物件。
 
 ## [!DNL Live Search] 4.5.0
 
@@ -256,7 +256,7 @@ _2024年5月16日_
 
 ### 更新
 
-![修正](../assets/fix.svg)已修正[`productSearch`](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#filtering-by-categories) GraphQL查詢，以根據類別的`categoryPath`和`categoryList`正確篩選。
+![修正](../assets/fix.svg)已修正[`productSearch`](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search#filtering-by-categories) GraphQL查詢，以根據類別的`categoryPath`和`categoryList`正確篩選。
 
 ## [!DNL Live Search] 4.1.1
 
@@ -282,7 +282,7 @@ _2024年2月22日_
 ### 更新
 
 ![修正](../assets/fix.svg)修正當訪客使用者在非預設商店檢視中將產品新增到購物車時發生錯誤的問題。
-![修正](../assets/fix.svg)修正搜尋彈出視窗一律在價格值前面顯示貨幣符號（不論地區設定為何）的問題。
+![修正](../assets/fix.svg)修正搜尋彈出視窗顯示貨幣符號時無論地區設定為何，一律在價格值前面的問題。
 ![修正](../assets/fix.svg)已移除已停用核心外掛程式不必要的型別定義，以修正安裝時的相容性問題。
 
 ## [!DNL Live Search] 4.0.0
@@ -322,28 +322,28 @@ _2023年9月15日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
-已新增![新](../assets/new.svg)新類別銷售標籤。 使用者現在可以為每個類別新增智慧型排名和手動排名（釘選、提升、隱藏、隱藏）
-![新](../assets/new.svg)使用者可以新增具有智慧型或手動排名的單一類別規則
-![新](../assets/new.svg)使用者現在可以將智慧型排名規則新增到子類別
-![新](../assets/new.svg)刪除具有智慧型排名之子類別時，提供詳細資訊
-![新](../assets/new.svg)已新增刪除繼承排名策略規則的功能
-![新](../assets/new.svg)已新增刪除單一類別之規則的功能
-![新](../assets/new.svg)使用者現在可以在新增規則時依類別名稱搜尋
+已新增![新](../assets/new.svg)新類別銷售標籤。 使用者現在可以為每個類別新增智慧型排名和手動排名（釘選、提升、隱藏、隱藏）。
+![新](../assets/new.svg)使用者可以新增智慧或手動排名的單一類別規則。
+![新](../assets/new.svg)使用者現在可以將智慧型排名規則新增到子類別。
+![新](../assets/new.svg)刪除具有智慧型排名之子類別時，會提供詳細資訊。
+![新](../assets/new.svg)已新增刪除繼承排名策略規則的功能。
+![新](../assets/new.svg)已新增刪除單一類別之規則的功能。
+![新](../assets/new.svg)使用者現在可以在新增規則時依類別名稱搜尋。
 ![新的](../assets/new.svg)使用類別樹狀檢視，使用者現在可以檢視哪個類別已套用規則。
 ![新](../assets/new.svg)類別預覽只會顯示選取的類別。
 ![新的](../assets/new.svg) AEM CIF [Pover Widget](https://github.com/adobe/aem-cif-guides-venia/pull/319)和[PLP Widget](https://github.com/adobe/aem-cif-guides-venia/pull/320)元件可讓AEM網站充分利用[!DNL Live Search]。
 
 #### 更新
 
-![修正](../assets/fix.svg)產品與價格摘要的資料表大小已大幅縮減。 資料表`catalog_data_exporter_products`和`catalog_data_exporter_product_prices`應該會大幅縮減大小。
-![修正](../assets/fix.svg)「規則」索引標籤已重新命名為「搜尋規則」
-![修正](../assets/fix.svg)依「趨勢」排名時，您現在可以選擇：
+![修正](../assets/fix.svg)產品與價格摘要的資料表大小已大幅縮減。 資料表`catalog_data_exporter_products`和`catalog_data_exporter_product_prices`大幅縮減大小。
+![修正](../assets/fix.svg)「規則」索引標籤已重新命名為「搜尋規則」。
+![修正](../assets/fix.svg)依「趨勢」排名時，您現在可以選擇以下兩項：
 - 3天（預設）
 - 14天
 - 30天
-![修正](../assets/fix.svg) 「事件」（提升/釘選/隱藏）已重新命名為「手動排名」
-![修正](../assets/fix.svg)「排名型別」已重新命名為「智慧型排名」
-![修正](../assets/fix.svg)微幅錯誤修正
+![Fix](../assets/fix.svg)「事件」（提升/釘選/隱藏）已重新命名為「手動排名」。
+![修正](../assets/fix.svg)「排名型別」已重新命名為「智慧型排名」。
+![修正](../assets/fix.svg)微幅錯誤修正。
 
 ### [!DNL Live Search] 3.1.0
 
@@ -353,7 +353,7 @@ _2023年9月1日_
 
 #### 更新
 
-![修正](../assets/fix.svg)產品清單Widget已更新為使用[目錄服務API](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/)。
+![修正](../assets/fix.svg)產品清單Widget已更新為使用[目錄服務API](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search)。
 
 ### [!DNL Live Search] 3.0.2
 
@@ -392,17 +392,17 @@ _2023年3月14日_
 
 #### 新功能
 
-規則預覽中的![新](../assets/new.svg)產品專案卡
-![新](../assets/new.svg) [產品清單頁面Widget](https://experienceleague.adobe.com/zh-hant/docs/commerce/live-search/live-search-storefront/plp-styling)
-![新](../assets/new.svg) [類別篩選選項](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#facets)
-![新](../assets/new.svg)已新增拖放以建立Pin事件的功能
+規則預覽中的![新](../assets/new.svg)產品專案卡。
+![新](../assets/new.svg) [產品清單頁面Widget](https://experienceleague.adobe.com/zh-hant/docs/commerce/live-search/live-search-storefront/plp-styling)。
+![新](../assets/new.svg) [類別篩選選項](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search#facets)。
+![新](../assets/new.svg)已新增拖放以建立Pin事件的功能。
 ![新](../assets/new.svg)個新的Pin動作：
  — 釘選到地點 — 按一下即可建立釘選事件的釘選按鈕
  — 釘選到頂端 — 將產品放在第一個位置
  — 釘選到底部 — 將產品放置在結果的底部
  — 按一下即可取消釘選事件
-![新](../assets/new.svg) [規則的智慧型排名](https://experienceleague.adobe.com/zh-hant/docs/commerce/live-search/live-search-admin/rules/rules-add)
-![新的](../assets/new.svg) [!DNL Live Search]現在支援Commerce中的完整[Inventory management](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/inventory/introduction)功能（以前稱為多Source詳細目錄，或MSI）。 若要啟用完整支援，您必須[將](install.md#updating-live-search)相依性模組`commerce-data-export`更新為102.2.0+版。
+![新](../assets/new.svg) [規則的智慧型排名](https://experienceleague.adobe.com/zh-hant/docs/commerce/live-search/live-search-admin/rules/rules-add)。
+![新的](../assets/new.svg) [!DNL Live Search]現在支援Commerce中的完整[Inventory management](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/inventory/introduction)功能（先前稱為多Source詳細目錄，或MSI）。 若要啟用完整支援，您必須[將](install.md#updating-live-search)相依性模組`commerce-data-export`更新為102.2.0+版。
 
 #### 更新
 
@@ -414,12 +414,12 @@ _2023年3月14日_
 
 #### 修正
 
-![修正](../assets/fix.svg)儲存期間發生未完成的事件時修復伺服器錯誤
-![修正](../assets/fix.svg)修正當有多個事件時，正確刪除特定事件的問題
-![修正](../assets/fix.svg)已修正當新增新事件時現有規則事件未更新的問題
-![修正](../assets/fix.svg)已修正來自詳細資料的第二個「編輯」點按，[!DNL Live Search]個頁面需要重新載入
-![修正](../assets/fix.svg)同義字：修正使用者按一下退出輸入時，無法將焦點傳回欄位的問題
-![修正](../assets/fix.svg)其他微幅錯誤修正與效能更新
+![修正](../assets/fix.svg)在儲存期間發生未完成的事件時，修正伺服器錯誤。
+![修正](../assets/fix.svg)修正有多個事件時，正確刪除特定事件的問題。
+![修正](../assets/fix.svg)已修正當新增新事件時現有規則事件未更新的問題。
+![修正](../assets/fix.svg)已修正來自詳細資料的第二個「編輯」點選，[!DNL Live Search]頁面需要重新載入。
+![修正](../assets/fix.svg)同義字：修正使用者按一下退出輸入時，無法將焦點傳回欄位的問題。
+![修正](../assets/fix.svg)其他微幅錯誤修正與效能更新。
 ![錯誤](../assets/bug.svg) — 僅在「即時搜尋」Widget中支援「為您推薦」的排名。 預設的Luma和PWA搜尋功能不支援此功能。
 ![錯誤](../assets/bug.svg) — 自訂價格屬性Facet無法在Luma中正確轉譯，但API已正確篩選它們。
 
@@ -443,7 +443,7 @@ _2023年3月14日_
 
 ![新](../assets/new.svg)「即時搜尋」現在支援以管理員中的「顯示無庫存產品」設定進行篩選。 如果「顯示無庫存產品」設為false，則會將`inStock = true`新增至篩選器。
 ![修正](../assets/fix.svg)為了改善效能，「建議」區塊已從「即時搜尋」快顯視窗中移除。 如果您想要取代功能，資料仍會透過GraphQL傳遞。
-![修正](../assets/fix.svg) `categories`和`categoryPath`已取代`categoryIds`進行類別篩選。 閱讀[productSearch](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/)主題中的詳細資訊。
+![修正](../assets/fix.svg) `categories`和`categoryPath`已取代`categoryIds`進行類別篩選。 閱讀[productSearch](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search)主題中的詳細資訊。
 ![修正](../assets/fix.svg)之前，繫結至B2B公司的使用者在執行搜尋時會收到錯誤的客戶群組代碼。 即時搜尋現在會傳回正確的值。
 ![修正](../assets/fix.svg)先前，當搜尋不存在的辭彙時，即時搜尋會傳回錯誤。 此錯誤現已修正。
 
@@ -473,7 +473,7 @@ _2023年3月14日_
 [!DNL Live Search]支援的![新](../assets/new.svg) Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/)。
 ![新增](../assets/new.svg) [!DNL Live Search]安裝程式已更新，其中包含進階程式變更。
 ![修正](../assets/fix.svg) [進階搜尋](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/catalog/search/search)連結已從店面頁尾移除。
-![錯誤](../assets/bug.svg) [Commerce GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/)不支援與PWA測試版相關的下列產品屬性： `description`，`name`， `short_description`
+![錯誤](../assets/bug.svg) [Commerce GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/)在與PWA的Beta版相關使用時，不支援下列產品屬性： `description`、`name`、`short_description`。
 ![錯誤](../assets/bug.svg) [!DNL Live Search]的PWA測試版不支援[事件處理](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/)。
 
 ### [!DNL Live Search] 1.3.1
@@ -500,13 +500,13 @@ _2023年3月14日_
 [!BADGE 支援]{type="Informative" tooltip="支援"} Adobe Commerce 2.4.x或更新版本
 
 ![新](../assets/new.svg) [[!DNL Storefront popover]](storefront-popover.md)在購物者將查詢輸入搜尋方塊時，顯示建議的產品和最上層搜尋結果的縮圖影像。
-![新](../assets/new.svg) Commerce *管理員*工作階段在鍵盤長時間不活動期間保持開啟
-![新](../assets/new.svg) [!DNL Live Search]在上線後自動啟用
-![修正](../assets/fix.svg)初始索引時間不到一小時
-![修正](../assets/fix.svg)近乎即時的增量產品更新（安裝及設定後）
-同義字編輯器中的![修正](../assets/fix.svg)可排序資料行
-如果搜尋條件包含空白的排序順序值，![修正](../assets/fix.svg) [!DNL Live Search]不再擲回錯誤
-![修正](../assets/fix.svg)如果屬性代碼包含字串「to」或「from」，則範圍篩選不再中斷
+![新](../assets/new.svg) Commerce *管理員*工作階段在鍵盤長時間不活動期間保持開啟。
+![新](../assets/new.svg) [!DNL Live Search]在上線後會自動啟用。
+![修正](../assets/fix.svg)初始索引時間不到一小時。
+![修正](../assets/fix.svg)增量產品更新近乎即時（安裝及設定後）。
+在同義字編輯器中![修正](../assets/fix.svg)可排序的資料行。
+如果搜尋條件包含空白的排序順序值，![修正](../assets/fix.svg) [!DNL Live Search]不再擲回錯誤。
+![修正](../assets/fix.svg)如果屬性代碼包含字串「to」或「from」，則範圍篩選不再中斷。
 
 ### [!DNL Live Search] 1.1.0
 
@@ -515,7 +515,7 @@ _2023年3月14日_
 ![錯誤](../assets/bug.svg) [!DNL Live Search]服務只支援Adobe Commerce安裝的[基本貨幣](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration)。
 ![錯誤](../assets/bug.svg)新增Facet時，產品屬性摘要設定為`Update on Save`時未正確更新。 若要避免此問題，請移至[索引管理](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/tools/index-management)，並將產品屬性摘要設定為`Update by Schedule`。
 ![錯誤](../assets/bug.svg) [!DNL Live Search]同義字是依商店檢視定義，但目前是依網站儲存，並以`environmentId`與`storeViewCode`的組合識別。 因此，Adobe Commerce安裝中的所有網站和商店檢視會共用同義字。 存放區檢視最近建立的同義字集優先。
-![錯誤](../assets/bug.svg)如果同義字詞包含多個字詞，每個字詞都會被視為個別的同義字。 例如，如果您將「time piece」定義為「watch」的同義字，則「time」和「piece」都會被視為監視的同義字。
+![錯誤](../assets/bug.svg)如果同義字詞包含多個字詞，每個字詞都會被視為個別的同義字。 例如，如果您將「time piece」定義為「watch」的同義字，「time」和「piece」都會被視為監視的同義字。
 
 +++
 
@@ -523,6 +523,6 @@ _2023年3月14日_
 
 若要深入瞭解：
 
-- [Adobe Commerce開發人員檔案](https://developer.adobe.com/commerce/docs)
+- [Adobe Commerce開發人員檔案](https://developer.adobe.com/commerce/docs/)
 - [Adobe Commerce使用手冊](https://experienceleague.adobe.com/zh-hant/docs/commerce)
 - [Marketplace上的[!DNL Live Search]](https://commercemarketplace.adobe.com/magento-live-search.html)

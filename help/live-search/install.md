@@ -26,9 +26,9 @@ topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 last-update: 2026-07-29
-source-git-commit: 7ce47d7abf7519a7e3ecd436faabf4089005cd63
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 2803
+source-wordcount: 2856
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ Adobe Commerce [!DNL Live Search]與[[!DNL Catalog Service]](../catalog-service/
 >
 > **HIPAA整備程度**
 >
->如果您使用Adobe Commerce搭配HIPAA就緒擴充功能和Healthcare附加元件，請勿透過即時搜尋處理任何受保護的健康資訊(PHI)> 即時搜尋不是HIPAA就緒服務。
+>如果您使用Adobe Commerce搭配HIPAA-Ready擴充功能和Healthcare附加元件，請勿透過即時搜尋處理任何受保護的健康資訊(PHI)。 即時搜尋不是HIPAA就緒服務。
 >
 >如需詳細資訊，請參閱Adobe Commerce[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/compliance/hipaa-ready-service/overview)上的HIPAA整備，以及[Operations](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/compliance/hipaa-ready-service/operations)指南，其中列出非HIPAA整備Commerce服務中的即時搜尋。
 
@@ -291,7 +291,7 @@ bin/magento saas:resync --feed categoryPermissions
 
 ### 指派類別
 
-在[!DNL Live Search]中傳回的產品必須指派給[類別](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/categories/categories)。 例如，在Luma中，產品分為「男性」、「女性」和「齒輪」等類別。 也會為「Top」、「Bottoms」和「Watch」設定子類別。 這些類別指派可改善篩選時的精細度。
+在[!DNL Live Search]中傳回的產品必須指派給[類別](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/categories/categories)。 例如，在Luma中，產品分為「男性」、「女性」和「齒輪」等類別。 也會為「最高」、「最低」和「手錶」設定子類別。 這些類別指派可改善篩選時的精細度。
 
 ## &#x200B;6. 測試連線 {#test}
 
@@ -322,7 +322,7 @@ bin/magento saas:resync --feed categoryPermissions
 您可以視需要定義自訂CSS規則，以設定彈出視窗和PLP Widget的樣式。 請參閱[樣式彈出視窗元素](storefront-popover.md#styling-popover-example)和[產品清單頁面Widget](plp-styling.md#styling-example)。
 
 如果您想要擴充Widget的功能，每個元件的原始碼都可在公用存放庫中取得。
-在這種情況下，您可以根據自己的需求自訂JavaScript，然後在CDN上託管自訂程式碼。此自訂指令碼會與[!DNL Live Search]服務通訊，並傳回正常的結果，讓您控制Widget的功能。
+在這種情況下，您可以根據自己的需求自訂JavaScript，然後在CDN上託管自訂程式碼。 此自訂指令碼會與[!DNL Live Search]服務通訊，並傳回正常的結果，讓您控制Widget的功能。
 
 - [PLP Widget存放庫](https://github.com/adobe/storefront-product-listing-page)
 - [搜尋列存放庫](https://github.com/adobe/storefront-search-as-you-type)
@@ -422,9 +422,9 @@ composer update magento/live-search --with-dependencies
 Adobe建議直接呼叫SaaS API，尤其是目錄服務端點。
 
 - 略過Commerce資料庫/Graphql程式，獲得效能並降低處理器負載
-- 利用[!DNL Catalog Service]同盟從單一端點呼叫[!DNL Live Search]、[!DNL Catalog Service]和[!DNL Product Recommendations]。
+- 若要取得效能並減少處理器負載，請使用[!DNL Catalog Service]同盟，從單一端點呼叫[!DNL Live Search]、[!DNL Catalog Service]和[!DNL Product Recommendations]。
 
-對於某些使用案例，最好是呼叫[!DNL Catalog Service]以取得產品詳細資料和類似案例。 如需詳細資訊，請參閱[refineProduct](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product)。
+對於某些使用案例，最好是呼叫[!DNL Catalog Service]以取得產品詳細資料和類似的案例。 如需詳細資訊，請參閱[refectProduct](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product) GraphQL查詢。
 
 如果您有自訂Headless實作，請檢視[!DNL Live Search]參考實作：
 
@@ -486,7 +486,7 @@ Adobe建議直接呼叫SaaS API，尤其是目錄服務端點。
 
 產品清單頁面Widget和[!DNL Live Search]欄位Widget的程式碼可從GitHub下載。
 
-有權存取程式碼的開發人員可完全自訂其運作和外觀方式。 他們在自己的伺服器上代管程式碼，但仍使用[!DNL Live Search]服務。
+有權存取程式碼的開發人員可自訂其運作和外觀方式。 他們在自己的伺服器上代管程式碼，但仍使用[!DNL Live Search]服務。
 
 - [PLP Widget](https://github.com/adobe/storefront-product-listing-page)
 - [搜尋列](https://github.com/adobe/storefront-search-as-you-type)
@@ -538,7 +538,7 @@ composer require magento/module-data-services-graphql
 
 ### PWA支援
 
-[!DNL Live Search]可與PWA Studio搭配使用，但storefront開發人員與其他Commerce實作可能會發現細微差異，尤其是在某些GraphQL導向的案例和整體回應特性中。
+[!DNL Live Search]可與PWA Studio搭配使用，但storefront開發人員看到與其他Commerce實作之間的差異，尤其是在某些GraphQL導向的案例和回應特性中。
 
 - 目前[!DNL Live Search]的PWA實作需要比[!DNL Live Search]更長的處理時間才能傳回搜尋結果（使用原生Commerce店面）。
 - PWA中的[!DNL Live Search]不支援[事件處理](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/)。 因此，搜尋報告和智慧型銷售無法在PWA商店上運作。
