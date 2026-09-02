@@ -4,45 +4,36 @@ description: 瞭解Adobe Commerce中的產品推薦。 探索AI驅動的店面�
 recommendations: noCatalog
 exl-id: 72850cfd-555c-4e0e-ac3e-097e6dac2030
 TQID: https://experienceleague.adobe.com/kRTCG6D5k17Ah-1Q-XNZq4o48xqIwlpI8vDQJDTEeoU
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bbbea26f-9621-49eb-9ab8-e06fb3bbce8cid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: d3cdead0-685a-4489-9250-4bb709942f66id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 744
+source-wordcount: 737
 ht-degree: 0%
 
 ---
 
 # 什麼是[!DNL Product Recommendations]？
 
-[!DNL Product Recommendations]會使用[Adobe AI](https://business.adobe.com/tw/ai.html)，以及針對彙總購物者行為和目錄進行機器學習，協助您在Adobe Commerce店面上顯示個人化產品推薦。 此概觀涵蓋服務限制（包括HIPAA）、資料和隱私權、建議單位出現的位置、店面實作路徑、建議如何補充產品關係，以及目錄資料保留。
+[!DNL Product Recommendations]使用[Adobe AI](https://business.adobe.com/ai.html)和機器學習（已針對彙總購物者行為和目錄資料進行訓練），在Adobe Commerce店面提供個人化建議。 此概觀涵蓋服務限制（包括HIPAA）、資料隱私權、建議單位位置、店面實作選項、產品關係整合和目錄資料保留。
 
 >[!IMPORTANT]
 >
 >**[!DNL Product Recommendations]不是HIPAA就緒的服務。** 請勿在使用HIPAA就緒的產品或以其他方式處理受保護的健康情況資訊(PHI)的任何Adobe Commerce實作中啟用或使用[!DNL Product Recommendations]。 [!DNL Product Recommendations]屬於目前分類為不符合HIPAA標準的Commerce SaaS服務。
 >
->如需哪些是HIPAA就緒的Adobe Commerce功能以及哪些服務不可搭配PHI使用的詳細資訊，請參閱Adobe Commerce[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/compliance/hipaa-ready-service/overview)和[作業](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/compliance/hipaa-ready-service/operations#adobe-commerce-services)上的HIPAA就緒性。
+>如需哪些是HIPAA就緒的Adobe Commerce功能以及哪些服務不可搭配PHI使用的詳細資訊，請參閱Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview)和[作業](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/operations#adobe-commerce-services)上的[HIPAA就緒性。
 
 ## 資料處理與隱私權
 
 [!DNL Product Recommendations]的資料收集不含任何個人識別資訊(PII)。 所有使用者識別碼（例如Cookie ID和IP位址）都需嚴格匿名處理。 若要進一步瞭解，請參閱[Adobe隱私權原則](https://www.adobe.com/privacy/policy.html)。
 
-如需資料同步的詳細資訊，請參閱[資料管理儀表板](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)。
+如需資料同步的詳細資訊，請參閱[資料管理儀表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)。
 
 ## 建議出現的位置
 
-Recommendations會以有標籤的單位的形式出現在店面上，例如「檢視過此產品的客戶也檢視過」。 您可以透過Adobe Commerce管理員在商店檢視中建立、管理和部署建議。 如果您的Commerce專案使用[Adobe Commerce Optimizer Connector](https://experienceleague.adobe.com/zh-hant/docs/commerce/aco-optimizer-connector/overview)，您可以透過[Adobe Commerce Optimizer](../optimizer/overview.md)建立、管理和部署建議。
+Recommendations會以有標籤的單位的形式出現在店面上，例如「檢視過此產品的客戶也檢視過」。 您可以透過Adobe Commerce管理員在商店檢視中建立、管理和部署建議。 如果您的Commerce專案使用[Adobe Commerce Optimizer Connector](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/overview)，您可以透過[Adobe Commerce Optimizer](../optimizer/overview.md)建立、管理和部署建議。
 
 ## 店面實施
 
@@ -50,7 +41,7 @@ Recommendations會以有標籤的單位的形式出現在店面上，例如「�
 
 - **PWA Studio** — [PWA檔案](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/)
 - **自訂前端（例如React或Vue.js）** — [整合 [!DNL Product Recommendations]](headless.md)於Headless店面
-- **Commerce Edge Delivery Services (EDS)** — [EDS的Adobe Commerce Storefront檔案](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=zh-Hant)
+- **Commerce Edge Delivery Services (EDS)** — [EDS的Adobe Commerce Storefront檔案](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/)
 
 >[!NOTE]
 >
@@ -58,7 +49,7 @@ Recommendations會以有標籤的單位的形式出現在店面上，例如「�
 
 ## 產品建議與產品關係
 
-考慮到線上購物不斷變化的複雜性，最適合店面的往往是多種關鍵技術的組合。 同時使用[!DNL Product Recommendations]和[產品關係](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships)可讓您在促銷產品時擁有更多彈性。 您可以運用Adobe AI支援的[!DNL Product Recommendations]，以智慧化方式大規模自動化您的建議。 然後，當您必須手動介入並確保向目標購物者區段提出特定建議，或當必須達成某些業務目標時，您可以運用[相關產品規則](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules)。
+考慮到線上購物不斷變化的複雜性，最適合店面的往往是多種關鍵技術的組合。 同時使用[!DNL Product Recommendations]和[產品關係](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships)可讓您在促銷產品時擁有更多彈性。 若要大規模自動化您的建議，您可以利用Adobe AI支援的[!DNL Product Recommendations]。 然後，當您必須手動介入並確保向目標購物者區段提出特定建議，或當必須達成某些業務目標時，您可以運用[相關產品規則](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules)。
 
 產品建議可讓您：
 
@@ -68,18 +59,18 @@ Recommendations會以有標籤的單位的形式出現在店面上，例如「�
 
 ## 產品推薦示範
 
-觀看此影片以瞭解[!DNL Product Recommendations]：
+若要瞭解[!DNL Product Recommendations]，請觀看此影片：
 
 >[!VIDEO](https://video.tv.adobe.com/v/343991?quality=12)
 
 ## 目錄資料保留原則
 
-[!DNL Product Recommendations]服務取決於與您的Adobe Commerce環境保持同步的目錄資料。 停止查詢資料的非使用中目錄或環境可以進入休眠，這會影響在您重新啟用之前服務會傳回的內容。
+[!DNL Product Recommendations]服務取決於與您的Adobe Commerce環境保持同步的目錄資料。 停用中目錄或停止查詢資料的環境可能會變成非使用中，這會影響服務在您重新啟用之前所傳回的內容。
 
-如果您連續90天未在&#x200B;**測試**&#x200B;環境中提交目錄資料的查詢，則目錄資料會設定為休眠模式，且不會傳回任何查詢的資料。 **生產**&#x200B;環境中的目錄資料不受90天規則影響。
+如果您連續90天未在&#x200B;**測試**&#x200B;環境中提交目錄資料的查詢，則目錄資料會設定為非使用中模式，且不會傳回任何查詢的資料。 90天規則不會影響&#x200B;**生產**&#x200B;環境中的目錄資料。
 
-如果您的環境在建立後45天內有&#x200B;**空白的目錄**，則目錄資料會設定為休眠模式，且不會傳回任何查詢的資料。 這同時適用於生產環境和測試環境。
+如果您的環境在建立後45天內有&#x200B;**空的目錄**，則目錄資料會設定為非使用中模式，且不會傳回任何查詢的資料。 這同時適用於生產環境和測試環境。
 
 ### 重新啟用目錄資料
 
-若要在休眠後還原目錄資料，[提交標題為「重新啟用[!DNL Product Recommendations]」的支援請求](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page)並包含環境ID。 目錄資料應會在數小時內還原。
+若要在目錄資料變成非使用中後還原該資料，請[提交標題為「重新啟用[!DNL Product Recommendations]」的支援要求](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page)並包含環境ID。 目錄資料應在兩小時內還原。

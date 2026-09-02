@@ -3,19 +3,11 @@ title: '[!DNL Product Recommendations] Workspace'
 description: 瞭解如何設定、管理和監控產品推薦效能。
 exl-id: eaf1f0b2-9d9d-4069-8269-06f30166f788
 TQID: https://experienceleague.adobe.com/1dnLBQhNwu1rP0FtnvUGMGpdbKveACW9SNMBIHYzmAg
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
 workflow-type: tm+mt
 source-wordcount: 921
 ht-degree: 0%
@@ -37,18 +29,18 @@ _建議Workspace_
 
 為確保工作區上的每個功能區域都包含正確的資料，您需要根據所選的店面實作來設定資料收集：
 
-1. Luma — 現成提供資料收集功能。
+1. Luma — 預設提供資料彙集。
 1. Headless — 視店面實作而定，必須手動設定資料收集。
 
-如果您使用的是Headless店面，請參閱以下檔案以取得有關您需要新增的所需事件的詳細資訊：
+如果您使用Headless店面，要取得需要新增之事件的詳細資訊，請參閱下列檔案：
 
 - [產品建議控制面板的必要事件](events.md)。
-- [需要新增為先決條件的Storefront事件收集器](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/)。
+- [需要新增為先決條件的Storefront事件收集器](https://developer.adobe.com/commerce/services/shared-services/storefront-events/reference/event-framework)。
 - 事件結構的[範例](https://github.com/adobe/commerce-events/tree/main/examples)。
 
 ## 設定範圍
 
-一開始所有建議設定的[範圍](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/setup/websites-stores-views)設定為`Default Store View`。 如果您的Commerce安裝包含多個商店檢視，請將&#x200B;**範圍**&#x200B;設定為套用您建議的[商店檢視](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)。
+一開始所有建議設定的[範圍](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views)設定為`Default Store View`。 如果您的Commerce安裝包含多個商店檢視，請將&#x200B;**範圍**&#x200B;設定為套用您建議的[商店檢視](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)。
 
 ## 設定量度日期範圍
 
@@ -88,7 +80,7 @@ _建議Workspace_
 
 - 若要變更建議行為資料的來源位置，請選擇不同的SaaS資料空間。
 
-- 若要設定新的SaaS資料空間，請按一下[編輯設定]。**&#x200B;** 若要深入瞭解，請參閱[設定](settings.md)。
+- 若要設定新的SaaS資料空間，請按一下[編輯設定]。**** 若要深入瞭解，請參閱[設定](settings.md)。
 
 ![Recommendations設定](assets/settings.png)
 _Recommendations設定_
@@ -100,7 +92,7 @@ _Recommendations設定_
    ![建議工作區](assets/recommendation-detail.png)
    _首頁轉換率詳細資料_
 
-1. 若要變更建議狀態，請按一下[啟用] **&#x200B;**&#x200B;或[停用] **&#x200B;**。
+1. 若要變更建議狀態，請按一下[啟用] ****&#x200B;或[停用] ****。
 
 ## 編輯建議
 

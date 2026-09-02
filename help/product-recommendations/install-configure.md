@@ -5,23 +5,14 @@ autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 2e7f6454-d4cb-44bc-982f-354a179e8e59
 TQID: https://experienceleague.adobe.com/z-ue-sojw9Iewuz-ZToCzkumP3qN-TCWWF3UWdpdIL0
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: d3cdead0-685a-4489-9250-4bb709942f66id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 last-update: 2026-06-23
-source-git-commit: 7ce47d7abf7519a7e3ecd436faabf4089005cd63
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 578
+source-wordcount: 554
 ht-degree: 0%
 
 ---
@@ -57,13 +48,13 @@ Page Builder的[!DNL Product Recommendations]為選用模組，需另行安裝�
 composer require magento/module-page-builder-product-recommendations
 ```
 
-透過在頁面產生器中啟用[!DNL Product Recommendations]，您可以將現有的作用中[建議單位](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/page-builder/add-content/recommendations)新增到頁面產生器中建立的任何內容，例如頁面、區塊和動態區塊。
+透過在頁面產生器中啟用[!DNL Product Recommendations]，您可以將現有的作用中[建議單位](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)新增到頁面產生器中建立的任何內容，例如頁面、區塊和動態區塊。
 
 如需進一步說明，請參閱[搭配頁面產生器內容](page-builder.md)使用 [!DNL Product Recommendations] 。
 
 ### 新增視覺相似度推薦型別 {#vissimsupport}
 
-_視覺相似度_&#x200B;建議型別可讓您將建議單位部署至產品詳細資料頁面，該頁面會顯示與正在檢視的產品[視覺上類似](type.md#visualsim)的產品。 當產品的影像和視覺方面是購物體驗的重要部分時，此建議型別最有用。 執行下列命令，安裝&#x200B;_視覺相似度_&#x200B;建議型別：
+_視覺相似度_&#x200B;建議型別顯示與在產品詳細資料頁面上檢視的產品視覺上相似的產品[](type.md#visualsim)。 當產品影像和外觀對購物體驗很重要時，這個範本就十分實用。 若要安裝，請執行以下命令：
 
 ```bash
 composer require magento/module-visual-product-recommendations
@@ -73,11 +64,11 @@ composer require magento/module-visual-product-recommendations
 
 1. 安裝`magento/product-recommendations`模組後，請指定API金鑰並選取SaaS資料空間，以設定[Commerce Services Connector](../landing/saas.md)。
 
-   設定此連線會啟用Commerce執行個體、目錄服務和其他支援服務之間的資料同步和通訊。 資料同步處理由[SaaS Data Export擴充功能](../data-export/overview.md)處理。
+   設定此連線會啟用Commerce執行個體、目錄服務和其他支援服務之間的資料同步和通訊。 [SaaS Data Export擴充功能](../data-export/overview.md)會處理資料同步處理。
 
-1. 若要確保目錄匯出可以正確執行，請確認[cron](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)工作和[索引子](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cli/manage-indexers)正在執行，且`Product Feed`索引子設定為`Update by Schedule`。
+1. 若要確保目錄匯出可以正確執行，請確認[cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)工作和[索引子](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers)正在執行，且`Product Feed`索引子設定為`Update by Schedule`。
 
-當您成功將Commerce應用程式連結至Commerce Services並指定[SaaS資料空間](../landing/saas.md#saas-configuration)後，目錄同步作業就會開始。 然後，您可以[驗證](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/)行為資料正在傳送至您的店面。
+當您成功將Commerce應用程式連結至Commerce Services並指定[SaaS資料空間](../landing/saas.md#saas-configuration)後，目錄同步作業就會開始。 然後，您可以[驗證](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify)行為資料正在傳送至您的店面。
 
 ## 監控資料同步並疑難排解
 
@@ -103,7 +94,7 @@ composer update magento/product-recommendations --with-dependencies
 }
 ```
 
-讓我們將主要版本從`5.0`增加到`6.0`：
+將主要版本從`5.0`更新為`6.0`：
 
 ```json
 "require": {
@@ -135,4 +126,4 @@ composer update --with-dependencies magento/product-recommendations magento/modu
 
 ## 解除安裝[!DNL Product Recommendations] {#uninstall}
 
-如有必要，您可以[解除安裝](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/tutorials/uninstall-modules)產品建議模組。
+如有必要，您可以[解除安裝](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules)產品建議模組。
