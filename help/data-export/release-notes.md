@@ -22,9 +22,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 5964358bb4370fa4fb0c2f4c447bacb3603d0f5e
+source-git-commit: c08c9248b26b6e3a0271032e869753bece96a8bd
 workflow-type: tm+mt
-source-wordcount: 3356
+source-wordcount: 3412
 ht-degree: 0%
 
 ---
@@ -44,6 +44,12 @@ ht-degree: 0%
 >[!DNL SaaS data export]擴充功能是與[!DNL Live Search]、[!DNL Product Recommendations]及[!DNL Catalog Service]一起自動安裝的模組集合。 您可以使用[!DNL Composer]檢查系統上安裝的版本。 在某些情況下，您可能會想要升級系統上的資料匯出擴充功能，以取得修正或新功能，而不更新Commerce服務版本。
 
 ## 2026版本 {#release-notes-2026}
+
+### 103.4.33版本
+
+_2026年9月1日_
+
+![修正](../assets/fix.svg) **加快多重商店檢視目錄的重新同步速度** — 產品與類別摘要現在會在擷取資料之前，依商店檢視進行篩選，而不是擷取每個商店檢視並在之後捨棄無關的結果。 此更新可大幅改善具有許多存放區檢視之目錄的重新同步效能，尤其是在使用Adobe Commerce Optimizer時。<!--MDEE-1441-->
 
 ### 103.4.32版
 
