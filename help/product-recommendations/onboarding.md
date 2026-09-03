@@ -3,17 +3,13 @@ title: 入門
 description: 瞭解 [!DNL Product Recommendations]中的需求與支援平台。
 exl-id: 7b8a1117-b6d5-4e5d-bb97-09f76a024cbd
 TQID: https://experienceleague.adobe.com/FLrOFe-Lwe7i3dOwCISflVGEv2MIkXmmE-NqTvpaY-0
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 0802d0e53a1ed6701318647b7bf78435082ad5f3
 workflow-type: tm+mt
-source-wordcount: 449
+source-wordcount: 477
 ht-degree: 0%
 
 ---
@@ -24,7 +20,7 @@ ht-degree: 0%
 >
 >**產品建議不是可支援HIPAA的服務。** 請勿在使用HIPAA就緒的產品或以其他方式處理受保護的健康資訊(PHI)的Adobe Commerce實作中啟用或使用產品建議。 產品建議是Commerce SaaS服務的一部分，目前分類為不符合HIPAA標準。
 >
->如需哪些是HIPAA就緒的Adobe Commerce功能以及哪些服務不可搭配PHI使用的詳細資訊，請參閱Adobe Commerce[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/compliance/hipaa-ready-service/overview)和[作業](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/compliance/hipaa-ready-service/operations#adobe-commerce-services)上的HIPAA就緒性。
+>如需哪些是HIPAA就緒的Adobe Commerce功能以及哪些服務不可搭配PHI使用的詳細資訊，請參閱Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview)和[作業](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/operations#adobe-commerce-services)上的[HIPAA就緒性。
 
 [!DNL Product Recommendations]的上線流程需要存取伺服器的命令列，且包含下列步驟。 如果您不熟悉如何使用命令列，請向開發人員或系統整合商尋求協助。
 
@@ -36,14 +32,14 @@ ht-degree: 0%
 
 ## 需求
 
-[Adobe Commerce](https://business.adobe.com/tw/products/magento/magento-commerce.html) 2.4.4+。 如需詳細資訊，請參閱[系統需求](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}。
+[Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+。 如需詳細資訊，請參閱[系統需求](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}。
 
 ### 支援平台
 
 - Adobe Commerce內部部署(EE) ：2.4.4+
 - 雲端上的Adobe Commerce (ECE) ： 2.4.4+
 
-如需詳細需求，請參閱[系統需求](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/system-requirements)。
+如需詳細需求，請參閱[系統需求](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)。
 
 ## 端點
 
@@ -55,13 +51,17 @@ ht-degree: 0%
 
 請參閱[[!DNL Page Builder] 整合](page-builder.md)，瞭解如何將[!DNL Product Recommendations]新增至[!DNL Page Builder]內容的指示。
 
+### Fastly影像最佳化
+
+[!DNL Product Recommendations]支援選用的[Fastly影像最佳化](install-configure.md#fastlysupport)模組，可將Fastly影像最佳化引數套用至[!DNL Product Recommendations]個影像URL。 若要新增此支援，請參閱[安裝與設定](install-configure.md#fastlysupport)。
+
 ### SaaS價格索引
 
 產品推薦客戶可以使用[SaaS價格索引](../price-index/price-indexing.md)，提供更快的價格變更更新和同步處理時間。
 
 ### B2B支援 {#b2bsupport}
 
-B2B店面通常需要複雜的邏輯，這些邏輯會指定每個購物者或客戶群組的產品可見度和價格。 [!DNL Product Recommendations]現在[支援](release-notes.md)此功能，接受[類別許可權](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/categories/category-permissions)、[共用目錄](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/b2b/shared-catalogs/catalog-shared)和[客戶群組特定定價](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/products/pricing/pricing-advanced)。 例如，如果您隱藏零售客戶區段中的某些類別，則該區段中的購物者不會顯示這些類別中產品的建議。 此外，當您為特定客戶群組和公司定義共用目錄時，這些購物者只會看到他們可存取之產品的建議。 所有建議產品都會根據每位購物者的客戶群組，反映正確的客戶群組特定價格。
+B2B店面通常需要複雜的邏輯，這些邏輯會指定每個購物者或客戶群組的產品可見度和價格。 [!DNL Product Recommendations]現在[支援](release-notes.md)此功能，接受[類別許可權](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions)、[共用目錄](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared)和[客戶群組特定定價](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/pricing-advanced)。 例如，如果您隱藏零售客戶區段中的某些類別，則該區段中的購物者不會顯示這些類別中產品的建議。 此外，當您為特定客戶群組和公司定義共用目錄時，這些購物者只會看到他們可存取之產品的建議。 所有建議產品都會根據每位購物者的客戶群組，反映正確的客戶群組特定價格。
 
 >[!NOTE]
 >
