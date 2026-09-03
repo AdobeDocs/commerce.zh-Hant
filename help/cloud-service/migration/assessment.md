@@ -6,28 +6,15 @@ role: Developer, Admin
 level: Intermediate
 autotag-review: '2026-06-18T16:09:41.112Z'
 TQID: 'https://experienceleague.adobe.com/-OrsBVtHRcEV5EzgHzzP0JVf0aQWfSO2Fu1R5F5jtAw'
-product_v2:
-  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2:
-  - id: a743e5dc-8f37-4b5d-a848-03c32ca30598
-role_v2:
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 43d5571c6a1a3c5152d3b389b73887fd4739fa7f
+product_v2: id: de2e2e68-c5d7-4efe-be7b-27528698f06bid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c32adafa-ed01-4b31-997e-2413013911b0id: cc250cf1-34eb-4863-80d0-d170d45ea067id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: a743e5dc-8f37-4b5d-a848-03c32ca30598
+role_v2: id: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: d378ca77-2da1-4f39-ad92-1917fe974a38
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: dba0c9e79458f516dd36da886423c7a5657a2ad2
 workflow-type: tm+mt
-source-wordcount: 2499
+source-wordcount: 2705
 ht-degree: 0%
 
 ---
@@ -41,7 +28,13 @@ ht-degree: 0%
 
 Commerce移轉評估是對您現有Adobe Commerce實作的自動分析。 Adobe的工具會掃描您的Commerce程式碼基底，並產生結構化報表，以清查所有建置、自訂或修改的內容。 報表接著會指出對程式碼基底所做的自訂如何影響移轉至[!DNL Adobe Commerce as a Cloud Service]。
 
-可以在`https://experience.adobe.com/@<ims-org-name>/commerce-migration-assessment/shared-assessments`存取已處理的移轉評估報告。 除了最初共用您的專案程式碼基底外，不需要存取您的生產環境。
+處理完您的程式碼基底後，評估報告就會連結至您的IMS組織ID並共用至[!DNL Adobe Experience Cloud]。 除了最初共用您的專案程式碼基底外，不需要存取您的生產環境。
+
+IMS組織的任何成員都可以在https://experience.adobe.com/commerce-migration-assessment/shared-assessments檢視共用的評估。
+
+>[!NOTE]
+>
+> 您必須使用連結至移轉評估所用相同IMS組織的使用者設定檔登入Adobe Experience Cloud，才能檢視共用報告。
 
 **評定提供：**
 
@@ -49,6 +42,10 @@ Commerce移轉評估是對您現有Adobe Commerce實作的自動分析。 Adobe�
 - 從風險預測性量度計算的移轉複雜性評等（高、Medium或低）
 - 需要規劃移轉計畫的最高影響力後端和店面區域的優先順序檢視
 - 每個自訂模組的說明，可作為AdobeAI開發人員工具的直接輸入
+
+## 存取移轉評估
+
+Adobe會將完成的移轉評估連結至貴組織的Adobe IMS組織。 評估連線後，該組織的任何使用者都可以在https://experience.adobe.com/commerce-migration-assessment/shared-assessments存取報告。
 
 ## 瞭解移轉評估報告
 
@@ -232,6 +229,8 @@ Commerce移轉評估是對您現有Adobe Commerce實作的自動分析。 Adobe�
 | 移轉建議 | **重新建置**，**重新調整**，**以原生功能取代**，或&#x200B;**移除** |
 | 相依性 | 此模組與哪些其他模組互動，可告知移轉順序 |
 
+開啟模組的劃分以檢視其完整詳細資訊。 具有&#x200B;**重新建置**&#x200B;移轉建議的模組包含&#x200B;**[!UICONTROL Open in Developer Agent]**&#x200B;按鈕，這會直接將模組的說明複製到[Commerce Developer Agent](https://developer.adobe.com/commerce/extensibility/developer-agent/)，因此您可以立即產生取代擴充功能的藍圖。
+
 **工作流程**
 
 1. 請先篩選為&#x200B;**高影響**&#x200B;模組。 這些正是移轉的最大努力和成本。
@@ -240,7 +239,9 @@ Commerce移轉評估是對您現有Adobe Commerce實作的自動分析。 Adobe�
    - 是否可由原生[!DNL Adobe Commerce as a Cloud Service]功能取代模組？
    - 如果必須重建模組，取代模組需要提供哪些功能？
 1. 識別可淘汰或取代的自訂模組。 每一個都會在寫入任何程式碼之前縮小移轉範圍。
-1. 複製每個自訂模組的說明，並附上&#x200B;**重新建置**&#x200B;移轉建議。 這些說明可以直接提供給Adobe的AI開發人員工具，如需詳細資訊，請參閱[適用於Commerce擴充性的AI開發人員工具](#ai-developer-tools-for-commerce-extensibility)。
+1. 對於具有&#x200B;**重新建置**&#x200B;移轉建議的每個自訂模組，您可以：
+   - 按一下&#x200B;**[!UICONTROL Open in Developer Agent]**&#x200B;以產生Blueprint，或使用Commerce開發人員代理程式複製模組說明。
+   - 複製每個自訂模組的說明，並附上&#x200B;**重新建置**&#x200B;移轉建議。 這些說明可以直接提供給Adobe的AI開發人員工具，如需詳細資訊，請參閱[適用於Commerce擴充性的AI開發人員工具](#ai-developer-tools-for-commerce-extensibility)。
 
 ## 參考資料：主要條款
 
@@ -265,7 +266,7 @@ Commerce移轉評估是對您現有Adobe Commerce實作的自動分析。 Adobe�
 
 ### 工具提供的內容
 
-Adobe的[AI開發人員工具適用於Commerce擴充性](https://developer.adobe.com/commerce/extensibility/developer-agent/)，包含兩項主要功能。
+Adobe的[AI開發人員工具適用於Commerce擴充性](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/)，包含兩項主要功能。
 
 - [!DNL Adobe Commerce] [!DNL App Builder] MCP伺服器 — 模型內容通訊協定(MCP)整合，可將AI編碼助理直接連線至[!DNL Adobe Commerce]檔案、API和App Builder開發模式。 開發人員可以描述他們想要建置的內容，而MCP伺服器可提供Commerce感知的程式碼產生、架構指引，以及IDE內的部署自動化。
 - 代理程式技能 — 涵蓋常見Commerce擴充性模式（例如REST API、結帳擴充功能、店面元件和事件導向整合）的預建AI技能。 技能可指導AI完成[!DNL Adobe Commerce as a Cloud Service]和[!DNL App Builder]專屬的架構、實作、測試和部署步驟。
@@ -293,15 +294,17 @@ aio commerce extensibility tools-setup
 Manages custom shipping rate calculations based on customer account tier and order    weight thresholds.
 ```
 
-1. 開啟IDE，例如GitHub Copilot、Cursor或Claude，並啟用Commerce擴充性MCP伺服器。
-1. 使用模組說明來提示AI代理程式。
+1. 按一下&#x200B;**[!UICONTROL Open in Developer Agent]**&#x200B;將說明複製到[!DNL Commerce Developer Agent]中並立即產生Blueprint。
+
+   或者，開啟您的IDE，例如GitHub Copilot、Cursor或Claude，並啟用Commerce擴充性MCP伺服器，然後使用模組說明手動提示AI代理程式。
+
 1. 檢閱支架式[!DNL App Builder]應用程式，並與代理程式反複運算以調整實作。
 
 ## 後續步驟
 
 1. 開啟&#x200B;**[!UICONTROL Summary]**&#x200B;標籤。 請檢閱移轉複雜性和影響最高的模組，然後檢視自訂劃分子區段。 如果您的商店有自訂主題、高風險區塊或簽出下拉式清單清單，請規劃平行的前端工作流程和後端移轉。
 1. 與您的技術團隊或開發合作夥伴共用&#x200B;**[!UICONTROL Module Reports]**&#x200B;標籤。 要求他們標幟不再使用中或可由[!DNL Adobe Commerce as a Cloud Service]功能取代的任何自訂模組。
-1. 開始建立您的自訂。 使用模組說明作為AI工具輸入，開始建立與支架相容的擴充功能。
+1. 開始建立您的自訂。 在&#x200B;**模組報表**&#x200B;標籤上，開啟任何模組劃分，並選取&#x200B;**在開發人員代理程式中開啟**，以直接從該模組的評估資料中開始建立相容的延伸模組。
 1. 與您的Adobe客戶團隊排程逐步解說通話。 Adobe可與您一同檢閱發現、回答有關特定模組和店面訊號的任何問題，並協助您針對複雜性設定檔規劃移轉方法。
 
 ## 資源
@@ -313,19 +316,19 @@ Manages custom shipping rate calculations based on customer account tier and ord
   - [送貨方法教學課程](../tutorials/shipping-method-extension.md)
 - 擴充性
   - [概觀](https://developer.adobe.com/commerce/extensibility/)
-  - [AI開發人員工具](https://developer.adobe.com/commerce/extensibility/developer-agent/)
+  - [AI開發人員工具](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/)
     - [最佳實務](https://developer.adobe.com/commerce/extensibility/developer-agent/best-practices)
     - [設定](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools)
     - [技能與提示](https://developer.adobe.com/commerce/extensibility/developer-agent/skills-and-prompts)
     - [使用案例](https://developer.adobe.com/commerce/extensibility/developer-agent/use-cases)
   - [App Builder概觀](https://developer.adobe.com/app-builder/docs/intro_and_overview/)
-  - [適用於Adobe Commerce的App Builder](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)
+  - [適用於Adobe Commerce的App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)
   - 入門套件
     - [後端整合入門套件](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/)
     - [結帳入門套件](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
 - 店面開發
-  - [概觀](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant)
-  - [Storefront AI技能](https://experienceleague.adobe.com/developer/commerce/storefront/boilerplate/ai-agent-skills/?lang=zh-Hant)
+  - [概觀](https://experienceleague.adobe.com/developer/commerce/storefront/)
+  - [Storefront AI技能](https://experienceleague.adobe.com/developer/commerce/storefront/boilerplate/ai-agent-skills/)
 
 >[!TIP]
 >
