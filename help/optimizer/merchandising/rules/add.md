@@ -1,7 +1,7 @@
 ---
 title: 建立和管理規則
 description: 瞭解如何建立和管理搜尋、預設產品清單和類別頁面的銷售規則。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
 TQID: https://experienceleague.adobe.com/UOe-TPaF80Wrk-gNuJwLTdndVQMQfbYrbpAfb-r4pJc
 product_v2:
@@ -265,7 +265,7 @@ ht-degree: 0%
 
 >[!AVAILABILITY]
 >
->此功能位於[beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#attribute-ranking-public-beta)中。
+>此功能位於[beta](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/beta#attribute-ranking-public-beta)中。
 
 **屬性排名**&#x200B;會自動將&#x200B;**[!UICONTROL Boost]**、**[!UICONTROL Bury]**&#x200B;或&#x200B;**[!UICONTROL Hide]**&#x200B;動作套用至符合一或多個屬性條件的每個產品，而不需要您選取個別SKU。 屬性排名會與[智慧型排名](#intelligent-ranking)和[手動排名](#manual-ranking)一起出現在規則編輯器中，並適用於&#x200B;**所有產品規則**、**搜尋規則**&#x200B;和&#x200B;**類別規則**。 使用它來擴展大型目錄中的銷售，例如，提升指定品牌的所有產品，或將每個產品埋入停產的顏色。
 

@@ -4,7 +4,7 @@ description: ' [!DNL Adobe Commerce Optimizer]的每月發行資訊，包括店�
 feature: Release Notes
 role: Admin, Developer, User, Leader
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
 exl-id: e420d461-9ea2-4e32-aa37-230b14a297d7
 TQID: https://experienceleague.adobe.com/apcpxN0AOniRcHDCa5MMAVWysxRO5mTcudXXXjET-Lo
 product_v2:
@@ -153,7 +153,7 @@ _2026年4月29日_
 
 <!--v1.52 release-->
 
-**需要批次處理請求** — 現在，當您擷取目錄資料時，GraphQL API會針對每個請求強制最多100個SKU。 請參閱[已記錄的限制和邊界](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits#product-discovery)。
+**需要批次處理請求** — 現在，當您擷取目錄資料時，GraphQL API會針對每個請求強制最多100個SKU。 請參閱[已記錄的限制和邊界](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/boundaries-limits#product-discovery)。
 
 <!--DATA-7156-->
 
