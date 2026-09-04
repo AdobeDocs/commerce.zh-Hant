@@ -19,9 +19,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 last-update: 2026-09-02
-source-git-commit: 299da83bd0a9b776ad6b13482b65af61bffe15fa
+source-git-commit: 77e37e506362498a4ab27cd19152b4e4e742636b
 workflow-type: tm+mt
-source-wordcount: 554
+source-wordcount: 600
 ht-degree: 0%
 
 ---
@@ -67,6 +67,14 @@ _視覺相似度_&#x200B;建議型別顯示與在產品詳細資料頁面上檢�
 
 ```bash
 composer require magento/module-visual-product-recommendations
+```
+
+### 新增Fastly影像最佳化支援 {#fastlysupport}
+
+[!DNL Product Recommendations]的Fastly影像最佳化支援是選用的模組，需另行安裝。 此模組將[Fastly影像最佳化](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/cdn/fastly)引數套用至[!DNL Product Recommendations]個影像URL。 若要安裝，請執行以下命令：
+
+```bash
+composer require magento/module-fastly-recommendations
 ```
 
 ## 設定[!DNL Product Recommendations] {#configure}

@@ -17,9 +17,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
+source-git-commit: 77e37e506362498a4ab27cd19152b4e4e742636b
 workflow-type: tm+mt
-source-wordcount: 2260
+source-wordcount: 2322
 ht-degree: 0%
 
 ---
@@ -31,6 +31,7 @@ ht-degree: 0%
 * [!DNL Product Recommendations]中繼封裝： `magento/product-recommendations`
 * [!DNL Product Recommendations] （選擇性）模組中的Page Builder支援： `magento/module-page-builder-product-recommendations`
 * [!DNL Product Recommendations] （選擇性）模組的視覺相似度推薦型別支援： `magento/module-visual-product-recommendations`
+* [!DNL Product Recommendations] （選擇性）模組的Fastly影像最佳化支援： `magento/module-fastly-recommendations`
 
 Adobe支援最新發行的Product Recommendations版本。 舊版的發行說明僅供參考。
 
@@ -80,6 +81,14 @@ _2023年4月25日_
 ![新](../assets/new.svg) [!DNL Product Recommendations]客戶現在可以使用[SaaS價格索引](../price-index/price-indexing.md)。
 
 ## 目前的主要版本
+
+### 6.8.0個magento/module-fastly-recommendations
+
+_2026年9月3日_
+
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
+
+![新](../assets/new.svg)已為[!DNL Product Recommendations]新增選用的Fastly影像最佳化支援。 此模組將[Fastly影像最佳化](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/cdn/fastly)引數套用至[!DNL Product Recommendations]個影像URL。 如需安裝指示，請參閱[新增Fastly影像最佳化支援](install-configure.md#fastlysupport)。
 
 ### 6.7.0 magento/product-recommendations
 

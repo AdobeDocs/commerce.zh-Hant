@@ -11,9 +11,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+source-git-commit: 0802d0e53a1ed6701318647b7bf78435082ad5f3
 workflow-type: tm+mt
-source-wordcount: 449
+source-wordcount: 477
 ht-degree: 0%
 
 ---
@@ -54,6 +54,10 @@ ht-degree: 0%
 [!DNL Product Recommendations]可以新增到頁面作為頁面產生器內容型別。 若要將頁面產生器支援新增至產品建議，請參閱[安裝與設定](install-configure.md)。
 
 請參閱[[!DNL Page Builder] 整合](page-builder.md)，瞭解如何將[!DNL Product Recommendations]新增至[!DNL Page Builder]內容的指示。
+
+### Fastly影像最佳化
+
+[!DNL Product Recommendations]支援選用的[Fastly影像最佳化](install-configure.md#fastlysupport)模組，可將Fastly影像最佳化引數套用至[!DNL Product Recommendations]個影像URL。 若要新增此支援，請參閱[安裝與設定](install-configure.md#fastlysupport)。
 
 ### SaaS價格索引
 

@@ -35,9 +35,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: bef6657cdf6703b6a0a1109bd6582ecbe4e19930
+source-git-commit: 289267c4bb76bbe1e9f00fd02faa7749b812d0d0
 workflow-type: tm+mt
-source-wordcount: 3302
+source-wordcount: 3372
 ht-degree: 0%
 
 ---
@@ -67,21 +67,17 @@ Adobe不將移轉視為單一整體專案，而是提供建置在[三個移轉�
 
 ![移轉流程圖](../assets/migration-flow.png)
 
-### PaaS和SaaS比較
+### SaaS和PaaS比較
 
-[!DNL Adobe Commerce on Cloud]或內部部署(PaaS)和[!DNL Adobe Commerce as a Cloud Service] (SaaS)的管理方式以及商家與平台的互動方式不同。
+Adobe Commerce適用於不同的部署模式。 主要差異在於基礎建設管理、應用程式控制、自訂及升級職責的層次。
 
-**主要差異**
+[!DNL Adobe Commerce as a Cloud Service]、[!DNL Adobe Commerce on Cloud]和[!DNL Adobe Commerce on-premises]的管理方式以及商家與平台的互動方式不同。
 
-- 僅[!BADGE 個PaaS]{type=Informative url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"}
-- **[!DNL Adobe Commerce on Cloud Infrastructure]**：商家管理應用程式程式碼、升級、修補和基礎結構設定。
-- **[!DNL Adobe Commerce]內部部署**：商家在Adobe的託管環境中管理應用程式程式碼、升級、修補、基礎結構設定。
-
-  >[!NOTE]
-  >
-  >[服務（MySQL、Elasticsearch等）的共用職責模型](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/security-and-compliance/shared-responsibility)。
-
-- [!BADGE 僅限SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"} **SaaS （新增 — [!DNL Adobe Commerce as a Cloud Service]）**： Adobe可完全管理核心應用程式、基礎架構和更新。 商家專注於透過擴充點(API、App Builder、UI SDK)進行自訂。 核心應用程式程式碼已鎖定。
+| Adobe Commerce產品 | 託管模型 | 服務與更新的責任 |
+|---|---|---|
+| **[!DNL Adobe Commerce as a Cloud Service]** | SaaS — Adobe代管 | Adobe可管理核心Commerce應用程式、基礎架構和更新。 商家透過支援的API和擴充性服務(API、[!DNL Adobe Developer App Builder]、UI SDK)擴充平台。 商家無法修改核心應用程式程式碼。 |
+| **[!DNL Adobe Commerce on Cloud Infrastructure]** | PaaS — Adobe管理 | [共擔責任](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/security-and-compliance/shared-responsibility)： Adobe會管理託管平台。 商家管理應用程式層級的修補程式、自訂程式碼、組態，並將擴充功能和平台服務更新至支援的版本，包括：資料庫、快取、搜尋、PHP執行階段、Web伺服器和訊息佇列。 |
+| **[!DNL Adobe Commerce on-premises]** | 由商家或代管提供者代管 | [商家職責](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/overview#merchant-responsibilities)：商家或其代管提供者管理基礎結構和所有平台服務。 |
 
 **架構影響**
 
@@ -186,7 +182,9 @@ Adobe不將移轉視為單一整體專案，而是提供建置在[三個移轉�
 
 每次[!DNL Adobe Commerce as a Cloud Service]移轉都會從評估開始。 在開始實作前，這是建立範圍、減少不確定因素及建立共用移轉藍圖的經濟有效方式。
 
-如需評估工具和下游開發人員工作流程的詳細資訊，請參閱[Adobe Commerce開發人員MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/)。
+如需評估工具和下游開發人員工作流程的詳細資訊，請參閱[Adobe Commerce開發人員MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/)。
+
+如需有關與移轉評估工具整合的Commerce Developer Agent的詳細資訊，請參閱[Commerce Developer Agent](https://developer.adobe.com/commerce/extensibility/developer-agent/)
 
 ## 程式碼和店面移轉（Commerce開發人員MCP）
 
@@ -259,7 +257,9 @@ MCP不會處理資料移轉。 商務資料是透過[Commerce資料移轉服務]
 
 一旦移轉評估工具藍圖確立移轉範圍和優先順序，程式碼和店面現代化程式就會開始。
 
-如需如何安裝及使用MCP的詳細資訊，請參閱[Commerce開發人員MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/)檔案。
+如需如何安裝及使用MCP的詳細資訊，請參閱[Commerce開發人員MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/)檔案。
+
+如需有關與移轉評估工具整合的Commerce Developer Agent的詳細資訊，請參閱[Commerce Developer Agent](https://developer.adobe.com/commerce/extensibility/developer-agent/)
 
 ## 資料移轉（Commerce資料移轉服務）
 

@@ -24,9 +24,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: f37892b9a2de995dbc4b631ae1008e09cda68207
 workflow-type: tm+mt
-source-wordcount: 1027
+source-wordcount: 1029
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 此RAG提供IDE介面來詢問有關Adobe Commerce的問題，並可提供開發應用程式和其他移轉工作的最佳實務建議。
 
-RAG服務是[Commerce擴充性工具](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"} MCP （模型內容通訊協定）伺服器的一部分，該伺服器與Cursor和其他與MCP相容的AI助理整合。
+RAG服務是[Commerce擴充性工具](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/){target="_blank"} MCP （模型內容通訊協定）伺服器的一部分，該伺服器與Cursor和其他與MCP相容的AI助理整合。
 
 ## 可用檔案
 

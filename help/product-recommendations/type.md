@@ -13,9 +13,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
+source-git-commit: 0802d0e53a1ed6701318647b7bf78435082ad5f3
 workflow-type: tm+mt
-source-wordcount: 2001
+source-wordcount: 2026
 ht-degree: 0%
 
 ---
@@ -132,6 +132,10 @@ Product Recommendations是資料導向系統，需仰賴從店面收集的行為
 
 _視覺相似度_&#x200B;建議型別會推薦外觀與正在檢視之產品類似的產品。 當產品的影像和視覺方面是購物體驗的重要部分時，此建議型別最有用。
 
+>[!NOTE]
+>
+>由於此建議型別不適用於大部分的目錄，因此系統預設不會啟用它。 明確[啟用此建議型別](#enable-visual-similarity-recommendation-type)。
+
 ### 運作方式
 
 _視覺相似度_&#x200B;建議型別針對目錄中與目前檢視的影像具有視覺相似度的其他產品提供建議。 視覺相似度包含下列方面：
@@ -145,15 +149,11 @@ _視覺相似度_&#x200B;建議型別針對目錄中與目前檢視的影像具�
 
 Adobe AI使用AI處理和分析目錄中的影像，並建立用於判斷視覺相似性的屬性。
 
->[!NOTE]
->
-> 如果您在非生產環境中測試此建議型別，請確定您的影像URL可公開存取。
+#### 特殊考量
 
->[!NOTE]
->
-> 目前，產品影像的大小不得超過10 MB。
-
-由於此建議型別不適用於大部分的目錄，因此系統預設不會啟用它。 明確啟用此建議型別。
+- 如果您在非生產環境中測試此建議型別，請確定您的影像URL可公開存取。
+- 目前，產品影像的大小不得超過10 MB。
+- 選用的[Fastly影像最佳化](install-configure.md#fastlysupport)模組可將Fastly影像最佳化引數套用至[!DNL Product Recommendations]個影像URL。 如需詳細資訊，請參閱[新增Fastly影像最佳化支援](install-configure.md#fastlysupport)。
 
 ### 啟用視覺相似度建議型別
 
