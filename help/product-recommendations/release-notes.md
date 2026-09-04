@@ -4,22 +4,13 @@ description: Adobe Commerce中 [!DNL Product Recommendations] 的最新發行資
 feature: Services, Recommendations, Release Notes
 exl-id: 37404605-5b62-4c71-90d1-4f09e6105c4b
 TQID: https://experienceleague.adobe.com/cr5tBPTFRNlSTqtFNfUWS6p1LdhSrir28x3N1WC4Zw8
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 77e37e506362498a4ab27cd19152b4e4e742636b
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 77e386b2806ea3761009a6ab67e2ea7e879135dd
 workflow-type: tm+mt
-source-wordcount: 2322
+source-wordcount: 2321
 ht-degree: 0%
 
 ---
@@ -41,7 +32,7 @@ Adobe支援最新發行的Product Recommendations版本。 舊版的發行說明
 ![修正](../assets/fix.svg)修正和改良
 ![錯誤](../assets/bug.svg)已知問題
 
-[進一步瞭解產品支援](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/product-availability)。
+[進一步瞭解產品支援](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)。
 
 ## 託管服務更新
 
@@ -82,13 +73,13 @@ _2023年4月25日_
 
 ## 目前的主要版本
 
-### 6.8.0個magento/module-fastly-recommendations
+### 6.8.0的magento/product-recommendations
 
 _2026年9月3日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
-![新](../assets/new.svg)已為[!DNL Product Recommendations]新增選用的Fastly影像最佳化支援。 此模組將[Fastly影像最佳化](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/cdn/fastly)引數套用至[!DNL Product Recommendations]個影像URL。 如需安裝指示，請參閱[新增Fastly影像最佳化支援](install-configure.md#fastlysupport)。
+![新](../assets/new.svg)已為[!DNL Product Recommendations]新增選用的Fastly影像最佳化支援。 此模組將[Fastly影像最佳化](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly)引數套用至[!DNL Product Recommendations]個影像URL。 如需安裝指示，請參閱[新增Fastly影像最佳化支援](install-configure.md#fastlysupport)。
 
 ### 6.7.0 magento/product-recommendations
 
@@ -106,7 +97,7 @@ _2026年1月28日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
-![新](../assets/new.svg)已新增相依性至[資料摘要同步狀態監視儀表板](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)。 此儀表板可讓您檢視資料匯出摘要的健全狀況和效能的即時深入分析，這些摘要會將產品和類別資料從Commerce傳輸到外部服務，例如產品建議。
+![新](../assets/new.svg)已新增相依性至[資料摘要同步狀態監視儀表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)。 此儀表板可讓您檢視資料匯出摘要的健全狀況和效能的即時深入分析，這些摘要會將產品和類別資料從Commerce傳輸到外部服務，例如產品建議。
 
 ### 6.5.0 magento/product-recommendations
 
@@ -190,7 +181,7 @@ _2024年2月22日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
-![新](../assets/new.svg) [!DNL Catalog Sync Dashboard]現在是[[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)。 此改版後的儀表板提供[!DNL Product Recommendations]、[!DNL Live Search]和[!DNL Catalog Service]的資料串流的深入分析。
+![新](../assets/new.svg) [!DNL Catalog Sync Dashboard]現在是[[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)。 此改版後的儀表板提供[!DNL Product Recommendations]、[!DNL Live Search]和[!DNL Catalog Service]的資料串流的深入分析。
 ![修正](../assets/fix.svg)修正造成[!DNL Product Recommendations]簽出錯誤的問題。
 
 +++5.0.0和先前版本
@@ -217,7 +208,7 @@ _2023年3月20日_
 
 ![新](../assets/new.svg)已更新[!DNL Product Recommendations]以支援Adobe Commerce 2.4.6。
 ![新](../assets/new.svg)此版本為主要版本。 [編輯](install-configure.md#update)專案的根`composer.json`檔案。
-![新的](../assets/new.svg) [!DNL Product Recommendations]現在支援Commerce中的完整[Inventory management](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/inventory/introduction)功能（先前稱為多Source詳細目錄或MSI）。 若要啟用完整支援，您必須[將](install-configure.md#update)相依性模組`commerce-data-export`更新為102.2.0+版。
+![新的](../assets/new.svg) [!DNL Product Recommendations]現在支援Commerce中的完整[Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction)功能（先前稱為多Source詳細目錄或MSI）。 若要啟用完整支援，您必須[將](install-configure.md#update)相依性模組`commerce-data-export`更新為102.2.0+版。
 
 ### 4.0.1的magento/product-recommendations
 
@@ -254,7 +245,7 @@ _2023年3月20日_
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.x或更新版本
 
 ![新](../assets/new.svg)已新增[B2B支援](onboarding.md#b2bsupport) [!DNL Product Recommendations]
-![新](../assets/new.svg)已新增摘要至[透過命令列將目錄資料](https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/data-services/catalog-sync)同步至Commerce服務
+![新](../assets/new.svg)已新增摘要至[透過命令列將目錄資料](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync)同步至Commerce服務
 
 ### 3.3.3的magento/product-recommendations
 
@@ -294,7 +285,7 @@ _2023年3月20日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.x或更新版本
 
-![新](../assets/new.svg)將Magento服務重新命名為[Commerce服務](https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/integration-services/saas)，並改善管理員的可用性
+![新](../assets/new.svg)將Magento服務重新命名為[Commerce服務](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas)，並改善管理員的可用性
 
 ### 3.2.4的magento/product-recommendations
 
@@ -315,7 +306,7 @@ _2023年3月20日_
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.x或更新版本
 
 ![新](../assets/new.svg)已新增在建立時[預覽建議結果](create.md)的功能。 此更新需要您將模組更新至最新版本。
-![新](../assets/new.svg)已新增從管理員[監視及管理](https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/data-services/catalog-sync)目錄同步處理程式的功能。
+![新](../assets/new.svg)已新增從管理員[監視及管理](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync)目錄同步處理程式的功能。
 ![新](../assets/new.svg)已新增[篩選器](filters.md)，以控制建議中顯示的產品。
 ![New](../assets/new.svg)已新增[視覺相似度](type.md#visualsim)建議型別。
 
@@ -329,7 +320,7 @@ _2023年3月20日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.x或更新版本
 
-![New](../assets/new.svg)已新增透過命令列[重新同步](https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/data-services/catalog-sync)您的目錄至SaaS服務的功能。
+![New](../assets/new.svg)已新增透過命令列[重新同步](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync)您的目錄至SaaS服務的功能。
 ![新](../assets/new.svg)新增支援資料庫資料表首碼
 ![修正](../assets/fix.svg)已移除PHP 7.1支援
 
@@ -356,7 +347,7 @@ _2023年3月20日_
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.x或更新版本
 
 ![修正](../assets/fix.svg)修正目錄匯出期間發生的「無法擷取產品選項資料」錯誤。
-![修正](../assets/fix.svg) _[!DNL Product Recommendations]_&#x200B;儀表板上_ Revenue _欄中的貨幣符號現在正確反映設定的基本貨幣。
+![修正](../assets/fix.svg) _[!DNL Product Recommendations]_儀表板上_ Revenue _欄中的貨幣符號現在正確反映設定的基本貨幣。
 
 ### 3.0.4的magento/product-recommendations
 
@@ -398,7 +389,7 @@ _2023年3月20日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.x或更新版本
 
-![新](../assets/new.svg)頁面產生器支援。 透過頁面產生器整合，您可以準確且詳細地將Recommendation單位放置在Page Builder編寫內容上的任何位置。 您也可以設定標題與建議單位本身的樣式。 如需詳細資訊，請移至[頁面產生器](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/page-builder/add-content/recommendations)。
+![新](../assets/new.svg)頁面產生器支援。 透過頁面產生器整合，您可以準確且詳細地將Recommendation單位放置在Page Builder編寫內容上的任何位置。 您也可以設定標題與建議單位本身的樣式。 如需詳細資訊，請移至[頁面產生器](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)。
 
 ### 2.0.0的magento/product-recommendations
 
@@ -413,4 +404,4 @@ _2023年3月20日_
 若要進一步瞭解[!DNL Product Recommendations]和[!DNL Product Recommendations]開發：
 
 * [使用手冊](overview.md)
-* [開發人員檔案](https://experienceleague.adobe.com/zh-hant/docs/commerce/product-recommendations/developer/development-overview)
+* [開發人員檔案](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/developer/development-overview)
