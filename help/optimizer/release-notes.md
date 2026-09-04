@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
+source-git-commit: d36a8adc8cbfe6478c5922dc6cee654b48e9c30d
 workflow-type: tm+mt
-source-wordcount: 1506
+source-wordcount: 1561
 ht-degree: 0%
 
 ---
@@ -31,6 +31,20 @@ ht-degree: 0%
 * 更新[資料擷取REST API](https://developer.adobe.com/commerce/services/reference/rest/)和店面目錄資料擷取[&#128279;](https://developer.adobe.com/commerce/services/reference/graphql/)的GraphQL API。
 
   {{aco-api-updates-and-dropins}}
+
+## 2026年9月
+
+>[!BEGINSHADEBOX]
+
+_2026年9月3日_
+
+### 屬性排名(Beta)
+
+[!DNL Adobe Commerce Optimizer]銷售規則現在支援&#x200B;**所有產品清單**、**類別規則**&#x200B;和&#x200B;**搜尋規則**&#x200B;的&#x200B;[**屬性排名**](./merchandising/rules/add.md#attribute-ranking)。 自動將&#x200B;**[!UICONTROL Boost]**、**[!UICONTROL Bury]**&#x200B;或&#x200B;**[!UICONTROL Hide]**&#x200B;動作套用至符合一或多個屬性條件（例如品牌或類別）的每個產品，而不需選取個別SKU。 屬性排名為測試版。 [了解更多](./merchandising/rules/add.md#attribute-ranking)。
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
 
 ## 2026年8月
 
