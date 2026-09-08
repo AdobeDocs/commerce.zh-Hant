@@ -33,9 +33,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 last-update: 2026-08-07
-source-git-commit: 49a235a3a545b422b0371b53163d7de770df6a38
+source-git-commit: 050a2bf3dd5b0815d3f62c9f676f5049583e6265
 workflow-type: tm+mt
-source-wordcount: 6271
+source-wordcount: 6358
 ht-degree: 0%
 
 ---
@@ -50,11 +50,11 @@ ht-degree: 0%
 
 ## 2026年9月 — 發行說#1 {#latest}
 
-[!BADGE 沙箱]{type=Caution tooltip="列出的專案目前僅在沙箱環境中可用。 Adobe會先在沙箱環境中推出新版本，讓您可以在生產環境中使用該版本之前有時間測試即將推出的變更。"}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE 生產]{type=Neutral tooltip="列出的專案目前可在生產環境中使用。"}
 
-以下專案將於2026年9月8日發佈到生產環境。
+以下專案已於2026年9月8日發佈到生產環境。
 
 >[!BEGINSHADEBOX]
 
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 ### 透過REST API同步沙箱和生產設定
 
-新的`GET`和`PUT /V1/system/config` REST API端點可讓整合功能讀取和更新Commerce系統設定值，包括：
+新的[`GET`和`PUT /V1/system/config`](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/system-config) REST API端點可讓整合功能讀取和更新Commerce系統設定值，包括：
 
 * 存放區資訊
 * 送貨與稅捐設定
@@ -77,15 +77,17 @@ ht-degree: 0%
 
 ### 透過GraphQL查詢詳細目錄可用性
 
-新的`sourceAvailability` GraphQL查詢會傳回一或多個SKU的每種來源庫存可用性，因此產品和類別頁面之類的店面可顯示每種庫存來源的準確庫存資訊。<!-- ACCS-933 -->
+新的[`sourceAvailability`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/source-availability) GraphQL查詢傳回一或多個SKU的每種來源庫存可用性，因此產品和類別頁面之類的店面可顯示每種庫存來源的準確庫存資訊。
+
+[啟用**每個Source可用性](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/inventory/configuration/global-options)。<!-- ACCS-933 -->
 
 ### 透過GraphQL讀取永續性願望清單和帳戶共用設定
 
-`storeConfig` GraphQL查詢現在會傳回`persistent_enabled`、`persistent_shopping_cart`、`persistent_options_wishlist`和`share_customer_accounts_scope`設定值，因此店面可以存取商家永久購物車和願望清單設定，而不需要連絡支援人員。<!-- USF-4051 -->
+[`storeConfig`](https://developer.adobe.com/commerce/webapi/graphql/schema/store/queries/store-config/#query-a-stores-persistent-cart-and-account-sharing-configuration) GraphQL查詢現在會傳回`persistent_enabled`、`persistent_shopping_cart`、`persistent_options_wishlist`和`share_customer_accounts_scope`設定值，因此店面可以存取商家永久購物車和願望清單設定，而不需要連絡支援人員。<!-- USF-4051 -->
 
 ### 依產品、SKU或訂單ID搜尋客戶訂單
 
-`CustomerOrdersFilterInput` GraphQL輸入現在支援與訂單編號、專案SKU或專案名稱相符的選用`search`欄位，以及您提供的任何其他篩選器。<!-- USF-4290 -->
+[`CustomerOrdersFilterInput`](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/customer) GraphQL輸入現在支援與訂單編號、專案SKU或專案名稱相符的選用`search`欄位，以及您提供的任何其他篩選器。<!-- USF-4290 -->
 
 ### 透過API更新和刪除自訂電子郵件範本
 
@@ -136,15 +138,14 @@ ht-degree: 0%
 
 ### 免費禮品車價格規則
 
-**免費贈品**&#x200B;購物車價格規則現在可在[!DNL Commerce Admin]中供店面使用。<!-- AC-17678 -->
+[**免費贈品**&#x200B;購物車價格規則](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-free-gift))現在可在[!DNL Commerce Admin]中供店面使用。
+<!-- AC-17678 -->
 
-此規則可讓您在滿足規則條件時，將免費禮品新增到購物車。
-
-<!-- dependent on https://github.com/Adobe-Enterprise-Docs/commerce-admin.en/pull/856 and https://github.com/AdobeDocs/commerce-webapi/pull/590 -->
+此規則可讓您在滿足規則條件時，將免費禮品新增到購物車。 當規則需要選擇時，購物者可以使用新的[`selectFreeGiftForCart`](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/select-free-gift) GraphQL變異來選取禮品SKU，這支援可設定和捆綁禮品產品。
 
 ### 依日期和時間排程購物車價格規則
 
-您現在可以設定要[購物車價格規則](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create)在[!DNL Commerce Admin]中開始或結束的當日時間。 購物車價格規則格線會顯示排程時間，而REST API會遵循在`from_date`和`to_date`上提交的時間，而不是將規則設定為午夜。<!-- ACCS-970 -->
+您現在可以設定要[購物車價格規則](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#rule-information)在[!DNL Commerce Admin]中開始或結束的當日時間。 購物車價格規則格線會顯示排程時間，而REST API會遵循在`from_date`和`to_date`上提交的時間，而不是將規則設定為午夜。<!-- ACCS-970 -->
 
 <!-- commenting this out until the B2B compatibility package version is live. -->
 
