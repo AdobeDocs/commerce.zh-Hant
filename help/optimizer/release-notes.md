@@ -4,21 +4,15 @@ description: ' [!DNL Adobe Commerce Optimizer]的每月發行資訊，包括店�
 feature: Release Notes
 role: Admin, Developer, User, Leader
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
 exl-id: e420d461-9ea2-4e32-aa37-230b14a297d7
 TQID: https://experienceleague.adobe.com/apcpxN0AOniRcHDCa5MMAVWysxRO5mTcudXXXjET-Lo
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: d36a8adc8cbfe6478c5922dc6cee654b48e9c30d
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 631126cc8d9b69c41aed19e30bf1503dd950d7e9
 workflow-type: tm+mt
-source-wordcount: 1561
+source-wordcount: 1626
 ht-degree: 0%
 
 ---
@@ -28,7 +22,7 @@ ht-degree: 0%
 下列發行說明包含[!DNL Adobe Commerce Optimizer]的更新，包括：
 
 * [[!DNL Adobe Commerce Optimizer Studio]](overview.md#quick-tour)的新功能及改進專案。
-* 更新[資料擷取REST API](https://developer.adobe.com/commerce/services/reference/rest/)和店面目錄資料擷取[&#128279;](https://developer.adobe.com/commerce/services/reference/graphql/)的GraphQL API。
+* 更新[資料擷取REST API](https://developer.adobe.com/commerce/services/reference/rest/)和店面目錄資料擷取](https://developer.adobe.com/commerce/services/reference/graphql/)的[GraphQL API。
 
   {{aco-api-updates-and-dropins}}
 
@@ -49,6 +43,11 @@ _2026年9月3日_
 ## 2026年8月
 
 >[!BEGINSHADEBOX]
+
+_2026年9月9日_
+
+![新的](../assets/new.svg) **多值HTTP標頭觸發原則** — 使用`HTTP_HEADER`傳輸型別的觸發原則現在可以在單一標頭中接收多個逗號分隔值（例如`AC-Policy-Vehicle: UNIVERSAL,veh-bolt-mammoth-limited-2025`）。 使用`IN`的原則篩選器會以`OR`語意評估值。 如果標頭包含多個值，使用`EQUALS`、`GREATER_THAN_EQUAL`或`LESS_THAN_EQUAL`的篩選器會以驗證錯誤拒絕要求。 此行為僅適用於使用`HTTP_HEADER`傳輸的觸發原則。 [了解更多](./setup/policies.md#multi-value-http-header-triggers)。
+<!--COMOPT-2439-->
 
 _2026年8月7日_
 
@@ -83,7 +82,7 @@ _2026年6月24日_
 
 <!-- v1.3 -->
 
-![新](../assets/new.svg) **新`canEditQuantity`欄位** — 已將`canEditQuantity`新增至目錄服務GraphQL中的`ProductViewOptionValueProduct`。 它會公開Commerce Admin中套件組合選取專案的可選&#x200B;**使用者定義**&#x200B;數量設定，讓店面消費者可以判斷套件組合選取專案的數量是否可編輯。
+![新](../assets/new.svg) **新`canEditQuantity`欄位** — 已將`canEditQuantity`新增至目錄服務GraphQL中的`ProductViewOptionValueProduct`。 它會公開Commerce Admin中套件組合選取專案的可選&#x200B;**使用者定義**數量設定，讓店面消費者可以判斷套件組合選取專案的數量是否可編輯。
 <!--COMOPT-2050-->
 
 ### 語意搜尋
@@ -153,7 +152,7 @@ _2026年4月29日_
 
 <!--v1.52 release-->
 
-**需要批次處理請求** — 現在，當您擷取目錄資料時，GraphQL API會針對每個請求強制最多100個SKU。 請參閱[已記錄的限制和邊界](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/boundaries-limits#product-discovery)。
+**需要批次處理請求** — 現在，當您擷取目錄資料時，GraphQL API會針對每個請求強制最多100個SKU。 請參閱[已記錄的限制和邊界](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits#product-discovery)。
 
 <!--DATA-7156-->
 
