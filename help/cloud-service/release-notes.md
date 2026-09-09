@@ -33,7 +33,7 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 last-update: 2026-08-07
-source-git-commit: 050a2bf3dd5b0815d3f62c9f676f5049583e6265
+source-git-commit: 8fdfd3ebfa088fd219c65c86ce99cae838ff5d54
 workflow-type: tm+mt
 source-wordcount: 6358
 ht-degree: 0%
@@ -79,7 +79,7 @@ ht-degree: 0%
 
 新的[`sourceAvailability`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/source-availability) GraphQL查詢傳回一或多個SKU的每種來源庫存可用性，因此產品和類別頁面之類的店面可顯示每種庫存來源的準確庫存資訊。
 
-[啟用**每個Source可用性](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/inventory/configuration/global-options)。<!-- ACCS-933 -->
+[啟用&#x200B;**每個Source的可用性**](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/inventory/configuration/global-options)。<!-- ACCS-933 -->
 
 ### 透過GraphQL讀取永續性願望清單和帳戶共用設定
 
@@ -138,7 +138,7 @@ ht-degree: 0%
 
 ### 免費禮品車價格規則
 
-[**免費贈品**&#x200B;購物車價格規則](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-free-gift))現在可在[!DNL Commerce Admin]中供店面使用。
+[**免費贈品**&#x200B;購物車價格規則](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-free-gift)現在可在[!DNL Commerce Admin]中供店面使用。
 <!-- AC-17678 -->
 
 此規則可讓您在滿足規則條件時，將免費禮品新增到購物車。 當規則需要選擇時，購物者可以使用新的[`selectFreeGiftForCart`](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/select-free-gift) GraphQL變異來選取禮品SKU，這支援可設定和捆綁禮品產品。
