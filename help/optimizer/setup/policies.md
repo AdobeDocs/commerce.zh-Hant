@@ -13,9 +13,9 @@ role_v2:
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 4a9bb6c6473680ee7059d1844be5fee718a9ed68
 workflow-type: tm+mt
-source-wordcount: 917
+source-wordcount: 1054
 ht-degree: 0%
 
 ---
@@ -61,6 +61,28 @@ ht-degree: 0%
 - `AC-Policy-Model`
 
 如果購物者按一下&#x200B;**品牌**&#x200B;下拉式清單，則API呼叫的標頭會包含`AC-Policy-Brand`，其設定為只顯示`AC-Policy-Brand`原則的特定產品。
+
+### 多值HTTP標頭觸發器 {#multi-value-http-header-triggers}
+
+使用`HTTP_HEADER`傳輸型別的觸發原則可在單一標頭中接收多個值。 值必須以逗號分隔，而且篩選運運算元必須是`IN`。 每個值都會視為可接受的相符項。 值是以`OR`語意評估。
+
+例如，原則篩選器使用`IN`搭配以下標頭：
+
+```
+AC-Policy-Vehicle: UNIVERSAL,veh-bolt-mammoth-limited-2025
+```
+
+符合`vehicle`屬性為`UNIVERSAL`或`veh-bolt-mammoth-limited-2025`的產品。
+
+而篩選運運算元`EQUALS`、`GREATER_THAN_EQUAL`或`LESS_THAN_EQUAL`因驗證錯誤而被拒絕。
+
+#### 語法附註
+
+- 標頭名稱符合您設定的觸發程式名稱，例如`AC-Policy-Vehicle`。
+- 以逗號分隔標頭中的個別值。 當相同的`AC-Policy-_Name_`標頭出現多次，其值將合併為單一逗號分隔的標頭值
+- 篩選運運算元是`IN`。
+- **值來源**&#x200B;設定為`TRIGGER`的原則篩選器。
+- **傳輸型別**&#x200B;為`HTTP_HEADER`的觸發程式。
 
 ## 建立原則
 
