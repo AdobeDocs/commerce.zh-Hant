@@ -4,7 +4,7 @@ description: 瞭解 [!DNL Adobe Commerce as a Cloud Service]可用的可觀察�
 feature: Cloud, Integration
 role: Admin, Developer
 level: Intermediate
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
 autotag-review: '2026-06-09T15:41:54.613Z'
 TQID: 'https://experienceleague.adobe.com/jTPNVSy6cP8v-pV-3pyqgJX-PAzFFhOUf9SjQIMeBns'
 product_v2:
@@ -95,5 +95,5 @@ Adobe Commerce透過OpenTelemetry支援下列可觀察性工具：
 
 下列影片提供[!DNL Adobe Commerce as a Cloud Service]中可觀察性方案的高階概觀：
 
-* [App Builder可觀察性影片](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/observability/overview){target="_blank"}
-* [API Mesh影片](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/api-mesh/getting-started-api-mesh){target="_blank"}
+* [App Builder可觀察性影片](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/observability/overview){target="_blank"}
+* [API Mesh影片](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/extensibility/api-mesh/getting-started-api-mesh){target="_blank"}

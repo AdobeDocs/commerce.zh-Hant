@@ -57,7 +57,7 @@ Commerce下拉式清單會自動偵測`commerce-assets-enabled`設定，並據�
 
 >[!NOTE]
 >
->如需詳細的設定指示，請參閱Da.live檔案中的[設定AEM Assets](https://docs.da.live/administrators/guides/setup-aem-assets){target=_blank}和AEM Assets檔案中的[為Edge Delivery Services編寫AEM Assets內容時整合](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank}。
+>如需詳細的設定指示，請參閱Da.live檔案中的[設定AEM Assets](https://docs.da.live/administrators/guides/setup-aem-assets){target=_blank}和AEM Assets檔案中的[為Edge Delivery Services編寫AEM Assets內容時整合](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank}。
 
 ### 步驟1：在Da.live中開啟您的網站設定
 
@@ -106,6 +106,6 @@ Commerce下拉式清單會自動偵測`commerce-assets-enabled`設定，並據�
 
 * *AEM Assets店面*&#x200B;檔案中的[Adobe Commerce整合](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/){target=_blank} — 店面設定和影像處理行為。
 
-* 在&#x200B;*AEM Assets*&#x200B;檔案中為Edge Delivery Services[&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank}製作內容時，請整合AEM Assets。
+* 在&#x200B;*AEM Assets*&#x200B;檔案中為Edge Delivery Services[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank}製作內容時，請整合AEM Assets。
 
 * 在Da.live檔案中[設定AEM Assets](https://docs.da.live/administrators/guides/setup-aem-assets){target=_blank}和[使用媒體](https://docs.da.live/authors/guides/adding-media){target=_blank}。

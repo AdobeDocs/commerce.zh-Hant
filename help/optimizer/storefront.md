@@ -2,7 +2,7 @@
 title: 設定您的店面
 description: 瞭解如何設定您的 [!DNL Adobe Commerce Optimizer] 店面。
 role: Developer
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
 exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
 TQID: https://experienceleague.adobe.com/Jcj-3qVJPXr-t0X8-Y9GVziGj57ksUdWDhCO6pt-94A
 product_v2:
@@ -240,7 +240,7 @@ ht-degree: 0%
 
 * 檢閱[Adobe Commerce Storefront檔案](https://experienceleague.adobe.com/en/tools/commerce-storefront/){target="_blank"}
 * 檢視[Adobe Commerce Optimizer開發人員指南](https://developer.adobe.com/commerce/services/optimizer/){target="_blank"}
-* 造訪[Adobe Commerce支援資源](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview){target="_blank"}
+* 造訪[Adobe Commerce支援資源](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/overview){target="_blank"}
 
 ## 後續步驟
 

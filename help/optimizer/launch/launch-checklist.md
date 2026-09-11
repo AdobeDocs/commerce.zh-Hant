@@ -9,7 +9,7 @@ role: Admin, Developer
 level: Intermediate
 topic: Administration
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
 feature_v2:
@@ -55,11 +55,11 @@ ht-degree: 0%
 
 確認雲端環境上的Adobe Commerce已準備好投入生產。
 
-▢雲端執行個體為[已布建](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/new-project)。
+▢雲端執行個體為[已布建](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/start/new-project)。
 ▢測試與虛擬資料已從執行個體移除。
 ▢生產資料已載入執行個體上。
 ▢您知道[GraphQL端點](https://developer.adobe.com/commerce/webapi/graphql/)。
-▢執行個體符合[準備啟動](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/launch/checklist)需求。
+▢執行個體符合[準備啟動](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/launch/checklist)需求。
 
 ## 驗證Commerce Optimizer執行個體 {#verify-optimizer}
 
@@ -156,7 +156,7 @@ ht-degree: 0%
 
 ▢生產工作區包含所有必要的設定和服務。
 ▢生產應用程式通過了組建案例測試。
-已根據[Adobe Developer App Builder產品說明](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html){target="_blank"}和[App Builder系統設定和限制](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings){target="_blank"}，檢閱及確認▢產品限制和界限。
+已根據[Adobe Developer App Builder產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-developer-app-builder.html){target="_blank"}和[App Builder系統設定和限制](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings){target="_blank"}，檢閱及確認▢產品限制和界限。
 ▢生產應用程式使用App Builder生產端點。
 ▢自訂&#x200B;*Admin*&#x200B;面板擴充功能已部署至生產工作區。
 
@@ -225,7 +225,7 @@ ht-degree: 0%
 確認許可權和密碼。
 
 ▢已為DA內容和EDS網站設定適當的許可權。 請參閱[DA.live許可權](https://da.live/docs/administration/permissions)和[製作驗證設定](https://www.aem.live/docs/authentication-setup-authoring)。
-▢已布建產品視覺效果整合。 請參閱[AEM Cloud Service存取總覽](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview#)。
+▢已布建產品視覺效果整合。 請參閱[AEM Cloud Service存取總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/accessing/overview#)。
 電子郵件範本中的▢密碼重設連結符合您的Edge Delivery Services設定。 請參閱店面常見問題集：[如果我的電子郵件範本連結在移轉至Edge Delivery Services或Helix後中斷，怎麼辦？](https://experienceleague.adobe.com/en/tools/commerce-storefront/troubleshooting/faq/#what-should-i-do-if-my-email-template-links-are-broken-after-migrating-to-edge-delivery-services-or-helix){target="_blank"}。
 整合和付款提供者的▢生產金鑰已準備就緒。
 ▢網域已加入允許清單，後端Webhook可正常運作。
