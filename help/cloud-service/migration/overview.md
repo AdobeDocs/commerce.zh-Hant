@@ -3,41 +3,20 @@ title: 移轉至 [!DNL Adobe Commerce as a Cloud Service]
 description: 瞭解如何移轉至 [!DNL Adobe Commerce as a Cloud Service]。
 feature: Cloud
 exl-id: 9065c92a-f6b2-4464-8ec0-5c549bf78104
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
 role: Developer
 level: Intermediate
 autotag-review: '2026-06-18T16:12:28.840Z'
 TQID: 'https://experienceleague.adobe.com/GmxaQdGKvAIDpZ2jvmlLFSYw0IFQysIMOT0lUnsJBsI'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2:
-  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
-  - id: f56d26ed-050b-4fb7-b29b-8e6e994e80a2
-  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: addc3a3a-2b1c-4fdf-aea4-4b1eb2931ba6
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 289267c4bb76bbe1e9f00fd02faa7749b812d0d0
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: c18ed297-2187-4aec-affb-9d9654eca6fcid: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: e91a50b1-0b31-436e-9033-00e4776e94cbid: f56d26ed-050b-4fb7-b29b-8e6e994e80a2id: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: addc3a3a-2b1c-4fdf-aea4-4b1eb2931ba6id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d095671a-1355-40aa-8b5f-06c33c68080bid: eb30f47f-d87a-400f-8f78-63ce7979ff56id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 3372
+source-wordcount: 3374
 ht-degree: 0%
 
 ---
@@ -76,13 +55,13 @@ Adobe Commerce適用於不同的部署模式。 主要差異在於基礎建設�
 | Adobe Commerce產品 | 託管模型 | 服務與更新的責任 |
 |---|---|---|
 | **[!DNL Adobe Commerce as a Cloud Service]** | SaaS — Adobe代管 | Adobe可管理核心Commerce應用程式、基礎架構和更新。 商家透過支援的API和擴充性服務(API、[!DNL Adobe Developer App Builder]、UI SDK)擴充平台。 商家無法修改核心應用程式程式碼。 |
-| **[!DNL Adobe Commerce on Cloud Infrastructure]** | PaaS — Adobe管理 | [共擔責任](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/security-and-compliance/shared-responsibility)： Adobe會管理託管平台。 商家管理應用程式層級的修補程式、自訂程式碼、組態，並將擴充功能和平台服務更新至支援的版本，包括：資料庫、快取、搜尋、PHP執行階段、Web伺服器和訊息佇列。 |
-| **[!DNL Adobe Commerce on-premises]** | 由商家或代管提供者代管 | [商家職責](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/overview#merchant-responsibilities)：商家或其代管提供者管理基礎結構和所有平台服務。 |
+| **[!DNL Adobe Commerce on Cloud Infrastructure]** | PaaS — Adobe管理 | [共擔責任](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility)： Adobe會管理託管平台。 商家管理應用程式層級的修補程式、自訂程式碼、組態，並將擴充功能和平台服務更新至支援的版本，包括：資料庫、快取、搜尋、PHP執行階段、Web伺服器和訊息佇列。 |
+| **[!DNL Adobe Commerce on-premises]** | 由商家或代管提供者代管 | [商家職責](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview#merchant-responsibilities)：商家或其代管提供者管理基礎結構和所有平台服務。 |
 
 **架構影響**
 
 - **無版本平台**：持續更新表示核心不再有重大版本升級。
-- **微服務與API-1&rbrace;：對API的延伸性與整合依賴性更深。**
+- **微服務與API-1}：對API的延伸性與整合依賴性更深。**
 - **依預設Headless （選用）**：對分離式店面的強大支援（例如，由Edge Delivery Services支援的Commerce店面）。
 - **Edge Delivery Services**：對前端效能和部署的影響。
 
@@ -90,7 +69,7 @@ Adobe Commerce適用於不同的部署模式。 主要差異在於基礎建設�
 
 - 適用於Adobe Developer App Builder的[Adobe Developer App Builder](https://developer.adobe.com/app-builder/)和[API Mesh](https://developer.adobe.com/graphql-mesh-gateway/)
 - [Commerce Optimizer](../../optimizer/overview.md)
-- [Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant)
+- [Edge Delivery Services](https://experienceleague.adobe.com/en/tools/commerce-storefront/)
 - 使用[Commerce Cloud Manager](../getting-started.md#create-an-instance)進行自助布建
 
 ### 移轉歷程
@@ -214,7 +193,7 @@ Commerce Developer MCP會使用[移轉評估](#migration-assessment-tool)中的�
 
 ### 店面現代化
 
-在前端，Commerce開發人員MCP使用Adobe Commerce樣板、下拉式元件和EDS區塊，將Commerce的Edge Delivery Services (EDS)上的[店面](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant)現代化。
+在前端，Commerce開發人員MCP使用Adobe Commerce樣板、下拉式元件和EDS區塊，將Commerce的Edge Delivery Services (EDS)上的[店面](https://experienceleague.adobe.com/en/tools/commerce-storefront/)現代化。
 
 Commerce開發人員MCP會根據Commerce範本載入現有的店面專案。 透過以下方式將您的店面現代化：
 
@@ -315,4 +294,4 @@ Commerce資料移轉服務在世界各地進行生產，並已提供多個企業
 
 檢閱[大量資料移轉工具指南](bulk-data/migration-tool.md)檔案，以進一步瞭解工作流程、支援的資料和驗證。
 
-準備來源環境的系統整合經銷商也可以使用標準[Adobe Commerce Cloud CLI](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview)和[Adobe Developer Console](https://developer.adobe.com)作為IMS認證。
+準備來源環境的系統整合經銷商也可以使用標準[Adobe Commerce Cloud CLI](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview)和[Adobe Developer Console](https://developer.adobe.com)作為IMS認證。

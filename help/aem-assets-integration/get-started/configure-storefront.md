@@ -3,20 +3,14 @@ title: 設定您的店面
 description: 瞭解如何將您的Edge Delivery Services店面連線到AEM Assets整合。
 feature: CMS, Media, Integration
 TQID: https://experienceleague.adobe.com/gl0Y2UNs3sYkXE9QYwLtAltyX1dxE699y23ey-y0KUU
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-subfeature_v2:
-  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 7f901cec90291e264376e3f93e6ebaaccf7c15f0
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2: id: ae62cf09-5996-4921-bda8-fbe67b62e470
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 610
+source-wordcount: 612
 ht-degree: 0%
 
 ---
@@ -41,7 +35,7 @@ AEM Assets整合會顯示AEM Assets而不是Adobe Commerce的產品影像，以�
 
 Commerce下拉式清單會自動偵測`commerce-assets-enabled`設定，並據此調整影像處理。
 
-如需將AEM Assets與Edge Delivery Services支援的Commerce店面搭配使用的詳細資訊，請參閱&#x200B;*AEM Assets店面*&#x200B;檔案中的[Adobe Commerce整合](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/?lang=zh-Hant)主題。
+如需將AEM Assets與Edge Delivery Services支援的Commerce店面搭配使用的詳細資訊，請參閱&#x200B;*AEM Assets店面*&#x200B;檔案中的[Adobe Commerce整合](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/)主題。
 
 >[!TIP]
 >
@@ -57,7 +51,7 @@ Commerce下拉式清單會自動偵測`commerce-assets-enabled`設定，並據�
 
 >[!NOTE]
 >
->如需詳細的設定指示，請參閱Da.live檔案中的[設定AEM Assets](https://docs.da.live/administrators/guides/setup-aem-assets){target=_blank}和AEM Assets檔案中的[為Edge Delivery Services編寫AEM Assets內容時整合](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank}。
+>如需詳細的設定指示，請參閱Da.live檔案中的[設定AEM Assets](https://docs.da.live/administrators/guides/setup-aem-assets){target=_blank}和AEM Assets檔案中的[為Edge Delivery Services編寫AEM Assets內容時整合](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank}。
 
 ### 步驟1：在Da.live中開啟您的網站設定
 
@@ -104,8 +98,8 @@ Commerce下拉式清單會自動偵測`commerce-assets-enabled`設定，並據�
 
 ## 相關檔案
 
-* *AEM Assets店面*&#x200B;檔案中的[Adobe Commerce整合](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/?lang=zh-Hant){target=_blank} — 店面設定和影像處理行為。
+* *AEM Assets店面*&#x200B;檔案中的[Adobe Commerce整合](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/){target=_blank} — 店面設定和影像處理行為。
 
-* 在&#x200B;*AEM Assets*&#x200B;檔案中為Edge Delivery Services[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank}製作內容時，請整合AEM Assets。
+* 在&#x200B;*AEM Assets*&#x200B;檔案中為Edge Delivery Services](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank}製作內容時，請[整合AEM Assets。
 
 * 在Da.live檔案中[設定AEM Assets](https://docs.da.live/administrators/guides/setup-aem-assets){target=_blank}和[使用媒體](https://docs.da.live/authors/guides/adding-media){target=_blank}。

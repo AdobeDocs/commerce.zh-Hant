@@ -1,24 +1,16 @@
 ---
 title: 建立和管理建議
 description: 瞭解如何建立和管理建議。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
 TQID: https://experienceleague.adobe.com/4w6G-IgBjgmYYnnEpbK0HML9pSi3quLDxJfuCp9tV84
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2:
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: e0eb8757-182f-49f3-94a4-1587d16f5094id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 1573
+source-wordcount: 1574
 ht-degree: 0%
 
 ---
@@ -32,7 +24,7 @@ _建議單位_
 
 當您啟用建議單位時，Adobe Commerce會開始[收集資料](../../manage-results/recommendation-performance.md)以測量曝光數、檢視數、點按數等。 「建議」表格會顯示每個建議單位的量度，以協助您做出明智的業務決策。
 
-1. 在&#x200B;_[!DNL Adobe Commerce Optimizer]_&#x200B;側邊欄上，移至_&#x200B;銷售&#x200B;_>**建議**&#x200B;以顯示_&#x200B;建議&#x200B;_工作區。
+1. 在&#x200B;_[!DNL Adobe Commerce Optimizer]_側邊欄上，移至_&#x200B;銷售&#x200B;_>**建議**以顯示_&#x200B;建議&#x200B;_工作區。
 
 1. 在&#x200B;**目錄檢視**&#x200B;欄位中，選取您要讓建議可用的目錄檢視。 深入瞭解[使用建議](../../manage-results/recommendation-performance.md#select-catalog-view)的目錄檢視。
 
@@ -106,13 +98,13 @@ _建議產品預覽_&#x200B;面板總是隨建議單位部署至店面時可能�
 
 1. 在&#x200B;**建議ID**&#x200B;區段中，複製ID。
 
-1. 使用此ID在您的Edge Delivery Services店面設定[建議放置區](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/?lang=zh-Hant)。
+1. 使用此ID在您的Edge Delivery Services店面設定[建議放置區](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/blocks/product-recommendations/)。
 
 ## 管理現有的建議
 
 您可以編輯、停用或刪除現有的建議。
 
-1. 在&#x200B;_[!DNL Adobe Commerce Optimizer]_&#x200B;側邊欄上，移至_&#x200B;銷售&#x200B;_>**建議**。
+1. 在&#x200B;_[!DNL Adobe Commerce Optimizer]_側邊欄上，移至_&#x200B;銷售&#x200B;_>**建議**。
 
 1. 選取您要修改的建議。
 
@@ -212,6 +204,6 @@ _建議型別_
 - **以靜態為基礎** — 這些指示器的低百分比可能是因為遺失可顯示產品的目錄資料所造成。 如果低於預期值，完整同步可以修正此問題。
 - **以動態為基礎的指標** — 以下原因可能導致以動態為基礎的指標百分比低：
 
-   - 個別建議型別（requestId、產品內容等）的必要[storefront事件](../../setup/events/overview.md)中缺少欄位。
-   - 存取存放區的流量低，因此收到的行為事件數量低。
-   - 商店中不同產品的店面行為事件多樣性很低。 例如，如果大部分時間都只檢視或購買您產品的10%，則各自的整備程度指標會很低。
+  - 個別建議型別（requestId、產品內容等）的必要[storefront事件](../../setup/events/overview.md)中缺少欄位。
+  - 存取存放區的流量低，因此收到的行為事件數量低。
+  - 商店中不同產品的店面行為事件多樣性很低。 例如，如果大部分時間都只檢視或購買您產品的10%，則各自的整備程度指標會很低。

@@ -3,29 +3,18 @@ title: 店面和目錄管理員端對端使用案例
 description: 瞭解如何使用 [!DNL Adobe Commerce Optimizer] 使用目錄檢視和原則來管理您的目錄，以及如何根據您的目錄組態設定您的店面。
 role: Admin, Developer
 feature: Personalization, Integration
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
 exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
 TQID: https://experienceleague.adobe.com/sqz0syCSh3ls8F-WIbuzPyqeRguyXdsPw-7OerOnDes
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-subfeature_v2:
-  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
-  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c18ed297-2187-4aec-affb-9d9654eca6fcid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2: id: ae62cf09-5996-4921-bda8-fbe67b62e470id: e91a50b1-0b31-436e-9033-00e4776e94cb
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 2205
-ht-degree: 0%
+source-wordcount: 2232
+ht-degree: 1%
 
 ---
 
@@ -44,23 +33,23 @@ ht-degree: 0%
 開始進行本教學課程之前，請確定您已具備下列必要條件：
 
 - **[!DNL Adobe Commerce Optimizer]執行個體**
-   - 存取Cloud Manager中的測試執行個體
-   - 如需安裝指示，請參閱[開始使用](../get-started.md)
+  - 存取Cloud Manager中的測試執行個體
+  - 如需安裝指示，請參閱[開始使用](../get-started.md)
 
 - **使用者許可權**
-   - 管理員存取Adobe Admin Console
-   - 如需帳戶設定，請參閱[使用者管理](../user-management.md)
-   - 如果您沒有存取權，請聯絡您的Adobe客戶代表。
+  - 管理員存取Adobe Admin Console
+  - 如需帳戶設定，請參閱[使用者管理](../user-management.md)
+  - 如果您沒有存取權，請聯絡您的Adobe客戶代表。
 
 - **範例資料**
-   - Carvelo汽車目錄資料已載入您的執行個體
-   - 遵循[範例目錄資料擷取存放庫](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion)中的指示
-   - 您可以使用包含的`reset.js`指令碼在完成之後刪除範例資料
+  - Carvelo汽車目錄資料已載入您的執行個體
+  - 遵循[範例目錄資料擷取存放庫](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion)中的指示
+  - 您可以使用包含的`reset.js`指令碼在完成之後刪除範例資料
 
 - **店面環境**
-   - 使用Node.js的本機開發環境
-   - 複製並設定店面樣板專案
-   - 如需詳細指示，請參閱[店面設定](../storefront.md)
+  - 使用Node.js的本機開發環境
+  - 複製並設定店面樣板專案
+  - 如需詳細指示，請參閱[店面設定](../storefront.md)
 
 ## 讓我們開始吧
 
@@ -72,7 +61,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> 檢閱Adobe Commerce店面檔案中的[探索樣板](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/?lang=zh-Hant)主題，瞭解店面設定檔案。
+> 檢閱Adobe Commerce店面檔案中的[探索樣板](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/boilerplate-project/)主題，瞭解店面設定檔案。
 
 ### 關‌鍵要點
 
@@ -249,7 +238,7 @@ Carvelo的商務經理需要為隸屬於&#x200B;*East Coast Inc*&#x200B;公司�
    - **名稱** = *Celport*
    - **目錄來源** = *en-US*
    - **原則** （使用下拉式清單） = *East Coast Inc品牌*；*Celport零件類別*；*品牌*；*模型*
-                         
+                              
 1. 按一下&#x200B;**[!UICONTROL Add]**&#x200B;以建立目錄檢視。
 
    目錄檢視頁面會更新以顯示新的目錄檢視。
@@ -466,4 +455,4 @@ Carvelo的商務經理需要為隸屬於&#x200B;*East Coast Inc*&#x200B;公司�
 - 瞭解[進階原則設定](../setup/policies.md)
 - 為其他經銷商設定[額外的目錄檢視](../setup/catalog-view.md)
 - 檢閱[API檔案](https://developer.adobe.com/commerce/services/optimizer/)，瞭解程式化目錄管理
-- 瞭解如何為您的Edge Delivery Services店面設定下拉式元件，以針對產品探索、建議和其他店面功能建立自訂店面體驗。 請參閱[店面檔案](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=zh-Hant)
+- 瞭解如何為您的Edge Delivery Services店面設定下拉式元件，以針對產品探索、建議和其他店面功能建立自訂店面體驗。 請參閱[店面檔案](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins/all/introduction/)
