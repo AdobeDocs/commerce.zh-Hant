@@ -3,11 +3,17 @@ title: 設定您的店面
 description: 瞭解如何將您的Edge Delivery Services店面連線到AEM Assets整合。
 feature: CMS, Media, Integration
 TQID: https://experienceleague.adobe.com/gl0Y2UNs3sYkXE9QYwLtAltyX1dxE699y23ey-y0KUU
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-subfeature_v2: id: ae62cf09-5996-4921-bda8-fbe67b62e470
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2:
+  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
 source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
 source-wordcount: 612
@@ -100,6 +106,6 @@ Commerce下拉式清單會自動偵測`commerce-assets-enabled`設定，並據�
 
 * *AEM Assets店面*&#x200B;檔案中的[Adobe Commerce整合](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/){target=_blank} — 店面設定和影像處理行為。
 
-* 在&#x200B;*AEM Assets*&#x200B;檔案中為Edge Delivery Services](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank}製作內容時，請[整合AEM Assets。
+* 在&#x200B;*AEM Assets*&#x200B;檔案中為Edge Delivery Services[&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank}製作內容時，請整合AEM Assets。
 
 * 在Da.live檔案中[設定AEM Assets](https://docs.da.live/administrators/guides/setup-aem-assets){target=_blank}和[使用媒體](https://docs.da.live/authors/guides/adding-media){target=_blank}。
