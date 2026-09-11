@@ -20,9 +20,9 @@ topic_v2:
   - id: da3860b0-d637-47df-bef0-273751180266
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 75da477c3725f754495f5b13f99d65c66a2bf5ae
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 1090
+source-wordcount: 1091
 ht-degree: 1%
 
 ---
@@ -77,7 +77,7 @@ AEM Assets整合可自動化資產管理工作流程，解決此難題。 此整
 
 ![檢查](assets/icon-check.png) **Adobe Managed支援模型** - Adobe會直接處理協助和疑難排解，提供可靠的支援及簡化的問題解決方案。
 
-![檢查](assets/icon-check.png) **Adobe Storefront Builder功能** — 數位資產管理(DAM)解決方案允許使用[Storefront Builder](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/?lang=zh-Hant#userlabs-commerce-genai-product-visuals)上的影像、影片和其他媒體等資產。
+![檢查](assets/icon-check.png) **Adobe Storefront Builder功能** — 數位資產管理(DAM)解決方案允許使用[Storefront Builder](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/storefront-builder/#userlabs-commerce-genai-product-visuals)上的影像、影片和其他媒體等資產。
 
 >[!ENDSHADEBOX]
 

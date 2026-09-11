@@ -22,9 +22,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-source-git-commit: 28102ad0dba698e37a69bbae90e3e9cec364ca81
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 332
+source-wordcount: 335
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 若要為[!DNL Adobe Commerce as a Cloud Service] (SaaS)設定由[!DNL Edge Delivery Services]提供支援的[!DNL Adobe Commerce Storefront]，請完成下列步驟。
 
-如需更可自訂且更詳細的逐步解說，請參閱[店面檔案](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=zh-Hant)。
+如需更可自訂且更詳細的逐步解說，請參閱[店面檔案](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/)。
 
 1. 開啟[網站建立者工具](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator)。
 
@@ -63,6 +63,6 @@ ht-degree: 0%
 * [正在更新店面內容](./use-cases.md#update-storefront-content) — 管理和顯示店面上的內容和資料。
 * [情境式實驗](./use-cases.md#contextual-experimentation) — 在您的店面建立和管理實驗。
 * [產生變數](./use-cases.md#generate-variations) — 使用Generative AI自動產生高品質的內容。
-* [Adobe Commerce Storefront檔案](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant) — 取得有關更新網站內容以及與Commerce前端元件和後端資料整合的詳細資訊。
+* [Adobe Commerce Storefront檔案](https://experienceleague.adobe.com/en/tools/commerce-storefront/) — 取得有關更新網站內容以及與Commerce前端元件和後端資料整合的詳細資訊。
 * [組態服務](https://www.aem.live/docs/config-service-setup) — 瞭解如何從`config.json`移轉您的店面組態以使用組態服務，此服務支援進階使用案例，例如重複設定和覆蓋。
-* [店面B2B功能](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility/b2b/?lang=zh-Hant#major-features) — 瞭解店面相容性套件中可用的B2B功能，所有[!DNL Adobe Commerce as a Cloud Service]執行個體都會自動安裝該套件。
+* [店面B2B功能](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/storefront-compatibility/b2b/#major-features) — 瞭解店面相容性套件中可用的B2B功能，所有[!DNL Adobe Commerce as a Cloud Service]執行個體都會自動安裝該套件。

@@ -36,9 +36,9 @@ topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: da3860b0-d637-47df-bef0-273751180266
-source-git-commit: bef6657cdf6703b6a0a1109bd6582ecbe4e19930
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 1456
+source-wordcount: 1458
 ht-degree: 0%
 
 ---
@@ -96,13 +96,13 @@ ht-degree: 0%
 
 ## Commerce店面
 
-若要使用[!DNL Storefront Builder]的簡單檔案式撰寫或視覺化編輯，在幾分鐘內建立豐富體驗，請使用Adobe的[[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant) （由[!DNL Edge Delivery Services]提供技術支援）。
+若要使用[!DNL Storefront Builder]的簡單檔案式撰寫或視覺化編輯，在幾分鐘內建立豐富體驗，請使用Adobe的[[!DNL Commerce Storefront]](https://experienceleague.adobe.com/en/tools/commerce-storefront/) （由[!DNL Edge Delivery Services]提供技術支援）。
 
 [!DNL Commerce Storefront]採用分離式架構，可透過GraphQL API層提供所有Adobe Merchandising服務和資料，因此完全採用Headless。 此架構讓團隊可獨立於Commerce Foundation開發他們的前端，提供使用新興技術建立和測試新接觸點的靈活性。
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service]不支援Luma店面。 如果您是從[!DNL Adobe Commerce on Cloud]或內部部署移轉，請參閱[現有店面](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/?lang=zh-Hant#existing-storefronts)以取得轉換指南。
+>[!DNL Adobe Commerce as a Cloud Service]不支援Luma店面。 如果您是從[!DNL Adobe Commerce on Cloud]或內部部署移轉，請參閱[現有店面](https://experienceleague.adobe.com/en/tools/commerce-storefront/discovery/#existing-storefronts)以取得轉換指南。
 
 ## Adobe Merchandising服務與支付服務
 

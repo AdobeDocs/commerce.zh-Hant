@@ -16,9 +16,9 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 966
+source-wordcount: 967
 ht-degree: 2%
 
 ---
@@ -136,7 +136,7 @@ ht-degree: 2%
 
 ## 下一步
 
-* **設定您的Commerce店面** — 若要搭配使用AEM Assets與由Edge Delivery Services支援的Commerce店面，請完成&#x200B;*Adobe Commerce店面檔案*&#x200B;中[AEM Assets整合](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/?lang=zh-Hant)主題中所述的店面設定。
+* **設定您的Commerce店面** — 若要搭配使用AEM Assets與由Edge Delivery Services支援的Commerce店面，請完成&#x200B;*Adobe Commerce店面檔案*&#x200B;中[AEM Assets整合](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/)主題中所述的店面設定。
 
 * 設定Adobe Commerce與AEM Assets整合之間的[相符規則](../synchronize/default-match.md)。
 

@@ -14,9 +14,9 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 7f901cec90291e264376e3f93e6ebaaccf7c15f0
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 610
+source-wordcount: 612
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ AEM Assets整合會顯示AEM Assets而不是Adobe Commerce的產品影像，以�
 
 Commerce下拉式清單會自動偵測`commerce-assets-enabled`設定，並據此調整影像處理。
 
-如需將AEM Assets與Edge Delivery Services支援的Commerce店面搭配使用的詳細資訊，請參閱&#x200B;*AEM Assets店面*&#x200B;檔案中的[Adobe Commerce整合](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/?lang=zh-Hant)主題。
+如需將AEM Assets與Edge Delivery Services支援的Commerce店面搭配使用的詳細資訊，請參閱&#x200B;*AEM Assets店面*&#x200B;檔案中的[Adobe Commerce整合](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/)主題。
 
 >[!TIP]
 >
@@ -104,7 +104,7 @@ Commerce下拉式清單會自動偵測`commerce-assets-enabled`設定，並據�
 
 ## 相關檔案
 
-* *AEM Assets店面*&#x200B;檔案中的[Adobe Commerce整合](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/?lang=zh-Hant){target=_blank} — 店面設定和影像處理行為。
+* *AEM Assets店面*&#x200B;檔案中的[Adobe Commerce整合](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/){target=_blank} — 店面設定和影像處理行為。
 
 * 在&#x200B;*AEM Assets*&#x200B;檔案中為Edge Delivery Services[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank}製作內容時，請整合AEM Assets。
 

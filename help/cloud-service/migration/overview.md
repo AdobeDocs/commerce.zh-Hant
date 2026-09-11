@@ -35,9 +35,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 289267c4bb76bbe1e9f00fd02faa7749b812d0d0
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 3372
+source-wordcount: 3374
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ Adobe Commerce適用於不同的部署模式。 主要差異在於基礎建設�
 
 - 適用於Adobe Developer App Builder的[Adobe Developer App Builder](https://developer.adobe.com/app-builder/)和[API Mesh](https://developer.adobe.com/graphql-mesh-gateway/)
 - [Commerce Optimizer](../../optimizer/overview.md)
-- [Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant)
+- [Edge Delivery Services](https://experienceleague.adobe.com/en/tools/commerce-storefront/)
 - 使用[Commerce Cloud Manager](../getting-started.md#create-an-instance)進行自助布建
 
 ### 移轉歷程
@@ -214,7 +214,7 @@ Commerce Developer MCP會使用[移轉評估](#migration-assessment-tool)中的�
 
 ### 店面現代化
 
-在前端，Commerce開發人員MCP使用Adobe Commerce樣板、下拉式元件和EDS區塊，將Commerce的Edge Delivery Services (EDS)上的[店面](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=zh-Hant)現代化。
+在前端，Commerce開發人員MCP使用Adobe Commerce樣板、下拉式元件和EDS區塊，將Commerce的Edge Delivery Services (EDS)上的[店面](https://experienceleague.adobe.com/en/tools/commerce-storefront/)現代化。
 
 Commerce開發人員MCP會根據Commerce範本載入現有的店面專案。 透過以下方式將您的店面現代化：
 

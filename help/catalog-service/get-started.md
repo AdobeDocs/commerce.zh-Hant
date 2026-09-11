@@ -19,9 +19,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 last-update: 2026-08-20
-source-git-commit: 6353eb00a3837c77f4bdecb26530ae34ec696c53
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 436
+source-wordcount: 437
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ https://<region>-<environment>.api.commerce.adobe.com/<tenantId>/graphql
 
 若要與Headless店面整合，您必須更新店面設定以啟用店面與[!DNL Catalog Service]之間的通訊，以擷取產品和類別資料。
 
-如果您在Edge Delivery Services上使用Adobe Commerce店面，請將目錄服務端點新增至店面設定。 如需詳細資訊，請參閱[Edge Delivery Services檔案](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=zh-Hant#storefront-configuration)。
+如果您在Edge Delivery Services上使用Adobe Commerce店面，請將目錄服務端點新增至店面設定。 如需詳細資訊，請參閱[Edge Delivery Services檔案](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/commerce-configuration/#storefront-configuration)。
 
 如需其他整合，請參閱專案設定檔案，以取得有關如何設定服務與後端資料來源之間整合的詳細資訊。
 
