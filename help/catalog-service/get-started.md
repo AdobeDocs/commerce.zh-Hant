@@ -43,14 +43,14 @@ ht-degree: 0%
 
 [!DNL Catalog Service]可用作GraphQL API，您可從Commerce管理員或任何支援GraphQL查詢的前端應用程式中存取。 此服務同時適用於SaaS和PaaS環境。
 
-僅[!BADGE 個PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"}
+僅[!BADGE 個PaaS]{type=Informative url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"}
 
 | 環境 | 端點 |
 | ------------ | ----------: |
 | **正在測試** | `https://catalog-service-sandbox.adobe.io/graphql` |
 | **生產** | `https://catalog-service.adobe.io/graphql` |
 
-僅[!BADGE SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"}
+僅[!BADGE SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"}
 
 | 環境 | 端點 |
 | ----------- | --------:|
