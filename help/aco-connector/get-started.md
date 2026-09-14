@@ -189,7 +189,7 @@ ht-degree: 3%
 
 ### 取得[!DNL Commerce Optimizer]執行個體詳細資料
 
-從[!DNL Commerce Optimizer]執行個體[[!DNL Instance details] 頁面](../optimizer/get-started.md#manage-instances)上的&#x200B;_[!DNL Instance Id]_欄位或用來存取執行個體的URL取得_&#x200B;租使用者識別碼&#x200B;_。 例如，在`https://experience.adobe.com/#/@&lt;your organization&gt;/in:&lt;tenant ID&gt;/commerce-optimizer-studio/home`中。
+從[!DNL Commerce Optimizer]執行個體[[!DNL Instance details] 頁面](../optimizer/get-started.md#manage-instances)上的&#x200B;_[!DNL Instance Id]_&#x200B;欄位或用來存取執行個體的URL取得_&#x200B;租使用者識別碼&#x200B;_。 例如，在`https://experience.adobe.com/#/@&lt;your organization&gt;/in:&lt;tenant ID&gt;/commerce-optimizer-studio/home`中。
 
 1. 從Commerce Admin中，選取&#x200B;**[!UICONTROL Adobe Commerce Optimizer]**&#x200B;以顯示包含指示的設定頁面。
 
