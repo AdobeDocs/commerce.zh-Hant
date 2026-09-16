@@ -1,6 +1,6 @@
 ---
-title: 開始使用 [!DNL Live Search]
-description: 從Adobe Commerce瞭解 [!DNL Live Search] 的系統需求和安裝步驟。
+title: 開始使用[!DNL Live Search]
+description: 從Adobe Commerce瞭解[!DNL Live Search]的系統需求和安裝步驟。
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 45b985f1-9afb-4a07-93e8-f2fe231c5400
@@ -8,31 +8,44 @@ badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.a
 TQID: https://experienceleague.adobe.com/63Lia0NKyJV2ngoXLlcGkciK3xZWYsmtwzfkyOg5Bfw
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 last-update: 2026-09-02
-source-git-commit: 299da83bd0a9b776ad6b13482b65af61bffe15fa
+source-git-commit: c40236ec3dfbbb0f393e5d1fc4743ffc7626b11e
 workflow-type: tm+mt
-source-wordcount: 2856
+source-wordcount: '2978'
 ht-degree: 0%
-
 ---
-
 # 設定以透過[!DNL Live Search]成功
 
 Adobe Commerce [!DNL Live Search]與[[!DNL Catalog Service]](../catalog-service/guide-overview.md)共同合作，提供效能、相關且直覺式的搜尋解決方案。 此解決方案可讓您的客戶快速準確地找到所需的專案。 具體來說，[!DNL Catalog Service]會呈現您的目錄資料以供SaaS服務使用，例如[!DNL Live Search]。
@@ -133,11 +146,15 @@ Adobe Commerce [!DNL Live Search]與[[!DNL Catalog Service]](../catalog-service/
    - 類別摘要
    - 類別許可權摘要
 
-驗證索引器後，下一步是[設定API金鑰](#2-configure-api-keys)。
+驗證索引器後，下一步是[設定API金鑰](#configure)。
 
 >[!TAB 現有的Commerce執行個體]
 
 如果您要在現有的Commerce執行個體上安裝[!DNL Live Search]，請依照這些指示操作。
+
+>[!NOTE]
+>
+>*管理員* > _[!UICONTROL Stores]_> [!UICONTROL Settings] >_[!UICONTROL Configuration]_ > **[!UICONTROL Live Search]** > **[!UICONTROL Storefront Features]** > **[!UICONTROL Enable Product Listing Widgets]**&#x200B;設定只會控制產品清單Widget。 沒有&#x200B;*管理員*&#x200B;設定可停用完整的[!DNL Live Search]店面體驗（例如搜尋彈出視窗）。 使用此程式中的CLI模組命令，在您設定[!DNL Live Search]時讓現有的店面搜尋保持作用中。
 
 1. 確認[cron工作](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)和[索引子](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/tools/index-management)正在執行。
 
@@ -153,13 +170,17 @@ Adobe Commerce [!DNL Live Search]與[[!DNL Catalog Service]](../catalog-service/
    composer update magento/live-search --with-dependencies
    ```
 
-1. 停用提供店面搜尋結果的[!DNL Live Search]模組。
+1. 停用[!DNL Live Search]店面模組，同時將`Magento_LiveSearchAdapter`保持啟用。
 
    ```bash
-   bin/magento module:disable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover Magento_LiveSearchProductListing
+   bin/magento module:disable Magento_LiveSearchStorefrontPopover Magento_LiveSearchProductListing
    ```
 
-   [!DNL Elasticsearch]會繼續從店面管理搜尋要求，而[!DNL Live Search]服務會在背景同步目錄資料和索引產品。
+   [!DNL Elasticsearch]會繼續從店面管理搜尋要求，而[!DNL Live Search]服務會在背景同步目錄資料和索引產品。 保留`Magento_LiveSearchAdapter`啟用並不會將店面搜尋切換到[!DNL Live Search]；模組只需要保持啟用狀態，Commerce的搜尋引擎相依性就能繼續正確解析。
+
+   >[!IMPORTANT]
+   >
+   >在此階段將`Magento_LiveSearchAdapter`保持啟用，即使它在[!DNL Live Search] 4.0.0之前[已過時](release-notes.md#live-search-400)。 `Magento\Search\Model\EngineResolver`相依於啟用的此模組，因此停用此模組會中斷現有的店面搜尋，並產生`500`錯誤。 `Magento_LiveSearchAdapter`也無法在`Magento_LiveSearchMetrics`啟用時停用，因為`Magento_LiveSearchMetrics`模組的`composer.json`宣告了`Magento_LiveSearchAdapter`的相依性。 您不需要停用此工作流程的`Magento_LiveSearchMetrics`。
 
 1. 安裝更新。
 
@@ -181,10 +202,10 @@ Adobe Commerce [!DNL Live Search]與[[!DNL Catalog Service]](../catalog-service/
 1. 啟用[!DNL Live Search]擴充功能，並停用[!DNL OpenSearch] （Magento Elasticsearch和OpenSearch模組）。
 
    ```bash
-   bin/magento module:enable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover  Magento_LiveSearchProductListing
+   bin/magento module:enable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover Magento_LiveSearchProductListing
    ```
 
-   ```
+   ```bash
    bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_Elasticsearch8 Magento_OpenSearch Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl
    ```
 
@@ -198,7 +219,7 @@ Adobe Commerce [!DNL Live Search]與[[!DNL Catalog Service]](../catalog-service/
    bin/magento setup:upgrade
    ```
 
-驗證索引器後，下一步是[設定API金鑰](#2-configure-api-keys)。
+驗證索引器後，下一步是[設定API金鑰](#configure)。
 
 >[!ENDTABS]
 
