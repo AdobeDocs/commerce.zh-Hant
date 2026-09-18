@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Adobe Commerce as a Cloud Service]發行說明'
-description: 瞭解 [!DNL Adobe Commerce as a Cloud Service]中的最新功能和改進專案。
+description: 瞭解[!DNL Adobe Commerce as a Cloud Service]中的最新功能和改進專案。
 feature-set: Commerce
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
@@ -12,34 +12,48 @@ autotag-review: '2026-06-18T16:04:15.842Z'
 TQID: 'https://experienceleague.adobe.com/MmwdYWe5Et9m0BvtrVYNK2jiJ3fZBnUe2K6xMdIbMUk'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
   - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+    internal-label: Commerce as a Cloud Service
 feature_v2:
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 subfeature_v2:
   - id: adedf3b3-e153-47a3-ae73-b5d65067b544
+    internal-label: Build system
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+    internal-label: Machine learning
 last-update: 2026-08-07
-source-git-commit: d8c738212373283ccf45b16cf91dbafc7a7bd0f8
+source-git-commit: 04f2eddef8abc6843ced0d00368ea19f3626adce
 workflow-type: tm+mt
-source-wordcount: 6365
+source-wordcount: '6842'
 ht-degree: 0%
-
 ---
-
 # 發行說明
 
 下列發行說明包含[!DNL Adobe Commerce as a Cloud Service]的更新。
@@ -48,7 +62,77 @@ ht-degree: 0%
 >
 >如果您正在雲端基礎結構上使用Adobe Commerce內部部署或Adobe Commerce，請參閱[Adobe Commerce發行說明](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/overview)。
 
-## 2026年9月 — 發行說#1 {#latest}
+## 2026年9月 — 發行說#2 {#latest}
+
+[!BADGE 沙箱]{type=Caution tooltip="列出的專案目前僅在沙箱環境中可用。 Adobe會先在沙箱環境中推出新版本，讓您可以在生產環境中使用該版本之前有時間測試即將推出的變更。"}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+以下專案將於2026年9月22日在生產環境中可用。
+
+>[!BEGINSHADEBOX]
+
+### 附加檔案和影像以傳回請求
+
+客戶現在可以透過店面`requestReturn` GraphQL變異提交退貨要求時上傳檔案和影像。<!-- CCSAAS-5410 -->
+
+### 控制存貨來源外觀
+
+每個詳細目錄來源現在都包含[!DNL Commerce Admin]中&#x200B;[!UICONTROL **商店**] > [!UICONTROL **詳細目錄**] > [!UICONTROL **來源**]&#x200B;之來源編輯頁面的&#x200B;[!UICONTROL **顯示於店面**]&#x200B;切換。 [`sourceAvailability`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/source-availability) GraphQL查詢只會傳回您標示為可見之來源的庫存資訊。 預設會隱藏來源。<!-- ACCS-1645 -->
+
+### 多來源出貨指南
+
+當訂單包含指派給不同存貨來源的專案時，[!DNL Commerce Admin] [!UICONTROL **Source選擇**]&#x200B;頁面現在會自動引導您為每個專案選取適當的來源。<!-- ACCS-1832 -->
+
+### 查詢店面的來源可用性詳細資料
+
+[`sourceAvailability`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/source-availability) GraphQL查詢現在會傳回店面的其他資訊：
+
+* 每個來源都包含其`name`和`is_pickup_location_active`旗標，因此店面可以顯示來源名稱並識別使用中的店內取貨位置。<!-- ACCS-1614 -->
+
+* `SourceAvailability`型別現在包含`is_saleable`和`backorder_message`欄位，因此店面可以將[!UICONTROL Add to Cart]引向真實銷售性，而非實體庫存。<!-- ACCS-1858 -->
+
+### 擷取客戶許可權
+
+新的[!DNL Commerce] REST端點(`GET /V1/customers/:customerId/companyRoles`)傳回所有指派給客戶的公司角色和許可權。 GraphQL `CompanyBasicInfo`型別現在也包含`role_id`、`role_name`和許可權資料，因此整合功能可以在單一要求中，擷取所有關聯帳戶中使用者的公司角色指派。<!-- ACCS-1617 -->
+
+### 訂閱商業發票儲存webhook
+
+`observer.sales_order_invoice_save_after` webhook可讓您在儲存商業發票之後執行邏輯。<!-- CEXT-6706 -->
+
+### 檢視指派的來源資訊
+
+當訂單包含具有指定存貨來源的專案時，[!DNL Commerce Admin]現在會在訂單檢視頁面和出貨來源選取畫面中標籤這些專案，讓商家可以履行來自正確來源的訂單。<!-- ACCS-941 -->
+
+### 增強功能和錯誤修正
+
+此版本中包括下列選取的增強功能、最佳化和錯誤修正：
+
+* 已最佳化購物車和結帳層級價格載入，以防止大量共用目錄發生問題。<!-- ACCS-1150 -->
+
+* 修正未遵循檔案屬性變更的問題。<!-- CCSAAS-5395 -->
+
+* 修正產品覆寫資料不一致的問題。<!-- ACCS-1844 -->
+
+* 修正並行的REST API請求可能會間歇性導致401錯誤的問題。<!-- CCSAAS-5417 -->
+
+* 修正當未設定明確時間時，購物車價格規則的開始或結束日期可能意外運作的問題。<!-- ACCS-1856 -->
+
+* 修正購物車價格規則接受不存在的開始或結束日期的問題。<!-- ACCS-1902 -->
+
+* 修正無法儲存[!UICONTROL Catalog]設定的問題。<!-- CCSAAS-5436 -->
+
+* 修正同時要求匯入API (`POST /V1/import/json`)時可能發生的問題。<!-- ACCS-1053 -->
+
+* 修正可銷售數量可能多報指定存貨來源之產品可用性的問題。<!-- ACCS-1103 -->
+
+* 修正訂單註解API (`POST /V1/orders/{id}/comments`)不區分大小寫的問題。<!-- ACCS-1752 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## 2026年9月 — 發行說#1
 
 <!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
@@ -188,8 +272,6 @@ ht-degree: 0%
 * 已解決可能影響管理員導覽的問題。<!-- CCSAAS-5232 -->
 
 * 修正空白購物車可能報告非零總計的問題。<!-- ACCS-1730 -->
-
-{{accs-release}}
 
 >[!ENDSHADEBOX]
 
