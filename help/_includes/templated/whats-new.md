@@ -22,7 +22,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>已新增Adobe Commerce as a Cloud Service的沙箱<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">發行說明</a>。</p>
+      <td><p>已新增Adobe Commerce as a Cloud Service的沙箱<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes">發行說明</a>。</p>
 </td>
       <td>
         重大更新
@@ -44,7 +44,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>已新增Adobe Commerce as a Cloud Service的生產<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">發行說明</a>。</p>
+      <td><p>已新增Adobe Commerce as a Cloud Service的生產<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes">發行說明</a>。</p>
 </td>
       <td>
         重大更新
@@ -66,7 +66,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>新增<a href="https://experienceleague.adobe.com/en/docs/commerce/insights/overview">Commerce Insights</a>指南，這是Adobe Commerce產品管理和工程策略實施和安全指引的新首頁。</p>
+      <td><p>新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/insights/overview">Commerce Insights</a>指南，這是Adobe Commerce產品管理和工程策略實施和安全指引的新首頁。</p>
 </td>
       <td>
         新主題
@@ -88,7 +88,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>將<a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/release-notes">Live Search擴充功能</a>更新為4.7.3，以解決產品清單頁面上的「加入購物車」功能在某些獨立情況下無法與PLP Widget搭配使用的問題。</p>
+      <td><p>將<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/live-search/release-notes">Live Search擴充功能</a>更新為4.7.3，以解決產品清單頁面上的「加入購物車」功能在某些獨立情況下無法與PLP Widget搭配使用的問題。</p>
 </td>
       <td>
         意見反應
@@ -110,7 +110,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>更新最新<a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md">source log-codes.md</a>的<a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/logs-troubleshooting/log-codes-reference">資料匯出記錄檔代碼參考</a>。</p>
+      <td><p>更新最新<a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md">source log-codes.md</a>的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/saas-data-export/logs-troubleshooting/log-codes-reference">資料匯出記錄檔代碼參考</a>。</p>
 </td>
       <td>
         技術
@@ -132,7 +132,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>已新增Adobe Commerce as a Cloud Service的沙箱<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">發行說明</a>。</p>
+      <td><p>已新增Adobe Commerce as a Cloud Service的沙箱<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes">發行說明</a>。</p>
 </td>
       <td>
         重大更新
@@ -154,7 +154,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>更新最新<a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md">source log-codes.md</a>的<a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/troubleshooting/log-codes-reference">資料匯出記錄檔代碼參考</a>。</p>
+      <td><p>更新最新<a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md">source log-codes.md</a>的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/saas-data-export/troubleshooting/log-codes-reference">資料匯出記錄檔代碼參考</a>。</p>
 </td>
       <td>
         技術
@@ -162,7 +162,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/1291cadbeca63d454eabab31c415b2d037d280ba">認可</a></td>
     </tr>
     <tr>
-      <td><p>Adobe Commerce Optimizer現在將私人目錄檢視限製為單一價格簿。 深入瞭解<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/private-catalog-view#price-book-restriction-on-private-catalog-views">私人目錄檢視</a>、<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view">目錄檢視</a>和<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/pricebooks">價格手冊</a>。</p>
+      <td><p>Adobe Commerce Optimizer現在將私人目錄檢視限製為單一價格簿。 深入瞭解<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/setup/private-catalog-view#price-book-restriction-on-private-catalog-views">私人目錄檢視</a>、<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/setup/catalog-view">目錄檢視</a>和<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/setup/pricebooks">價格手冊</a>。</p>
 </td>
       <td>
         重大更新
@@ -184,7 +184,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>已新增Adobe Commerce as a Cloud Service的生產<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">發行說明</a>。</p>
+      <td><p>已新增Adobe Commerce as a Cloud Service的生產<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes">發行說明</a>。</p>
 </td>
       <td>
         重大更新
@@ -192,7 +192,7 @@ ht-degree: 1%
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ed13ed011180fbb9d535f5a228a5f932ebf00689">認可</a></td>
     </tr>
     <tr>
-      <td><p>商戶現在可以直接從Commerce管理員在網站範圍自助服務另一個PayPal帳戶上線。 如需詳細資訊，請參閱<a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/configure/connect-website-account">為網站</a>連線其他PayPal帳戶。</p>
+      <td><p>商戶現在可以直接從Commerce管理員在網站範圍自助服務另一個PayPal帳戶上線。 如需詳細資訊，請參閱<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/payment-services/configure/connect-website-account">為網站</a>連線其他PayPal帳戶。</p>
 </td>
       <td>
         新主題
@@ -214,7 +214,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>已更新Adobe Commerce Optimizer設定指南，其中包含啟用及設定私人目錄檢視以限制使用已簽署權杖存取目錄資料的指示，以及參考新功能而更新的相關主題： <br /> — 已新增<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/private-catalog-view">私人目錄檢視</a>，說明如何啟用目錄保護，以便只有具有有效已簽署權杖的請求才能擷取目錄檢視的資料。<br /> — 已新增<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/restricted-access-keys">已限制存取金鑰</a>，說明如何建立、指派及旋轉用於簽署目錄保護權杖的金鑰。<br /> — 已更新<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view">目錄檢視</a>，<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/overview">什麼是Adobe Commerce Optimizer？</a>，<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/get-started">開始使用</a>、<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits">限制和邊界</a>、<a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/launch/launch-checklist">啟動清單</a>以及<a href="https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/overview">Adobe Commerce Optimizer Connector指南</a>，以引用新的私有目錄檢視和受限訪問金鑰主題。</p>
+      <td><p>已更新Adobe Commerce Optimizer設定指南，其中包含啟用及設定私人目錄檢視以限制使用已簽署權杖存取目錄資料的指示，以及參考新功能而更新的相關主題： <br /> — 已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/setup/private-catalog-view">私人目錄檢視</a>，說明如何啟用目錄保護，以便只有具有有效已簽署權杖的請求才能擷取目錄檢視的資料。<br /> — 已新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/setup/restricted-access-keys">已限制存取金鑰</a>，說明如何建立、指派及旋轉用於簽署目錄保護權杖的金鑰。<br /> — 已更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/setup/catalog-view">目錄檢視</a>，<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/overview">什麼是Adobe Commerce Optimizer？</a>，<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/get-started">開始使用</a>、<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/boundaries-limits">限制和邊界</a>、<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/launch/launch-checklist">啟動清單</a>以及<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/aco-optimizer-connector/overview">Adobe Commerce Optimizer Connector指南</a>，以引用新的私有目錄檢視和受限訪問金鑰主題。</p>
 </td>
       <td>
         重大更新，新主題
@@ -236,7 +236,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>已新增Adobe Commerce as a Cloud Service的沙箱<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">發行說明</a>。</p>
+      <td><p>已新增Adobe Commerce as a Cloud Service的沙箱<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes">發行說明</a>。</p>
 </td>
       <td>
         重大更新
@@ -258,7 +258,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>使用移轉評估工具、Commerce開發人員MCP和Commerce資料移轉服務，以更新的移轉流程更新<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/overview">移轉概觀</a>。</p>
+      <td><p>使用移轉評估工具、Commerce開發人員MCP和Commerce資料移轉服務，以更新的移轉流程更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/migration/overview">移轉概觀</a>。</p>
 </td>
       <td>
         重大更新
@@ -280,7 +280,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>全新<a href="https://experienceleague.adobe.com/en/docs/commerce/catalog-service/integration/catalog-events-guide">目錄事件與Adobe I/O整合指南</a>說明如何啟用目錄事件、驗證SaaS資料匯出摘要匯出與同步，以及與Adobe I/O Events整合。</p>
+      <td><p>全新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/catalog-service/integration/catalog-events-guide">目錄事件與Adobe I/O整合指南</a>說明如何啟用目錄事件、驗證SaaS資料匯出摘要匯出與同步，以及與Adobe I/O Events整合。</p>
 </td>
       <td>
         重大更新，新主題
@@ -302,7 +302,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>更新Standard Services </a>的<a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/compatibility#standard-vs-advanced-payment-services-experience">Payment Services相容性表格，以反映更廣泛的地理可用性，並擴充進階方案的支援國家/地區詳細資料。</p>
+      <td><p>更新Standard Services </a>的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/payment-services/compatibility#standard-vs-advanced-payment-services-experience">Payment Services相容性表格，以反映更廣泛的地理可用性，並擴充進階方案的支援國家/地區詳細資料。</p>
 </td>
       <td>
         意見反應
@@ -324,7 +324,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>已將Adobe Commerce as a Cloud Service <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">發行說明</a>更新至生產環境。</p>
+      <td><p>已將Adobe Commerce as a Cloud Service <a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes">發行說明</a>更新至生產環境。</p>
 </td>
       <td>
         重大更新
@@ -346,7 +346,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>更新<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/migration-tools/bulk-data/migration-tool">大量資料移轉工具</a>檔案，其中包含移轉程式的詳細資訊。</p>
+      <td><p>更新<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/migration/migration-tools/bulk-data/migration-tool">大量資料移轉工具</a>檔案，其中包含移轉程式的詳細資訊。</p>
 </td>
       <td>
         重大更新
@@ -368,7 +368,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>已更新Adobe Commerce as a Cloud Service的沙箱<a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">發行說明</a>。</p>
+      <td><p>已更新Adobe Commerce as a Cloud Service的沙箱<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes">發行說明</a>。</p>
 </td>
       <td>
         重大更新
