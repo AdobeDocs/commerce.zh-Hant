@@ -1,6 +1,6 @@
 ---
 title: '[!DNL SaaS Data Export Extension]發行說明'
-description: 適用於Adobe Commerce的 [!DNL Data Export Extension] 的最新發行資訊。
+description: 適用於Adobe Commerce的[!DNL Data Export Extension]的最新發行資訊。
 autotag-review: '2026-06-17T15:08:59.000Z'
 feature: Services, Release Notes
 recommendations: noCatalog
@@ -8,27 +8,37 @@ exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
 TQID: https://experienceleague.adobe.com/l3Z3-ncMTQ3j-4s6xL9X8ZYtlBHqzhBfMLc2jL4Kv6A
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
   - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
   - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+    internal-label: Commerce as a Cloud Service
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 1c8d6d2d0460df4aa18de4d7d9750b9dda4f6bc5
+    internal-label: Data collection
+source-git-commit: c878b0f46e20fbdcd9771dae36430a814371e0c2
 workflow-type: tm+mt
-source-wordcount: 3429
+source-wordcount: '3464'
 ht-degree: 0%
-
 ---
-
 # [!DNL SaaS Data Export Extension]發行說明
 
 下列發行說明說明[!DNL SaaS data export]擴充功能的最新版本。 支援目前的主要發行版本。 舊版的發行說明僅供參考。
@@ -44,6 +54,12 @@ ht-degree: 0%
 >[!DNL SaaS data export]擴充功能是與[!DNL Live Search]、[!DNL Product Recommendations]及[!DNL Catalog Service]一起自動安裝的模組集合。 您可以使用[!DNL Composer]檢查系統上安裝的版本。 在某些情況下，您可能會想要升級系統上的資料匯出擴充功能，以取得修正或新功能，而不更新Commerce服務版本。
 
 ## 2026版本 {#release-notes-2026}
+
+### 103.4.35版
+
+_2026年9月17日_
+
+![修正](../assets/fix.svg) **屬性選項標籤同步化錯誤** — 修正無效的屬性後端資料表在標籤重新同步期間可能導致摘要匯出失敗的問題，確保屬性標籤更新能可靠地同步。<!--MDEE-1464-->
 
 ### 103.4.34版
 
