@@ -34,9 +34,9 @@ topic_v2:
     internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: c878b0f46e20fbdcd9771dae36430a814371e0c2
+source-git-commit: 42e7ecca6c058ebc4e80b601c6d46b84f601e454
 workflow-type: tm+mt
-source-wordcount: '3464'
+source-wordcount: '3447'
 ht-degree: 0%
 ---
 # [!DNL SaaS Data Export Extension]發行說明
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 _2026年9月17日_
 
-![修正](../assets/fix.svg) **屬性選項標籤同步化錯誤** — 修正無效的屬性後端資料表在標籤重新同步期間可能導致摘要匯出失敗的問題，確保屬性標籤更新能可靠地同步。<!--MDEE-1464-->
+![修正](../assets/fix.svg)更新以支援Adobe Commerce Optimizer與Adobe Commerce的整合。<!--MDEE-1464-->
 
 ### 103.4.34版
 
