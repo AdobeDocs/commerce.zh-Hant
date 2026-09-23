@@ -49,9 +49,9 @@ topic_v2:
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
 last-update: 2026-08-07
-source-git-commit: 04f2eddef8abc6843ced0d00368ea19f3626adce
+source-git-commit: 9cc9b3270d808102f293609a606ff32a781d084c
 workflow-type: tm+mt
-source-wordcount: '6842'
+source-wordcount: '6869'
 ht-degree: 0%
 ---
 # 發行說明
@@ -64,21 +64,21 @@ ht-degree: 0%
 
 ## 2026年9月 — 發行說#2 {#latest}
 
-[!BADGE 沙箱]{type=Caution tooltip="列出的專案目前僅在沙箱環境中可用。 Adobe會先在沙箱環境中推出新版本，讓您可以在生產環境中使用該版本之前有時間測試即將推出的變更。"}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE 生產]{type=Neutral tooltip="列出的專案目前可在生產環境中使用。"}
 
-以下專案將於2026年9月22日在生產環境中可用。
+以下專案已於2026年9月22日新增到生產環境。
 
 >[!BEGINSHADEBOX]
 
 ### 附加檔案和影像以傳回請求
 
-客戶現在可以透過店面`requestReturn` GraphQL變異提交退貨要求時上傳檔案和影像。<!-- CCSAAS-5410 -->
+客戶現在可以透過店面[`requestReturn`](https://developer.adobe.com/commerce/webapi/graphql/schema/orders/mutations/request-return/#request-a-return-with-an-image-attachment) GraphQL變異提交回訪要求時上傳檔案和影像。 使用[`initiateUpload`與`finishUpload`變動](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads/)上傳檔案，然後將傳回的索引鍵指派給傳回的專案自訂屬性。<!-- CCSAAS-5410 -->
 
 ### 控制存貨來源外觀
 
-每個詳細目錄來源現在都包含[!DNL Commerce Admin]中&#x200B;[!UICONTROL **商店**] > [!UICONTROL **詳細目錄**] > [!UICONTROL **來源**]&#x200B;之來源編輯頁面的&#x200B;[!UICONTROL **顯示於店面**]&#x200B;切換。 [`sourceAvailability`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/source-availability) GraphQL查詢只會傳回您標示為可見之來源的庫存資訊。 預設會隱藏來源。<!-- ACCS-1645 -->
+每個詳細目錄來源現在都包含[!DNL Commerce Admin]中[來源編輯頁面](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/inventory/sources/sources-add)的&#x200B;[!UICONTROL **顯示於店面**]&#x200B;切換（[!UICONTROL **商店**] > [!UICONTROL **詳細目錄**] > [!UICONTROL **來源**]）。 [`sourceAvailability`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/source-availability) GraphQL查詢只會傳回您標示為可見之來源的庫存資訊。 預設會隱藏來源。<!-- ACCS-1645 -->
 
 ### 多來源出貨指南
 
