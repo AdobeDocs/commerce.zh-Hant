@@ -1,47 +1,66 @@
 ---
-title: 移轉至 [!DNL Adobe Commerce as a Cloud Service]
-description: 瞭解如何移轉至 [!DNL Adobe Commerce as a Cloud Service]。
+title: 移轉至[!DNL Adobe Commerce as a Cloud Service]
+description: 瞭解如何移轉至[!DNL Adobe Commerce as a Cloud Service]。
 feature: Cloud
 exl-id: 9065c92a-f6b2-4464-8ec0-5c549bf78104
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
 role: Developer
 level: Intermediate
 autotag-review: '2026-06-18T16:12:28.840Z'
 TQID: 'https://experienceleague.adobe.com/GmxaQdGKvAIDpZ2jvmlLFSYw0IFQysIMOT0lUnsJBsI'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
 subfeature_v2:
   - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+    internal-label: Categories
   - id: f56d26ed-050b-4fb7-b29b-8e6e994e80a2
+    internal-label: B2B
   - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+    internal-label: Cloud architecture
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: addc3a3a-2b1c-4fdf-aea4-4b1eb2931ba6
+    internal-label: Data pipelines
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+    internal-label: Machine learning
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
+    internal-label: Data management
+source-git-commit: 464b0d7298bd2a5569b12d0956a84667709e4c3a
 workflow-type: tm+mt
-source-wordcount: 3374
+source-wordcount: '3682'
 ht-degree: 0%
-
 ---
-
 # 移轉至[!DNL Adobe Commerce as a Cloud Service]
 
 本指南可協助開發人員從[!DNL Adobe Commerce on Cloud]或內部部署轉換至[!DNL Adobe Commerce as a Cloud Service] (SaaS)。 此SaaS模型提供增強的效能、擴充性，以及與[!DNL Adobe Experience Cloud]的整合。
@@ -76,13 +95,13 @@ Adobe Commerce適用於不同的部署模式。 主要差異在於基礎建設�
 | Adobe Commerce產品 | 託管模型 | 服務與更新的責任 |
 |---|---|---|
 | **[!DNL Adobe Commerce as a Cloud Service]** | SaaS — Adobe代管 | Adobe可管理核心Commerce應用程式、基礎架構和更新。 商家透過支援的API和擴充性服務(API、[!DNL Adobe Developer App Builder]、UI SDK)擴充平台。 商家無法修改核心應用程式程式碼。 |
-| **[!DNL Adobe Commerce on Cloud Infrastructure]** | PaaS — Adobe管理 | [共擔責任](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/security-and-compliance/shared-responsibility)： Adobe會管理託管平台。 商家管理應用程式層級的修補程式、自訂程式碼、組態，並將擴充功能和平台服務更新至支援的版本，包括：資料庫、快取、搜尋、PHP執行階段、Web伺服器和訊息佇列。 |
-| **[!DNL Adobe Commerce on-premises]** | 由商家或代管提供者代管 | [商家職責](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/overview#merchant-responsibilities)：商家或其代管提供者管理基礎結構和所有平台服務。 |
+| **[!DNL Adobe Commerce on Cloud Infrastructure]** | PaaS — Adobe管理 | [共擔責任](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility)： Adobe會管理託管平台。 商家管理應用程式層級的修補程式、自訂程式碼、組態，並將擴充功能和平台服務更新至支援的版本，包括：資料庫、快取、搜尋、PHP執行階段、Web伺服器和訊息佇列。 |
+| **[!DNL Adobe Commerce on-premises]** | 由商家或代管提供者代管 | [商家職責](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview#merchant-responsibilities)：商家或其代管提供者管理基礎結構和所有平台服務。 |
 
 **架構影響**
 
 - **無版本平台**：持續更新表示核心不再有重大版本升級。
-- **微服務與API-1&rbrace;：對API的延伸性與整合依賴性更深。**
+- **微服務與API-1}：對API的延伸性與整合依賴性更深。**
 - **依預設Headless （選用）**：對分離式店面的強大支援（例如，由Edge Delivery Services支援的Commerce店面）。
 - **Edge Delivery Services**：對前端效能和部署的影響。
 
@@ -111,13 +130,13 @@ Adobe Commerce適用於不同的部署模式。 主要差異在於基礎建設�
 | 工作流程 | 工具 | 說明 |
 | --- | --- | --- |
 | [評估](#migration-assessment-tool) | **移轉評估工具** | AI導向的現有實作評估，其中清查自訂模組、協力廠商擴充功能、整合、店面觀察、資料庫結構、自訂表格、移轉建議、複雜性評分和現代化工作預估值。 |
-| [應用程式與店面現代化](#code-and-storefront-migration-commerce-developer-mcp) | **Commerce開發人員MCP** | AI輔助的Commerce應用程式現代化、加速自訂移轉至[!DNL App Builder]、支援店面轉換至Edge Delivery Services (EDS)，以及透過工程團隊檢閱和驗證的實作，引導開發人員完成更廣泛的應用程式現代化歷程。 |
+| [應用程式與店面現代化](#code-and-storefront-migration-commerce-developer-agent) | **Commerce Developer Agent和Commerce Developer MCP** | AI輔助的Commerce應用程式現代化、加速自訂移轉至[!DNL App Builder]、支援店面轉換至Edge Delivery Services (EDS)，以及透過工程團隊檢閱和驗證的實作，引導開發人員完成更廣泛的應用程式現代化歷程。 |
 | [資料移轉](#data-migration-commerce-data-migration-service) | **Commerce資料移轉服務** | 將目錄、客戶和訂單資料的擷取、載入及完整性驗證至[!DNL Adobe Commerce as a Cloud Service]。 |
 
 這些曲目不是獨立的。 以正確的順序一起使用它們可最大程度地減少重複工作。
 
 - **先執行評估** — 執行評估會先識別不支援的自訂、估計移轉工作量、公開資料移轉考量，並在實作開始前強調整合相依性。 此評估會成為應用程式現代化和資料移轉工作流程所使用的移轉藍圖。
-- **應用程式現代化** - Commerce開發人員MCP會使用移轉評估，來決定要現代化的自訂專案以及更新方式。 然後MCP會產生對應的[!DNL App Builder]應用程式和店面元件。
+- **應用程式現代化** - Commerce Developer Agent和Commerce Developer MCP會使用移轉評估來決定哪些自訂專案要現代化，以及如何現代化。 然後Commerce Developer Agent或Commerce Developer MCP會產生對應的[!DNL App Builder]應用程式和店面元件。
 - **資料移轉** — 資料移轉範圍設定問卷會擷取評估所呈現的範圍、磁碟區和自訂表格。
 - **自訂和協力廠商資料** — 評估期間會識別協力廠商擴充功能保留在自訂資料表中的資料，但標準資料移轉不會處理這些資料，因此需要[!DNL App Builder]自訂。
 
@@ -182,23 +201,54 @@ Adobe Commerce適用於不同的部署模式。 主要差異在於基礎建設�
 
 每次[!DNL Adobe Commerce as a Cloud Service]移轉都會從評估開始。 在開始實作前，這是建立範圍、減少不確定因素及建立共用移轉藍圖的經濟有效方式。
 
-如需評估工具和下游開發人員工作流程的詳細資訊，請參閱[Adobe Commerce開發人員MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/)。
+如需評估工具和下游開發人員工作流程的詳細資訊，請參閱[Adobe Commerce開發人員MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools)。
 
 如需有關與移轉評估工具整合的Commerce Developer Agent的詳細資訊，請參閱[Commerce Developer Agent](https://developer.adobe.com/commerce/extensibility/developer-agent/)
 
-## 程式碼和店面移轉（Commerce開發人員MCP）
+## 程式碼和店面移轉(Commerce Developer Agent)
 
 在[!DNL Adobe Commerce on Cloud]中或內部部署自訂可以使用程式內PHP — 在應用程式內執行的模組、外掛程式和事件觀察程式。 [!DNL Adobe Commerce as a Cloud Service]是無版本SaaS平台，且該模型不再適用。 自訂會以透過事件和API與Commerce整合的流程外[!DNL Adobe Developer App Builder]應用程式執行。 針對此架構將商店自訂功能現代化，通常是[!DNL Adobe Commerce as a Cloud Service]移轉中最重大的工程作業。
 
+Adobe為此工作提供兩種AI輔助路徑：
+
+- **Commerce Developer Agent** — 引導式、瀏覽器式體驗，以及大部分移轉的建議起點。
+- **Commerce開發人員MCP** — 適用於想要在現有開發環境中工作或需要在Edge Delivery Services (EDS)上實現店面現代化的團隊，提供對話式IDE體驗。
+
 ### 程式碼移轉概觀
 
-從移轉評估開始，Commerce Developer MCP提供對話式IDE體驗，將舊版PHP自訂更新為[!DNL App Builder]應用程式。 此外也提供在Edge Delivery Services (EDS)上重建店面的協助。 Commerce開發人員MCP直接使用移轉評估工具的結果，可減少手動解譯、維持可追蹤性，並確保整個程式的一致性，藉此讓實施作業符合已核准的移轉藍圖。
+從移轉評估開始，Commerce Developer Agent提供對話式代理程式體驗，將舊版PHP自訂更新為[!DNL App Builder]應用程式。 Commerce Developer Agent直接使用移轉評估工具的結果，可減少手動解譯、維持可追蹤性，並確保整個程式的一致性，讓實施作業與已核准的移轉藍圖保持一致。
 
-雖然移轉是主要使用案例，但Commerce開發人員MCP是設計為[!DNL Adobe Commerce]的完整AI開發代理程式。 MCP支援現代化、新開發、作業工作流程及[!DNL Adobe Commerce as a Cloud Service]的所有更新。 如此優異的彈性可讓團隊在移轉後繼續建置及擴充Commerce應用程式。
+雖然移轉是主要使用案例，但Commerce Developer Agent是設計為[!DNL Adobe Commerce]的完整AI開發代理程式。 Commerce Developer Agent支援[!DNL App Builder]的現代化、新開發、作業工作流程和所有更新。 如此優異的彈性可讓團隊在移轉後繼續建置及擴充Commerce應用程式。
 
-### Commerce開發人員MCP
+### Commerce Developer Agent
 
-Commerce Developer MCP會使用[移轉評估](#migration-assessment-tool)中的發現，透過反複的開發工作流程，將識別的自訂轉換成[!DNL App Builder]個應用程式。 使用這些工具進行開發時，請考量下列准則：
+Commerce Developer Agent使用來自[移轉評估](#migration-assessment-tool)的發現，透過反複的開發工作流程將識別的自訂轉換成[!DNL App Builder]個應用程式。 使用這些工具進行開發時，請考量下列准則：
+
+- **從藍圖開始：** Commerce Developer Agent會使用移轉評估，並產生結構化的藍圖。 這是分階段移轉計畫，會標示風險並對應相依性，供您檢閱。
+
+- **檢閱和核准：**&#x200B;系統不會自動產生任何專案。 藍圖需要您的明確核准才能開始產生任何程式碼，而且您可以對話式在多個版本中調整它。
+
+- **產生App Builder支架：**&#x200B;核准後，代理程式會產生支架[!DNL App Builder]個Commerce擴充功能，包括：
+
+  - 事件和webhook基礎結構
+  - 商家可設定的設定
+  - 持續性模式
+
+  產生支架後，代理程式會對輸出執行驗證檢查。
+
+- **調整並匯出或直接部署至[!DNL App Builder]：**&#x200B;您可以在[開發]階段中要求後續變更，並下載產生的擴充功能程式碼的壓縮檔，或是從Commerce Developer Agent直接部署至[!DNL App Builder]。 專案內容和決定會跨工作階段持續儲存。
+
+如需詳細資訊，請參閱[Commerce Developer Agent](https://developer.adobe.com/commerce/extensibility/developer-agent/)和[快速入門](https://developer.adobe.com/commerce/extensibility/developer-agent/getting-started)。
+
+### Commerce開發人員MCP （本機開發）
+
+>[!NOTE]
+>
+>Commerce開發人員MCP的設計可在IDE中運作。
+
+喜歡在現有IDE中工作或需要在Edge Delivery Services (EDS)上更新店面的團隊可以使用Commerce開發人員MCP。 和Commerce開發人員代理程式一樣，它會直接使用移轉評估，讓實施作業符合核准的移轉藍圖，並減少手動解譯作業。
+
+使用這些工具進行開發時，請考量下列准則：
 
 - **從藍圖開始** - Commerce開發人員MCP會使用其識別的自訂、建議和移轉優先順序作為實施規劃的基礎，來使用移轉評估。
 
@@ -231,19 +281,19 @@ MCP也可協助：
 - 體驗最佳化
 - 符合目前的Edge Delivery Services最佳實務
 
-### 開發人員MCP值
+### Commerce Developer Agent和Developer MCP值
 
-從處理中的PHP自訂移至可組合的[!DNL App Builder]應用程式，代表重大的架構轉變。 Commerce開發人員MCP會將[!DNL Adobe Commerce]知識、[!DNL App Builder]實作模式及產品最佳實務直接內嵌至開發工作流程，以縮小差距。
+從處理中的PHP自訂移至可組合的[!DNL App Builder]應用程式，代表重大的架構轉變。 Commerce Developer Agent和Developer MCP會將[!DNL Adobe Commerce]知識、[!DNL App Builder]實作模式及產品最佳實務直接內嵌至開發工作流程，以縮小差距。
 
 納入此內容可改善傳送速度和工程品質的一致性。 團隊可以更快地實現應用程式的現代化，同時按照一致的架構指導產生實施。
 
-透過內嵌建議的實作模式，Commerce Developer MCP減少了對個人專業知識的依賴，並幫助組織跨專案一致地擴展現代化工作。
+透過內嵌建議的實作模式，Commerce Developer Agent和Developer MCP可減少對於個人專業知識的依賴，並幫助組織跨專案一致地擴展現代化工作。
 
 移轉程式也是改善現有實作的良機。 團隊可以簡化舊有的自訂功能、淘汰過時的功能、採用SaaS功能，以及現代化應用程式架構，而不是將歷史技術債務向前推移。
 
-由於Commerce開發人員MCP會直接使用移轉評估，因此所有現代化工作都會將可追蹤性維持在原始評估，確保實施作業與已核准的移轉藍圖保持一致。
+由於Commerce Developer Agent會直接使用移轉評估，因此所有現代化工作都會將可追蹤性維持在原始評估上，確保實施作業與已核准的移轉藍圖保持一致。
 
-Commerce開發人員MCP也鼓勵模組化[!DNL App Builder]應用程式，隨著業務需求的變化而獨立演化，藉以促進可撰寫的應用程式設計。
+Commerce Developer Agent和Developer MCP也鼓勵模組化[!DNL App Builder]應用程式，隨著業務需求的變化而獨立演化，藉以促進可撰寫的應用程式設計。
 
 ### 開發人員MCP範圍
 
@@ -257,9 +307,9 @@ MCP不會處理資料移轉。 商務資料是透過[Commerce資料移轉服務]
 
 一旦移轉評估工具藍圖確立移轉範圍和優先順序，程式碼和店面現代化程式就會開始。
 
-如需如何安裝及使用MCP的詳細資訊，請參閱[Commerce開發人員MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/)檔案。
-
 如需有關與移轉評估工具整合的Commerce Developer Agent的詳細資訊，請參閱[Commerce Developer Agent](https://developer.adobe.com/commerce/extensibility/developer-agent/)
+
+如需如何安裝及使用MCP的詳細資訊，請參閱[Commerce開發人員MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools)檔案。
 
 ## 資料移轉（Commerce資料移轉服務）
 
@@ -315,4 +365,4 @@ Commerce資料移轉服務在世界各地進行生產，並已提供多個企業
 
 檢閱[大量資料移轉工具指南](bulk-data/migration-tool.md)檔案，以進一步瞭解工作流程、支援的資料和驗證。
 
-準備來源環境的系統整合經銷商也可以使用標準[Adobe Commerce Cloud CLI](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview)和[Adobe Developer Console](https://developer.adobe.com)作為IMS認證。
+準備來源環境的系統整合經銷商也可以使用標準[Adobe Commerce Cloud CLI](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview)和[Adobe Developer Console](https://developer.adobe.com)作為IMS認證。
