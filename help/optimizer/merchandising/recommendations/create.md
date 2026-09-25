@@ -38,7 +38,7 @@ _建議單位_
 
 當您啟用建議單位時，Adobe Commerce會開始[收集資料](../../manage-results/recommendation-performance.md)以測量曝光數、檢視數、點按數等。 「建議」表格會顯示每個建議單位的量度，以協助您做出明智的業務決策。
 
-1. 在&#x200B;_[!DNL Adobe Commerce Optimizer]_側邊欄上，移至_&#x200B;銷售&#x200B;_>**建議**以顯示_&#x200B;建議&#x200B;_工作區。
+1. 在&#x200B;_[!DNL Adobe Commerce Optimizer]_&#x200B;側邊欄上，移至_&#x200B;銷售&#x200B;_>**建議**&#x200B;以顯示_&#x200B;建議&#x200B;_工作區。
 
 1. 在&#x200B;**目錄檢視**&#x200B;欄位中，選取您要讓建議可用的目錄檢視。 深入瞭解[使用建議](../../manage-results/recommendation-performance.md#select-catalog-view)的目錄檢視。
 
@@ -118,7 +118,7 @@ _建議產品預覽_&#x200B;面板總是隨建議單位部署至店面時可能�
 
 您可以編輯、停用或刪除現有的建議。
 
-1. 在&#x200B;_[!DNL Adobe Commerce Optimizer]_側邊欄上，移至_&#x200B;銷售&#x200B;_>**建議**。
+1. 在&#x200B;_[!DNL Adobe Commerce Optimizer]_&#x200B;側邊欄上，移至_&#x200B;銷售&#x200B;_>**建議**。
 
 1. 選取您要修改的建議。
 
