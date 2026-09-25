@@ -5,17 +5,18 @@ exl-id: 140bf047-4f6a-48da-b536-d96e78ae3d17
 TQID: https://experienceleague.adobe.com/IcJh0vfW3tvlyeZT0K9OnyqLqRmHlgfmUOX3lY-50tg
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+    internal-label: Admin
+source-git-commit: b8dd0e31a1deac03b03bfeb90a09761b637e0a40
 workflow-type: tm+mt
-source-wordcount: 778
+source-wordcount: '759'
 ht-degree: 0%
-
 ---
-
 # 篩選產品
 
 Adobe Commerce會自動將無法設定的預設篩選器套用至建議單位。 如果您將多個建議單位部署至頁面，Adobe Commerce會篩選掉單位中重複的任何產品。 系統只會使用重複產品的第一次參考，以便給其他建議的產品騰出空間。 Adobe Commerce也會篩選掉任何先前購買過的產品和購物車中的產品。
@@ -77,7 +78,7 @@ Adobe Commerce會自動將無法設定的預設篩選器套用至建議單位。
 
 ### 型別
 
-根據產品型別的篩選器會包含或排除特定型別的所有產品。 支援的型別包括&#x200B;_簡單_、_可設定_、_虛擬_、_可下載_&#x200B;或&#x200B;_禮卡_。 不支援&#x200B;_套件_、_群組_&#x200B;和自訂產品型別。
+根據產品型別的篩選器會包含或排除特定型別的所有產品。
 
 ### 可見度
 

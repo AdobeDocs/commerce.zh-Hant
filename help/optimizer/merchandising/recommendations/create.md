@@ -1,28 +1,34 @@
 ---
 title: 建立和管理建議
 description: 瞭解如何建立和管理建議。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]個專案（Adobe管理的SaaS基礎結構）。"
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
 TQID: https://experienceleague.adobe.com/4w6G-IgBjgmYYnnEpbK0HML9pSi3quLDxJfuCp9tV84
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
 topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
+    internal-label: Machine learning
+source-git-commit: f316b57d365b8952223d4d250ac14f113cf48601
 workflow-type: tm+mt
-source-wordcount: 1574
+source-wordcount: '1547'
 ht-degree: 0%
-
 ---
-
 # 建立和管理建議
 
 當您建立建議時，您會建立包含建議產品&#x200B;_專案_&#x200B;的&#x200B;_建議單位_&#x200B;或Widget。
@@ -205,7 +211,7 @@ _建議型別_
 
 >[!IMPORTANT]
 >
->不支援&#x200B;_套件_、_群組_&#x200B;和自訂產品型別。 如果您的目錄包含大量這類產品型別，可預期會有一個低整備分數。 此外，任何含有空格的SKU可能會降低建議的相關性，應加以避免。
+>任何含有空格的SKU可能會降低建議的相關性，應加以避免。
 
 以下列出常見低整備分數的可能原因和解決方案：
 

@@ -1,21 +1,18 @@
 ---
 title: 邊界和限制
-description: 瞭解 [!DNL Product Recommendations] 的界限和限制，以確保其符合您的業務需求。
+description: 瞭解[!DNL Product Recommendations]的界限和限制，以確保其符合您的業務需求。
 role: Admin, Developer
-source-git-commit: 60df4a608155a4f8ff8b4bf57cfd625aa1b3ccea
+source-git-commit: b8dd0e31a1deac03b03bfeb90a09761b637e0a40
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '893'
 ht-degree: 0%
-
 ---
-
 # 邊界和限制
 
 請檢閱下列界限和限制，以確保[!DNL Product Recommendations]符合您的業務需求。 瞭解這些限制可幫助您規劃實作、設定篩選器並避免常見問題。
 
 ## 一般
 
-- **產品型別** — 支援的產品型別包括&#x200B;_簡單_、_可設定_、_虛擬_、_可下載_&#x200B;和&#x200B;_禮卡_。 不支援&#x200B;_套件_、_群組_&#x200B;和自訂產品型別。 如果您的目錄包含大量不支援的產品型別，您可能會預期較低[整備分數](create.md#readiness-indicators)。 請參閱[依產品型別篩選](filters.md#type)。
 - **含有空格的SKU** — 含有空格的SKU可能會降低建議的相關性，應儘可能避免。
 - **購物車頁面** — 當您的商店設定為在將產品新增到購物車後立即[顯示購物車頁面時，購物車頁面不支援產品建議](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration)。 請參閱[建立建議](create.md)。
 - **子產品** — 可設定產品的子產品（可見度&#x200B;_無法個別顯示_）未顯示在建議單位中。 只能顯示可設定的（父）產品。 請參閱[篩選產品](filters.md#product)。
