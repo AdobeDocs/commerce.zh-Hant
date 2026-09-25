@@ -5,17 +5,18 @@ exl-id: 140bf047-4f6a-48da-b536-d96e78ae3d17
 TQID: https://experienceleague.adobe.com/IcJh0vfW3tvlyeZT0K9OnyqLqRmHlgfmUOX3lY-50tg
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+    internal-label: Admin
+source-git-commit: b8dd0e31a1deac03b03bfeb90a09761b637e0a40
 workflow-type: tm+mt
-source-wordcount: 778
+source-wordcount: '759'
 ht-degree: 0%
-
 ---
-
 # 篩選產品
 
 Adobe Commerce會自動將無法設定的預設篩選器套用至建議單位。 如果您將多個建議單位部署至頁面，Adobe Commerce會篩選掉單位中重複的任何產品。 系統只會使用重複產品的第一次參考，以便給其他建議的產品騰出空間。 Adobe Commerce也會篩選掉任何先前購買過的產品和購物車中的產品。
@@ -55,7 +56,7 @@ Adobe Commerce會自動將無法設定的預設篩選器套用至建議單位。
 
 >[!NOTE]
 >
->對於B2B商家，類別篩選器會遵守您已設定的任何[客戶特定產品類別](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/categories/category-permissions)。
+>對於B2B商家，類別篩選器會遵守您已設定的任何[客戶特定產品類別](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions)。
 
 當您將建議部署至頁面型別時，Adobe Commerce建議您使用以下類別篩選設定：
 
@@ -77,7 +78,7 @@ Adobe Commerce會自動將無法設定的預設篩選器套用至建議單位。
 
 ### 型別
 
-根據產品型別的篩選器會包含或排除特定型別的所有產品。 支援的型別包括&#x200B;_簡單_、_可設定_、_虛擬_、_可下載_&#x200B;或&#x200B;_禮卡_。 不支援&#x200B;_套件_、_群組_&#x200B;和自訂產品型別。
+根據產品型別的篩選器會包含或排除特定型別的所有產品。
 
 ### 可見度
 
@@ -85,11 +86,11 @@ Adobe Commerce會自動將無法設定的預設篩選器套用至建議單位。
 
 ### 價格
 
-根據產品價格的篩選器會使用最終價格來執行比較。 最終價格包含匿名購物者可享有的任何折扣。 針對B2B商家，顯示的價格會反映您已設定的[客戶特定群組價格](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/products/pricing/pricing-advanced)。
+根據產品價格的篩選器會使用最終價格來執行比較。 最終價格包含匿名購物者可享有的任何折扣。 針對B2B商家，顯示的價格會反映您已設定的[客戶特定群組價格](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/pricing-advanced)。
 
 ### 庫存狀態
 
 下列排除篩選器可用於根據庫存狀態篩選產品：
 
 - 無庫存 — （僅限排除）排除無庫存的產品。
-- 庫存低 — （僅供排除）排除庫存低的產品。 低庫存狀態是以[詳細目錄組態](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/config/catalog/inventory)中的&#x200B;_僅X剩餘Threshold_&#x200B;值為基礎。
+- 庫存低 — （僅供排除）排除庫存低的產品。 低庫存狀態是以[詳細目錄組態](https://experienceleague.adobe.com/en/docs/commerce-admin/config/catalog/inventory)中的&#x200B;_僅X剩餘Threshold_&#x200B;值為基礎。

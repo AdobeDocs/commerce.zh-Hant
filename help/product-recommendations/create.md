@@ -5,21 +5,25 @@ exl-id: 1d5f83c4-1613-4236-9d98-d455f45a47da
 TQID: https://experienceleague.adobe.com/K3cKFg-m22bUzlupyhsHgDVxaJka7xhOvFnOt8wDdII
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
+    internal-label: Machine learning
+source-git-commit: b8dd0e31a1deac03b03bfeb90a09761b637e0a40
 workflow-type: tm+mt
-source-wordcount: 1491
+source-wordcount: '1463'
 ht-degree: 0%
-
 ---
-
 # 建立新建議
 
 當您建立建議時，您會建立包含建議產品&#x200B;_專案_&#x200B;的&#x200B;_建議單位_&#x200B;或Widget。
@@ -35,11 +39,11 @@ _建議單位_
 
 1. 在&#x200B;_管理員_&#x200B;側邊欄上，前往&#x200B;**行銷** > _促銷活動_ > **產品建議**&#x200B;以顯示&#x200B;_產品建議_&#x200B;工作區。
 
-1. 指定要顯示建議的[存放區檢視](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/setup/websites-stores-views)。
+1. 指定要顯示建議的[存放區檢視](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views)。
 
    >[!NOTE]
    >
-   > 頁面產生器建議單位必須在預設商店檢視中建立，然後才可以在任何地方使用。 若要進一步瞭解如何使用頁面產生器建立產品建議，請參閱[新增內容 — 產品建議](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/page-builder/add-content/recommendations)。
+   > 頁面產生器建議單位必須在預設商店檢視中建立，然後才可以在任何地方使用。 若要進一步瞭解如何使用頁面產生器建立產品建議，請參閱[新增內容 — 產品建議](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)。
 
 1. 按一下&#x200B;**建立建議**。
 
@@ -49,14 +53,14 @@ _建議單位_
 
    >[!NOTE]
    >
-   > 當您的商店設定為在將產品加入購物車後立即[顯示購物車頁面時，「購物車」頁面上不支援產品建議](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration)。
+   > 當您的商店設定為在將產品加入購物車後立即[顯示購物車頁面時，「購物車」頁面上不支援產品建議](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration)。
 
    * 首頁
    * 類別
    * 產品詳細資料
    * 購物車
    * 確認
-   * [頁面產生器](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/page-builder/add-content/recommendations)
+   * [頁面產生器](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)
 
    您最多可以為每種頁面型別建立50個使用中的建議單位。 當達到限制時，頁面型別會變灰。
 
@@ -176,7 +180,7 @@ _建議型別_
 
 >[!IMPORTANT]
 >
->不支援&#x200B;_套件_、_群組_&#x200B;和自訂產品型別。 如果您的目錄包含大量這類產品型別，可預期會有一個低整備分數。 此外，任何含有空格的SKU可能會降低建議的相關性，應加以避免。
+>任何含有空格的SKU可能會降低建議的相關性，應加以避免。
 
 以下列出常見低整備分數的可能原因和解決方案：
 
