@@ -14,10 +14,10 @@ ht-degree: 0%
 ## 一般
 
 - **含有空格的SKU** — 含有空格的SKU可能會降低建議的相關性，應儘可能避免。
-- **購物車頁面** — 當您的商店設定為在將產品新增到購物車後立即[顯示購物車頁面時，購物車頁面不支援產品建議](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration)。 請參閱[建立建議](create.md)。
+- **購物車頁面** — 當您的商店設定為在將產品新增到購物車後立即[顯示購物車頁面時，購物車頁面不支援產品建議](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration)。 請參閱[建立建議](create.md)。
 - **子產品** — 可設定產品的子產品（可見度&#x200B;_無法個別顯示_）未顯示在建議單位中。 只能顯示可設定的（父）產品。 請參閱[篩選產品](filters.md#product)。
 - **已停用或未顯示的產品** — 已停用或未個別顯示的產品永遠都不會出現在建議中，也不能在產品篩選器中選取。
-- **特殊價格** - [特殊價格](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special)不支援在建議單位中使用開始和結束日期。 具有特殊價格的產品可能會出現在建議中，但單位不會顯示特殊價格、開始日期或結束日期。 購物者會看到一般價格（或您的目錄/價格摘要所提供的其他價格資料），直到開啟產品頁面為止。
+- **特殊價格** - [特殊價格](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/products/pricing/product-price-special)不支援在建議單位中使用開始和結束日期。 具有特殊價格的產品可能會出現在建議中，但單位不會顯示特殊價格、開始日期或結束日期。 購物者會看到一般價格（或您的目錄/價格摘要所提供的其他價格資料），直到開啟產品頁面為止。
 
 ## 建議單位
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 ## B2B
 
-- 產品建議遵循[類別許可權](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions)、[共用類別](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared)和客戶群組特定定價。 購物者只會根據自己的區段和目錄指派，看見他們可存取之產品的建議。 請參閱[上線](onboarding.md)。
+- 產品建議遵循[類別許可權](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/categories/category-permissions)、[共用類別](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/b2b/shared-catalogs/catalog-shared)和客戶群組特定定價。 購物者只會根據自己的區段和目錄指派，看見他們可存取之產品的建議。 請參閱[上線](onboarding.md)。
 
 ## 資料與整備
 
@@ -60,4 +60,4 @@ ht-degree: 0%
 
 ## 疑難排解
 
-如需目錄同步、建議未顯示或其他常見問題的說明，請搜尋[Commerce知識庫](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)或聯絡[支援](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。
+如需目錄同步、建議未顯示或其他常見問題的說明，請搜尋[Commerce知識庫](https://experienceleague.adobe.com/zh-hant/docs/commerce-knowledge-base/kb/overview)或聯絡[支援](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。
