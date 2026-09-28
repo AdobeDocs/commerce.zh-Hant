@@ -279,7 +279,7 @@ ht-degree: 1%
      ./jcr:content/metadata/commerce:isCommerce
      ```
 
-1. 選填。 若要在上傳至Commerce環境時自動同步已核准的AEM Assets Assets，`Basic`索引標籤上&#x200B;_[!UICONTROL Review Status]_欄位的預設值設定為`approved`。
+1. 選填。 若要在上傳至Commerce環境時自動同步已核准的AEM Assets Assets，`Basic`索引標籤上&#x200B;_[!UICONTROL Review Status]_&#x200B;欄位的預設值設定為`approved`。
 
 1. 儲存更新。
 
