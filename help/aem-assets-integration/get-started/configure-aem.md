@@ -6,21 +6,25 @@ exl-id: a5d2cbab-5ea1-446b-8ab2-2c638128a40c
 TQID: https://experienceleague.adobe.com/QPlM-eeRjJ0gwmpGO4SSYR4PLtL97O-NeozWorDWtv0
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: da3860b0-d637-47df-bef0-273751180266
+    internal-label: Digital asset management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 9fce350099392041ec9f648ae2d67a459ff53d91
+    internal-label: Administration
+source-git-commit: 4c27d94eca656c48dd50ba8dc69a905ea141c6fd
 workflow-type: tm+mt
-source-wordcount: 1784
+source-wordcount: '1839'
 ht-degree: 1%
-
 ---
-
 # 設定AEM Assets專案
 
 本主題說明如何設定您的AEM Assets專案，好讓Commerce名稱空間、中繼資料結構描述和[!UICONTROL Commerce]索引標籤可在AEM編寫環境中使用。 如需這些資源的背景資訊，請參閱[AEM Assets中的Commerce中繼資料](../metadata.md)。
@@ -68,6 +72,10 @@ ht-degree: 1%
    ![已選取Dynamic Media的Cloud Manager解決方案和附加元件步驟](../assets/aem-cloud-manager-program-addons.png){width="600" zoomable="yes"}
 
 1. 在&#x200B;**[!UICONTROL Add Environment]**&#x200B;步驟中，輸入&#x200B;**生產**&#x200B;和&#x200B;**暫存**&#x200B;環境的名稱，然後選取區域。
+
+   >[!IMPORTANT]
+   >
+   >[!BADGE 僅限SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"}針對這項整合建立AEM Assets環境時，請選取地理位置上接近Adobe Commerce as a Cloud Service儲存格的受支援AEM部署區域。
 
    ![Cloud Manager新增環境對話方塊，其中包含生產和中繼詳細資料](../assets/aem-cloud-manager-add-environment.png){width="600" zoomable="yes"}
 
