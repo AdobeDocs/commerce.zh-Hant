@@ -3,14 +3,12 @@ title: 安全性與合規性
 description: 檢閱您網站的安全與法規遵循需求。
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
 feature: Payments, Checkout, Compliance
-redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html?lang=zh-Hant
-source-git-commit: f8c44e088fa66ec506934a0155f1ff819a9db7d4
+redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html
+source-git-commit: 569877d92c66246cfd61cd56b8eae9b5c1284ace
 workflow-type: tm+mt
 source-wordcount: '695'
 ht-degree: 0%
-
 ---
-
 # 安全性與合規性
 
 安全性是[!DNL Payment Services]中最重要的考量，您的[!DNL Payment Services]沒有傳遞任何私人或支付卡產業(PCI)規範資訊。
@@ -19,13 +17,13 @@ ht-degree: 0%
 
 [!DNL Adobe Commerce]和[!DNL Magento Open Source]包含對數個安全性功能的支援。
 
-請參閱核心使用手冊中的[安全性](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/security/security){target="_blank"}，以檢閱安全性最佳實務，並瞭解如何管理管理員工作階段和認證、實作驗證碼以及管理網站限制。
+請參閱核心使用手冊中的[安全性](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security){target="_blank"}，以檢閱安全性最佳實務，並瞭解如何管理管理員工作階段和認證、實作驗證碼以及管理網站限制。
 
 ## PCI法規遵循
 
 支付卡產業(PCI)針對接受透過網際網路以信用卡付款的企業建立了一套要求。 除了維護安全的環境之外，處理客戶信用卡資訊的商戶也應負責符合某些標準准則。
 
-如需詳細資訊，請參閱[PCI法規遵循指南](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/compliance/payments/compliance-pci){target="_blank"}。
+如需詳細資訊，請參閱[PCI法規遵循指南](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/payments/compliance-pci){target="_blank"}。
 
 商戶可以完成[自我評估問卷(SAQ)](https://www.pcisecuritystandards.org/pci_security/completing_self_assessment){target="_blank"}，這是評估持卡人資料安全性的自我驗證工具。
 
@@ -51,7 +49,7 @@ PCI 3-D Secure (3DS)可讓購買者線上上購買信用卡時，與其信用卡
 
 >[!MORELIKETHIS]
 >
-> * 如需詳細資訊，請參閱設定[&#128279;](configure-admin.md#3ds)中的3DS。
+> * 如需詳細資訊，請參閱設定](configure-admin.md#3ds)中的[3DS。
 > * 請參閱PayPal開發人員檔案中的[測試卡](https://developer.paypal.com/docs/checkout/advanced/customize/3d-secure/test/)，以取得有關3DS測試之特定信用卡的詳細資訊。
 
 ### 卡片存放

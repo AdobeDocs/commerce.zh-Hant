@@ -1,15 +1,13 @@
 ---
-title: 在 [!DNL Payment Services]簽出
-description: 自訂 [!DNL Payment Services] 結帳以符合客戶需求。
+title: 在[!DNL Payment Services]中籤出
+description: 自訂[!DNL Payment Services]結帳以符合客戶需求。
 feature: Payments, Checkout, Paas, Saas
 exl-id: 47df165f-2145-4e0e-b272-54b8e768cf19
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+source-git-commit: 569877d92c66246cfd61cd56b8eae9b5c1284ace
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '343'
 ht-degree: 0%
-
 ---
-
 
 # 在[!DNL Payment Services]中籤出
 
@@ -23,7 +21,7 @@ ht-degree: 0%
 
 ![簽出](assets/user-checkout-error.png "時發生錯誤"){width="600" zoomable="yes"}
 
-針對特定[訂單](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/order-management/orders/orders?lang=en)，管理員中也會顯示有關已取消訂單的註解。
+針對特定[訂單](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders?lang=en)，管理員中也會顯示有關已取消訂單的註解。
 
 ![已取消訂單的訂單註解](assets/admin-checkout-error.png "已取消訂單的訂單註解"){width="600" zoomable="yes"}
 
