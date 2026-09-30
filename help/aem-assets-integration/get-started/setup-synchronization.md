@@ -6,30 +6,35 @@ exl-id: 3533d010-926f-4d78-935c-98a9b7040d27
 TQID: https://experienceleague.adobe.com/MM-neGrH-N8xBcCwLgnsaIrIjhbX6uYL5kS41QdV79I
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 subfeature_v2:
   - id: ae62cf09-5996-4921-bda8-fbe67b62e470
+    internal-label: Storefront configuration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
+    internal-label: Implementation
+source-git-commit: 47b9ea797cbe18bd866159311486ba1b588ffcd3
 workflow-type: tm+mt
-source-wordcount: 967
-ht-degree: 2%
-
+source-wordcount: '1058'
+ht-degree: 1%
 ---
-
 # 設定整合
 
 將Commerce連線至AEM Assets執行個體，並選取資產同步的比對策略，以設定整合。
 
 識別AEM Assets專案後，選取在Adobe Commerce和AEM Assets之間同步資產的相符規則。
 
-* **[!UICONTROL Match by product SKU]** — 符合資產中繼資料中的SKU與[Commerce產品SKU](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/implementation-playbook/glossary#sku)的預設規則，以確保資產與正確的產品相關聯。
+* **[!UICONTROL Match by product SKU]** — 符合資產中繼資料中的SKU與[Commerce產品SKU](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#sku)的預設規則，以確保資產與正確的產品相關聯。
 
 * **[!UICONTROL Custom match]** — 符合規則，適用於需要自訂比對邏輯的較複雜案例或特定業務需求。 實作自訂比對需要在Adobe Developer App Builder中開發自訂程式碼，以定義資產與產品的比對方式。 即將推出更多詳細資料……
 
@@ -80,7 +85,7 @@ ht-degree: 2%
 1. 從&#x200B;**[!UICONTROL Asset matching rule]**&#x200B;下拉式清單中選取其中一個資產比對規則以進行資產同步。
 
    * 選取[預設自動比對](../synchronize/default-match.md)的&#x200B;**[!UICONTROL Match by SKU]**，
-   * 選取&#x200B;**[!UICONTROL Custom match]**&#x200B;進行[自訂自動比對](../synchronize/custom-match.md) （需要[Adobe Developer App Builder](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)。）
+   * 選取&#x200B;**[!UICONTROL Custom match]**&#x200B;進行[自訂自動比對](../synchronize/custom-match.md) （需要[Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)。）
 
 1. 新增在&#x200B;**[!UICONTROL Match by product SKU attribute name]**&#x200B;欄位中為AEM Assets產品SKU定義的[Commerce中繼資料欄位名稱](configure-aem.md#define-the-metadata-profile)，預設為`commerce:skus`。
 
@@ -98,6 +103,22 @@ ht-degree: 2%
 
 此等級的服務可確保產品頁面一律顯示最新的影像，讓店面內容保持精確且美觀。
 
+## 同步當地語系化替代文字
+
+本地化的替代文字會使用現有的資產同步程式。 您不需要新的事件型別或單獨的同步設定。
+
+1. 在AEM資產的&#x200B;**[!UICONTROL Commerce]**&#x200B;索引標籤中新增一或多個存放區檢視替代文字列。
+
+1. 將資產與Commerce產品SKU建立關聯。
+
+1. 在AEM Assets中核准資產。
+
+1. 等待資產事件和同步程式完成。
+
+1. 驗證Commerce管理員和店面回應中的當地語系化值。
+
+如需欄位名稱、驗證規則和Commerce結果，請參閱AEM Assets中的[Commerce中繼資料](../metadata.md)。
+
 ### 設定視覺效果擁有者
 
 **視覺化擁有者**&#x200B;設定會決定要提供整合中產品影像的系統：
@@ -108,7 +129,7 @@ ht-degree: 2%
 
 管理員會顯示該擁有者的可用影像，而其餘影像則會呈現灰色，並以&#x200B;**隱藏**&#x200B;標籤顯示。
 
-如需影像顯示行為的詳細資訊，請參閱[設定影像詳細資料](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/products/digital-assets/product-image#set-image-details){target=_blank}主題。
+如需影像顯示行為的詳細資訊，請參閱[設定影像詳細資料](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#set-image-details){target=_blank}主題。
 
 >[!TIP]
 >

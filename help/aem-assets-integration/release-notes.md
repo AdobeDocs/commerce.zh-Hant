@@ -3,13 +3,11 @@ title: AEM Assets整合發行說明
 description: 如需所有AEM Assets整合發行版本的相關資訊，請參閱發行說明。
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
-source-git-commit: afef108e512c69047a0420566a498dab164c207e
+source-git-commit: a0b269f6d4b709dd0aed4c23264928f28b2f5d98
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1784'
 ht-degree: 0%
-
 ---
-
 # AEM Assets整合發行說明
 
 以下版本說明說明AEM Assets整合的所有版本，包括：
@@ -20,7 +18,7 @@ ht-degree: 0%
 
 如需在功能發行版本之外發行的功能變更和修正，請檢閱&#x200B;_託管服務更新_&#x200B;區段。
 
-深入瞭解即將發行的版本、產品支援，以及哪些Adobe Commerce版本支援AEM Assets整合擴充功能，請參閱Adobe Commerce [發行排程](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/planning/schedule)和[產品可用性](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/product-availability)主題。
+深入瞭解即將發行的版本、產品支援，以及哪些Adobe Commerce版本支援AEM Assets整合擴充功能，請參閱Adobe Commerce [發行排程](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule)和[產品可用性](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability)主題。
 
 ## 託管服務更新
 
@@ -30,13 +28,43 @@ ht-degree: 0%
 
 _2025年9月11日_
 
-![新問題](../assets/new.svg)已更新具有新`asset_matches`屬性的[自訂自動比對](https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/synchronize/custom-match){target=_blank}端點。
+![新問題](../assets/new.svg)已更新具有新`asset_matches`屬性的[自訂自動比對](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match){target=_blank}端點。
 
 _2025年2月11日_
 
 ![新問題](../assets/new.svg)現在，商家可以同步產品與類別的影像。
 
 +++
+
+## v1.4.7
+
+_2026年9月18日_
+
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.5版和更新版本。
+
+![已修正問題](../assets/fix.svg)<!-- Issue ACAP-1317 -->修正啟用Commerce非同步設定儲存時，為[自訂自動比對](synchronize/custom-match.md)上傳的`workspace.json`檔案未正確儲存的問題。 以前，管理員請求僅將上傳中繼資料排入佇列，而非檔案內容，因此當非同步設定取用者處理儲存時，無法再讀取臨時上傳檔案。 因此，設定似乎已成功儲存，而App Builder OAuth值保持不變。 上傳的App Builder憑證現在會在佇列邊界中倖存，並由非同步取用者正確處理。
+
+>[!IMPORTANT]
+>
+>如果您使用自訂比對器，並啟用「非同步設定儲存」選項，請在升級至此版本後重新上傳`workspace.json`檔案。 如需上傳指示，請參閱[非同步設定儲存](synchronize/custom-match.md#async-config-save)。
+
+## v1.4.6
+
+_2026年9月8日_
+
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.5版和更新版本。
+
+![新問題](../assets/new.svg)<!-- Issue ACAP-1272 -->自訂AEM影像角色現在在同步期間仍會保留。 除了四個標準角色（`image`、`small_image`、`thumbnail`和`swatch_image`）之外，AEM `commerce:roles`中繼資料欄位中的自訂值已擷取並對應至Commerce產品媒體收藏館資料。 如需詳細資訊，請參閱[自訂自動比對](synchronize/custom-match.md)。
+
+![新問題](../assets/new.svg)<!-- Issue ACAP-1272 --> Adobe Commerce現在可以非同步檢查AEM Assets整合擴充功能更新，並在有新版本可用時通知管理員員。 管理員也可以使用`bin/magento aem:assets:check-update`執行手動檢查。 如需詳細資訊，請參閱[檢查擴充功能更新](get-started/check-for-updates.md)。
+
+## v1.4.5
+
+_2026年8月3日_
+
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.5版和更新版本。
+
+![已修正問題](../assets/fix.svg)<!-- Issue ACAP-1321 -->已修正商店檢視資產可見性的回溯相容性問題。 未指定隱藏存放區檢視的現有資產同步要求仍可繼續運作，不會有任何變更。
 
 ## v1.4.4
 
@@ -45,6 +73,8 @@ _2026年7月30日_
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.5版和更新版本。
 
 ![新問題](../assets/new.svg)現在，商家可以隱藏AEM資產的特定商店檢視。 當AEM Assets將影像標示為一個或多個商店檢視的隱藏時，Commerce會從這些商店檢視上的店面中排除該影像。 Admin產品媒體集現在包含&#x200B;**[!UICONTROL Store View Visibility]**&#x200B;欄位，顯示哪些商店檢視會隱藏影像。<!-- Issue ACAP-1308 -->
+
+![已修正問題](../assets/fix.svg)修正Page Builder整合封裝不正確需要`magento/module-page-builder`封裝，導致無法獨立安裝封裝的問題。
 
 ## v1.4.2
 
@@ -86,7 +116,7 @@ _2026年5月14日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.5版和更新版本。
 
-![新問題](../assets/new.svg)<!-- Issue ACAP-1268 -->從AEM匯入影像或資產至Commerce產品媒體集時，替代文字現在會作為同步處理的一部分移轉。 可在AEM Assets中為每個商店檢視設定替代文字。 請參閱AEM Assets中繼資料[&#128279;](metadata.md#localized-alt-text-in-aem-assets-metadata){target=_blank}中的本地化替代文字。
+![新問題](../assets/new.svg)<!-- Issue ACAP-1268 -->從AEM匯入影像或資產至Commerce產品媒體集時，替代文字現在會作為同步處理的一部分移轉。 可在AEM Assets中為每個商店檢視設定替代文字。 請參閱AEM Assets中繼資料](metadata.md#localized-alt-text-in-aem-assets-metadata){target=_blank}中的[本地化替代文字。
 
 ## v1.3.5
 
@@ -106,7 +136,7 @@ _2026年3月11日_
 
 ![新問題](../assets/new.svg)<!-- Issue PAY-1041 -->已新增對Adobe Commerce 2.4.9-beta1和PHP 8.5的支援。
 
-![新問題](../assets/new.svg)<!-- Issue ACCS-169 --> **[!UICONTROL Program ID]**、**[!UICONTROL Environment ID]**&#x200B;和&#x200B;[**[!UICONTROL Domain mapping]**](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/domain-mappings/add-domain-mapping){target=_blank}欄位現在會根據[使用者的IMS工作階段](https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/get-started/permissions#user-permissions-and-ims){target=_blank}自動填入為下拉式清單。
+![新問題](../assets/new.svg)<!-- Issue ACCS-169 --> **[!UICONTROL Program ID]**、**[!UICONTROL Environment ID]**&#x200B;和&#x200B;[**[!UICONTROL Domain mapping]**](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/domain-mappings/add-domain-mapping){target=_blank}欄位現在會根據[使用者的IMS工作階段](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/permissions#user-permissions-and-ims){target=_blank}自動填入為下拉式清單。
 
 ## v1.2.14
 
@@ -114,7 +144,7 @@ _2026年2月13日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.5版和更新版本。
 
-![已修正問題](../assets/fix.svg)<!-- Issue ACCS-171 -->已修正頁面重新載入後，執行階段動作下拉式清單顯示未儲存工作區資料的[自訂符合專案](https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/synchronize/custom-match)問題。
+![已修正問題](../assets/fix.svg)<!-- Issue ACCS-171 -->已修正頁面重新載入後，執行階段動作下拉式清單顯示未儲存工作區資料的[自訂符合專案](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match)問題。
 
 ## v1.2.13
 
@@ -122,7 +152,7 @@ _2026年2月10日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.5版和更新版本。
 
-![新問題](../assets/new.svg)<!-- Issue ACCS-171 -->已新增簡化[自訂比對](https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/synchronize/custom-match){target=_blank}設定的&#x200B;**[!UICONTROL Adobe I/O Workspace Configuration]**&#x200B;欄位。 商戶現在可以上傳其App Builder `workspace.json`檔案，以自動填入OAuth認證和執行階段動作端點。
+![新問題](../assets/new.svg)<!-- Issue ACCS-171 -->已新增簡化[自訂比對](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match){target=_blank}設定的&#x200B;**[!UICONTROL Adobe I/O Workspace Configuration]**&#x200B;欄位。 商戶現在可以上傳其App Builder `workspace.json`檔案，以自動填入OAuth認證和執行階段動作端點。
 
 ## v1.2.12
 
@@ -184,7 +214,7 @@ _2025年10月17日_
 
 ![已修正問題](../assets/fix.svg)<!-- Issue ACAP-1155 -->已改善自訂屬性的整體穩定性。 使用非同步API時，自訂屬性現在可以正確更新。
 
-![已修正問題](../assets/fix.svg)<!-- Issue ACAP-1074 -->現在，定義基底連結URL時，[product-asset同步化](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/site-store/store-urls#configure-the-base-url){target=_blank}不會失敗。
+![已修正問題](../assets/fix.svg)<!-- Issue ACAP-1074 -->現在，定義基底連結URL時，[product-asset同步化](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls#configure-the-base-url){target=_blank}不會失敗。
 
 ## v1.2.3
 
@@ -208,9 +238,9 @@ _2025年8月7日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.5版和更新版本。
 
-![新問題](../assets/new.svg)<!-- Issue ACAP-1018 -->現在，商家可以在從管理員設定Assets整合時，選取[視覺效果擁有者](https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/get-started/setup-synchronization){target=_blank}來選擇影像和媒體資產的來源。
+![新問題](../assets/new.svg)<!-- Issue ACAP-1018 -->現在，商家可以在從管理員設定Assets整合時，選取[視覺效果擁有者](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization){target=_blank}來選擇影像和媒體資產的來源。
 
-![新問題](../assets/new.svg)<!-- Issue ACAP-1078 -->已更新具有新`asset_matches`屬性的[自訂自動比對](https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/synchronize/custom-match){target=_blank}端點。 此變更可讓您實作自己的比對邏輯，以傳回與特定`productSku`相關聯的所有資產。
+![新問題](../assets/new.svg)<!-- Issue ACAP-1078 -->已更新具有新`asset_matches`屬性的[自訂自動比對](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match){target=_blank}端點。 此變更可讓您實作自己的比對邏輯，以傳回與特定`productSku`相關聯的所有資產。
 
 ## v1.1.2
 
@@ -226,7 +256,7 @@ _2025年4月23日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.5版和更新版本。
 
-![新問題](../assets/new.svg)<!-- Issue ACAP-955 -->現在，可以使用[自訂網域URL](https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/get-started/setup-synchronization#optional-configure-the-custom-domain-url)，而不是AEM傳遞URL。 如果商家在其AEM儀表板中設定&#x200B;**自訂網域名稱**，則需要在Commerce中新增此&#x200B;**自訂網域URL**。
+![新問題](../assets/new.svg)<!-- Issue ACAP-955 -->現在，可以使用[自訂網域URL](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization#optional-configure-the-custom-domain-url)，而不是AEM傳遞URL。 如果商家在其AEM儀表板中設定&#x200B;**自訂網域名稱**，則需要在Commerce中新增此&#x200B;**自訂網域URL**。
 
 ![已修正問題](../assets/fix.svg)<!-- Issue ACAP-987 -->已改善AEM Assets同步程式的整體記錄。
 
@@ -236,7 +266,7 @@ _2025年3月12日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.5版和更新版本。
 
-![新問題](../assets/new.svg)<!-- Issue ACAP-xx -->現在，Assets選擇器需要[Assets選擇器IMS使用者端ID](https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/get-started/setup-synchronization)，才能將AEM Assets影像與產品類別和頁面產生器產生的內容對應。
+![新問題](../assets/new.svg)<!-- Issue ACAP-xx -->現在，Assets選擇器需要[Assets選擇器IMS使用者端ID](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization)，才能將AEM Assets影像與產品類別和頁面產生器產生的內容對應。
 
 ## v1.0.20
 

@@ -6,24 +6,30 @@ exl-id: 40ca36e0-d617-4814-852d-bc60ff53b2b3
 TQID: https://experienceleague.adobe.com/y-207fJaMiLZbQW7bzv2WCzFItckGDnyKUm6Q0tqMw8
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 subfeature_v2:
   - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+    internal-label: Categories
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: da3860b0-d637-47df-bef0-273751180266
-source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
+    internal-label: Digital asset management
+source-git-commit: cf31a1ed5069095fb3c4c50d99475e60ee61efa9
 workflow-type: tm+mt
-source-wordcount: 1073
+source-wordcount: '1236'
 ht-degree: 0%
-
 ---
-
 # 管理Commerce媒體資產
 
 <!--In ACAP-844, this topic was linked to from the Commerce Admin products images and videos when the Assets integration is enabled. If the URL to the topic changes, be sure to add a redirect.-->
@@ -72,6 +78,14 @@ ht-degree: 0%
 
 * [預設自動比對](synchronize/default-match.md)
 * [自訂自動比對](synchronize/custom-match.md)。
+
+### 管理當地語系化的替代文字
+
+您在AEM Assets中撰寫當地語系化替代文字，而非在Commerce產品媒體藝廊中撰寫。 在&#x200B;**[!UICONTROL Alt Texts]**&#x200B;欄位中為每個Commerce存放區檢視新增一列。 加入此影像的替代文字值（例如「White T-Shirt」），然後按一下&#x200B;**[!UICONTROL Save & Close]**，讓現有的同步程式將這些值傳輸至Commerce。
+
+Commerce會將每個已同步的值儲存在標準影像&#x200B;**[!UICONTROL Label]**&#x200B;欄位中。 替代文字本地化不會變更資產指派、影像角色或相簿位置。 客戶建立的資料庫欄位（例如`alt_text`）不在標準整合範圍內。
+
+![Adobe Experience Manager替代文字](./assets/aem-alt-texts.png){width="600" zoomable="yes"}
 
 ### 同步SLA
 
@@ -177,16 +191,18 @@ Adobe Commerce可讓商家將影像與產品類別建立關聯，協助建立吸
 
 1. 按一下&#x200B;**[!UICONTROL Save]**&#x200B;並繼續。
 
-   如需建立類別的詳細資訊，請參閱&#x200B;**Commerce Catalog Management Guide**&#x200B;中的[完成類別內容](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content)。
+   如需建立類別的詳細資訊，請參閱&#x200B;**Commerce Catalog Management Guide**&#x200B;中的[完成類別內容](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content)。
 
 ## 更新資產
 
 當您在AEM Assets中更新並核准資產後，系統會自動使用自動比對功能將更新傳送至Adobe Commerce。 此程式會在資產核準時觸發。 為確保包括所有最終變更和中繼資料更新，在核准資產之前，請務必重新處理資產。
 
+當您變更已同步化資產上的角色或位置值時，Commerce會更新現有的角色指派，而非新增重複。 如果同步嘗試失敗，在重試之前請檢查Commerce記錄檔中的錯誤。 更新完成後，請確認產品的&#x200B;**影像和視訊**&#x200B;區段上的變更，並確認資產出現在媒體集的預期角色和位置中。
+
 若要讓Commerce端工作流程透過中繼資料將資產連結至產品，請參閱[預設自動比對](synchronize/default-match.md)主題。
 
 如需AEM Assets程式的相關資訊，請參閱下列檔案：
 
-* [重新處理數位資產](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
+* [重新處理數位資產](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
 
-* [核准資產](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)
+* [核准資產](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)
