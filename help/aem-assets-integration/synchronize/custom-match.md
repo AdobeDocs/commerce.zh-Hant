@@ -6,19 +6,21 @@ exl-id: e7d5fec0-7ec3-45d1-8be3-1beede86c87d
 TQID: https://experienceleague.adobe.com/RHRfW99iShMpajrEC8BhvoMEfQ-ABdipWTCdK-KaVH4
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
+    internal-label: Metadata
+source-git-commit: 7ecedcc7c17abdeb64507d8f74ec6fc103b361cc
 workflow-type: tm+mt
-source-wordcount: 605
+source-wordcount: '927'
 ht-degree: 0%
-
 ---
-
 # 自訂自動比對
 
 如果預設的自動比對策略（**OOTB自動比對**）不符合您的特定業務需求，請選取自訂比對選項。 此選項支援使用[Adobe Developer App Builder](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)來開發自訂符合器應用程式，以處理複雜的符合邏輯，或來自無法將中繼資料填入AEM Assets的協力廠商系統的資產。
@@ -120,6 +122,42 @@ ht-degree: 0%
 1. 從每個流程的下拉式選單中選取適當的執行階段動作。
 
 1. 按一下&#x200B;**[!UICONTROL Save Config]**。
+
+## 非同步設定儲存
+
+如果您的Commerce執行個體已啟用[非同步設定儲存](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save)選項，則非同步取用者會將設定變更排入佇列並套用，而不會立即儲存在相同請求中。 若要在此模式中上傳自訂自動比對的`workspace.json`檔案，請依序完成下列步驟：
+
+1. 確認Commerce非同步設定儲存已[啟用](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save)。
+
+1. 從Admin移至&#x200B;**[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Adobe Services]** > **[!UICONTROL AEM Assets Integration]**。
+
+1. 上傳目前的App Builder `workspace.json`檔案。
+
+1. 儲存設定。
+
+1. 等候非同步設定取用者完成儲存處理。
+
+1. 驗證OAuth值和相依的整合設定。
+
+1. 驗證外部符合者註冊是否反映更新。
+
+>[!NOTE]
+>
+>如果「非同步設定儲存」已停用，則會套用一般的同步儲存行為，而且您不需要等候佇列取用者。
+
+### 疑難排解非同步設定儲存
+
+| 症狀 | 該做什麼 |
+| --- | --- |
+| OAuth值在儲存後保持不變 | 確認您正在執行AEM Assets Integration擴充功能1.4.7版或更新版本，上傳新的`workspace.json`檔案，並等候佇列處理完成，然後再檢查值。 |
+| 上傳無效後儲存失敗 | 驗證檔案是否為格式正確的`workspace.json`檔案，且包含預期的App Builder認證。 |
+| 未上傳任何檔案 | 現有的已儲存組態保持不變。 |
+| 外部比對器註冊不會更新 | 檢查佇列取用者是否已完成處理、檢閱Commerce記錄，並確認外部符合者註冊狀態。 |
+| 停用非同步設定儲存 | 一般同步儲存行為適用；此疑難排解區段不適用。 |
+
+>[!NOTE]
+>
+>如果您開發AEM Assets整合的設定觀察程式，就不需要依賴原始HTTP請求引數。 非同步設定儲存和其他程式化設定儲存可在沒有管理員請求內容的情況下執行觀察者。
 
 ## 自訂比對器API端點
 
@@ -292,7 +330,7 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-t
 | 屬性 | 資料型別 | 說明 |
 | --- | --- | --- |
 | `asset_id` | 字串 | 資產識別碼。 |
-| `asset_roles` | 陣列 | 資產角色。 使用支援的[Commerce資產角色](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)，例如`thumbnail`、`image`、`small_image`和`swatch_image`。 |
+| `asset_roles` | 陣列 | 資產角色。 使用支援的[Commerce資產角色](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)，例如`thumbnail`、`image`、`small_image`和`swatch_image`。 若使用AEM Assets整合擴充功能1.4.6和更新版本，也可接受自訂影像角色（例如`hero`或`custom_role_1`）。 |
 | `asset_format` | 字串 | 資產格式。 可能的值為`image`和`video`。 |
 | `asset_position` | 數字 | 資產在產品相簿中的位置。 |
 

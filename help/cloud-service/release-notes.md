@@ -49,9 +49,9 @@ topic_v2:
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
 last-update: 2026-08-07
-source-git-commit: 9cc9b3270d808102f293609a606ff32a781d084c
+source-git-commit: 1e03d399d191875186f5839458c3036179cf1b17
 workflow-type: tm+mt
-source-wordcount: '6869'
+source-wordcount: '7503'
 ht-degree: 0%
 ---
 # 發行說明
@@ -62,7 +62,93 @@ ht-degree: 0%
 >
 >如果您正在雲端基礎結構上使用Adobe Commerce內部部署或Adobe Commerce，請參閱[Adobe Commerce發行說明](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/overview)。
 
-## 2026年9月 — 發行說#2 {#latest}
+## 2026年10月 — 發行說#1 {#latest}
+
+[!BADGE 沙箱]{type=Caution tooltip="列出的專案目前僅在沙箱環境中可用。 Adobe會先在沙箱環境中推出新版本，讓您可以在生產環境中使用該版本之前有時間測試即將推出的變更。"}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+以下專案將於2026年10月6日新增到生產環境。
+
+>[!BEGINSHADEBOX]
+
+### 在運費webhook中存取公司詳細資料
+
+`plugin.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates` webhook裝載現在包含購物車的`company_id`和公司自訂屬性，因此[!DNL App Builder]運送整合可決定資格，例如免費運送，而不需呼叫[!DNL Commerce]。 對Webhook的[!UICONTROL Hook Fields]設定中的`rateRequest.company`欄位。<!-- CCSAAS-5485 -->
+
+### 在REST中管理目錄價格規則
+
+新的REST API端點可讓整合以程式設計方式管理和搜尋[目錄價格規則](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/catalog-price-rule/price-rules-catalog)。<!-- ACCS-1621 -->
+
+### 使用reCAPTCHA保護預先簽署的上傳
+
+您現在可以在[`initiateUpload` GraphQL突變](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads/mutations/initiate-upload)上要求[!DNL Google reCAPTCHA]驗證，以保護預先簽署的檔案上傳。 若要在[!DNL Admin]中啟用此設定，請瀏覽至&#x200B;[!UICONTROL **存放區**] > [!UICONTROL **組態**] > [!UICONTROL **安全性**] > [!UICONTROL **Google reCAPTCHA存放區**]&#x200B;中的&#x200B;[!UICONTROL **啟用預先簽署的上傳**]。<!-- CCSAAS-5490 -->
+
+### 使用REST建立退貨的自訂屬性
+
+`/V1/returns` REST API端點接受傳回(RMA)專案的自訂屬性，因此後端整合（例如訂單管理系統）可以同步傳回欄位，而不需要使用店面GraphQL API。
+
+使用來自`/V1/media/initiate-upload`和`finish-upload`流程的索引鍵設定檔案和影像屬性值。<!-- CCSAAS-5502 -->
+
+### 限制來賓公司註冊
+
+新的組態選項可讓您防止未驗證的訪客客戶透過`createCompany` GraphQL突變從店面註冊公司。
+
+此選項在[!DNL Commerce Admin]中無法使用。 若要啟用它，請使用[`PUT /V1/system/config`](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/system-config) REST API端點將`btob/company/restrict_guest_company_registration`設定旗標設定為`1`：
+
+```json
+{
+  "config": {
+    "btob/company/restrict_guest_company_registration": "1"
+  }
+}
+```
+
+啟用時，[!DNL Commerce]會封鎖來自`createCompany`突變和`isCompanyEmailAvailable`查詢的客體呼叫者。<!-- ACCS-1823 -->
+
+### 透過GraphQL稽核訂單
+
+`CustomerOrdersFilterInput` GraphQL輸入物件現在支援`original_number`欄位，可讓您在訂單編輯鏈結中篩選任何訂單編號。 回應會傳回原始訂單，以及從後續編輯建立的所有訂單，傳回為單一鏈結，符合REST中的`order_original_id`篩選器。<!-- ACCS-1442 -->
+
+### 依日期與時間排程型錄價格規則
+
+您現在可以將[目錄價格規則](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/catalog-price-rule/price-rules-catalog)的每日時間設定為在[!DNL Commerce Admin]開始或結束。<!-- ACCS-1762 -->
+
+### 透過管理員REST API套用自訂運費折扣
+
+您現在可以透過管理員REST API，針對不符合購物車價格規則的情況，對購物車套用任意配送折扣。
+
+使用`POST /V1/carts/:cartId/shipping-discount`設定折扣。 使用此端點需要管理員或整合層級的存取權。<!-- ACCS-1156 -->
+
+### 增強功能和錯誤修正
+
+此版本中包括下列選取的增強功能、最佳化和錯誤修正：
+
+* 當您建立或編輯webhook時，[!DNL Commerce Admin]現在會顯示警告，其中包含Adobe I/O Runtime `X-OW-EXTRA-LOGGING`標頭設定為`on`。 標頭用於偵錯，不建議在生產環境中使用。<!-- CCSAAS-5486 -->
+
+* 透過預先簽署的S3上傳URL上傳的檔案，現在會額外掃描惡意軟體。<!-- ACCS-1463 -->
+
+* 大量API現在會強制實施每個請求的最大實體數量。 超過限制的請求會傳回錯誤。<!-- ACCS-703 -->
+
+* 修正產品可銷售數量可能少報，而無法正確封鎖加入購物車、REST和GraphQL庫存檢查的問題。<!-- ACCS-1908 -->
+
+* 修正[!DNL Commerce Admin]客戶格線針對屬於公司的B2B客戶顯示重複列的問題。<!-- ACCS-1143 -->
+
+* 修正儲存[!DNL AEM Assets]整合設定未登入租使用者的問題。<!-- ACAP-1317 -->
+
+* 修正特殊價格可能超過其到期日的問題。<!-- CCSAAS-5499 -->
+
+* 修正[!UICONTROL Return Items]格線無法載入待傳回的問題。<!-- CCSAAS-5514 -->
+
+* 修正當購物車包含無庫存專案時，要求購物車價格或總計可能會傳回錯誤的問題。<!-- CEXT-6776 -->
+
+* 解決當嘗試尋找遺失SKU時，詳細目錄取用者可能壓倒訊息佇列的問題。<!-- ACCS-1976 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## 2026年9月 — 發行說#2
 
 <!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 

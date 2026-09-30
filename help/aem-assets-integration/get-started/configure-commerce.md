@@ -7,21 +7,25 @@ exl-id: c0fb59e1-daf8-4f48-a7a7-b48e8782dfad
 TQID: https://experienceleague.adobe.com/z4WBMzUa6Jn8EjUH1e5oojV4I3bTDZJylwtQ7LZ4wPE
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
+    internal-label: Metadata
+source-git-commit: 555a9c9aff3f4d5f60f13374a9f23a70e2111b3b
 workflow-type: tm+mt
-source-wordcount: 1675
+source-wordcount: '1824'
 ht-degree: 0%
-
 ---
-
 # 安裝Adobe Commerce套件
 
 Commerce的這項整合可讓您在Adobe Commerce和Adobe Experience Manager Assets (AEM Assets)之間同步資產。 擴充功能提供一套工具和服務，用於管理兩個平台上的產品影像、視訊和其他媒體資產。
@@ -60,6 +64,12 @@ Commerce的這項整合可讓您在Adobe Commerce和Adobe Experience Manager Ass
 
 在具有AEM Assets 2.4.5+版本的Adobe Commerce執行個體上安裝最新版本的Adobe Commerce整合擴充功能(`aem-assets-integration`)。 擴充功能會從[repo.magento.com](https://repo.magento.com/admin/dashboard)存放庫以撰寫器中繼資料的形式傳送。
 
+依預設，`composer require magento/aem-assets-integration`會安裝最新的可用版本。 若要改為釘選精確版本（例如，將多個環境保留在同一個已驗證的版本上），請使用精確限制，例如`"magento/aem-assets-integration": "1.4.7"`；只有在要採用相容的1.x範圍時才使用`^1.4.7`。
+
+>[!NOTE]
+>
+>如果您從1.4.6之前的版本升級，Adobe建議直接升級至1.4.7或更新版本。 1.4.6版匯入了自訂影像角色和擴充功能更新檢查程式。 1.4.7版修正啟用「Commerce非同步設定儲存」時，用於[自訂自動比對](../synchronize/custom-match.md)的`workspace.json`檔案未正確儲存的問題。 如果您使用已啟用非同步設定儲存的自訂比對器，請在升級後重新上傳您的`workspace.json`檔案。 請參閱[非同步設定儲存](../synchronize/custom-match.md#async-config-save)。
+
 >[!BEGINTABS]
 
 >[!TAB 雲端基礎結構]
@@ -78,10 +88,10 @@ Commerce的這項整合可讓您在Adobe Commerce和Adobe Experience Manager Ass
    magento-cloud environment:checkout <environment-id>
    ```
 
-1. 新增Commerce擴充功能的AEM Assets整合。
+1. 新增Commerce擴充功能的AEM Assets整合。 省略版本限制以安裝最新可用版本，或釘選特定版本，如下所示。
 
    ```shell
-   composer require "magento/aem-assets-integration" "<version-tbd>" --no-update
+   composer require "magento/aem-assets-integration" "^1.4.7" --no-update
    ```
 
 1. 更新套件相依性。
@@ -106,7 +116,7 @@ Commerce的這項整合可讓您在Adobe Commerce和Adobe Experience Manager Ass
 
 使用此方法來安裝內部部署執行個體的[!DNL AEM Assets Integration]延伸模組。
 
-1. 使用Composer將適用於Commerce的AEM Assets整合擴充功能新增至您的專案：
+1. 使用Composer將AEM Assets Integration for Commerce擴充功能新增至您的專案。 省略版本限制以安裝最新的可用版本，或釘選特定版本，例如`"^1.4.7"`。
 
    ```shell
    composer require "magento/aem-assets-integration" --no-update

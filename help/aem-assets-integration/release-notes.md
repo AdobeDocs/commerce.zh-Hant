@@ -3,13 +3,11 @@ title: AEM Assets整合發行說明
 description: 如需所有AEM Assets整合發行版本的相關資訊，請參閱發行說明。
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
-source-git-commit: afef108e512c69047a0420566a498dab164c207e
+source-git-commit: a0b269f6d4b709dd0aed4c23264928f28b2f5d98
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1784'
 ht-degree: 0%
-
 ---
-
 # AEM Assets整合發行說明
 
 以下版本說明說明AEM Assets整合的所有版本，包括：
@@ -38,6 +36,36 @@ _2025年2月11日_
 
 +++
 
+## v1.4.7
+
+_2026年9月18日_
+
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.5版和更新版本。
+
+![已修正問題](../assets/fix.svg)<!-- Issue ACAP-1317 -->修正啟用Commerce非同步設定儲存時，為[自訂自動比對](synchronize/custom-match.md)上傳的`workspace.json`檔案未正確儲存的問題。 以前，管理員請求僅將上傳中繼資料排入佇列，而非檔案內容，因此當非同步設定取用者處理儲存時，無法再讀取臨時上傳檔案。 因此，設定似乎已成功儲存，而App Builder OAuth值保持不變。 上傳的App Builder憑證現在會在佇列邊界中倖存，並由非同步取用者正確處理。
+
+>[!IMPORTANT]
+>
+>如果您使用自訂比對器，並啟用「非同步設定儲存」選項，請在升級至此版本後重新上傳`workspace.json`檔案。 如需上傳指示，請參閱[非同步設定儲存](synchronize/custom-match.md#async-config-save)。
+
+## v1.4.6
+
+_2026年9月8日_
+
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.5版和更新版本。
+
+![新問題](../assets/new.svg)<!-- Issue ACAP-1272 -->自訂AEM影像角色現在在同步期間仍會保留。 除了四個標準角色（`image`、`small_image`、`thumbnail`和`swatch_image`）之外，AEM `commerce:roles`中繼資料欄位中的自訂值已擷取並對應至Commerce產品媒體收藏館資料。 如需詳細資訊，請參閱[自訂自動比對](synchronize/custom-match.md)。
+
+![新問題](../assets/new.svg)<!-- Issue ACAP-1272 --> Adobe Commerce現在可以非同步檢查AEM Assets整合擴充功能更新，並在有新版本可用時通知管理員員。 管理員也可以使用`bin/magento aem:assets:check-update`執行手動檢查。 如需詳細資訊，請參閱[檢查擴充功能更新](get-started/check-for-updates.md)。
+
+## v1.4.5
+
+_2026年8月3日_
+
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.5版和更新版本。
+
+![已修正問題](../assets/fix.svg)<!-- Issue ACAP-1321 -->已修正商店檢視資產可見性的回溯相容性問題。 未指定隱藏存放區檢視的現有資產同步要求仍可繼續運作，不會有任何變更。
+
 ## v1.4.4
 
 _2026年7月30日_
@@ -45,6 +73,8 @@ _2026年7月30日_
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.5版和更新版本。
 
 ![新問題](../assets/new.svg)現在，商家可以隱藏AEM資產的特定商店檢視。 當AEM Assets將影像標示為一個或多個商店檢視的隱藏時，Commerce會從這些商店檢視上的店面中排除該影像。 Admin產品媒體集現在包含&#x200B;**[!UICONTROL Store View Visibility]**&#x200B;欄位，顯示哪些商店檢視會隱藏影像。<!-- Issue ACAP-1308 -->
+
+![已修正問題](../assets/fix.svg)修正Page Builder整合封裝不正確需要`magento/module-page-builder`封裝，導致無法獨立安裝封裝的問題。
 
 ## v1.4.2
 

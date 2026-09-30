@@ -6,19 +6,21 @@ exl-id: 8a18639b-f508-456e-8d22-18e3e0fdd515
 TQID: https://experienceleague.adobe.com/z7vpuhsVJnKohiU-bKNrcGnoIQ5WAwcwiccYlvawN0U
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+    internal-label: Metadata
+source-git-commit: cf31a1ed5069095fb3c4c50d99475e60ee61efa9
 workflow-type: tm+mt
-source-wordcount: 317
+source-wordcount: '349'
 ht-degree: 0%
-
 ---
-
 # 預設自動比對
 
 Commerce的AEM Assets整合提供以&#x200B;**AEM Assets**&#x200B;中繼資料組態為基礎的預設自動比對機制(**[!UICONTROL Match by product SKU]**)。 此規則可讓您在&#x200B;**Adobe Commerce**&#x200B;與&#x200B;**AEM Assets**&#x200B;之間無縫同步，確保資產會自動連結至正確的銷售實體。
@@ -50,6 +52,8 @@ Commerce的AEM Assets整合提供以&#x200B;**AEM Assets**&#x200B;中繼資料�
    ![範例中繼資料](../assets/metadata-commerce-yes.png){width="600" zoomable="yes"}
 
 1. 設定將資產連結至相關產品SKU的中繼資料（[!UICONTROL SKU]、[!UICONTROL position]和[!UICONTROL role]）。
+
+   四個標準角色是`image`、`small_image`、`thumbnail`和`swatch_image`。 使用AEM Assets整合擴充功能1.4.6版或更新版本，您也可以輸入自訂影像角色，例如`hero`或`custom_role_1`。 如需詳細資訊，請參閱[自訂自動比對](custom-match.md)。
 
    >[!NOTE]
    >

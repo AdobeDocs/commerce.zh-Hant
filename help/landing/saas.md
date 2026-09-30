@@ -8,26 +8,34 @@ badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.a
 TQID: https://experienceleague.adobe.com/pWbJSCrV9CcdJXNTkuXyCxh73eUA7nYt1okexwtK7II
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
 subfeature_v2:
   - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+    internal-label: Cloud architecture
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+    internal-label: Data management
+source-git-commit: 569877d92c66246cfd61cd56b8eae9b5c1284ace
 workflow-type: tm+mt
-source-wordcount: 1665
+source-wordcount: '1665'
 ht-degree: 0%
-
 ---
-
 # [!DNL Commerce Services Connector]
 
 部分Adobe Commerce和Magento Open Source功能由[!DNL Commerce Services]提供技術支援，並部署為SaaS （軟體即服務）。 若要使用這些服務，您必須使用生產及沙箱API金鑰連線您的[!DNL Commerce]執行個體，並在[設定](#saas-configuration)中指定資料空間。 您只需要為每個執行個體設定一次連線。
@@ -155,9 +163,9 @@ ht-degree: 0%
 
    如果您有要與Commerce服務整合的個別執行個體，請[提交支援票證](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)，為每個額外的執行個體請求新的SaaS專案。 支援人員建立SaaS專案後，請使用相同的API金鑰&#x200B;**為執行個體**&#x200B;設定Commerce Services聯結器，並選取新的SaaS專案和資料空間。
 
->[!WARNING]
->
-> 如果您在API入口網站產生新金鑰，請立即更新管理員設定中的API金鑰。 如果管理員仍在使用舊金鑰，您的SaaS擴充功能會停止運作並中斷資料收集。
+   >[!WARNING]
+   >
+   > 如果您在API入口網站產生新金鑰，請立即更新管理員設定中的API金鑰。 如果管理員仍在使用舊金鑰，您的SaaS擴充功能會停止運作並中斷資料收集。
 
 若要變更SaaS專案或資料空間的名稱，請按一下其中任何一個專案旁邊的&#x200B;**重新命名**。 變更名稱不會影響您的服務，因為名稱只是一個標籤，可協助您識別並區分專案和資料空間。
 

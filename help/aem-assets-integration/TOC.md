@@ -4,13 +4,11 @@ breadcrumb-title: '[!DNL AEM Assets]整合'
 user-guide-description: 有關適用於Adobe Commerce和AEM Assets管理員以及電子商務行銷人員的Magento Open Source整合的完整資訊。
 feature: CMS, Page Content
 nudge: true
-source-git-commit: de2af14a02ba21bfedd4fa6841f0f8b544b013cc
+source-git-commit: 7db47b2b78642d47b0f38c3933bd87a0a2b6e127
 workflow-type: tm+mt
-source-wordcount: '102'
+source-wordcount: '106'
 ht-degree: 3%
-
 ---
-
 
 # AEM Assets整合 {#aem-assets-integration}
 
@@ -18,19 +16,20 @@ ht-degree: 3%
 - [發行說明](release-notes.md)
 - [AEM Assets中的Commerce中繼資料](metadata.md)
 - 開始使用 {#get-started}
-   - [設定AEM Assets專案](get-started/configure-aem.md)
-   - [安裝Adobe Commerce套件](get-started/configure-commerce.md)
-   - [設定整合](get-started/setup-synchronization.md)
-   - [設定IMS使用者許可權](get-started/permissions.md)
-   - [設定Commerce Optimizer](get-started/configure-aco.md)
-   - [設定您的店面](get-started/configure-storefront.md)
-   - [檢視和管理記錄檔](get-started/logs.md)
-   - [檢視AEM Assets同步狀態](get-started/sync-status.md)
-   - [移轉資料](get-started/migrate-data.md)
+  - [設定AEM Assets專案](get-started/configure-aem.md)
+  - [安裝Adobe Commerce套件](get-started/configure-commerce.md)
+  - [檢查擴充功能更新](get-started/check-for-updates.md)
+  - [設定整合](get-started/setup-synchronization.md)
+  - [設定IMS使用者許可權](get-started/permissions.md)
+  - [設定Commerce Optimizer](get-started/configure-aco.md)
+  - [設定您的店面](get-started/configure-storefront.md)
+  - [檢視和管理記錄檔](get-started/logs.md)
+  - [檢視AEM Assets同步狀態](get-started/sync-status.md)
+  - [移轉資料](get-started/migrate-data.md)
 - 同步機制 {#synchronize}
-   - [維護正確且相關的內容](synchronize/commerce-content.md)
-   - [預設自動比對](synchronize/default-match.md)
-   - [自訂自動比對](synchronize/custom-match.md)
-   - [手動選取資產](synchronize/asset-selector-integration.md)
+  - [維護正確且相關的內容](synchronize/commerce-content.md)
+  - [預設自動比對](synchronize/default-match.md)
+  - [自訂自動比對](synchronize/custom-match.md)
+  - [手動選取資產](synchronize/asset-selector-integration.md)
 - [管理Commerce媒體資產](manage-assets.md)
 - [返回Commerce服務首頁](https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/home)

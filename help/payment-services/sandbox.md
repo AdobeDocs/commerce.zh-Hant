@@ -1,17 +1,15 @@
 ---
 title: 設定測試沙箱
-description: 使用PayPal沙箱帳戶和管理員上線，在即時付款之前（雲端、內部部署和SaaS上的Adobe Commerce）以測試模式執行 [!DNL Payment Services] 。
+description: 使用PayPal沙箱帳戶和管理員上線，在即時付款前以測試模式執行[!DNL Payment Services] （雲端、內部部署和SaaS上的Adobe Commerce）。
 role: Admin, User
 level: Intermediate
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install, Paas, Saas
-source-git-commit: 5312d23f050d9007132f7f14b17caf13ab52c7df
+source-git-commit: 569877d92c66246cfd61cd56b8eae9b5c1284ace
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '778'
 ht-degree: 0%
-
 ---
-
 # 設定測試沙箱
 
 在開始使用沙箱之前，您必須註冊一個免費的PayPal開發人員帳戶，並建立商人（用於上線）和購物者帳戶（用於測試您的結帳）。 如有需要，您可以建立多個開發人員帳戶。
@@ -57,11 +55,11 @@ PayPal沙箱帳戶可讓您在測試模式中使用[!DNL Payment Services]。 Pa
 
    **[!UICONTROL Sandbox onboarding]**&#x200B;按鈕不再可見，並且您看到「沙箱付款待處理」文字。
 
-當您的PayPal沙箱上線獲得核準時，您應該會看到一則通知，指出您的付款系統目前處於沙箱模式，且未處理即時付款。
+   當您的PayPal沙箱上線獲得核準時，您應該會看到一則通知，指出您的付款系統目前處於沙箱模式，且未處理即時付款。
 
->[!IMPORTANT]
->
->如果您撤銷[!DNL Adobe Commerce]與[!DNL Magento Open Source]對[!DNL Payment Services]的同意，以處理您的付款（在您的PayPal帳戶設定中），則[!DNL Payment Services]無法處理您商店中的訂單。 在您的「付款服務」首頁上，會出現有關撤銷同意的警報。 若要關閉警示，請按一下&#x200B;**[!UICONTROL Do not show again]**。
+   >[!IMPORTANT]
+   >
+   >如果您撤銷[!DNL Adobe Commerce]與[!DNL Magento Open Source]對[!DNL Payment Services]的同意，以處理您的付款（在您的PayPal帳戶設定中），則[!DNL Payment Services]無法處理您商店中的訂單。 在您的「付款服務」首頁上，會出現有關撤銷同意的警報。 若要關閉警示，請按一下&#x200B;**[!UICONTROL Do not show again]**。
 
 ### 重設您的沙箱帳戶
 

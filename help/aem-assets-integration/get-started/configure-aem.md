@@ -20,9 +20,9 @@ topic_v2:
     internal-label: Digital asset management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 4c27d94eca656c48dd50ba8dc69a905ea141c6fd
+source-git-commit: fda6fa7c9ae80a594f0eb05624030cd6b13f0da2
 workflow-type: tm+mt
-source-wordcount: '1839'
+source-wordcount: '1861'
 ht-degree: 1%
 ---
 # 設定AEM Assets專案
@@ -205,6 +205,8 @@ ht-degree: 1%
 
    * 會顯示產品SKU和`Eligible for Commerce`欄位。
 
+   * **[!UICONTROL Alt texts]**&#x200B;多欄位可用於&#x200B;**[!UICONTROL Store View Code]**&#x200B;和&#x200B;**[!UICONTROL Alt Text]**&#x200B;輸入。
+
 ### Commerce索引標籤在屬性中不可見
 
 如果&#x200B;**Commerce**&#x200B;索引標籤未出現在屬性中，您必須在中繼資料結構編輯器中，手動完成下列步驟：
@@ -220,6 +222,8 @@ ht-degree: 1%
 1. 選取&#x200B;**顯示角色**&#x200B;和&#x200B;**顯示順序**&#x200B;的核取方塊。
 
 1. 將&#x200B;**checkbox**&#x200B;元件拖放至&#x200B;**Commerce**&#x200B;標籤，並將其對應至屬性`commerce:isCommerce`。 將&#x200B;**是**&#x200B;和&#x200B;**否**&#x200B;定義為選項。
+
+1. 將&#x200B;**[!UICONTROL Alt texts]**&#x200B;多欄位新增至&#x200B;**Commerce**&#x200B;索引標籤。 將它的兩個索引對齊屬性設定為`commerce:altTextStoreViews`和`commerce:altTextValues`。
 
 如果您遇到任何其他問題，請建立[支援票證](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)或聯絡您的AEM Assets整合銷售代表以尋求協助。
 
