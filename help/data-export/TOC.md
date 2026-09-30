@@ -1,16 +1,14 @@
 ---
 user-guide-title: SaaS服務的[!DNL Data Export]指南
 breadcrumb-title: '[!DNL Data Export]'
-user-guide-description: 本指南提供使用Adobe Commerce SaaS服務 [!DNL Data Export] 擴充功能的詳細指示。
+user-guide-description: 本指南提供使用Adobe Commerce SaaS服務[!DNL Data Export]擴充功能的詳細指示。
 role: Admin, Developer
 feature: Services
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+source-git-commit: fd87417a494987f33009d386019d870b306dcf73
 workflow-type: tm+mt
-source-wordcount: '111'
+source-wordcount: '119'
 ht-degree: 2%
-
 ---
-
 # SaaS服務的[!DNL Data Export]指南 {#saas-data-export}
 
 - [指南概述](overview.md)
@@ -18,6 +16,7 @@ ht-degree: 2%
   - [同步化的運作方式](sync-overview.md)
   - [管理同步](data-sync-manage.md)
   - [進紙鎖定機構](feed-lock-mechanism.md)
+  - {hide-from-toc}[支援自訂產品型別（搶先存取）](custom-product-types.md)
 - 匯出排程和效能 {#performance}
   - [預估資料量和傳輸時間](estimate-data-volume-sync-time.md)
   - [改善匯出效能](customize-export-processing.md)
