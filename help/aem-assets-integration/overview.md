@@ -122,7 +122,7 @@ AEM Assets整合可自動化資產管理工作流程，解決此難題。 此整
 
 安裝和設定AEM Assets整合的程式取決於您的Adobe Commerce部署。 在所有情況下，您會先設定AEM Assets，然後將Commerce連線至該網站。
 
-若要瞭解整合新增至您的AEM Assets環境的名稱空間、中繼資料結構描述和&#x200B;**[!UICONTROL Commerce]**&#x200B;標籤，請在開始前檢閱AEM Assets](metadata.md)中的[Commerce中繼資料。
+若要瞭解整合新增至您的AEM Assets環境的名稱空間、中繼資料結構描述和&#x200B;**[!UICONTROL Commerce]**&#x200B;標籤，請在開始前檢閱AEM Assets[&#128279;](metadata.md)中的Commerce中繼資料。
 
 如需當地語系化的影像替代文字，請參閱AEM Assets中繼資料中的[當地語系化替代文字](metadata.md#localized-alt-text-in-aem-assets-metadata)。 如需設定和同步處理指示，請參閱[設定AEM Assets專案](get-started/configure-aem.md)和[設定整合](get-started/setup-synchronization.md)。
 

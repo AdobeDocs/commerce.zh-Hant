@@ -31,7 +31,7 @@ Commerce中繼資料可啟用下列功能：
 * **透過`commerce:skus`欄位將資產與一個或多個產品SKU建立關聯**。
 * **透過`commerce:roles`和`commerce:positions`欄位定義資產在Commerce**&#x200B;中的顯示方式。
 * **透過`commerce:altTextStoreViews`和`commerce:altTextValues`欄位新增由商店檢視**&#x200B;鍵入的Commerce特定替代文字。
-* **透過&#x200B;**[!UICONTROL Commerce]**索引標籤和結構描述表單，在AEM Assets屬性UI**&#x200B;中公開這些欄位。
+* **透過&#x200B;**&#x200B;[!UICONTROL Commerce]&#x200B;**索引標籤和結構描述表單，在AEM Assets屬性UI**&#x200B;中公開這些欄位。
 
 若要在您的AEM專案中設定這些資源，請參閱[設定AEM Assets專案](get-started/configure-aem.md)。 本主題的其他部分說明如何提供中繼資料。
 
@@ -60,7 +60,7 @@ Adobe提供`assets-commerce` AEM Commerce程式碼套件，用於將Commerce名�
     * `commerce:altTextStoreViews` — 儲存每一列的檢視程式碼。
     * `commerce:altTextValues` — 在與`commerce:altTextStoreViews`中的每個專案相同的索引處比對替代文字。
 
-    使用[外部比對器](synchronize/custom-match.md){target=_blank}的App Builder實作可在轉換資產裝載時攔截這些屬性。 這不會變更在目錄中指派產品影像或設定範圍的方式。 請參閱AEM Assets中繼資料](#localized-alt-text-in-aem-assets-metadata)中的[本地化替代文字。
+    使用[外部比對器](synchronize/custom-match.md){target=_blank}的App Builder實作可在轉換資產裝載時攔截這些屬性。 這不會變更在目錄中指派產品影像或設定範圍的方式。 請參閱AEM Assets中繼資料[&#128279;](#localized-alt-text-in-aem-assets-metadata)中的本地化替代文字。
 
 * 中繼資料結構表單具有Commerce索引標籤，其中包含用於標籤Commerce資產的`Eligible for Commerce`和`Product Data`欄位。 此表單也提供在AEM Assets UI中顯示或隱藏`roles`和`position`欄位的選項。
 
@@ -74,7 +74,7 @@ Adobe提供`assets-commerce` AEM Commerce程式碼套件，用於將Commerce名�
 
 ## AEM Assets中繼資料中的當地語系化替代文字
 
-當您編輯符合資格的影像時，_[!UICONTROL Alt texts]_多欄位可在&#x200B;**[!UICONTROL Commerce]**索引標籤上的AEM Assets資產中繼資料編輯器中使用。
+當您編輯符合資格的影像時，_[!UICONTROL Alt texts]_&#x200B;多欄位可在&#x200B;**[!UICONTROL Commerce]**&#x200B;索引標籤上的AEM Assets資產中繼資料編輯器中使用。
 
 >[!IMPORTANT]
 >
