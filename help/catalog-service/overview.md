@@ -1,29 +1,35 @@
 ---
 title: '[!DNL Catalog Service]'
-description: 透過 [!DNL Catalog Service] 加速Adobe Commerce店面 — 高效能的GraphQL API減少產品頁面、類別頁面和搜尋結果的頁面載入時間。
+description: 使用[!DNL Catalog Service]加速Adobe Commerce店面 — 高效能GraphQL API減少產品頁面、類別頁面和搜尋結果的頁面載入時間。
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: 525e3ff0-efa6-48c7-9111-d0b00f42957a
 TQID: https://experienceleague.adobe.com/CEbJ8-hkc0AGQ4RnRNMDXA6mMijvhPGAfsxyC4eT39Y
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: bb09ff54afbba3d0a0e48bfd1a0392cba435ea9a
+    internal-label: Data management
+source-git-commit: fd87417a494987f33009d386019d870b306dcf73
 workflow-type: tm+mt
-source-wordcount: 1493
+source-wordcount: '1493'
 ht-degree: 0%
-
 ---
-
 # 適用於Adobe Commerce的[!DNL Catalog Service]
 
 Adobe Commerce擴充功能的[!DNL Catalog Service]透過專用的GraphQL API提供最佳化的唯讀目錄資料，以改善店面載入時間。 此服務是專為增強產品相關頁面體驗所設計，可加快頁面載入速度並改善轉換率。
@@ -95,7 +101,7 @@ Adobe Commerce提供兩種GraphQL系統，其用途不同：
 
 GraphQL系統的核心和服務不會直接互相通訊。 您從不同的URL存取每個系統，而呼叫需要不同的標題資訊。 這兩個GraphQL系統旨在搭配使用。 [!DNL Catalog Service] GraphQL系統可增強核心系統，讓產品店面體驗更快速。
 
-您可以選擇實作Adobe Developer App Builder[&#128279;](https://developer.adobe.com/graphql-mesh-gateway/)的API Mesh，以使用Adobe Developer將兩個Adobe Commerce GraphQL系統與私人和協力廠商API及其他軟體介面整合。 您可以設定網格，以確保路由到每個端點的呼叫在標題中包含正確的授權資訊。
+您可以選擇實作Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/)的[API Mesh，以使用Adobe Developer將兩個Adobe Commerce GraphQL系統與私人和協力廠商API及其他軟體介面整合。 您可以設定網格，以確保路由到每個端點的呼叫在標題中包含正確的授權資訊。
 
 ## 架構詳細資料
 
@@ -118,6 +124,12 @@ GraphQL系統的核心和服務不會直接互相通訊。 您從不同的URL存
   * 每個元件簡單產品可以有自己的價格。
   * 購物者可以指定個別元件產品的數量。
   * 產品選項（例如大小、顏色、材質）統一且運作方式相同，無論產品型別為何。 每個選項選項選項都指向特定的簡單產品，並具有其自己的屬性和價格。 最終產品會保持未定義狀態，直到購物者選取所有必要選項為止。
+
+<!--
+>[!NOTE]
+>
+>Custom product types introduced by third-party extensions are not covered by this mapping. For [!DNL Commerce Storefront MCP] deployments (Early Access), a catalog enablement module can represent these custom types as simple products in the catalog data sent to [!DNL Catalog Service]. See [Support for custom product types in SaaS catalog data export](../data-export/custom-product-types.md).
+-->
 
 #### 產品檢視屬性
 
@@ -143,7 +155,7 @@ GraphQL系統的核心和服務不會直接互相通訊。 您從不同的URL存
 
 實作程式涉及：
 
-1. 僅[!BADGE PaaS]{type=Informative url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"} **[安裝並設定目錄服務](installation.md)** — 安裝並設定目錄服務延伸功能，並使用[!DNL Commerce Services Connector]設定SaaS連線。
+1. 僅[!BADGE PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"} **[安裝並設定目錄服務](installation.md)** — 安裝並設定目錄服務延伸功能，並使用[!DNL Commerce Services Connector]設定SaaS連線。
 1. **更新店面程式碼**：將目錄服務GraphQL查詢整合至您的店面。
 1. **路由查詢**：所有目錄服務查詢都會透過GraphQL閘道（上線期間提供的URL）
 1. **監視和疑難排解資料同步處理**：驗證已改善的效能並監視結果
