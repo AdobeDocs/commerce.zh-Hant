@@ -1,6 +1,6 @@
 ---
 title: 啟動檢查清單
-description: 瞭解如何驗證 [!DNL Adobe Commerce Optimizer] 生產環境的設定、店面、SEO、CDN、整合、安全性、分析和測試。
+description: 瞭解如何驗證[!DNL Adobe Commerce Optimizer]生產環境的設定、店面、SEO、CDN、整合、安全性、分析和測試。
 autotag-review: '2026-06-17T15:08:59.000Z'
 solution: Commerce
 feature: Integration, Storefront, Search, Catalog Management, Personalization
@@ -9,30 +9,38 @@ role: Admin, Developer
 level: Intermediate
 topic: Administration
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]個專案（Adobe管理的SaaS基礎結構）。"
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
 subfeature_v2:
   - id: ae62cf09-5996-4921-bda8-fbe67b62e470
+    internal-label: Storefront configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
+    internal-label: Implementation
+source-git-commit: 1009ae28286a8503511c85726bf44922c7c2575e
 workflow-type: tm+mt
-source-wordcount: 2309
+source-wordcount: '2311'
 ht-degree: 0%
-
 ---
-
 
 # 啟動檢查清單
 
@@ -92,7 +100,7 @@ ht-degree: 0%
 ▢ Commerce Optimizer聯結器已[安裝及設定](../../aco-connector/get-started.md)。
 ▢ `aco:conf:show` CLI命令會確認與生產Commerce Optimizer執行個體的連線。 組織ID、使用者端ID、擷取URL和Commerce Optimizer URL符合生產環境。
 [匯出設定](../../aco-connector/get-started.md)中的▢同步處理範圍符合您的需求。
-▢ [資料摘要同步狀態](../../aco-connector/data-sync-manage.md)會確認從雲端執行個體匯出資料。
+▢ [資料摘要同步狀態](../../aco-connector/data-sync-status.md)會確認從雲端執行個體匯出資料。
 
 ### 在Commerce Optimizer中
 

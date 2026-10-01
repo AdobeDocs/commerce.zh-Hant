@@ -1,9 +1,8 @@
 ---
-source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
+source-git-commit: a3ade1a31d3c2905b601f71bda118de89c43cf59
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '708'
 ht-degree: 0%
-
 ---
 # Commerce代碼片段
 
@@ -20,6 +19,11 @@ ht-degree: 0%
 >
 >一律將沙箱Optimizer執行個體連線到非生產環境，將生產執行個體連線到生產環境。 不相符的環境會導致不一致的目錄資料、搜尋結果和推薦。
 
+## Adobe Commerce Optimizer資料同步處理說明 {#aco-data-sync-processing-note}
+
+>[!IMPORTANT]
+>
+>完成設定後，資料同步處理就會在背景開始。 視目錄大小而定，資料同步程式可能需要幾分鐘到數小時的時間。
 
 ## Optimizer的銷售服務 {#aco-merchandising-services}
 
@@ -110,3 +114,13 @@ Adobe Commerce身分管理和驗證由Adobe Identity Management系統(IMS)透過
 >[!IMPORTANT]
 >
 >大量資料移轉工具目前正在搶先使用。 存取權完全透過Commerce部署工程(CDE)參與程式提供。 如需工具及其適用性要求的概述，請參閱[大量資料移轉工具](../cloud-service/migration/bulk-data/migration-tool.md)。
+
+## 安裝擴充功能連結 {#install-extension-links}
+
+>[!NOTE]
+>
+>如需詳細的擴充功能安裝指示，請參閱下列指南：
+>
+>在雲端基礎結構上 [!DNL Adobe Commerce] 上[安裝擴充功能](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure-store/extensions)
+>
+>[在 [!DNL Adobe Commerce] 內部部署](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/tutorials/extensions)安裝擴充功能

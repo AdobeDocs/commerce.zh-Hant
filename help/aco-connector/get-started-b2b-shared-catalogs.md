@@ -1,10 +1,8 @@
 ---
-title: 開始使用[!DNL Adobe Commerce Optimizer Connector]
-description: 瞭解如何安裝[!DNL Adobe Commerce Optimizer Connector]、設定範圍匯出設定、啟用IMS驗證，以及驗證目錄同步處理。
+title: 設定B2B Commerce的聯結器
+description: 瞭解如何安裝B2B聯結器、選取Commerce範圍、同步處理共用目錄資料、驗證目錄檢視及監視投影健康情況。
 feature: Integration, Configuration
 badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
-autotag-review: '2026-06-09T16:55:50.934Z'
-TQID: 'https://experienceleague.adobe.com/AcZ6CNyuIdUlfVHXhyQEYuThfLNd4WWqMMY82tjMMCc'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -42,27 +40,23 @@ topic_v2:
 last-update: 2026-09-11
 source-git-commit: a3ade1a31d3c2905b601f71bda118de89c43cf59
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '843'
 ht-degree: 0%
 ---
 
-# 開始使用
+# 設定B2B Commerce的聯結器
 
-安裝並設定[!DNL Adobe Commerce Optimizer Connector]，將您的[!DNL Adobe Commerce]目錄資料與[!DNL Adobe Commerce Optimizer]同步，然後監視資料同步狀態，以確保您的店面為最新狀態。
+使用[!DNL Adobe Commerce] B2B共用目錄的商戶可以使用[!DNL Adobe Commerce Optimizer Connector for B2B]將自訂共用目錄資料和設定同步到[!DNL Adobe Commerce Optimizer]。
 
 {{aco-integration-environment-alignment}}
 
->[!NOTE]
->
->本主題涵蓋[!DNL Adobe Commerce Optimizer Connector]。 如果您使用[!DNL Adobe Commerce]個B2B共用目錄，請依照[開始使用 [!DNL Adobe Commerce Optimizer Connector for B2B]](get-started-b2b-shared-catalogs.md)指示。 B2B聯結器會擴充基本目錄資料同步功能，以支援自訂共用目錄的同步化。
-
 ## 使用整合的需求 {#requirements-to-use-the-integration}
 
-* [Adobe Commerce](https://business.adobe.com/tw/products/magento/magento-commerce.html) 2.4.7+。 如需詳細需求，請參閱[系統需求](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/system-requirements)。
+* 已安裝並啟用[Adobe Commerce B2B 1.5.3+](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/b2b/install)版的Commerce 2.4.8+。
 
-* 具有已布建沙箱執行個體的[!DNL Commerce Optimizer]授權。
+* [!DNL Commerce Optimizer]授權包含已布建的沙箱執行個體。
 
-* [驗證金鑰](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)，以使用Composer下載聯結器中繼套件。
+* [驗證金鑰](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)以使用Composer下載聯結器中繼封裝。
 
 * 管理員存取[[!DNL Commerce Optimizer] 沙箱執行個體](../optimizer/get-started.md)。
 
@@ -74,9 +68,15 @@ ht-degree: 0%
 
 * 開發人員存取已布建[!DNL Commerce Optimizer]專案的[IMS組織](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/administration/organizations？)。
 
+### 應用程式需求
+
+* Commerce cron和索引器正常運作。
+* 為匯出識別的所需網站和商店檢視。
+* 共用目錄、公司指派、分類和B2B定價已設定或可在Adobe Commerce中設定。
+
 >[!BEGINSHADEBOX]
 
-## 移除衝突的擴充功能
+## 移除衝突的擴充功能 {#remove-conflicting-extensions}
 
 {{$include /help/_includes/aco-connector/remove-conflicting-extensions.md}}
 
@@ -84,26 +84,26 @@ ht-degree: 0%
 
 ## 設定步驟 {#configuration-steps}
 
-若要啟用[!DNL Adobe Commerce Optimizer Connector]並開始將資料從[!DNL Adobe Commerce]同步至您的[!DNL Commerce Optimizer]執行個體，請遵循下列步驟。
+若要啟用[!DNL Adobe Commerce Optimizer Connector for B2B]並開始將自訂共用目錄組態從[!DNL Adobe Commerce]同步至您的[!DNL Commerce Optimizer]執行個體，請遵循下列步驟。
 
-1. **[使用Composer安裝 [!DNL Adobe Commerce Optimizer Connector] 封裝](#install-the-adobe-commerce-optimizer-connector-package)**，以將您的[!DNL Adobe Commerce]執行個體連線到[!DNL Commerce Optimizer]。
+1. **[使用Composer安裝 [!DNL Adobe Commerce Optimizer Connector for B2B] 封裝](#install-the-adobe-commerce-optimizer-connector-for-B2B-package)**，以將您的[!DNL Adobe Commerce]執行個體連線到[!DNL Commerce Optimizer]。
 
-1. **[從管理員自訂Commerce範圍匯出設定](#customize-the-commerce-scopes-export-configuration)**。
+1. **[從管理員自訂Commerce範圍匯出設定](#data-export-and-scope-mapping)**。
 
 1. **[啟用 [!DNL Commerce Optimizer] 整合](#enable-the-adobe-commerce-optimizer-integration)**。
 
 1. **[確認資料同步處理正在運作](#verify-that-the-data-sync-is-working)**。
 
-## 安裝[!DNL Adobe Commerce Optimizer Connector]封裝 {#install-the-adobe-commerce-optimizer-connector-package}
+## 安裝[!DNL Adobe Commerce Optimizer Connector for B2B]封裝 {#install-the-adobe-commerce-optimizer-connector-for-B2B-package}
 
-[!DNL Adobe Commerce Optimizer Connector]會以撰寫器中繼資料的形式傳送，以供具有[!DNL Commerce Optimizer]的有效授權之所有Commerce商家使用。
+[!DNL Adobe Commerce Optimizer Connector for B2B]會以Composer中繼套件的形式傳送，適用於所有具有[!DNL Commerce Optimizer]有效授權的Commerce商家。
 
 ### 安裝步驟
 
-1. 使用撰寫器新增`adobe-commerce/commerce-data-export-aco-adapter`模組：
+1. 使用撰寫器新增`adobe-commerce/commerce-data-export-aco-adapter-b2b`模組：
 
    ```shell
-   composer require adobe-commerce/commerce-data-export-aco-adapter
+   composer require adobe-commerce/commerce-data-export-aco-adapter-b2b
    ```
 
 1. 將變更部署至您的[!DNL Adobe Commerce]中繼環境。
@@ -112,22 +112,21 @@ ht-degree: 0%
 
 {{install-extension-links}}
 
-## 自訂Commerce範圍匯出設定 {#customize-the-commerce-scopes-export-configuration}
+### 資料匯出和範圍對應
 
-依預設，所有Commerce範圍（網站、客戶群組和商店檢視）的目錄資料同步已啟用。 您可以根據業務需求自訂匯出設定，以僅同步特定範圍的資料。 例如，如果多個存放區檢視共用相同的語言，您可以匯出一個存放區檢視的資料，並將其用作[!DNL Commerce Optimizer]中多個目錄檢視的[目錄來源](../optimizer/setup/catalog-sources.md)。
+選取要同步的網站和商店檢視，然後驗證初始摘要。 對於B2B，聯結器在將共用目錄資料專案到[!DNL Commerce Optimizer]時，會使用啟用的範圍。
+
+* **存放區檢視** →目錄來源具有當地語系化的產品內容
+* **網站與客戶群組**&#x200B;網站與客戶群組定價的→價手冊
+* **共用的目錄**→受保護的私人目錄檢視和強制原則
+
+共用目錄會定義產品分類，而每個啟用的存放區檢視都會提供本地化的目錄來源。 網站與客戶群組會決定適用的價格簿。 聯結器會針對每個已啟用的存放區檢視投影每個自訂共用目錄，因此您不需要B2B投影的個別範圍設定。
+
+自訂共用目錄可產生多個受保護的私人目錄檢視，每個啟用的存放區檢視各一個。 預設的公用共用目錄不會投影為B2B私人目錄檢視。 如需詳細的物件對應和執行階段授權流程，請參閱[B2B共用目錄投影](b2b-shared-catalog-projection.md)。
 
 >[!IMPORTANT]
 >
->變更匯出設定會觸發完整的重新編列索引，這可能需要相當長的時間，視您的目錄大小而定。 Adobe建議先設定Commerce範圍以同步至[!DNL Commerce Optimizer]，再啟用整合併開始初始資料同步。
-
-下表說明會在每個範圍層級匯出哪些資料：
-
-| 範圍 | 資料已匯出 | 附註 |
-| ----- | ------------- | ----- |
-| 網站與客戶群組 | 價格與價格手冊 | 每組價格會使用命名慣例`&lt;website&gt;::&lt;SHA1 of customer group ID&gt;`匯出為[價格簿](../optimizer/setup/pricebooks.md)。 包括網站的所有客戶群組。 |
-| 存放區檢視 | 產品和產品屬性 | 每個存放區檢視都會在[!DNL Commerce Optimizer]中建立個別的[目錄來源](../optimizer/setup/catalog-sources.md)。 |
-
-![具有Commerce Optimizer同步設定的商店格線](./assets/aco-connector-storeviews-list.png){width="600" zoomable="yes"}
+>變更匯出設定會觸發完整的重新編列索引，這可能需要相當長的時間，視您的目錄大小而定。 先設定Commerce範圍，再啟用整合併開始初始資料同步。
 
 ### 若要變更範圍匯出設定
 
@@ -137,7 +136,7 @@ ht-degree: 0%
 
 1. 在&#x200B;**[!DNL Commerce Optimizer]匯出程式設定**&#x200B;中，視需要使用核取方塊來啟用或停用資料同步處理。
 
-   ![更新資料同步設定](./assets/aco-connector-storeview-export-settings.png){width="500" zoomable="yes"}
+   ![更新資料同步設定](./assets/aco-connector-b2b-storeview-list.png){width="500" zoomable="yes"}
 
 1. 儲存您的變更。
 
@@ -145,8 +144,16 @@ ht-degree: 0%
 
 | 動作 | 結果 |
 | -------- | -------- |
-| 停用商店檢視 | **停用同步會從您的店面移除目錄資料。** 目錄來源仍保留在[!DNL Commerce Optimizer]中，但所有同步資料在下次cron執行時都會被移除。 |
+| 停用商店檢視 | **停用同步會從B2B店面移除目錄資料。** 目錄來源仍保留在[!DNL Adobe Commerce Optimizer]中，但所有同步資料在下次cron執行時都會被移除。 |
 | 停用然後重新啟用存放區檢視 | 相同的目錄來源會以完整資料重新同步重新填入。 |
+
+### 監視B2B共用目錄變更
+
+聯結器會監視共用目錄和公司指派的變更。 當您在Commerce管理員中移除共用目錄時，聯結器會在可設定的寬限期後移除對其私人目錄檢視的存取權。
+
+>[!NOTE]
+>
+>刪除寬限期預設為七天。 您可以更新目錄檢視同步設定組態來變更它。 請參閱[目錄檢視同步處理狀態組態](catalog-view-sync-status.md#configure-aco-catalog-view-sync-settings)。
 
 ## 啟用[!DNL Commerce Optimizer]整合 {#enable-the-adobe-commerce-optimizer-integration}
 
@@ -156,7 +163,6 @@ ht-degree: 0%
 1. 呼叫位於`https://ccm.api.commerce.adobe.com/api/v1/tenants/{tenantId}/owner/{orgId}`的Commerce Cloud Manager (CCM)服務以驗證租使用者並擷取內嵌URL和[!DNL Commerce Optimizer] Studio URL。
 1. 將所有設定（使用者端密碼已加密）儲存至`core_config_data`。
 1. 讓所有[!DNL Commerce Optimizer]摘要索引器失效，以排程初始完整同步。
-
 
 {{aco-data-sync-processing-note}}
 
@@ -174,9 +180,9 @@ ht-degree: 0%
 
 ## 後續步驟
 
-1. **設定[!DNL Commerce Optimizer]目錄檢視與原則**
+1. **監視B2B目錄檢視投影**
 
-   在[!DNL Commerce Optimizer] UI中建立目錄檢視和原則。 請注意，價格簿是從[!DNL Adobe Commerce]客戶群組自動建立的。 如需指示，請參閱&#x200B;*[!DNL Commerce Optimizer]使用手冊*&#x200B;中的[目錄檢視](../optimizer/setup/catalog-view.md)和[原則](../optimizer/setup/policies.md)檔案。 若要限制目錄檢視的存取權，請參閱[私人目錄檢視](../optimizer/setup/private-catalog-view.md)。
+在初始摘要同步之後，使用[目錄檢視同步狀態](catalog-view-sync-status.md)來驗證預計的私人目錄檢視、原則、價格簿參考和受限制的存取金鑰組態。 如需投影模型與執行階段授權流程，請參閱[B2B共用目錄投影](b2b-shared-catalog-projection.md)。
 
 1. **在[!DNL Edge Delivery Services]**&#x200B;設定Commerce店面
 

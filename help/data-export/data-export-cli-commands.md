@@ -24,7 +24,7 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 658401a83acf5bab669f0734100eef99af98c908
+source-git-commit: 1009ae28286a8503511c85726bf44922c7c2575e
 workflow-type: tm+mt
 source-wordcount: '756'
 ht-degree: 0%
@@ -51,7 +51,7 @@ Adobe不建議定期使用`saas:resync`命令。 使用指令的典型情況如�
 >
 >啟用「即時搜尋」或「產品推薦」時，初始同步會自動執行。 不需要手動指令。
 >
->對於[!DNL Adobe Commerce Optimizer Connector]部署，`aco:config:init`命令會透過讓所有聯結器摘要索引器失效來排程初始完整同步。 請參閱[啟用 [!DNL Commerce Optimizer] 整合](../aco-connector/get-started.md#enable-the-adobe-commerce-optimizer-integration)和[管理與 [!DNL Commerce Optimizer]](../aco-connector/data-sync-manage.md)的同步處理。
+>對於[!DNL Adobe Commerce Optimizer Connector]部署，`aco:config:init`命令會透過讓所有聯結器摘要索引器失效來排程初始完整同步。 請參閱[啟用 [!DNL Commerce Optimizer] 整合](../aco-connector/get-started.md#enable-the-adobe-commerce-optimizer-integration)和[管理與 [!DNL Commerce Optimizer]](../aco-connector/data-sync-status.md)的同步處理。
 
 當您從命令列觸發`saas:resync`時，視您的目錄大小而定，可能需要幾分鐘到幾小時的時間才會更新資料。
 
