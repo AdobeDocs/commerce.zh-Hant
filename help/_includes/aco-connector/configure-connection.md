@@ -12,7 +12,7 @@ ht-degree: 0%
 
    ![[!DNL Commerce Optimizer]設定頁面](/help/aco-connector/assets/aco-connector-admin-installation.png){width="500" zoomable="yes"}
 
-1. 從命令列，[使用SSH](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections)連線到[!DNL Adobe Commerce]中繼環境。
+1. 從命令列，[使用SSH](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/secure-connections)連線到[!DNL Adobe Commerce]中繼環境。
 
 1. 若要設定整合，請執行下列[!DNL Adobe Commerce] CLI命令，將預留位置值取代為[!DNL Commerce Optimizer]專案的值：
 

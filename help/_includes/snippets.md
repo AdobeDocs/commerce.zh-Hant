@@ -10,7 +10,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果雲端或內部部署的Commerce的Commerce Admin中沒有資料摘要同步狀態頁面，請依照[擴充功能安裝指示](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension){target="_blank"}加以啟用。
+>如果雲端或內部部署的Commerce的Commerce Admin中沒有資料摘要同步狀態頁面，請依照[擴充功能安裝指示](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension){target="_blank"}加以啟用。
 
 
 ## Adobe Commerce Optimizer整合環境校準 {#aco-integration-environment-alignment}
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->對於使用[[!DNL Adobe Commerce Optimizer Connector]](../aco-connector/overview.md)將目錄資料匯出至[!DNL Adobe Commerce Optimizer]的部署，請使用Commerce管理員中的[資料摘要同步處理狀態頁面](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)以及[!DNL Adobe Commerce Optimizer Studio]中的[資料同步處理頁面](../optimizer/setup/data-sync.md) （而非[資料管理儀表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)）來驗證目錄資料同步處理。
+>對於使用[[!DNL Adobe Commerce Optimizer Connector]](../aco-connector/overview.md)將目錄資料匯出至[!DNL Adobe Commerce Optimizer]的部署，請使用Commerce管理員中的[資料摘要同步處理狀態頁面](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)以及[!DNL Adobe Commerce Optimizer Studio]中的[資料同步處理頁面](../optimizer/setup/data-sync.md) （而非[資料管理儀表板](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)）來驗證目錄資料同步處理。
 
 ## 適用於API更新的Adobe Commerce Optimizer下拉式注意事項 {#aco-api-updates-and-dropins}
 
@@ -59,7 +59,7 @@ ht-degree: 0%
     <td style="vertical-align: middle;"><a href="https://developer.adobe.com/commerce/webapi/"><img alt="Developers" src="../assets/icons/developers.svg" /> <strong>Developers</strong></a></td>
     <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/en/tools/commerce-storefront/"><img alt="Storefront" src="../assets/icons/storefront.svg" /> <strong>Storefront</strong></a></td>
     <td style="vertical-align: middle;"><a href="../cloud-service/overview.md"><img alt="Merchants" src="../assets/icons/merchants.svg" /> <strong>Merchants</strong></a></td>
-    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/overview"><img alt="Videos" src="../assets/icons/videos.svg" /> <strong>Videos</strong></a></td>
+    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/overview"><img alt="Videos" src="../assets/icons/videos.svg" /> <strong>Videos</strong></a></td>
     <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/en/tools/commerce-storefront/playgrounds/commerce-services/"><img alt="Playgrounds" src="../assets/icons/playgrounds.svg" /> <strong>Playgrounds</strong></a></td>
   </tr>
 </table>
@@ -87,7 +87,7 @@ ht-degree: 0%
 
 Adobe Commerce身分管理和驗證由Adobe Identity Management系統(IMS)透過Adobe Admin Console管理。
 
-如需有關身分設定選項（包括Adobe ID、Enterprise ID和Federated ID）的資訊，以及設定單一登入(SSO)以安全存取Adobe應用程式的指示，請參閱&#x200B;*企業Admin Console*&#x200B;檔案中的[設定身分和單一登入](https://helpx.adobe.com/enterprise/using/set-up-identity.html)。
+如需有關身分設定選項（包括Adobe ID、Enterprise ID和Federated ID）的資訊，以及設定單一登入(SSO)以安全存取Adobe應用程式的指示，請參閱&#x200B;*企業Admin Console*&#x200B;檔案中的[設定身分和單一登入](https://helpx.adobe.com/tw/enterprise/using/set-up-identity.html)。
 
 ## ACCS服務與擴充功能發行說明 {#accs-release}
 
@@ -121,6 +121,6 @@ Adobe Commerce身分管理和驗證由Adobe Identity Management系統(IMS)透過
 >
 >如需詳細的擴充功能安裝指示，請參閱下列指南：
 >
->在雲端基礎結構上 [!DNL Adobe Commerce] 上[安裝擴充功能](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions)
+>在雲端基礎結構上 [!DNL Adobe Commerce] 上[安裝擴充功能](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/configure-store/extensions)
 >
->[在 [!DNL Adobe Commerce] 內部部署](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions)安裝擴充功能
+>[在 [!DNL Adobe Commerce] 內部部署](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/tutorials/extensions)安裝擴充功能

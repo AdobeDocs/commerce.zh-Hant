@@ -14,7 +14,7 @@ ht-degree: 27%
 * [!DNL Adobe Commerce Catalog Service] (`magento/catalog-service`, `magento/catalog-service-installer`)
 * **[!UICONTROL Data Management Dashboard]** (`magento-catalog-sync-admin`)
 
-與這些擴充功能相關聯的資料仍可在Commerce資料庫中使用。 但是，當聯結器啟用時，它不會匯出到[!DNL Commerce Optimizer]。 若要在啟用聯結器後實作這些擴充功能提供的Adobe Commerce搜尋和銷售功能，請從[[!DNL Commerce Optimizer] 管理UI](https://experienceleague.adobe.com/en/docs/commerce/optimizer/overview#quick-tour)進行設定。
+與這些擴充功能相關聯的資料仍可在Commerce資料庫中使用。 但是，當聯結器啟用時，它不會匯出到[!DNL Commerce Optimizer]。 若要在啟用聯結器後實作這些擴充功能提供的Adobe Commerce搜尋和銷售功能，請從[[!DNL Commerce Optimizer] 管理UI](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/overview#quick-tour)進行設定。
 
 >[!IMPORTANT]
 >
