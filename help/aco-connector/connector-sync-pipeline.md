@@ -90,7 +90,7 @@ ht-degree: 1%
 `CommerceOptimizerScopeMapper`模組會讀取每個網站和每個商店檢視的匯出設定，並在摘要收集和提交期間強制執行。
 
 - **已啟用範圍**，以一般差異排程匯出資料。
-- **已停用的領域**已從管道中排除。
+- **已停用的領域**&#x200B;已從管道中排除。
 先前同步的實體在下次cron執行時從[!DNL Commerce Optimizer]中移除。
 
 如果同步問題只影響一個目錄來源或價格簿，請參閱[資料未同步](troubleshooting.md#data-not-syncing)。

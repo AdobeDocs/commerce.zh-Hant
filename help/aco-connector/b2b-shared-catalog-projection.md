@@ -77,7 +77,7 @@ B2B投影將同步化的目錄內容與訂價與「共用目錄分類」及公�
 
 店面會傳送目錄檢視ID、價格簿ID以及與每個銷售API請求簽署的權杖。 [!DNL Adobe Commerce Optimizer]會根據指派給目錄檢視的受限制存取金鑰，驗證JWT的RS256簽章。 只有在權杖和金鑰有效且未過期時，才會傳回目錄資料。
 
-從購物者透過店面和Commerce後端到[!DNL Adobe Commerce Optimizer]](./assets/b2b-catalog-runtime-authorization.svg){width="700"}的B2B目錄請求的![執行階段授權流程
+從購物者透過店面和Commerce後端到[!DNL Adobe Commerce Optimizer]![&#128279;](./assets/b2b-catalog-runtime-authorization.svg){width="700"}的B2B目錄請求的執行階段授權流程
 
 對於私人目錄請求，傳送以下標頭：
 

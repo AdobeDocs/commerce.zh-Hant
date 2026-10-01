@@ -99,7 +99,7 @@ Commerce會產生新的金鑰組並保留私密金鑰。 「限制存取金鑰�
 
 1. 在公司的[!UICONTROL Action]欄中，選取[!UICONTROL Edit]。
 
-1. 若要檢視從指派給公司的共用目錄投影的目錄檢視清單，請展開&#x200B;_[!UICONTROL Catalog Views]_區段。
+1. 若要檢視從指派給公司的共用目錄投影的目錄檢視清單，請展開&#x200B;_[!UICONTROL Catalog Views]_&#x200B;區段。
 
 索引標籤會列出從共用目錄投影的目錄檢視，包括其指派的索引鍵。
 
