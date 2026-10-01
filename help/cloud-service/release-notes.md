@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Adobe Commerce as a Cloud Service]發行說明'
-description: 瞭解[!DNL Adobe Commerce as a Cloud Service]中的最新功能和改進專案。
+description: 瞭解[!DNL Adobe Commerce as a Cloud Service]中的所有最新功能和改進專案。
 feature-set: Commerce
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
@@ -49,9 +49,9 @@ topic_v2:
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
 last-update: 2026-08-07
-source-git-commit: 1e03d399d191875186f5839458c3036179cf1b17
+source-git-commit: 6a2300d65c9c77d18813c2eb491bfd02d1fca8ba
 workflow-type: tm+mt
-source-wordcount: '7503'
+source-wordcount: '7581'
 ht-degree: 0%
 ---
 # 發行說明
@@ -78,7 +78,16 @@ ht-degree: 0%
 
 ### 在REST中管理目錄價格規則
 
-新的REST API端點可讓整合以程式設計方式管理和搜尋[目錄價格規則](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/catalog-price-rule/price-rules-catalog)。<!-- ACCS-1621 -->
+新的REST API端點可讓整合以程式設計方式管理和搜尋[目錄價格規則](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog)。<!-- ACCS-1621 -->
+
+下列端點受`Magento_CatalogRule::promo_catalog`許可權保護，這也會保護[管理目錄價格規則]畫面。 使用此端點需要管理員或整合層級的存取權。
+
+* `GET /V1/catalogPriceRules/metadata` — 探索允許的折扣動作和條件屬性，以及其運運算元和值來源。
+* `GET /V1/catalogPriceRules/search` — 使用標準searchCriteria （篩選器、排序、分頁）列出及搜尋規則。
+* `GET /V1/catalogPriceRules/:ruleId` — 取得一個規則，包括其完整條件樹狀結構。
+* `POST /V1/catalogPriceRules` — 建立規則。
+* `PUT /V1/catalogPriceRules/:ruleId` — 更新規則。 只傳送您要變更的欄位。
+* `DELETE /V1/catalogPriceRules/:ruleId` — 刪除規則。
 
 ### 使用reCAPTCHA保護預先簽署的上傳
 
@@ -112,7 +121,7 @@ ht-degree: 0%
 
 ### 依日期與時間排程型錄價格規則
 
-您現在可以將[目錄價格規則](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/catalog-price-rule/price-rules-catalog)的每日時間設定為在[!DNL Commerce Admin]開始或結束。<!-- ACCS-1762 -->
+您現在可以將[目錄價格規則](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog)的每日時間設定為在[!DNL Commerce Admin]開始或結束。<!-- ACCS-1762 -->
 
 ### 透過管理員REST API套用自訂運費折扣
 
