@@ -5,7 +5,7 @@ role: Admin, User
 level: Intermediate
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install, Paas, Saas
-source-git-commit: 569877d92c66246cfd61cd56b8eae9b5c1284ace
+source-git-commit: fc9fb7a63e4e7c3dd862ed710acdfa8561c91ec5
 workflow-type: tm+mt
 source-wordcount: '778'
 ht-degree: 0%
@@ -29,7 +29,7 @@ PayPal沙箱帳戶可讓您在測試模式中使用[!DNL Payment Services]。 Pa
       如果您在沙箱PayPal上線流程中建立PayPal沙箱帳戶，您必須[重設您的上線沙箱](#reset-your-sandbox-account)，否則您無法驗證電子郵件。
 
    1. 選取&#x200B;**[!UICONTROL Business]**&#x200B;作為帳戶型別並按一下&#x200B;**[!UICONTROL Create]**。
-   1. 在&#x200B;_[!UICONTROL Sandbox Accounts]_&#x200B;區段中，針對您建立的沙箱帳戶，按一下&#x200B;_[!UICONTROL Manage accounts]_&#x200B;欄中的三個點。
+   1. 在&#x200B;_[!UICONTROL Sandbox Accounts]_區段中，針對您建立的沙箱帳戶，按一下_[!UICONTROL Manage accounts]_&#x200B;欄中的三個點。
    1. 按一下&#x200B;**[!UICONTROL View/edit account]**。
 
       ![PayPal — 檢視/編輯沙箱帳戶](assets/onboarding-viewedit-sandbox.png){width="300" zoomable="yes"}
@@ -57,9 +57,9 @@ PayPal沙箱帳戶可讓您在測試模式中使用[!DNL Payment Services]。 Pa
 
    當您的PayPal沙箱上線獲得核準時，您應該會看到一則通知，指出您的付款系統目前處於沙箱模式，且未處理即時付款。
 
-   >[!IMPORTANT]
-   >
-   >如果您撤銷[!DNL Adobe Commerce]與[!DNL Magento Open Source]對[!DNL Payment Services]的同意，以處理您的付款（在您的PayPal帳戶設定中），則[!DNL Payment Services]無法處理您商店中的訂單。 在您的「付款服務」首頁上，會出現有關撤銷同意的警報。 若要關閉警示，請按一下&#x200B;**[!UICONTROL Do not show again]**。
+>[!IMPORTANT]
+>
+>如果您撤銷[!DNL Adobe Commerce]與[!DNL Magento Open Source]對[!DNL Payment Services]的同意，以處理您的付款（在您的PayPal帳戶設定中），則[!DNL Payment Services]無法處理您商店中的訂單。 在您的「付款服務」首頁上，會出現有關撤銷同意的警報。 若要關閉警示，請按一下&#x200B;**[!UICONTROL Do not show again]**。
 
 ### 重設您的沙箱帳戶
 
@@ -92,9 +92,9 @@ PayPal沙箱帳戶可讓您在測試模式中使用[!DNL Payment Services]。 Pa
 
 1. 在左側面板中，展開&#x200B;**[!UICONTROL Sales]**&#x200B;並選取&#x200B;**[!UICONTROL Payment Methods]**。
 
-1. 展開&#x200B;_[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_&#x200B;區段。
+1. 展開&#x200B;_[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_區段。
 
-1. 在&#x200B;_[!UICONTROL Payment Services]_&#x200B;區段中，展開&#x200B;_[!UICONTROL General Configuration]_&#x200B;區段。
+1. 在&#x200B;_[!UICONTROL Payment Services]_區段中，展開_[!UICONTROL General Configuration]_&#x200B;區段。
 
 1. 將&#x200B;**[!UICONTROL Method]**&#x200B;設為`Sandbox`。
 
@@ -102,9 +102,9 @@ PayPal沙箱帳戶可讓您在測試模式中使用[!DNL Payment Services]。 Pa
 
 1. 按一下&#x200B;**[!UICONTROL Save Config]**&#x200B;以儲存變更。
 
->[!NOTE]
->
->只有在方法設為`Sandbox`時，**[!UICONTROL Buyer's country]**&#x200B;設定才會出現。 這不會影響生產環境。
+   >[!NOTE]
+   >
+   >只有在方法設為`Sandbox`時，**[!UICONTROL Buyer's country]**&#x200B;設定才會出現。 這不會影響生產環境。
 
 ## 在沙箱環境中測試
 

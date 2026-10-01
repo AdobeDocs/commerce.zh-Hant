@@ -1,30 +1,38 @@
 ---
 title: 檢視及管理同步化程式
-description: 瞭解如何使用「資料管理」控制面板和「資料摘要同步狀態」頁面檢視及管理 [!DNL SaaS Data Export] 同步化程式。
+description: 瞭解如何使用「資料管理」控制面板和「資料摘要同步狀態」頁面檢視及管理[!DNL SaaS Data Export]同步處理作業。
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
   - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
   - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+    internal-label: Commerce as a Cloud Service
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
 last-update: 2026-06-23
-source-git-commit: 7ce47d7abf7519a7e3ecd436faabf4089005cd63
+source-git-commit: 2dbf2b973af0cb7b831a17ca1a868a81b11bc9ee
 workflow-type: tm+mt
-source-wordcount: 557
+source-wordcount: '558'
 ht-degree: 0%
-
 ---
-
 # 檢視及管理同步化程式
 
 大部分同步活動都會使用完整同步、部分同步或重試失敗的專案同步自動處理。 如需每個型別執行時間的詳細資訊，請參閱[同步化型別](sync-overview.md#synchronization-types)。 [!DNL SaaS Data Export]也提供工具來監視、管理及疑難排解程式。 您可以檢視同步化狀態，並使用您部署的儀表板來管理資料同步化程式。
@@ -35,9 +43,9 @@ ht-degree: 0%
 
 對於雲端上的Adobe Commerce、內部部署或Adobe Commerce as a Cloud Service部署，請從以下Commerce管理員資源檢視及管理同步程式：
 
-- **[資料摘要同步狀態頁面](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)** — 檢查與[!DNL Live Search]、[!DNL Product Recommendations]或[!DNL Catalog Service]連線的部署的摘要匯出狀態。 此儀表板會顯示每個摘要的摘要匯出狀態，包括遇到的任何錯誤。 詳細資料檢視會顯示個別摘要專案的摘要匯出狀態。
+- **[資料摘要同步狀態頁面](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)** — 檢查與[!DNL Live Search]、[!DNL Product Recommendations]或[!DNL Catalog Service]連線的部署的摘要匯出狀態。 此儀表板會顯示每個摘要的摘要匯出狀態，包括遇到的任何錯誤。 詳細資料檢視會顯示個別摘要專案的摘要匯出狀態。
 
-- **[資料管理儀表板](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)** — 管理員使用者可以檢視及追蹤已成功匯出並同步處理至連線之Commerce服務的資料。 此儀表板會顯示同步至Commerce服務的產品資料。
+- **[資料管理儀表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)** — 管理員使用者可以檢視及追蹤已成功匯出並同步處理至連線之Commerce服務的資料。 此儀表板會顯示同步至Commerce服務的產品資料。
 
 >[!NOTE]
 >
@@ -47,11 +55,11 @@ ht-degree: 0%
 
 對於雲端上的Commerce或與[!DNL Commerce Optimizer]整合的內部部署，請使用下列資源檢視及管理同步化程式：
 
-- **[資料摘要同步狀態頁面](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)** — 從Commerce管理員監視聯結器摘要匯出狀態。 此頁面顯示是否成功從[!DNL Adobe Commerce]匯出目錄資料，包括每個摘要和每個專案的錯誤詳細資料。
+- **[資料摘要同步狀態頁面](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)** — 從Commerce管理員監視聯結器摘要匯出狀態。 此頁面顯示是否成功從[!DNL Adobe Commerce]匯出目錄資料，包括每個摘要和每個專案的錯誤詳細資料。
 
 - **[資料同步頁面](../optimizer/setup/data-sync.md)** — 資料同步頁面提供從上游目錄來源到[!DNL Commerce Optimizer]的產品資料同步狀態概觀。
 
-如需有關如何使用這些儀表板來確認資料同步處理是否正常運作，以及手動重新同步資料的詳細資訊，請參閱&#x200B;_Adobe Commerce Optimizer Connector指南_&#x200B;中的[管理同步處理](../aco-connector/data-sync-manage.md)。
+如需有關如何使用這些儀表板來確認資料同步處理是否正常運作，以及手動重新同步資料的詳細資訊，請參閱&#x200B;_Adobe Commerce Optimizer Connector指南_&#x200B;中的[管理同步處理](../aco-connector/data-sync-status.md)。
 
 >[!ENDTABS]
 
@@ -79,4 +87,4 @@ ht-degree: 0%
 > - [同步如何運作](sync-overview.md) — 瞭解同步模式、完整同步、部分同步以及重試失敗的專案。
 > - [使用Commerce CLI同步摘要](data-export-cli-commands.md) — 針對目標摘要重新同步使用`saas:resync`命令。
 > - [檢閱記錄檔並疑難排解](troubleshooting/logging.md) — 診斷資料匯出和SaaS匯出錯誤。
-> - [管理與 [!DNL Commerce Optimizer]](../aco-connector/data-sync-manage.md)的同步處理 — 驗證目錄資料同步處理並手動重新同步聯結器摘要。
+> - [管理與 [!DNL Commerce Optimizer]](../aco-connector/data-sync-status.md)的同步處理 — 驗證目錄資料同步處理並手動重新同步聯結器摘要。
