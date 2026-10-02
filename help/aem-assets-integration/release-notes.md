@@ -3,9 +3,9 @@ title: AEM Assets整合發行說明
 description: 如需所有AEM Assets整合發行版本的相關資訊，請參閱發行說明。
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
-source-git-commit: a0b269f6d4b709dd0aed4c23264928f28b2f5d98
+source-git-commit: e8b87b4622bf41f6340bf7ddd0f208512e9b09c7
 workflow-type: tm+mt
-source-wordcount: '1784'
+source-wordcount: '1738'
 ht-degree: 0%
 ---
 # AEM Assets整合發行說明
@@ -42,11 +42,11 @@ _2026年9月18日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.5版和更新版本。
 
-![已修正問題](../assets/fix.svg)<!-- Issue ACAP-1317 -->修正啟用Commerce非同步設定儲存時，為[自訂自動比對](synchronize/custom-match.md)上傳的`workspace.json`檔案未正確儲存的問題。 以前，管理員請求僅將上傳中繼資料排入佇列，而非檔案內容，因此當非同步設定取用者處理儲存時，無法再讀取臨時上傳檔案。 因此，設定似乎已成功儲存，而App Builder OAuth值保持不變。 上傳的App Builder憑證現在會在佇列邊界中倖存，並由非同步取用者正確處理。
+![已修正問題](../assets/fix.svg)<!-- Issue ACAP-1317 -->修正以下問題：儲存&#x200B;**[!UICONTROL AEM Assets Integration]**&#x200B;設定（包括其`workspace.json`上傳）並啟用`Commerce Async Config Save` （在Adobe Commerce 2.4.7中引入）時，無法以ARES註冊或更新租使用者。 設定似乎已成功儲存，但App Builder OAuth值保持不變。 非同步取用者現在可以正確處理上傳的認證。
 
 >[!IMPORTANT]
 >
->如果您使用自訂比對器，並啟用「非同步設定儲存」選項，請在升級至此版本後重新上傳`workspace.json`檔案。 如需上傳指示，請參閱[非同步設定儲存](synchronize/custom-match.md#async-config-save)。
+>如果您使用已啟用非同步設定儲存的自訂比對器，請在升級後重新上傳您的`workspace.json`檔案。 如需指示，請參閱[非同步設定儲存](synchronize/custom-match.md#async-config-save)。
 
 ## v1.4.6
 
