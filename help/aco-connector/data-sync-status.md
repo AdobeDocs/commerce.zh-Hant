@@ -4,7 +4,7 @@ description: 瞭解如何透過資料摘要同步狀態，驗證[!DNL Adobe Comm
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
+badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -35,8 +35,8 @@ topic_v2:
     internal-label: Data management
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
     internal-label: Data integration
-last-update: 2026-08-20
-source-git-commit: 77872b44f9b1aeb1ecf00253377802962df04c83
+last-update: 2026-10-01
+source-git-commit: 9ed3a09bc4e26e2ef787909700f51e25de0a18fa
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 0%
@@ -66,5 +66,5 @@ ht-degree: 0%
 > - [疑難排解](troubleshooting.md) — 診斷認證、同步和範圍匯出問題
 > - [自訂Commerce範圍匯出設定](./get-started.md#customize-the-commerce-scopes-export-configuration) — 設定每個範圍層級的摘要、啟用和停用行為，以及管理步驟
 > - [聯結器模組和摘要端點](reference/connector-reference.md) — 檢閱模組、API端點和支援的摘要
-> - [Commerce Admin中的資料摘要同步狀態頁面](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status){target="_blank"} — 深入瞭解可用於監視摘要狀態的欄位和功能
-> - [資料同步儀表板位於 [!DNL Commerce Optimizer]](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/setup/data-sync){target="_blank"} — 可用於監視目錄資料同步的欄位和動作參考檔案
+> - [Commerce Admin中的資料摘要同步狀態頁面](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status){target="_blank"} — 深入瞭解可用於監視摘要狀態的欄位和功能
+> - [資料同步儀表板位於 [!DNL Commerce Optimizer]](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync){target="_blank"} — 可用於監視目錄資料同步的欄位和動作參考檔案
