@@ -40,7 +40,7 @@ ht-degree: 0%
 
 受限存取金鑰的布建方式為下列兩種方式之一：
 
-- [!BADGE Private Beta]{type=Caution tooltip="需要Adobe Commerce Optimizer Connector B2B擴充功能，目前為私人測試版。"} **自動，針對B2B共用目錄** — 針對與[!DNL Adobe Commerce Optimizer Connector for B2B]整合的部署，聯結器會布建並指派初始金鑰。 接著，您可以從Commerce管理員管理金鑰和金鑰指派。 請參閱&#x200B;*Commerce管理指南**中的[目錄檢視驗證](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage)。
+- [!BADGE Private Beta]{type=Caution tooltip="需要Adobe Commerce Optimizer Connector B2B擴充功能，目前為私人測試版。"} **自動，針對B2B共用目錄** — 針對與[!DNL Adobe Commerce Optimizer Connector for B2B]整合的部署，聯結器會布建並指派初始金鑰。 接著，您可以從Commerce管理員管理金鑰和金鑰指派。 請參閱&#x200B;*Commerce管理指南**中的[目錄檢視驗證](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage)。
 
 - **手動，針對任何目錄檢視** — 若要自行保護目錄檢視 — 例如，針對合作夥伴入口網站或發行前預覽 — 請遵循本主題中的步驟，從[建立受限制的存取金鑰](#create-a-restricted-access-key)開始。
 
@@ -116,7 +116,7 @@ openssl rsa -in private-key.pem -pubout -out public-key.pem
 
 受限存取金鑰的管理方式為下列兩種之一，視您使用目錄保護的方式而定：
 
-- **自動，針對B2B共用目錄**—[!BADGE Private Beta]{type=Caution tooltip="需要Adobe Commerce Optimizer Connector B2B擴充功能，目前為私人測試版。"}針對與[!DNL Adobe Commerce Optimizer Connector for B2B]整合的部署，服務會在建立目錄檢視時自動產生並指派第一個受限制的存取金鑰。 每個目錄檢視都有各自的索引鍵。 之後，您可以從「共用目錄」或「公司帳戶」頁面管理每個金鑰。 您也可以從Commerce Admin **受限存取金鑰**&#x200B;頁面（**系統** > **資料傳輸**）檢視及管理金鑰。 請參閱[管理目錄檢視組態](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage)。
+- **自動，針對B2B共用目錄**—[!BADGE Private Beta]{type=Caution tooltip="需要Adobe Commerce Optimizer Connector B2B擴充功能，目前為私人測試版。"}針對與[!DNL Adobe Commerce Optimizer Connector for B2B]整合的部署，服務會在建立目錄檢視時自動產生並指派第一個受限制的存取金鑰。 每個目錄檢視都有各自的索引鍵。 之後，您可以從「共用目錄」或「公司帳戶」頁面管理每個金鑰。 您也可以從Commerce Admin **受限存取金鑰**&#x200B;頁面（**系統** > **資料傳輸**）檢視及管理金鑰。 請參閱[管理目錄檢視組態](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage)。
 
   共用目錄及其指定至的存放區檢視的每個組合，都會投影為個別的目錄檢視。 投影是聯結器針對該組合匯出至[!DNL Adobe Commerce Optimizer]的目錄檢視、原則、價格簿參考和限制存取金鑰組態資料。 因此，指派給多個存放區檢視的共用目錄會產生多個目錄檢視，每個檢視都有自己的索引鍵。 編輯或旋轉某個目錄檢視的金鑰，而不會影響其他目錄檢視。
 
