@@ -66,7 +66,7 @@ ht-degree: 0%
 | **正在退休** | 您已刪除[!DNL Adobe Commerce]中的共用目錄。 在刪除寬限期過期之前，目錄檢視仍可存取。 預設寬限期為七天。 您可以更新[目錄檢視同步處理設定](#configure-aco-catalog-view-sync-settings)來修改預設值。 |
 | **孤立** | 目錄檢視或金鑰是直接在[!DNL Adobe Commerce Optimizer] Studio中建立，而非由聯結器建立。 請參閱[檢閱孤立和已刪除的專案](#review-orphaned-and-deleted-entries)。 |
 
-[!UICONTROL Healthy]、[!UICONTROL Pending]和[!UICONTROL Deleted]是不需要動作的資訊狀態。 如需完整清單，請參閱&#x200B;*Commerce管理指南*&#x200B;中的[同步狀態值](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/catalog-view-sync-status#sync-status-values){target="_blank"}。
+[!UICONTROL Healthy]、[!UICONTROL Pending]和[!UICONTROL Deleted]是不需要動作的資訊狀態。 如需完整清單，請參閱&#x200B;*Commerce管理指南*&#x200B;中的[同步狀態值](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/catalog-view-sync-status#sync-status-values){target="_blank"}。
 
 ### 設定ACO目錄檢視同步處理設定 {#configure-aco-catalog-view-sync-settings}
 
