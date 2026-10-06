@@ -1,5 +1,5 @@
 ---
-title: '[!Data 匯出]記錄檔代碼參考'
+title: '[ !Data 匯出]記錄檔代碼參考'
 description: 資料匯出記錄檔代碼、訊息和嚴重性等級的參考清單，用於疑難排解同步問題並決定何時需要部分或完全重新同步。
 autotag-review: '2026-06-17T15:08:59.000Z'
 feature: Services
