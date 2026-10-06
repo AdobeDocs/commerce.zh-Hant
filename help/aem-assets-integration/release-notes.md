@@ -3,9 +3,9 @@ title: AEM Assets整合發行說明
 description: 如需所有AEM Assets整合發行版本的相關資訊，請參閱發行說明。
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
-source-git-commit: e8b87b4622bf41f6340bf7ddd0f208512e9b09c7
+source-git-commit: 36e6db0c76b0946c28d1a76d5649757c7f244058
 workflow-type: tm+mt
-source-wordcount: '1738'
+source-wordcount: '1847'
 ht-degree: 0%
 ---
 # AEM Assets整合發行說明
@@ -35,6 +35,22 @@ _2025年2月11日_
 ![新問題](../assets/new.svg)現在，商家可以同步產品與類別的影像。
 
 +++
+
+## v1.4.9
+
+_2026年10月7日_
+
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.5版和更新版本。
+
+![已修正問題](../assets/fix.svg)<!-- Issue CCSAAS-5562 -->修正在Admin中建立類別時顯示`Deprecated Functionality`錯誤（因為`null`已用作陣列位移）的間歇性問題。 現在，**新類別**&#x200B;表單載入時不會出現棄用通知，且類別可成功建立。
+
+## v1.4.8
+
+_2026年10月5日_
+
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.5版和更新版本。
+
+![修正問題](../assets/fix.svg)<!-- Issue ACAP-1339 -->修正當AEM Assets為視覺效果擁有者時，GraphQL的類別影像未匯出至目錄或傳回AEM Assets回應的問題。 若要匯出影像，請在套用修正後，將AEM資產重新指派給類別。
 
 ## v1.4.7
 

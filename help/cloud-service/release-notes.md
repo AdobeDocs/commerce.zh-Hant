@@ -49,9 +49,9 @@ topic_v2:
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
 last-update: 2026-08-07
-source-git-commit: 6a2300d65c9c77d18813c2eb491bfd02d1fca8ba
+source-git-commit: 324e848e9d7e4811b67e00b4f9484233d5350f04
 workflow-type: tm+mt
-source-wordcount: '7581'
+source-wordcount: '8012'
 ht-degree: 0%
 ---
 # 發行說明
@@ -129,6 +129,46 @@ ht-degree: 0%
 
 使用`POST /V1/carts/:cartId/shipping-discount`設定折扣。 使用此端點需要管理員或整合層級的存取權。<!-- ACCS-1156 -->
 
+### 以自訂價格新增購物車專案
+
+您現在可以將`custom_price`擴充功能屬性新增至標準新增或更新購物車專案REST端點（`POST /V1/carts/:cartId/items`和`PUT /V1/carts/:cartId/items/:itemId`），以設定購物車專案的自訂價格。 您必須提供管理員或整合Token，才能設定自訂價格。 以負價格或不支援的產品型別（例如具有動態定價的套件組合產品）提出的請求會遭到拒絕。<!-- ACCS-1155 -->
+
+```json
+{
+  "cartItem": {
+    "sku": "t-shirt",
+    "qty": 1,
+    "quote_id": 17,
+    "extension_attributes": { "custom_price": 15.00 }
+  }
+}
+```
+
+`GET /V1/carts/:cartId`和`GET /V1/carts/:cartId/items`端點也傳回`custom_price`值。
+
+### 將管理員建立的購物車與店面購物車隔離
+
+依預設會停用選擇加入功能，該功能會將管理員和整合功能可透過REST API建立的購物車，從客戶的使用中店面購物車中隔離開來。 啟用時，`POST /V1/customers/:customerId/carts`一律會建立新的非使用中購物車，管理員和整合來電者可透過購物車REST端點管理，而不變更購物者的店面購物車。<!-- ACCS-1153 -->
+
+若要啟用它，請使用[`PUT /V1/system/config`](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/system-config) REST API端點將`features/admin_quote_isolation/enabled`設定旗標設定為`1`：
+
+```json
+{
+  "config": {
+    "features/admin_quote_isolation/enabled": "1"
+  }
+}
+```
+
+### 透過協力廠商平台傳送異動電子郵件
+
+新事件可讓您透過[!DNL App Builder]，從第三方電子郵件平台（例如[!DNL Salesforce Marketing Cloud]）傳送交易式電子郵件。 透過[!DNL Adobe I/O Events]訂閱下列事件： <!-- ACCS-1929 -->
+
+* `observer.customer_balance_save_after` — 已儲存商店信用餘額。 新增`notify_by_email`等於`1`的訂閱規則，以接收每個商店點數通知電子郵件一個事件。
+* `observer.giftcard_item_email_send_after` — 已針對訂單專案傳送禮品卡電子郵件。 裝載包含專案的所有禮品卡代碼。
+* `plugin.customer.api.account_management.activate` — 客戶確認其帳戶。
+* `plugin.negotiable_quote.api.negotiable_quote_management.decline` — 已拒絕可協商的報價。
+
 ### 增強功能和錯誤修正
 
 此版本中包括下列選取的增強功能、最佳化和錯誤修正：
@@ -152,6 +192,22 @@ ht-degree: 0%
 * 修正當購物車包含無庫存專案時，要求購物車價格或總計可能會傳回錯誤的問題。<!-- CEXT-6776 -->
 
 * 解決當嘗試尋找遺失SKU時，詳細目錄取用者可能壓倒訊息佇列的問題。<!-- ACCS-1976 -->
+
+* `customerDownloadableProducts` GraphQL查詢現在會傳回使用外部URL設定之可下載產品的檔案中繼資料，因此店面可以判斷檔案型別以及是否要開啟或下載資產。<!-- ACCS-1735 -->
+
+* `sourceAvailability` GraphQL查詢現在套用B2B共用目錄和類別許可權，因此購物者只會收到他們有權檢視之產品的每個來源庫存。<!-- ACCS-1888 -->
+
+* 修正客戶無法從歡迎電子郵件連結設定密碼，以及新建立的客戶未出現在[!DNL Commerce Admin]客戶格線中的問題。<!-- ACCS-1979 -->
+
+* 修正透過訂單編輯REST API編輯的訂單可能以錯誤價格儲存專案的問題。<!-- ACCS-1982 -->
+
+* 修正從公司共用目錄移除的產品在店面中仍可見，並從購物車中自動捨棄的問題。<!-- CCSAAS-5544 -->
+
+* 修正類別中遭客戶群組拒絕的共用目錄產品出現在店面，但無法新增至購物車的問題。 類別拒絕許可權現在優先於共用目錄成員資格。<!-- CCSAAS-5549 -->
+
+* 修正透過GraphQL下訂單時，當出貨稅捐專案沒有標題時，可能傳回錯誤的問題。<!-- CCSAAS-5552 -->
+
+* 修正`GET /V1/customers/:customerId/companyRoles` REST端點傳回公司管理員空白許可權的問題。<!-- ACCS-1998 -->
 
 {{accs-release}}
 
