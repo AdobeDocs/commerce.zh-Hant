@@ -1,24 +1,27 @@
 ---
 title: 建議篩選器
-description: 瞭解如何使用篩選器來控制哪些產品出現在 [!DNL Adobe Commerce Optimizer] 建議中。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
+description: 瞭解如何使用篩選器來控制哪些產品會出現在[!DNL Adobe Commerce Optimizer]建議中。
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]個專案（Adobe管理的SaaS基礎結構）。"
 exl-id: f6100538-23c0-4e90-9834-a895d4707282
 TQID: https://experienceleague.adobe.com/-pmVrAgEsSkn66K00-eaoQ4TF-7Xyxuwlniip1cR4HM
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: c5a8861614fbf0e8d719305e239f926d5232ac49
+    internal-label: Personalization
+source-git-commit: 40374f0aa28d3635fc567c0311e452f92dc5704c
 workflow-type: tm+mt
-source-wordcount: 1932
+source-wordcount: '2334'
 ht-degree: 0%
-
 ---
-
 # 篩選產品
 
 [!DNL Adobe Commerce Optimizer]會自動將無法設定的預設篩選器套用至建議單位。 如果您將多個建議單位部署至一個頁面，[!DNL Adobe Commerce Optimizer]會篩選掉單位中重複的任何產品。 系統只會使用重複產品的第一次參考，以便給其他建議的產品騰出空間。 [!DNL Adobe Commerce Optimizer]也會篩選掉任何先前購買過的產品以及購物車中的產品。
@@ -207,8 +210,73 @@ ht-degree: 0%
 >
 >可設定產品的子產品不會顯示在建議單位中，因為這些子產品具有&#x200B;_不個別顯示_&#x200B;的可見性。
 
-<!--
-### Attribute
+### 屬性 {#attributes}
 
-You can filter products based on attribute criteria, including attribute values. Selected values use OR logic to either include or exclude products when any of the specified values are found.
+>[!NOTE]
+>
+>屬性篩選為測試版。
+
+屬性篩選器可讓您使用與[價格](#price)和[產品](#product)篩選器相同的&#x200B;**[!UICONTROL Filter products]**&#x200B;頁面，根據產品屬性值包含或排除產品。
+
+#### 關於屬性篩選
+
+屬性篩選器與[產品篩選器](#product)不同，因為它會依照共用的屬性值而不是個別的SKU來鎖定產品。 例如，您可以建立符合指派給類別之所有產品的單一屬性篩選器，而不是列出指派給類別的每個SKU。
+
+#### 設定屬性篩選
+
+使用下列步驟，將屬性包含或排除規則新增至建議單位。
+
+1. 在[建立或編輯](create.md)建議單位時，請移至&#x200B;**[!UICONTROL Filter products]**。
+1. 選取&#x200B;**[!UICONTROL Inclusions]**&#x200B;或&#x200B;**[!UICONTROL Exclusions]**&#x200B;索引標籤。 每個標籤上的徽章會顯示已啟用多少該型別的篩選器。
+1. 在左側的清單中，選取&#x200B;**[!UICONTROL Attributes]**。
+1. 從選取器中選擇屬性，例如&#x200B;**類別**。
+1. 在&#x200B;**[!UICONTROL Value]**&#x200B;中，輸入屬性的值，例如&#x200B;**pants**。
+1. 按&#x200B;**Enter**&#x200B;或按一下&#x200B;**[!UICONTROL Add inclusion filter]** （或等效的排除控制項）以新增屬性篩選。
+1. 完成建議單位的設定，然後如您平常一樣儲存或發佈，讓篩選器生效。
+
+![屬性篩選器](../../assets/filter-attribute.png)
+
+>[!NOTE]
+>
+>當您選取中繼資料集為`number`到`true`的屬性（例如&#x200B;**Size**）時，**Value**&#x200B;欄位會顯示範圍輸入，而非單一文字值。
+
+#### 使用包含和排除條件
+
+只允許建議符合包含篩選器的產品。 不建議使用符合任何排除篩選器的產品。
+
+#### 合併條件
+
+當屬性篩選器包含多個值或與其他條件結合時，以下邏輯適用。
+
+- 如果為相同屬性選取了多個值，則這些值會與`OR`結合。
+- 不同屬性（例如，顏色和大小）的條件會與`AND`結合 — 產品必須全部符合。 如果您將相同的屬性新增為個別條件，而非在一個條件中輸入多個值，則這些條件也會與`AND` （而非`OR`）結合。
+- 如果有多個排除條件，當產品符合任何排除條件時，就會移除產品。
+- 如果同時使用包含和排除篩選器，請參閱[邏輯運運算元](#logical-operators)。
+
+<!--
+#### Availability by recommendation type
+
+Hiding this for now as we need better clarification on what "limited" means.
+
+Attribute filter support varies by recommendation type.
+
+| Recommendation type | Inclusion support | Exclusion support |
+| --- | --- | --- |
+| Most viewed | Yes | Yes |
+| Most purchased | Yes | Yes |
+| Trending | Yes | Yes |
+| Recommended for you | Limited | Yes |
+| Viewed this, viewed that | Limited | Yes |
+| Viewed this, bought that | Limited | Yes |
+| Bought this, bought that | Limited | Yes |
+| More like this | Limited | Yes |
+| Visual similarity | No | Yes |
+| Recently viewed | No | Limited |
+| Recently purchased | No | Limited |
 -->
+
+#### 可用性、驗證和疑難排解
+
+- 如果存在空的屬性值或無效條件，則建議不會在店面或預覽面板中呈現。
+- 屬性值必須與目錄中的完全相符，這包括空格和大寫。
+- 如果沒有任何產品符合篩選條件，建議將不會在店面或預覽面板中呈現。
