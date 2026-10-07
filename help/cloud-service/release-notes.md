@@ -49,9 +49,9 @@ topic_v2:
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
 last-update: 2026-08-07
-source-git-commit: 324e848e9d7e4811b67e00b4f9484233d5350f04
+source-git-commit: d4f896450e74c62db575ce9798cf27737466eb07
 workflow-type: tm+mt
-source-wordcount: '8012'
+source-wordcount: '8005'
 ht-degree: 0%
 ---
 # 發行說明
@@ -150,15 +150,7 @@ ht-degree: 0%
 
 依預設會停用選擇加入功能，該功能會將管理員和整合功能可透過REST API建立的購物車，從客戶的使用中店面購物車中隔離開來。 啟用時，`POST /V1/customers/:customerId/carts`一律會建立新的非使用中購物車，管理員和整合來電者可透過購物車REST端點管理，而不變更購物者的店面購物車。<!-- ACCS-1153 -->
 
-若要啟用它，請使用[`PUT /V1/system/config`](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/system-config) REST API端點將`features/admin_quote_isolation/enabled`設定旗標設定為`1`：
-
-```json
-{
-  "config": {
-    "features/admin_quote_isolation/enabled": "1"
-  }
-}
-```
+若要啟用此功能，請聯絡您的Adobe Commerce客戶成功經理或建立支援票證。
 
 ### 透過協力廠商平台傳送異動電子郵件
 
