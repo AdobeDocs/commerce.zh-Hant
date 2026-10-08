@@ -131,7 +131,7 @@ ht-degree: 0%
 
 ### 以自訂價格新增購物車專案
 
-您現在可以將`custom_price`擴充功能屬性新增至標準新增或更新購物車專案REST端點（`POST /V1/carts/:cartId/items`和`PUT /V1/carts/:cartId/items/:itemId`），以設定購物車專案](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/cart-custom-price)的[自訂價格。 您必須提供管理員或整合Token，才能設定自訂價格。 以負價格或不支援的產品型別（例如具有動態定價的套件組合產品）提出的請求會遭到拒絕。<!-- ACCS-1155 -->
+您現在可以將`custom_price`擴充功能屬性新增至標準新增或更新購物車專案REST端點（`POST /V1/carts/:cartId/items`和`PUT /V1/carts/:cartId/items/:itemId`），以設定購物車專案[&#128279;](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/cart-custom-price)的自訂價格。 您必須提供管理員或整合Token，才能設定自訂價格。 以負價格或不支援的產品型別（例如具有動態定價的套件組合產品）提出的請求會遭到拒絕。<!-- ACCS-1155 -->
 
 ```json
 {
