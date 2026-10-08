@@ -49,9 +49,9 @@ topic_v2:
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
 last-update: 2026-08-07
-source-git-commit: d4f896450e74c62db575ce9798cf27737466eb07
+source-git-commit: dee10a97e03a115bcd758171082061e95bb6adcc
 workflow-type: tm+mt
-source-wordcount: '8005'
+source-wordcount: '8064'
 ht-degree: 0%
 ---
 # 發行說明
@@ -64,11 +64,11 @@ ht-degree: 0%
 
 ## 2026年10月 — 發行說#1 {#latest}
 
-[!BADGE 沙箱]{type=Caution tooltip="列出的專案目前僅在沙箱環境中可用。 Adobe會先在沙箱環境中推出新版本，讓您可以在生產環境中使用該版本之前有時間測試即將推出的變更。"}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE 生產]{type=Neutral tooltip="列出的專案目前可在生產環境中使用。"}
 
-以下專案將於2026年10月6日新增到生產環境。
+以下專案已於2026年10月7日發佈到生產環境。
 
 >[!BEGINSHADEBOX]
 
@@ -78,7 +78,7 @@ ht-degree: 0%
 
 ### 在REST中管理目錄價格規則
 
-新的REST API端點可讓整合以程式設計方式管理和搜尋[目錄價格規則](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog)。<!-- ACCS-1621 -->
+新的[REST API端點](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/catalog-price-rules)可讓整合以程式設計方式管理和搜尋[目錄價格規則](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog)。<!-- ACCS-1621 -->
 
 下列端點受`Magento_CatalogRule::promo_catalog`許可權保護，這也會保護[管理目錄價格規則]畫面。 使用此端點需要管理員或整合層級的存取權。
 
@@ -125,13 +125,13 @@ ht-degree: 0%
 
 ### 透過管理員REST API套用自訂運費折扣
 
-您現在可以透過管理員REST API，針對不符合購物車價格規則的情況，對購物車套用任意配送折扣。
+您現在可以透過管理員REST API，針對不符合購物車價格規則的情況，將任意的[運費折扣](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/shipping-discounts)套用至購物車。
 
 使用`POST /V1/carts/:cartId/shipping-discount`設定折扣。 使用此端點需要管理員或整合層級的存取權。<!-- ACCS-1156 -->
 
 ### 以自訂價格新增購物車專案
 
-您現在可以將`custom_price`擴充功能屬性新增至標準新增或更新購物車專案REST端點（`POST /V1/carts/:cartId/items`和`PUT /V1/carts/:cartId/items/:itemId`），以設定購物車專案的自訂價格。 您必須提供管理員或整合Token，才能設定自訂價格。 以負價格或不支援的產品型別（例如具有動態定價的套件組合產品）提出的請求會遭到拒絕。<!-- ACCS-1155 -->
+您現在可以將`custom_price`擴充功能屬性新增至標準新增或更新購物車專案REST端點（`POST /V1/carts/:cartId/items`和`PUT /V1/carts/:cartId/items/:itemId`），以設定購物車專案[&#128279;](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/cart-custom-price)的自訂價格。 您必須提供管理員或整合Token，才能設定自訂價格。 以負價格或不支援的產品型別（例如具有動態定價的套件組合產品）提出的請求會遭到拒絕。<!-- ACCS-1155 -->
 
 ```json
 {
@@ -161,6 +161,10 @@ ht-degree: 0%
 * `plugin.customer.api.account_management.activate` — 客戶確認其帳戶。
 * `plugin.negotiable_quote.api.negotiable_quote_management.decline` — 已拒絕可協商的報價。
 
+### 大量API限制
+
+[大量API](https://developer.adobe.com/commerce/webapi/rest/use-rest/bulk-endpoints)現在會強制每個請求的最大實體數。 超過限制的請求會傳回錯誤。 [組態參考](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/bulk-api)中無法設定的[!UICONTROL Maximum Entities Per Bulk Request]欄位會顯示限制。 如需詳細資訊，請參閱[API安全性](https://developer.adobe.com/commerce/webapi/get-started/api-security#input-limit-for-rest-endpoints)。<!-- ACCS-703 -->
+
 ### 增強功能和錯誤修正
 
 此版本中包括下列選取的增強功能、最佳化和錯誤修正：
@@ -168,8 +172,6 @@ ht-degree: 0%
 * 當您建立或編輯webhook時，[!DNL Commerce Admin]現在會顯示警告，其中包含Adobe I/O Runtime `X-OW-EXTRA-LOGGING`標頭設定為`on`。 標頭用於偵錯，不建議在生產環境中使用。<!-- CCSAAS-5486 -->
 
 * 透過預先簽署的S3上傳URL上傳的檔案，現在會額外掃描惡意軟體。<!-- ACCS-1463 -->
-
-* 大量API現在會強制實施每個請求的最大實體數量。 超過限制的請求會傳回錯誤。<!-- ACCS-703 -->
 
 * 修正產品可銷售數量可能少報，而無法正確封鎖加入購物車、REST和GraphQL庫存檢查的問題。<!-- ACCS-1908 -->
 
@@ -217,7 +219,7 @@ ht-degree: 0%
 
 ### 附加檔案和影像以傳回請求
 
-客戶現在可以透過店面[`requestReturn`](https://developer.adobe.com/commerce/webapi/graphql/schema/orders/mutations/request-return/#request-a-return-with-an-image-attachment) GraphQL變異提交回訪要求時上傳檔案和影像。 使用[`initiateUpload`與`finishUpload`變動](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads/)上傳檔案，然後將傳回的索引鍵指派給傳回的專案自訂屬性。<!-- CCSAAS-5410 -->
+客戶現在可以透過店面[`requestReturn`](https://developer.adobe.com/commerce/webapi/graphql/schema/orders/mutations/request-return/#request-a-return-with-an-image-attachment) GraphQL變異提交回訪要求時上傳檔案和影像。 使用[`initiateUpload`突變](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads/mutations/initiate-upload#recaptcha-validation)上傳檔案，然後將傳回的索引鍵指派給傳回的專案自訂屬性。<!-- CCSAAS-5410 -->
 
 ### 控制存貨來源外觀
 
