@@ -2,7 +2,8 @@
 title: 設定B2B Commerce的聯結器
 description: 瞭解如何安裝B2B聯結器、選取Commerce範圍、同步處理共用目錄資料、驗證目錄檢視及監視投影健康情況。
 feature: Integration, Configuration
-badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
+badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
+last-update: 2026-10-01
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -19,6 +20,8 @@ feature_v2:
     internal-label: Integrations
   - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
     internal-label: Admin tools and workspace
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 subfeature_v2:
   - id: e126554b-28f9-4290-b58c-10b888b88174
     internal-label: IMS integration
@@ -37,8 +40,7 @@ topic_v2:
     internal-label: Data integration
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-last-update: 2026-10-01
-source-git-commit: 9ed3a09bc4e26e2ef787909700f51e25de0a18fa
+source-git-commit: c76e776250d9f996daf61d3cf62e2070803e998c
 workflow-type: tm+mt
 source-wordcount: '843'
 ht-degree: 0%
@@ -52,11 +54,11 @@ ht-degree: 0%
 
 ## 使用整合的需求 {#requirements-to-use-the-integration}
 
-* 已安裝並啟用[Adobe Commerce B2B 1.5.3+](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/b2b/install)版的Commerce 2.4.8+。
+* 已安裝並啟用[Adobe Commerce B2B 1.5.3+](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/install)版的Commerce 2.4.8+。
 
 * [!DNL Commerce Optimizer]授權包含已布建的沙箱執行個體。
 
-* [驗證金鑰](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)以使用Composer下載聯結器中繼封裝。
+* [驗證金鑰](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)以使用Composer下載聯結器中繼封裝。
 
 * 管理員存取[[!DNL Commerce Optimizer] 沙箱執行個體](../optimizer/get-started.md)。
 
@@ -64,9 +66,9 @@ ht-degree: 0%
 
 * Commerce管理員的管理員存取權。
 
-* [對 [!DNL Adobe Commerce] 應用程式伺服器](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/project/user-access)的命令列存取權。
+* [對 [!DNL Adobe Commerce] 應用程式伺服器](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access)的命令列存取權。
 
-* 開發人員存取已布建[!DNL Commerce Optimizer]專案的[IMS組織](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/administration/organizations？)。
+* 開發人員存取已布建[!DNL Commerce Optimizer]專案的[IMS組織](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations？)。
 
 ### 應用程式需求
 
