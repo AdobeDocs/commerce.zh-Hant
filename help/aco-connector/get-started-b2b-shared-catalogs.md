@@ -2,7 +2,7 @@
 title: 設定B2B Commerce的聯結器
 description: 瞭解如何安裝B2B聯結器、選取Commerce範圍、同步處理共用目錄資料、驗證目錄檢視及監視投影健康情況。
 feature: Integration, Configuration
-badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
+badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
 last-update: 2026-10-01
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -54,11 +54,11 @@ ht-degree: 0%
 
 ## 使用整合的需求 {#requirements-to-use-the-integration}
 
-* 已安裝並啟用[Adobe Commerce B2B 1.5.3+](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/install)版的Commerce 2.4.8+。
+* 已安裝並啟用[Adobe Commerce B2B 1.5.3+](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/b2b/install)版的Commerce 2.4.8+。
 
 * [!DNL Commerce Optimizer]授權包含已布建的沙箱執行個體。
 
-* [驗證金鑰](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)以使用Composer下載聯結器中繼封裝。
+* [驗證金鑰](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)以使用Composer下載聯結器中繼封裝。
 
 * 管理員存取[[!DNL Commerce Optimizer] 沙箱執行個體](../optimizer/get-started.md)。
 
@@ -66,9 +66,9 @@ ht-degree: 0%
 
 * Commerce管理員的管理員存取權。
 
-* [對 [!DNL Adobe Commerce] 應用程式伺服器](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access)的命令列存取權。
+* [對 [!DNL Adobe Commerce] 應用程式伺服器](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/project/user-access)的命令列存取權。
 
-* 開發人員存取已布建[!DNL Commerce Optimizer]專案的[IMS組織](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations？)。
+* 開發人員存取已布建[!DNL Commerce Optimizer]專案的[IMS組織](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/administration/organizations？)。
 
 ### 應用程式需求
 

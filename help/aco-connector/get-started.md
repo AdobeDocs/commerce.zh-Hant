@@ -2,7 +2,7 @@
 title: 開始使用[!DNL Adobe Commerce Optimizer Connector]
 description: 瞭解如何安裝[!DNL Adobe Commerce Optimizer Connector]、設定範圍匯出設定、啟用IMS驗證，以及驗證目錄同步處理。
 feature: Integration, Configuration
-badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
+badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
 autotag-review: '2026-06-09T16:55:50.934Z'
 last-update: 2026-10-01
 TQID: 'https://experienceleague.adobe.com/AcZ6CNyuIdUlfVHXhyQEYuThfLNd4WWqMMY82tjMMCc'
@@ -60,11 +60,11 @@ ht-degree: 0%
 
 ## 使用整合的需求 {#requirements-to-use-the-integration}
 
-* [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.7+。 如需詳細需求，請參閱[系統需求](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)。
+* [Adobe Commerce](https://business.adobe.com/tw/products/magento/magento-commerce.html) 2.4.7+。 如需詳細需求，請參閱[系統需求](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/system-requirements)。
 
 * 具有已布建沙箱執行個體的[!DNL Commerce Optimizer]授權。
 
-* [驗證金鑰](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)，以使用Composer下載聯結器中繼套件。
+* [驗證金鑰](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/prerequisites/authentication-keys)，以使用Composer下載聯結器中繼套件。
 
 * 管理員存取[[!DNL Commerce Optimizer] 沙箱執行個體](../optimizer/get-started.md)。
 
@@ -72,9 +72,9 @@ ht-degree: 0%
 
 * Commerce管理員的管理員存取權。
 
-* [對 [!DNL Adobe Commerce] 應用程式伺服器](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access)的命令列存取權。
+* [對 [!DNL Adobe Commerce] 應用程式伺服器](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/project/user-access)的命令列存取權。
 
-* 開發人員存取已布建[!DNL Commerce Optimizer]專案的[IMS組織](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations？)。
+* 開發人員存取已布建[!DNL Commerce Optimizer]專案的[IMS組織](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/administration/organizations？)。
 
 >[!BEGINSHADEBOX]
 
