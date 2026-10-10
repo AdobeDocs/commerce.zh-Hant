@@ -163,7 +163,7 @@ ht-degree: 0%
 
 ### 大量API限制
 
-[大量API](https://developer.adobe.com/commerce/webapi/rest/use-rest/bulk-endpoints)現在會強制每個請求的最大實體數。 超過限制的請求會傳回錯誤。 [組態參考](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/bulk-api)中無法設定的[!UICONTROL Maximum Entities Per Bulk Request]欄位會顯示限制。 如需詳細資訊，請參閱[API安全性](https://developer.adobe.com/commerce/webapi/get-started/api-security#input-limit-for-rest-endpoints)。<!-- ACCS-703 -->
+[大量API](https://developer.adobe.com/commerce/webapi/rest/use-rest/bulk-endpoints)現在會強制每個請求的最大實體數。 超過限制的請求會傳回錯誤。 [組態參考](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/config/general/bulk-api)中無法設定的[!UICONTROL Maximum Entities Per Bulk Request]欄位會顯示限制。 如需詳細資訊，請參閱[API安全性](https://developer.adobe.com/commerce/webapi/get-started/api-security#input-limit-for-rest-endpoints)。<!-- ACCS-703 -->
 
 ### 增強功能和錯誤修正
 
