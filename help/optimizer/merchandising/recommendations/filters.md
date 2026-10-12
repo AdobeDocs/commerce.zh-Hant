@@ -17,9 +17,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 40374f0aa28d3635fc567c0311e452f92dc5704c
+source-git-commit: 092ffabea06cf72af39a663c14b448f9e7633f60
 workflow-type: tm+mt
-source-wordcount: '2334'
+source-wordcount: '2364'
 ht-degree: 0%
 ---
 # 篩選產品
@@ -280,3 +280,11 @@ Attribute filter support varies by recommendation type.
 - 如果存在空的屬性值或無效條件，則建議不會在店面或預覽面板中呈現。
 - 屬性值必須與目錄中的完全相符，這包括空格和大寫。
 - 如果沒有任何產品符合篩選條件，建議將不會在店面或預覽面板中呈現。
+
+### 無庫存
+
+下列排除篩選器可以根據庫存狀態篩選出產品：
+
+- 無庫存 — （僅限排除）排除無庫存的產品。
+
+![庫存狀態篩選器](../../assets/filter-stock-status.png)
