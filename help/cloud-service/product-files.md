@@ -4,7 +4,7 @@ description: 瞭解如何使用[!DNL Adobe Commerce as a Cloud Service]中的檔
 feature: Catalog Management, Products, Integration
 role: Admin, Developer
 level: Intermediate
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
 autotag-review: '2026-06-18T16:03:48.301Z'
 TQID: 'https://experienceleague.adobe.com/fFbsXGO54L1lSuQULqfP7A-BJKSYggdt7cy-GDvaSzU'
 product_v2:
@@ -48,7 +48,7 @@ ht-degree: 0%
 ---
 # 將檔案新增至產品
 
-[!DNL Adobe Commerce as a Cloud Service]支援「檔案」[產品屬性輸入型別](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types){target="_blank"}，可讓商家將檔案（例如PDF、手冊、憑證和資料表）直接附加至產品。 檔案儲存在Amazon S3媒體儲存空間，並可使用GraphQL透過店面或使用REST API的整合進行存取。
+[!DNL Adobe Commerce as a Cloud Service]支援「檔案」[產品屬性輸入型別](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/product-attributes/attributes-input-types){target="_blank"}，可讓商家將檔案（例如PDF、手冊、憑證和資料表）直接附加至產品。 檔案儲存在Amazon S3媒體儲存空間，並可使用GraphQL透過店面或使用REST API的整合進行存取。
 
 上傳檔案至產品檔案屬性的方式有三種：
 
@@ -60,15 +60,15 @@ ht-degree: 0%
 
 上傳檔案之前，您必須建立檔案屬性並將其指派給屬性集。
 
-* [建立檔案屬性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create){target="_blank"} — 將&#x200B;**[!UICONTROL Catalog Input Type for Store Owner]**&#x200B;設為&#x200B;**[!UICONTROL File]**。
+* [建立檔案屬性](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create){target="_blank"} — 將&#x200B;**[!UICONTROL Catalog Input Type for Store Owner]**&#x200B;設為&#x200B;**[!UICONTROL File]**。
 
-* [將屬性指派給屬性集](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-sets#create-an-attribute-set){target="_blank"} — 將新的檔案屬性拖曳到所要的群組中。
+* [將屬性指派給屬性集](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/product-attributes/create/attribute-sets#create-an-attribute-set){target="_blank"} — 將新的檔案屬性拖曳到所要的群組中。
 
-* 在[產品檔案屬性](https://experienceleague.adobe.com/en/docs/commerce-admin/config/catalog/product-file-attributes)組態中設定允許的檔案型別和大小。
+* 在[產品檔案屬性](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/config/catalog/product-file-attributes)組態中設定允許的檔案型別和大小。
 
 ## 透過管理員上傳檔案
 
-在您[建立檔案屬性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create){target="_blank"}並將其指派給屬性集之後，您可以直接從產品編輯頁面上傳檔案。
+在您[建立檔案屬性](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create){target="_blank"}並將其指派給屬性集之後，您可以直接從產品編輯頁面上傳檔案。
 
 1. 在&#x200B;_管理員_&#x200B;側邊欄上，移至&#x200B;**[!UICONTROL Catalog]** > **[!UICONTROL Products]**。
 
@@ -95,7 +95,7 @@ ht-degree: 0%
 
 ## 透過產品匯入上傳
 
-您可以使用[匯入API](https://developer.adobe.com/commerce/webapi/rest/modules/import/){target="_blank"}或管理員匯入UI，大量附加檔案至產品。 產品檔案屬性僅支援從外部URL匯入，其方式與產品影像匯入[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import-product-images#method-2-import-images-from-external-server){target="_blank"}的方法2相同。 Commerce會從提供的URL下載檔案，並將其儲存至S3媒體儲存空間。
+您可以使用[匯入API](https://developer.adobe.com/commerce/webapi/rest/modules/import/){target="_blank"}或管理員匯入UI，大量附加檔案至產品。 產品檔案屬性僅支援從外部URL匯入，其方式與產品影像匯入[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/import/data-import-product-images#method-2-import-images-from-external-server){target="_blank"}的方法2相同。 Commerce會從提供的URL下載檔案，並將其儲存至S3媒體儲存空間。
 
 >[!NOTE]
 >
@@ -119,7 +119,7 @@ sku,name,additional_attributes
 ADB112,"My Product",file_upload=https://example.com/files/manual.pdf
 ```
 
-在這兩種情況下，URL都必須可公開存取，且副檔名和大小必須符合[設定的限制](https://experienceleague.adobe.com/en/docs/commerce-admin/config/catalog/product-file-attributes){target="_blank"}。
+在這兩種情況下，URL都必須可公開存取，且副檔名和大小必須符合[設定的限制](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/config/catalog/product-file-attributes){target="_blank"}。
 
 ## 透過GraphQL擷取檔案
 
