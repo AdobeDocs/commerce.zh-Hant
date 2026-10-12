@@ -4,13 +4,24 @@ description: 瞭解在何處尋找及管理Commerce的AEM Assets整合記錄。
 feature: CMS, Media, Integration
 badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
 exl-id: 9c6c8694-6ded-4cc8-a3ab-d1dfb50e3583
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: ddbd0f6e-b569-5a04-8a70-55058777c373
+    internal-label: CMS
+  - id: 4ca54350-01cb-5b22-8966-5f2873dc6d90
+    internal-label: Media
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 0%
-
 ---
-
 # 檢視和管理記錄檔
 
 AEM Assets整合在您的Commerce執行個體中提供下列記錄檔：

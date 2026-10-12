@@ -1,6 +1,6 @@
 ---
 title: 大量資料移轉工具
-description: 瞭解如何使用大量資料移轉工具，將資料從雲端執行個體上的現有Adobe Commerce移轉至 [!DNL Adobe Commerce as a Cloud Service]。
+description: 瞭解如何使用大量資料移轉工具，將資料從雲端執行個體上的現有Adobe Commerce移轉到[!DNL Adobe Commerce as a Cloud Service]。
 feature: Cloud
 badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
 role: Developer
@@ -10,26 +10,35 @@ autotag-review: '2026-07-22T19:18:39.433Z'
 TQID: 'https://experienceleague.adobe.com/tkCFabZpBKu-W34wsufHlVIWzCUE8FKm4kK7qZahxBU'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
   - id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
+    internal-label: Commerce ecosystem
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
 subfeature_v2:
   - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+    internal-label: Cloud architecture
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 4c0eca0039bab7d015144dd9ac3885a0b2be0563
+    internal-label: Data management
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 924
+source-wordcount: '924'
 ht-degree: 0%
-
 ---
-
 # 大量資料移轉工具
 
 >[!IMPORTANT]

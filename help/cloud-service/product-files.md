@@ -1,6 +1,6 @@
 ---
 title: 將檔案新增至產品
-description: 瞭解如何在 [!DNL Adobe Commerce as a Cloud Service]中使用檔案型別產品屬性，將PDF、手冊和資料表等檔案附加至產品。
+description: 瞭解如何使用[!DNL Adobe Commerce as a Cloud Service]中的檔案型別產品屬性，將PDF、手冊和資料表等檔案附加至產品。
 feature: Catalog Management, Products, Integration
 role: Admin, Developer
 level: Intermediate
@@ -9,28 +9,43 @@ autotag-review: '2026-06-18T16:03:48.301Z'
 TQID: 'https://experienceleague.adobe.com/fFbsXGO54L1lSuQULqfP7A-BJKSYggdt7cy-GDvaSzU'
 product_v2:
   - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+    internal-label: Commerce as a Cloud Service
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 4067ab89-2e97-5de1-8d98-de8318461a8d
+    internal-label: Products
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 subfeature_v2:
   - id: ae62cf09-5996-4921-bda8-fbe67b62e470
+    internal-label: Storefront configuration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+    internal-label: Administration
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 753
+source-wordcount: '753'
 ht-degree: 0%
-
 ---
-
 # 將檔案新增至產品
 
 [!DNL Adobe Commerce as a Cloud Service]支援「檔案」[產品屬性輸入型別](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/product-attributes/attributes-input-types){target="_blank"}，可讓商家將檔案（例如PDF、手冊、憑證和資料表）直接附加至產品。 檔案儲存在Amazon S3媒體儲存空間，並可使用GraphQL透過店面或使用REST API的整合進行存取。

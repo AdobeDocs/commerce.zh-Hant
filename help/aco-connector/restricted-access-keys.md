@@ -18,6 +18,8 @@ feature_v2:
     internal-label: Integrations
   - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
     internal-label: Admin tools and workspace
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 subfeature_v2:
   - id: a40ebd6b-b542-4432-a730-1803ef74518d
     internal-label: Data Transfer
@@ -34,7 +36,7 @@ topic_v2:
     internal-label: Data management
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
     internal-label: Data integration
-source-git-commit: a3ade1a31d3c2905b601f71bda118de89c43cf59
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '1105'
 ht-degree: 0%
@@ -42,7 +44,7 @@ ht-degree: 0%
 
 # 管理B2B共用目錄的限制存取金鑰
 
-[!BADGE Private Beta]{type=Caution tooltip="需要Adobe Commerce Optimizer Connector B2B擴充功能，目前為私人測試版。"}
+[!BADGE Private beta]{type=Caution tooltip="需要Adobe Commerce Optimizer Connector B2B擴充功能，目前為私人測試版。"}
 
 如果您將[!DNL Adobe Commerce]個B2B共用目錄與[!DNL Adobe Commerce Optimizer Connector B2B extension]搭配使用，擴充功能會在建立目錄檢視時自動產生並指派第一個受限制的存取金鑰。 使用Commerce管理員中的[!UICONTROL Restricted Access Keys]頁面來檢視該金鑰，以及建立、指派或刪除其他金鑰。
 

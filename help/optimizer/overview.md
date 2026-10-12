@@ -1,16 +1,24 @@
 ---
-title: 什麼是 [!DNL Adobe Commerce Optimizer]？
-description: 瞭解 [!DNL Adobe Commerce Optimizer] 及其主要功能。
+title: 什麼是[!DNL Adobe Commerce Optimizer]？
+description: 了解 [!DNL Adobe Commerce Optimizer] 及其主要功能。
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]個專案（Adobe管理的SaaS基礎結構）。"
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1009'
 ht-degree: 0%
-
 ---
-
 # 什麼是[!DNL Adobe Commerce Optimizer]？
 
 [!DNL Adobe Commerce Optimizer]透過高效能店面來強化您的電子商務體驗，提升自然流量、客戶參與度和收入。

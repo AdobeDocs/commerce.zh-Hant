@@ -2,16 +2,22 @@
 title: Adobe Commerce Optimizer限制和邊界
 description: 瞭解Adobe Commerce Optimizer授許可權制和系統界限。 規劃容量、追蹤使用量，以及避免延遲和超過限制時的節流現象。
 role: Admin, Developer
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]個專案（Adobe管理的SaaS基礎結構）。"
 exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
 nudge: true
-source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: '1494'
+source-wordcount: '1495'
 ht-degree: 0%
-
 ---
-
 # 限制和邊界
 
 [!DNL Adobe Commerce Optimizer]套用&#x200B;**授許可權制**&#x200B;和&#x200B;**系統界限**，以定義專案可使用的容量：

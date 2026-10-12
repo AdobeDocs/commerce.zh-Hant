@@ -3,24 +3,34 @@ title: 手動選取資產
 description: 瞭解整合至Commerce Admin的AEM Asset Selector如何協助行銷人員和銷售人員輕鬆將影像從AEM Assets新增至Adobe Commerce，進而簡化資產管理。
 feature: CMS, Media, Integration
 exl-id: 3c1f906f-3ec3-4eac-a47e-b21792767359
-TQID: https://experienceleague.adobe.com/3fYabUvRiY8KTxQX1YiTBbLxABpQqfZLu0a6IBDsM3E
+TQID: 'https://experienceleague.adobe.com/3fYabUvRiY8KTxQX1YiTBbLxABpQqfZLu0a6IBDsM3E'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
+    internal-label: Compliance
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: ddbd0f6e-b569-5a04-8a70-55058777c373
+    internal-label: CMS
+  - id: 4ca54350-01cb-5b22-8966-5f2873dc6d90
+    internal-label: Media
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: da3860b0-d637-47df-bef0-273751180266
-source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
+    internal-label: Digital asset management
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 397
+source-wordcount: '397'
 ht-degree: 0%
-
 ---
-
 # 手動選取資產
 
 **AEM Asset Selector**&#x200B;可讓行銷人員和銷售人員輕鬆將影像從AEM Assets新增到Adobe Commerce，簡化資產管理程式。 此方法將資產選取限制在[!DNL DAM (Digital Asset Management system)]中稽核和核准者，可確保品牌一致性和法規遵循。
