@@ -2,13 +2,24 @@
 title: 設定AEM Assets整合的IMS使用者許可權
 description: 瞭解IMS身分和Admin Console設定檔如何啟用AEM Assets傳送存取、資產選擇器和自動填入的Commerce設定欄位。
 feature: CMS, Media, Configuration
-source-git-commit: 0c2e50338cbf286704239b6d1f628180e85a3bef
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: ddbd0f6e-b569-5a04-8a70-55058777c373
+    internal-label: CMS
+  - id: 4ca54350-01cb-5b22-8966-5f2873dc6d90
+    internal-label: Media
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '917'
 ht-degree: 0%
-
 ---
-
 # 使用者許可權和IMS
 
 **IMS** (Adobe Identity Management System)是驗證層。
@@ -16,7 +27,7 @@ ht-degree: 0%
 * 對於Adobe Commerce as a Cloud Service，管理員預設會啟用IMS驗證。
 * 對於雲端或內部部署的Adobe Commerce，IMS為選用。
 
-  [為Commerce啟用IMS](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/admin/ims/adobe-ims-config){target=_blank}提供增強的設定UI （資產選擇器、自動填入的下拉式清單），但您可以手動輸入&#x200B;**方案ID**&#x200B;和&#x200B;**環境ID**&#x200B;來設定不使用IMS的整合。
+  [為Commerce啟用IMS](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/ims/adobe-ims-config){target=_blank}提供增強的設定UI （資產選擇器、自動填入的下拉式清單），但您可以手動輸入&#x200B;**方案ID**&#x200B;和&#x200B;**環境ID**&#x200B;來設定不使用IMS的整合。
 
 使用IMS時，AEM Assets整合也需要特定的&#x200B;**Adobe Admin Console產品設定檔**。 在Commerce管理員中設定整合的使用者需要&#x200B;**AEM Assets DM OpenAPI使用者 — 傳遞**&#x200B;產品設定檔，或是&#x200B;**作者**&#x200B;產品設定檔作為遞補。 您可以透過使用者IMS組織中的Admin Console產品設定檔控制此存取權，並啟用：
 
@@ -62,7 +73,7 @@ Adobe IMS提供使用者身分和組織內容，而Adobe Admin Console定義使�
 
 >[!NOTE]
 >
-> 使用者也必須新增至Commerce和AEM Assets。 如需完整設定，請參閱「_使用者和AEM Assets_&#x200B;指南」中的[新增使用者至Identity Management或產品視覺效果](https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/user-management#add-a-user-to-aem-assets-or-product-visuals){target=_blank}。
+> 使用者也必須新增至Commerce和AEM Assets。 如需完整設定，請參閱「_使用者和AEM Assets_&#x200B;指南」中的[新增使用者至Identity Management或產品視覺效果](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management#add-a-user-to-aem-assets-or-product-visuals){target=_blank}。
 
 適用於Admin Console傳遞的![AEM Assets產品設定檔](../assets/aem-assets-delivery-product-profile.png){width="600" zoomable="yes"}
 
@@ -74,9 +85,9 @@ Paa需要&#x200B;**IMS使用者端ID**&#x200B;才能啟用資產選擇器。 如
 
 若要使用資產選擇器和自動填入的設定欄位（方案ID、環境ID、網域對應）：
 
-1. [為Commerce啟用Adobe IMS](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/admin/ims/adobe-ims-config){target=_blank}，讓Commerce管理員使用IMS驗證，並可讀取使用者的Admin Console產品設定檔。
+1. [為Commerce啟用Adobe IMS](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/ims/adobe-ims-config){target=_blank}，讓Commerce管理員使用IMS驗證，並可讀取使用者的Admin Console產品設定檔。
 
-1. 若要要求資產選擇器的自訂IMS使用者端ID，[請開啟支援票證](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)。
+1. 若要要求資產選擇器的自訂IMS使用者端ID，[請開啟支援票證](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)。
 
 1. 從[Adobe Admin Console](https://adminconsole.adobe.com/)，將使用者新增至&#x200B;**AEM Assets DM OpenAPI使用者 — 傳遞**&#x200B;產品設定檔，或新增至&#x200B;**作者**&#x200B;產品設定檔作為遞補。
 
@@ -88,6 +99,6 @@ Paa需要&#x200B;**IMS使用者端ID**&#x200B;才能啟用資產選擇器。 如
 
 * [設定AEM Assets整合的IMS使用者許可權](setup-synchronization.md) — 將Commerce連線至AEM Assets並設定比對規則。
 * [手動選取資產](../synchronize/asset-selector-integration.md) — 使用類別影像和頁面產生器的資產選擇器。
-* [新增使用者至AEM Assets或產品視覺效果](https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/user-management#add-a-user-to-aem-assets-or-product-visuals){target=_blank} — 針對[!DNL Adobe Commerce as a Cloud Service]，請先新增使用者至Commerce和AEM Cloud Manager （業務負責人、部署管理員）。 **AEM Assets DM OpenAPI使用者 — 傳遞**&#x200B;設定檔（或作為遞補的&#x200B;**作者**&#x200B;設定檔）是「資產選擇器」和自動填入功能的額外需求。
-* [將團隊成員指派給AEM傳遞層](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem#add-team-members){target=_blank}。 傳遞存取許可權的AEM檔案。
+* [新增使用者至AEM Assets或產品視覺效果](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/user-management#add-a-user-to-aem-assets-or-product-visuals){target=_blank} — 針對[!DNL Adobe Commerce as a Cloud Service]，請先新增使用者至Commerce和AEM Cloud Manager （業務負責人、部署管理員）。 **AEM Assets DM OpenAPI使用者 — 傳遞**&#x200B;設定檔（或作為遞補的&#x200B;**作者**&#x200B;設定檔）是「資產選擇器」和自動填入功能的額外需求。
+* [將團隊成員指派給AEM傳遞層](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem#add-team-members){target=_blank}。 傳遞存取許可權的AEM檔案。
 

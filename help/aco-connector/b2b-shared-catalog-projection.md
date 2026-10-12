@@ -34,10 +34,18 @@ subfeature_v2:
     internal-label: Logs
   - id: a1d22079-48b9-5e69-9ee6-eb236068ef34
     internal-label: Search
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: a3ade1a31d3c2905b601f71bda118de89c43cf59
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 0%
@@ -77,7 +85,7 @@ B2B投影將同步化的目錄內容與訂價與「共用目錄分類」及公�
 
 店面會傳送目錄檢視ID、價格簿ID以及與每個銷售API請求簽署的權杖。 [!DNL Adobe Commerce Optimizer]會根據指派給目錄檢視的受限制存取金鑰，驗證JWT的RS256簽章。 只有在權杖和金鑰有效且未過期時，才會傳回目錄資料。
 
-從購物者透過店面和Commerce後端到[!DNL Adobe Commerce Optimizer]![&#128279;](./assets/b2b-catalog-runtime-authorization.svg){width="700"}的B2B目錄請求的執行階段授權流程
+從購物者透過店面和Commerce後端到[!DNL Adobe Commerce Optimizer]](./assets/b2b-catalog-runtime-authorization.svg){width="700"}的B2B目錄請求的![執行階段授權流程
 
 對於私人目錄請求，傳送以下標頭：
 

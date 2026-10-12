@@ -5,13 +5,29 @@ role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: 73814f5ac5d53399131263f47e170e612643e903
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '1356'
 ht-degree: 0%
-
 ---
-
 # 支付報表
 
 [!DNL Adobe Commerce]和[!DNL Magento Open Source]的[!DNL Payment Services]為您提供完整的報告，以便您清楚瞭解商店的交易、訂單和付款。
@@ -31,7 +47,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->付款報表只會顯示擷取的訂單（付款動作設定為[`Authorize and Capture`](production.md#set-payment-services-as-payment-method)） — 或[標示為`Invoiced`](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice)。
+>付款報表只會顯示擷取的訂單（付款動作設定為[`Authorize and Capture`](production.md#set-payment-services-as-payment-method)） — 或[標示為`Invoiced`](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice)。
 
 ## 支付資料視覺效果檢視
 
@@ -73,7 +89,7 @@ ht-degree: 0%
 
 「付款服務」的「付款」檢視表中提供「付款」報表檢視表。 其中包含有關您商店付款的所有可用資訊。
 
-在&#x200B;_Admin_&#x200B;側邊欄上，前往&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**&#x200B;檢視詳細的表格式支付報告檢視。
+在&#x200B;_Admin_&#x200B;側邊欄上，前往&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**檢視詳細的表格式支付報告檢視。
 
 管理員中的![付款交易](assets/payouts-report-new.png){width="800" zoomable="yes"}
 
@@ -93,7 +109,7 @@ ht-degree: 0%
 
 ![資料來源選擇](assets/datasource.png){width="300" zoomable="yes"}
 
-如果&#x200B;_[!UICONTROL Live]_&#x200B;是選取的資料來源，您可以看到生產模式中存放區的報表資訊。 如果&#x200B;_[!UICONTROL Sandbox]_&#x200B;是選取的資料來源，您會看到以沙箱模式儲存的報告資訊。
+如果&#x200B;_[!UICONTROL Live]_是選取的資料來源，您可以看到生產模式中存放區的報表資訊。 如果_[!UICONTROL Sandbox]_&#x200B;是選取的資料來源，您會看到以沙箱模式儲存的報告資訊。
 
 資料來源選取專案的工作方式如下：
 
@@ -114,14 +130,14 @@ ht-degree: 0%
 
 搜尋中傳回或顯示在預設30天交易中的列數，會與「交易日期」行事曆選取器篩選器一起顯示在「付款」檢視網格上方。
 
-向左及向右捲動，檢視每日報表中每個支付交易[&#128279;](#column-descriptions)的資訊，包括交易日期、參考ID、商業發票號碼及付款方式詳細資料。
+向左及向右捲動，檢視每日報表中每個支付交易](#column-descriptions)的[資訊，包括交易日期、參考ID、商業發票號碼及付款方式詳細資料。
 
 #### 自訂交易時間範圍
 
 在「付款報表」檢視中，您可以輸入特定日期或從日期選擇器選取日期範圍，以自訂您要檢視之付款交易的時間範圍：
 
 1. 在&#x200B;_管理員_&#x200B;側邊欄上，前往&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**。
-1. 按一下&#x200B;_[!UICONTROL Transaction dates]_&#x200B;行事曆選擇器篩選器。
+1. 按一下&#x200B;_[!UICONTROL Transaction dates]_行事曆選擇器篩選器。
 1. 選擇適用的日期範圍。
 1. 檢視網格中指定日期的付款狀態。
 
@@ -159,7 +175,7 @@ ht-degree: 0%
 | [!UICONTROL Code] | 表示貸方(*CR*)或借方(*DR*)的交易代碼 |
 | [!UICONTROL Reference ID] | 與此事件相關的原始交易ID |
 | [!UICONTROL Invoice] | 交易的商業發票ID （每張訂單一個） |
-| [!UICONTROL Commerce order] | Commerce訂單ID <br> <br>若要檢視相關的[訂單資訊](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/order-management/orders/orders)，請按一下ID。 |
+| [!UICONTROL Commerce order] | Commerce訂單ID <br> <br>若要檢視相關的[訂單資訊](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders)，請按一下ID。 |
 | [!UICONTROL Commerce trans] | Commerce交易ID |
 | [!UICONTROL Pay method] | 信用卡型別 — *[!UICONTROL BANK]*、*[!UICONTROL PAYPAL]*、*[!UICONTROL CREDIT_CARD]* — 和相關聯的卡片提供者（例如&#x200B;*Visa*&#x200B;或&#x200B;*MasterCard*） |
 | [!UICONTROL TRANS AMT] | 交易金額 |

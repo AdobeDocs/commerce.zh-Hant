@@ -1,16 +1,27 @@
 ---
-title: ' [!DNL Payment Services]的行專案'
-description: 瞭解 [!DNL Payment Services] 的行專案，以及如何檢視商家儀表板中的行專案。
+title: '[!DNL Payment Services]的行專案'
+description: 瞭解[!DNL Payment Services]的行專案，以及如何檢視商家儀表板中的行專案。
 feature: Payments, Paas, Saas
 role: User
 exl-id: f690ff94-f83d-4525-9d52-1dea25a71060
-source-git-commit: 6727102c54e0ac81df289ecd66ec61156662b8b9
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '690'
 ht-degree: 0%
-
 ---
-
 # [!DNL Payment Services]的行專案
 
 [!DNL Payment Services]的行專案是訂單中包含的專案。 這些明細專案會提供下列資訊：
@@ -29,9 +40,9 @@ ht-degree: 0%
 
 1. 移至&#x200B;**[!UICONTROL Sales]**&#x200B;並選取&#x200B;**[!UICONTROL Payment Methods]**。
 
-1. 展開&#x200B;_[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_&#x200B;區段。
+1. 展開&#x200B;_[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_區段。
 
-1. 在&#x200B;_[!UICONTROL Payment Services]_&#x200B;區段中，展開&#x200B;_[!UICONTROL Line Items]_&#x200B;區段。
+1. 在&#x200B;_[!UICONTROL Payment Services]_區段中，展開_[!UICONTROL Line Items]_&#x200B;區段。
 
 1. 針對&#x200B;**[!UICONTROL Line Items Enabled]**，選取`Yes`以啟用（預設）或選取`No`以停用行專案。
 
@@ -145,11 +156,11 @@ ht-degree: 0%
 
 +++
 
-如需這些欄位及其限制的詳細資訊，請參閱明細專案[的](https://developer.paypal.com/docs/api/orders/v2/#definition-line_item){target=_blank}PayPal開發人員檔案。
+如需這些欄位及其限制的詳細資訊，請參閱明細專案](https://developer.paypal.com/docs/api/orders/v2/#definition-line_item){target=_blank}的[PayPal開發人員檔案。
 
 ## 管理條列專案
 
-Adobe Commerce [會根據各資料列](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}的總金額來計算稅捐，如果訂購了相同料號的多重數量，或目錄中顯示含稅價格，則可能會導致舍入問題。 在這種情況下，總數量可能會分成兩行，但數量會等於訂購的料號總計。
+Adobe Commerce [會根據各資料列](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}的總金額來計算稅捐，如果訂購了相同料號的多重數量，或目錄中顯示含稅價格，則可能會導致舍入問題。 在這種情況下，總數量可能會分成兩行，但數量會等於訂購的料號總計。
 
 > 商戶儀表板檢視中具有舍入問題的明細行專案範例
 

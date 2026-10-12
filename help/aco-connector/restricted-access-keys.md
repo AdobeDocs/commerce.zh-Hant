@@ -3,7 +3,7 @@ title: 管理B2B共用目錄的限制存取金鑰
 description: 瞭解如何管理Adobe Commerce Optimizer Connector用來保護B2B共用目錄投影安全的受限制存取金鑰。
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
+badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -18,6 +18,8 @@ feature_v2:
     internal-label: Integrations
   - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
     internal-label: Admin tools and workspace
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 subfeature_v2:
   - id: a40ebd6b-b542-4432-a730-1803ef74518d
     internal-label: Data Transfer
@@ -34,7 +36,7 @@ topic_v2:
     internal-label: Data management
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
     internal-label: Data integration
-source-git-commit: a3ade1a31d3c2905b601f71bda118de89c43cf59
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '1105'
 ht-degree: 0%
@@ -42,7 +44,7 @@ ht-degree: 0%
 
 # 管理B2B共用目錄的限制存取金鑰
 
-[!BADGE Private Beta]{type=Caution tooltip="需要Adobe Commerce Optimizer Connector B2B擴充功能，目前為私人測試版。"}
+[!BADGE Private beta]{type=Caution tooltip="需要Adobe Commerce Optimizer Connector B2B擴充功能，目前為私人測試版。"}
 
 如果您將[!DNL Adobe Commerce]個B2B共用目錄與[!DNL Adobe Commerce Optimizer Connector B2B extension]搭配使用，擴充功能會在建立目錄檢視時自動產生並指派第一個受限制的存取金鑰。 使用Commerce管理員中的[!UICONTROL Restricted Access Keys]頁面來檢視該金鑰，以及建立、指派或刪除其他金鑰。
 
@@ -60,7 +62,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如需此頁面上欄位的參考，請參閱&#x200B;*Commerce管理指南*&#x200B;中的[限制存取金鑰管理](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"}。—>
+>如需此頁面上欄位的參考，請參閱&#x200B;*Commerce管理指南*&#x200B;中的[限制存取金鑰管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"}。—>
 
 ## 當您需要超過自動金鑰時 {#when-you-need-more-than-the-automatic-key}
 
@@ -99,7 +101,7 @@ Commerce會產生新的金鑰組並保留私密金鑰。 「限制存取金鑰�
 
 1. 在公司的[!UICONTROL Action]欄中，選取[!UICONTROL Edit]。
 
-1. 若要檢視從指派給公司的共用目錄投影的目錄檢視清單，請展開&#x200B;_[!UICONTROL Catalog Views]_&#x200B;區段。
+1. 若要檢視從指派給公司的共用目錄投影的目錄檢視清單，請展開&#x200B;_[!UICONTROL Catalog Views]_區段。
 
 索引標籤會列出從共用目錄投影的目錄檢視，包括其指派的索引鍵。
 
@@ -159,7 +161,7 @@ Commerce會產生新的金鑰組並保留私密金鑰。 「限制存取金鑰�
 
 >[!MORELIKETHIS]
 >
-> - [管理受限制的存取金鑰](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"} — 此頁面的完整欄位參考，在&#x200B;*Commerce管理指南*&#x200B;中 — >
+> - [管理受限制的存取金鑰](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"} — 此頁面的完整欄位參考，在&#x200B;*Commerce管理指南*&#x200B;中 — >
 > - [監視目錄檢視同步](catalog-view-sync-status.md) — 監視這些金鑰保護的目錄檢視
 > - [私人目錄檢視](/help/optimizer/setup/private-catalog-view.md) — 瞭解什麼是聯結器管理的私人目錄檢視
 > - [受限制的存取金鑰](/help/optimizer/setup/restricted-access-keys.md) — 瞭解手動、ACO Studio型金鑰流程如何適用於非B2B使用案例

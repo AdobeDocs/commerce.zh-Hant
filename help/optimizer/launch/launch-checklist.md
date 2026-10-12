@@ -9,7 +9,7 @@ role: Admin, Developer
 level: Intermediate
 topic: Administration
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]個專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]個專案（Adobe管理的SaaS基礎結構）。"
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -20,9 +20,15 @@ feature_v2:
     internal-label: Configuration
   - id: c18ed297-2187-4aec-affb-9d9654eca6fc
     internal-label: Catalog management
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+  - id: f37757d8-3174-5335-b977-1161792f965d
+    internal-label: Personalization
 subfeature_v2:
   - id: ae62cf09-5996-4921-bda8-fbe67b62e470
     internal-label: Storefront configuration
+  - id: a1d22079-48b9-5e69-9ee6-eb236068ef34
+    internal-label: Search
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -36,7 +42,7 @@ topic_v2:
     internal-label: Administration
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 1009ae28286a8503511c85726bf44922c7c2575e
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '2311'
 ht-degree: 0%
@@ -63,11 +69,11 @@ ht-degree: 0%
 
 確認雲端環境上的Adobe Commerce已準備好投入生產。
 
-▢雲端執行個體為[已布建](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/start/new-project)。
+▢雲端執行個體為[已布建](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/new-project)。
 ▢測試與虛擬資料已從執行個體移除。
 ▢生產資料已載入執行個體上。
 ▢您知道[GraphQL端點](https://developer.adobe.com/commerce/webapi/graphql/)。
-▢執行個體符合[準備啟動](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/launch/checklist)需求。
+▢執行個體符合[準備啟動](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/launch/checklist)需求。
 
 ## 驗證Commerce Optimizer執行個體 {#verify-optimizer}
 
@@ -145,15 +151,15 @@ ht-degree: 0%
 
 確認在您的主機商務系統上執行的整合（不在[!DNL Adobe Commerce Optimizer]中）。
 
-▢ **付款：**&#x200B;付款閘道已上線並經過測試（Stripe、PayPal、Adyen等）。
-▢ **送貨：**&#x200B;送貨API連線有效（UPS、FedEx等）。
+▢ **付款：**付款閘道已上線並經過測試（Stripe、PayPal、Adyen等）。
+▢ **送貨：**送貨API連線有效（UPS、FedEx等）。
 ▢ **送貨：** Fulfillment平台已連線並測試（例如ShipStation）。
-▢ **稅捐：**&#x200B;已驗證稅捐計算整合（Avalara、TaxJar等）。
-▢ **稅捐：**&#x200B;帳戶處理軟體同步處理（QuickBooks等）。
+▢ **稅捐：**已驗證稅捐計算整合（Avalara、TaxJar等）。
+▢ **稅捐：**帳戶處理軟體同步處理（QuickBooks等）。
 ▢ **詳細目錄：** PIM、ERP或詳細目錄管理整合已測試並同步。
 ▢ **架構：**&#x200B;主商務系統處理付款、運送、稅金和存貨（非[!DNL Adobe Commerce Optimizer]）。
 ▢ **架構：** API Mesh與App Builder在主機商務系統與[!DNL Adobe Commerce Optimizer]之間保持同步。
-▢ **電子郵件：**&#x200B;異動電子郵件傳送可正常運作（訂單確認、送貨等）。
+▢ **電子郵件：**異動電子郵件傳送可正常運作（訂單確認、送貨等）。
 ▢ **電子郵件：**&#x200B;電子郵件範本符合您的品牌，並使用正確的連結。
 
 ## 驗證App Builder和API Mesh {#app-builder-mesh}
@@ -164,7 +170,7 @@ ht-degree: 0%
 
 ▢生產工作區包含所有必要的設定和服務。
 ▢生產應用程式通過了組建案例測試。
-已根據[Adobe Developer App Builder產品說明](https://helpx.adobe.com/tw/legal/product-descriptions/adobe-developer-app-builder.html){target="_blank"}和[App Builder系統設定和限制](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings){target="_blank"}，檢閱及確認▢產品限制和界限。
+已根據[Adobe Developer App Builder產品說明](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html){target="_blank"}和[App Builder系統設定和限制](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings){target="_blank"}，檢閱及確認▢產品限制和界限。
 ▢生產應用程式使用App Builder生產端點。
 ▢自訂&#x200B;*Admin*&#x200B;面板擴充功能已部署至生產工作區。
 
@@ -233,7 +239,7 @@ ht-degree: 0%
 確認許可權和密碼。
 
 ▢已為DA內容和EDS網站設定適當的許可權。 請參閱[DA.live許可權](https://da.live/docs/administration/permissions)和[製作驗證設定](https://www.aem.live/docs/authentication-setup-authoring)。
-▢已布建產品視覺效果整合。 請參閱[AEM Cloud Service存取總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-learn/cloud-service/accessing/overview#)。
+▢已布建產品視覺效果整合。 請參閱[AEM Cloud Service存取總覽](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview#)。
 電子郵件範本中的▢密碼重設連結符合您的Edge Delivery Services設定。 請參閱店面常見問題集：[如果我的電子郵件範本連結在移轉至Edge Delivery Services或Helix後中斷，怎麼辦？](https://experienceleague.adobe.com/en/tools/commerce-storefront/troubleshooting/faq/#what-should-i-do-if-my-email-template-links-are-broken-after-migrating-to-edge-delivery-services-or-helix){target="_blank"}。
 整合和付款提供者的▢生產金鑰已準備就緒。
 ▢網域已加入允許清單，後端Webhook可正常運作。
@@ -256,14 +262,14 @@ ht-degree: 0%
 
 確認安全性狀態與法規遵循任務。
 
-▢ **SSL：**&#x200B;已安裝信任的SSL/TLS憑證。
+▢ **SSL：**已安裝信任的SSL/TLS憑證。
 ▢ **SSL：** HTTPS已在整個網站強制執行。
 ▢ **存取：**&#x200B;預設&#x200B;*管理員*&#x200B;密碼已變更，而且已設定強式密碼原則。 請參閱[!DNL Adobe Commerce Optimizer] [使用者和識別管理](../user-management.md)。
 ▢ **存取：** *管理員* URL不是預設值。
-已針對所有*管理員*&#x200B;使用者啟用▢ **存取：**&#x200B;雙因素驗證。
-▢ **存取：**&#x200B;沒有非使用中或未使用的管理員使用者與專案相關聯。
+已針對所有*管理員*&#x200B;使用者啟用▢ **存取：**雙因素驗證。
+▢ **存取：**沒有非使用中或未使用的管理員使用者與專案相關聯。
 ▢ **防火牆：** Web應用程式防火牆(WAF)已設定並驗證。
-▢ **PCI：**&#x200B;生產環境的安全性滲透測試（PCI範圍）已完成。
+▢ **PCI：**生產環境的安全性滲透測試（PCI範圍）已完成。
 ▢ **掃描：** Adobe安全性掃描工具已登入，且初始掃描已完成。
 ▢ **存取：** CORS僅允許核准的原始項。
 ▢ **法規遵循：** [!DNL Adobe Commerce Optimizer]的[共用責任模式](../shared-responsibility.md)為最新狀態，且已清楚定義Adobe與客戶責任的比較。
@@ -273,31 +279,31 @@ ht-degree: 0%
 
 確認測量與基準線。
 
-▢ **RUM：**&#x200B;實際使用者監控(RUM)是針對前後比較而檢測的。
+▢ **RUM：**實際使用者監控(RUM)是針對前後比較而檢測的。
 已設定▢ **Analytics：** Adobe Experience Platform資料集合（如果適用）。
-▢ **Analytics：**&#x200B;已驗證MarTech標籤是否會在生產主機名稱上引發。
-▢ **分析：**&#x200B;已記錄基準線分析；預期會在啟動後波動（頁面檢視、跳出率等）。
+▢ **Analytics：**已驗證MarTech標籤是否會在生產主機名稱上引發。
+▢ **分析：**已記錄基準線分析；預期會在啟動後波動（頁面檢視、跳出率等）。
 ▢ **事件：**&#x200B;轉換追蹤工作端對端進行（新增到購物車→結帳→確認）。
 
 ## 測試 {#testing}
 
 啟動前後確認品質。
 
-▢ **功能：**&#x200B;核心流程工作端對端：瀏覽→搜尋→篩選器→新增到購物車→結帳→建立帳戶。
-▢ **功能：**&#x200B;付款閘道接受實際和測試交易。
-▢ **功能：**&#x200B;訂單位置、確認電子郵件及訂單追蹤工作。
-▢ **功能：**&#x200B;送貨選項與稅捐計算正確。
-▢ **功能：**&#x200B;優惠券、折扣和熟客方案如預期般運作。
-▢ **UAT：**&#x200B;使用者驗收測試已在中繼及生產環境中完成。
-▢ **效能：**&#x200B;負載和壓力測試已完成，且Adobe CTA或CSE已有結果。
-▢ **效能：**&#x200B;在桌上型電腦和行動裝置上的頁面載入時間少於3秒。
+▢ **功能：**核心流程工作端對端：瀏覽→搜尋→篩選器→新增到購物車→結帳→建立帳戶。
+▢ **功能：**付款閘道接受實際和測試交易。
+▢ **功能：**訂單位置、確認電子郵件及訂單追蹤工作。
+▢ **功能：**送貨選項與稅捐計算正確。
+▢ **功能：**優惠券、折扣和熟客方案如預期般運作。
+▢ **UAT：**使用者驗收測試已在中繼及生產環境中完成。
+▢ **效能：**負載和壓力測試已完成，且Adobe CTA或CSE已有結果。
+▢ **效能：**在桌上型電腦和行動裝置上的頁面載入時間少於3秒。
 ▢ **效能：** Lighthouse分數達到關鍵頁面上的目標（例如，透過PageSpeed Insights）。
-已最佳化▢ **效能：**&#x200B;影像、指令碼和資產。
+已最佳化▢ **效能：**影像、指令碼和資產。
 ▢ **相容性：** Chrome、Firefox、Safari和Edge的行為如預期。
-▢ **相容性：**&#x200B;回應式配置適用於行動裝置、平板電腦和案頭。
-▢ **相容性：**&#x200B;在3G、4G和Wi-Fi上可接受的效能。
-▢ **協助工具：**&#x200B;協助工具稽核已完成（WCAG、熒幕閱讀器、鍵盤導覽）。
-▢ **功能：**&#x200B;已制定啟動後404監視計畫。
+▢ **相容性：**回應式配置適用於行動裝置、平板電腦和案頭。
+▢ **相容性：**在3G、4G和Wi-Fi上可接受的效能。
+▢ **協助工具：**協助工具稽核已完成（WCAG、熒幕閱讀器、鍵盤導覽）。
+▢ **功能：**已制定啟動後404監視計畫。
 ▢ **UAT：**&#x200B;復原計畫已存在，如果發生啟動問題，則會通過測試。
 
 ## 啟動日和啟動後 {#launch-post-launch}
@@ -305,12 +311,12 @@ ht-degree: 0%
 確認通訊、支援和後續工作。
 
 ▢ **啟動協調：** Adobe已確認啟動日期；已透過電子郵件通知CTA。
-▢ **支援：**&#x200B;已記錄P1熱線號碼： US (+1) 800-497-0335，然後按下Commerce的6。
-▢ **支援：**&#x200B;您的團隊在呼叫P1熱線前&#x200B;**已接受開啟支援票證**&#x200B;的訓練。
-▢ **啟動後：**&#x200B;驗證生產網域上的Lighthouse分數。
-▢ **啟動後：**&#x200B;監視Google搜尋主控台以建立索引並抓取錯誤。
-▢ **啟動後：**&#x200B;監視404報告，並為高流量的舊版URL新增重新導向。
-▢ **啟動後：**&#x200B;確認生產環境中的MarTech與分析資料。
-▢ **啟動後：**&#x200B;請要求您的CTA、CSE或AM啟用高SLA監視。
+▢ **支援：**已記錄P1熱線號碼： US (+1) 800-497-0335，然後按下Commerce的6。
+▢ **支援：**&#x200B;您的團隊在呼叫P1熱線前&#x200B;**已接受開啟支援票證**的訓練。
+▢ **啟動後：**驗證生產網域上的Lighthouse分數。
+▢ **啟動後：**監視Google搜尋主控台以建立索引並抓取錯誤。
+▢ **啟動後：**監視404報告，並為高流量的舊版URL新增重新導向。
+▢ **啟動後：**確認生產環境中的MarTech與分析資料。
+▢ **啟動後：**請要求您的CTA、CSE或AM啟用高SLA監視。
 ▢有災難回覆計畫存在，且已通過測試。
 ▢已制定程式來追蹤及升級範本和擴充功能套件至目前版本。

@@ -4,26 +4,33 @@ description: 瞭解您可以收集並傳送至Experience Platform的資料型別
 role: Admin, Developer
 feature: Personalization, Integration
 exl-id: 6354963c-f27f-4e69-9ecb-acb4befb7c2a
-TQID: https://experienceleague.adobe.com/LXMqOhHAZpUHaCeeU5ioKKXVrkLftospQEPDd9H-MD8
+TQID: 'https://experienceleague.adobe.com/LXMqOhHAZpUHaCeeU5ioKKXVrkLftospQEPDd9H-MD8'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: f37757d8-3174-5335-b977-1161792f965d
+    internal-label: Personalization
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+    internal-label: Personalization
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 342
+source-wordcount: '342'
 ht-degree: 0%
-
 ---
-
 # Commerce資料型別
 
 [Data Connection擴充功能](overview.md)會將您的Commerce資料連線到Experience Platform。 打算用於Experience Platform的資料會分組為兩種行為型別：屬於&#x200B;**體驗事件**&#x200B;類別的時間序列資料，以及屬於&#x200B;**個人設定檔**&#x200B;類別的記錄資料。
 
-深入瞭解Experience Platform中的[資料行為](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/schema/composition#data-behaviors)和[類別](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/schema/composition#class)。
+深入瞭解Experience Platform中的[資料行為](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#data-behaviors)和[類別](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#class)。
 
 ## 時間序列資料
 
@@ -39,7 +46,7 @@ ht-degree: 0%
 
 ## 記錄資料
 
-記錄資料提供有關主旨屬性的資訊。 主旨可以是組織或個人。 例如，您網站上的購物者會建立帳戶，並產生記錄資料。 此資料是使用類別設定為&#x200B;**個別設定檔**&#x200B;的結構描述擷取到Experience Platform中。 您可以將該記錄資料傳送至Adobe的設定檔管理和細分服務： [Real-Time CDP](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview)。
+記錄資料提供有關主旨屬性的資訊。 主旨可以是組織或個人。 例如，您網站上的購物者會建立帳戶，並產生記錄資料。 此資料是使用類別設定為&#x200B;**個別設定檔**&#x200B;的結構描述擷取到Experience Platform中。 您可以將該記錄資料傳送至Adobe的設定檔管理和細分服務： [Real-Time CDP](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview)。
 
 ### 已擷取的設定檔記錄資料
 

@@ -5,13 +5,33 @@ role: Admin, User
 level: Intermediate
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration, Paas, Saas
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '2328'
 ht-degree: 0%
-
 ---
-
 # 付款選項
 
 透過[!DNL Adobe Commerce]和[!DNL Magento Open Source] [!DNL Payment Services]，您有多個可用的付款選項。
@@ -37,7 +57,7 @@ ht-degree: 0%
 
 * **Standard** — 付款選項（快速結帳） （PayPal信用卡和借記卡）的子集適用於其他支援的國家/地區。 [信用卡欄位](#credit-card-fields)和[Apple Pay](#apple-pay-button)不適用於此上線選項。 在上線以啟用即時付款時，請選取[標準上線選項](../payment-services/production.md#standard-onboarding)。
 
-如需完成「進階」和「標準」上線的相關資訊，請參閱[為生產啟用 [!DNL Payment Services] &#x200B;](../payment-services/production.md#complete-merchant-onboarding)。
+如需完成「進階」和「標準」上線的相關資訊，請參閱[為生產啟用 [!DNL Payment Services] ](../payment-services/production.md#complete-merchant-onboarding)。
 
 ## [!UICONTROL Credit Card Fields]
 
@@ -129,7 +149,7 @@ ht-degree: 0%
 * 新增至[!DNL Google Pay]工資表的代碼只能從工資表中移除 — 不能從Commerce購物車頁面移除。
 * 在Adobe Commerce 2.4.4-2.4.6中，[!DNL Google Pay]張工資表中的折扣行由於平台限制可能無法顯示任何值。
 * 在Adobe Commerce 2.4.7上，由於GraphQL回應中的平台限制，某些產品（主要是可下載的產品）的折扣值可能不會顯示在[!DNL Google Pay]工資單中。
-* 如果套用自動[購物車價格規則](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart) （例如，「超過$200時優惠$50」），該規則會與購物者套用在工資單中的任何程式碼結合。 因此，[!DNL Google Pay]工資單中所顯示的總數可能與訂單摘要不同。
+* 如果套用自動[購物車價格規則](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart) （例如，「超過$200時優惠$50」），該規則會與購物者套用在工資單中的任何程式碼結合。 因此，[!DNL Google Pay]工資單中所顯示的總數可能與訂單摘要不同。
 
 ### [!DNL PayPal Payment Buttons]
 
@@ -199,16 +219,16 @@ PayPal、Pay Later和Venmo付款方法使用[伺服器端送貨回撥](https://d
 
 若要&#x200B;**僅以&#x200B;_擷取付款_ PayPal付款按鈕（_不是_ PayPal信用卡付款選項）**：
 
-1. 確定您的存放區在生產模式[&#128279;](configure-admin.md#general-configuration)中為。
+1. 確定您的存放區在生產模式](configure-admin.md#general-configuration)中為[。
 1. [在[設定]中設定所需的PayPal付款按鈕](configure-admin.md#paypal-payment-buttons)。
-1. 開啟&#x200B;_[!UICONTROL Payment buttons]_&#x200B;區段中的_&#x200B;關閉&#x200B;_&#x200B;**[[!UICONTROL Show PayPal Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)**&#x200B;選項。
+1. 開啟&#x200B;_[!UICONTROL Payment buttons]_區段中的_&#x200B;關閉&#x200B;_**[[!UICONTROL Show PayPal Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)**選項。
 
 要&#x200B;**擷取您現有信用卡提供者的付款&#x200B;_和_ PayPal付款按鈕**：
 
-1. 確定您的存放區在生產模式[&#128279;](configure-admin.md#general-configuration)中為。
+1. 確定您的存放區在生產模式](configure-admin.md#general-configuration)中為[。
 1. [設定所需的PayPal付款按鈕](configure-admin.md#paypal-payment-buttons)。
-1. 開啟&#x200B;_[!UICONTROL Payment buttons]_&#x200B;區段中的_&#x200B;關閉&#x200B;_&#x200B;**[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)**&#x200B;選項。
-1. 開啟&#x200B;_[!UICONTROL Credit card fields]_&#x200B;區段中的_&#x200B;關閉&#x200B;_&#x200B;**[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)**&#x200B;選項，並使用您的[現有信用卡提供者帳戶](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/payments/payments#payments)。
+1. 開啟&#x200B;_[!UICONTROL Payment buttons]_區段中的_&#x200B;關閉&#x200B;_**[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)**選項。
+1. 開啟&#x200B;_[!UICONTROL Credit card fields]_區段中的_&#x200B;關閉&#x200B;_**[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)**選項，並使用您的[現有信用卡提供者帳戶](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/payments#payments)。
 
 ## 本地付款方法
 

@@ -1,16 +1,33 @@
 ---
-title: 管理 [!DNL Live Search]中無庫存的產品
-description: 瞭解如何在 [!DNL Live Search] 中為Adobe Commerce管理無庫存產品。 設定詳細目錄顯示、inStock篩選器和GraphQL API篩選。
+title: 在[!DNL Live Search]中管理無庫存產品
+description: 瞭解如何在[!DNL Live Search]中為Adobe Commerce管理無庫存產品。 設定詳細目錄顯示、inStock篩選器和GraphQL API篩選。
 feature: Services, Search
 role: Admin, Developer
 level: Intermediate
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+subfeature_v2:
+  - id: a1d22079-48b9-5e69-9ee6-eb236068ef34
+    internal-label: Search
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '451'
 ht-degree: 0%
-
 ---
-
 # 管理無庫存產品
 
 您可以使用庫存組態、查詢時間篩選和選用的後端功能標幟，控制缺貨產品在[!DNL Live Search]搜尋和類別結果中的顯示方式。 這些選項有重要的限制，本主題將對此進行說明。
@@ -64,7 +81,7 @@ query productSearchInStockOnly {
 為了保留結果集中的缺貨產品，但在依相關性排序時始終在缺貨產品之後，Adobe可以為您的環境啟用內部功能標幟。
 
 - [!DNL Live Search]管理UI中未公開此功能標幟。
-- 若要請求，請[聯絡Adobe支援](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide){target="_blank"}並參考該功能，以將無庫存產品移至搜尋結果的結尾。
+- 若要請求，請[聯絡Adobe支援](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide){target="_blank"}並參考該功能，以將無庫存產品移至搜尋結果的結尾。
 
 >[!NOTE]
 >
@@ -87,4 +104,4 @@ query productSearchInStockOnly {
 >[!MORELIKETHIS]
 >
 > - [搜尋銷售規則](rules.md)
-> - [設定Inventory management全域選項](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/inventory/configuration/configuration)
+> - [設定Inventory management全域選項](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/configuration)

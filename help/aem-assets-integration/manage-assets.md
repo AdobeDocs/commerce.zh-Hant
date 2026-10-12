@@ -3,7 +3,7 @@ title: 管理資產
 description: 使用適用於Commerce的AEM Assets整合，管理店面的媒體資產。
 feature: CMS, Media
 exl-id: 40ca36e0-d617-4814-852d-bc60ff53b2b3
-TQID: https://experienceleague.adobe.com/y-207fJaMiLZbQW7bzv2WCzFItckGDnyKUm6Q0tqMw8
+TQID: 'https://experienceleague.adobe.com/y-207fJaMiLZbQW7bzv2WCzFItckGDnyKUm6Q0tqMw8'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -14,6 +14,10 @@ feature_v2:
     internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
     internal-label: Configuration
+  - id: ddbd0f6e-b569-5a04-8a70-55058777c373
+    internal-label: CMS
+  - id: 4ca54350-01cb-5b22-8966-5f2873dc6d90
+    internal-label: Media
 subfeature_v2:
   - id: e91a50b1-0b31-436e-9033-00e4776e94cb
     internal-label: Categories
@@ -25,7 +29,7 @@ topic_v2:
     internal-label: Metadata
   - id: da3860b0-d637-47df-bef0-273751180266
     internal-label: Digital asset management
-source-git-commit: cf31a1ed5069095fb3c4c50d99475e60ee61efa9
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '1236'
 ht-degree: 0%
@@ -191,7 +195,7 @@ Adobe Commerce可讓商家將影像與產品類別建立關聯，協助建立吸
 
 1. 按一下&#x200B;**[!UICONTROL Save]**&#x200B;並繼續。
 
-   如需建立類別的詳細資訊，請參閱&#x200B;**Commerce Catalog Management Guide**&#x200B;中的[完成類別內容](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content)。
+   如需建立類別的詳細資訊，請參閱&#x200B;**Commerce Catalog Management Guide**&#x200B;中的[完成類別內容](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content)。
 
 ## 更新資產
 
@@ -203,6 +207,6 @@ Adobe Commerce可讓商家將影像與產品類別建立關聯，協助建立吸
 
 如需AEM Assets程式的相關資訊，請參閱下列檔案：
 
-* [重新處理數位資產](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
+* [重新處理數位資產](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
 
-* [核准資產](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)
+* [核准資產](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)

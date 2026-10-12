@@ -3,13 +3,30 @@ title: 信用卡存放
 description: 購物者可以儲存信用卡詳細資料，以便日後購買。
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 0%
-
 ---
-
 # 信用卡存放
 
 透過信用卡保險庫將一次性購物者轉換為忠實客戶。 登入的客戶可以儲存（或「儲存庫」）他們的信用卡憑證，以便稍後為相同或其他相同商家帳戶內的商店購買時使用。
@@ -32,7 +49,7 @@ ht-degree: 0%
 
 1. 瀏覽至左側導覽中的&#x200B;**[!UICONTROL Stored Payment Methods]**，檢視其所有儲存的付款方法。
 
-   如需詳細資訊，請參閱[儲存的付款方法](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/payments/stored-payment-methods)。
+   如需詳細資訊，請參閱[儲存的付款方法](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/stored-payment-methods)。
 
 1. 客戶按一下&#x200B;**[!UICONTROL Add New Card]**&#x200B;以儲存新卡片。
 
@@ -73,10 +90,10 @@ Commerce會儲存Token，協助客戶取得已儲存的信用卡資訊，完成�
 
 若要在「管理員」中，使用客戶的保管式信用卡來建立訂單：
 
-1. [建立訂單並新增產品](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order)。
-1. 在&#x200B;_[!UICONTROL Payment & Shipping Information]_&#x200B;中，選取&#x200B;**[!UICONTROL Stored Cards]**&#x200B;作為付款方式。
+1. [建立訂單並新增產品](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order)。
+1. 在&#x200B;_[!UICONTROL Payment & Shipping Information]_中，選取&#x200B;**[!UICONTROL Stored Cards]**作為付款方式。
 1. 選取所需的存放信用卡付款方式。
-1. 完成訂單的其他必要步驟後，[送出](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order?lang=en#step-3%3A-submit-the-order)。
+1. 完成訂單的其他必要步驟後，[送出](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order?lang=en#step-3%3A-submit-the-order)。
 
    ![在管理員中使用客戶的保管信用卡](assets/admin-vaultedcard.png){width="600" zoomable="yes"}
 

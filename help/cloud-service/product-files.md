@@ -1,39 +1,54 @@
 ---
 title: 將檔案新增至產品
-description: 瞭解如何在 [!DNL Adobe Commerce as a Cloud Service]中使用檔案型別產品屬性，將PDF、手冊和資料表等檔案附加至產品。
+description: 瞭解如何使用[!DNL Adobe Commerce as a Cloud Service]中的檔案型別產品屬性，將PDF、手冊和資料表等檔案附加至產品。
 feature: Catalog Management, Products, Integration
 role: Admin, Developer
 level: Intermediate
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
 autotag-review: '2026-06-18T16:03:48.301Z'
 TQID: 'https://experienceleague.adobe.com/fFbsXGO54L1lSuQULqfP7A-BJKSYggdt7cy-GDvaSzU'
 product_v2:
   - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+    internal-label: Commerce as a Cloud Service
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 4067ab89-2e97-5de1-8d98-de8318461a8d
+    internal-label: Products
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 subfeature_v2:
   - id: ae62cf09-5996-4921-bda8-fbe67b62e470
+    internal-label: Storefront configuration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+    internal-label: Administration
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 753
+source-wordcount: '753'
 ht-degree: 0%
-
 ---
-
 # 將檔案新增至產品
 
-[!DNL Adobe Commerce as a Cloud Service]支援「檔案」[產品屬性輸入型別](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/product-attributes/attributes-input-types){target="_blank"}，可讓商家將檔案（例如PDF、手冊、憑證和資料表）直接附加至產品。 檔案儲存在Amazon S3媒體儲存空間，並可使用GraphQL透過店面或使用REST API的整合進行存取。
+[!DNL Adobe Commerce as a Cloud Service]支援「檔案」[產品屬性輸入型別](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types){target="_blank"}，可讓商家將檔案（例如PDF、手冊、憑證和資料表）直接附加至產品。 檔案儲存在Amazon S3媒體儲存空間，並可使用GraphQL透過店面或使用REST API的整合進行存取。
 
 上傳檔案至產品檔案屬性的方式有三種：
 
@@ -45,15 +60,15 @@ ht-degree: 0%
 
 上傳檔案之前，您必須建立檔案屬性並將其指派給屬性集。
 
-* [建立檔案屬性](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create){target="_blank"} — 將&#x200B;**[!UICONTROL Catalog Input Type for Store Owner]**&#x200B;設為&#x200B;**[!UICONTROL File]**。
+* [建立檔案屬性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create){target="_blank"} — 將&#x200B;**[!UICONTROL Catalog Input Type for Store Owner]**&#x200B;設為&#x200B;**[!UICONTROL File]**。
 
-* [將屬性指派給屬性集](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/product-attributes/create/attribute-sets#create-an-attribute-set){target="_blank"} — 將新的檔案屬性拖曳到所要的群組中。
+* [將屬性指派給屬性集](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-sets#create-an-attribute-set){target="_blank"} — 將新的檔案屬性拖曳到所要的群組中。
 
-* 在[產品檔案屬性](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/config/catalog/product-file-attributes)組態中設定允許的檔案型別和大小。
+* 在[產品檔案屬性](https://experienceleague.adobe.com/en/docs/commerce-admin/config/catalog/product-file-attributes)組態中設定允許的檔案型別和大小。
 
 ## 透過管理員上傳檔案
 
-在您[建立檔案屬性](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create){target="_blank"}並將其指派給屬性集之後，您可以直接從產品編輯頁面上傳檔案。
+在您[建立檔案屬性](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create){target="_blank"}並將其指派給屬性集之後，您可以直接從產品編輯頁面上傳檔案。
 
 1. 在&#x200B;_管理員_&#x200B;側邊欄上，移至&#x200B;**[!UICONTROL Catalog]** > **[!UICONTROL Products]**。
 
@@ -61,7 +76,7 @@ ht-degree: 0%
 
 1. 找到檔案屬性欄位，然後按一下&#x200B;**[!UICONTROL Upload]**&#x200B;以選取檔案。
 
-在Admin![&#128279;](./assets/upload-file.png){width="600" zoomable="yes"}中上傳檔案按鈕
+在Admin](./assets/upload-file.png){width="600" zoomable="yes"}中![上傳檔案按鈕
 
 1. 按一下&#x200B;**[!UICONTROL Save]**。
 
@@ -80,7 +95,7 @@ ht-degree: 0%
 
 ## 透過產品匯入上傳
 
-您可以使用[匯入API](https://developer.adobe.com/commerce/webapi/rest/modules/import/){target="_blank"}或管理員匯入UI，大量附加檔案至產品。 產品檔案屬性僅支援從外部URL匯入，其方式與產品影像匯入[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/import/data-import-product-images#method-2-import-images-from-external-server){target="_blank"}的方法2相同。 Commerce會從提供的URL下載檔案，並將其儲存至S3媒體儲存空間。
+您可以使用[匯入API](https://developer.adobe.com/commerce/webapi/rest/modules/import/){target="_blank"}或管理員匯入UI，大量附加檔案至產品。 產品檔案屬性僅支援從外部URL匯入，其方式與產品影像匯入](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import-product-images#method-2-import-images-from-external-server){target="_blank"}的[方法2相同。 Commerce會從提供的URL下載檔案，並將其儲存至S3媒體儲存空間。
 
 >[!NOTE]
 >
@@ -104,7 +119,7 @@ sku,name,additional_attributes
 ADB112,"My Product",file_upload=https://example.com/files/manual.pdf
 ```
 
-在這兩種情況下，URL都必須可公開存取，且副檔名和大小必須符合[設定的限制](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/config/catalog/product-file-attributes){target="_blank"}。
+在這兩種情況下，URL都必須可公開存取，且副檔名和大小必須符合[設定的限制](https://experienceleague.adobe.com/en/docs/commerce-admin/config/catalog/product-file-attributes){target="_blank"}。
 
 ## 透過GraphQL擷取檔案
 

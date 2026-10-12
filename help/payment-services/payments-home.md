@@ -1,17 +1,35 @@
 ---
 title: 首頁
-description: 使用管理員中的 [!DNL Payment Services] 首頁來上線（包括ACCS）、開啟交易報告、管理PaaS上的訂單和付款進入點，以及存取「學習」、「說明」和「設定」。
+description: 使用Admin中的[!DNL Payment Services]首頁來上線（包括ACCS）、開啟交易報告、管理PaaS上的「訂單」和「付款」進入點，以及存取「學習」、「說明」和「設定」。
 role: Admin, User
 level: Intermediate
 exl-id: d7a4c87f-33cb-446a-b442-3cdf05b518a2
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: d85c2ab6b4f0372f8abfe09e92b3143c08ad883c
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '484'
 ht-degree: 1%
-
 ---
-
 # [!DNL Payment Services]首頁
 
 適用於Adobe Commerce和Magento Open Source的[!DNL Payment Services]提供您設定和使用擴充功能所需資訊的「首頁」檢視。 首頁頂端的選項取決於您的部署：雲端或內部部署(PaaS)上的Adobe Commerce，或[!DNL Adobe Commerce as a Cloud Service]或[!DNL Adobe Commerce Optimizer] (SaaS)。
@@ -20,7 +38,7 @@ ht-degree: 1%
 
 >[!BEGINTABS]
 
->[!TAB 雲端和內部部署上的 Adobe Commerce]
+>雲端和內部部署上的[!TAB Adobe Commerce]
 
 ![首頁檢視](assets/home-view.png){width="700" zoomable="yes"}
 
@@ -44,14 +62,14 @@ ht-degree: 1%
 
 ## 首頁
 
-僅[!BADGE 個PaaS]{type=Informative url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"}
+僅[!BADGE 個PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"}
 
 | 欄位 | 說明 |
 |---|---|
 | [!UICONTROL Orders] | 這些報表可讓您快速檢視訂單的付款狀態，並識別任何潛在問題。 |
 | [!UICONTROL Payouts] | 「付款」報表會顯示完整的付款資訊，讓您對付款金額、已處理數量及財務調節之交易層次的詳細報表具有完全的透明度。 |
 
-僅[!BADGE SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"}
+僅[!BADGE SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"}
 
 | 欄位 | 說明 |
 |---|---|

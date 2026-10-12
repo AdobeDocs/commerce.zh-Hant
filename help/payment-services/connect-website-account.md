@@ -7,17 +7,35 @@ feature: Payments, Checkout, Configuration, Paas, Saas
 TQID: 'https://experienceleague.adobe.com/U1zGAU6vYKjk2tc2KXnvyqnYdbA2HKTCNZSKhHdS0Vw'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-source-git-commit: d754c71e287d7d9ff297dd7d95efbaaae7ffc2fc
+    internal-label: Configuration
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 393
+source-wordcount: '393'
 ht-degree: 0%
-
 ---
-
 # 為網站連線其他PayPal帳戶
 
 針對具有&#x200B;**多個網站**&#x200B;的Commerce執行個體，您可能需要&#x200B;**不同的PayPal商家帳戶**。 [!DNL Payment Services]在&#x200B;**全域**&#x200B;上線後啟用&#x200B;**網站範圍** PayPal上線。
@@ -30,7 +48,7 @@ ht-degree: 0%
 
 只有當您的商店符合以下要求時，才可使用網站層級的上線：
 
-- [Commerce Services Connector](https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/integration-services/saas)安裝完成。
+- [Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas)安裝完成。
 - PayPal帳戶已連線至全域（預設設定）範圍。
 
 您可以檢查下列欄位是否已填入預設範圍，以確認此動作：
@@ -43,7 +61,7 @@ ht-degree: 0%
 
 ## 啟動網站層級連線
 
-1. 在&#x200B;_Admin_&#x200B;側邊欄上，前往&#x200B;**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**>**[!UICONTROL Sales]**&#x200B;並選擇&#x200B;**[!UICONTROL Payment Methods]**。
+1. 在&#x200B;_Admin_&#x200B;側邊欄上，前往&#x200B;**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**>**[!UICONTROL Sales]**並選擇&#x200B;**[!UICONTROL Payment Methods]**。
 1. 在左上角的範圍選取器中，從&#x200B;**[!UICONTROL Default Config]**&#x200B;切換至您想要上線的&#x200B;**[!UICONTROL Website]**。
 1. 按一下&#x200B;**[!UICONTROL Connect different account]**。
 

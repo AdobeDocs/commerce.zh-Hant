@@ -1,22 +1,27 @@
 ---
 title: '[!DNL Catalog Adapter]發行說明'
-description: 適用於Adobe Commerce的 [!DNL Catalog Adapter] 的最新發行資訊。
+description: 適用於Adobe Commerce的[!DNL Catalog Adapter]的最新發行資訊。
 feature: Services, Release Notes
 recommendations: noCatalog
 roles: Admin, Developer
 exl-id: d4dd0288-8853-43fe-9103-1aead8d3b56e
-TQID: https://experienceleague.adobe.com/btPlBYpdRdf-gMfqSv2px6iMfiI3FfXJSN40j61HXOU
+TQID: 'https://experienceleague.adobe.com/btPlBYpdRdf-gMfqSv2px6iMfiI3FfXJSN40j61HXOU'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+  - id: adedf70c-c1e1-5734-acdc-c5c43b114964
+    internal-label: Release Notes
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: d5e10c1b3014d2b74c323d6a34e5f73a97d494ce
+    internal-label: Admin
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 218
+source-wordcount: '219'
 ht-degree: 0%
-
 ---
-
 # [!DNL Catalog Adapter]擴充功能發行說明
 
 下列發行說明說明[!DNL Catalog Adapter]擴充功能的最新版本。 支援目前的主要發行版本。 舊版的發行說明僅供參考。

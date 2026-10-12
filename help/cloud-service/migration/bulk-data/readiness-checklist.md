@@ -2,35 +2,46 @@
 title: 客戶整備檢查清單
 description: 瞭解如何透過整備檢查清單（涵蓋參與、機器、來源和目標），準備將大量資料移轉至Adobe Commerce as a Cloud Service。
 feature: Cloud
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
 role: Developer
 level: Intermediate
 autotag-review: '2026-07-22T19:19:18.443Z'
 TQID: 'https://experienceleague.adobe.com/728hkK-dzIPzyuBhuNyOqEE9FxlVGdVc9R2wIRcXobk'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
   - id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
+    internal-label: Commerce ecosystem
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
 subfeature_v2:
   - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+    internal-label: Cloud architecture
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 670b6214b28be93a16130552a226a8cadb487324
+    internal-label: Data management
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 1171
+source-wordcount: '1171'
 ht-degree: 0%
-
 ---
-
 # 客戶整備檢查清單
 
 {{bulk-data-early-access}}
@@ -64,7 +75,7 @@ ht-degree: 0%
 - **可寫入的工作目錄** — 移轉使用者必須完全可寫入擷取移轉工具的目錄。 工具會在執行期間寫入記錄、快取、[!DNL Composer]相依性和產生的檔案。
 - **足夠的磁碟空間** — 確保有足夠的可用磁碟空間供擷取的資料、[!DNL Docker]影像和記錄檔輸出使用。 空間需求會依來源資料庫的大小而有所不同。
 - **內部部署來源：從移轉機器直接的資料庫連線** — 對於內部部署來源執行個體，移轉機器必須擁有來源資料庫的直接網路存取權。 此工具不會自動建立內部部署資料庫連線。 在執行任何移轉命令之前，請確認可從移轉機器存取主機、連線埠和認證。
-- 已安裝&#x200B;**雲端CLI且已登入SSH金鑰** — 對於[!DNL Adobe Commerce on Cloud]來源執行個體，[雲端CLI](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview)必須安裝在移轉機器上。 您的SSH公開金鑰也必須在帳戶中註冊。 如需指示，請參閱[安全連線指南](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/develop/secure-connections)。
+- 已安裝&#x200B;**雲端CLI且已登入SSH金鑰** — 對於[!DNL Adobe Commerce on Cloud]來源執行個體，[雲端CLI](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview)必須安裝在移轉機器上。 您的SSH公開金鑰也必須在帳戶中註冊。 如需指示，請參閱[安全連線指南](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections)。
 
 ### Source執行個體
 

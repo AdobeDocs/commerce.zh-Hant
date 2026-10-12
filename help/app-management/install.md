@@ -1,14 +1,28 @@
 ---
-title: 安裝及存取 [!DNL App Management]
+title: 安裝及存取[!DNL App Management]
 description: 使用Adobe Commerce [!DNL App Management]的先決條件和存取需求。
 feature: App Builder, Extensibility, Integration
-source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 72863f3c-9d27-5dda-afe1-d9f934b1fba0
+    internal-label: Extensibility
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a743e5dc-8f37-4b5d-a848-03c32ca30598
+    internal-label: App Builder
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 0%
-
 ---
-
 # 安裝及存取[!DNL App Management]
 
 [!DNL App Management]可在Commerce Admin中取得符合資格的Commerce執行個體。 可用性取決於您的部署型別。
@@ -66,15 +80,15 @@ ht-degree: 0%
 
 ## 安裝App Builder應用程式
 
-如果您需要從Adobe Exchange安裝App Builder應用程式（例如預先建立的整合或市集應用程式），請參閱[從Adobe Exchange安裝App Builder應用程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/install-app-builder-app){target="_blank"}以取得逐步指示。
+如果您需要從Adobe Exchange安裝App Builder應用程式（例如預先建立的整合或市集應用程式），請參閱[從Adobe Exchange安裝App Builder應用程式](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/install-app-builder-app){target="_blank"}以取得逐步指示。
 
-安裝及部署應用程式後，請使用[!DNL App Management]將其與您的Commerce執行個體建立關聯[&#128279;](manage-app.md#associate-an-app)，並設定其設定。
+安裝及部署應用程式後，請使用[!DNL App Management]將其與您的Commerce執行個體建立關聯](manage-app.md#associate-an-app)，並設定其設定。[
 
 ## Commerce webhook和應用程式
 
 部分App Builder應用程式會使用[Adobe Commerce webhook](https://developer.adobe.com/commerce/extensibility/webhooks/)，讓Commerce可以在特定事件發生時（例如在儲存產品後），透過HTTP呼叫您的應用程式。 Webhook端點和訂閱邏輯是由&#x200B;**應用程式開發人員**&#x200B;在應用程式建置和部署時定義；商店管理員不會在App Management中個別設定Webhook。
 
-在您[將應用程式](https://experienceleague.adobe.com/zh-hant/docs/commerce/app-management/manage-app/manage-app)與您的Commerce執行個體建立關聯，並從應用程式完成任何設定指示之後，webhook行為會遵循應用程式的實作。
+在您[將應用程式](https://experienceleague.adobe.com/en/docs/commerce/app-management/manage-app/manage-app)與您的Commerce執行個體建立關聯，並從應用程式完成任何設定指示之後，webhook行為會遵循應用程式的實作。
 
 如果[!DNL App Management]無法觸發應用程式的驗證端點（例如URL無法連線或回應不符合要求），您可能會在[!DNL App Management]儀表板中看到類似下列的錯誤：
 

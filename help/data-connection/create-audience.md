@@ -1,27 +1,35 @@
 ---
-title: 使用 [!DNL Commerce] 事件資料在Real-Time CDP中建立對象
-description: 瞭解如何使用 [!DNL Commerce] 事件資料在Real-Time CDP中建立對象
+title: 使用[!DNL Commerce]事件資料在Real-Time CDP中建立對象
+description: 瞭解如何使用[!DNL Commerce]事件資料在Real-Time CDP中建立對象
 role: Admin, Developer
 feature: Personalization, Integration
 exl-id: 0e9d286b-c459-44db-bbf8-2cb46e21739d
-TQID: https://experienceleague.adobe.com/f8XYzoWJCecwuEaNBA17-bf6gtGBLxpDQPJBqDk07-0
+TQID: 'https://experienceleague.adobe.com/f8XYzoWJCecwuEaNBA17-bf6gtGBLxpDQPJBqDk07-0'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
+  - id: f37757d8-3174-5335-b977-1161792f965d
+    internal-label: Personalization
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
-source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
+    internal-label: Customer profiles
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 1107
+source-wordcount: '1109'
 ht-degree: 0%
-
 ---
-
 # 使用[!DNL Commerce]事件資料在Real-Time CDP中建立對象
 
 使用從您的[!DNL Commerce]存放區擷取的事件資料，在Real-Time CDP中建立對象。 擷取的資料會根據瀏覽行為、過去的購買、設定檔屬性、轉換或流失的傾向、忠誠度狀態、高和低客戶價值等。
@@ -81,9 +89,9 @@ Adobe [!DNL Commerce]客戶透過啟用Real-Time CDP中建置的受眾並將其�
 
    ![建置規則](assets/build-rule.png)
 
-   **區段產生器**&#x200B;工作區可讓您為對象定義規則和條件。&#x200B;這些規則和條件會以Commerce存放區中的事件和設定檔資料為基礎，並定義條件，以判斷使用者是否符合對象資格。 例如，您可以建立規則，納入已檢視特定產品的使用者，或在特定時間範圍內購買的使用者。 深入瞭解[區段產生器](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/segment-builder)以及規則和條件。
+   **區段產生器**&#x200B;工作區可讓您為對象定義規則和條件。&#x200B;這些規則和條件會以Commerce存放區中的事件和設定檔資料為基礎，並定義條件，以判斷使用者是否符合對象資格。 例如，您可以建立規則，納入已檢視特定產品的使用者，或在特定時間範圍內購買的使用者。 深入瞭解[區段產生器](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder)以及規則和條件。
 
-1. 選取[事件](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/segment-builder#events)標籤。
+1. 選取[事件](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#events)標籤。
 
    ![事件標籤](assets/audience-events-tab.png)
 
@@ -111,7 +119,7 @@ Adobe [!DNL Commerce]客戶透過啟用Real-Time CDP中建置的受眾並將其�
 
 >[!IMPORTANT]
 >
->如果您尚未將[!DNL Commerce]設定為可接收資料的可用目的地，請參閱[Adobe [!DNL Commerce] 連線](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/personalization/adobe-commerce)主題。
+>如果您尚未將[!DNL Commerce]設定為可接收資料的可用目的地，請參閱[Adobe [!DNL Commerce] 連線](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/adobe-commerce)主題。
 
 1. 在您對象的&#x200B;**詳細資料**&#x200B;標籤中，按一下&#x200B;**啟用至目的地**。
 
@@ -121,7 +129,7 @@ Adobe [!DNL Commerce]客戶透過啟用Real-Time CDP中建置的受眾並將其�
 
 ## &#x200B;3. 在對象控制面板中檢視對象
 
-在[!DNL Commerce]中，您可以使用&#x200B;**Real-Time CDP Audiences**&#x200B;儀表板，檢視可為您的[!DNL Commerce]執行個體個人化的所有[作用中](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations)對象。
+在[!DNL Commerce]中，您可以使用&#x200B;**Real-Time CDP Audiences**&#x200B;儀表板，檢視可為您的[!DNL Commerce]執行個體個人化的所有[作用中](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations)對象。
 
 若要存取&#x200B;**Real-Time CDP Audiences**&#x200B;儀表板，請前往&#x200B;_管理員_&#x200B;側邊欄，然後前往&#x200B;**[!UICONTROL Customers]** > **[!UICONTROL Real-time CDP Audience]**。
 
@@ -134,9 +142,9 @@ Adobe [!DNL Commerce]客戶透過啟用Real-Time CDP中建置的受眾並將其�
 本節說明如何根據新對象建立購物車價格規則。
 
 1. 確認您的新對象顯示在&#x200B;**Real-Time CDP Audiences**&#x200B;儀表板中。
-1. [建立購物車價格規則](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create)。
-1. [使用您的新對象設定購物車價格規則的條件](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#use-real-time-cdp-audiences-to-set-a-condition)。
-1. [設定當產品加入購物車時要發生的動作](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#step-3-define-the-actions)。
+1. [建立購物車價格規則](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create)。
+1. [使用您的新對象設定購物車價格規則的條件](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#use-real-time-cdp-audiences-to-set-a-condition)。
+1. [設定當產品加入購物車時要發生的動作](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#step-3-define-the-actions)。
 1. 繼續設定購物車價格規則。
 1. 前往沙箱執行個體的客戶檢視。
 1. 將您根據對象的產品新增至購物車。 請注意，購物車價格規則已啟用。

@@ -4,34 +4,43 @@ description: 瞭解每個後台事件擷取哪些資料。
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: 65cf8150-1a14-4d4c-aa0c-1545109e4fe7
-TQID: https://experienceleague.adobe.com/ARHjckt-D38iqChgfJpiVGXO8Pz2YN6Oj5HFWmwCVEA
+TQID: 'https://experienceleague.adobe.com/ARHjckt-D38iqChgfJpiVGXO8Pz2YN6Oj5HFWmwCVEA'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: f37757d8-3174-5335-b977-1161792f965d
+    internal-label: Personalization
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+  - id: 5594f40c-5dc7-522f-a0e0-f84045197b3c
+    internal-label: Eventing
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
+    internal-label: Personalization
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 3716
+source-wordcount: '3716'
 ht-degree: 0%
-
 ---
-
 # [!DNL Data Connection]個後台事件
 
 以下列出您在安裝[!DNL Data Connection]擴充功能時可用的Commerce後台事件。 這些事件收集的資料會傳送至Adobe Experience Platform。 您也可以建立[自訂事件](custom-events.md)，以立即收集未提供的其他資料。
 
-除了下列事件收集的資料之外，您也會取得Adobe Experience Platform Web SDK提供的[其他資料](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/collection/js/js-overview)。
+除了下列事件收集的資料之外，您也會取得Adobe Experience Platform Web SDK提供的[其他資料](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview)。
 
 後台事件包含伺服器端資料。 此資料包含[訂單狀態](#order-status)資訊，例如，訂單是否已下達、取消、退款、出貨或完成。 伺服器端資料也包含[客戶設定檔事件](#customer-profile-events)資訊，例如帳戶是否已建立、更新或刪除。
 
 >[!NOTE]
 >
->所有後台事件都包含[`identityMap`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/field-groups/profile/identitymap)欄位，其中包括購物者的電子郵件地址（可用時）和ECID。
+>所有後台事件都包含[`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap)欄位，其中包括購物者的電子郵件地址（可用時）和ECID。
 
 ## 訂單狀態
 
@@ -418,7 +427,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->每個客戶設定檔事件也包含[`identityMap`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/field-groups/profile/identitymap)欄位，其中包含系統產生的Commerce客戶ID作為設定檔的主要識別碼，以及當作次要識別碼使用的電子郵件ID。 [瞭解](custom-identities.md)如何建立自訂身分屬性來增強客戶設定檔識別。
+>每個客戶設定檔事件也包含[`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap)欄位，其中包含系統產生的Commerce客戶ID作為設定檔的主要識別碼，以及當作次要識別碼使用的電子郵件ID。 [瞭解](custom-identities.md)如何建立自訂身分屬性來增強客戶設定檔識別。
 
 ### accountCreated
 

@@ -3,7 +3,7 @@ title: 疑難排解[!DNL Adobe Commerce Optimizer Connector]
 description: 瞭解如何疑難排解[!DNL Adobe Commerce] PaaS整合的[!DNL Adobe Commerce Optimizer Connector]認證、目錄同步和範圍匯出問題。
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
+badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
 autotag-review: '2026-06-09T19:00:00.000Z'
 TQID: 'https://experienceleague.adobe.com/ei86QuJ3nQ2d-6NRoAeJslgDxjGlZRejD-Nx-6SAVdc'
 product_v2:
@@ -22,6 +22,8 @@ feature_v2:
     internal-label: Admin tools and workspace
   - id: c18ed297-2187-4aec-affb-9d9654eca6fc
     internal-label: Catalog management
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 subfeature_v2:
   - id: a40ebd6b-b542-4432-a730-1803ef74518d
     internal-label: Data Transfer
@@ -36,7 +38,7 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 2dbf2b973af0cb7b831a17ca1a868a81b11bc9ee
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 0%
@@ -61,7 +63,7 @@ ht-degree: 0%
 
 錯誤處理的要點：
 
-- 未重試&#x200B;**400個錯誤**。 檢查裝載中是否有格式錯誤或遺漏的必填欄位。 如需預期的格式，請參閱聯結器摘要[&#128279;](reference/field-mapping.md)的欄位對應。
+- 未重試&#x200B;**400個錯誤**。 檢查裝載中是否有格式錯誤或遺漏的必填欄位。 如需預期的格式，請參閱聯結器摘要](reference/field-mapping.md)的[欄位對應。
 - **5xx錯誤**&#x200B;由`*_resend_failed_items` cron工作自動重試（每5分鐘執行一次）。
 
 **檢查範圍組態：**
@@ -78,4 +80,4 @@ ht-degree: 0%
 
 ## [!DNL SaaS Data Export]診斷
 
-如需底層[!DNL SaaS Data Export]診斷（包括記錄位置與摘要重新同步命令），請參閱[[!DNL SaaS Data Export] 疑難排解指南](https://experienceleague.adobe.com/zh-hant/docs/commerce/saas-data-export/troubleshooting/logging){target="_blank"}。
+如需底層[!DNL SaaS Data Export]診斷（包括記錄位置與摘要重新同步命令），請參閱[[!DNL SaaS Data Export] 疑難排解指南](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/troubleshooting/logging){target="_blank"}。
