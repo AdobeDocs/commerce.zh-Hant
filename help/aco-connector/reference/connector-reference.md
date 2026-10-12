@@ -69,7 +69,7 @@ ht-degree: 1%
 
 [!DNL SaaS Data Export]索引子收集的`products`、`productAttributes`、`categories`和`prices`摘要會重複使用資料。 聯結器從網站和客戶群組設定產生`priceBooks`摘要，且不依賴[!DNL SaaS Data Export]索引器。
 
-如需每個摘要的欄位層級對應詳細資訊，請參閱 [!DNL Commerce Optimizer Connector] 摘要](field-mapping.md)的[欄位對應。
+如需每個摘要的欄位層級對應詳細資訊，請參閱 [!DNL Commerce Optimizer Connector] 摘要[&#128279;](field-mapping.md)的欄位對應。
 若要根據您的目錄大小預估同步處理所需的時間，請參閱[預估資料量和同步處理時間](estimate-data-volume-sync-time.md)。
 
 ## 設定路徑

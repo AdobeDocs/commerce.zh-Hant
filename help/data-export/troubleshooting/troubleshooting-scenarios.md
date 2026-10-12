@@ -137,10 +137,10 @@ ht-degree: 0%
 
 **解決方案：**
 
-不需要採取任何動作。 當執行中的程式完成並解除鎖定後，下一個cron執行就會擷取並同步任何暫止的變更。 如需鎖定機制運作方式的詳細資訊，請參閱[ SaaS資料匯出的摘要鎖定機制](../feed-lock-mechanism.md)。
+不需要採取任何動作。 當執行中的程式完成並解除鎖定後，下一個cron執行就會擷取並同步任何暫止的變更。 如需鎖定機制運作方式的詳細資訊，請參閱[&#x200B; SaaS資料匯出的摘要鎖定機制](../feed-lock-mechanism.md)。
 
 >[!MORELIKETHIS]
 >
 > - [檢閱記錄檔並進行疑難排解](logging.md)
 > - [記錄檔代碼參考](log-codes-reference.md)
-> - SaaS資料匯出的摘要鎖定機制[](../feed-lock-mechanism.md)
+> - SaaS資料匯出的摘要鎖定機制[&#128279;](../feed-lock-mechanism.md)

@@ -76,7 +76,7 @@ ht-degree: 0%
 
 1. 找到檔案屬性欄位，然後按一下&#x200B;**[!UICONTROL Upload]**&#x200B;以選取檔案。
 
-在Admin](./assets/upload-file.png){width="600" zoomable="yes"}中![上傳檔案按鈕
+在Admin![&#128279;](./assets/upload-file.png){width="600" zoomable="yes"}中上傳檔案按鈕
 
 1. 按一下&#x200B;**[!UICONTROL Save]**。
 
@@ -95,7 +95,7 @@ ht-degree: 0%
 
 ## 透過產品匯入上傳
 
-您可以使用[匯入API](https://developer.adobe.com/commerce/webapi/rest/modules/import/){target="_blank"}或管理員匯入UI，大量附加檔案至產品。 產品檔案屬性僅支援從外部URL匯入，其方式與產品影像匯入](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import-product-images#method-2-import-images-from-external-server){target="_blank"}的[方法2相同。 Commerce會從提供的URL下載檔案，並將其儲存至S3媒體儲存空間。
+您可以使用[匯入API](https://developer.adobe.com/commerce/webapi/rest/modules/import/){target="_blank"}或管理員匯入UI，大量附加檔案至產品。 產品檔案屬性僅支援從外部URL匯入，其方式與產品影像匯入[&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import-product-images#method-2-import-images-from-external-server){target="_blank"}的方法2相同。 Commerce會從提供的URL下載檔案，並將其儲存至S3媒體儲存空間。
 
 >[!NOTE]
 >
