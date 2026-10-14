@@ -40,9 +40,9 @@ topic_v2:
     internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 559efed5340b7076f18a3efc0077f9afd5f8ca48
 workflow-type: tm+mt
-source-wordcount: '3447'
+source-wordcount: '3576'
 ht-degree: 0%
 ---
 # [!DNL SaaS Data Export Extension]發行說明
@@ -60,6 +60,16 @@ ht-degree: 0%
 >[!DNL SaaS data export]擴充功能是與[!DNL Live Search]、[!DNL Product Recommendations]及[!DNL Catalog Service]一起自動安裝的模組集合。 您可以使用[!DNL Composer]檢查系統上安裝的版本。 在某些情況下，您可能會想要升級系統上的資料匯出擴充功能，以取得修正或新功能，而不更新Commerce服務版本。
 
 ## 2026版本 {#release-notes-2026}
+
+### 103.5.0版
+
+_2026年10月13日_
+
+![修正](../assets/fix.svg) **匯出的中繼資料中的屬性可見性準確** — 修正屬性可見性欄位匯出「管理員」可見性設定，而非「店面」可見性設定的問題。 連線的Commerce服務現在可獲得每個屬性的正確可見性。<!--MDEE-932-->
+
+![新](../assets/new.svg) **數值產品屬性的範圍篩選器** — 已更新產品屬性以支援&#x200B;**數字**&#x200B;輸入型別。 此輸入型別會套用至儲存小數值（包括負數）的屬性，而不會顯示貨幣符號。 這些量度會匯出中繼資料，讓[!DNL Live Search]產生範圍Facet，讓購物者可以依作業溫度等測量值進行篩選。<!--MDEE-1416-->
+
+![修正](../assets/fix.svg) **一致的自訂價格屬性值** — 自訂價格屬性值現在會以商店的預設貨幣匯出，具有兩位小數，因此店面的價格格式會符合價格資料格式。<!--MDEE-1459-->
 
 ### 103.4.35版
 
