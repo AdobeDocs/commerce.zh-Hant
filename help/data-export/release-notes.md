@@ -40,9 +40,9 @@ topic_v2:
     internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 559efed5340b7076f18a3efc0077f9afd5f8ca48
+source-git-commit: 9ea19181108118892e238ba2ffce4bb7b451ee94
 workflow-type: tm+mt
-source-wordcount: '3576'
+source-wordcount: '3608'
 ht-degree: 0%
 ---
 # [!DNL SaaS Data Export Extension]發行說明
@@ -60,6 +60,12 @@ ht-degree: 0%
 >[!DNL SaaS data export]擴充功能是與[!DNL Live Search]、[!DNL Product Recommendations]及[!DNL Catalog Service]一起自動安裝的模組集合。 您可以使用[!DNL Composer]檢查系統上安裝的版本。 在某些情況下，您可能會想要升級系統上的資料匯出擴充功能，以取得修正或新功能，而不更新Commerce服務版本。
 
 ## 2026版本 {#release-notes-2026}
+
+### 103.5.1版
+
+_2026年10月14日_
+
+![修正](../assets/fix.svg) **現在在管理UI中建立產品屬性時，可以使用Number屬性型別**。 此屬性可啟用即時搜尋中的數值排序和範圍篩選。<!--MDEE-1416 -->
 
 ### 103.5.0版
 
