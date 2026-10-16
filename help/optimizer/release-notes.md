@@ -4,7 +4,7 @@ description: '[!DNL Adobe Commerce Optimizer]的每月發行資訊，包括店�
 feature: Release Notes
 role: Admin, Developer, User, Leader
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]個專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]個專案（Adobe管理的SaaS基礎結構）。"
 exl-id: e420d461-9ea2-4e32-aa37-230b14a297d7
 TQID: 'https://experienceleague.adobe.com/apcpxN0AOniRcHDCa5MMAVWysxRO5mTcudXXXjET-Lo'
 product_v2:
@@ -25,7 +25,7 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 92e2b81e91e5d78b08d551aa9531b18ebf50d853
 workflow-type: tm+mt
 source-wordcount: '1627'
 ht-degree: 0%
@@ -35,7 +35,7 @@ ht-degree: 0%
 下列發行說明包含[!DNL Adobe Commerce Optimizer]的更新，包括：
 
 * [[!DNL Adobe Commerce Optimizer Studio]](overview.md#quick-tour)的新功能及改進專案。
-* 更新[資料擷取REST API](https://developer.adobe.com/commerce/services/reference/rest/)和店面目錄資料擷取[&#128279;](https://developer.adobe.com/commerce/services/reference/graphql/)的GraphQL API。
+* 更新[資料擷取REST API](https://developer.adobe.com/commerce/services/reference/rest/)和店面目錄資料擷取](https://developer.adobe.com/commerce/services/reference/graphql/)的[GraphQL API。
 
   {{aco-api-updates-and-dropins}}
 
@@ -47,7 +47,7 @@ _2026年9月3日_
 
 ### 屬性排名(Beta)
 
-[!DNL Adobe Commerce Optimizer]銷售規則現在支援&#x200B;**所有產品清單**、**類別規則**&#x200B;和&#x200B;**搜尋規則**&#x200B;的&#x200B;[**屬性排名**](./merchandising/rules/add.md#attribute-ranking)。 自動將&#x200B;**[!UICONTROL Boost]**、**[!UICONTROL Bury]**&#x200B;或&#x200B;**[!UICONTROL Hide]**&#x200B;動作套用至符合一或多個屬性條件（例如品牌或類別）的每個產品，而不需選取個別SKU。 屬性排名為測試版。 [了解更多](./merchandising/rules/add.md#attribute-ranking)。
+[!DNL Adobe Commerce Optimizer]銷售規則現在支援&#x200B;**預設搜尋規則**、**類別規則**&#x200B;和&#x200B;**搜尋規則**&#x200B;的&#x200B;[**屬性排名**](./merchandising/rules/add.md#attribute-ranking)。 自動將&#x200B;**[!UICONTROL Boost]**、**[!UICONTROL Bury]**&#x200B;或&#x200B;**[!UICONTROL Hide]**&#x200B;動作套用至符合一或多個屬性條件（例如品牌或類別）的每個產品，而不需選取個別SKU。 屬性排名為測試版。 [了解更多](./merchandising/rules/add.md#attribute-ranking)。
 
 {{aco-release}}
 
@@ -95,7 +95,7 @@ _2026年6月24日_
 
 <!-- v1.3 -->
 
-![新](../assets/new.svg) **新`canEditQuantity`欄位** — 已將`canEditQuantity`新增至目錄服務GraphQL中的`ProductViewOptionValueProduct`。 它會公開Commerce Admin中套件組合選取專案的可選&#x200B;**使用者定義**&#x200B;數量設定，讓店面消費者可以判斷套件組合選取專案的數量是否可編輯。
+![新](../assets/new.svg) **新`canEditQuantity`欄位** — 已將`canEditQuantity`新增至目錄服務GraphQL中的`ProductViewOptionValueProduct`。 它會公開Commerce Admin中套件組合選取專案的可選&#x200B;**使用者定義**數量設定，讓店面消費者可以判斷套件組合選取專案的數量是否可編輯。
 <!--COMOPT-2050-->
 
 ### 語意搜尋
@@ -165,7 +165,7 @@ _2026年4月29日_
 
 <!--v1.52 release-->
 
-**需要批次處理請求** — 現在，當您擷取目錄資料時，GraphQL API會針對每個請求強制最多100個SKU。 請參閱[已記錄的限制和邊界](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/boundaries-limits#product-discovery)。
+**需要批次處理請求** — 現在，當您擷取目錄資料時，GraphQL API會針對每個請求強制最多100個SKU。 請參閱[已記錄的限制和邊界](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits#product-discovery)。
 
 <!--DATA-7156-->
 

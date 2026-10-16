@@ -1,7 +1,7 @@
 ---
 title: 建立和管理規則
 description: 瞭解如何建立和管理搜尋、預設產品清單和類別頁面的銷售規則。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]個專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]個專案（Adobe管理的SaaS基礎結構）。"
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
 TQID: https://experienceleague.adobe.com/UOe-TPaF80Wrk-gNuJwLTdndVQMQfbYrbpAfb-r4pJc
 product_v2:
@@ -24,9 +24,9 @@ topic_v2:
     internal-label: Behavioral data
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 3d21aed1af575d15c2cea4a42c49169a0fe37d7e
+source-git-commit: 92e2b81e91e5d78b08d551aa9531b18ebf50d853
 workflow-type: tm+mt
-source-wordcount: '4111'
+source-wordcount: '4108'
 ht-degree: 0%
 ---
 # 建立和管理規則
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 | 規則類型 | 用途 |
 | --- | --- |
-| **所有產品清單** | 當沒有更具體的搜尋或類別規則套用時，跨產品清單的預設排名和銷售。 您只能建立一個這樣的規則；它不能包含條件。 |
+| **預設搜尋規則** | 當沒有更具體的搜尋或類別規則套用時，跨產品清單的預設排名和銷售。 您只能建立一個這樣的規則；它不能包含條件。 |
 | **類別規則** | 將銷售與排名套用至單一類別，控制該類別頁面上的產品訂單。 |
 | **搜尋規則** | 當購物者執行符合規則查詢條件的搜尋時，套用銷售與排名。 |
 
@@ -91,7 +91,7 @@ ht-degree: 0%
 
 **多個條件**
 
-1. 若要建置包含多個條件的規則，請按一下[新增條件]。**&#x200B;**
+1. 若要建置包含多個條件的規則，請按一下[新增條件]。****
 一個規則最多可以有十個條件。 結合兩個條件的邏輯運運算元是以目前的*Match*&#x200B;設定為基礎。 依預設，*符合*&#x200B;為`All`，邏輯運運算元為`AND`。
 
 1. 選取第二個條件並輸入必要的查詢文字。
@@ -105,7 +105,7 @@ ht-degree: 0%
 
    在此範例中，不是搜尋「yoga pants」，而是有兩個不同的查詢可搜尋「yoga」或「pants」。 此規則較少具體，且在店面觸發的頻率遠高於其他規則。
 
-1. 若要新增其他條件，請按一下[新增條件] **&#x200B;**&#x200B;並重複此程式。
+1. 若要新增其他條件，請按一下[新增條件] ****&#x200B;並重複此程式。
 1. 選擇性地設定[智慧型排名](#intelligent-ranking)、[手動排名](#manual-ranking)或[屬性排名](#attribute-ranking)，如下列章節所述。 相同的控制項適用於類別頁面，但會指出任何差異。
 
 >[!TAB 類別規則]
@@ -143,7 +143,7 @@ ht-degree: 0%
 
 ### 智慧型排名 {#intelligent-ranking}
 
-智慧型排名使用&#x200B;**行為訊號**&#x200B;和AI （如果適用）來訂購產品。 它適用於&#x200B;**搜尋規則**、**所有產品清單** （預設規則）和&#x200B;**類別規則** （類別頁面）。 對於購物者&#x200B;**搜尋**，排名也會加權&#x200B;**查詢的文字關聯性**；**類別頁面**&#x200B;不會以相同的方式使用查詢文字 — 編輯者會專注於行為策略。
+智慧型排名使用&#x200B;**行為訊號**&#x200B;和AI （如果適用）來訂購產品。 它適用於&#x200B;**搜尋規則**、**預設搜尋規則**&#x200B;和&#x200B;**類別規則** （類別頁面）。 對於購物者&#x200B;**搜尋**，排名也會加權&#x200B;**查詢的文字關聯性**；**類別頁面**&#x200B;不會以相同的方式使用查詢文字 — 編輯者會專注於行為策略。
 
 商店主可以設定如下的策略。 確切的標籤和時間視窗符合規則編輯器，且會因規則型別而略有不同。
 
@@ -271,7 +271,7 @@ ht-degree: 0%
 
 >[!AVAILABILITY]
 >
->此功能位於[beta](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/beta#attribute-ranking-public-beta)中。
+>此功能位於[beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#attribute-ranking-public-beta)中。
 
 **屬性排名**&#x200B;會自動將&#x200B;**[!UICONTROL Boost]**、**[!UICONTROL Bury]**&#x200B;或&#x200B;**[!UICONTROL Hide]**&#x200B;動作套用至符合一或多個屬性條件的每個產品，而不需要您選取個別SKU。 屬性排名會與[智慧型排名](#intelligent-ranking)和[手動排名](#manual-ranking)一起出現在規則編輯器中，並適用於&#x200B;**所有產品規則**、**搜尋規則**&#x200B;和&#x200B;**類別規則**。 使用它來擴展大型目錄中的銷售，例如，提升指定品牌的所有產品，或將每個產品埋入停產的顏色。
 
@@ -401,7 +401,7 @@ ht-degree: 0%
 | 欄位 | 說明 |
 | --- | --- |
 | 名稱 | 規則的名稱。 規則名稱必須是唯一的。 |
-| 規則型別 | 根據&#x200B;**規則套用至**，**預設** （所有產品清單）、**查詢** （特定搜尋條件）或&#x200B;**類別** （類別頁面）。 |
+| 規則型別 | 根據&#x200B;**規則套用至**，**預設搜尋規則**、**查詢** （特定搜尋條件）或&#x200B;**類別** （類別頁面）。 |
 | 開始日期 | 規則的開始日期（如果已排程）。 |
 | 結束日期 | 規則的結束日期（如果已排程）。 |
 | 說明 | 規則的簡短說明。 |
