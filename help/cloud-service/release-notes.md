@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 02108257eed58231854947feafc8c48e0a75a8bb
 workflow-type: tm+mt
-source-wordcount: '8064'
+source-wordcount: '8820'
 ht-degree: 0%
 ---
 # 發行說明
@@ -74,7 +74,106 @@ ht-degree: 0%
 >
 >如果您正在雲端基礎結構上使用Adobe Commerce內部部署或Adobe Commerce，請參閱[Adobe Commerce發行說明](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/overview)。
 
-## 2026年10月 — 發行說#1 {#latest}
+## 2026年10月 — 發行說#2 {#latest}
+
+[!BADGE 沙箱]{type=Caution tooltip="列出的專案目前僅在沙箱環境中可用。 Adobe會先在沙箱環境中推出新版本，讓您可以在生產環境中使用該版本之前有時間測試即將推出的變更。"}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+以下專案將於2026年10月20日在生產環境中可用。
+
+>[!BEGINSHADEBOX]
+
+<!-- CCSAAS-5510, ACCS-1756, ACCS-432, MDEE-1415, PAY-6085 not included due to pending epics and other dependencies -->
+
+### 管理自訂國家/地區
+
+新的REST API端點可讓整合功能針對預設區域資料未涵蓋的國家/地區，管理自訂區域，例如州或省。
+
+無法變更或移除預設（系統）區域。 這些端點需要[!UICONTROL Manage Country Regions]許可權。<!-- ACCS-1937 -->
+
+* `GET /V1/directory/countries/:countryId/regions` — 列出並搜尋國家/地區的區域。
+* `POST /V1/directory/countries/:countryId/regions` — 在單一請求中建立最多500個自訂區域。 如果有任何區域驗證失敗，則不會建立任何區域。
+* `PUT /V1/directory/countries/:countryId/regions/:regionId` — 更新自訂區域。
+* `DELETE /V1/directory/countries/:countryId/regions/:regionId` — 刪除自訂區域。
+
+### 訂閱客戶地址事件
+
+整合現在可以透過[!DNL Adobe I/O Events]訂閱下列事件，以同步處理已註冊客戶通訊錄的變更。 來賓簽出位址不會觸發這些事件。<!-- ACCS-2095 -->
+
+* `observer.customer_address_delete_commit_after` — 已刪除客戶地址。
+* `observer.customer_address_save_commit_after` — 已建立或更新客戶地址。
+
+### 驗證已上傳和匯入的檔案
+
+您現在可以在要求預先簽署的上傳URL時，提供選用的SHA-256檢查加總。 上傳檔案時，在`x-amz-checksum-sha256`標頭中傳送相同的值。<!-- ACCS-1464 -->
+
+* GraphQL — 指定`checksum_sha256`欄位作為`initiateUpload`突變的輸入。
+* REST — 將新的`POST /V1/media/initiate-upload-with-checksum`端點與`checksumSha256`欄位搭配使用。
+
+### 檢視訂單編輯鏈結中的訂單總計
+
+`Customer` GraphQL型別現在包含`chain_totals(filter: CustomerChainTotalsFilterInput)`欄位，此欄位會傳回訂單編輯鏈中每個訂單的彙總總計。 在具有`original_number`的鏈結中依任何訂單編號篩選。 僅支援`eq`條件。 此欄位使用與`original_number`訂單篩選相同的功能標幟，預設為停用。<!-- ACCS-1443 -->
+
+[!DNL Commerce Admin]也可以在[!UICONTROL Order Chains]格線([!UICONTROL Sales] > [!UICONTROL Operations] > [!UICONTROL Order Chains])的訂單編輯鏈結，以及在訂單鏈結詳細資料檢視上的[!UICONTROL Order Chain Totals]摘要中顯示合併的總計。
+
+若要啟用這些欄位，請聯絡您的Adobe Commerce客戶成功經理或建立支援票證。
+
+### 檢查庫存層級的可用性
+
+新的`stockAvailability(skus: [String!]!)` GraphQL查詢傳回最多100個SKU的庫存層級可用性。<!-- ACCS-2079 -->
+
+### 增強功能和錯誤修正
+
+此版本中包括下列選取的增強功能、最佳化和錯誤修正：
+
+* 產品摘要現在會透過`ac_inventory`自訂產品屬性，以及透過`ac_tax_class`和`ac_attribute_set`自訂產品屬性設定的稅捐類別和屬性，匯出存貨和購物車數量設定。<!-- ACCS-1981, MDEE-1129 -->
+
+* 修正[!DNL AEM Assets]為視覺效果擁有者時，GraphQL中未傳回類別影像的問題。<!-- ACCS-1943 -->
+
+* 修正使用[!DNL AEM Assets]時，建立類別可能傳回錯誤的問題。<!-- CCSAAS-5562 -->
+
+* 修正贈品登入共用電子郵件無法傳送的問題。<!-- CCSAAS-5312 -->
+
+* 修正`placeOrder` GraphQL突變在要求出貨稅捐標題時可能傳回錯誤的問題。<!-- CCSAAS-5569 -->
+
+* 修正屬性選項含有已刪除商店的標籤或沒有標籤時，產品摘要同步可能停止的問題。<!-- ACCS-2097 -->
+
+* 修正付款授權後，從透過`PUT /V1/carts/:cartId/order`建立的購物車下訂單可能失敗的問題。<!-- ACCS-2091, PAY-6857 -->
+
+* 修正在[!DNL Commerce Admin]中從客戶的購物車建立訂單時，可能會變更付款授權總計並從客戶的店面購物車移除地址的問題。<!-- ACCS-2100 -->
+
+* 從相同購物車下訂單時，透過REST API套用或移除送貨折扣，現在會傳回可重試的錯誤。<!-- ACCS-2077 -->
+
+* 產品儲存事件（`observer.catalog_product_save_commit_after`和`observer.catalog_product_save_after`）現在包含新增、更新或移除產品連結時的最新相關、追加銷售和交叉銷售產品。<!-- ACCS-2049 -->
+
+* `/V1/returns` REST端點現在會儲存並傳回自訂屬性。<!-- CCSAAS-5588 -->
+
+* 修正`CartAddressInput` GraphQL輸入中需要`telephone`欄位的問題，此問題可能會阻止在結帳時顯示送貨方法。<!-- ACCS-1944 -->
+
+* 修正日期範圍的特殊價格使用預設時區而非網站時區匯出的問題。<!-- ACCS-2101 -->
+
+* 修正透過GraphQL下訂單時，運費與稅金無法正確互動的問題。<!-- ACCS-1995 -->
+
+* 修正了在網站範圍啟用[!UICONTROL Company]和[!UICONTROL Shared Catalog]失敗的問題。<!-- ACCS-1999 -->
+
+* 修正子產品可設定屬性的值為空白時，部分可設定產品停止同步至目錄的問題。<!-- ACCS-2107 -->
+
+* 修正當專案的狀況、解決方式或原因未設定時，可能會傳送[!UICONTROL New Return]封電子郵件，但無列出傳回專案的問題。<!-- CCSAAS-5585 -->
+
+* 修正具有無輸入型別類別屬性的存放區無法載入[!DNL Commerce Admin]中[!UICONTROL Catalog] > [!UICONTROL Categories]頁面的問題。<!-- CCSAAS-5582 -->
+
+* 修正無法在[!UICONTROL Content] > [!UICONTROL Design] > [!UICONTROL Configuration]中開啟[!UICONTROL Global]範圍的問題。<!-- CCSAAS-5583 -->
+
+* 修正沒有編輯產品價格或狀態許可權的管理員使用者無法開啟[!UICONTROL Add Product]頁面的問題。<!-- CCSAAS-5584 -->
+
+* 修正稅率表單無法在多儲存模式中開啟的問題。<!-- ACCS-2102 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## 2026年10月 — 發行說#1
 
 <!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
@@ -130,6 +229,8 @@ ht-degree: 0%
 ### 透過GraphQL稽核訂單
 
 `CustomerOrdersFilterInput` GraphQL輸入物件現在支援`original_number`欄位，可讓您在訂單編輯鏈結中篩選任何訂單編號。 回應會傳回原始訂單，以及從後續編輯建立的所有訂單，傳回為單一鏈結，符合REST中的`order_original_id`篩選器。<!-- ACCS-1442 -->
+
+若要啟用此功能，請聯絡您的Adobe Commerce客戶成功經理或建立支援票證。
 
 ### 依日期與時間排程型錄價格規則
 
