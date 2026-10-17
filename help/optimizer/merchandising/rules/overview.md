@@ -1,29 +1,33 @@
 ---
 title: 銷售規則
 description: '[!DNL Adobe Commerce Optimizer]銷售規則結合邏輯與動作，以塑造搜尋結果、預設產品清單和類別頁面。'
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]個專案（Adobe管理的SaaS基礎結構）。"
 exl-id: f2a9b5e8-d23d-4855-b424-ca6b40e057df
 TQID: https://experienceleague.adobe.com/1lpaqHx0SaVYLXcTSOToxvbpKzhPJKmhfxjlCvNQLkU
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
+    internal-label: Personalization
+source-git-commit: 44fb94ab5d9ba6deab421a15b391294ec0087f38
 workflow-type: tm+mt
-source-wordcount: 760
+source-wordcount: '821'
 ht-degree: 0%
-
 ---
-
 # 銷售規則
 
-銷售規則結合邏輯與動作，以塑造產品在&#x200B;**搜尋結果**、**預設產品清單** （**所有產品清單**）及&#x200B;**類別頁面**&#x200B;中的顯示方式。 您可以提升、隱藏、釘選或隱藏產品，並套用&#x200B;**智慧排名**，讓清單反映您的業務目標。
+銷售規則結合邏輯與動作，以塑造產品在&#x200B;**搜尋結果**、**預設產品清單**&#x200B;中（透過&#x200B;**預設搜尋規則**）及&#x200B;**類別頁面**&#x200B;中的顯示方式。 您可以提升、隱藏、釘選或隱藏產品，並套用&#x200B;**智慧排名**，讓清單反映您的業務目標。
 
 每個&#x200B;**搜尋規則**&#x200B;有三個主要元件：
 
@@ -33,7 +37,7 @@ ht-degree: 0%
 
 **類別規則**&#x200B;使用&#x200B;**類別選擇**，而非搜尋查詢條件；智慧型排名和手動排名的運作方式與搜尋相同，差異顯示在[建立和管理規則](add.md)中。
 
-您可以結合搜尋規則的多個條件和動作，並排定任何規則在期間內為作用中。 您也可以設定&#x200B;**預設規則** （**所有產品清單**），此規則適用於不再套用特定搜尋或類別規則的情況。
+您可以結合搜尋規則的多個條件和動作，並排定任何規則在期間內為作用中。 您也可以設定&#x200B;**預設搜尋規則**，此規則適用於不再套用特定搜尋或類別規則的情況。
 
 ## 類別規則 {#category-rules}
 
@@ -68,21 +72,21 @@ Match運運算元`All`和`Any`決定用來聯結規則中多個條件的邏輯�
 
 ## 預設規則
 
-您可以設定預設規則（**所有產品清單**），此規則會在未提供搜尋字詞或無法套用其他搜尋規則時套用。 如果您將預設規則設為「最多購買」，則查詢會預設為該排名型別，除非由更具體的搜尋字詞取代。 預設規則無法設定搜尋字詞。 **類別規則**&#x200B;是獨立的：它們只適用於您選取的類別，不會取代預設清單規則。
+您可以設定在沒有提供搜尋字詞或無法套用其他搜尋規則時套用的&#x200B;**預設搜尋規則**。 如果您將預設規則設為「最多購買」，則查詢會預設為該排名型別，除非由更具體的搜尋字詞取代。 預設規則無法設定搜尋字詞。 **類別規則**&#x200B;是獨立的：它們只適用於您選取的類別，不會取代預設清單規則。
 
 ## 多個規則的優先順序
 
 下列專案適用於&#x200B;**搜尋規則**，以及它們在指定搜尋中互動的方式。 **類別規則**&#x200B;適用於每個類別；請參閱[建立和管理規則](add.md)，瞭解這些規則如何配合搜尋和預設規則。
 
 一次只對一個搜尋字詞套用一個搜尋規則。
-如果發現多個規則適用於搜尋片語，則會套用所有這些規則。如果兩個規則（`rule 1`會增加SKU1，但`rule 2`會隱藏相同的SKU）之間發生衝突，則優先使用最近套用的規則(`rule 2`)。
+如果發現多個規則適用於搜尋片語，則會套用所有這些規則。 如果兩個規則（`rule 1`會增加SKU1，但`rule 2`會隱藏相同的SKU）之間發生衝突，則優先使用最近套用的規則(`rule 2`)。
 
 - 規則會依「上次修改」時間戳記排序。 最近修改的規則會依時間戳記順序先套用，之後則套用較舊的規則。
 - `query is`條件優先於其他條件。 如果較新的規則包含`query contains`條件，但較舊的規則有`query is`條件，則套用`query is`規則。
 
 ### 店面請求
 
-如果包含`query is`條件的作用中規則符合搜尋字詞，則會套用該規則。如果有多個具有`query is`條件的相符規則，則會套用最近更新的作用中規則。
+如果包含`query is`條件的作用中規則符合搜尋字詞，則會套用該規則。 如果有多個具有`query is`條件的相符規則，則會套用最近更新的作用中規則。
 否則，會套用最近更新的使用中規則。
 
 ### 預覽請求

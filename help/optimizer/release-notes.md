@@ -25,7 +25,7 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 92e2b81e91e5d78b08d551aa9531b18ebf50d853
 workflow-type: tm+mt
 source-wordcount: '1627'
 ht-degree: 0%
@@ -47,7 +47,7 @@ _2026年9月3日_
 
 ### 屬性排名(Beta)
 
-[!DNL Adobe Commerce Optimizer]銷售規則現在支援&#x200B;**所有產品清單**、**類別規則**&#x200B;和&#x200B;**搜尋規則**&#x200B;的&#x200B;[**屬性排名**](./merchandising/rules/add.md#attribute-ranking)。 自動將&#x200B;**[!UICONTROL Boost]**、**[!UICONTROL Bury]**&#x200B;或&#x200B;**[!UICONTROL Hide]**&#x200B;動作套用至符合一或多個屬性條件（例如品牌或類別）的每個產品，而不需選取個別SKU。 屬性排名為測試版。 [了解更多](./merchandising/rules/add.md#attribute-ranking)。
+[!DNL Adobe Commerce Optimizer]銷售規則現在支援&#x200B;**預設搜尋規則**、**類別規則**&#x200B;和&#x200B;**搜尋規則**&#x200B;的&#x200B;[**屬性排名**](./merchandising/rules/add.md#attribute-ranking)。 自動將&#x200B;**[!UICONTROL Boost]**、**[!UICONTROL Bury]**&#x200B;或&#x200B;**[!UICONTROL Hide]**&#x200B;動作套用至符合一或多個屬性條件（例如品牌或類別）的每個產品，而不需選取個別SKU。 屬性排名為測試版。 [了解更多](./merchandising/rules/add.md#attribute-ranking)。
 
 {{aco-release}}
 

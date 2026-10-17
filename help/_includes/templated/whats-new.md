@@ -1,7 +1,7 @@
 ---
-source-git-commit: b12fd59e97279b78017bee0403a7e7672adb1957
+source-git-commit: f43710c77d063d923d136b9fda2d9283ede97788
 workflow-type: tm+mt
-source-wordcount: '1113'
+source-wordcount: '1250'
 ht-degree: 1%
 ---
 # 新功能範本
@@ -9,6 +9,80 @@ ht-degree: 1%
 ## 新增功能
 
 此頁面包含過去60天所做的變更。 我們將從此清單中排除所有微幅更新，例如複製編輯。
+
+### 2026年10月16日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>更新「銷售規則」檔案，將「所有產品清單」規則型別重新命名為<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/merchandising/rules/overview">銷售規則總覽</a>、<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/merchandising/rules/add">建立及管理規則</a>及<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/release-notes">發行說明</a>中的預設搜尋規則，並符合「管理規則型別」功能表中重新命名的選項。</p>
+</td>
+      <td>
+        意見反應
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/b5c9b1b4ead9f355cd7438d3a8f1b90ac08b12d1">認可</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年10月14日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>更正<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking-boost">建立和管理銷售規則</a>中[!UICONTROL Intelligent Ranking Boost]的已記錄預設值和範圍值：預設值為<code>50</code> （先前記錄為<code>5</code>），而最大範圍為<code>1000</code> （先前記錄為<code>100</code>）。</p>
+</td>
+      <td>
+        技術
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/07fb011b0303ebca11dd3e0948d264c72bd2422e">認可</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年10月12日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>針對<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/merchandising/recommendations/filters">篩選器</a>中的建議單位新增無庫存排除篩選器的檔案，這會從建議中排除無庫存的產品。</p>
+</td>
+      <td>
+        意見反應，重大更新
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/abba2327d9c678e374a94c5bc5ed091f401c8aff">認可</a></td>
+    </tr>
+    <tr>
+      <td><p>更新最新<a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md">source log-codes.md</a>的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/saas-data-export/logs-troubleshooting/log-codes-reference">資料匯出記錄檔代碼參考</a>。</p>
+</td>
+      <td>
+        技術
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/83acf0b6474920141c0bcc354f7c49ea7d10d29c">認可</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年10月8日
 
@@ -388,36 +462,6 @@ ht-degree: 1%
         重大更新
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/b6613edbf84681a860b9c71a07f43a7df40e8784">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年8月12日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>已新增Adobe Commerce as a Cloud Service的生產<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes">發行說明</a>。</p>
-</td>
-      <td>
-        重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ed13ed011180fbb9d535f5a228a5f932ebf00689">認可</a></td>
-    </tr>
-    <tr>
-      <td><p>商戶現在可以直接從Commerce管理員在網站範圍自助服務另一個PayPal帳戶上線。 如需詳細資訊，請參閱<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/payment-services/configure/connect-website-account">為網站</a>連線其他PayPal帳戶。</p>
-</td>
-      <td>
-        新主題
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/e18c82a81c49de8175a8a8d77e9a191fe2af4b46">認可</a></td>
     </tr>
   </tbody>
 </table>
