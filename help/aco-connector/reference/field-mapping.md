@@ -153,7 +153,7 @@ ht-degree: 2%
 `categories`摘要傳送[!DNL Adobe Commerce]資料至[類別端點](https://developer.adobe.com/commerce/services/reference/rest/#tag/Categories){target="_blank"}。
 
 聯結器會依URL路徑和存放區檢視程式碼識別類別摘要記錄。
-- 
+- &#x200B;
   - 當類別移至類別樹狀結構中的不同父系時，同步會傳送該類別及其子系的新路徑，並從[!DNL Adobe Commerce Optimizer]中移除其先前的路徑。
 - 含有空白`urlPath` （邏輯根類別）的專案會被略過，且永遠不會提交。
 
