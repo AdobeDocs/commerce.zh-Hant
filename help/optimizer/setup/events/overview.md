@@ -36,7 +36,7 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->資料彙集不包含個人識別資訊(PII)。 所有使用者識別碼（例如Cookie ID和IP位址）都需嚴格匿名處理。 [了解更多](https://www.adobe.com/privacy/experience-cloud.html)。
+>資料彙集不包含個人識別資訊(PII)。 所有使用者識別碼（例如Cookie ID和IP位址）都需嚴格匿名處理。 [了解更多](https://www.adobe.com/tw/privacy/experience-cloud.html)。
 
 **事件**&#x200B;頁面可讓您觀察正在收集的店面事件資料。 檢視事件資料收集可讓商家驗證他們是否已正確實作店面事件，以及是否成功擷取事件。 商戶可以使用此頁面來識別潛在問題，並採取措施來解決任何事件問題。
 
