@@ -33,6 +33,6 @@ Recommendations會以具有標籤的單位形式出現在商店中，例如「�
 
 ## 隱私權
 
-針對Recommendations目的的資料收集不包括任何個人識別資訊(PII)。 此外，所有使用者識別碼（例如Cookie ID和IP位址）都需嚴格匿名處理。 若要進一步瞭解，請參閱[Adobe隱私權原則](https://www.adobe.com/privacy/policy.html)。
+針對Recommendations目的的資料收集不包括任何個人識別資訊(PII)。 此外，所有使用者識別碼（例如Cookie ID和IP位址）都需嚴格匿名處理。 若要進一步瞭解，請參閱[Adobe隱私權原則](https://www.adobe.com/tw/privacy/policy.html)。
 
 Recommendations使用者可以參閱[資料同步](../../setup/data-sync.md)頁面，以取得資料同步的更多資料。

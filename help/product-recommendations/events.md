@@ -47,7 +47,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->以[!DNL Product Recommendations]為目的的資料收集不包含個人識別資訊(PII)。 所有使用者識別碼（例如Cookie ID和IP位址）都需嚴格匿名處理。 瞭解[更多](https://www.adobe.com/privacy/experience-cloud.html)。
+>以[!DNL Product Recommendations]為目的的資料收集不包含個人識別資訊(PII)。 所有使用者識別碼（例如Cookie ID和IP位址）都需嚴格匿名處理。 瞭解[更多](https://www.adobe.com/tw/privacy/experience-cloud.html)。
 
 ## 醫療保健客戶
 

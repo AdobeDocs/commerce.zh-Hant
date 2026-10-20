@@ -36,7 +36,7 @@ ht-degree: 0%
 
 ## 資料處理與隱私權
 
-[!DNL Product Recommendations]的資料收集不含任何個人識別資訊(PII)。 所有使用者識別碼（例如Cookie ID和IP位址）都需嚴格匿名處理。 若要進一步瞭解，請參閱[Adobe隱私權原則](https://www.adobe.com/privacy/policy.html)。
+[!DNL Product Recommendations]的資料收集不含任何個人識別資訊(PII)。 所有使用者識別碼（例如Cookie ID和IP位址）都需嚴格匿名處理。 若要進一步瞭解，請參閱[Adobe隱私權原則](https://www.adobe.com/tw/privacy/policy.html)。
 
 如需資料同步的詳細資訊，請參閱[資料管理儀表板](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)。
 

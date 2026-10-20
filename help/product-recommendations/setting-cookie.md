@@ -97,7 +97,7 @@ $.mage.cookies.clear(DNT_COOKIE);
 
 ## 隱私權法規遵循
 
-產品Recommendations資料收集不包含個人識別資訊(PII)。 所有使用者識別碼（例如Cookie ID和IP位址）都會進行匿名處理。 如需詳細資訊，請參閱[Adobe隱私權原則](https://www.adobe.com/privacy/policy.html)。
+產品Recommendations資料收集不包含個人識別資訊(PII)。 所有使用者識別碼（例如Cookie ID和IP位址）都會進行匿名處理。 如需詳細資訊，請參閱[Adobe隱私權原則](https://www.adobe.com/tw/privacy/policy.html)。
 
 >[!TIP]
 >
