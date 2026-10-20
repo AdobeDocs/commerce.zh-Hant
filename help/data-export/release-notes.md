@@ -40,9 +40,9 @@ topic_v2:
     internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 9ea19181108118892e238ba2ffce4bb7b451ee94
+source-git-commit: 9a378b5e553afb5d96ce79738dab1d32404f4f22
 workflow-type: tm+mt
-source-wordcount: '3608'
+source-wordcount: '3719'
 ht-degree: 0%
 ---
 # [!DNL SaaS Data Export Extension]發行說明
@@ -60,6 +60,16 @@ ht-degree: 0%
 >[!DNL SaaS data export]擴充功能是與[!DNL Live Search]、[!DNL Product Recommendations]及[!DNL Catalog Service]一起自動安裝的模組集合。 您可以使用[!DNL Composer]檢查系統上安裝的版本。 在某些情況下，您可能會想要升級系統上的資料匯出擴充功能，以取得修正或新功能，而不更新Commerce服務版本。
 
 ## 2026版本 {#release-notes-2026}
+
+### 103.5.2版本
+
+_2026年10月19日_
+
+![修正](../assets/fix.svg) **一致的類別識別** — 已使用Adobe Commerce as a Cloud Service、雲端上的Adobe Commerce和內部部署支援的[店面服務目錄服務GraphQL API &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/){page="_blank"}中的類別ID和商店檢視程式碼，還原類別摘要識別。 此更新可防止類別移動將類別錯誤地標籤為已刪除。<!--MDEE-1473-->
+
+![修正](../assets/fix.svg) **PHP 8.5**&#x200B;上的可靠屬性選項處理 — 修正屬性選項值處理，以防止選項標籤參考遺失的存放區時產品摘要匯出錯誤。<!--MDEE-1472-->
+
+![修正](../assets/fix.svg) **在PHP 8.5**&#x200B;上同步處理可靠的可設定產品 — 修正Null子屬性值無法正確同步處理可設定產品的問題。<!--MDEE-1474-->
 
 ### 103.5.1版
 

@@ -38,9 +38,9 @@ topic_v2:
     internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 1051405a754ac98534b8a27472dccbfb2fff19c7
+source-git-commit: 4f45ba5b177dfb826c49ae3ddc41cb453c6bb93b
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '647'
 ht-degree: 0%
 ---
 # Adobe Commerce Optimizer Connector發行說明
@@ -52,6 +52,12 @@ ht-degree: 0%
 ![已知問題](../assets/bug.svg)已知問題
 
 ## 2026版本
+
+### 1.2.1版
+
+_2026年10月19日_
+
+![修正](../assets/fix.svg) **保留的類別同步化行為**-Adobe Commerce Optimizer聯結器會保留URL路徑，並將檢視程式碼儲存為類別摘要識別碼，以維持正確的同步化。 當類別在類別樹狀結構中移動時，新路徑會同步化，先前的路徑會被移除。<!--MDEE-1473-->
 
 ### 1.2.0版本
 

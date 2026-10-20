@@ -39,9 +39,9 @@ topic_v2:
     internal-label: Personalization
   - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
     internal-label: Data modeling
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: b62a0a272684daa2494017d290a711da8e1746b9
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1065'
 ht-degree: 2%
 ---
 
@@ -152,7 +152,10 @@ ht-degree: 2%
 
 `categories`摘要傳送[!DNL Adobe Commerce]資料至[類別端點](https://developer.adobe.com/commerce/services/reference/rest/#tag/Categories){target="_blank"}。
 
-含有空白`urlPath` （邏輯根類別）的專案會被略過，且永遠不會提交。
+聯結器會依URL路徑和存放區檢視程式碼識別類別摘要記錄。
+- &#x200B;
+  - 當類別移至類別樹狀結構中的不同父系時，同步會傳送該類別及其子系的新路徑，並從[!DNL Adobe Commerce Optimizer]中移除其先前的路徑。
+- 含有空白`urlPath` （邏輯根類別）的專案會被略過，且永遠不會提交。
 
 | [!DNL Adobe Commerce]欄位 | [!DNL Commerce Optimizer] API欄位 | 對應詳細資料 |
 | --------------- | -------------- | ------- |
