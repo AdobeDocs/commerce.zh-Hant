@@ -5,7 +5,7 @@ feature: Cloud, Security
 role: Admin, Developer, Leader
 level: Intermediate
 exl-id: 424fe5cd-5d54-425d-97ce-024476d18dde
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
 autotag-review: '2026-06-18T16:19:21.186Z'
 TQID: 'https://experienceleague.adobe.com/ZjR9eFTVz8RIrYIN1CxyEgegGoZljXJKrtWZStx-ln0'
 product_v2:
@@ -40,18 +40,28 @@ topic_v2:
     internal-label: Customer experience
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 8b3db59ed02539646dd53a2e9c7a0925b7c3a804
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '472'
 ht-degree: 0%
 ---
 # 共擔責任安全性與營運模式
 
 [!DNL Adobe Commerce as a Cloud Service]是隨選服務，需仰賴共擔責任安全性與運作模型。 Adobe和客戶共同承擔這些責任，各方在保護和運作Adobe Commerce應用程式方面各有各的責任。
 
+[!DNL Adobe Commerce as a Cloud Service with Managed Operations]是優質產品，除了標準分擔責任模式外，還新增了指定的客戶成功工程師(CSE)和24/7受管理的營運P1支援團隊。 Adobe繼續擁有平台、基礎結構、安全性和核心應用程式，並且您繼續擁有自訂和整合，但在受管操作中，向您諮詢Adobe Managed Services：
+
+- 整合
+- App Builder應用程式
+- Edge Delivery店面
+- 事件管理
+- Platform更新
+
+Adobe Managed Services也共同負責災難復原測試、偵錯和問題隔離。 您的CSE會引導您從上線到上線及完成其他程式，因此您可在每個階段有Adobe專家陪伴您，而不是靠您自己操作。
+
 >[!BEGINSHADEBOX]
 
-下列摘要表使用RACI模型來顯示Adobe和客戶之間共用的安全性責任。
+下列摘要表會使用RACI模型來顯示Adobe、Adobe Managed Operations和客戶之間共用的安全性責任。
 
 **R** — 負責
 **A** — 負責
@@ -60,39 +70,39 @@ ht-degree: 0%
 
 >[!ENDSHADEBOX]
 
-| 任務 | Adobe | 客戶 |
-| --- | --- | --- |
-| 定義後端來源WAF規則 | RA | |
-| 定義後端CDN WAF規則 | RA | |
-| 部署及維護[!DNL Adobe Developer App Builder]個應用程式 | | RA |
-| 部署後端平台WAF規則 | RA | |
-| 部署後端CDN WAF規則 | RA | |
-| 修正[!DNL Adobe Commerce as a Cloud Service]中的核心錯誤 | RA | I |
-| 正在釋放[!DNL Adobe Commerce as a Cloud Service]個基礎結構修補程式 | RA | |
-| 擴充（基礎架構） | RA | |
-| 縮放（核心應用程式） | RA | |
-| 整合外部應用程式 | | RA |
-| 安裝App Builder應用程式 | | RA |
-| 測試所有App Builder應用程式的效能 | | RA |
-| 自訂App Builder應用程式的主題設定和設計 | | RA |
-| 設定後端DNS | RA | I |
-| 入門後端CDN | RA | I |
-| 支援後端CDN | RA | I |
-| 取得後端DNS提供者 | RA | |
-| 布建生產和沙箱環境 | A | R |
-| 在雲端基礎結構上存取Dynamics for Adobe Commerce | R | C |
-| 解決後端客戶的安全問題 | RA | I |
-| 解決後端CDN安全性問題 | RA | |
-| 協助Adobe進行安全性研究（掃描/稽核） | RA | |
-| 執行PCI ASV掃描 | RA | I |
-| 正在修復Adobe Commerce基礎結構PCI掃描 | R | |
-| 管理作業系統和平台機密 | RA | |
-| 監控後端安全性記錄 | RA | |
-| 控制客戶支援與存取 | A | R |
-| Adobe DR計畫及備份與還原的年度測試和檔案 | RA | |
-| 災難回覆計畫的年度測試與檔案 | RA | |
-| 偵錯和問題隔離 | R | R |
-| 及時支援偵錯和問題隔離流程 | R | R |
-| 將更新和修補程式發佈至Adobe Commerce核心 | RA | I |
-| 安裝Adobe Commerce核心的更新和修補程式 | RA | I |
-| 核心Adobe Commerce應用程式品質 | RA | |
+| 任務 | Adobe | Adobe Managed Operations | 客戶 |
+| --- | --- | --- | --- |
+| 定義後端來源WAF規則 | RA | | |
+| 定義後端CDN WAF規則 | RA | | |
+| 部署及維護[!DNL Adobe Developer App Builder]個應用程式 | | | RA |
+| 部署後端平台WAF規則 | RA | | |
+| 部署後端CDN WAF規則 | RA | | |
+| 修正[!DNL Adobe Commerce as a Cloud Service]中的核心錯誤 | RA | | I |
+| 正在釋放[!DNL Adobe Commerce as a Cloud Service]個基礎結構修補程式 | RA | | |
+| 擴充（基礎架構） | RA | | |
+| 縮放（核心應用程式） | RA | | |
+| 整合外部應用程式 | | C | RA |
+| 安裝App Builder應用程式 | | C | RA |
+| 測試所有App Builder應用程式的效能 | | C | RA |
+| 自訂App Builder應用程式的主題設定和設計 | | C | RA |
+| 設定後端DNS | RA | | I |
+| 入門後端CDN | RA | | I |
+| 支援後端CDN | RA | | I |
+| 取得後端DNS提供者 | RA | | |
+| 布建生產和沙箱環境 | A | | R |
+| 在雲端基礎結構上存取Dynamics for Adobe Commerce | R | | C |
+| 解決後端客戶的安全問題 | RA | | I |
+| 解決後端CDN安全性問題 | RA | | |
+| 協助Adobe進行安全性研究（掃描/稽核） | RA | | |
+| 執行PCI ASV掃描 | RA | | I |
+| 正在修復Adobe Commerce基礎結構PCI掃描 | R | | |
+| 管理作業系統和平台機密 | RA | | |
+| 監控後端安全性記錄 | RA | | |
+| 控制客戶支援與存取 | A | C | R |
+| Adobe DR計畫及備份與還原的年度測試和檔案 | RA | C | |
+| 災難回覆計畫的年度測試與檔案 | RA | RA | |
+| 偵錯和問題隔離 | R | R | R |
+| 及時支援偵錯和問題隔離流程 | R | R | R |
+| 將更新和修補程式發佈至Adobe Commerce核心 | RA | C | I |
+| 安裝Adobe Commerce核心的更新和修補程式 | RA | C | I |
+| 核心Adobe Commerce應用程式品質 | RA | C | |
