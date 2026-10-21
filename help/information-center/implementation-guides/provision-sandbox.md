@@ -49,7 +49,7 @@ ht-degree: 0%
 
 - **[!DNL Adobe Commerce as a Cloud Service]** — 使用Commerce Cloud Manager自助布建入口網站來啟動沙箱和生產執行個體。 請參閱[Adobe Commerce as a Cloud Service快速入門](/help/cloud-service/getting-started.md)。
 
-- **雲端上的Adobe Commerce （合作夥伴）** — 透過Adobe支援提交沙箱請求。 請參閱雲端基礎結構沙箱要求上的[合作夥伴Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/partner-magento-commerce-cloud-sandbox-requests)。
+- **雲端上的Adobe Commerce （合作夥伴）** — 透過Adobe支援提交沙箱請求。 請參閱雲端基礎結構沙箱要求上的[合作夥伴Adobe Commerce](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/partner-magento-commerce-cloud-sandbox-requests)。
 
 - **Commerce服務** — 在連線生產執行個體之前，使用沙箱API金鑰搭配[Commerce服務聯結器](/help/landing/saas.md)來測試服務整合。
 

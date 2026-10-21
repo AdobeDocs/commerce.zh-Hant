@@ -51,7 +51,7 @@ ht-degree: 0%
 
 ## 快速入門
 
-1. 檢查[付款服務相容性](https://experienceleague.adobe.com/en/docs/commerce/payment-services/compatibility)中的產品版本與國家/地區可用性。
+1. 檢查[付款服務相容性](https://experienceleague.adobe.com/zh-hant/docs/commerce/payment-services/compatibility)中的產品版本與國家/地區可用性。
 
 1. 遵循[上線支付服務流程](/help/payment-services/onboard.md)。
 

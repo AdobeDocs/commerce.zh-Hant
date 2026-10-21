@@ -51,9 +51,9 @@ ht-degree: 0%
 下列檔案提供跨不同部署模式和使用案例的Adobe Commerce平台和服務參考架構模式。
 
 - [Adobe Commerce as a Cloud Service架構](/help/cloud-service/overview.md#architecture)
-- [Adobe Commerce企業參考架構](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/architecture/enterprise-blueprint){target="_blank"}
+- [Adobe Commerce企業參考架構](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/implementation-playbook/architecture/enterprise-blueprint){target="_blank"}
 - [Adobe Commerce店面架構](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/architecture/){target="_blank"}
-- [雲端基礎結構架構上的Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/cloud-architecture){target="_blank"}
+- [雲端基礎結構架構上的Adobe Commerce](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/architecture/cloud-architecture){target="_blank"}
 
 ## 由Edge Delivery Services提供支援的店面
 
