@@ -1,0 +1,49 @@
+---
+title: 字首大寫，最多60個字元，無產品名稱尾碼
+description: 150-160個字元。 概念頁面以「瞭解……」開頭
+role: Admin, Developer, Leader
+recommendations: noCatalog
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: a91925091da28cd0745923894a3faab0374f0a0c
+workflow-type: tm+mt
+source-wordcount: '103'
+ht-degree: 0%
+---
+
+<!--
+Copy into help/information-center/guidance-and-insights/<topic>/<slug>.md, fill
+in the brackets, add it to help/information-center/TOC.md under "Insights
+and guidance", then delete this comment. See
+help/information-center/guidance-and-insights/readme.md for what belongs in
+Insights and guidance. Tag with the auto-tagger after authoring.
+
+Section headings below describe the kind of content expected, not required
+wording—rename them to fit your topic and voice (for example, "What we are
+seeing" could become "The pattern I keep running into"). Keep sentence case
+and noun-phrase style per ExL heading rules.
+-->
+
+# [句子大小寫標題，符合`title`]
+
+[您觀察到的內容及其現在重要原因的一兩個句子。]
+
+## 我們所看到的
+
+[觀察或模式 — 來自實際的實作、支援趨勢或工程經驗。]
+
+## 為什麼這很重要
+
+[對於讀者而言的後果 — 如果他們對此採取行動，會發生什麼變化，或者這會導致什麼風險。 只有存在具體動作時，才在此處新增具體動作；如果動作變成步驟，則屬於產品檔案。]
+
+## 相關指引
+
+- [相關架構選項、實作指南或產品檔案的連結]

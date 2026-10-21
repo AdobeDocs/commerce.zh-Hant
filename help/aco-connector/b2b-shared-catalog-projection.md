@@ -1,6 +1,6 @@
 ---
 title: B2B共用目錄投影
-description: 瞭解B2B聯結器如何將Adobe Commerce B2B共用目錄專案至受保護的Commerce Optimizer目錄檢視中，以及店面如何解析並授權購買者存取權。
+description: 瞭解B2B聯結器如何將Adobe Commerce共用目錄同步至受保護的Commerce Optimizer目錄檢視，以及店面如何授權購買者存取。
 feature: Integration, Configuration
 role: Admin, Developer
 level: Intermediate
@@ -45,9 +45,9 @@ level_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: fe5fc895d1f1cab3bcf081ec699f59192cb215a3
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '594'
 ht-degree: 0%
 ---
 # B2B共用目錄投影
@@ -64,7 +64,7 @@ ht-degree: 0%
 
 B2B投影將同步化的目錄內容與訂價與「共用目錄分類」及公司指派內容結合在一起。
 
-![圖表將[!DNL Adobe Commerce]存放區檢視、定價、共用目錄和公司指派對應到[!DNL Adobe Commerce Optimizer]](./assets/b2b-catalog-projection-mapping.svg){width="800"}中預計的私人目錄檢視
+![圖表將[!DNL Adobe Commerce]存放區檢視、定價、共用目錄和公司指派對應到[!DNL Adobe Commerce Optimizer]](./assets/b2b-catalog-projection-mapping-alternate.svg){width="100%" zoomable="yes"}中預計的私人目錄檢視
 
 | [!DNL Adobe Commerce]資料 | [!DNL Adobe Commerce Optimizer]個結果 | 用途 |
 | --- | --- | --- |
@@ -85,7 +85,7 @@ B2B投影將同步化的目錄內容與訂價與「共用目錄分類」及公�
 
 店面會傳送目錄檢視ID、價格簿ID以及與每個銷售API請求簽署的權杖。 [!DNL Adobe Commerce Optimizer]會根據指派給目錄檢視的受限制存取金鑰，驗證JWT的RS256簽章。 只有在權杖和金鑰有效且未過期時，才會傳回目錄資料。
 
-從購物者透過店面和Commerce後端到[!DNL Adobe Commerce Optimizer]![&#128279;](./assets/b2b-catalog-runtime-authorization.svg){width="700"}的B2B目錄請求的執行階段授權流程
+從購物者透過店面和Commerce後端到[!DNL Adobe Commerce Optimizer]](./assets/b2b-catalog-runtime-authorization.svg){width="700"}的B2B目錄請求的![執行階段授權流程
 
 對於私人目錄請求，傳送以下標頭：
 
