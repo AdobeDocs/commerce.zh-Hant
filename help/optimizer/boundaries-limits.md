@@ -13,9 +13,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 663a9e8e61850f3d34712971eb28f18893d56ad2
 workflow-type: tm+mt
-source-wordcount: '1495'
+source-wordcount: '1483'
 ht-degree: 0%
 ---
 # 限制和邊界
@@ -118,7 +118,6 @@ Dynamic Media使用方式會追蹤進入[!DNL Adobe Commerce Optimizer]內「產
 | 每個目錄檢視的原則 | 允許的資料篩選器數 | 10 | 否 |
 | 原則中的屬性值 | 可設定為篩選的產品特性數 | 100 | 否 |
 | [受限制的存取金鑰指派](setup/private-catalog-view.md) | 可指派給單一目錄檢視的受限制存取金鑰數目 | 3 | 否 |
-| [受限制的存取金鑰](setup/restricted-access-keys.md) | 每個環境的金鑰數量 | 最多100個 | 否 |
 | RSA金鑰大小（限制存取金鑰） | 受限制的存取金鑰可接受的最小和最大金鑰強度 | 最低2048位元，最高8192位元 | 否 |
 | 受限制的存取金鑰 | 金鑰撤銷傳播延遲 | 由於快取，最多可達5分鐘。 延遲過後，系統會拒絕以移除的金鑰簽署的權杖。 | 不適用 |
 
