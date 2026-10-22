@@ -90,15 +90,15 @@ ht-degree: 0%
 
 ### B2C和B2B商務
 
-Adobe Commerce支援B2C和B2B商業模式，包括單一Commerce執行個體上的這兩種模式。 [Adobe Commerce B2B簡介](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/introduction)
+Adobe Commerce支援B2C和B2B商業模式，包括單一Commerce執行個體上的這兩種模式。 [Adobe Commerce B2B簡介](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/b2b/introduction)
 
-B2B功能依產品而異。 對於雲端基礎結構上的Adobe Commerce和內部部署，Adobe Commerce B2B是需要個別授權和安裝的擴充功能。 Adobe Commerce as a Cloud Service包含核心B2B功能，例如預設的公司管理和報價。 請參閱[Adobe Commerce B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/start/resources/extensions)。
+B2B功能依產品而異。 對於雲端基礎結構上的Adobe Commerce和內部部署，Adobe Commerce B2B是需要個別授權和安裝的擴充功能。 Adobe Commerce as a Cloud Service包含核心B2B功能，例如預設的公司管理和報價。 請參閱[Adobe Commerce B2B](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/resources/extensions)。
 
 ### Adobe Commerce as a Cloud Service
 
 Adobe Commerce as a Cloud Service是完全受管理的雲端原生軟體即服務(SaaS)產品。 Adobe可管理核心Commerce應用程式、基礎架構和更新。 其元件包括Commerce基礎、由Edge Delivery Services支援的Commerce店面、銷售服務、產品視覺效果和開發人員工具。
 
-請參閱[Adobe Commerce as a Cloud Service概觀](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview)。
+請參閱[Adobe Commerce as a Cloud Service概觀](https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/overview)。
 
 ### Adobe Commerce Optimizer
 
@@ -106,7 +106,7 @@ Adobe Commerce Optimizer是一種SaaS解決方案，可改善店面、目錄、�
 
 Adobe Commerce Optimizer可從第三方來源擷取目錄資料。 購物車和結帳與協力廠商系統的整合使用API Mesh和App Builder等整合工具。
 
-請參閱[什麼是Adobe Commerce Optimizer？](https://experienceleague.adobe.com/en/docs/commerce/optimizer/overview)。
+請參閱[什麼是Adobe Commerce Optimizer？](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/overview)。
 
 >[!NOTE]
 >
@@ -116,13 +116,13 @@ Adobe Commerce Optimizer可從第三方來源擷取目錄資料。 購物車和�
 
 Adobe Commerce內部部署是由商家或其託管提供者所託管。 商家或提供者會管理託管環境、基礎架構和平台服務。
 
-請參閱[內部部署安裝概述](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview)。
+請參閱[內部部署安裝概述](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/overview)。
 
 ### 雲端基礎結構上的Adobe Commerce
 
 雲端基礎結構上的Adobe Commerce是平台即服務(PaaS)部署。 Adobe會管理託管平台，而商家則保留應用程式層級的維護、自訂程式碼、設定和其他共用責任工作的責任。
 
-請參閱雲端基礎結構上的[Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)和[移轉至Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/overview)。
+請參閱雲端基礎結構上的[Commerce](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/overview)和[移轉至Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/migration/overview)。
 
 ## 延伸Commerce的服務
 
@@ -142,7 +142,7 @@ Adobe Commerce內部部署是由商家或其託管提供者所託管。 商家�
 
 **付款服務**&#x200B;提供付款方式與付款處理、訂單及發票的檢視。 可用性取決於Commerce產品和部署。
 
-請參閱[付款服務](https://experienceleague.adobe.com/en/docs/commerce/payment-services/guide-overview)。
+請參閱[付款服務](https://experienceleague.adobe.com/zh-hant/docs/commerce/payment-services/guide-overview)。
 
 ### 資料與整合服務
 
@@ -162,7 +162,7 @@ Commerce包括用於連線平台和同步資料的服務和工具：
 
 ### 服務可用性
 
-使用此比較來識別您Commerce產品的服務路徑。 檢閱[Adobe Commerce功能比較](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/feature-comparison)和每個服務指南，以瞭解支援的版本、授權和設定需求。
+使用此比較來識別您Commerce產品的服務路徑。 檢閱[Adobe Commerce功能比較](https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/feature-comparison)和每個服務指南，以瞭解支援的版本、授權和設定需求。
 
 | 服務或功能 | 可用性 |
 | --- | --- |

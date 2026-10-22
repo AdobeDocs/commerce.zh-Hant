@@ -136,4 +136,4 @@ Adobe可讓您檢視產品在LLM中的顯示情形，透過AI增強產品資料�
 * [原則](/help/optimizer/setup/policies.md)
 * [Adobe Commerce App Builder的AI編碼開發人員工具](/help/cloud-service/migration/coding-tools.md)
 * [COMMERCE API](../../apis/commerce-apis.md)
-* [Commerce Developer Agent播放清單](https://experienceleague.adobe.com/en/playlists/commerce-developer-agent) — 觀看設定和使用Commerce Developer Agent的技術影片。
+* [Commerce Developer Agent播放清單](https://experienceleague.adobe.com/zh-hant/playlists/commerce-developer-agent) — 觀看設定和使用Commerce Developer Agent的技術影片。

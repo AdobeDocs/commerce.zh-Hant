@@ -57,7 +57,7 @@ Adobe Commerce檔案可跨多個存放庫和網站組織。 正確的起點取�
 
 - [[!DNL Adobe Commerce Optimizer role-based workflows]](/help/optimizer/get-started.md#role-based-workflows)
 
-- [Adobe Commerce快速入門手冊](https://experienceleague.adobe.com/en/docs/commerce-admin/start/guide-overview)
+- [Adobe Commerce快速入門手冊](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/guide-overview)
 
 
 ## 適用於銷售商
@@ -90,8 +90,8 @@ Adobe Commerce有兩個銷售路徑。 適用且可供您使用的專案取決�
 
 - 如需雲端或內部部署Adobe Commerce的平台管理，請參閱：
 
-- [雲端基礎結構上的Commerce指南](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)
-- 內部部署的[Adobe Commerce作業指南](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/home)。
+- [雲端基礎結構上的Commerce指南](https://experienceleague.adobe.com/zh-hant/docs/commerce-on-cloud/user-guide/overview)
+- 內部部署的[Adobe Commerce作業指南](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/operational-guides/home)。
 
 ## 適用於開發人員
 

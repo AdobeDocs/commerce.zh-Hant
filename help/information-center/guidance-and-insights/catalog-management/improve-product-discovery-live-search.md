@@ -47,7 +47,7 @@ Adobe Commerce即時搜尋提供搜尋效能深入分析，可幫助您找出探
 
 ## 尋找搜尋效能中的訊號
 
-在「即時搜尋效能」工作區中，檢閱量度，例如不重複搜尋、零結果搜尋、熱門結果、點進率、轉換率和平均點按位置等。 使用這些資訊來識別趨勢，並決定哪些查詢或產品需要注意。 [效能](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/performance)
+在「即時搜尋效能」工作區中，檢閱量度，例如不重複搜尋、零結果搜尋、熱門結果、點進率、轉換率和平均點按位置等。 使用這些資訊來識別趨勢，並決定哪些查詢或產品需要注意。 [效能](https://experienceleague.adobe.com/zh-hant/docs/commerce/live-search/live-search-admin/performance)
 
 ![即時搜尋效能工作區會顯示不重複搜尋、平均點按位置、點進率、轉換率和零結果率，索引標籤會顯示不重複搜尋、零結果和熱門結果](../../assets/guidance-and-insights/live-search-performance-dashboard.png){width="800" zoomable="yes"}
 
@@ -65,7 +65,7 @@ Adobe Commerce即時搜尋提供搜尋效能深入分析，可幫助您找出探
 
 購物者不一定會使用目錄中的術語來說明產品。 例如，搜尋「適合整天站立的舒適鞋子」的人，可能會對所謂的「緩衝式步行運動鞋」產品感興趣。
 
-語意搜尋使用含意和內容加上關鍵字比對，有助於將自然語言查詢連線到相關產品，即使查詢與目錄字詞不完全相符。 即時搜尋將關鍵字和語意比對結合在一個搜尋體驗中。 [語意搜尋](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/semantic-search)
+語意搜尋使用含意和內容加上關鍵字比對，有助於將自然語言查詢連線到相關產品，即使查詢與目錄字詞不完全相符。 即時搜尋將關鍵字和語意比對結合在一個搜尋體驗中。 [語意搜尋](https://experienceleague.adobe.com/zh-hant/docs/commerce/live-search/live-search-admin/semantic-search)
 
 語意比對有助於探索性搜尋，但相關性仍取決於目錄中可用的產品和資訊。 對於包含精確模型、規格或相容性要求的搜尋，請檢查結果是否保持精確。
 
@@ -73,9 +73,9 @@ Adobe Commerce即時搜尋提供搜尋效能深入分析，可幫助您找出探
 
 設定取決於您使用的Adobe Commerce產品：
 
-- **雲端基礎結構或內部部署上的Adobe Commerce：**&#x200B;即時搜尋語意搜尋可用於Adobe Commerce 2.4.4和更新版本。 在「管理員」中，前往「行銷> SEO和搜尋>即時搜尋」，開啟「設定」，啟用語意搜尋並儲存。 它支援英文目錄。 [設定 — 語意搜尋](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/settings)
-- **Adobe Commerce as a Cloud Service：**&#x200B;系統預設會啟用語意搜尋。 它支援英文目錄。 [語意搜尋](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/semantic-search)
-- **Adobe Commerce Optimizer：**&#x200B;系統預設會啟用語意搜尋。 您可以選擇調整控制項，例如語意提升和相似度臨界值。 這些設定也包含模糊搜尋選項。 [語意搜尋](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/semantic-search) · [設定 — 選擇性調整](https://experienceleague.adobe.com/en/docs/commerce/optimizer/settings)
+- **雲端基礎結構或內部部署上的Adobe Commerce：**&#x200B;即時搜尋語意搜尋可用於Adobe Commerce 2.4.4和更新版本。 在「管理員」中，前往「行銷> SEO和搜尋>即時搜尋」，開啟「設定」，啟用語意搜尋並儲存。 它支援英文目錄。 [設定 — 語意搜尋](https://experienceleague.adobe.com/zh-hant/docs/commerce/live-search/live-search-admin/settings)
+- **Adobe Commerce as a Cloud Service：**&#x200B;系統預設會啟用語意搜尋。 它支援英文目錄。 [語意搜尋](https://experienceleague.adobe.com/zh-hant/docs/commerce/live-search/live-search-admin/semantic-search)
+- **Adobe Commerce Optimizer：**&#x200B;系統預設會啟用語意搜尋。 您可以選擇調整控制項，例如語意提升和相似度臨界值。 這些設定也包含模糊搜尋選項。 [語意搜尋](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/setup/semantic-search) · [設定 — 選擇性調整](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/settings)
 
 ## 將搜尋深入分析轉化為行動
 
@@ -83,8 +83,8 @@ Adobe Commerce即時搜尋提供搜尋效能深入分析，可幫助您找出探
 
 1. **尋找要調查的查詢。** 檢閱零結果搜尋、熱門查詢和低參與度的搜尋。
 2. **檢查購物者想要什麼。** 判斷查詢是否指向遺失的產品、字詞不符或不清楚的產品資料。
-3. **改善產品資訊。** 讓產品屬性和說明對於購物者使用的字詞準確而實用。 針對「即時搜尋」，Adobe建議設定適當的可搜尋屬性和權重，並確保屬性資料具有相關性。 [即時搜尋最佳實務](https://experienceleague.adobe.com/en/docs/commerce/live-search/best-practice)
-4. **調整搜尋體驗。** 在適當的情況下，使用搜尋規則、同義字和Facet來協助購物者尋找及縮小相關結果。 [即時搜尋最佳實務](https://experienceleague.adobe.com/en/docs/commerce/live-search/best-practice)
+3. **改善產品資訊。** 讓產品屬性和說明對於購物者使用的字詞準確而實用。 針對「即時搜尋」，Adobe建議設定適當的可搜尋屬性和權重，並確保屬性資料具有相關性。 [即時搜尋最佳實務](https://experienceleague.adobe.com/zh-hant/docs/commerce/live-search/best-practice)
+4. **調整搜尋體驗。** 在適當的情況下，使用搜尋規則、同義字和Facet來協助購物者尋找及縮小相關結果。 [即時搜尋最佳實務](https://experienceleague.adobe.com/zh-hant/docs/commerce/live-search/best-practice)
 5. **檢閱結果並重複。** 變更後，監控相同的查詢和效能訊號，然後根據購物者的做法進行調整。
 
 ## 將每個搜尋都列入計數

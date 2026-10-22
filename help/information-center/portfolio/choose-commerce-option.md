@@ -91,7 +91,7 @@ ht-degree: 0%
 | 您的需求 | 建議的起點 | 擁有交易的系統 | 銷售與探索 |
 | --- | --- | --- | --- |
 | Adobe以SaaS管理Commerce平台。 | [Adobe Commerce as a Cloud Service](/help/cloud-service/overview.md) | Adobe Commerce as a Cloud Service基礎 | 使用為Adobe Commerce as a Cloud Service布建的Commerce服務。 如需Adobe Commerce Optimizer整合的可用性，請參閱此表格下方的注意事項。 |
-| 需要Adobe Commerce，並且想要保留對雲端或內部部署基礎建設的控制。 | 雲端或內部部署上的[Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/guide-overview) | Adobe Commerce Foundation | 視需要使用支援的Commerce服務。 |
+| 需要Adobe Commerce，並且想要保留對雲端或內部部署基礎建設的控制。 | 雲端或內部部署上的[Adobe Commerce](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/guide-overview) | Adobe Commerce Foundation | 視需要使用支援的Commerce服務。 |
 | 在雲端上的Adobe Commerce上或內部部署，並且想要採用Adobe Commerce Optimizer來進行探索和銷售。 | 具有[Adobe Commerce Optimizer Connector](/help/aco-connector/overview.md)的Adobe Commerce | Adobe Commerce仍然是交易的記錄系統。 | 聯結器會將目錄和定價資料同步至Adobe Commerce Optimizer，以提供探索和銷售體驗。 |
 | 擁有協力廠商商業後端，且想要Adobe Commerce Optimizer探索與銷售功能而不取代該後端。 | 獨立[Adobe Commerce Optimizer](/help/optimizer/overview.md) | 您的協力廠商商務後端 | 將目錄和價格資料傳送至Adobe Commerce Optimizer。 透過API Mesh、App Builder或直接整合，將購物車、結帳和其他交易式作業與後端整合。 |
 
