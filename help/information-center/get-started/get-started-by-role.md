@@ -68,7 +68,7 @@ Adobe Commerce有兩個銷售路徑。 適用且可供您使用的專案取決�
 
 - [什麼是Live Search？](/help/live-search/overview.md)
 - [什麼是產品建議？](/help/product-recommendations/overview.md)
-- 適用於Adobe Commerce](/help/catalog-service/overview.md)的[目錄服務。
+- 適用於Adobe Commerce[&#128279;](/help/catalog-service/overview.md)的目錄服務。
 
 - **在[!DNL Adobe Commerce Optimizer]**&#x200B;中的原生銷售 — 當Adobe Commerce on Cloud或內部部署使用[!DNL Adobe Commerce Optimizer Connector]連線至[!DNL Adobe Commerce Optimizer]時使用。 請參閱[銷售概述](/help/optimizer/merchandising/overview.md)。
 

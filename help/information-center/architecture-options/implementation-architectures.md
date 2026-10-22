@@ -75,7 +75,7 @@ Adobe Commerce實作架構結合三層：商務後端（[!DNL Adobe Commerce]或
 | 選項 | 記錄系統 | 交易路徑 | 最適化 |
 | --- | --- | --- | --- |
 | **[!DNL Adobe Commerce as a Cloud Service]與Commerce Foundation** | Adobe管理的Commerce Foundation | 受管理的Commerce Foundation和連線的Commerce服務 | 想要降低Adobe管理軟體服務(SaaS) Commerce基礎架構擁有權的客戶 |
-| 雲端或具有&#x200B;[!DNL Adobe Commerce Optimizer Connector]**的內部部署上的**[!DNL Adobe Commerce] | 現有的Commerce Foundation，適用於Commerce資料和交易 | 現有的Commerce Foundation API和連線交易服務 | 想要將Optimizer探索與銷售功能新增至現有[!DNL Adobe Commerce]部署的客戶 |
+| 雲端或具有&#x200B;[!DNL Adobe Commerce Optimizer Connector]&#x200B;**的內部部署上的**&#x200B;[!DNL Adobe Commerce] | 現有的Commerce Foundation，適用於Commerce資料和交易 | 現有的Commerce Foundation API和連線交易服務 | 想要將Optimizer探索與銷售功能新增至現有[!DNL Adobe Commerce]部署的客戶 |
 | **獨立[!DNL Adobe Commerce Optimizer]，具有外部商務後端** | 現有或第三方商務平台。 從外部來源將目錄和價格資料新增到Optimizer | API Mesh、App Builder或直接整合將店面連線至第三方購物車、結帳、客戶、訂單、付款、稅務、配送和履行服務 | 想要同時保留現有或第三方交易式商務平台且想要最佳化工具功能的客戶 |
 | 雲端或具有Commerce Foundation的內部部署上的&#x200B;**[!DNL Adobe Commerce]** | Commerce Foundation | Commerce Foundation API與已設定的付款、稅捐、運送、存貨和履行整合 | 需要完整[!DNL Adobe Commerce]平台且具備雲端或內部部署基礎結構的部署控制的客戶 |
 
@@ -86,7 +86,7 @@ Storefront連線至Commerce Foundation API、Storefront Services （[!DNL Catalo
 | 選項 | 店面體驗 | 店面資料路徑 |
 | --- | --- | --- |
 | **[!DNL Adobe Commerce as a Cloud Service]與Commerce Foundation** | 由Edge Delivery Services或其他支援的Headless體驗提供支援的Commerce店面 | Storefront Services，加上適用於核心平台資料的Commerce Foundation API |
-| 雲端或具有&#x200B;[!DNL Adobe Commerce Optimizer Connector]**的內部部署上的**[!DNL Adobe Commerce] | 使用Optimizer體驗的Edge Delivery Services或自訂Headless店面 | 適用於Optimizer管理目錄與銷售資料的Commerce Optimizer銷售服務GraphQL API |
+| 雲端或具有&#x200B;[!DNL Adobe Commerce Optimizer Connector]&#x200B;**的內部部署上的**&#x200B;[!DNL Adobe Commerce] | 使用Optimizer體驗的Edge Delivery Services或自訂Headless店面 | 適用於Optimizer管理目錄與銷售資料的Commerce Optimizer銷售服務GraphQL API |
 | **獨立[!DNL Adobe Commerce Optimizer]，具有外部商務後端** | 由Edge Delivery Services提供支援的Commerce店面或自訂無頭店面 | 適用於目錄與銷售資料的Commerce Optimizer銷售服務GraphQL API |
 | 雲端或具有Commerce Foundation的內部部署上的&#x200B;**[!DNL Adobe Commerce]** | Edge Delivery Services、Luma、PWA或自訂Headless店面 | Commerce Foundation API，以及設定後的店面服務 |
 
