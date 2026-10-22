@@ -19,7 +19,7 @@ topic_v2:
     internal-label: Personalization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 2dbf2b973af0cb7b831a17ca1a868a81b11bc9ee
+source-git-commit: 014ae9bbe0a9bb48e6a5d574af4fc47158ad33dc
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 0%
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 若要檢視JSON格式的同步產品詳細資料，請在同步產品表格中產品的列上按一下代碼圖示![代碼連結](../assets/data-sync-details.png)。
 
-![同步產品詳細資料](../assets/synced-products.png)
+![同步的產品詳細資料](../assets/synced-products.png)
 
 ## 重新同步目錄資料
 

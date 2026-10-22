@@ -1,6 +1,6 @@
 ---
 title: Adobe Commerce Optimizer聯結器
-description: 瞭解介於[!DNL Adobe Commerce]和[!DNL Adobe Commerce Optimizer]之間的目錄同步、搜尋和店面傳遞的[!DNL Adobe Commerce Optimizer Connector]。
+description: 瞭解[!DNL Adobe Commerce Optimizer Connector]如何將目錄資料從Commerce同步至[!DNL Adobe Commerce Optimizer]，以搜尋及店面傳送。
 feature: Integration, Storefront, Configuration
 badgePaas: label="僅限PaaS" type="Informative" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於雲端專案（Adobe管理的PaaS基礎結構）和內部部署專案的Adobe Commerce 。"
 autotag-review: '2026-06-09T19:00:00.000Z'
@@ -89,9 +89,9 @@ topic_v2:
     internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: a3ade1a31d3c2905b601f71bda118de89c43cf59
+source-git-commit: bda4dae0a31e869ced20968bc9a9785f6b730c97
 workflow-type: tm+mt
-source-wordcount: '1204'
+source-wordcount: '1206'
 ht-degree: 0%
 ---
 # [!DNL Adobe Commerce Optimizer Connector]
@@ -151,7 +151,7 @@ ht-degree: 0%
 
 ### B2B聯結器行為 {#b2b-shared-catalog-projection-specification}
 
-[!DNL Adobe Commerce Optimizer Connector for B2B]利用B2B共用目錄和公司指派設定的單向投影，將基底聯結器擴充至受保護的目錄體驗。 [!DNL Adobe Commerce]仍然是目錄和定價資料的真實來源；B2B聯結器以基礎目錄和定價同步為基礎，並管理其聯結器產生的預測。
+[!DNL Adobe Commerce Optimizer Connector for B2B]利用B2B共用目錄和公司指派設定的單向投影，將基底聯結器擴充至受保護的目錄體驗。 [!DNL Adobe Commerce]仍然是目錄和定價資料的記錄系統。 B2B聯結器以基本目錄和定價同步為基礎，並管理其聯結器產生的投影。
 
 如需投影對應、執行階段授權流程和保護邊界，請參閱[B2B共用目錄投影](b2b-shared-catalog-projection.md)。 如需安裝指示，請參閱[開始使用B2B聯結器](/help/aco-connector/get-started-b2b-shared-catalogs.md)。
 

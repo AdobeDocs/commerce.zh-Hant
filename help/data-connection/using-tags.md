@@ -29,14 +29,14 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: e689017374503218dd1100ab1226e7d76fbb7dae
 workflow-type: tm+mt
-source-wordcount: '2697'
+source-wordcount: '2693'
 ht-degree: 0%
 ---
 # 使用Adobe Experience Platform標籤收集Commerce資料
 
-雖然您可以使用[!DNL Data Connection]擴充功能來發佈及訂閱店面活動，但有些商家可能已經在使用資料收集解決方案，例如[Adobe Experience Platform標籤](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/data-collection/tags/create-a-property)。 對於這些商家，Adobe Commerce會在使用Adobe Commerce Event SDK的[!DNL Data Connection]擴充功能中提供僅發佈選項。
+雖然您可以使用[!DNL Data Connection]擴充功能來發佈及訂閱店面活動，但有些商家可能已經在使用資料收集解決方案，例如[Adobe Experience Platform標籤](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/home)。 對於這些商家，Adobe Commerce會在使用Adobe Commerce Event SDK的[!DNL Data Connection]擴充功能中提供僅發佈選項。
 
 ![[!DNL Data Connection]擴充功能資料流程](assets/tags-data-flow.png)
 _[!DNL Data Connection]含標籤的擴充功能資料流程_

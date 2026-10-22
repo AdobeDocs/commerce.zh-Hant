@@ -13,18 +13,19 @@ role_v2:
     internal-label: Developer
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
     internal-label: Leader
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: a91925091da28cd0745923894a3faab0374f0a0c
 workflow-type: tm+mt
-source-wordcount: '110'
-ht-degree: 0%
+source-wordcount: '106'
+ht-degree: 1%
 ---
 
 <!--
-Save this file at help/insights/security/<slug>.md,
-fill in the sections below, then add it to help/insights/TOC.md.
+Copy this file into help/information-center/guidance-and-insights/<topic>/<slug>.md,
+fill in the sections below, then add it to help/information-center/TOC.md
+under "Insights and guidance".
 Delete this comment block and the bracketed placeholders before publishing.
-See help/insights/README.md for what belongs in Commerce Insights.
-Security-specific content should be reviewed by the security team before publishing.
+See help/information-center/guidance-and-insights/readme.md for what belongs in Insights and guidance.
+
 
 For feature metadata, feature: "[Pick from the shared feature taxonomy—see feature.yml / metadata.md]"
 
@@ -37,20 +38,20 @@ noun-phrase style per ExL heading rules.
 
 # [句子大小寫標題，符合`title`]的主題
 
-[安全性主題的一兩個句子以及它適用於哪些產品/部署。]
+[一兩個句子描述本白皮書所解決的問題及其適用對象。]
 
-## 適用對象
+## 摘要
 
-[本指南適用的Adobe Commerce產品、部署模型（SaaS/PaaS/內部部署）和角色。]
+[建議或結果的簡短摘要 — 這可讓讀者瞭解要點，而不需閱讀全文。]
+
+## 背景
+
+[內容：為什麼這個主題現在很重要、促使進行此指引的原因、範圍之內和範圍外的內容。]
 
 ## 建議
 
-[核心安全性建議。 對於讀者必須採取的動作，請使用編號步驟，並注意任何必要條件。]
-
-## 如果未追蹤則有風險
-
-[如果未遵循此指引會發生什麼情況 — 請具體，避免使用含糊的恐懼語言。]
+[核心指南。 如果有多個建議或情境，請分成子標題。]
 
 ## 相關指引
 
-- [相關產品安全性檔案、架構中心或實作指南頁面的連結]
+- [相關架構選項或實作指南頁面的連結]

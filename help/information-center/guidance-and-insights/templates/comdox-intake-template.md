@@ -13,9 +13,9 @@ role_v2:
     internal-label: Developer
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
     internal-label: Leader
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: bda4dae0a31e869ced20968bc9a9785f6b730c97
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '258'
 ht-degree: 1%
 ---
 
@@ -25,7 +25,7 @@ ticket itself. Copy the section below into the ticket description, fill
 in the brackets, and delete this comment.
 -->
 
-# Commerce Insights文章攝取
+# 見解和指導文章攝取
 
 建立票證的連結：
 
@@ -33,7 +33,7 @@ in the brackets, and delete this comment.
 
 ## 頁首資訊
 
-摘要：新增Commerce Insights文章……
+摘要：新增前瞻分析和指引文章……
 
 優先順序：
 
@@ -59,16 +59,16 @@ in the brackets, and delete this comment.
 
 **暫存內容？** 否/是 — 若是，則過期[YYYY-MM-DD]，原因： [例如與已棄用的功能、時間限制的移轉期間、特定活動或促銷活動相連結]
 
-## 這是否屬於Commerce Insights？
+## 這是否屬於見解和指引？
 
-Commerce Insights適用於策略指引和白皮書，內容涵蓋根據真實世界案例提供的安全性與實作指引，而非逐步指示或參考檔案。 確認這主要是&#x200B;**不是**：
+深入分析和指引適用於策略指引和白皮書，內容涵蓋根據實際情境提供的安全性與實作指引，而非逐步指示或參考檔案。 確認這主要是&#x200B;**不是**：
 
 - [ ]個逐步設定指示
 - [ ] 教學課程
 - [ ]參考資料（API/CLI/config參考）
 - [ ]疑難排解步驟
 
-如果勾選了任何方塊，這屬於相關的產品指南 — 從見解連結到它而不是在這裡複製。
+如果勾選了任何方塊，這屬於相關的產品指南 — 從見解和指南連結到它，而不是在這裡複製。
 
 ## 範圍
 

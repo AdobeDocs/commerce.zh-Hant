@@ -1,5 +1,5 @@
 ---
-title: Adobe Commerce Insights
+title: 深入分析和指引
 description: 瞭解Adobe Commerce的實際實施、安全性、產品和工程觀點以及策略方向
 TQID: 'https://experienceleague.adobe.com/nVpCq5GPWn9aifhkXUf6EpqUf6ia-8sgjc4gs-VToLY'
 product_v2:
@@ -30,17 +30,19 @@ topic_v2:
     internal-label: Security
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: bda4dae0a31e869ced20968bc9a9785f6b730c97
 workflow-type: tm+mt
-source-wordcount: '143'
+source-wordcount: '241'
 ht-degree: 0%
 ---
 
-# Commerce Insights
+# 深入分析和指引
 
 Adobe Commerce產品管理和工程部門會分享他們提供給同行的指引：生產中的運作方式、要觀察什麼，以及如何從您對Adobe Commerce的投資中獲得更多收益。
 
-## 您會找到的內容
+## 您會找到的內容 {#what-youll-find}
+
+在文章發佈時，本節將包含：
 
 - 常見Adobe Commerce使用案例的實施指南
 - 架構與技術觀點
@@ -49,10 +51,13 @@ Adobe Commerce產品管理和工程部門會分享他們提供給同行的指引
 - 新功能的更新
 - Adobe Commerce專家的經驗教訓
 
-## 適用對象
+## 服務對象 {#who-its-for}
 
 開發人員、架構師、技術負責人、商務策略師，以及與Adobe Commerce共事的業務團隊 — 無論您是計畫實施、解決技術挑戰，還是將現有資源最佳化。
 
 ## 開始探索
 
-瀏覽文章，瞭解您可以立即使用的專家觀點、實施策略和建議。
+- [為購物者和AI代理程式設計商業平台](agentic-commerce/architectural-foundations-agentic-commerce.md) — 瞭解如何從單一信任來源為人們和AI代理程式提供服務。 本文介紹為機器推理所建立的目錄、模型上下文通訊協定(MCP)和開放式代理商商業通訊協定，以及顯示代理商如何代表您品牌的遙測。
+- [透過Adobe Commerce即時搜尋改善產品探索](catalog-management/improve-product-discovery-live-search.md) — 瞭解如何使用搜尋效能見解和語意搜尋來協助購物者尋找相關產品。
+
+文章在發佈時即會新增至本節。 回頭檢視您能立即使用的專家觀點、實施策略和建議。
