@@ -34,8 +34,8 @@ PayPal會決定每個商家帳戶的過度擷取限制。 在[!DNL Payment Servi
 1. 在&#x200B;_管理員_&#x200B;側邊欄上，移至&#x200B;**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**。
 1. 在左側面板中，展開&#x200B;**[!UICONTROL Sales]**&#x200B;並選擇&#x200B;**[!UICONTROL Payment Methods]**。
 1. 使用商店範圍選擇器選取要設定的網站。
-1. 展開&#x200B;_[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_區段。
-1. 在&#x200B;_[!UICONTROL Payment Services]_區段中，展開_[!UICONTROL General Configuration]_&#x200B;區段。
+1. 展開&#x200B;_[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_&#x200B;區段。
+1. 在&#x200B;_[!UICONTROL Payment Services]_&#x200B;區段中，展開&#x200B;_[!UICONTROL General Configuration]_&#x200B;區段。
 1. 將&#x200B;**[!UICONTROL Over Capture Enabled]**&#x200B;設為`Yes`。
 1. 按一下&#x200B;**[!UICONTROL Save Config]**&#x200B;以儲存變更。
 1. 導覽至&#x200B;**[!UICONTROL System]** > **[!UICONTROL Cache Management]**，然後按一下&#x200B;**[!UICONTROL Flush Cache]**&#x200B;以重新整理所有無效的快取。
