@@ -26,9 +26,9 @@ role_v2:
     internal-label: Leader
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1110'
 ht-degree: 0%
 ---
 # 為生產啟用[!DNL Payment Services]
@@ -61,6 +61,8 @@ ht-degree: 0%
    >[!IMPORTANT]
    >
    >[!DNL Payment Services]支援部分擷取。 商家可以部份擷取訂單的（商業發票）部分。 例如，您可以分別擷取每個專案，或現在擷取一個專案，稍後擷取其餘的專案。
+
+   具有PayPal過度擷取合約的合格商戶也可以在[!DNL Payment Services] 2.17.0或更新版本中啟用[過度擷取](over-capture.md)。 過度擷取需要將&#x200B;**[!UICONTROL Payment Action]**&#x200B;設定為`Authorize`，並於稍後在開立發票期間執行擷取。
 
 1. 按一下&#x200B;**[!UICONTROL Save]**。
 1. 按一下&#x200B;**[!UICONTROL Go to Payment Services]**&#x200B;以導向回[!DNL Payment Services]首頁。

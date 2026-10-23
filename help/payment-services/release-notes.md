@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '5479'
+source-wordcount: '5663'
 ht-degree: 0%
 ---
 
@@ -132,9 +132,29 @@ _2021年6月28日_
 > 經常發行以視需要提供新功能和修正。 發行排程未修正。
 
 
+## v2.17.0
+
+_2026年10月22日_
+
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.6或更新版本
+
+![新](../assets/new.svg)<!-- PAY-6722 -->現在，商家可以設定PayPal Express結帳的選擇性稽核頁面，讓購物者可以在下單前稽核最終總數量及適用的條款與條件。 如需詳細資訊，請參閱[PayPal Express檢閱頁面](payments-options.md#paypal-express-review-page)。
+
+![新](../assets/new.svg)<!-- PAY-6668 -->具有PayPal超額擷取合約的合格商家，現在在PayPal核准的限制內，開立訂單發票時，可以擷取超過原始授權金額的金額。 如需需求和組態，請參閱[過度擷取](over-capture.md)。
+
+![修正問題](../assets/fix.svg)<!-- PAY-7062 -->修正結帳頁面上顯示Google Pay按鈕時，[!DNL Google Pay] **[!UICONTROL Button Type]**&#x200B;設定未變更按鈕標籤的問題。
+
+![已修正問題](../assets/fix.svg)<!-- PAY-7063 -->修正購物者在關閉並重新開啟付款視窗後，無法完成PayPal、Pay Later或Venmo快速結帳的問題。
+
+![已修正問題](../assets/fix.svg)<!-- PAY-6952 -->修正運送稅金額不符的問題，若購物者選取付費運送選項，可能無法完成PayPal快速結帳。
+
+![已修正問題](../assets/fix.svg)<!-- PAY-6939 -->已新增當購物者使用已儲存的信用卡付款時，對[3D Secure驗證挑戰](security.md#3ds)的支援。
+
 ## v2.16.1
 
 _2026年8月10日_
+
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.6或更新版本
 
 ![已修正問題](../assets/fix.svg)<!-- PAY-6769 -->修正使用PayPal智慧型按鈕的EDS店面中，導致某些付款方式在結帳頁面上無法使用的間歇性問題。
 
@@ -142,13 +162,15 @@ _2026年8月10日_
 
 _2026年7月27日_
 
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.6或更新版本
+
 ![新問題](../assets/new.svg)<!-- Issue PAY-6510 -->商戶現在可以直接從[!DNL Commerce Admin]自助服務網站範圍內其他PayPal帳戶的上線。[!DNL Payment Services] 首頁現在包含&#x200B;**[!UICONTROL Connect a different PayPal account for a website]**&#x200B;按鈕，可重新導向至付款方法的管理員設定頁面。 如需詳細資訊，請參閱[為網站](connect-website-account.md)連線其他PayPal帳戶。
 
 ## v2.15.0
 
 _2026年6月15日_
 
-[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.6或更新版本
 
 ![新增](../assets/new.svg)<!-- PAY-6564 -->現在，[!DNL Google Pay]快速結帳可以使用使用者端送貨回撥在Google付款單中顯示送貨方法，讓購物者先選取送貨方式，再確認付款。 商家可以在[Google付款設定](configure-admin.md#google-pay)中使用&#x200B;**[!UICONTROL Skip Review]**&#x200B;來顯示或隱藏個別的Google付款稽核步驟。 如果略過複查步驟，當公事包地址或送貨方法變更時，送貨選項會保留在工作表中。
 
@@ -744,4 +766,3 @@ _2021年11月29日_
 ![已知問題](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services]報告[可能無法立即同步](https://experienceleague.adobe.com/zh-hant/docs/experience-cloud-kcs/kbarticles/ka-26837)。
 
 ![已知問題](../assets/bug.svg)<!-- Issue PAY-2475 -->如果您在上線期間建立您的[!DNL Payment Services]的[PayPal沙箱帳戶](https://experienceleague.adobe.com/zh-hant/docs/experience-cloud-kcs/kbarticles/ka-26836)，則無法驗證該帳戶。
-

@@ -27,9 +27,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '2328'
+source-wordcount: '2458'
 ht-degree: 0%
 ---
 # 付款選項
@@ -167,6 +167,17 @@ ht-degree: 0%
 
 產品頁面、迷你購物車、購物車和結帳檢視中會顯示[!DNL PayPal]按鈕。
 
+#### PayPal Express檢閱頁面
+
+在[!DNL Payment Services] 2.17.0或更新版本中，商家可以設定PayPal Express結帳的選用商家評論頁面。 此頁面與PayPal付款模式不同，可讓購物者在下訂單前檢閱最終訂單總計及適用條款與條件。
+
+使用[PayPal付款按鈕組態](configure-admin.md#paypal-payment-buttons)中的&#x200B;**[!UICONTROL Skip Review]**&#x200B;來控制此步驟：
+
+* `No` — 購物者在完成PayPal付款模式後，返回商家稽核頁面，並在下單前確認訂單。
+* `Yes` — 已略過商家評論頁面。
+
+複查頁面設定不會取代商家滿足適用法規要求的責任。 現有的[Google付款檢閱頁面設定](configure-admin.md#google-pay)已另行設定。
+
 #### [!DNL Venmo]按鈕
 
 客戶可以使用[Venmo](https://venmo.com/)按鈕結帳。
@@ -201,7 +212,7 @@ ht-degree: 0%
 
 PayPal、Pay Later和Venmo付款方法使用[伺服器端送貨回撥](https://developer.paypal.com/docs/multiparty/checkout/standard/customize/shipping-module/)，讓PayPal能夠直接與您的Commerce執行個體通訊，擷取送貨選項並即時計算總計。
 
-此伺服器端方法可讓[!DNL Payment Services]略過訂單確認快顯視窗，提供更快速、簡化的購買體驗。 由於出貨成本與稅捐會透過回撥動態計算，因此採購員會直接在PayPal或Venmo複查頁面中看到準確的總計。
+由於運費與稅金會透過回撥動態計算，因此購物者可以在PayPal或Venmo付款模式中直接看到更新的運費選項與總計。 對於PayPal Express結帳，選擇性的[商家稽核頁面](#paypal-express-review-page)是PayPal付款模式之後的獨立步驟，由&#x200B;**[!UICONTROL Skip Review]**&#x200B;控制。
 
 >[!NOTE]
 >
@@ -283,7 +294,7 @@ LPM會根據其帳單地址及其網站的基本貨幣向客戶顯示。 只有�
 
 ### 訂單重新計算
 
-當客戶從迷你購物車、購物車或產品頁面進入結帳流程時，會被導向至訂單稽核頁面，他們可在PayPal快顯視窗中看到選取的運送地址。 客戶選取出貨方式後，會適當重新計算訂單金額，而客戶可以看到出貨成本與稅捐。
+當客戶從迷你購物車、購物車或產品頁面進入PayPal結帳流程時，他們可以在PayPal付款模式中檢閱所選的送貨地址。 客戶選取出貨方式之後，會重新計算訂單金額，而客戶可以看到出貨成本與稅捐。 對於PayPal Express結帳，選擇性的[商家稽核頁面](#paypal-express-review-page)可讓客戶在下訂單前稽核最終總計及適用的條款與條件。
 
 當客戶從結帳頁面進入結帳流程時，系統已知道送貨地址和最終計算的金額，且總計已適當呈現。
 

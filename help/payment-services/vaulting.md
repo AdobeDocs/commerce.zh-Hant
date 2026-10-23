@@ -22,9 +22,9 @@ role_v2:
     internal-label: Leader
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '578'
 ht-degree: 0%
 ---
 # 信用卡存放
@@ -100,3 +100,5 @@ Commerce會儲存Token，協助客戶取得已儲存的信用卡資訊，完成�
 ## 安全性
 
 最低限度的信用卡資訊會與購物者共用；他們只會看到其存放的信用卡的最後四位數字、到期日及品牌。 信用卡資訊與付款提供者一起儲存，以符合[PCI](security.md#pci-compliance)法規遵循標準。
+
+在[!DNL Payment Services] 2.17.0或更新版本中，可能會要求使用已儲存信用卡付款的購物者完成發卡機構要求的[3D Secure (3DS)驗證挑戰](security.md#3ds)。 儲存卡片不會略過發行者要求的驗證。

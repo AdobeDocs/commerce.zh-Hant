@@ -21,9 +21,9 @@ role_v2:
     internal-label: Leader
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '695'
+source-wordcount: '729'
 ht-degree: 0%
 ---
 # 安全性與合規性
@@ -57,6 +57,8 @@ PCI 3-D Secure (3DS)可讓購買者線上上購買信用卡時，與其信用卡
 如果您是歐盟或英國境內需要3DS規範的商業者，您必須在[設定管理員](configure-admin.md#credit-card-fields)中手動開啟3DS （預設為`Off`）。
 
 **[信用卡欄位](configure-admin.md#credit-card-fields)**&#x200B;和&#x200B;**[[!DNL Google Pay]](configure-admin.md#google-pay)**&#x200B;都支援3DS。 每個付款方法在Admin中都有各自的3D安全驗證設定，可設為`Always`、`When required`或`Off`。
+
+在[!DNL Payment Services] 2.17.0或更新版本中，使用[已儲存的信用卡](vaulting.md)付款的購物者也可以完成發行者所需的3DS驗證挑戰。 已儲存的卡不會免除發卡機構要求的驗證付款。
 
 >[!IMPORTANT]
 >

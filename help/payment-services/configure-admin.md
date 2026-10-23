@@ -27,9 +27,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '3767'
+source-wordcount: '3911'
 ht-degree: 0%
 ---
 # [!DNL Payment Services]設定
@@ -59,6 +59,7 @@ ht-degree: 0%
 
 1. 第一次造訪[!DNL Payment Services]儀表板時，PayPal會自動提供您的&#x200B;**[!UICONTROL PayPal Merchant ID]**&#x200B;和&#x200B;**[!UICONTROL PayPal Merchant Status]**&#x200B;值。
 1. 對於&#x200B;**軟性描述項** （自訂值，顯示在客戶交易銀行對帳單上，以描述商店/品牌/目錄之間），請在文字欄位中新增自訂文字（最多22個字元），取代`Soft descriptor`或現有值。
+1. 針對使用[!DNL Payment Services] 2.17.0或更新版本的合格商家，將&#x200B;**[!UICONTROL Over Capture Enabled]**&#x200B;設定為`Yes`以啟用[過度擷取](over-capture.md)。 需要PayPal過度擷取合約，且付款方式的&#x200B;**[!UICONTROL Payment Action]**&#x200B;必須設定為`Authorize`。
 1. 按一下&#x200B;**[!UICONTROL Save Config]**&#x200B;以儲存變更。
 1. 導覽至&#x200B;**[!UICONTROL System]** > **[!UICONTROL Cache Management]**，然後按一下&#x200B;**[!UICONTROL Flush Cache]**&#x200B;以重新整理所有無效的快取。
 
@@ -67,6 +68,7 @@ ht-degree: 0%
 | 欄位 | 範圍 | 說明 |
 |---|---|---|
 | [!UICONTROL Enable] | 網站 | 啟用或停用您網站的[!DNL Payment Services]。 選項： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Over Capture Enabled] | 網站 | 為具有PayPal過度擷取合約的合格商戶啟用或停用[過度擷取](over-capture.md)。 需要[!DNL Payment Services] 2.17.0或更新版本，以及`Authorize`的付款動作。 選項： `[!UICONTROL Yes]` / `[!UICONTROL No]`。 預設值： `[!UICONTROL No]`。 |
 | [!UICONTROL Method] | 存放區檢視 | 設定商店的方法或環境。 選項： [!UICONTROL Sandbox] / [!UICONTROL Production] |
 | [!UICONTROL Payment Services Sandbox ID] | 存放區檢視 | 您的沙箱商家ID，會在沙箱上線期間自動產生。 |
 | [!UICONTROL Payment Services Production ID] | 存放區檢視 | 您的生產廠商ID，會在生產（即時）上線期間自動產生。 |
@@ -304,12 +306,15 @@ ht-degree: 0%
 
 您可以在「管理員」中啟用並設定PayPal付款按鈕付款選項：
 
+在[!DNL Payment Services] 2.17.0或更新版本中，**[!UICONTROL Skip Review]**&#x200B;會控制PayPal Express結帳在購物者離開PayPal付款模式後，是否包含商家評論頁面。 此檢閱頁面與PayPal付款模式不同。 如需詳細資訊，請參閱[PayPal Express檢閱頁面](payments-options.md#paypal-express-review-page)。
+
 1. 在&#x200B;_管理員_&#x200B;側邊欄上，移至&#x200B;**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**。
 1. 在左側面板中，展開&#x200B;**[!UICONTROL Sales]**&#x200B;並選擇&#x200B;**[!UICONTROL Payment Methods]**。
 1. 展開&#x200B;_[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_&#x200B;區段。
 1. 在&#x200B;_[!UICONTROL Payment Services]_&#x200B;區段中，展開&#x200B;_[!UICONTROL PayPal payment buttons]_&#x200B;區段。
 1. 若要變更結帳時顯示的付款方式名稱，請編輯&#x200B;_[!UICONTROL Title]_&#x200B;欄位。
 1. 若要[設定付款動作](production.md#set-payment-services-as-payment-method)，請選取&#x200B;**[!UICONTROL Authorize]**&#x200B;或&#x200B;**[!UICONTROL Authorize and Capture]**。
+1. 若為PayPal Express結帳，將&#x200B;**[!UICONTROL Skip Review]**&#x200B;設為`No`以在購物者下訂單前顯示商家評論頁面，或將`Yes`略過該頁面。
 1. 若要優先處理結帳頁面上的付款方法，請在&#x200B;**[!UICONTROL Sort order]**&#x200B;欄位中提供`Numeric Only`值。
 1. 若要啟用/停用[稍後付款訊息](payments-options.md#pay-later-button)，請為&#x200B;**[!UICONTROL Display Pay Later Message]**&#x200B;選取`Yes`/`No`。
 
@@ -334,6 +339,7 @@ ht-degree: 0%
 |---|---|---|
 | [!UICONTROL Title] | 存放區檢視 | 在結帳期間，在「付款方式」檢視中，新增要顯示為此付款選項標題的文字。 選項：文字欄位 |
 | [!UICONTROL Payment Action] | 網站 | 指定的付款方式的[付款動作](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"}。 選項： [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Skip Review] | 存放區檢視 | 在[!DNL Payment Services] 2.17.0或更新版本中，控制PayPal Express簽出的商家稽核頁面。 設為`[!UICONTROL No]`以在PayPal付款模組之後顯示頁面，或設為`[!UICONTROL Yes]`略過該頁面。 選項： `[!UICONTROL Yes]` / `[!UICONTROL No]`。 預設值： `[!UICONTROL Yes]`。 |
 | [!UICONTROL Display Pay Later Message] | 網站 | 在購物車、產品頁面、迷你購物車和結帳流程中啟用或停用PayPal Pay Later訊息。 選項： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Configure Messaging] | 存放區檢視 | 修改PayPal Pay Later傳訊樣式。 選項： `[!UICONTROL Product page]` / `[!UICONTROL Cart]` |
 | [!UICONTROL Show buttons on checkout page] | 存放區檢視 | 啟用或停用結帳頁面上的[!DNL PayPal payment buttons]。 選項： `[!UICONTROL Yes]` / `[!UICONTROL No]` |
