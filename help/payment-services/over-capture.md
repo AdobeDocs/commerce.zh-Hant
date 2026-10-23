@@ -17,7 +17,7 @@ PayPal會決定每個商家帳戶的過度擷取限制。 在[!DNL Payment Servi
 
 >[!NOTE]
 >
->本主題說明[!DNL Payment Services]擴充功能中的過度擷取。 若為[!DNL Adobe Commerce as a Cloud Service]，請參閱[自訂擷取金額](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#custom-capture-amounts)，以取得個別的可用性與啟用需求。
+>本主題說明[!DNL Payment Services]擴充功能中的過度擷取。 若為[!DNL Adobe Commerce as a Cloud Service]，請參閱[自訂擷取金額](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/order-management/invoices#custom-capture-amounts)，以取得個別的可用性與啟用需求。
 
 ## 先決條件
 
@@ -42,7 +42,7 @@ PayPal會決定每個商家帳戶的過度擷取限制。 在[!DNL Payment Servi
 
 ## 擷取授權付款
 
-在管理員開立發票期間會發生過度擷取。 要求的擷取金額必須在PayPal針對您的商家帳戶核准的限制內。 請參閱[針對標準開立發票工作流程建立發票](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice)。
+在管理員開立發票期間會發生過度擷取。 要求的擷取金額必須在PayPal針對您的商家帳戶核准的限制內。 請參閱[針對標準開立發票工作流程建立發票](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice)。
 
 1. 在&#x200B;_管理員_&#x200B;側邊欄上，移至&#x200B;**[!UICONTROL Sales]** > **[!UICONTROL Orders]**。
 1. 開啟尚未擷取的授權付款訂單。
