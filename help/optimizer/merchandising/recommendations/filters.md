@@ -17,9 +17,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 092ffabea06cf72af39a663c14b448f9e7633f60
+source-git-commit: b5ef5e736e116d4321444cbaaeae90a08facf047
 workflow-type: tm+mt
-source-wordcount: '2364'
+source-wordcount: '2407'
 ht-degree: 0%
 ---
 # 篩選產品
@@ -225,6 +225,14 @@ ht-degree: 0%
 #### 設定屬性篩選
 
 使用下列步驟，將屬性包含或排除規則新增至建議單位。
+
+>[!TIP]
+>
+>對於您想要篩選的任何屬性，請使用[中繼資料API](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata)來設定`filterable`引數：
+>
+>{「可篩選」： true}
+>
+>下次目錄與[!DNL Adobe Commerce Optimizer]同步時，**Attributes**&#x200B;功能表中就會有該屬性。
 
 1. 在[建立或編輯](create.md)建議單位時，請移至&#x200B;**[!UICONTROL Filter products]**。
 1. 選取&#x200B;**[!UICONTROL Inclusions]**&#x200B;或&#x200B;**[!UICONTROL Exclusions]**&#x200B;索引標籤。 每個標籤上的徽章會顯示已啟用多少該型別的篩選器。
