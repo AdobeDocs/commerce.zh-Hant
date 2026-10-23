@@ -22,9 +22,9 @@ role_v2:
     internal-label: Leader
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '578'
 ht-degree: 0%
 ---
 # 信用卡存放
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 1. 瀏覽至左側導覽中的&#x200B;**[!UICONTROL Stored Payment Methods]**，檢視其所有儲存的付款方法。
 
-   如需詳細資訊，請參閱[儲存的付款方法](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/payments/stored-payment-methods)。
+   如需詳細資訊，請參閱[儲存的付款方法](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/stored-payment-methods)。
 
 1. 客戶按一下&#x200B;**[!UICONTROL Add New Card]**&#x200B;以儲存新卡片。
 
@@ -90,13 +90,15 @@ Commerce會儲存Token，協助客戶取得已儲存的信用卡資訊，完成�
 
 若要在「管理員」中，使用客戶的保管式信用卡來建立訂單：
 
-1. [建立訂單並新增產品](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order)。
-1. 在&#x200B;_[!UICONTROL Payment & Shipping Information]_&#x200B;中，選取&#x200B;**[!UICONTROL Stored Cards]**&#x200B;作為付款方式。
+1. [建立訂單並新增產品](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order)。
+1. 在&#x200B;_[!UICONTROL Payment & Shipping Information]_中，選取&#x200B;**[!UICONTROL Stored Cards]**作為付款方式。
 1. 選取所需的存放信用卡付款方式。
-1. 完成訂單的其他必要步驟後，[送出](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order?lang=en#step-3%3A-submit-the-order)。
+1. 完成訂單的其他必要步驟後，[送出](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order?lang=en#step-3%3A-submit-the-order)。
 
    ![在管理員中使用客戶的保管信用卡](assets/admin-vaultedcard.png){width="600" zoomable="yes"}
 
 ## 安全性
 
 最低限度的信用卡資訊會與購物者共用；他們只會看到其存放的信用卡的最後四位數字、到期日及品牌。 信用卡資訊與付款提供者一起儲存，以符合[PCI](security.md#pci-compliance)法規遵循標準。
+
+在[!DNL Payment Services] 2.17.0或更新版本中，可能會要求使用已儲存信用卡付款的購物者完成發卡機構要求的[3D Secure (3DS)驗證挑戰](security.md#3ds)。 儲存卡片不會略過發行者要求的驗證。
