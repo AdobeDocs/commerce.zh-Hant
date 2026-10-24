@@ -360,7 +360,7 @@ ht-degree: 1%
   </thead>
   <tbody>
     <tr>
-      <td><p>新增<a href="https://experienceleague.adobe.com/en/docs/commerce/information-center/insights-and-guidance/overview">Commerce Insights</a>指南，這是Adobe Commerce產品管理和工程策略實施和安全指引的新首頁。</p>
+      <td><p>新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/information-center/insights-and-guidance/overview">Commerce Insights</a>指南，這是Adobe Commerce產品管理和工程策略實施和安全指引的新首頁。</p>
 </td>
       <td>
         新主題
