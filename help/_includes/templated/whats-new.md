@@ -1,7 +1,7 @@
 ---
-source-git-commit: bda4dae0a31e869ced20968bc9a9785f6b730c97
+source-git-commit: ecad33a6883ee25d21ed358736a2f1e3529c6edf
 workflow-type: tm+mt
-source-wordcount: '1254'
+source-wordcount: '1279'
 ht-degree: 1%
 ---
 # 新功能範本
@@ -9,6 +9,80 @@ ht-degree: 1%
 ## 新增功能
 
 此頁面包含過去60天所做的變更。 我們將從此清單中排除所有微幅更新，例如複製編輯。
+
+### 2026年10月26日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>更新最新<a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md">source log-codes.md</a>的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/saas-data-export/logs-troubleshooting/log-codes-reference">資料匯出記錄檔代碼參考</a>。</p>
+</td>
+      <td>
+        技術
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/fd4ea4603999043844c786da3ab1e84fb8d4d4aa">認可</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年10月23日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p><br />Payment Services 2.17.0檔案新增了選擇性<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/payment-services/payments-checkout/payments-options#paypal-express-review-page">PayPal Express稽核頁面</a>和<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/payment-services/payments-checkout/manage/over-capture">過度擷取</a>的指引，包括設定、資格和開立發票工作流程。</p>
+</td>
+      <td>
+        重大更新
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/d2bcc58f34af50f26d4a4f082e5b3fc30089ab58">認可</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 2026年10月21日
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>說明</th>
+      <th>型別</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>新增<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/information-center/overview">Commerce資訊中心</a>，這是客戶和合作夥伴探索Adobe Commerce方案、比較實作架構以及規劃移轉與整合的新起點。 包含適用於店面、支付、Commerce服務、AEM Assets、Adobe Commerce Optimizer、沙箱環境和Adobe Experience Platform的角色型導覽和實施指南，以及詳細產品檔案的連結。</p>
+</td>
+      <td>
+        重大更新，新主題
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/fcb3c575a9af82ee75408fba4b4fe7cee5dbffa4">認可</a></td>
+    </tr>
+    <tr>
+      <td><p>已更新Adobe Commerce as a Cloud Service的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/security/shared-responsibility">共用責任</a>表格以包含Adobe Managed Services。</p>
+</td>
+      <td>
+        重大更新
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/56bb1f5c9723842386af60afe5611c85213f4aeb">認可</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2026年10月16日
 
@@ -388,80 +462,6 @@ ht-degree: 1%
         意見反應
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/01028c8645f0d8ef868aacbaf14e34595bc5ccc1">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年8月26日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>更新最新<a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md">source log-codes.md</a>的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/saas-data-export/logs-troubleshooting/log-codes-reference">資料匯出記錄檔代碼參考</a>。</p>
-</td>
-      <td>
-        技術
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/e91727732882ce6a990068bf2bd3c4dc9fc69370">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年8月25日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>已新增Adobe Commerce as a Cloud Service的沙箱<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes">發行說明</a>。</p>
-</td>
-      <td>
-        重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/452a47d6769d90449ece9fe171a01a36df45324d">認可</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2026年8月18日
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>說明</th>
-      <th>型別</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>更新最新<a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md">source log-codes.md</a>的<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/saas-data-export/troubleshooting/log-codes-reference">資料匯出記錄檔代碼參考</a>。</p>
-</td>
-      <td>
-        技術
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/1291cadbeca63d454eabab31c415b2d037d280ba">認可</a></td>
-    </tr>
-    <tr>
-      <td><p>Adobe Commerce Optimizer現在將私人目錄檢視限製為單一價格簿。 深入瞭解<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/setup/private-catalog-view#price-book-restriction-on-private-catalog-views">私人目錄檢視</a>、<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/setup/catalog-view">目錄檢視</a>和<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/setup/pricebooks">價格手冊</a>。</p>
-</td>
-      <td>
-        重大更新
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/b6613edbf84681a860b9c71a07f43a7df40e8784">認可</a></td>
     </tr>
   </tbody>
 </table>
