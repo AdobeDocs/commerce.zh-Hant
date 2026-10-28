@@ -16,9 +16,9 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: f3516568bc7e1c14f9eb1a529b28c4775baa6956
 workflow-type: tm+mt
-source-wordcount: '1847'
+source-wordcount: '2009'
 ht-degree: 0%
 ---
 # AEM Assets整合發行說明
@@ -48,6 +48,20 @@ _2025年2月11日_
 ![新問題](../assets/new.svg)現在，商家可以同步產品與類別的影像。
 
 +++
+
+## v1.4.12
+
+_2026年10月28日_
+
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.6版和更新版本。
+
+![已修正問題](../assets/fix.svg)<!-- Issue ACAP-1335 -->在Adobe Commerce和AEM Assets之間切換視覺效果所有權時，已修正類別影像處理。 AEM資產選取範圍現在儲存在專用的`asset_role_image`屬性中，所有權變更時會保留這些選取範圍。 當AEM Assets擁有視覺效果時（包括匯出期間商店檢視特有的值），類別影像讀取和匯出會使用AEM資產角色值。 類別`image`屬性中的現有HTTP/HTTPS AEM資產傳遞URL會移轉至新屬性，而不會覆寫現有的資產角色值。
+
+![已修正問題](../assets/fix.svg)<!-- Issue ACAP-2180 -->修正類別GraphQL `asset_role_image`欄位，在Adobe Commerce擁有視覺效果時傳回`null`，以及在AEM Assets擁有視覺效果時傳回類別資產 — 角色值。
+
+![已修正問題](../assets/fix.svg)<!-- Issue ACAP-2180 -->已修正產品摘要中AEM資產角色未正確匯出的問題。 現在已正確匯出AEM資產角色。
+
+![已修正問題](../assets/fix.svg)<!-- Issue ACAP-1338 -->已更新套件相依性，包括還原Adobe IMS、Commerce事件和服務ID套件的明確要求，以及移除明確的`magento/framework`要求。
 
 ## v1.4.9
 
