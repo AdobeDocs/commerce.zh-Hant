@@ -71,7 +71,7 @@ _2026年10月21日_
 
 _2026年10月19日_
 
-![修正](../assets/fix.svg) **一致的類別識別** — 已使用Adobe Commerce as a Cloud Service、雲端上的Adobe Commerce和內部部署支援的[店面服務目錄服務GraphQL API ](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/){page="_blank"}中的類別ID和商店檢視程式碼，還原類別摘要識別。 此更新可防止類別移動將類別錯誤地標籤為已刪除。<!--MDEE-1473-->
+![修正](../assets/fix.svg) **一致的類別識別** — 已使用Adobe Commerce as a Cloud Service、雲端上的Adobe Commerce和內部部署支援的[店面服務目錄服務GraphQL API &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/){page="_blank"}中的類別ID和商店檢視程式碼，還原類別摘要識別。 此更新可防止類別移動將類別錯誤地標籤為已刪除。<!--MDEE-1473-->
 
 ![修正](../assets/fix.svg) **PHP 8.5**&#x200B;上的可靠屬性選項處理 — 修正屬性選項值處理，以防止選項標籤參考遺失的存放區時產品摘要匯出錯誤。<!--MDEE-1472-->
 
