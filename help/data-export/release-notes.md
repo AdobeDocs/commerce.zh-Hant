@@ -40,9 +40,9 @@ topic_v2:
     internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 9a378b5e553afb5d96ce79738dab1d32404f4f22
+source-git-commit: 4f804d488a8c8690ed965c022d673f52c91b3d15
 workflow-type: tm+mt
-source-wordcount: '3719'
+source-wordcount: '3763'
 ht-degree: 0%
 ---
 # [!DNL SaaS Data Export Extension]發行說明
@@ -60,6 +60,12 @@ ht-degree: 0%
 >[!DNL SaaS data export]擴充功能是與[!DNL Live Search]、[!DNL Product Recommendations]及[!DNL Catalog Service]一起自動安裝的模組集合。 您可以使用[!DNL Composer]檢查系統上安裝的版本。 在某些情況下，您可能會想要升級系統上的資料匯出擴充功能，以取得修正或新功能，而不更新Commerce服務版本。
 
 ## 2026版本 {#release-notes-2026}
+
+### 103.6.0版
+
+_2026年10月21日_
+
+![新增](../assets/new.svg) **產品評論摘要屬性** — 已新增核准評論計數(`ac_review_count`)和平均評分(`ac_rating_summary`)的系統管理產品屬性。 啟用稽核摘要同步時，這些值會匯出至目錄服務，以便儲存區域可以顯示稽核計數和星級評等。<!--MDEE-1414-->
 
 ### 103.5.2版本
 

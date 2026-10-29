@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: f7a84928b817f21a05ecc9e822ace49e103a8dfd
+source-git-commit: d84e54994e01c702c9d3634fbe42409bc4b0ce51
 workflow-type: tm+mt
-source-wordcount: '9292'
+source-wordcount: '9439'
 ht-degree: 0%
 ---
 # 發行說明
@@ -74,13 +74,21 @@ ht-degree: 0%
 >
 >如果您正在雲端基礎結構上使用Adobe Commerce內部部署或Adobe Commerce，請參閱[Adobe Commerce發行說明](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/notes/overview)。
 
+## 管理員UI變更
+
+[!DNL Adobe Commerce as a Cloud Service]管理員的運作方式現在與您已使用的其他Adobe產品一樣，具有相同的頂端導覽、產品切換器和組織切換器。 只需登入一次，即可在產品與Commerce執行個體之間無縫切換，不需分別登入Commerce Cloud Manager和每個執行個體。 執行個體切換器以及可搜尋的Commerce導覽可協助您前往需要加速的地方。
+
+每個管理員體驗都有自己的URL。 Commerce Cloud Manager中的執行個體連結預設會使用&#x200B;**[!UICONTROL Admin URL (Unified Shell UI)]**&#x200B;開啟新的Commerce管理體驗。 傳統UI仍受支援，因此您可以在適應新體驗的同時繼續使用熟悉的工作流程。 若要使用傳統UI，請開啟執行個體詳細資訊面板，然後選取&#x200B;**[!UICONTROL Admin URL (Classic UI)]**。 現有的管理員URL和書籤會繼續開啟傳統UI。
+
+進一步瞭解Adobe Unified Experience中的[Commerce Admin](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/admin/admin-unified-experience)。
+
 ## 2026年10月 — 發行說#3 {#latest}
 
-[!BADGE 沙箱]{type=Caution tooltip="列出的專案目前僅在沙箱環境中可用。 Adobe會先在沙箱環境中推出新版本，讓您可以在生產環境中使用該版本之前有時間測試即將推出的變更。"}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE 生產]{type=Neutral tooltip="列出的專案目前可在生產環境中使用。"}
 
-以下專案將於2026年10月29日在生產環境中可用。
+以下專案已於2026年10月28日發佈到生產環境。
 
 >[!BEGINSHADEBOX]
 
@@ -94,9 +102,9 @@ ht-degree: 0%
 
 ### 商店信用退款
 
-`POST /V1/creditmemo/refund` REST端點現在接受選用的`extension_attributes.refund_to_store_credit_amount`欄位，此欄位會將所有或部分銷退折讓單退款給客戶的商店銷退折讓單。<!-- ACCS-2068 -->
+[`POST /V1/creditmemo/refund` REST端點](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/store-credit)現在接受選用的`extension_attributes.refund_to_store_credit_amount`欄位，此欄位會將所有或部分銷退折讓單退款給客戶的商店銷退折讓。<!-- ACCS-2068 -->
 
-兩個新的管理員角色許可權控制儲存點數的存取權： <!-- ACCS-1961 -->
+兩個[新管理員角色許可權](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/customers/customer-accounts/store-credit/store-credit-using#store-credit-role-resources)儲存點數的控制項存取權： <!-- ACCS-1961 -->
 
 * [!UICONTROL Customers] > [!UICONTROL All Customers] > [!UICONTROL Manage Store Credit Balances]
 * [!UICONTROL Sales] > [!UICONTROL Operations] > [!UICONTROL Orders] > [!UICONTROL Actions] > [!UICONTROL Create] > [!UICONTROL Can Spend Store Credit]
