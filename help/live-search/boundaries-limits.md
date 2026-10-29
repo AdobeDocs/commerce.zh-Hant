@@ -1,6 +1,6 @@
 ---
 title: 邊界和限制
-description: 瞭解 [!DNL Live Search] 的界限和限制，以確保其符合您的業務需求。
+description: 瞭解[!DNL Live Search]的界限和限制，以確保其符合您的業務需求。
 role: Admin, Developer
 exl-id: 28b8d98f-0784-4c4d-b382-81c01838e0de
 TQID: https://experienceleague.adobe.com/QIKvaTUGLWd6yw6cEAyDkP9tCgEcJHLdiwpZDtx1-p4
@@ -28,13 +28,11 @@ topic_v2:
     internal-label: Troubleshooting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
+source-git-commit: 82da0a6749a2c3e6496992a6450c9ea0e7070b17
 workflow-type: tm+mt
-source-wordcount: 1409
+source-wordcount: '1448'
 ht-degree: 0%
-
 ---
-
 # 邊界和限制
 
 在網站搜尋方面，Adobe Commerce會提供您選項。 為了確保[!DNL Live Search]和[!DNL Catalog Service]符合您的業務需求，請檢閱下列界限和限制。 如果您需要進階搜尋功能，例如內容搜尋、自備演演算法(BYOA)或屬性型銷售，請考慮使用協力廠商搜尋解決方案。
@@ -68,7 +66,7 @@ ht-degree: 0%
 
 ## Facet
 
-- 從已定義的可篩選屬性集中，您最多可以設定100個屬性為Facet。
+- 依預設，您最多可以設定100個可篩選屬性為Facet。 合格的商戶可透過[Adobe支援](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide){target="_blank"}要求增加最多500個面向；核准須受資格和績效評估的限制。
 - 在一個Facet中，最多可傳回100個值區。 如果您需要傳回100個以上的貯體，請[建立支援票證](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)，讓Adobe能夠分析效能影響，並判斷為您的環境提高此限制是否可行。
 - 動態Facet可能會在大型索引和高序數的索引中造成效能問題。 如果您已建立動態Facet，且發現任何效能降低或頁面未載入時發生逾時錯誤，請嘗試將您的Facet變更為Pined ，以判斷這是否會解決您的效能問題。
 - Stock狀態(`quantity_and_stock_status`)不支援為Facet。 在Admin中，您可以設定[!UICONTROL Display Out of Stock Products] = [!UICONTROL No]以篩選無庫存產品。 `[PLP Widget](plp-styling.md)`模組原本就支援此功能。 如需詳細資訊，請參閱[管理缺貨的產品](manage-out-of-stock-products.md)。
