@@ -92,7 +92,7 @@ ht-degree: 0%
 - 決定產品最相關的屬性，並將它們設定為[動態Facet](facets-type.md)。 
 - 設定和排序產品屬性，這些屬性在您的目錄中均保持一致，且與您的產品高度相關，以提高相關性和篩選功能，方便購物者。
 - 請確保網站上的Facet標籤容易理解且命名一致。 例如，使用「價格範圍」而非「成本」。
-- 將多面數量限製為最重要的多面，以免讓購物者不知所措。 太多選項可能會導致決策疲勞。 根據預設，[!DNL Live Search]限製為最多100個設定為Facet的屬性，以及在每個Facet中傳回30個貯體。 合格的商戶可透過[Adobe支援](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide){target="_blank"}要求增加最多500個面向；核准須受資格和績效評估的限制。 深入瞭解[Facet限制](boundaries-limits.md#facets)。
+- 將多面數量限製為最重要的多面，以免讓購物者不知所措。 太多選項可能會導致決策疲勞。 根據預設，[!DNL Live Search]限製為最多100個設定為Facet的屬性，以及在每個Facet中傳回30個貯體。 合格的商戶可透過[Adobe支援](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide){target="_blank"}要求增加最多500個面向；核准須受資格和績效評估的限制。 深入瞭解[Facet限制](boundaries-limits.md#facets)。
 - 允許購物者同時選取多個篩選條件來縮小結果。 例如，讓購物者同時選取「紅色」和「藍色」顏色。
 - 在每個Facet選項旁顯示可用產品的數量，讓購物者瞭解可預期的搜尋結果。
 - 若要保持介面整潔且可管理（尤其是在行動裝置上），請實作可摺疊的Facet區段。
@@ -230,7 +230,7 @@ ht-degree: 0%
 深入瞭解搜尋所需的產品屬性：
 
 - [將屬性設定為可搜尋](workspace.md#set-attributes-as-searchable)
-- [為屬性指派權重](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [為屬性指派權重](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## 監視搜尋結果
 
