@@ -1,6 +1,6 @@
 ---
 title: 新增Facet
-description: 瞭解如何將可篩選的產品屬性新增為 [!DNL Live Search] Facet。
+description: 瞭解如何將可篩選的產品屬性新增為[!DNL Live Search] Facet。
 exl-id: 80559107-2b2d-411f-8c32-99ff024e7a09
 TQID: https://experienceleague.adobe.com/6mX3QWuZRFuDb1eDnUlPj1yvXZ2qGIdQ4oScxfHjNWY
 product_v2:
@@ -15,13 +15,11 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: a652b6d5659dd6d5aede27d771736222b72b9c5e
 workflow-type: tm+mt
-source-wordcount: 600
-ht-degree: 0%
-
+source-wordcount: '622'
+ht-degree: 3%
 ---
-
 # 新增Facet
 
 除了庫存狀態(`quantity_and_stock_status`)以外，任何可篩選的產品屬性都可以當做多面使用。 *[!UICONTROL Add facets]*&#x200B;面板會列出目前的Facet，並可讓您輕鬆將其他產品屬性指派為Facet。 在這三個步驟的流程中，選擇屬性作為多面，視需要編輯屬性，並將變更發佈到店面。
@@ -42,7 +40,7 @@ ht-degree: 0%
    * 若要尋找特定的產品屬性，請在&#x200B;*搜尋*&#x200B;方塊中輸入屬性名稱的前幾個字元。 然後，按一下&#x200B;**新增**。
 
      若要設定價格多面向間隔與群組，請參閱[設定](settings.md)。 若要深入瞭解，請前往[Facet型別](facets-type.md)。
-Facet已新增至*動態Facet*&#x200B;清單底部，且&#x200B;*發佈變更*&#x200B;按鈕可供使用。
+     Facet以遞增順序新增至*動態Facet*&#x200B;清單，且&#x200B;*發佈變更*&#x200B;按鈕可供使用。
 
 1. 如果找不到您要新增的Facet，請移至&#x200B;**商店** >屬性> **產品**，並確認屬性具有[要當作Facet使用的必要屬性](facets.md)。 如有必要，請更新屬性的下列店面屬性：
 

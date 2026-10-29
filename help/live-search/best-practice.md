@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Live Search]最佳實務'
-description: 瞭解在您的商店中實作 [!DNL Live Search] 的最佳實務。
+description: 瞭解在您的存放區中實作[!DNL Live Search]的最佳實務。
 role: Admin, Developer
 exl-id: f7700339-fb13-42fe-a249-17cd4ba36e1b
 TQID: https://experienceleague.adobe.com/X9zgHooEzDJe-zzmLLXHdVVVFUHVX4be47dOUaJyUXU
@@ -23,13 +23,11 @@ topic_v2:
     internal-label: Data collection
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
+source-git-commit: 82da0a6749a2c3e6496992a6450c9ea0e7070b17
 workflow-type: tm+mt
-source-wordcount: 2965
+source-wordcount: '3008'
 ht-degree: 0%
-
 ---
-
 # 最佳實務
 
 本文可協助銷售人員增強其網站搜尋功能，確保購物者獲得順暢且有效率的體驗，進而將轉換率最大化。 透過遵循概述的策略，您可以瞭解如何實作進階搜尋功能，並持續調整搜尋工具，以透過Adobe Commerce [!DNL Live Search]發揮最佳效能。
@@ -94,7 +92,7 @@ ht-degree: 0%
 - 決定產品最相關的屬性，並將它們設定為[動態Facet](facets-type.md)。 
 - 設定和排序產品屬性，這些屬性在您的目錄中均保持一致，且與您的產品高度相關，以提高相關性和篩選功能，方便購物者。
 - 請確保網站上的Facet標籤容易理解且命名一致。 例如，使用「價格範圍」而非「成本」。
-- 將多面數量限製為最重要的多面，以免讓購物者不知所措。 太多選項可能會導致決策疲勞。 根據預設，[!DNL Live Search]限製為最多100個設定為Facet的屬性，以及在每個Facet中傳回30個貯體。 深入瞭解[Facet限制](boundaries-limits.md#facets)。 
+- 將多面數量限製為最重要的多面，以免讓購物者不知所措。 太多選項可能會導致決策疲勞。 根據預設，[!DNL Live Search]限製為最多100個設定為Facet的屬性，以及在每個Facet中傳回30個貯體。 合格的商戶可透過[Adobe支援](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide){target="_blank"}要求增加最多500個面向；核准須受資格和績效評估的限制。 深入瞭解[Facet限制](boundaries-limits.md#facets)。
 - 允許購物者同時選取多個篩選條件來縮小結果。 例如，讓購物者同時選取「紅色」和「藍色」顏色。
 - 在每個Facet選項旁顯示可用產品的數量，讓購物者瞭解可預期的搜尋結果。
 - 若要保持介面整潔且可管理（尤其是在行動裝置上），請實作可摺疊的Facet區段。
@@ -232,7 +230,7 @@ ht-degree: 0%
 深入瞭解搜尋所需的產品屬性：
 
 - [將屬性設定為可搜尋](workspace.md#set-attributes-as-searchable)
-- [為屬性指派權重](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [為屬性指派權重](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## 監視搜尋結果
 
