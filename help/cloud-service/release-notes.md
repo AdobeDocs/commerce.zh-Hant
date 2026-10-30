@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: d84e54994e01c702c9d3634fbe42409bc4b0ce51
+source-git-commit: 43c00a414f95900a30103e56820d06077d530e0f
 workflow-type: tm+mt
-source-wordcount: '9439'
+source-wordcount: '9823'
 ht-degree: 0%
 ---
 # 發行說明
@@ -82,7 +82,59 @@ ht-degree: 0%
 
 進一步瞭解Adobe Unified Experience中的[Commerce Admin](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/admin/admin-unified-experience)。
 
-## 2026年10月 — 發行說#3 {#latest}
+## 2026年11月 — 發行說#1 {#latest}
+
+[!BADGE 沙箱]{type=Caution tooltip="列出的專案目前僅在沙箱環境中可用。 Adobe會先在沙箱環境中推出新版本，讓您可以在生產環境中使用該版本之前有時間測試即將推出的變更。"}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+以下專案將於2026年11月10日發佈到生產環境。
+
+>[!BEGINSHADEBOX]
+
+<!-- ACCS-1980 not included: storefront-router-service#410 (router schema sync) is still open -->
+
+### 變更退貨專案屬性
+
+新的`observer.rma_save_before` [webhook](https://developer.adobe.com/commerce/extensibility/webhooks/)可讓您在儲存傳回之前讀取傳回及其專案，然後修改屬性值。<!-- ACCS-2062 -->
+
+* 裝載包含儲存建立或編輯專案時的傳回專案，例如在[!DNL Commerce Admin]中建立傳回專案、透過REST或透過`requestReturn` GraphQL變異建立傳回專案。
+* webhook會在儲存傳回內容時執行。 如果必要的webhook失敗，則不會儲存傳回。
+
+### 包含送貨地址
+
+透過`POST /V1/orders`和`PUT /V1/orders/create` REST端點建立的新非虛擬訂單現在需要送貨地址。 沒有送貨地址的要求會傳回HTTP 400錯誤。 此變更可防止沒有出貨資訊的訂單造成訂單電子郵件失敗。<!-- CCSAAS-5351 -->
+
+若要建立沒有出貨地址的訂單，請執行下列步驟：
+
+* 當訂單僅包含數位產品時，將`is_virtual`設為`1`。
+* 使用`PUT /V1/carts/:cartId/order`端點從購物車下訂單。
+
+### 擷取[!DNL AEM Assets]類別影像
+
+`CategoryInterface`和`CategoryTree` GraphQL型別現在包含傳回從[!DNL AEM Assets]指派的類別影像的`asset_role_image`欄位。<!-- ACCS-2180 -->
+
+### 增強功能和錯誤修正
+
+此版本中包括下列選取的增強功能、最佳化和錯誤修正：
+
+* 修正在GraphQL產品查詢中傳回[!DNL AEM Assets]個產品影像卻無影像角色的問題。 若要還原在此修正前匯出的產品的影像角色，[重新同步產品資料摘要](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#manage-failed-exports)。<!-- ACCS-2180 -->
+
+* 修正當訂單專案也有自訂選項時，GraphQL訂單回應中`selected_options`缺少可設定的產品選項（例如顏色或大小）的問題。<!-- CCSAAS-5722 -->
+
+* 修正網站上的「公司通訊錄」規則套用至公司使用者，但公司已停用的問題。<!-- ACCS-2138 -->
+
+* 修正當您編輯具有已修改送貨地址的訂單時，`POST /V1/orders/:orderId/edit/start` REST端點傳回404錯誤的問題。<!-- ACCS-2220 -->
+
+* 修正傳送包含空值的選擇性傳回專案自訂屬性時，`requestReturn` GraphQL突變失敗的問題。<!-- CCSAAS-5628 -->
+
+* 修正在[!UICONTROL Update attributes]整批動作後刪除產品時，庫存處理可能停止的問題。<!-- CCSAAS-5713 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## 2026年10月 — 發行說#3
 
 <!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
