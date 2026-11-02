@@ -1,7 +1,7 @@
 ---
 title: 建議篩選器
 description: 瞭解如何使用篩選器來控制哪些產品會出現在[!DNL Adobe Commerce Optimizer]建議中。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]個專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]個專案（Adobe管理的SaaS基礎結構）。"
 exl-id: f6100538-23c0-4e90-9834-a895d4707282
 TQID: https://experienceleague.adobe.com/-pmVrAgEsSkn66K00-eaoQ4TF-7Xyxuwlniip1cR4HM
 product_v2:
@@ -17,9 +17,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: b5ef5e736e116d4321444cbaaeae90a08facf047
+source-git-commit: 8e3471bb89e2dd77c390ee1b8199c835a4f1e6bc
 workflow-type: tm+mt
-source-wordcount: '2407'
+source-wordcount: '2452'
 ht-degree: 0%
 ---
 # 篩選產品
@@ -247,6 +247,8 @@ ht-degree: 0%
 >[!NOTE]
 >
 >當您選取中繼資料集為`number`到`true`的屬性（例如&#x200B;**Size**）時，**Value**&#x200B;欄位會顯示範圍輸入，而非單一文字值。
+
+屬性清單取決於您選取的&#x200B;**目錄檢視**。 如果您選取&#x200B;**所有檢視**，則清單會以與第一個目錄檢視相關聯的目錄來源為基礎。 如果您選取特定目錄檢視，清單會以該檢視的目錄來源為基礎。
 
 #### 使用包含和排除條件
 
