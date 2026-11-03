@@ -80,7 +80,7 @@ ht-degree: 0%
 
 ## 安裝App Builder應用程式
 
-如果您需要從Adobe Exchange安裝App Builder應用程式（例如預先建立的整合或市集應用程式），請參閱[從Adobe Exchange安裝App Builder應用程式](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/install-app-builder-app){target="_blank"}以取得逐步指示。
+如果您需要從Adobe Exchange安裝App Builder應用程式（例如預先建立的整合或市集應用程式），請參閱[從Adobe Exchange安裝App Builder應用程式](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/install-app-builder-app){target="_blank"}以取得逐步指示。
 
 取得和部署App Builder應用程式後，組織便可使用該應用程式。 若要將其與Commerce執行個體搭配使用，[關聯應用程式](manage-app.md#associate-an-app)、[安裝其元件](manage-app.md#install-an-app) （若適用），以及[在[!DNL App Management]中設定其設定](manage-app.md#configure-settings)。
 
