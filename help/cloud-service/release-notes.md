@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: 43c00a414f95900a30103e56820d06077d530e0f
+source-git-commit: 9aba7b8541b7b067aa5eb751bf601542e8b3c43c
 workflow-type: tm+mt
-source-wordcount: '9823'
+source-wordcount: '9775'
 ht-degree: 0%
 ---
 # 發行說明
@@ -147,10 +147,6 @@ ht-degree: 0%
 ### 新增自訂變數以排序評論電子郵件
 
 `observer.email_order_comment_set_template_vars_before` [webhook](https://developer.adobe.com/commerce/extensibility/webhooks/)現已可用。 在轉譯電子郵件之前，使用它來新增或變更訂單註解電子郵件中的範本變數。<!-- ACCS-2087 -->
-
-### 匯出產品評等
-
-啟用產品評論時，每個產品的核准評論計數和平均評等會匯出至[!DNL Catalog Service]，做為`ac_review_count`和`ac_rating_summary`系統產品屬性。 店面可使用這些屬性來顯示產品評等。 當稽核摘要變更時，產品摘要會更新。 產品評論預設為停用。<!-- ACCS-2196 -->
 
 ### 商店信用退款
 
