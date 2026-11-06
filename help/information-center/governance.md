@@ -1,9 +1,9 @@
 ---
 title: Commerce資訊中心控管
 description: 瞭解Commerce資訊中心的內部治理模式。 未發佈至Experience League。
-source-git-commit: a91925091da28cd0745923894a3faab0374f0a0c
+source-git-commit: bd6b2a10f02498b94c8837a27490e943b630c5fc
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '578'
 ht-degree: 0%
 ---
 
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 ## 所有權
 
-Adobe Commerce檔案團隊擁有資訊中心。 它是在`Adobe-Enterprise-Docs/commerce.en`中撰寫，存放庫在`metadata.md`中列為`git-repo`。
+Adobe Commerce檔案團隊會管理從`Adobe-Enterprise-Docs/commerce.en` GitHub存放庫取得的資訊中心內容的接收程式、編輯稽核和發佈。
 
-沒有單一產品團隊擁有它，因為它是跨產品的。 將產品特定的更正升級至擁有產品團隊的檔案聯絡人，而不是在此處修正。
+沒有單一產品團隊擁有它，因為它是跨產品的。 產品和工程負責人應先核准內容，再提交ExL PR。 將產品特定的更正升級至擁有產品團隊的檔案聯絡人，而不是在此處修正。
 
 ## 資訊中心的內容
 
@@ -28,6 +28,8 @@ Adobe Commerce檔案團隊擁有資訊中心。 它是在`Adobe-Enterprise-Docs/
 - 資訊中心不會合併或遷移產品檔案，也不會記錄個別產品功能。 在撰寫新內容之前，先連結到現有的授權內容。
 
 ## 新增內容
+
+依照[COMDOX-1864](https://jira.corp.adobe.com/browse/COMDOX-1864)史詩中概述的程式，在COMDOX專案中建立JIRA票證以提交文章提案。 使用票證說明和AI來產生票證並將其連結到史詩。
 
 ### 現有區段中的文章
 
