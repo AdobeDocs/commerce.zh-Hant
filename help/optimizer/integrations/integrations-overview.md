@@ -5,11 +5,13 @@ solution: Commerce
 feature: Integration, Catalog Management
 role: Developer, Admin
 level: Beginner
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於[!DNL Adobe Commerce Optimizer]個專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於[!DNL Adobe Commerce Optimizer]個專案（Adobe管理的SaaS基礎結構）。"
 exl-id: 8f3a2c1b-9d4e-5f6a-bc7d-1e2f3a4b5c6d
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
+  - id: ef0c45ae-6bee-4821-a65e-e1e118e8a01c
+    internal-label: Commerce Optimizer
 feature_v2:
   - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
     internal-label: Integration
@@ -23,9 +25,9 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 972d2a1118daca17dc17a29e20ada593656960e1
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '570'
 ht-degree: 0%
 ---
 
@@ -34,13 +36,6 @@ ht-degree: 0%
 [!DNL Adobe Commerce Optimizer]包含可讓您在雲端或內部部署上從Adobe Commerce同步資料、管理資產、改善店面體驗，以及連線外部系統的整合。 以下各節說明每個整合如何與[!DNL Adobe Commerce Optimizer]搭配運作。 請依照連結進行設定、設定和日常使用。
 
 {{aco-integration-environment-alignment}}
-
-## Adobe Commerce Optimizer聯結器 {#aco-connector}
-
-Adobe Commerce Optimizer聯結器是在Adobe Commerce （雲端或內部部署）和[!DNL Adobe Commerce Optimizer]之間同步目錄和定價資料的橋接器。 啟用聯結器後，Commerce仍會是產品資料的記錄系統，而[!DNL Adobe Commerce Optimizer]會支援產品探索、建議、銷售規則、分析和Headless店面體驗。 若要限制可以查詢同步目錄檢視的使用者，請參閱[私人目錄檢視](../setup/private-catalog-view.md)。
-
-- [Adobe Commerce Optimizer聯結器總覽](../../aco-connector/overview.md){target="_blank"}
-- [開始使用聯結器](../../aco-connector/get-started.md){target="_blank"}
 
 ## 透過AEM Assets呈現產品視覺效果 {#product-visuals}
 
@@ -58,6 +53,20 @@ Adobe Experience Manager Sites Optimizer會分析Commerce網站，並藉由呈�
 >此功能需要&#x200B;**Ultima** Adobe Sites Optimizer授權。 您可以透過Adobe客戶技術顧問索取授權。 布建帳戶後，[!DNL Adobe Commerce Optimizer]介面中就會提供機會功能，您可以開始使用AI導向的深入分析來最佳化您的店面與銷售策略。
 
 - [機會](../manage-results/opportunities.md)
+
+## Adobe Commerce Optimizer聯結器 {#aco-connector}
+
+Adobe Commerce Optimizer聯結器是在Adobe Commerce （雲端或內部部署）和[!DNL Adobe Commerce Optimizer]之間同步目錄和定價資料的橋接器。 啟用聯結器後，Commerce仍會是產品資料的記錄系統，而[!DNL Adobe Commerce Optimizer]會支援產品探索、建議、銷售規則、分析和Headless店面體驗。 若要限制可以查詢同步目錄檢視的使用者，請參閱[私人目錄檢視](../setup/private-catalog-view.md)。
+
+- [Adobe Commerce Optimizer聯結器總覽](../../aco-connector/overview.md){target="_blank"}
+- [開始使用聯結器](../../aco-connector/get-started.md){target="_blank"}
+
+## 協力廠商購物車與結帳整合
+
+Adobe Commerce Optimizer可針對使用獨立commerce平台進行交易的店面，提供產品探索和銷售功能。 店面會使用Commerce Optimizer銷售服務API來處理產品資料、搜尋、建議和銷售。 主機商務平台仍負責購物者帳戶、購物車、結帳和訂單處理。 與主機平台的整合是自訂實施，使用API Mesh、App Builder、直接API或這些工具的組合。
+
+針對Salesforce Commerce Cloud (SFCC)，[Adobe Commerce Optimizer SFCC Checkout Starter Kit](https://github.com/adobe-commerce/aco-sfcc-checkout-starter-kit)提供範例Edge Delivery Services區塊和指令碼，用於將Adobe Commerce Optimizer店面連線至SFCC購物者、購物車和結帳功能。 將其用作參考實施，並將其調整為適合您的店面；它不是通用的現成聯結器。 也提供Next.js](https://github.com/adobe-commerce/aco-sfcc-storefront-next){target="_blank"}的[Headless店面範例。
+
 
 ## Commerce Salesforce聯結器 {#commerce-salesforce-connector}
 
