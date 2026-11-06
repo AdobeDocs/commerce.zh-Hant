@@ -13,9 +13,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 663a9e8e61850f3d34712971eb28f18893d56ad2
+source-git-commit: 0b52c20df4c64d3dd7e43f023e7b0f4517e8fcf7
 workflow-type: tm+mt
-source-wordcount: '1483'
+source-wordcount: '1486'
 ht-degree: 0%
 ---
 # 限制和邊界
@@ -81,7 +81,7 @@ ht-degree: 0%
 | --- | --- | --- | --- |
 | 產品視覺效果進階使用者 | 具有完整數位資產管理功能（包括AI工具、[!DNL Adobe Express]/[!DNL Firefly]整合和Content Hub共用）的授權使用者，可處理核心DAM任務和進階雲端原生功能以獲得最佳效率。 | 2 | 是<p>升級至[!DNL AEM Assets]授權</p> |
 | 產品視覺效果共同作業人員使用者 | 透過AEM Commerce整合存取及使用資產、使用[!DNL Adobe Express]和[!DNL Firefly]建立及編輯內容，以及（如果已啟用）透過Content Hub入口網站運用已核准的資產。 | 2 | 是<p>升級至[!DNL AEM Assets]授權</p> |
-| 產品視覺效果儲存 | 為資產配置的儲存空間 | 1 TB儲存空間 | 否 |
+| 產品視覺效果儲存 | 為資產配置的儲存空間 | 1 TB儲存空間 | 是<p>升級至[!DNL AEM Assets]授權</p> |
 | Dynamic Media使用情況 | 動態媒體處理作業的裕量，包括：<ul><li>影像傳送</li><li>智慧型影像</li><li>視訊傳送</li></ul><p>如需詳細資訊，請參閱下方的&#x200B;*計算Dynamic Media使用量*。 | 根據GMV （商品總值）<p>最小配置：每月500萬項作業</p> | 是<ul><li>購買其他操作的授權</li><li>升級至[!DNL AEM Assets]授權</li></ul> |
 | 視訊傳送 | 視訊傳送或下載的備抵 | 300部影片，每部影片1分鐘 | 是<p>升級至[!DNL AEM Assets]授權</p> |
 | 資產產生 | 存取用於建立影像的[!DNL Adobe Express]和[!DNL Adobe Firefly]產生AI | 無 | 單獨購買Generative AI積分 |

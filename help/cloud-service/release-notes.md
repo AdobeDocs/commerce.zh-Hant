@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: 9aba7b8541b7b067aa5eb751bf601542e8b3c43c
+source-git-commit: ab9c4d33ab0254c0c4ba990cd91ed01226d3abb9
 workflow-type: tm+mt
-source-wordcount: '9775'
+source-wordcount: '9964'
 ht-degree: 0%
 ---
 # 發行說明
@@ -92,7 +92,9 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-<!-- ACCS-1980 not included: storefront-router-service#410 (router schema sync) is still open -->
+### 將產品新增到購物車時套用自訂屬性
+
+您現在可以在`CartItemInput.custom_attributes`欄位中指定索引鍵/值配對陣列，將自訂屬性套用至具有[`addProductsToCart`突變](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/add-products)的購物車專案。<!-- ACCS-1980 -->
 
 ### 變更退貨專案屬性
 
@@ -100,6 +102,10 @@ ht-degree: 0%
 
 * 裝載包含儲存建立或編輯專案時的傳回專案，例如在[!DNL Commerce Admin]中建立傳回專案、透過REST或透過`requestReturn` GraphQL變異建立傳回專案。
 * webhook會在儲存傳回內容時執行。 如果必要的webhook失敗，則不會儲存傳回。
+
+### 從出貨排除料號
+
+新的`plugin.magento.out_of_process_shipping_methods.api.shipment_item_filter.filter` [webhook](https://developer.adobe.com/commerce/extensibility/webhooks/)可讓您從新出貨中排除訂單專案，例如第三方履行的專案。<!-- ACCS-2088 -->
 
 ### 包含送貨地址
 
@@ -113,6 +119,14 @@ ht-degree: 0%
 ### 擷取[!DNL AEM Assets]類別影像
 
 `CategoryInterface`和`CategoryTree` GraphQL型別現在包含傳回從[!DNL AEM Assets]指派的類別影像的`asset_role_image`欄位。<!-- ACCS-2180 -->
+
+### 擷取客戶商店信用餘額
+
+新的`GET /V1/customers/:customerId/balance` REST端點傳回客戶的存放區信用餘額。 此端點需要[!UICONTROL Manage Store Credit Balances]許可權。<!-- CCSAAS-5274 -->
+
+### 擷取商業發票專案資料列總計
+
+`InvoiceItemInterface` GraphQL型別現在包含`row_total`欄位，可傳回商業發票專案的已儲存列小計。<!-- USF-4460 -->
 
 ### 增強功能和錯誤修正
 
@@ -129,6 +143,16 @@ ht-degree: 0%
 * 修正傳送包含空值的選擇性傳回專案自訂屬性時，`requestReturn` GraphQL突變失敗的問題。<!-- CCSAAS-5628 -->
 
 * 修正在[!UICONTROL Update attributes]整批動作後刪除產品時，庫存處理可能停止的問題。<!-- CCSAAS-5713 -->
+
+* 修正放棄的購物車提醒電子郵件可能傳送其他提醒電子郵件的問題。<!-- CCSAAS-5707 -->
+
+* 修正未傳送價格及庫存補充警示電子郵件的問題。<!-- ACCS-2268 -->
+
+* 修正`plugin.magento.out_of_process_tax_management.api.oop_tax_collection.collect_taxes` webhook可能省略`custom_attributes`的問題。<!-- CEXT-6870, CEXT-6959 -->
+
+* 修正使用處理序外總計收集器時，`addProductsToCart` GraphQL突變可能傳回錯誤的問題。<!-- ACCS-2263, CEXT-6986 -->
+
+* 修正GraphQL購物車查詢與變動在購物車中刪除可設定產品後可能傳回錯誤的問題。<!-- CCSAAS-5721 -->
 
 {{accs-release}}
 
