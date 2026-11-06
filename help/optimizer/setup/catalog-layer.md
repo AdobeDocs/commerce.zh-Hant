@@ -3,7 +3,7 @@ title: 目錄圖層
 description: 瞭解目錄圖層如何讓您修改產品資料而不變更原始來源資料，以便您可以安全地自訂並隨時還原變更。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和 [!DNL Adobe Commerce Optimizer] 專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]個專案（Adobe管理的SaaS基礎結構）。"
 TQID: https://experienceleague.adobe.com/aeuD7Ev8AhkzIspV08x4ZTA9knMjZ3EObSZJpidY8QI
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -27,13 +27,11 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
+source-git-commit: 9b3448a40c2e829e09de5e394b0972c527ee0e9b
 workflow-type: tm+mt
-source-wordcount: 1533
+source-wordcount: '1493'
 ht-degree: 0%
-
 ---
-
 # 目錄圖層
 
 目錄圖層可讓您修改產品資料，而不變更原始來源資料。 圖層會透過在基本目錄上方建立圖層來修改產品屬性，例如名稱、說明、影像、連結和中繼資料。 您的原始產品資料會維持不變，可讓您安全地自訂產品，並隨時還原變更。
@@ -67,8 +65,6 @@ ht-degree: 0%
 * **產品視覺效果** — 將AEM Assets的產品影像套用為基底目錄頂端的圖層。
 
 ## AEM-Assets層
-
-當您啟用[產品視覺效果](product-visuals.md)時，AEM Assets整合會自動建立和管理專為AEM Assets內容使用的目錄層。 預設圖層名稱為`AEM-Assets`；不過，您可以在AEM Assets整合[&#128279;](../../aem-assets-integration/get-started/configure-aco.md)的上線期間指定自訂名稱。
 
 此圖層包含與AEM Assets同步的產品影像。 如同其他目錄圖層，它是透過[產品圖層API](https://developer.adobe.com/commerce/services/reference/rest/#tag/Product-Layers){target=_blank}填入。 Assets整合服務會將AEM資產中繼資料和傳送URL轉換為API格式，並在AEM Assets核准資產時自動傳送資料。
 
@@ -141,7 +137,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->若要進行大量圖層作業，請使用上述的資料擷取API方法[&#128279;](#add-a-catalog-layer-via-data-ingestion)。
+>若要進行大量圖層作業，請使用上述的資料擷取API方法[](#add-a-catalog-layer-via-data-ingestion)。
 
 **若要建立手動圖層：**
 
