@@ -21,9 +21,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 9b3448a40c2e829e09de5e394b0972c527ee0e9b
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '521'
 ht-degree: 0%
 ---
 
@@ -54,42 +54,13 @@ ht-degree: 0%
 
 更新的影像可透過店面API （目錄服務、即時搜尋、產品推薦）取得。
 
-### Source和圖層設定
-
-AEM Assets中的影像會透過以下來源設定擷取為目錄層：
-
-> 來源設定的範例
-
-```json
-{
-  "source": {
-    "locale": "en-US",
-    "layer": "AEM-Assets"
-  }
-}
-```
-
-此設定可確保將AEM Assets影像套用為基本產品目錄上的覆蓋圖。
-
-## 先決條件
-
-在啟用產品視覺效果之前，請確定您符合Commerce Optimizer[&#128279;](../../aem-assets-integration/get-started/configure-aco.md#prerequisites)的必要條件。
-
-## 設定
-
-若要啟用整合，請[建立支援票證](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/help-and-support/create-a-support-ticket)，其中包含您的[!DNL Commerce Optimizer]和AEM Assets詳細資料。 Adobe支援會設定整合，並在Assets整合服務中註冊您的租使用者。
-
-如需入門資訊，請參閱[設定Commerce Optimizer的AEM Assets](../../aem-assets-integration/get-started/configure-aco.md)。
-
 ### 設定AEM Assets中繼資料
 
 若要啟用自動產品比對，請在AEM Assets中使用Commerce中繼資料設定您的資產。
 
-請參閱[設定AEM Assets](../../aem-assets-integration/get-started/configure-aco.md#configure-aem-assets-first)，以取得必要的中繼資料欄位和步驟。
+請參閱[設定AEM Assets](../../aem-assets-integration/get-started/configure-aem.md)，以取得必要的中繼資料欄位和步驟。
 
 ## 限制
-
-在使用產品視覺效果之前，請檢閱[整合限制](../../aem-assets-integration/get-started/configure-aco.md#limitations) — 會影響AEM Assets資料與基本目錄合併方式的圖層相關限制。
 
 如需容量與使用量配置（資產儲存、Dynamic Media作業、使用者授權），請參閱&#x200B;_界限與限制指南_&#x200B;中的[產品視覺效果限制](../boundaries-limits.md#product-visuals-limits)。
 

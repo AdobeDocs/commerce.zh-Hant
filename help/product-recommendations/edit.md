@@ -15,18 +15,17 @@ role_v2:
 topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
     internal-label: Behavioral data
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 97fda73b4f68154aa6fe66eee61ef2d68be979ca
 workflow-type: tm+mt
-source-wordcount: 428
+source-wordcount: '443'
 ht-degree: 0%
-
 ---
-
 # 編輯建議
 
 「編輯建議」頁面可讓您調整構成建議的個別設定。 除了頁面型別和建議型別之外，所有設定都可以編輯。 可以編輯下列設定：
 
 - [建議名稱](#name)
+- [參考索引鍵](#reference-key)
 - [店面標籤](#label)
 - [產品數量](#number)
 - [位置和位置](#placement)
@@ -51,6 +50,10 @@ ht-degree: 0%
 選擇描述性名稱，以指出建議的用途。 此名稱僅供內部參考，不會出現在店面中。
 
 ![編輯名稱](assets/edit-name.png)
+
+### 參考索引鍵 {#reference-key}
+
+用來識別店面組態中建議單位的金鑰。
 
 ### 店面標籤 {#label}
 

@@ -19,9 +19,9 @@ topic_v2:
     internal-label: Behavioral data
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: b8dd0e31a1deac03b03bfeb90a09761b637e0a40
+source-git-commit: 1effb98aaefee32d6479ffdc0737367edc8d1a3a
 workflow-type: tm+mt
-source-wordcount: '1463'
+source-wordcount: '1665'
 ht-degree: 0%
 ---
 # 建立新建議
@@ -48,6 +48,8 @@ _建議單位_
 1. 按一下&#x200B;**建立建議**。
 
 1. 在&#x200B;_為您的建議命名_&#x200B;區段中，輸入描述性名稱以供內部參考，例如`Home page most popular`。
+
+1. [!BADGE 僅限SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service專案（Adobe管理的SaaS基礎結構）。"}在&#x200B;**店面參考**&#x200B;區段中，輸入參考索引鍵以在您的店面組態中識別此推薦單位。 建立建議後，您可以[從&#x200B;**建議單位詳細資料**&#x200B;複製其值](#get-the-storefront-reference-key)，並將其當做建議區塊中的`referenceKey`。 參考索引鍵是用於店面設定；店面顯示標籤是購物者看到的文字。
 
 1. 在&#x200B;_選取頁面型別_&#x200B;區段中，從下列選項中選取您要顯示建議的頁面：
 
@@ -101,6 +103,20 @@ _建議單位_
 >[!IMPORTANT]
 >
 >有些瀏覽器可能會封鎖導致「產品建議」無法如預期運作的重要指令碼。
+
+## 取得店面參考索引鍵
+
+[!BADGE 僅限SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service專案（Adobe管理的SaaS基礎結構）。"}建立建議後，請使用其參考索引鍵在店面設定建議單位。
+
+1. 開啟產品建議的詳細資料。
+
+   ![取得建議ID](./assets/get-ref-id.png)
+
+1. 從&#x200B;**參考索引鍵**&#x200B;區段複製值。
+
+   較舊的建議可能會顯示&#x200B;**[!UICONTROL Unit ID]**&#x200B;而非&#x200B;**[!UICONTROL Reference Key]**。 您可以繼續在店面中使用&#x200B;**[!UICONTROL Unit ID]**，但[!DNL Adobe Commerce]建議您更新現有的建議以使用&#x200B;**[!UICONTROL Reference Key]**。
+
+1. 在店面`product-recommendations`區塊中，使用此參考索引鍵在您的Edge Delivery Services店面上設定[建議下拉式清單](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/blocks/product-recommendations/)。
 
 ## 整備程度指標
 

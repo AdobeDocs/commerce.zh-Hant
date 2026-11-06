@@ -37,9 +37,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 9b3448a40c2e829e09de5e394b0972c527ee0e9b
 workflow-type: tm+mt
-source-wordcount: '1236'
+source-wordcount: '1109'
 ht-degree: 1%
 ---
 # 適用於Commerce的AEM Assets整合
@@ -161,22 +161,6 @@ AEM Assets整合可自動化資產管理工作流程，解決此難題。 此整
 1. [在Commerce管理員中設定整合](get-started/setup-synchronization.md)。
 
 1. 選填。 [啟用產品影像顯示](get-started/configure-storefront.md#enable-product-images)，讓Edge Delivery Services支援的店面可呈現AEM管理的產品影像。
-
->[!TAB Adobe Commerce Optimizer]
-
-僅[!BADGE SaaS]{type=Positive tooltip="僅適用於Adobe Commerce Optimizer專案。"}
-
-[!DNL Adobe Commerce Optimizer]它沒有管理員設定UI。 Adobe支援會從您的入門票證設定整合，因此請先準備AEM Assets。
-
-1. 若要支援Commerce中繼資料，[請設定AEM Assets專案](get-started/configure-aem.md)。 在AEM版本`2026.5.26309`和更新版本上，使用[自助上線](get-started/configure-aem.md#enable-aem-commerce-self-service)；在舊版上，手動安裝`assets-commerce`套件。
-
-1. [使用您的租使用者ID、AEM方案ID、AEM環境ID、相符的規則、層級和區域設定，提交上線支援票證](get-started/configure-aco.md#onboarding)。
-
-1. [使用您在票證中註冊的相同地區設定和圖層來設定您的目錄檢視](get-started/configure-aco.md#onboarding)。
-
-1. 選填。 [啟用產品影像顯示](get-started/configure-storefront.md#enable-product-images)，讓Edge Delivery Services支援的店面可呈現AEM管理的產品影像。
-
-   如需完整程式、限制和圖層指南，請參閱[設定Commerce Optimizer的AEM Assets](get-started/configure-aco.md)。
 
 >[!ENDTABS]
 

@@ -24,9 +24,9 @@ topic_v2:
     internal-label: Personalization
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: f316b57d365b8952223d4d250ac14f113cf48601
+source-git-commit: 0be21c4e838dabb8871eecbfc6c36c34af2d3ff0
 workflow-type: tm+mt
-source-wordcount: '1547'
+source-wordcount: '1612'
 ht-degree: 0%
 ---
 # 建立和管理建議
@@ -48,6 +48,8 @@ _建議單位_
 
 1. 在&#x200B;_為您的建議命名_&#x200B;區段中，輸入描述性名稱以供內部參考，例如`Home page most popular`。
 
+1. 在&#x200B;**店面參考**&#x200B;區段中，輸入參考索引鍵，以在您的店面組態中識別此推薦單位。 建立建議後，您可以[從&#x200B;**建議單位詳細資料**&#x200B;複製其值](#get-the-storefront-reference-key)，並將其當做建議區塊中的`referenceKey`。 參考索引鍵是用於店面設定；店面顯示標籤是購物者看到的文字。
+
 1. 在&#x200B;_選取建議型別_&#x200B;區段中，根據您的策略指定您想要的[建議型別](types.md)。
 
 1. 在&#x200B;_店面顯示標籤_&#x200B;區段中，輸入購物者可見的[標籤](best-practice.md#recommendation-labels)，例如「最暢銷商品」。
@@ -66,7 +68,7 @@ _建議單位_
 
    - **啟動**&#x200B;以啟用店面上的推薦單位。
 
-   您的建議會顯示在Recommendations工作區上。 若要在店面使用建議，您必須尋找[建議ID](#get-recommendation-id)。
+   您的建議會顯示在Recommendations工作區上。 若要在店面使用建議，您需要[建議ID或參考索引鍵](#get-the-recommendation-id-or-reference-key)。
 
 >[!NOTE]
 >
@@ -98,21 +100,17 @@ _建議產品預覽_&#x200B;面板總是隨建議單位部署至店面時可能�
 
 針對多店面、多語言或多品牌設定，您可以設定每個建議是套用至所有目錄檢視（全域）還是套用至單一[目錄檢視](../../setup/catalog-view.md)。 進一步瞭解使用建議時如何[設定目錄檢視](../../manage-results/recommendation-performance.md#select-catalog-view)。
 
-## 取得建議ID
+## 取得店面參考索引鍵
 
-建立建議後，您需要擷取其ID，以在您的店面實施建議單位。
+建立建議後，請使用其參考索引鍵在店面設定建議單位。
 
-1. 在&#x200B;**Recommendations**&#x200B;頁面上，選取建議。
+1. 在&#x200B;**建議**&#x200B;頁面上，按一下建議名稱旁的資訊圖示（![資訊圖示](../../assets/info-icon.png)）以開啟&#x200B;**建議單位詳細資料**&#x200B;頁面。
 
-1. 按一下建議名稱旁邊的資訊圖示（![資訊圖示](../../assets/info-icon.png)）。
+   ![取得建議ID](../../assets/get-ref-id.png)
 
-   顯示&#x200B;**建議單位詳細資料**&#x200B;頁面。
+1. 從&#x200B;**店面參考索引鍵**&#x200B;區段複製值。
 
-   ![取得建議ID](../../assets/get-rec-id.png)
-
-1. 在&#x200B;**建議ID**&#x200B;區段中，複製ID。
-
-1. 使用此ID在您的Edge Delivery Services店面設定[建議放置區](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/blocks/product-recommendations/)。
+1. 在店面`product-recommendations`區塊中，使用此參考索引鍵在您的Edge Delivery Services店面上設定[建議下拉式清單](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/blocks/product-recommendations/)。
 
 ## 管理現有的建議
 
@@ -127,6 +125,7 @@ _建議產品預覽_&#x200B;面板總是隨建議單位部署至店面時可能�
 1. 在功能表中，您可以&#x200B;**停用**、**刪除**&#x200B;或&#x200B;**編輯**&#x200B;建議。 如果您選取&#x200B;**編輯**，您可以視需要調整下列設定：
 
    - 建議名稱
+   - 參考索引鍵
    - 店面標籤
    - 產品數量
    - 篩選產品

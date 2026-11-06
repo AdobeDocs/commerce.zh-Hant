@@ -1,6 +1,7 @@
 ---
 title: 設定適用於Commerce Optimizer的AEM Assets
 description: 瞭解如何設定[!DNL Adobe Commerce Optimizer]的AEM Assets整合。
+hide: true
 feature: CMS, Media, Configuration, Integration
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -17,7 +18,7 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 9b3448a40c2e829e09de5e394b0972c527ee0e9b
 workflow-type: tm+mt
 source-wordcount: '1247'
 ht-degree: 0%
