@@ -1,17 +1,25 @@
 ---
-source-git-commit: b1efdefbf40a258d3a426284ebff18bdc6b7ee5f
+source-git-commit: 1ae5d65ee5d00924657c36059250d38642777c34
 workflow-type: tm+mt
-source-wordcount: '1112'
+source-wordcount: '1447'
 ht-degree: 0%
 ---
 # 新功能範本
 
 ## 新增功能
 
-此頁面包含過去60天所做的變更。 我們將從此清單中排除所有微幅更新，例如複製編輯。
+此頁面包含過去60天所做的變更。 微幅更新（例如複製編輯）會從此清單中排除。
 
 | 說明 | 型別 | 日期/來源 |
 | --- | --- | --- |
+| 記錄產品建議的新參考金鑰欄位，您可以使用它來設定店面`product-recommendations`區塊：<br/> — 已更新[建立和管理建議](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/merchandising/recommendations/create)，包含參考金鑰建立、擷取和管理步驟。<br/> — 已更新[建立新建議](https://experienceleague.adobe.com/zh-hant/docs/commerce/product-recommendations/admin/create)，包含參考金鑰建立和擷取步驟。<br/> — 已更新[使用可編輯的參考金鑰設定編輯建議](https://experienceleague.adobe.com/zh-hant/docs/commerce/product-recommendations/admin/edit)。 | 重大更新 | [2026年11月6日](https://github.com/AdobeDocs/commerce.en/commit/a69eec87f2386d06741f6cd865de0f37567b0b3b) |
+| 已新增Adobe Commerce as a Cloud Service的沙箱[發行說明](https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes)。 | 發行說明 | [2026年11月5日](https://github.com/AdobeDocs/commerce.en/commit/8da72aa99416dc0925c1a033859bc70cb30a2aa4) |
+| 新增[Managed Operations](https://experienceleague.adobe.com/zh-hant/docs/commerce/information-center/explore-platforms-and-services/managed-operations)，說明適用於Adobe Commerce as a Cloud Service的全新進階產品，新增指定的客戶成功工程師及全天候監控。 | 新主題 | [2026年11月5日](https://github.com/AdobeDocs/commerce.en/commit/489e7d71d58d1ad8d2a804bddddabdfebb746935) |
+| 已新增Adobe Commerce as a Cloud Service的沙箱[發行說明](https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes)。 | 發行說明 | [2026年10月29日](https://github.com/AdobeDocs/commerce.en/commit/88e85aa9c9456a52c9efb18505389fb99ef113c5) |
+| 新增如何[透過Adobe支援，要求將支援的[!DNL Live Search] Facet限制從100個增加到500個Facet增加](https://experienceleague.adobe.com/zh-hant/docs/commerce/live-search/boundaries-limits)的資訊。 | 技術意見回饋 | [2026年10月29日](https://github.com/AdobeDocs/commerce.en/commit/bcb4f6eefcd1a2d11e01a3bef92b1a0fb878f091) |
+| 新增[SaaS Data Export Extension 103.6.0](https://experienceleague.adobe.com/zh-hant/docs/commerce/saas-data-export/release-notes)的發行說明，新增對評論計數(ac_review_count)和平均評分(ac_rating_summary)的匯出支援，以在Commerce前端顯示評論計數和星級評等。 | 發行說明 | [2026年10月28日](https://github.com/AdobeDocs/commerce.en/commit/ce6eb687b61b03ae15856575a83a83a866eb090c) |
+| 已新增[發行說明](https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes)區段來說明Unified Shell中的新Commerce管理員UI。 | 重大更新 | [2026年10月28日](https://github.com/AdobeDocs/commerce.en/commit/deeb39e389025bc472e7a8e1502ad846b8844fa0) |
+| 已新增Adobe Commerce as a Cloud Service的生產[發行說明](https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes)。 | 發行說明 | [2026年10月28日](https://github.com/AdobeDocs/commerce.en/commit/602e3adbbe2e238c46b249ec9dd057a46e2b6456) |
 | 更新最新[source log-codes.md](https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md)的[資料匯出記錄檔代碼參考](https://experienceleague.adobe.com/zh-hant/docs/commerce/saas-data-export/logs-troubleshooting/log-codes-reference)。 | 技術 | [2026年10月26日](https://github.com/AdobeDocs/commerce.en/commit/fd4ea4603999043844c786da3ab1e84fb8d4d4aa) |
 | <br/>Payment Services 2.17.0檔案新增了選擇性[PayPal Express稽核頁面](https://experienceleague.adobe.com/zh-hant/docs/commerce/payment-services/payments-checkout/payments-options#paypal-express-review-page)和[超額擷取](https://experienceleague.adobe.com/zh-hant/docs/commerce/payment-services/payments-checkout/manage/over-capture)的指引，包括設定、資格和發票工作流程。 | 重大更新 | [2026年10月23日](https://github.com/AdobeDocs/commerce.en/commit/d2bcc58f34af50f26d4a4f082e5b3fc30089ab58) |
 | 新增[Commerce資訊中心](https://experienceleague.adobe.com/zh-hant/docs/commerce/information-center/overview)，這是客戶和合作夥伴探索Adobe Commerce方案、比較實作架構以及規劃移轉與整合的新起點。 包含適用於店面、支付、Commerce服務、AEM Assets、Adobe Commerce Optimizer、沙箱環境和Adobe Experience Platform的角色型導覽和實施指南，以及詳細產品檔案的連結。 | 重大更新，新主題 | [2026年10月21日](https://github.com/AdobeDocs/commerce.en/commit/fcb3c575a9af82ee75408fba4b4fe7cee5dbffa4) |
@@ -31,4 +39,3 @@ ht-degree: 0%
 | 更新[移轉總覽](https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/migration/overview)以說明Commerce Developer Agent如何協助移轉程式。 | 重大更新 | [2026年9月24日](https://github.com/AdobeDocs/commerce.en/commit/739eabe6f43412610862ab00516687ad5aeeac53) |
 | 已新增Adobe Commerce as a Cloud Service的生產[發行說明](https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes)。 | 重大更新 | [2026年9月23日](https://github.com/AdobeDocs/commerce.en/commit/d879d372a199c24d266abdfb79d1ff0af164d75b) |
 | 已新增Adobe Commerce as a Cloud Service的沙箱[發行說明](https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes)。 | 重大更新 | [2026年9月17日](https://github.com/AdobeDocs/commerce.en/commit/7f70bbf40218de2cec3482e1bc4d135d1a9022ae) |
-| 已新增Adobe Commerce as a Cloud Service的生產[發行說明](https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes)。 | 重大更新 | [2026年9月8日](https://github.com/AdobeDocs/commerce.en/commit/bd99dda50f68395eb23c62a1e8061a7198678a65) |

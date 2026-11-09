@@ -22,7 +22,7 @@ role_v2:
     internal-label: Leader
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: b3ce7cadce74310cef2b7253b965eccb4a17107d
 workflow-type: tm+mt
 source-wordcount: '806'
 ht-degree: 0%
@@ -64,7 +64,7 @@ ht-degree: 0%
 
 1. 測試完成時，還原您的原始基底URL設定。
 
-如果端點的回應時間少於5秒，PayPal會在快顯視窗中顯示錯誤訊息。
+如果端點的回應時間超過5秒，PayPal會在快顯視窗中顯示錯誤訊息。
 
 #### Apple Pay本機開發
 
