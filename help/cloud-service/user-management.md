@@ -34,9 +34,9 @@ level_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 8ed4d2fa87f7a91c3c9c21817391003488c55046
 workflow-type: tm+mt
-source-wordcount: '1841'
+source-wordcount: '1961'
 ht-degree: 0%
 ---
 # 使用者與Identity Management
@@ -54,6 +54,8 @@ ht-degree: 0%
 ## 瞭解角色
 
 下列角色適用於[!DNL Adobe Commerce as a Cloud Service]。 若要檢視或編輯這些角色，請在Commerce管理員中導覽至&#x200B;[!UICONTROL **系統**] > [!UICONTROL **許可權**] > [!UICONTROL **使用者角色**]。
+
+您可以在「Commerce管理員」中建立自訂角色，比標準Adobe Admin Console角色提供更精細的許可權。 使用者之後透過Adobe IMS登入時，會保留自訂Commerce角色和指派。 使用者仍必須擁有透過Adobe Admin Console存取Adobe Commerce as a Cloud Service例項的許可權。 若要建立自訂角色，[請在Commerce管理員中定義角色](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/user-accounts/permissions-user-roles#define-a-role)。
 
 * **使用者** — 使用者擁有Commerce管理員的管理員存取權，但無法在Admin Console中管理產品層級的存取權。 使用者也可以使用積分在[!DNL Commerce Cloud Manager]中[建立執行個體](./getting-started.md#create-an-instance)。
 
@@ -134,6 +136,8 @@ ht-degree: 0%
 ## 新增使用者
 
 下列指示提供如何將使用者新增到[!DNL Commerce Cloud Manager]和Commerce管理員的資訊。 [!DNL Commerce Cloud Manager]介面可讓您建立和管理Commerce執行個體。 所有使用者（包括開發人員和管理員）都必須進行此程式。
+
+若要建立自訂角色，您可以[在Adobe Admin Console管理員中定義角色](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/user-accounts/permissions-user-roles#define-a-role)，而不是使用Commerce中定義的更廣泛角色。
 
 >[!NOTE]
 >

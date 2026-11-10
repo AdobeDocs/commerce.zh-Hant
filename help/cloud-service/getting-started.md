@@ -48,9 +48,9 @@ level_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 19c1c7d4cfaa6192169e8005e6bb323a0940d875
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1348'
 ht-degree: 0%
 ---
 # 快速入門
@@ -125,7 +125,7 @@ ht-degree: 0%
 | 瞭解平台 | 瞭解Adobe Commerce as a Cloud Service架構和優點 | [總覽](overview.md) |
 | 比較功能 | 瞭解Cloud Service與其他Adobe Commerce方案之間的差異 | [功能比較](feature-comparison.md) |
 | 建立執行個體 | 布建沙箱和生產環境 | [建立執行個體](#create-an-instance) |
-| 設定使用者管理 | 新增使用者、指派角色及管理許可權 | [使用者管理](user-management.md) |
+| 設定使用者管理 | 透過Adobe Admin Console新增使用者及管理存取權，以及在Commerce Admin中設定角色和許可權。 | [使用者管理](user-management.md) |
 | 設定[!DNL AEM Assets]和[!DNL Product Visuals] （選擇性） | 新增使用者、指派角色及管理許可權 | [使用者管理](user-management.md#add-a-user-to-aem-assets-or-product-visuals) |
 
 >[!TAB 商家]
