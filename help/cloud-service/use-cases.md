@@ -42,9 +42,9 @@ topic_v2:
     internal-label: Experimentation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: b2859807f154770698ad4bcc8fd1acbc81c0114f
 workflow-type: tm+mt
-source-wordcount: '1468'
+source-wordcount: '1467'
 ht-degree: 0%
 ---
 # 使用案例
@@ -71,7 +71,7 @@ ht-degree: 0%
 
 ### 啟用付款服務
 
-1. 在Commerce管理員中，瀏覽至&#x200B;[!UICONTROL **商店**] > [!UICONTROL Settings] > [!UICONTROL **設定**] > [!UICONTROL **付款方法**]。
+1. 在Commerce管理員中，瀏覽至&#x200B;[!UICONTROL **商店**] > [!UICONTROL **付款方法**]。
 
 1. 在&#x200B;[!UICONTROL **一般組態**]&#x200B;區段中，輸入您的`Payment Services Sandbox ID`和`Payment Services Sandbox Key`。 您可以依照[沙箱上線](../payment-services/sandbox.md#sandbox-onboarding){target="_blank"}中所述的步驟來取得這些ID
 

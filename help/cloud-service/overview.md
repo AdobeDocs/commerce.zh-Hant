@@ -64,9 +64,9 @@ topic_v2:
     internal-label: Security
   - id: da3860b0-d637-47df-bef0-273751180266
     internal-label: Digital asset management
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 7b6ed19c7ca30a72bda94c8af60ba27324bcb2ea
 workflow-type: tm+mt
-source-wordcount: '1458'
+source-wordcount: '1418'
 ht-degree: 0%
 ---
 # [!DNL Adobe Commerce as a Cloud Service] 概覽
@@ -89,7 +89,7 @@ ht-degree: 0%
       <img src="../assets/icon-checkmark-circle-outline.svg" alt="核取記號" align="center"> <strong>銷售服務</strong>
     </td>
     <td align="left">
-      管理產品目錄、定價和存貨的後端服務
+      管理產品目錄和定價的後端服務。 依預設，新組織會使用可撰寫的目錄資料模型(CCDM)。
     </td>
   </tr>
   <tr>
@@ -124,25 +124,20 @@ ht-degree: 0%
 
 若要使用[!DNL Storefront Builder]的簡單檔案式撰寫或視覺化編輯，在幾分鐘內建立豐富體驗，請使用Adobe的[[!DNL Commerce Storefront]](https://experienceleague.adobe.com/en/tools/commerce-storefront/) （由[!DNL Edge Delivery Services]提供技術支援）。
 
-[!DNL Commerce Storefront]採用分離式架構，可透過GraphQL API層提供所有Adobe Merchandising服務和資料，因此完全採用Headless。 此架構讓團隊可獨立於Commerce Foundation開發他們的前端，提供使用新興技術建立和測試新接觸點的靈活性。
+[!DNL Commerce Storefront]採用分離式架構，透過GraphQL API層提供銷售服務和資料，完全無外掛程式。 此架構讓團隊可獨立於Commerce Foundation開發他們的前端，提供使用新興技術建立和測試新接觸點的靈活性。
 
 >[!NOTE]
 >
 >[!DNL Adobe Commerce as a Cloud Service]不支援Luma店面。 如果您是從[!DNL Adobe Commerce on Cloud]或內部部署移轉，請參閱[現有店面](https://experienceleague.adobe.com/en/tools/commerce-storefront/discovery/#existing-storefronts)以取得轉換指南。
 
-## Adobe Merchandising服務與支付服務
+## 銷售與付款服務
 
-Adobe提供豐富的智慧型可撰寫銷售服務，協助您支援關鍵業務目標。 這些服務也提供對大規模最佳化效能至關重要的應用程式開發介面。
+Merchandising Services支援[!DNL Adobe Commerce as a Cloud Service]中的兩個目錄資料模型：
 
-- [[!DNL Live Search]](../live-search/overview.md) — 使用此AI支援的搜尋工具，為購物者提供更聰明、更快速且相關的結果。 如需設定指示，請參閱[設定 [!DNL Live Search]](../live-search/workspace.md)。
-- [[!DNL Product Recommendations]](../product-recommendations/overview.md) — 根據購物者行為、熱門趨勢、產品相似度等，新增AI支援的建議。 如需設定指示，請參閱[[!DNL Product Recommendations] Workspace](../product-recommendations/workspace.md)。
-- [目錄服務](../catalog-service/guide-overview.md) — 提供客戶最佳化的產品體驗，同時提升效能、改善擴充能力，並提高轉換率。
+- **目錄服務模型** — 使用[!DNL Catalog Service]搭配[!DNL Live Search]和[!DNL Product Recommendations]向店面提供目錄資料、搜尋和推薦。
+- [**可撰寫的目錄資料模型(CCDM)**(merchandising-services.md)] — 使用目錄檢視、原則、目錄來源和價格簿來定義可供儲存區域使用的產品和價格。 CCDM也是[!DNL Adobe Commerce Optimizer]的目錄基礎。
 
-  >[!NOTE]
-  >
-  >目錄服務已自動與[!DNL Live Search]和[!DNL Product Recommendations]一併納入。
-
-- [付款服務](../payment-services/guide-overview.md) — 提供多種付款方式，包括免息分期付款，以及單一檢視處理、訂購及發票等方式，提升客戶滿意度。 如需設定指示，請參閱[付款服務首頁](../payment-services/payments-home.md)。
+[付款服務](../payment-services/guide-overview.md)支援付款方式，並提供付款處理、訂單及發票的檢視。 如需設定指示，請參閱[付款服務首頁](../payment-services/payments-home.md)。
 
 ## [!DNL Product Visuals powered by AEM Assets]
 
@@ -238,7 +233,7 @@ Adobe提供下列開發人員工具，用於建立整合與自訂：
 
 ### 簡化入門
 
-使用[!UICONTROL Commerce Cloud Manager]自助布建入口網站，在幾分鐘內啟動沙箱和生產執行個體。 您所需的一切（包括銷售服務、Headless Commerce執行個體和[!DNL App Builder]）都會自動設定，並與您的執行個體整合。
+使用[!UICONTROL Commerce Cloud Manager]自助布建入口網站，在幾分鐘內啟動沙箱和生產執行個體。 您所需的基礎結構（包括銷售服務、Headless Commerce執行個體和[!DNL App Builder]）會自動設定，並與執行個體整合。
 
 請參閱[快速入門](getting-started.md)，瞭解如何建立和管理Commerce執行個體。
 

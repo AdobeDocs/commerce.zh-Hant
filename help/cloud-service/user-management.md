@@ -34,9 +34,9 @@ level_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 8ed4d2fa87f7a91c3c9c21817391003488c55046
+source-git-commit: 560ae770ae76d28e3358fb4f195aa1f2a03362c8
 workflow-type: tm+mt
-source-wordcount: '1961'
+source-wordcount: '1959'
 ht-degree: 0%
 ---
 # 使用者與Identity Management
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 ## 瞭解角色
 
-下列角色適用於[!DNL Adobe Commerce as a Cloud Service]。 若要檢視或編輯這些角色，請在Commerce管理員中導覽至&#x200B;[!UICONTROL **系統**] > [!UICONTROL **許可權**] > [!UICONTROL **使用者角色**]。
+下列角色適用於[!DNL Adobe Commerce as a Cloud Service]。 若要檢視或編輯這些角色，請在Commerce管理員中導覽至&#x200B;[!UICONTROL **系統**] > [!UICONTROL **使用者角色**]。
 
 您可以在「Commerce管理員」中建立自訂角色，比標準Adobe Admin Console角色提供更精細的許可權。 使用者之後透過Adobe IMS登入時，會保留自訂Commerce角色和指派。 使用者仍必須擁有透過Adobe Admin Console存取Adobe Commerce as a Cloud Service例項的許可權。 若要建立自訂角色，[請在Commerce管理員中定義角色](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/user-accounts/permissions-user-roles#define-a-role)。
 
@@ -203,7 +203,7 @@ ht-degree: 0%
 
 ## 角色資源
 
-下列清單說明預設角色在[!DNL Adobe Commerce] Admin內有權存取的資源。 若要編輯每個角色的預設許可權，請瀏覽至Commerce管理員中的&#x200B;[!UICONTROL **系統**] > [!UICONTROL **許可權**] > [!UICONTROL **使用者角色**]。
+下列清單說明預設角色在[!DNL Adobe Commerce] Admin內有權存取的資源。 若要編輯每個角色的預設許可權，請瀏覽至Commerce管理員中的&#x200B;[!UICONTROL **系統**] > [!UICONTROL **使用者角色**]。
 
 **位使用者**
 

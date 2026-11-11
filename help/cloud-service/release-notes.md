@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: ab9c4d33ab0254c0c4ba990cd91ed01226d3abb9
+source-git-commit: 2123503aaa8088baab9b9a5e3ce9c3036518061e
 workflow-type: tm+mt
-source-wordcount: '9964'
+source-wordcount: '10011'
 ht-degree: 0%
 ---
 # 發行說明
@@ -84,11 +84,11 @@ ht-degree: 0%
 
 ## 2026年11月 — 發行說#1 {#latest}
 
-[!BADGE 沙箱]{type=Caution tooltip="列出的專案目前僅在沙箱環境中可用。 Adobe會先在沙箱環境中推出新版本，讓您可以在生產環境中使用該版本之前有時間測試即將推出的變更。"}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE 生產]{type=Neutral tooltip="列出的專案目前可在生產環境中使用。"}
 
-以下專案將於2026年11月10日發佈到生產環境。
+以下專案已於2026年11月10日發佈到生產環境。
 
 >[!BEGINSHADEBOX]
 
@@ -109,7 +109,7 @@ ht-degree: 0%
 
 ### 包含送貨地址
 
-透過`POST /V1/orders`和`PUT /V1/orders/create` REST端點建立的新非虛擬訂單現在需要送貨地址。 沒有送貨地址的要求會傳回HTTP 400錯誤。 此變更可防止沒有出貨資訊的訂單造成訂單電子郵件失敗。<!-- CCSAAS-5351 -->
+透過`POST /V1/orders`和`PUT /V1/orders/create` REST端點建立的新非虛擬訂單現在需要[送貨地址](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/order-management#shipping-address-requirement-for-new-orders)。 沒有送貨地址的要求會傳回HTTP 400錯誤。 此變更可防止沒有出貨資訊的訂單造成訂單電子郵件失敗。<!-- CCSAAS-5351 -->
 
 若要建立沒有出貨地址的訂單，請執行下列步驟：
 
@@ -118,15 +118,15 @@ ht-degree: 0%
 
 ### 擷取[!DNL AEM Assets]類別影像
 
-`CategoryInterface`和`CategoryTree` GraphQL型別現在包含傳回從[!DNL AEM Assets]指派的類別影像的`asset_role_image`欄位。<!-- ACCS-2180 -->
+`CategoryInterface`和`CategoryTree` GraphQL型別現在包含傳回從[!DNL AEM Assets]指派的類別影像的[`asset_role_image`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/interfaces/category#aem-assets-category-images)欄位。<!-- ACCS-2180 -->
 
 ### 擷取客戶商店信用餘額
 
-新的`GET /V1/customers/:customerId/balance` REST端點傳回客戶的存放區信用餘額。 此端點需要[!UICONTROL Manage Store Credit Balances]許可權。<!-- CCSAAS-5274 -->
+新的[`GET /V1/customers/:customerId/balance`](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/store-credit#retrieve-a-customers-store-credit-balance) REST端點傳回客戶的存放區信用餘額。 此端點需要[!UICONTROL Manage Store Credit Balances]許可權。<!-- CCSAAS-5274 -->
 
 ### 擷取商業發票專案資料列總計
 
-`InvoiceItemInterface` GraphQL型別現在包含`row_total`欄位，可傳回商業發票專案的已儲存列小計。<!-- USF-4460 -->
+[`InvoiceItemInterface`](https://developer.adobe.com/commerce/webapi/graphql/schema/orders/interfaces/invoice-item#invoice-item-row-totals) GraphQL型別現在包含`row_total`欄位，可傳回商業發票專案的已儲存列小計。<!-- USF-4460 -->
 
 ### 增強功能和錯誤修正
 
@@ -153,6 +153,8 @@ ht-degree: 0%
 * 修正使用處理序外總計收集器時，`addProductsToCart` GraphQL突變可能傳回錯誤的問題。<!-- ACCS-2263, CEXT-6986 -->
 
 * 修正GraphQL購物車查詢與變動在購物車中刪除可設定產品後可能傳回錯誤的問題。<!-- CCSAAS-5721 -->
+
+* 修正儲存或擷取具有許多已儲存地址的客戶時可能逾時的問題。<!-- CCSAAS-5599 -->
 
 {{accs-release}}
 

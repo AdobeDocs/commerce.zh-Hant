@@ -51,9 +51,9 @@ topic_v2:
     internal-label: Security
   - id: da3860b0-d637-47df-bef0-273751180266
     internal-label: Digital asset management
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 92240ffdb1444d600679ad8392902f543b0d84e3
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1111'
 ht-degree: 0%
 ---
 # 功能比較
@@ -98,7 +98,10 @@ Adobe Commerce提供三種部署模式：
         <tr>
             <td>目錄銷售</td>
             <td><a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/content-design/staging/content-staging">內容暫存</a>，<a href="https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/marketing/merchandising/visual-merch/visual-merchandiser">Visual Merchandiser</a></td>
-            <td><a href="../catalog-service/overview.md">目錄服務</a></td>
+            <td>
+                <p><strong>可撰寫目錄資料模型(CCDM)：</strong> <a href="../optimizer/setup/catalog-view.md">銷售服務</a>使用目錄檢視、原則、目錄來源及價格手冊來定義店面目錄內容。</p>
+                <p><strong>原始目錄服務模型：</strong> <a href="../catalog-service/guide-overview.md">目錄服務</a>提供目錄資料以及即時搜尋和產品建議。</p>
+            </td>
         </tr>
         <tr>
             <td>付款</td>
@@ -214,8 +217,8 @@ Adobe Commerce提供三種部署模式：
         </tr>
         <tr>
             <td>應用程式市集</td>
-            <td>適用於[!DNL App Builder]應用程式的[Magento Marketplace](https://marketplace.magento.com/) （PHP擴充功能）和[Exchange Marketplace](https://commercemarketplace.adobe.com) （建議使用）</td>
-            <td>[!DNL App Builder] 來自[[!DNL Exchange Marketplace]](https://commercemarketplace.adobe.com)的應用程式</td>
+            <td>[!DNL App Builder]應用程式的<a href="https://marketplace.magento.com/">Magento Marketplace</a> （PHP延伸模組）和<a href="https://commercemarketplace.adobe.com">Exchange Marketplace</a> （建議使用）</td>
+            <td>[!DNL App Builder] 應用程式來源 <a href="https://commercemarketplace.adobe.com">[!DNL Exchange Marketplace]</a></td>
         </tr>
         <tr>
             <td colspan="3" style="background:lightgray;"><strong>資料與儲存</strong></td>
@@ -256,4 +259,3 @@ Adobe Commerce提供三種部署模式：
 >- 請考慮使用[!DNL API Mesh]來擴充API功能。
 >- 監控Adobe的持續平台演化和新功能發行。
 >- 根據可用的擴充性選項評估特定產業資料模型的需求。
-
