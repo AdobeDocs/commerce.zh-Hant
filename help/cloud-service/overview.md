@@ -5,7 +5,7 @@ feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
 level: Beginner
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
 autotag-review: '2026-06-18T16:02:31.185Z'
 TQID: 'https://experienceleague.adobe.com/D1Aq9qlw2HprQUy-g5KcIH2Ky2XUDawZIrAbe2Jz6ZI'
 product_v2:
@@ -64,9 +64,9 @@ topic_v2:
     internal-label: Security
   - id: da3860b0-d637-47df-bef0-273751180266
     internal-label: Digital asset management
-source-git-commit: 7b6ed19c7ca30a72bda94c8af60ba27324bcb2ea
+source-git-commit: 213fcf83118eb60b0e80db224192963592945d8d
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1416'
 ht-degree: 0%
 ---
 # [!DNL Adobe Commerce as a Cloud Service] 概覽
@@ -114,7 +114,7 @@ ht-degree: 0%
 
 請參閱下列影片，瞭解[!DNL Adobe Commerce as a Cloud Service]架構的簡介。 說明此架構的圖表會顯示在影片下方。
 
->[!VIDEO](https://video.tv.adobe.com/v/3443278?captions=chi_hant&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3443232?learn=on)
 
 此圖表說明[!DNL Adobe Commerce as a Cloud Service]與所有Adobe Experience Cloud解決方案之間的資料流程。
 
@@ -135,7 +135,7 @@ ht-degree: 0%
 Merchandising Services支援[!DNL Adobe Commerce as a Cloud Service]中的兩個目錄資料模型：
 
 - **目錄服務模型** — 使用[!DNL Catalog Service]搭配[!DNL Live Search]和[!DNL Product Recommendations]向店面提供目錄資料、搜尋和推薦。
-- [**可撰寫的目錄資料模型(CCDM)**(merchandising-services.md)] — 使用目錄檢視、原則、目錄來源和價格簿來定義可供儲存區域使用的產品和價格。 CCDM也是[!DNL Adobe Commerce Optimizer]的目錄基礎。
+- [**可撰寫的目錄資料模型(CCDM)**](merchandising-services.md) — 使用目錄檢視、原則、目錄來源和價格簿來定義可供儲存區域使用的產品和價格。 CCDM也是[!DNL Adobe Commerce Optimizer]的目錄基礎。
 
 [付款服務](../payment-services/guide-overview.md)支援付款方式，並提供付款處理、訂單及發票的檢視。 如需設定指示，請參閱[付款服務首頁](../payment-services/payments-home.md)。
 
@@ -254,7 +254,7 @@ Adobe提供下列開發人員工具，用於建立整合與自訂：
 <!-- 
 ## Experience Cloud integration
 
-[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
+[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
 
 [Data Connection](../data-connection/overview.md) unlocks insights about your shoppers' buying behavior so that you can create personalized shopping experiences across all channels with other Adobe Digital Experience products. 
 -->
