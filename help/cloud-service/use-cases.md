@@ -5,7 +5,7 @@ feature: Cloud, Integration
 role: User, Leader
 level: Beginner
 exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"
 autotag-review: '2026-06-18T16:06:00.993Z'
 TQID: 'https://experienceleague.adobe.com/4L-M8vsEkT6uuafrOISankRaarQ-OVHDWLXwoVLaUZQ'
 product_v2:
@@ -42,9 +42,9 @@ topic_v2:
     internal-label: Experimentation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: b2859807f154770698ad4bcc8fd1acbc81c0114f
 workflow-type: tm+mt
-source-wordcount: '1468'
+source-wordcount: '1467'
 ht-degree: 0%
 ---
 # 使用案例
@@ -71,7 +71,7 @@ ht-degree: 0%
 
 ### 啟用付款服務
 
-1. 在Commerce管理員中，瀏覽至&#x200B;[!UICONTROL **商店**] > [!UICONTROL Settings] > [!UICONTROL **設定**] > [!UICONTROL **付款方法**]。
+1. 在Commerce管理員中，瀏覽至&#x200B;[!UICONTROL **商店**] > [!UICONTROL **付款方法**]。
 
 1. 在&#x200B;[!UICONTROL **一般組態**]&#x200B;區段中，輸入您的`Payment Services Sandbox ID`和`Payment Services Sandbox Key`。 您可以依照[沙箱上線](../payment-services/sandbox.md#sandbox-onboarding){target="_blank"}中所述的步驟來取得這些ID
 
@@ -97,7 +97,7 @@ ht-degree: 0%
 
 1. 輸入必要的聯絡詳細資料和送貨資訊。 您可以針對此訂單使用虛構的資訊。
 
-1. 若要結帳，請選取&#x200B;[!UICONTROL **支票/匯票**]。 若要使用信用卡，請使用PayPal[&#128279;](https://developer.paypal.com/credit-card-number-generator#link-teststaticcardnumbers)提供的測試卡之一。 您可以將其用於任何未來的到期日和任何CVC。
+1. 若要結帳，請選取&#x200B;[!UICONTROL **支票/匯票**]。 若要使用信用卡，請使用PayPal](https://developer.paypal.com/credit-card-number-generator#link-teststaticcardnumbers)提供的[測試卡之一。 您可以將其用於任何未來的到期日和任何CVC。
 
    ![包含聯絡人及運送資訊欄位的結帳表單](./assets/enter-details.png){width="600" zoomable="yes"}
 
@@ -224,7 +224,7 @@ Adobe的情境式實驗功能可讓您在店面建立和管理實驗，以測試
 
 1. 按一下&#x200B;[!UICONTROL **儲存**]&#x200B;以指定影像型別。
 
-1. 再按一下[儲存]儲存變更。[!UICONTROL **&#x200B;**]
+1. 再按一下[儲存]儲存變更。[!UICONTROL ****]
 
 1. 在&#x200B;[!UICONTROL **儲存資產**]&#x200B;對話方塊中，選取Commerce [!UICONTROL **目的地資料夾**]。
 
@@ -234,7 +234,7 @@ Adobe的情境式實驗功能可讓您在店面建立和管理實驗，以測試
 
 #### 將影像新增至[!DNL Commerce AEM Assets]
 
-1. 從[!DNL AEM as a Cloud Service]的[導覽面板](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel)，選取&#x200B;[!UICONTROL **Assets**] > [!UICONTROL **檔案**] > [!UICONTROL **Commerce**]，然後按一下您在上一節建立的資產。
+1. 從[!DNL AEM as a Cloud Service]的[導覽面板](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel)，選取&#x200B;[!UICONTROL **Assets**] > [!UICONTROL **檔案**] > [!UICONTROL **Commerce**]，然後按一下您在上一節建立的資產。
 
    [!DNL AEM Assets]中的![Commerce資料夾包含產品影像](./assets/commerce-folder.png){width="600" zoomable="yes"}
 
@@ -284,7 +284,7 @@ Adobe的情境式實驗功能可讓您在店面建立和管理實驗，以測試
 
 ### 產生文字
 
-1. 使用[通用編輯器](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)開啟您的店面網站。
+1. 使用[通用編輯器](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)開啟您的店面網站。
 
 1. 選取您要編輯的文字區塊。
 
@@ -298,13 +298,13 @@ Adobe的情境式實驗功能可讓您在店面建立和管理實驗，以測試
 
 ### 產生內容和影像
 
-1. 開啟[[!DNL Generate Variations]](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/ai-in-aem/generate-variations/generate-variations)。
+1. 開啟[[!DNL Generate Variations]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/generate-variations/generate-variations)。
 
 1. 選取&#x200B;[!UICONTROL **Hero Banner**]&#x200B;範本。
 
 1. 在&#x200B;[!UICONTROL **說明使用者互動**]&#x200B;文字方塊中，輸入：「Adobe員工和合作夥伴購買Adobe品牌用具的體驗！」
 
-1. 在網域知識&#x200B;**的** URL中，輸入&#x200B;**www.adobestore.com**。
+1. 在網域知識&#x200B;**]的[!UICONTROL ** URL中，輸入&#x200B;**www.adobestore.com**。
 
 1. 按一下&#x200B;[!UICONTROL **產生**]。
 
@@ -316,7 +316,7 @@ Adobe的情境式實驗功能可讓您在店面建立和管理實驗，以測試
 
 1. 針對&#x200B;[!UICONTROL **樣式**]&#x200B;參考影像，選取現有的Adobe商店橫幅。
 
-1. 選取您要使用的產生影像，然後按一下[儲存]。[!UICONTROL **&#x200B;**]
+1. 選取您要使用的產生影像，然後按一下[儲存]。[!UICONTROL ****]
 
 1. 若要產生更多變化，請對其他參照影像重複此程式。
 
