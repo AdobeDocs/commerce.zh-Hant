@@ -10,7 +10,7 @@ ht-degree: 0%
 
 受限存取金鑰的布建方式為下列兩種方式之一：
 
-- **自動，針對B2B共用目錄** — 系統布建並指派與B2B共用目錄關聯的目錄檢視的初始金鑰。 接著，您可以從Commerce管理員管理金鑰和金鑰指派。 請參閱&#x200B;*Commerce管理指南*&#x200B;中的[目錄檢視驗證](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage)。 自動布建可在下列部署中使用：
+- **自動，針對B2B共用目錄** — 系統布建並指派與B2B共用目錄關聯的目錄檢視的初始金鑰。 接著，您可以從Commerce管理員管理金鑰和金鑰指派。 請參閱&#x200B;*Commerce管理指南*&#x200B;中的[目錄檢視驗證](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage)。 自動布建可在下列部署中使用：
 
   - 適用於Adobe Commerce B2B的&#x200B;**具有CCDM**&#x200B;的Adobe Commerce as a Cloud Service。
   - **雲端或內部部署上的Adobe Commerce**，已透過[!DNL Adobe Commerce Optimizer Connector for B2B]與Adobe Commerce Optimizer整合。 需要聯結器的B2B擴充功能。
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->本節及接下來的兩個章節說明管理受限制存取金鑰的手動程式。 對於具有自動金鑰布建的B2B共用目錄，請從Commerce管理員管理金鑰。 請參閱[受限制的存取金鑰](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys)。
+>本節及接下來的兩個章節說明管理受限制存取金鑰的手動程式。 對於具有自動金鑰布建的B2B共用目錄，請從Commerce管理員管理金鑰。 請參閱[受限制的存取金鑰](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys)。
 
 ### 新增受限制的存取金鑰
 
@@ -60,7 +60,7 @@ ht-degree: 0%
 
 >[!TAB Adobe Commerce管理員]
 
-客戶透過CCDM使用Adobe Commerce as a Cloud Service，或透過聯結器連線至Adobe Commerce的Adobe Commerce Optimizer，可以從Commerce管理員產生RSA金鑰組。 請參閱[管理受限制的存取金鑰](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys)。
+客戶透過CCDM使用Adobe Commerce as a Cloud Service，或透過聯結器連線至Adobe Commerce的Adobe Commerce Optimizer，可以從Commerce管理員產生RSA金鑰組。 請參閱[管理受限制的存取金鑰](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys)。
 
 >[!TAB Adobe Commerce Optimizer Studio — 手動金鑰管理]
 
@@ -113,7 +113,7 @@ openssl rsa -in private-key.pem -pubout -out public-key.pem
 
 受限存取金鑰的管理方式為下列兩種之一，視您使用目錄保護的方式而定：
 
-- **自動，針對B2B共用目錄** — 對於使用具有CCDM的銷售服務的Adobe Commerce B2B部署，以及透過[!DNL Adobe Commerce Optimizer Connector for B2B]整合的Adobe Commerce Optimizer部署（需要B2B擴充功能），在建立目錄檢視時，服務會自動產生並指派第一個受限制的存取金鑰。 每個目錄檢視都有各自的索引鍵。 之後，您可以從「共用目錄」或「公司帳戶」頁面管理每個金鑰。 您也可以從Commerce Admin **受限存取金鑰**&#x200B;頁面（**系統** > **資料傳輸**）檢視及管理金鑰。 請參閱[管理目錄檢視組態](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage)。
+- **自動，針對B2B共用目錄** — 對於使用具有CCDM的銷售服務的Adobe Commerce B2B部署，以及透過[!DNL Adobe Commerce Optimizer Connector for B2B]整合的Adobe Commerce Optimizer部署（需要B2B擴充功能），在建立目錄檢視時，服務會自動產生並指派第一個受限制的存取金鑰。 每個目錄檢視都有各自的索引鍵。 之後，您可以從「共用目錄」或「公司帳戶」頁面管理每個金鑰。 您也可以從Commerce Admin **受限存取金鑰**&#x200B;頁面（**系統** > **資料傳輸**）檢視及管理金鑰。 請參閱[管理目錄檢視組態](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage)。
 
   共用目錄和存放區檢視的每個組合都會投影為個別的目錄檢視。 投影是目錄檢視、政策、價格簿參考和限制存取金鑰組態資料，會匯出至該組合的「銷售服務」資料層。 因此，指派給多個存放區檢視的共用目錄會產生多個目錄檢視，每個檢視都有自己的索引鍵。 編輯或旋轉某個目錄檢視的金鑰，而不會影響其他目錄檢視。
 
@@ -134,7 +134,7 @@ openssl rsa -in private-key.pem -pubout -out public-key.pem
 
 >[!TAB Adobe Commerce管理員]
 
-請參閱[鍵選取與輪換](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys#key-selection-and-rotation)。 這適用於具有CDM的Adobe Commerce as a Cloud Service，以及透過Adobe Commerce Optimizer聯結器與Adobe Commerce Optimizer整合的Adobe Commerce專案。
+請參閱[鍵選取與輪換](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys#key-selection-and-rotation)。 這適用於具有CDM的Adobe Commerce as a Cloud Service，以及透過Adobe Commerce Optimizer聯結器與Adobe Commerce Optimizer整合的Adobe Commerce專案。
 
 >[!TAB Adobe Commerce Optimizer Studio （手動金鑰管理）]
 
@@ -149,7 +149,7 @@ openssl rsa -in private-key.pem -pubout -out public-key.pem
 
 ## 限制
 
-檢視[目錄檢視和原則限制](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits)。
+檢視[目錄檢視和原則限制](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/boundaries-limits)。
 
 ## 更多相關資訊
 
