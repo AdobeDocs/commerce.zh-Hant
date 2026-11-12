@@ -1,0 +1,31 @@
+---
+source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+workflow-type: tm+mt
+source-wordcount: '347'
+ht-degree: 0%
+---
+單向和雙向同義字會擴展關鍵字的定義。 有些可與關鍵字互換，有些則代表關鍵字的子集。
+
+## 雙向
+
+雙向同義字具有相同涵義，並傳回相同的搜尋結果。 在下列範例中，以粗體顯示的第一個字是目錄中所使用的關鍵字，後面跟著與原始關鍵字具有相同含義的字詞。 您可以為相同關鍵字建立一對簡單的雙向同義字，或是多個雙向同義字的鏈結。
+
+**夾克** ![雙向選擇器](/help/assets/ccdm-shared/synonyms/two-way.png)外套
+**褲子** ![雙向選擇器](/help/assets/ccdm-shared/synonyms/two-way.png)褲子![雙向選擇器](/help/assets/ccdm-shared/synonyms/two-way.png)褲子
+
+## 單向
+
+單向同義字是關鍵字的子集，但具有更明確的含義。 例如，羊毛衫和短褲都是短褲，但並非所有短褲都是羊毛衫或短褲。 搜尋短褲包括卡布衫和短褲。 不過，搜尋短褲不會傳回Capris。
+
+**運動衫** ![單向選擇器](/help/assets/ccdm-shared/synonyms/one-way.png)連帽衫
+**褲子** ![單向選擇器](/help/assets/ccdm-shared/synonyms/one-way.png)卡普里斯![單向選擇器](/help/assets/ccdm-shared/synonyms/one-way.png)小腿長褲![單向選擇器](/help/assets/ccdm-shared/synonyms/one-way.png)兜售推手
+
+## 多字同義字行為
+
+對於多字同義字，系統會將該同義字視為片語。 例如，如果您建立雙向同義字&#x200B;**餐桌** ![雙向選擇器](/help/assets/ccdm-shared/synonyms/two-way.png) **餐桌** ![雙向選擇器](/help/assets/ccdm-shared/synonyms/two-way.png) **餐桌**，則系統會搜尋所有設定為可搜尋的欄位，以尋找&#x200B;**餐桌**&#x200B;或&#x200B;**餐桌**&#x200B;或&#x200B;**餐桌**&#x200B;的出現位置。
+
+如果未建立同義字，且購物者搜尋&#x200B;**kitchen table**，則系統會在可搜尋欄位中的任何位置尋找字詞，甚至跨不同的欄位，例如名稱欄位中的&#x200B;**table**&#x200B;和中繼關鍵字中的&#x200B;**kitchen**。
+
+建立同義字後，搜尋行為會變更，以尋找確切的片語&#x200B;**廚房表**。 這樣可能會減少結果的數量，因為系統只會顯示含有精確片語的產品。
+
+如果您想要像之前一樣分別搜尋字詞，您可以[建立支援票證](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。

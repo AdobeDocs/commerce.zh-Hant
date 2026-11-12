@@ -24,7 +24,7 @@ topic_v2:
     internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 672e67ef99d52c942013a880ecfec0da31e76756
 workflow-type: tm+mt
 source-wordcount: '3191'
 ht-degree: 0%
@@ -352,7 +352,7 @@ query {
 
 主要版本： Headless店面、標題管理和產品資料處理的[可撰寫目錄資料模型](https://developer.adobe.com/commerce/services/optimizer/)。
 
-![新的](../assets/new.svg) **可撰寫的目錄資料模型(CCDM)** — 支援客戶將Composable目錄用於Headless店面。 新端點接受目錄檢視和原則ID （向後相容）。 可設定的產品詳細資料和價格（內建分頁）。<!--DATA-6018, DATA-6288-->
+![新](../assets/new.svg) **可撰寫目錄資料模型(CCDM)** — 支援客戶將Headless店面使用可撰寫目錄。 新端點接受目錄檢視和原則ID （向後相容）。 可設定的產品詳細資料和價格（內建分頁）。<!--DATA-6018, DATA-6288-->
 
 針對可撰寫的目錄API作業，![New](../assets/new.svg) **標題管理**-`AC-Locale`已重新命名為`AC-Scope-Locale`；已指定標題對應和預設值。<!--DATA-6303, DATA-6078-->
 
