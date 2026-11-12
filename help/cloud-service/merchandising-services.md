@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: c67e36c5a607fa1112a3a34b71c89de1b0162b10
+source-git-commit: 0bda134570bb3bf2f43da545917dedc95394df5e
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '947'
 ht-degree: 0%
 ---
 
@@ -77,7 +77,7 @@ Adobe Commerce as a Cloud Service現在透過銷售服務支援可撰寫目錄�
 
 原始目錄模型使用目錄服務將產品資料傳遞至店面，而「即時搜尋」和「產品推薦」提供搜尋、銷售和推薦功能。 在此模型中，Commerce使用[SaaS資料匯出](https://experienceleague.adobe.com/zh-hant/docs/commerce/saas-data-export/overview)進行同步。
 
-透過CCDM，這些功能會在支援Adobe Commerce Optimizer的相同目錄基礎上運作。 [目錄檢視](../optimizer/setup/catalog-view.md)和[原則](../optimizer/setup/policies.md)定義店面可用的目錄內容。 原則會決定產品分類，而銷售規則可套用至所有目錄檢視或針對特定檢視量身打造。
+透過CCDM，這些功能會在支援Adobe Commerce Optimizer的相同目錄基礎上運作。 [目錄檢視](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/setup/catalog-view)和[原則](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/setup/policies)定義店面可用的目錄內容。 原則會決定產品分類，而銷售規則可套用至所有目錄檢視或針對特定檢視量身打造。
 
 這會變更目錄的設定、存取及銷售方式。 CCDM以原始Commerce目錄的搜尋、建議和銷售功能為基礎，同時在目錄檢視層級引入控制項。 其他管理和報告功能如下所述。
 
@@ -99,9 +99,9 @@ Commerce Foundation依然是產品和價格的標準來源。 產品和價格資
 
 ## 商家有哪些新增功能？
 
-新模型可讓您將現有銷售規則範圍限定在所有目錄檢視或特定檢視。 這可讓您將銷售套用至每個店面對象。 瞭解如何[將銷售規則範圍設定為目錄檢視](../optimizer/merchandising/rules/add.md#create-a-rule)。
+新模型可讓您將現有銷售規則範圍限定在所有目錄檢視或特定檢視。 這可讓您將銷售套用至每個店面對象。 瞭解如何[將銷售規則範圍設定為目錄檢視](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/merchandising/rules/add)。
 
-在Admin中，您可以使用[!UICONTROL Catalog Views]和[!UICONTROL Policies]來設定目錄內容。 您也可以使用[!UICONTROL Success Metrics]來檢閱收入、轉換、參與、贏取和跳出率。 如需詳細資訊，請參閱[成功量度](../optimizer/manage-results/success-metrics.md)。
+在Admin中，您可以使用[!UICONTROL Catalog Views]和[!UICONTROL Policies]來設定目錄內容。 您也可以使用[!UICONTROL Success Metrics]來檢閱收入、轉換、參與、贏取和跳出率。 如需詳細資訊，請參閱[成功量度](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/manage-results/success-metrics)。
 
 ## 採用前的考量事項
 
