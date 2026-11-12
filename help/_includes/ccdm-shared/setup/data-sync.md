@@ -49,4 +49,4 @@ ht-degree: 0%
 
 ## 確認資料同步處理運作正常
 
-對於使用Adobe Commerce作為上游資料來源的專案，您可以監視資料匯出程式，並從「資料摘要同步狀態」頁面啟動重新同步作業。 如需詳細資訊，請參閱[資料摘要同步處理狀態監視](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)。
+對於使用Adobe Commerce作為上游資料來源的專案，您可以監視資料匯出程式，並從「資料摘要同步狀態」頁面啟動重新同步作業。 如需詳細資訊，請參閱[資料摘要同步處理狀態監視](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)。

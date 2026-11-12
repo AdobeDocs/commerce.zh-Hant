@@ -6,7 +6,7 @@ ht-degree: 0%
 ---
 >[!IMPORTANT]
 >
->下列功能位於[私人測試版](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta)。
+>下列功能位於[私人測試版](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/beta)。
 
 使用可撰寫目錄資料模型(CCDM)排名的銷售服務排名結果，可讓購物者先看到最相關的產品。 此服務會啟動目錄文字&#x200B;**幾乎符合**&#x200B;購物者查詢的產品，然後偏好字詞一起出現的相符專案，最後包含更廣泛的相符專案。
 
@@ -57,7 +57,7 @@ ht-degree: 0%
 - 從&#x200B;**精確/近**&#x200B;個字詞比對增加
 - 當&#x200B;**所有查詢詞**&#x200B;出現在&#x200B;**相同**&#x200B;欄位中時提升
 - **智慧型排名** （啟用時），將文字關聯性與行為訊號融合在一起 — 請參閱[智慧型排名計分的運作方式](../merchandising/rules/add.md#how-intelligent-ranking-scoring-works-search)
-- **[搜尋每個屬性的權重](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results)**，以及其他文字關聯性因素（例如，詞匯出現在名稱或描述長度中的頻率）。 在&#x200B;*設定*&#x200B;中，設定哪些屬性參與關鍵字搜尋，以及它們的相對&#x200B;**[關鍵字搜尋權重](../settings.md)**。
+- **[搜尋每個屬性的權重](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/catalog/search/search-results)**，以及其他文字關聯性因素（例如，詞匯出現在名稱或描述長度中的頻率）。 在&#x200B;*設定*&#x200B;中，設定哪些屬性參與關鍵字搜尋，以及它們的相對&#x200B;**[關鍵字搜尋權重](../settings.md)**。
 - **[銷售規則](../merchandising/rules/overview.md)**，例如pin、boost和bury
 
 因為訊號會互動，所以當&#x200B;**搜尋權重**&#x200B;或詞語頻率超過較弱的詞語比對時，廣泛比對有時會排在較緊的詞語比對之前。

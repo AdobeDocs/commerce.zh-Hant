@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 什麼是機會？
 
-[機會](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview){target="_blank"}是AI支援的建議，可協助銷售人員識別並解決影響其商務網站效能的問題。 這些建議由[Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home){target="_blank"}提供支援，這是一項雲端型服務，可分析和改善網站效能。
+[機會](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview){target="_blank"}是AI支援的建議，可協助銷售人員識別並解決影響其商務網站效能的問題。 這些建議由[Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-sites-optimizer/content/home){target="_blank"}提供支援，這是一項雲端型服務，可分析和改善網站效能。
 
 ## 主要功能
 
@@ -174,12 +174,12 @@ ht-degree: 0%
 
 ## 進一步瞭解Sites Optimizer
 
-如需Sites Optimizer功能與功能的詳細資訊，請參閱[Adobe Experience Manager Sites Optimizer檔案](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home)。
+如需Sites Optimizer功能與功能的詳細資訊，請參閱[Adobe Experience Manager Sites Optimizer檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-sites-optimizer/content/home)。
 
 其他資源：
 
-- [機會型別](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview) — 瞭解可用的最佳化機會。
-- [Sites Optimizer功能](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/documentation/basics) — 探索Sites Optimizer的功能。
+- [機會型別](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview) — 瞭解可用的最佳化機會。
+- [Sites Optimizer功能](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-sites-optimizer/content/documentation/basics) — 探索Sites Optimizer的功能。
 
 ## 更多相關資訊
 
