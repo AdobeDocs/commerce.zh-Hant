@@ -94,7 +94,7 @@ ht-degree: 0%
 
 ## 在UI中手動新增目錄圖層
 
-目錄檢視UI可讓您手動建立和管理圖層，這對產生AI支援的建議的Sites Optimizer等整合特別有用。 若要進行大量圖層作業，請使用上述的資料擷取API方法[](#add-a-catalog-layer-via-data-ingestion)。
+目錄檢視UI可讓您手動建立和管理圖層，這對產生AI支援的建議的Sites Optimizer等整合特別有用。 若要進行大量圖層作業，請使用上述的資料擷取API方法[&#128279;](#add-a-catalog-layer-via-data-ingestion)。
 
 如果目錄檢視中沒有Sites Optimizer圖層，Sites Optimizer中的自動修正功能會自動建立一個圖層，並為其指定最高優先順序（最高編號）。 如果您刪除此圖層，則會在下次執行Sites Optimizer中的自動修復功能時重新建立此圖層，並將現有圖層移至較低順序的數字。 如果Sites Optimizer圖層已存在於不同的訂單編號，則自動修正功能不會變更其優先順序。
 
