@@ -3,7 +3,7 @@ title: 目錄圖層
 description: 瞭解目錄圖層如何讓您修改產品資料而不變更原始來源資料，以便您可以安全地自訂並隨時還原變更。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]個專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]個專案（Adobe管理的SaaS基礎結構）。"
 TQID: https://experienceleague.adobe.com/aeuD7Ev8AhkzIspV08x4ZTA9knMjZ3EObSZJpidY8QI
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -27,7 +27,8 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 7b47571af63d192b6c1abe55dd604dcc22907fc2
+last-update: 2026-11-12
+source-git-commit: 44918d5b636f0577c75010def79737acee1ffe0b
 workflow-type: tm+mt
 source-wordcount: '55'
 ht-degree: 0%

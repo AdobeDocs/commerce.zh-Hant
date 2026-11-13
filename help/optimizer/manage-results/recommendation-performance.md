@@ -1,7 +1,7 @@
 ---
 title: Recommendations效能
 description: Recommendations效能頁面可提供insight來瞭解您的產品推薦執行情形。
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]個專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]個專案（Adobe管理的SaaS基礎結構）。"
 exl-id: 1b77e2ea-412b-4c78-9d38-390bd8fda87e
 TQID: https://experienceleague.adobe.com/YDgbC964pr7YI4Yas7pHTgnzDY2oxk-uR-eM6eVJE1w
 product_v2:
@@ -21,7 +21,8 @@ topic_v2:
     internal-label: Personalization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: c1cb3bd1edf0f79bfae357160dd370a5c18730d1
+last-update: 2026-11-12
+source-git-commit: 44918d5b636f0577c75010def79737acee1ffe0b
 workflow-type: tm+mt
 source-wordcount: '44'
 ht-degree: 0%

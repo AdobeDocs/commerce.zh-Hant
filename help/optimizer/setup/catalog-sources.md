@@ -3,7 +3,7 @@ title: 目錄來源
 description: 瞭解什麼是目錄來源，以及它們如何定義搜尋、篩選和排序行為的產品、屬性和類別的權威範圍。
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]個專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]個專案（Adobe管理的SaaS基礎結構）。"
 autotag-review: '2026-06-09T19:36:23.516Z'
 TQID: 'https://experienceleague.adobe.com/MiLbuYx6Pf95n3jvrgvou05Ery9XHXskx8p6KrN6CYg'
 product_v2:
@@ -34,7 +34,8 @@ topic_v2:
     internal-label: Data modeling
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: dd0ff00127242a63faf1eac1fa614673d73a7f24
+last-update: 2026-11-12
+source-git-commit: 44918d5b636f0577c75010def79737acee1ffe0b
 workflow-type: tm+mt
 source-wordcount: '53'
 ht-degree: 0%

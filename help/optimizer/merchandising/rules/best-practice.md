@@ -2,7 +2,7 @@
 title: 銷售規則最佳實務
 description: 瞭解針對搜尋、預設清單和類別頁面實作銷售規則的最佳實務。
 role: Admin, Developer
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]個專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]個專案（Adobe管理的SaaS基礎結構）。"
 exl-id: cc8d0879-c253-4ad4-8e7d-e066dff9112d
 TQID: https://experienceleague.adobe.com/DrdrBBXeMyqQr16h1LrlSoet3F6ihn57LBmPFBUXmTs
 product_v2:
@@ -16,7 +16,8 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: bf31ff18371ba3eae99753430b7083ea44bf3394
+last-update: 2026-11-12
+source-git-commit: 44918d5b636f0577c75010def79737acee1ffe0b
 workflow-type: tm+mt
 source-wordcount: '49'
 ht-degree: 0%
