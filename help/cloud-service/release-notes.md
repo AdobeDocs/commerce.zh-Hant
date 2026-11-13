@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: 2123503aaa8088baab9b9a5e3ce9c3036518061e
+source-git-commit: c77ccb87ac61a4dae8adc3079bb8aac7a4a9bf58
 workflow-type: tm+mt
-source-wordcount: '10011'
+source-wordcount: '10458'
 ht-degree: 0%
 ---
 # 發行說明
@@ -82,7 +82,74 @@ ht-degree: 0%
 
 進一步瞭解Adobe Unified Experience中的[Commerce Admin](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/admin/admin-unified-experience)。
 
-## 2026年11月 — 發行說#1 {#latest}
+## 2026年11月 — 發行說#2 {#latest}
+
+[!BADGE 沙箱]{type=Caution tooltip="列出的專案目前僅在沙箱環境中可用。 Adobe會先在沙箱環境中推出新版本，讓您可以在生產環境中使用該版本之前有時間測試即將推出的變更。"}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+以下專案已於2026年11月18日發佈到沙箱環境。
+
+>[!BEGINSHADEBOX]
+
+### 產品評論
+
+[產品評論](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/marketing/merchandising/product-reviews/product-reviews)現在可供[!DNL Adobe Commerce as a Cloud Service]使用。<!-- ACCS-2277, ACCS-432 -->
+
+產品評論預設為停用。 若要啟用稽核，請瀏覽至「[!UICONTROL Stores] > [!UICONTROL Configuration] > [!UICONTROL Catalog] > [!UICONTROL Catalog] > [!UICONTROL Product Reviews]」，清除「[!UICONTROL Use System Value]」核取方塊並將「[!UICONTROL Enabled]」設為「**是**」。
+
+使用[`reviews`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/reviews) GraphQL查詢來擷取稽核，使用[`createProductReview`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/mutations/create-review)變異來建立稽核。
+
+### 自訂屬性
+
+此發行版本引進了幾個新的REST和GraphQL功能，用於處理自訂屬性：
+
+* **銷退折讓單**
+  * `GET /V1/creditmemos` REST端點現在可以依自訂屬性值篩選銷退折讓單。 在搜尋條件中使用`custom_attributes.<code>`欄位名稱，例如`searchCriteria[filter_groups][0][filters][0][field]=custom_attributes.is_appeasement`。<!-- ACCS-2158, ACCS-1915, ACCS-2159, ACCS-2221 -->
+
+  >[!IMPORTANT]
+  >
+  >此功能預設為停用。 若要啟用此功能，請聯絡您的Adobe Commerce客戶成功經理或建立支援票證。
+
+* **個訂單**
+  * 新的`POST /V1/orders/:orderId/customAttributes` REST端點新增或更新現有訂單的自訂屬性。<!-- ACCS-2137 -->
+* **傳回**
+  * 除了退貨專案外，退貨商品授權(RMA)現在還支援退貨本身的自訂屬性。<!-- CEXT-6925 -->
+    * `/V1/returns` REST端點儲存並在傳回時傳回`custom_attributes`。
+    * GraphQL `Return`型別包含`custom_attributes`欄位。
+  * 當傳回有`return_address`自訂屬性時，Commerce會使用該位址，而非設定的傳回位址。 您可以透過`/V1/returns` REST端點或`observer.rma_save_before` webhook設定此屬性。<!-- ACCS-2184 -->
+
+### 增強功能和錯誤修正
+
+此版本中包括下列選取的增強功能、最佳化和錯誤修正：
+
+* 修正透過`PUT /V1/system/config` REST端點儲存[!DNL AEM Assets]整合設定時未同步產品影像的問題。<!-- ACCS-2282 -->
+
+* 修正啟用多個存貨來源時，「免費禮品車」價格規則中的禮品SKU選擇器未開啟的問題。<!-- ACCS-2208 -->
+
+* 修正產品從公司的共用目錄移除時，B2B購買者無法傳回店面中已出貨專案的問題。<!-- ACCS-2283, AC-19727 -->
+
+* 修正客戶收到額外「您已連結至公司」電子郵件的問題。<!-- ACCS-2292, ACCS-856 -->
+
+* 可協商的報價和報價範本現在包含`created_by`個GraphQL欄位，其中包含賣家名稱及買家名稱。<!-- USF-4511 -->
+
+* 修正`POST /V1/customers` REST端點傳回400錯誤的問題。<!-- CCSAAS-5786 -->
+
+* 儲存客戶時，不再重新儲存未變更的地址。<!-- CCSAAS-5599 -->
+
+* 修正關閉[!UICONTROL Manage Stock]之相同產品的同時訂購可能失敗的問題。<!-- CCSAAS-5778, ACP2E-5457 -->
+
+* 修正當您退款全部剩餘已開立商業發票數量時，`POST /V1/invoice/:invoiceId/refund` REST端點傳回錯誤的問題。<!-- CCSAAS-5794, AC-16056 -->
+
+* 改善`GET /V1/products` REST端點的效能。<!-- CCSAAS-4664 -->
+
+* 產品CSV匯入現在支援結尾不是副檔名的影像URL。<!-- CCSAAS-5605 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## 2026年11月 — 發行說#1
 
 <!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
