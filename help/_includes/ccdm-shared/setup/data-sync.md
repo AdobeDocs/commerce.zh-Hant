@@ -6,7 +6,7 @@ ht-degree: 0%
 ---
 <!--
 SOURCE OF TRUTH: Edit this file in the commerce.en repo:
-https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/setup/data-sync.md
+https://github.com/Adobe-Enterprise-Docs/commerce.zh-Hant/blob/main/help/_includes/ccdm-shared/setup/data-sync.md
 
 This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
 Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
@@ -61,4 +61,4 @@ This includes related images in help/assets/ccdm-shared/.
 
 ## 確認資料同步處理運作正常
 
-對於使用Adobe Commerce作為上游資料來源的專案，您可以監視資料匯出程式，並從「資料摘要同步狀態」頁面啟動重新同步作業。 如需詳細資訊，請參閱[資料摘要同步處理狀態監視](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)。
+對於使用Adobe Commerce作為上游資料來源的專案，您可以監視資料匯出程式，並從「資料摘要同步狀態」頁面啟動重新同步作業。 如需詳細資訊，請參閱[資料摘要同步處理狀態監視](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)。

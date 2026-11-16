@@ -6,7 +6,7 @@ ht-degree: 0%
 ---
 <!--
 SOURCE OF TRUTH: Edit this file in the commerce.en repo:
-https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/merchandising/synonyms/add.md
+https://github.com/Adobe-Enterprise-Docs/commerce.zh-Hant/blob/main/help/_includes/ccdm-shared/merchandising/synonyms/add.md
 
 This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
 Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
@@ -68,13 +68,13 @@ This includes related images in help/assets/ccdm-shared/.
 
 | 欄位 | 說明 |
 |--- |--- |
-| [型別](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/synonyms/type) | 判斷同義字與關鍵字的意義相同，或是關鍵字的子集。 選項：<br />雙向（預設） — 與關鍵字具有相同含義並傳回相同搜尋結果的字詞<br />單向 — 關鍵字的子集的字詞。 單向同義字會傳回特定產品的較窄清單。 |
+| [型別](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/merchandising/synonyms/type) | 判斷同義字與關鍵字的意義相同，或是關鍵字的子集。 選項：<br />雙向（預設） — 與關鍵字具有相同含義並傳回相同搜尋結果的字詞<br />單向 — 關鍵字的子集的字詞。 單向同義字會傳回特定產品的較窄清單。 |
 | 關鍵字 | 通常與目錄中的一系列產品相關聯的字詞。 |
 | 擴充 | 與關鍵字具有相同或類似含義的其他詞語。 |
 
 ## 管理同義字
 
-請依照這些指示管理現有的[同義字](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/synonyms/overview)。
+請依照這些指示管理現有的[同義字](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/merchandising/synonyms/overview)。
 
 ## 尋找同義字
 

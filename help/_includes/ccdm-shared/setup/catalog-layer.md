@@ -6,7 +6,7 @@ ht-degree: 0%
 ---
 <!--
 SOURCE OF TRUTH: Edit this file in the commerce.en repo:
-https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/setup/catalog-layer.md
+https://github.com/Adobe-Enterprise-Docs/commerce.zh-Hant/blob/main/help/_includes/ccdm-shared/setup/catalog-layer.md
 
 This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
 Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
@@ -209,6 +209,6 @@ This includes related images in help/assets/ccdm-shared/.
 ## 更多相關資訊
 
 * [目錄檢視](catalog-view.md) — 設定不同店面的目錄檢視
-* [產品視覺效果](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/product-visuals) — 將AEM Assets用於產品影像
+* [產品視覺效果](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/setup/product-visuals) — 將AEM Assets用於產品影像
 * [機會](../manage-results/opportunities.md) — 瞭解使用目錄層的AI支援的最佳化
 * [受限制的存取金鑰](restricted-access-keys.md) — 使用已簽署的權杖驗證保護目錄檢視

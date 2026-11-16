@@ -6,7 +6,7 @@ ht-degree: 0%
 ---
 <!--
 SOURCE OF TRUTH: Edit this file in the commerce.en repo:
-https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/setup/private-catalog-view.md
+https://github.com/Adobe-Enterprise-Docs/commerce.zh-Hant/blob/main/help/_includes/ccdm-shared/setup/private-catalog-view.md
 
 This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
 Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
@@ -108,7 +108,7 @@ This includes related images in help/assets/ccdm-shared/.
 
 >[!NOTE]
 >
->針對使用具有CCDM之銷售服務的Adobe Commerce B2B部署，您可以從Commerce管理員&#x200B;**受限制的存取金鑰**&#x200B;頁面（**系統** > **資料傳輸**）管理存取金鑰。 如需詳細資訊，請參閱&#x200B;*[!DNL Adobe Commerce Optimizer Connector]整合指南*&#x200B;中的[限制存取金鑰管理](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys)。
+>針對使用具有CCDM之銷售服務的Adobe Commerce B2B部署，您可以從Commerce管理員&#x200B;**受限制的存取金鑰**&#x200B;頁面（**系統** > **資料傳輸**）管理存取金鑰。 如需詳細資訊，請參閱&#x200B;*[!DNL Adobe Commerce Optimizer Connector]整合指南*&#x200B;中的[限制存取金鑰管理](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys)。
 
 ## 更多相關資訊
 

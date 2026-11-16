@@ -6,7 +6,7 @@ ht-degree: 0%
 ---
 <!--
 SOURCE OF TRUTH: Edit this file in the commerce.en repo:
-https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/manage-results/success-metrics.md
+https://github.com/Adobe-Enterprise-Docs/commerce.zh-Hant/blob/main/help/_includes/ccdm-shared/manage-results/success-metrics.md
 
 This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
 Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
@@ -78,7 +78,7 @@ C2PA中繼資料是明顯被竄改、機器可讀取的中繼資料，以[C2PA�
 
 ![檢查樣本](/help/assets/ccdm-shared/manage-results/inspect-sample.png)
 
-深入瞭解[產生AI內容透明度](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/content-transparency)。
+深入瞭解[產生AI內容透明度](https://experienceleague.adobe.com/zh-hant/docs/cx-enterprise-ai/experience-cloud-ai/overview/content-transparency)。
 
 ## 將成功量度與Sites Optimizer搭配使用
 
