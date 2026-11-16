@@ -1,9 +1,19 @@
 ---
-source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
+source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 0%
 ---
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/merchandising/facets/best-practice.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
 # Facet最佳作法
 
 篩選器和Facet功能是Commerce體驗的關鍵元件，其設計可讓購物者縮小搜尋結果範圍並更有效率地尋找產品，藉此提升購物者體驗。 此功能可協助購物者套用特定條件，排序種類繁多的商品，讓購物程式更快、更容易、更令人滿意。 透過實作有效率、方便購物者的篩選器和Facet，您可以協助客戶快速並有效率地找到他們需要的內容，最終提高滿意度和轉換率。

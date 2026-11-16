@@ -1,14 +1,24 @@
 ---
-source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
+source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 0%
 ---
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/merchandising/synonyms/best-practice.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
 # 同義字最佳作法
 
 以下提供建立同義字時的最佳實務清單。
 
-- 系統會依預設管理拼字錯誤。 若要納入購物者可能使用的字詞，請設定同義字。 這些字詞與您的目錄中所指定的字詞不同。 您不想因為某人正在尋找「沙發」，而您的產品卻被列為「沙發」而失去銷售機會。 輸入客戶可能會用來尋找您的產品的所有可能字詞，擷取廣泛的搜尋字詞。 若要改善結果，[請將同義字設為單向或雙向](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/merchandising/synonyms/add#step-2-define-the-synonym-by-type)。
+- 系統會依預設管理拼字錯誤。 若要納入購物者可能使用的字詞，請設定同義字。 這些字詞與您的目錄中所指定的字詞不同。 您不想因為某人正在尋找「沙發」，而您的產品卻被列為「沙發」而失去銷售機會。 輸入客戶可能會用來尋找您的產品的所有可能字詞，擷取廣泛的搜尋字詞。 若要改善結果，[請將同義字設為單向或雙向](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/synonyms/add#step-2-define-the-synonym-by-type)。
 
 - 將品牌名稱和縮寫對應至其全名，例如「HP」對應至「Hewlett-Packard」，以及常用產品暱稱，例如「iPhone」對應至「Apple iPhone」。
 

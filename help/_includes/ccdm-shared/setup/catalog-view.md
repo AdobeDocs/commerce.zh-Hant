@@ -1,9 +1,19 @@
 ---
-source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
+source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
 workflow-type: tm+mt
 source-wordcount: '740'
 ht-degree: 0%
 ---
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/setup/catalog-view.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
 # Adobe Merchandising服務的目錄檢視總覽
 
 <!--This shared include file contains the conceptual and architecture overview of catalog views for Adobe Merchandising Services-->
@@ -40,7 +50,7 @@ ht-degree: 0%
 
 - **Adobe Commerce後端** — 系統會匯出Commerce目錄摘要，將其對應至資料擷取REST API預期的格式，並將摘要資料同步至Adobe Merchandising Services資料層。 在此模型中，Adobe Commerce會管理初始同步和後續更新。 摘要包含產品、類別、產品屬性、價格和價格手冊。
 
-- **協力廠商後端或來源系統** — 聯結器或整合服務會透過API、事件或匯出摘要從來源擷取目錄資料，然後對應及驗證可撰寫目錄資料模型(CCDM)結構描述，並使用資料擷取REST API將資料同步至Adobe Merchandising Services層。 整合負責初始載入及後續傳送變更。 平台專用聯結器（例如Adobe的[Salesforce Commerce Connector](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/developer/salesforce-connector)）可提供起點。
+- **協力廠商後端或來源系統** — 聯結器或整合服務會透過API、事件或匯出摘要從來源擷取目錄資料，然後對應及驗證可撰寫目錄資料模型(CCDM)結構描述，並使用資料擷取REST API將資料同步至Adobe Merchandising Services層。 整合負責初始載入及後續傳送變更。 平台專用聯結器（例如Adobe的[Salesforce Commerce Connector](https://experienceleague.adobe.com/en/docs/commerce/optimizer/developer/salesforce-connector)）可提供起點。
 
 **2. 統一基礎目錄**
 內嵌的資料會在目錄服務資料管道中建立統一的基本目錄。 此單一來源可消除業務單位間的資料重複。

@@ -1,9 +1,19 @@
 ---
-source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
+source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
 workflow-type: tm+mt
 source-wordcount: '1470'
 ht-degree: 0%
 ---
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/setup/catalog-layer.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
 # 目錄圖層
 
 目錄圖層可讓您修改產品資料，而不變更原始來源資料。 圖層會透過在基本目錄上方建立圖層來修改產品屬性，例如名稱、說明、影像、連結和中繼資料。 您的原始產品資料會維持不變，可讓您安全地自訂產品，並隨時還原變更。
@@ -96,7 +106,7 @@ ht-degree: 0%
 
 ## 在UI中手動新增目錄圖層
 
-目錄檢視UI可讓您手動建立和管理圖層，這對產生AI支援的建議的Sites Optimizer等整合特別有用。 若要進行大量圖層作業，請使用上述的資料擷取API方法[&#128279;](#add-a-catalog-layer-via-data-ingestion)。
+目錄檢視UI可讓您手動建立和管理圖層，這對產生AI支援的建議的Sites Optimizer等整合特別有用。 若要進行大量圖層作業，請使用上述的資料擷取API方法[](#add-a-catalog-layer-via-data-ingestion)。
 
 如果目錄檢視中沒有Sites Optimizer圖層，Sites Optimizer中的自動修正功能會自動建立一個圖層，並為其指定最高優先順序（最高編號）。 如果您刪除此圖層，則會在下次執行Sites Optimizer中的自動修復功能時重新建立此圖層，並將現有圖層移至較低順序的數字。 如果Sites Optimizer圖層已存在於不同的訂單編號，則自動修正功能不會變更其優先順序。
 
@@ -199,6 +209,6 @@ ht-degree: 0%
 ## 更多相關資訊
 
 * [目錄檢視](catalog-view.md) — 設定不同店面的目錄檢視
-* [產品視覺效果](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/setup/product-visuals) — 將AEM Assets用於產品影像
+* [產品視覺效果](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/product-visuals) — 將AEM Assets用於產品影像
 * [機會](../manage-results/opportunities.md) — 瞭解使用目錄層的AI支援的最佳化
 * [受限制的存取金鑰](restricted-access-keys.md) — 使用已簽署的權杖驗證保護目錄檢視

@@ -1,9 +1,19 @@
 ---
-source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
+source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
 workflow-type: tm+mt
 source-wordcount: '921'
 ht-degree: 0%
 ---
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/merchandising/facets/overview.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
 # Facet
 
 Facet是一種高效能篩選方法，使用多個屬性值的維度做為搜尋條件。
@@ -33,7 +43,7 @@ Facet是一種高效能篩選方法，使用多個屬性值的維度做為搜尋
 
 進一步瞭解產品屬性及其屬性：
 
-- 如需連線至Adobe Commerce後端的部署，請參閱[產品屬性總覽](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/product-attributes/product-attributes)
+- 如需連線至Adobe Commerce後端的部署，請參閱[產品屬性總覽](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes)
 - 如需使用協力廠商Commerce後端的部署，請參閱[資料擷取中繼資料API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#metadata)。
 
 ## 分層搜尋和展開搜尋型別

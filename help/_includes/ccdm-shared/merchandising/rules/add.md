@@ -1,9 +1,19 @@
 ---
-source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
+source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
 workflow-type: tm+mt
 source-wordcount: '4098'
 ht-degree: 0%
 ---
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/merchandising/rules/add.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
 # 建立和管理規則
 
 建立規則需要選取套用規則的目錄檢視、設定規則說明、型別、定義其條件和排名、測試結果，以及發佈規則。
@@ -11,8 +21,8 @@ ht-degree: 0%
 ## 建立規則 {#create-a-rule}
 
 1. 從功能表，移至&#x200B;_銷售_ > **銷售規則**。
-1. （選擇性）使用&#x200B;**目錄檢視**&#x200B;下拉式清單，選取套用規則的目錄檢視。
-您建立的規則將範圍限定在選取的檢視（如果選取&#x200B;**所有檢視**，則限定在所有目錄檢視）。 請參閱[選取目錄檢視](workspace.md#select-catalog-view)，瞭解目錄檢視範圍的運作方式。
+1. （選擇性）使用&#x200B;**目錄檢視**下拉式清單，選取套用規則的目錄檢視。
+您建立的規則將範圍限定在選取的檢視（如果選取**所有檢視**，則限定在所有目錄檢視）。 請參閱[選取目錄檢視](workspace.md#select-catalog-view)，瞭解目錄檢視範圍的運作方式。
 
 1. 按一下&#x200B;**[!UICONTROL Create rule]**&#x200B;以啟動規則編輯器。
 
@@ -63,7 +73,7 @@ ht-degree: 0%
 
 **多個條件**
 
-1. 若要建置包含多個條件的規則，請按一下[新增條件]。**&#x200B;**
+1. 若要建置包含多個條件的規則，請按一下[新增條件]。****
 一個規則最多可以有十個條件。 結合兩個條件的邏輯運運算元是以目前的*Match*&#x200B;設定為基礎。 依預設，*符合*&#x200B;為`All`，邏輯運運算元為`AND`。
 
 1. 選取第二個條件並輸入必要的查詢文字。
@@ -77,7 +87,7 @@ ht-degree: 0%
 
    在此範例中，不是搜尋「yoga pants」，而是有兩個不同的查詢可搜尋「yoga」或「pants」。 此規則較少具體，且在店面中觸發的頻率高於其他規則。
 
-1. 若要新增其他條件，請按一下[新增條件] **&#x200B;**&#x200B;並重複此程式。
+1. 若要新增其他條件，請按一下[新增條件] ****&#x200B;並重複此程式。
 1. 選擇性地設定[智慧型排名](#intelligent-ranking)、[手動排名](#manual-ranking)或[屬性排名](#attribute-ranking)，如下列章節所述。 相同的控制項適用於類別頁面，但會指出任何差異。
 
 >[!TAB 類別規則]
@@ -210,7 +220,7 @@ ht-degree: 0%
 
 如需關於設定搜尋權重的資訊：
 
-- 如需所有Adobe Commerce部署，請參閱&#x200B;_目錄管理指南_&#x200B;中的[搜尋結果](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/catalog/search/search-results)。
+- 如需所有Adobe Commerce部署，請參閱&#x200B;_目錄管理指南_&#x200B;中的[搜尋結果](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results)。
 - 如需獨立Adobe Commerce Optimizer部署，請參閱&#x200B;_Merchandising Services開發人員指南_&#x200B;中的[中繼資料REST API](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata)。
 
 ### 手動排名 {#manual-ranking}
@@ -246,7 +256,7 @@ ht-degree: 0%
 
 >[!AVAILABILITY]
 >
->此功能位於[beta](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/beta#attribute-ranking-public-beta)中。
+>此功能位於[beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#attribute-ranking-public-beta)中。
 
 **屬性排名**&#x200B;會自動將&#x200B;**[!UICONTROL Boost]**、**[!UICONTROL Bury]**&#x200B;或&#x200B;**[!UICONTROL Hide]**&#x200B;動作套用至符合一或多個屬性條件的每個產品，而不需要您選取個別SKU。 屬性排名會與[智慧型排名](#intelligent-ranking)和[手動排名](#manual-ranking)一起出現在規則編輯器中，並適用於&#x200B;**所有產品規則**、**搜尋規則**&#x200B;和&#x200B;**類別規則**。 使用它來擴展大型目錄中的銷售，例如，提升指定品牌的所有產品，或將每個產品埋入停產的顏色。
 
@@ -297,7 +307,7 @@ ht-degree: 0%
 
 ## 編輯、檢視和刪除規則 {#edit-view-and-delete-rules}
 
-若要更新現有規則的屬性，請遵循這些指示。 規則建立後，您無法變更其目錄檢視（範圍）；範圍會在您建立規則時設定。 檢視[選取目錄檢視](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/merchandising/rules/workspace#select-catalog-view)。
+若要更新現有規則的屬性，請遵循這些指示。 規則建立後，您無法變更其目錄檢視（範圍）；範圍會在您建立規則時設定。 檢視[選取目錄檢視](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/workspace#select-catalog-view)。
 
 ### 編輯規則
 
