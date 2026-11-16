@@ -13,9 +13,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 0b52c20df4c64d3dd7e43f023e7b0f4517e8fcf7
+source-git-commit: 57a905703b11ef8fc4ca4527a5fc136dc81615cc
 workflow-type: tm+mt
-source-wordcount: '1486'
+source-wordcount: '1491'
 ht-degree: 0%
 ---
 # 限制和邊界
@@ -151,7 +151,7 @@ Dynamic Media使用方式會追蹤進入[!DNL Adobe Commerce Optimizer]內「產
 | 可搜尋的屬性 | 可針對目錄搜尋編制索引的產品特性數 | 200 | 否 |
 | 可排序的屬性 | 搜尋和類別頁面上可作為排序選項的產品特性數。 | 50 | 否 |
 | 搜尋分頁深度 | 透過搜尋分頁可存取的產品上限（例如，第100頁×100個產品/頁面） | 10K | 否 |
-| Facet | 可篩選的產品屬性數量（例如品牌、顏色、大小、價格），可設定為協助購物者調整搜尋結果和瀏覽類別 | 100<p>必須是可篩選的屬性</p> | 否 |
+| Facet | 可篩選的產品屬性數量（例如品牌、顏色、大小、價格），可設定為協助購物者調整搜尋結果和瀏覽類別 | 100<p>必須是可篩選的屬性</p> | 是<p>可透過支援要求提高</p> |
 | 各Facet選項 | 購物者可在Facet中選取的可篩選產品屬性值數量（例如「紅色」、「藍色」代表顏色；「小」、「Medium」代表大小） | 100 | 是<p>可透過支援要求提高</p> |
 
 {style="table-layout:auto"}

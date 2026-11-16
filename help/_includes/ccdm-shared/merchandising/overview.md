@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '302'
 ht-degree: 0%
 ---
+# Adobe Merchandising
+
 瞭解如何透過產品探索和推薦，為購物者建立個人化體驗。
 
 這些Adobe Merchandising服務建置在可撰寫目錄資料模型(CCDM)上，可將&#x200B;*產品資料*&#x200B;與&#x200B;*產品內容*&#x200B;分開。 產品資料包括SKU、屬性、中繼資料、資產和價格。 產品內容定義資料傳遞的方式，包括[目錄檢視](/help/optimizer/setup/catalog-view.md)、[資料存取原則](/help/optimizer/setup/policies.md)和[目錄來源](/help/optimizer/setup/catalog-sources.md) （區域設定）。 因為目錄檢視和原則會控制店面資料，所以您可以為B2B、B2C和D2C模型撰寫自訂目錄，並量身打造購物體驗，而不需要複製基本資料。

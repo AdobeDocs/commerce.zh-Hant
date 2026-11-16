@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '805'
 ht-degree: 0%
 ---
+# 銷售規則
+
 銷售規則結合邏輯與動作，以塑造產品在&#x200B;**搜尋結果**、**預設產品清單**&#x200B;中（透過&#x200B;**預設搜尋規則**）及&#x200B;**類別頁面**&#x200B;中的顯示方式。 您可以提升、隱藏、釘選或隱藏產品，並套用&#x200B;**智慧排名**，讓清單反映您的業務目標。
 
 每個&#x200B;**搜尋規則**&#x200B;有三個主要元件：

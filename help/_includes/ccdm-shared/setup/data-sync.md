@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '487'
 ht-degree: 0%
 ---
+# 目錄同步
+
 「**資料同步**」頁面會顯示從資料來源(您現有的Commerce目錄、產品資訊管理(PIM)系統、企業資源規劃(ERP)系統等)傳輸到「銷售服務」資料層的產品資料同步狀態概觀。
 
 **資料同步**&#x200B;頁面提供您店面產品資料可用性的寶貴見解，以確保可立即顯示給您的購物者。

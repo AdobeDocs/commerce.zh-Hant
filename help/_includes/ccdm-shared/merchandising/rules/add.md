@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '4094'
+source-wordcount: '4098'
 ht-degree: 0%
 ---
+# 建立和管理規則
+
 建立規則需要選取套用規則的目錄檢視、設定規則說明、型別、定義其條件和排名、測試結果，以及發佈規則。
 
 ## 建立規則 {#create-a-rule}

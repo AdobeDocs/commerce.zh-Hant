@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '583'
 ht-degree: 0%
 ---
+# 建立同義字
+
 新增您自己的同義字組織清單，以提高客戶參與度。 每個目錄來源最多可新增200個同義字。
 
 ![同義字Workspace](/help/assets/ccdm-shared/synonyms/synonym-workspace.png)

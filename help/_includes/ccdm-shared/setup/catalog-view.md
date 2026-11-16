@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '740'
 ht-degree: 0%
 ---
+# Adobe Merchandising服務的目錄檢視總覽
+
 <!--This shared include file contains the conceptual and architecture overview of catalog views for Adobe Merchandising Services-->
 
 目錄檢視會定義使用者端可擷取的產品和定價。 它結合目錄來源、目錄層、原則和價格手冊，以支援不同的品牌、地區、業務單位或管道。

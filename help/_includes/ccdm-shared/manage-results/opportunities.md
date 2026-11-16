@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '1452'
+source-wordcount: '1453'
 ht-degree: 0%
 ---
+# 機會
+
 **機會**&#x200B;頁面可協助您識別並實作最佳化，以透過與Adobe Sites Optimizer整合來改善網站流量、使用者參與和轉換率。
 
 ![個機會](/help/assets/ccdm-shared/opportunities/opportunities.png)

@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '1555'
+source-wordcount: '1559'
 ht-degree: 0%
 ---
+# 建立和管理建議
+
 當您建立建議時，您會建立包含建議產品&#x200B;_專案_&#x200B;的&#x200B;_建議單位_&#x200B;或Widget。
 
 ![建議單位](/help/assets/ccdm-shared/recommendations/unit.png)

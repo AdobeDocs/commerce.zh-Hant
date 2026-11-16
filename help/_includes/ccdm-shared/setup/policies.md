@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '993'
 ht-degree: 0%
 ---
+# 原則
+
 原則會定義套用至目錄檢視中產品的篩選器。 他們協助量身打造返回店面或頻道的產品組合。 這可確保將正確的內容傳送到正確的目的地。 例如，實體商店、市場和Google、Facebook和Instagram等廣告頻道。
 
 原則會使用產品屬性（例如，品牌、模型或零件類別）來根據業務需求量身打造目錄資料。 &#x200B;

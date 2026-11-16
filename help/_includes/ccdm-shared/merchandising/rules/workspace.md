@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '962'
 ht-degree: 1%
 ---
+# 銷售規則Workspace
+
 *銷售規則*&#x200B;工作區會列出目前選擇的規則及其狀態，並提供您建立和管理規則所需工具的存取權。 您可以將規則範圍設定為所有[目錄檢視](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/setup/catalog-view) （全域）或單一目錄檢視。 請參閱[選取目錄檢視](#select-catalog-view)，瞭解如何依目錄檢視進行篩選，以及依每個目錄檢視建立規則。 您可以從工作區中執行下列作業：
 
 - 搜尋規則

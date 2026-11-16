@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '872'
 ht-degree: 0%
 ---
+# 銷售設定
+
 使用&#x200B;*設定*&#x200B;工作區來設定您店面的搜尋和產品探索。 可使用下列標籤：
 
 - **Facet** — 設定價格範圍群組和間隔，以做為搜尋篩選器。

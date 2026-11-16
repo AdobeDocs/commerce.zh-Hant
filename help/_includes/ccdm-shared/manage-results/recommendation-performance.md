@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '917'
 ht-degree: 0%
 ---
+# Recommendations效能
+
 「Recommendations效能」頁面會顯示已設定建議的清單，以及可幫助您評估其效能的關鍵測量結果。 您可以設定檢視以顯示過去一天、一週或月的量度。 這些見解會顯示每個建議單位被檢視或點按的頻率，可幫助您評估效能並識別最佳化機會。
 
 >[!INFO]

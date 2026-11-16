@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '1468'
+source-wordcount: '1470'
 ht-degree: 0%
 ---
+# 目錄圖層
+
 目錄圖層可讓您修改產品資料，而不變更原始來源資料。 圖層會透過在基本目錄上方建立圖層來修改產品屬性，例如名稱、說明、影像、連結和中繼資料。 您的原始產品資料會維持不變，可讓您安全地自訂產品，並隨時還原變更。
 
 ![目錄圖層](/help/assets/ccdm-shared/setup/catalog-layers.png)

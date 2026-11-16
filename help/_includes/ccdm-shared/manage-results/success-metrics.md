@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '2821'
+source-wordcount: '2823'
 ht-degree: 0%
 ---
+# 成功量度
+
 此頁面提供商店關鍵績效測量結果的概觀。 目標是瞭解使用可撰寫目錄資料模型(CCDM)實作銷售服務的結果，以找出成長機會和最佳化領域。
 
 ![成功量度報告](/help/assets/ccdm-shared/manage-results/success-metrics.png)

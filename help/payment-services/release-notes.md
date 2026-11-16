@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
+source-git-commit: d112f591ea46e4f3bdc081566a9a036df4ccfe5a
 workflow-type: tm+mt
-source-wordcount: '5663'
+source-wordcount: '5695'
 ht-degree: 0%
 ---
 
@@ -131,6 +131,13 @@ _2021年6月28日_
 >
 > 經常發行以視需要提供新功能和修正。 發行排程未修正。
 
+## v2.17.1
+
+_2026年11月16日_
+
+[!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.6或更新版本
+
+![已修正問題](../assets/fix.svg)<!-- PAY-7254 -->修正PayPal付款核准後，條款與條件核取方塊遭到清除，導致購物者無法完成結帳的問題。
 
 ## v2.17.0
 
@@ -543,7 +550,7 @@ _2023年9月27日_
 
 [!BADGE 支援]{type=Informative tooltip="支援"} Adobe Commerce 2.4.4或更新版本
 
-![修正問題](../assets/fix.svg)<!-- Issue PAY-4870 -->修正傳送具有最新版本的擴充功能版本時，Storefront中新標題屬性填入錯誤的問題。 之前，隨著Commerce服務聯結器的`1.3.0`發行，您無法從[!DNL Payment Services]擴充功能擴充`User-Agent header`。
+<!-- Issue PAY-4870 --> 修正傳送具有最新版本的擴充功能版本時，Storefront中正確填入新標題屬性的問題。 之前，隨著Commerce服務聯結器的`1.3.0`發行，您無法從[!DNL Payment Services]擴充功能擴充`User-Agent header`。
 
 ## v2.2.0
 

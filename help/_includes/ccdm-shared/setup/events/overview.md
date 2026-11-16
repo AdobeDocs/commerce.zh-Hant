@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '1605'
+source-wordcount: '1606'
 ht-degree: 10%
 ---
+# 活動
+
 事件是運用即時資料深入分析來增強購物體驗及促進轉換的重要工具。
 
 可撰寫目錄資料模型(CCDM)的銷售服務會自動將店面事件部署至您的網站。 這些事件會從購物者在您網站上的互動中擷取資料。 此匿名資料可支援[建議](../../manage-results/recommendation-performance.md)、[產品探索](../../manage-results/search-performance.md)和[成功量度](../../manage-results/success-metrics.md)。

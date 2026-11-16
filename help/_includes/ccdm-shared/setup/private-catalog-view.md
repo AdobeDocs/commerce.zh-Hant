@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '853'
 ht-degree: 0%
 ---
+# 私人目錄檢視
+
 依預設，[目錄檢視](catalog-view.md)是公用的。 限制對目錄檢視的存取，以便只有具有有效簽署權杖的請求才能擷取其資料。
 
 目錄檢視會透過下列兩種方式之一變成私人：

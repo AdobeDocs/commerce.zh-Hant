@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '350'
 ht-degree: 0%
 ---
+# 同義字的型別
+
 單向和雙向同義字會擴展關鍵字的定義。 有些可與關鍵字互換，有些則代表關鍵字的子集。
 
 ## 雙向

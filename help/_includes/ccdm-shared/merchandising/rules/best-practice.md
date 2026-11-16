@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '455'
 ht-degree: 0%
 ---
+# 銷售規則最佳實務
+
 若要最佳化轉換和收入，請實作有效的&#x200B;**搜尋規則**、強大的&#x200B;**預設清單**&#x200B;規則和&#x200B;**[類別規則](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/merchandising/rules/add#rule-types)**。 使用銷售資料、庫存、促銷活動和[智慧型排名](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking)調整排名。
 
 建立深思熟慮的&#x200B;**預設規則**&#x200B;至關重要。 您的[預設規則](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/merchandising/rules/overview#default-rule)會決定搜尋結果在未套用特定搜尋規則時的初始排序方式，這可以改善探索和購買的可能性。 請定期檢閱，以符合購物者需求和行銷活動。

@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '829'
 ht-degree: 0%
 ---
+# 搜尋比對和排名
+
 >[!IMPORTANT]
 >
 >下列功能位於[私人測試版](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/beta)。
