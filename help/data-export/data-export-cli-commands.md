@@ -26,14 +26,14 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: a473907b3ccb585c862f395021501b5215b7be8d
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '754'
 ht-degree: 0%
 ---
 # 使用Commerce CLI同步摘要
 
-`magento/saas-export`封裝中的`saas:resync`命令可讓您管理[!DNL Adobe Commerce] SaaS服務的資料同步處理。
+`saas:resync` CLI命令可讓您管理[!DNL Adobe Commerce] SaaS服務的資料同步處理。
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ ht-degree: 0%
 Adobe不建議定期使用`saas:resync`命令。 使用指令的典型情況如下：
 
 - 初始同步
-- 變更[SaaS資料空間ID](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/config/services/saas)後，將資料同步處理至新的資料空間
+- 變更[SaaS資料空間ID](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas)後，將資料同步處理至新的資料空間
 - 疑難排解
 
 監視`var/log/saas-export.log`檔案中的同步作業。
@@ -116,7 +116,7 @@ bin/magento saas:resync --feed products
 
 ## `--by-ids`
 
-依其ID部分重新同步特定實體。 支援`products`、`productAttributes`、`productOverrides`、`inventoryStockStatus`、`prices`、`variants`和`categoryPermissions`摘要。
+依其ID部分重新同步特定實體。 支援`products`、`productAttributes`、`productOverrides`、`prices`、`variants`和`categoryPermissions`摘要。
 
 依預設，當您使用`--by-ids`選項時，您會使用產品SKU值來指定值。 若要改用產品ID，請新增`--id-type=productId`選項。
 
@@ -134,7 +134,7 @@ bin/magento saas:resync --feed products --by-ids='1,2,3' --id-type='productId'
 
 ## `--cleanup-feed`
 
-在重新索引並將資料傳送到SaaS之前，請清理摘要索引器表格。 僅支援`products`、`productAttributes`、`productOverrides`、`inventoryStockStatus`、`prices`、`variants`和`categoryPermissions`。
+在重新索引並將資料傳送到SaaS之前，請清理摘要索引器表格。 僅支援`products`、`productAttributes`、`productOverrides`、`prices`、`variants`和`categoryPermissions`。
 
 如果與`--dry-run`選項搭配使用，該作業會針對所有專案執行試執行重新同步作業。
 

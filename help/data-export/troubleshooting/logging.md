@@ -31,9 +31,9 @@ topic_v2:
     internal-label: Troubleshooting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: a473907b3ccb585c862f395021501b5215b7be8d
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '1007'
 ht-degree: 0%
 ---
 # 檢閱記錄檔並進行疑難排解
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->您也可以從Admin的[資料摘要同步狀態儀表板](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)追蹤產品與類別資料之資料匯出摘要的健康狀況和效能。
+>您也可以從Admin的[資料摘要同步狀態儀表板](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)追蹤產品與類別資料之資料匯出摘要的健康狀況和效能。
 
 ## 記錄檔
 
@@ -159,7 +159,7 @@ Price feed full resync:
 - 資料匯出錯誤記錄(`commerce-data-export-errors.log`)會擷取收集階段發生的錯誤。
 - SaaS匯出錯誤記錄(`saas-export-errors.log`)會擷取傳輸階段發生的錯誤。
 
-如果您看到與設定或協力廠商擴充功能無關的錯誤，請儘可能提交[支援票證](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)並提供更多資訊。
+如果您看到與設定或協力廠商擴充功能無關的錯誤，請儘可能提交[支援票證](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)並提供更多資訊。
 
 ### 解決目錄同步問題 {#resolvesync}
 
@@ -181,7 +181,7 @@ EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed=products
 
 ### 保留摘要索引表格中的裝載
 
-對於Commerce SaaS資料匯出擴充功能(`magento/module-data-exporter`) 103.3.0和更新版本，立即匯出摘要只會保留索引表格中最低限度的必要資料。 摘要包含所有目錄和庫存狀態摘要。
+對於Commerce SaaS資料匯出擴充功能(`magento/module-data-exporter`) 103.3.0和更新版本，立即匯出摘要只會保留索引表格中最低限度的必要資料。 摘要包含所有目錄摘要。
 
 不建議在生產環境中保留索引表中的裝載資料，但在開發人員環境中可能會很有用。 當您重新同步摘要時，新增`PERSIST_EXPORTED_FEED=1`環境變數，以在索引中包含摘要裝載。
 
