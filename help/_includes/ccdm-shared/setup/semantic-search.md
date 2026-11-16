@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '567'
 ht-degree: 0%
 ---
+# 語意搜尋
+
 語意搜尋會使用AI來瞭解購物者的意思，而不只是他們鍵入的字詞。 即使您的目錄未使用相關片語，如「沙灘婚禮的禮服」或「一整天都穿著舒服的鞋子」等查詢仍可傳回相關產品。
 
 產品探索系統將關鍵字比對和語意比對結合在一個搜尋體驗中。 您不會在店面管理個別的關鍵字和語意模式。

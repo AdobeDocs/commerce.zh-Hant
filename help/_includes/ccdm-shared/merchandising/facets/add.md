@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '463'
 ht-degree: 0%
 ---
+# 建立和管理Facet
+
 任何可篩選的產品屬性都可以當作Facet使用。 Facet可協助客戶更輕鬆地在您的商店中篩選及尋找產品。 本文說明如何在店面中新增、管理和設定Facet。
 
 ![建立Facet](/help/assets/ccdm-shared/facets/create-facet.png)

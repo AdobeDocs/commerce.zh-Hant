@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '310'
 ht-degree: 0%
 ---
+# Recommendations最佳作法
+
 Adobe建議您在使用Recommendations時遵循下列准則：
 
 - 讓您的建議型別多樣化。 如果客戶一再建議相同的產品，就會開始忽略建議。

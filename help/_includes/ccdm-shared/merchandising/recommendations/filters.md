@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '2382'
+source-wordcount: '2384'
 ht-degree: 0%
 ---
+# 篩選產品
+
 [!DNL Product Recommendations]會自動將無法設定的預設篩選器套用至建議單位。 如果您將多個建議單位部署至一個頁面，[!DNL Product Recommendations]會篩選掉單位中重複的任何產品。 系統只會使用重複產品的第一次參考，以便給其他建議的產品騰出空間。 [!DNL Product Recommendations]也會篩選掉任何先前購買過的產品以及購物車中的產品。
 
 當您[建立](create.md)建議單位時，您可以定義篩選器來控制哪些產品可以顯示在建議中。 這些篩選器是根據您定義的一組包含或排除條件。 只有符合所有包含條件的產品才會出現在建議中。 不建議使用符合任何排除條件的產品。

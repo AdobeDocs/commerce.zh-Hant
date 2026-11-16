@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '177'
 ht-degree: 1%
 ---
+# Facet Workspace
+
 *Facets*&#x200B;工作區會列出目前可用的所有Facet，並可讓您存取設定和管理Facet所需的工具。 釘選多面會先出現在現有多面的清單中，然後是動態多面。 您可以搜尋Facet清單。
 
 ![Facet Workspace](/help/assets/ccdm-shared/facets/facet-workspace.png)

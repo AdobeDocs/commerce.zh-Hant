@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '583'
 ht-degree: 0%
 ---
+# 建立同義字
+
 新增您自己的同義字組織清單，以提高客戶參與度。 每個目錄來源最多可新增200個同義字。
 
 ![同義字Workspace](/help/assets/ccdm-shared/synonyms/synonym-workspace.png)
@@ -20,7 +22,7 @@ ht-degree: 0%
 ### 雙向同義字
 
 1. 輸入要比對的&#x200B;**關鍵字**&#x200B;詞語或片語。
-1. 輸入您想要新增為關鍵字同義字的&#x200B;**擴增**&#x200B;字詞。 請使用逗號分隔多個詞語。
+1. 輸入您想要新增為關鍵字同義字的&#x200B;**擴增**字詞。 請使用逗號分隔多個詞語。
 在此範例中，要比對的關鍵字是「pants」，而擴充辭彙集是「trousers， slacks」。
 
    ![雙向同義字](/help/assets/ccdm-shared/synonyms/synonym-add-two-way.png)
@@ -56,13 +58,13 @@ ht-degree: 0%
 
 | 欄位 | 說明 |
 |--- |--- |
-| [型別](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/merchandising/synonyms/type) | 判斷同義字與關鍵字的意義相同，或是關鍵字的子集。 選項：<br />雙向（預設） — 與關鍵字具有相同含義並傳回相同搜尋結果的字詞<br />單向 — 關鍵字的子集的字詞。 單向同義字會傳回特定產品的較窄清單。 |
+| [型別](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/synonyms/type) | 判斷同義字與關鍵字的意義相同，或是關鍵字的子集。 選項：<br />雙向（預設） — 與關鍵字具有相同含義並傳回相同搜尋結果的字詞<br />單向 — 關鍵字的子集的字詞。 單向同義字會傳回特定產品的較窄清單。 |
 | 關鍵字 | 通常與目錄中的一系列產品相關聯的字詞。 |
 | 擴充 | 與關鍵字具有相同或類似含義的其他詞語。 |
 
 ## 管理同義字
 
-請依照這些指示管理現有的[同義字](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/merchandising/synonyms/overview)。
+請依照這些指示管理現有的[同義字](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/synonyms/overview)。
 
 ## 尋找同義字
 

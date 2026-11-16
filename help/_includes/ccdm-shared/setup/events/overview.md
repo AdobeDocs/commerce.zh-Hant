@@ -1,16 +1,18 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '1605'
+source-wordcount: '1606'
 ht-degree: 10%
 ---
+# 活動
+
 事件是運用即時資料深入分析來增強購物體驗及促進轉換的重要工具。
 
 可撰寫目錄資料模型(CCDM)的銷售服務會自動將店面事件部署至您的網站。 這些事件會從購物者在您網站上的互動中擷取資料。 此匿名資料可支援[建議](../../manage-results/recommendation-performance.md)、[產品探索](../../manage-results/search-performance.md)和[成功量度](../../manage-results/success-metrics.md)。
 
 >[!NOTE]
 >
->資料彙集不包含個人識別資訊(PII)。 所有使用者識別碼（例如Cookie ID和IP位址）都需嚴格匿名處理。 [了解更多](https://www.adobe.com/tw/privacy/experience-cloud.html)。
+>資料彙集不包含個人識別資訊(PII)。 所有使用者識別碼（例如Cookie ID和IP位址）都需嚴格匿名處理。 [了解更多](https://www.adobe.com/privacy/experience-cloud.html)。
 
 **事件**&#x200B;頁面可讓您觀察正在收集的店面事件資料。 檢視事件資料收集可讓商家驗證他們是否已正確實作店面事件，以及是否成功擷取事件。 商戶可以使用此頁面來識別潛在問題，並採取措施來解決任何事件問題。
 
@@ -172,4 +174,4 @@ _Cold Start_&#x200B;問題是指模型訓練及生效所需的時間。 針對�
 
 ## 支援
 
-如果您發現任何資料差異，或如果建議和搜尋結果未如預期運作，[請提交支援票證](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。
+如果您發現任何資料差異，或如果建議和搜尋結果未如預期運作，[請提交支援票證](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)。

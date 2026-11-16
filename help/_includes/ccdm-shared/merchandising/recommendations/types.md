@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '1597'
+source-wordcount: '1599'
 ht-degree: 0%
 ---
+# 建議型別
+
 [!DNL Product Recommendations]提供大量建議，您可將其部署至網站上的不同頁面。 所有建議型別都是資料導向。 它們是根據行為資料、產品屬性資料和量度。 為方便參考，建議型別分組如下：
 
 - [個人化](#personalized)
