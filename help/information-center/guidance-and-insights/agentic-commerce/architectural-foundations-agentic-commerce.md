@@ -49,23 +49,21 @@ topic_v2:
     internal-label: Insights
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: f54c816fd23786ec519d5c890bc2664c3dcf8c6f
+source-git-commit: 885ac15bc30ac9d9fe9ab416db7fdbfcad0ff026
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1323'
 ht-degree: 0%
 ---
 
 # 為購物者和AI代理程式設計商務平台
+
+![代理商務平台的主圖插圖，其中人類和AI代理與單一真實來源互動](../../assets/guidance-and-insights/agentic-commerce-hero.png "代理商務平台的架構基礎"){width="800"}
 
 <table style="table-layout:auto">
 <tr style="border: 0;">
    <td valign="middle" style="vertical-align: middle;"><img alt="蘇利亞·拉梅赫肖像" src="../../assets/guidance-and-insights/agentic-commerce-author-avatar-slamech.png" width="96"><br><strong>Surya Lamech</strong><br><em>主要產品行銷經理</em></td>
 </tr>
 </table>
-
-![代理商務平台的主圖插圖，其中人類和AI代理與單一真實來源互動](../../assets/guidance-and-insights/agentic-commerce-hero.png "代理商務平台的架構基礎")
-
-*設計商業平台，讓人類和AI代理程式與單一真實來源互動。*
 
 Commerce正在經歷結構性轉變。 客戶不再單純仰賴搜尋引擎或瀏覽店面來探索選項。 相反，他們改用LLM支援的介面、聊天式助理和代理商購物工具來提問、比較不同零售商的產品，並加速早期決策。
 
@@ -136,4 +134,4 @@ Adobe可讓您檢視產品在LLM中的顯示情形，透過AI增強產品資料�
 * [原則](/help/optimizer/setup/policies.md)
 * [Adobe Commerce App Builder的AI編碼開發人員工具](/help/cloud-service/migration/coding-tools.md)
 * [COMMERCE API](../../apis/commerce-apis.md)
-* [Commerce Developer Agent播放清單](https://experienceleague.adobe.com/zh-hant/playlists/commerce-developer-agent) — 觀看設定和使用Commerce Developer Agent的技術影片。
+* [Commerce Developer Agent播放清單](https://experienceleague.adobe.com/en/playlists/commerce-developer-agent) — 觀看設定和使用Commerce Developer Agent的技術影片。
