@@ -33,7 +33,7 @@ Facet是一種高效能篩選方法，使用多個屬性值的維度做為搜尋
 
 進一步瞭解產品屬性及其屬性：
 
-- 如需連線至Adobe Commerce後端的部署，請參閱[產品屬性總覽](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes)
+- 如需連線至Adobe Commerce後端的部署，請參閱[產品屬性總覽](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/product-attributes/product-attributes)
 - 如需使用協力廠商Commerce後端的部署，請參閱[資料擷取中繼資料API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#metadata)。
 
 ## 分層搜尋和展開搜尋型別

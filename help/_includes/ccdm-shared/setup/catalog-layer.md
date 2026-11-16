@@ -199,6 +199,6 @@ ht-degree: 0%
 ## 更多相關資訊
 
 * [目錄檢視](catalog-view.md) — 設定不同店面的目錄檢視
-* [產品視覺效果](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/product-visuals) — 將AEM Assets用於產品影像
+* [產品視覺效果](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/setup/product-visuals) — 將AEM Assets用於產品影像
 * [機會](../manage-results/opportunities.md) — 瞭解使用目錄層的AI支援的最佳化
 * [受限制的存取金鑰](restricted-access-keys.md) — 使用已簽署的權杖驗證保護目錄檢視

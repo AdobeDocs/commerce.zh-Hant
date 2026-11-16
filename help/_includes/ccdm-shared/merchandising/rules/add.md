@@ -210,7 +210,7 @@ ht-degree: 0%
 
 如需關於設定搜尋權重的資訊：
 
-- 如需所有Adobe Commerce部署，請參閱&#x200B;_目錄管理指南_&#x200B;中的[搜尋結果](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results)。
+- 如需所有Adobe Commerce部署，請參閱&#x200B;_目錄管理指南_&#x200B;中的[搜尋結果](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/catalog/search/search-results)。
 - 如需獨立Adobe Commerce Optimizer部署，請參閱&#x200B;_Merchandising Services開發人員指南_&#x200B;中的[中繼資料REST API](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata)。
 
 ### 手動排名 {#manual-ranking}
@@ -246,7 +246,7 @@ ht-degree: 0%
 
 >[!AVAILABILITY]
 >
->此功能位於[beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#attribute-ranking-public-beta)中。
+>此功能位於[beta](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/release/beta#attribute-ranking-public-beta)中。
 
 **屬性排名**&#x200B;會自動將&#x200B;**[!UICONTROL Boost]**、**[!UICONTROL Bury]**&#x200B;或&#x200B;**[!UICONTROL Hide]**&#x200B;動作套用至符合一或多個屬性條件的每個產品，而不需要您選取個別SKU。 屬性排名會與[智慧型排名](#intelligent-ranking)和[手動排名](#manual-ranking)一起出現在規則編輯器中，並適用於&#x200B;**所有產品規則**、**搜尋規則**&#x200B;和&#x200B;**類別規則**。 使用它來擴展大型目錄中的銷售，例如，提升指定品牌的所有產品，或將每個產品埋入停產的顏色。
 
@@ -297,7 +297,7 @@ ht-degree: 0%
 
 ## 編輯、檢視和刪除規則 {#edit-view-and-delete-rules}
 
-若要更新現有規則的屬性，請遵循這些指示。 規則建立後，您無法變更其目錄檢視（範圍）；範圍會在您建立規則時設定。 檢視[選取目錄檢視](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/workspace#select-catalog-view)。
+若要更新現有規則的屬性，請遵循這些指示。 規則建立後，您無法變更其目錄檢視（範圍）；範圍會在您建立規則時設定。 檢視[選取目錄檢視](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/merchandising/rules/workspace#select-catalog-view)。
 
 ### 編輯規則
 
