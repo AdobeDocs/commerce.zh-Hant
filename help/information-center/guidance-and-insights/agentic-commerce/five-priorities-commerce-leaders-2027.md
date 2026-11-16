@@ -168,7 +168,7 @@ Adobe的代理商商務方向包括如AI就緒的產品探索、透過購物者M
 
 **準備好讓您的企業準備進行AI支援的商務了嗎？**
 
-[探索Adobe Commerce as a Cloud Service](https://business.adobe.com/products/commerce.html)，並探索Adobe如何協助您建立更多連結、智慧型購物體驗。
+[探索Adobe Commerce as a Cloud Service](https://business.adobe.com/tw/products/commerce.html)，並探索Adobe如何協助您建立更多連結、智慧型購物體驗。
 
 >[!ENDSHADEBOX]
 
