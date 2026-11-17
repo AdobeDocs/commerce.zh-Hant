@@ -30,9 +30,9 @@ topic_v2:
     internal-label: Security
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: bda4dae0a31e869ced20968bc9a9785f6b730c97
+source-git-commit: 885ac15bc30ac9d9fe9ab416db7fdbfcad0ff026
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '265'
 ht-degree: 0%
 ---
 
@@ -58,6 +58,7 @@ Adobe Commerce產品管理和工程部門會分享他們提供給同行的指引
 ## 開始探索
 
 - [為購物者和AI代理程式設計商業平台](agentic-commerce/architectural-foundations-agentic-commerce.md) — 瞭解如何從單一信任來源為人們和AI代理程式提供服務。 本文介紹為機器推理所建立的目錄、模型上下文通訊協定(MCP)和開放式代理商商業通訊協定，以及顯示代理商如何代表您品牌的遙測。
+- [2027年代理商務：商務領導者的五個優先順序](agentic-commerce/five-priorities-commerce-leaders-2027.md) — 準備使用產品資料、可發現性、基礎架構、測量和實驗的AI輔助購物。
 - [透過Adobe Commerce即時搜尋改善產品探索](catalog-management/improve-product-discovery-live-search.md) — 瞭解如何使用搜尋效能見解和語意搜尋來協助購物者尋找相關產品。
 
 文章在發佈時即會新增至本節。 回頭檢視您能立即使用的專家觀點、實施策略和建議。

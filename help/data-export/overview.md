@@ -29,9 +29,9 @@ topic_v2:
     internal-label: Troubleshooting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 672e67ef99d52c942013a880ecfec0da31e76756
+source-git-commit: a473907b3ccb585c862f395021501b5215b7be8d
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '391'
 ht-degree: 5%
 ---
 # [!DNL SaaS Data Export] 指南
@@ -47,7 +47,6 @@ SaaS資料匯出會收集並匯出各種型別的資料，稱為&#x200B;_摘要_
 - **目錄實體摘要**&#x200B;彙總產品資料。 資料包括產品、產品屬性、產品價格、產品變化、類別、類別許可權和產品許可權。
 - **範圍摘要**&#x200B;會彙總客戶群組、網站、商店和商店檢視的資料。
 - **銷售訂單摘要**&#x200B;會彙總訂單資料，包括其相關實體，例如商業發票、出貨、銷退折讓單等。
-- **多Source庫存摘要**&#x200B;會彙總有關庫存狀態專案的資料。
 
 SaaS資料匯出會以PHP擴充功能提供，支援自動和手動同步處理：
 

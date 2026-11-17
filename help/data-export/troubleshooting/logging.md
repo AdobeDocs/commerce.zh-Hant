@@ -31,9 +31,9 @@ topic_v2:
     internal-label: Troubleshooting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: a473907b3ccb585c862f395021501b5215b7be8d
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '1007'
 ht-degree: 0%
 ---
 # 檢閱記錄檔並進行疑難排解
@@ -181,7 +181,7 @@ EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed=products
 
 ### 保留摘要索引表格中的裝載
 
-對於Commerce SaaS資料匯出擴充功能(`magento/module-data-exporter`) 103.3.0和更新版本，立即匯出摘要只會保留索引表格中最低限度的必要資料。 摘要包含所有目錄和庫存狀態摘要。
+對於Commerce SaaS資料匯出擴充功能(`magento/module-data-exporter`) 103.3.0和更新版本，立即匯出摘要只會保留索引表格中最低限度的必要資料。 摘要包含所有目錄摘要。
 
 不建議在生產環境中保留索引表中的裝載資料，但在開發人員環境中可能會很有用。 當您重新同步摘要時，新增`PERSIST_EXPORTED_FEED=1`環境變數，以在索引中包含摘要裝載。
 

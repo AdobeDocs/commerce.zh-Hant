@@ -1,9 +1,19 @@
 ---
-source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
+source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 0%
 ---
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.zh-Hant/blob/main/help/_includes/ccdm-shared/merchandising/rules/overview.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
 # 銷售規則
 
 銷售規則結合邏輯與動作，以塑造產品在&#x200B;**搜尋結果**、**預設產品清單**&#x200B;中（透過&#x200B;**預設搜尋規則**）及&#x200B;**類別頁面**&#x200B;中的顯示方式。 您可以提升、隱藏、釘選或隱藏產品，並套用&#x200B;**智慧排名**，讓清單反映您的業務目標。
