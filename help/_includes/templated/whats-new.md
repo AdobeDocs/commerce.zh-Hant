@@ -1,7 +1,7 @@
 ---
-source-git-commit: 1ae5d65ee5d00924657c36059250d38642777c34
+source-git-commit: 02a5f5be4f64c4f8c2f45eabcb69315e94665b49
 workflow-type: tm+mt
-source-wordcount: '1447'
+source-wordcount: '1795'
 ht-degree: 0%
 ---
 # 新功能範本
@@ -12,6 +12,12 @@ ht-degree: 0%
 
 | 說明 | 型別 | 日期/來源 |
 | --- | --- | --- |
+| 更新[Facet限制和邊界](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/boundaries-limits)，以反映可透過支援要求增加設定的Facet上限。 | 技術 | [2026年11月16日](https://github.com/AdobeDocs/commerce.en/commit/d21c7401d0111c3e6b8dd1d65b26d4b480008011) |
+| 在2027年新增[代理商商務：商務領導者的5個優先順序](https://experienceleague.adobe.com/zh-hant/docs/commerce/information-center/insights-and-guidance/five-priorities-commerce-leaders-2027)文章，透過專注於產品資料準備、可發現性、代理商就緒的商務基礎架構、測量和實驗，幫助商務領導者準備AI輔助購物。 | 新主題 | [2026年11月16日](https://github.com/AdobeDocs/commerce.en/commit/b16b6868cabf8bfe6682c4e512c192713a408cfa) |
+| 已新增Adobe Commerce as a Cloud Service的沙箱[發行說明](https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes)。 | 發行說明 | [2026年11月13日](https://github.com/AdobeDocs/commerce.en/commit/c109643e7791468bfae958025144c968e8595f95) |
+| 更新Adobe Commerce Optimizer檔案，以使用可撰寫的目錄資料模型(CCDM)涵蓋Adobe Commerce as a Cloud Service，包括從Commerce Admin和Optimizer Studio開啟每個工作區的指示：<br/> — 已更新包含兩個產品導覽的[設定](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/settings)。<br/> — 已更新包含兩個產品導覽的[資料同步](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/setup/data-sync)。<br/> — 已更新包含兩個產品導覽的[原則](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/setup/policies)。<br/> — 已更新包含兩個產品導覽和步驟的[受限存取金鑰](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/setup/restricted-access-keys)。<br/> — 已更新包含導覽的[事件概觀](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/setup/events/overview)兩個產品的。<br/> — 已更新[成功量度](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/manage-results/success-metrics)，並導航兩個產品。<br/> — 已更新[搜尋效能](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/manage-results/search-performance)，並導航兩個產品。<br/> — 已更新同時導航兩個產品的[機會](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/manage-results/opportunities)。 | 重大更新 | [2026年11月12日](https://github.com/AdobeDocs/commerce.en/commit/4d359fed500408f4207581bcb2a9dfbc558f1c06) |
+| 已新增Adobe Commerce as a Cloud Service的生產[發行說明](https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes)。 | 發行說明 | [2026年11月11日](https://github.com/AdobeDocs/commerce.en/commit/03d9f91906fd99c90437560a3f076feafc717eae) |
+| 新增[銷售服務](https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/merchandising-services)，此為CCDM及其對目錄管理、店面及移轉之影響的指南。 | 新主題 | [2026年11月11日](https://github.com/AdobeDocs/commerce.en/commit/342e938a7f18e06a25f574a73edbe747822a8a14) |
 | 記錄產品建議的新參考金鑰欄位，您可以使用它來設定店面`product-recommendations`區塊：<br/> — 已更新[建立和管理建議](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/merchandising/recommendations/create)，包含參考金鑰建立、擷取和管理步驟。<br/> — 已更新[建立新建議](https://experienceleague.adobe.com/zh-hant/docs/commerce/product-recommendations/admin/create)，包含參考金鑰建立和擷取步驟。<br/> — 已更新[使用可編輯的參考金鑰設定編輯建議](https://experienceleague.adobe.com/zh-hant/docs/commerce/product-recommendations/admin/edit)。 | 重大更新 | [2026年11月6日](https://github.com/AdobeDocs/commerce.en/commit/a69eec87f2386d06741f6cd865de0f37567b0b3b) |
 | 已新增Adobe Commerce as a Cloud Service的沙箱[發行說明](https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes)。 | 發行說明 | [2026年11月5日](https://github.com/AdobeDocs/commerce.en/commit/8da72aa99416dc0925c1a033859bc70cb30a2aa4) |
 | 新增[Managed Operations](https://experienceleague.adobe.com/zh-hant/docs/commerce/information-center/explore-platforms-and-services/managed-operations)，說明適用於Adobe Commerce as a Cloud Service的全新進階產品，新增指定的客戶成功工程師及全天候監控。 | 新主題 | [2026年11月5日](https://github.com/AdobeDocs/commerce.en/commit/489e7d71d58d1ad8d2a804bddddabdfebb746935) |
@@ -38,4 +44,3 @@ ht-degree: 0%
 | 已修正[PaaS](https://experienceleague.adobe.com/zh-hant/docs/commerce/product-recommendations/boundaries-limits)和[Commerce Optimizer](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/merchandising/recommendations/create)的產品建議檔案，其中不正確地指出不支援套件組合和分組的產品。 | 意見反應 | [2026年9月25日](https://github.com/AdobeDocs/commerce.en/commit/55b17947196acfa459934e4ee373469b84e16ea1) |
 | 更新[移轉總覽](https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/migration/overview)以說明Commerce Developer Agent如何協助移轉程式。 | 重大更新 | [2026年9月24日](https://github.com/AdobeDocs/commerce.en/commit/739eabe6f43412610862ab00516687ad5aeeac53) |
 | 已新增Adobe Commerce as a Cloud Service的生產[發行說明](https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes)。 | 重大更新 | [2026年9月23日](https://github.com/AdobeDocs/commerce.en/commit/d879d372a199c24d266abdfb79d1ff0af164d75b) |
-| 已新增Adobe Commerce as a Cloud Service的沙箱[發行說明](https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes)。 | 重大更新 | [2026年9月17日](https://github.com/AdobeDocs/commerce.en/commit/7f70bbf40218de2cec3482e1bc4d135d1a9022ae) |

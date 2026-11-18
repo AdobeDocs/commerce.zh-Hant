@@ -34,9 +34,9 @@ level_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 560ae770ae76d28e3358fb4f195aa1f2a03362c8
+source-git-commit: 80794cd843b054e043bae4129e1092e31b6e5730
 workflow-type: tm+mt
-source-wordcount: '1959'
+source-wordcount: '2045'
 ht-degree: 0%
 ---
 # 使用者與Identity Management
@@ -200,6 +200,14 @@ ht-degree: 0%
 >將開發人員新增為開發人員之前，先為其指派使用者角色。 基本Commerce許可權需要使用者角色。
 
 在Admin Console中![開發人員和管理員索引標籤選項](./assets/tab-select.png){width="600" zoomable="yes"}
+
+### 疑難排解角色
+
+如果您登入Adobe Commerce Admin後只看到&#x200B;[!UICONTROL **目錄**]&#x200B;區段，則您可能會被指派為&#x200B;**使用者**&#x200B;角色。 如果您需要存取管理員的其他區域，您需要[將自己新增為Admin Console中的&#x200B;**開發人員**](#add-developers-and-product-profile-admins)。
+
+如果您沒有Admin Console的存取權，請聯絡貴組織的產品設定檔管理員或系統管理員，要求他們提供您適當的許可權。
+
+檢閱[角色資源](#role-resources)，以取得授與每個角色的許可權資訊。
 
 ## 角色資源
 
