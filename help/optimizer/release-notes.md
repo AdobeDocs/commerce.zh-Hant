@@ -4,7 +4,7 @@ description: '[!DNL Adobe Commerce Optimizer]的每月發行資訊，包括店�
 feature: Release Notes
 role: Admin, Developer, User, Leader
 recommendations: noCatalog
-badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]個專案（Adobe管理的SaaS基礎結構）。"
+badgeSaas: label="僅限SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和[!DNL Adobe Commerce Optimizer]個專案（Adobe管理的SaaS基礎結構）。"
 exl-id: e420d461-9ea2-4e32-aa37-230b14a297d7
 TQID: 'https://experienceleague.adobe.com/apcpxN0AOniRcHDCa5MMAVWysxRO5mTcudXXXjET-Lo'
 product_v2:
@@ -25,9 +25,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 92e2b81e91e5d78b08d551aa9531b18ebf50d853
+source-git-commit: 3968a572a628342334fe760526e81ab089b86904
 workflow-type: tm+mt
-source-wordcount: '1627'
+source-wordcount: '1960'
 ht-degree: 0%
 ---
 # 發行說明
@@ -35,9 +35,67 @@ ht-degree: 0%
 下列發行說明包含[!DNL Adobe Commerce Optimizer]的更新，包括：
 
 * [[!DNL Adobe Commerce Optimizer Studio]](overview.md#quick-tour)的新功能及改進專案。
-* 更新[資料擷取REST API](https://developer.adobe.com/commerce/services/reference/rest/)和店面目錄資料擷取[&#128279;](https://developer.adobe.com/commerce/services/reference/graphql/)的GraphQL API。
+* 更新[資料擷取REST API](https://developer.adobe.com/commerce/services/reference/rest/)和店面目錄資料擷取](https://developer.adobe.com/commerce/services/reference/graphql/)的[GraphQL API。
 
   {{aco-api-updates-and-dropins}}
+
+## 2026年11月
+
+>[!BEGINSHADEBOX]
+
+_2026年11月2日_
+
+![修正](../assets/fix.svg) **建議篩選器地區設定** — 澄清當您選取&#x200B;**[!UICONTROL All Views]**&#x200B;時，屬性清單會使用與第一個目錄檢視相關聯的目錄來源。 請參閱[建議篩選器](./merchandising/recommendations/filters.md)。
+
+_2026年11月6日_
+
+![新增](../assets/new.svg) **協力廠商購物車與結帳整合** — 已新增協力廠商購物車與結帳服務與[!DNL Adobe Commerce Optimizer]整合的相關指引。 請參閱[整合](./integrations/integrations-overview.md#third-party-cart-and-checkout-integration)。
+
+![修正](../assets/fix.svg) **產品視覺效果儲存空間** — 說明您可以升級[!DNL AEM Assets]授權，以擴充[!DNL Product Visuals]的儲存容量。 請參閱[限制和邊界](./boundaries-limits.md#product-visuals-limits)。
+
+![修正](../assets/fix.svg) **AEM Assets安裝指引** — 已移除[!DNL AEM Assets]的獨立[!DNL Adobe Commerce Optimizer]安裝流程，並導向一般[!DNL AEM Assets]設定檔案的安裝指引。 檢視[整合](./integrations/integrations-overview.md#product-visuals)、[目錄層](./setup/catalog-layer.md)和[產品視覺效果](./setup/product-visuals.md)。
+
+![新的](../assets/new.svg) **建議參考金鑰** — 當您設定店面建議區塊時，將&#x200B;**[!UICONTROL Reference Key]**&#x200B;記錄為建議ID的替代專案。 請參閱[建立及管理建議](./merchandising/recommendations/create.md#get-the-storefront-reference-key)。
+
+_2026年11月16日_
+
+![新](../assets/new.svg) **Facet容量** — 記錄您可以透過客戶支援要求來增加Facet限制。 請參閱[限制和邊界](./boundaries-limits.md#catalog-views-and-policies)。
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
+
+## 2026年10
+
+>[!BEGINSHADEBOX]
+
+_2026年10月1日_
+
+![新的](../assets/new.svg) **B2B共用目錄檢視** — 記錄如何將B2B共用目錄自動布建為私人目錄檢視，連同其他使用案例的手動設定選項。 也澄清限制存取金鑰輪換不會自動化。 檢視[私人目錄檢視](./setup/private-catalog-view.md)、[受限制的存取金鑰](./setup/restricted-access-keys.md)、[資料同步](./setup/data-sync.md)以及[啟動檢查清單](./launch/launch-checklist.md)。
+
+_2026年10月12日_
+
+![新增](../assets/new.svg) **無庫存建議篩選器** — 新增無庫存排除篩選器，可讓您防止無庫存產品出現在建議單位中。 請參閱[建議篩選器](./merchandising/recommendations/filters.md#out-of-stock)。
+
+_2026年10月14日_
+
+![修正](../assets/fix.svg) **智慧型排名提升值** — 將記錄的預設值修正為`50`，最大值修正為`1000`。 請參閱[建立和管理銷售規則](./merchandising/rules/add.md#intelligent-ranking-boost)。
+
+_2026年10月16日_
+
+![修正](../assets/fix.svg) **預設搜尋規則名稱** — 已將銷售規則名稱從[!UICONTROL All product listings]更新為[!UICONTROL Default search rule]，以符合管理介面。 請參閱[銷售規則總覽](./merchandising/rules/overview.md)和[建立和管理銷售規則](./merchandising/rules/add.md)。
+
+_2026年10月21日_
+
+![修正](../assets/fix.svg) **受限存取金鑰限制** — 從記錄的限制中移除每個環境的受限存取金鑰計數。 請參閱[限制和邊界](./boundaries-limits.md#catalog-views-and-policies)。
+
+_2026年10月22日_
+
+![新](../assets/new.svg) **建議屬性篩選器** — 已新增透過中繼資料API啟用屬性篩選器的指引。 請參閱[建議篩選器](./merchandising/recommendations/filters.md#attributes)。
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
 
 ## 2026年9月
 
@@ -49,6 +107,11 @@ _2026年9月3日_
 
 [!DNL Adobe Commerce Optimizer]銷售規則現在支援&#x200B;**預設搜尋規則**、**類別規則**&#x200B;和&#x200B;**搜尋規則**&#x200B;的&#x200B;[**屬性排名**](./merchandising/rules/add.md#attribute-ranking)。 自動將&#x200B;**[!UICONTROL Boost]**、**[!UICONTROL Bury]**&#x200B;或&#x200B;**[!UICONTROL Hide]**&#x200B;動作套用至符合一或多個屬性條件（例如品牌或類別）的每個產品，而不需選取個別SKU。 屬性排名為測試版。 [了解更多](./merchandising/rules/add.md#attribute-ranking)。
 
+_2026年9月9日_
+
+![新的](../assets/new.svg) **多值HTTP標頭觸發原則** — 使用`HTTP_HEADER`傳輸型別的觸發原則現在可以在單一標頭中接收多個逗號分隔值（例如`AC-Policy-Vehicle: UNIVERSAL,veh-bolt-mammoth-limited-2025`）。 使用`IN`的原則篩選器會以`OR`語意評估值。 如果標頭包含多個值，使用`EQUALS`、`GREATER_THAN_EQUAL`或`LESS_THAN_EQUAL`的篩選器會以驗證錯誤拒絕要求。 此行為僅適用於使用`HTTP_HEADER`傳輸的觸發原則。 [了解更多](./setup/policies.md#multi-value-http-header-triggers)。
+<!--COMOPT-2439-->
+
 {{aco-release}}
 
 >[!ENDSHADEBOX]
@@ -56,11 +119,6 @@ _2026年9月3日_
 ## 2026年8月
 
 >[!BEGINSHADEBOX]
-
-_2026年9月9日_
-
-![新的](../assets/new.svg) **多值HTTP標頭觸發原則** — 使用`HTTP_HEADER`傳輸型別的觸發原則現在可以在單一標頭中接收多個逗號分隔值（例如`AC-Policy-Vehicle: UNIVERSAL,veh-bolt-mammoth-limited-2025`）。 使用`IN`的原則篩選器會以`OR`語意評估值。 如果標頭包含多個值，使用`EQUALS`、`GREATER_THAN_EQUAL`或`LESS_THAN_EQUAL`的篩選器會以驗證錯誤拒絕要求。 此行為僅適用於使用`HTTP_HEADER`傳輸的觸發原則。 [了解更多](./setup/policies.md#multi-value-http-header-triggers)。
-<!--COMOPT-2439-->
 
 _2026年8月7日_
 
@@ -95,7 +153,7 @@ _2026年6月24日_
 
 <!-- v1.3 -->
 
-![新](../assets/new.svg) **新`canEditQuantity`欄位** — 已將`canEditQuantity`新增至目錄服務GraphQL中的`ProductViewOptionValueProduct`。 它會公開Commerce Admin中套件組合選取專案的可選&#x200B;**使用者定義**&#x200B;數量設定，讓店面消費者可以判斷套件組合選取專案的數量是否可編輯。
+![新](../assets/new.svg) **新`canEditQuantity`欄位** — 已將`canEditQuantity`新增至目錄服務GraphQL中的`ProductViewOptionValueProduct`。 它會公開Commerce Admin中套件組合選取專案的可選&#x200B;**使用者定義**數量設定，讓店面消費者可以判斷套件組合選取專案的數量是否可編輯。
 <!--COMOPT-2050-->
 
 ### 語意搜尋
@@ -165,7 +223,7 @@ _2026年4月29日_
 
 <!--v1.52 release-->
 
-**需要批次處理請求** — 現在，當您擷取目錄資料時，GraphQL API會針對每個請求強制最多100個SKU。 請參閱[已記錄的限制和邊界](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/boundaries-limits#product-discovery)。
+**需要批次處理請求** — 現在，當您擷取目錄資料時，GraphQL API會針對每個請求強制最多100個SKU。 請參閱[已記錄的限制和邊界](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits#product-discovery)。
 
 <!--DATA-7156-->
 
@@ -371,4 +429,3 @@ IMS組織可使用EU生產區域(**eu1**)。 當您在Cloud Manager中[新增 [!
 {{aco-release}}
 
 >[!ENDSHADEBOX]
-
