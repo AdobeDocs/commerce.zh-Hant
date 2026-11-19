@@ -1,22 +1,10 @@
 ---
-source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
+source-git-commit: 3478e3f0162b553d03c4ac4f5b3000b8aabd8c66
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '1209'
 ht-degree: 0%
 ---
-<!--
-SOURCE OF TRUTH: Edit this file in the commerce.en repo:
-https://github.com/Adobe-Enterprise-Docs/commerce.zh-Hant/blob/main/help/_includes/ccdm-shared/merchandising/rules/overview.md
-
-This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
-Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
-are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
-This includes related images in help/assets/ccdm-shared/.
--->
-
-# 銷售規則
-
-銷售規則結合邏輯與動作，以塑造產品在&#x200B;**搜尋結果**、**預設產品清單**&#x200B;中（透過&#x200B;**預設搜尋規則**）及&#x200B;**類別頁面**&#x200B;中的顯示方式。 您可以提升、隱藏、釘選或隱藏產品，並套用&#x200B;**智慧排名**，讓清單反映您的業務目標。
+銷售規則結合邏輯與動作，以塑造產品在&#x200B;**搜尋結果**、**預設產品清單**&#x200B;中（透過&#x200B;**預設搜尋規則**）及&#x200B;**類別頁面**&#x200B;中的顯示方式。 您可以提升、隱藏、釘選或隱藏產品，並套用&#x200B;**智慧排名**，讓清單反映您的業務目標。 使用&#x200B;**搜尋隱藏規則**&#x200B;來防止相符的搜尋查詢傳回結果。
 
 每個&#x200B;**搜尋規則**&#x200B;有三個主要元件：
 
@@ -26,7 +14,26 @@ This includes related images in help/assets/ccdm-shared/.
 
 **類別規則**&#x200B;使用&#x200B;**類別選擇**，而非搜尋查詢條件；智慧型排名和手動排名的運作方式與搜尋相同，差異顯示在[建立和管理規則](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/merchandising/rules/add)中。
 
-您可以結合搜尋規則的多個條件和動作，並排定任何規則在期間內為作用中。 您也可以設定&#x200B;**預設搜尋規則**，此規則適用於不再套用特定搜尋或類別規則的情況。
+您可以結合搜尋規則的多個條件和動作，並排程規則在期間內為作用中。 搜尋隱藏規則會使用查詢條件來封鎖結果，而非對產品進行排名。 您也可以設定&#x200B;**預設搜尋規則**，此規則適用於不再套用特定搜尋或類別規則的情況。
+
+## 搜尋隱藏規則 {#search-suppression-rules}
+
+搜尋隱藏規則是銷售規則型別，會封鎖符合購物者查詢的結果。 這些搜尋不會傳回店面的任何產品。 規則啟動後，驗證店面的實際無結果表示法。
+
+使用搜尋抑制來搜尋不應傳回結果的法規搜尋限制、品牌限制或特定詞語。 條件支援&#x200B;**查詢是**，**查詢包含**，**查詢開頭是**，而&#x200B;**查詢結尾是**。 如需設定和管理步驟，請參閱[建立和管理搜尋隱藏規則](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/merchandising/rules/add#search-suppression-rules)。 如需範例，請參閱[最佳做法](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/merchandising/rules/best-practice#search-suppression-best-practices)。
+
+搜尋隱藏只會影響搜尋體驗。 它不會透過類別導覽、銷售頁面、建議或直接產品URL變更產品可見性。 它無法取代目錄範圍的產品可見度或存取控制項。
+
+### 與其他銷售功能的互動
+
+| 功能 | 與搜尋隱藏的互動 |
+| --- | --- |
+| 搜尋規則 | 對於與作用中搜尋隱藏規則相符的查詢，店面會顯示不含產品的搜尋結果頁面。搜尋規則中的排名動作不會覆寫隱藏。 未遭到封鎖的查詢會繼續使用適用的銷售規則。 |
+| 類別規則 | 類別導覽和類別銷售不受搜尋隱藏的影響。 即使封鎖產品的搜尋查詢，產品仍可顯示在類別中。 |
+| 預設搜尋規則 | 搜尋隱藏區塊符合查詢，而預設搜尋規則會定義預設排名和產品排除。 預設排名不會還原封鎖查詢的結果。 |
+| 基於屬性的銷售事件 | 這些事件會將動作套用至符合屬性條件的產品，如[屬性排名](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/merchandising/rules/add#attribute-ranking)所述。 搜尋隱藏會改為封鎖相符查詢的結果，無論相符的產品為何。 |
+
+由&#x200B;**預設搜尋規則** （透過手動排除或具有&#x200B;**隱藏**&#x200B;動作的&#x200B;**以屬性為基礎的銷售事件**）排除的產品，也會從&#x200B;**搜尋建議和自動完成**&#x200B;中排除。 這可讓搜尋體驗中的產品排除保持一致，並與使用搜尋隱藏規則封鎖查詢不同。
 
 ## 類別規則 {#category-rules}
 
@@ -65,7 +72,7 @@ Match運運算元`All`和`Any`決定用來聯結規則中多個條件的邏輯�
 
 ## 多個規則的優先順序
 
-下列專案適用於&#x200B;**搜尋規則**，以及它們在指定搜尋中互動的方式。 **類別規則**&#x200B;適用於每個類別；請參閱[建立和管理規則](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/merchandising/rules/add)，瞭解這些規則如何配合搜尋和預設規則。
+本節說明排名搜尋規則如何套用至購物者的查詢並彼此互動。 搜尋規則排名不會覆寫搜尋隱藏：當使用中隱藏規則符合查詢時，店面不會傳回該搜尋的任何產品。 類別規則會套用至選取的類別。 如需有關搜尋、類別和預設搜尋規則的詳細資訊，請參閱[建立和管理規則](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/merchandising/rules/add)。
 
 一次只對一個搜尋字詞套用一個搜尋規則。
 如果發現多個規則適用於搜尋片語，則會套用所有這些規則。 如果兩個規則（`rule 1`會增加SKU1，但`rule 2`會隱藏相同的SKU）之間發生衝突，則優先使用最近套用的規則(`rule 2`)。

@@ -1,22 +1,10 @@
 ---
-source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
+source-git-commit: 3478e3f0162b553d03c4ac4f5b3000b8aabd8c66
 workflow-type: tm+mt
-source-wordcount: '4098'
+source-wordcount: '4826'
 ht-degree: 0%
 ---
-<!--
-SOURCE OF TRUTH: Edit this file in the commerce.en repo:
-https://github.com/Adobe-Enterprise-Docs/commerce.zh-Hant/blob/main/help/_includes/ccdm-shared/merchandising/rules/add.md
-
-This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
-Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
-are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
-This includes related images in help/assets/ccdm-shared/.
--->
-
-# 建立和管理規則
-
-建立規則需要選取套用規則的目錄檢視、設定規則說明、型別、定義其條件和排名、測試結果，以及發佈規則。
+建立規則需要選取套用規則的目錄檢視、設定規則說明和型別（搜尋、搜尋隱藏、預設搜尋或類別）、定義其條件和等級（如果適用）、在預覽可用時測試結果，以及發佈規則。 搜尋隱藏規則未顯示預覽。
 
 ## 建立規則 {#create-a-rule}
 
@@ -37,8 +25,9 @@ This includes related images in help/assets/ccdm-shared/.
 | **預設搜尋規則** | 當沒有更具體的搜尋或類別規則套用時，跨產品清單的預設排名和銷售。 您只能建立一個這樣的規則；它不能包含條件。 |
 | **類別規則** | 將銷售與排名套用至單一類別，控制該類別頁面上的產品訂單。 |
 | **搜尋規則** | 當購物者執行符合規則查詢條件的搜尋時，套用銷售與排名。 |
+| **搜尋隱藏規則** | 避免相符的搜尋查詢傳回產品，所以店面會顯示不含產品的搜尋結果頁面。 透過類別導覽、銷售頁面、建議和直接產品URL的產品可見性不受影響。 |
 
-在&#x200B;**建置您的規則**&#x200B;區段中，您可以定義規則名稱、排程、規則是否套用至所有清單或特定搜尋條件，以及排名型別。
+在&#x200B;**建立您的規則**&#x200B;區段中，您可以定義規則名稱、排程、規則型別以及任何適用的條件和排名。 搜尋隱藏規則會封鎖符合查詢的區塊，而非排名產品。
 
 1. 在&#x200B;**[!UICONTROL Name]**&#x200B;欄位中，輸入規則的名稱。 所有規則名稱必須是唯一的。
 1. 在&#x200B;**[!UICONTROL Description]**&#x200B;欄位中，輸入規則的說明。
@@ -90,6 +79,28 @@ This includes related images in help/assets/ccdm-shared/.
 1. 若要新增其他條件，請按一下[新增條件] **&#x200B;**&#x200B;並重複此程式。
 1. 選擇性地設定[智慧型排名](#intelligent-ranking)、[手動排名](#manual-ranking)或[屬性排名](#attribute-ranking)，如下列章節所述。 相同的控制項適用於類別頁面，但會指出任何差異。
 
+>[!TAB 搜尋隱藏規則]
+
+搜尋隱藏規則會封鎖符合其條件的查詢結果。 它不需要產品層級的排名動作。 符合的查詢不會傳回任何產品，店面會顯示不含任何產品的搜尋結果頁面。
+
+>[!NOTE]
+>
+>搜尋隱藏規則不會顯示預覽。 在發佈之前先檢閱查詢條件，然後在規則生效後，驗證店面上的相符和非相符搜尋。
+
+1. 在&#x200B;**[!UICONTROL Rule applies to]**&#x200B;中，選取&#x200B;**搜尋隱藏規則**。
+1. Select查詢條件，並輸入要比對的文字：
+
+   | 條件 | 當查詢被封鎖時 | 範例 |
+   | --- | --- | --- |
+   | **查詢為** | 整個查詢符合指定的文字。 | `restricted item`個區塊該確切的查詢。 |
+   | **查詢包含** | 查詢包含指定的文字。 | `restricted brand`個區塊`buy restricted brand shoes`。 |
+   | **查詢開頭為** | 查詢以指定的文字開始。 | `restricted brand`個區塊`restricted brand accessories`。 |
+   | **查詢結尾為** | 查詢以指定的文字結束。 | `restricted item`個區塊`discount restricted item`。 |
+
+1. 完成[排程和發佈步驟](#schedule-publish-search-suppression)。
+
+如需範圍及與其他規則的互動，請參閱[搜尋隱藏規則](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/merchandising/rules/overview#search-suppression-rules)。
+
 >[!TAB 類別規則]
 
 類別規則可控制產品在&#x200B;**類別頁面**&#x200B;上的排序方式。 結合&#x200B;**類別規則**&#x200B;與&#x200B;**智慧型排名**&#x200B;和&#x200B;**手動**&#x200B;動作，以組織探索、執行促銷活動，並將類別頁面與您的策略對齊。
@@ -122,6 +133,44 @@ This includes related images in help/assets/ccdm-shared/.
    ![類別動作功能表](/help/assets/ccdm-shared/rules/category-action-menu.png){zoomable="yes"}
 
 >[!ENDTABS]
+
+### 建立及管理搜尋隱藏規則 {#search-suppression-rules}
+
+使用此工作流程來封鎖搜尋字詞，而不變更店面其他位置的產品可見度。
+
+1. 開啟&#x200B;**銷售** > **銷售規則**。
+1. 需要限制的Select **所有檢視**&#x200B;或特定&#x200B;**目錄檢視**。
+1. 按一下&#x200B;**[!UICONTROL Create rule]**。
+1. 輸入唯一的&#x200B;**名稱**&#x200B;和說明此限制的&#x200B;**描述**。
+1. 在&#x200B;**[!UICONTROL Rule applies to]**&#x200B;下，選取&#x200B;**搜尋隱藏規則**。
+1. 設定&#x200B;**查詢為**，**查詢包含**，**查詢開頭為**，或&#x200B;**查詢結尾為**，如上述&#x200B;**搜尋隱藏規則**&#x200B;索引標籤中所述。
+1. 完成[排程和發佈步驟](#schedule-publish-search-suppression)。
+
+#### 排程並發佈搜尋隱藏規則 {#schedule-publish-search-suppression}
+
+1. 在&#x200B;**[!UICONTROL Date range]**&#x200B;中，設定限制的開始日期，並視需要設定結束日期。 使用未來的開始日期來排程規則。
+1. 檢閱查詢條件。
+1. 按一下&#x200B;**儲存並發佈**。
+1. 在&#x200B;*銷售規則*&#x200B;工作區中尋找規則，並確認其狀態和日期。 排程規則在啟用時，會在設定的日期範圍內生效。
+1. 規則生效後，請確認相符的店面搜尋會顯示不含產品的搜尋結果頁面。 快取查詢結果最多可能需要15分鐘才能重新整理。
+
+#### 編輯搜尋隱藏規則
+
+1. 在&#x200B;*銷售規則*&#x200B;工作區中，找出規則並開啟&#x200B;**更多** (...) > **編輯**。
+1. 視需要更新其查詢條件、名稱、說明或日期範圍。
+1. 檢閱更新的查詢條件。
+1. 按一下&#x200B;**儲存並發佈**&#x200B;以發佈變更。
+1. 在更新的規則變為使用中後，請驗證店面上的相符和非相符搜尋。 快取查詢結果最多可能需要15分鐘才能重新整理。
+
+目錄檢視範圍在建立後即無法變更。 若要將限制套用至其他範圍，請在該目錄檢視中建立規則。
+
+#### 啟用或停用搜尋隱藏規則
+
+1. 在&#x200B;*銷售規則*&#x200B;工作區中，找出規則並開啟&#x200B;**更多** (...) 功能表。
+1. Select **停用規則**&#x200B;以停止套用搜尋限制，或&#x200B;**啟用規則**&#x200B;以根據其設定的日期套用它。
+1. 在工作區中確認規則的狀態。
+
+停用規則會保留其設定。 若要變更其條件或排程，請編輯並發佈規則。 如需詳細資訊，請參閱[銷售規則Workspace](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/merchandising/rules/workspace)。
 
 ### 智慧型排名 {#intelligent-ranking}
 
@@ -252,6 +301,8 @@ This includes related images in help/assets/ccdm-shared/.
 
 1. 對於多個事件，選擇符合條件時要觸發的任何其他事件。
 
+在&#x200B;**預設搜尋規則**&#x200B;中設定&#x200B;**[!UICONTROL Hide a product]**&#x200B;時，排除的產品也會從&#x200B;**搜尋建議中移除，並自動完成**。 若要封鎖整個查詢而非選取的產品，請使用[搜尋隱藏規則](#search-suppression-rules)。
+
 ### 屬性排名 {#attribute-ranking}
 
 >[!AVAILABILITY]
@@ -277,6 +328,8 @@ This includes related images in help/assets/ccdm-shared/.
 
 釘選不適用於屬性排名，因為釘選會將一個產品指派給一個確切位置，而屬性條件可以一次比對許多產品。 若要釘選特定產品，請直接在該SKU上使用[手動排名](#manual-ranking)。
 
+屬性排名條件也稱為&#x200B;**以屬性為基礎的銷售事件**。 **預設搜尋規則**&#x200B;中由&#x200B;**[!UICONTROL Hide]**&#x200B;動作排除的產品也會從&#x200B;**搜尋建議和自動完成**&#x200B;中排除，就像該規則中的手動排除一樣。 這些產品層級排除專案與[搜尋隱藏](#search-suppression-rules)不同，後者會封鎖相符查詢的所有結果。
+
 #### 屬性排名與智慧型排名的互動方式
 
 規則將智慧型排名策略與一個或多個屬性條件結合時，屬性動作會優先處理符合的任何產品。 智慧型排名會持續訂購其餘不相符的產品。
@@ -293,6 +346,8 @@ This includes related images in help/assets/ccdm-shared/.
 
 ### 正在完成規則 {#finalizing-the-rule}
 
+如需搜尋隱藏規則，請改為遵循[排程並發佈搜尋隱藏規則](#schedule-publish-search-suppression)。 這些規則不顯示預覽。
+
 1. 在測試窗格中檢查規則的結果。
 1. 如果規則有多個查詢，請測試每個可能受規則影響的查詢。
 1. 完成時，按一下&#x200B;**儲存並發佈**。
@@ -303,7 +358,7 @@ This includes related images in help/assets/ccdm-shared/.
 
 >[!NOTE]
 >
->當選取預設排序順序「排序依據：最相關」時，規則和手動排名產品會套用至&#x200B;**搜尋**&#x200B;結果。 如果購物者將排序順序變更為類似依名稱排序，規則和手動排名將不再有效。 針對&#x200B;**類別**&#x200B;清單，預設排序行為在[手動排名](#manual-ranking)中說明。
+>當選取預設排序順序「排序依據：最相關」時，排名規則和手動排名產品會套用至&#x200B;**搜尋**&#x200B;結果。 如果購物者將排序順序變更為類似依名稱排序，則排名規則和手動排名不再有效。 此排名行為不允許封鎖的查詢略過搜尋隱藏。 針對&#x200B;**類別**&#x200B;清單，預設排序行為在[手動排名](#manual-ranking)中說明。
 
 ## 編輯、檢視和刪除規則 {#edit-view-and-delete-rules}
 
@@ -313,9 +368,9 @@ This includes related images in help/assets/ccdm-shared/.
 
 1. 在&#x200B;*銷售規則*&#x200B;工作區中，在格線中找到您要編輯的規則，然後按一下&#x200B;**更多** (...) 選項。
 1. 按一下&#x200B;**編輯**&#x200B;以存取規則編輯器。
-1. 視需要更新條件、運運算元和事件。
+1. 更新適用於規則型別的條件、運運算元和事件。 搜尋隱藏規則使用查詢條件，而非排名事件。
 1. 視需要更新名稱、開始和結束日期以及說明欄位。 所有規則名稱必須是唯一的。
-1. 測試規則。
+1. 如果預覽可用，則測試規則。 針對搜尋隱藏規則，請改為檢閱查詢條件，並在更新的規則生效後驗證店面搜尋。
 1. 發佈變更。
 規則已新增至*規則*&#x200B;工作區中的清單。 雖然使用中的規則會立即生效，但重新整理店面中的快取查詢結果最多可能需要15分鐘。
 
@@ -386,7 +441,7 @@ This includes related images in help/assets/ccdm-shared/.
 | 欄位 | 說明 |
 | --- | --- |
 | 名稱 | 規則的名稱。 規則名稱必須是唯一的。 |
-| 規則型別 | 根據&#x200B;**規則套用至**，**預設搜尋規則**、**查詢** （特定搜尋條件）或&#x200B;**類別** （類別頁面）。 |
+| 規則型別 | **預設搜尋規則**、**查詢** （特定搜尋條件）、**搜尋隱藏規則** （符合查詢的區塊）或&#x200B;**類別** （類別頁面），視適用於&#x200B;**的**&#x200B;規則而定。 |
 | 開始日期 | 規則的開始日期（如果已排程）。 |
 | 結束日期 | 規則的結束日期（如果已排程）。 |
 | 說明 | 規則的簡短說明。 |
