@@ -167,7 +167,7 @@ ht-degree: 1%
 
 ![AEM環境和網域選擇器，範例值為](../assets/aem-assets-environment-domain.png){width="700" zoomable="yes"}
 
-    對於顯示**[!UICONTROL Asset Custom Domain]**文字欄位的設定，請在該欄位中輸入自訂網域URL。
+    對於顯示&#x200B;**[!UICONTROL Asset Custom Domain]**&#x200B;文字欄位的設定，請在該欄位中輸入自訂網域URL。
 
 1. 按一下&#x200B;**[!UICONTROL Save Config]**&#x200B;以套用更新。
 
