@@ -22,9 +22,9 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '372'
 ht-degree: 0%
 ---
 # 預設自動比對
@@ -33,13 +33,13 @@ Commerce的AEM Assets整合提供以&#x200B;**AEM Assets**&#x200B;中繼資料�
 
 ## 設定自動比對機制
 
-1. 從Commerce管理員中，導覽至「**[!UICONTROL Store]** >設定> **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**」。
+1. 從Commerce Admin導覽至&#x200B;**[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**。
 
-1. 指定&#x200B;**[!UICONTROL Match by SKU]**&#x200B;作為比對規則。
+1. 指定&#x200B;**[!UICONTROL Match by product SKU]**&#x200B;作為比對規則。
 
-   ![預設自動比對規則](../assets/ootb-matching-rule.png){width="600" zoomable="yes"}
+   ![依產品SKU規則和中繼資料屬性名稱比對](../assets/ootb-matching-rule.png){width="700" zoomable="yes"}
 
-1. 輸入在AEM Assets中用於資產識別的中繼資料欄位名稱。
+1. 在&#x200B;**[!UICONTROL Match by product SKU attribute name]**&#x200B;中，輸入在AEM Assets中儲存產品SKU的[中繼資料屬性名稱](../metadata.md)，而非實際的SKU值。
 
    >[!NOTE]
    >
@@ -65,8 +65,10 @@ Commerce的AEM Assets整合提供以&#x200B;**AEM Assets**&#x200B;中繼資料�
    >
    > 如果資產用於多個產品，請為每個關聯的SKU設定中繼資料。
 
-1. 在`Basic`索引標籤中，將&#x200B;_[!UICONTROL Review Status]_&#x200B;欄位的預設值設定為`approved`。
+1. 在`Basic`索引標籤中，將&#x200B;_[!UICONTROL Review Status]_欄位的預設值設定為`approved`。
 
    ![範例中繼資料](../assets/metadata-review-status.png){width="600" zoomable="yes"}
 
-此方法可確保數位資產在Adobe Commerce中正確連結和顯示。 此外，影片也讓銷售商和行銷人員能夠直接在AEM Assets中管理角色和資產定位，針對所有參與管道的影像選擇和訂購，提供一致且集中的機制。
+核准資產後，[確認產品關聯、同步化結果，以及店面顯示](../get-started/setup-synchronization.md#verify-the-integration)。 如果資產未出現，請檢閱[同步處理狀態](../get-started/sync-status.md)。 對於Adobe Commerce Optimizer，請改用[最佳化工具驗證工作流程](../get-started/configure-aco.md#match-by-sku-workflow-example)；無法使用同步處理狀態。
+
+僅[!BADGE PaaS]{type=Informative tooltip="僅適用於雲端專案上的Adobe Commerce （Adobe管理的PaaS基礎結構）。"}如需其他同步化疑難排解，請檢閱[整合記錄檔](../get-started/logs.md)。

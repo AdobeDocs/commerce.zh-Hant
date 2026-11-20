@@ -37,9 +37,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 9b3448a40c2e829e09de5e394b0972c527ee0e9b
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '1109'
+source-wordcount: '1188'
 ht-degree: 1%
 ---
 # 適用於Commerce的AEM Assets整合
@@ -66,29 +66,31 @@ AEM Assets整合可自動化資產管理工作流程，解決此難題。 此整
 
 替代文字本地化不會變更產品影像指定或相簿對應。 存放區檢視資產可用性是獨立的功能，不在替代文字工作流程中。
 
+由AEM Assets支援的產品視覺效果可支援Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer中以Commerce為中心的資產管理使用案例。 如需支援的功能、容量限制以及需要AEM Assets Ultimate的功能，請參閱[產品視覺效果限制](../optimizer/boundaries-limits.md#product-visuals-limits)。
+
 ## 使用整合的需求
 
-若要將此整合與[產品視覺效果或AEM Assets](https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/overview#product-visuals-powered-by-aem-assets)搭配使用，企業必須符合下列要求：
+若要將此整合與[產品視覺效果或AEM Assets](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview#product-visuals-powered-by-aem-assets)搭配使用，企業必須符合下列要求：
 
 >[!BEGINTABS]
 
 >[!TAB 產品視覺效果]
 
-[!BADGE 僅限SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"}適用於Adobe Commerce、AEM Assets支援的產品視覺效果以及[AEM Dynamic Media](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media)的有效授權（這些授權隨[!DNL Adobe Commerce as a Cloud Service]和[!DNL Adobe Commerce Optimizer]一起提供立即可用）。
+[!BADGE 僅限SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"}適用於Adobe Commerce、AEM Assets支援的產品視覺效果以及[AEM Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media)的有效授權（這些授權隨[!DNL Adobe Commerce as a Cloud Service]和[!DNL Adobe Commerce Optimizer]一起提供立即可用）。
 
 >[!TAB AEM Assets]
 
-[!BADGE 僅限SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"}個Adobe Commerce、Adobe Experience Manager Assets和[AEM Dynamic Media](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media)的有效授權。
+[!BADGE 僅限SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"}個Adobe Commerce、Adobe Experience Manager Assets和[AEM Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/administering-dynamic-media)的有效授權。
 
 僅[!BADGE PaaS]{type=Informative tooltip="僅適用於雲端專案上的Adobe Commerce （Adobe管理的PaaS基礎結構）。"} Adobe Commerce 2.4.5+
 
-* Adobe Commerce 2.4.5+。 如需詳細資訊，請參閱[系統需求](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}。
+* Adobe Commerce 2.4.5+。 如需詳細資訊，請參閱[系統需求](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}。
 
-僅[!BADGE SaaS]{type=Positive url="https://experienceleague.adobe.com/zh-hant/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"} Adobe Experience Manager已布建[Adobe Experience Manager Assets as a Cloud Service](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/overview)
+僅[!BADGE SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="僅適用於Adobe Commerce as a Cloud Service和Adobe Commerce Optimizer專案（Adobe管理的SaaS基礎結構）。"} Adobe Experience Manager已布建[Adobe Experience Manager Assets as a Cloud Service](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/overview)
 
 >[!ENDTABS]
 
-設定整合的Adobe Commerce使用者必須擁有布建AEM Assets專案的[IMS組織](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255)的存取權。
+設定整合的Adobe Commerce使用者必須擁有布建AEM Assets專案的[IMS組織](https://experienceleague.adobe.com/en/docs/core-services/interface/administration/organizations#concept_EA8AEE5B02CF46ACBDAD6A8508646255)的存取權。
 
 >[!BEGINSHADEBOX]
 
@@ -114,7 +116,7 @@ AEM Assets整合可自動化資產管理工作流程，解決此難題。 此整
 
 若要瞭解Adobe Commerce和AEM Assets如何共同作業來簡化內容工作流程，請觀看此影片：
 
->[!VIDEO](https://video.tv.adobe.com/v/3447900?captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3447837)
 
 >[!TAB Adobe Commerce as a Cloud Service教學課程]
 
@@ -128,7 +130,7 @@ AEM Assets整合可自動化資產管理工作流程，解決此難題。 此整
 
 安裝和設定AEM Assets整合的程式取決於您的Adobe Commerce部署。 在所有情況下，您會先設定AEM Assets，然後將Commerce連線至該網站。
 
-若要瞭解整合新增至您的AEM Assets環境的名稱空間、中繼資料結構描述和&#x200B;**[!UICONTROL Commerce]**&#x200B;標籤，請在開始前檢閱AEM Assets[&#128279;](metadata.md)中的Commerce中繼資料。
+若要瞭解整合新增至您的AEM Assets環境的名稱空間、中繼資料結構描述和&#x200B;**[!UICONTROL Commerce]**&#x200B;標籤，請在開始前檢閱AEM Assets](metadata.md)中的[Commerce中繼資料。
 
 如需當地語系化的影像替代文字，請參閱AEM Assets中繼資料中的[當地語系化替代文字](metadata.md#localized-alt-text-in-aem-assets-metadata)。 如需設定和同步處理指示，請參閱[設定AEM Assets專案](get-started/configure-aem.md)和[設定整合](get-started/setup-synchronization.md)。
 
@@ -142,7 +144,7 @@ AEM Assets整合可自動化資產管理工作流程，解決此難題。 此整
 
 1. 若要支援Commerce中繼資料，[請設定AEM Assets專案](get-started/configure-aem.md)。 在AEM版本`2026.5.26309`和更新版本上，使用[自助上線](get-started/configure-aem.md#enable-aem-commerce-self-service)；在舊版上，手動安裝`assets-commerce`套件。
 
-1. [設定IMS使用者許可權](get-started/permissions.md)，以便資產選擇器和自動填入的&#x200B;**[!UICONTROL Program ID]**&#x200B;和&#x200B;**[!UICONTROL Environment ID]**&#x200B;欄位可供使用。
+1. [設定IMS使用者許可權](get-started/permissions.md)以進行Asset Selector和AEM環境及網域選擇。
 
 1. [在Commerce管理員中設定整合](get-started/setup-synchronization.md)。
 
@@ -156,7 +158,7 @@ AEM Assets整合可自動化資產管理工作流程，解決此難題。 此整
 
 1. [安裝Adobe Commerce套件](get-started/configure-commerce.md)以新增擴充功能並產生必要的認證和連線。
 
-1. [設定IMS使用者許可權](get-started/permissions.md)，以便資產選擇器和自動填入的&#x200B;**[!UICONTROL Program ID]**&#x200B;和&#x200B;**[!UICONTROL Environment ID]**&#x200B;欄位可供使用。
+1. [設定IMS使用者許可權](get-started/permissions.md)以進行Asset Selector和AEM環境及網域選擇。
 
 1. [在Commerce管理員中設定整合](get-started/setup-synchronization.md)。
 
@@ -164,6 +166,10 @@ AEM Assets整合可自動化資產管理工作流程，解決此難題。 此整
 
 >[!ENDTABS]
 
+完成設定後，[透過產品關聯和同步處理來驗證整合](get-started/setup-synchronization.md#verify-the-integration)是否從合格且已核准的資產到店面顯示器。 對於Adobe Commerce Optimizer，請遵循[最佳化工具驗證工作流程](get-started/configure-aco.md#match-by-sku-workflow-example)；無法使用同步處理狀態。
+
+如需類別影像指派與驗證，請參閱[管理類別影像](manage-assets.md#category-images)。
+
 ## 支援
 
-如果您需要本指南未涵蓋的資訊或問題，請聯絡您的AEM Assets整合銷售代表，或建立[支援票證](https://experienceleague.adobe.com/zh-hant/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)以取得其他協助。
+如果您需要本指南未涵蓋的資訊或問題，請聯絡您的AEM Assets整合銷售代表，或建立[支援票證](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case)以取得其他協助。

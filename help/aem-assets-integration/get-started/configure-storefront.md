@@ -26,9 +26,9 @@ role_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '664'
 ht-degree: 0%
 ---
 # 設定您的店面
@@ -53,6 +53,8 @@ Commerce下拉式清單會自動偵測`commerce-assets-enabled`設定，並據�
 
 如需將AEM Assets與Edge Delivery Services支援的Commerce店面搭配使用的詳細資訊，請參閱&#x200B;*AEM Assets店面*&#x200B;檔案中的[Adobe Commerce整合](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/)主題。
 
+儲存店面組態之後，[驗證整合](setup-synchronization.md#verify-the-integration)是否與產品相關的核准資產相關聯。 確認店面上有預期的影像。 如果不適用，在疑難排解店面影像傳送之前，請檢查產品關聯、視覺化擁有者和同步化結果。 對於Adobe Commerce Optimizer，請遵循[最佳化工具驗證工作流程](configure-aco.md#match-by-sku-workflow-example)。
+
 >[!TIP]
 >
 >若要讓作者瀏覽並將AEM Assets插入靜態內容頁面，請參閱[將AEM Assets連線至Da.live以進行靜態內容製作](#connect-aem-assets-authoring)。
@@ -67,7 +69,7 @@ Commerce下拉式清單會自動偵測`commerce-assets-enabled`設定，並據�
 
 >[!NOTE]
 >
->如需詳細的設定指示，請參閱Da.live檔案中的[設定AEM Assets](https://docs.da.live/administrators/guides/setup-aem-assets){target=_blank}和AEM Assets檔案中的[為Edge Delivery Services編寫AEM Assets內容時整合](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank}。
+>如需詳細的設定指示，請參閱Da.live檔案中的[設定AEM Assets](https://docs.da.live/administrators/guides/setup-aem-assets){target=_blank}和AEM Assets檔案中的[為Edge Delivery Services編寫AEM Assets內容時整合](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank}。
 
 ### 步驟1：在Da.live中開啟您的網站設定
 
@@ -96,7 +98,7 @@ Commerce下拉式清單會自動偵測`commerce-assets-enabled`設定，並據�
    | A2 | `aem.repositoryId` |
    | B2 | 您在步驟2複製的URL |
 
-1. 選取「**[!UICONTROL Save]**」，然後選取網站名稱旁的「上一步」箭頭，以返回網站根目錄。
+1. Select **[!UICONTROL Save]**，然後選取網站名稱旁的「上一步」箭頭，以返回網站根目錄。
 
    >[!NOTE]
    >
@@ -116,6 +118,6 @@ Commerce下拉式清單會自動偵測`commerce-assets-enabled`設定，並據�
 
 * *AEM Assets店面*&#x200B;檔案中的[Adobe Commerce整合](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/){target=_blank} — 店面設定和影像處理行為。
 
-* 在&#x200B;*AEM Assets*&#x200B;檔案中為Edge Delivery Services[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank}製作內容時，請整合AEM Assets。
+* 在&#x200B;*AEM Assets*&#x200B;檔案中為Edge Delivery Services](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/integrate-aem-assets-edge-delivery-services/integrate-aem-assets-edge-delivery-services){target=_blank}製作內容時，請[整合AEM Assets。
 
 * 在Da.live檔案中[設定AEM Assets](https://docs.da.live/administrators/guides/setup-aem-assets){target=_blank}和[使用媒體](https://docs.da.live/authors/guides/adding-media){target=_blank}。

@@ -22,18 +22,22 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '1015'
 ht-degree: 0%
 ---
 # 自訂自動比對
 
-如果預設的自動比對策略（**OOTB自動比對**）不符合您的特定業務需求，請選取自訂比對選項。 此選項支援使用[Adobe Developer App Builder](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)來開發自訂符合器應用程式，以處理複雜的符合邏輯，或來自無法將中繼資料填入AEM Assets的協力廠商系統的資產。
+如果預設的自動比對策略（**OOTB自動比對**）不符合您的特定業務需求，請選取自訂比對選項。 此選項支援使用[Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)來開發自訂符合器應用程式，以處理複雜的符合邏輯，或來自無法將中繼資料填入AEM Assets的協力廠商系統的資產。
+
+>[!NOTE]
+>
+>如果您的自訂比對器或Adobe Developer App Builder整合需要AEM Assets API才能以程式設計方式管理資產或中繼資料，則需要AEM Assets Ultimate權益。 此需求取決於應用程式使用的API，而非僅取決於App Builder的使用情況。 請參閱[產品視覺效果限制](../../optimizer/boundaries-limits.md#product-visuals-limits)。
 
 ## 設定自訂自動比對
 
-1. 從Commerce管理員中，導覽至「**[!UICONTROL Store]** >設定> **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**」。
+1. 從Commerce Admin導覽至&#x200B;**[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**。
 
 1. 選取&#x200B;**[!UICONTROL Custom Matcher]**&#x200B;作為比對規則。
 
@@ -129,11 +133,15 @@ ht-degree: 0%
 
 1. 按一下&#x200B;**[!UICONTROL Save Config]**。
 
+套用設定後，[驗證整合](../get-started/setup-synchronization.md#verify-the-integration)是否與核准的資產以及您的自訂符合專案相關聯的產品相關聯。
+
+僅[!BADGE PaaS]{type=Informative tooltip="僅適用於雲端專案上的Adobe Commerce （Adobe管理的PaaS基礎結構）。"}如果同步失敗，請檢閱[整合記錄檔](../get-started/logs.md)。
+
 ## 非同步設定儲存
 
-如果您的Commerce執行個體已啟用[非同步設定儲存](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save)選項，則非同步取用者會將設定變更排入佇列並套用，而不會立即儲存在相同請求中。 若要在此模式中上傳自訂自動比對的`workspace.json`檔案，請依序完成下列步驟：
+如果您的Commerce執行個體已啟用[非同步設定儲存](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save)選項，則非同步取用者會將設定變更排入佇列並套用，而不會立即儲存在相同請求中。 若要在此模式中上傳自訂自動比對的`workspace.json`檔案，請依序完成下列步驟：
 
-1. 確認Commerce非同步設定儲存已[啟用](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save)。
+1. 確認Commerce非同步設定儲存已[啟用](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save)。
 
 1. 從Admin移至&#x200B;**[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Adobe Services]** > **[!UICONTROL AEM Assets Integration]**。
 
@@ -167,7 +175,7 @@ ht-degree: 0%
 
 ## 自訂比對器API端點
 
-當您使用[App Builder](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}建置自訂符合專案應用程式時，應用程式必須公開下列端點：
+當您使用[App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}建置自訂符合專案應用程式時，應用程式必須公開下列端點：
 
 * **App Builder資產至產品URL**&#x200B;端點
 * **App Builder產品至資產URL**&#x200B;端點
@@ -336,7 +344,7 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-t
 | 屬性 | 資料型別 | 說明 |
 | --- | --- | --- |
 | `asset_id` | 字串 | 資產識別碼。 |
-| `asset_roles` | 陣列 | 資產角色。 使用支援的[Commerce資產角色](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)，例如`thumbnail`、`image`、`small_image`和`swatch_image`。 若使用AEM Assets整合擴充功能1.4.6和更新版本，也可接受自訂影像角色（例如`hero`或`custom_role_1`）。 |
+| `asset_roles` | 陣列 | 資產角色。 使用支援的[Commerce資產角色](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles)，例如`thumbnail`、`image`、`small_image`和`swatch_image`。 若使用AEM Assets整合擴充功能1.4.6和更新版本，也可接受自訂影像角色（例如`hero`或`custom_role_1`）。 |
 | `asset_format` | 字串 | 資產格式。 可能的值為`image`和`video`。 |
 | `asset_position` | 數字 | 資產在產品相簿中的位置。 |
 
