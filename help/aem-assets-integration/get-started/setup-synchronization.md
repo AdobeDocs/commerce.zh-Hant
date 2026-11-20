@@ -38,7 +38,7 @@ ht-degree: 1%
 
 識別AEM Assets專案後，選取在Adobe Commerce和AEM Assets之間同步資產的相符規則。
 
-* **[!UICONTROL Match by product SKU]** — 符合資產中繼資料中的SKU與[Commerce產品SKU](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#sku)的預設規則，以確保資產與正確的產品相關聯。
+* **[!UICONTROL Match by product SKU]** — 符合資產中繼資料中的SKU與[Commerce產品SKU](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/implementation-playbook/glossary#sku)的預設規則，以確保資產與正確的產品相關聯。
 
 * **[!UICONTROL Custom match]** — 符合規則，適用於需要自訂比對邏輯的較複雜案例或特定業務需求。 實作自訂比對需要在Adobe Developer App Builder中開發自訂程式碼，以定義資產與產品的比對方式。 請參閱[自訂自動比對](../synchronize/custom-match.md)。
 
@@ -87,7 +87,7 @@ ht-degree: 1%
 1. 從&#x200B;**[!UICONTROL Asset matching rule]**&#x200B;下拉式清單中選取其中一個資產比對規則以進行資產同步。
 
    * [預設自動比對](../synchronize/default-match.md)的Select **[!UICONTROL Match by product SKU]**。
-   * 適用於[自訂自動比對](../synchronize/custom-match.md)的Select **[!UICONTROL Custom match]**。 此選項需要[Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)。
+   * 適用於[自訂自動比對](../synchronize/custom-match.md)的Select **[!UICONTROL Custom match]**。 此選項需要[Adobe Developer App Builder](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)。
 
 1. 針對&#x200B;**[!UICONTROL Match by product SKU]**，在&#x200B;**[!UICONTROL Match by product SKU attribute name]**&#x200B;欄位中輸入[AEM Assets中繼資料屬性名稱](../metadata.md)。 預設值為`commerce:skus`。
 
@@ -135,7 +135,7 @@ ht-degree: 1%
 
 管理員會顯示該擁有者的可用影像，而其餘影像則會呈現灰色，並以&#x200B;**隱藏**&#x200B;標籤顯示。
 
-如需影像顯示行為的詳細資訊，請參閱[設定影像詳細資料](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#set-image-details){target=_blank}主題。
+如需影像顯示行為的詳細資訊，請參閱[設定影像詳細資料](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/catalog/products/digital-assets/product-image#set-image-details){target=_blank}主題。
 
 >[!TIP]
 >
@@ -159,7 +159,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->設定自訂網域URL不會更新先前同步資產的URL。 這些資產會保留其先前的URL，直到[在AEM Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/reprocessing){target=_blank}中重新處理為止。 儲存自訂網域設定後，重新處理這些資產以更新其URL來使用自訂網域。
+>設定自訂網域URL不會更新先前同步資產的URL。 這些資產會保留其先前的URL，直到[在AEM Assets](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/manage/reprocessing){target=_blank}中重新處理為止。 儲存自訂網域設定後，重新處理這些資產以更新其URL來使用自訂網域。
 
 1. 導覽至&#x200B;**[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**。
 
