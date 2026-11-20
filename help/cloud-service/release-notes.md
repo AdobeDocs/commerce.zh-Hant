@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: c77ccb87ac61a4dae8adc3079bb8aac7a4a9bf58
+source-git-commit: eebf534ca77d223db63f2062dd889d8f3ceb1866
 workflow-type: tm+mt
-source-wordcount: '10458'
+source-wordcount: '10433'
 ht-degree: 0%
 ---
 # 發行說明
@@ -84,11 +84,11 @@ ht-degree: 0%
 
 ## 2026年11月 — 發行說#2 {#latest}
 
-[!BADGE 沙箱]{type=Caution tooltip="列出的專案目前僅在沙箱環境中可用。 Adobe會先在沙箱環境中推出新版本，讓您可以在生產環境中使用該版本之前有時間測試即將推出的變更。"}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE 生產]{type=Neutral tooltip="列出的專案目前可在生產環境中使用。"}
 
-以下專案已於2026年11月18日發佈到沙箱環境。
+以下專案已於2026年11月18日發佈到生產環境。
 
 >[!BEGINSHADEBOX]
 
