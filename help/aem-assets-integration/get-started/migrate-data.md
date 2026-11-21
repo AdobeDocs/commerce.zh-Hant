@@ -24,9 +24,9 @@ topic_v2:
     internal-label: Metadata
   - id: da3860b0-d637-47df-bef0-273751180266
     internal-label: Digital asset management
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '1055'
 ht-degree: 0%
 ---
 # 將媒體檔案移轉至AEM Assets DAM
@@ -42,6 +42,10 @@ Adobe Commerce和Adobe Experience Manager (AEM)皆提供內建功能，可簡化
 | **雲端儲存空間帳戶** | <ul><li>AWS S3或Azure Blob儲存帳戶</li><li>私人容器/貯體設定</li><li>驗證認證</li></ul> |
 | **Source內容** | <ul><li>可移轉的已整理媒體檔案</li><li>AEM Assets</a>支援的<a href="https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/file-format-support#image-formats">格式影像和視訊檔案。</li><li>乾淨的重複資產</li></li> |
 | **中繼資料準備** | <ul><li>為AEM Assets資產設定的<a href="configure-aem.md">Commerce中繼資料設定檔</a></li><li>每個資產的對應中繼資料值</li><li>CSV檔案編輯器（例如Microsoft Excel）</li></ul> |
+
+>[!IMPORTANT]
+>
+>支援的大量上傳和大量中繼資料作業本身不需要AEM Assets Ultimate。 程式化移轉或需要AEM Assets API （包括API型中繼資料輸入和輸出）的中繼資料工作流程需要AEM Assets Ultimate。 在選擇移轉方法之前，請檢閱[產品視覺效果限制](../../optimizer/boundaries-limits.md#product-visuals-limits)。
 
 ## 移轉最佳實務
 
@@ -159,4 +163,4 @@ assetPath,commerce:positions{{Number: multi}},commerce:isCommerce{{String}},comm
 >
 > [大量匯入工具影片示範](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/manage/add-assets#asset-bulk-ingestor)
 > [提示、最佳實務和限制](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/manage/add-assets#tips-limitations)
-> [使用API上傳或內嵌資產](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#asset-upload)
+> [使用API上傳或內嵌資產](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#asset-upload) — 在實作API導向移轉之前檢閱[產品視覺效果限制](../../optimizer/boundaries-limits.md#product-visuals-limits)。

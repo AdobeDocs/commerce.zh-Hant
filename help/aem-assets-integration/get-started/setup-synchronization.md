@@ -27,9 +27,9 @@ topic_v2:
     internal-label: Metadata
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1355'
 ht-degree: 1%
 ---
 # 設定整合
@@ -40,9 +40,9 @@ ht-degree: 1%
 
 * **[!UICONTROL Match by product SKU]** — 符合資產中繼資料中的SKU與[Commerce產品SKU](https://experienceleague.adobe.com/zh-hant/docs/commerce-operations/implementation-playbook/glossary#sku)的預設規則，以確保資產與正確的產品相關聯。
 
-* **[!UICONTROL Custom match]** — 符合規則，適用於需要自訂比對邏輯的較複雜案例或特定業務需求。 實作自訂比對需要在Adobe Developer App Builder中開發自訂程式碼，以定義資產與產品的比對方式。 即將推出更多詳細資料……
+* **[!UICONTROL Custom match]** — 符合規則，適用於需要自訂比對邏輯的較複雜案例或特定業務需求。 實作自訂比對需要在Adobe Developer App Builder中開發自訂程式碼，以定義資產與產品的比對方式。 請參閱[自訂自動比對](../synchronize/custom-match.md)。
 
-對於初始設定，請使用預設的&#x200B;*依產品SKU比對*&#x200B;規則。
+對於初始設定，請使用預設&#x200B;**[!UICONTROL Match by product SKU]**&#x200B;規則。
 
 ## 需求
 
@@ -52,15 +52,13 @@ ht-degree: 1%
 
 * 僅[!BADGE PaaS]{type=Informative tooltip="僅適用於雲端專案上的Adobe Commerce （Adobe管理的PaaS基礎結構）。"} [安裝Adobe Commerce套件](configure-commerce.md)以新增擴充功能，並產生使用擴充功能所需的認證和連線。
 
-* [使用者許可權和IMS](permissions.md) — 設定「資產選擇器」的必要許可權和自動填入的設定欄位（方案ID、環境ID、網域對應）。
+* [使用者許可權和IMS](permissions.md) — 設定「資產選擇器」、「AEM環境選擇」和網域對應的必要許可權。
 
 ## 設定連線
 
-1. 從「Commerce管理員」開啟AEM Assets整合設定。
+![AEM Assets整合設定包含範例環境和網域值](../assets/aem-assets-view.png){width="900" zoomable="yes"}
 
-   1. 移至「**[!UICONTROL Store]** >設定> **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**」。
-
-      ![AEM Assets整合啟用整合](../assets/aem-assets-view.png){width="600" zoomable="yes"}
+1. 從Commerce Admin，前往&#x200B;**[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**。
 
 >[!INFO]
 >
@@ -68,17 +66,17 @@ ht-degree: 1%
 
 1. 僅[!BADGE PaaS]{type=Informative tooltip="僅適用於雲端專案上的Adobe Commerce （Adobe管理的PaaS基礎結構）。"}輸入&#x200B;**[!UICONTROL Asset Selector IMS Client ID]**。
 
-   需要此ID才能啟用資產選擇器，並自動填入方案ID和環境ID欄位的功能。 檢視[使用者許可權和IMS](permissions.md)以取得此ID。 如需「資產選擇器」的詳細資訊，請參閱[手動選取資產](../synchronize/asset-selector-integration.md)。
+   啟用資產選擇器需要此ID。 檢視[使用者許可權和IMS](permissions.md)以取得此ID。 如需「資產選擇器」的詳細資訊，請參閱[手動選取資產](../synchronize/asset-selector-integration.md)。
 
-1. 從下拉式功能表中選取AEM Assets環境&#x200B;**[!UICONTROL Program ID]**&#x200B;和&#x200B;**[!UICONTROL Environment ID]**。
+1. 從&#x200B;**[!UICONTROL AEM Environment]**&#x200B;中，選取在[設定AEM Assets專案](configure-aem.md)中設定的環境。
 
-   當您的Commerce管理員使用者擁有以下體驗所需的[使用者許可權](permissions.md#user-permissions-and-ims)時，就會出現選取器： **Adobe Commerce as a Cloud Service**、**Adobe Commerce Optimizer**&#x200B;以及&#x200B;**Adobe Commerce on Cloud Infrastructure**&#x200B;整合可自動從您的IMS連結工作階段填入這些欄位，而非依賴貼上的ID。
+   此清單包括您的使用者擁有作者或傳遞產品設定檔的AEM環境。 如果缺少預期的環境，請檢閱[使用者許可權和IMS](permissions.md)。
 
-   如果選取器無法使用，請從AEM Cloud Manager複製&#x200B;**[!UICONTROL Program ID]**&#x200B;和&#x200B;**[!UICONTROL Environment ID]**，或從您的作者URL衍生它們： `https://author-<ProgramID>-<EnvironmentID>.adobeaemcloud.com/` （將預留位置取代為您的識別碼）。
+   如果您的設定改為顯示單獨的&#x200B;**[!UICONTROL Program ID]**&#x200B;和&#x200B;**[!UICONTROL Environment ID]**&#x200B;欄位，請指定該環境的識別碼。 若是手動輸入，請從AEM Cloud Manager複製它們，或從您的作者URL衍生它們： `https://author-p<ProgramID>-e<EnvironmentID>.adobeaemcloud.com/`。 僅輸入數值識別碼，不含`p`和`e`首碼。
 
-   您必須清除兩個欄位的&#x200B;**[!UICONTROL Use system value]**，才能手動貼上或選取新值。
+   針對具有&#x200B;**[!UICONTROL Use system value]**&#x200B;核取方塊的欄位，在覆寫預設值之前請清除該核取方塊。
 
-   ![AEM Assets整合表單，含方案ID和環境ID選取器](../assets/aem-assets-view.png){width="600" zoomable="yes"}
+1. 檢查&#x200B;**[!UICONTROL AEM Domain Mapping]**。 系統會根據選取的AEM環境自動載入可用網域。 如果您的專案使用自訂資產傳遞網域，請依照[設定自訂網域URL](#optional-configure-the-custom-domain-url)操作。
 
 1. [!BADGE 僅限PaaS]{type=Informative tooltip="僅適用於雲端專案上的Adobe Commerce （Adobe管理的PaaS基礎結構）。"}選取[[!UICONTROL Commerce integration]](configure-commerce.md#add-the-integration-to-the-commerce-environment)以驗證Commerce與資產比對服務之間的要求。
 
@@ -88,10 +86,14 @@ ht-degree: 1%
 
 1. 從&#x200B;**[!UICONTROL Asset matching rule]**&#x200B;下拉式清單中選取其中一個資產比對規則以進行資產同步。
 
-   * 選取[預設自動比對](../synchronize/default-match.md)的&#x200B;**[!UICONTROL Match by SKU]**，
-   * 選取&#x200B;**[!UICONTROL Custom match]**&#x200B;進行[自訂自動比對](../synchronize/custom-match.md) （需要[Adobe Developer App Builder](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)。）
+   * [預設自動比對](../synchronize/default-match.md)的Select **[!UICONTROL Match by product SKU]**。
+   * 適用於[自訂自動比對](../synchronize/custom-match.md)的Select **[!UICONTROL Custom match]**。 此選項需要[Adobe Developer App Builder](https://experienceleague.adobe.com/zh-hant/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)。
 
-1. 新增在&#x200B;**[!UICONTROL Match by product SKU attribute name]**&#x200B;欄位中為AEM Assets產品SKU定義的[Commerce中繼資料欄位名稱](configure-aem.md#define-the-metadata-profile)，預設為`commerce:skus`。
+1. 針對&#x200B;**[!UICONTROL Match by product SKU]**，在&#x200B;**[!UICONTROL Match by product SKU attribute name]**&#x200B;欄位中輸入[AEM Assets中繼資料屬性名稱](../metadata.md)。 預設值為`commerce:skus`。
+
+   輸入屬性名稱，而非產品SKU值。 將實際產品SKU新增至AEM Assets中每個資產的&#x200B;**[!UICONTROL Product Data]**&#x200B;中繼資料，如[預設自動比對](../synchronize/default-match.md)中所述。
+
+1. 檢閱[視覺化擁有者](#configure-the-visualization-owner)設定。 在移轉期間，保留&#x200B;**Adobe Commerce**&#x200B;所有權，直到資產同步處理完成。
 
 1. 選取&#x200B;**[!UICONTROL Save Config]**&#x200B;以套用更新並啟動資產同步處理。
 
@@ -123,7 +125,7 @@ ht-degree: 1%
 
 如需欄位名稱、驗證規則和Commerce結果，請參閱AEM Assets中的[Commerce中繼資料](../metadata.md)。
 
-### 設定視覺效果擁有者
+## 設定視覺效果擁有者
 
 **視覺化擁有者**&#x200B;設定會決定要提供整合中產品影像的系統：
 
@@ -139,29 +141,57 @@ ht-degree: 1%
 >
 > 從Commerce移轉至AEM Assets期間，請將&#x200B;**視覺效果擁有者**&#x200B;設定為Commerce以避免影像連結失效。 所有產品成功與AEM Assets同步後，請切換至AEM Assets擁有者以完成轉變。 這可確保整個程式中的連續影像可用性。
 
-1. 導覽至「**[!UICONTROL Store]** >設定> **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**」。
+1. 導覽至&#x200B;**[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**。
 
-   ![AEM Assets整合視覺化擁有者功能](../assets/visualization-owner-detail.png){width="400" zoomable="yes"}
+   ![視覺效果擁有者設定為AEM Assets](../assets/visualization-owner-detail.png){width="700" zoomable="yes"}
 
-1. 選取&#x200B;**視覺化擁有者**&#x200B;來源以顯示影像。
+1. Select **視覺化擁有者**&#x200B;來源以顯示影像。
 
-1. 按一下&#x200B;**[!UICONTROL Save Config]**&#x200B;以套用更新並啟動資產同步處理。
+1. 按一下&#x200B;**[!UICONTROL Save Config]**&#x200B;以套用更新。
 
-### 選填。 設定自訂網域URL
+   在切換至&#x200B;**AEM Assets**&#x200B;之前，[請確認資產與預期的產品](#verify-the-integration)相關聯。 然後[設定您的店面](configure-storefront.md)以顯示AEM Assets產品影像。
+
+## 選填。 設定自訂網域URL
 
 如果AEM Assets as a Cloud Service專案已使用[自訂網域名稱](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/custom-domain-names/add-custom-domain-name){target=_blank}設定，您必須將網域名稱新增到Commerce存放區設定，好讓Commerce的AEM Assets整合能夠使用它。
 
-1. 導覽至「**[!UICONTROL Store]** >設定> **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**」。
+向您的AEM管理員取得已設定的資產傳送自訂網域URL。 此設定會取代AEM傳遞URL；這不是用於識別方案ID和環境ID的AEM作者URL。 如果您的專案未使用自訂網域，請保持網域對應不變。
 
-   ![AEM Assets整合啟用整合](../assets/aem-assets-view.png){width="700" zoomable="yes"}
+>[!NOTE]
+>
+>設定自訂網域URL不會更新先前同步資產的URL。 這些資產會保留其先前的URL，直到[在AEM Assets](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/manage/reprocessing){target=_blank}中重新處理為止。 儲存自訂網域設定後，重新處理這些資產以更新其URL來使用自訂網域。
 
-1. 將&#x200B;**自訂網域URL**&#x200B;新增至&#x200B;**[!UICONTROL Asset Custom Domain]**&#x200B;欄位。
+1. 導覽至&#x200B;**[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**。
 
-1. 按一下&#x200B;**[!UICONTROL Save Config]**&#x200B;以套用更新並啟動資產同步處理。
+1. 確認選取的&#x200B;**[!UICONTROL AEM Environment]**，然後從&#x200B;**[!UICONTROL AEM Domain Mapping]**&#x200B;中選取已設定的自訂網域。 系統會自動為選取的環境載入可用網域。
+
+![AEM環境和網域選擇器，範例值為](../assets/aem-assets-environment-domain.png){width="700" zoomable="yes"}
+
+    對於顯示&#x200B;**[!UICONTROL Asset Custom Domain]**&#x200B;文字欄位的設定，請在該欄位中輸入自訂網域URL。
+
+1. 按一下&#x200B;**[!UICONTROL Save Config]**&#x200B;以套用更新。
+
+## 驗證整合
+
+>[!NOTE]
+>
+>Adobe Commerce Optimizer無法使用同步狀態。 請遵循[Commerce Optimizer驗證工作流程](configure-aco.md#match-by-sku-workflow-example)，而非下列Commerce管理員檢查。
+
+1. 選擇現有的Commerce產品並記下其SKU。
+
+1. 在AEM Assets中，將測試資產標示為&#x200B;**[!UICONTROL Eligible for Commerce]**、將其與該產品SKU建立關聯，並設定其角色和位置。 核准資產。 請參閱[預設自動比對](../synchronize/default-match.md)，或使用您設定的[自訂比對規則](../synchronize/custom-match.md)。
+
+1. 同步完成後，請在Commerce管理員中開啟產品，並檢查其&#x200B;**[!UICONTROL Images And Videos]**&#x200B;區段以取得相關的資產、角色和位置。 請參閱[管理資產](../manage-assets.md)。
+
+1. 檢閱[同步處理狀態](sync-status.md)以取得資產的同步處理結果。 如果同步化失敗，請檢閱&#x200B;**[!UICONTROL Error]**&#x200B;欄。
+
+1. 選取&#x200B;**AEM Assets**&#x200B;作為視覺效果擁有者並完成[店面組態](configure-storefront.md)後，請開啟店面的產品並確認出現預期的影像。
+
+僅[!BADGE PaaS]{type=Informative tooltip="僅適用於雲端專案上的Adobe Commerce （Adobe管理的PaaS基礎結構）。"}如需其他同步化疑難排解，請檢閱[整合記錄檔](logs.md)。
 
 ## 下一步
 
-* **設定您的Commerce店面** — 若要搭配使用AEM Assets與由Edge Delivery Services支援的Commerce店面，請完成&#x200B;*Adobe Commerce店面檔案*&#x200B;中[AEM Assets整合](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/)主題中所述的店面設定。
+* [設定您的Commerce店面](configure-storefront.md)，以便使用Edge Delivery Services顯示AEM Assets的產品影像。
 
 * 設定Adobe Commerce與AEM Assets整合之間的[相符規則](../synchronize/default-match.md)。
 

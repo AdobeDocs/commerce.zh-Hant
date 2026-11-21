@@ -13,9 +13,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 57a905703b11ef8fc4ca4527a5fc136dc81615cc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1708'
 ht-degree: 0%
 ---
 # 限制和邊界
@@ -77,9 +77,11 @@ ht-degree: 0%
 
 ### [!DNL Product Visuals]限制
 
+產品視覺效果支援以Commerce為中心的資產管理使用案例，包括管理產品資產、Commerce中繼資料和資產交付。 支援的大量上傳和大量中繼資料作業本身不需要AEM Assets Ultimate。 需要AEM Assets API的程式化資產和中繼資料管理，有不同的權益需求。
+
 | **功能** | **描述** | **基底配置** | **可擴充？** |
 | --- | --- | --- | --- |
-| 產品視覺效果進階使用者 | 具有完整數位資產管理功能（包括AI工具、[!DNL Adobe Express]/[!DNL Firefly]整合和Content Hub共用）的授權使用者，可處理核心DAM任務和進階雲端原生功能以獲得最佳效率。 | 2 | 是<p>升級至[!DNL AEM Assets]授權</p> |
+| 產品視覺效果進階使用者 | 授權使用者具有產品視覺效果隨附的資產管理功能，包括AI工具、[!DNL Adobe Express]/[!DNL Firefly]整合和Content Hub共用。 | 2 | 是<p>升級至[!DNL AEM Assets]授權</p> |
 | 產品視覺效果共同作業人員使用者 | 透過AEM Commerce整合存取及使用資產、使用[!DNL Adobe Express]和[!DNL Firefly]建立及編輯內容，以及（如果已啟用）透過Content Hub入口網站運用已核准的資產。 | 2 | 是<p>升級至[!DNL AEM Assets]授權</p> |
 | 產品視覺效果儲存 | 為資產配置的儲存空間 | 1 TB儲存空間 | 是<p>升級至[!DNL AEM Assets]授權</p> |
 | Dynamic Media使用情況 | 動態媒體處理作業的裕量，包括：<ul><li>影像傳送</li><li>智慧型影像</li><li>視訊傳送</li></ul><p>如需詳細資訊，請參閱下方的&#x200B;*計算Dynamic Media使用量*。 | 根據GMV （商品總值）<p>最小配置：每月500萬項作業</p> | 是<ul><li>購買其他操作的授權</li><li>升級至[!DNL AEM Assets]授權</li></ul> |
@@ -108,7 +110,25 @@ Dynamic Media使用方式會追蹤進入[!DNL Adobe Commerce Optimizer]內「產
 
 >[!NOTE]
 >
->上述限制涵蓋容量與使用量配置。 如需產品視覺效果功能概觀和功能限制，請參閱[AEM Assets產品視覺效果](setup/product-visuals.md)。
+>本節涵蓋容量、使用量配置和軟體權利檔案範圍。 如需產品視覺效果功能概述，請參閱[使用AEM Assets的產品視覺效果](setup/product-visuals.md)。
+
+#### 何時需要AEM Assets Ultimate？
+
+>[!IMPORTANT]
+>
+>產品視覺效果不包含對AEM Assets Author API的存取權。 如果整合或自訂應用程式需要作者API存取權才能以程式設計方式管理資產或中繼資料，請購買AEM Assets Ultimate附加元件SKU。 產品視覺效果中不包含Ultimate。 請聯絡您的Adobe客戶代表，以取得授權和布建。
+
+下列專案需要AEM Assets Ultimate：
+
+- AEM Assets作者API存取。
+- API型中繼資料整合，包括中繼資料輸入和輸出。
+- 自訂整合和自動化需要AEM Assets API以程式設計方式管理資產或中繼資料。
+- 依賴這些AEM Assets API的Adobe Developer App Builder整合。
+- AEM Assets階段和開發環境。
+
+這些需求不排除具有包含在產品視覺效果中的OpenAPI功能的Dynamic Media以進行資產交付。 光是App Builder使用並不需要AEM Assets Ultimate；此需求取決於應用程式使用的AEM Assets API。
+
+如需產品視覺效果以外的更廣泛企業DAM、API、擴充性和內容供應鏈需求，請參閱[AEM Assets Ultimate](https://experienceleague.adobe.com/zh-hant/docs/experience-manager-cloud-service/content/assets/assets-ultimate-overview)。
 
 ### 目錄檢視與原則
 

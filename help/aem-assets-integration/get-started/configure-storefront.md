@@ -26,9 +26,9 @@ role_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '664'
 ht-degree: 0%
 ---
 # 設定您的店面
@@ -52,6 +52,8 @@ AEM Assets整合會顯示AEM Assets而不是Adobe Commerce的產品影像，以�
 Commerce下拉式清單會自動偵測`commerce-assets-enabled`設定，並據此調整影像處理。
 
 如需將AEM Assets與Edge Delivery Services支援的Commerce店面搭配使用的詳細資訊，請參閱&#x200B;*AEM Assets店面*&#x200B;檔案中的[Adobe Commerce整合](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/)主題。
+
+儲存店面組態之後，[驗證整合](setup-synchronization.md#verify-the-integration)是否與產品相關的核准資產相關聯。 確認店面上有預期的影像。 如果不適用，在疑難排解店面影像傳送之前，請檢查產品關聯、視覺化擁有者和同步化結果。 對於Adobe Commerce Optimizer，請遵循[最佳化工具驗證工作流程](configure-aco.md#match-by-sku-workflow-example)。
 
 >[!TIP]
 >
@@ -96,7 +98,7 @@ Commerce下拉式清單會自動偵測`commerce-assets-enabled`設定，並據�
    | A2 | `aem.repositoryId` |
    | B2 | 您在步驟2複製的URL |
 
-1. 選取「**[!UICONTROL Save]**」，然後選取網站名稱旁的「上一步」箭頭，以返回網站根目錄。
+1. Select **[!UICONTROL Save]**，然後選取網站名稱旁的「上一步」箭頭，以返回網站根目錄。
 
    >[!NOTE]
    >

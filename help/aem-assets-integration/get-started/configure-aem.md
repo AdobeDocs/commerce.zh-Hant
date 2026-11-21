@@ -26,9 +26,9 @@ topic_v2:
     internal-label: Digital asset management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '1861'
+source-wordcount: '1900'
 ht-degree: 1%
 ---
 # 設定AEM Assets專案
@@ -65,6 +65,10 @@ ht-degree: 1%
 
   您的Commerce執行個體和AEM Assets編寫環境都必須位於相同的IMS組織中。
 
+>[!NOTE]
+>
+>AEM Assets階段和開發環境需要AEM Assets Ultimate。 在規劃這些環境之前，請檢閱[產品視覺效果限制](../../optimizer/boundaries-limits.md#product-visuals-limits)。 此要求適用於AEM Assets環境，而非Commerce沙箱環境。
+
 ### 步驟1：建立方案和環境
 
 在Cloud Manager中建立方案是多步驟的過程 — 方案及其環境會跨多個步驟進行設定並一起儲存。
@@ -77,7 +81,7 @@ ht-degree: 1%
 
    ![已選取Dynamic Media的Cloud Manager解決方案和附加元件步驟](../assets/aem-cloud-manager-program-addons.png){width="600" zoomable="yes"}
 
-1. 在&#x200B;**[!UICONTROL Add Environment]**&#x200B;步驟中，輸入&#x200B;**生產**&#x200B;和&#x200B;**暫存**&#x200B;環境的名稱，然後選取區域。
+1. 在&#x200B;**[!UICONTROL Add Environment]**&#x200B;步驟中，輸入&#x200B;**生產**&#x200B;環境名稱，然後選取區域。 如果您的權益包含中繼環境，請同時輸入&#x200B;**中繼**&#x200B;環境名稱。
 
    >[!IMPORTANT]
    >
@@ -85,7 +89,7 @@ ht-degree: 1%
 
    ![Cloud Manager新增環境對話方塊，其中包含生產和中繼詳細資料](../assets/aem-cloud-manager-add-environment.png){width="600" zoomable="yes"}
 
-1. 選取&#x200B;**[!UICONTROL Save]**&#x200B;以建立方案及其環境。
+1. Select **[!UICONTROL Save]**&#x200B;以使用環境建立程式。
 
 ### 步驟2：啟用Commerce整合變數
 
