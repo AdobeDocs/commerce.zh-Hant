@@ -1,6 +1,6 @@
 ---
-title: 可撰寫的目錄資料模型與銷售服務
-description: 瞭解Composable Catalog Data Model如何變更[!DNL Adobe Commerce as a Cloud Service]中的目錄傳遞，以及商家和店面糰隊需要知道哪些事項。
+title: 使用可撰寫目錄資料模型的銷售服務
+description: 瞭解使用可撰寫目錄資料模型的銷售服務如何變更[!DNL Adobe Commerce as a Cloud Service]中的目錄傳遞，以及商家和店面糰隊需要知道哪些事項。
 feature: Catalog Management, Personalization, Saas
 role: Leader
 level: Beginner
@@ -61,13 +61,13 @@ topic_v2:
     internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 0bda134570bb3bf2f43da545917dedc95394df5e
+source-git-commit: 71700f3fc10957ec2b1cccb7df12acd9840c35a1
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '998'
 ht-degree: 0%
 ---
 
-# 銷售服務
+# 使用可撰寫目錄資料模型的銷售服務
 
 Adobe Commerce as a Cloud Service現在透過銷售服務支援可撰寫目錄資料模型(CCDM)。 Adobe Commerce Optimizer推出了此資料模型，而CCDM為兩款產品提供了提供店面目錄瀏覽與銷售功能的共同基礎，同時Commerce基金會持續管理產品、價格與交易。
 
@@ -75,9 +75,9 @@ Adobe Commerce as a Cloud Service現在透過銷售服務支援可撰寫目錄�
 
 ## CCDM會帶來哪些變更？
 
-原始目錄模型使用目錄服務將產品資料傳遞至店面，而「即時搜尋」和「產品推薦」提供搜尋、銷售和推薦功能。 在此模型中，Commerce使用[SaaS資料匯出](https://experienceleague.adobe.com/zh-hant/docs/commerce/saas-data-export/overview)進行同步。
+原始目錄模型使用[目錄服務](https://experienceleague.adobe.com/en/docs/commerce/catalog-service/overview)將產品資料傳送至店面，而「即時搜尋」和「產品推薦」可提供搜尋、銷售和推薦功能。 在此模型中，Commerce使用[SaaS資料匯出](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/overview)將資料同步至服務層。
 
-透過CCDM，這些功能會在支援Adobe Commerce Optimizer的相同目錄基礎上運作。 [目錄檢視](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/merchandising-with-ccdm/setup/catalog-view)和[原則](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/merchandising-with-ccdm/setup/policies)定義店面可用的目錄內容。 原則會決定產品分類，而銷售規則可套用至所有目錄檢視或針對特定檢視量身打造。
+透過CCDM，這些功能會在支援Adobe Commerce Optimizer的相同目錄基礎上運作。 [目錄檢視](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/setup/catalog-view)和[原則](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/setup/policies)定義店面可用的目錄內容。 原則會決定產品分類，而銷售規則可套用至所有目錄檢視或針對特定檢視量身打造。
 
 這會變更目錄的設定、存取及銷售方式。 CCDM以原始Commerce目錄的搜尋、建議和銷售功能為基礎，同時在目錄檢視層級引入控制項。 其他管理和報告功能如下所述。
 
@@ -85,7 +85,7 @@ Commerce Foundation依然是產品和價格的標準來源。 產品和價格資
 
 ## 授權與布建
 
-銷售服務包含在現有的Adobe Commerce as a Cloud Service SKU中。 這不是第二個產品或訂閱，不需要另外購買Adobe Commerce Optimizer、權益或租使用者。
+現有Adobe Commerce as a Cloud Service SKU包含具有CDM的商品銷售服務。 這不是第二個產品或訂閱，不需要另外購買Adobe Commerce Optimizer、權益或租使用者。
 
 ## 架構概覽
 
@@ -93,19 +93,19 @@ Commerce Foundation依然是產品和價格的標準來源。 產品和價格資
 
 店面使用CCDM支援的銷售服務來擷取目錄資料和內容，以進行瀏覽、搜尋、建議和銷售。 要求使用目錄內容來擷取預定對象的產品和價格。 您繼續在[!DNL Commerce]中管理網站、商店和商店檢視設定。
 
-下圖顯示銷售服務在更廣泛的Adobe Commerce as a Cloud Service架構中的位置。
+下圖顯示具有CCDM的銷售服務在更廣泛的Adobe Commerce as a Cloud Service架構中的位置。
 
 ![Commerce架構顯示目錄資料流入銷售服務](./assets/data-flow-ccdm.png){zoomable="yes"}
 
 ## 商家有哪些新增功能？
 
-新模型可讓您將現有銷售規則範圍限定在所有目錄檢視或特定檢視。 這可讓您將銷售套用至每個店面對象。 瞭解如何[將銷售規則範圍設定為目錄檢視](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/merchandising-with-ccdm/merchandising/rules/add)。
+新模型可讓您將現有銷售規則範圍限定在所有目錄檢視或特定檢視。 這可讓您將銷售套用至每個店面對象。 瞭解如何[將銷售規則範圍設定為目錄檢視](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/merchandising/rules/add)。
 
-在Admin中，您可以使用[!UICONTROL Catalog Views]和[!UICONTROL Policies]來設定目錄內容。 您也可以使用[!UICONTROL Success Metrics]來檢閱收入、轉換、參與、贏取和跳出率。 如需詳細資訊，請參閱[成功量度](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/merchandising-with-ccdm/manage-results/success-metrics)。
+在Admin中，您可以使用[!UICONTROL Catalog Views]和[!UICONTROL Policies]來設定目錄內容。 您也可以使用[!UICONTROL Success Metrics]來檢閱收入、轉換、參與、贏取和跳出率。 如需詳細資訊，請參閱[成功量度](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/manage-results/success-metrics)。
 
 ## 採用前的考量事項
 
-在採用銷售服務之前，請先檢閱CCDM模式如何影響您的授權、目錄整合、店面和管理工作流程。
+透過CCDM採用銷售服務前，請先檢閱CCDM模式如何影響您的授權、目錄整合、店面和管理工作流程。
 
 ### 目錄管理和整合
 
@@ -126,7 +126,7 @@ Commerce Foundation依然是產品和價格的標準來源。 產品和價格資
 
 ### 管理體驗
 
-Adobe Commerce as a Cloud Service與CCDM使用[[!DNL Adobe Unified Experience]](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/admin/admin-unified-experience) (Unified Shell)。 Adobe已單獨發行Unified Shell與CDM。 原始目錄服務模型上的現有執行個體仍可存取Classic和Unified Shell。
+Adobe Commerce as a Cloud Service與CCDM使用[[!DNL Adobe Unified Experience]](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin-unified-experience) (Unified Shell)。 Adobe已單獨發行Unified Shell與CDM。 原始目錄服務模型上的現有執行個體仍可存取Classic和Unified Shell。
 
 ### 限制
 
@@ -134,8 +134,12 @@ CCDM模式不會變更Adobe Commerce as a Cloud Service限制。 與Optimizer共
 
 ## 可用性與移轉
 
-在此版本發行後開始使用Adobe Commerce as a Cloud Service的組織依預設會收到銷售服務。 如果您的組織需要原始目錄資料模型，請聯絡您的Adobe客戶團隊以討論是否有例外可用。
+2026年11月18日發行後開始使用Adobe Commerce as a Cloud Service的組織依預設包含具有CCDM的商品銷售服務。 如果您的組織需要原始目錄資料模型，請聯絡您的Adobe客戶團隊以討論是否有例外可用。
 
 在此版本之前具有Adobe Commerce as a Cloud Service的組織可在[布建新執行個體](./getting-started.md#create-an-instance)時選擇任一目錄模型。 根據預設，[!UICONTROL Enable CCDM]切換器已停用。 啟用CCDM後，您就無法加以停用。
 
 現有執行個體不會自動變更。 一般可用性(GA)下，您無法將現有的原始目錄服務執行個體移轉至「銷售服務」。
+
+>[!MORELIKETHIS]
+>
+>* [使用CCDM的銷售服務Commerce管理指南](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/overview)
