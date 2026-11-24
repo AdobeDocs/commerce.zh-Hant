@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: eebf534ca77d223db63f2062dd889d8f3ceb1866
+source-git-commit: c1bd52e33427ed9222ef72aadf791d424fff20bb
 workflow-type: tm+mt
-source-wordcount: '10433'
+source-wordcount: '10913'
 ht-degree: 0%
 ---
 # 發行說明
@@ -82,7 +82,90 @@ ht-degree: 0%
 
 進一步瞭解Adobe Unified Experience中的[Commerce Admin](https://experienceleague.adobe.com/zh-hant/docs/commerce-admin/start/admin/admin-unified-experience)。
 
-## 2026年11月 — 發行說#2 {#latest}
+## 2026年12月 — 發行說#1 {#latest}
+
+[!BADGE 沙箱]{type=Caution tooltip="列出的專案目前僅在沙箱環境中可用。 Adobe會先在沙箱環境中推出新版本，讓您可以在生產環境中使用該版本之前有時間測試即將推出的變更。"}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+以下專案將於2026年12月2日發佈到生產環境。
+
+>[!BEGINSHADEBOX]
+
+### 傳送自訂電子郵件的復本
+
+[`POST /V1/custom-email/send`](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/) REST端點現在接受選用的`ccEmails`和`bccEmails`陣列，以將電子郵件的復本傳送給其他收件者。<!-- ACCS-2225 -->
+
+### 透過REST指派存貨來源
+
+下列新的管理員REST端點提供來源指派和可用性功能： <!-- ACCS-1884 -->
+
+* `GET /V1/carts/:cartId/nominated-sources`和`PUT /V1/carts/:cartId/nominated-sources`讀取並設定每個購物車專案指派的詳細目錄來源。
+* `GET /V1/inventory/source-availability`傳回存放區的每個來源可用性。
+* `GET /V1/inventory/stock-availability`傳回商店的庫存層次可銷售數量。
+
+### 重設自訂購物車專案價格
+
+您現在可以從購物車專案移除[自訂價格](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/cart-custom-price)，而不需要刪除並重新新增該專案。 在`PUT /V1/carts/:cartId/items/:itemId`要求中將`reset_custom_price`延伸屬性設定為`true`。<!-- ACCS-2189 -->
+
+```json
+{
+  "cartItem": {
+    "item_id": 8,
+    "quote_id": "17",
+    "sku": "hat",
+    "qty": 1,
+    "extension_attributes": { "reset_custom_price": true }
+  }
+}
+```
+
+### 從折扣中排除購物車專案
+
+您現在可以在`POST /V1/carts/:quoteId/items`和`PUT /V1/carts/:cartId/items/:itemId`要求中，將`apply_discounts`擴充功能屬性設為`false`，以從購物車價格規則折扣中排除個別購物車專案。<!-- ACCS-2190 -->
+
+### 擷取客戶希望清單
+
+以下新的REST端點可讓您擷取客戶的願望清單： <!-- ACCS-2330 -->
+
+* `GET /V1/customers/:customerId/wishlists`會傳回客戶的願望清單。
+* `GET /V1/customers/:customerId/wishlists/:wishlistId/items`會傳回希望清單中的專案及其儲存的產品選項。
+
+### 稅捐自訂費用
+
+`plugin.magento.out_of_process_totals_collector.api.get_total_modifications.custom_fees` webhook傳回的自訂費用現在會以代碼為`oope_custom_fee_<fee code>`的專案形式傳送至`plugin.magento.out_of_process_tax_management.api.oop_tax_collection.collect_taxes` webhook，以供課稅之用。<!-- ACCS-2274 -->
+
+### 在「管理員」中搜尋事件和Webhook
+
+[!DNL Commerce Admin]中的&#x200B;**[!UICONTROL Events List]** ([!UICONTROL System] > [!UICONTROL Events] > [!UICONTROL Events List])和&#x200B;**[!UICONTROL Webhooks List]** ([!UICONTROL System] > [!UICONTROL Webhooks] > [!UICONTROL Webhooks List])頁面具有重新設計、可搜尋的版面。 您可以依模組、事件或webhook名稱來搜尋，選取專案以在清單旁的窗格中檢視其裝載結構描述（欄位名稱和型別），並以JSON格式複製結構描述。<!-- CEXT-6999 -->
+
+### 在店面註冊期間套用公司設定
+
+`createCompany` GraphQL突變現在接受選用的`config`輸入，可在公司建立時套用公司通訊錄設定（`address_book_enabled`和`custom_shipping_address_enabled`）。<!-- USF-4527 -->
+
+此選項預設為停用。 若要啟用此功能，請瀏覽至[!UICONTROL Stores] > [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Customers] > [!UICONTROL Company Configuration] > [!UICONTROL General]，並將&#x200B;**[!UICONTROL Allow Company Configuration on Storefront Registration]**&#x200B;設為&#x200B;**是**。 此欄位僅在&#x200B;**[!UICONTROL Allow Company Registration from the Storefront]**&#x200B;設定為&#x200B;**是**&#x200B;時顯示。
+
+### 增強功能和錯誤修正
+
+此版本中包括下列選取的增強功能、最佳化和錯誤修正：
+
+* 可選的設定可減少對`collect_taxes` webhook的重複呼叫。 請聯絡您的Adobe Commerce客戶成功案例經理以啟用它。
+
+* `collect_taxes` webhook裝載現在包含每個專案的`is_virtual`，以及動態價格套裝的子專案的`parent_code`。<!-- CEXT-7035, CEXT-7049 -->
+
+* 修正`addProductsToCart` GraphQL突變可能傳回新專案原始價格，而非webhook傳回的專案價格的問題。<!-- CEXT-7019 -->
+
+* 修正`plugin.magento.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates` webhook未移除程式外出運送業者所提供費率的問題。<!-- ACCS-2251 -->
+
+* 修正使用自訂屬性時，未透過REST儲存`observer.rma_save_before` webhook變更的問題。<!-- CCSAAS-5728 -->
+
+* 修正管理員在建立可轉讓報價後傳回404錯誤的問題。<!-- CCSAAS-5864 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## 2026年11月 — 發行說#2
 
 <!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 

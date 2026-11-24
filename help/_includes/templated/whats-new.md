@@ -1,7 +1,7 @@
 ---
-source-git-commit: 02a5f5be4f64c4f8c2f45eabcb69315e94665b49
+source-git-commit: 6df83f027ef780ad13c7310fe4c47638ed072b8d
 workflow-type: tm+mt
-source-wordcount: '1795'
+source-wordcount: '2047'
 ht-degree: 0%
 ---
 # 新功能範本
@@ -12,6 +12,13 @@ ht-degree: 0%
 
 | 說明 | 型別 | 日期/來源 |
 | --- | --- | --- |
+| 更新&#x200B;_Adobe Commerce as a Cloud Service指南_，通知客戶現在已布建2026年11月18日之後上線的客戶專案，以搭配可撰寫的目錄資料模型使用銷售服務。 | 技術 | [2026年11月23日](https://github.com/AdobeDocs/commerce.en/commit/a3c7e121397281fae0b8e9fd05697d71243eeb9d) |
+| 已新增Adobe Commerce as a Cloud Service的生產[發行說明](https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes)。 | 發行說明 | [2026年11月20日](https://github.com/AdobeDocs/commerce.en/commit/740feb6b01d0acc7c99fcbef5d91029d1a3cb15a) |
+| 已更新[AEM Assets整合設定指南](https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/get-started/setup-synchronization)，其中包含更清楚的設定指示、SKU比對指南，以及端對端驗證步驟。 釐清[產品視覺化權益界限](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/boundaries-limits#product-visuals-limits)，包括作者API存取、API導向的中繼資料整合，以及支援的大量作業與API型自動化之間的區別。 | 重大更新 | [2026年11月20日](https://github.com/AdobeDocs/commerce.en/commit/5e9c42e5c93ac81604aa38bf3e55c5df729650a0) |
+| 您現在可以[隱藏符合指定條件的搜尋查詢](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/merchandising/rules/add)的店面結果，而不需要設定產品層級的排名動作。 當查詢符合時，店面會顯示不含產品的搜尋結果頁面。 | 重大更新，技術 | [2026年11月18日](https://github.com/AdobeDocs/commerce.en/commit/c3d0ecebd6c2bcad189435bcddb7765c487e39ab) |
+| 新增[限制和邊界](https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/boundaries-limits)主題，其中列出Adobe Commerce as a Cloud Service的授許可權制和系統邊界。 | 新主題 | [2026年11月18日](https://github.com/AdobeDocs/commerce.en/commit/e0897ddc675f0281bec971e505585683b7ac7ed8) |
+| 新增[角色疑難排解](https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/user-management#troubleshooting-roles)資訊，以協助使用者存取Adobe Commerce as a Cloud Service中的管理員時發生問題。 | 意見反應 | [2026年11月17日](https://github.com/AdobeDocs/commerce.en/commit/b019c35fcb86c4c2b346c368234657981ae37a1e) |
+| 已新增[SaaS Data Export Extension 103.6.1](https://experienceleague.adobe.com/zh-hant/docs/commerce/saas-data-export/release-notes)版的發行說明。 | 發行說明 | [2026年11月16日](https://github.com/AdobeDocs/commerce.en/commit/3e18a278391e4352c7482557fa76f8bb9b3451c7) |
 | 更新[Facet限制和邊界](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/boundaries-limits)，以反映可透過支援要求增加設定的Facet上限。 | 技術 | [2026年11月16日](https://github.com/AdobeDocs/commerce.en/commit/d21c7401d0111c3e6b8dd1d65b26d4b480008011) |
 | 在2027年新增[代理商商務：商務領導者的5個優先順序](https://experienceleague.adobe.com/zh-hant/docs/commerce/information-center/insights-and-guidance/five-priorities-commerce-leaders-2027)文章，透過專注於產品資料準備、可發現性、代理商就緒的商務基礎架構、測量和實驗，幫助商務領導者準備AI輔助購物。 | 新主題 | [2026年11月16日](https://github.com/AdobeDocs/commerce.en/commit/b16b6868cabf8bfe6682c4e512c192713a408cfa) |
 | 已新增Adobe Commerce as a Cloud Service的沙箱[發行說明](https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes)。 | 發行說明 | [2026年11月13日](https://github.com/AdobeDocs/commerce.en/commit/c109643e7791468bfae958025144c968e8595f95) |
@@ -42,5 +49,3 @@ ht-degree: 0%
 | 已新增Adobe Commerce as a Cloud Service的沙箱[發行說明](https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes)。 | 重大更新 | [2026年9月29日](https://github.com/AdobeDocs/commerce.en/commit/b1524825387c1d5fe061bdadf76f27b2f614879d) |
 | 新增在同步處理期間保留[自訂AEM影像角色](https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/synchronize/custom-match)的功能。 此外，已新增Adobe Commerce的功能，以[非同步檢查AEM Assets整合擴充功能更新](https://experienceleague.adobe.com/zh-hant/docs/commerce/aem-assets-integration/get-started/check-for-updates)。 | 重大更新 | [2026年9月28日](https://github.com/AdobeDocs/commerce.en/commit/44272d96ca697d54cbbfbb9ed5a045da94652d75) |
 | 已修正[PaaS](https://experienceleague.adobe.com/zh-hant/docs/commerce/product-recommendations/boundaries-limits)和[Commerce Optimizer](https://experienceleague.adobe.com/zh-hant/docs/commerce/optimizer/merchandising/recommendations/create)的產品建議檔案，其中不正確地指出不支援套件組合和分組的產品。 | 意見反應 | [2026年9月25日](https://github.com/AdobeDocs/commerce.en/commit/55b17947196acfa459934e4ee373469b84e16ea1) |
-| 更新[移轉總覽](https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/migration/overview)以說明Commerce Developer Agent如何協助移轉程式。 | 重大更新 | [2026年9月24日](https://github.com/AdobeDocs/commerce.en/commit/739eabe6f43412610862ab00516687ad5aeeac53) |
-| 已新增Adobe Commerce as a Cloud Service的生產[發行說明](https://experienceleague.adobe.com/zh-hant/docs/commerce/cloud-service/release-notes)。 | 重大更新 | [2026年9月23日](https://github.com/AdobeDocs/commerce.en/commit/d879d372a199c24d266abdfb79d1ff0af164d75b) |
