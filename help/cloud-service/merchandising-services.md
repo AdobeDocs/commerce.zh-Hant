@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 71700f3fc10957ec2b1cccb7df12acd9840c35a1
+source-git-commit: ca2330c059ede860c464134878a83babd12eb148
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '1115'
 ht-degree: 0%
 ---
 
@@ -118,11 +118,18 @@ Commerce Foundation依然是產品和價格的標準來源。 產品和價格資
 - **[!DNL Adobe Commerce Storefront]**&#x200B;個下拉式清單 — 下拉式清單可處理轉換。 不需要變更程式碼。 請參閱[店面設定檔案](https://experienceleague.adobe.com/en/tools/commerce-storefront/)。
 - **自訂或其他店面** — 更新您的目錄要求標頭，如[標頭組態參考](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/commerce-configuration/#headers)中所述。
 
-檢閱目錄查詢和請求標頭，以取得以CCDM為基礎的模型。 請勿假設現有查詢或標題保持不變。 銷售GraphQL查詢與原始目錄服務模型中使用的查詢不同。 其他查詢支援CCDM。 使用[銷售GraphQL API參考](https://developer.adobe.com/commerce/services/reference/graphql/)，並根據[店面標題參考](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/commerce-configuration/#headers)驗證必要的目錄內容。
-
 ### 協力廠商應用程式和擴充功能
 
 檢閱讀取目錄資料或透過其提供者使用目錄事件的第三方應用程式和擴充功能。 相容性取決於每個應用程式或擴充功能使用這些介面的方式。
+
+### 銷售API
+
+Merchandising Services提供用於後端目錄資料管理和店面目錄擷取的API。 使用REST API管理目錄資料，並使用GraphQL API擷取店面體驗的資料。
+
+- **REST API：**&#x200B;遵循[開始使用資料擷取API](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/using-the-api)，從後端應用程式建立和管理產品和目錄資料。
+- **GraphQL API：**&#x200B;遵循[開始使用銷售API](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/using-the-api)，以擷取店面體驗的目錄資料。 使用店面所需的標頭設定請求，如[店面標頭參考](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/commerce-configuration/#headers)所述。
+
+檢閱目錄查詢和請求標頭，以取得以CCDM為基礎的模型。 請勿假設現有查詢或標題保持不變。 銷售GraphQL查詢與原始目錄服務模型中使用的查詢不同。 其他查詢支援CCDM。 使用[銷售GraphQL API參考](https://developer.adobe.com/commerce/services/reference/graphql/)，並根據[整合標頭參考](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/using-the-api#headers)驗證必要的目錄內容。
 
 ### 管理體驗
 
